@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DateT
 ---
 
 # DateTimeParameter
-<a name="API_DateTimeParameter"></a>
 
 A date-time parameter.
 

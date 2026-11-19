@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Curre
 ---
 
 # CurrencyDisplayFormatConfiguration
-<a name="API_CurrencyDisplayFormatConfiguration"></a>
 
 The options that determine the currency display format configuration.
 

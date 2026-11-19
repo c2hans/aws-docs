@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SnowflakeMe
 ---
 
 # SnowflakeMetadata
-<a name="API_SnowflakeMetadata"></a>
 
  The connector metadata specific to Snowflake.
 

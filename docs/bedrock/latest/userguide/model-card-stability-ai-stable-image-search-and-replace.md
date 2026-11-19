@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-stab
 ---
 
 # Stable Image Search and Replace
-<a name="model-card-stability-ai-stable-image-search-and-replace"></a>
 
 ## ![Stability AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/stability.png) Stability AI — Stable Image Search and Replace
 <a name="model-card-stability-ai-stable-image-search-and-replace-header"></a>

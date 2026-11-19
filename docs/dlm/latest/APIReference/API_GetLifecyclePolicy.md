@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_GetLifecycle
 ---
 
 # GetLifecyclePolicy
-<a name="API_GetLifecyclePolicy"></a>
 
 Gets detailed information about the specified lifecycle policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/task-based-
 ---
 
 # User tasks
-<a name="task-based-content"></a>
 
 **Topics**
 + [Security Incident Response dashboard](dashboard.md)

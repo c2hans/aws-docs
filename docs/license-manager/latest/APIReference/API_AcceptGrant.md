@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # AcceptGrant
-<a name="API_AcceptGrant"></a>
 
 Accepts the specified grant.
 

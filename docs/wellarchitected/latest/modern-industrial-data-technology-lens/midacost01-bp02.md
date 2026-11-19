@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDACOST01-BP02 Configure automated cost monitoring and alerts for manufacturing workloads
-<a name="midacost01-bp02"></a>
 
  Set up a comprehensive alerting system that notifies teams within 24 hours when costs exceed thresholds, generates cost reports by production line, identifies waste, and maintains cost visibility across manufacturing operations. This includes setting up progressive alerting using different severity levels and implementing automated remediation for common cost-related issues.
 

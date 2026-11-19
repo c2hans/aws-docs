@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ses-sende
 ---
 
 # Authorizing senders using the Amazon SES API and the AWS SDK for PHP Version 3
-<a name="ses-sender-policy"></a>
 
 To enable another AWS account, AWS Identity and Access Management user, or AWS service to send email through Amazon Simple Email Service (Amazon SES) on your behalf, you create a sending authorization policy. This is a JSON document that you attach to an identity that you own.
 

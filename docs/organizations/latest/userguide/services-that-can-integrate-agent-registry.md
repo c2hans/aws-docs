@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS Agent Registry and AWS Organizations
-<a name="services-that-can-integrate-agent-registry"></a>
 
 AWS Agent Registry is a fully managed discovery service. It provides a centralized catalog for organizing, curating, and discovering resources across your organization. With AWS Agent Registry, you can publish Model Context Protocol (MCP) servers, tools, agents, agent skills, and custom resources into a searchable registry. You can control access through an approval workflow. Both human users and AI agents can then discover the right tools and agents through hybrid search, catalog browsing, and a native MCP endpoint.
 

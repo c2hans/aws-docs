@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_PolicyParame
 ---
 
 # PolicyParameter
-<a name="API_PolicyParameter"></a>
 
 Contains information about a policy parameter used to customize delegated permissions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_UpdateRo
 ---
 
 # UpdateRoom
-<a name="API_UpdateRoom"></a>
 
 Updates a room’s configuration.
 

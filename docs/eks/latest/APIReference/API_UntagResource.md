@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_UntagResourc
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Deletes specified tags from an Amazon EKS resource.
 

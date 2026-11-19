@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Code repository for AWS SRA examples
-<a name="code-repo"></a>
 
 To help you get started building and implementing the guidance in the AWS SRA, an infrastructure as code (IaC) repository at [https://github.com/aws-samples/aws-security-reference-architecture-examples](https://github.com/aws-samples/aws-security-reference-architecture-examples) accompanies this guide. This repository contains code to help developers and engineers deploy some of the guidance and architecture patterns presented in this document, based on AWS Professional Services consultants' first-hand experience with customers. The templates are general in nature―their goal is to illustrate an implementation pattern rather than provide a complete solution. The AWS service configurations and resource deployments are deliberately very restrictive. You might need to modify and tailor these solutions to suit your environment and security needs.
 

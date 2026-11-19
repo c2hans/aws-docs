@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # PipelineOutputError
-<a name="API_PipelineOutputError"></a>
 
 Contains detailed error information from pipeline test operations, providing structured error responses for better debugging and troubleshooting capabilities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Overview of IAM-based domains
-<a name="iam-based-domains-overview"></a>
 
 IAM-based domains provide the following capabilities:
 + Setup using existing IAM roles and resources

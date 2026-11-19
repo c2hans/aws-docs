@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Describ
 ---
 
 # DescribeRecipe
-<a name="API_DescribeRecipe"></a>
 
 Returns the definition of a specific DataBrew recipe corresponding to a particular version.
 

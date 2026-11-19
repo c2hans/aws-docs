@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/send-messages-elasti
 ---
 
 # Sending elastic channel messages in Amazon Chime SDK meetings
-<a name="send-messages-elastic"></a>
 
 The [SendChannelMessage](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_SendChannelMessage.html) API creates messages at the sub-channel level. To send messages, you must have a `subChannelId`. You can also use the [UpdateChannelMessage](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_UpdateChannelMessage.html), and [RedactChannelMessage](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_RedactChannelMessage.html) APIs to edit and delete messages, but in all cases, you must have a `subChannelId`.
 

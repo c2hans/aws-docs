@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_QuotaShare
 ---
 
 # QuotaShareResourceSharingConfiguration
-<a name="API_QuotaShareResourceSharingConfiguration"></a>
 
 Specifies whether a quota share reserves, lends, or both lends and borrows idle compute capacity.
 

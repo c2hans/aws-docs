@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # AssociatedSegment
-<a name="API_connect-customer-profiles_AssociatedSegment"></a>
 
 Represents a segment associated with a membership event stream.
 

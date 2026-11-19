@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/lz-api-pre
 ---
 
 # Step 1: Configure your landing zone
-<a name="lz-api-prereques"></a>
 
  The process of setting up your AWS Control Tower landing zone has multiple steps. Certain aspects of your AWS Control Tower landing zone are configurable, but other choices cannot be changed after setup. To learn more about these important considerations prior to launching your landing zone, review [Expectations for landing zone configuration](getting-started-configure.md).
 

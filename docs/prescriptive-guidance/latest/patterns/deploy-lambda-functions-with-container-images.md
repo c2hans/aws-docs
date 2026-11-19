@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 ---
 
 # Deploy Lambda functions with container images
-<a name="deploy-lambda-functions-with-container-images"></a>
 
 *Ram Kandaswamy, Amazon Web Services*
 

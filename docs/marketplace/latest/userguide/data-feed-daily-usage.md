@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-d
 ---
 
 # Daily Usage data feed
-<a name="data-feed-daily-usage"></a>
 
 This data feed provides detailed daily usage information for your products, including customer usage metrics, estimated revenue, and pricing details. The data helps you track how customers are using your products and calculate estimated revenue based on usage patterns.
 

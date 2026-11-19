@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AddFlowOutpu
 ---
 
 # AddFlowOutputs
-<a name="API_AddFlowOutputs"></a>
 
  Adds outputs to an existing flow. You can create up to 50 outputs per flow.
 

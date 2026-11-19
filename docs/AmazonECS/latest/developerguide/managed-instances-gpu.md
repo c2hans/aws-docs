@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-
 ---
 
 # Use GPUs with Amazon ECS Managed Instances
-<a name="managed-instances-gpu"></a>
 
 Amazon ECS Managed Instances supports GPU-accelerated computing for workloads such as machine learning, high-performance computing, and video processing through the following Amazon EC2 instance types. For more information about instance types supported by Amazon ECS Managed Instances, see [Amazon ECS Managed Instances instance types](managed-instances-instance-types.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/security-
 ---
 
 # IVS Data Protection
-<a name="security-data-protection"></a>
 
 For data sent to Amazon Interactive Video Service (IVS), the following data protections are in place:
 + Amazon IVS encrypts data in transit via HTTPS API endpoints, RTMPS ingest, and HTTPS playback. No configuration is required for the API endpoints.

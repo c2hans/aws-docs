@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Me
 ---
 
 # MembershipInferenceAttackScore
-<a name="API_MembershipInferenceAttackScore"></a>
 
 A score that measures the vulnerability of synthetic data to membership inference attacks and provides both the numerical score and the version of the attack methodology used for evaluation.
 

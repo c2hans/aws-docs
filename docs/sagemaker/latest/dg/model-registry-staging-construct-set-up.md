@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-stagi
 ---
 
 # Set up Staging Construct Examples
-<a name="model-registry-staging-construct-set-up"></a>
 
 To set up stage constructs for your Amazon SageMaker Model Registry, the administrator will need to grant the relevant permissions to the intended roles. The following provides examples on how to set up stage constructs for various roles.
 

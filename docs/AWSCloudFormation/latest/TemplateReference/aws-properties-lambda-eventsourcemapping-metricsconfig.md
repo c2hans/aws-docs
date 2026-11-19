@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::EventSourceMapping MetricsConfig
-<a name="aws-properties-lambda-eventsourcemapping-metricsconfig"></a>
 
 The metrics configuration for your event source. Use this configuration object to define which metrics you want your event source mapping to produce.
 

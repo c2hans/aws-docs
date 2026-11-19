@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # config
-<a name="greengrass-development-kit-cli-config"></a>
 
 Use the `config` command in the AWS IoT Greengrass Development Kit Command-Line Interface (GDK CLI) to modify the configuration for the GDK in the configuration file, `gdk-config.json`.
 

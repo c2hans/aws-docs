@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/image-work
 ---
 
 # Create a YAML workflow document
-<a name="image-workflow-create-document"></a>
 
 The YAML format definition document configures input, output, and workflow steps for the build, test, and distribution stages of the image creation process. The same document format applies to all three workflow types. You can start from templates that include standardized steps, or you can start from scratch to define your own workflow. Whether you use a template or start from scratch, you can customize the workflow to fit your needs.
 

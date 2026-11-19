@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayMulticastGroup
-<a name="API_TransitGatewayMulticastGroup"></a>
 
 Describes the transit gateway multicast group resources.
 

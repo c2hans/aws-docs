@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_FleetS
 ---
 
 # FleetStatus
-<a name="API_FleetStatus"></a>
 
 The status of the compute fleet.
 

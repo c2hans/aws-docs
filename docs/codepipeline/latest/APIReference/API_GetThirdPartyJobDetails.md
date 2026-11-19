@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Get
 ---
 
 # GetThirdPartyJobDetails
-<a name="API_GetThirdPartyJobDetails"></a>
 
 Requests the details of a job for a third party action. Used for partner actions only.
 

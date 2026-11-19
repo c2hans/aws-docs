@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Endpoin
 ---
 
 # EndpointAccess
-<a name="API_EndpointAccess"></a>
 
 Describes a Redshift-managed VPC endpoint.
 

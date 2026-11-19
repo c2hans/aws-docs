@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/gsg/t_querying_redshift_
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Query the system tables and views
-<a name="t_querying_redshift_system_tables"></a>
 
 In addition to the tables that you create, your data warehouse contains a number of system tables and views. These tables and views contain information about your installation and the various queries and processes that are running on the system. You can query these system tables and views to collect information about your database. For more information, see [System tables and views reference](https://docs.aws.amazon.com/redshift/latest/dg/cm_chap_system-tables.html) in the *Amazon Redshift Database Developer Guide*. The description for each table or view indicates whether a table is visible to all users or only to superusers. Log in as a superuser to query tables that are visible only to superusers.
 

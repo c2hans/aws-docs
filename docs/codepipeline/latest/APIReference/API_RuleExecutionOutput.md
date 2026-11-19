@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Rul
 ---
 
 # RuleExecutionOutput
-<a name="API_RuleExecutionOutput"></a>
 
 Output details listed for a rule execution, such as the rule execution result.
 

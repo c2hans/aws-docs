@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_LambdaLaye
 ---
 
 # LambdaLayerAggregationResponse
-<a name="API_LambdaLayerAggregationResponse"></a>
 
 A response that contains the results of an AWS Lambda function layer finding aggregation.
 

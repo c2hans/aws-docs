@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # GetCredentialsForIdentity
-<a name="API_GetCredentialsForIdentity"></a>
 
 Returns credentials for the provided identity ID. Any provided logins will be validated against supported login providers. If the token is for `cognito-identity.amazonaws.com`, it will be passed through to AWS Security Token Service with the appropriate role for the token.
 

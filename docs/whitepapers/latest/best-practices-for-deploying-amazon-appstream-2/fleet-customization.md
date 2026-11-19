@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Fleet customization
-<a name="fleet-customization"></a>
 
 ## Fleet type
 <a name="fleet-type"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteS
 ---
 
 # DeleteSnapshotCopyGrant
-<a name="API_DeleteSnapshotCopyGrant"></a>
 
 Deletes the specified snapshot copy grant.
 

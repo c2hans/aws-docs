@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cr-fleets.html
 ---
 
 # Capacity Reservation Fleets
-<a name="cr-fleets"></a>
 
 An *On-Demand Capacity Reservation Fleet* is a group of Capacity Reservations.
 

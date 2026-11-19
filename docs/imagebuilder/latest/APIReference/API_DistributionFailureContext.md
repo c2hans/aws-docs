@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Dis
 ---
 
 # DistributionFailureContext
-<a name="API_DistributionFailureContext"></a>
 
 Contains details about a failure that occurred while Image Builder distributed the image or applied configuration to the distributed image.
 

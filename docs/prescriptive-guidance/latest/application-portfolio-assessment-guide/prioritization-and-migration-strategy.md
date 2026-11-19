@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Prioritization and migration strategy
-<a name="prioritization-and-migration-strategy"></a>
 
 A key element of migration planning is to establish prioritization criteria. The point of this exercise is to understand the order in which applications will be migrated. The strategy is to take an iterative and progressive approach to evolve the prioritization model.
 

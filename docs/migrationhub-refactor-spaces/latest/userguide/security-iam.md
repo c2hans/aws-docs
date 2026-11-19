@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/user
 AWS Migration Hub Refactor Spaces is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub Refactor Spaces, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Identity and Access Management for AWS Migration Hub Refactor Spaces
-<a name="security-iam"></a>
 
 AWS Identity and Access Management (IAM) is an AWS service that helps an administrator securely control access to AWS resources. IAM administrators control who can be *authenticated* (signed in) and *authorized* (have permissions) to use Refactor Spaces resources. IAM is an AWS service that you can use with no additional charge.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Recov
 ---
 
 # RecoveryPointByBackupVault
-<a name="API_RecoveryPointByBackupVault"></a>
 
 Contains detailed information about the recovery points stored in a backup vault.
 

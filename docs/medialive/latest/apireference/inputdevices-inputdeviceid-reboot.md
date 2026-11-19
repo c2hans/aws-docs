@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 ---
 
 # Input devices: reboot
-<a name="inputdevices-inputdeviceid-reboot"></a>
 
 ## URI
 <a name="inputdevices-inputdeviceid-reboot-url"></a>

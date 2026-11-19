@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/gg-demov2.html
 ---
 
 # AWS IoT Greengrass V2
-<a name="gg-demov2"></a>
 
 ## Compatibility with AWS IoT Greengrass V2 devices
 <a name="ggv2-compatibility"></a>

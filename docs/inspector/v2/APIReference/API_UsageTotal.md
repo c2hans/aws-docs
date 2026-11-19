@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_UsageTotal
 ---
 
 # UsageTotal
-<a name="API_UsageTotal"></a>
 
 The total of usage for an account ID.
 

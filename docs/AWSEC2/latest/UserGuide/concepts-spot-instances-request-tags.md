@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts-spot-in
 ---
 
 # Tag Spot Instance requests
-<a name="concepts-spot-instances-request-tags"></a>
 
 To help categorize and manage your Spot Instance requests, you can tag them with custom metadata. You can assign a tag to a Spot Instance request when you create it, or afterward. You can assign tags using the Amazon EC2 console or a command line tool.
 

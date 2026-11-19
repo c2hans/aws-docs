@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_AccessKey.ht
 ---
 
 # AccessKey
-<a name="API_AccessKey"></a>
 
 Contains information about an AWS access key.
 

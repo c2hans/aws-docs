@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/vecto
 ---
 
 # The  `.vectors.get`  algorithm
-<a name="vectors-get"></a>
 
 The `.vectors.get` algorithm retrieves the embedding for a node.
 

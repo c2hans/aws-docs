@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/onelo
 ---
 
 # Source configuration for OneLogin Identity
-<a name="onelogin-identity-source-setup"></a>
 
 ## Integrating with OneLogin Identity
 <a name="onelogin-identity-integration"></a>

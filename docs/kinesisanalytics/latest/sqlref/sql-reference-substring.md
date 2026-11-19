@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # SUBSTRING
-<a name="sql-reference-substring"></a>
 
 ```
  SUBSTRING ( <source-string> FROM <start-position> [ FOR <string-length> ] )

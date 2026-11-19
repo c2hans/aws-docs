@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonVPCCrossAccountNetworkInterfaceOperations
-<a name="AmazonVPCCrossAccountNetworkInterfaceOperations"></a>
 
 **Description**: Provides access to create network interfaces and attach them to cross-account resources
 

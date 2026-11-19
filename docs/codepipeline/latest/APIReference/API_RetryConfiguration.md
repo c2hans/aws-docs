@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Ret
 ---
 
 # RetryConfiguration
-<a name="API_RetryConfiguration"></a>
 
 The retry configuration specifies automatic retry for a failed stage, along with the configured retry mode.
 

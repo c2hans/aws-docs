@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ListAutomationRules
-<a name="API_automation_ListAutomationRules"></a>
 
  Lists the automation rules that match specified filters.
 

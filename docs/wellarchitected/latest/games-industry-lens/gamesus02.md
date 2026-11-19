@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Hardware and services
-<a name="gamesus02"></a>
 
 |  GAMESUS02: How do you manage the use of compute resources in your games backend?   |
 | --- |

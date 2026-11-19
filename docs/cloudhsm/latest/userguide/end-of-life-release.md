@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/end-of-life-re
 ---
 
 # AWS CloudHSM end-of-life Client SDK releases
-<a name="end-of-life-release"></a>
 
 The following AWS CloudHSM client versions have reached the end of support. These AWS CloudHSM client versions are no longer compatible with the service and will not receive updates. To preserve the security of your application, AWS CloudHSM might refuse connections from releases that have reached the end of support.
 + SDK versions 3.4.4 and earlier have reached the end of support.

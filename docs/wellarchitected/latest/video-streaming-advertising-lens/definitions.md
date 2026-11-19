@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Definitions
-<a name="definitions"></a>
 
  The following terms are used throughout this lens. They represent the key concepts and personas in programmatic advertising that inform the best practices in each pillar.
 

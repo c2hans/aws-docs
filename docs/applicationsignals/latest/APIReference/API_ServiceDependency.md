@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # ServiceDependency
-<a name="API_ServiceDependency"></a>
 
 This structure contains information about one dependency of this service.
 

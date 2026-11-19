@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RecommendedAction
-<a name="API_automation_RecommendedAction"></a>
 
 Contains information about a recommended action that can be applied to optimize an AWS resource.
 

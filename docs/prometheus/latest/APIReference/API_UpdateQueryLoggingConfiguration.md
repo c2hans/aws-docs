@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Updat
 ---
 
 # UpdateQueryLoggingConfiguration
-<a name="API_UpdateQueryLoggingConfiguration"></a>
 
 Updates the query logging configuration for the specified workspace.
 

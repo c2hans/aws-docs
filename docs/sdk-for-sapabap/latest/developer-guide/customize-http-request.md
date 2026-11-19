@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/c
 ---
 
 # Customize HTTP requests to AWS
-<a name="customize-http-request"></a>
 
 The AWS SDK for SAP ABAP handles the process of creating an HTTP request, sending a payload, and receiving a response. You can customize the behavior or content of the HTTP request to meet your own IT requirements. The SDK defines enhancement spot `/AWS1/RT_EHN_HTTP_CLIENT` as a central place to enhance the HTTP communication. The enhancement spot supports adding HTTP headers to the request made to AWS.
 

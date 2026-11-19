@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Policy size per resource
-<a name="policy-size-per-resource"></a>
 
 Verified Permissions limits the total size of all policies that reference the same resource. This limit is the *Policy size per resource* quota, and its default value is 1 MB. When you call `CreatePolicy` or `UpdatePolicy`, Verified Permissions calculates the new total for the referenced resource. If the new total exceeds the quota, the request fails with a `ServiceQuotaExceededException`.
 

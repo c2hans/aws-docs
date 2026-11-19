@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # DSOPS04-BP01 Maintain continuous visibility of your compliance status
-<a name="dsops04-bp01"></a>
 
  Point-in-time audits and periodic assessments don't reflect the real state of compliance. A workload that meets regulatory requirements today may fall out of compliance the next day. Continuous visibility into compliance status across jurisdictions helps teams detect drift early, prioritize remediation by regulatory impact, and demonstrate ongoing adherence to auditors.
 

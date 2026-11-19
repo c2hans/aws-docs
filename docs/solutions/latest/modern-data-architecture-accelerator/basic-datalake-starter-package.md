@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Basic Data Lake Starter Package
-<a name="basic-datalake-starter-package"></a>
 
 The Basic Data Lake Starter Package establishes a robust foundation for storing and managing large volumes of data in its native format.
 

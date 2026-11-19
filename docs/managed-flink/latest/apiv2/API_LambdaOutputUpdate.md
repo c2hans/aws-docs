@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_LambdaOut
 ---
 
 # LambdaOutputUpdate
-<a name="API_LambdaOutputUpdate"></a>
 
 When you update an SQL-based Kinesis Data Analytics application's output configuration using the [UpdateApplication](API_UpdateApplication.md) operation, provides information about an Amazon Lambda function that is configured as the destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_U
 ---
 
 # UpdateDevice
-<a name="API_UpdateDevice"></a>
 
 Updates the details for an existing device. To remove information for any of the parameters, specify an empty string.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/polly_example_pol
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Getting started with text-to-speech synthesis
-<a name="polly_example_polly_GettingStarted_082_section"></a>
 
 The following code example shows how to:
 + Clean up resources

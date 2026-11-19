@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/offline-volumes.ht
 ---
 
 # Viewing offline volumes
-<a name="offline-volumes"></a>
 
 You can't create or delete volume backups when the source volume is offline. You can use the [`volume show`](https://docs.netapp.com/us-en/ontap-cli-9131/volume-show.html) ONTAP CLI command to determine a volume's current status.
 

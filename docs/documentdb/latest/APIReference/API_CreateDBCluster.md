@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Creat
 ---
 
 # CreateDBCluster
-<a name="API_CreateDBCluster"></a>
 
 Creates a new Amazon DocumentDB cluster.
 

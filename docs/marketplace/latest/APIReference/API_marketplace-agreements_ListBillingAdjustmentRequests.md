@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ListBillingAdjustmentRequests
-<a name="API_marketplace-agreements_ListBillingAdjustmentRequests"></a>
 
 Lists billing adjustment requests for a specific agreement. Sellers (proposers) can use this operation to view all billing adjustment requests associated with an agreement.
 

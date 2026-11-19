@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListGat
 ---
 
 # ListGatewayRoutes
-<a name="API_ListGatewayRoutes"></a>
 
 Returns a list of existing gateway routes that are associated to a virtual gateway.
 

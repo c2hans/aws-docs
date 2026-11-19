@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/csv-e
 ---
 
 # Query examples using CSV
-<a name="csv-examples"></a>
 
  In this example, the query returns the number of rows in a given CSV file:
 

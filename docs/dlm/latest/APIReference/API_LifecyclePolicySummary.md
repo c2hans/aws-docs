@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_LifecyclePol
 ---
 
 # LifecyclePolicySummary
-<a name="API_LifecyclePolicySummary"></a>
 
 Summary information about a lifecycle policy.
 

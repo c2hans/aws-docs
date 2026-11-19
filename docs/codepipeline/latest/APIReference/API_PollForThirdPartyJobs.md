@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Pol
 ---
 
 # PollForThirdPartyJobs
-<a name="API_PollForThirdPartyJobs"></a>
 
 Determines whether there are any third party jobs for a job worker to act on. Used for partner actions only.
 

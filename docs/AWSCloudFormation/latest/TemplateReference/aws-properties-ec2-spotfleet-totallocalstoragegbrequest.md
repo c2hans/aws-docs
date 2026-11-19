@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::SpotFleet TotalLocalStorageGBRequest
-<a name="aws-properties-ec2-spotfleet-totallocalstoragegbrequest"></a>
 
 The minimum and maximum amount of total local storage, in GB.
 

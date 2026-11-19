@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Financial data mesh
-<a name="financial-data-mesh"></a>
 
  A commonly sought-after goal of financial services organizations is to provide access to data and to extract additional value from data that is generated or acquired across their multiple business units. For example, historical market data, alternative investment data, transaction and business process data, and third-party data sets can be combined to provide for analytics and training machine learning models.
 

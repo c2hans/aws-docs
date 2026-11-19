@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reserva
 ---
 
 # Create a Capacity Reservation
-<a name="capacity-reservations-create"></a>
 
 You can create a Capacity Reservation at any time to ensure that you have compute capacity available in a specific Availability Zone. A Capacity Reservation can start immediately, or it can start at a future date. The capacity becomes available for use only after the Capacity Reservation enters the `active` state.
 

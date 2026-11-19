@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-access-trainin
 ---
 
 # Configure data input channel to use Amazon FSx for Lustre
-<a name="model-access-training-data-fsx"></a>
 
 Learn how to use Amazon FSx for Lustre as your data source for higher throughput and faster training by reducing the time for data loading.
 

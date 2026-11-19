@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # CallAnalyticsLanguageWithScore
-<a name="API_streaming_CallAnalyticsLanguageWithScore"></a>
 
 The language code that represents the language identified in your audio, including the associated confidence score.
 

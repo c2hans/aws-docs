@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelD
 ---
 
 # ModelDashboardIndicatorAction
-<a name="API_ModelDashboardIndicatorAction"></a>
 
 An alert action taken to light up an icon on the Amazon SageMaker Model Dashboard when an alert goes into `InAlert` status.
 

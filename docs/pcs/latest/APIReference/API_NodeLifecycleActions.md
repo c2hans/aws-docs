@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_NodeLifecycl
 ---
 
 # NodeLifecycleActions
-<a name="API_NodeLifecycleActions"></a>
 
 The lifecycle actions configured on a compute node group. Lifecycle actions define scripts that AWS PCS runs on compute nodes at specific stages of their lifecycle.
 

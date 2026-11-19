@@ -3,6 +3,5 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/operational
 ---
 
 # Operational Best Practices for AWS Identity And Access Management
-<a name="operational-best-practices-for-aws-identity-and-access-management"></a>
 
 The template is available on GitHub: [Operational Best Practices for AWS Identity And Access Management](https://github.com/awslabs/aws-config-rules/blob/master/aws-config-conformance-packs/Operational-Best-Practices-for-AWS-Identity-and-Access-Management.yaml).

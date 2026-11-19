@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # AWS Cloud Development Kit for Kubernetes
-<a name="aws-cdk-for-kubernetes"></a>
 
 [AWS Cloud Development Kit for Kubernetes](https://aws.amazon.com/blogs/containers/introducing-cdk-for-kubernetes) is an open-source software development framework for defining Kubernetes applications using general-purpose programming languages.
 

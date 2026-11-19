@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # DescribeImageTags
-<a name="API_DescribeImageTags"></a>
 
 Returns the image tag details for a repository in a public registry.
 

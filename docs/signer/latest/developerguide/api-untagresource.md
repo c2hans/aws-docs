@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/api-untagre
 ---
 
 # UntagResource
-<a name="api-untagresource"></a>
 
 The following Java example shows how to use the [`UntagResource`](url-signer-api;API_UntagResource.html) operation.
 

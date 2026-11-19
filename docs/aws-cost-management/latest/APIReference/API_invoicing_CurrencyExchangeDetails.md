@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CurrencyExchangeDetails
-<a name="API_invoicing_CurrencyExchangeDetails"></a>
 
 The details of currency exchange.
 

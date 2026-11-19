@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-saphana-source-n
 ---
 
 # Creating a SAP HANA source node
-<a name="creating-saphana-source-node"></a>
 
 ## Prerequisites needed
 <a name="creating-saphana-source-node-prerequisites"></a>

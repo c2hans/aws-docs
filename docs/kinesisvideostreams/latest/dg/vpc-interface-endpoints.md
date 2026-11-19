@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/vpc-interf
 ---
 
 # Access Amazon Kinesis Video Streams using AWS PrivateLink
-<a name="vpc-interface-endpoints"></a>
 
 You can access Amazon Kinesis Video Streams privately from your VPC using an interface VPC endpoint powered by AWS PrivateLink. With this endpoint, traffic between your VPC and Kinesis Video Streams does not traverse the public internet. The endpoint provides private access to the Kinesis Video Streams control plane and to the video ingestion and playback data planes.
 

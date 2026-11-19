@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Use prompt datasets for model evaluation in Amazon Bedrock
-<a name="model-evaluation-prompt-datasets"></a>
 
 To create an automatic model evaluation job you must specify a prompt dataset. The prompts are then used during inference with the model you select to evaluate. Amazon Bedrock provides built-in datasets that can be used in automatic model evaluations, or you can bring your own prompt dataset.
 

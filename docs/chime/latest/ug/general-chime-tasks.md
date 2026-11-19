@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/general-chime-tasks.html
 ---
 
 # General Amazon Chime tasks
-<a name="general-chime-tasks"></a>
 
 Amazon Chime provides a set of general tasks that you can perform at almost any time. The following sections explain how to complete them.
 

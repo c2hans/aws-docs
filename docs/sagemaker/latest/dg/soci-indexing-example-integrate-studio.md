@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/soci-indexing-exampl
 ---
 
 # Integrate SOCI-indexed images with Studio example
-<a name="soci-indexing-example-integrate-studio"></a>
 
 You must reference the SOCI-indexed image tag to use SOCI-indexed images in Studio, rather than the original container image tag. Use the tag you specified during the SOCI conversion process (e.g., `SOCI_IMAGE_TAG` in the [Create SOCI indexes with nerdctl and SOCI CLI example](soci-indexing-example-create-indexes.md)).
 

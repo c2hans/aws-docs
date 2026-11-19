@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-7-18-2019.h
 ---
 
 # Amazon Linux 2 07/18/2019 release notes
-<a name="relnotes-7-18-2019"></a>
 
 These are release notes for Amazon Linux 2.
 

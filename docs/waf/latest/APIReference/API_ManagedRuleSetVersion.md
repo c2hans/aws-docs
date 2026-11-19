@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ManagedRuleS
 ---
 
 # ManagedRuleSetVersion
-<a name="API_ManagedRuleSetVersion"></a>
 
 Information for a single version of a managed rule set.
 

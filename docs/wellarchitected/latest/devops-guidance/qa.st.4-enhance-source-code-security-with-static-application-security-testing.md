@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 ---
 
 # [QA.ST.4] Enhance source code security with static application security testing
-<a name="qa.st.4-enhance-source-code-security-with-static-application-security-testing"></a>
 
  **Category:** FOUNDATIONAL
 

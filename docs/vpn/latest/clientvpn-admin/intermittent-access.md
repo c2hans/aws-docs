@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/intermittent-
 ---
 
 # Troubleshooting AWS Client VPN: Access to a peered VPC, Amazon S3, or the internet is intermittent
-<a name="intermittent-access"></a>
 
 **Problem**
 I have intermittent connectivity issues when connecting to a peered VPC, Amazon S3, or the internet, but access to associated subnets is unaffected. I need to disconnect and reconnect in order to resolve the connectivity issues.

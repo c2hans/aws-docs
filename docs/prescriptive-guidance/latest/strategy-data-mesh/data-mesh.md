@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Getting started with data mesh
-<a name="data-mesh"></a>
 
 It's important that your vision for a data solution aligns with the strategy and vision of your organization. To best inform architecture design, begin by envisioning the desired data landscape across your lines of business. The architecture of the data solution will determine the ways of working within your organization. It's important to start by identifying the user persona requirements across business units. In addition, refer to your organization's strategy and vision to identify the data solution approach that meets your requirements.
 

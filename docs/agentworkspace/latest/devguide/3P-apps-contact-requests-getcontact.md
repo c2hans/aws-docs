@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Get detailed contact information in Connect Customer agent workspace
-<a name="3P-apps-contact-requests-getcontact"></a>
 
 Retrieves detailed information for a specific contact by its ID.
 

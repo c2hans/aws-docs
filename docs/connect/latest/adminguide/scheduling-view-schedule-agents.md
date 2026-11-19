@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/scheduling-vie
 ---
 
 # How agents view their schedule in the Connect Customer agent workspace
-<a name="scheduling-view-schedule-agents"></a>
 
 There are two ways agents can access their schedules:
 + If your organization uses the Connect Customer agent workspace, agents access their schedule by entering `https://{{instance-name}}/connect/agent/` into their browser and then choosing the calendar icon.

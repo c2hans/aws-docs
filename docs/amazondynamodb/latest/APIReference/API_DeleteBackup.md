@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DeleteBackup
-<a name="API_DeleteBackup"></a>
 
 Deletes an existing backup of a table.
 

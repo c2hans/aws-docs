@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ZeppelinM
 ---
 
 # ZeppelinMonitoringConfiguration
-<a name="API_ZeppelinMonitoringConfiguration"></a>
 
 Describes configuration parameters for Amazon CloudWatch logging for a Managed Service for Apache Flink Studio notebook. For more information about CloudWatch logging, see [Monitoring](https://docs.aws.amazon.com/kinesisanalytics/latest/java/monitoring-overview.html).
 

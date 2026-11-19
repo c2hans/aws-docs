@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/integra
 ---
 
 # Method request behavior for payloads without mapping templates for REST APIs in API Gateway
-<a name="integration-passthrough-behaviors"></a>
 
 If your method request has a payload and you don't have a mapping template defined for the `Content-Type` header, you can choose to pass the client-supplied request payload through the integration request to the backend without transformation. The process is known as integration passthrough.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SignInCo
 ---
 
 # SignInConfig
-<a name="API_SignInConfig"></a>
 
 The distribution that determines which AWS Regions should be used to sign in agents in to both the instance and its replica(s).
 

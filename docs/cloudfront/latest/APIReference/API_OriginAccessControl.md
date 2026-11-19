@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origi
 ---
 
 # OriginAccessControl
-<a name="API_OriginAccessControl"></a>
 
 A CloudFront origin access control, including its unique identifier.
 

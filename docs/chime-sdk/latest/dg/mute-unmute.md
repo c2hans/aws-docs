@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/mute-unmute.html
 ---
 
 # ModifyChimeMeetingAttendee (muting and unmuting audio)
-<a name="mute-unmute"></a>
 
 Allows the SIP media application to modify the status of a telephony attendee by providing the Amazon Chime SDK meeting ID and attendee list.
 

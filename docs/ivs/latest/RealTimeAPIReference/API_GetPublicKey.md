@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_GetP
 ---
 
 # GetPublicKey
-<a name="API_GetPublicKey"></a>
 
 Gets information for the specified public key.
 

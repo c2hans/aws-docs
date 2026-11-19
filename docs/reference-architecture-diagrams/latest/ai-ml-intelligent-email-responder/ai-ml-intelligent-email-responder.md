@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # AI/ML Based Intelligent Email Responder
-<a name="ai-ml-intelligent-email-responder"></a>
 
 Publication date: **March 10, 2021 ([Diagram history](#diagram-history))**
 

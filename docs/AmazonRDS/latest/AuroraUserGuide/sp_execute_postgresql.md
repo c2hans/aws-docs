@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/sp_exec
 ---
 
 # sp\_execute\_postgresql
-<a name="sp_execute_postgresql"></a>
 
 You can execute PostgreSQL statements from T-SQL endpoint. This simplifies your applications as you don’t need to exit T-SQL port to execute these statements.
 

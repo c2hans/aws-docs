@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableFas
 ---
 
 # EnableFastSnapshotRestoreErrorItem
-<a name="API_EnableFastSnapshotRestoreErrorItem"></a>
 
 Contains information about the errors that occurred when enabling fast snapshot restores.
 

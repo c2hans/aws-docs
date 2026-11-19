@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/IC-TF-Models.html
 ---
 
 # TensorFlow Hub Models
-<a name="IC-TF-Models"></a>
 
 The following pretrained models are available to use for transfer learning with the Image Classification - TensorFlow algorithm.
 

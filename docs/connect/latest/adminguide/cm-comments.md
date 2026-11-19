@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/cm-comments.ht
 ---
 
 # Add comments to a case in Connect Customer
-<a name="cm-comments"></a>
 
 Agents have the ability to view and add comments to a case.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/set-up-an-aws-transfer-f
 ---
 
 # Task 3: Create the instance
-<a name="module-3"></a>
 
 |  |  |
 | --- |--- |

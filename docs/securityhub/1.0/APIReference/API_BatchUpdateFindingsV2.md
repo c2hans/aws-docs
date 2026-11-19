@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUp
 ---
 
 # BatchUpdateFindingsV2
-<a name="API_BatchUpdateFindingsV2"></a>
 
 Updates information about a customer's investigation into a finding. Delegated administrator accounts can update findings for their account and their member accounts. Member accounts can update findings for their own account.
 

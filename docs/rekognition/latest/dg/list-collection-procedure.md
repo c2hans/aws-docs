@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/list-collection-pr
 ---
 
 # Listing collections
-<a name="list-collection-procedure"></a>
 
 You can use the [ListCollections](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListCollections.html) operation to list the collections in the region that you are using.
 

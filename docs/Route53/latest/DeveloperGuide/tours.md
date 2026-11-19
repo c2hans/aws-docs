@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/tours.html
 ---
 
 # .tours
-<a name="tours"></a>
 
 Used as a general extension, but ideal for travel companies.
 

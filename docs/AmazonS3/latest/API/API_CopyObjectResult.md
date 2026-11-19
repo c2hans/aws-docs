@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObjectResult
 ---
 
 # CopyObjectResult
-<a name="API_CopyObjectResult"></a>
 
 Container for all response elements.
 

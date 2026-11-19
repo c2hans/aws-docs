@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/downstream-system-fo
 ---
 
 # Options for handling Microsoft Smooth output
-<a name="downstream-system-for-mss"></a>
 
 If you are delivering to a Microsoft Smooth Streaming server, the setup depends on whether you want to protect your content with a digital rights management (DRM) solution. DRM prevents unauthorized people from accessing the content.
 + If you don't want to implement DRM, then create a Microsoft Smooth output group.

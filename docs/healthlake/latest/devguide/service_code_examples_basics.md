@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/service_code_
 ---
 
 # Basic examples for HealthLake using AWS SDKs
-<a name="service_code_examples_basics"></a>
 
 The following code examples show how to use the basics of AWS HealthLake with AWS SDKs.
 

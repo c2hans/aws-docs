@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/mi
 ---
 
 # Migrate
-<a name="migrate-cost"></a>
 
  Cost optimization doesn't stop after you complete the migration to Cloud. It's essential to seamlessly manage resources and optimize costs on regular basis. Start by closely monitoring your resources throughout both the migration and post-migration stages to ensure smooth transitions. Develop a thoughtful metrics strategy to demystify cloud economics, enabling informed decision-making. Establish budgeting mechanisms to continually monitor cost and usage, and construct user-friendly dashboards with pre-built visualizations for enhanced visibility. Choose the right purchase options and scalable architectures tailored to your specific workloads, and consider a long-term modernization strategy that embraces cost-effective cloud-native services.
 

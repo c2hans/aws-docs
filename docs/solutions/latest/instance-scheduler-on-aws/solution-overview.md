@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Automate starting and stopping AWS instances
-<a name="solution-overview"></a>
 
 The Instance Scheduler on AWS solution automates the starting and stopping of various AWS services including [Amazon Elastic Compute Cloud](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html) (Amazon EC2) and [Amazon Relational Database Service](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html) (Amazon RDS) instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagMFADevice
 ---
 
 # TagMFADevice
-<a name="API_TagMFADevice"></a>
 
 Adds one or more tags to an IAM virtual multi-factor authentication (MFA) device. If a tag with the same key name already exists, then that tag is overwritten with the new value.
 

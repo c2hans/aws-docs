@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sts_example_ecs_G
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Creating a container service for virtual machine instances
-<a name="sts_example_ecs_GettingStarted_018_section"></a>
 
 The following code example shows how to:
 + Create an ECS cluster

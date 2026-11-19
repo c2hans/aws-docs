@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/filesystem-slash-etc.htm
 ---
 
 # `/etc` (system configuration)
-<a name="filesystem-slash-etc"></a>
 
 The `/etc` directory contains system-specific configuration. It is on the root file system and writable by privileged users.
 

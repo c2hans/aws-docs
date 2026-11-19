@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/bitbucket-web
 ---
 
 # Filter Bitbucket webhook events (console)
-<a name="bitbucket-webhook-events-console"></a>
 
  To use the AWS Management Console to filter webhook events:
 

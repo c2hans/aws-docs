@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_E
 ---
 
 # ExportSummary
-<a name="API_ExportSummary"></a>
 
 Summary statuses of an archive export job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/how-to-tag-r
 ---
 
 # Edit tags for a rule groups namespace
-<a name="how-to-tag-rule-groups-namespace-update"></a>
 
 You can change the value for a tag associated with a rule groups namespace. You can also change the name of the key, which is equivalent to removing the current tag and adding a different one with the new name and the same value as the other key.
 

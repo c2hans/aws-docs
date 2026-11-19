@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Cost optimization journey
-<a name="cost-optimization-journey"></a>
 
 The scope, timing, and specific path of your cloud migration journey depend on your business objectives, technical requirements, and other factors. This section provides an example of a cloud migration journey that's focused on [Cloud Financial Management with AWS](https://aws.amazon.com/aws-cost-management/) and adheres to MACO recommendations and best practices. You can use this example to understand how to design a cloud migration journey for Microsoft workloads.
 

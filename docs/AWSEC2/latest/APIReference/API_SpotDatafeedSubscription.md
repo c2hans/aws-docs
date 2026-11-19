@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SpotDataf
 ---
 
 # SpotDatafeedSubscription
-<a name="API_SpotDatafeedSubscription"></a>
 
 Describes the data feed for a Spot Instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Inte
 ---
 
 # IntermediateTableAnalysisRuleCustom
-<a name="API_IntermediateTableAnalysisRuleCustom"></a>
 
 Contains the custom analysis rule configuration for an intermediate table.
 

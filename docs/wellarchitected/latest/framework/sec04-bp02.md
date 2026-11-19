@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec04-b
 ---
 
 # SEC04-BP02 Prepare metrics, alarms, and dashboards
-<a name="sec04-bp02"></a>
 
  Metrics, alarms, and dashboards turn security data into signals your team can act on. When you track the right measurements and present them clearly, you can spot early warning signs, respond before an incident escalates, and show whether your security posture is improving over time.
 

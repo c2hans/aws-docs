@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CommandPaylo
 ---
 
 # CommandPayload
-<a name="API_CommandPayload"></a>
 
 The command payload object that contains the instructions for the device to process.
 

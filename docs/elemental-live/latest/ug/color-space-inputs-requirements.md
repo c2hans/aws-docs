@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/color-space-inp
 ---
 
 # Requirements for inputs
-<a name="color-space-inputs-requirements"></a>
 
 **Supported input types**
 

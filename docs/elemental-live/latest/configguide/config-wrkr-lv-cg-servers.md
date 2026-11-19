@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/config
 ---
 
 # Configure Domain Name System (DNS) Network Time Protocol (NTP) Servers
-<a name="config-wrkr-lv-cg-servers"></a>
 
 You can add Domain Name System (DNS) name servers and Network Time Protocol (NTP) servers for the AWS Elemental Live node to use.
 

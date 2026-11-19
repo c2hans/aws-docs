@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/activate-user-op.
 ---
 
 # Implement the AWS.ActivateUser operation
-<a name="activate-user-op"></a>
 
 The `AWS.ActivateUser` operation is required for Managed Integrations for AWS IoT Device Management to retrieve a user identifier from an end user. For OAuth 2.0, Managed Integrations for AWS IoT Device Management will pass the OAuth token within the request header. For General Authorization, Managed Integrations for AWS IoT Device Management will pass the AWS Secrets Manager reference. Your connector must include the globally unique user identifier in the response payload.
 

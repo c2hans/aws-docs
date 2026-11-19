@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Req
 ---
 
 # Request Authentication
-<a name="RequestAuthentication"></a>
 
 **Topics**
 + [What Is Authentication?](WhatIsAuthentication.md)

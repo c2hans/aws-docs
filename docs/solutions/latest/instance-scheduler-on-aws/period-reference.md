@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Period reference
-<a name="period-reference"></a>
 
 Periods contain conditions that allow you to set the specific hours, days, and months an instance will run. A period can contain multiple conditions, but all conditions must be true for the Instance Scheduler on AWS to apply the appropriate start or stop action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/apache-iceberg-prere
 ---
 
 # Prerequisites to use Apache Iceberg Tables as a destination
-<a name="apache-iceberg-prereq"></a>
 
 Choose from the following options to complete the required prerequisites.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/wfdoc-dyna
 ---
 
 # Use dynamic variables in your workflow document
-<a name="wfdoc-dynamic-vars"></a>
 
 You can use dynamic variables in your workflow documents to represent values that vary at runtime for your image creation process. String interpolation for dynamic variables allows you to embed JSONPath expressions within structured content such as JSON strings.This is particularly useful when you need to pass runtime values within complex payloads to step actions like `ExecuteStateMachine` or `WaitForAction`.
 

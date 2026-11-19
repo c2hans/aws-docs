@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/consolidate-orgs.htm
 ---
 
 # Consolidating GuardDuty administrator accounts under a single organization
-<a name="consolidate-orgs"></a>
 
 GuardDuty recommends using association through AWS Organizations to manage member accounts under a delegated GuardDuty administrator account. You can use the example process outlined below to consolidate administrator account and member associated by invitation in an organization under a single GuardDuty delegated GuardDuty administrator account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Ma
 ---
 
 # ManagedTemplate
-<a name="API_ManagedTemplate"></a>
 
 Configuration for using a managed note template
 

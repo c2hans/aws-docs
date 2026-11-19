@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/COUNT.h
 ---
 
 # COUNT function
-<a name="COUNT"></a>
 
  The COUNT function counts the rows defined by the expression.
 

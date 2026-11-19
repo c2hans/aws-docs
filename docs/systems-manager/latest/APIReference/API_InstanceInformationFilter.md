@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # InstanceInformationFilter
-<a name="API_InstanceInformationFilter"></a>
 
 Describes a filter for a specific list of managed nodes. You can filter node information by using tags. You specify tags by using a key-value mapping.
 

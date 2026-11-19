@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RejectTra
 ---
 
 # RejectTransitGatewayMulticastDomainAssociations
-<a name="API_RejectTransitGatewayMulticastDomainAssociations"></a>
 
 Rejects a request to associate cross-account subnets with a transit gateway multicast domain.
 

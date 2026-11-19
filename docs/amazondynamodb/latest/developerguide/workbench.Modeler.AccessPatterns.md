@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/wor
 ---
 
 # Adding and validating access patterns
-<a name="workbench.Modeler.AccessPatterns"></a>
 
 You can use NoSQL Workbench for Amazon DynamoDB to create, store, and validate *access patterns*.
 

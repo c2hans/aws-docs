@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # YEAR
-<a name="recipe-actions.functions.YEAR"></a>
 
 Creates a new column containing the year, from a string that represents a date.
 

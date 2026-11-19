@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Pac
 ---
 
 # PackageGroupAllowedRepository
-<a name="API_PackageGroupAllowedRepository"></a>
 
  Details about an allowed repository for a package group, including its name and origin configuration.
 

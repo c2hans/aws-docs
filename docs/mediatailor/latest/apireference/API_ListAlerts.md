@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_List
 ---
 
 # ListAlerts
-<a name="API_ListAlerts"></a>
 
 Lists the alerts that are associated with a MediaTailor channel assembly resource.
 

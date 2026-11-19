@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/ac.html
 ---
 
 # .ac (Ascension Island)
-<a name="ac"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # OpsItemFilter
-<a name="API_OpsItemFilter"></a>
 
 Describes an OpsItem filter.
 

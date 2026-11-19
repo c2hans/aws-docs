@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/getting-started-cle
 ---
 
 # Clean up and troubleshoot to work with DMS Schema Conversion
-<a name="getting-started-clean-up"></a>
 
 You can use Amazon CloudWatch to review or share your DMS Schema Conversion logs.
 

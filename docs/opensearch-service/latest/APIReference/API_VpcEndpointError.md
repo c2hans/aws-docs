@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # VpcEndpointError
-<a name="API_VpcEndpointError"></a>
 
 Error information when attempting to describe an Amazon OpenSearch Service-managed VPC endpoint.
 

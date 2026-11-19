@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DomainNodesStatus
-<a name="API_DomainNodesStatus"></a>
 
 Container for information about nodes on the domain.
 

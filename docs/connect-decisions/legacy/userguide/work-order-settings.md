@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/work-
 ---
 
 # Orders settings
-<a name="work-order-settings"></a>
 
 You can setup orders and track the material status from vendor to delivery using the following procedure.
 

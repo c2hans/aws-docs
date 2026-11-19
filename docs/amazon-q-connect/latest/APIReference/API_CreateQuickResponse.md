@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # CreateQuickResponse
-<a name="API_amazon-q-connect_CreateQuickResponse"></a>
 
 Creates an Amazon Q in Connect quick response.
 

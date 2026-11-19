@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # S3OutputUrl
-<a name="API_S3OutputUrl"></a>
 
 A URL for the AWS Systems Manager (Systems Manager) bucket where you want to store the results of this request.
 

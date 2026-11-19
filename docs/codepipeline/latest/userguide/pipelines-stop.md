@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-
 ---
 
 # Stop a pipeline execution in CodePipeline
-<a name="pipelines-stop"></a>
 
 When a pipeline execution starts to run through a pipeline, it enters one stage at a time and locks the stage while all action executions in the stage are running. These in-progress actions must be handled in a way so that, when the pipeline execution is stopped, the actions are either allowed to complete or abandoned.
 

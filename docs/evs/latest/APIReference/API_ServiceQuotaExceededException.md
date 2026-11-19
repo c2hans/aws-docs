@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_ServiceQuota
 ---
 
 # ServiceQuotaExceededException
-<a name="API_ServiceQuotaExceededException"></a>
 
 The number of one or more Amazon EVS resources exceeds the maximum allowed. For a list of Amazon EVS quotas, see [Amazon EVS endpoints and quotas](https://docs.aws.amazon.com/evs/latest/userguide/service-quotas-evs.html) in the *Amazon EVS User Guide*. Delete some resources or request an increase in your service quota. To request an increase, see [AWS Service Quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html) in the * AWS General Reference Guide*.
 

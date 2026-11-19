@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/p
 ---
 
 # Predictive Equipment Health for Utilities
-<a name="predictive-equipment-health-utilities"></a>
 
 Publication date: **August 3, 2021 ([Diagram history](#peh-history))**
 

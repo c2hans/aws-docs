@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeT
 ---
 
 # DescribeTransitGatewayAttachments
-<a name="API_DescribeTransitGatewayAttachments"></a>
 
 Describes one or more attachments between resources and transit gateways. By default, all attachments are described. Alternatively, you can filter the results by attachment ID, attachment state, resource ID, or resource owner.
 

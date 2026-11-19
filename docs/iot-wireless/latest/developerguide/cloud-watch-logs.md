@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/cloud
 ---
 
 # Monitor AWS IoT Wireless using CloudWatch Logs
-<a name="cloud-watch-logs"></a>
 
 AWS IoT Core for LoRaWAN has more than 50 CloudWatch log entries that are enabled by default. Each log entry describes the event type, log level, and the resource type. For more information, see [AWS IoT Wireless resources and log levels](configure-logging.md#log-levels-resources).
 

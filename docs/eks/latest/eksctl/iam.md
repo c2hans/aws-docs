@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/iam.html
 ---
 
 # IAM
-<a name="iam"></a>
 
 This chapter includes information about working with AWS IAM.
 

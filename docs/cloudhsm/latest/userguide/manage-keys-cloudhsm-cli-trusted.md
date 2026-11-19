@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/manage-keys-cl
 ---
 
 # Mark a key as trusted using CloudHSM CLI
-<a name="manage-keys-cloudhsm-cli-trusted"></a>
 
 The content in this section provides instructions on using CloudHSM CLI to mark a key as trusted.
 

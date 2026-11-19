@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBProxies
-<a name="API_DescribeDBProxies"></a>
 
 Returns information about DB proxies.
 

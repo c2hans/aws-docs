@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Live
 ---
 
 # LiveSource
-<a name="API_LiveSource"></a>
 
 Live source configuration parameters.
 

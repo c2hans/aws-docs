@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/accessing-data-so
 ---
 
 # Accessing AWS resources
-<a name="accessing-data-sources"></a>
 
 |  |
 | --- |

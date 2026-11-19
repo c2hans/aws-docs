@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/troubleshootin
 ---
 
 # Troubleshooting: issues joining gateway to Active Directory
-<a name="troubleshooting-active-directory"></a>
 
 Use the following troubleshooting information to determine what to do if you receive error messages such as `NETWORK_ERROR`, `TIMEOUT`, or `ACCESS_DENIED` when trying to join your File Gateway to a Microsoft Active Directory domain.
 

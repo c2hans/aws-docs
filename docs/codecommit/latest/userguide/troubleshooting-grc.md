@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/troubleshoot
 ---
 
 # Troubleshooting git-remote-codecommit and AWS CodeCommit
-<a name="troubleshooting-grc"></a>
 
 The following information might help you troubleshoot issues with **git-remote-codecommit** when connecting with AWS CodeCommit repositories.
 

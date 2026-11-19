@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cog
 ---
 
 # Authorization with Amazon Verified Permissions
-<a name="amazon-cognito-authorization-with-avp"></a>
 
 [Amazon Verified Permissions](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/what-is-avp.html) is an authorization service for the applications that you build. When you add an Amazon Cognito user pool as an identity source, your app can pass user pool access or identity (ID) tokens to Verified Permissions for an allow or deny decision. Verified Permissions considers your user's properties and request context based on policies that you write in [Cedar Policy Language](https://docs.cedarpolicy.com/). The request context can include an identifier for the document, image, or other resource they requested, and the action that your user wants to take on the resource.
 

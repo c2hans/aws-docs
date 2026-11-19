@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/install-server/power-att
 ---
 
 # Attach the NSK to your Outposts server
-<a name="power-attach-nsk"></a>
 
 You must attach the NSK to the server so it can decrypt data on the server during operation.
 

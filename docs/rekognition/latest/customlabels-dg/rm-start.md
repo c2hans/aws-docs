@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/rm-st
 ---
 
 # Starting an Amazon Rekognition Custom Labels model
-<a name="rm-start"></a>
 
 You can start running an Amazon Rekognition Custom Labels model by using the console or by using the [StartProjectVersion](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartProjectVersion) operation.
 

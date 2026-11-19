@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/address-iss
 ---
 
 # Address code issues in Visual Studio
-<a name="address-issues-visualstudio"></a>
 
 To view code issues detected by Amazon Q in Visual Studio, open the Visual Studio **Error List** by expanding the **View** heading in the Visual Studio main menu and choosing **Error List**.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/js-aws-appsync-r
 ---
 
 # BatchPutItem
-<a name="js-aws-appsync-resolver-reference-dynamodb-batch-put-item"></a>
 
 The `BatchPutItem` request object lets you tell the AWS AppSync DynamoDB function to make a `BatchWriteItem` request to DynamoDB to put multiple items, potentially across multiple tables. For this request object, you must specify the following:
 + The table names where to put the items in

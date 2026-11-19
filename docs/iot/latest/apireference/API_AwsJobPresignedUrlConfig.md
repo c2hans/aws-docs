@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AwsJobPresig
 ---
 
 # AwsJobPresignedUrlConfig
-<a name="API_AwsJobPresignedUrlConfig"></a>
 
 Configuration information for pre-signed URLs. Valid when `protocols` contains HTTP.
 

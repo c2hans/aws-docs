@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-EnableAppSyncGraphQLApiLogging`
-<a name="aws-enable-appsync-graphql-api-logging"></a>
 
  **Description**
 

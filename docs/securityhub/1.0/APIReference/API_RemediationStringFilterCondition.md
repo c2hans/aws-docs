@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Remedia
 ---
 
 # RemediationStringFilterCondition
-<a name="API_RemediationStringFilterCondition"></a>
 
 The condition to apply to the string filter.
 

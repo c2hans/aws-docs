@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::FlowLog TagFieldSpecification
-<a name="aws-properties-ec2-flowlog-tagfieldspecification"></a>
 
 <a name="aws-properties-ec2-flowlog-tagfieldspecification-description"></a>The `TagFieldSpecification` property type specifies Property description not available. for an [AWS::EC2::FlowLog](aws-resource-ec2-flowlog.md).
 

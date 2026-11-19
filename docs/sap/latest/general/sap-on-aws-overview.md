@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/sap-on-aws-overview.h
 ---
 
 # SAP on AWS Overview and Planning
-<a name="sap-on-aws-overview"></a>
 
  *SAP specialists, Amazon Web Services*
 

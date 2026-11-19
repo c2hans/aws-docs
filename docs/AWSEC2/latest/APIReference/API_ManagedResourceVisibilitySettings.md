@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ManagedRe
 ---
 
 # ManagedResourceVisibilitySettings
-<a name="API_ManagedResourceVisibilitySettings"></a>
 
 Describes the managed resource visibility settings for the account.
 

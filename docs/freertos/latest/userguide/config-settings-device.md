@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/config-setting
 ---
 
 # Configure settings for testing devices
-<a name="config-settings-device"></a>
 
 Build, flash, and test settings are made in the `configs/userdata.json` file. We support Echo Server configuration by loading both the client and server certificates and keys in the `customPath`. For more information, see [Setting up an echo server](https://docs.aws.amazon.com/freertos/latest/portingguide/afr-echo-server.html) in the *FreeRTOS Porting Guide*. The following JSON example shows how you can configure IDT for FreeRTOS to test multiple devices:
 

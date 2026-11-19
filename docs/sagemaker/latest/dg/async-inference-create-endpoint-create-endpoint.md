@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/async-inference-crea
 ---
 
 # Create Endpoint
-<a name="async-inference-create-endpoint-create-endpoint"></a>
 
 Once you have your model and endpoint configuration, use the [`CreateEndpoint`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html) API to create your endpoint. The endpoint name must be unique within an AWS Region in your AWS account.
 

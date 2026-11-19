@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/getting-start
 ---
 
 # Migrating to Device Farm desktop browser testing from Selenium Grid
-<a name="getting-started-migration"></a>
 
 To migrate Selenium test suites in an environment that use Selenium Grid and `RemoteWebDriver`), you must modify your test suite setup procedure. Using the AWS SDK, you request a signed command executor (hub) URL from the Device Farm desktop browser testing API. Then you pass that URL along with your requested capabilities to your `RemoteWebDriver`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-devops
 ---
 
 # Amazon DevOps Guru events
-<a name="events-ref-devops-guru"></a>
 
 DevOps Guru sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

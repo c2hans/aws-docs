@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedJobComputeConfiguration
-<a name="API_ProtectedJobComputeConfiguration"></a>
 
 The configuration of the compute resources for a PySpark job.
 

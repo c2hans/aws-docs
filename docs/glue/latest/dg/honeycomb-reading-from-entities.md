@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/honeycomb-reading-from-en
 ---
 
 # Reading from Honeycomb entities
-<a name="honeycomb-reading-from-entities"></a>
 
 **Prerequisites**
 

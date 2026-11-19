@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/PerformanceE
 ---
 
 # Amazon ElastiCache Well-Architected Lens Performance Efficiency Pillar
-<a name="PerformanceEfficiencyPillar"></a>
 
 The performance efficiency pillar focuses on using IT and computing resources efficiently. Key topics include selecting the right resource types and sizes based on workload requirements, monitoring performance, and making informed decisions to maintain efficiency as business needs evolve.
 

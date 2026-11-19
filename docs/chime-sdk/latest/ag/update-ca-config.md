@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/update-ca-config.htm
 ---
 
 # Updating call analytics configurations
-<a name="update-ca-config"></a>
 
 The steps in this section explain how to update a call analytics configuration.
 

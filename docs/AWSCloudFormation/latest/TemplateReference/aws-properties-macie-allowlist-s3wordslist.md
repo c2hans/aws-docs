@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Macie::AllowList S3WordsList
-<a name="aws-properties-macie-allowlist-s3wordslist"></a>
 
 Specifies the location and name of an Amazon Simple Storage Service (Amazon S3) object that lists specific, predefined text to ignore when inspecting data sources for sensitive data.
 

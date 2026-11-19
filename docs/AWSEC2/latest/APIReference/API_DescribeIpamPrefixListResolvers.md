@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeIpamPrefixListResolvers
-<a name="API_DescribeIpamPrefixListResolvers"></a>
 
 Describes one or more IPAM prefix list resolvers. Use this operation to view the configuration, status, and properties of your resolvers.
 

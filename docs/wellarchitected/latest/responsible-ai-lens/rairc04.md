@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Release criteria thresholds
-<a name="rairc04"></a>
 
 | RAIRC04: How will you set your release criteria thresholds? |
 | --- |

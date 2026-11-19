@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_R
 ---
 
 # RejectGroupingRecommendationEntry
-<a name="API_RejectGroupingRecommendationEntry"></a>
 
 Indicates the rejected grouping recommendation.
 

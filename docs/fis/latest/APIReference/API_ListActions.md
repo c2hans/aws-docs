@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ListActions.
 ---
 
 # ListActions
-<a name="API_ListActions"></a>
 
 Lists the available AWS FIS actions.
 

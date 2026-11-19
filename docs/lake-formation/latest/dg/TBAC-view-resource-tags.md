@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/TBAC-view-resou
 ---
 
 # Viewing LF-Tags assigned to a resource
-<a name="TBAC-view-resource-tags"></a>
 
 You can view the LF-Tags that are assigned to a Data Catalog resource. You must have the `DESCRIBE` or `ASSOCIATE` permission on a LF-Tag to view it.
 

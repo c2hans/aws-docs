@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/vpc-interf
 ---
 
 # AWS PrivateLink for IAM Identity Center
-<a name="vpc-interface-endpoints"></a>
 
 You can establish a private connection between your VPC and AWS IAM Identity Center by creating an *interface VPC endpoint*. Interface endpoints are powered by AWS PrivateLink. For more information, see [AWS PrivateLink](https://aws.amazon.com/privatelink) on the AWS website. You can use this technology to privately access IAM Identity Center APIs without an internet gateway, NAT device, VPN connection, or connection. Resources in your VPC do not need public IP addresses to communicate with IAM Identity Center APIs. Traffic between your VPC and IAM Identity Center does not leave the AWS network.
 

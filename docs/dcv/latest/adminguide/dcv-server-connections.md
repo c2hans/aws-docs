@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/dcv-server-connect
 ---
 
 # Amazon DCV server connections
-<a name="dcv-server-connections"></a>
 
 Counters in this set provide information about a single client connection. Counter set instances are created when a client connects to the server and deleted when the client disconnects. The connection\_id is a number, and it is only unique within one server session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_VerifyMac.ht
 ---
 
 # VerifyMac
-<a name="API_VerifyMac"></a>
 
 Verifies the hash-based message authentication code (HMAC) for a specified message, HMAC KMS key, and MAC algorithm. To verify the HMAC, `VerifyMac` computes an HMAC using the message, HMAC KMS key, and MAC algorithm that you specify, and compares the computed HMAC to the HMAC that you specify. If the HMACs are identical, the verification succeeds; otherwise, it fails. Verification indicates that the message hasn't changed since the HMAC was calculated, and the specified key was used to generate and verify the HMAC.
 

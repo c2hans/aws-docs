@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mlopsfaq.html
 ---
 
 # Amazon SageMaker AI MLOps troubleshooting
-<a name="mlopsfaq"></a>
 
 Use the following to troubleshoot issues with MLOps in SageMaker AI. This topic provides information about common errors and how to resolve them.
 

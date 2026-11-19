@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Devic
 ---
 
 # DevicePoolCompatibilityResult
-<a name="API_DevicePoolCompatibilityResult"></a>
 
 Represents a device pool compatibility result.
 

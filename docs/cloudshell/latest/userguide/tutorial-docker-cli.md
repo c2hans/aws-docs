@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudshell/latest/userguide/tutorial-doc
 ---
 
 # Building a Docker container inside CloudShell and pushing it to an Amazon ECR repository
-<a name="tutorial-docker-cli"></a>
 
 This tutorial shows you how to define and build a Docker container in AWS CloudShell and push it to an Amazon ECR repository.
 

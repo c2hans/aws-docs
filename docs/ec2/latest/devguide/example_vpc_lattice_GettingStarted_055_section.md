@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_vpc_lattice_
 ---
 
 # Creating and managing a service networking mesh
-<a name="example_vpc_lattice_GettingStarted_055_section"></a>
 
 The following code example shows how to:
 + Create a service network

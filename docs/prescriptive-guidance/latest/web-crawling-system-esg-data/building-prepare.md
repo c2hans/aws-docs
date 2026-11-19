@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/web-crawlin
 ---
 
 # Preparing a dataset
-<a name="building-prepare"></a>
 
 If you have not done so already, prepare a detailed dataset of the websites that you want to collect information from. This dataset should include website URL domain names and relevant subdomain names. This section provides a step-by-step process for building this dataset.
 

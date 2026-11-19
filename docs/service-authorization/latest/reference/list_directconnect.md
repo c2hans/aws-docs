@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Direct Connect
-<a name="list_directconnect"></a>
 
 AWS Direct Connect (service prefix: `directconnect`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

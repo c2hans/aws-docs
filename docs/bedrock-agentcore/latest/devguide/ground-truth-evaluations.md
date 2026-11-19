@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/ground
 ---
 
 # Ground truth evaluations
-<a name="ground-truth-evaluations"></a>
 
 Ground truth is the known correct answer or expected behavior for a given input — the "gold standard" you compare actual results against. For agent evaluation, ground truth transforms subjective quality assessment into objective measurement, enabling regression detection, benchmark datasets, and domain-specific correctness that generic evaluators cannot provide on their own.
 

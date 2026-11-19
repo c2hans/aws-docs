@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/api-faults.html
 ---
 
 # Neptune Exceptions Specific to Individual APIs
-<a name="api-faults"></a>
 
 **Exceptions:**
 + [AuthorizationAlreadyExistsFault (structure)](#AuthorizationAlreadyExistsFault)

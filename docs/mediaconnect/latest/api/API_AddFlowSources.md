@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AddFlowSourc
 ---
 
 # AddFlowSources
-<a name="API_AddFlowSources"></a>
 
  Adds sources to a flow.
 

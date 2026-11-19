@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # Supporting hybrid environments
-<a name="options-hybrid"></a>
 
 It's common for consumers to come from different environments, each with its own technical and security constraints. Some customers may operate entirely from on-premises data centers that require secure connectivity over the Internet or through dedicated network links. Others might already be running workloads within AWS and expect low-latency, private network paths. A third group might rely on other CSPs, where connectivity must bridge different cloud networks.
 

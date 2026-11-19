@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_T
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
  Adds one or more tags (keys and values) to a specified resource.
 

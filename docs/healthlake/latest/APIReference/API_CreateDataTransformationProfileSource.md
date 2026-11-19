@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Creat
 ---
 
 # CreateDataTransformationProfileSource
-<a name="API_CreateDataTransformationProfileSource"></a>
 
 The source for initial content when creating a data transformation profile. Specify exactly one variant: a built-in starter profile, an existing profile version to clone, raw profile content, or a sample data file.
 

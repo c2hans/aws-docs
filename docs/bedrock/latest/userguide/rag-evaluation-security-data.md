@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/rag-evaluation-
 ---
 
 # Data encryption for knowledge base evaluation jobs
-<a name="rag-evaluation-security-data"></a>
 
 During a knowledge base evaluation job, Amazon Bedrock makes a temporary copy of your data. Amazon Bedrock deletes the data after the job finishes. To encrypt the data, Amazon Bedrock uses a KMS key. It uses either a KMS key that you specify or a key that Amazon Bedrock owns.
 

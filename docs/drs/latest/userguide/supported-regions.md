@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/supported-regions.h
 ---
 
 # AWS Elastic Disaster Recovery supported AWS Regions
-<a name="supported-regions"></a>
 
 The following AWS Regions are supported by AWS Elastic Disaster Recovery:
 

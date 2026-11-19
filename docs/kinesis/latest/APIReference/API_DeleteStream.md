@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DeleteSt
 ---
 
 # DeleteStream
-<a name="API_DeleteStream"></a>
 
 Deletes a Kinesis data stream and all its shards and data. You must shut down any applications that are operating on the stream before you delete the stream. If an application attempts to operate on a deleted stream, it receives the exception `ResourceNotFoundException`.
 
@@ -20,7 +19,7 @@ Before you can delete a data stream that has queues, you must delete every queue
 
 You can use the [DescribeStreamSummary](API_DescribeStreamSummary.md) operation to check the state of the stream, which is returned in `StreamStatus`.
 
- [DeleteStream](#API_DeleteStream) has a limit of five transactions per second per account.
+ [DeleteStream](API_DeleteStream.md) has a limit of five transactions per second per account.
 
 ## Request Syntax
 <a name="API_DeleteStream_RequestSyntax"></a>

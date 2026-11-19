@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_LifecycleConfigu
 ---
 
 # LifecycleConfiguration
-<a name="API_LifecycleConfiguration"></a>
 
 Container for lifecycle rules. You can add as many as 1000 rules.
 

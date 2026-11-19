@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # PutDestination
-<a name="API_PutDestination"></a>
 
 Creates or updates a destination. This operation is used only to create destinations for cross-account subscriptions.
 

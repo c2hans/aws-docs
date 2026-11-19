@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Lis
 ---
 
 # List Exports in an Account
-<a name="ListingExports"></a>
 
  You can list all exports in your AWS account using the `list-exports` command:
 

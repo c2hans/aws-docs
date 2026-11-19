@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/close-server.html
 ---
 
 # close-servers
-<a name="close-server"></a>
 
 Closes one or more Amazon DCV servers. When you close a Amazon DCV server, you make it unavailable for Amazon DCV session placement. You can't create Amazon DCV sessions on closed servers. Closing a server ensures that no sessions are running on it and that users can't create new sessions on it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CustomerMana
 ---
 
 # CustomerManagedAwsSecretConfigurationInput
-<a name="API_CustomerManagedAwsSecretConfigurationInput"></a>
 
 The input configuration for a customer-managed AWS Secrets Manager secret used to supply a password.
 

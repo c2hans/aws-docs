@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_AdminAcc
 ---
 
 # AdminAccountSummary
-<a name="API_AdminAccountSummary"></a>
 
 Contains high level information about the Firewall Manager administrator account.
 

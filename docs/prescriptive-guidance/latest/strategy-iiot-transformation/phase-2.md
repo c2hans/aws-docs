@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ii
 ---
 
 # Phase 2: Evaluating your current state
-<a name="phase-2"></a>
 
 A complete IIoT digital transformation journey encompasses not only the IIoT-specific devices and strategy but also a holistic consideration of how those IIoT assets integrate with your IT and OT infrastructure and operations personas. Your infrastructure might be *on-premises* (local), or it might be *hybrid* of both on-premises and cloud infrastructure. Migrating your infrastructure to the cloud allows you to take full advantage of cloud-native features to improve agility, performance, and scalability.
 

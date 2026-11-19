@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_StopF
 ---
 
 # StopFleet
-<a name="API_StopFleet"></a>
 
 Stops the specified fleet.
 

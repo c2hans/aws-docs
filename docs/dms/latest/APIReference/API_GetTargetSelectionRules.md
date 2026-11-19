@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_GetTargetSel
 ---
 
 # GetTargetSelectionRules
-<a name="API_GetTargetSelectionRules"></a>
 
 Converts source selection rules into their target counterparts for schema conversion operations.
 

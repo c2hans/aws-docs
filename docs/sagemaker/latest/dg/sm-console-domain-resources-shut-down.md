@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sm-console-domain-re
 ---
 
 # Shut down SageMaker AI resources in your domain
-<a name="sm-console-domain-resources-shut-down"></a>
 
 You can shut down Amazon SageMaker AI resources in your Amazon SageMaker AI domain using the SageMaker AI console. Use the following instructions to learn how to shut down the resources tagged by the domain ARN.
 

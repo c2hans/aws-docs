@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Tr
 ---
 
 # TransferParticipant
-<a name="API_TransferParticipant"></a>
 
 Contains details for a participant in a transfer. A *transfer* is the arrangement between two management accounts where one account designates the other with specified responsibilities for their organization.
 

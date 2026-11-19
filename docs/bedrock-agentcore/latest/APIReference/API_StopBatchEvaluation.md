@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # StopBatchEvaluation
-<a name="API_StopBatchEvaluation"></a>
 
 Stops a running batch evaluation. Sessions that have already been evaluated retain their results.
 

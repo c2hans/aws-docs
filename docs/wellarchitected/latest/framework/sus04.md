@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus04.h
 ---
 
 # Optimize data and processing
-<a name="sus04"></a>
 
  Efficient data management and processing affect sustainability by reducing unnecessary storage and computational requirements. Implement data lifecycle policies to eliminate redundant or obsolete data. Select file formats and compression techniques that minimize storage while maintaining functionality. Design distributed systems thoughtfully, placing processing close to data and optimizing resource use across your architecture.
 

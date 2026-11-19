@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Network Flow Monitor API operations
-<a name="CloudWatch-NetworkFlowMonitor-API-operations"></a>
 
 The following table lists Network Flow Monitor API operations that you can use with Network Flow Monitor. The table also includes links to relevant documentation.
 

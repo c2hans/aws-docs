@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonWorkspacesPCAAccess
-<a name="AmazonWorkspacesPCAAccess"></a>
 
 **Description**: This managed policy provides full administrative access to AWS Certificate Manager Private CA resources in your AWS account for certificate-based authentication.
 

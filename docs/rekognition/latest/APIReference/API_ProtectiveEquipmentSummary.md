@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Prot
 ---
 
 # ProtectiveEquipmentSummary
-<a name="API_ProtectiveEquipmentSummary"></a>
 
 Summary information for required items of personal protective equipment (PPE) detected on persons by a call to [DetectProtectiveEquipment](API_DetectProtectiveEquipment.md). You specify the required type of PPE in the `SummarizationAttributes` ([ProtectiveEquipmentSummarizationAttributes](API_ProtectiveEquipmentSummarizationAttributes.md)) input parameter. The summary includes which persons were detected wearing the required personal protective equipment (`PersonsWithRequiredEquipment`), which persons were detected as not wearing the required PPE (`PersonsWithoutRequiredEquipment`), and the persons in which a determination could not be made (`PersonsIndeterminate`).
 

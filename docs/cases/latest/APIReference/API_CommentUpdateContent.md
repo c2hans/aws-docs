@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_CommentUpd
 ---
 
 # CommentUpdateContent
-<a name="API_connect-cases_CommentUpdateContent"></a>
 
 Represents the updated content of a `Comment` related item.
 

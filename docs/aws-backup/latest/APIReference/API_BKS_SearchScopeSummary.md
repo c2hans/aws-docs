@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_S
 ---
 
 # SearchScopeSummary
-<a name="API_BKS_SearchScopeSummary"></a>
 
 The summary of the specified search job scope, including:
 + TotalBackupsToScanCount, the number of recovery points returned by the search.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteSt
 ---
 
 # RouteStationDetails
-<a name="API_RouteStationDetails"></a>
 
 Details about the station.
 

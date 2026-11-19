@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Decision matrix
-<a name="matrix"></a>
 
 The following table summarizes the migration and modernization options for legacy .NET applications, based on your use case and resources.
 

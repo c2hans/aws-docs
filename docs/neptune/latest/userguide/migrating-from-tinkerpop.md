@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/migrating-from-
 ---
 
 # Migrating an existing graph from an Apache TinkerPop Gremlin server to Amazon Neptune
-<a name="migrating-from-tinkerpop"></a>
 
 If you have graph data in an Apache TinkerPop Gremlin Server that you would like to migrate to Amazon Neptune, you would take the following steps:
 

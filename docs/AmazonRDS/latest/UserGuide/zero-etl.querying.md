@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.quer
 ---
 
 # Adding data to a source RDS database and querying it
-<a name="zero-etl.querying"></a>
 
 To finish creating a zero-ETL integration that replicates data from Amazon RDS into Amazon Redshift, you must create a database in the target destination.
 

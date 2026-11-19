@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-appliances-software/latest/ug/
 ---
 
 # Order AWS Elemental appliances and software
-<a name="orders"></a>
 
 After you review and confirm your quote, use your active AWS account to order AWS Elemental appliances and software from the AWS Management Console.
 

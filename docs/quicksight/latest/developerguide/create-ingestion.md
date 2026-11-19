@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/create-
 ---
 
 # CreateIngestion
-<a name="create-ingestion"></a>
 
 Use the `CreateIngestion` to create and start a new SPICE ingestion on a dataset.
 

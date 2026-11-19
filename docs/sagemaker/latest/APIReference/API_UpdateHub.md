@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateHub
-<a name="API_UpdateHub"></a>
 
 Update a hub.
 

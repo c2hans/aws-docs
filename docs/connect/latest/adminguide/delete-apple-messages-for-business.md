@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/delete-apple-m
 ---
 
 # Delete an Apple Messages for Business integration with Connect Customer
-<a name="delete-apple-messages-for-business"></a>
 
 1. Open an [Support ticket](https://console.aws.amazon.com/support/home#/case/create?issueType=customer-service&serviceCode=customer-account&categoryCode=activation).
 

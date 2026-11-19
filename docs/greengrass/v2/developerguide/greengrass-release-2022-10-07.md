@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # Release: AWS IoT Greengrass Core v2.8.0 software update on October 7, 2022
-<a name="greengrass-release-2022-10-07"></a>
 
 This release provides version 2.8.0 of the Greengrass nucleus component and version 1.1.0 of the MQTT 5 broker (EMQX) component.
 

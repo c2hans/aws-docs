@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/project-shari
 ---
 
 # Shared project permissions
-<a name="project-sharing-perms"></a>
 
 ## Permissions for owners
 <a name="project-perms-owner"></a>

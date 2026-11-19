@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_SessionCo
 ---
 
 # SessionConfiguration
-<a name="API_SessionConfiguration"></a>
 
 Contains session configuration information.
 

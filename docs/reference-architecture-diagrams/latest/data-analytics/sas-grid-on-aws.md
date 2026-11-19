@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Running SAS Grid on AWS
-<a name="sas-grid-on-aws"></a>
 
 Publication date: **July 25, 2022 ([Diagram history](diagram-history.md))**
 

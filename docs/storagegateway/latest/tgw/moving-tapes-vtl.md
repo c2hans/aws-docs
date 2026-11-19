@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/moving-tapes-v
 ---
 
 # Moving tapes to S3 Glacier Deep Archive storage class
-<a name="moving-tapes-vtl"></a>
 
 Move your tapes from S3 Glacier Flexible Retrieval to S3 Glacier Deep Archive for long-term data retention and digital preservation at a very low cost. You use S3 Glacier Deep Archive for long-term data retention and digital preservation where the data is accessed once or twice a year. For detailed information, see [Storage Classes for Archiving Objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html#sc-glacier).
 

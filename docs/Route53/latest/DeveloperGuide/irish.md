@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/irish.html
 ---
 
 # .irish
-<a name="irish"></a>
 
 Used for promoting Irish culture and organizations.
 

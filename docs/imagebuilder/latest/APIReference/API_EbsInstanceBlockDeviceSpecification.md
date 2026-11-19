@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ebs
 ---
 
 # EbsInstanceBlockDeviceSpecification
-<a name="API_EbsInstanceBlockDeviceSpecification"></a>
 
 Amazon EBS-specific block device mapping specifications.
 

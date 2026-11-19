@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/best-pract
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 The following are the recommended best practices for using Remote Desktop Gateway on AWS.
 

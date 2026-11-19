@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DBEngineVersio
 ---
 
 # DBEngineVersion
-<a name="API_DBEngineVersion"></a>
 
  This data type is used as a response element in the action [DescribeDBEngineVersions](API_DescribeDBEngineVersions.md).
 

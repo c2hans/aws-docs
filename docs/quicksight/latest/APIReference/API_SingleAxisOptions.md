@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Singl
 ---
 
 # SingleAxisOptions
-<a name="API_SingleAxisOptions"></a>
 
 The settings of a chart's single axis configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Development roadmap for hosting with Amazon GameLift Servers managed containers
-<a name="gamelift-roadmap-containers"></a>
 
 This roadmap guides you through how to develop an Amazon GameLift Servers managed hosting solution for your containerized game servers. Managed containers is just one hosting solution that is offered by Amazon GameLift Servers. For more information on hosting options, see [Amazon GameLift Servers game hosting options](gamelift-intro-flavors.md).
 

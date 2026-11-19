@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/developer-assoc
 ---
 
 # Mentions of AWS Services on the Exam
-<a name="dva-03-service-mentions"></a>
 
 AWS Certification is reducing the reading load on this exam by using official short names of well-known AWS service names that contain abbreviations or parenthetical information. For example, Amazon Simple Notification Service (Amazon SNS) appears on the exam as Amazon SNS.
 

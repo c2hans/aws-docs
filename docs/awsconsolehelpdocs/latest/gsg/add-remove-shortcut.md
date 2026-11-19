@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/add-remove
 ---
 
 # Favorites in the AWS Management Console
-<a name="add-remove-shortcut"></a>
 
 To access your frequently used services and applications more quickly, you can save their service consoles to a list of **Favorites**. You can add and remove favorites using the AWS Management Console. When you add a service or application to your **Favorites**, it appears on the Favorites quickbar.
 

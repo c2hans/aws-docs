@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # OffPeakWindowOptionsStatus
-<a name="API_OffPeakWindowOptionsStatus"></a>
 
 The status of [off-peak window](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_OffPeakWindow.html) options for a domain.
 

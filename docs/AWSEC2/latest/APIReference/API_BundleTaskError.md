@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BundleTas
 ---
 
 # BundleTaskError
-<a name="API_BundleTaskError"></a>
 
 Describes an error for [BundleInstance](API_BundleInstance.md).
 

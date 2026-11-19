@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-dc-runjobs
 ---
 
 # Create and run the job in AWS IoT with AWS IoT Device Client
-<a name="iot-dc-runjobs-prepare-define"></a>
 
 The procedures in this section create a job document and an AWS IoT job resource. After you create the job resource, AWS IoT sends the job document to the specified job targets on which a jobs agent applies the job document to the device or client.
 

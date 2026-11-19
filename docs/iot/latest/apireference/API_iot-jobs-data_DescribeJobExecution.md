@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-dat
 ---
 
 # DescribeJobExecution
-<a name="API_iot-jobs-data_DescribeJobExecution"></a>
 
 Gets details of a job execution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/package-version-a
 ---
 
 # Gating packages on version age
-<a name="package-version-age-gating"></a>
 
 **Important**
 Version age gating does not protect against vulnerabilities discovered in existing versions that have already passed the quarantine window. Use CodeArtifact with Amazon Inspector for vulnerability scanning of established packages.

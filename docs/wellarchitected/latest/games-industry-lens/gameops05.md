@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Load testing
-<a name="gameops05"></a>
 
 |  GAMEOPS05: What should you consider when load testing a game?  |
 | --- |

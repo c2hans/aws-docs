@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Resour
 ---
 
 # ResourceConfigForUpdate
-<a name="API_ResourceConfigForUpdate"></a>
 
 The `ResourceConfig` to update `KeepAlivePeriodInSeconds`. Other fields in the `ResourceConfig` cannot be updated.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Appendix F: Optimizing storage cost and data lifecycle management
-<a name="appendix-f-optimizing-storage-cost-and-data-lifecycle-management"></a>
 
  Filtering the data files to be transferred to Amazon Simple Storage Service (Amazon S3) minimizes storage cost. In a production laboratory, unnecessary data can account for up to 10% of the total data produced. Consider optimizing storage by writing instrument run data to an Amazon S3 bucket configured for Infrequent Access (IA) then archive the data to Glacier Deep Archive.
 

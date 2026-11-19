@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_CopyD
 ---
 
 # CopyDBClusterParameterGroup
-<a name="API_CopyDBClusterParameterGroup"></a>
 
 Copies the specified cluster parameter group.
 

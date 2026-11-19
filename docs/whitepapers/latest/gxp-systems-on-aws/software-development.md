@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/so
 ---
 
 # Software development
-<a name="software-development"></a>
 
 ## Software development processes
 <a name="software-development-processes"></a>

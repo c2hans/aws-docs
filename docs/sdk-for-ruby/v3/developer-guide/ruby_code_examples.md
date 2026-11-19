@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/ruby_cod
 ---
 
 # SDK for Ruby code examples
-<a name="ruby_code_examples"></a>
 
 The code examples in this topic show you how to use the AWS SDK for Ruby with AWS.
 

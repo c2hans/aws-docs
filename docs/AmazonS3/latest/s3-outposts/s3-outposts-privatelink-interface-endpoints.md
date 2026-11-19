@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/s3-outposts-
 ---
 
 # AWS PrivateLink for S3 on Outposts
-<a name="s3-outposts-privatelink-interface-endpoints"></a>
 
 S3 on Outposts supports AWS PrivateLink, which provides direct management access to your S3 on Outposts storage through a private endpoint within your virtual private network. This allows you to simplify your internal network architecture and perform management operations on your Outposts object storage by using private IP addresses in your Virtual Private Cloud (VPC). Using AWS PrivateLink eliminates the need to use public IP addresses or proxy servers.
 

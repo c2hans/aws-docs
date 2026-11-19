@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC10-BP02 Develop incident management plans
-<a name="sec_incident_response_develop_management_plans"></a>
 
 |  |
 | --- |

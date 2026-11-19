@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ami
 ---
 
 # AmiDistributionConfiguration
-<a name="API_AmiDistributionConfiguration"></a>
 
 Define and configure the output AMIs of the pipeline.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel12-b
 ---
 
 # REL12-BP03 Test scalability and performance requirements
-<a name="rel12-bp03"></a>
 
  Scalability and performance testing validates that your workload meets its throughput, latency, and scaling targets under realistic load before customers reach the limits.
 

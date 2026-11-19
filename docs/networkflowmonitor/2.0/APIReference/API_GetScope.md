@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_
 ---
 
 # GetScope
-<a name="API_GetScope"></a>
 
 Gets information about a scope, including the name, status, tags, and target details. The scope in Network Flow Monitor is an account.
 

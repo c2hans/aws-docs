@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Organizat
 ---
 
 # OrganizationConfigRuleStatus
-<a name="API_OrganizationConfigRuleStatus"></a>
 
 Returns the status for an organization AWS Config rule in an organization.
 

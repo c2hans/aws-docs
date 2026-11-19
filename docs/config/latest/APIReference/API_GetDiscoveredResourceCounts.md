@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GetDiscov
 ---
 
 # GetDiscoveredResourceCounts
-<a name="API_GetDiscoveredResourceCounts"></a>
 
 Returns the resource types, the number of each resource type, and the total number of resources that AWS Config is recording in this region for your AWS account.
 
@@ -21,10 +20,10 @@ Returns the resource types, the number of each resource type, and the total numb
 The response is paginated. By default, AWS Config lists 100 [ResourceCount](API_ResourceCount.md) objects on each page. You can customize this number with the `limit` parameter. The response includes a `nextToken` string. To get the next page of results, run the request again and specify the string for the `nextToken` parameter.
 
 **Note**
-If you make a call to the [GetDiscoveredResourceCounts](#API_GetDiscoveredResourceCounts) action, you might not immediately receive resource counts in the following situations:
+If you make a call to the [GetDiscoveredResourceCounts](API_GetDiscoveredResourceCounts.md) action, you might not immediately receive resource counts in the following situations:
 You are a new AWS Config customer.
 You just enabled resource recording.
-It might take a few minutes for AWS Config to record and count your resources. Wait a few minutes and then retry the [GetDiscoveredResourceCounts](#API_GetDiscoveredResourceCounts) action.
+It might take a few minutes for AWS Config to record and count your resources. Wait a few minutes and then retry the [GetDiscoveredResourceCounts](API_GetDiscoveredResourceCounts.md) action.
 
 ## Request Syntax
 <a name="API_GetDiscoveredResourceCounts_RequestSyntax"></a>

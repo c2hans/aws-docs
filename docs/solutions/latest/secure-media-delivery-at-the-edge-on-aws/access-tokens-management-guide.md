@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Access tokens management guide
-<a name="access-tokens-management-guide"></a>
 
 ## Varying token attributes
 <a name="varying-token-attributes"></a>

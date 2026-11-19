@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ExecutionSummaryAffectedSession
-<a name="API_ExecutionSummaryAffectedSession"></a>
 
 A session associated with an execution summary cluster.
 

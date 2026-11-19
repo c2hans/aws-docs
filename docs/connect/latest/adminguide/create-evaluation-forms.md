@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-evaluat
 ---
 
 # Create an evaluation form in Connect Customer
-<a name="create-evaluation-forms"></a>
 
 In Connect Customer, you can create [many different evaluation forms](feature-limits.md#evaluationforms-feature-specs). For example, you might need a different evaluation form for each business unit, and for different queues. You can also create different evaluation forms for evaluating the agent interaction and the self-service interaction with a Lex bot or AI agent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetTooltip
-<a name="API_SheetTooltip"></a>
 
 The configuration of the sheet tooltip.
 

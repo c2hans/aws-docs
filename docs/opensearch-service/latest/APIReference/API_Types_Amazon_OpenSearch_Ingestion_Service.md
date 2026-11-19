@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # Amazon OpenSearch Ingestion Service
-<a name="API_Types_Amazon_OpenSearch_Ingestion_Service"></a>
 
 The following data types are supported by Amazon OpenSearch Ingestion Service:
 +  [BufferOptions](API_osis_BufferOptions.md)

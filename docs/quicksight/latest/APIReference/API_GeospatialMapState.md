@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialMapState
-<a name="API_GeospatialMapState"></a>
 
 The map state properties for a map.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicSummary
-<a name="API_TopicSummary"></a>
 
 A topic summary.
 

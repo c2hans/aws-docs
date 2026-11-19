@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-int
 ---
 
 # Retrieving experiment treatments
-<a name="appconfig-integration-retrieving-experiment-treatments"></a>
 
 When an experiment runs on a feature flag, you retrieve the assigned treatment the same way you retrieve any feature flag from AWS AppConfig Agent. This requires two additions: you identify the entity, and you provide the caller context that your experiment audience rule evaluates.
 

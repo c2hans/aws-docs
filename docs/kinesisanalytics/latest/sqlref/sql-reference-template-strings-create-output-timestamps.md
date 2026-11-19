@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Template Strings to Create Specific Output Timestamps
-<a name="sql-reference-template-strings-create-output-timestamps"></a>
 
 | Template | Input String | Output TIMESTAMP | Notes |
 | --- | --- | --- | --- |

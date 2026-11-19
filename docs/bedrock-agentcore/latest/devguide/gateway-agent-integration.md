@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Create an agent that uses your AgentCore gateway
-<a name="gateway-agent-integration"></a>
 
 After creating and testing your gateway, you can create and connect AI agents to your gateway. An agent connected to your gateway is able to call the tools in the gateway and use a [Amazon Bedrock model](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html) to respond to queries.
 

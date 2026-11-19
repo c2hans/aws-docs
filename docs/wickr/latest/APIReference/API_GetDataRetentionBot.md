@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_GetDataRet
 ---
 
 # GetDataRetentionBot
-<a name="API_GetDataRetentionBot"></a>
 
 Retrieves information about the data retention bot in a Wickr network, including its status and whether the data retention service is enabled.
 

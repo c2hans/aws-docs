@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/context-pro
 ---
 
 # Creating project rules for use with Amazon Q Developer chat
-<a name="context-project-rules"></a>
 
 You can build a library of project rules that you can use when chatting with Amazon Q in the IDE. These rules describe coding standards and best practices across your team. For example, you could have a rule that states that all Python code must use type hints, or that all Java code must use Javadoc comments. By storing these rules in your project, you can ensure consistency across developers, regardless of their experience level.
 

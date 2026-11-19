@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/live-patching.html
 ---
 
 # Kernel Live Patching on AL2023
-<a name="live-patching"></a>
 
 You can use Kernel Live Patching for AL2023 to apply specific security vulnerability and critical bug patches to a running Linux kernel without rebooting or disrupting running applications. In addition, Kernel Live Patching can help improve your application's availability while applying these fixes until the system can be rebooted.
 

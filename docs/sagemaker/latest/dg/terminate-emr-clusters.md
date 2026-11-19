@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/terminate-emr-cluste
 ---
 
 # Terminate an Amazon EMR cluster from Studio or Studio Classic
-<a name="terminate-emr-clusters"></a>
 
 The following procedure shows how to terminate an Amazon EMR cluster from a Studio or Studio Classic notebook.
 

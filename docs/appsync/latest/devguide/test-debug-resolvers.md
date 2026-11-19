@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/test-debug-resol
 ---
 
 # Testing and debugging resolvers in AWS AppSync (VTL)
-<a name="test-debug-resolvers"></a>
 
 **Note**
 We now primarily support the APPSYNC\_JS runtime and its documentation. Please consider using the APPSYNC\_JS runtime and its guides [here](https://docs.aws.amazon.com/appsync/latest/devguide/configuring-resolvers-js.html).

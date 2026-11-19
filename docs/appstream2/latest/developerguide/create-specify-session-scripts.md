@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/create-
 ---
 
 # Create and Specify Session Scripts
-<a name="create-specify-session-scripts"></a>
 
 You can configure and specify session scripts for Always-on, On-demand, and Elastic fleets.
 

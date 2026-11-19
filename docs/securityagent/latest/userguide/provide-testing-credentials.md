@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/provide-t
 ---
 
 # Provide authentication credentials for penetration testing
-<a name="provide-testing-credentials"></a>
 
 Provide credentials to enable AWS Security Agent to test authenticated areas of your web applications. Without credentials, the agent can only test publicly accessible pages and APIs.
 

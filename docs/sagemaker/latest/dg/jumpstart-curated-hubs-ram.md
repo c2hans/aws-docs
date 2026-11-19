@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hu
 ---
 
 # Cross-account sharing for private model hubs with AWS Resource Access Manager
-<a name="jumpstart-curated-hubs-ram"></a>
 
 After creating a private model hub, you can share the hub to the necessary accounts using AWS Resource Access Manager (AWS RAM). For more information on creating a private hub, see [Create a private model hub](jumpstart-curated-hubs-admin-guide-create.md). The following page gives in-depth information about managed permissions related to private hubs within AWS RAM. For information about how to create a resource share within AWS RAM, see [Set up cross-account hub sharing](jumpstart-curated-hubs-ram-setup.md).
 

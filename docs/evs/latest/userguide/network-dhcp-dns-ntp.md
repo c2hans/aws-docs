@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/network-dhcp-dns-nt
 ---
 
 # Configure DNS and NTP with a DHCP option set
-<a name="network-dhcp-dns-ntp"></a>
 
 Amazon Elastic VMware Service reads your VPC DHCP option set. The option set provides the DNS servers for host IP address resolution, the domain name for DNS resolution, and the NTP servers for time synchronization. Create a DHCP option set with these values and associate it with your VPC, using the Amazon VPC console or the AWS CLI.
 

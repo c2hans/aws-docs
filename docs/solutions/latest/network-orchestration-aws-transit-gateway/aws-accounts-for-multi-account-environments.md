@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # AWS accounts for multi-account environments
-<a name="aws-accounts-for-multi-account-environments"></a>
 
 To deploy a multi-account environment, we recommend the following AWS account guidelines for each stack:
 +  **Hub stack** - Deploy to a member account in your AWS Organization, preferably where you have an existing transit gateway or plan to create a new one, or in a dedicated [network account](concepts-and-definitions.md) where you plan to create a new transit gateway. It can’t be the Organizations management account.

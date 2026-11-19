@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/define-train-metrics
 ---
 
 # Define Training Metrics
-<a name="define-train-metrics"></a>
 
 SageMaker AI automatically parses training job logs and sends training metrics to CloudWatch. By default, SageMaker AI sends system resource utilization metrics listed in [SageMaker AI Jobs and Endpoint Metrics](https://docs.aws.amazon.com/sagemaker/latest/dg/monitoring-cloudwatch.html#cloudwatch-metrics-jobs). If you want SageMaker AI to parse logs and send custom metrics from a training job of your own algorithm to CloudWatch, you need to specify metrics definitions by passing the name of metrics and regular expressions when you configure a SageMaker AI training job request.
 

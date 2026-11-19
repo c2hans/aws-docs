@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/developer-guide/s3-edge-
 AWS Snowball Edge is no longer available to new customers. New customers should explore [AWS DataSync](https://aws.amazon.com/datasync/) for online transfers, [AWS Data Transfer Terminal](https://aws.amazon.com/data-transfer-terminal/) for secure physical transfers, or AWS Partner solutions. For edge computing, explore [AWS Outposts](https://aws.amazon.com/outposts/).
 
 # Setting up and starting Amazon S3 compatible storage on Snowball Edge
-<a name="s3-edge-snow-setting-up"></a>
 
 Install and configure software tools from AWS to your local environment to interact with the Snowball Edge device or cluster of devices and Amazon S3 compatible storage on Snowball Edge. Then, use these tools to set up the Snowball Edge device or cluster and start Amazon S3 compatible storage on Snowball Edge.
 

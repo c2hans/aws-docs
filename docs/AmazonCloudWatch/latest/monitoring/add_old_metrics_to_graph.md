@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/add_o
 ---
 
 # Graph metrics manually on a CloudWatch dashboard
-<a name="add_old_metrics_to_graph"></a>
 
 **To add a metric that you can't find in search to a graph**
 

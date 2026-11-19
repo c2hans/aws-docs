@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-la
 ---
 
 # Remediating exposures for AWS Lambda functions
-<a name="exposure-lambda-function"></a>
 
 AWS Security Hub can generate exposure findings for AWS Lambda functions.
 

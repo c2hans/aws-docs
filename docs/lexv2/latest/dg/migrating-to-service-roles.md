@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/migrating-to-service-rol
 ---
 
 # Migrating to service roles for Amazon Lex V2
-<a name="migrating-to-service-roles"></a>
 
 Amazon Lex V2 is transitioning from AWS-managed *service-linked roles* (SLRs) to customer-managed [service roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-role) for bot runtime permissions. This topic explains why Amazon Lex V2 is making this change, how to migrate your existing bots, and the timeline for the transition.
 

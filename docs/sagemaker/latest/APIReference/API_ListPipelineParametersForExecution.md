@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListPi
 ---
 
 # ListPipelineParametersForExecution
-<a name="API_ListPipelineParametersForExecution"></a>
 
 Gets a list of parameters for a pipeline execution.
 

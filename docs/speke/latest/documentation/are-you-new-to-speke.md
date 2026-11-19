@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/speke/latest/documentation/are-you-new-t
 ---
 
 # Are you new to SPEKE?
-<a name="are-you-new-to-speke"></a>
 
 This section provides introductory information for readers who are new to Secure Packager and Encoder Key Exchange (SPEKE).
 

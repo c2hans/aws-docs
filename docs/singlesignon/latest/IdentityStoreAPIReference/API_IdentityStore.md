@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # IdentityStore
-<a name="API_IdentityStore"></a>
 
 A structure that contains the identifiers for an identity store: its globally unique identifier (ID) and Amazon Resource Name (ARN).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # SchedulingMinPriorityOverrideAlwaysScheduleLast
-<a name="API_SchedulingMinPriorityOverrideAlwaysScheduleLast"></a>
 
 Specifies that jobs at the minimum priority (0) are always scheduled last.
 

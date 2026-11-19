@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-
 ---
 
 # Internal Classic Load Balancers
-<a name="elb-internal-load-balancers"></a>
 
 When you create a load balancer, you must choose whether to make it an internal load balancer or an internet-facing load balancer.
 

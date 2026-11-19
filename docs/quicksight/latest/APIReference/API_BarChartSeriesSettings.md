@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BarCh
 ---
 
 # BarChartSeriesSettings
-<a name="API_BarChartSeriesSettings"></a>
 
 Options that determine the presentation of a bar series in the visual.
 

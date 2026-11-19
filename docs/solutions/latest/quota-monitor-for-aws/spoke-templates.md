@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/s
 ---
 
 # Spoke templates
-<a name="spoke-templates"></a>
 
 The spoke templates packaged with the solution are standalone templates, and you can deploy them independently. To determine which templates to deploy, ask the following questions:
 + Do you have a hub or monitoring account?

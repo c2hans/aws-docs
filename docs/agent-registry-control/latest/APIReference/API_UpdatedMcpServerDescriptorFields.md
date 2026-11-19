@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UpdatedMcpServerDescriptorFields
-<a name="API_UpdatedMcpServerDescriptorFields"></a>
 
 The set of MCP server descriptor fields that can be individually updated.
 

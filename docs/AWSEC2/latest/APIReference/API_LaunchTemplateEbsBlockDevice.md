@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateEbsBlockDevice
-<a name="API_LaunchTemplateEbsBlockDevice"></a>
 
 Describes a block device for an EBS volume.
 

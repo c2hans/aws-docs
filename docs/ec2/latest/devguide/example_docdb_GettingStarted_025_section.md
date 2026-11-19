@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_docdb_Gettin
 ---
 
 # Getting started with document databases
-<a name="example_docdb_GettingStarted_025_section"></a>
 
 The following code example shows how to:
 + Create a DB subnet group

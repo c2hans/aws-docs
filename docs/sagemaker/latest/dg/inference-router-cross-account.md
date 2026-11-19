@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-router-cro
 ---
 
 # Route requests to endpoints in other AWS accounts
-<a name="inference-router-cross-account"></a>
 
 With an inference router, you can send requests to an endpoint or inference component that another AWS account owns. Both accounts must allow it:
 

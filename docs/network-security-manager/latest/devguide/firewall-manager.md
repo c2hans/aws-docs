@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/devguide
 ---
 
 # AWS Network Security Manager and AWS Firewall Manager
-<a name="firewall-manager"></a>
 
 AWS Network Security Manager is the service that is replacing AWS Firewall Manager. The two are wholly separate services, each with unique capabilities and a different pricing model. If you currently use AWS Firewall Manager, you don't need to take any action—your existing firewalls and policies continue to work. This chapter describes how the two services coexist, how precedence works when you use both, and how migration will work when it becomes available.
 

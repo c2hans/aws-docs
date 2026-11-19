@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # Restart an archived investigation
-<a name="Investigations-Restart"></a>
 
 You can restart archived investigations.
 

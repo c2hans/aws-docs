@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/freertos-archi
 ---
 
 # FreeRTOS architecture
-<a name="freertos-architecture"></a>
 
 FreeRTOS contains two types of repositories, single library repositories and package repositories. Each single library repository contains the source code for one library without any build projects or examples. Package repositories contain multiple libraries, and can contain preconfigured projects that demonstrate the library’s use.
 

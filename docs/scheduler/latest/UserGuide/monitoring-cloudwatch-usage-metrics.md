@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/monitoring-cl
 ---
 
 # EventBridge Scheduler usage metrics
-<a name="monitoring-cloudwatch-usage-metrics"></a>
 
 CloudWatch collects metrics that track the usage of some AWS resources. These metrics correspond to AWS service quotas. Tracking these metrics can help you proactively manage your quotas. For more information about service quotas, see [Quotas for Amazon EventBridge Scheduler](scheduler-quotas.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ScannedResource
-<a name="API_ScannedResource"></a>
 
 A scanned resource returned by `ListResourceScanResources` or `ListResourceScanRelatedResources`.
 

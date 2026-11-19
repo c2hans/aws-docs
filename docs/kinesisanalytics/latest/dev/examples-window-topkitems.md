@@ -11,7 +11,6 @@ After careful consideration, we have decided to discontinue Amazon Kinesis Data 
 3. We will delete your applications starting **January 27, 2026**. You will not be able to start or operate your Amazon Kinesis Data Analytics for SQL applications. Support will no longer be available for Amazon Kinesis Data Analytics for SQL from that time. For more information, see [Amazon Kinesis Data Analytics for SQL Applications discontinuation](discontinuation.md).
 
 # Example: Retrieving the Most Frequently Occurring Values (TOP\_K\_ITEMS\_TUMBLING)
-<a name="examples-window-topkitems"></a>
 
 This Amazon Kinesis Data Analytics example demonstrates how to use the `TOP_K_ITEMS_TUMBLING` function to retrieve the most frequently occurring values in a tumbling window. For more information, see [`TOP_K_ITEMS_TUMBLING` function](https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/top-k.html) in the *Amazon Managed Service for Apache Flink SQL Reference*.
 

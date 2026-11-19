@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # ECS architecture template parameters
-<a name="ecs-parameters"></a>
 
 |  **Parameter**  |  **Default**  |  **Description**  |
 | --- | --- | --- |

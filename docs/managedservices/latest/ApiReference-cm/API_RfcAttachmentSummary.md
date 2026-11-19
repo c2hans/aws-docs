@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # RfcAttachmentSummary
-<a name="API_RfcAttachmentSummary"></a>
 
 The RFC attachment summary structure.
 

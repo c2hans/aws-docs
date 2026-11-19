@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/schedu
 ---
 
 # Schedule recurring scaling actions using Application Auto Scaling
-<a name="scheduled-scaling-using-cron-expressions"></a>
 
 **Important**
 For help with cron expressions for Amazon EC2 Auto Scaling, see the [Recurring schedules](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html#scheduled-scaling-recurring-schedules) topic in the *Amazon EC2 Auto Scaling User Guide*. With Amazon EC2 Auto Scaling, you use traditional cron syntax instead of the custom cron syntax that Application Auto Scaling uses.

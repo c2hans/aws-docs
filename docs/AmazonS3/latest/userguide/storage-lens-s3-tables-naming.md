@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-lens-s
 ---
 
 # Table naming for S3 Storage Lens export to S3 Tables
-<a name="storage-lens-s3-tables-naming"></a>
 
 When you export S3 Storage Lens metrics to S3 Tables, the tables are organized using Apache Iceberg catalog conventions with specific naming patterns to ensure compatibility and organization.
 

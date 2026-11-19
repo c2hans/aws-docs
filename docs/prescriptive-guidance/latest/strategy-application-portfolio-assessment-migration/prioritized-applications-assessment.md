@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ap
 ---
 
 # Prioritized applications assessment
-<a name="prioritized-applications-assessment"></a>
 
 After initial application migration candidates are identified, a detailed assessment of those applications accelerates migration outcomes by enabling cloud foundations to be designed and implemented. If those foundations already exist, the application assessment assists with further developing the target environment to meet migration requirements. This stage provides enough data to produce target architecture designs and to define a migration strategy for prioritized applications that can be migrated now to gain confidence and experience. The output of this stage will feed directly into other program workstreams, such as security, migration, and landing zone for implementation. For more information, see [Mobilize your organization to accelerate large-scale migrations](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration/welcome.html).
 

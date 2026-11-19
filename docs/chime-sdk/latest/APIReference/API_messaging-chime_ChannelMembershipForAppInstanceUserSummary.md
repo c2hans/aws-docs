@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ChannelMembershipForAppInstanceUserSummary
-<a name="API_messaging-chime_ChannelMembershipForAppInstanceUserSummary"></a>
 
 Summary of the channel membership details of an `AppInstanceUser`.
 

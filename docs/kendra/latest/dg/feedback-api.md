@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/dg/feedback-api.html
 Amazon Kendra is no longer open to new customers. For capabilities similar to Amazon Kendra, explore Amazon Bedrock Knowledge Bases. [Learn more](https://docs.aws.amazon.com/kendra/latest/dg/kendra-availability-change.html).
 
 # Using the Amazon Kendra API to submit feedback
-<a name="feedback-api"></a>
 
 To use the Amazon Kendra API to submit query feedback, use the [SubmitFeedback](https://docs.aws.amazon.com/kendra/latest/APIReference/API_SubmitFeedback.html) API. To identify the query, you supply the index ID of the index that the query applies to, and the query ID returned in the response from the [Query](https://docs.aws.amazon.com/kendra/latest/APIReference/API_Query.html) API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Review metrics for RAG evaluations that use LLMs (console)
-<a name="knowledge-base-eval-llm-results"></a>
 
 You can review the metrics presented in a report for a RAG evaluation job using the Amazon Bedrock console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # RiverMeadow
-<a name="app-mobility-rivermeadow"></a>
 
 *Last update: June 19, 2026*
 

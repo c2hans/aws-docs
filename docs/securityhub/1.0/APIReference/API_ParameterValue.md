@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Paramet
 ---
 
 # ParameterValue
-<a name="API_ParameterValue"></a>
 
  An object that includes the data type of a security control parameter and its current value.
 

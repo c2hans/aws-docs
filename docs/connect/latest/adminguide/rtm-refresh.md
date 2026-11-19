@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/rtm-refresh.ht
 ---
 
 # How often real-time metrics refresh in Connect Customer
-<a name="rtm-refresh"></a>
 
 Data in real-time metrics reports is refreshed as follows:
 + The **Real-time metrics** page refreshes every 15 seconds, as long as the page is active. For example, if you have multiple tabs open in your browser and navigate to a different tab, the real-time metric page won't be updated until you return to it.

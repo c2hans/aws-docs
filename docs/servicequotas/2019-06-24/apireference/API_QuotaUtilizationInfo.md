@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # QuotaUtilizationInfo
-<a name="API_QuotaUtilizationInfo"></a>
 
 Information about a quota's utilization, including the quota code, service information, current usage, and applied limits.
 

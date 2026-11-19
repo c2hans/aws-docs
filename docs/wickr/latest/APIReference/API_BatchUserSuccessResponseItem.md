@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_BatchUserS
 ---
 
 # BatchUserSuccessResponseItem
-<a name="API_BatchUserSuccessResponseItem"></a>
 
 Contains information about a user that was successfully processed in a batch user operation.
 

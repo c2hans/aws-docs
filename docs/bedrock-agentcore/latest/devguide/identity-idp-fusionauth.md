@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # FusionAuth
-<a name="identity-idp-fusionauth"></a>
 
 FusionAuth can be configured as an outbound resource credential provider for AgentCore Identity. This allows your agents to authenticate users through FusionAuth’s OAuth2 service and obtain access tokens for FusionAuth API resources.
 

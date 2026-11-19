@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Compliance validation for Amazon SageMaker Unified Studio
-<a name="compliance-validation"></a>
 
 ## Compliance programs for Amazon SageMaker
 <a name="compliance-programs-sagemaker"></a>

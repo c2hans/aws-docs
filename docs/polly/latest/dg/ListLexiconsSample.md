@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/ListLexiconsSample.html
 ---
 
 # ListLexicons
-<a name="ListLexiconsSample"></a>
 
 The following Java code sample shows how to use Java-based applications to produce a list of pronunciation lexicons stored in an AWS Region.
 

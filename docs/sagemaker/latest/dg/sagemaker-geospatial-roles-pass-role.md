@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-geospatial
 ---
 
 # Adding the SageMaker geospatial service principal to an existing SageMaker AI execution role
-<a name="sagemaker-geospatial-roles-pass-role"></a>
 
 To use the SageMaker geospatial specific API operations your SageMaker AI execution role must include the SageMaker geospatial service principal, `sagemaker-geospatial.amazonaws.com` in the execution role's trust policy. This allows the SageMaker AI execution role to perform actions in your AWS account on your behalf.
 

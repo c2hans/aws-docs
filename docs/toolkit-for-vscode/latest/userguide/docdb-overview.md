@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/docd
 ---
 
 # Working with Amazon DocumentDB in the Toolkit
-<a name="docdb-overview"></a>
 
 Amazon DocumentDB (with MongoDB compatibility) is a fast, reliable, and fully-managed database service that simplifies the set up, operation, and scaling of MongoDB-compatible databases in the cloud.
 

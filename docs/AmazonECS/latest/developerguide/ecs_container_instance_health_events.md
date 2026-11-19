@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_cont
 ---
 
 # Amazon ECS container instance health change events
-<a name="ecs_container_instance_health_events"></a>
 
 The following scenarios cause container instance health change events.
 

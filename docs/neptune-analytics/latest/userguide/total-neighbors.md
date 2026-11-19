@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/total
 ---
 
 # Total neighbors algorithm
-<a name="total-neighbors"></a>
 
 Total neighbors is an algorithm that counts the total number of unique neighbors of two input vertices, which is the union of the neighborhoods of those vertices.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ii
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## Customer case studies
 <a name="customer-case-studies.250d3c29-1b47-54cd-ac57-ea588e3e7c65"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PutUserS
 ---
 
 # PutUserStatus
-<a name="API_PutUserStatus"></a>
 
 Changes the current status of a user or agent in Connect Customer. If the agent is currently handling a contact, this sets the agent's next status.
 

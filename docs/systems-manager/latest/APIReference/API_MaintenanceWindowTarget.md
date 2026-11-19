@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # MaintenanceWindowTarget
-<a name="API_MaintenanceWindowTarget"></a>
 
 The target registered with the maintenance window.
 

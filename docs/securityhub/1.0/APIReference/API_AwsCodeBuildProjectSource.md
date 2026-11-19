@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsCode
 ---
 
 # AwsCodeBuildProjectSource
-<a name="API_AwsCodeBuildProjectSource"></a>
 
 Information about the build input source code for this build project.
 

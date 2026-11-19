@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_BatchPutD
 ---
 
 # BatchPutDocumentResponseFailedDocument
-<a name="API_BatchPutDocumentResponseFailedDocument"></a>
 
 Provides information about a document that could not be indexed.
 

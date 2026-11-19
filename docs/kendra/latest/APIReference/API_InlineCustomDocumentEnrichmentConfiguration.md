@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_InlineCus
 ---
 
 # InlineCustomDocumentEnrichmentConfiguration
-<a name="API_InlineCustomDocumentEnrichmentConfiguration"></a>
 
 Provides the configuration information for applying basic logic to alter document metadata and content when ingesting documents into Amazon Kendra. To apply advanced logic, to go beyond what you can do with basic logic, see [HookConfiguration](https://docs.aws.amazon.com/kendra/latest/dg/API_HookConfiguration.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes-2023
 ---
 
 # Amazon Linux 2023 version 2023.6.20241209 release notes
-<a name="relnotes-2023.6.20241209"></a>
 
 **Warning**
  This release was recalled due to a bug introduced in the `python3.9` package which prevented the use of `venv` as described in [this GitHub issue](https://github.com/amazonlinux/amazon-linux-2023/issues/861).
@@ -38,7 +37,7 @@ These are the release notes for Amazon Linux 2023 (AL2023) version 2023.6.202412
 ### New packages in AL2023.6.20241209 since AL2023.6.20241121
 <a name="new-AL2023.6.20241121-AL2023.6.20241209"></a>
 
- Comparing AL2023.6.20241121 version 2023.6.20241121 to AL2023.6.20241209 version [2023.6.20241209](#relnotes-2023.6.20241209).
+ Comparing AL2023.6.20241121 version 2023.6.20241121 to AL2023.6.20241209 version [2023.6.20241209](relnotes-2023.6.20241209.md).
 
 | Package Type | Number of new packages in AL2023.6.20241209 compared to AL2023.6.20241121 |
 | --- | --- |
@@ -110,7 +109,7 @@ New packages in AL2023.6.20241209:
 ### AL2023.6.20241209 upgrades from AL2023.6.20241121
 <a name="vercmp-AL2023.6.20241121-AL2023.6.20241209"></a>
 
- Comparing [2023.6.20241121](relnotes-2023.6.20241121.md) to [2023.6.20241209](#relnotes-2023.6.20241209).
+ Comparing [2023.6.20241121](relnotes-2023.6.20241121.md) to [2023.6.20241209](relnotes-2023.6.20241209.md).
 
 | Package Type | Count |
 | --- | --- |

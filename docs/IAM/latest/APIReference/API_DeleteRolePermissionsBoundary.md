@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteRolePe
 ---
 
 # DeleteRolePermissionsBoundary
-<a name="API_DeleteRolePermissionsBoundary"></a>
 
 Deletes the permissions boundary for the specified IAM role.
 

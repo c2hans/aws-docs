@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/delete-tgw-connect-peer.h
 ---
 
 # Delete a Connect peer in AWS Transit Gateway
-<a name="delete-tgw-connect-peer"></a>
 
 If you no longer need a Connect peer, you can delete it.
 

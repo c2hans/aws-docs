@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Availability and Durability
-<a name="aurora-faq-availability-and-durability"></a>
 
 **Topics**
 + [How does Amazon Aurora store data for high availability?](#aurora-faq-how-does-amazon-aurora-store-data-for-high-availability)

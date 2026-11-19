@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 9: Validate the pilot
-<a name="pb-es68-validate-pilot"></a>
 
 Compare document counts and spot-check content on the Amazon OpenSearch Service domain before you widen scope:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # ParameterNameValue
-<a name="API_dax_ParameterNameValue"></a>
 
 An individual DAX parameter.
 

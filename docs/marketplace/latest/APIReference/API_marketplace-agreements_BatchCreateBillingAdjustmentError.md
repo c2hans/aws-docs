@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # BatchCreateBillingAdjustmentError
-<a name="API_marketplace-agreements_BatchCreateBillingAdjustmentError"></a>
 
 An error for a billing adjustment request entry that failed validation.
 

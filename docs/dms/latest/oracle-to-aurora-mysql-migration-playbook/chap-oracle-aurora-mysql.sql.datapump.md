@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle DBMS\_DATAPUMP and MySQL integration with Amazon S3
-<a name="chap-oracle-aurora-mysql.sql.datapump"></a>
 
 With AWS DMS, you can migrate data from Oracle databases to Amazon S3 using Oracle `DBMS_DATAPUMP`, and load data from Amazon S3 into MySQL-compatible databases. Oracle `DBMS_DATAPUMP` provides a way to transfer data objects between Oracle databases or export them to an operating system file. MySQL integration with Amazon S3 lets you use an Amazon S3 bucket as a data source or destination for loading and unloading data.
 

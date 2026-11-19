@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSO
 ---
 
 # AWSObservabilityAdminLogsCentralizationServiceRolePolicy
-<a name="AWSObservabilityAdminLogsCentralizationServiceRolePolicy"></a>
 
 **Description**: Service-linked role permissions for CloudWatch Logs centralization
 

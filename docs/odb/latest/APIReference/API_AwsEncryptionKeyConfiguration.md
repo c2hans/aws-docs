@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_AwsEncryptio
 ---
 
 # AwsEncryptionKeyConfiguration
-<a name="API_AwsEncryptionKeyConfiguration"></a>
 
 The configuration of the AWS Key Management Service (KMS) encryption key used for an Autonomous Database.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-us
 ---
 
 # Add Facebook as a social identity provider
-<a name="cognito-user-pools-social-idp-facebook"></a>
 
 **Note**
 **Last verified against the provider console:** October 2, 2026. Facebook steps use the [Meta for Developers](https://developers.facebook.com/) console, which organizes app setup around **Use cases**. The OAuth redirect settings are under **Use cases**, **Customize**, **Settings**.

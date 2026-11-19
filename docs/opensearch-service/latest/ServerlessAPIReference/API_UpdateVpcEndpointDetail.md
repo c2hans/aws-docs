@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # UpdateVpcEndpointDetail
-<a name="API_UpdateVpcEndpointDetail"></a>
 
 Update details for an OpenSearch Serverless-managed interface endpoint.
 

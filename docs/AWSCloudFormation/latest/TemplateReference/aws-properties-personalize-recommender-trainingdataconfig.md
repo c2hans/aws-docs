@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Personalize::Recommender TrainingDataConfig
-<a name="aws-properties-personalize-recommender-trainingdataconfig"></a>
 
 The training data configuration to use when creating a domain recommender or custom solution version (trained model).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetReadSet.html
 ---
 
 # GetReadSet
-<a name="API_GetReadSet"></a>
 
 Retrieves detailed information from parts of a read set and returns the read set in the same format that it was uploaded. You must have read sets uploaded to your sequence store in order to run this operation.
 

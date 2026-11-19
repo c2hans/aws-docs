@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Protecti
 ---
 
 # ProtectionLimits
-<a name="API_ProtectionLimits"></a>
 
 Limits settings on protections for your subscription.
 

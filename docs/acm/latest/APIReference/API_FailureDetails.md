@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_FailureDetai
 ---
 
 # FailureDetails
-<a name="API_FailureDetails"></a>
 
 Contains details about a failure.
 

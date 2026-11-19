@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Cre
 ---
 
 # CreateMulticastGroup
-<a name="API_CreateMulticastGroup"></a>
 
 Creates a multicast group.
 

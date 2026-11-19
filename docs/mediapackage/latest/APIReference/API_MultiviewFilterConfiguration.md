@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Mul
 ---
 
 # MultiviewFilterConfiguration
-<a name="API_MultiviewFilterConfiguration"></a>
 
 The multiview combination for a pinned manifest. MediaPackage serves the manifest with this layout and these sources, so players request it without an `aws.multiview` query parameter.
 

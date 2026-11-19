@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-gu
 ---
 
 # Guided setup options for Amazon Cognito
-<a name="cognito-guided-setup"></a>
 
 You might want to evaluate the features of Amazon Cognito in a structured, guided experience. Here are some external resources that provide tailored experiences with user pools and identity pools.
 

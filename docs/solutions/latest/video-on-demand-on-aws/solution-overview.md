@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/
 ---
 
 # Deploy a reference implementation to build a scalable, distributed video-on-demand workflow
-<a name="solution-overview"></a>
 
 The Video on Demand on AWS solution automatically provisions the AWS services necessary to build a scalable, distributed workflow to ingest, store, process, and deliver video content on demand. It ingests metadata files and source videos, processes the videos for playback on a wide range of devices, stores the transcoded media files, and delivers the videos to end users through CloudFront.
 

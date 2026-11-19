@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSPremiumSupport-PostgreSQLWorkloadReview`
-<a name="automation-aws-postgresqlworkloadreview"></a>
 
  **Description**
 

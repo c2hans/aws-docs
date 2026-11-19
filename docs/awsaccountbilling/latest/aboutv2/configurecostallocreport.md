@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/configu
 ---
 
 # Using the monthly cost allocation report
-<a name="configurecostallocreport"></a>
 
 The monthly cost allocation report lists the AWS usage for your account by product category and linked account user. This report contains the same line items as the detailed [AWS Cost and Usage Report](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html) and additional columns for your tag keys. We recommend that you use AWS Cost and Usage Report instead.
 

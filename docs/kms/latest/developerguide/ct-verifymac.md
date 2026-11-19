@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-verifymac.h
 ---
 
 # VerifyMac
-<a name="ct-verifymac"></a>
 
 The following example shows an AWS CloudTrail log entry for the [VerifyMac](https://docs.aws.amazon.com/kms/latest/APIReference/API_VerifyMac.html) operation.
 

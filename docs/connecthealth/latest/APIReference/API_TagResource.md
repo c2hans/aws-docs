@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Ta
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Associates the specified tags with the specified resource
 

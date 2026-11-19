@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/xray-services-agent
 ---
 
 # Amazon Bedrock AgentCore and AWS X-Ray
-<a name="xray-services-agentcore"></a>
 
 Amazon Bedrock AgentCore integrates with AWS X-Ray to provide distributed tracing capabilities for your AI agents and tools. This integration allows you to track requests as they flow through your agent applications, helping you identify performance bottlenecks and troubleshoot issues.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/list-da
 ---
 
 # ListDataSources
-<a name="list-data-sources"></a>
 
 Use the `ListDataSources` API operation to list all data sources in the current AWS Region that belong to a particular AWS account. Following is an example AWS CLI command for this operation.
 

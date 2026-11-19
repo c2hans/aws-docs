@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oracle-dump
 ---
 
 # Transferring Oracle Database dump files to Amazon S3
-<a name="copy-to-amazon-s3"></a>
 
 [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/) is an object storage service designed for scalability, security, and performance. When you use Amazon S3, you can store and retrieve any amount of data from anywhere at any time.
 

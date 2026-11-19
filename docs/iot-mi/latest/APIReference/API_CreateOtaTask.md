@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_CreateOta
 ---
 
 # CreateOtaTask
-<a name="API_CreateOtaTask"></a>
 
 Create an over-the-air (OTA) task to target a device.
 

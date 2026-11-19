@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/hbase-web-ui.htm
 ---
 
 # View the HBase user interface
-<a name="hbase-web-ui"></a>
 
 **Note**
 The HBase user interface uses insecure HTTP connections by default. To enable secure HTTP (HTTPS), set the `hbase.ssl.enabled` property for the `hbase-site` classification to `true` in your [HBase configuration](emr-hbase-configure.md). For more information about using secure HTTP (HTTPS) for the HBase web UI, see the [Apache HBase Reference Guide](https://hbase.apache.org/book.html#_using_secure_http_https_for_the_web_ui).

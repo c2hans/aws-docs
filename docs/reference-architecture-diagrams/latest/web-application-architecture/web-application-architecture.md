@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/w
 ---
 
 # Web Application Architecture on AWS
-<a name="web-application-architecture"></a>
 
 Publication date: **November 19, 2021 ([Diagram history](#diagram-history))**
 

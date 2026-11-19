@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-cross-
 ---
 
 # Use online store shared resources with access permissions
-<a name="feature-store-cross-account-access-online-store-use"></a>
 
 The resource owner account must grant permissions to resource consumer accounts to allow for discoverability, read-only, write, or admin privileges with a shared resource. In the following sections, we provide instructions on how to accept an invitation to access shared resources and provide examples showing how to view and interact with shared feature groups.
 

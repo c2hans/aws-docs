@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_TagKe
 ---
 
 # TagKeys
-<a name="API_TagKeys"></a>
 
 A complex type that contains zero or more `Tag` elements.
 

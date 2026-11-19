@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-mtrl
 ---
 
 # Creating assets for multi-turn reinforcement learning
-<a name="model-customize-mtrl-assets"></a>
 
 ## Prompt dataset format
 <a name="model-customize-mtrl-assets-prompt-dataset-format"></a>

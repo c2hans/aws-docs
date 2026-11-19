@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Migrating from Apache Solr to Amazon OpenSearch Service
-<a name="introduction"></a>
 
 *Bharav Patel, Amazon Web Services*
 

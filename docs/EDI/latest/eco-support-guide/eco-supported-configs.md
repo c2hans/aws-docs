@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/EDI/latest/eco-support-guide/eco-support
 ---
 
 # EDI on AWS supported configurations
-<a name="eco-supported-configs"></a>
 
 For a list of configurations that ECO supports, see [Supported configurations](https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/acc-sd.html#supported-configs) in the *AMS Accelerate User Guide*.
 

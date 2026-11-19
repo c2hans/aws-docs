@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Node expiry and termination grace period
-<a name="6-2-set-expiry-period-and-termination-grace-period"></a>
 
 Force periodic node replacement to pick up cheaper instance types, newer AMIs, and prevent long-running nodes from accumulating drift. Control how gracefully pods are evicted to balance cost reclaim speed with application stability.
 

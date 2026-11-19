@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/dms-neptune-rep
 ---
 
 # Creating an AWS DMS replication task with Neptune as the target
-<a name="dms-neptune-replication"></a>
 
 Once you have created your table mapping and graph mapping configurations, use the following process to load data from the source store into Neptune. Consult the AWS DMS documentation for more details about the APIs in question.
 

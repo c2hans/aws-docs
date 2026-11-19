@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # VoteSummary
-<a name="API_VoteSummary"></a>
 
  Properties of an individual vote that a member cast for a proposal.
 

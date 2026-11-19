@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mi
 ---
 
 # Mobilize phase
-<a name="mobilize-phase"></a>
 
 The next step in preparing your workforce and resources to migrate your enterprise at scale is to break down the mobilize activities into different workstreams. Although the goal of the mobilize phase is the migration of business applications, this phase also provides an opportunity to lay the foundation for tooling, process, and culture that will accelerate your migration at scale. Most of these workstreams can run in parallel after the assessment phase is complete. The following workstreams should be run during this phase:
 + [Detailed business case](detailed-business-case.md)

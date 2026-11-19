@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Operations
 ---
 
 # Inspector2
-<a name="API_Operations_Inspector2"></a>
 
 The following actions are supported by Inspector2:
 +  [AssociateMember](API_AssociateMember.md)

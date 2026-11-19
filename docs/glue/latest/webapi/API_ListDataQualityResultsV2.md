@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListDataQualityRe
 ---
 
 # ListDataQualityResultsV2
-<a name="API_ListDataQualityResultsV2"></a>
 
 Returns a paginated list of data quality execution results for your account, filtered by the specified criteria. Use the `NextToken` parameter to retrieve additional results.
 

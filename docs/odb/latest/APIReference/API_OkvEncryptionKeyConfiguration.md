@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_OkvEncryptio
 ---
 
 # OkvEncryptionKeyConfiguration
-<a name="API_OkvEncryptionKeyConfiguration"></a>
 
 The configuration of the Oracle Key Vault (OKV) encryption key used for an Autonomous Database.
 

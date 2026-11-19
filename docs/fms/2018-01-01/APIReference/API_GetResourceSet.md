@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_GetResou
 ---
 
 # GetResourceSet
-<a name="API_GetResourceSet"></a>
 
 Gets information about a specific resource set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-de
 ---
 
 # Authorizing access to Amazon RDS blue/green deployment operations
-<a name="blue-green-deployments-authorizing-access"></a>
 
 Users must have the required permissions to perform operations related to blue/green deployments. You can create IAM policies that grant users and roles permission to perform specific API operations on the specified resources they need. You can then attach those policies to the IAM permission sets or roles that require those permissions. For more information, see [Identity and access management for Amazon RDS](UsingWithRDS.IAM.md).
 

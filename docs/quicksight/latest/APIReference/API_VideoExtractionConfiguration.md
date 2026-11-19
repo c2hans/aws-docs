@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Video
 ---
 
 # VideoExtractionConfiguration
-<a name="API_VideoExtractionConfiguration"></a>
 
 The configuration for video extraction from knowledge base documents.
 

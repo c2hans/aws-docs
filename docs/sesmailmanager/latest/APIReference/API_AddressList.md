@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_A
 ---
 
 # AddressList
-<a name="API_AddressList"></a>
 
 An address list contains a list of emails and domains that are used in MailManager Ingress endpoints and Rules for email management.
 

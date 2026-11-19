@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-s3-dele
 ---
 
 # Delete an Amazon S3 delivery
-<a name="data-delivery-s3-delete"></a>
 
  Delete an Amazon S3 delivery when you no longer need it. Deleting a delivery stops delivery from the source stream to the destination. Data already delivered to the Amazon S3 bucket is not removed.
 

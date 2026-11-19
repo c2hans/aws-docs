@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_c
 ---
 
 # Best practices for AD Connector
-<a name="ad_connector_best_practices"></a>
 
 Here are some suggestions and guidelines you should consider to avoid problems and get the most out of AD Connector.
 

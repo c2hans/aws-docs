@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-message-data-protectio
 ---
 
 # Using managed data identifiers in Amazon SNS
-<a name="sns-message-data-protection-managed-data-identifiers"></a>
 
 ## What are managed data identifiers?
 <a name="what-are-data-managed-data-identifiers"></a>

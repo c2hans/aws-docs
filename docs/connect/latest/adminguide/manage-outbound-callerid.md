@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/manage-outboun
 ---
 
 # Manage caller ID for outbound calls
-<a name="manage-outbound-callerid"></a>
 
 When agents transfer calls or initiate outbound calls, your instance configuration determines which caller ID displays to the recipient. The following sections explain where caller ID comes from in each scenario and how to set the number you want to display to recipients.
 

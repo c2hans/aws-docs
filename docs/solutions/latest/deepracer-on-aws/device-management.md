@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/device
 ---
 
 # Device management
-<a name="device-management"></a>
 
 Remotely onboard, monitor, and control the physical AWS DeepRacer cars and timers used at your events.
 

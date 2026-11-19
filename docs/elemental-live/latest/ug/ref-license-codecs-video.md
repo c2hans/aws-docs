@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/ref-license-cod
 ---
 
 # Add-on packages for video codecs
-<a name="ref-license-codecs-video"></a>
 
 Some video codecs require an add-on package. This table lists video codecs in alphabetical order. Each row identifies whether Elemental Live requires an add-on package in order to decode a video source that uses this codec or encode an output with this codec.
 

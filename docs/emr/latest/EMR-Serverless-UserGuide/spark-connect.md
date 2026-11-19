@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/spar
 ---
 
 # Run interactive sessions with Amazon EMR Serverless through Spark Connect
-<a name="spark-connect"></a>
 
 With Amazon EMR release `emr-7.13.0` and later, you can connect to an Amazon EMR Serverless application from self-managed PySpark clients such as VS Code, PyCharm, and Jupyter notebooks using the EMR Serverless session APIs with Apache Spark Connect. Spark Connect uses a client-server architecture that decouples your application code from the Spark driver process. You develop and debug PySpark code in your local IDE while Spark operations run on EMR Serverless compute. Spark Connect offers the following benefits:
 + Connect to EMR Serverless from any PySpark client, including VS Code, PyCharm, and Jupyter notebooks.

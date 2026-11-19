@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_InputDesc
 ---
 
 # InputDescription
-<a name="API_InputDescription"></a>
 
 Describes the application input configuration for a SQL-based Kinesis Data Analytics application.
 

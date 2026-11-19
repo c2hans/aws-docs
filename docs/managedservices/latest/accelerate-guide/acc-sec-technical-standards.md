@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # AMS Accelerate technical standards
-<a name="acc-sec-technical-standards"></a>
 
 The following are Accelerate technical standards categories:
 

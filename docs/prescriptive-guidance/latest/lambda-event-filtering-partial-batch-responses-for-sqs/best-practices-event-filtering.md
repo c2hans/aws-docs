@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/lambda-even
 ---
 
 # Best practices for implementing Lambda event filtering
-<a name="best-practices-event-filtering"></a>
 
 The following are best practices for configuring [Lambda event filtering for Amazon SQS event sources](https://aws.amazon.com/about-aws/whats-new/2021/11/aws-lambda-event-filtering-amazon-sqs-dynamodb-kinesis-sources/):
 + Familiarize yourself with the [Lambda service's filter rule syntax](https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventfiltering.html#filtering-syntax)—specifically [the filter rule syntax Lambda uses for Amazon SQS](https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventfiltering.html#filtering-sqs). Then, design an event filter according to your business logic. The effectiveness of any event filter depends on its ability to invoke a Lambda function only when it should. To accomplish this, you must apply the correct syntax to your filter rules so that the rules reflect the needs of your application's business logic.

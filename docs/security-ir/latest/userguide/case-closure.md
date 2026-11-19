@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/case-closur
 ---
 
 # Case closure
-<a name="case-closure"></a>
 
  AWS Security Incident Response engineers close your case when:
 + The incident has been contained and remediated

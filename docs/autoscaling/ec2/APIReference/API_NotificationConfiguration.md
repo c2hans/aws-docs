@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Notific
 ---
 
 # NotificationConfiguration
-<a name="API_NotificationConfiguration"></a>
 
 Describes a notification.
 

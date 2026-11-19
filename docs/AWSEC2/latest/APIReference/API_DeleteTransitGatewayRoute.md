@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTra
 ---
 
 # DeleteTransitGatewayRoute
-<a name="API_DeleteTransitGatewayRoute"></a>
 
 Deletes the specified route from the specified transit gateway route table.
 

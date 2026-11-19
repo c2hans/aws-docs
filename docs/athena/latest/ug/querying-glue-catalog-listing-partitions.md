@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-glue-catalog-l
 ---
 
 # List partitions for a specific table
-<a name="querying-glue-catalog-listing-partitions"></a>
 
 You can use `SHOW PARTITIONS {{table_name}}` to list the partitions for a specified table, as in the following example.
 

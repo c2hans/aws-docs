@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/partition-projection-su
 ---
 
 # Supported types for partition projection
-<a name="partition-projection-supported-types"></a>
 
 A table can have any combination of `enum`, `integer`, `date,` or `injected` partition column types.
 

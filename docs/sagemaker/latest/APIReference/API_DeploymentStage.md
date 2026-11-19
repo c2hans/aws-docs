@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Deploy
 ---
 
 # DeploymentStage
-<a name="API_DeploymentStage"></a>
 
 Contains information about a stage in an edge deployment plan.
 

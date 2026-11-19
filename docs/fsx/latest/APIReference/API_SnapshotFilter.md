@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_SnapshotFilt
 ---
 
 # SnapshotFilter
-<a name="API_SnapshotFilter"></a>
 
 A filter used to restrict the results of `DescribeSnapshots` calls. You can use multiple filters to return results that meet all applied filter requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMESEC05-BP02 Collect, store, and analyze player usage logs to detect inappropriate behavior
-<a name="gamsec05-bp02"></a>
 
  Instrument your game to collect logs to understand how players use the features of your game and how they interact with other players. You can then block unauthorized activities that can degrade the player experience.
 

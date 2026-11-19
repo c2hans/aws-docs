@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/migrationguide/migrating-to-
 ---
 
 # Migrate to a new Amazon MWAA environment
-<a name="migrating-to-new-mwaa"></a>
 
 Explore the following steps to migrate your existing Apache Airflow workload to a new Amazon MWAA environment. You can use these steps to migrate from an older version of Amazon MWAA to a new version release, or migrate your self-managed Apache Airflow deployment to Amazon MWAA. This tutorial assumes you are migrating from an existing Apache Airflow v1.10.12 to a new Amazon MWAA running Apache Airflow v2.5.1, but you can use the same procedures to migrate from, or to different Apache Airflow versions.
 

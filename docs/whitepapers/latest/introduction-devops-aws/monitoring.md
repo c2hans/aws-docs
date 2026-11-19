@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # Monitoring and observability
-<a name="monitoring"></a>
 
 Communication and collaboration are fundamental in a DevOps philosophy. To facilitate this, feedback is critical. This feedback is provided by our suite of monitoring and observability services.
 

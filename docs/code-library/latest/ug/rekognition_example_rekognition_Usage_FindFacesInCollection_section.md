@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/rekognition_examp
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Build an Amazon Rekognition collection and find faces in it using an AWS SDK
-<a name="rekognition_example_rekognition_Usage_FindFacesInCollection_section"></a>
 
 The following code example shows how to:
 + Create an Amazon Rekognition collection.

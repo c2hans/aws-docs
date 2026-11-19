@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/create-dev-ipam.html
 ---
 
 # Create a development IPv4 pool
-<a name="create-dev-ipam"></a>
 
 Follow the steps in this section to create a development pool within your Regional pool. If you need only a top-level and Regional pool, and don't need development pools, skip to [Allocate CIDRs from an IPAM pool](allocate-cidrs-ipam.md).
 

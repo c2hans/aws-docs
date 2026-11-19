@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCertificateManagerPrivateCAReadOnly
-<a name="AWSCertificateManagerPrivateCAReadOnly"></a>
 
 **Description**: Provides read only access to AWS Certificate Manager Private Certificate Authority
 

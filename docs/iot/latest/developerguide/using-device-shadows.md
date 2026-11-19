@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/using-device-s
 ---
 
 # Simulating Device Shadow service communications
-<a name="using-device-shadows"></a>
 
 This topic demonstrates how the Device Shadow service acts as an intermediary and allows devices and apps to use a shadow to update, store, and retrieve a device's state.
 

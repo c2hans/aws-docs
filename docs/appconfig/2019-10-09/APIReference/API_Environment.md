@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_En
 ---
 
 # Environment
-<a name="API_Environment"></a>
 
 ## Contents
 <a name="API_Environment_Contents"></a>

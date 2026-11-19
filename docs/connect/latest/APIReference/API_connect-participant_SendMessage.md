@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # SendMessage
-<a name="API_connect-participant_SendMessage"></a>
 
 Sends a message.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-linux-subscriptions/late
 ---
 
 # ListRegisteredSubscriptionProviders
-<a name="API_ListRegisteredSubscriptionProviders"></a>
 
 List Bring Your Own License (BYOL) subscription registration resources for your account.
 

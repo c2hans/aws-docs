@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AIAgent.
 ---
 
 # AIAgent
-<a name="API_AIAgent"></a>
 
 Information about an AI agent that a security profile allows access to for Agent-to-Agent authorization.
 

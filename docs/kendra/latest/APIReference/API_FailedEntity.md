@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_FailedEnt
 ---
 
 # FailedEntity
-<a name="API_FailedEntity"></a>
 
 Information on the users or groups in your IAM Identity Center identity source that failed to properly configure with your Amazon Kendra experience.
 

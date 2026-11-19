@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/connect-ec2.h
 ---
 
 # Connect using Amazon EC2
-<a name="connect-ec2"></a>
 
 This section describes how to set up connectivity between an Amazon DocumentDB cluster and Amazon EC2 and access the Amazon DocumentDB cluster from the Amazon EC2 instance.
 

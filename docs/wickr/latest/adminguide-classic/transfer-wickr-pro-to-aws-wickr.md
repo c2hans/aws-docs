@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/adminguide-classic/transfer
 This guide documents the classic version of the AWS Wickr administration console, released before March 13, 2025. For documentation on the new AWS Wickr administration console, see [ Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Transfer Wickr Pro to AWS Wickr
-<a name="transfer-wickr-pro-to-aws-wickr"></a>
 
 **Note**
 Wickr Pro has been discontinued. If you have lost access to Wickr Pro, follow the steps in this guide to move to AWS Wickr.

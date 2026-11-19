@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/finding
 ---
 
 # Finding prices in the service price list file
-<a name="finding-prices-in-service-price-list-files"></a>
 
 |  |
 | --- |

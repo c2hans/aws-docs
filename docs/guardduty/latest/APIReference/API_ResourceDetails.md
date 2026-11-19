@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Resour
 ---
 
 # ResourceDetails
-<a name="API_ResourceDetails"></a>
 
 Represents the resources that were scanned in the scan entry.
 

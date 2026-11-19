@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/VPCs.Creatin
 ---
 
 # Creating a Virtual Private Cloud (VPC)
-<a name="VPCs.CreatingVPC"></a>
 
 In this example, you create an Amazon VPC with a private subnet for each Availability Zone.
 

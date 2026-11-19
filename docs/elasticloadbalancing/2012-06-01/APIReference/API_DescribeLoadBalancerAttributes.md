@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # DescribeLoadBalancerAttributes
-<a name="API_DescribeLoadBalancerAttributes"></a>
 
 Describes the attributes for the specified load balancer.
 

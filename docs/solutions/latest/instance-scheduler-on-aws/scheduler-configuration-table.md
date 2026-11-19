@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Scheduler configuration table
-<a name="scheduler-configuration-table"></a>
 
 When deployed, Instance Scheduler on AWS creates an Amazon DynamoDB table that contains global configuration settings.
 

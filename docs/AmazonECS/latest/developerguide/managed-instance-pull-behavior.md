@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-
 ---
 
 # Amazon ECS Managed Instances container image pull behavior
-<a name="managed-instance-pull-behavior"></a>
 
 Container startup time depends on the size of the underlying container image. Larger images, such as full versions of Debian, Ubuntu, or Amazon Linux 2, take longer to start because they include more services than their slim counterparts (Debian-slim, Ubuntu-slim, Amazon-slim) or minimal base images such as Alpine.
 

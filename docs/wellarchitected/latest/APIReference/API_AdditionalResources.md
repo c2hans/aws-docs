@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # AdditionalResources
-<a name="API_AdditionalResources"></a>
 
 The choice level additional resources for a custom lens.
 

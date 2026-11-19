@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Sce
 ---
 
 # Learn the basics of IAM with an AWS SDK
-<a name="iam_example_iam_Scenario_CreateUserAssumeRole_section"></a>
 
 The following code examples show how to create a user and assume a role.
 

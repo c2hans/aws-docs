@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootEKSCNI`
-<a name="automation-awssupport-troubleshootekscni"></a>
 
 ## Description
 <a name="automation-awssupport-troubleshootekscni-description"></a>

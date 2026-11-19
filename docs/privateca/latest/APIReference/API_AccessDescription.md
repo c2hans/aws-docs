@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/APIReference/API_Access
 ---
 
 # AccessDescription
-<a name="API_AccessDescription"></a>
 
 Provides access information used by the `authorityInfoAccess` and `subjectInfoAccess` extensions described in [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280).
 

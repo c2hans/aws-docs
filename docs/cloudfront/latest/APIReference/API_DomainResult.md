@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Domai
 ---
 
 # DomainResult
-<a name="API_DomainResult"></a>
 
 The details about the domain result.
 

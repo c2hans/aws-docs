@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateAd
 ---
 
 # CreateAdvancedPromptOptimizationJob
-<a name="API_CreateAdvancedPromptOptimizationJob"></a>
 
 Creates an advanced prompt optimization job.
 

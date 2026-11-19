@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Ro
 ---
 
 # Route
-<a name="API_Route"></a>
 
 Information about a route for a virtual interface.
 

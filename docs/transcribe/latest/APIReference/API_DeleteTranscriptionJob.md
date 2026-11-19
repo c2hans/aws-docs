@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Delet
 ---
 
 # DeleteTranscriptionJob
-<a name="API_DeleteTranscriptionJob"></a>
 
 Deletes a transcription job. To use this operation, specify the name of the job you want to delete using `TranscriptionJobName`. Job names are case sensitive.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/roles-account-lin
 ---
 
 # Account linking roles
-<a name="roles-account-linking"></a>
 
 To create a C2C connector, you'll need an OAuth 2.0 authorization server and account linking. For more information, see [Account linking workflow](account-linking-flow.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-v
 ---
 
 # Outbound messaging
-<a name="nx-voice-send-outbound"></a>
 
 You place a voice call with the `SendVoiceMessage` operation. Use the AWS CLI to call from your application. The service converts text to speech with Amazon Polly, or plays an audio file that you reference with speech synthesis markup language (SSML). The example uses a phone pool as the origination identity, which is the recommended approach; you can also specify a single phone number instead.
 

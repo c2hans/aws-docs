@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-perm
 ---
 
 # Enforce the use of specific guardrails in model inference requests
-<a name="guardrails-permissions-id"></a>
 
 You can enforce the use of a specific guardrail for model inference by including the `bedrock:GuardrailIdentifier` condition key in your IAM policy. This allows you to deny any inference API request that doesn't include the guardrail configured in your IAM policy.
 

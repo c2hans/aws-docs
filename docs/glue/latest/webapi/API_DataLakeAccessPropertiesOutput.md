@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataLakeAccessPro
 ---
 
 # DataLakeAccessPropertiesOutput
-<a name="API_DataLakeAccessPropertiesOutput"></a>
 
 The output properties of the data lake access configuration for your catalog resource in the AWS Glue Data Catalog.
 

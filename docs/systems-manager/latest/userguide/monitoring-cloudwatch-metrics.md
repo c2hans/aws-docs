@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/monitor
 ---
 
 # Monitoring Run Command metrics using Amazon CloudWatch
-<a name="monitoring-cloudwatch-metrics"></a>
 
 *Metrics* are the fundamental concept in Amazon CloudWatch. A metric represents a time-ordered set of data points that are published to CloudWatch. Think of a metric as a variable to monitor, and the data points as representing the values of that variable over time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule
 ---
 
 # Operational metrics and alarms
-<a name="operational-metrics-and-alarms"></a>
 
  This solution has a dash to list all the metrics for monitoring the core Lambdas and DynamoDB tables.
 

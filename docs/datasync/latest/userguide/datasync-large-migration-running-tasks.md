@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/datasync-large
 ---
 
 # Running your DataSync transfer tasks
-<a name="datasync-large-migration-running-tasks"></a>
 
 During each of your migration waves, your data transfer usually follows the same general process:
 

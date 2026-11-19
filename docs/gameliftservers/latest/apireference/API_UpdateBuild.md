@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # UpdateBuild
-<a name="API_UpdateBuild"></a>
 
  **This API works with the following fleet types:** EC2
 

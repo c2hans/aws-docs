@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/monitor-spark-ui-history.
 ---
 
 # Launching the Spark history server
-<a name="monitor-spark-ui-history"></a>
 
 You can use a Spark history server to visualize Spark logs on your own infrastructure. You can see the same visualizations in the AWS Glue console for AWS Glue job runs on AWS Glue 4.0 or later versions with logs generated in the Standard (rather than legacy) format. For more information, see [Monitoring jobs using the Apache Spark web UI](monitor-spark-ui.md).
 

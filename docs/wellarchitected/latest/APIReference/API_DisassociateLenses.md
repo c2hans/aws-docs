@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # DisassociateLenses
-<a name="API_DisassociateLenses"></a>
 
 Disassociate a lens from a workload.
 

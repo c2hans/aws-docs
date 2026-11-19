@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops03-b
 ---
 
 # OPS03-BP05 Design for efficient patch management
-<a name="ops03-bp05"></a>
 
  Patching keeps systems secure, supported, and current with features, but patching manually does not scale and is error-prone. Treat patch management as a designed process: decide what to patch, when, and how it moves across environments, and then automate the mechanics. Rebuild systems from a known good image where you can, and use controlled in-place patching where you cannot.
 

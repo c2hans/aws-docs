@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PricingPlanManager/latest/UserGuide/freq
 ---
 
 # Frequently Asked Questions
-<a name="frequently-asked-questions"></a>
 
  **Do I need an annual commitment?**
 

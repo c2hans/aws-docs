@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/examples-android.html
 ---
 
 # Android example
-<a name="examples-android"></a>
 
 The following example uses the Android SDK for Amazon Polly to read the specified text using a voice selected from a list of voices.
 

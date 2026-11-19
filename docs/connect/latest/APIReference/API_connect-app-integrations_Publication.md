@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # Publication
-<a name="API_connect-app-integrations_Publication"></a>
 
 The configuration of an event that the application publishes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-l
 ---
 
 # Log in to an HSM using CloudHSM CLI
-<a name="cloudhsm_cli-login"></a>
 
 You can use the **login** command in CloudHSM CLI to log in and out of each hardware security (HSM) in a AWS CloudHSM cluster. This command has the following sub-command:
 + [mfa-token-sign](cloudhsm_cli-login-mfa-token-sign.md)

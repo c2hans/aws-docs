@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/connections-deskt
 ---
 
 # Connectors
-<a name="connections-desktop"></a>
 
 Connectors bring cloud connectors, system tools, local connectors, and coding agents together in one place, with a catalog to discover and add new ones. A connector links AWS Quick to an external application or a native tool so agents can access data and act on your behalf. You manage them from **Customize**, on the **Connectors** tab, which supports four capabilities.
 + Cloud connectors connect Quick to external services such as Outlook, SharePoint, OneDrive, Slack, Jira, Asana, Airtable, and Salesforce, as well as remotely hosted Model Context Protocol (MCP) servers. Once connected, they are reachable from any Quick device, including desktop, mobile, and web. For the full list, see [Supported integrations](supported-integrations.md).

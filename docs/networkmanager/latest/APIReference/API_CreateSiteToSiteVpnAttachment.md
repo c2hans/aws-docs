@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CreateSiteToSiteVpnAttachment
-<a name="API_CreateSiteToSiteVpnAttachment"></a>
 
 Creates an Amazon Web Services site-to-site VPN attachment on an edge location of a core network.
 

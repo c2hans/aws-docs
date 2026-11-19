@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootMWAAEnvironmentCreation`
-<a name="automation-troubleshoot-mwaa-environment-creation"></a>
 
 **Description**
 

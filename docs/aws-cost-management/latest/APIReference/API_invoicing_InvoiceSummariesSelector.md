@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # InvoiceSummariesSelector
-<a name="API_invoicing_InvoiceSummariesSelector"></a>
 
 Specifies the invoice summary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/prici
 ---
 
 # Pricing for Network Synthetic Monitor
-<a name="pricing-nw"></a>
 
 With Network Synthetic Monitor, there are no upfront costs or long-term commitments. Pricing for Network Synthetic Monitor has the following two components:
 + An hourly fee per monitored AWS resource

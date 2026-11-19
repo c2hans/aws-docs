@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCPERF05-BP03 Integrate performance testing into the release cycle of the supply chain application
-<a name="scperf05-bp03"></a>
 
  Load testing results help you measure how the system behaves while in high-traffic or heavy loads. Note these measurements to help you adjust the underlying resources without wasting cost by over-provisioning.
 

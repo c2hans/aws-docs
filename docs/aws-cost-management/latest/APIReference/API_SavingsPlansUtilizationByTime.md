@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SavingsPlansUtilizationByTime
-<a name="API_SavingsPlansUtilizationByTime"></a>
 
 The amount of Savings Plans utilization (in hours).
 

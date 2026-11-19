@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/other-considerations.
 ---
 
 # Other considerations
-<a name="other-considerations"></a>
 
 This sections provides information about other considerations when connecting to RISE.
 

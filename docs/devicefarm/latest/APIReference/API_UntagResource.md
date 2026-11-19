@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Untag
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Deletes the specified tags from a resource.
 

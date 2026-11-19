@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/crm-manage-ma
 ---
 
 # Managing AWS Marketplace activities
-<a name="crm-manage-marketplace"></a>
 
 The following topics explain how to use the CRM connector to manage AWS Marketplace activities from within Salesforce.
 

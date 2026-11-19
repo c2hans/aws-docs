@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-data-replication
 ---
 
 # Replicating data using AWS Services
-<a name="rise-data-replication-awsmanaged"></a>
 
 ![Data replication using Managed Services.](https://docs.aws.amazon.com/sap/latest/general/images/rise-data-replication-aws-services.png)
 

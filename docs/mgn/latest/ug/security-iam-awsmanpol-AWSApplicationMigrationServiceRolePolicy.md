@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/security-iam-awsmanpol-AWS
 ---
 
 # AWS managed policy: AWSApplicationMigrationServiceRolePolicy
-<a name="security-iam-awsmanpol-AWSApplicationMigrationServiceRolePolicy"></a>
 
 This policy is attached to the MGN [AWSServiceRoleForApplicationMigrationService](using-service-linked-roles.md) service-linked role (SLR).
 

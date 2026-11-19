@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Managing existing functions
-<a name="functions-managing"></a>
 
 **Topics**
 + [Function status](functions-managing-lifecycle.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_B
 ---
 
 # BatchExecuteStatement
-<a name="API_BatchExecuteStatement"></a>
 
 Runs a batch SQL statement over an array of data.
 

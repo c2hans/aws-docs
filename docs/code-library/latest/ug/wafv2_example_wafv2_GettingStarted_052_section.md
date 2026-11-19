@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/wafv2_example_waf
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Getting started with web application firewalls
-<a name="wafv2_example_wafv2_GettingStarted_052_section"></a>
 
 The following code example shows how to:
 + Create a web ACL

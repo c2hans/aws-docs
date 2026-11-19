@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/manager-assist
 ---
 
 # Get started with Manager assist
-<a name="manager-assist-getting-started"></a>
 
 Before you can use manager assist, complete the following prerequisites:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_SNOMED
 ---
 
 # SNOMEDCTTrait
-<a name="API_SNOMEDCTTrait"></a>
 
  Contextual information for an entity.
 

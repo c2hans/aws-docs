@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Accept
 ---
 
 # AcceptInvitation
-<a name="API_AcceptInvitation"></a>
 
 Accepts an invitation for the member account to contribute data to a behavior graph. This operation can only be called by an invited member account.
 

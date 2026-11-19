@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ExecutionPreview
-<a name="API_ExecutionPreview"></a>
 
 Information about the changes that would be made if an execution were run.
 

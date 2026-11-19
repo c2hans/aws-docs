@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/device-trust.h
 ---
 
 # Device-based trust providers for Verified Access
-<a name="device-trust"></a>
 
 You can use device trust providers with AWS Verified Access. You can use one or multiple device trust providers with your Verified Access instance.
 

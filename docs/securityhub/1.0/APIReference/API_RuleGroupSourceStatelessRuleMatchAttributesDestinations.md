@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_RuleGro
 ---
 
 # RuleGroupSourceStatelessRuleMatchAttributesDestinations
-<a name="API_RuleGroupSourceStatelessRuleMatchAttributesDestinations"></a>
 
 A destination IP address or range.
 

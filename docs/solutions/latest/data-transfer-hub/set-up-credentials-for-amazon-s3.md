@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/set-u
 ---
 
 # Set up credentials for Amazon S3
-<a name="set-up-credentials-for-amazon-s3"></a>
 
 ## Step 1: Create an IAM policy
 <a name="step-1-create-an-iam-policy"></a>

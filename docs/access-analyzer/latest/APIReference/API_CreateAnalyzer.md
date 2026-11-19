@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # CreateAnalyzer
-<a name="API_CreateAnalyzer"></a>
 
 Creates an analyzer for your account.
 

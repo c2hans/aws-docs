@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/mq-rabbit-d
 ---
 
 # mq-rabbit-deployment-mode
-<a name="mq-rabbit-deployment-mode"></a>
 
 Checks the deployment mode configured for the Amazon MQ RabbitMQ broker engine. The rule is NON\_COMPLIANT if the default single-instance broker mode is being used.
 

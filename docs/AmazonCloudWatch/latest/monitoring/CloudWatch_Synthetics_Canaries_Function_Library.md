@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Library functions available for canary scripts
-<a name="CloudWatch_Synthetics_Canaries_Function_Library"></a>
 
 CloudWatch Synthetics includes several built-in classes and functions that you can call when writing Node.js scripts to use as canaries.
 

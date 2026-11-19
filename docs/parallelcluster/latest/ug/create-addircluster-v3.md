@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/create-addircl
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Create a cluster with an AD domain
-<a name="create-addircluster-v3"></a>
 
 **Warning**
 This introductory section describes how to set up AWS ParallelCluster with a Managed Active Directory (AD) server over the Lightweight Directory Access Protocol (LDAP). LDAP is an insecure protocol. For production systems, we strongly recommended the use of TLS certificates (LDAPS) as described in the [Example AWS Managed Microsoft AD over LDAP(S) cluster configurations](examples-addir-v3.md) section that follows.

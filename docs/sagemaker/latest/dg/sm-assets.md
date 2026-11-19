@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sm-assets.html
 ---
 
 # Controlled access to assets with Amazon SageMaker Assets
-<a name="sm-assets"></a>
 
 Use Amazon SageMaker Assets to provide controlled and regulated access to *assets*, models or data tables, belonging to your organization. Within SageMaker Assets, users from different AWS accounts can create and share assets related to specific business problems without additional administrator overhead. Instead of having permissions being statically tied to their identity, users can provide permissions to assets that they’re using for their active workflows.
 

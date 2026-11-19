@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_O
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [AssociateMemberToFarm](API_AssociateMemberToFarm.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-DeleteCloudFormationStack`
-<a name="automation-aws-deletecloudformationstack"></a>
 
  **Description**
 

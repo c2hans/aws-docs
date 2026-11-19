@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/vonage-reading-from-entit
 ---
 
 # Reading from Vonage entities
-<a name="vonage-reading-from-entities"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/sp-rec-dow
 ---
 
 # Downloading Savings Plans recommendations
-<a name="sp-rec-downloading"></a>
 
 You can download your Savings Plans recommendations in CSV file format. CSV file format is useful to review or share recommendations.<a name="sp-rec-downloading-howto"></a>
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentTe
 ---
 
 # ExperimentTemplateLogConfiguration
-<a name="API_ExperimentTemplateLogConfiguration"></a>
 
 Describes the configuration for experiment logging.
 

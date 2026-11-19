@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/about-scoring-
 ---
 
 # Use scoring and weights on agent evaluation forms in Connect Customer
-<a name="about-scoring-and-weights"></a>
 
 By using *weights*, you can increase or decrease the impact of a question or section score on the overall evaluation score.
 

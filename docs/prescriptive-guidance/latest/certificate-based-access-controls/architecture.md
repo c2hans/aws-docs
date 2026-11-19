@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/certificate
 ---
 
 # Architecture for certificate-based access controls in AWS
-<a name="architecture"></a>
 
 You can use AWS Identity and Access Management Roles Anywhere to obtain temporary security credentials in AWS Identity and Access Management (IAM) for workloads such as servers, containers, and applications that run outside of AWS. Your workloads can use the same [IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) and [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) that you use to access AWS resources. IAM Roles Anywhere eliminates the need to manage long-term credentials for workloads that operate outside of the AWS Cloud.
 

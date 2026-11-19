@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-mq-filtering.html
 ---
 
 # Filter events from an Amazon MQ event source
-<a name="with-mq-filtering"></a>
 
 You can use event filtering to control which records from a stream or queue Lambda sends to your Event Function. For general information about how event filtering works, see [Control which events Lambda sends to your Event Function](invocation-eventfiltering.md).
 

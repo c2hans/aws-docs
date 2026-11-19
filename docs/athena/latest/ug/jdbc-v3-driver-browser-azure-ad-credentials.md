@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/jdbc-v3-driver-browser-
 ---
 
 # Browser Azure AD credentials
-<a name="jdbc-v3-driver-browser-azure-ad-credentials"></a>
 
 Browser Azure AD is a SAML-based authentication mechanism that works with the Azure AD identity provider and supports multi-factor authentication. Unlike the standard Azure AD authentication mechanism, this mechanism does not require a user name, password, or client secret in the connection parameters. Like the standard Azure AD authentication mechanism, Browser Azure AD also assumes the user has already set up federation between Athena and Azure AD.
 

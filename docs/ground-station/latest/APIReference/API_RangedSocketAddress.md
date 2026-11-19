@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_R
 ---
 
 # RangedSocketAddress
-<a name="API_RangedSocketAddress"></a>
 
 A socket address with a port range.
 

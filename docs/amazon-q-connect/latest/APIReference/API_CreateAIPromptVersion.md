@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # CreateAIPromptVersion
-<a name="API_amazon-q-connect_CreateAIPromptVersion"></a>
 
 Creates an Amazon Q in Connect AI Prompt version.
 

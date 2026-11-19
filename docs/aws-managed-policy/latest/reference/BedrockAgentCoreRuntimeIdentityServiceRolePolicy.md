@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Bedr
 ---
 
 # BedrockAgentCoreRuntimeIdentityServiceRolePolicy
-<a name="BedrockAgentCoreRuntimeIdentityServiceRolePolicy"></a>
 
 **Description**: Allows access to identity and token management resources that are required for Amazon Bedrock AgentCore Runtime authentication and authorization.
 

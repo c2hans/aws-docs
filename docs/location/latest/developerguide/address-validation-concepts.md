@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/address-v
 ---
 
 # Address validation
-<a name="address-validation-concepts"></a>
 
 Address validation jobs process address data to verify and standardize addresses. The service supports both free-form address lines and structured address components, and can optionally enhance results with geographic coordinates and country-specific postal attributes.
 

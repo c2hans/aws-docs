@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/flink-autoscaler
 ---
 
 # Flink autoscaler
-<a name="flink-autoscaler"></a>
 
 ## Overview
 <a name="flink-autoscaler-overview"></a>

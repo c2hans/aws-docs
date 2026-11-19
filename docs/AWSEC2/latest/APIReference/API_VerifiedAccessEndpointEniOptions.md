@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessEndpointEniOptions
-<a name="API_VerifiedAccessEndpointEniOptions"></a>
 
 Options for a network-interface type endpoint.
 

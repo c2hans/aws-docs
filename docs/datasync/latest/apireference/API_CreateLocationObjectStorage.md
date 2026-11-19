@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_CreateL
 ---
 
 # CreateLocationObjectStorage
-<a name="API_CreateLocationObjectStorage"></a>
 
 Creates a transfer *location* for an object storage system. AWS DataSync can use this location as a source or destination for transferring data. You can make transfers with or without a [DataSync agent](https://docs.aws.amazon.com/datasync/latest/userguide/do-i-need-datasync-agent.html#when-agent-required).
 

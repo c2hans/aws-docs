@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/s
 ---
 
 # Configure standard logging (legacy)
-<a name="standard-logging-legacy-s3"></a>
 
 **Notes**
 This topic is for the previous version of standard logging. For the latest version, see [Configure standard logging (v2)](standard-logging.md).

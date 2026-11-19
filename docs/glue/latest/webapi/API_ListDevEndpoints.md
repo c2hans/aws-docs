@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListDevEndpoints.
 ---
 
 # ListDevEndpoints
-<a name="API_ListDevEndpoints"></a>
 
 Retrieves the names of all `DevEndpoint` resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names.
 

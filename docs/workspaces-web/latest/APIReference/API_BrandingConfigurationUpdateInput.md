@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_B
 ---
 
 # BrandingConfigurationUpdateInput
-<a name="API_BrandingConfigurationUpdateInput"></a>
 
 The input configuration for updating branding settings. All fields are optional when updating existing branding.
 

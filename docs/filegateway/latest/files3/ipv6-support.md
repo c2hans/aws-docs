@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/ipv6-support.h
 ---
 
 # IPv6 support
-<a name="ipv6-support"></a>
 
 IPv6 support is only available on gateway appliance versions 2.x or higher. Gateway appliance version 1.x can't be updated to version 2.x. You must migrate or replace your gateway appliance version 1.x to get IPv6 support.
 

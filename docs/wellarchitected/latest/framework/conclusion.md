@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/conclus
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
  The AWS Well-Architected Framework provides a consistent way to review, evolve, and operate cloud architectures against a shared set of best practices. Building well-architected systems is not a one-time exercise. Each pillar reinforces the same underlying stance: iterate continuously, base decisions on data, treat every event as a chance to improve, and use AWS services and automation to make the right choice the default choice.
 

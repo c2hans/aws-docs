@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Creat
 ---
 
 # CreateComponent
-<a name="API_CreateComponent"></a>
 
 Creates a custom component by grouping similar standalone instances to monitor.
 

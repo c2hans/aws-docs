@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Encryption in Amazon OpenSearch Serverless
-<a name="serverless-encryption"></a>
 
 ## Encryption at rest
 <a name="serverless-encryption-at-rest"></a>

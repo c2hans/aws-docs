@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Redshif
 ---
 
 # RedshiftCredentialConfiguration
-<a name="API_RedshiftCredentialConfiguration"></a>
 
 The details of the credentials required to access an Amazon Redshift cluster.
 

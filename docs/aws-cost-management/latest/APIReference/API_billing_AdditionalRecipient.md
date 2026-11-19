@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AdditionalRecipient
-<a name="API_billing_AdditionalRecipient"></a>
 
 A recipient copied as a viewer on the executive approval request, in addition to the approver.
 

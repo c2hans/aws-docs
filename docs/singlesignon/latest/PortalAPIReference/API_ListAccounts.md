@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/A
 ---
 
 # ListAccounts
-<a name="API_ListAccounts"></a>
 
 Lists all AWS accounts assigned to the user. These AWS accounts are assigned by the administrator of the account. For more information, see [Assign User Access](https://docs.aws.amazon.com/singlesignon/latest/userguide/useraccess.html#assignusers) in the *IAM Identity Center User Guide*. This operation returns a paginated response.
 

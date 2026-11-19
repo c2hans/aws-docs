@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Thi
 ---
 
 # ThirdPartyJobData
-<a name="API_ThirdPartyJobData"></a>
 
 Represents information about the job data for a partner action.
 

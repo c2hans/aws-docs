@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/service_code_exam
 ---
 
 # Code examples for Support using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use Support with an AWS software development kit (SDK).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Create an API Gateway REST API to track COVID-19 data
-<a name="example_cross_ApiGatewayDataTracker_section"></a>
 
 The following code example shows how to create a REST API that simulates a system to track daily cases of COVID-19 in the United States, using fictional data.
 

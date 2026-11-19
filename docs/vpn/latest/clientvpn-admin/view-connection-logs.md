@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/view-connecti
 ---
 
 # View AWS Client VPN connection logs
-<a name="view-connection-logs"></a>
 
 You can view your Client VPN connection logs using the CloudWatch Logs console.
 

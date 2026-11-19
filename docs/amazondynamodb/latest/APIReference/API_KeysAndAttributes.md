@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_K
 ---
 
 # KeysAndAttributes
-<a name="API_KeysAndAttributes"></a>
 
 Represents a set of primary keys and, for each key, the attributes to retrieve from the table.
 

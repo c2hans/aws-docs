@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-
 ---
 
 # Deploy a customizable architecture to build a video-on-demand workflow
-<a name="solution-overview"></a>
 
 Publication date: *December 2020 ([last update](revisions.md): November 2024)*
 

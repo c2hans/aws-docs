@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # BatchGetViewError
-<a name="API_BatchGetViewError"></a>
 
 A collection of error messages for any views that AWS Resource Explorer couldn't retrieve details.
 

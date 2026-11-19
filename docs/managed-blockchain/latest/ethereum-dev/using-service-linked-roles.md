@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/ethereum-dev/u
 End of support notice: Amazon Managed Blockchain (AMB) will stop accepting new customers on October 29, 2026. Existing customers can continue using Amazon Managed Blockchain (AMB) until September 29, 2027. After September 29, 2027 you will no longer be able to access Amazon Managed Blockchain (AMB). For more information, see [Amazon Managed Blockchain (AMB) end of support](https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fabric-dev/managed-blockchain-end-of-support.html).
 
 # Using Service-Linked Roles for AMB Access
-<a name="using-service-linked-roles"></a>
 
 Amazon Managed Blockchain (AMB) uses AWS Identity and Access Management (IAM)[ service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role). A service-linked role is a unique type of IAM role that is linked directly to AMB Access. Service-linked roles are predefined by AMB Access and include all the permissions that the service requires to call other AWS services on your behalf.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # WebCrawlerConfiguration
-<a name="API_amazon-q-connect_WebCrawlerConfiguration"></a>
 
 The configuration details for the web data source.
 

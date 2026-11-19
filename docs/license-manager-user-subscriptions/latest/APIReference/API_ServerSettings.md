@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # ServerSettings
-<a name="API_ServerSettings"></a>
 
 Contains settings for a specific server.
 

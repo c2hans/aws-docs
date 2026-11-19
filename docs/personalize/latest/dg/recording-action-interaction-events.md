@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/recording-action-i
 ---
 
 # Recording real-time action interaction events
-<a name="recording-action-interaction-events"></a>
 
 An *action interaction* event is an interaction between a user and an *action*. For example, a user enrolling in a membership program or applying for a credit card.
 

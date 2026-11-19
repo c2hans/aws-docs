@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-connec
 ---
 
 # Prerequisites for connecting Amazon Neptune databases using IAM authentication
-<a name="iam-auth-connect-prerq"></a>
 
 The following are instructions for installing Apache Maven and Java 8 on an Amazon EC2 instance. These are required for the Amazon Neptune Signature Version 4 authentication samples.
 

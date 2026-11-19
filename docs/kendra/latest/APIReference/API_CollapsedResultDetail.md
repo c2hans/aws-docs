@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Collapsed
 ---
 
 # CollapsedResultDetail
-<a name="API_CollapsedResultDetail"></a>
 
 Provides details about a collapsed group of search results.
 

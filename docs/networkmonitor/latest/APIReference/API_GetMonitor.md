@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_G
 ---
 
 # GetMonitor
-<a name="API_GetMonitor"></a>
 
 Returns details about a specific monitor.
 

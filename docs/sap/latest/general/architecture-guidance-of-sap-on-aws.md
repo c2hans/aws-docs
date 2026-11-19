@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/architecture-guidance
 ---
 
 # Architecture guidance for availability and reliability of SAP on AWS
-<a name="architecture-guidance-of-sap-on-aws"></a>
 
 August 2021
 

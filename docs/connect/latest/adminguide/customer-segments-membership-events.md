@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-segme
 ---
 
 # Track segment membership changes in Connect Customer
-<a name="customer-segments-membership-events"></a>
 
 You can subscribe a segment to receive notifications whenever the membership of the segment changes. A membership change occurs when a customer profile enters or exits the segment based on the segment criteria. This can happen because of a change in a profile, an associated object, or a calculated attribute. Membership changes are determined in two ways:
 + **Near real-time changes** — When membership changes because of a change to profile attributes, objects, or calculated attributes, Connect Customer Customer Profiles sends the event as a near real-time (`LIVE`) update.

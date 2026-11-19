@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomFilterListConfiguration
-<a name="API_CustomFilterListConfiguration"></a>
 
 A list of custom filter values.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/rtrim.html
 ---
 
 # $rtrim
-<a name="rtrim"></a>
 
 New from version 4.0.
 

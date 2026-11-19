@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Che
 ---
 
 # Cheat sheet for DynamoDB
-<a name="CheatSheet"></a>
 
 This cheat sheet provides a quick reference for working with Amazon DynamoDB and its various AWS SDKs.
 

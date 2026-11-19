@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/shortcut-reading-from-ent
 ---
 
 # Reading from Shortcut entities
-<a name="shortcut-reading-from-entities"></a>
 
 **Prerequisites**
 

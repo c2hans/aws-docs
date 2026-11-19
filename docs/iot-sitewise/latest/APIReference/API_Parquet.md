@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Par
 ---
 
 # Parquet
-<a name="API_Parquet"></a>
 
 A parquet file.
 

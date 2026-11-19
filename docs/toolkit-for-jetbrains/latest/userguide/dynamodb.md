@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/d
 ---
 
 # Amazon DynamoDB in the AWS Toolkit for JetBrains
-<a name="dynamodb"></a>
 
 Amazon DynamoDB is a fully managed NoSQL database service that provides predictable performance with seamless scalability. For detailed information about the DynamoDB service, see the [Amazon DynamoDB](/amazondynamodb/latest/developerguide/Introduction.html) *User Guide*.
 

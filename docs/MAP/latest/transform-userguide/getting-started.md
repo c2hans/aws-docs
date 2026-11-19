@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/transform-userguide/getting-s
 ---
 
 # Getting started with AWS Migration Acceleration Program 2.0
-<a name="getting-started"></a>
 
 As you move your existing on-premises workloads to AWS, the migrated workloads are identified through a tagging mechanism. Tagging is required because it is used to report the migrated workloads’ spend and generate appropriate incentives. MAP cannot provide these incentives if you do not activate Cost Allocation Tags or tag the migrated resources.
 

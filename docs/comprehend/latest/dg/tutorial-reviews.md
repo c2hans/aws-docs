@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/tutorial-reviews.ht
 ---
 
 # Tutorial: Analyzing insights from customer reviews with Amazon Comprehend
-<a name="tutorial-reviews"></a>
 
 This tutorial explains how to use Amazon Comprehend with [Amazon Simple Storage Service](https://aws.amazon.com/s3/), [AWS Glue](https://aws.amazon.com/glue/), [Amazon Athena](https://aws.amazon.com/athena/), and [AWS Quick](https://aws.amazon.com/quicksight/) to gain valuable insights into your documents. Amazon Comprehend can extract sentiment (the mood of a document) and entities (names of people, organizations, events, dates, products, places, quantities, and titles) from unstructured text.
 

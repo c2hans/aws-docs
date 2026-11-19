@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-plans-canc
 ---
 
 # Canceling an execution
-<a name="recovery-plans-cancel"></a>
 
 Canceling an execution stops AWS Elastic Disaster Recovery from starting any more steps.
 

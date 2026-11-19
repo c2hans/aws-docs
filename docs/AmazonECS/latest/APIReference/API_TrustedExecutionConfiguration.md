@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Truste
 ---
 
 # TrustedExecutionConfiguration
-<a name="API_TrustedExecutionConfiguration"></a>
 
 The trusted execution configuration for a task. This configuration controls the isolation mode and attestation policy. You set this configuration when you register a task definition.
 

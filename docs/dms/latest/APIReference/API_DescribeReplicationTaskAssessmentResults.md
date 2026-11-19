@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeRepl
 ---
 
 # DescribeReplicationTaskAssessmentResults
-<a name="API_DescribeReplicationTaskAssessmentResults"></a>
 
 Returns the task assessment results from the Amazon S3 bucket that AWS DMS creates in your AWS account. This action always returns the latest results.
 

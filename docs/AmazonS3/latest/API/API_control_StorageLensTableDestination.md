@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_StorageL
 ---
 
 # StorageLensTableDestination
-<a name="API_control_StorageLensTableDestination"></a>
 
 A container for configuring your S3 Storage Lens reports to export to read-only S3 table buckets. This parameter enables you to store your Storage Lens metrics in a structured, queryable table format in Apache Iceberg.
 

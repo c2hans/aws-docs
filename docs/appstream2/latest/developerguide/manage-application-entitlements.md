@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/manage-
 ---
 
 # Manage Application Entitlements
-<a name="manage-application-entitlements"></a>
 
 Amazon WorkSpaces Applications can dynamically build the application catalog to display the WorkSpaces Applications applications that users are entitled to access. Application entitlements can be assigned based on attributes using a third-party SAML 2.0 identity provider, or by using the WorkSpaces Applications Dynamic Application Framework. The following sections describe how to manage application entitlements.
 

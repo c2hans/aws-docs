@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-gatewa
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Amazon EKS Hybrid Nodes gateway configuration reference
-<a name="hybrid-nodes-gateway-configuration"></a>
 
 This page documents all configurable parameters for the Amazon EKS Hybrid Nodes gateway. For installation instructions, see [Get started with EKS Hybrid Nodes gateway](hybrid-nodes-gateway-getting-started.md). For an overview of the gateway, see [Amazon EKS Hybrid Nodes gateway](hybrid-nodes-gateway-overview.md).
 

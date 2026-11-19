@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/unified-operation
 ---
 
 # Getting started with Unified Operations
-<a name="unified-operations-getting-started"></a>
 
 This topic discusses the steps to onboard to AWS Unified Operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-elb.ht
 ---
 
 # Elastic Load Balancing events
-<a name="events-ref-elb"></a>
 
 Elastic Load Balancing sends service events to EventBridge via AWS CloudTrail.
 

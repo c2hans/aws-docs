@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/fsx-windows
 ---
 
 # fsx-windows-deployment-type-check
-<a name="fsx-windows-deployment-type-check"></a>
 
 Checks if the Amazon FSx for WINDOWS file systems are configured with certain deployment types. The rule is NON\_COMPLIANT if FSx for WINDOWS file systems are not configured with the deployment types you specify.
 

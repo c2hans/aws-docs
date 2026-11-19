@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-re
 ---
 
 # Enable or disable AWS Regions in your account
-<a name="manage-acct-regions"></a>
 
 This information is about enabling or disabling AWS Regions in your AWS account if you signed up for AWS using Sign up for AWS (advanced) or if you activated advanced features for your account. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
 

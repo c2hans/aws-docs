@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Resources
-<a name="opex-resources"></a>
 
 ## Documents and blogs
 <a name="documents-and-blogs"></a>

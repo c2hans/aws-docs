@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeR
 ---
 
 # DescribeRemediationExecutionStatus
-<a name="API_DescribeRemediationExecutionStatus"></a>
 
 Provides a detailed view of a Remediation Execution for a set of resources including state, timestamps for when steps for the remediation execution occur, and any error messages for steps that have failed. When you specify the limit and the next token, you receive a paginated response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ec2-examp
 ---
 
 # Using Elastic IP addresses with Amazon EC2 with AWS SDK for PHP Version 3
-<a name="ec2-examples-using-elastic-ip-addresses"></a>
 
 An Elastic IP address is a static IP address designed for dynamic cloud computing. An Elastic IP address is associated with your AWS account. It’s a public IP address, which is reachable from the internet. If your instance does not have a public IP address, you can associate an Elastic IP address with your instance to enable communication with the internet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/xray-api-sendingdat
 ---
 
 # Sending trace data to AWS X-Ray
-<a name="xray-api-sendingdata"></a>
 
 You can send trace data to X-Ray in the form of segment documents. A segment document is a JSON formatted string that contains information about the work that your application does in service of a request. Your application can record data about the work that it does itself in segments, or work that uses downstream services and resources in subsegments.
 

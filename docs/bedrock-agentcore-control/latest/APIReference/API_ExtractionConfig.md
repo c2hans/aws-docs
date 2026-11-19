@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ExtractionConfig
-<a name="API_ExtractionConfig"></a>
 
 Configuration for metadata extraction from conversational content.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Optimize SQL Server backup strategies
-<a name="sql-server-backup"></a>
 
 ## Overview
 <a name="sql-server-backup-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql
 ---
 
 # PostgreSQL considerations
-<a name="postgresql-considerations"></a>
 
  PostgreSQL offers many settings that can be tuned to obtain efficient performance for every type of workload. This section focuses on the PostgreSQL database engine settings. It also looks at the PostgreSQL parameters that can be optimized to improve performance related to Amazon EBS volumes I/Os.
 

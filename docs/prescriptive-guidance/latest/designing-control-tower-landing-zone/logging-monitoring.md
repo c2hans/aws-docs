@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 ---
 
 # Centralized logging and monitoring
-<a name="logging-monitoring"></a>
 
 Organizations often create dedicated AWS accounts for centralized logging and monitoring purposes. These accounts are used to collect and store logs from various AWS accounts and services within the organization for long-term archival and auditing as well as monitoring the activity in all accounts for threats and vulnerabilities. In the security OU, AWS Control Tower implements a centralized log store (Log Archive) for logs and a centralized audit account (Audit) for auditor access and security tooling.
 

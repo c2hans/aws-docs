@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [O.DIP.2] Centralize logs for enhanced security investigations
-<a name="o.dip.2-centralize-logs-for-enhanced-security-investigations"></a>
 
  **Category:** FOUNDATIONAL
 

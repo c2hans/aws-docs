@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/security_iam_
 ---
 
 # How Amazon RDS works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Amazon RDS, you should understand what IAM features are available to use with Amazon RDS.
 

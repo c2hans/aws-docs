@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # Condition
-<a name="API_Condition"></a>
 
  A single condition that can match based on WAF rule action or label name.
 

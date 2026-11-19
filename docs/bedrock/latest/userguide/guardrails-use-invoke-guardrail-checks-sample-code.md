@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-use-
 ---
 
 # Sample code
-<a name="guardrails-use-invoke-guardrail-checks-sample-code"></a>
 
 The following examples show how to call `InvokeGuardrailChecks` from the AWS CLI and the Python SDK (Boto3).
 

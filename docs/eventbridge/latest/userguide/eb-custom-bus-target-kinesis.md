@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Kinesis stream target
-<a name="eb-custom-bus-target-kinesis"></a>
 
 To deliver to a Kinesis data stream, set `TargetArn` to the stream ARN and add `KinesisParameters` with a `PartitionKey`. To keep an event group on one shard, use `{% $events.SystemMetadata.EventGroupId %}`.
 

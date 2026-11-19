@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dating.htm
 ---
 
 # .dating
-<a name="dating"></a>
 
 Used for dating websites.
 

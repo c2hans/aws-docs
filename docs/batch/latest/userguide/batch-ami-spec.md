@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch-ami-spec.ht
 ---
 
 # Compute resource AMI specification
-<a name="batch-ami-spec"></a>
 
 The basic AWS Batch compute resource AMI specification consists of the following:
 

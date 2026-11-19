@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # Network
-<a name="API_Network"></a>
 
 Network configuration properties.
 

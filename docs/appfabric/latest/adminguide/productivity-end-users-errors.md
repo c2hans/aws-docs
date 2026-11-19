@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/productivity
 ---
 
 # Troubleshoot end user errors in AppFabric for productivity
-<a name="productivity-end-users-errors"></a>
 
 |  |
 | --- |

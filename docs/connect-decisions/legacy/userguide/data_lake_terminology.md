@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data_
 ---
 
 # Terminology used in data lake
-<a name="data_lake_terminology"></a>
 
 The following terms are used in data lake:
 + **Entity** – Information about a data object for each category. For example, company, geography, and trading\_partner are entities for an organization. For more information, see [Data entities and columns used in AWS Supply Chain](data-model.md).

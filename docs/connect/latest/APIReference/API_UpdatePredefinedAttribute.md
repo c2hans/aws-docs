@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdatePr
 ---
 
 # UpdatePredefinedAttribute
-<a name="API_UpdatePredefinedAttribute"></a>
 
 Updates a predefined attribute for the specified Connect Customer instance. A *predefined attribute* is made up of a name and a value.
 

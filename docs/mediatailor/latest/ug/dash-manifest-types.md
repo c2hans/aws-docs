@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/dash-manifest-type
 ---
 
 # DASH manifest types
-<a name="dash-manifest-types"></a>
 
 Dynamic Adaptive Streaming over HTTP (DASH) uses a Media Presentation Description (MPD) manifest to deliver streaming content. Understanding the structure and components of DASH manifests is essential for configuring and troubleshooting MediaTailor workflows.
 

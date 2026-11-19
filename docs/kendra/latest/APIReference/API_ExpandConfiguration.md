@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_ExpandCon
 ---
 
 # ExpandConfiguration
-<a name="API_ExpandConfiguration"></a>
 
 Specifies the configuration information needed to customize how collapsed search result groups expand.
 

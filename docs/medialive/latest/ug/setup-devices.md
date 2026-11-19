@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-devices.html
 ---
 
 # Setting up AWS Elemental Link
-<a name="setup-devices"></a>
 
 If your organization uses AWS Elemental Link devices with AWS Elemental MediaLive or AWS Elemental MediaConnect, you must deploy the device and configure the device.
 

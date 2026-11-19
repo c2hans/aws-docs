@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputsecur
 ---
 
 # Input security groups: group ID
-<a name="inputsecuritygroups-inputsecuritygroupid"></a>
 
 ## URI
 <a name="inputsecuritygroups-inputsecuritygroupid-url"></a>

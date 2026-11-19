@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Returns the list of tags for the specified resource.
 

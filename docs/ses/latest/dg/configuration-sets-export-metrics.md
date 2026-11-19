@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/configuration-sets-export-
 ---
 
 # Viewing and exporting reputation metrics
-<a name="configuration-sets-export-metrics"></a>
 
 Amazon SES automatically exports information about the overall bounce and complaint rates for your entire account to Amazon CloudWatch. You can use these metrics to create alarms in CloudWatch, or to automatically pause email sending using a Lambda function.
 

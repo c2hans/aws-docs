@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-jupyterai-
 ---
 
 # Use Jupyter AI in JupyterLab or Studio Classic
-<a name="sagemaker-jupyterai-use"></a>
 
 You can use Jupyter AI in JupyterLab or Studio Classic by invoking language models from either the chat UI or from notebook cells. The following sections give information about the steps needed to complete this.
 

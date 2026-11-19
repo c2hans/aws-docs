@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Metric AvailableFilter
-<a name="aws-properties-connect-metric-availablefilter"></a>
 
 A filter that is available for use with the metric. Part of an AvailableFilterList that describes the filters that are available for use with the metric.
 

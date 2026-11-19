@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/fleet-provi
 ---
 
 # Set up AWS IoT fleet provisioning for Greengrass core devices
-<a name="fleet-provisioning-setup"></a>
 
 To [install the AWS IoT Greengrass Core software with fleet provisioning](fleet-provisioning.md), you must first set up the following resources in your AWS account. These resources enable devices to register themselves with AWS IoT and operate as Greengrass core devices. Follow steps in this section once to create and configure these resources in your AWS account.
 + A token exchange IAM role, which core devices use to authorize calls to AWS services.

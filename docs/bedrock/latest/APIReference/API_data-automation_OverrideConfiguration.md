@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # OverrideConfiguration
-<a name="API_data-automation_OverrideConfiguration"></a>
 
 Additional settings for a project.
 

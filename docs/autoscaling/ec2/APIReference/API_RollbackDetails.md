@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Rollbac
 ---
 
 # RollbackDetails
-<a name="API_RollbackDetails"></a>
 
 Details about an instance refresh rollback.
 

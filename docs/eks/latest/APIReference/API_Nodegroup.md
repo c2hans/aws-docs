@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Nodegroup.ht
 ---
 
 # Nodegroup
-<a name="API_Nodegroup"></a>
 
 An object representing an Amazon EKS managed node group.
 

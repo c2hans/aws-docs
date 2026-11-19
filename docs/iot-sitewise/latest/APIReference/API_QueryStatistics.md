@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Que
 ---
 
 # QueryStatistics
-<a name="API_QueryStatistics"></a>
 
 Contains statistics about a completed query execution.
 

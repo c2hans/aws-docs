@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-intr
 ---
 
 # Tutorial: Writing an AWS Glue for Spark script
-<a name="aws-glue-programming-intro-tutorial"></a>
 
 This tutorial introduces you to the process of writing AWS Glue scripts. You can run scripts on a schedule with jobs, or interactively with interactive sessions. For more information about jobs, see [Building visual ETL jobs](author-job-glue.md). For more information about interactive sessions, see [Overview of AWS Glue interactive sessions](interactive-sessions-chapter.md#interactive-sessions-overview).
 

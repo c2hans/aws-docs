@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteRe
 ---
 
 # DeleteResourceRecordSetProtections
-<a name="API_DeleteResourceRecordSetProtections"></a>
 
 Deletes one or more resource record set protections from a hosted zone. After a protection is deleted, you can change the resource record sets that have that name and type by using `ChangeResourceRecordSets`.
 

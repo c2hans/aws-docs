@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/UsingConfig_Inst
 ---
 
 # Install the latest version of EC2Config
-<a name="UsingConfig_Install"></a>
 
 **Note**
 The latest launch agent for Windows Server 2022 and later operating system versions is [EC2Launch v2](ec2launch-v2.md), which replaces both EC2Config and EC2Launch. EC2Launch v2 comes pre-installed on AWS Windows Server 2022 and 2025 AMIs. You can also manually install and configure the agent on Windows Server 2016 and 2019. For more information, see [Install EC2Launch v2](ec2launch-v2-install.md).

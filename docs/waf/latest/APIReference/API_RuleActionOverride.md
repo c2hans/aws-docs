@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RuleActionOv
 ---
 
 # RuleActionOverride
-<a name="API_RuleActionOverride"></a>
 
 Action setting to use in the place of a rule action that is configured inside the rule group. You specify one override for each rule whose action you want to change.
 

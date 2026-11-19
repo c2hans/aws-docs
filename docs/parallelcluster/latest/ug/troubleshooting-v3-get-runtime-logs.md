@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/troubleshootin
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Retrieve PCUI and AWS ParallelCluster runtime logs
-<a name="troubleshooting-v3-get-runtime-logs"></a>
 
 Learn how to retrieve the PCUI and AWS ParallelCluster runtime logs for troubleshooting. To start, find the relevant PCUI and AWS ParallelCluster stack names. Use the stack name to locate the installation log groups. To finish, export the logs. These logs are specific to the AWS ParallelCluster runtime. For cluster logs, see [Retrieving and preserving logs](troubleshooting-v3-get-logs.md).
 

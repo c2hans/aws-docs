@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Assoc
 ---
 
 # AssociatedSystem
-<a name="API_AssociatedSystem"></a>
 
 Represents a system associated with a service.
 

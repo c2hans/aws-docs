@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/re
 ---
 
 # Replatform Oracle Database Enterprise Edition to Standard Edition 2 on Amazon RDS for Oracle
-<a name="replatform-oracle-database-enterprise-edition-to-standard-edition-2-on-amazon-rds-for-oracle"></a>
 
 *Lanre (Lan-Ray) showunmi and Tarun Chawla, Amazon Web Services*
 

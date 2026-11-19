@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/troublesh
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This section contains information about how to monitor the system and how to troubleshoot specific issues.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-eks-checkp
 ---
 
 # Special considerations
-<a name="sagemaker-eks-checkpointless-considerations"></a>
 
 We collect certain routine aggregated and anonymized operational metrics to provide essential service availability. The creation of these metrics is fully automated and does not involve human review of the underlying model training workload. These metrics relate to job operations, resource management, and essential service functionality.
 

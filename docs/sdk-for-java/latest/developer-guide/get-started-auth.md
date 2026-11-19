@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/get-
 ---
 
 # Authenticating with AWS using the AWS SDK for Java 2.x
-<a name="get-started-auth"></a>
 
  You must establish how the AWS SDK for Java 2.x authenticates with AWS when you develop with AWS services. The SDK manages credential discovery, signature creation, and credential refreshing completely behind the scenes, letting you focus on your application logic.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/fm.html
 ---
 
 # .fm (Federated States of Micronesia)
-<a name="fm"></a>
 
 Also used as a generic TLD, often by organizations involved in online media and broadcasting.
 

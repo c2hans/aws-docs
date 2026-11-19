@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Sear
 ---
 
 # SearchedUser
-<a name="API_SearchedUser"></a>
 
 Contains metadata about a User searched for within a collection.
 

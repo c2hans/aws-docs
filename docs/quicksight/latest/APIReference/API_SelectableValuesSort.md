@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Selec
 ---
 
 # SelectableValuesSort
-<a name="API_SelectableValuesSort"></a>
 
 The sort configuration for selectable values in a control.
 

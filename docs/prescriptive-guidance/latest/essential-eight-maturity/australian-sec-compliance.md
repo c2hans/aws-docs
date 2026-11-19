@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Australian security and compliance
-<a name="australian-sec-compliance"></a>
 
 Many organizations in Australia use the AWS Cloud to store confidential data, process sensitive transactions, and build critical services.
 

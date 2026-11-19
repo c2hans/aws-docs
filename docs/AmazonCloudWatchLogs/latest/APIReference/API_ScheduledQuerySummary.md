@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ScheduledQuerySummary
-<a name="API_ScheduledQuerySummary"></a>
 
 Summary information about a scheduled query, including basic configuration and execution status.
 

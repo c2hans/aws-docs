@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/woocommerce-configuring.h
 ---
 
 # Configuring WooCommerce
-<a name="woocommerce-configuring"></a>
 
 Before you can use AWS Glue to transfer data from WooCommerce, you must meet these requirements:
 

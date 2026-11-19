@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/ecr-env-vars.html
 ---
 
 # Environment variables for HealthOmics workflows
-<a name="ecr-env-vars"></a>
 
 HealthOmics provides environment variables that have information about the workflow running in the container. You can use the values of these variables in the logic of your workflow tasks.
 

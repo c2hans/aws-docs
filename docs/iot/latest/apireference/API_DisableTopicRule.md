@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DisableTopic
 ---
 
 # DisableTopicRule
-<a name="API_DisableTopicRule"></a>
 
 Disables the rule.
 

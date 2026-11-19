@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-applic
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Event Stream
-<a name="apps-application-id-eventstream"></a>
 
 The Kinesis platform offers services that you can use to load and analyze streaming data on AWS. You can configure Amazon Pinpoint to stream events to Firehose or Kinesis Data Streams. By streaming events, you enable more flexible options for analysis and storage.
 

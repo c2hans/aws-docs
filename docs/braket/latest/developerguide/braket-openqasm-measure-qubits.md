@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-open
 ---
 
 # Measuring specific qubits with OpenQASM 3.0
-<a name="braket-openqasm-measure-qubits"></a>
 
 The local state vector simulator and local density matrix simulator provided by Amazon Braket support the submission of OpenQASM programs where a subset of the circuit's qubits can be selectively measured. This capability, often referred to as partial measurement, allows for more targeted and efficient quantum computations. For example, in the following code snippet, you can create a two-qubit circuit and choose to only measure the first qubit, while leaving the second qubit unmeasured.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Lis
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Lists the tags associated with a support permit resource.
 

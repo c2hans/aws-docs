@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/list-
 ---
 
 # list-export-task
-<a name="list-export-task"></a>
 
  Since you may have many graphs in your account, and the export functionality includes the ability to specify filters and different filetypes, you may execute multiple exports against your graph over time. The `list-export-tasks` CLI gives returns all Neptune Analytics exports that have been triggered in your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops05-b
 ---
 
 # OPS05-BP03 Create support plans for production workloads
-<a name="ops05-bp03"></a>
 
  Production workloads depend on software and services that your team does not operate. When one of those dependencies fails, your ability to respond depends on the support agreement you arranged in advance. A support plan defines the response you can expect, how to reach the vendor, and how to escalate during an incident.
 

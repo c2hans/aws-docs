@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/conn
 ---
 
 # Connecting to AWS
-<a name="connect"></a>
 
 Most Amazon Web Services (AWS) resources are managed through an AWS account. An AWS account isn't required to use the AWS Toolkit for Visual Studio Code, however Toolkit functions are limited without a connection.
 

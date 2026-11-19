@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-s
 ---
 
 # Test GuardDuty findings in dedicated accounts
-<a name="guardduty_findings-scripts"></a>
 
 Use this document to run a tester script that generates GuardDuty findings against test resources that will be deployed in your AWS account. You can perform these steps when you want to understand and learn about certain GuardDuty finding types and how the finding details look for actual resources in your account. This experience is different from generating [Sample findings](sample_findings.md). For more information about the experience of testing GuardDuty findings, see [Considerations](#considerations-generate-gdu-findings-tester).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
 ---
 
 # Foundations
-<a name="rel-foundations"></a>
 
 | REL 1: How are you regulating inbound request rates? |
 | --- |

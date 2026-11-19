@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/file-input-test-sets.htm
 ---
 
 # Test set columns supported by Test Workbench
-<a name="file-input-test-sets"></a>
 
 Below is the complete list of test set columns supported by Test Workbench and the instruction on how to use them with Amazon Lex V2.
 

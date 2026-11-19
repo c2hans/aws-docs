@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ToolResultBlock
-<a name="API_runtime_ToolResultBlock"></a>
 
 A tool result block that contains the results for a tool request that the model previously made. For more information, see [Call a tool with the Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use.html) in the Amazon Bedrock User Guide.
 

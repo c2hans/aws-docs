@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/entit
 ---
 
 # Insights
-<a name="entities-insights"></a>
 
 The table below list the data entities and columns used by Insights for the Inventory Visibility, Network Map, Inventory Insights, and Rebalance Recommendations features. See the table below on how each feature in Insights uses the data entities.
 

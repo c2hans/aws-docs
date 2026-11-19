@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Instanc
 ---
 
 # InstanceTypeCapacity
-<a name="API_InstanceTypeCapacity"></a>
 
 The instance type that you specify determines the combination of CPU, memory, storage, and networking capacity.
 

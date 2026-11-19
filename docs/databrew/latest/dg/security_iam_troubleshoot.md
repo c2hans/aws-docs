@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/security_iam_troubles
 ---
 
 # Troubleshooting identity and access in AWS Glue DataBrew
-<a name="security_iam_troubleshoot"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with DataBrew and IAM.
 

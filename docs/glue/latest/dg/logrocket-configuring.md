@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/logrocket-configuring.htm
 ---
 
 # Configuring LogRocket
-<a name="logrocket-configuring"></a>
 
 Before you can use AWS Glue to transfer data from LogRocket, you must meet the following requirements:
 

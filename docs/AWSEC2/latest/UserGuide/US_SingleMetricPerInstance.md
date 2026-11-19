@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/US_SingleMetricP
 ---
 
 # Get statistics for a specific instance
-<a name="US_SingleMetricPerInstance"></a>
 
 You can use the AWS Management Console or the AWS CLI to get statistics for a specific instance. The following examples show you how to use the AWS Management Console or the AWS CLI to determine the maximum CPU utilization of a specific EC2 instance.
 

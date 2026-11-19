@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AgentCo
 ---
 
 # AgentConfiguration
-<a name="API_AgentConfiguration"></a>
 
  The response of [`ConfigureAgent`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ConfigureAgent.html) that specifies if an agent profiles or not and for how long to return profiling data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/performance
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS services
 <a name="aws-services.d42f5ce0-42a6-57c3-adeb-7ba5cfe1ad5c"></a>

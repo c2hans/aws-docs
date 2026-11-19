@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_S3Tables
 ---
 
 # S3TablesDestinationUpdateInput
-<a name="API_S3TablesDestinationUpdateInput"></a>
 
 The updated configuration for a streaming table destination. Used in [UpdateChannel](API_UpdateChannel.md). Only `DataFreshnessInSeconds` can be updated.
 

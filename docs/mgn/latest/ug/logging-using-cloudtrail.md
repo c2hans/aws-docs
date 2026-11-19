@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/logging-using-cloudtrail.h
 ---
 
 # Logging AWS Transform MGN with AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 AWS Transform MGN is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in AWS Transform MGN. CloudTrail captures all API calls for AWS Transform MGN as events. The calls captured include calls from the AWS Transform MGN console and code calls to the AWS Transform MGN API operations. If you create a trail, you can allow a continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for AWS Transform MGN. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by CloudTrail, you can determine the request that was made to AWS Transform MGN, the IP address from which the request was made, who made the request, when it was made, and additional details.
 

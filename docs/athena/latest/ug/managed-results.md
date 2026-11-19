@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/managed-results.html
 ---
 
 # Managed query results
-<a name="managed-results"></a>
 
 With managed query results, you can run SQL queries without providing an Amazon S3 bucket for query result storage. This saves you from having to provision, manage, control access to, and clean up your own S3 buckets. To get started, create a new workgroup or edit an existing workgroup. Under **Query result configuration**, select **Athena managed**.
 

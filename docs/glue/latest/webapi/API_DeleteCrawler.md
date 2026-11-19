@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteCrawler.htm
 ---
 
 # DeleteCrawler
-<a name="API_DeleteCrawler"></a>
 
 Removes a specified crawler from the AWS Glue Data Catalog, unless the crawler state is `RUNNING`.
 

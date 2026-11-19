@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # AgentAttributes
-<a name="API_amazon-q-connect_AgentAttributes"></a>
 
 Information about an agent.
 

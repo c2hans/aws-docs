@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/home-fo
 ---
 
 # Enable and Administer Home Folders for Your WorkSpaces Applications Users
-<a name="home-folders"></a>
 
 WorkSpaces Applications supports the following persistent storage options for users in your organization:
 + Home folders

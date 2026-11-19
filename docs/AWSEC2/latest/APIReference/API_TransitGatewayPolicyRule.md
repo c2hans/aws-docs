@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayPolicyRule
-<a name="API_TransitGatewayPolicyRule"></a>
 
 Describes a rule associated with a transit gateway policy.
 

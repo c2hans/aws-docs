@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/installing-gnome-al2023.
 ---
 
 # Tutorial: Install the GNOME desktop environment on AL2023
-<a name="installing-gnome-al2023"></a>
 
  The [GNOME desktop environment](https://www.gnome.org/) is available as an optional graphical user interface for AL2023 as of release 2023.7 or later.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-ap
 ---
 
 # Processing Amazon RDS Data API query results in JSON format
-<a name="data-api-json"></a>
 
  When you call the `ExecuteStatement` operation, you can choose to have the query results returned as a string in JSON format. That way, you can use your programming language's JSON parsing capabilities to interpret and reformat the result set. Doing so can help to avoid writing extra code to loop through the result set and interpret each column value.
 

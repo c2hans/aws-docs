@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_ExecutionSer
 ---
 
 # ExecutionServerStepConfiguration
-<a name="API_ExecutionServerStepConfiguration"></a>
 
 Configuration for a `SERVER` type execution step.
 

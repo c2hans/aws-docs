@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_RejectResour
 ---
 
 # RejectResourceShareInvitation
-<a name="API_RejectResourceShareInvitation"></a>
 
 Rejects an invitation to a resource share from another AWS account.
 

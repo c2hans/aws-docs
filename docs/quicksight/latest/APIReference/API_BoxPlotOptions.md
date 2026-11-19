@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BoxPl
 ---
 
 # BoxPlotOptions
-<a name="API_BoxPlotOptions"></a>
 
 The options of a box plot visual.
 

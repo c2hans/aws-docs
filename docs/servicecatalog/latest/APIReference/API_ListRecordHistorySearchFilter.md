@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_L
 ---
 
 # ListRecordHistorySearchFilter
-<a name="API_ListRecordHistorySearchFilter"></a>
 
 The search filter to use when listing history records.
 

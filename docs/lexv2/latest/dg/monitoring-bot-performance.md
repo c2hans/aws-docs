@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/monitoring-bot-performan
 ---
 
 # Monitoring bot performance in Lex V2
-<a name="monitoring-bot-performance"></a>
 
 Monitoring is important for maintaining the reliability, availability, and performance of your Amazon Lex V2 chatbots. This topic describes using conversation logs to monitor conversations between your users and your chatbots, using utterance statistics to determine the utterances that your bots detect and miss, and how to use Amazon CloudWatch Logs and AWS CloudTrail to monitor Amazon Lex V2. It also describes the Amazon Lex V2 runtime and channel association metrics.
 

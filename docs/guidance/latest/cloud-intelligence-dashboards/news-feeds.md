@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # AWS News Feeds
-<a name="news-feeds"></a>
 
 ## Introduction
 <a name="introduction"></a>

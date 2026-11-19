@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ope
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [CancelImageCreation](API_CancelImageCreation.md)

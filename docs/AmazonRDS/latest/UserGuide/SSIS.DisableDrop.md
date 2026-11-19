@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSIS.DisableD
 ---
 
 # Disable and drop SSIS database
-<a name="SSIS.DisableDrop"></a>
 
 Use the following steps to disable or drop SSIS databases:
 

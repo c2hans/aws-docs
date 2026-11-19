@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTa
 ---
 
 # Finding the connection information for an Amazon RDS DB instance
-<a name="CHAP_CommonTasks.Connect.EndpointAndPort"></a>
 
 The connection information for a DB instance includes its endpoint, port, and a valid database user, such as the master user. For example, for a MySQL DB instance, suppose that the endpoint value is `mydb.123456789012.us-east-1.rds.amazonaws.com`. In this case, the port value is `3306`, and the database user is `admin`. Given this information, you specify the following values in a connection string:
 + For host or host name or DNS name, specify `mydb.123456789012.us-east-1.rds.amazonaws.com`.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/keywords-mana
 ---
 
 # Add a keyword to a phone number in AWS End User Messaging SMS
-<a name="keywords-manage-phone-number"></a>
 
 Use the AWS End User Messaging SMS console or AWS CLI to customize the keyword responses for your phone number.
 

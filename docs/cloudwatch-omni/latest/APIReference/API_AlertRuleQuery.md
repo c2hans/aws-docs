@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # AlertRuleQuery
-<a name="API_AlertRuleQuery"></a>
 
 Query expression and the language it's written in.
 

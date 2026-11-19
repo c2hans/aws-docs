@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_CloneReceipt
 ---
 
 # CloneReceiptRuleSet
-<a name="API_CloneReceiptRuleSet"></a>
 
 Creates a receipt rule set by cloning an existing one. All receipt rules and configurations are copied to the new receipt rule set and are completely independent of the source rule set.
 

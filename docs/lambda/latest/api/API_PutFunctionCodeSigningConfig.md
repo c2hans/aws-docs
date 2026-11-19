@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_PutFunctionCodeSig
 ---
 
 # PutFunctionCodeSigningConfig
-<a name="API_PutFunctionCodeSigningConfig"></a>
 
 Update the code signing configuration for the function. Changes to the code signing configuration take effect the next time a user tries to deploy a code package to the function.
 

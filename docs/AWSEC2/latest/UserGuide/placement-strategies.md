@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-strate
 ---
 
 # Placement strategies for your placement groups
-<a name="placement-strategies"></a>
 
 You can create a placement group for your EC2 instances using one of the following placement strategies.
 

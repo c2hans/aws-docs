@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/forec
 ---
 
 # Forecast
-<a name="forecast"></a>
 
 This section lists the data entities within the forecast category.
 

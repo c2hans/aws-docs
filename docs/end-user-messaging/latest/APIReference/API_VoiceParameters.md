@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # VoiceParameters
-<a name="API_VoiceParameters"></a>
 
 The delivery parameters for the voice channel.
 

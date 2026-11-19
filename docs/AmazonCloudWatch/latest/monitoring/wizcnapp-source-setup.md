@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/wizcn
 ---
 
 # Source configuration for WIZ CNAPP
-<a name="wizcnapp-source-setup"></a>
 
 ## Integrating with Wiz CNAPP
 <a name="wizcnapp-integration"></a>

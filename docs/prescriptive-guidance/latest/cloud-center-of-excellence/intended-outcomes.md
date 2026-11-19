@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-cente
 ---
 
 # What a CCoE can do for an organization
-<a name="intended-outcomes"></a>
 
 The intended outcomes from a CCoE can be categorized as external-facing or internal-facing:
 + **External facing** – In transformational or advisory roles, CCoE team members advise their own customers on how to set up a CCoE or AWS practice, by sharing their industry thought leadership and internal experience.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/connect-rules.
 ---
 
 # Create rules to automate tasks in Connect Customer
-<a name="connect-rules"></a>
 
 A rule is an action that Connect Customer automatically performs, based on conditions you specify. Contact center managers, supervisors and QA analysts can quickly create rules from the Connect Customer console. No coding is required.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Subscri
 ---
 
 # SubscribedIamPrincipal
-<a name="API_SubscribedIamPrincipal"></a>
 
 The IAM principal that subscribes to the asset.
 

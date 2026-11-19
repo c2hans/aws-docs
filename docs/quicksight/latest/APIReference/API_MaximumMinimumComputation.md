@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Maxim
 ---
 
 # MaximumMinimumComputation
-<a name="API_MaximumMinimumComputation"></a>
 
 The maximum and minimum computation configuration.
 

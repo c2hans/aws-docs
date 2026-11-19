@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-acces
 ---
 
 # Access VPC resources through AWS PrivateLink
-<a name="privatelink-access-resources"></a>
 
 You can privately access a VPC resource in another VPC using a resource VPC endpoint (resource endpoint). A resource endpoint lets you privately and securely access VPC resources such as a database, an Amazon EC2 instance, an application endpoint, a domain-name target, or an IP address that might be in a private subnet in another VPC or in an on-premises environment. Without resource endpoints, you have to either add an internet gateway to your VPC or access the resource using a AWS PrivateLink interface endpoint and a Network Load Balancer. Resource endpoints don't require a [load balancer](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html#loadbalancer), so you can access the VPC resource directly. A VPC resource is represented by a resource configuration. A resource configuration is associated with a resource gateway.
 

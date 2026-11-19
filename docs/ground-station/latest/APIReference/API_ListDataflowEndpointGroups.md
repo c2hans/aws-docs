@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_L
 ---
 
 # ListDataflowEndpointGroups
-<a name="API_ListDataflowEndpointGroups"></a>
 
 Returns a list of `DataflowEndpoint` groups.
 

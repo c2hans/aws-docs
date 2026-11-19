@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-model-m
 ---
 
 # Monitoring Progress Across Iterations
-<a name="nova-model-monitor"></a>
 
 You can track metrics via MLflow.
 

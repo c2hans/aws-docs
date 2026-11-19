@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 ---
 
 # Troubleshooting parameter handling issues
-<a name="parameter-troubleshooting"></a>
 
 ## Common parameter handling issues
 <a name="common-parameter-issues"></a>

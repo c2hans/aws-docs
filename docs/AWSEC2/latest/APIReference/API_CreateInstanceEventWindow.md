@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIns
 ---
 
 # CreateInstanceEventWindow
-<a name="API_CreateInstanceEventWindow"></a>
 
 Creates an event window in which scheduled events for the associated Amazon EC2 instances can run.
 

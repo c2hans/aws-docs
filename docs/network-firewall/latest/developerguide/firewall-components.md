@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Firewall components in AWS Network Firewall
-<a name="firewall-components"></a>
 
 The AWS Network Firewall firewall runs stateless and stateful traffic inspection rules engines. The engines use rules and other settings that you configure inside a firewall policy.
 

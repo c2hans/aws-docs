@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-with-prepared-
 ---
 
 # Use execution parameters
-<a name="querying-with-prepared-statements-querying-using-execution-parameters"></a>
 
 You can use question mark placeholders in any DML query to create a parameterized query without creating a prepared statement first. To run these queries, you can use the Athena console, or use the AWS CLI or the AWS SDK and declare the variables in the `execution-parameters` argument.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Property.html
 ---
 
 # Property
-<a name="API_Property"></a>
 
 An object that defines a connection type for a compute environment.
 

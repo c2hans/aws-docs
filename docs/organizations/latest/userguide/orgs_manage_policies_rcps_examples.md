@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Resource control policy examples
-<a name="orgs_manage_policies_rcps_examples"></a>
 
 The example [resource control policies (RCPs)](orgs_manage_policies_rcps.md) displayed in this topic are for information purposes only.
 

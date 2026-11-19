@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # FleetUtilization
-<a name="API_FleetUtilization"></a>
 
 Current resource utilization statistics in a specified fleet or location. The location value might refer to a fleet's remote location or its home region.
 

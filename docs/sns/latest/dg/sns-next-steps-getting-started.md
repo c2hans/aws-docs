@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-next-steps-getting-sta
 ---
 
 # Next steps
-<a name="sns-next-steps-getting-started"></a>
 
 Now that you've created a topic with a subscription and sent messages to the topic, you might want to try the following:
 + Explore the [AWS Developer Center](https://aws.amazon.com/developer/).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Valid
 ---
 
 # ValidateAddressActionOptions
-<a name="API_ValidateAddressActionOptions"></a>
 
 Options specific to address validation jobs.
 

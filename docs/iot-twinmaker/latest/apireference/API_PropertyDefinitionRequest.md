@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Pr
 ---
 
 # PropertyDefinitionRequest
-<a name="API_PropertyDefinitionRequest"></a>
 
 An object that sets information about a property.
 

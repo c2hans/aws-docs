@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PutDataCatalogExp
 ---
 
 # PutDataCatalogExportConfiguration
-<a name="API_PutDataCatalogExportConfiguration"></a>
 
 Creates or updates the export configuration for the AWS Glue Data Catalog. Use this operation to enable or disable the export of catalog metadata to S3 Tables.
 

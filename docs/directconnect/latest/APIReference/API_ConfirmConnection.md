@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Co
 ---
 
 # ConfirmConnection
-<a name="API_ConfirmConnection"></a>
 
 Confirms the creation of the specified hosted connection on an interconnect.
 

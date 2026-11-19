@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Vali
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Describes validation errors for specific input parameters.
 

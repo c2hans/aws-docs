@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/su
 ---
 
 # Sustainability
-<a name="sustainability"></a>
 
  Organizations and government departments play a critical role in conserving natural resources and protecting global ecosystems by reducing the use of materials, resources, and emissions.
 

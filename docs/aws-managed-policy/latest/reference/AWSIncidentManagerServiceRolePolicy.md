@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIncidentManagerServiceRolePolicy
-<a name="AWSIncidentManagerServiceRolePolicy"></a>
 
 **Description**: This policy grants Incident Manager permission to manage incident records and related resources on your behalf.
 

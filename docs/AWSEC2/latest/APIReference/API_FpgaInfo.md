@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FpgaInfo.
 ---
 
 # FpgaInfo
-<a name="API_FpgaInfo"></a>
 
 Describes the FPGAs for the instance type.
 

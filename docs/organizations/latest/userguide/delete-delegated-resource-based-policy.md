@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/delete-de
 ---
 
 # Delete a resource-based delegation policy with AWS Organizations
-<a name="delete-delegated-resource-based-policy"></a>
 
 When you no longer need to delegate the management of policies in your organization, you can delete the resource-based delegation policy from the organization's management account.
 

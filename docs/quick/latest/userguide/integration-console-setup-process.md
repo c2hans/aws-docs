@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/integration-conso
 ---
 
 # Set up integrations in the console
-<a name="integration-console-setup-process"></a>
 
 The console organizes integrations into separate categories based on their purpose. Use **Knowledge** to connect data sources for Q&A and insights. Use **Connectors** to set up connectors that perform operations in external applications. The setup process adapts based on the integration you select, your subscription, and existing integrations.
 

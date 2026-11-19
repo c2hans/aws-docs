@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/basic-t
 ---
 
 # Working with Tags by Using the Amazon WorkSpaces Applications API, an AWS SDK, or AWS CLI
-<a name="basic-tagging-API-SDK-CLI"></a>
 
 If you're using the WorkSpaces Applications API, an AWS SDK, or the AWS Command Line Interface (AWS CLI), you can use the following WorkSpaces Applications operations with the `tags` parameter to add tags when you create new resources.
 

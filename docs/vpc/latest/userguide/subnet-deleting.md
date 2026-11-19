@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/subnet-deleting.htm
 ---
 
 # Delete a subnet
-<a name="subnet-deleting"></a>
 
 If you no longer need a subnet, you can delete it. You cannot delete a subnet if it contains any network interfaces. For example, you must terminate any instances in a subnet before you can delete it.
 

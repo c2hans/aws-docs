@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_UserJ
 ---
 
 # UserJourneyChanges
-<a name="API_UserJourneyChanges"></a>
 
 Describes changes made to a user journey.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-do
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## References
 <a name="references.eedea628-2e90-5120-987e-eb330e23d4d0"></a>

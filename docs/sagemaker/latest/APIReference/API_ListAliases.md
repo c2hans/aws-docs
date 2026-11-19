@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListAl
 ---
 
 # ListAliases
-<a name="API_ListAliases"></a>
 
 Lists the aliases of a specified image or image version.
 

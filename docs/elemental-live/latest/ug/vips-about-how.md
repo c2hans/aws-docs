@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/vips-about-how.
 ---
 
 # How virtual input switching works
-<a name="vips-about-how"></a>
 
 **Topics**
 + [Virtual input switching using asynchronous ESAM messages](vips-asynch.md)

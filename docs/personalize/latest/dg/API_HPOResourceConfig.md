@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_HPOResourceCon
 ---
 
 # HPOResourceConfig
-<a name="API_HPOResourceConfig"></a>
 
 Describes the resource configuration for hyperparameter optimization (HPO).
 

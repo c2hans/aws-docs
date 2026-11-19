@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GetEffective
 ---
 
 # GetEffectivePolicies
-<a name="API_GetEffectivePolicies"></a>
 
 Gets a list of the policies that have an effect on the authorization behavior of the specified device when it connects to the AWS IoT device gateway.
 

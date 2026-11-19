@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRo
 ---
 
 # UpdateRoutingProfileConcurrency
-<a name="API_UpdateRoutingProfileConcurrency"></a>
 
 Updates the channels that agents can handle in the Contact Control Panel (CCP) for a routing profile.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Overview of managing access permissions to your Amazon Redshift resources
-<a name="redshift-iam-access-control-overview"></a>
 
 Every AWS resource is owned by an AWS account, and permissions to create or access the resources are governed by permissions policies. An account administrator can attach permissions policies to IAM identities (that is, users, groups, and roles), and some services (such as AWS Lambda) also support attaching permissions policies to resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTra
 ---
 
 # DeleteTransitGatewayPolicyTableEntry
-<a name="API_DeleteTransitGatewayPolicyTableEntry"></a>
 
 Deletes the specified transit gateway policy table entry.
 

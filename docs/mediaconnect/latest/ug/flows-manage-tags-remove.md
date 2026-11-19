@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/flows-manage-tags
 ---
 
 # Removing tags from a MediaConnect flow
-<a name="flows-manage-tags-remove"></a>
 
 You can remove a tag from a flow if you no longer want to use it to track the billing and organization for it.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/api-ac
 This guide provides documentation for Wickr Enterprise. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # API access
-<a name="api-access"></a>
 
 An Administrator is able to manage API Tokens.
 

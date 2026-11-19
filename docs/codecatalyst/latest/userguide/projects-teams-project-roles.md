@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/projects-t
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Granting project roles for a team
-<a name="projects-teams-project-roles"></a>
 
 A team can have role permissions, such as **Power user**, in a space. You can change the space role for a team, but note that all members of the team will inherit those permissions.
 

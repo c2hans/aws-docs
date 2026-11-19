@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # GetPipelineBlueprint
-<a name="API_osis_GetPipelineBlueprint"></a>
 
 Retrieves information about a specific blueprint for OpenSearch Ingestion. Blueprints are templates for the configuration needed for a `CreatePipeline` request. For more information, see [Using blueprints to create a pipeline](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/creating-pipeline.html#pipeline-blueprint).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_TrafficP
 ---
 
 # TrafficPolicySummary
-<a name="API_TrafficPolicySummary"></a>
 
 A complex type that contains information about the latest version of one traffic policy that is associated with the current AWS account.
 

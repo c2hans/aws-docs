@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SqlSe
 ---
 
 # SqlServerParameters
-<a name="API_SqlServerParameters"></a>
 
 The parameters for SQL Server.
 

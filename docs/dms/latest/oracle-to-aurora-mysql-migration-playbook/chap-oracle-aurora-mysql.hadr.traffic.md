@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle Traffic Director and Amazon RDS Proxy for Amazon Aurora MySQL
-<a name="chap-oracle-aurora-mysql.hadr.traffic"></a>
 
 With AWS DMS, you can migrate Oracle Traffic Director configurations to Amazon Aurora MySQL databases with Amazon RDS Proxy. Oracle Traffic Director is a web server load balancer that distributes client requests across multiple servers. Amazon RDS Proxy for Amazon Aurora MySQL is a fully managed database proxy that facilitates database access with enhanced analytics and performance.
 

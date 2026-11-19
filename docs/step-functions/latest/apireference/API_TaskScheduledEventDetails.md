@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_T
 ---
 
 # TaskScheduledEventDetails
-<a name="API_TaskScheduledEventDetails"></a>
 
 Contains details about a task scheduled during an execution.
 

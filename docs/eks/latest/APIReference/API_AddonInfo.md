@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AddonInfo.ht
 ---
 
 # AddonInfo
-<a name="API_AddonInfo"></a>
 
 Information about an add-on.
 

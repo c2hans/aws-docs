@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # LinkedAttachment
-<a name="API_LinkedAttachment"></a>
 
 The list of attachments that are linked to the correspondence.
 

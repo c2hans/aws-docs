@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeLifecycleHookTypes
-<a name="API_DescribeLifecycleHookTypes"></a>
 
 Describes the available types of lifecycle hooks.
 

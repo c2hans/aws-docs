@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Next steps
-<a name="whats-next"></a>
 
 In many large enterprises, SAP workloads run customer-critical business processes. For this reason, migrations of SAP workloads to AWS start with the business need in mind, and then focus on technologies in order to fulfill business objectives.
 

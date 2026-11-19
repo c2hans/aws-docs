@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Disassoci
 ---
 
 # DisassociateRouteTable
-<a name="API_DisassociateRouteTable"></a>
 
 Disassociates a subnet or gateway from a route table.
 

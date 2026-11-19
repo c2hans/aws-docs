@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DescribeRcsAgentCountryLaunchStatus
-<a name="API_DescribeRcsAgentCountryLaunchStatus"></a>
 
 Retrieves the per-country launch status of an RCS agent, including carrier-level details for each country.
 

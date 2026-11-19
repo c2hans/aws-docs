@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 ---
 
 # FindIncrementalMatches class
-<a name="aws-glue-api-crawler-pyspark-transforms-findincrementalmatches"></a>
 
 Identifies matching records in the existing and incremental `DynamicFrame` and creates a new `DynamicFrame` with a unique identifier assigned to each group of matching records.
 

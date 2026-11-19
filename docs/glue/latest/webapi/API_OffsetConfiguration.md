@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_OffsetConfigurati
 ---
 
 # OffsetConfiguration
-<a name="API_OffsetConfiguration"></a>
 
 Offset-based pagination configuration that defines how to handle pagination using numeric offsets and limits.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/es
 ---
 
 # Estimate the Amazon RDS engine size for an Oracle database by using AWR reports
-<a name="estimate-the-amazon-rds-engine-size-for-an-oracle-database-by-using-awr-reports"></a>
 
 *Abhishek Verma and Eduardo Valentim, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/step-functi
 ---
 
 # step-functions-state-machine-logging-enabled
-<a name="step-functions-state-machine-logging-enabled"></a>
 
 Checks if AWS Step Functions machine has logging enabled. The rule is NON\_COMPLIANT if a state machine does not have logging enabled or the logging configuration is not at the minimum level provided.
 

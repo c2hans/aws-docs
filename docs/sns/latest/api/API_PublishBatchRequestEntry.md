@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_PublishBatchRequestEn
 ---
 
 # PublishBatchRequestEntry
-<a name="API_PublishBatchRequestEntry"></a>
 
 Contains the details of a single Amazon SNS message along with an `Id` that identifies a message within the batch.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DimensionValues
-<a name="API_DimensionValues"></a>
 
 The metadata that you can use to filter and group your results. You can use `GetDimensionValues` to find specific values.
 
@@ -22,7 +21,7 @@ Required: No
 
  ** MatchOptions **   <a name="awscostmanagement-Type-DimensionValues-MatchOptions"></a>
 The match options that you can use to filter your results.
- `MatchOptions` is only applicable for actions related to cost category and Anomaly Subscriptions. Refer to the documentation for each specific API to see what is supported.
+The supported `MatchOptions` values depend on the operation. Refer to the documentation for each specific API to see what is supported. For example, for `Dimensions` filters, `GetCostAndUsage` supports only `EQUALS` and `CASE_SENSITIVE`. Other match options are supported only by specific operations, such as cost category rules and anomaly subscriptions.
 The default values for `MatchOptions` are `EQUALS` and `CASE_SENSITIVE`.
 Type: Array of strings
 Valid Values: `EQUALS | ABSENT | STARTS_WITH | ENDS_WITH | CONTAINS | CASE_SENSITIVE | CASE_INSENSITIVE | GREATER_THAN_OR_EQUAL`

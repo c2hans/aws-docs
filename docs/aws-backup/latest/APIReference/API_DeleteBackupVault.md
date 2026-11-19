@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Delet
 ---
 
 # DeleteBackupVault
-<a name="API_DeleteBackupVault"></a>
 
 Deletes the backup vault identified by its name. A vault can be deleted only if it is empty.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Hiera
 ---
 
 # HierarchyFilterListControlSearchOptions
-<a name="API_HierarchyFilterListControlSearchOptions"></a>
 
 The configuration of the search options in a hierarchy list control.
 

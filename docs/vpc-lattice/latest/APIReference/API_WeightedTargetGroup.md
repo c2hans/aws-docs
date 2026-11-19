@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Weig
 ---
 
 # WeightedTargetGroup
-<a name="API_WeightedTargetGroup"></a>
 
 Describes the weight of a target group.
 

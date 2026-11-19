@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # unmask
-<a name="CWL_QuerySyntax-Unmask"></a>
 
  Use `unmask` to display all the content of a log event that has some content masked because of a data protection policy. To use this command, you must have the `logs:Unmask` permission.
 

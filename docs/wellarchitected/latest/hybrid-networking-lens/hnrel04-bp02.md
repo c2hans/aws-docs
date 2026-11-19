@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNREL04-BP02 Use redundant hardware and telecommunication providers
-<a name="hnrel04-bp02"></a>
 
  When designing remote connections to your cloud provider, use redundant on-premises hardware and diverse telecommunications providers. Ensure your last-mile connectivity has diverse physical paths and that providers offer SLAs that meet your uptime requirements.
 

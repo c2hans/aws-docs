@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Deploying a model with Ray Serve
-<a name="sagemaker-hyperpod-ray-deploy-model"></a>
 
 You deploy a model with a `RayService` resource. The `serveConfigV2` field holds your Serve applications and their deployments, and KubeRay creates the Ray cluster that runs them. HyperPod does not modify KubeRay, so a `RayService` you already run continues to work.
 

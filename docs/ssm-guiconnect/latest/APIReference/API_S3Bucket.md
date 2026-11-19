@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-guiconnect/latest/APIReference/API_S
 ---
 
 # S3Bucket
-<a name="API_S3Bucket"></a>
 
 The S3 bucket where RDP connection recordings are stored.
 

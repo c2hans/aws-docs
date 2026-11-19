@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Tag
-<a name="API_account_Tag"></a>
 
 A key-value pair used to associate metadata with AWS Partner Central Account resources.
 

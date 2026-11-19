@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-efs-in
 ---
 
 # Adding the EFS\_INTEGRATION option
-<a name="oracle-efs-integration.adding"></a>
 
 To integrate Amazon RDS for Oracle with Amazon EFS, your DB instance must be associated with an option group that includes the `EFS_INTEGRATION` option.
 

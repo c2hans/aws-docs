@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # Kubernetes on AWS
-<a name="appinsights-metrics-kubernetes"></a>
 
 CloudWatch Application Insights supports the following metrics:
 

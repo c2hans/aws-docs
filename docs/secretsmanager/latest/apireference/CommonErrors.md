@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/Commo
 ---
 
 # Common Errors
-<a name="CommonErrors"></a>
 
 This section lists the errors that can occur while using AWS Secrets Manager.
 

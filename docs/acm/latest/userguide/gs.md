@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/gs.html
 ---
 
 # Getting started with AWS Certificate Manager certificates
-<a name="gs"></a>
 
 ACM manages public, private, and imported certificates. Certificates are used to establish secure communications across the internet or within an internal network. You can request a publicly trusted certificate directly from ACM (an "ACM certificate"), import a publicly trusted certificate issued by a third party. Self-signed certificates are also supported. To provision your organization's internal PKI, you can issue ACM certificates signed by a private certificate authority (CA) created and managed by [AWS Private CA](https://docs.aws.amazon.com/privateca/latest/userguide/PcaWelcome.html). The CA may either reside in your account or be shared with you by a different account.
 

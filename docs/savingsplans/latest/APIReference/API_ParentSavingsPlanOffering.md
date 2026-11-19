@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_Par
 ---
 
 # ParentSavingsPlanOffering
-<a name="API_ParentSavingsPlanOffering"></a>
 
 Information about a Savings Plan offering.
 

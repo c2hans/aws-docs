@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-sche
 ---
 
 # (Optional) Create a schema (advanced users)
-<a name="create-schema"></a>
 
 Creating a schema manually is for advanced users.
 

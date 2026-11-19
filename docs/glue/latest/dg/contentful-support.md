@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/contentful-support.html
 ---
 
 # AWS Glue support for Contentful
-<a name="contentful-support"></a>
 
 AWS Glue supports Contentful as follows:
 

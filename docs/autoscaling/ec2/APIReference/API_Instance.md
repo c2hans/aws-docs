@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Instanc
 ---
 
 # Instance
-<a name="API_Instance"></a>
 
 Describes an EC2 instance.
 

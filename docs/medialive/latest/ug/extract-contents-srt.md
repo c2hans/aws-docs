@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/extract-contents-srt
 ---
 
 # Identifying content in an SRT source
-<a name="extract-contents-srt"></a>
 
 The content in an SRT input is always a transport stream (TS). The TS is made up of one program (SPTS) or multiple programs (MPTS). Each program contains a combination of video, a combination of audio, and optional captions.
 

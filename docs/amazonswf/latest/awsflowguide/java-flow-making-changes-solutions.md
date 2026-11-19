@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/java-flow-
 ---
 
 # Solutions
-<a name="java-flow-making-changes-solutions"></a>
 
 You can use the following solutions to avoid backwards-incompatible changes. For more information, see [Making Changes to Decider Code](java-flow-making-changes-decider-code.md) and [Example Scenario](java-flow-making-changes-example-scenario.md).
 

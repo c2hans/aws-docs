@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-status.ht
 ---
 
 # **eb status**
-<a name="eb3-status"></a>
 
 ## Description
 <a name="eb3-status-description"></a>

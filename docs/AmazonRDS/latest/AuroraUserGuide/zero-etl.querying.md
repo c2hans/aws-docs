@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/zero-et
 ---
 
 # Adding data to a source Aurora DB cluster and querying it
-<a name="zero-etl.querying"></a>
 
 To finish creating a zero-ETL integration that replicates data from Amazon Aurora into Amazon Redshift, you must create a database in the target destination.
 

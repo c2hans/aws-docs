@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_C
 ---
 
 # ConsumedUsages
-<a name="API_ConsumedUsages"></a>
 
 The consumed usage for the resource.
 

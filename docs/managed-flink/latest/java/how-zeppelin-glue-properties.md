@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-zeppelin-g
 ---
 
 # Table properties
-<a name="how-zeppelin-glue-properties"></a>
 
 In addition to data fields, your AWS Glue tables provide other information to your Studio notebook using table properties. Managed Service for Apache Flink uses the following AWS Glue table properties:
 + [Define Apache Flink time values](#how-zeppelin-glue-timestamp): These properties define how Managed Service for Apache Flink emits Apache Flink internal data processing time values.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BlockStoragePerformanceConfiguration
-<a name="API_CostOptimizationHub_BlockStoragePerformanceConfiguration"></a>
 
 Describes the Amazon Elastic Block Store performance configuration of the current and recommended resource configuration for a recommendation.
 

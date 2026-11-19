@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # McpDescriptor
-<a name="API_McpDescriptor"></a>
 
  The MCP (Model Context Protocol) descriptor configuration for a registry record. Contains the server definition and tools definition.
 

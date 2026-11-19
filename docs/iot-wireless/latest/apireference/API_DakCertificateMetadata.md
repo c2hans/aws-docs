@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Dak
 ---
 
 # DakCertificateMetadata
-<a name="API_DakCertificateMetadata"></a>
 
 The device attestation key (DAK) information.
 

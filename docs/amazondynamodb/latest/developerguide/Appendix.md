@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/App
 ---
 
 # DynamoDB Appendix
-<a name="Appendix"></a>
 
 **Topics**
 + [Troubleshooting SSL/TLS connection establishment issues with DynamoDB](ats-certs.md)

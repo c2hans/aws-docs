@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/groundstati
 ---
 
 # groundstation-dataflowendpointgroup-tagged
-<a name="groundstation-dataflowendpointgroup-tagged"></a>
 
 Checks if AWS GroundStation dataflow endpoint group resources have tags. Optionally, you can specify tag keys. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule doesn't check tags starting with 'aws:'.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_
 ---
 
 # WorkloadInsightsTopContributorsRow
-<a name="API_WorkloadInsightsTopContributorsRow"></a>
 
 A row for a top contributor for a scope.
 

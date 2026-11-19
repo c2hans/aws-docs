@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this document include:
 + Abhra Sinha, Solutions Architect

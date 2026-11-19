@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/color-space-simplifi
 ---
 
 # Converting the color space
-<a name="color-space-simplified-options-convert"></a>
 
 You can set up to *convert* the color space itself, to change the pixels in the video. MediaLive can perform specific color space conversions.
 

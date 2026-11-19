@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/ca_cert_rotat
 ---
 
 # Updating your Amazon DocumentDB TLS certificates
-<a name="ca_cert_rotation"></a>
 
 **Topics**
 + [Updating your application and Amazon DocumentDB cluster](#ca_cert_rotation-updating_application)

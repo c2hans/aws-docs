@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cu
 ---
 
 # Customize Amazon CloudWatch alerts for AWS Network Firewall
-<a name="customize-amazon-cloudwatch-alerts-for-aws-network-firewall"></a>
 
 *Jason Owens, Amazon Web Services*
 

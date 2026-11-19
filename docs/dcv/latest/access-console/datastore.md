@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/datastore.html
 ---
 
 # Datastore
-<a name="datastore"></a>
 
 Amazon DCV Access Console persists user data, group data, session templates and the permission data related to them through integrations with external databases. It supports DynamoDB, MariaDB, and MySQL databases. You must set up and manage one of these databases to use Amazon DCV Access Console. If your Amazon DCV Access Console machines are hosted on Amazon EC2, we recommend using DynamoDB as the external database, since it does not require any additional setup.
 

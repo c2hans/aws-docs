@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Partne
 ---
 
 # PartnerAppConfig
-<a name="API_PartnerAppConfig"></a>
 
 Configuration settings for the SageMaker Partner AI App.
 

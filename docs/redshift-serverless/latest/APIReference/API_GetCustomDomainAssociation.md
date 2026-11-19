@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # GetCustomDomainAssociation
-<a name="API_GetCustomDomainAssociation"></a>
 
 Gets information about a specific custom domain association.
 

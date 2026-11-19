@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Dev
 ---
 
 # DeviceRegistrationStateResourceTypeEventConfiguration
-<a name="API_DeviceRegistrationStateResourceTypeEventConfiguration"></a>
 
 Device registration state resource type event configuration object for enabling or disabling topic.
 

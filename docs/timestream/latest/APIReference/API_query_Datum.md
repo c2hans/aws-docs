@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # Datum
-<a name="API_query_Datum"></a>
 
  Datum represents a single data point in a query result.
 
@@ -12,7 +11,7 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 
  ** ArrayValue **   <a name="timestream-Type-query_Datum-ArrayValue"></a>
  Indicates if the data point is an array.
-Type: Array of [Datum](#API_query_Datum) objects
+Type: Array of [Datum](API_query_Datum.md) objects
 Required: No
 
  ** NullValue **   <a name="timestream-Type-query_Datum-NullValue"></a>

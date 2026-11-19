@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_PutTab
 ---
 
 # PutTableBucketReplication
-<a name="API_s3Buckets_PutTableBucketReplication"></a>
 
 Creates or updates the replication configuration for a table bucket. This operation defines how tables in the source bucket are replicated to destination buckets. Replication helps ensure data availability and disaster recovery across regions or accounts.
 

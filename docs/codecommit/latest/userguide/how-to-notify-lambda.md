@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-notif
 ---
 
 # Example: Create an AWS CodeCommit trigger for an AWS Lambda function
-<a name="how-to-notify-lambda"></a>
 
 You can create a trigger for a CodeCommit repository so that events in the repository invoke a Lambda function. In this example, you create a Lambda function that returns the URL used to clone the repository to an Amazon CloudWatch log.
 

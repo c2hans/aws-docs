@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-list-comma
 ---
 
 # Supported commands
-<a name="json-list-commands"></a>
 
 The following JSON commands are supported:
 

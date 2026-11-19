@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/managing-targ
 ---
 
 # Using universal targets in EventBridge Scheduler
-<a name="managing-targets-universal"></a>
 
  A *universal target* is a customizable set of parameters that allow you to invoke a wider set of API operation for many AWS services. For example, you can use a universal target parameter (UTP) to create a new Amazon SQS queue using the [`CreateQueue`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue) operation.
 

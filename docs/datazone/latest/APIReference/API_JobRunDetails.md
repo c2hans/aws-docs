@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_JobRunD
 ---
 
 # JobRunDetails
-<a name="API_JobRunDetails"></a>
 
 The details of a job run.
 

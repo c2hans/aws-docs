@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Use the Guidance
-<a name="use-the-guidance"></a>
 
 This section provides a user guide for the web UI and instructions to [using and customizing route tables](using-and-customizing-route-tables.md).
 

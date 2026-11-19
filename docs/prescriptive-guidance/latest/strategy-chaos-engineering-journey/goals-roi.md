@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ch
 ---
 
 # The shift from goals to measuring ROI
-<a name="goals-roi"></a>
 
 As the practices mature and the initial goals are achieved, the focus eventually shifts from setting goals toward quantifying the tangible financial benefits of chaos engineering—the return on investment (ROI). The shift stems from two primary reasons:
 + Economic considerations

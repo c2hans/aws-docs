@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateCatalog.htm
 ---
 
 # CreateCatalog
-<a name="API_CreateCatalog"></a>
 
 Creates a new catalog in the AWS Glue Data Catalog.
 

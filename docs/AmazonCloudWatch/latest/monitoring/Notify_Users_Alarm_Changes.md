@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Notif
 ---
 
 # Notifying users on alarm changes
-<a name="Notify_Users_Alarm_Changes"></a>
 
 This section explains how you can use AWS User Notifications or Amazon Simple Notification Service to have users be notified of alarm changes.
 

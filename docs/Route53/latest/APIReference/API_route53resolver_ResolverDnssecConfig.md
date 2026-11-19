@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # ResolverDnssecConfig
-<a name="API_route53resolver_ResolverDnssecConfig"></a>
 
 A complex type that contains information about a configuration for DNSSEC validation.
 

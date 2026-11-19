@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-magics-
 ---
 
 # Use cell magics
-<a name="notebooks-spark-magics-cell-magics"></a>
 
 Magics that are written on several lines are preceded by a double percent sign (`%%`) and are called cell magic functions or cell magics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/windows-networ
 ---
 
 # Windows Networking
-<a name="windows-networking"></a>
 
 ## Windows Container Networking Overview
 <a name="_windows_container_networking_overview"></a>

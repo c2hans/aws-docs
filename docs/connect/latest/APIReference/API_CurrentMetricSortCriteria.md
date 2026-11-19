@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CurrentM
 ---
 
 # CurrentMetricSortCriteria
-<a name="API_CurrentMetricSortCriteria"></a>
 
 The way to sort the resulting response based on metrics. By default resources are sorted based on `AGENTS_ONLINE`, `DESCENDING`. The metric collection is sorted based on the input metrics.
 

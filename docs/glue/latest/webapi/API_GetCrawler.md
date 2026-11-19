@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetCrawler.html
 ---
 
 # GetCrawler
-<a name="API_GetCrawler"></a>
 
 Retrieves metadata for a specified crawler.
 

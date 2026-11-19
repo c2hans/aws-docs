@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsIamA
 ---
 
 # AwsIamAccessKeyDetails
-<a name="API_AwsIamAccessKeyDetails"></a>
 
 IAM access key details related to a finding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Re
 ---
 
 # RecognizeUtterance
-<a name="API_runtime_RecognizeUtterance"></a>
 
 Sends user input to Amazon Lex. You can send text or speech. Clients use this API to send text and audio requests to Amazon Lex at runtime. Amazon Lex interprets the user input using the machine learning model built for the bot.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_ListRuntim
 ---
 
 # ListRuntimes
-<a name="API_ListRuntimes"></a>
 
 Returns a paginated list of runtimes in your account for the current Region.
 

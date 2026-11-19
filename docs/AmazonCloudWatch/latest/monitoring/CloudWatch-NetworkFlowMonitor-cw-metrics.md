@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # View Network Flow Monitor metrics in CloudWatch
-<a name="CloudWatch-NetworkFlowMonitor-cw-metrics"></a>
 
 Network Flow Monitor publishes the following network flow performance metrics to your account: round-trip time, TCP retransmissions, TCP retransmission timeouts, data transferred, and network health indicator. You can view these metrics in CloudWatch Metrics in the Amazon CloudWatch console.
 

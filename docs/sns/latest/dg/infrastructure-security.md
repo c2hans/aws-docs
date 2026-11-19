@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/infrastructure-security.ht
 ---
 
 # Infrastructure security in Amazon SNS
-<a name="infrastructure-security"></a>
 
 As a managed service, Amazon SNS is protected by the AWS global network security procedures found in the [Best Practices for Security, Identity, & Compliance](https://aws.amazon.com/architecture/security-identity-compliance) documentation.
 

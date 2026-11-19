@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/contact.ht
 ---
 
 # .contact
-<a name="contact"></a>
 
 Used by churches of any size or denomination to connect with their congregations and to publish information about church-related events and activities.
 

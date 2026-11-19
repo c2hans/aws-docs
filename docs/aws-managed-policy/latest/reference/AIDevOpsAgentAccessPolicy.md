@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDe
 ---
 
 # AIDevOpsAgentAccessPolicy
-<a name="AIDevOpsAgentAccessPolicy"></a>
 
 **Description**: Provides permissions required by the AWS DevOps Agent to conduct investigations and perform analysis on customer AWS resources.
 

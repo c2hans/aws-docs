@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/create-dra-linked
 ---
 
 # Linking your file system to an Amazon S3 bucket
-<a name="create-dra-linked-data-repo"></a>
 
 You can link your Amazon FSx for Lustre file system to data repositories in Amazon S3. You can create the link when creating the file system or at any time after the file system has been created.
 

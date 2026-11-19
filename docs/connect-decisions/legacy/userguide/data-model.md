@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data-
 ---
 
 # Data entities and columns used in AWS Supply Chain
-<a name="data-model"></a>
 
 This chapter describes the data entities and columns supported by each AWS Supply Chain module.
 

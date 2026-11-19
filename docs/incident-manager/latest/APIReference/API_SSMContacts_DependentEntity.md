@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # DependentEntity
-<a name="API_SSMContacts_DependentEntity"></a>
 
 Information about a resource that another resource is related to or depends on.
 

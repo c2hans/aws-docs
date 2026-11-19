@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # PreProcessingModelInvocationOutput
-<a name="API_agent-runtime_PreProcessingModelInvocationOutput"></a>
 
 The foundation model output from the pre-processing step.
 

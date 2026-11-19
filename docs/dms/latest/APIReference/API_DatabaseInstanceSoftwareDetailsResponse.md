@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DatabaseInst
 ---
 
 # DatabaseInstanceSoftwareDetailsResponse
-<a name="API_DatabaseInstanceSoftwareDetailsResponse"></a>
 
 Describes an inventory database instance for a Fleet Advisor collector.
 

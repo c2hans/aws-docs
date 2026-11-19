@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCOPS11-BP01 Create EUC health metrics that allow you to meet your operational goals
-<a name="eucops11-bp01"></a>
 
  Spend time reviewing the available metrics which provide quick and insightful information into the health of your end-to-end EUC deployment.
 

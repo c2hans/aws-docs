@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services used while running this solution. As of this revision, the cost for running this solution using the Landing Zone Accelerator on AWS [sample configuration](https://github.com/awslabs/landing-zone-accelerator-on-aws/tree/main/reference/sample-configurations/lza-sample-config) with AWS Control Tower in the US East (N. Virginia) Region within a non-critical sandbox environment with no activity or workloads is approximately **$430.22 (USD)** each month.
 

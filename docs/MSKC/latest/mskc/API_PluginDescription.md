@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_PluginDescription.h
 ---
 
 # PluginDescription
-<a name="API_PluginDescription"></a>
 
 The description of the plugin.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # GetComponent
-<a name="API_GetComponent"></a>
 
 Returns an existing component for an Amplify app.
 

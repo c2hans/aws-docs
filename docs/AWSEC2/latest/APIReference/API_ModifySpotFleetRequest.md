@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifySpo
 ---
 
 # ModifySpotFleetRequest
-<a name="API_ModifySpotFleetRequest"></a>
 
 Modifies the specified Spot Fleet request.
 

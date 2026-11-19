@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Unta
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 The resource to untag.
 

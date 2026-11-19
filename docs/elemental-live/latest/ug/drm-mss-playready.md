@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/drm-mss-playrea
 ---
 
 # Microsoft smooth output with PlayReady
-<a name="drm-mss-playready"></a>
 
 Encryption mode: Always AES CTR (AES-128)
 

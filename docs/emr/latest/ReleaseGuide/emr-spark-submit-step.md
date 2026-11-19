@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-submit
 ---
 
 # Add a Spark step
-<a name="emr-spark-submit-step"></a>
 
 You can use Amazon EMR steps to submit work to the Spark framework installed on an EMR cluster. For more information, see [Steps](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-overview.html#emr-overview-data-processing) in the Amazon EMR Management Guide. In the console and CLI, you do this using a Spark application step, which runs the `spark-submit` script as a step on your behalf. With the API, you use a step to invoke `spark-submit` using `command-runner.jar`.
 

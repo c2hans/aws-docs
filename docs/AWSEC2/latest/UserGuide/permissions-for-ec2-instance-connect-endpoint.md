@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/permissions-for-
 ---
 
 # Grant permissions to use EC2 Instance Connect Endpoint
-<a name="permissions-for-ec2-instance-connect-endpoint"></a>
 
 By default, IAM entities don't have permission to create, describe, or modify EC2 Instance Connect Endpoints. An IAM administrator can create IAM policies that grant the permissions required to perform specific actions on the resources that they need.
 

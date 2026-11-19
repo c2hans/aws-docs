@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/audio-only-output
 ---
 
 # Supported output formats for audio-only workflows
-<a name="audio-only-output"></a>
 
 MediaConvert supports the following combinations of output container and codec for creating audio-only outputs.
 

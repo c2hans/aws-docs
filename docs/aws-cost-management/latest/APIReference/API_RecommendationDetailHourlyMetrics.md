@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RecommendationDetailHourlyMetrics
-<a name="API_RecommendationDetailHourlyMetrics"></a>
 
 Contains the hourly metrics for the given recommendation over the lookback period.
 

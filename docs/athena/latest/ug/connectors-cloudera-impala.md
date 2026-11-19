@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-cloudera-imp
 ---
 
 # Amazon Athena Cloudera Impala connector
-<a name="connectors-cloudera-impala"></a>
 
 The Amazon Athena Cloudera Impala connector enables Athena to run SQL queries on the [Cloudera Impala](https://docs.cloudera.com/cdw-runtime/cloud/impala-overview/topics/impala-overview.html) distribution. The connector transforms your Athena SQL queries to the equivalent Impala syntax.
 

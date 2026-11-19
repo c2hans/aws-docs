@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetMetricConfiguration
-<a name="API_GetMetricConfiguration"></a>
 
 Get the metric configuration status for this AWS account.
 

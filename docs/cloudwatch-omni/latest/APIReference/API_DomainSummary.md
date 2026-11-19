@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # DomainSummary
-<a name="API_DomainSummary"></a>
 
 Summary of a domain. Call GetDomain for the full domain.
 

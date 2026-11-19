@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ShareDetails.html
 ---
 
 # ShareDetails
-<a name="API_ShareDetails"></a>
 
 The details of a resource share.
 

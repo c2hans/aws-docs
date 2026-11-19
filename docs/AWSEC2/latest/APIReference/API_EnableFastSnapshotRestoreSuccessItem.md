@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableFas
 ---
 
 # EnableFastSnapshotRestoreSuccessItem
-<a name="API_EnableFastSnapshotRestoreSuccessItem"></a>
 
 Describes fast snapshot restores that were successfully enabled.
 

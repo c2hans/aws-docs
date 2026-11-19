@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Descr
 ---
 
 # DescribeTracker
-<a name="API_DescribeTracker"></a>
 
 Retrieves the tracker resource details.
 

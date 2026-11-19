@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/App
 ---
 
 # Creating example tables and uploading data in DynamoDB
-<a name="AppendixSampleDataCode"></a>
 
 This appendix provides code to both create the tables and add data programmatically.
 

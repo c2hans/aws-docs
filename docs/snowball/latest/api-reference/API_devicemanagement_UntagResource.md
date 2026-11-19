@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # UntagResource
-<a name="API_devicemanagement_UntagResource"></a>
 
 Removes a tag from a device or task.
 

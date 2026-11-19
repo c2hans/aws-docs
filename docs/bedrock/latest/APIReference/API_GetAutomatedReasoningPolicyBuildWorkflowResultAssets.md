@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetAutom
 ---
 
 # GetAutomatedReasoningPolicyBuildWorkflowResultAssets
-<a name="API_GetAutomatedReasoningPolicyBuildWorkflowResultAssets"></a>
 
 Retrieves the resulting assets from a completed Automated Reasoning policy build workflow, including build logs, quality reports, and generated policy artifacts.
 

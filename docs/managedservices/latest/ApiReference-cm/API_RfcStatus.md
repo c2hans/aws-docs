@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # RfcStatus
-<a name="API_RfcStatus"></a>
 
 An ID and name for the status of the RFC.
 

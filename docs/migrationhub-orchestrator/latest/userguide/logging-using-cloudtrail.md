@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/usergui
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Logging Migration Hub Orchestrator API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Migration Hub Orchestrator is integrated with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html), a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all API calls for Migration Hub Orchestrator as events. The calls captured include calls from the Migration Hub Orchestrator console and code calls to the Migration Hub Orchestrator API operations. Using the information collected by CloudTrail, you can determine the request that was made to Migration Hub Orchestrator, the IP address from which the request was made, when it was made, and additional details.
 

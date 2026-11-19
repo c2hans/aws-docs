@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MetricDa
 ---
 
 # MetricDataV2
-<a name="API_MetricDataV2"></a>
 
 Contains the name, thresholds, and metric filters.
 

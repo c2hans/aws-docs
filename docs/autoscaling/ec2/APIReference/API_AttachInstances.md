@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_AttachI
 ---
 
 # AttachInstances
-<a name="API_AttachInstances"></a>
 
 Attaches one or more EC2 instances to the specified Auto Scaling group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-loyal
 ---
 
 # Customer Profiles standard loyalty promotion object fields
-<a name="standard-loyalty-promotion-object-fields"></a>
 
 The following table lists all the fields in the Customer Profiles standard loyalty promotion object.
 

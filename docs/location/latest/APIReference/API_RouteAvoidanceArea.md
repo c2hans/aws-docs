@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteAv
 ---
 
 # RouteAvoidanceArea
-<a name="API_RouteAvoidanceArea"></a>
 
 Areas to be avoided.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/v
 ---
 
 # Choosing a vector database for your generative AI applications
-<a name="vector-database-guide"></a>
 
 **Taking the first step**
 

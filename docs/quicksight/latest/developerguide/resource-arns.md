@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/resourc
 ---
 
 # Quick Sight resource ARNs
-<a name="resource-arns"></a>
 
 The following resource types are defined by Quick Sight: user, group, dashboard, topic, analysis, template, and theme. These are used in Quick Sight API calls and as elements of IAM permission statements. To find up-to-date information for Quick Sight (service prefix: quicksight) resources, actions, and condition context keys for use in IAM permission policies, see [Actions, Resources, and Condition Keys for Quick Sight](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonquicksight.html) in the *Service Authorization Reference*.
 

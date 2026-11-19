@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/channel-security-gro
 ---
 
 # Updating or removing a channel security group
-<a name="channel-security-groups-update"></a>
 
 You can change which input security group is used as the channel security group, or you can remove the channel security group entirely. However, you can only make these changes when the channel is stopped.
 

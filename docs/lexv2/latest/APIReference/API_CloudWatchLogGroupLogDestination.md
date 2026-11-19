@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CloudWatch
 ---
 
 # CloudWatchLogGroupLogDestination
-<a name="API_CloudWatchLogGroupLogDestination"></a>
 
 The Amazon CloudWatch Logs log group where the text and metadata logs are delivered. The log group must exist before you enable logging.
 

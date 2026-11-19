@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Merge for T-SQL
-<a name="chap-sql-server-aurora-pg.tsql.merge"></a>
 
 This topic contains reference information comparing the MERGE statement in SQL Server with equivalent functionality in PostgreSQL. You can understand the differences in feature compatibility between these database systems when migrating from Microsoft SQL Server 2019 to Amazon Aurora PostgreSQL.
 

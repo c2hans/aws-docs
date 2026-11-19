@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-setting
 ---
 
 # Default settings for automated sensitive data discovery
-<a name="discovery-asdd-settings-defaults"></a>
 
 If automated sensitive data discovery is enabled, Amazon Macie automatically selects and analyzes sample objects from all the Amazon Simple Storage Service (Amazon S3) general purpose buckets for your account. If you're the Macie administrator for an organization, by default this includes S3 buckets that your member accounts own.
 

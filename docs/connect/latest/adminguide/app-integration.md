@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/app-integratio
 ---
 
 # Use an allowlist for integrated applications in Connect Customer
-<a name="app-integration"></a>
 
 All domains that embed the CCP for a particular instance must be explicitly allowed for cross-domain access to the instance. For example, to integrate with Salesforce, you must place your Salesforce Visualforce domain in an allowlist.
 

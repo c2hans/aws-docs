@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section describes cost, security, supported Regions, quotas, and other considerations you should review before deploying the solution.
 

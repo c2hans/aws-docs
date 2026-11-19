@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcos
 ---
 
 # Data protection
-<a name="telcosec04"></a>
 
 |  TELCOSEC04: How do you protect customer proprietary network information (CPNI) and personally identifiable information (PII)?  |
 | --- |

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Form FormInputValueProperty
-<a name="aws-properties-amplifyuibuilder-form-forminputvalueproperty"></a>
 
 The `FormInputValueProperty` property specifies the configuration for an input field on a form. Use `FormInputValueProperty` to specify the values to render or bind by default.
 
@@ -48,7 +47,7 @@ The information to bind fields to data at runtime.
 `Concat`  <a name="cfn-amplifyuibuilder-form-forminputvalueproperty-concat"></a>
 A list of form properties to concatenate to create the value to assign to this field property.
 *Required*: No
-*Type*: Array of [FormInputValueProperty](#aws-properties-amplifyuibuilder-form-forminputvalueproperty)
+*Type*: Array of [FormInputValueProperty](aws-properties-amplifyuibuilder-form-forminputvalueproperty.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Value`  <a name="cfn-amplifyuibuilder-form-forminputvalueproperty-value"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/aws-trusted-advis
 ---
 
 # Change log for AWS Trusted Advisor
-<a name="aws-trusted-advisor-change-log"></a>
 
 See the following topic for recent changes to Trusted Advisor checks.
 

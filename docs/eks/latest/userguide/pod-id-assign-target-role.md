@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/pod-id-assign-targe
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Access AWS Resources using EKS Pod Identity Target IAM Roles
-<a name="pod-id-assign-target-role"></a>
 
 When running applications on Amazon Elastic Kubernetes Service (Amazon EKS), you might need to access AWS resources that exist in different AWS accounts. This guide shows you how to set up cross account access using EKS Pod Identity, which enables your Kubernetes pods to access other AWS resources using target roles.
 

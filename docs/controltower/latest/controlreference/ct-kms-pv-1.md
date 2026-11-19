@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ct-
 ---
 
 # [CT.KMS.PV.1] Require an AWS KMS key policy to have a statement that limits creation of AWS KMS grants to AWS services
-<a name="ct-kms-pv-1"></a>
 
 This control requires that KMS grants are issued only to AWS services that are integrated with AWS KMS, or to an AWS service principal.
 

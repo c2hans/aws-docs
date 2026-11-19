@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Ordering and deduplicating events on a Custom Event Bus
-<a name="eb-custom-bus-ordering"></a>
 
 Ordering is a property of a subscriber. Deduplication happens when you publish. The two are configured in different places and solve different problems.
 

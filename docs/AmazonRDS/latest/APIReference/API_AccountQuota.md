@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Accoun
 ---
 
 # AccountQuota
-<a name="API_AccountQuota"></a>
 
 Describes a quota for an AWS account.
 

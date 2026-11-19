@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/influxd
 For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Upgraded storage engine for InfluxDB 3
-<a name="influxdb3-storage-engine"></a>
 
  Amazon Timestream for InfluxDB 3 now includes an upgraded storage engine that improves write, compaction, and query performance for large and complex time series workloads. The upgraded engine reached general availability in InfluxDB 3 Enterprise version 3.11. It changes how data is written, compacted, and read, and it is designed to deliver lower query latency and more predictable resource usage for high cardinality tables, wide and sparse schemas, and query heavy access patterns. Data persisted by the upgraded engine uses a new columnar file format, the `.pt` format, in place of Apache Parquet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Subscribe to participant added events in Connect Customer agent workspace
-<a name="3P-apps-contact-events-participantadded-sub"></a>
 
 Subscribes to participant added events. This event fires when a new participant joins a contact.
 

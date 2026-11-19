@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/managing-u
 ---
 
 # Managing users in your user pool
-<a name="managing-users"></a>
 
 After you create a user pool, you can create, confirm, and manage user accounts. With Amazon Cognito user pools groups you can manage your users and their access to resources by mapping IAM roles to groups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # AWS service integrations with Security Hub CSPM
-<a name="securityhub-internal-providers"></a>
 
 AWS Security Hub CSPM supports integrations with several other AWS services. These integrations can help you get a comprehensive view of security and compliance across your AWS environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-versionin
 ---
 
 # Versioning
-<a name="acxd-versioning"></a>
 
 Versioning helps you review and recover previous configurations for key resources in agentic CX designer.
 

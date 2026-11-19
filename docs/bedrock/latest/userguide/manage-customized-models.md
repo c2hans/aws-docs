@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/manage-customiz
 ---
 
 # Manage customized models
-<a name="manage-customized-models"></a>
 
 After creating a customized model through fine-tuning, reinforcement fine-tuning, distillation, or import, you can manage the model throughout its lifecycle. This section covers security configuration, monitoring, deployment, sharing across accounts, and troubleshooting.
 

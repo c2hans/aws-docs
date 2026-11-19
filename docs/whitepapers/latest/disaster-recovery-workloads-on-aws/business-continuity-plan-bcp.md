@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-wor
 ---
 
 # Business Continuity Plan (BCP)
-<a name="business-continuity-plan-bcp"></a>
 
  Your disaster recovery plan should be a subset of your organization’s *business continuity plan* (BCP), it should not be a standalone document. There is no point in maintaining aggressive disaster recovery targets for restoring a workload if that workload’s business objectives cannot be achieved because of the disaster’s impact on elements of your business *other* than your workload. For example an earthquake might prevent you from transporting products purchased on your eCommerce application – even if effective DR keeps your workload functioning, your BCP needs to accommodate transportation needs. Your DR strategy should be based on business requirements, priorities, and context.
 

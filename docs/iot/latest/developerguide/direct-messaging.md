@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/direct-messagi
 ---
 
 # Direct Messaging
-<a name="direct-messaging"></a>
 
 AWS IoT Core now supports Direct Messaging. You can send a message to a single connected device by its MQTT client ID, without requiring the device to subscribe to a topic.
 

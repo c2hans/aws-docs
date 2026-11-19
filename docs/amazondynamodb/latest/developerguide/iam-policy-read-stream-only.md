@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/iam
 ---
 
 # IAM policy to grant read access for a DynamoDB stream only (not for the table)
-<a name="iam-policy-read-stream-only"></a>
 
 When you enable DynamoDB Streams on a table, information is captured about every modification to items in the table. For more information, see [Change data capture for DynamoDB Streams](Streams.md).
 

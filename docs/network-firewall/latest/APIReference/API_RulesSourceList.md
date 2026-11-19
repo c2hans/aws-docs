@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # RulesSourceList
-<a name="API_RulesSourceList"></a>
 
 Stateful inspection criteria for a domain list rule group.
 

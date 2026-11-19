@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/datasync-large
 ---
 
 # Performing a large data migration with AWS DataSync
-<a name="datasync-large-migration"></a>
 
 Large-scale data migrations can involve transferring significant volumes of data that encompass millions of files or objects in various formats. AWS DataSync simplifies these complex transfers by managing scheduling, monitoring, encryption, and data verification.
 

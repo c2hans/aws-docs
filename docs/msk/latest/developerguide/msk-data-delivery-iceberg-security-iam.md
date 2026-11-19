@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # IAM and access control
-<a name="msk-data-delivery-iceberg-security-iam"></a>
 
 A Channel uses IAM roles for authorization. Follow least privilege:
 + Scope S3 Tables permissions to the specific bucket used by the Channel.

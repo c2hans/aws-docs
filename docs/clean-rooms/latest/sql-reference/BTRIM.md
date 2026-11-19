@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/BTRIM.h
 ---
 
 # BTRIM function
-<a name="BTRIM"></a>
 
 The BTRIM function trims a string by removing leading and trailing blanks or by removing leading and trailing characters that match an optional specified string.
 

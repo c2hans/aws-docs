@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketVersion
 ---
 
 # GetBucketVersioning
-<a name="API_GetBucketVersioning"></a>
 
 **Note**
 This operation is not supported for directory buckets.

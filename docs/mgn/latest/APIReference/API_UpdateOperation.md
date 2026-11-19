@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateOperat
 ---
 
 # UpdateOperation
-<a name="API_UpdateOperation"></a>
 
 An operation that updates the properties of a construct.
 

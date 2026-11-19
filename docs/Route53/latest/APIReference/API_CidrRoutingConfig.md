@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_CidrRout
 ---
 
 # CidrRoutingConfig
-<a name="API_CidrRoutingConfig"></a>
 
 The object that is specified in resource record set object when you are linking a resource record set to a CIDR location.
 

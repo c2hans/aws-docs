@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_EventSu
 ---
 
 # EventSubscription
-<a name="API_EventSubscription"></a>
 
 Describes event subscriptions.
 

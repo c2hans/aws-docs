@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/constructi
 ---
 
 # .construction
-<a name="construction"></a>
 
 Used by those in the construction industry, such as builders and contractors.
 

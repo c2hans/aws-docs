@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # UpdateVoiceConnector
-<a name="API_voice-chime_UpdateVoiceConnector"></a>
 
 Updates the details for the specified Amazon Chime SDK Voice Connector.
 

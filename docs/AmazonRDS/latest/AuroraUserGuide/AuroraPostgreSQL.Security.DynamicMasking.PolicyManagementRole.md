@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Configuring masking policy management role
-<a name="AuroraPostgreSQL.Security.DynamicMasking.PolicyManagementRole"></a>
 
 The PostgreSQL column masking extension, `pg_columnmask`, allows you to delegate the management of masking policies to a specific role, rather than requiring `rds_superuser` or table owner privileges. This provides more granular control over who can create, alter, and drop masking policies.
 

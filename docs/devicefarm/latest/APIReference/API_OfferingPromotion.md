@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Offer
 ---
 
 # OfferingPromotion
-<a name="API_OfferingPromotion"></a>
 
 Represents information about an offering promotion.
 

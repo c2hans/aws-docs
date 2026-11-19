@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Cr
 ---
 
 # CreateEntity
-<a name="API_CreateEntity"></a>
 
 Creates an entity.
 

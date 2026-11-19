@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_EnaS
 ---
 
 # EnaSrdUdpSpecificationRequest
-<a name="API_EnaSrdUdpSpecificationRequest"></a>
 
 Specifies UDP configuration for ENA SRD.
 

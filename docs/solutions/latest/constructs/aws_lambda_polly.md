@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_lambda_p
 ---
 
 # aws-lambda-polly
-<a name="aws_lambda_polly"></a>
 
 ![Stability:Experimental](https://img.shields.io/badge/stability-Experimental-important.svg?style=for-the-badge)
 

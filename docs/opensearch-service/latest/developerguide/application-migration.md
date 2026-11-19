@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Migrating saved objects from OpenSearch Dashboards to OpenSearch UI
-<a name="application-migration"></a>
 
 If you have existing dashboards, visualizations, index patterns, and other saved objects in OpenSearch Dashboards, you can migrate and reuse them in OpenSearch UI.
 

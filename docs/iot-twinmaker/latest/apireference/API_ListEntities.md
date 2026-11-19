@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Li
 ---
 
 # ListEntities
-<a name="API_ListEntities"></a>
 
 Lists all entities in a workspace.
 

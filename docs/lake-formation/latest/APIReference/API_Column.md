@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_C
 ---
 
 # Column
-<a name="API_Column"></a>
 
 A column in a table that a row-level security policy's filter expression can reference.
 

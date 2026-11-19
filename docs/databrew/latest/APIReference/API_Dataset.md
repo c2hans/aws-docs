@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Dataset
 ---
 
 # Dataset
-<a name="API_Dataset"></a>
 
 Represents a dataset that can be processed by DataBrew.
 

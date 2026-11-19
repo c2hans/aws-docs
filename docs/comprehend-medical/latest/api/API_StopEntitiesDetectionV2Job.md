@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_StopEn
 ---
 
 # StopEntitiesDetectionV2Job
-<a name="API_StopEntitiesDetectionV2Job"></a>
 
 Stops a medical entities detection job in progress.
 

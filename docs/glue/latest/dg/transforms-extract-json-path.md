@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-extract-json-p
 ---
 
 # Extracting a JSON path
-<a name="transforms-extract-json-path"></a>
 
 This transform extracts new columns from a JSON string column. This transform is useful when you only need a few data elements and don't want to import the entire JSON content into the table schema.
 

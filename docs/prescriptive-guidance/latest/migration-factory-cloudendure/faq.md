@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # FAQ
-<a name="faq"></a>
 
 This section provides answers to commonly raised questions about deploying and using Cloud Migration Factory.
 

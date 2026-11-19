@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-
 ---
 
 # Create an internal Classic Load Balancer
-<a name="elb-create-internal-load-balancer"></a>
 
 You can create an internal load balancer to distribute traffic to your EC2 instances from clients with access to the VPC for the load balancer.
 

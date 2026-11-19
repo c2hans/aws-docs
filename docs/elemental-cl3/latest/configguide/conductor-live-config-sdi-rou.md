@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/conduct
 ---
 
 # Configuring SDI video routers
-<a name="conductor-live-config-sdi-rou"></a>
 
 If your AWS Elemental Conductor Livecluster deployment includes a router for handling SDI inputs to Elemental Live nodes, you must configure the router in the cluster.
 

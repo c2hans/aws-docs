@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # FormStyleConfig
-<a name="API_FormStyleConfig"></a>
 
 Describes the configuration settings for the form's style properties.
 

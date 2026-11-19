@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/secu
 ---
 
 # Securing DNS for clients with Amazon Route 53 Global Resolver
-<a name="securing-dns"></a>
 
 The following sections describe how to create rules to secure DNS queries made by your clients.
 

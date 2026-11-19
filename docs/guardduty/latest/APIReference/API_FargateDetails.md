@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Fargat
 ---
 
 # FargateDetails
-<a name="API_FargateDetails"></a>
 
 Contains information about AWS Fargate details associated with an Amazon ECS cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetAllianceLeadContact
-<a name="API_account_GetAllianceLeadContact"></a>
 
 Retrieves the alliance lead contact information for a partner account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # PricingRuleListElement
-<a name="API_PricingRuleListElement"></a>
 
 A representation of a pricing rule.
 

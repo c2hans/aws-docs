@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Organizations::Policy
-<a name="aws-resource-organizations-policy"></a>
 
 Creates a policy of a specified type that you can attach to a root, an organizational unit (OU), or an individual AWS account.
 

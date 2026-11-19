@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Batch
 ---
 
 # BatchEvaluateGeofencesError
-<a name="API_BatchEvaluateGeofencesError"></a>
 
 Contains error details for each device that failed to evaluate its position against the geofences in a given geofence collection.
 

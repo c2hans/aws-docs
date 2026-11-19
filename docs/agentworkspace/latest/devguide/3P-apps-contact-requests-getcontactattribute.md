@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Get a specific attribute value of a contact in Connect Customer agent workspace
-<a name="3P-apps-contact-requests-getcontactattribute"></a>
 
 Returns the value of the requested attribute of the contact as a string. If the contact has the attribute but no value is set, the operation returns an empty string. If the contact does not have the attribute, the operation returns `undefined`.
 

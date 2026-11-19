@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Enabling Security Hub CSPM
-<a name="securityhub-settingup"></a>
 
 There are two ways to enable AWS Security Hub CSPM, by integrating with AWS Organizations or manually.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_On
 ---
 
 # OnChangeStateTemplateUpdateStrategy
-<a name="API_OnChangeStateTemplateUpdateStrategy"></a>
 
 Vehicles associated with the state template will stream telemetry data when there is a change.
 

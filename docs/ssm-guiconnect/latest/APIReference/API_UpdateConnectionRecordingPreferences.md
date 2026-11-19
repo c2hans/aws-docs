@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-guiconnect/latest/APIReference/API_U
 ---
 
 # UpdateConnectionRecordingPreferences
-<a name="API_UpdateConnectionRecordingPreferences"></a>
 
 Updates the preferences for recording RDP connections.
 

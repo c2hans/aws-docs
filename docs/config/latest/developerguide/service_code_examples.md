@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/service_cod
 ---
 
 # Code examples for AWS Config using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use AWS Config with an AWS software development kit (SDK).
 

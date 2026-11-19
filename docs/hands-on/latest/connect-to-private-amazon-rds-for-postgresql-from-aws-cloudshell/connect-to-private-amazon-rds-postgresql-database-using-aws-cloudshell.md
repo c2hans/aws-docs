@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/connect-to-private-amazo
 ---
 
 # Connect to Private Amazon RDS PostgreSQL Database Using AWS CloudShell
-<a name="connect-to-private-amazon-rds-postgresql-database-using-aws-cloudshell"></a>
 
 |  |  |
 | --- |--- |

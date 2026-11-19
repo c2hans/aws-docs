@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Delete unused SSL/TLS certificates from Lightsail distributions
-<a name="amazon-lightsail-deleting-distribution-certificates"></a>
 
 **Warning**
 Deleting an SSL/TLS certificate is final and can't be undone.

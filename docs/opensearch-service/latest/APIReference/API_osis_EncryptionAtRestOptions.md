@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # EncryptionAtRestOptions
-<a name="API_osis_EncryptionAtRestOptions"></a>
 
 Options to control how OpenSearch encrypts buffer data.
 

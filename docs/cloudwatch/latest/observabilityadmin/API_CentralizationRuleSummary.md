@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # CentralizationRuleSummary
-<a name="API_CentralizationRuleSummary"></a>
 
 A summary of a centralization rule's key properties and status.
 

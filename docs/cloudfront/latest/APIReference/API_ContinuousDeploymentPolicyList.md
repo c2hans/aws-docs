@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Conti
 ---
 
 # ContinuousDeploymentPolicyList
-<a name="API_ContinuousDeploymentPolicyList"></a>
 
 Contains a list of continuous deployment policies.
 

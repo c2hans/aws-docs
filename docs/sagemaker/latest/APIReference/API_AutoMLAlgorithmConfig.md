@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLAlgorithmConfig
-<a name="API_AutoMLAlgorithmConfig"></a>
 
 The selection of algorithms trained on your dataset to generate the model candidates for an Autopilot job.
 

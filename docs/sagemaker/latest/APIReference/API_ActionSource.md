@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Action
 ---
 
 # ActionSource
-<a name="API_ActionSource"></a>
 
 A structure describing the source of an action.
 

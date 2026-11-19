@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/getting-started-con
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Get started with Amazon EKS – AWS Management Console and AWS CLI
-<a name="getting-started-console"></a>
 
 **Note**
 This topic covers getting started **without** EKS Auto Mode. It uses Managed Node Groups to deploy nodes.

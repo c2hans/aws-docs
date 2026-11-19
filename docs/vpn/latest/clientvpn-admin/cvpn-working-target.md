@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # AWS Client VPN target networks
-<a name="cvpn-working-target"></a>
 
 A target network is a subnet in a VPC. An AWS Client VPN endpoint must have at least one target network to enable clients to connect to it and establish a VPN connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Marketpl
 ---
 
 # MarketplaceModelEndpoint
-<a name="API_MarketplaceModelEndpoint"></a>
 
 Contains details about an endpoint for a model from Amazon Bedrock Marketplace.
 

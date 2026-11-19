@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFind
 ---
 
 # GetFindingStatisticsV2
-<a name="API_GetFindingStatisticsV2"></a>
 
 Returns aggregated statistical data about findings.
 

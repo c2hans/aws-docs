@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_GetA
 ---
 
 # GetAssociation
-<a name="API_GetAssociation"></a>
 
 Retrieves given associations configured for a specific AgentSpace.
 

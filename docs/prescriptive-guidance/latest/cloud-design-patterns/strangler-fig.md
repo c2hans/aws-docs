@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-desig
 ---
 
 # Strangler fig pattern
-<a name="strangler-fig"></a>
 
 ## Intent
 <a name="strangler-fig-intent"></a>

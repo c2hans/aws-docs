@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Lis
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Returns a list of tags associated with the resource. For usage examples, see the [*Controls Reference Guide*](https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html).
 

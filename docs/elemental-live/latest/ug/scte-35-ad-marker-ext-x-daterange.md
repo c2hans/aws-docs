@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/scte-35-ad-mark
 ---
 
 # SCTE-35 ad marker EXT-X-DATERANGE
-<a name="scte-35-ad-marker-ext-x-daterange"></a>
 
 This section is an addendum to [SCTE-35 and SCTE-104 message processing in Elemental Live](scte-message-processing.md). Elemental Live supports the EXT-X-DATERANGE ad marker style in the manifest created for an HLS output.
 

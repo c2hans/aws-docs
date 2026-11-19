@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/encode-rules.html
 ---
 
 # Summary of encode rules for output groups
-<a name="encode-rules"></a>
 
  This table summarizes the rules for encodes for each output group. In the first column, find the output group that you want, then read across the row.
 

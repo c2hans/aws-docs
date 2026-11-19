@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/asset-sear
 ---
 
 # Search assets on AWS IoT SiteWise console
-<a name="asset-search"></a>
 
 Use the AWS IoT SiteWise console search functionality to find assets based on metadata and real-time property value filters.
 

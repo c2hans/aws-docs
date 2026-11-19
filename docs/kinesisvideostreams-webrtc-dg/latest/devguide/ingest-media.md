@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 ---
 
 # Ingest media
-<a name="ingest-media"></a>
 
 The following limits are in place:
 + **Session duration:** one hour, maximum

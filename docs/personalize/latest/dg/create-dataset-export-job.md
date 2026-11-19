@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/create-dataset-exp
 ---
 
 # Creating a dataset export job in Amazon Personalize
-<a name="create-dataset-export-job"></a>
 
 You can create a dataset export job with the Amazon Personalize console, AWS Command Line Interface (AWS CLI), or AWS SDKs.
 

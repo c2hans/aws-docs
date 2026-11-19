@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds or overwrites only the specified tags for the specified resource. When you specify an existing tag key, the value is overwritten with the new value.
 

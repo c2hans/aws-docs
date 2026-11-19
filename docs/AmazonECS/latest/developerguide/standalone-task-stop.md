@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/standalo
 ---
 
 # Stopping an Amazon ECS task
-<a name="standalone-task-stop"></a>
 
 If you no longer need to keep a standalone task running, you can stop the task. The Amazon ECS console makes it easy to stop one or more tasks.
 

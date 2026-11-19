@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_U
 ---
 
 # UpdateOrganizationRecommendationLifecycle
-<a name="API_UpdateOrganizationRecommendationLifecycle"></a>
 
 Update the lifecycle of a Recommendation within an Organization. This API only supports prioritized recommendations and updates global priority recommendations, eliminating the need to call the API in each AWS Region.
 

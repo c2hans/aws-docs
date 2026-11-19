@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # Accessor
-<a name="API_Accessor"></a>
 
 The properties of the Accessor.
 

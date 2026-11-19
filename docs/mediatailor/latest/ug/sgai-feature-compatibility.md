@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/sgai-feature-compa
 ---
 
 # MediaTailor server-guided ad insertion feature compatibility matrix
-<a name="sgai-feature-compatibility"></a>
 
 AWS Elemental MediaTailor offers two ad insertion methods with different feature compatibility. Server-guided ad insertion works differently from server-side ad insertion, which affects compatibility with some MediaTailor features. Use this table to understand which features work with each ad insertion method.
 

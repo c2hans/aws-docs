@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdatePa
 ---
 
 # UpdateParticipantRoleConfigChannelInfo
-<a name="API_UpdateParticipantRoleConfigChannelInfo"></a>
 
 Configuration information for the chat participant role.
 

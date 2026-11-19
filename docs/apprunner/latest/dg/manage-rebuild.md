@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/dg/manage-rebuild.html
 AWS App Runner is no longer open to new customers. Existing customers can continue to use the service as normal. This guide applies only to existing customers. If you're not an existing customer, AWS recommends Amazon ECS Express Mode. For more information, see [AWS App Runner availability change](https://docs.aws.amazon.com/apprunner/latest/dg/apprunner-availability-change.html).
 
 # Rebuilding a failed App Runner service
-<a name="manage-rebuild"></a>
 
  If you receive a **Failed to create** error when creating an App Runner service, you can do one of the following.
 + Follow the steps in [When the service fails to create](troubleshooting-create-failure.md) to identify the cause of the error.

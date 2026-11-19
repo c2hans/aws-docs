@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_W
 ---
 
 # WindowsUser
-<a name="API_WindowsUser"></a>
 
 The Windows user details.
 

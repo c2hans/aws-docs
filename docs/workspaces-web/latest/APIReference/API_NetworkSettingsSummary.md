@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_N
 ---
 
 # NetworkSettingsSummary
-<a name="API_NetworkSettingsSummary"></a>
 
 The summary of network settings.
 

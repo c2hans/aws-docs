@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # StopCampaign
-<a name="API_connect-outbound-campaigns_StopCampaign"></a>
 
 Stops an Connect Customer campaign. When this API is called, no more calls are dialed for the campaign. Inflight contacts aren't impacted.
 

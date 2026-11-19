@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/get-session-screenshot
 ---
 
 # get-session-screenshots
-<a name="get-session-screenshots"></a>
 
 Gets screenshots of one or more Amazon DCV sessions. Optional parameters allow specifying the maximum width and height of the screenshots.
 

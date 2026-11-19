@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_IdentityVeri
 ---
 
 # IdentityVerificationAttributes
-<a name="API_IdentityVerificationAttributes"></a>
 
 Represents the verification attributes of a single identity.
 

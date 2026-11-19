@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/customizing-models-t
 ---
 
 # Customization techniques
-<a name="customizing-models-techniques"></a>
 
 Customization techniques define *how* your model learns from data. Each technique requires a different dataset format and has its own hyperparameters. Choose based on what data you have and what behavior you want to achieve.
 

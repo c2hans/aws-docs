@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AssociateOpsItemRelatedItem
-<a name="API_AssociateOpsItemRelatedItem"></a>
 
 Associates a related item to a Systems Manager OpsCenter OpsItem. For example, you can associate an Incident Manager incident or analysis with an OpsItem. Incident Manager and OpsCenter are tools in AWS Systems Manager.
 

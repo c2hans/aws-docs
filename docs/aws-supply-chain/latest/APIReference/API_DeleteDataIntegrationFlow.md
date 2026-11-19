@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DeleteDataIntegrationFlow
-<a name="API_DeleteDataIntegrationFlow"></a>
 
 Enable you to programmatically delete an existing data pipeline for the provided AWS Supply Chain instance and DataIntegrationFlow name.
 

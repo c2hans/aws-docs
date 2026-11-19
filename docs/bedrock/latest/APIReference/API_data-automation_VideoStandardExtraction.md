@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # VideoStandardExtraction
-<a name="API_data-automation_VideoStandardExtraction"></a>
 
 Settings for generating data from video.
 

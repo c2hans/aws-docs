@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Valida
 ---
 
 # ValidatePullThroughCacheRule
-<a name="API_ValidatePullThroughCacheRule"></a>
 
 Validates an existing pull through cache rule for an upstream registry that requires authentication. This will retrieve the contents of the AWS Secrets Manager secret, verify the syntax, and then validate that authentication to the upstream registry is successful.
 

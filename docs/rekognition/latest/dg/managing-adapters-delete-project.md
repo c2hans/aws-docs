@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/managing-adapters-
 ---
 
 # Deleting a project
-<a name="managing-adapters-delete-project"></a>
 
 You can delete a project by using the Rekognition console or by calling the [DeleteProject](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteProject.html) API. To delete a project, you must first delete each of the associated adapters. A deleted project or model can't be undeleted.
 

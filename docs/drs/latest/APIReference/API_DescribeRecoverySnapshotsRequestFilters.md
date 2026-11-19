@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DescribeReco
 ---
 
 # DescribeRecoverySnapshotsRequestFilters
-<a name="API_DescribeRecoverySnapshotsRequestFilters"></a>
 
 A set of filters by which to return Recovery Snapshots.
 

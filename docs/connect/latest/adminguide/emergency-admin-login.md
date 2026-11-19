@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/emergency-admi
 ---
 
 # Emergency login to the Connect Customer admin website
-<a name="emergency-admin-login"></a>
 
 As a best practice, users assigned to the Connect Customer **Admin** security profile should always use their Connect Customer instance URL to login:
 + Log in to the Connect Customer admin website at https://{{instance name}}.my.connect.aws/.

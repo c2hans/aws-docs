@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/managing-software.html
 ---
 
 # Manage software on your AL2 instance
-<a name="managing-software"></a>
 
 The base distribution of Amazon Linux contains the software packages and utilities that are required for basic server operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListTriggers.html
 ---
 
 # ListTriggers
-<a name="API_ListTriggers"></a>
 
 Retrieves the names of all trigger resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names.
 

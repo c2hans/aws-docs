@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Relate
 ---
 
 # RelatedFindings
-<a name="API_RelatedFindings"></a>
 
 Contains information about findings that are related to the investigated activity.
 

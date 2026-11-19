@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ListDirectQueryDataSources
-<a name="API_ListDirectQueryDataSources"></a>
 
  Lists an inventory of all the direct query data sources that you have configured within Amazon OpenSearch Service.
 

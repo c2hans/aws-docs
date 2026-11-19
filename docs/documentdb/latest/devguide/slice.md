@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/slice.html
 ---
 
 # $slice
-<a name="slice"></a>
 
 The `$slice` aggregation operator enables you to return a subset of an array by either traversing the array from the beginning or the end of the array. This is used to display a limited number of items from an array field, such as the top or bottom N items.
 

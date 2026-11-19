@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.MASK_D
 ---
 
 # MASK\_DELIMITER
-<a name="recipe-actions.MASK_DELIMITER"></a>
 
 Masks characters between two delimiters with a user-specified masking symbol.
 

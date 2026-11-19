@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # List available resources in an AgentCore gateway
-<a name="gateway-using-mcp-resources-list"></a>
 
 To list all available resources that an AgentCore gateway provides, make a POST request to the gateway’s MCP endpoint and specify `resources/list` as the method in the request body:
 

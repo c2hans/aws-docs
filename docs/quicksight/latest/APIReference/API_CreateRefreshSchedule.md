@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateRefreshSchedule
-<a name="API_CreateRefreshSchedule"></a>
 
 Creates a refresh schedule for a dataset. You can create up to 5 different schedules for a single dataset.
 

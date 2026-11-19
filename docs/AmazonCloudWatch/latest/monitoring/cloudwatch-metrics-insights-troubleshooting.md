@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloud
 ---
 
 # Troubleshooting Metrics Insights
-<a name="cloudwatch-metrics-insights-troubleshooting"></a>
 
 ## The results include "Other," but I don't have this as a dimension
 <a name="cloudwatch-metrics-insights-troubleshooting-other"></a>

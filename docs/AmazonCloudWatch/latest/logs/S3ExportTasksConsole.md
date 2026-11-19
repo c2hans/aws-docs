@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/S3ExportTas
 ---
 
 # Export log data to Amazon S3 using the console
-<a name="S3ExportTasksConsole"></a>
 
 In the following examples, you use the Amazon CloudWatch console to export all data from an Amazon CloudWatch Logs log group named `my-log-group` to an Amazon S3 bucket named `amzn-s3-demo-bucket`.
 

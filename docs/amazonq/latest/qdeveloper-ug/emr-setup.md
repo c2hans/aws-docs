@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/emr-setup.h
 ---
 
 # Using Amazon Q Developer with Amazon EMR Studio
-<a name="emr-setup"></a>
 
 This page describes how to set up and activate Amazon Q Developer for Amazon EMR Studio. Once activated, Amazon Q can make code recommendations automatically as you write your ETL code.
 

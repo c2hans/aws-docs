@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Container-based processing
-<a name="container-based-processing"></a>
 
  **ECS tasks with AWS Fargate**
 

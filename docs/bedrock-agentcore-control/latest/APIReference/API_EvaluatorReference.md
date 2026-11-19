@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # EvaluatorReference
-<a name="API_EvaluatorReference"></a>
 
  The reference to an evaluator used in online evaluation configurations, containing the evaluator identifier.
 

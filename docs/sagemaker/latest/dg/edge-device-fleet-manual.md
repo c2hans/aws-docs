@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-device-fleet-ma
 ---
 
 # Download and Set Up the Edge Manager Agent Manually
-<a name="edge-device-fleet-manual"></a>
 
 Download the Edge Manager agent based on your operating system, architecture, and AWS Region. The agent is periodically updated, so you have the option to choose your agent based on release dates and versions. Once you have the agent, create a JSON configuration file. Specify the device IoT thing name, fleet name, device credentials, and other key-value pairs. See [Running the Edge Manager agent](#edge-device-fleet-running-agent) for full a list of keys you must specify in the configuration file. You can run the agent as an executable binary or link against it as a dynamic shared object (DSO).
 

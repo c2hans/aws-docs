@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/order-port-austria.h
 ---
 
 # Austria
-<a name="order-port-austria"></a>
 
 The following tables list and describe the requirements for ordering and porting phone numbers in Austria.
 

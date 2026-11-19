@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/create
 ---
 
 # Create an event
-<a name="create-an-event"></a>
 
 **Note**
 Only admins can create an event.

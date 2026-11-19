@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sid
 ---
 
 # SidewalkDeviceMetadata
-<a name="API_SidewalkDeviceMetadata"></a>
 
 MetaData for Sidewalk device.
 

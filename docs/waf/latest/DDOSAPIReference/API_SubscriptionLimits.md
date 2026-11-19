@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Subscrip
 ---
 
 # SubscriptionLimits
-<a name="API_SubscriptionLimits"></a>
 
 Limits settings for your subscription.
 

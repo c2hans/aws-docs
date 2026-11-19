@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Offboard from AMS Accelerate
-<a name="acc-offboard"></a>
 
 AMS Accelerate provides an easy way to operate an enterprise-class operating environment. And, AMS Accelerate provides the supporting infrastructure operations model for AWS migration and usage. However, after using AMS Accelerate, you might decide to in-source, or re-assign AWS infrastructure operations responsibilities to other teams. To do this, you must offboard your accounts from the AMS service.
 

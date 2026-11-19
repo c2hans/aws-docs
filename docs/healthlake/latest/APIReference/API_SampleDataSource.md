@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Sampl
 ---
 
 # SampleDataSource
-<a name="API_SampleDataSource"></a>
 
 Identifies a sample data file in Amazon S3 to use as the source when creating a data transformation profile. Valid only when the source format is Comma-separated values (CSV).
 

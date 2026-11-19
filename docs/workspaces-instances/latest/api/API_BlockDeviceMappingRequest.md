@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Bloc
 ---
 
 # BlockDeviceMappingRequest
-<a name="API_BlockDeviceMappingRequest"></a>
 
 Defines device mapping for WorkSpace Instance storage.
 

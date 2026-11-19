@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 ---
 
 # Understanding availability
-<a name="understanding-availability"></a>
 
  Availability is one of the primary ways we can quantitatively measure resiliency. We define availability, *A*, as the percentage of time that a workload is available for use. It's a ratio of its expected "uptime" (being available) to the total time being measured (the expected "uptime" plus the expected "downtime").
 

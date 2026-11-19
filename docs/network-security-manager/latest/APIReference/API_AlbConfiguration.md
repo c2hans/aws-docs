@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # AlbConfiguration
-<a name="API_AlbConfiguration"></a>
 
 Filter criteria specific to Application Load Balancers.
 

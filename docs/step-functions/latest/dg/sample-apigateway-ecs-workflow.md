@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/sample-apigatew
 ---
 
 # Call a microservice running on Fargate using API Gateway integration
-<a name="sample-apigateway-ecs-workflow"></a>
 
 This sample project demonstrates how to use Step Functions to make a call to API Gateway in order to interact with a service on AWS Fargate, and also to check whether the call succeeded.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Crede
 ---
 
 # CredentialPair
-<a name="API_CredentialPair"></a>
 
 The combination of user name and password that are used as credentials.
 

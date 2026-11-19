@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_C
 ---
 
 # CreateConfig
-<a name="API_CreateConfig"></a>
 
 Creates a `Config` with the specified `configData` parameters.
 

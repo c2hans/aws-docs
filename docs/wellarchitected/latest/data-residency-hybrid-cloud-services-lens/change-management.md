@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Change management
-<a name="change-management"></a>
 
 | DRHCREL04: Have you planned your hybrid storage, compute, and network capacity ahead of time? |
 | --- |

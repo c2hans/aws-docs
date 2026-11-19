@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/running-federated-queri
 ---
 
 # Run federated queries
-<a name="running-federated-queries"></a>
 
 After you have configured one or more data connectors and deployed them to your account, you can use them in your Athena queries.
 

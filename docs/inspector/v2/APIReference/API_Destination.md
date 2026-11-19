@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Destinatio
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 Contains details of the Amazon S3 bucket and AWS KMS key used to export findings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RealTi
 ---
 
 # RealTimeInferenceRecommendation
-<a name="API_RealTimeInferenceRecommendation"></a>
 
 The recommended configuration to use for Real-Time Inference.
 

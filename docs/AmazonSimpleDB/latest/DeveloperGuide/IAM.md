@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/IAM
 ---
 
 # AWS Identity and Access Management
-<a name="IAM"></a>
 
  is integrated with AWS Identity and Access Management (IAM), which offers a wide range of features:
 + Create users and groups in your AWS account.

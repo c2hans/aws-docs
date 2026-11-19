@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/java-flow-
 ---
 
 # Example Scenario
-<a name="java-flow-making-changes-example-scenario"></a>
 
 There is a class of code changes considered to be backwards-incompatible. These changes include updates that modify the number, type, or order of the scheduled tasks. Consider the following example:
 

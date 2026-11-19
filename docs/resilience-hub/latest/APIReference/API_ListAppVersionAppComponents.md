@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_L
 ---
 
 # ListAppVersionAppComponents
-<a name="API_ListAppVersionAppComponents"></a>
 
 Lists all the AppComponents in the AWS Resilience Hub application.
 

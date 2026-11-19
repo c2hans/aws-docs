@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ResolutionTechniques
-<a name="API_ResolutionTechniques"></a>
 
 An object which defines the `resolutionType` and the `ruleBasedProperties`.
 

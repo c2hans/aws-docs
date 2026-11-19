@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_De
 ---
 
 # DeletePlaybackRestrictionPolicy
-<a name="API_DeletePlaybackRestrictionPolicy"></a>
 
 Deletes the specified playback restriction policy.
 

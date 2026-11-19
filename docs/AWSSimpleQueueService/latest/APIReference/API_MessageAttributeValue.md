@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # MessageAttributeValue
-<a name="API_MessageAttributeValue"></a>
 
 The user-specified message attribute value. For string data types, the `Value` attribute has the same restrictions on the content as the message body. For more information, see ` SendMessage.`
 

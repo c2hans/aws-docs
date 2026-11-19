@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ImportH
 ---
 
 # ImportHostKey
-<a name="API_ImportHostKey"></a>
 
 Adds a host key to the server that's specified by the `ServerId` parameter.
 

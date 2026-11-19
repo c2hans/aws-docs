@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Snaps
 ---
 
 # SnapshotJobS3Result
-<a name="API_SnapshotJobS3Result"></a>
 
 The Amazon S3 result from the snapshot job. The result includes the `DestinationConfiguration` and the Amazon S3 Uri. If an error occured during the job, the result returns information on the error.
 

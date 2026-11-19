@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ScalingTrigg
 ---
 
 # ScalingTrigger
-<a name="API_ScalingTrigger"></a>
 
 The conditions that trigger an automatic scaling activity.
 

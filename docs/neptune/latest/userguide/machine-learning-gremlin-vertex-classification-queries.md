@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Gremlin node classification queries in Neptune ML
-<a name="machine-learning-gremlin-vertex-classification-queries"></a>
 
 For Gremlin node classification in Neptune ML:
 + The model is trained on one property of the vertices. The set of unique values of this property are referred to as a set of node classes, or simply, classes.

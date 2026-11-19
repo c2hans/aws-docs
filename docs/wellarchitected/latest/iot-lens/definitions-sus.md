@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/definiti
 ---
 
 # Definitions
-<a name="definitions-sus"></a>
 
  Sustainability encompasses seven focus areas:
 +  [Region selection](region-selection.md)

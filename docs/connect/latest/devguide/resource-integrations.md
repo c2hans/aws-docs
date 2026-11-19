@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/resource-integra
 ---
 
 # Resource integrations
-<a name="resource-integrations"></a>
 
 ## CloudFormation
 <a name="cloudformation-integration"></a>

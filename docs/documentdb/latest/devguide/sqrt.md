@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/sqrt.html
 ---
 
 # $sqrt
-<a name="sqrt"></a>
 
 New from version 4.0.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Al
 ---
 
 # AllocateTransitVirtualInterface
-<a name="API_AllocateTransitVirtualInterface"></a>
 
 Provisions a transit virtual interface to be owned by the specified AWS account. Use this type of interface to connect a transit gateway to your Direct Connect gateway.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactA
 ---
 
 # ContactAnalysisReference
-<a name="API_ContactAnalysisReference"></a>
 
 Information about a reference when the `referenceType` is `CONTACT_ANALYSIS`. Otherwise, null.
 

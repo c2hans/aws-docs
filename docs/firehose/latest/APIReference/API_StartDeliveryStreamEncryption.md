@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_StartDe
 ---
 
 # StartDeliveryStreamEncryption
-<a name="API_StartDeliveryStreamEncryption"></a>
 
 Enables server-side encryption (SSE) for the Firehose stream.
 

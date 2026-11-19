@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # Tag
-<a name="API_runtime_Tag"></a>
 
 A tag.
 

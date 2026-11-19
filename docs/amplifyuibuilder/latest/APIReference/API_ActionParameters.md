@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ActionParameters
-<a name="API_ActionParameters"></a>
 
 Represents the event action configuration for an element of a `Component` or `ComponentChild`. Use for the workflow feature in Amplify Studio that allows you to bind events and actions to components. `ActionParameters` defines the action that is performed when an event occurs on the component.
 

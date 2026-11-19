@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_CreateWo
 ---
 
 # CreateWorkspaceServiceAccountToken
-<a name="API_CreateWorkspaceServiceAccountToken"></a>
 
 Creates a token that can be used to authenticate and authorize Grafana HTTP API operations for the given [workspace service account](https://docs.aws.amazon.com/grafana/latest/userguide/service-accounts.html). The service account acts as a user for the API operations, and defines the permissions that are used by the API.
 

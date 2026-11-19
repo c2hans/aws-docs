@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportSource
-<a name="API_AssetBundleImportSource"></a>
 
 The source of the asset bundle zip file that contains the data that you want to import. The file must be in `QUICKSIGHT_JSON` format.
 

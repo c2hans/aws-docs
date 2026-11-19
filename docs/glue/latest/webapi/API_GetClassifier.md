@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetClassifier.htm
 ---
 
 # GetClassifier
-<a name="API_GetClassifier"></a>
 
 Retrieve a classifier by name.
 

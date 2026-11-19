@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-route5
 ---
 
 # Amazon Application Recovery Controller (ARC) events
-<a name="events-ref-route53-recovery-control-config"></a>
 
 ARC sends service events to EventBridge via AWS CloudTrail.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTTwinMaker::ComponentType DataType
-<a name="aws-properties-iottwinmaker-componenttype-datatype"></a>
 
 An object that specifies the data type of a property.
 
@@ -55,7 +54,7 @@ The allowed values for this data type.
 `NestedType`  <a name="cfn-iottwinmaker-componenttype-datatype-nestedtype"></a>
 The nested type in the data type.
 *Required*: No
-*Type*: [DataType](#aws-properties-iottwinmaker-componenttype-datatype)
+*Type*: [DataType](aws-properties-iottwinmaker-componenttype-datatype.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Relationship`  <a name="cfn-iottwinmaker-componenttype-datatype-relationship"></a>

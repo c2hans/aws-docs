@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_ListV
 ---
 
 # ListVocabularyFilters
-<a name="API_ListVocabularyFilters"></a>
 
 Provides a list of custom vocabulary filters that match the specified criteria. If no criteria are specified, all custom vocabularies are returned.
 

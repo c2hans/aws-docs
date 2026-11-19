@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsClou
 ---
 
 # AwsCloudTrailTrailDetails
-<a name="API_AwsCloudTrailTrailDetails"></a>
 
 Provides details about a CloudTrail trail.
 

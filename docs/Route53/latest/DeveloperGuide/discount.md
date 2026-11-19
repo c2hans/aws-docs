@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/discount.h
 ---
 
 # .discount
-<a name="discount"></a>
 
 Used for discount websites and businesses that slash prices.
 

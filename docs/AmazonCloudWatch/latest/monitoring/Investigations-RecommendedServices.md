@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # (Recommended) Best practices to enhance investigations
-<a name="Investigations-RecommendedServices"></a>
 
 As a best practice, we recommend that you enable several AWS services and features in your account that can help CloudWatch investigations discover more information in your topology and make better suggestions during investigations.
 

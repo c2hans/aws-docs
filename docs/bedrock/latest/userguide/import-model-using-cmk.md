@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/import-model-us
 ---
 
 # Using customer managed key (CMK)
-<a name="import-model-using-cmk"></a>
 
 If you are planning to use customer managed key to encrypt your custom imported model, complete the following steps:
 

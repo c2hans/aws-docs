@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ValidV
 ---
 
 # ValidVolumeOptions
-<a name="API_ValidVolumeOptions"></a>
 
 Contains the valid options for an additional storage volume.
 

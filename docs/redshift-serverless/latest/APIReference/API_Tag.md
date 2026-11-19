@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A map of key-value pairs.
 

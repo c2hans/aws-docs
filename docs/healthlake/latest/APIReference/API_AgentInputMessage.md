@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Agent
 ---
 
 # AgentInputMessage
-<a name="API_AgentInputMessage"></a>
 
 Represents a message sent to the agent during chat-based profile customization.
 

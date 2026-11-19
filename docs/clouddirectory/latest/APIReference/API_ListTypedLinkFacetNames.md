@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/clouddirectory/latest/APIReference/API_L
 Amazon Cloud Directory is no longer open to new customers, and will reach end of support on July 24, 2027. For alternatives to Cloud Directory, explore [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) and [Amazon Neptune](https://aws.amazon.com/neptune/). If you need help choosing the right alternative for your use case, or for any other questions, contact [AWS Support](https://aws.amazon.com/support/).
 
 # ListTypedLinkFacetNames
-<a name="API_ListTypedLinkFacetNames"></a>
 
 Returns a paginated list of `TypedLink` facet names for a particular schema. For more information, see [Typed Links](https://docs.aws.amazon.com/clouddirectory/latest/developerguide/directory_objects_links.html#directory_objects_links_typedlink).
 

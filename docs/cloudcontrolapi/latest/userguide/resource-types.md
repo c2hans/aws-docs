@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/resourc
 ---
 
 # Using Cloud Control API resource types
-<a name="resource-types"></a>
 
 To use a resource type with AWS Cloud Control API, that resource type must be present and activated in your AWS account. Supported AWS resource types are public and always activated. You can choose to activate public resource types offered by third-party publishers as well through the AWS CloudFormation extension registry.
 

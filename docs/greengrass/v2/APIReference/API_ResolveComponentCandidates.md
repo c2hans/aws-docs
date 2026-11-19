@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ResolveCo
 ---
 
 # ResolveComponentCandidates
-<a name="API_ResolveComponentCandidates"></a>
 
 Retrieves a list of components that meet the component, version, and platform requirements of a deployment. Greengrass core devices call this operation when they receive a deployment to identify the components to install.
 

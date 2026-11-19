@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-concepts.ht
 ---
 
 # Concepts
-<a name="acxd-concepts"></a>
 
 This section defines the key resources and terminology used in the ACXD SDK.
 

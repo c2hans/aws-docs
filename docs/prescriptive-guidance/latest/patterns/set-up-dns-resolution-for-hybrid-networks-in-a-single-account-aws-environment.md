@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 ---
 
 # Set up DNS resolution for hybrid networks in a single-account AWS environment
-<a name="set-up-dns-resolution-for-hybrid-networks-in-a-single-account-aws-environment"></a>
 
 *Abdullahi Olaoye, Amazon Web Services*
 

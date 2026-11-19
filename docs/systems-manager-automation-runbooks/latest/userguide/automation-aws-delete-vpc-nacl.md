@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-DeleteUnusedVPCNetworkACL`
-<a name="automation-aws-delete-vpc-nacl"></a>
 
  **Description**
 

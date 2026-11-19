@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_APIKeySummar
 ---
 
 # APIKeySummary
-<a name="API_APIKeySummary"></a>
 
 Information for a single API key.
 

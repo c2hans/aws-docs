@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/retain-acc
 ---
 
 # Retain AWS CloudTrail trails during landing zone update
-<a name="retain-account-trails"></a>
 
 You can choose to retain your account-level AWS CloudTrail trails when you upgrade your AWS Control Tower landing zone version.
 

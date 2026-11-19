@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # How to parse OpenTelemetry 1.0.0 messages
-<a name="CloudWatch-metric-streams-formats-opentelemetry-parse-100"></a>
 
 This section provides information to help you get started with parsing OpenTelemetry 1.0.0.
 

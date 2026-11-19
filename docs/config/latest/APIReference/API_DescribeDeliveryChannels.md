@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeD
 ---
 
 # DescribeDeliveryChannels
-<a name="API_DescribeDeliveryChannels"></a>
 
 Returns details about the specified delivery channel. If a delivery channel is not specified, this operation returns the details of all delivery channels associated with the account.
 

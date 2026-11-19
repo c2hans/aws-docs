@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_UpdateDe
 ---
 
 # UpdateDeadLetterQueueRecordsVisibility
-<a name="API_UpdateDeadLetterQueueRecordsVisibility"></a>
 
 Changes the visibility timeout of up to 10 dead-letter records that you have received from the specified queue but not yet acknowledged. The result for each entry is reported individually in the response.
 

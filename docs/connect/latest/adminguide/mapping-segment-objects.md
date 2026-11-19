@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/mapping-segmen
 ---
 
 # Mapping Segment objects to the standard profile object in Connect Customer Customer Profiles
-<a name="mapping-segment-objects"></a>
 
 This topic lists which fields in Segment objects map to fields in the standard profile object in Connect Customer Customer Profiles.
 

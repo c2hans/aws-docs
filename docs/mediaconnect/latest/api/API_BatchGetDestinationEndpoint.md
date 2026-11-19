@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BatchGetDest
 ---
 
 # BatchGetDestinationEndpoint
-<a name="API_BatchGetDestinationEndpoint"></a>
 
 Retrieves information about multiple destination endpoints in a single request.
 

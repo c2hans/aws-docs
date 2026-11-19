@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_W
 ---
 
 # WafAtpConfig
-<a name="API_WafAtpConfig"></a>
 
 Describes the configuration of the account takeover prevention Web Application Firewall (WAF) rule group. The rule group inspects login requests to the login path of your application.
 

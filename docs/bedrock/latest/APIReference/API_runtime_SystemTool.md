@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # SystemTool
-<a name="API_runtime_SystemTool"></a>
 
 Specifies a system-defined tool for the model to use. *System-defined tools* are tools that are created and provided by the model provider.
 

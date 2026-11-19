@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Upd
 ---
 
 # UpdateResourceEventConfiguration
-<a name="API_UpdateResourceEventConfiguration"></a>
 
 Update the event configuration for a particular resource identifier.
 

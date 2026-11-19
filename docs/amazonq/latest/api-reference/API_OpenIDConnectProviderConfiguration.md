@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_OpenIDC
 ---
 
 # OpenIDConnectProviderConfiguration
-<a name="API_OpenIDConnectProviderConfiguration"></a>
 
 Information about the OIDC-compliant identity provider (IdP) used to authenticate end users of an Amazon Q Business web experience.
 

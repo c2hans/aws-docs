@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CloudWatc
 ---
 
 # CloudWatchLoggingOption
-<a name="API_CloudWatchLoggingOption"></a>
 
 Provides a description of Amazon CloudWatch logging options, including the log stream Amazon Resource Name (ARN).
 

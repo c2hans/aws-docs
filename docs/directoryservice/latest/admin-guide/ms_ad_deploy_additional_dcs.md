@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Deploying additional domain controllers for your AWS Managed Microsoft AD
-<a name="ms_ad_deploy_additional_dcs"></a>
 
 Deploying additional domain controllers for your AWS Managed Microsoft AD increases the redundancy, which results in even greater resilience and higher availability. This also improves the performance of your directory by supporting a greater number of Active Directory requests. For example, you can now use AWS Managed Microsoft AD to support multiple .NET applications that are deployed on large fleets of Amazon EC2 and Amazon RDS for SQL Server instances.
 

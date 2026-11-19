@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Managing APIs
-<a name="apis"></a>
 
 Proper API management makes your microservices accessible to both internal and external consumers. AWS offers a variety of services that you can use together to securely expose your microservice APIs. These services enable you to enforce security for your APIs and implement monitoring and observability from a central location. You can also use [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) to improve performance if the users of your APIs are geographically distant from the AWS Region that the services are hosted in.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # CloudWatch Omni SQL query syntax
-<a name="omni-sql-query-syntax"></a>
 
 This page describes how to compose a CloudWatch Omni SQL query and the clauses and commands you can use in it. For information about tables, system fields, quoting, column types, and time filtering, see [SQL query reference](omni-sql-query-reference.md). For information about query limits, see [Explore and query your telemetry](omni-explore-and-query-your-telemetry.md).
 

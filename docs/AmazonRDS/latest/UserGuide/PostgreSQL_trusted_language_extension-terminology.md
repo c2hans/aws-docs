@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL_tr
 ---
 
 # Terminology
-<a name="PostgreSQL_trusted_language_extension-terminology"></a>
 
 To help you better understand Trusted Language Extensions, view the following glossary for terms used in this topic.
 

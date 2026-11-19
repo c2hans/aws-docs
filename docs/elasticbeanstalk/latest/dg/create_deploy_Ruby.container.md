@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy
 ---
 
 # Using the Elastic Beanstalk Ruby platform
-<a name="create_deploy_Ruby.container"></a>
 
 This topic describes how to configure, build, and run your Ruby applications on Elastic Beanstalk.
 

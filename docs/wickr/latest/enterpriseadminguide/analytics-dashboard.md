@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/analyt
 This guide provides documentation for Wickr Enterprise. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Analytics dashboard
-<a name="analytics-dashboard"></a>
 
 You can use the analytics dashboard to view how your organization is utilizing Wickr. The following procedure explains how to access the analytics dashboard by using the Wickr console.
 

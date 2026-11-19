@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/re
 ---
 
 # Automatically restart the AWS Replication Agent after a RHEL reboot without disabling SELinux
-<a name="restart-the-aws-replication-agent-automatically-without-disabling-selinux-after-rebooting-a-rhel-source-server"></a>
 
 *Anil Kunapareddy, Amazon Web Services*
 

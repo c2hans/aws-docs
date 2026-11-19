@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_CreateLayo
 ---
 
 # CreateLayout
-<a name="API_connect-cases_CreateLayout"></a>
 
 Creates a layout in the Cases domain. Layouts define the following configuration in the top section and More Info tab of the Cases user interface:
 + Fields to display to the users

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIBR02-BP02 Identify potential harmful events impacting veracity
-<a name="raibr02-bp02"></a>
 
  *Veracity* harms arise when AI systems produce factual errors, as measured against an established base set of facts. Errors include hallucinations, omissions, and misemphases. These errors can propagate through AI systems, affecting downstream decision-making processes. Hallucinations and other veracity-related issues can compound across other responsible AI dimensions to create complex patterns of harm.
 

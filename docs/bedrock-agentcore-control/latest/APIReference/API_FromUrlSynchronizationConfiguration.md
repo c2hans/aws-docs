@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # FromUrlSynchronizationConfiguration
-<a name="API_FromUrlSynchronizationConfiguration"></a>
 
 Configuration for synchronizing from a URL-based MCP server.
 

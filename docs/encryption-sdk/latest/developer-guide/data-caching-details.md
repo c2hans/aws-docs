@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/da
 ---
 
 # Data key caching details
-<a name="data-caching-details"></a>
 
 Most applications can use the default implementation of data key caching without writing custom code. This section describes the default implementation and some details about options.
 

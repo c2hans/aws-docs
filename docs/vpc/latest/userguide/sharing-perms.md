@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/sharing-perms.html
 ---
 
 # Shared prefix list permissions
-<a name="sharing-perms"></a>
 
 **Permissions for owners**
 

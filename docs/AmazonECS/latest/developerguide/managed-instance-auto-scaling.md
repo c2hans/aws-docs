@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-
 ---
 
 # Amazon ECS Managed Instances auto scaling and task placement
-<a name="managed-instance-auto-scaling"></a>
 
 Amazon ECS Managed Instances use intelligent algorithms to automatically scale your cluster capacity and place tasks efficiently across your infrastructure. Understanding how these algorithms work helps you optimize your service configurations and troubleshoot placement behaviors.
 

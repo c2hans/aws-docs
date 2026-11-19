@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/transform-userguide/mpe-lengt
 ---
 
 # PRM ID length
-<a name="mpe-length"></a>
 
 Your project number is also known as your PRM ID. The PRM ID follows the format `ra-` followed by 13 alphanumeric characters.
 

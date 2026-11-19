@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteWorkloadEstimate
-<a name="API_AWSBCMPricingCalculator_DeleteWorkloadEstimate"></a>
 
  Deletes an existing workload estimate.
 

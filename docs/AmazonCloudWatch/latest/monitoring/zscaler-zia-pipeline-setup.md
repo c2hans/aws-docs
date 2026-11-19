@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/zscal
 ---
 
 # Pipeline configuration for Zscaler Internet Access
-<a name="zscaler-zia-pipeline-setup"></a>
 
 The Zscaler setup on AWS reads log data from Amazon S3 buckets using Amazon SQS notifications for new object events.
 

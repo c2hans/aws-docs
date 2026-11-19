@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Connectio
 ---
 
 # ConnectionNotification
-<a name="API_ConnectionNotification"></a>
 
 Describes a connection notification for a VPC endpoint or VPC endpoint service.
 

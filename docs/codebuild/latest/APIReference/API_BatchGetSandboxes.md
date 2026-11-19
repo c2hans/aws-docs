@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BatchG
 ---
 
 # BatchGetSandboxes
-<a name="API_BatchGetSandboxes"></a>
 
 Gets information about the sandbox status.
 

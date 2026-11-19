@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-v
 ---
 
 # Get voice enhancement model paths in Connect Customer agent workspace
-<a name="3P-apps-voice-requests-getvoiceenhancementpaths"></a>
 
 Returns the voice enhancements models static assets URL paths.
 

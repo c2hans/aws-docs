@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # InsightRuleMetricDatapoint
-<a name="API_InsightRuleMetricDatapoint"></a>
 
 One data point from the metric time series returned in a Contributor Insights rule report.
 

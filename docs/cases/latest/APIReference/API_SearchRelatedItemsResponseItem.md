@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_SearchRela
 ---
 
 # SearchRelatedItemsResponseItem
-<a name="API_connect-cases_SearchRelatedItemsResponseItem"></a>
 
 A list of items that represent RelatedItems.
 

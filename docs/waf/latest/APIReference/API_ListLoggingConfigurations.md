@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ListLoggingC
 ---
 
 # ListLoggingConfigurations
-<a name="API_ListLoggingConfigurations"></a>
 
 Retrieves an array of your [LoggingConfiguration](API_LoggingConfiguration.md) objects.
 

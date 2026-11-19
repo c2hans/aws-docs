@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteNu
 ---
 
 # RouteNumber
-<a name="API_RouteNumber"></a>
 
 The route number.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-ios.
 ---
 
 # Create an iOS app for Amazon Location Service
-<a name="qs-ios"></a>
 
 In this section, you will create an iOS application with the ability to search at a location and tracking in the foreground. First, you will create your Amazon Location resources, and an Amazon Cognito identity for your application.
 

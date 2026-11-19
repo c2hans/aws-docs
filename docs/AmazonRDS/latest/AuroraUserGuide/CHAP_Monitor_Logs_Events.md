@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_Mo
 ---
 
 # Monitoring events, logs, and streams in an Amazon Aurora DB cluster
-<a name="CHAP_Monitor_Logs_Events"></a>
 
 When you monitor your Amazon Aurora databases and your other AWS solutions, your goal is to maintain the following:
 + Reliability

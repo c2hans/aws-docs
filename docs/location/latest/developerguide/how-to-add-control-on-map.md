@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ad
 ---
 
 # How to add control on the map
-<a name="how-to-add-control-on-map"></a>
 
 Amazon Location Service allows you to add multiple controls to the map, including navigation, geolocation, fullscreen, scale, and attribution controls.
 + **Navigation control**: Contains zoom buttons and a compass.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketMetrics
 ---
 
 # GetBucketMetricsConfiguration
-<a name="API_GetBucketMetricsConfiguration"></a>
 
 Gets a metrics configuration (specified by the metrics configuration ID) from the bucket. Note that this doesn't include the daily storage metrics.
 

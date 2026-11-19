@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDeadlineCloud-UserAccessQueues
-<a name="AWSDeadlineCloud-UserAccessQueues"></a>
 
 **Description**: Provides user workstation access to AWS Deadline Cloud queues with limited Read-Only permissions to call other necessary services. Attach this policy to the user role associated with your studio.
 

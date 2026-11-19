@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Allowed actions by administrator and member accounts in Security Hub CSPM
-<a name="securityhub-accounts-allowed-actions"></a>
 
 Administrator and member accounts have access to AWS Security Hub CSPM actions noted in the following tables. In the tables, the values have the following meanings:
 + **Any –** The account can perform the action for any member account under the same administrator.

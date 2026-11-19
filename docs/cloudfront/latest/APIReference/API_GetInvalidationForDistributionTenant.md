@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetIn
 ---
 
 # GetInvalidationForDistributionTenant
-<a name="API_GetInvalidationForDistributionTenant"></a>
 
 Gets information about a specific invalidation for a distribution tenant.
 

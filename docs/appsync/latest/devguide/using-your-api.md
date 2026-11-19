@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/using-your-api.h
 ---
 
 # Using an AWS AppSync API with the AWS CDK
-<a name="using-your-api"></a>
 
 **Tip**
 Before you use the CDK, we recommend reviewing the CDK's [official documentation](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html) along with AWS AppSync's [CDK reference](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_appsync-readme.html).

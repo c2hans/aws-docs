@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/mov-step-manage
 ---
 
 # Step C: Manage the motion overlay on a running event
-<a name="mov-step-manage-the-overlay-on-a-running-event"></a>
 
 After the event starts, the motion overlay that is configured in the event runs at the specified time. When the event is running, you can work with the motion overlay only via the REST API. You can enter REST API commands to make the following changes:
 + A different URL, to specify different content.

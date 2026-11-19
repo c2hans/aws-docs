@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Best Practices for Deploying Amazon WorkSpaces
-<a name="best-practices-deploying-amazon-workspaces"></a>
 
 Publication date: **June 1, 2022** ([Document revisions](document-revisions.md))
 

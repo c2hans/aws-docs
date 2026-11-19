@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # ListMetricDataQueryDefinitions
-<a name="API_ListMetricDataQueryDefinitions"></a>
 
 Lists the metric data query definitions in your account and Region.
 

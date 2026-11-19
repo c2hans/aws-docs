@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_WeightP
 ---
 
 # WeightPerAxleGroup
-<a name="API_WeightPerAxleGroup"></a>
 
 Specifies the total weight for different axle group configurations. Used in regions where regulations set different weight limits based on axle group types.
 

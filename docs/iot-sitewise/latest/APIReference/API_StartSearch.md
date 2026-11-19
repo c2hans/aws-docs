@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Sta
 ---
 
 # StartSearch
-<a name="API_StartSearch"></a>
 
 Starts an asynchronous search over the data in a workspace. The search runs in the background; the response returns immediately with a `searchId` and an initial status of `QUEUED`. Use `DescribeSearch` to poll for completion and `GetSearchResults` to retrieve the results once the search reaches `SUCCEEDED`. The request is idempotent on `clientToken`: repeating a call with the same token returns the original search instead of starting a new one.
 

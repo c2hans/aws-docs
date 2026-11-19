@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Operato
 ---
 
 # Operator
-<a name="API_Operator"></a>
 
 Describes the entity that manages an Auto Scaling group.
 

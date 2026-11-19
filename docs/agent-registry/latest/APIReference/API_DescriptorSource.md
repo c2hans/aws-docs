@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_D
 ---
 
 # DescriptorSource
-<a name="API_DescriptorSource"></a>
 
  The source location from which a descriptor's content was retrieved.
 

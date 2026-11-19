@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_UserDet
 ---
 
 # UserDetails
-<a name="API_UserDetails"></a>
 
 Specifies the user name, server ID, and session ID for a workflow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk console gets a new design on April 8, 2020
-<a name="release-2020-04-08-console-design"></a>
 
 The Elastic Beanstalk console gets an updated design and a new navigation user interface.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/kinesis-analytics
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Generate a Kinesis stream with heart rate anomalies using an AWS SDK
-<a name="kinesis-analytics-v2_example_kinesis-analytics-v2_DataGenerator_Anomaly_section"></a>
 
 The following code example shows how to generate a Kinesis stream with heart rate anomalies.
 

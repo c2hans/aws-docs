@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_StopFlow.ht
 ---
 
 # StopFlow
-<a name="API_StopFlow"></a>
 
  Deactivates the existing flow. For on-demand flows, this operation returns an `unsupportedOperationException` error message. For schedule and event-triggered flows, this operation deactivates the flow.
 

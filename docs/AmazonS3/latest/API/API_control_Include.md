@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Include.
 ---
 
 # Include
-<a name="API_control_Include"></a>
 
 A container for what Amazon S3 Storage Lens configuration includes.
 

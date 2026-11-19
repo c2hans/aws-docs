@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/suppor
 ---
 
 # Set up Vercel AI SDK telemetry for AgentCore Evaluations
-<a name="supported-frameworks-vercel-ai"></a>
 
 This page explains how to instrument a [Vercel AI SDK](https://sdk.vercel.ai/) agent, how spans are identified, and how evaluation fields are extracted. The Vercel AI SDK is a TypeScript-only framework, so all support on this page applies to TypeScript agents.
 

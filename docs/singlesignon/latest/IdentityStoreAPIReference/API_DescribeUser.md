@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # DescribeUser
-<a name="API_DescribeUser"></a>
 
 Retrieves the user metadata and attributes from the `UserId` in an identity store.
 

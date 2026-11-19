@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # DELETE: Delete a Conductor Redundancy Group
-<a name="set-up-conductor-redundancy-groups-delete"></a>
 
 Delete the Conductor redundancy group that has the specified ID. The group must first be [disabled](set-up-conductor-redundancy-groups-disable.md).
 

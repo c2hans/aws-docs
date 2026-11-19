@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/permission-se
 ---
 
 # Personas for CRM connector permission sets
-<a name="permission-sets"></a>
 
 After you install and configure the AWS Partner CRM connector, you assign Salesforce users to one or more personas in a *permission set*, a collection of settings and permissions that provide access to various tools and functions. The following topics list and describe the available personas.
 

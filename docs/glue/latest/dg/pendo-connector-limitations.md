@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pendo-connector-limitatio
 ---
 
 # Limitations
-<a name="pendo-connector-limitations"></a>
 
 The following are limitations for the Pendo connector:
 + Pagination is not supported in Pendo.

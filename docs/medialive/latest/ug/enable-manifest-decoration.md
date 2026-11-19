@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/enable-manifest-deco
 ---
 
 # Enabling manifest decoration in the output
-<a name="enable-manifest-decoration"></a>
 
 You can choose to interpret SCTE 35 messages from the input sources in a MediaLive channel and insert corresponding instructions into the output manifest. This manifest decoratino is supported in the following types of MediaLive outputs:
 + HLS

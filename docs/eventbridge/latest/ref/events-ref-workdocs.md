@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-workdo
 ---
 
 # Amazon WorkDocs events
-<a name="events-ref-workdocs"></a>
 
 WorkDocs sends service events to EventBridge via AWS CloudTrail.
 

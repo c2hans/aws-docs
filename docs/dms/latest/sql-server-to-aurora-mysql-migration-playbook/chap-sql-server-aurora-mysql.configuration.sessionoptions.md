@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Configuring session options
-<a name="chap-sql-server-aurora-mysql.configuration.sessionoptions"></a>
 
 This topic provides reference information about session options and system variables in SQL Server and Amazon Aurora MySQL. You can use this content to understand the differences and similarities between how these two database systems handle runtime settings that control server behavior.
 

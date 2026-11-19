@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsB
 ---
 
 # AnalyticsBinBySpecification
-<a name="API_AnalyticsBinBySpecification"></a>
 
 Contains the time metric, interval, and method by which to bin the analytics data.
 

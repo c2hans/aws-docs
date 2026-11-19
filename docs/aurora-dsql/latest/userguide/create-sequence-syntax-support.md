@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/create-sequ
 ---
 
 # `CREATE SEQUENCE`
-<a name="create-sequence-syntax-support"></a>
 
 `CREATE SEQUENCE` — define a new sequence generator.
 

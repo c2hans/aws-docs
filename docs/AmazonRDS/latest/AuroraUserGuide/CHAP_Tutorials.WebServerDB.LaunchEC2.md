@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_Tu
 ---
 
 # Launch an EC2 instance to connect with your DB cluster
-<a name="CHAP_Tutorials.WebServerDB.LaunchEC2"></a>
 
 Create an Amazon EC2 instance in the public subnet of your VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/s3-download.html
 ---
 
 # Amazon S3 Download task
-<a name="s3-download"></a>
 
 ## Synopsis
 <a name="synopsis"></a>

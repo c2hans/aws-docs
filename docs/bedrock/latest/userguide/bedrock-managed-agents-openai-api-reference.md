@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-managed
 ---
 
 # BMA preview REST API reference
-<a name="bedrock-managed-agents-openai-api-reference"></a>
 
 This reference describes the session, event, and item operations used by the preview examples. Use an AWS SigV4-signed request to the regional `bedrock-mantle` endpoint. The signing service is `bedrock-mantle`.
 

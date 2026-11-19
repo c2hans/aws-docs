@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Component descriptions
-<a name="component-descriptions"></a>
 
 ## Application Load Balancer (ALB)
 <a name="application-load-balancer-alb"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # TagResource
-<a name="API_messaging-chime_TagResource"></a>
 
 Applies the specified tags to the specified Amazon Chime SDK messaging resource.
 

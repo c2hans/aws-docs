@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanp
 ---
 
 # AWS managed policies for Amazon SageMaker HyperPod
-<a name="security-iam-awsmanpol-hyperpod"></a>
 
 The following AWS managed policies add permissions required to use Amazon SageMaker HyperPod. The policies are available in your AWS account and are used by execution roles created from the SageMaker AI console or the HyperPod service-linked role.
 

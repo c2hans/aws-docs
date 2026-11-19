@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_CloseS
 ---
 
 # CloseStatusFilter
-<a name="API_CloseStatusFilter"></a>
 
 Used to filter the closed workflow executions in visibility APIs by their close status.
 

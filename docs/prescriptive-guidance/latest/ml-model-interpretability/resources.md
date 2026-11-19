@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ml-model-in
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## References
 <a name="references.1c657a84-6834-5f96-b469-c61f8c09eccf"></a>

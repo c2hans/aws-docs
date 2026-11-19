@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-vpc-
 ---
 
 # Configure VPC connectivity for a data source
-<a name="kb-managed-vpc-configuration"></a>
 
 Some data sources run on private resources that are not reachable over the public internet, such as an on-premises Confluence Data Center instance that you front with an internal load balancer in your VPC. To crawl these data sources, you create a VPC configuration. Amazon Bedrock uses the configuration to provision a private network path into your VPC and reach the resource.
 

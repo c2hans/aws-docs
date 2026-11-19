@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # PackageVersionHistory
-<a name="API_PackageVersionHistory"></a>
 
 Details about a package version.
 

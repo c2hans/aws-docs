@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Pattern 3: Real-time inference at the edge
-<a name="pattern-real-time-inference"></a>
 
 Many enterprise use cases demand intelligent decision-making at the point of interaction, whether that interaction is with a customer, a machine, a vehicle, or an IoT device. In these scenarios, cloud-only inference is not enough because of the following issues:
 + **Latency constraints** – Milliseconds matter in user experiences such as personalization, recommendations, and fraud checks.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/anti-pattern-
 ---
 
 # Multi-Key Indexes with Large Arrays
-<a name="anti-pattern-multi-key-indexes"></a>
 
 ## Overview
 <a name="multi-key-overview"></a>

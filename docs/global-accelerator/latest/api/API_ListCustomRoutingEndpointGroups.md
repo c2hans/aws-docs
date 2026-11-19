@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_ListCu
 ---
 
 # ListCustomRoutingEndpointGroups
-<a name="API_ListCustomRoutingEndpointGroups"></a>
 
 List the endpoint groups that are associated with a listener for a custom routing accelerator.
 

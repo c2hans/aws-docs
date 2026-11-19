@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-compiler-py
 ---
 
 # PyTorch
-<a name="training-compiler-pytorch-models"></a>
 
 Bring your own PyTorch model to SageMaker AI, and run the training job with SageMaker Training Compiler.
 

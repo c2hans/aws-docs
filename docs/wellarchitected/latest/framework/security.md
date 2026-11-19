@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/securit
 ---
 
 # Security
-<a name="security"></a>
 
  The security pillar describes how to use cloud technologies to protect data, systems, and assets, and to improve your security posture. It covers the practices that keep the right people and machines accessing the right resources under the right conditions, that give you visibility into what is happening, that protect workloads and data throughout their lifecycle, and that prepare you to respond when something goes wrong. This guidance applies across the design, delivery, and maintenance of a workload, so that security is built in rather than added at the end.
 

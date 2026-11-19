@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/io-state-changes.
 ---
 
 # MediaConnect router I/O states
-<a name="io-state-changes"></a>
 
 An AWS Elemental MediaConnect router I/O transitions through different states from the moment you create it through to the moment you delete it. These states can be grouped into several categories:
 + Operational transitions: **Starting** and **Stopping** states manage the activation of an I/O

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ConnectorAuthenti
 ---
 
 # ConnectorAuthenticationConfiguration
-<a name="API_ConnectorAuthenticationConfiguration"></a>
 
 Configuration that defines the supported authentication types and required properties for the connection type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/partnerguide/product-
 ---
 
 # Product readiness checklist
-<a name="product-readiness-checklist"></a>
 
 The AWS Security Hub CSPM and APN Partner teams use this checklist to validate that the integration is ready to be launched.
 

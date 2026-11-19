@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 If you are ready to implement a cross-Region disaster recovery (DR) solution for your Amazon RDS for SQL Server or Amazon RDS for Oracle instance, we recommend the following next steps:
 

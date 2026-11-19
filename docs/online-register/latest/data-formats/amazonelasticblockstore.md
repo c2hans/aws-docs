@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Elastic Block Store
-<a name="amazonelasticblockstore"></a>
 
 Amazon Elastic Block Store provides the following APIs for data retrieval.
 

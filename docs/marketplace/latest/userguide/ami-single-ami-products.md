@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ami-single-
 ---
 
 # Creating AMI-based products
-<a name="ami-single-ami-products"></a>
 
 The Amazon Machine Image (AMI) self-service experience guides you as you create your product listing and make change requests. By using the self-service experience, you can update your product listing directly with less time needed for processing by the AWS Marketplace Seller Operations team. Many steps of the self-service experience align with the catalog system in AWS Marketplace, which facilitates direct validation instead of waiting for processing and validation from the AWS Marketplace Seller Operations team. This topic explains how to use the AMI self-service experience to create a product listing for a single AMI. Customers use AMIs to create Amazon EC2 instances with your product already installed and configured.
 

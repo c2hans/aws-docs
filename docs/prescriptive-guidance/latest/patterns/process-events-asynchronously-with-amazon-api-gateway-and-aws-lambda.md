@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/pr
 ---
 
 # Process events asynchronously with Amazon API Gateway and AWS Lambda
-<a name="process-events-asynchronously-with-amazon-api-gateway-and-aws-lambda"></a>
 
 *Andrea Meroni, Mariem Kthiri, Nadim Majed, and Michael Wallner, Amazon Web Services*
 

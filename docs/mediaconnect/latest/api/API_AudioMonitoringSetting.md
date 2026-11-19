@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AudioMonitor
 ---
 
 # AudioMonitoringSetting
-<a name="API_AudioMonitoringSetting"></a>
 
  Specifies the configuration for audio stream metrics monitoring.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceComponentCapacitySize
-<a name="API_InferenceComponentCapacitySize"></a>
 
 Specifies the type and size of the endpoint capacity to activate for a rolling deployment or a rollback strategy. You can specify your batches as either of the following:
 + A count of inference component copies

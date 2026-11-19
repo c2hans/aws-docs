@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/release
 ---
 
 # Release notes
-<a name="release-notes"></a>
 
  This page describes changes to the AWS Well-Architected Framework. For notification about updates to this documentation, you can subscribe to the RSS feed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-emr-
 ---
 
 # Configuration best practices
-<a name="configuration-best-practices"></a>
 
 When configuring your Amazon EMR cluster, use the following best practices for adding instances, working with instance groups, and using Spot Instances.
 

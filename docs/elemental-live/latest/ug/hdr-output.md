@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/hdr-output.html
 ---
 
 # Configuring color space handling in each output
-<a name="hdr-output"></a>
 
 After you have set up each input in the event, you must configure the outputs for the desired handling of color space. You can do the following:
 + Convert the color space in the content to a different color space in the output. See [Color space standards](color-space-standards.md) for the supported conversions.

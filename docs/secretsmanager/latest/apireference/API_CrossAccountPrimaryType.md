@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_C
 ---
 
 # CrossAccountPrimaryType
-<a name="API_CrossAccountPrimaryType"></a>
 
 Contains information about the primary secret that a cross-account replica secret replicates from, including its ARN and replication status. This information is only available for cross-account replica secrets.
 

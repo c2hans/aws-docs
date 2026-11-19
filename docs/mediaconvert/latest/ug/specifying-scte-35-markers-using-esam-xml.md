@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/specifying-scte-3
 ---
 
 # Specifying SCTE-35 markers using ESAM XML
-<a name="specifying-scte-35-markers-using-esam-xml"></a>
 
 If your input video doesn't contain SCTE-35 markers, but you need to specify ad insertion points in your outputs, you can provide Event Signaling and Management (ESAM) XML documents in your AWS Elemental MediaConvert job settings. When you do, MediaConvert conditions your outputs with IDR (Instantaneous Decoder Refresh) frames at the insertion points that you specify in the document. In outputs that are also wrapped in MPEG2-TS and HLS containers, MediaConvert inserts SCTE-35 time\_signal messages at those points.
 

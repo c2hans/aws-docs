@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataInstanceRequirementsMemoryGiBPerVCpuDetails
-<a name="API_AwsEc2LaunchTemplateDataInstanceRequirementsMemoryGiBPerVCpuDetails"></a>
 
  The minimum and maximum amount of memory per vCPU, in GiB.
 

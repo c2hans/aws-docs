@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Key decision points
-<a name="key-decision-points"></a>
 
 There are many aspects of migration that need to be considered, but before beginning your F5 BIG-IP workload migration, ask yourself the following questions to clarify the migration process.
 

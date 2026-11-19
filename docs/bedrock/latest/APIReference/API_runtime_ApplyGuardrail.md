@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ApplyGuardrail
-<a name="API_runtime_ApplyGuardrail"></a>
 
 The action to apply a guardrail.
 

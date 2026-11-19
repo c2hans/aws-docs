@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes-2023
 ---
 
 # Amazon Linux 2023 version 2023.9.20251027 release notes
-<a name="relnotes-2023.9.20251027"></a>
 
 These are the release notes for Amazon Linux 2023 (AL2023) version 2023.9.20251027.
 

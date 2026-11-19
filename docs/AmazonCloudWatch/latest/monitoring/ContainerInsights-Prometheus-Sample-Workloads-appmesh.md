@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Set up AWS App Mesh sample workload for Amazon EKS and Kubernetes
-<a name="ContainerInsights-Prometheus-Sample-Workloads-appmesh"></a>
 
 Prometheus support in CloudWatch Container Insights supports AWS App Mesh. The following sections explain how to set up App Mesh.
 

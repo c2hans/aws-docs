@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_S
 ---
 
 # StorageOptimizer
-<a name="API_StorageOptimizer"></a>
 
 A structure describing the configuration and details of a storage optimizer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Color
 ---
 
 # ColorsConfiguration
-<a name="API_ColorsConfiguration"></a>
 
 The color configurations for a column.
 

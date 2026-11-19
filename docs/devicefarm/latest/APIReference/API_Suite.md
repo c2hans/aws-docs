@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Suite
 ---
 
 # Suite
-<a name="API_Suite"></a>
 
 Represents a collection of one or more tests.
 

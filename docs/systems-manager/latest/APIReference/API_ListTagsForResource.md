@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Returns a list of the tags assigned to the specified resource.
 

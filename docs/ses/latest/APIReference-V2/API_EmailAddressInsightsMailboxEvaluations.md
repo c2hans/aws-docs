@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_EmailAddr
 ---
 
 # EmailAddressInsightsMailboxEvaluations
-<a name="API_EmailAddressInsightsMailboxEvaluations"></a>
 
 Contains individual validation checks performed on an email address.
 

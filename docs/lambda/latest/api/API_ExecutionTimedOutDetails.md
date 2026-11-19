@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ExecutionTimedOutD
 ---
 
 # ExecutionTimedOutDetails
-<a name="API_ExecutionTimedOutDetails"></a>
 
 Details about a [durable execution](https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html) that timed out.
 

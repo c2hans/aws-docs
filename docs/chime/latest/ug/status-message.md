@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/status-message.html
 ---
 
 # Using status messages
-<a name="status-message"></a>
 
 Amazon Chime provides several preset status messages, such as **Available** and **Busy**. You can also choose from a set of common status messages, such as **Be right back** and **Out sick**. Finally, you can enter a 40-character custom message, such as **Meeting a huge deadline**, and you can add an emoji or other graphic to the message.
 

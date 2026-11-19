@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Plan: Establishing your security scope and model
-<a name="plan"></a>
 
 Planning is an iterative process as you mature your security model. Key steps in the planning process include:
 + [Understanding the security scope](understanding-the-security-scope.md) – Security scope varies and depends on how the cloud is used.

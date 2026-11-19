@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Step 7: Create module instructions (optional)
-<a name="step-7-create-module-instructions"></a>
 
 This step allows you to provide custom, user-friendly instructions within the MCS interface, enhancing the user experience by offering clear guidance on module usage after enablement.
 

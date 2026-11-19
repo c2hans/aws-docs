@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_A
 ---
 
 # A2aAgentCardDescriptor
-<a name="API_A2aAgentCardDescriptor"></a>
 
  Descriptor that defines the content of an A2A (Agent-to-Agent) agent card registry record. The content is validated against the A2A protocol schema.
 

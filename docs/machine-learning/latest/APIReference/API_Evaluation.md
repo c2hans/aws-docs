@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # Evaluation
-<a name="API_Evaluation"></a>
 
  Represents the output of `GetEvaluation` operation.
 

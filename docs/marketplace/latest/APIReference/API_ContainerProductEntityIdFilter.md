@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Cont
 ---
 
 # ContainerProductEntityIdFilter
-<a name="API_ContainerProductEntityIdFilter"></a>
 
 Object that allows filtering on entity id of a container product.
 

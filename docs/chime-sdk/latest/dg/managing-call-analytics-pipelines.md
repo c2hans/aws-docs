@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/managing-call-analyt
 ---
 
 # Managing call analytics pipelines for the Amazon Chime SDK
-<a name="managing-call-analytics-pipelines"></a>
 
  You can read, list, and delete media insights pipelines by calling the [GetMediaPipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_GetMediaPipeline.html), [ListMediaPipelines](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_ListMediaPipelines.html), and [DeleteMediaPipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_DeleteMediaPipeline.html) APIs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateTableOptimi
 ---
 
 # CreateTableOptimizer
-<a name="API_CreateTableOptimizer"></a>
 
 Creates a new table optimizer for a specific function.
 

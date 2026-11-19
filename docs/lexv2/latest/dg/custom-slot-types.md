@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/custom-slot-types.html
 ---
 
 # Custom slot type
-<a name="custom-slot-types"></a>
 
 For each intent, you can specify parameters that indicate the information that the intent needs to fulfill the user's request. These parameters, or slots, have a type. A *slot type* is a list of values that Amazon Lex V2 uses to train the machine learning model to recognize values for a slot. For example, you can define a slot type called `Genres` with values such as "comedy," "adventure," "documentary," and so on. You can define synonyms for a slot type value. For example, you can define the synonyms "funny" and "humorous" for the value "comedy."
 

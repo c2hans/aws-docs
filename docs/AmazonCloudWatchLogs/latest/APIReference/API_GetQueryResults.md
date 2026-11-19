@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # GetQueryResults
-<a name="API_GetQueryResults"></a>
 
 Returns the results from the specified query.
 

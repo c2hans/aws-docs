@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg.html
 ---
 
 # Query Apache Iceberg tables
-<a name="querying-iceberg"></a>
 
 You can use Athena to perform read, time travel, write, and DDL queries on Apache Iceberg tables.
 

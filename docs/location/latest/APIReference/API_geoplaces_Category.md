@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # Category
-<a name="API_geoplaces_Category"></a>
 
 Category of the `Place` returned.
 

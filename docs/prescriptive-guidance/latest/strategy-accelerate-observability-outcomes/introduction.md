@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Accelerating observability outcomes
-<a name="introduction"></a>
 
 *Jyothi Madanlal, Abhaya Chauhan, and Jose Augusto Ferronato, Amazon Web Services*
 

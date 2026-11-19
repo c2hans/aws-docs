@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLakeFormationCrossAccountManager
-<a name="AWSLakeFormationCrossAccountManager"></a>
 
 **Description**: Provides cross account access to Glue resources via Lake Formation. Also grants read access to other required services such as organizations and resource access manager
 

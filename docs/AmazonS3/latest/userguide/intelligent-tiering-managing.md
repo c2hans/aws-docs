@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/intelligent-ti
 ---
 
 # Managing S3 Intelligent-Tiering
-<a name="intelligent-tiering-managing"></a>
 
 The S3 Intelligent-Tiering storage class delivers automatic storage cost savings in three low-latency and high-throughput access tiers. It also offers optional archive capabilities to help you get the lowest storage costs in the cloud for data that can be accessed in minutes to hours.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_PreparedS
 ---
 
 # PreparedStatementSummary
-<a name="API_PreparedStatementSummary"></a>
 
 The name and last modified time of the prepared statement.
 

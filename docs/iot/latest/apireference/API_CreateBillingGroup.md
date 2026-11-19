@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateBillin
 ---
 
 # CreateBillingGroup
-<a name="API_CreateBillingGroup"></a>
 
 Creates a billing group. If this call is made multiple times using the same billing group name and configuration, the call will succeed. If this call is made with the same billing group name but different configuration a `ResourceAlreadyExistsException` is thrown.
 

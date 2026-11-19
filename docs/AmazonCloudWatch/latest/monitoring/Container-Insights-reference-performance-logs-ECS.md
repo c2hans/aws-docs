@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Container Insights performance log events for Amazon ECS
-<a name="Container-Insights-reference-performance-logs-ECS"></a>
 
 The following are examples of the performance log events that Container Insights collects from Amazon ECS.
 

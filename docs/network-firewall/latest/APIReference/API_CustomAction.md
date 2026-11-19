@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # CustomAction
-<a name="API_CustomAction"></a>
 
 An optional, non-standard action to use for stateless packet handling. You can define this in addition to the standard action that you must specify.
 

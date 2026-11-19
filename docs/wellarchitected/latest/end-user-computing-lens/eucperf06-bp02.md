@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCPERF06-BP02 Minimize latency between EUC instances and dependent services
-<a name="eucperf06-bp02"></a>
 
  In most cases, EUC users require connections to resources outside their EUC instances. Common dependencies include web or application servers, database servers, and storage services.
 

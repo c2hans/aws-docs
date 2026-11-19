@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_CreateExtend
 ---
 
 # CreateExtendedSourceServer
-<a name="API_CreateExtendedSourceServer"></a>
 
 Create an extended source server in the target Account based on the source server in staging account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-scaling.ht
 ---
 
 # Configuring scaling behavior for SQS event source mappings
-<a name="services-sqs-scaling"></a>
 
 You can control the scaling behavior of your Amazon SQS event source mappings either through maximum concurrency settings or by enabling provisioned mode. These are mutually exclusive options.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetPu
 ---
 
 # GetPullRequestApprovalStates
-<a name="API_GetPullRequestApprovalStates"></a>
 
 Gets information about the approval states for a specified pull request. Approval states only apply to pull requests that have one or more approval rules applied to them.
 

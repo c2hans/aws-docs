@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # AWS Client VPN endpoint configuration file export
-<a name="cvpn-working-endpoint-export"></a>
 
 The AWS Client VPN endpoint configuration file is the file that clients (users) use to establish a VPN connection with the Client VPN endpoint. You must download (export) this file and distribute it to all clients who need access to the VPN. Alternatively, if you enabled the self-service portal for your Client VPN endpoint, clients can log into the portal and download the configuration file themselves. For more information, see [AWS Client VPN access to the self-service portal](cvpn-self-service-portal.md).
 

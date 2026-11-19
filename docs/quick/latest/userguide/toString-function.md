@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/toString-function
 ---
 
 # toString
-<a name="toString-function"></a>
 
 `toString` formats the input expression as a string. `toString` skips rows containing null values.
 

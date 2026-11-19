@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelP
 ---
 
 # ModelPackageConfig
-<a name="API_ModelPackageConfig"></a>
 
  The configuration for the Model package.
 

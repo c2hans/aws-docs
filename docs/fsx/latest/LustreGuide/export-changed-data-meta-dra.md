@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/export-changed-da
 ---
 
 # Exporting changes to the data repository
-<a name="export-changed-data-meta-dra"></a>
 
 You can export changes to data and POSIX metadata changes from your FSx for Lustre file system to a linked data repository. Associated POSIX metadata includes ownership, permissions, and timestamps.
 

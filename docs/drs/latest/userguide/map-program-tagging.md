@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/map-program-tagging
 ---
 
 # MAP program tagging
-<a name="map-program-tagging"></a>
 
  The AWS Migration Acceleration Program (MAP) provides tools that are designed to reduce costs, boost productivity, improve operational resilience and increase business agility.
 

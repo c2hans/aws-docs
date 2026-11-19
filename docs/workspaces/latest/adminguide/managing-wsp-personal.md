@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/managing-ws
 ---
 
 # Use and manage WorkSpaces Personal
-<a name="managing-wsp-personal"></a>
 
 WorkSpaces Personal offers persistent virtual desktops that are tailored for users who need a highly-personalized desktop provisioned for their exclusive use, similar to a physical desktop computer assigned to an individual.
 
@@ -35,16 +34,21 @@ In this tutorial, you learn how to provision a virtual, cloud-based Microsoft Wi
 This tutorial uses the quick setup option to launch your WorkSpace. This option is available only if you have never launched a WorkSpace. Alternatively, see [Create a directory for WorkSpaces Personal](launch-workspaces-tutorials.md).
 
 **Note**
-As of July 30, 2026, new customers cannot directly create new Simple AD directories. If you use WorkSpaces Personal Quick Setup, which creates and uses a Simple AD directory, you are not affected by the guidance for [ Simple AD availability changes](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simple-ad-availability-change.html).
-
-**Note**
 Quick setup is supported in the following AWS Regions:
-US East (N. Virginia)
-US West (Oregon)
+Europe (London)
 Europe (Ireland)
 Asia Pacific (Singapore)
-Asia Pacific (Sydney)
+US East (N. Virginia)
+US West (Oregon)
+South America (São Paulo)
 Asia Pacific (Tokyo)
+Asia Pacific (Sydney)
+US East (Ohio)
+Europe (Paris)
+Asia Pacific (Mumbai)
+Canada (Central)
+Europe (Frankfurt)
+Asia Pacific (Seoul)
 To change your Region, see [Choosing a Region](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/select-region.html).
 
 **Topics**

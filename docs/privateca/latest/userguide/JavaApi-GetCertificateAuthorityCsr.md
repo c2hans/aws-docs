@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-GetCe
 ---
 
 # GetCertificateAuthorityCsr
-<a name="JavaApi-GetCertificateAuthorityCsr"></a>
 
 The following Java sample shows how to use the [GetCertificateAuthorityCsr](https://docs.aws.amazon.com/privateca/latest/APIReference/API_GetCertificateAuthorityCsr.html) operation.
 

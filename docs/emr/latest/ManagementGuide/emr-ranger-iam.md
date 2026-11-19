@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ranger-ia
 ---
 
 # IAM roles for native integration with Apache Ranger
-<a name="emr-ranger-iam"></a>
 
 The integration between Amazon EMR and Apache Ranger relies on three key roles that you should create before you launch your cluster:
 + A custom Amazon EC2 instance profile for Amazon EMR

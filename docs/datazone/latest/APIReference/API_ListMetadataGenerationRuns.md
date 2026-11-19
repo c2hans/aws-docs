@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListMet
 ---
 
 # ListMetadataGenerationRuns
-<a name="API_ListMetadataGenerationRuns"></a>
 
 Lists all metadata generation runs.
 

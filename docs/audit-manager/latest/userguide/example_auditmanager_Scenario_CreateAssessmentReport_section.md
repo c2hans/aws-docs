@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/example_a
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Create an Audit Manager assessment report that contains one day of evidence using an AWS SDK
-<a name="example_auditmanager_Scenario_CreateAssessmentReport_section"></a>
 
 The following code example shows how to create an Audit Manager assessment report that contains one day of evidence.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/skills-desktop.ht
 ---
 
 # Skills
-<a name="skills-desktop"></a>
 
 Skills are reusable sets of instructions that teach your agents how to do a specific task. Each skill packages the steps and know-how for that task. Instead of re-explaining how you want a task done every time, you capture it once as a skill, and Quick applies those instructions whenever the task comes up, for example writing a blog post that follows your brand guidelines, or preparing a weekly status update from your template. You can create your own skills, publish and share them, and install skills that other people in your organization share with you. You manage these from the **Skills** tab (**Customize** > **Skills**).
 

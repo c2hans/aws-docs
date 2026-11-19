@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/manage-traffic
 ---
 
 # Manage traffic distribution groups using Connect Customer APIs
-<a name="manage-traffic-distribution-groups"></a>
 
 The topics in this section describe how to manage traffic distribution groups by using Connect Customer APIs.
 

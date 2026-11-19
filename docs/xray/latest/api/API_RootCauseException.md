@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_RootCauseException.h
 ---
 
 # RootCauseException
-<a name="API_RootCauseException"></a>
 
 The exception associated with a root cause.
 

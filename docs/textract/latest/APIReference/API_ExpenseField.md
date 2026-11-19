@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Expense
 ---
 
 # ExpenseField
-<a name="API_ExpenseField"></a>
 
 Breakdown of detected information, seperated into the catagories Type, LabelDetection, and ValueDetection
 

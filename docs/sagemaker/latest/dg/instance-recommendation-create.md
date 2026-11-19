@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/instance-recommendat
 ---
 
 # Create an inference recommendation
-<a name="instance-recommendation-create"></a>
 
 Create an inference recommendation programmatically using the AWS SDK for Python (Boto3) or the AWS CLI, or interactively using Studio Classic or the SageMaker AI console. Specify a job name for your inference recommendation, an AWS IAM role ARN, an input configuration, and either a model package ARN when you registered your model with the model registry, or your model name and a `ContainerConfig` dictionary from when you created your model in the **Prerequisites** section.
 

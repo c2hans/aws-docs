@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostAndUsageComparison
-<a name="API_CostAndUsageComparison"></a>
 
 Represents a comparison of cost and usage metrics between two time periods.
 

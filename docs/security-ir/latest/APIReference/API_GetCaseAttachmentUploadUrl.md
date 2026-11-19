@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_GetC
 ---
 
 # GetCaseAttachmentUploadUrl
-<a name="API_GetCaseAttachmentUploadUrl"></a>
 
 Uploads an attachment to a case.
 

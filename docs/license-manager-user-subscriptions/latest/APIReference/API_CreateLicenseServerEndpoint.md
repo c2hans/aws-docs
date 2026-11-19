@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # CreateLicenseServerEndpoint
-<a name="API_CreateLicenseServerEndpoint"></a>
 
 Creates a network endpoint for the Remote Desktop Services (RDS) license server.
 

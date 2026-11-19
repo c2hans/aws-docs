@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # Resource
-<a name="API_marketplace-discovery_Resource"></a>
 
 A resource that provides supplementary information about a product, such as documentation links, support contacts, or usage instructions.
 

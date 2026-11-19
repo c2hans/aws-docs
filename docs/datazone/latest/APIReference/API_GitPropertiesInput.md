@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GitProp
 ---
 
 # GitPropertiesInput
-<a name="API_GitPropertiesInput"></a>
 
 Contains the Git connection properties that you specify when creating a Git connection.
 

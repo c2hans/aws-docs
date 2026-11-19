@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/acce
 ---
 
 # How to access and manage Amazon Route 53 Global Resolver through AWS interfaces
-<a name="accessing-cloud-resolver"></a>
 
 Amazon Route 53 Global Resolver provides multiple access methods to accommodate different management preferences and automation requirements. You can manage Amazon Route 53 Global Resolver through these interfaces:
 

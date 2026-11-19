@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Detec
 ---
 
 # DetectEntities
-<a name="API_DetectEntities"></a>
 
 Detects named entities in input text when you use the pre-trained model. Detects custom entities if you have a custom entity recognition model.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Update Auto Scaling Group launch configurations
-<a name="update-auto-scaling-group-launch-configurations"></a>
 
  A launch configuration contains information like the Amazon Machine Image (AMI) ID, instance type, key pair, one or more security groups, and a block device mapping. Auto Scaling groups have their own launch configurations. You can associate only one launch configuration with an Auto Scaling group at a time, and it can’t be modified after you create it. To change the launch configuration associated with an Auto Scaling group, replace the existing launch configuration with a new one. After a new launch configuration is in place, any new instances that are launched use the new launch configuration parameters, but existing instances are not affected. When Auto Scaling removes instances (referred to as *scaling in*) from the group, the default termination policy is to remove instances with the earliest launch configuration. However, you should know that if the Availability Zones were unbalanced to begin with, then Auto Scaling could remove an instance with a new launch configuration to balance the zones. In such situations, you should have processes in place to compensate for this effect.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectT
 ---
 
 # Connecting to your DB instance using SQL\*Plus
-<a name="USER_ConnectToOracleInstance.SQLPlus"></a>
 
 You can use a utility like SQL\*Plus to connect to an Amazon RDS DB instance running Oracle. To download Oracle Instant Client, which includes a standalone version of SQL\*Plus, see [ Oracle Instant Client Downloads](https://www.oracle.com/database/technologies/instant-client/downloads.html).
 

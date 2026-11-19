@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_So
 ---
 
 # SourceKeyword
-<a name="API_SourceKeyword"></a>
 
 A keyword that relates to the control data source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Use `DescribeMaintenanceWindowExecutionTasks` with a CLI
-<a name="example_ssm_DescribeMaintenanceWindowExecutionTasks_section"></a>
 
 The following code examples show how to use `DescribeMaintenanceWindowExecutionTasks`.
 

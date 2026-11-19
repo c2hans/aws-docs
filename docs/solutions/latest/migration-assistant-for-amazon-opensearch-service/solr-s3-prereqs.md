@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # S3 repository prerequisites
-<a name="solr-s3-prereqs"></a>
 
 To back up Solr directly to Amazon S3, configure the S3 backup repository on every Solr node before you create the backup. This is required for both workflow-managed Solr backup creation and manual Solr backups that write directly to Amazon S3.
 

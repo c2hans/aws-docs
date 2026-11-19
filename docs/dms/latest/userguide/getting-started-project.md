@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/getting-started-pro
 ---
 
 # Create a migration project in DMS Schema Conversion
-<a name="getting-started-project"></a>
 
 Now you can create a migration project. In the migration project, you specify your source and target data providers, and your instance profile.
 

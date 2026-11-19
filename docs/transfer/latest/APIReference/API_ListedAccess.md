@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListedA
 ---
 
 # ListedAccess
-<a name="API_ListedAccess"></a>
 
 Lists the properties for one or more specified associated accesses.
 

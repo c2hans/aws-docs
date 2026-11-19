@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/deleting-a-profi
 ---
 
 # Deleting a profile
-<a name="deleting-a-profile"></a>
 
 **To delete a profile**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_ListPolicies
 ---
 
 # ListPolicies
-<a name="API_ListPolicies"></a>
 
 Returns a list of policies. Policies define the permissions for team resources.
 

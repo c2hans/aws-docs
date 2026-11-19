@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateGitL
 ---
 
 # UpdateGitLabSelfManagedIntegrationDetail
-<a name="API_UpdateGitLabSelfManagedIntegrationDetail"></a>
 
 Contains details required to update an integration with a self-managed GitLab instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/add-a-calculation
 ---
 
 # Adding a pivot table calculation
-<a name="add-a-calculation"></a>
 
 Use the following procedure to add a table calculation to a pivot table.
 

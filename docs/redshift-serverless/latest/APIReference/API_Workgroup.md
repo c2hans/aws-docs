@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # Workgroup
-<a name="API_Workgroup"></a>
 
 The collection of computing resources from which an endpoint is created.
 

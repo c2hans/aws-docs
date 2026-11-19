@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/drop-sequen
 ---
 
 # `DROP SEQUENCE`
-<a name="drop-sequence-syntax-support"></a>
 
 `DROP SEQUENCE` — remove a sequence.
 

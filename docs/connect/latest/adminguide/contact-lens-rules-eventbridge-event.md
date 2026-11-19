@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-r
 ---
 
 # Create a rule that generates an EventBridge event
-<a name="contact-lens-rules-eventbridge-event"></a>
 
 In real-time or post-call/chat, you can get events and use them to trigger subsequent notifications or alerts, or aggregate reports outside of Connect Customer. There's a lot you can do with this data. For example:
 + Get real-time alerts in a QuickSight dashboard.

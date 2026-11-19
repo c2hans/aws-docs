@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/gte.html
 ---
 
 # $gte
-<a name="gte"></a>
 
 The `$gte` operator in Amazon DocumentDB is used to match values that are greater than or equal to a specified value. This operator is useful for filtering and querying data based on numerical comparisons.
 

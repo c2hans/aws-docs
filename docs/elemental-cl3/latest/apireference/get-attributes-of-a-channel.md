@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/get-at
 ---
 
 # GET: Get the Attributes of a Channel
-<a name="get-attributes-of-a-channel"></a>
 
 Get the attributes of the specified channel.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Lan
 ---
 
 # LandingZoneOperationFilter
-<a name="API_LandingZoneOperationFilter"></a>
 
 A filter object that lets you call `ListLandingZoneOperations` with a specific filter.
 

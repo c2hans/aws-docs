@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/enable-po
 ---
 
 # Enabling a policy type
-<a name="enable-policy-type"></a>
 
 Before you can create and attach a policy to your organization, you must enable that policy type for use. Enabling a policy type is a one-time task on the organization root. You can enable a policy type from only the organization's management account or a member account designated as a delegated administrator.
 

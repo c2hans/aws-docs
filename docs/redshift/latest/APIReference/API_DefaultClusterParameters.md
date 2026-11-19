@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Default
 ---
 
 # DefaultClusterParameters
-<a name="API_DefaultClusterParameters"></a>
 
 Describes the default cluster parameters for a parameter group family.
 

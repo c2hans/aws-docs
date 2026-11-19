@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DiscardRegistrationVersion
-<a name="API_DiscardRegistrationVersion"></a>
 
 Discard the current version of the registration.
 

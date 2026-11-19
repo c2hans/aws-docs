@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Imposs
 ---
 
 # ImpossibleTravelDetail
-<a name="API_ImpossibleTravelDetail"></a>
 
 Contains information on unusual and impossible travel in an account.
 

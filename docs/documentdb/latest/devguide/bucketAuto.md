@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/bucketAuto.ht
 ---
 
 # $bucketAuto
-<a name="bucketAuto"></a>
 
 New from version 8.0.2.
 

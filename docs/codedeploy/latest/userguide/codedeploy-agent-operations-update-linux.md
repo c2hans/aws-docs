@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
 ---
 
 # Update the CodeDeploy agent on Amazon Linux or RHEL
-<a name="codedeploy-agent-operations-update-linux"></a>
 
 To configure automatic, scheduled updates of the CodeDeploy agent using AWS Systems Manager, follow the steps in [Install the CodeDeploy agent with AWS Systems Manager](https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-ssm.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetReferenceStore.h
 ---
 
 # GetReferenceStore
-<a name="API_GetReferenceStore"></a>
 
 Gets information about a reference store.
 

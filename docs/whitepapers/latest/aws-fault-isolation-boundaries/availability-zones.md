@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 ---
 
 # Availability Zones
-<a name="availability-zones"></a>
 
  AWS operates over 100 Availability Zones within multiple AWS Regions worldwide (current numbers can be found at [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)). An Availability Zone is one or more discrete data centers with independent and redundant power infrastructure, networking, and connectivity in an AWS Region. Availability Zones in a Region are meaningfully distant from each other, up to 60 miles (about 100 km) to prevent correlated failures, but close enough to use synchronous replication with single-digit millisecond latency. They’re designed to avoid simultaneous impact from shared fate scenarios such as utility power, water disruption, fiber isolation, earthquakes, fires, tornadoes, or floods. Common points of failure, like generators and cooling equipment, aren’t shared across Availability Zones and are designed to be supplied by different power substations. When AWS deploys updates to its services, deployments to Availability Zones in the same Region are separated in time to prevent correlated failure.
 

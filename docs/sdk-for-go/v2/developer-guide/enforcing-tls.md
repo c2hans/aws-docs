@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/enforcing-
 ---
 
 # Enforcing a minimum TLS version
-<a name="enforcing-tls"></a>
 
  To add increased security when communicating with AWS services, you must configure your client to use TLS 1.2 or later. To work with AWS services, the underlying Go runtime must support a minimum version of TLS 1.2, but TLS 1.3 is recommended.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BundleIns
 ---
 
 # BundleInstance
-<a name="API_BundleInstance"></a>
 
 Bundles an Amazon instance store-backed Windows instance.
 

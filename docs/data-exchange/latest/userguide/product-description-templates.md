@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/product-d
 ---
 
 # Product description templates in AWS Data Exchange
-<a name="product-description-templates"></a>
 
 When listing a product on AWS Data Exchange, you should include a long description that contains all the information necessary for subscribers to understand what your product offers. For more information about the product long description, see [Long description for products](prod-details-over.md#product-long-description).
 

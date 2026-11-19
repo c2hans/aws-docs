@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/introduction.html
 ---
 
 # What is Amazon Kinesis Data Streams?
-<a name="introduction"></a>
 
 You can use Amazon Kinesis Data Streams to collect and process large [streams](https://aws.amazon.com/streaming-data/) of data records in real time. You can create data-processing applications, known as *consumers*. A consumer reads data from a *data stream* as data records. You can send the processed records to dashboards, use them to generate alerts, dynamically change pricing and advertising strategies, or send data to a variety of other AWS services.
 

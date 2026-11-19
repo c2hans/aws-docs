@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Servi
 ---
 
 # ServiceResourcesDisassociatedMetadata
-<a name="API_ServiceResourcesDisassociatedMetadata"></a>
 
 Metadata for a service resources disassociated event.
 

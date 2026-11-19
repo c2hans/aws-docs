@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/control-d
 ---
 
 # Control your desktop state
-<a name="control-desktop-state"></a>
 
 To control your desktop's state:
 

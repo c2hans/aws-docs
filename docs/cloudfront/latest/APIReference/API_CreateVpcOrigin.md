@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Creat
 ---
 
 # CreateVpcOrigin
-<a name="API_CreateVpcOrigin"></a>
 
 Create an Amazon CloudFront VPC origin.
 

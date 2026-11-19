@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Thesaurus
 ---
 
 # ThesaurusSummary
-<a name="API_ThesaurusSummary"></a>
 
 An array of summary information for a thesaurus or multiple thesauri.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-gameli
 ---
 
 # Amazon GameLift Servers events
-<a name="events-ref-gamelift"></a>
 
 Amazon GameLift Servers sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

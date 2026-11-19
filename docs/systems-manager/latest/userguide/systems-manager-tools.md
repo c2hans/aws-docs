@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 ---
 
 # Using AWS Systems Manager tools
-<a name="systems-manager-tools"></a>
 
 Systems Manager groups tools into four categories. The following documentation describes the various tools of AWS Systems Manager and how to set up and use these tools. Choose the tabs under each category to learn more about each tool.
 

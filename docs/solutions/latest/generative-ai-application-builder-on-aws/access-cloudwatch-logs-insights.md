@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Access CloudWatch Logs insights
-<a name="access-cloudwatch-logs-insights"></a>
 
 This solution logs error, warning, informational, and debugging messages for the Lambda functions. To choose the type of messages to log:
 

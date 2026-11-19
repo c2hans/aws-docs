@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_LF
 ---
 
 # LFResourceDetails
-<a name="API_LFResourceDetails"></a>
 
 Details about the AWS Lake Formation resource (Table or Database) included in the AWS Lake Formation data permission.
 

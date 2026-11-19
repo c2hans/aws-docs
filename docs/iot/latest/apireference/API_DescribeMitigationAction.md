@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeMiti
 ---
 
 # DescribeMitigationAction
-<a name="API_DescribeMitigationAction"></a>
 
 Gets information about a mitigation action.
 

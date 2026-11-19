@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/access-points-de
 ---
 
 # Viewing access point details
-<a name="access-points-details"></a>
 
 This section explains how to view the details of S3 access points using the AWS Management Console, AWS Command Line Interface, or REST API.
 

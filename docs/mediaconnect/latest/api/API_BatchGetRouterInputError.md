@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BatchGetRout
 ---
 
 # BatchGetRouterInputError
-<a name="API_BatchGetRouterInputError"></a>
 
 An error that occurred when retrieving multiple router inputs in the BatchGetRouterInput operation, including the ARN, error code, and error message.
 

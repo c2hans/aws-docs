@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/TDE.BackupRes
 ---
 
 # Backing up and restoring TDE certificates on RDS for SQL Server
-<a name="TDE.BackupRestoreRDS"></a>
 
 RDS for SQL Server provides stored procedures for backing up, restoring, and dropping TDE certificates. RDS for SQL Server also provides a function for viewing restored user TDE certificates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_FileAcc
 ---
 
 # FileAccessLog
-<a name="API_FileAccessLog"></a>
 
 An object that represents an access log file.
 

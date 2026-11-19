@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.ACG.1] Adopt a risk-based compliance framework
-<a name="ag.acg.1-adopt-a-risk-based-compliance-framework"></a>
 
  **Category:** FOUNDATIONAL
 

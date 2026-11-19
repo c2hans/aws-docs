@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Create
 ---
 
 # CreateThreatEntitySet
-<a name="API_CreateThreatEntitySet"></a>
 
 Creates a new threat entity set. In a threat entity set, you can provide known malicious threat entities for your AWS environment. GuardDuty generates findings based on the entries in the threat entity sets. Only users of the administrator account can manage entity sets, which automatically apply to member accounts.
 

@@ -3,8 +3,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Welcome to the Amazon Bedrock AgentCore Control plane API reference. Control plane actions configure, create, modify, and monitor AWS resources.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

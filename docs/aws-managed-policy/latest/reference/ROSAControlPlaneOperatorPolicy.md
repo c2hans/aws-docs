@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ROSA
 ---
 
 # ROSAControlPlaneOperatorPolicy
-<a name="ROSAControlPlaneOperatorPolicy"></a>
 
 **Description**: Allows Red Hat OpenShift Service on AWS (ROSA) control plane to manage ROSA cluster Amazon EC2 and Amazon Route 53 resources.
 

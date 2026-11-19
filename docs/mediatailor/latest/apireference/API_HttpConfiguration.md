@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Http
 ---
 
 # HttpConfiguration
-<a name="API_HttpConfiguration"></a>
 
 The HTTP configuration for the source location.
 

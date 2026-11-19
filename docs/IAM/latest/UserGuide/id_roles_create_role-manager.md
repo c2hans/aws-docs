@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_rol
 ---
 
 # Create roles automatically with role manager
-<a name="id_roles_create_role-manager"></a>
 
 Many AWS services depend on IAM roles to perform actions on your behalf. IAM role manager is an optional account setting that automatically provisions such roles, so you don't have to set them up yourself. Role manager is designed to help you get started building with AWS services without additional manual IAM configuration.
 

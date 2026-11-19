@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-amazon
 ---
 
 # Amazon MQ events
-<a name="events-ref-amazonmq"></a>
 
 Amazon MQ sends service events to EventBridge via AWS CloudTrail.
 

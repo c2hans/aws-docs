@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Deltacluster-fli
 ---
 
 # Use a Delta Lake cluster with Flink
-<a name="Deltacluster-flink"></a>
 
 With Amazon EMR release 6.11 and higher, you can use Delta Lake with your Flink cluster. The following examples use the AWS CLI to work with Delta Lake on an Amazon EMR Flink cluster.
 

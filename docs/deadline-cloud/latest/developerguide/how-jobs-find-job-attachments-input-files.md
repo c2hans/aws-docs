@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/how
 ---
 
 # How jobs find job attachment input files
-<a name="how-jobs-find-job-attachments-input-files"></a>
 
 **Note**
 The commands on this page are written for the sample project from [Sample project infrastructure](sample-project-infrastructure.md) and [Storage profiles and path mapping](storage-profiles-and-path-mapping.md). The sample project defines several resources that this page refers to by name, such as the queue `Q1` and the storage profile `WSAll`. The examples also modify the [job\_attachments\_devguide job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/job_attachments_devguide) on the GitHub website.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-conf
 ---
 
 # Set up Basic or PAT authentication for Confluence Data Center
-<a name="kb-managed-confluence-onprem-auth-setup"></a>
 
 A Confluence Data Center data source supports two authentication methods: Basic authentication and personal access token (PAT) authentication. For either method, you create an AWS Secrets Manager secret that holds the credentials, then reference the secret ARN when you connect the data source. Choose the method that matches how your Confluence Data Center instance is configured.
 

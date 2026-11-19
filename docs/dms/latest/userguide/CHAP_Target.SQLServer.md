@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.SQLServ
 ---
 
 # Using a Microsoft SQL Server database as a target for AWS Database Migration Service
-<a name="CHAP_Target.SQLServer"></a>
 
 You can migrate data to Microsoft SQL Server databases using AWS DMS. With an SQL Server database as a target, you can migrate data from either another SQL Server database or one of the other supported databases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Upda
 ---
 
 # UpdateOperatorAppIdpConfig
-<a name="API_UpdateOperatorAppIdpConfig"></a>
 
 Update the external Identity Provider configuration for the Operator App
 

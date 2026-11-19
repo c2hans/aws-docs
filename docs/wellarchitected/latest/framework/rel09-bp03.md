@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel09-b
 ---
 
 # REL09-BP03 Perform data backup automatically
-<a name="rel09-bp03"></a>
 
  Manual backups fail in predictable ways. For example, people forget, schedules slip, and a missed backup goes unnoticed until someone needs to recover. Automating backups on a schedule tied to your tolerance for data loss removes the human step and produces a record of whether each backup succeeded.
 

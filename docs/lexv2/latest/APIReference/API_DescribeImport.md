@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeIm
 ---
 
 # DescribeImport
-<a name="API_DescribeImport"></a>
 
 Gets information about a specific import.
 

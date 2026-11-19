@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_OAuth2P
 ---
 
 # OAuth2PropertiesPatch
-<a name="API_OAuth2PropertiesPatch"></a>
 
 Contains the OAuth2 properties, such as the client application, grant type, and token URL, that you want to update for a connection.
 

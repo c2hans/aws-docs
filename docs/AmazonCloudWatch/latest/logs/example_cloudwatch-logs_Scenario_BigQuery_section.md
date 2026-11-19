@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/example_clo
 ---
 
 # Use CloudWatch Logs to run a large query
-<a name="example_cloudwatch-logs_Scenario_BigQuery_section"></a>
 
 The following code examples show how to use CloudWatch Logs to query more than 10,000 records.
 

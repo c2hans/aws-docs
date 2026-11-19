@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/templ
 ---
 
 # CloudFormation template Description syntax
-<a name="template-description-structure"></a>
 
 The `Description` section (optional) enables you to include a text string that describes the template. This section must always follow the template format version section.
 

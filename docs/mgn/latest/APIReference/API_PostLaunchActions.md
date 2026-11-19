@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_PostLaunchAc
 ---
 
 # PostLaunchActions
-<a name="API_PostLaunchActions"></a>
 
 Post Launch Actions to be executed on the Test or Cutover instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonWorkMailFullAccess
-<a name="AmazonWorkMailFullAccess"></a>
 
 **Description**: Provides full access to WorkMail, Directory Service, SES, EC2 and read access to KMS metadata.
 

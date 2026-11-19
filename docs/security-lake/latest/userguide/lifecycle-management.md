@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/lifecycle
 ---
 
 # Lifecycle management in Security Lake
-<a name="lifecycle-management"></a>
 
 You can customize Security Lake to store data in your preferred AWS Regions for your preferred amount of time. Lifecycle management can help you comply with different compliance requirements.
 

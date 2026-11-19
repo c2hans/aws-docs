@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-ga
 ---
 
 # Further reading
-<a name="further-reading"></a>
 
  For additional information, see:
 +  [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)

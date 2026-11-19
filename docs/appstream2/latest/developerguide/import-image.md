@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/import-
 ---
 
 # Import Image
-<a name="import-image"></a>
 
 You can create WorkSpaces Applications images by importing your customized EC2 AMIs or WorkSpaces images. Here's how it works:
 

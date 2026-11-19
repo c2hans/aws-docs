@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/tree-map.html
 ---
 
 # Using tree maps
-<a name="tree-map"></a>
 
 To visualize one or two measures for a dimension, use tree maps.
 

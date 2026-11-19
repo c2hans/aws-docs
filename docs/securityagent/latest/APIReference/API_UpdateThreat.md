@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Up
 ---
 
 # UpdateThreat
-<a name="API_UpdateThreat"></a>
 
 Updates a threat.
 

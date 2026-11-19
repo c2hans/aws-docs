@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/apache-iceberg-strea
 ---
 
 # Set up the Firehose stream
-<a name="apache-iceberg-stream"></a>
 
 To create a Firehose stream with Apache Iceberg Tables as your destination you must configure the following.
 

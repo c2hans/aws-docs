@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/Welcom
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Welcome to the AWS Audit Manager API reference. This guide is for developers who need detailed information about the Audit Manager API operations, data types, and errors.
 
@@ -19,4 +18,4 @@ Use the following links to get started with the Audit Manager API:
 
 If you're new to AWS Audit Manager, we recommend that you review the [AWS Audit Manager User Guide](https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

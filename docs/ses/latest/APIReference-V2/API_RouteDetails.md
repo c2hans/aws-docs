@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_RouteDeta
 ---
 
 # RouteDetails
-<a name="API_RouteDetails"></a>
 
 An object that contains route configuration. Includes secondary region name.
 

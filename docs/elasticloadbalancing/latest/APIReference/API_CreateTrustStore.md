@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # CreateTrustStore
-<a name="API_CreateTrustStore"></a>
 
 Creates a trust store.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Elasticsearch::Domain MasterUserOptions
-<a name="aws-properties-elasticsearch-domain-masteruseroptions"></a>
 
 Specifies information about the master user. Required if you enabled the internal user database.
 

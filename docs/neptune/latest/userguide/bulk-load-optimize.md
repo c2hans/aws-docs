@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-optim
 ---
 
 # Optimizing an Amazon Neptune bulk load
-<a name="bulk-load-optimize"></a>
 
 Use the following strategies to keep the load time to a minimum for a Neptune bulk load:
 + **Clean your data:**

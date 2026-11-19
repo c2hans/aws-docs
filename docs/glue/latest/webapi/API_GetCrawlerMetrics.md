@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetCrawlerMetrics
 ---
 
 # GetCrawlerMetrics
-<a name="API_GetCrawlerMetrics"></a>
 
 Retrieves metrics about specified crawlers.
 

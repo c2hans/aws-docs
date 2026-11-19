@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_S
 ---
 
 # StartAvailabilityMonitorTest
-<a name="API_StartAvailabilityMonitorTest"></a>
 
 Start a test that verifies that the specified gateway is configured for High Availability monitoring in your host environment. This request only initiates the test and that a successful response only indicates that the test was started. It doesn't indicate that the test passed. For the status of the test, invoke the `DescribeAvailabilityMonitorTest` API.
 

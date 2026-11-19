@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_FieldError
 ---
 
 # FieldError
-<a name="API_connect-cases_FieldError"></a>
 
 Object for errors on fields.
 

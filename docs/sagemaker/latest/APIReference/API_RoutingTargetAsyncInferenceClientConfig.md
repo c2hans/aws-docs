@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Routin
 ---
 
 # RoutingTargetAsyncInferenceClientConfig
-<a name="API_RoutingTargetAsyncInferenceClientConfig"></a>
 
 How the inference router submits asynchronous requests to the destinations of a routing target.
 

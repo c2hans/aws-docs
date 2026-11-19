@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Appli
 ---
 
 # ApplicationTheme
-<a name="API_ApplicationTheme"></a>
 
 The application theme.
 

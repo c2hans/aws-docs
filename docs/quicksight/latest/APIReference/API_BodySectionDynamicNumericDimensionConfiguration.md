@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BodyS
 ---
 
 # BodySectionDynamicNumericDimensionConfiguration
-<a name="API_BodySectionDynamicNumericDimensionConfiguration"></a>
 
 Describes the **Numeric** dataset column and constraints for the dynamic values used to repeat the contents of a section.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enabling-authe
 ---
 
 # Enable authentication for Apple Messages for Business
-<a name="enabling-authentication-for-apple-messages-for-business"></a>
 
 To begin the setup process, first navigate to your Identity Provider.
 

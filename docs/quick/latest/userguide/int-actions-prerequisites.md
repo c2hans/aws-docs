@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/int-actions-prere
 ---
 
 # Prerequisites
-<a name="int-actions-prerequisites"></a>
 
 Before using actions in AWS Quick, ensure you have the following:
 

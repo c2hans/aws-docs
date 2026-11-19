@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Forec
 ---
 
 # ForecastScenario
-<a name="API_ForecastScenario"></a>
 
 The forecast scenario of a forecast in the line chart.
 

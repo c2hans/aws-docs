@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/third-magetool
 ---
 
 # Use Microsoft Manifest Generation and Editing Tool (Mage.exe) with AWS CloudHSM to sign files
-<a name="third-magetool"></a>
 
 **Note**
 AWS CloudHSM supports only the 64-bit Mage tool included in the Windows SDK for .NET Framework 4.8.1 and later.

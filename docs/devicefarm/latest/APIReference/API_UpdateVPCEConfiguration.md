@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Updat
 ---
 
 # UpdateVPCEConfiguration
-<a name="API_UpdateVPCEConfiguration"></a>
 
 Updates information about an Amazon Virtual Private Cloud (VPC) endpoint configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DeleteN
 ---
 
 # DeleteNotificationConfiguration
-<a name="API_DeleteNotificationConfiguration"></a>
 
 Deletes the specified notification.
 

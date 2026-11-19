@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/sms-limitatio
 ---
 
 # RCS limits and restrictions
-<a name="sms-limitations-rcs"></a>
 
 RCS messages are subject to the following limits. RCS messaging, including rich cards, carousels, file messages, suggestions, per-message fallback, and message expiration, is available in all countries where RCS is supported. For more information, see [Sending rich RCS messages](rcs-rich-messaging.md).
 

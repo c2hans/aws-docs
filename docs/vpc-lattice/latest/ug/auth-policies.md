@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/auth-policies.html
 ---
 
 # Control access to VPC Lattice services using auth policies
-<a name="auth-policies"></a>
 
 VPC Lattice auth policies are IAM policy documents that you attach to service networks or services to control whether a specified principal has access to a group of services or specific service. You can attach one auth policy to each service network or service that you want to control access to.
 

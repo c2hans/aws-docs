@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Disas
 ---
 
 # DisassociateApprovalRuleTemplateFromRepository
-<a name="API_DisassociateApprovalRuleTemplateFromRepository"></a>
 
 Removes the association between a template and a repository so that approval rules based on the template are not automatically created when pull requests are created in the specified repository. This does not delete any approval rules previously created for pull requests through the template association.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Error
 ---
 
 # ErrorCause
-<a name="API_ErrorCause"></a>
 
 The error information for `CreateFHIRDatastore` and `DeleteFHIRDatastore` actions.
 

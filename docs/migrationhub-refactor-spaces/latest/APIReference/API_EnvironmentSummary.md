@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIR
 ---
 
 # EnvironmentSummary
-<a name="API_EnvironmentSummary"></a>
 
 The summary information for environments as a response to `ListEnvironments`.
 

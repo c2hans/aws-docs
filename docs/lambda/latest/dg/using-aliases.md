@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/using-aliases.html
 ---
 
 # Using Lambda aliases in event sources and permissions policies
-<a name="using-aliases"></a>
 
 Each alias has a unique ARN. An alias can point only to a function version, not to another alias. You can update an alias to point to a new version of the function.
 

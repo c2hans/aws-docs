@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceT
 ---
 
 # InstanceTypeItem
-<a name="API_InstanceTypeItem"></a>
 
 An instance type name or wildcard pattern in an instance type specification.
 

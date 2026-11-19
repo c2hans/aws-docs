@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ma
 ---
 
 # Manage tenants across multiple SaaS products on a single control plane
-<a name="manage-tenants-across-multiple-saas-products-on-a-single-control-plane"></a>
 
 *Ramanna Avancha, Kishan Kavala, Anusha Mandava, and Jenifer Pascal, Amazon Web Services*
 

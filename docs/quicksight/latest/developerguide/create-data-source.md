@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/create-
 ---
 
 # CreateDataSource
-<a name="create-data-source"></a>
 
 Use the `CreateDataSource` API operation to create a data source. Following is an example AWS CLI command for this operation.
 

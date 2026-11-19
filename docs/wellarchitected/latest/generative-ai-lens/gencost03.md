@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Cost-aware prompting
-<a name="gencost03"></a>
 
 | GENCOST03: How do you engineer prompts to optimize cost? |
 | --- |

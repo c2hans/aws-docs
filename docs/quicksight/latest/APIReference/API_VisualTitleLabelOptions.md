@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Visua
 ---
 
 # VisualTitleLabelOptions
-<a name="API_VisualTitleLabelOptions"></a>
 
 The title label options for a visual.
 

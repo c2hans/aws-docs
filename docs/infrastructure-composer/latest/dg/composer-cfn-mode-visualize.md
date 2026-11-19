@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/compos
 ---
 
 # Visualize a deployment in Infrastructure Composer in CloudFormation console mode
-<a name="composer-cfn-mode-visualize"></a>
 
 Follow the instructions in this topic to visualize a deployed CloudFormation stack/ Infrastructure Composer template.
 

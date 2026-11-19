@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListReadSetActivati
 ---
 
 # ListReadSetActivationJobs
-<a name="API_ListReadSetActivationJobs"></a>
 
 Retrieves a list of read set activation jobs and returns the metadata in a JSON formatted output. To extract metadata from a read set activation job, use the `GetReadSetActivationJob` API operation.
 

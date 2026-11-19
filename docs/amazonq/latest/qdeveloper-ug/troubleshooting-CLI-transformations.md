@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/troubleshoo
 ---
 
 # Troubleshooting transformations on the command line
-<a name="troubleshooting-CLI-transformations"></a>
 
 The following information can help you troubleshoot common issues when transforming applications on the command line with Amazon Q Developer.
 

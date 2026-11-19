@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListD
 ---
 
 # ListDashboardVersions
-<a name="API_ListDashboardVersions"></a>
 
 Lists all the versions of the dashboards in the Amazon Quick Sight subscription.
 

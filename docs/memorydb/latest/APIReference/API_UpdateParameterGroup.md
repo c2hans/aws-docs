@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_UpdateP
 ---
 
 # UpdateParameterGroup
-<a name="API_UpdateParameterGroup"></a>
 
 Updates the parameters of a parameter group. You can modify up to 20 parameters in a single request by submitting a list parameter name and value pairs.
 

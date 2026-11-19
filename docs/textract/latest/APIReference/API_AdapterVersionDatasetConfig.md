@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Adapter
 ---
 
 # AdapterVersionDatasetConfig
-<a name="API_AdapterVersionDatasetConfig"></a>
 
 The dataset configuration options for a given version of an adapter. Can include an Amazon S3 bucket if specified.
 

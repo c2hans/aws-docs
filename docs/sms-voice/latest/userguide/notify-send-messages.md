@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/notify-send-m
 ---
 
 # Sending messages with Notify
-<a name="notify-send-messages"></a>
 
 Notify provides two APIs for sending messages:
 + `SendNotifyTextMessage` – Sends an SMS message using a pre-approved template.

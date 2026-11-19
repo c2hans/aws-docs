@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Patch operating systems
-<a name="patch-operating-systems"></a>
 
 |
 |

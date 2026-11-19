@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteRecove
 ---
 
 # DeleteRecoveryPlanExecution
-<a name="API_DeleteRecoveryPlanExecution"></a>
 
 Deletes a Recovery Plan execution record. Must be in a terminal status.
 

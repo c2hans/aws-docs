@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/oracle-netsuite-reading-f
 ---
 
 # Reading from Oracle NetSuite entities
-<a name="oracle-netsuite-reading-from-entities"></a>
 
 **Prerequisite**
 

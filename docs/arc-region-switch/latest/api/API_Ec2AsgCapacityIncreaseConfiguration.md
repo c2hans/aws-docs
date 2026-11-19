@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Ec2AsgC
 ---
 
 # Ec2AsgCapacityIncreaseConfiguration
-<a name="API_Ec2AsgCapacityIncreaseConfiguration"></a>
 
 Configuration for increasing the capacity of Amazon EC2 Auto Scaling groups during a Region switch.
 

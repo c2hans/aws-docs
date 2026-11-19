@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/servic
 ---
 
 # Basic examples for Application Auto Scaling using AWS SDKs
-<a name="service_code_examples_basics"></a>
 
 The following code examples show how to use the basics of Application Auto Scaling with AWS SDKs.
 

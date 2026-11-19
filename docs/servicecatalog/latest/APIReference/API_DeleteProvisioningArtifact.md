@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DeleteProvisioningArtifact
-<a name="API_DeleteProvisioningArtifact"></a>
 
 Deletes the specified provisioning artifact (also known as a version) for the specified product.
 

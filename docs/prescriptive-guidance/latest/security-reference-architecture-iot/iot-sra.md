@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # IoT for the AWS SRA
-<a name="iot-sra"></a>
 
 |  |
 | --- |

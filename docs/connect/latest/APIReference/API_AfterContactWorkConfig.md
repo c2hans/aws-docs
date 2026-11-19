@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AfterCon
 ---
 
 # AfterContactWorkConfig
-<a name="API_AfterContactWorkConfig"></a>
 
 Configuration settings for after contact work (ACW) timeout.
 

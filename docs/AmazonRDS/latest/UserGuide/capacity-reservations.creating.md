@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/capacity-rese
 ---
 
 # Creating a Capacity Reservation
-<a name="capacity-reservations.creating"></a>
 
 When you create a Capacity Reservation, you specify a DB instance class, database engine, and one or more Availability Zones in a single AWS Region, along with the amount of capacity to reserve in each Availability Zone. You can create the reservation for immediate use, or schedule it to begin on a future date ahead of a planned event. After the reservation becomes active, you reference it by name or by identifier to place DB instances into the reserved capacity.
 
@@ -132,7 +131,7 @@ While assessing a request, Amazon RDS might determine that it can support a shor
 ### Console
 <a name="capacity-reservations.future-dated.console"></a>
 
-Follow the steps in [Creating a Capacity Reservation](#capacity-reservations.creating). Under **Capacity reservation starts**, do the following:
+Follow the steps in [Creating a Capacity Reservation](capacity-reservations.creating.md). Under **Capacity reservation starts**, do the following:
 
 **To create a future-dated Capacity Reservation**
 

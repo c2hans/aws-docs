@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/remote-access-remote
 ---
 
 # Set up remote access
-<a name="remote-access-remote-setup"></a>
 
 Before users can connect their Remote IDE to Studio spaces, the administrator must configure permissions. This section provides instructions for administrators on how to set up their Amazon SageMaker AI domain with remote access.
 

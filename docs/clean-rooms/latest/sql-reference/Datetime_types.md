@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/Datetim
 ---
 
 # Datetime types
-<a name="Datetime_types"></a>
 
 Datetime data types include DATE, TIME, TIMESTAMP\_LTZ, and TIMESTAMP\_NTZ.
 

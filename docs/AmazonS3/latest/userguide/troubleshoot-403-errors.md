@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/troubleshoot-4
 ---
 
 # Troubleshoot access denied (403 Forbidden) errors in Amazon S3
-<a name="troubleshoot-403-errors"></a>
 
 Access denied (HTTP `403 Forbidden`) errors appear when AWS explicitly or implicitly denies an authorization request.
 + An *explicit denial* occurs when a policy contains a `Deny` statement for the specific AWS action.

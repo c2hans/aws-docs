@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Mach
 ---
 
 # MachineLearningProductTitleFilter
-<a name="API_MachineLearningProductTitleFilter"></a>
 
 The filter for machine learning product titles.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Del
 ---
 
 # DeleteConditionalForwarder
-<a name="API_DeleteConditionalForwarder"></a>
 
 Deletes a conditional forwarder that has been set up for your AWS directory.
 

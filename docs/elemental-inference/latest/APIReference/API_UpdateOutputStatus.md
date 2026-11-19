@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # UpdateOutputStatus
-<a name="API_UpdateOutputStatus"></a>
 
 Enables or disables an output at the action's scheduled time. This is a type of ScheduleActionOperation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Field
 ---
 
 # FieldLabelType
-<a name="API_FieldLabelType"></a>
 
 The field label type.
 

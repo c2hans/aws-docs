@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/finops-agent/latest/userguide/agent-guar
 AWS FinOps Agent is in preview release and is subject to change.
 
 # Agent guardrail controls
-<a name="agent-guardrail-control"></a>
 
 ## Read-only actions
 <a name="agc-read-only-actions"></a>

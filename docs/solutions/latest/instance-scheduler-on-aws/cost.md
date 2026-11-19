@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services used while running Instance Scheduler. Understanding how costs scale with your deployment size helps you plan and optimize your implementation.
 

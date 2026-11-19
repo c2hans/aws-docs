@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/websdkguide/establish-connect
 ---
 
 # Connect to a Amazon DCV server and get the first frame
-<a name="establish-connection"></a>
 
 The following tutorial shows you how to prepare your HTML page for your custom web client, how to authenticate and connect to a Amazon DCV server, and how to receive the first frame of streamed content from the Amazon DCV session.
 

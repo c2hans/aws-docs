@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-replica
 ---
 
 # Using GTID-based replication
-<a name="mysql-replication-gtid"></a>
 
 The following content explains how to use global transaction identifiers (GTIDs) with binary log (binlog) replication among Amazon RDS for MySQL DB instances.
 

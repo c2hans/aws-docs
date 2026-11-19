@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/delete-statement.html
 ---
 
 # DELETE
-<a name="delete-statement"></a>
 
 Deletes rows in an Apache Iceberg table. `DELETE` is transactional and is supported only for Apache Iceberg tables.
 

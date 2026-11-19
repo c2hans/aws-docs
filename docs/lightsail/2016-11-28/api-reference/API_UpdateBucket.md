@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_U
 ---
 
 # UpdateBucket
-<a name="API_UpdateBucket"></a>
 
 Updates an existing Amazon Lightsail bucket.
 

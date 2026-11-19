@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Correl
 ---
 
 # CorrelatedFinding
-<a name="API_CorrelatedFinding"></a>
 
 Contains information about a group of correlated findings that have the same finding type.
 

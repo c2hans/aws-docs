@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/tutorial-s3.html
 ---
 
 # Archiving build artifacts to AWS
-<a name="tutorial-s3"></a>
 
 The following tutorial demonstrates how to use the *AWS S3 Upload* task to upload archival data to an Amazon Simple Storage Service (Amazon S3) bucket from an Azure DevOps build definition.
 

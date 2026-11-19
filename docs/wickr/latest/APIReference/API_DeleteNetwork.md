@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_DeleteNetw
 ---
 
 # DeleteNetwork
-<a name="API_DeleteNetwork"></a>
 
 Deletes a Wickr network and all its associated resources, including users, bots, security groups, and settings. This operation is permanent and cannot be undone.
 

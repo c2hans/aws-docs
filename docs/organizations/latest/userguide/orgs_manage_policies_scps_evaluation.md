@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # SCP evaluation
-<a name="orgs_manage_policies_scps_evaluation"></a>
 
 **Note**
 The information in this section does ***not*** apply to declarative policy types, including backup policies, tag policies, chat applications policies, or AI services opt-out policies. For more information, see [Understanding declarative policy inheritance](orgs_manage_policies_inheritance_mgmt.md).

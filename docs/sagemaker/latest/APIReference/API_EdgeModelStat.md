@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_EdgeMo
 ---
 
 # EdgeModelStat
-<a name="API_EdgeModelStat"></a>
 
 Status of edge devices with this model.
 

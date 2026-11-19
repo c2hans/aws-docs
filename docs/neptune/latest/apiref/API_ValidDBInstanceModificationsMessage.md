@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_ValidDBInstanc
 ---
 
 # ValidDBInstanceModificationsMessage
-<a name="API_ValidDBInstanceModificationsMessage"></a>
 
 Information about valid modifications that you can make to your DB instance. Contains the result of a successful call to the [DescribeValidDBInstanceModifications](API_DescribeValidDBInstanceModifications.md) action. You can use this information when you call [ModifyDBInstance](API_ModifyDBInstance.md).
 

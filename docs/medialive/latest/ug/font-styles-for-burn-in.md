@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/font-styles-for-burn
 ---
 
 # Font styles for Burn-in or DVB-Sub
-<a name="font-styles-for-burn-in"></a>
 
 This section applies if you are [setting up Burn-in or DVB-Sub captions](output-embedded-and-more.md) in a MediaLive channel. You might decide to specify the look of the captions. The following rule applies.
 

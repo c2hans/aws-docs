@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_RunStat
 ---
 
 # RunStatisticsForAssets
-<a name="API_RunStatisticsForAssets"></a>
 
 The asset statistics from the data source run.
 

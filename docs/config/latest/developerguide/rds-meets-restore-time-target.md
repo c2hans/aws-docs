@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-meets-r
 ---
 
 # rds-meets-restore-time-target
-<a name="rds-meets-restore-time-target"></a>
 
 Checks if the restore time of Amazon Relational Database Service (Amazon RDS) instances meets specified duration. The rule is NON\_COMPLIANT if LatestRestoreExecutionTimeMinutes of an Amazon RDS instance is greater than maxRestoreTime minutes.
 

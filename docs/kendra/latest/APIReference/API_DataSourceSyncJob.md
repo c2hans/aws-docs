@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_DataSourc
 ---
 
 # DataSourceSyncJob
-<a name="API_DataSourceSyncJob"></a>
 
 Provides information about a data source synchronization job.
 

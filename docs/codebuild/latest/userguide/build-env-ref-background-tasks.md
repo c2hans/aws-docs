@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref
 ---
 
 # Background tasks in build environments
-<a name="build-env-ref-background-tasks"></a>
 
 You can run background tasks in build environments. To do this, in your buildspec, use the `nohup` command to run a command as a task in the background, even if the build process exits the shell. Use the **disown** command to forcibly stop a running background task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UtteranceA
 ---
 
 # UtteranceAudioInputSpecification
-<a name="API_UtteranceAudioInputSpecification"></a>
 
 Contains information about the audio for an utterance.
 

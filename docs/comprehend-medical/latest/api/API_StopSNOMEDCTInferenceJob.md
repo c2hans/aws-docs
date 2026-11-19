@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_StopSN
 ---
 
 # StopSNOMEDCTInferenceJob
-<a name="API_StopSNOMEDCTInferenceJob"></a>
 
  Stops an InferSNOMEDCT inference job in progress.
 

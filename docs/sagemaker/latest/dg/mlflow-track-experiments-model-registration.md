@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-track-experim
 ---
 
 # Automatically register SageMaker AI models with SageMaker Model Registry
-<a name="mlflow-track-experiments-model-registration"></a>
 
 When you register an MLflow model, SageMaker AI automatically creates a corresponding Model Package Group and Model Package version in the SageMaker Model Registry. This enables you to:
 + Register models from the MLflow SDK or the MLflow UI.

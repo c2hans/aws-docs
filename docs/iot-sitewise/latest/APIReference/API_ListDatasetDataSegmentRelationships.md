@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListDatasetDataSegmentRelationships
-<a name="API_ListDatasetDataSegmentRelationships"></a>
 
 Retrieves a paginated list of data segment relationships for a session dataset. Use this operation to find the curated datasets that reference data segments of the specified session dataset. Use the `nextToken` parameter to retrieve additional results.
 

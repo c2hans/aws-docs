@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/optimize-
 ---
 
 # How to optimize waypoints for a route
-<a name="optimize-waypoints"></a>
 
 The OptimizeWaypoints API calculates the most efficient route between a series of waypoints, minimizing either travel time or total distance. This API solves the Traveling Salesman Problem by considering road networks and traffic conditions to determine the optimal path.
 

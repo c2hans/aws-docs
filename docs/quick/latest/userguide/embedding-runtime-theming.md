@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedding-runtime
 ---
 
 # Customize the look and feel of AWS Quick Sight embedded dashboards and visuals
-<a name="embedding-runtime-theming"></a>
 
 You can use the AWS Quick Sight Embedding SDK (version 2.5.0 and higher) to make changes to the theming of your embedded AWS Quick Sight dashboards and visuals at runtime. Runtime theming makes it easier to integrate your Software as a service (SaaS) application with your AWS Quick Sight embedded assets. Runtime theming allows you to synchronize the theme of your embedded content with the themes of the parent application that your AWS Quick Sight assets are embedded into. You can also use runtime theming to add customization options for readers. Theming changes can be applied to embedded assets at initialization or throughout the lifetime of your embedded dashboard or visual.
 

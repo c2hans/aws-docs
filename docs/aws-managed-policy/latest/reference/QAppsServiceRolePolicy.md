@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/QApp
 ---
 
 # QAppsServiceRolePolicy
-<a name="QAppsServiceRolePolicy"></a>
 
 **Description**: Grants permissions to AWS services and Resources used or managed by Amazon Q Apps.
 

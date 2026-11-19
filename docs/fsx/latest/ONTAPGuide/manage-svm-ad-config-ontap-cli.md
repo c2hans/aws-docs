@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/manage-svm-ad-conf
 ---
 
 # Updating SVM Active Directory configurations using the NetApp CLI
-<a name="manage-svm-ad-config-ontap-cli"></a>
 
 You can use the NetApp ONTAP CLI to join and unjoin your SVM to an Active Directory, and to modify an existing SVM Active Directory configuration.
 

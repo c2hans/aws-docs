@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeGroup
-<a name="API_DescribeGroup"></a>
 
 Returns an Amazon Quick Sight group's description and Amazon Resource Name (ARN).
 

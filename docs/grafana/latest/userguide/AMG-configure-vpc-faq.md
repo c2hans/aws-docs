@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-configure-v
 ---
 
 # Troubleshoot using VPC with Amazon Managed Grafana
-<a name="AMG-configure-vpc-faq"></a>
 
 Answers to common questions regarding using Amazon Virtual Private Cloud (Amazon VPC) with Amazon Managed Grafana.
 

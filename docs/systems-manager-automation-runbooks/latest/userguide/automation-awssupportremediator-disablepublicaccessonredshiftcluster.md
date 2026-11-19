@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-DisablePublicAccessOnRedshiftCluster`
-<a name="automation-awssupportremediator-disablepublicaccessonredshiftcluster"></a>
 
 **Description**
 

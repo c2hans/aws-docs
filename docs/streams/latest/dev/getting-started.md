@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/getting-started.html
 ---
 
 # Use the AWS CLI to perform Amazon Kinesis Data Streams operations
-<a name="getting-started"></a>
 
 This section shows you how to perform basic Amazon Kinesis Data Streams operations using the AWS Command Line Interface. You will learn fundamental Kinesis Data Streams data flow principles and the steps necessary to put and get data from an Kinesis data stream.
 

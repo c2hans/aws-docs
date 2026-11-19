@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/connectors-s3
 ---
 
 # Connect to Amazon Simple Storage Service (Amazon S3)
-<a name="connectors-s3"></a>
 
 To connect App Studio with Amazon S3 to enable builders to access and use Amazon S3 resources in applications, perform the following steps:
 

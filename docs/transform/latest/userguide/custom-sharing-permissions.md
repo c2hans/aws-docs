@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/custom-sharin
 ---
 
 # Permissions for shared transformation definitions
-<a name="custom-sharing-permissions"></a>
 
 Each share has exactly one permission. AWS Transform custom provides four AWS RAM managed permissions. `Execute` is the base. `ExecuteWithLearnings` adds the owner's lessons. The other two each add one thing to `ExecuteWithLearnings`: contribution or download. They don't include each other. In the AWS Transform CLI, the `--managed-policy` option and the **Managed Policy** column of `atx custom def share list` refer to these AWS RAM managed permissions. They aren't IAM policies.
 

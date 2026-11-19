@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenan
 ---
 
 # Hybrid model multi-tenancy
-<a name="hybrid-model"></a>
 
 SaaS solutions often use a blend of silo and pool models. Various factors influence the decision of when and how to employ both silo and pool models within the same environment.
 

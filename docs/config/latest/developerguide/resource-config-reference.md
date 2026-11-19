@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/resource-co
 ---
 
 # Supported Resource Types for AWS Config
-<a name="resource-config-reference"></a>
 
 **Important**
 This page is updated on a monthly cadence at the beginning of each month.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/web-crawlin
 ---
 
 # Building the web crawler
-<a name="building-crawler"></a>
 
 As described in the [Architecture](architecture.md) section, the application runs in batches—one for each company.
 

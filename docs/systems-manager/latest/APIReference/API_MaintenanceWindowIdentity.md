@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # MaintenanceWindowIdentity
-<a name="API_MaintenanceWindowIdentity"></a>
 
 Information about the maintenance window.
 

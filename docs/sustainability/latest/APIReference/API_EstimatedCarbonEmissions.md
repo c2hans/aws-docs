@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/APIReference/API_E
 ---
 
 # EstimatedCarbonEmissions
-<a name="API_EstimatedCarbonEmissions"></a>
 
 Contains estimated carbon emissions data for a specific time period and dimension grouping.
 

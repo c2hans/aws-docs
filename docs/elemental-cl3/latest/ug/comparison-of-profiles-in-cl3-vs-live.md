@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/comparison-of-pr
 ---
 
 # Comparison of profiles
-<a name="comparison-of-profiles-in-cl3-vs-live"></a>
 
 The way that channels (which you create using Conductor Live) and events (which you create using Elemental Live) use their profiles is different. The way that channels use profiles has some distinct advantages in terms of visibility and maintenance.
 

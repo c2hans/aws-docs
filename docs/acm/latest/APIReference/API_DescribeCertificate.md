@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeCert
 ---
 
 # DescribeCertificate
-<a name="API_DescribeCertificate"></a>
 
 Returns detailed metadata about the specified ACM certificate.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Imp
 ---
 
 # ImportDiskImage
-<a name="API_ImportDiskImage"></a>
 
 Imports a Windows operating system image from a verified Microsoft ISO disk file. The following disk images are supported:
 + Windows 11 Enterprise

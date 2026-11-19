@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Creat
 ---
 
 # CreateDBClusterParameterGroup
-<a name="API_CreateDBClusterParameterGroup"></a>
 
 Creates a new cluster parameter group.
 

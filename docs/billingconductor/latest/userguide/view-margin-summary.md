@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/view-m
 ---
 
 # View your aggregate margins with margin summary
-<a name="view-margin-summary"></a>
 
 ## Viewing your billing group margins summary
 <a name="understand-margin-analysis-table-view"></a>

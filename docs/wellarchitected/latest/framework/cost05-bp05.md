@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost05-
 ---
 
 # COST05-BP05 Select components for business-value-driven cost optimization
-<a name="cost05-bp05"></a>
 
  Managed and serverless options remove idle capacity and operational overhead, event-driven designs do work only when required, and open-source software avoids license fees. Weigh these choices against the business value each component delivers.
 

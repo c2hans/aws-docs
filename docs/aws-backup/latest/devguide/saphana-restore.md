@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/saphana-resto
 ---
 
 # Restore an SAP HANA database on an Amazon EC2 instance
-<a name="saphana-restore"></a>
 
 SAP HANA databases on EC2 instances can be restored using the AWS Backup console, using API, or using AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-lab-use.html
 ---
 
 # Use the Amazon SageMaker Studio Lab project runtime
-<a name="studio-lab-use"></a>
 
  The following topics give information about using the Amazon SageMaker Studio Lab project runtime. Before you can use the Studio Lab project runtime, you must onboard to Studio Lab by following the steps in [Onboard to Amazon SageMaker Studio Lab](studio-lab-onboard.md).
 

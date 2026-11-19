@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/uninstall-agent.html
 ---
 
 # Uninstall AWS Backint agent
-<a name="uninstall-agent"></a>
 
 Use the following steps to uninstall AWS Backint agent.
 

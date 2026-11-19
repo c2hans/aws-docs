@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd05-b
 ---
 
 # FND05-BP03 Configure audit logging of cloud operations
-<a name="fnd05-bp03"></a>
 
  Enable audit logging across your cloud environment and verify it produces a complete, accurate record of actions taken. Use these logs to investigate incidents, alert on specific operations or behavioral anomalies, and reconstruct the timeline and scope of an incident.
 

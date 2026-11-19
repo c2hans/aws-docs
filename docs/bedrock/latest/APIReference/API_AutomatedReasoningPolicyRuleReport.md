@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyRuleReport
-<a name="API_AutomatedReasoningPolicyRuleReport"></a>
 
 Provides detailed fidelity analysis for a specific policy rule, including which source document statements support it and how accurate the rule is.
 

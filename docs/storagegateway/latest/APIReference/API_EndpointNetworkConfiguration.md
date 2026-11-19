@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_E
 ---
 
 # EndpointNetworkConfiguration
-<a name="API_EndpointNetworkConfiguration"></a>
 
 Specifies network configuration information for the gateway associated with the Amazon FSx file system.
 

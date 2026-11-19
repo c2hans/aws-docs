@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/securi
 ---
 
 # Use IAM condition keys with Amazon Bedrock AgentCore Gateway
-<a name="security-gateway-condition-keys"></a>
 
 Use Amazon Bedrock AgentCore-specific condition keys to control how you create and configure gateways and gateway targets in your organization. These condition keys apply to control plane operations. They are especially useful in Service Control Policies (SCPs) to enforce organizational security requirements.
 

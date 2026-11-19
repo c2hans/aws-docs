@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/your-algorithms-infe
 ---
 
 # Containers with custom inference code
-<a name="your-algorithms-inference-main"></a>
 
 You can use Amazon SageMaker AI to interact with Docker containers and run your own inference code in one of two ways:
 + To use your own inference code with a persistent endpoint to get one prediction at a time, use SageMaker AI hosting services.

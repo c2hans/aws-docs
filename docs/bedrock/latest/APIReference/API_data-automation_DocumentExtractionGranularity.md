@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # DocumentExtractionGranularity
-<a name="API_data-automation_DocumentExtractionGranularity"></a>
 
 Granularity settings for documents.
 

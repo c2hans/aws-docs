@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-mongodb-target-n
 ---
 
 # Creating a MongoDB target node
-<a name="creating-mongodb-target-node"></a>
 
 ## Prerequisites needed
 <a name="creating-mongodb-target-node-prerequisites"></a>

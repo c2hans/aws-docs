@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # AI-assisted migration
-<a name="agent-assisted-migration"></a>
 
 Instead of manually constructing workflow JSON, running CLI commands, and troubleshooting issues step by step, you describe your migration goals in plain language and the agent handles the execution.
 

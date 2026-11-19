@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_De
 ---
 
 # DeleteTrail
-<a name="API_DeleteTrail"></a>
 
 Deletes a trail. This operation must be called from the Region in which the trail was created. `DeleteTrail` cannot be called on the shadow trails (replicated trails in other Regions) of a trail that is enabled in all Regions.
 

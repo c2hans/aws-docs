@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_ListAttached
 ---
 
 # ListAttachedLinks
-<a name="API_ListAttachedLinks"></a>
 
 Returns a list of source account links that are linked to this monitoring account sink.
 

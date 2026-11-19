@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # S3EncryptionConfig
-<a name="API_S3EncryptionConfig"></a>
 
 A structure that contains the configuration of encryption-at-rest settings for canary artifacts that the canary uploads to Amazon S3.
 

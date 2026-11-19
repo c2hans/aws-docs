@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_AutoScalingConf
 ---
 
 # AutoScalingConfiguration
-<a name="API_AutoScalingConfiguration"></a>
 
 Describes an AWS App Runner automatic scaling configuration resource.
 

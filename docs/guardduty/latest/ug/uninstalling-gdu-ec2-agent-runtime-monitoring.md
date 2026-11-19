@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/uninstalling-gdu-ec2
 ---
 
 # Uninstalling security agent manually for Amazon EC2 resources
-<a name="uninstalling-gdu-ec2-agent-runtime-monitoring"></a>
 
 This section provides methods to uninstall the GuardDuty security agent from your Amazon EC2 resources. When you manage the security agent manually, you're responsible for removing the agent from the resources. GuardDuty does not take any action on the resources that you manage.
 

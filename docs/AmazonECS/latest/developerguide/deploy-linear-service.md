@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deploy-l
 ---
 
 # Creating an Amazon ECS linear deployment
-<a name="deploy-linear-service"></a>
 
 By using Amazon ECS linear deployments, you can gradually shift traffic in equal increments over specified time intervals. This provides controlled validation at each step of the deployment process.
 

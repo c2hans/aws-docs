@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-manage-model.ht
 ---
 
 # Manage Model
-<a name="edge-manage-model"></a>
 
 The Edge Manager agent can load multiple models at a time and make inference with loaded models on edge devices. The number of models the agent can load is determined by the available memory on the device. The agent validates the model signature and loads into memory all the artifacts produced by the edge packaging job. This step requires all the required certificates described in previous steps to be installed along with rest of the binary installation. If the model’s signature cannot be validated, then loading of the model fails with appropriate return code and reason.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-trigge
 ---
 
 # How customization triggers work
-<a name="aft-triggers-how-they-work"></a>
 
 When customization triggers are enabled and AFT processes an account provisioning event, it evaluates whether the account's OU has changed and takes appropriate action.
 

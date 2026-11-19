@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/crm-connector
 ---
 
 # AWS Partner Network permission sets
-<a name="crm-connector-pemissions-sets"></a>
 
 The CRM connector supports the following primary AWS Partner Network personas:
 

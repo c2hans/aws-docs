@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Lifecy
 ---
 
 # LifecyclePolicyRuleAction
-<a name="API_LifecyclePolicyRuleAction"></a>
 
 The type of action to be taken.
 

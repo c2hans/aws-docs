@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/send-messages-distribute
 ---
 
 # Send Messages Between Distributed Applications
-<a name="send-messages-distributed-applications"></a>
 
 |  |  |
 | --- |--- |

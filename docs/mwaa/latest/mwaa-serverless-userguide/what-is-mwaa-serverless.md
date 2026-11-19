@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/wh
 ---
 
 # What is Amazon MWAA Serverless?
-<a name="what-is-mwaa-serverless"></a>
 
  Amazon MWAA Serverless is a deployment option for MWAA that eliminates the operational overhead of managing Apache Airflow environments while providing cost-effective serverless scaling. This solution simplifies managing operational scale, optimizing costs, and handling access control.
 

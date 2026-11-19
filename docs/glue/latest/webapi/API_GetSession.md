@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetSession.html
 ---
 
 # GetSession
-<a name="API_GetSession"></a>
 
 Retrieves the session.
 

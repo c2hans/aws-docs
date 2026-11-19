@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/trackin
 ---
 
 # Tracking your AWS Free Tier usage
-<a name="tracking-free-tier-usage"></a>
 
 You can track your AWS Free Tier usage in the following ways:
 

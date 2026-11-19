@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Identit
 ---
 
 # IdentityMapping
-<a name="API_IdentityMapping"></a>
 
 Contains the configuration for mapping user identities to Snowflake users, including the username attribute and optional prefix applied during the mapping.
 

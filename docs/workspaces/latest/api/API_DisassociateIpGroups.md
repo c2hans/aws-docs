@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DisassociateIp
 ---
 
 # DisassociateIpGroups
-<a name="API_DisassociateIpGroups"></a>
 
 Disassociates the specified IP access control group from the specified directory.
 

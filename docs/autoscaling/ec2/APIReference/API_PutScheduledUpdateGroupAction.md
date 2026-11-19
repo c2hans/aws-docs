@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_PutSche
 ---
 
 # PutScheduledUpdateGroupAction
-<a name="API_PutScheduledUpdateGroupAction"></a>
 
 Creates or updates a scheduled scaling action for an Auto Scaling group.
 

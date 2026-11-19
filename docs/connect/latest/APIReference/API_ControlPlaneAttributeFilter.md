@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ControlP
 ---
 
 # ControlPlaneAttributeFilter
-<a name="API_ControlPlaneAttributeFilter"></a>
 
 An object that can be used to specify Tag conditions inside the `SearchFilter`. This accepts an `OR` or `AND` (List of List) input where:
 + The top level list specifies conditions that need to be applied with `OR` operator.

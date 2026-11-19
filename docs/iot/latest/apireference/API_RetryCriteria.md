@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_RetryCriteri
 ---
 
 # RetryCriteria
-<a name="API_RetryCriteria"></a>
 
 The criteria that determines how many retries are allowed for each failure type for a job.
 

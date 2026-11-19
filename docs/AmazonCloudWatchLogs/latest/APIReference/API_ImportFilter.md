@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ImportFilter
-<a name="API_ImportFilter"></a>
 
 The filter criteria used for import tasks
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SalesforceM
 ---
 
 # SalesforceMetadata
-<a name="API_SalesforceMetadata"></a>
 
  The connector metadata specific to Salesforce.
 

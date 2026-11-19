@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_BulkEmailDes
 ---
 
 # BulkEmailDestination
-<a name="API_BulkEmailDestination"></a>
 
 An array that contains one or more Destinations, as well as the tags and replacement data associated with each of those Destinations.
 

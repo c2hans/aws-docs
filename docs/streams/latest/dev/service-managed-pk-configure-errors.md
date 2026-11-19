@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-co
 ---
 
 # Error handling
-<a name="service-managed-pk-configure-errors"></a>
 
 The following errors can occur when configuring the record distribution strategy:
 

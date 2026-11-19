@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-b
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # SDDC Deployment and Best Practices Guide on AWS
-<a name="sddc-deployment-and-best-practices"></a>
 
 Publication date: **May 20, 2021** ([Document revisions](document-revisions.md))
 

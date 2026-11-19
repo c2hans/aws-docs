@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # GetRepositorySyncStatus
-<a name="API_GetRepositorySyncStatus"></a>
 
 Returns details about the sync status for a repository. A repository sync uses Git sync to push and pull changes from your remote repository.
 

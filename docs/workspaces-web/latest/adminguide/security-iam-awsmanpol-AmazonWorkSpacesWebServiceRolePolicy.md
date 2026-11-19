@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/adminguide/securit
 Amazon WorkSpaces Secure Browser will no longer be open to new customers starting October 29, 2026. If you would like to use Amazon WorkSpaces Secure Browser, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon WorkSpaces Secure Browser availability change](https://docs.aws.amazon.com/workspaces-web/latest/adminguide/workspaces-secure-browser-maintenance-mode.html).
 
 # AWS managed policy: AmazonWorkSpacesWebServiceRolePolicy
-<a name="security-iam-awsmanpol-AmazonWorkSpacesWebServiceRolePolicy"></a>
 
 You can't attach the `AmazonWorkSpacesWebServiceRolePolicy` policy to your IAM entities. This policy is attached to a service-linked role that allows WorkSpaces Secure Browser to perform actions on your behalf. For more information, see [Using service-linked roles for Amazon WorkSpaces Secure Browser](using-service-linked-roles.md).
 

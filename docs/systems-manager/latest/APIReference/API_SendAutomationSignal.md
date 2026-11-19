@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # SendAutomationSignal
-<a name="API_SendAutomationSignal"></a>
 
 Sends a signal to an Automation execution to change the current behavior or status of the execution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/s
 ---
 
 # Step 1. Choose your deployment scenario
-<a name="step-1.-choose-your-deployment-scenario"></a>
 
 You can deploy Quota Monitor for AWS in three deployment scenarios:
 +  **Scenario 1** - Environments where all AWS accounts are part of one or more Organizations.

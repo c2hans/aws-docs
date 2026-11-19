@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RevokeSec
 ---
 
 # RevokeSecurityGroupIngress
-<a name="API_RevokeSecurityGroupIngress"></a>
 
 Removes the specified inbound (ingress) rules from a security group.
 

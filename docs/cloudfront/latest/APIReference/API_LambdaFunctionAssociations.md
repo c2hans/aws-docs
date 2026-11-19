@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Lambd
 ---
 
 # LambdaFunctionAssociations
-<a name="API_LambdaFunctionAssociations"></a>
 
 A complex type that specifies a list of Lambda@Edge functions associations for a cache behavior.
 

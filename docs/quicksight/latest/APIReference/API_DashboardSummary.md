@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Dashb
 ---
 
 # DashboardSummary
-<a name="API_DashboardSummary"></a>
 
 Dashboard summary.
 

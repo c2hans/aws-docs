@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-SchemaMat
 ---
 
 # SchemaMatch
-<a name="dqdl-rule-types-SchemaMatch"></a>
 
 Checks if the schema of the primary dataset matches the schema of a reference dataset. The schema check is done column by column. The schema of two columns match if the names are identical and the types are identical. The order of the columns does not matter.
 

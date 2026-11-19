@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 ---
 
 # ListImages
-<a name="API_ListImages"></a>
 
 Returns the list of images that you have access to.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Troubleshooting a Next Generation policy
-<a name="firewall-policy-v2-troubleshooting"></a>
 
 The most common issue with a default-drop policy is traffic that you expected to be allowed being dropped, usually because no rule accepted it at one of the connection's hooks. This section describes how to find out what happened, using your logs, metrics, and monitor mode.
 

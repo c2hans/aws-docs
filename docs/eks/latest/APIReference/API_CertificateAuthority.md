@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CertificateA
 ---
 
 # CertificateAuthority
-<a name="API_CertificateAuthority"></a>
 
 An object representing a certificate authority (CA) for an Amazon EKS cluster.
 

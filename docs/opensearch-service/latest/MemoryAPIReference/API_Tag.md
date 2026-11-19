@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A tag: a key-value pair that you attach to a space.
 

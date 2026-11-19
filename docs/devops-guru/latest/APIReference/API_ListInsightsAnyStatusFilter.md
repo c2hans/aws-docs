@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_List
 ---
 
 # ListInsightsAnyStatusFilter
-<a name="API_ListInsightsAnyStatusFilter"></a>
 
  Used to filter for insights that have any status.
 

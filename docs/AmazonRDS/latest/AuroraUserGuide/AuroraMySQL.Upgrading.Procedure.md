@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # How to perform an in-place upgrade
-<a name="AuroraMySQL.Upgrading.Procedure"></a>
 
 We recommend that you review the background material in [How the Aurora MySQL in-place major version upgrade works](AuroraMySQL.Updates.MajorVersionUpgrade.md#AuroraMySQL.Upgrading.Sequence).
 

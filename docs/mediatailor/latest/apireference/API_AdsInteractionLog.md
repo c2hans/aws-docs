@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_AdsI
 ---
 
 # AdsInteractionLog
-<a name="API_AdsInteractionLog"></a>
 
 Settings for customizing what events are included in logs for interactions with the ad decision server (ADS).
 

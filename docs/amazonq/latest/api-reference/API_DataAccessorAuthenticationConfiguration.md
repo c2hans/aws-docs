@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DataAcc
 ---
 
 # DataAccessorAuthenticationConfiguration
-<a name="API_DataAccessorAuthenticationConfiguration"></a>
 
 A union type that contains the specific authentication configuration based on the authentication type selected.
 

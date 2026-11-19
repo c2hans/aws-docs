@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Ap
 ---
 
 # AppMonitorSummary
-<a name="API_AppMonitorSummary"></a>
 
 A structure that includes some data about app monitors and their settings.
 
@@ -34,6 +33,12 @@ The name of this app monitor.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `(?!\.)[\.\-_#A-Za-z0-9]+`
+Required: No
+
+ ** Platform **   <a name="cloudwatchrum-Type-AppMonitorSummary-Platform"></a>
+The platform type for this app monitor. Valid values are `Web` for web applications, `Android` for Android applications, and `iOS` for IOS applications.
+Type: String
+Valid Values: `Web | Android | iOS`
 Required: No
 
  ** State **   <a name="cloudwatchrum-Type-AppMonitorSummary-State"></a>

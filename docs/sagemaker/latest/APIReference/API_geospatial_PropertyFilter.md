@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # PropertyFilter
-<a name="API_geospatial_PropertyFilter"></a>
 
 The structure representing a single PropertyFilter.
 

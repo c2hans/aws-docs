@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Data
 ---
 
 # DatasetDescription
-<a name="API_DatasetDescription"></a>
 
  A description for a dataset. For more information, see [DescribeDataset](API_DescribeDataset.md).
 

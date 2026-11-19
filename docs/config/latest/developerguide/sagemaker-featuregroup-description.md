@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-f
 ---
 
 # sagemaker-featuregroup-description
-<a name="sagemaker-featuregroup-description"></a>
 
 Checks if Amazon SageMaker FeatureGroup resources contain a description. The rule is NON\_COMPLIANT if the FeatureGroup does not contain a description field or the description is empty.
 

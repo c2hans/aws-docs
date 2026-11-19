@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # CodegenJobSummary
-<a name="API_CodegenJobSummary"></a>
 
 A summary of the basic information about the code generation job.
 

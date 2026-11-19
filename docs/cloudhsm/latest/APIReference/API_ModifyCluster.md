@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ModifyC
 ---
 
 # ModifyCluster
-<a name="API_ModifyCluster"></a>
 
 Modifies AWS CloudHSM cluster.
 

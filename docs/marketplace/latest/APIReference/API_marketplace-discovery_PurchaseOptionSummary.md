@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PurchaseOptionSummary
-<a name="API_marketplace-discovery_PurchaseOptionSummary"></a>
 
 Summary information about a purchase option (offer or offer set) available to the buyer, including the seller, badges, and associated products.
 

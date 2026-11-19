@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Pos
 ---
 
 # PositionConfigurationItem
-<a name="API_PositionConfigurationItem"></a>
 
 The wrapper for a position configuration.
 

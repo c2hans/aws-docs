@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::ResponseHeadersPolicy ReferrerPolicy
-<a name="aws-properties-cloudfront-responseheaderspolicy-referrerpolicy"></a>
 
 Determines whether CloudFront includes the `Referrer-Policy` HTTP response header and the header's value.
 
@@ -55,6 +54,6 @@ The value of the `Referrer-Policy` HTTP response header. Valid values are:
 +  `unsafe-url`
 For more information about these values, see [Referrer-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy) in the MDN Web Docs.
 *Required*: Yes
-*Type*: [String](#aws-properties-cloudfront-responseheaderspolicy-referrerpolicy)
+*Type*: [String](aws-properties-cloudfront-responseheaderspolicy-referrerpolicy.md)
 *Pattern*: `^(no-referrer|no-referrer-when-downgrade|origin|origin-when-cross-origin|same-origin|strict-origin|strict-origin-when-cross-origin|unsafe-url)$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

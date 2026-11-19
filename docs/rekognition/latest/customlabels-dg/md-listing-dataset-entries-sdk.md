@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-li
 ---
 
 # Listing dataset entries (SDK)
-<a name="md-listing-dataset-entries-sdk"></a>
 
 You can use the `ListDatasetEntries` API to list the JSON lines for each image in a dataset. For more information, see [Creating a manifest file](md-create-manifest-file.md).
 

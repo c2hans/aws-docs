@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Budget Service
-<a name="list_budgets"></a>
 
 AWS Budget Service (service prefix: `budgets`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

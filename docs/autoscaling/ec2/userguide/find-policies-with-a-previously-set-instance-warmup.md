@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/find-policies-
 ---
 
 # Find scaling policies with a previously set instance warmup time
-<a name="find-policies-with-a-previously-set-instance-warmup"></a>
 
 To identify whether you have policies that have their own warmup time for `EstimatedInstanceWarmup`, run the following [describe-policies](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/describe-policies.html) command using the AWS CLI. Replace {{my-asg}} with the name of your Auto Scaling group.
 

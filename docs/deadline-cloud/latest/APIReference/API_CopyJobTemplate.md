@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_C
 ---
 
 # CopyJobTemplate
-<a name="API_CopyJobTemplate"></a>
 
 Copies a job template to an Amazon S3 bucket.
 

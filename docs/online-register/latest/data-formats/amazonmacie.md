@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Macie
-<a name="amazonmacie"></a>
 
 Amazon Macie provides the following APIs for data retrieval.
 

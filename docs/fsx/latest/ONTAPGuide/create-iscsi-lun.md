@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/create-iscsi-lun.h
 ---
 
 # Creating an iSCSI LUN
-<a name="create-iscsi-lun"></a>
 
 This process describes how to create an iSCSI LUN on an Amazon FSx for NetApp ONTAP file system using the NetApp ONTAP CLI **lun create** command. For more information, see [**lun create**](https://docs.netapp.com/us-en/ontap-cli-9111/lun-create.html) in the NetApp ONTAP Documentation Center.
 

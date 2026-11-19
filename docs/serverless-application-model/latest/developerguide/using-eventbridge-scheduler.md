@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Manage time-based events with EventBridge Scheduler in AWS SAM
-<a name="using-eventbridge-scheduler"></a>
 
 The content in this topic provides details on what Amazon EventBridge Scheduler is, what support AWS SAM offers, how you can create Scheduler events, and examples you can reference when creating Scheduler events.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessManagedMemoryConfiguration
-<a name="API_HarnessManagedMemoryConfiguration"></a>
 
 Configuration for managed memory creation.
 

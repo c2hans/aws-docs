@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v12-correlation
 ---
 
 # Create a new correlation
-<a name="v12-correlations-create"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 12.x**.

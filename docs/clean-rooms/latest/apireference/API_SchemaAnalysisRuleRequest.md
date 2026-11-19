@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Sche
 ---
 
 # SchemaAnalysisRuleRequest
-<a name="API_SchemaAnalysisRuleRequest"></a>
 
 Defines the information that's necessary to retrieve an analysis rule schema. Schema analysis rules are uniquely identiﬁed by a combination of the schema name and the analysis rule type for a given collaboration.
 

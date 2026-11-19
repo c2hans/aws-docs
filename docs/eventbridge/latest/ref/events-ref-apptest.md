@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-apptes
 ---
 
 # AWS Mainframe Modernization Application Testing events
-<a name="events-ref-apptest"></a>
 
 AWS Application Testing sends service events to EventBridge via AWS CloudTrail.
 

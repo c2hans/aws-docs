@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_MigrationPro
 ---
 
 # MigrationProject
-<a name="API_MigrationProject"></a>
 
 Provides information that defines a migration project.
 

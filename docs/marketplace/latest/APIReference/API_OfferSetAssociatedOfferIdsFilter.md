@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferSetAssociatedOfferIdsFilter
-<a name="API_OfferSetAssociatedOfferIdsFilter"></a>
 
 Allows filtering on the `AssociatedOfferIds` of an offer set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Handle XSS false positives
-<a name="handle-xss-false-positives"></a>
 
 This solution configures an AWS WAF rule that inspects commonly explored elements of incoming requests to identify and block XSS attacks. This detection pattern is less effective if your workload allows legitimate users to compose and submit HTML, for example, using a rich text editor in a content management system. In this scenario, consider creating an exception rule that bypasses the default XSS rule for specific URL patterns that accept rich text input, and implement alternate mechanisms to protect those excluded URLs.
 

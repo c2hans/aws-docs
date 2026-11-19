@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/fleetiqguide/gsg-
 ---
 
 # Amazon GameLift Servers FleetIQ best practices
-<a name="gsg-best-practices"></a>
 
 Amazon GameLift Servers FleetIQ is a low-level logic layer that helps you manage Amazon EC2 resources for game hosting. In particular, Amazon GameLift Servers FleetIQ optimizes the use of Spot Instances that are viable for game hosting by minimizing the chance that game sessions might be interrupted. It also provides basic game hosting functionality to track available game servers and route gameplay to low-cost, high-viability game servers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-c
 ---
 
 # Cutting over to AWS
-<a name="cutover"></a>
 
 When you've completed your test and you're ready to cut over to the target environment on AWS, follow these steps:
 

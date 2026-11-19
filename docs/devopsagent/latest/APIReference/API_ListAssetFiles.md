@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListAssetFiles
-<a name="API_ListAssetFiles"></a>
 
 Lists files in an asset
 

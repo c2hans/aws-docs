@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-us
 ---
 
 # Use Amazon Q to Expedite Your Machine Learning Workflows
-<a name="studio-updated-jl-user-guide-use-amazon-q"></a>
 
 Amazon Q Developer is your AI-powered companion for machine learning development. With Amazon Q Developer, you can:
 + Receive step-by-step guidance on using SageMaker AI features independently or in combination with other AWS services.

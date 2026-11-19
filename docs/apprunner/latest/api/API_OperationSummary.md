@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_OperationSummar
 ---
 
 # OperationSummary
-<a name="API_OperationSummary"></a>
 
 Provides summary information for an operation that occurred on an AWS App Runner service.
 

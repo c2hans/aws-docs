@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # ViewBilling
-<a name="API_domains_ViewBilling"></a>
 
 Returns all the domain-related billing records for the current AWS account for a specified period
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Notifications::NotificationConfiguration Tag
-<a name="aws-properties-notifications-notificationconfiguration-tag"></a>
 
 A tag is a string-to-string map of key-value pairs.
 

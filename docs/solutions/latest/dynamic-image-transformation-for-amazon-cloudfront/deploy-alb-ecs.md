@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Deploy ECS architecture
-<a name="deploy-alb-ecs"></a>
 
 Follow the step-by-step instructions in this section to configure and deploy the high-performance ECS architecture into your account.
 

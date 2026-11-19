@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Generati
 ---
 
 # GenerationConfiguration
-<a name="API_GenerationConfiguration"></a>
 
 The configuration details for response generation based on retrieved text chunks.
 

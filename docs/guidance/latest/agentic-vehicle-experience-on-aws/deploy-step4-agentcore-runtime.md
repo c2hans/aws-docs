@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Step 4: Deploy the AgentCore runtime
-<a name="deploy-step4-agentcore-runtime"></a>
 
 The `agentcore` CLI is provided by the `bedrock-agentcore-starter-toolkit` package, already installed via `pip install -r requirements.txt` in Step 2. Verify it is available:
 

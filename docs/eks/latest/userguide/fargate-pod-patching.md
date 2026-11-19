@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/fargate-pod-patchin
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Set actions for AWS Fargate OS patching events
-<a name="fargate-pod-patching"></a>
 
 Amazon EKS periodically patches the OS for AWS Fargate nodes to keep them secure. As part of the patching process, we recycle the nodes to install OS patches. Updates are attempted in a way that creates the least impact on your services. However, if Pods aren’t successfully evicted, there are times when they must be deleted. The following are actions that you can take to minimize potential disruptions:
 + Set appropriate Pod disruption budgets (PDBs) to control the number of Pods that are down simultaneously.

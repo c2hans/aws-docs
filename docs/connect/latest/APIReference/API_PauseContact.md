@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PauseCon
 ---
 
 # PauseContact
-<a name="API_PauseContact"></a>
 
 Pauses an ongoing task or email contact.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/drop-statis
 ---
 
 # `DROP STATISTICS`
-<a name="drop-statistics-syntax-support"></a>
 
 ## Supported syntax
 <a name="drop-statistics-supported-syntax"></a>

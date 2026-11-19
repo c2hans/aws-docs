@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-interface-end
 ---
 
 # Connect to Amazon SageMaker Studio and Studio Classic Through an Interface VPC Endpoint
-<a name="studio-interface-endpoint"></a>
 
 You can connect to your Amazon SageMaker Studio and Amazon SageMaker Studio Classic from your [Amazon Virtual Private Cloud](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html) (Amazon VPC) through an [interface endpoint](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html) in your VPC instead of connecting over the internet. When you use an interface VPC endpoint (interface endpoint), communication between your VPC and Studio or Studio Classic is conducted entirely and securely within the AWS network.
 

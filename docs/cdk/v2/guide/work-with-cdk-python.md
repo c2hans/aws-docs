@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-python.html
 ---
 
 # Working with the AWS CDK in Python
-<a name="work-with-cdk-python"></a>
 
 Python is a fully-supported client language for the AWS Cloud Development Kit (AWS CDK) and is considered stable. Working with the AWS CDK in Python uses familiar tools, including the standard Python implementation (CPython), virtual environments with `virtualenv`, and the Python package installer `pip`. The modules comprising the AWS Construct Library are distributed via [pypi.org](https://pypi.org/search/?q=aws-cdk). The Python version of the AWS CDK even uses Python-style identifiers (for example, `snake_case` method names).
 

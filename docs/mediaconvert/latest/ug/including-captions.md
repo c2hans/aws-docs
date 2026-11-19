@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/including-caption
 ---
 
 # Setting up input captions
-<a name="including-captions"></a>
 
 To include captions in your job, follow these steps in the order listed:
 

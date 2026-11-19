@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_De
 ---
 
 # DeclineHandshake
-<a name="API_DeclineHandshake"></a>
 
 Declines a [Handshake](API_Handshake.md).
 

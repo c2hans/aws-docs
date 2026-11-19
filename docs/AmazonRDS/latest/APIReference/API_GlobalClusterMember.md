@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Global
 ---
 
 # GlobalClusterMember
-<a name="API_GlobalClusterMember"></a>
 
 A data structure with information about any primary and secondary clusters associated with a global cluster (Aurora global database).
 

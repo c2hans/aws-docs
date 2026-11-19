@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/channel-assembly-w
 ---
 
 # Working with VOD sources
-<a name="channel-assembly-working-vod-sources"></a>
 
 A VOD source represents a single piece of content, such as a video or an episode of a podcast, that you add to your source location. You add one or more VOD sources to your source location, and then associate each VOD source with a program after you create your channel.
 

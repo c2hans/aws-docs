@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 ## Contributors
 <a name="contributors.3b4a1642-09c4-5d1f-84ea-2ec949b5c3e9"></a>

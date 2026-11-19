@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSManagedAdvancedFeaturesActivationAccess
-<a name="AWSManagedAdvancedFeaturesActivationAccess"></a>
 
 **Description**: Grants AWS permission to activate advanced features for AWS managed accounts
 

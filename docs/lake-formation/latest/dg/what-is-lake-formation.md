@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-fo
 ---
 
 # What is AWS Lake Formation?
-<a name="what-is-lake-formation"></a>
 
 Welcome to the AWS Lake Formation Developer Guide.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/config
 ---
 
 # Configuration bundle encryption
-<a name="configuration-bundles-encryption"></a>
 
 When you specify a `kmsKeyArn` on a configuration bundle, the service encrypts the **component configurations** (system prompts, tool descriptions, and other configuration content) using envelope encryption. All other bundle metadata (name, description, version IDs, timestamps) remains encrypted with the AWS owned key.
 

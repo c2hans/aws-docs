@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UserTurnIn
 ---
 
 # UserTurnInputSpecification
-<a name="API_UserTurnInputSpecification"></a>
 
 Contains information about the user messages in the turn in the input.
 

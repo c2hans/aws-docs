@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-folk.h
 ---
 
 # Connecting to Folk in AWS Glue Studio
-<a name="connecting-to-data-folk"></a>
 
 Folk is a relationship-management CRM that helps service businesses organize people, companies, conversations, and follow-up work. Because you are a Folk user, you can connect AWS Glue to your Folk account. You can then use Folk as a data source in your AWS Glue ETL jobs to transfer data between Folk and AWS services or other supported applications.
 

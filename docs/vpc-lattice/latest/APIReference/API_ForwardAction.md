@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Forw
 ---
 
 # ForwardAction
-<a name="API_ForwardAction"></a>
 
 Describes a forward action. You can use forward actions to route requests to one or more target groups.
 

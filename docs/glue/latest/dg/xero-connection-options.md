@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/xero-connection-options.h
 ---
 
 # Xero connection options
-<a name="xero-connection-options"></a>
 
 The following are connection options for Xero:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Xero object to read.

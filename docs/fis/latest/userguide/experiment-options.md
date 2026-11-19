@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/experiment-options.
 ---
 
 # Experiment options for AWS FIS
-<a name="experiment-options"></a>
 
  Experiment options are optional settings for an experiment. You can define certain experiment options on the experiment template. Additional experiment options are set when you begin the experiment.
 

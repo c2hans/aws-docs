@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stack
 ---
 
 # Activate trusted access for StackSets with AWS Organizations
-<a name="stacksets-orgs-activate-trusted-access"></a>
 
 This topic provides instructions on how to activate trusted access with AWS Organizations, which is required by StackSets to deploy across accounts and AWS Regions using *service-managed* permissions. To use *self-managed* permissions, see [Grant self-managed permissions](stacksets-prereqs-self-managed.md) instead.
 

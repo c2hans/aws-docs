@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/mainten
 ---
 
 # Tutorial: Update a maintenance window using the AWS CLI
-<a name="maintenance-windows-cli-tutorials-update"></a>
 
 This tutorial demonstrates how to use the AWS Command Line Interface (AWS CLI) to update a maintenance window. It also shows you how to update different task types, including those for AWS Systems Manager Run Command and Automation, AWS Lambda, and AWS Step Functions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-RestoreEC2InstanceFromSnapshot`
-<a name="automation-awssupport-restoreec2instancefromsnapshot"></a>
 
  **Description**
 

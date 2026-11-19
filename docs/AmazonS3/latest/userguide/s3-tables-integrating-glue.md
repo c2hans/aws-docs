@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-inte
 ---
 
 # Running ETL jobs on Amazon S3 tables with AWS Glue
-<a name="s3-tables-integrating-glue"></a>
 
 AWS Glue is a serverless data integration service that makes it easy for analytics users to discover, prepare, move, and integrate data from multiple sources. You can use AWS Glue jobs to run extract, transform, and load (ETL) pipelines to load data into your data lakes. For more information about AWS Glue, see [What is AWS Glue?](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html) in the *AWS Glue Developer Guide*.
 

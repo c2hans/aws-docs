@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_ListAp
 ---
 
 # ListAppInstanceBots
-<a name="API_ListAppInstanceBots"></a>
 
 Lists all `AppInstanceBots` created under a single `AppInstance`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 Amazon OpenSearch Service takes away the undifferentiated heavy lifting that is required to develop and operate self-managed Elasticsearch or OpenSearch clusters. If you are considering a migration to Amazon OpenSearch Service, you can use the process outlined in this guide to plan and choose a migration strategy that works for your situation.
 

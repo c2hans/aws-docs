@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/cloudformat
 ---
 
 # Adding serverless application components
-<a name="cloudformation-serverless-application"></a>
 
 **Important**
 AWS Marketplace no longer supports publishing new products with CloudFormation templates that deploy resources from AWS Serverless Application Repository. Sellers can continue to publish existing products with CloudFormation templates that deploy resources from AWS Serverless Application Repository until a future date to be announced.

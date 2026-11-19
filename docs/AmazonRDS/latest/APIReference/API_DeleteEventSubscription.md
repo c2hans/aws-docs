@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Delete
 ---
 
 # DeleteEventSubscription
-<a name="API_DeleteEventSubscription"></a>
 
 Deletes an RDS event notification subscription.
 

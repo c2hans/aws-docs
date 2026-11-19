@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_L
 ---
 
 # ListAntennas
-<a name="API_ListAntennas"></a>
 
 Returns a list of antennas at a specified ground station.
 

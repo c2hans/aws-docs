@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Associa
 ---
 
 # AssociationSetDetails
-<a name="API_AssociationSetDetails"></a>
 
  The associations between a route table and one or more subnets or a gateway.
 

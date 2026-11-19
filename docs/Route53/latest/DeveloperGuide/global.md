@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/global.htm
 ---
 
 # .global
-<a name="global"></a>
 
 Used by businesses or groups with an international market or vision.
 

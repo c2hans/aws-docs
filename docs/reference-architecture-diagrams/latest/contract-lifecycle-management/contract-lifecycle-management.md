@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Contract Lifecycle Management and Modeling
-<a name="contract-lifecycle-management"></a>
 
 Publication date: **March 10, 2021 ([Diagram history](#contract-lifecycle-management-history))**
 

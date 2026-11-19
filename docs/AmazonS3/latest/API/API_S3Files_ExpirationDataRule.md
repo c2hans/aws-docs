@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_Expirati
 ---
 
 # ExpirationDataRule
-<a name="API_S3Files_ExpirationDataRule"></a>
 
 Specifies a rule that controls when cached data expires from the file system based on last access time.
 

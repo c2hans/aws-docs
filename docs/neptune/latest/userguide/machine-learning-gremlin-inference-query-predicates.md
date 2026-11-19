@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Neptune ML predicates used in Gremlin inference queries
-<a name="machine-learning-gremlin-inference-query-predicates"></a>
 
 ## `Neptune#ml.deterministic`
 <a name="machine-learning-gremlin-inference-neptune-ml-deterministic-predicate"></a>

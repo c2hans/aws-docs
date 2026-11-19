@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeAutoScalingNotificationTypes
-<a name="API_DescribeAutoScalingNotificationTypes"></a>
 
 Describes the notification types that are supported by Amazon EC2 Auto Scaling.
 

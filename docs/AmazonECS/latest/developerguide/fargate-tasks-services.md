@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-
 ---
 
 # Amazon ECS task definition differences for Fargate
-<a name="fargate-tasks-services"></a>
 
 In order to use Fargate, you must configure your task definition to use the Fargate launch type. There are additional considerations when using Fargate.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Te
 ---
 
 # TestScope
-<a name="API_TestScope"></a>
 
 The category of application a pentest targets.
 

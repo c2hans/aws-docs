@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec07-b
 ---
 
 # SEC07-BP03 Automate identification and classification
-<a name="sec07-bp03"></a>
 
  Automating identification and classification finds sensitive data, confirms that the right controls apply, and flags data stored or handled in unauthorized ways. Apply it before data reaches production and continually in running environments.
 

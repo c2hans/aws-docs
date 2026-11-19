@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Recor
 ---
 
 # RecordsIngested
-<a name="API_RecordsIngested"></a>
 
 Information on the records ingested by this request.
 

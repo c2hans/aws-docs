@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Failure management
-<a name="failure-management"></a>
 
 |  MIDAREL04: How do you back up data?  |
 | --- |

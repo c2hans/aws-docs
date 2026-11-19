@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Setting up managed disaster recovery in Amazon OpenSearch Service
-<a name="disaster-recovery"></a>
 
 Amazon OpenSearch Service managed disaster recovery (DR) replicates data from a primary domain in one AWS Region to a secondary domain in another Region. The service manages the connection between the domains and encrypts replicated data in transit, so you don't need to configure network connectivity, such as VPC peering, between the domains.
 

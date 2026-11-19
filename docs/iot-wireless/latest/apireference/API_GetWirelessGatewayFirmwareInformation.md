@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetWirelessGatewayFirmwareInformation
-<a name="API_GetWirelessGatewayFirmwareInformation"></a>
 
 Gets the firmware version and other information about a wireless gateway.
 

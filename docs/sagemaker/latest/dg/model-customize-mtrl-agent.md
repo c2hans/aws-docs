@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-mtrl
 ---
 
 # Preparing your agent
-<a name="model-customize-mtrl-agent"></a>
 
 Before you can launch a training job, you need to set up an agent that can participate in the training loop. This section walks you through how to configure and deploy your agent, whether you are using Amazon Bedrock AgentCore for managed hosting or bringing your own infrastructure with a custom agent.
 

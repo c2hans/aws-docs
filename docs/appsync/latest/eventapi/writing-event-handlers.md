@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/writing-event-ha
 ---
 
 # Writing event handlers
-<a name="writing-event-handlers"></a>
 
 A handler is defined by a single function that doesn't interact with a data source, or is defined by an object that implements a request and a response function to interact with one of your data sources. When working with a Lambda function data source, AWS AppSync Events supports a `DIRECT` integration that allows you to interact with your Lambda function without writing any handler code.
 

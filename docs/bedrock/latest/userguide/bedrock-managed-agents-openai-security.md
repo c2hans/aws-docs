@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-managed
 ---
 
 # Security and IAM roles
-<a name="bedrock-managed-agents-openai-security"></a>
 
 A session uses three identities: the caller, the role that the service assumes, and the identity used by the execution environment. Use separate IAM roles for these tasks. Give each identity only the permissions it needs.
 

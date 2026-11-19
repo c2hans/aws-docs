@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Resour
 ---
 
 # ResourceV2
-<a name="API_ResourceV2"></a>
 
 Contains information about the AWS resource that is associated with the GuardDuty finding.
 

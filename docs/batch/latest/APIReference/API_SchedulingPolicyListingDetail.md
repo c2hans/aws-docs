@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_Scheduling
 ---
 
 # SchedulingPolicyListingDetail
-<a name="API_SchedulingPolicyListingDetail"></a>
 
 An object that contains the details of a scheduling policy that's returned in a `ListSchedulingPolicy` action.
 

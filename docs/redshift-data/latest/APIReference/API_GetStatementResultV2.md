@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_Ge
 ---
 
 # GetStatementResultV2
-<a name="API_GetStatementResultV2"></a>
 
 Fetches the temporarily cached result of an SQL statement in CSV format. The `ExecuteStatement` or `BatchExecuteStatement` operation that ran the SQL statement must have specified `ResultFormat` as `CSV`. A token is returned to page through the statement results.
 

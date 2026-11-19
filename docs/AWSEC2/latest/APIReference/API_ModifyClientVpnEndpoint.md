@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyCli
 ---
 
 # ModifyClientVpnEndpoint
-<a name="API_ModifyClientVpnEndpoint"></a>
 
 Modifies the specified Client VPN endpoint. Modifying the DNS server resets existing client connections.
 

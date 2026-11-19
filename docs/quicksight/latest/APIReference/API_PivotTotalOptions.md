@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotTotalOptions
-<a name="API_PivotTotalOptions"></a>
 
 The optional configuration of totals cells in a `PivotTableVisual`.
 

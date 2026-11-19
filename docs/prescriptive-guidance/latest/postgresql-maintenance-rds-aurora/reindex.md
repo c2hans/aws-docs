@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # Rebuilding indexes
-<a name="reindex"></a>
 
 The PostgreSQL `REINDEX` command rebuilds an index by using the data that's stored in the index's table and replacing the old copy of the index. We recommend that you use `REINDEX` in the following scenarios:
 + When an index becomes corrupted and no longer contains valid data. This can happen as a result of software or hardware failures.

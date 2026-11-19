@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_UpdateIngestion
 ---
 
 # UpdateIngestionDestination
-<a name="API_UpdateIngestionDestination"></a>
 
 Updates an ingestion destination, which specifies how an application's ingested data is processed by AWS AppFabric and where it's delivered.
 

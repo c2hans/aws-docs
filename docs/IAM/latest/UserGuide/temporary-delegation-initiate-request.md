@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/temporary-delegatio
 ---
 
 # Initiate a temporary delegation request
-<a name="temporary-delegation-initiate-request"></a>
 
 You can initiate a temporary delegation request only from supported Amazon or AWS Partner products. During a workflow that supports temporary delegation, you will be prompted to grant the product provider temporary, limited permissions to configure required AWS resources in your account. This automated approach provides a more streamlined experience by eliminating the need for you to configure these resources manually.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/compare-with-al2023.html
 ---
 
 # Comparing AL2023 and AL2027
-<a name="compare-with-al2023"></a>
 
 **AL2027 Preview**
 AL2027 is currently available for preview. It is intended for evaluation and testing only and is not recommended for production workloads.

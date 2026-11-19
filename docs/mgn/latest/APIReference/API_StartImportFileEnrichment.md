@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartImportF
 ---
 
 # StartImportFileEnrichment
-<a name="API_StartImportFileEnrichment"></a>
 
 Starts an import file enrichment job to process and enrich network migration import files with additional metadata and IP assignment strategies.
 

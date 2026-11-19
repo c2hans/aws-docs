@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # RemoveTags
-<a name="API_RemoveTags"></a>
 
 Removes the specified set of tags from an Amazon OpenSearch Service domain, data source, or application. For more information, see [ Tagging Amazon OpenSearch Service resources](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/managedomains.html#managedomains-awsresorcetagging).
 

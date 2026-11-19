@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/copy-object.ht
 ---
 
 # Copying, moving, and renaming objects
-<a name="copy-object"></a>
 
 The `CopyObject` operation creates a copy of an object that's already stored in Amazon S3.
 

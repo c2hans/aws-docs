@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/create-ref-files.html
 ---
 
 # Referencing genome files from a workflow definition
-<a name="create-ref-files"></a>
 
 An HealthOmics reference store object can be referred to with a URI like the following. Use your own `{{account ID}}`, `{{reference store ID}}`, and `{{reference ID}}` where indicated.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListExecutions
-<a name="API_ListExecutions"></a>
 
 List executions
 

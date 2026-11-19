@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_PolicyG
 ---
 
 # PolicyGrantDetail
-<a name="API_PolicyGrantDetail"></a>
 
 The details of the policy grant.
 

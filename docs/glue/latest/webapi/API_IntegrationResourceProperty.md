@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IntegrationResour
 ---
 
 # IntegrationResourceProperty
-<a name="API_IntegrationResourceProperty"></a>
 
 A structure representing an integration resource property.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ve
 ---
 
 # VerifyTargetDomain
-<a name="API_VerifyTargetDomain"></a>
 
 Initiates verification of a target domain. This checks whether the domain ownership verification token has been properly configured.
 

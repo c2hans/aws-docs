@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Upda
 ---
 
 # UpdateTagCollectionFilter
-<a name="API_UpdateTagCollectionFilter"></a>
 
 A new collection of AWS resources that are defined by an AWS tag or tag *key*/*value* pair.
 

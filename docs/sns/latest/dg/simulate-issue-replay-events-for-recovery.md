@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/simulate-issue-replay-even
 ---
 
 # Step 4: Simulating an issue and replay events for recovery
-<a name="simulate-issue-replay-events-for-recovery"></a>
 
 ## Step 1: Enable the simulated issue and send a second API request
 <a name="enable-simulated-issue-send-second-api-request"></a>

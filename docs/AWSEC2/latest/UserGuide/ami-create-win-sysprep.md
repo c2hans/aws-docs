@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-create-win-s
 ---
 
 # Create an Amazon EC2 AMI using Windows Sysprep
-<a name="ami-create-win-sysprep"></a>
 
 The Microsoft System Preparation (Windows Sysprep) tool creates a generalized version of the operating system, with instance-specific system configuration removed before it captures a new image.
 

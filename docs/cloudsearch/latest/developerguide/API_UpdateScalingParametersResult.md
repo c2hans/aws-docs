@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Up
 ---
 
 # UpdateScalingParametersResult
-<a name="API_UpdateScalingParametersResult"></a>
 
 ## Description
 <a name="API_UpdateScalingParametersResult_Description"></a>

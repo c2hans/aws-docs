@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/cloudwatch-a
 ---
 
 # Monitoring profiling groups with CloudWatch alarms
-<a name="cloudwatch-alarm"></a>
 
  You can create an Amazon CloudWatch alarm for your profiling groups to monitor their recommendations.
 

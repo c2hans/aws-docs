@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate SAP HANA to AWS using SAP HSR with the same hostname
-<a name="migrate-sap-hana-to-aws-using-sap-hsr-with-the-same-hostname"></a>
 
 *Pradeep Puliyampatta, Amazon Web Services*
 

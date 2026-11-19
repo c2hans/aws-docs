@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Step 3. Update the configuration files
-<a name="step-3.-update-the-configuration-files"></a>
 
 Use the following procedure to customize Landing Zone Accelerator on AWS to fit your environment’s needs. These files are stored in either a CodeCommit repository, S3 bucket, or a custom repository using [AWS CodeConnections](https://docs.aws.amazon.com/codeconnections/latest/APIReference/Welcome.html) depending on parameters selected during deployment. If you aren’t sure, check the `Configuration Repository Location` parameter of your `AWSAccelerator-Installer` stack.
 

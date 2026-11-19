@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/userguide/logging-
 ---
 
 # Logging Control Catalog API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 As part of AWS Control Tower Control Catalog is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service.. CloudTrail captures all API calls for Control Catalog as events. The calls captured include calls directly from the AWS Control Tower console such as to enable or disable a control, and code calls to the Control Catalog API operations. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events that pertain to the controls in Control Catalog. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by CloudTrail, you can determine the request that was made to Control Catalog (by means of AWS Control Tower), the IP address from which the request was made, who made the request, when it was made, and additional details.
 

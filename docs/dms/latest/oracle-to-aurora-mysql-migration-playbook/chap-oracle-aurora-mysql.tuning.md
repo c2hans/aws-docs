@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle and MySQL performance tuning
-<a name="chap-oracle-aurora-mysql.tuning"></a>
 
 This section provides pages related to Oracle and MySQL performance tuning topics.
 

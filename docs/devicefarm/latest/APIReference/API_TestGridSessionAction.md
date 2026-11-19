@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_TestG
 ---
 
 # TestGridSessionAction
-<a name="API_TestGridSessionAction"></a>
 
 An action taken by a [TestGridSession](API_TestGridSession.md) browser instance.
 

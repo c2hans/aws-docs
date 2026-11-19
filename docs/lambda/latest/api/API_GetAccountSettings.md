@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_GetAccountSettings
 ---
 
 # GetAccountSettings
-<a name="API_GetAccountSettings"></a>
 
 Retrieves details about your account's [limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html) and usage in an AWS Region.
 

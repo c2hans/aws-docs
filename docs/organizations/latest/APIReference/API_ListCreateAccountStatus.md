@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Li
 ---
 
 # ListCreateAccountStatus
-<a name="API_ListCreateAccountStatus"></a>
 
 Lists the account creation requests that match the specified status that is currently being tracked for the organization.
 

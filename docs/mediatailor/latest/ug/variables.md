@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/variables.html
 ---
 
 # MediaTailor dynamic ad variables for ADS requests
-<a name="variables"></a>
 
 AWS Elemental MediaTailor uses dynamic ad variables to pass information from your viewing session to the ad decision server (ADS). This information helps the ADS select the most relevant ads for your viewers.
 

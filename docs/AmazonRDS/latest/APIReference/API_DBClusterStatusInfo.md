@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBClus
 ---
 
 # DBClusterStatusInfo
-<a name="API_DBClusterStatusInfo"></a>
 
 Reserved for future use.
 

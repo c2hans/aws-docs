@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Modificat
 ---
 
 # ModificationQuoteCurrentConfiguration
-<a name="API_ModificationQuoteCurrentConfiguration"></a>
 
 Describes the configuration that a Capacity Reservation has at the time a modification quote is generated.
 

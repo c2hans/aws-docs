@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/revoking-permss
 ---
 
 # Revoking permission using the Lake Formation console
-<a name="revoking-permssions-console-all"></a>
 
 You can use the console to revoke all types of Lake Formation permissions—Data Catalog permissions, policy tag permissions, data filter permissions, and location permissions.
 

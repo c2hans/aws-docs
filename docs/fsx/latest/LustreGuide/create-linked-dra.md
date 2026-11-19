@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/create-linked-dra
 ---
 
 # Creating a link to an S3 bucket
-<a name="create-linked-dra"></a>
 
 The following procedures walk you through the process of creating a data repository association for an FSx for Lustre file system to an existing S3 bucket, using the AWS Management Console and AWS Command Line Interface (AWS CLI). For information on adding permissions to an S3 bucket in order to link it to your file system, see [Adding permissions to use data repositories in Amazon S3](setting-up.md#fsx-adding-permissions-s3).
 

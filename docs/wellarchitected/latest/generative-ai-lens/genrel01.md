@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Manage throughput quotas
-<a name="genrel01"></a>
 
 | GENREL01: How do you determine throughput quotas (or needs) for foundation models? |
 | --- |

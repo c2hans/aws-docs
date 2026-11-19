@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/co
 ---
 
 # Concepts
-<a name="concepts"></a>
 
 Learn the basic terms and concepts used in AWS Payment Cryptography and how you can use them to help you protect your data.
 

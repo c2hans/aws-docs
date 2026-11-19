@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RejectCap
 ---
 
 # RejectCapacityReservationBillingOwnership
-<a name="API_RejectCapacityReservationBillingOwnership"></a>
 
 Rejects a request to assign billing of the available capacity of a shared Capacity Reservation to your account. For more information, see [ Billing assignment for shared Amazon EC2 Capacity Reservations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/assign-billing.html).
 

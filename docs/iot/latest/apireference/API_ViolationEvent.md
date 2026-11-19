@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ViolationEve
 ---
 
 # ViolationEvent
-<a name="API_ViolationEvent"></a>
 
 Information about a Device Defender security profile behavior violation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # UpdateVoiceProfileDomain
-<a name="API_voice-chime_UpdateVoiceProfileDomain"></a>
 
 Updates the settings for the specified voice profile domain.
 

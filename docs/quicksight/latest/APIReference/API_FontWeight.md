@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_FontW
 ---
 
 # FontWeight
-<a name="API_FontWeight"></a>
 
 The option that determines the text display weight, or boldness.
 

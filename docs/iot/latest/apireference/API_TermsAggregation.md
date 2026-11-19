@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_TermsAggrega
 ---
 
 # TermsAggregation
-<a name="API_TermsAggregation"></a>
 
 Performs an aggregation that will return a list of buckets. The list of buckets is a ranked list of the number of occurrences of an aggregation field value.
 

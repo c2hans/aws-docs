@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CD.5] Ensure on-demand deployment capabilities
-<a name="dl.cd.5-ensure-on-demand-deployment-capabilities"></a>
 
  **Category:** FOUNDATIONAL
 

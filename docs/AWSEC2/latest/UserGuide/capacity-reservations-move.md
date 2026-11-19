@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reserva
 ---
 
 # Move capacity between Capacity Reservations
-<a name="capacity-reservations-move"></a>
 
 You can move capacity from one Capacity Reservation to another to redistribute your reserved compute resources as needed. For example, if you need additional capacity in a reservation with growing usage, and you have capacity available in another reservation, then you can reallocate that capacity between the two reservations.
 

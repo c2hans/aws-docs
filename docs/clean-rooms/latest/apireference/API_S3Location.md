@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_S3Lo
 ---
 
 # S3Location
-<a name="API_S3Location"></a>
 
 The S3 location.
 

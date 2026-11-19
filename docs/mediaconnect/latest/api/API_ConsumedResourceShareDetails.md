@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ConsumedReso
 ---
 
 # ConsumedResourceShareDetails
-<a name="API_ConsumedResourceShareDetails"></a>
 
 The cross-account sharing details for an endpoint that another account shares with this account.
 

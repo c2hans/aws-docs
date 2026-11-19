@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-25-ug/docker-in
 ---
 
 # Getting Started with Amazon Corretto 25 on Docker Images
-<a name="docker-install"></a>
 
  This topic describes how to build and launch a Docker image that uses Amazon Corretto 25. You must have the latest version of Docker installed.
 

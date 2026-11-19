@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/neptune-BG-cons
 ---
 
 # Using an CloudFormation template to run the Neptune Blue/Green solution
-<a name="neptune-BG-console-cfn"></a>
 
 You can use AWS CloudFormation to deploy the Neptune Blue/Green solution. The CloudFormation template creates an Amazon EC2 instance in the same VPC as your blue source Neptune database, installs the solution there, and runs it. You can monitor its progress in CloudWatch logs, as explained in [Monitoring progress](neptune-BG-monitoring.md).
 

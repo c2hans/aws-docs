@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-
 ---
 
 # Setting up your India billing
-<a name="manage-account-payment-aispl"></a>
 
 If you sign up for a new account and choose India for your contact and billing address, your user agreement is with Amazon Web Services India Private Limited (AWS India), a local AWS seller in India. AWS India manages your billing, and your invoice total is listed in rupees instead of dollars.
 

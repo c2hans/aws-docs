@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/appb
 ---
 
 # Working with AWS Application Builder
-<a name="appbuilder-overview-overview"></a>
 
  The following sections describe how to access AWS Application Builder in the AWS Toolkit for Visual Studio Code. With Application Builder, you can build projects visually, iterate on them locally, and deploy them to AWS. For an overview of features and potential use cases for Application Builder and your local AWS Lambda experience, see the AWS Developer YouTube video [\*New\* AWS Lambda Local IDE Experience\!](https://www.youtube.com/watch?v=rhBOuJqzABY).
 

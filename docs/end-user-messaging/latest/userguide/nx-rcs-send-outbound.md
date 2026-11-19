@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Outbound messaging
-<a name="nx-rcs-send-outbound"></a>
 
 You send an RCS message with the `SendTextMessage` operation. Use the AWS End User Messaging console to send a test message from your AWS RCS Agent, or the AWS CLI to send from your application. The examples use a phone pool as the origination identity, which is the recommended approach: when the pool contains both an AWS RCS Agent and SMS phone numbers, the service attempts RCS first and automatically falls back to SMS from the same pool. To send from a specific resource instead, specify an AWS RCS Agent ARN, which delivers over RCS only with no fallback. For details on configuring pools with AWS RCS Agents, see [Resiliency](nx-rcs-scale-fallback.md).
 

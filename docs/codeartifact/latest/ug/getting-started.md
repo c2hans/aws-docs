@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/getting-started.h
 ---
 
 # Getting started with CodeArtifact
-<a name="getting-started"></a>
 
  In this getting started tutorial, you use CodeArtifact to create the following:
 +  A domain called `my-domain`.

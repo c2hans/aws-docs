@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SourceEndpoi
 ---
 
 # SourceEndpointConfiguration
-<a name="API_SourceEndpointConfiguration"></a>
 
 The configuration settings for a source endpoint. This is a union type, so exactly one of its members is set, depending on the type of the source endpoint.
 

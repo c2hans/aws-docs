@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ve
 ---
 
 # VectorIngestionConfiguration
-<a name="API_agent_VectorIngestionConfiguration"></a>
 
 Contains details about how to ingest the documents in a data source.
 

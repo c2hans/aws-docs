@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-co
 ---
 
 # How to complete an address
-<a name="how-to-complete-address"></a>
 
 The Autocomplete API enables you to complete partially typed addresses, providing standardized input for end users and improving efficiency during data entry.
 

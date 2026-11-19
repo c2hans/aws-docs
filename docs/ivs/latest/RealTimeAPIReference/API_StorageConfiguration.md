@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Stor
 ---
 
 # StorageConfiguration
-<a name="API_StorageConfiguration"></a>
 
 A complex type that describes a location where recorded videos will be stored.
 

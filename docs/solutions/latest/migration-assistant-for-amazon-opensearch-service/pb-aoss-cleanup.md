@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 10: Clean up
-<a name="pb-aoss-cleanup"></a>
 
 After the rollback window has passed and the collection is serving production traffic successfully, remove the migration scaffolding.
 

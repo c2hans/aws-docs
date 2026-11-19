@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # How Amazon OpenSearch Memory works
-<a name="memory-how-it-works"></a>
 
 In Amazon OpenSearch Memory, spaces, events, and memories are the core components that you work with. A *space* holds the events that you send and the memories extracted from them. An *event* is content that your agent or application sends to a space, such as a conversation turn, a JSON record, or a document. A *memory* is a fact, summary, or other detail that OpenSearch Memory extracted from events, or that you wrote directly.
 

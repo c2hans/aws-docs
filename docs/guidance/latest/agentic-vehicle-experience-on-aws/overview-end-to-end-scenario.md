@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # An Illustrative End-to-End Scenario
-<a name="overview-end-to-end-scenario"></a>
 
 The following scenario shows how AVX works for a driver in the **Service** stage. It illustrates the full chain of agent tool calls, data sources, and channels that AVX orchestrates in a single voice conversation.
 

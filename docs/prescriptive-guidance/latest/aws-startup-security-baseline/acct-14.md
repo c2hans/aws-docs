@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # ACCT.14 Enable Amazon GuardDuty
-<a name="acct-14"></a>
 
 Enable [Amazon GuardDuty](https://aws.amazon.com/guardduty/) in your AWS account. GuardDuty is a threat detection service that continuously monitors for malicious activity and unauthorized behavior. It analyzes [AWS CloudTrail](https://aws.amazon.com/cloudtrail/) management events, [Amazon Virtual Private Cloud](https://aws.amazon.com/vpc/) (Amazon VPC) flow logs, and DNS query logs to identify threats such as compromised credentials, unauthorized resource access, and cryptocurrency mining. GuardDuty requires no infrastructure to deploy and no detection rules to write or maintain.
 

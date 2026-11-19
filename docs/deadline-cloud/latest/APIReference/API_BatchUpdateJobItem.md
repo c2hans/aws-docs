@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchUpdateJobItem
-<a name="API_BatchUpdateJobItem"></a>
 
 The details of a job to update in a batch update operation.
 

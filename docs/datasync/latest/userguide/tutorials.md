@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/tutorials.html
 ---
 
 # AWS DataSync tutorials
-<a name="tutorials"></a>
 
 These tutorials walk you through some real-world scenarios with AWS DataSync.
 

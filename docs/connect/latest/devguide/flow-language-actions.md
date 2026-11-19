@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/flow-language-ac
 ---
 
 # Actions in the Connect Customer Flow Language
-<a name="flow-language-actions"></a>
 
 An Action is a single step of a flow's run. This topic describes the fields that must be defined.
 

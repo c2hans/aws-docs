@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTTwinMakerServiceRolePolicy
-<a name="AWSIoTTwinMakerServiceRolePolicy"></a>
 
 **Description**: Allows AWS IoT TwinMaker to call other AWS services and to sync their resources on your behalf.
 

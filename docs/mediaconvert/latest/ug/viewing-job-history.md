@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/viewing-job-histo
 ---
 
 # Viewing your job history
-<a name="viewing-job-history"></a>
 
 You can view the recent history of MediaConvert jobs that you created with your AWS account in a given AWS Region. After three months, the service automatically deletes the record of a job.
 

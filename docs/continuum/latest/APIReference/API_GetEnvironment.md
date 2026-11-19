@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_GetEnv
 ---
 
 # GetEnvironment
-<a name="API_GetEnvironment"></a>
 
 Retrieves the current state and configuration of an environment.
 

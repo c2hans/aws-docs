@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Example: Automating SAP serverless refresh
-<a name="serverless-refresh"></a>
 
 Another example of automation for SAP on AWS is *SAP serverless refresh*. Many enterprises require regular refreshes of their SAP systems in order to support testing and production operations. The manual refresh process can be time-consuming, costly, and tedious for SAP administrators. As an alternative to the manual process, you can use an automation that consists of serverless AWS services that collectively perform the system refresh process for you. You can use this capability to refresh an SAP system's test data from another system. This solution currently supports SAP systems using the SAP HANA database management system. The following are the benefits of this automation:
 + Maintains the SAP system configuration

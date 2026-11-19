@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUp
 ---
 
 # BatchUpdateFindingsV2UnprocessedFinding
-<a name="API_BatchUpdateFindingsV2UnprocessedFinding"></a>
 
 The list of findings that were not updated.
 

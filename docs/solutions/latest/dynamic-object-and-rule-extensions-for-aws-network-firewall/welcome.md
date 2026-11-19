@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule
 ---
 
 # Solution to specify elastic and dynamic cloud resources as objects that can be easily referenced within AWS Network Firewall rules
-<a name="welcome"></a>
 
 Publication date: *March 2022 ([last update](revisions.md): June 2023)*
 

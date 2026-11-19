@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cassandra::Table Column
-<a name="aws-properties-cassandra-table-column"></a>
 
 The name and data type of an individual column in a table. In addition to the data type, you can also use the following two keywords:
 + `STATIC` if the table has a clustering column. Static columns store values that are shared by all rows in the same partition.

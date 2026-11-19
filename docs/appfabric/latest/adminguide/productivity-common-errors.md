@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/productivity
 ---
 
 # Common API errors for AppFabric for productivity (preview)
-<a name="productivity-common-errors"></a>
 
 |  |
 | --- |

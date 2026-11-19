@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTDataAccess
-<a name="AWSIoTDataAccess"></a>
 
 **Description**: This policy gives full access to the AWS IoT messaging actions
 

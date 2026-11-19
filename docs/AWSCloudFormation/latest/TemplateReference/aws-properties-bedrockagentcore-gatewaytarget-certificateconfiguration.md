@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::GatewayTarget CertificateConfiguration
-<a name="aws-properties-bedrockagentcore-gatewaytarget-certificateconfiguration"></a>
 
 <a name="aws-properties-bedrockagentcore-gatewaytarget-certificateconfiguration-description"></a>The `CertificateConfiguration` property type specifies Property description not available. for an [AWS::BedrockAgentCore::GatewayTarget](aws-resource-bedrockagentcore-gatewaytarget.md).
 

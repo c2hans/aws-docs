@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/technical-i
 ---
 
 # Using the AWS Marketplace Commerce Analytics Service with the AWS CLI and AWS SDK for Java
-<a name="technical-implementation-guide"></a>
 
 With the AWS Marketplace Commerce Analytics Service, you can programmatically access product and customer data through AWS Marketplace. The AWS Marketplace Commerce Analytics Service is provided through the [AWS SDK](https://aws.amazon.com/tools/). You use the [AWS CLI](https://aws.amazon.com/cli/) and the [AWS SDK for Java](https://aws.amazon.com/sdk-for-java/) to interact with the Commerce Analytics Service. These sections show you how to implement the Commerce Analytics Service by using the AWS CLI and SDK for Java.
 

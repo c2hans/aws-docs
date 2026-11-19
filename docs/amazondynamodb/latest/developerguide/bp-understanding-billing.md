@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-
 ---
 
 # Best practices for understanding your AWS billing and usage reports in DynamoDB
-<a name="bp-understanding-billing"></a>
 
  This document explains the `UsageType` billing codes for charges related to DynamoDB.
 

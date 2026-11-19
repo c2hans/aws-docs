@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # AWS Systems Manager Incident Manager
-<a name="API_Types_AWS_Systems_Manager_Incident_Manager"></a>
 
 The following data types are supported by AWS Systems Manager Incident Manager:
 +  [Action](API_Action.md)

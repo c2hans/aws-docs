@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/recomm
 ---
 
 # Start a system prompt recommendation
-<a name="recommendations-system-prompt"></a>
 
 Start a recommendation to generate an optimized system prompt for your agent. The service analyzes agent traces, identifies failure patterns, and produces a revised system prompt that improves performance on the target evaluator.
 

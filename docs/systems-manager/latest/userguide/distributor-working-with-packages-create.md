@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/distrib
 ---
 
 # Create a package in Distributor
-<a name="distributor-working-with-packages-create"></a>
 
 To create a package, prepare your installable software or assets, one file per operating system platform. At least one file is required to create a package.
 

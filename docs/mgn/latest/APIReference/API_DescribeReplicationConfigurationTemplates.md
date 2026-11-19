@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DescribeRepl
 ---
 
 # DescribeReplicationConfigurationTemplates
-<a name="API_DescribeReplicationConfigurationTemplates"></a>
 
 Lists all ReplicationConfigurationTemplates, filtered by replication configuration template IDs.
 

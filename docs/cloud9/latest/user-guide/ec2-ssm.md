@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/ec2-ssm.html
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # Accessing no-ingress EC2 instances with AWS Systems Manager
-<a name="ec2-ssm"></a>
 
 A "no-ingress EC2 instance" that's created for an EC2 environment enables AWS Cloud9 to connect to its Amazon EC2 instance without the need to open any inbound ports on that instance. You can select the no-ingress option when creating an EC2 environment using the console, the command line interface, or a [CloudFormation stack](#cfn-role-and-permissions). For more information about how to create an environment using the console or command line interface, see [Step 1: Create an environment](tutorials-basic.md#tutorial-create-environment).
 

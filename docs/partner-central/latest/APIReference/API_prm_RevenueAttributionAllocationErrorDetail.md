@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # RevenueAttributionAllocationErrorDetail
-<a name="API_prm_RevenueAttributionAllocationErrorDetail"></a>
 
 Details of a validation error for a single revenue attribution allocation record.
 

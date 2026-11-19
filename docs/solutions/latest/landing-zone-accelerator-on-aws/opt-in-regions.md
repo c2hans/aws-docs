@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Opt-in Regions
-<a name="opt-in-regions"></a>
 
 We built the opt-in Region configuration to help customers use the Landing Zone Accelerator on AWS solution in [opt-in Regions](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html#rande-manage-enable).
 

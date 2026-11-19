@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 ---
 
 # Sharing a registry across accounts with AWS RAM
-<a name="registry-cross-account-sharing"></a>
 
 You can share an AWS Agent Registry registry with other AWS accounts using AWS Resource Access Manager (RAM). With RAM sharing, accounts outside your own can discover, publish to, or administer records in your registry—without owning the registry itself.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Faile
 ---
 
 # FailedReportOutput
-<a name="API_FailedReportOutput"></a>
 
 Details when report generation failed.
 

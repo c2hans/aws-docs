@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_AWSManagedRu
 ---
 
 # AWSManagedRulesACFPRuleSet
-<a name="API_AWSManagedRulesACFPRuleSet"></a>
 
 Details for your use of the account creation fraud prevention managed rule group, `AWSManagedRulesACFPRuleSet`. This configuration is used in `ManagedRuleGroupConfig`.
 

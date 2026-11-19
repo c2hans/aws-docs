@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-testra
 ---
 
 # Connecting to TestRail in AWS Glue Studio
-<a name="connecting-to-data-testrail"></a>
 
 TestRail is a test-case management tool. Because you are a TestRail user, you can connect AWS Glue to your TestRail account. You can then use TestRail as a data source in your AWS Glue ETL jobs to transfer data between TestRail and AWS services or other supported applications.
 

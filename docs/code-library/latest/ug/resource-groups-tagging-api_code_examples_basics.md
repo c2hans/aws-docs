@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/resource-groups-t
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Basic examples for Resource Groups Tagging API using AWS SDKs
-<a name="resource-groups-tagging-api_code_examples_basics"></a>
 
 The following code examples show how to use the basics of AWS Resource Groups Tagging API with AWS SDKs.
 

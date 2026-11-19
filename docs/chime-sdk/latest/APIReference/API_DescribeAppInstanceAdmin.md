@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Descri
 ---
 
 # DescribeAppInstanceAdmin
-<a name="API_DescribeAppInstanceAdmin"></a>
 
 Returns the full details of an `AppInstanceAdmin`.
 

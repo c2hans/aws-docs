@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeletionTask
 ---
 
 # DeletionTaskFailureReasonType
-<a name="API_DeletionTaskFailureReasonType"></a>
 
 The reason that the service-linked role deletion failed.
 

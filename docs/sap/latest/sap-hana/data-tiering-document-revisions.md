@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/data-tiering-documen
 ---
 
 # Document Revisions
-<a name="data-tiering-document-revisions"></a>
 
 | Date | Change |
 | --- | --- |

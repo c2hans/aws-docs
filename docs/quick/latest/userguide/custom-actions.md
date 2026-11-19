@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/custom-actions.ht
 ---
 
 # Creating and editing custom actions in AWS Quick Sight
-<a name="custom-actions"></a>
 
 You create one action for each task that you want to be able to add to a visual. The actions you create become part of the functionality of each visual or insight.
 

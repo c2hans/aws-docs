@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/join-svm-to-ad.htm
 ---
 
 # Joining SVMs to Active Directory using the AWS Management Console, AWS CLI and API
-<a name="join-svm-to-ad"></a>
 
 Use the following procedure to join an existing SVM to an Active Directory. In this procedure, the SVM is *not* already joined to an Active Directory.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-transf
 ---
 
 # S3 Transfer Manager
-<a name="s3-transfer-manager"></a>
 
 The S3 Transfer Manager provides an interface for uploading and downloading files to and from Amazon S3. You can use it for single file operations or directory operations.
 

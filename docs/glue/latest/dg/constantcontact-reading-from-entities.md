@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/constantcontact-reading-f
 ---
 
 # Reading from Constant Contact entities
-<a name="constantcontact-reading-from-entities"></a>
 
 **Prerequisites**
 

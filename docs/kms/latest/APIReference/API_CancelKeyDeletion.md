@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_CancelKeyDel
 ---
 
 # CancelKeyDeletion
-<a name="API_CancelKeyDeletion"></a>
 
 Cancels the deletion of a KMS key. When this operation succeeds, the key state of the KMS key is `Disabled`. To enable the KMS key, use [EnableKey](API_EnableKey.md).
 

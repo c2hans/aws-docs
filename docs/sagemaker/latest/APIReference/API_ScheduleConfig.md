@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Schedu
 ---
 
 # ScheduleConfig
-<a name="API_ScheduleConfig"></a>
 
 Configuration details about the monitoring schedule.
 

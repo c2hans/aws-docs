@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # SDK manual
-<a name="sdk-manual"></a>
 
  Clickstream Analytics on AWS provides purpose-built software development kits (SDKs), which can make it easier for you to report events to the data pipeline created in the guidance. Currently, the guidance supports the following platforms:
 +  [Android](android-sdk.md)

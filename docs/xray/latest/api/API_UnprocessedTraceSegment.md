@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_UnprocessedTraceSegm
 ---
 
 # UnprocessedTraceSegment
-<a name="API_UnprocessedTraceSegment"></a>
 
 Information about a segment that failed processing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeScheduledActions
-<a name="API_DescribeScheduledActions"></a>
 
 Gets information about the scheduled actions that haven't run or that have not reached their end time.
 

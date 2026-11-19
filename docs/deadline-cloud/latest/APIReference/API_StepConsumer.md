@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # StepConsumer
-<a name="API_StepConsumer"></a>
 
 The details of a step consumer.
 

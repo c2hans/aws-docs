@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNREL01-BP02 Maintain effective life cycle management for on-premises network equipment
-<a name="hnrel01-bp02"></a>
 
  Implement a structured life cycle management process for all on-premises networking equipment, including routers, switches, and cabling. Track equipment age, support contracts, firmware, and plan for timely refreshes and replacement to avoid end-of-life risks.
 

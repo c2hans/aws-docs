@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # CreateAssociationBatchRequestEntry
-<a name="API_CreateAssociationBatchRequestEntry"></a>
 
 Describes the association of a AWS Systems Manager document (SSM document) and a managed node.
 

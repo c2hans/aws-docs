@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Using functions with AWS Elemental MediaLive
-<a name="functions-medialive"></a>
 
 When AWS Elemental MediaLive is the source of your media, you set up the function on the Elemental Inference side and give MediaLive only the ARN of the feed. MediaLive has no function settings: its **AWS Elemental Inference** section covers event clipping, smart crop, smart subtitles, and contextual metadata, and MediaLive neither creates nor reads function outputs.
 

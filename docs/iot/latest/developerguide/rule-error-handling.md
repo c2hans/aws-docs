@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/rule-error-han
 ---
 
 # Error handling (error action)
-<a name="rule-error-handling"></a>
 
 When AWS IoT receives a message from a device, the rules engine checks to see if the message matches a rule. If so, the rule's query statement is evaluated and the rule's actions are activated, passing the query statement's result.
 

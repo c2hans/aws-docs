@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/e
 ---
 
 # Edit in the Cloud on AWS
-<a name="edit-in-cloud-on-aws"></a>
 
 Publication date: **June 12, 2022 ([Diagram history](#diagram-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_SeedUrlCo
 ---
 
 # SeedUrlConfiguration
-<a name="API_SeedUrlConfiguration"></a>
 
 Provides the configuration information for the seed or starting point URLs to crawl.
 

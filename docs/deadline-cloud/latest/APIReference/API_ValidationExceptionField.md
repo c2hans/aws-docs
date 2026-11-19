@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_V
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 The details of a validation exception.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/vq-framerate-co
 ---
 
 # Frame rate conversion
-<a name="vq-framerate-conversion"></a>
 
 ## Description
 <a name="description-vq-framerate"></a>

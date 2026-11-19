@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_UpdateNetw
 ---
 
 # UpdateNetworkConnector
-<a name="API_UpdateNetworkConnector"></a>
 
 Updates the VPC configuration or operator role of an existing network connector. You can modify the subnet IDs, security group IDs, network protocol, or operator role. The connector must be in `ACTIVE` state to accept updates.
 

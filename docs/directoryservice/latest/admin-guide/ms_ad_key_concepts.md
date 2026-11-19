@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # AWS Managed Microsoft AD key concepts
-<a name="ms_ad_key_concepts"></a>
 
 You will get more out of AWS Managed Microsoft AD if you become familiar with the following key concepts.
 

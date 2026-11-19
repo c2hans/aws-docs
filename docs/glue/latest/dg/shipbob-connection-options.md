@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/shipbob-connection-option
 ---
 
 # ShipBob connection options
-<a name="shipbob-connection-options"></a>
 
 The following are connection options for ShipBob:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the ShipBob object to read.

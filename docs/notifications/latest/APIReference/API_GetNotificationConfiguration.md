@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ge
 ---
 
 # GetNotificationConfiguration
-<a name="API_GetNotificationConfiguration"></a>
 
 Returns a specified `NotificationConfiguration`.
 

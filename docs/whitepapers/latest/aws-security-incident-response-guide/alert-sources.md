@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Alert sources
-<a name="alert-sources"></a>
 
  You should consider using the following sources to define alerts:
 + ** Findings** – AWS services such as [Amazon GuardDuty](https://aws.amazon.com/guardduty/), [AWS Security Hub CSPM](https://aws.amazon.com/security-hub/), [Amazon Macie](https://aws.amazon.com/macie/), [Amazon Inspector](https://aws.amazon.com/inspector/), [AWS Config](https://aws.amazon.com/config/), [IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html), and [Network Access Analyzer](https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/what-is-vaa.html) generate findings that can be used to craft alerts.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Reg
 ---
 
 # RegisterImageOptions
-<a name="API_RegisterImageOptions"></a>
 
 Controls Secure Boot and UEFI data settings for the resulting image during ISO imports. For more information, see [UEFI Secure Boot for Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/uefi-secure-boot.html) in the * *Amazon EC2 User Guide* *.
 

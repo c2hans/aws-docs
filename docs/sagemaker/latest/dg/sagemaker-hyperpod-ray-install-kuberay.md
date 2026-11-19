@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Installing KubeRay on HyperPod Amazon EKS
-<a name="sagemaker-hyperpod-ray-install-kuberay"></a>
 
 The KubeRay operator manages the lifecycle of `RayCluster`, `RayJob`, `RayCronJob`, and `RayService` resources. It is required for every Ray capability on HyperPod. HyperPod uses the open source operator without any changes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.RDS.
 ---
 
 # Using Elastic Beanstalk with Amazon RDS
-<a name="AWSHowTo.RDS"></a>
 
 This section explains how you can use Elastic Beanstalk with Amazon Relational Database Service (Amazon RDS) to set up, operate, and scale a relational database. We explain some concepts about configuration and provide recommendations. Then we'll walk you through the process to create and connect to an Amazon RDS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ge
 ---
 
 # GetStreamSession
-<a name="API_GetStreamSession"></a>
 
 Gets metadata on a specified stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Guidelines and steps
-<a name="guidelines-steps"></a>
 
 The three primary phases during OI are discovery, design, and implementation. This section covers the inputs required from other workstreams and the outputs expected from each phase.
 

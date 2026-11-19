@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Update
 ---
 
 # UpdateOrganizationConfiguration
-<a name="API_UpdateOrganizationConfiguration"></a>
 
 Updates the configuration for the Organizations integration in the current Region. Can only be called by the Detective administrator account for the organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_BootstrapAct
 ---
 
 # BootstrapActionDetail
-<a name="API_BootstrapActionDetail"></a>
 
 Reports the configuration of a bootstrap action in a cluster (job flow).
 

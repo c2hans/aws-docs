@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # DeletePricingPlan
-<a name="API_DeletePricingPlan"></a>
 
 Deletes a pricing plan. The pricing plan must not be associated with any billing groups to delete successfully.
 

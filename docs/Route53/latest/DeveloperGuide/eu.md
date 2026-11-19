@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/eu.html
 ---
 
 # .eu (European Union)
-<a name="eu"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

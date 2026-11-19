@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/datastores-hive-default
 ---
 
 # Omit the catalog name in external Hive metastore queries
-<a name="datastores-hive-default-catalog"></a>
 
 When you run DML and DDL queries on external Hive metastores, you can simplify your query syntax by omitting the catalog name if that name is selected in the query editor. Certain restrictions apply to this functionality.
 

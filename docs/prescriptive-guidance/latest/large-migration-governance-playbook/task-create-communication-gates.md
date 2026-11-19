@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Task: Defining communication gates and schedules
-<a name="task-create-communication-gates"></a>
 
 In stage 2 of a large migration project, the portfolio workstream is actively planning waves, and the migration workstream is migrating those waves. The project governance workstream oversees these activities and helps guide the waves through communication gates. A *communication gate* is a touchpoint when you formally communicate ongoing wave activities and status to the stakeholders. At each gate, a designated gate owner notifies the specified audience about the wave status and reminds application owners about upcoming activities or meetings. Gates typically correspond with migration milestones, and defining communication gates maximizes transparency for all project stakeholders. You move waves through the gates individually, or you can group waves together.
 

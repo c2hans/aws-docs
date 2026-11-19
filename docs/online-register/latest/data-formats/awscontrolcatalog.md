@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 ---
 
 # Data retrieval APIs for AWS Control Catalog
-<a name="awscontrolcatalog"></a>
 
 AWS Control Catalog provides the following APIs for data retrieval.
 

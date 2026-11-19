@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DlpSe
 ---
 
 # DlpSettingSummary
-<a name="API_DlpSettingSummary"></a>
 
 A summary of a DLP setting returned by list operations.
 

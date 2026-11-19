@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/view-api.html
 ---
 
 # View actions
-<a name="view-api"></a>
 
 The following API actions are available for views:
 + [CreateView](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateView.html)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_KbInfere
 ---
 
 # KbInferenceConfig
-<a name="API_KbInferenceConfig"></a>
 
 Contains configuration details of the inference for knowledge base retrieval and response generation.
 

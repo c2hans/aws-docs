@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # DeleteTelemetryPipeline
-<a name="API_DeleteTelemetryPipeline"></a>
 
 Deletes a telemetry pipeline and its associated resources. This operation stops data processing and removes the pipeline configuration.
 

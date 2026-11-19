@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayConnectOptions
-<a name="API_TransitGatewayConnectOptions"></a>
 
 Describes the Connect attachment options.
 

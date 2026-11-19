@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_CustomS
 ---
 
 # CustomStepDetails
-<a name="API_CustomStepDetails"></a>
 
 Each step type has its own `StepDetails` structure.
 

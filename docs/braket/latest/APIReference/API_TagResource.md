@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_TagResour
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Add a tag to the specified resource.
 

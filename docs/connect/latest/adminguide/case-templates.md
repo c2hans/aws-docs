@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/case-templates
 ---
 
 # Create case templates to document customer issues in Connect Customer Cases
-<a name="case-templates"></a>
 
 *Case templates* are forms that ensure agents collect and reference the right information for different types of customer issues. For example, you can create a case template for vehicle damage issues, and require agents complete certain fields when they talk to a customer filing an insurance claim.
 

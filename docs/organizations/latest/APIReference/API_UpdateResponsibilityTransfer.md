@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Up
 ---
 
 # UpdateResponsibilityTransfer
-<a name="API_UpdateResponsibilityTransfer"></a>
 
 Updates a transfer. A *transfer* is the arrangement between two management accounts where one account designates the other with specified responsibilities for their organization.
 

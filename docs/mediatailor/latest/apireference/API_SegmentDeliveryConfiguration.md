@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Segm
 ---
 
 # SegmentDeliveryConfiguration
-<a name="API_SegmentDeliveryConfiguration"></a>
 
 The segment delivery configuration settings.
 

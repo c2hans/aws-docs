@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-k
 ---
 
 # Generate a symmetric AES key with CloudHSM CLI
-<a name="cloudhsm_cli-key-generate-symmetric-aes"></a>
 
 Use the **key generate-symmetric aes** command in CloudHSM CLI to generate a symmetric AES key in your AWS CloudHSM cluster.
 

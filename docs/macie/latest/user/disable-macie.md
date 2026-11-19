@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/disable-macie.html
 ---
 
 # Disabling Macie for your AWS account
-<a name="disable-macie"></a>
 
 If you want to stop using Amazon Macie in a particular AWS Region, you can disable it for your AWS account in the Region.
 

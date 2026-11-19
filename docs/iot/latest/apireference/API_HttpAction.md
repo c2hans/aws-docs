@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_HttpAction.h
 ---
 
 # HttpAction
-<a name="API_HttpAction"></a>
 
 Send data to an HTTPS endpoint.
 

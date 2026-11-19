@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Sustainability pillar
-<a name="sustainability-pillar"></a>
 
  The sustainability pillar provides guidance on how to understand the environmental impact of cloud workloads, how to quantify impacts through the workload lifecycle, and how to apply design principles that help minimize these impacts.
 

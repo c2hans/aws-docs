@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # AI observability
-<a name="observability-ai"></a>
 
 AI observability in OpenSearch provides end-to-end tooling for monitoring, debugging, and optimizing AI agent and large language model (LLM) workflows. Built on GenAI semantic conventions and natively integrated with OpenTelemetry (OTel), it gives you full visibility into how your AI applications behave in production.
 

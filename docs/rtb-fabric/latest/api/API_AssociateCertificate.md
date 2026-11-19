@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_AssociateCerti
 ---
 
 # AssociateCertificate
-<a name="API_AssociateCertificate"></a>
 
 Associates an ACM certificate with a responder gateway.
 

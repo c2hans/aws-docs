@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Lambd
 ---
 
 # LambdaTarget
-<a name="API_LambdaTarget"></a>
 
  Information about the target AWS Lambda function during an AWS Lambda deployment.
 

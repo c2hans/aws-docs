@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ConnectionTypeDetail
-<a name="API_account_ConnectionTypeDetail"></a>
 
 Detailed information about a specific connection type within a connection.
 

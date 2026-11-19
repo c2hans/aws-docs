@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCodeStarNotificationsServiceRolePolicy
-<a name="AWSCodeStarNotificationsServiceRolePolicy"></a>
 
 **Description**: Allows AWS CodeStar Notifications to access Amazon CloudWatch Events on your behalf
 

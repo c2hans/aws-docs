@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/create-clo
 ---
 
 # Create an EventBridge rule for an Amazon S3 source (CLI)
-<a name="create-cloudtrail-S3-source-cli"></a><a name="proc-cli-event-s3-createtrail"></a>
+<a name="proc-cli-event-s3-createtrail"></a>
 
 **To create an AWS CloudTrail trail and enable logging**
 

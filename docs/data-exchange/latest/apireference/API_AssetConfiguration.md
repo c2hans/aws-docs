@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_As
 ---
 
 # AssetConfiguration
-<a name="API_AssetConfiguration"></a>
 
 The configuration for the asset, which can include tags.
 

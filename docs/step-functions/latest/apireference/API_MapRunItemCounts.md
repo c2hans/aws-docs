@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_M
 ---
 
 # MapRunItemCounts
-<a name="API_MapRunItemCounts"></a>
 
 Contains details about items that were processed in all of the child workflow executions that were started by a Map Run.
 

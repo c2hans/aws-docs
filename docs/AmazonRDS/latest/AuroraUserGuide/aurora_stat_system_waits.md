@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora_
 ---
 
 # aurora\_stat\_system\_waits
-<a name="aurora_stat_system_waits"></a>
 
 Reports wait event information for the Aurora PostgreSQL DB instance.
 

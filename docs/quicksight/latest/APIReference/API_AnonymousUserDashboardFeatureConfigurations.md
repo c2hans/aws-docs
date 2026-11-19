@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Anony
 ---
 
 # AnonymousUserDashboardFeatureConfigurations
-<a name="API_AnonymousUserDashboardFeatureConfigurations"></a>
 
 The feature configuration for an embedded dashboard.
 

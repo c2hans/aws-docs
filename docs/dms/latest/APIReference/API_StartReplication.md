@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StartReplica
 ---
 
 # StartReplication
-<a name="API_StartReplication"></a>
 
 For a given AWS DMS Serverless replication configuration, AWS DMS connects to the source endpoint and collects the metadata to analyze the replication workload. Using this metadata, AWS DMS then computes and provisions the required capacity and starts replicating to the target endpoint using the server resources that AWS DMS has provisioned for the AWS DMS Serverless replication.
 

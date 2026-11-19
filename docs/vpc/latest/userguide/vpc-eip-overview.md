@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/vpc-eip-overview.ht
 ---
 
 # Elastic IP address concepts and rules
-<a name="vpc-eip-overview"></a>
 
 To use an Elastic IP address, you first allocate it for use in your account. Then, you can associate it with an instance or network interface in your VPC. Your Elastic IP address remains allocated to your AWS account until you explicitly release it.
 

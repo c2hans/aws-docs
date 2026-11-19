@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/event-destinations-manage.
 ---
 
 # Creating Amazon SES event destinations
-<a name="event-destinations-manage"></a>
 
 Event destinations allow you to publish the following outgoing email tracking actions to other AWS services for monitoring:
 + Sends

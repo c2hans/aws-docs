@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateModelCard
-<a name="API_UpdateModelCard"></a>
 
 Update an Amazon SageMaker Model Card.
 

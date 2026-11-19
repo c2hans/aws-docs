@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetCalcul
 ---
 
 # GetCalculationExecutionStatus
-<a name="API_GetCalculationExecutionStatus"></a>
 
 Gets the status of a current calculation.
 

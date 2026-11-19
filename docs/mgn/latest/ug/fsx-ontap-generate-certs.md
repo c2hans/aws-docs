@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/fsx-ontap-generate-certs.h
 ---
 
 # Generating a self-signed certificate for FSx for ONTAP
-<a name="fsx-ontap-generate-certs"></a>
 
 To generate a self-signed CA and client certificate, save the following script as `generate-fsx-mgn-certs.sh` and run it:
 

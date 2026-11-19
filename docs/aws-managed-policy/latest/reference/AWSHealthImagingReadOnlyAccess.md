@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSH
 ---
 
 # AWSHealthImagingReadOnlyAccess
-<a name="AWSHealthImagingReadOnlyAccess"></a>
 
 **Description**: Provides read only access to AWS Health Imaging service.
 

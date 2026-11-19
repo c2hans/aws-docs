@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/publishing-dat
 ---
 
 # Data inventory and publishing in Amazon DataZone
-<a name="publishing-data"></a>
 
 This section describes the tasks and procedures that you want to perform in order to create an inventory of your data in Amazon DataZone and to publish your data in Amazon DataZone.
 

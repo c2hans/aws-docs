@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeAlgori
 ---
 
 # DescribeAlgorithm
-<a name="API_DescribeAlgorithm"></a>
 
 Describes the given algorithm.
 

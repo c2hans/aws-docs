@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeJobSchemaVersion
-<a name="API_DescribeJobSchemaVersion"></a>
 
 Returns the JSON schema for a specified job category and schema version. Use this schema to validate your `JobConfigDocument` before calling `CreateJob`. If you don't specify a schema version, the latest version is returned. The schema defines required fields, allowed values, and constraints for the job configuration.
 

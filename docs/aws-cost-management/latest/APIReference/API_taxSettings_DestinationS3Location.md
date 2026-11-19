@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DestinationS3Location
-<a name="API_taxSettings_DestinationS3Location"></a>
 
 The location of the Amazon S3 bucket that you specify to download your tax documents to.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-cdb-co
 ---
 
 # Modifying an RDS for Oracle tenant database
-<a name="oracle-cdb-configuring.modifying.pdb"></a>
 
 You can modify only the PDB name and the master user password of a tenant database in your CDB. Note the following requirements and limitations:
 + To modify the settings of a tenant database in your DB instance, the tenant database must exist.

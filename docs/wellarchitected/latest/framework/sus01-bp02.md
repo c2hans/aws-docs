@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus01-b
 ---
 
 # SUS01-BP02 Create dashboards to combine resource usage efficiency and environmental impact data
-<a name="sus01-bp02"></a>
 
  The carbon emissions associated with your AWS usage are [influenced by several factors](https://sustainability.aboutamazon.com/aws-customer-carbon-footprint-methodology.pdf), including the resources you have provisioned to support your workload. Efficient use of resources reduces the environmental impact of your workload and is directly correlated with the emissions associated with the workload. Create dashboards that visualize your resource usage efficiency (RUE) alongside data from the [AWS Sustainability service](https://docs.aws.amazon.com/sustainability/latest/userguide/what-is-sustainability.html) to provide a holistic view of your cloud workload's environmental impact. Dashboards should showcase RUE and workload environmental impact.
 

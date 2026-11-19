@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/userguide/delete-team.html
 ---
 
 # Delete an approval team
-<a name="delete-team"></a>
 
 When you sign in to your organization's management account, you can request to delete your approval teams by navigating to the Multi-party approval console. This creates an approval session for the request if the team is active.
 

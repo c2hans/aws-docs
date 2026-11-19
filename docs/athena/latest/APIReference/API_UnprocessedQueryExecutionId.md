@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Unprocess
 ---
 
 # UnprocessedQueryExecutionId
-<a name="API_UnprocessedQueryExecutionId"></a>
 
 Describes a query execution that failed to process.
 

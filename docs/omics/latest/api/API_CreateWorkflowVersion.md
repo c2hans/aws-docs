@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_CreateWorkflowVersi
 ---
 
 # CreateWorkflowVersion
-<a name="API_CreateWorkflowVersion"></a>
 
 Creates a new workflow version for the workflow that you specify with the `workflowId` parameter.
 

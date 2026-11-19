@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Crea
 ---
 
 # CreateProjectVersion
-<a name="API_CreateProjectVersion"></a>
 
 Creates a new version of Amazon Rekognition project (like a Custom Labels model or a custom adapter) and begins training. Models and adapters are managed as part of a Rekognition project. The response from `CreateProjectVersion` is an Amazon Resource Name (ARN) for the project version.
 

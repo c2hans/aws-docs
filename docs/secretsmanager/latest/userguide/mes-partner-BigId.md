@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Big ID Refresh Token
-<a name="mes-partner-BigId"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c15b3"></a>

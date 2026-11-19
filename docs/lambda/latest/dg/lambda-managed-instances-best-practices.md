@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 ---
 
 # Best practices for Lambda Managed Instances
-<a name="lambda-managed-instances-best-practices"></a>
 
 ## Capacity provider configuration
 <a name="lambda-managed-instances-bp-capacity-provider"></a>

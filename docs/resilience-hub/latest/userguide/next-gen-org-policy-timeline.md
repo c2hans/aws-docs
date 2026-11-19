@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Tracking changes to a shared policy
-<a name="next-gen-org-policy-timeline"></a>
 
 A shared policy keeps a timeline of the events that affected it. The account that owns the policy can see how member accounts used it and what changed. Use the `ListPolicyEvents` API operation to retrieve the timeline:
 

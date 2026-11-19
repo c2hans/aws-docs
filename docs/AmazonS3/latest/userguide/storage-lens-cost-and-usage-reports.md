@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-lens-c
 ---
 
 # Estimating Amazon S3 costs by prefix with S3 Storage Lens and AWS Cost and Usage Reports
-<a name="storage-lens-cost-and-usage-reports"></a>
 
 You can use Amazon S3 Storage Lens to publish prefix-level metrics to AWS Billing and Cost Management, and use *split cost allocation data for Amazon S3* to view prefix-level storage and (Tier 1/2) request costs in the AWS Cost and Usage Report (CUR). With this data, you can attribute estimated Amazon S3 spending to the teams, applications, or tenants that share a general purpose bucket under different prefixes. In the Amazon S3 API, you configure this feature with the `CostAndUsageReportsPublish` member of a S3 Storage Lens configuration. For more information about AWS Cost and Usage Reports, see [What are AWS Cost and Usage Reports?](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html) in the *AWS Data Exports User Guide*.
 
@@ -16,7 +15,7 @@ To allocate your Amazon S3 costs by prefix, you complete two steps:
 
 1. **In AWS Billing and Cost Management** – Enable split cost allocation data for Amazon S3. You can enable split cost allocation data only from the management account of your organization or from a standalone account. For more information, see [Split cost allocation data](https://docs.aws.amazon.com/cur/latest/userguide/split-cost-allocation-data.html) in the *AWS Data Exports User Guide*.
 
-S3 Storage Lens doesn't calculate costs. It publishes prefix-level storage and (Tier 1/ Tier 2) request metrics for your general purpose buckets to AWS Billing and Cost Management. If you enable split cost allocation data for Amazon S3 in a Cost and Usage Report, AWS Billing and Cost Management uses this data to calculate and report the estimated costs of your prefixes.
+S3 Storage Lens doesn't calculate costs. It publishes prefix-level storage and (Tier 1/Tier 2) request metrics for your general purpose buckets to AWS Billing and Cost Management. If you enable split cost allocation data for Amazon S3 in a Cost and Usage Report, AWS Billing and Cost Management uses this data to calculate and report the estimated costs of your prefixes.
 
 To view and query your prefix costs, use your Cost and Usage Report. For more information, see [Split cost allocation data](https://docs.aws.amazon.com/cur/latest/userguide/split-cost-allocation-data.html) in the *AWS Data Exports User Guide*.
 
@@ -64,7 +63,7 @@ Request costs for [cross-Region replication](replication.md#crr-scenario)
 All unattributed Amazon S3 costs and root-level object costs are captured at bucket level in unattributed cost category. Root-level objects are objects that don't belong to any prefix.
 
 **Note**
-For buckets that have [Requester Pays](RequesterPaysBuckets.md) enabled, prefix-level request cost estimates are less accurate when a large share of requests comes from AWS accounts other than the bucket owner.
+For buckets that have [Requester Pays](RequesterPaysBuckets.md) enabled, prefix-level request cost estimates include requests from all AWS accounts. This includes requests that are billed to the requester rather than the bucket owner.
 
 ## Limits
 <a name="storage-lens-cur-data-availability"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/actions-data-tabl
 ---
 
 # Data tables
-<a name="actions-data-tables"></a>
 
 Data table actions enable you to work with structured data in table format. These actions allow you to create, transform, and output tabular data in your automations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetDomains
-<a name="API_GetDomains"></a>
 
 Returns a list of all domains in the user's account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # UpdateChannelFlow
-<a name="API_messaging-chime_UpdateChannelFlow"></a>
 
 Updates channel flow attributes. This is a developer API.
 

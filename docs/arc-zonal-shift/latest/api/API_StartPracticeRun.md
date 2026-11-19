@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_StartPrac
 ---
 
 # StartPracticeRun
-<a name="API_StartPracticeRun"></a>
 
 Start an on-demand practice run zonal shift in Amazon Application Recovery Controller. With zonal autoshift enabled, you can start an on-demand practice run to verify preparedness at any time. AWS also runs automated practice runs about weekly when you have enabled zonal autoshift.
 

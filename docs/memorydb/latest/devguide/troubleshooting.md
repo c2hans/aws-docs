@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/troubleshooting
 ---
 
 # Troubleshooting applications
-<a name="troubleshooting"></a>
 
 MemoryDB provides specific and descriptive errors to help you troubleshoot problems while interacting with the MemoryDB API.
 

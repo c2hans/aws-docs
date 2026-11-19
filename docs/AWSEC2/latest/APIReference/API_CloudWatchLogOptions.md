@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CloudWatc
 ---
 
 # CloudWatchLogOptions
-<a name="API_CloudWatchLogOptions"></a>
 
 Options for sending VPN tunnel logs to CloudWatch.
 

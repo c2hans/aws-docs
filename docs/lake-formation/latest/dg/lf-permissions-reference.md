@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/lf-permissions-
 ---
 
 # Lake Formation permissions reference
-<a name="lf-permissions-reference"></a>
 
 To perform AWS Lake Formation operations, principals need both Lake Formation permissions and AWS Identity and Access Management (IAM) permissions. You typically grant IAM permissions using *coarse-grained* access control policies, as described in [Overview of Lake Formation permissions](lf-permissions-overview.md). You can grant Lake Formation permissions by using the console, the API, or the AWS Command Line Interface (AWS CLI).
 

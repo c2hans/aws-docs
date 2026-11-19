@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Mo
 ---
 
 # ModelTrainingDataChannel
-<a name="API_ModelTrainingDataChannel"></a>
 
 Information about the model training data channel. A training data channel is a named data source that the training algorithms can consume.
 

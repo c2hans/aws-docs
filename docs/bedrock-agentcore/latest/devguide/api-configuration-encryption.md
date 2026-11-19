@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/api-co
 ---
 
 # Configure with API operations or an AWS SDK
-<a name="api-configuration-encryption"></a>
 
 Set your key configuration in a `SetTokenVaultCMK` API request. The following partial example request body sets the token vault to use the provided customer managed key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Cloud
 ---
 
 # CloudFrontOriginAccessIdentityList
-<a name="API_CloudFrontOriginAccessIdentityList"></a>
 
 Lists the origin access identities for CloudFront.Send a `GET` request to the `/CloudFront API version/origin-access-identity/cloudfront` resource. The response includes a `CloudFrontOriginAccessIdentityList` element with zero or more `CloudFrontOriginAccessIdentitySummary` child elements. By default, your entire list of origin access identities is returned in one single page. If the list is long, you can paginate it using the `MaxItems` and `Marker` parameters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/datase
 ---
 
 # Dataset evaluation
-<a name="dataset-evaluations"></a>
 
 **Note**
 Dataset evaluation is in public preview. Features and APIs may change before general availability.

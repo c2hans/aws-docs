@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/create-sip-app.html
 ---
 
 # Creating a SIP media application
-<a name="create-sip-app"></a>
 
 You create a SIP media application when you need to enable calling to and from a Request URI hostname, Amazon Chime SDK Voice Connector group, or a private phone number.
 

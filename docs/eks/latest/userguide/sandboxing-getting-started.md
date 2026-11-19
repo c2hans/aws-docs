@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/sandboxing-getting-
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Get started with sandboxes
-<a name="sandboxing-getting-started"></a>
 
 Get started by running your first isolated pod, then move to confidential pods when you need to protect workload data from the node. Use resource isolation to cap the host resources a single sandbox consumes.
 

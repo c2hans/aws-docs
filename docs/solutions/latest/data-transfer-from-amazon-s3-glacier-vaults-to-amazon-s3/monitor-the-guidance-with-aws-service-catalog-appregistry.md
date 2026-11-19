@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # Monitor the Guidance with Service Catalog AppRegistry
-<a name="monitor-the-guidance-with-aws-service-catalog-appregistry"></a>
 
  This Guidance includes a Service Catalog AppRegistry resource to register the CloudFormation template and underlying resources as an application in both [Service Catalog AppRegistry](https://docs.aws.amazon.com/servicecatalog/latest/arguide/intro-app-registry.html) and [AWS Systems Manager Application Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/application-manager.html).
 

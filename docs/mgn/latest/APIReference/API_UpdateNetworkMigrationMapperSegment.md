@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateNetwor
 ---
 
 # UpdateNetworkMigrationMapperSegment
-<a name="API_UpdateNetworkMigrationMapperSegment"></a>
 
 Updates a mapper segment's configuration, such as changing its scope tags.
 

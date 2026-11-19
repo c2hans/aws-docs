@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel11-b
 ---
 
 # REL11-BP07 Architect your product to meet availability targets and uptime service level agreements (SLAs)
-<a name="rel11-bp07"></a>
 
  If you publish or privately commit to an availability target or uptime SLA, build your architecture and operations to support it from the start. Define the target during design, and let it drive the technology choices and trade-offs.
 

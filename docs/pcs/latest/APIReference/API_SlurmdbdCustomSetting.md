@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_SlurmdbdCust
 ---
 
 # SlurmdbdCustomSetting
-<a name="API_SlurmdbdCustomSetting"></a>
 
 Additional settings that directly map to SlurmDBD settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/mw-cli-
 ---
 
 # Parameter options for the register-task-with-maintenance-windows command
-<a name="mw-cli-task-options"></a>
 
 The **register-task-with-maintenance-window** command provides several options for configuring a task according to your needs. Some are required, some are optional, and some apply to only a single maintenance window task type.
 

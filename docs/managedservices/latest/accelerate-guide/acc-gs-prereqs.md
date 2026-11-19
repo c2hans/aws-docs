@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Accelerate onboarding prerequisites
-<a name="acc-gs-prereqs"></a>
 
 Before you start the onboarding process, it is important to understand the technical dependencies that Accelerate components rely on.
 

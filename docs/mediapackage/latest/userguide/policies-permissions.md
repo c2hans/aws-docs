@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/policies-p
 ---
 
 # Policies and Permissions in MediaPackage
-<a name="policies-permissions"></a>
 
 This page provides an overview of resource policies in MediaPackage and describes the basic elements of a policy. Each listed element links to more details about that element and examples of how to use it.
 

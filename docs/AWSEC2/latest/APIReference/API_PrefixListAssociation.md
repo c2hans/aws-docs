@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PrefixLis
 ---
 
 # PrefixListAssociation
-<a name="API_PrefixListAssociation"></a>
 
 Describes the resource with which a prefix list is associated.
 

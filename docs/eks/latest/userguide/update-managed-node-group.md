@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/update-managed-node
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Update a managed node group for your cluster
-<a name="update-managed-node-group"></a>
 
 When you initiate a managed node group update, Amazon EKS automatically updates your nodes for you, completing the steps listed in [Understand each phase of node updates](managed-node-update-behavior.md). If you’re using an Amazon EKS optimized AMI, Amazon EKS automatically applies the latest security patches and operating system updates to your nodes as part of the latest AMI release version.
 

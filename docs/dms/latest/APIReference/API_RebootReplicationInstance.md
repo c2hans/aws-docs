@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_RebootReplic
 ---
 
 # RebootReplicationInstance
-<a name="API_RebootReplicationInstance"></a>
 
 Reboots a replication instance. Rebooting results in a momentary outage, until the replication instance becomes available again.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/results-log
 ---
 
 # Understanding results and logs
-<a name="results-logs"></a>
 
 This section describes how to view and interpret IDT result reports and logs.
 

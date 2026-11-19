@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-quicksight-pe
 ---
 
 # Grant Your Users Permissions to Send Predictions to Quick
-<a name="canvas-quicksight-permissions"></a>
 
 You must grant your SageMaker Canvas users permissions to send batch predictions to Quick. In Quick, users can create analyses and reports with a dataset and prepare dashboards to share their results. For more information about sending prediction to QuickSight for analysis, see [Send predictions to Quick](canvas-send-predictions.md).
 

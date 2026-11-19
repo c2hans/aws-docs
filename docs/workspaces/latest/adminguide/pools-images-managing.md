@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/pools-image
 ---
 
 # Manage custom images and bundles for WorkSpaces Pools
-<a name="pools-images-managing"></a>
 
 The process to manage custom images and bundles is the same between WorkSpaces Personal and WorkSpaces Pool. For more information about how to manage images and bundles, refer to the following documentation within the WorkSpaces Personal section of this guide:
 

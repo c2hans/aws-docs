@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Light Engine
-<a name="light-engine"></a>
 
 The Light Engine is a complementary log analytics engine to the default OpenSearch Engine. It is designed for analyzing structured and infrequent logs, offering up to a 90% cost reduction. The Light Engine uses several AWS services, including Amazon Athena, AWS Glue, AWS Lambda, and AWS Step Functions, to achieve its scale and cost-effective performance.
 

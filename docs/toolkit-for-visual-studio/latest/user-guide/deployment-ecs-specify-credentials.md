@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Specify AWS Credentials for Your ASP.NET Core 2 Application
-<a name="deployment-ecs-specify-credentials"></a>
 
 There are two types of credentials in play when you deploy your application to a Docker container: deployment credentials and instance credentials.
 

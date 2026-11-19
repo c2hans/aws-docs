@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ValidationFindingScope
-<a name="API_ValidationFindingScope"></a>
 
 Identifies the specific resource scope of a validation finding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSEC03-BP04 Regular permission audits and access reviews
-<a name="agentsec03-bp04"></a>
 
  Agent roles accumulate permissions over time. Scheduled automated analysis paired with periodic human-led reviews catches drift before it turns into significant over-privilege and produces the documented audit trail that compliance needs.
 

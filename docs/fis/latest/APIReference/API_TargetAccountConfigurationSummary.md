@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_TargetAccoun
 ---
 
 # TargetAccountConfigurationSummary
-<a name="API_TargetAccountConfigurationSummary"></a>
 
 Provides a summary of a target account configuration.
 

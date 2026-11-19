@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_LifeCycleLas
 ---
 
 # LifeCycleLastTestInitiated
-<a name="API_LifeCycleLastTestInitiated"></a>
 
 Lifecycle last Test initiated.
 

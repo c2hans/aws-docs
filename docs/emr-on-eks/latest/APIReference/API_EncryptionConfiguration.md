@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Encry
 ---
 
 # EncryptionConfiguration
-<a name="API_EncryptionConfiguration"></a>
 
 Configurations related to encryption for the security configuration.
 

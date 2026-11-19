@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/sales-guide/searc
 ---
 
 # Search and filter opportunities
-<a name="search-filter-opportunities"></a>
 
 Use the search bar on the Leads and Opportunities tabs to find records in the current list.
 

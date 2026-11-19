@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Trace the execution of the remediation
-<a name="trace-the-execution"></a>
 
 To understand better how the solution works, you can trace the execution of the remediation.
 

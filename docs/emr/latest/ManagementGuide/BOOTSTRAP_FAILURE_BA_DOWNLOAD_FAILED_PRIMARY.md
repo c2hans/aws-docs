@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/BOOTSTRAP_FAI
 ---
 
 # BOOTSTRAP\_FAILURE\_BA\_DOWNLOAD\_FAILED\_PRIMARY
-<a name="BOOTSTRAP_FAILURE_BA_DOWNLOAD_FAILED_PRIMARY"></a>
 
 ## Overview
 <a name="BOOTSTRAP_FAILURE_BA_DOWNLOAD_FAILED_PRIMARY_overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/brazil-2p-f
 ---
 
 # Brazil 2P FAQs
-<a name="brazil-2p-faqs"></a>
 
 The following frequently asked questions provide more information about selling through the AWS Brazil 2P distribution program.
 

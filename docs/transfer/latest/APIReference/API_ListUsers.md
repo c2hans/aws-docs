@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListUse
 ---
 
 # ListUsers
-<a name="API_ListUsers"></a>
 
 Lists the users for a file transfer protocol-enabled server that you specify by passing the `ServerId` parameter.
 

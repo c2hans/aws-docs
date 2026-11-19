@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MetricDat
 ---
 
 # MetricDataResult
-<a name="API_MetricDataResult"></a>
 
  Contains a single data point from a capacity metrics query, including the dimension values, timestamp, and metric values for that specific combination.
 

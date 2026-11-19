@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # LambdaAuthorizer
-<a name="sam-property-httpapi-lambdaauthorizer"></a>
 
 Configure a Lambda authorizer to control access to your Amazon API Gateway HTTP API with an AWS Lambda Event Function.
 

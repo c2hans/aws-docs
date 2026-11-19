@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_CreateMo
 ---
 
 # CreateMountTarget
-<a name="API_S3Files_CreateMountTarget"></a>
 
 Creates a mount target resource as an endpoint for mounting the S3 File System from compute resources in a specific Availability Zone and VPC. Mount targets provide network access to the file system.
 

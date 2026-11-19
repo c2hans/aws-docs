@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GoogleOauth2ProviderConfigOutput
-<a name="API_GoogleOauth2ProviderConfigOutput"></a>
 
 Output configuration for a Google OAuth2 provider.
 

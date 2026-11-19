@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/auto-
 ---
 
 # Auto Replenishment
-<a name="auto-replenishment"></a>
 
 You can use the Auto Replenishment feature to determine the amount of inventory to hold and when to order more inventory by automating inventory management. Auto Replenishment streamlines the inventory management process by monitoring inventory, forecasted demand, and automatically reordering items based on configured inventory policy, ordering schedules, minimum order quantities, and vendor lead times.
 

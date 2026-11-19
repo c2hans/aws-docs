@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # DisassociateTrackerConsumer
-<a name="API_WaypointTracking_DisassociateTrackerConsumer"></a>
 
 Removes the association between a tracker resource and a geofence collection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeAnalysisPermissions
-<a name="API_DescribeAnalysisPermissions"></a>
 
 Provides the read and write permissions for an analysis.
 

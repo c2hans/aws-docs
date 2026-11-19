@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reset-root-password
 ---
 
 # Reset a lost or forgotten root user password
-<a name="reset-root-password"></a>
 
 When you first created your AWS account, you provided an email address and password. These are your AWS account root user credentials. If you forget your root user password, you can reset the password from the AWS Management Console.
 

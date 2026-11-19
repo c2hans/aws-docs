@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeA
 ---
 
 # DescribeAffectedEntities
-<a name="API_DescribeAffectedEntities"></a>
 
 Returns a list of entities that have been affected by the specified events, based on the specified filter criteria. Entities can refer to individual customer resources, groups of customer resources, or any other construct, depending on the AWS service. Events that have impact beyond that of the affected entities, or where the extent of impact is unknown, include at least one entity indicating this.
 
@@ -29,11 +28,9 @@ This operation supports resource-level permissions. You can use this operation t
          }
       ],
       "statusCodes": [ "{{string}}" ],
-      "tags": [
-         {
-            "{{string}}" : "{{string}}"
-         }
-      ]
+      "tags": {
+         "{{string}}" : [ "{{string}}" ]
+      }
    },
    "locale": "{{string}}",
    "maxResults": {{number}},
@@ -80,6 +77,9 @@ Required: No
 {
    "entities": [
       {
+         "accountTags": {
+            "string" : "string"
+         },
          "awsAccountId": "string",
          "entityArn": "string",
          "entityMetadata": {
@@ -89,10 +89,10 @@ Required: No
          "entityValue": "string",
          "eventArn": "string",
          "lastUpdatedTime": number,
-         "statusCode": "string",
-         "tags": {
+         "resourceTags": {
             "string" : "string"
-         }
+         },
+         "statusCode": "string"
       }
    ],
    "nextToken": "string"

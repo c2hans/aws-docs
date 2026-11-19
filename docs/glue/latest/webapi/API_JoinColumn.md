@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_JoinColumn.html
 ---
 
 # JoinColumn
-<a name="API_JoinColumn"></a>
 
 Specifies a column to be joined.
 

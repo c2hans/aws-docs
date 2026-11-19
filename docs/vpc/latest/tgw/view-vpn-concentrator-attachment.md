@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/view-vpn-concentrator-att
 ---
 
 # View a VPN Concentrator attachment in AWS Transit Gateway
-<a name="view-vpn-concentrator-attachment"></a>
 
 **To view your VPN Concentrator attachments using the console**
 

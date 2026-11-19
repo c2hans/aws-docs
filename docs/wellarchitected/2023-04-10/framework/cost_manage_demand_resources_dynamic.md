@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST09-BP03 Supply resources dynamically
-<a name="cost_manage_demand_resources_dynamic"></a>
 
 |  |
 | --- |

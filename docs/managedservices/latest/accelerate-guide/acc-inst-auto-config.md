@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Automated instance configuration in AMS Accelerate
-<a name="acc-inst-auto-config"></a>
 
 AMS Accelerate provides an automated instance configuration service. This service ensures that an instance is emitting the correct logs and metrics for AMS to properly manage the instance. Automated instance configuration has its own prerequisites and steps for onboarding, described later in this section.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # FilterLogEvents
-<a name="API_FilterLogEvents"></a>
 
 Lists log events from the specified log group. You can list all the log events or filter the results using one or more of the following:
 + A filter pattern

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_PauseDurableExecut
 ---
 
 # PauseDurableExecution
-<a name="API_PauseDurableExecution"></a>
 
 Pauses a running [durable execution](https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html). While an execution is paused, Lambda doesn't invoke your function, but pending operations such as waits and callbacks continue to complete.
 

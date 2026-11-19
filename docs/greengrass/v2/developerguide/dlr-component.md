@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/dlr-compone
 ---
 
 # DLR runtime
-<a name="dlr-component"></a>
 
 The DLR runtime component (`variant.DLR`) contains a script that installs [Deep Learning Runtime](https://github.com/neo-ai/neo-ai-dlr) (DLR) and its dependencies in a virtual environment on your device. The [DLR image classification](dlr-image-classification-component.md) and [DLR object detection](dlr-object-detection-component.md) components use this component as a dependency for installing DLR. Component version 1.6.x installs DLR v1.6.0 and component version 1.3.x installs DLR v1.3.0.
 

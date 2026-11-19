@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_GetDocu
 ---
 
 # GetDocumentTextDetection
-<a name="API_GetDocumentTextDetection"></a>
 
 Gets the results for an Amazon Textract asynchronous operation that detects text in a document. Amazon Textract can detect lines of text and the words that make up a line of text.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/using-api-targeted-
 ---
 
 # Async analysis for targeted sentiment
-<a name="using-api-targeted-sentiment"></a>
 
 For information about real-time analysis for Targeted sentiment, see [Real-time analysis for targeted sentiment](using-api-sync.md#get-started-api-targeted-sentiment).
 

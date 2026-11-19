@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialHeatmapColorScale
-<a name="API_GeospatialHeatmapColorScale"></a>
 
 The color scale specification for the heatmap point style.
 

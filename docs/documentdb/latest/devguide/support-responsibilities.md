@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/support-respo
 ---
 
 # Responsibilities
-<a name="support-responsibilities"></a>
 
 The following are the Amazon DocumentDB responsibilities and your responsibilities with Amazon DocumentDB Extended Support.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/js-aws-appsync-r
 ---
 
 # UpdateItem
-<a name="js-aws-appsync-resolver-reference-dynamodb-updateitem"></a>
 
 The `UpdateItem` request enables you to tell the AWS AppSync DynamoDB function to make a `UpdateItem` request to DynamoDB and allows you to specify the following:
 + The key of the item in DynamoDB

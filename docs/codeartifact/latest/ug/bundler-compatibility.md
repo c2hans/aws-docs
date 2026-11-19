@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/bundler-compatibi
 ---
 
 # Bundler compatibility
-<a name="bundler-compatibility"></a>
 
  This guide contains information about CodeArtifact's compatibility with Bundler.
 

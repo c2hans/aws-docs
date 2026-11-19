@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-emr
 ---
 
 # Quickstart: Create a SageMaker AI sandbox domain to launch Amazon EMR clusters in Studio
-<a name="studio-notebooks-emr-cluster-quickstart"></a>
 
 This section walks you through the quick set up of a complete test environment in Amazon SageMaker Studio. You will be creating a new Studio domain that lets users launch new Amazon EMR clusters directly from Studio. The steps provide an example notebook that you can connect to an Amazon EMR cluster to start running Spark workloads. Using this notebook, you will build a Retrieval Augmented Generation System (RAG) using Amazon EMR Spark distributed processing and OpenSearch vector database.
 

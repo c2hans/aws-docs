@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Report
 ---
 
 # ReportWithRawData
-<a name="API_ReportWithRawData"></a>
 
 Contains the unmodified data for the report. For more information, see [GetReportGroupTrend](API_GetReportGroupTrend.md).
 

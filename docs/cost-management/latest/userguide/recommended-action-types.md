@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/recomme
 ---
 
 # Understanding recommended action types
-<a name="recommended-action-types"></a>
 
 Recommended actions automatically identify and prioritize the most important actions you should take related to Billing and Cost Management, regarding budgets, payments, cost optimization, cost anomalies, IAM permissions, and tax settings.
 

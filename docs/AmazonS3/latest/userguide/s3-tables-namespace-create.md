@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-name
 ---
 
 # Creating a namespace
-<a name="s3-tables-namespace-create"></a>
 
 A table namespace is a logical construct that you group tables under within an Amazon S3 table bucket. Each table belongs to a single namespace. Before creating a table in a table bucket, you must create a namespace to group tables under. You can create a namespace by using the Amazon S3 console, AWS Command Line Interface (AWS CLI), Amazon S3 REST API, AWS SDKs, or integrated query engines.
 

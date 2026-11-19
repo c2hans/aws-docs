@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # AWS CloudFormation templates
-<a name="aws-cloudformation-templates"></a>
 
 This solution includes one main AWS CloudFormation template and two nested templates. You can download the CloudFormation templates before deploying the solution.
 

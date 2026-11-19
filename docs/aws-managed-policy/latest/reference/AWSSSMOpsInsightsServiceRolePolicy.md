@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSSMOpsInsightsServiceRolePolicy
-<a name="AWSSSMOpsInsightsServiceRolePolicy"></a>
 
 **Description**: Policy for Service Linked Role AWSServiceRoleForAmazonSSM\_OpsInsights
 

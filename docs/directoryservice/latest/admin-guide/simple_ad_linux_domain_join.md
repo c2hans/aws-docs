@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simp
 ---
 
 # Join an Amazon EC2 Linux instance to your Simple AD Active Directory
-<a name="simple_ad_linux_domain_join"></a>
 
 You can launch and join an Amazon EC2 Linux instance to your Simple AD in the AWS Management Console. You can also manually join EC2 Linux instance to your Simple AD.
 

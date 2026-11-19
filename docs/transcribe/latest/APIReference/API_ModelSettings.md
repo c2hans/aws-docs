@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Model
 ---
 
 # ModelSettings
-<a name="API_ModelSettings"></a>
 
 Provides the name of the custom language model that was included in the specified transcription job.
 

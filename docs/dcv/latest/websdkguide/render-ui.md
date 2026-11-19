@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/websdkguide/render-ui.html
 ---
 
 # Use Amazon DCV Web UI SDK
-<a name="render-ui"></a>
 
  The following tutorial shows you how to authenticate against the Amazon DCV server, connect to it and render the `DCVViewer` React component from the Amazon DCV Web UI SDK.
 

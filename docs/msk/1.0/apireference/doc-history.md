@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/doc-history.html
 ---
 
 # Document History for Amazon Managed Streaming for Apache Kafka API Reference
-<a name="doc-history"></a>
 
 The following table describes the documentation for this release of the *Amazon Managed Streaming for Apache Kafka API Reference*.
 + **API version:** 2019-05-30

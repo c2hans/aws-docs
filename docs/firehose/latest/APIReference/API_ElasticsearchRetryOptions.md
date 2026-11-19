@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Elastic
 ---
 
 # ElasticsearchRetryOptions
-<a name="API_ElasticsearchRetryOptions"></a>
 
 Configures retry behavior in case Firehose is unable to deliver documents to Amazon OpenSearch Service.
 

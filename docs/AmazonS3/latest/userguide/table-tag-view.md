@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/table-tag-view
 ---
 
 # Viewing table tags
-<a name="table-tag-view"></a>
 
 You can view or list tags applied to Amazon S3 tables. For more information about tags, see [Using tags with S3 tables](table-tagging.md).
 

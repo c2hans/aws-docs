@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_A
 ---
 
 # AwsGroundStationAgentEndpoint
-<a name="API_AwsGroundStationAgentEndpoint"></a>
 
 Information about AwsGroundStationAgentEndpoint.
 

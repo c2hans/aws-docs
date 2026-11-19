@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Ca
 ---
 
 # CancelTrainedModel
-<a name="API_CancelTrainedModel"></a>
 
 Submits a request to cancel the trained model job.
 

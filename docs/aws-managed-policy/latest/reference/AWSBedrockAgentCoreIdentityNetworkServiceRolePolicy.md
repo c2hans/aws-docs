@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBedrockAgentCoreIdentityNetworkServiceRolePolicy
-<a name="AWSBedrockAgentCoreIdentityNetworkServiceRolePolicy"></a>
 
 **Description**: Allows Bedrock AgentCore Identity to managed VPC Lattice resources on your behalf
 

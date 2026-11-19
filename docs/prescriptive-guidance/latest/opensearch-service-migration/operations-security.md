@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Operations and security
-<a name="operations-security"></a>
 
 When you migrate to Amazon OpenSearch Service, your operational activities will change. You will no longer be responsible for provisioning nodes, adding storage, installing and patching operating system, configuring and maintaining high availability, scaling, and other low-level activities. Instead, you can focus your attention on building your use cases and new user experiences.
 

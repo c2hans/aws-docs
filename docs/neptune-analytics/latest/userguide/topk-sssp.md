@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/topk-
 ---
 
 # TopK hop-limited single source (weighted) shortest path algorithm
-<a name="topk-sssp"></a>
 
 The `.topksssp`algorithm finds the single-source weighted shortest paths from a source node to its neighbors out to the distance specified by `maxDepth`. It accumulates the path lengths using the edge weights along the paths and then returns a sorted list of the shortest paths.
 

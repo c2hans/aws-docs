@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::AIWorkloadConfig AIDatasetConfig
-<a name="aws-properties-sagemaker-aiworkloadconfig-aidatasetconfig"></a>
 
 The dataset configuration for an AI workload. This is a union type — specify one of the members.
 

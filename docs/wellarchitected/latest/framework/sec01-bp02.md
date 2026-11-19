@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec01-b
 ---
 
 # SEC01-BP02 Identify and validate control objectives
-<a name="sec01-bp02"></a>
 
  Control objectives translate compliance obligations and identified risks into outcomes your controls must achieve. Validate the controls at a point in time and over a period to produce evidence you can act on and report.
 

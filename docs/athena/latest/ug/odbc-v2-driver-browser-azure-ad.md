@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-browser-
 ---
 
 # Browser Azure AD
-<a name="odbc-v2-driver-browser-azure-ad"></a>
 
 Browser Azure AD is a SAML based authentication plugin that works with Azure AD identity provider and supports multi-factor authentication. Unlike the standard Azure AD plugin, this plugin does not require a user name, password, or client secret in the connection parameters.
 

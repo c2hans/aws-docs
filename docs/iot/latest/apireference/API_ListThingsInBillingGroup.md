@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingsIn
 ---
 
 # ListThingsInBillingGroup
-<a name="API_ListThingsInBillingGroup"></a>
 
 Lists the things you have added to the given billing group.
 

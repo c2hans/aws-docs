@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Crea
 ---
 
 # CreateWorkspaceInstance
-<a name="API_CreateWorkspaceInstance"></a>
 
 Launches a new WorkSpace Instance with specified configuration parameters, enabling programmatic workspace deployment.
 

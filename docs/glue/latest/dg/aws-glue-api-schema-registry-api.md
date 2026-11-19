@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-schema-regis
 ---
 
 # Schema registry
-<a name="aws-glue-api-schema-registry-api"></a>
 
 The Schema registry API describes the data types and API related to working with schemas in AWS Glue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/APIReference/API_Environme
 ---
 
 # Environment
-<a name="API_Environment"></a>
 
 Information about an AWS Cloud9 development environment.
 

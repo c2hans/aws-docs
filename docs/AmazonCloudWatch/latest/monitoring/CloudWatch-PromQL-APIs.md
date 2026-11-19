@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Prometheus-compatible APIs
-<a name="CloudWatch-PromQL-APIs"></a>
 
 **Topics**
 + [QueryMetrics](CloudWatch-PromQL-API-QueryMetrics.md)

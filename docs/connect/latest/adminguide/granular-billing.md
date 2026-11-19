@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/granular-billi
 ---
 
 # Set up granular billing for a detailed view of your Connect Customer usage
-<a name="granular-billing"></a>
 
 By default bills for Connect Customer channels (voice calls, chat, tasks, and emails) are summarized at the AWS account level by usage type. For example:
 + Voice calls - by outbound (telephony) / inbound (telephony) / service minutes

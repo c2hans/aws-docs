@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_SqlApplic
 ---
 
 # SqlApplicationConfiguration
-<a name="API_SqlApplicationConfiguration"></a>
 
 Describes the inputs, outputs, and reference data sources for a SQL-based Kinesis Data Analytics application.
 

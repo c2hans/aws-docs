@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/powershell_5_ec2_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Amazon EC2 examples using Tools for PowerShell V5
-<a name="powershell_5_ec2_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS Tools for PowerShell V5 with Amazon EC2.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTREL03-BP04 Implement graceful degradation for memory and state operations
-<a name="agentrel03-bp04"></a>
 
  Treating every memory failure as fatal turns recoverable issues into total outages. An explicit degradation hierarchy with documented modes and automatic recovery keeps agents partially useful and transparent about their reduced state.
 

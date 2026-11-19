@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/working-wit
 ---
 
 # Custom modeling in AWS Clean Rooms ML
-<a name="working-with-custom-models"></a>
 
 From a technical standpoint, the following diagram describes how custom ML modeling works in AWS Clean Rooms ML.
 

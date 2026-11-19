@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/sales
 ---
 
 # Source configuration for Salesforce RTEM
-<a name="salesforce-rtem-source-config"></a>
 
 ## Prerequisites
 <a name="salesforce-rtem-prerequisites"></a>

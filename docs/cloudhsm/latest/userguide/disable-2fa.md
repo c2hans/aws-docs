@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/disable-2fa.ht
 ---
 
 # Disable 2FA for HSM users using AWS CloudHSM Management Utility
-<a name="disable-2fa"></a>
 
 Use the AWS CloudHSM Management Utility (CMU) to disable two-factor authentication (2FA) for hardware security module HSM) users in AWS CloudHSM.
 

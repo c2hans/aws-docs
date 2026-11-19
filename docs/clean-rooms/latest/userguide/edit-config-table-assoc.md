@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/edit-config
 ---
 
 # Editing configured table associations
-<a name="edit-config-table-assoc"></a>
 
 As a collaboration member, you can edit the configured table associations that you have created.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/glue-job-lo
 ---
 
 # glue-job-logging-enabled
-<a name="glue-job-logging-enabled"></a>
 
 Checks if an AWS Glue job has logging enabled. The rule is NON\_COMPLIANT if an AWS Glue job does not have Amazon CloudWatch logs enabled.
 

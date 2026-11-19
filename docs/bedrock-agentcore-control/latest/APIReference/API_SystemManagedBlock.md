@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SystemManagedBlock
-<a name="API_SystemManagedBlock"></a>
 
 System-managed metadata for rules created by automated processes such as A/B tests.
 

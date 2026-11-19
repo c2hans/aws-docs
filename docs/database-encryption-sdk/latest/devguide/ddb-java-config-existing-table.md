@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Configure an existing DynamoDB table to use the AWS Database Encryption SDK for DynamoDB
-<a name="ddb-java-config-existing-table"></a>
 
 |  |
 | --- |

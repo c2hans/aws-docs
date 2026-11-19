@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/editing-flows.htm
 ---
 
 # Editing flows
-<a name="editing-flows"></a>
 
 After creating a flow, you can edit and configure it in the Flow editor.
 

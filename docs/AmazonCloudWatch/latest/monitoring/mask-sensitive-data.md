@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/mask-
 ---
 
 # Protect sensitive data
-<a name="mask-sensitive-data"></a>
 
 Amazon CloudWatch Logs uses data protection policies to identify sensitive data and define actions to protect that data. You use data identifiers to select the sensitive data of interest. Amazon CloudWatch Logs then detects the sensitive data using machine learning and pattern matching. You can define audit and masking operations to log sensitive data findings and mask sensitive data when viewing log events.
 

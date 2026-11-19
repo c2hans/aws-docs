@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/health-scribe-strea
 ---
 
 # Starting AWS HealthScribe streaming transcription
-<a name="health-scribe-streaming-setting-up"></a>
 
 The following code example shows how to set up a AWS HealthScribe streaming transcription using the AWS SDKs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/edit-jobs-source.html
 ---
 
 # Modifying properties of a data source node
-<a name="edit-jobs-source"></a>
 
 To specify the data source properties, you first choose a data source node in the job diagram. Then, on the right side in the node details panel, you configure the node properties.
 

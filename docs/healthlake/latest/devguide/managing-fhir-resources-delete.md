@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 ---
 
 # Deleting a FHIR resource
-<a name="managing-fhir-resources-delete"></a>
 
 The FHIR `delete` interaction removes an existing FHIR resource from a HealthLake data store. For additional information, see [`delete`](https://hl7.org/fhir/R4/http.html#delete) in the **FHIR R4 RESTful API documentation**.
 

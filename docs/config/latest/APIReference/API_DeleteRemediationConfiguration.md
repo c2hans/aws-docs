@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteRem
 ---
 
 # DeleteRemediationConfiguration
-<a name="API_DeleteRemediationConfiguration"></a>
 
 Deletes the remediation configuration.
 

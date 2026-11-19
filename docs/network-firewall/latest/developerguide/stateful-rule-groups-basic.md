@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/s
 ---
 
 # Standard stateful rule groups in AWS Network Firewall
-<a name="stateful-rule-groups-basic"></a>
 
 AWS Network Firewall supports easy entry for standard stateful rules for network traffic inspection. The match criteria for this stateful rule type is similar to the Network Firewall stateless rule.
 

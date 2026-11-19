@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # AIGuardrailContentPolicyConfig
-<a name="API_amazon-q-connect_AIGuardrailContentPolicyConfig"></a>
 
 Contains details about how to handle harmful content.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Overview
-<a name="tagging-overview"></a>
 
 Tagging enables you to assign metadata to the different resources in your environment. As metadata, tags allow you to assign additional labels to these resources for you to identify them according you your business needs. We recommend you define a tagging strategy for your environment, this will allow you to confidently and efficiently identify resources across your environment and teams.
 

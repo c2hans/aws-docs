@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/repos-upstream.ht
 ---
 
 # Working with upstream repositories in CodeArtifact
-<a name="repos-upstream"></a>
 
 A repository can have other AWS CodeArtifact repositories as *upstream* repositories. This enables a package manager client to access the packages that are contained in more than one repository using a single repository endpoint.
 

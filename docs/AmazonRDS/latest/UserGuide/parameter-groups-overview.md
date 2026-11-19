@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/parameter-gro
 ---
 
 # Overview of parameter groups
-<a name="parameter-groups-overview"></a>
 
 A *DB parameter group* acts as a container for engine configuration values that are applied to one or more DB instances.
 

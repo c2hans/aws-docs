@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awstraining/latest/user-guide/team-skill
 ---
 
 # Get started
-<a name="team-skills-planner-get-started"></a>
 
 To build and assign a training plan with Team Skills Planner, complete the following steps:
 

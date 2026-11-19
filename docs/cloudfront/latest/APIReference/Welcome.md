@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/Welcome.h
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## Amazon CloudFront
 <a name="Welcome_Amazon_CloudFront"></a>

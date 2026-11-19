@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EksPropert
 ---
 
 # EksProperties
-<a name="API_EksProperties"></a>
 
 An object that contains the properties for the Kubernetes resources of a job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/reset-password.html
 ---
 
 # Resetting your password
-<a name="reset-password"></a>
 
 How you reset your password depends on whether you use Amazon Chime at work or at home.
 + **At work** – Contact your system administrator.

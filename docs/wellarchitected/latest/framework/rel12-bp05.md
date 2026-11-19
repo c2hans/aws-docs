@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel12-b
 ---
 
 # REL12-BP05 Conduct game days regularly
-<a name="rel12-bp05"></a>
 
  A *game day* is a scheduled exercise where your team responds to a simulated failure in a production-like environment, using the same people and procedures you would use for a real event. Practice events like this make incident response a routine activity.
 

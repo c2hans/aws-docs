@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UserTurnOu
 ---
 
 # UserTurnOutputSpecification
-<a name="API_UserTurnOutputSpecification"></a>
 
 Contains results that are output for the user turn by the test execution.
 

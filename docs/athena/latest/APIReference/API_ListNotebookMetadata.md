@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ListNoteb
 ---
 
 # ListNotebookMetadata
-<a name="API_ListNotebookMetadata"></a>
 
 Displays the notebook files for the specified workgroup in paginated format.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_TrendmicroC
 ---
 
 # TrendmicroConnectorProfileCredentials
-<a name="API_TrendmicroConnectorProfileCredentials"></a>
 
  The connector-specific profile credentials required when using Trend Micro.
 

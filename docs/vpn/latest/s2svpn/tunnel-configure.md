@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/tunnel-configure.html
 ---
 
 # Configure tunnel options for AWS Site-to-Site VPN
-<a name="tunnel-configure"></a>
 
 This section provides comprehensive guidance on configuring tunnel options for AWS Site-to-Site VPN connections, covering essential parameters such as dead peer detection, IKE versions, and encryption settings. You can customize these tunnel options to optimize your VPN connection's security, performance, and compatibility with your on-premises network infrastructure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Encryptio
 ---
 
 # EncryptionConfigurationDescription
-<a name="API_EncryptionConfigurationDescription"></a>
 
 Describes the encryption configuration of snapshot data for a snapshot operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_RuleS
 ---
 
 # RuleSummary
-<a name="API_RuleSummary"></a>
 
 Information about a Recycle Bin retention rule.
 

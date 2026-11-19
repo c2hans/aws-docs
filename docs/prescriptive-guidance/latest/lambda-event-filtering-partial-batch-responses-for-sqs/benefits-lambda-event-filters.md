@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/lambda-even
 ---
 
 # Benefits of using Lambda event filters for Amazon SQS event sources
-<a name="benefits-lambda-event-filters"></a>
 
 Configuring Lambda event filters gives your functions the ability to be invoked only by the filtering criteria that you specify. This helps reduce traffic to the functions and simplifies code, which can help reduce cost.
 

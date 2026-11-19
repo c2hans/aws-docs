@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/cloudwatch-ec2-
 ---
 
 # Using ec2\_instance\_attribute examples
-<a name="cloudwatch-ec2-instance-attribute-examples"></a>
 
 ## JSON filters
 <a name="json-filters"></a>

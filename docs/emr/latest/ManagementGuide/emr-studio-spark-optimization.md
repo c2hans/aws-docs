@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-sp
 ---
 
 # Optimize Spark jobs in EMR Studio
-<a name="emr-studio-spark-optimization"></a>
 
 When running a Spark job using EMR Studio, there are a few steps you can take to help ensure that you're optimizing your Amazon EMR cluster resources.
 

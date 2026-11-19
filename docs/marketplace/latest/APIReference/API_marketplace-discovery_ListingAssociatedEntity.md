@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ListingAssociatedEntity
-<a name="API_marketplace-discovery_ListingAssociatedEntity"></a>
 
 A product and offer associated with a listing.
 

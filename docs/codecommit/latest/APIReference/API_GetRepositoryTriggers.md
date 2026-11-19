@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetRe
 ---
 
 # GetRepositoryTriggers
-<a name="API_GetRepositoryTriggers"></a>
 
 Gets information about triggers configured for a repository.
 

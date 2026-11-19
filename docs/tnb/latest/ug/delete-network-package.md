@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/delete-network-package.htm
 ---
 
 # Delete a network package from AWS TNB
-<a name="delete-network-package"></a>
 
 Learn how to delete a network package from the AWS TNB network service catalog. To delete a network package, the package must be in a disable state.
 

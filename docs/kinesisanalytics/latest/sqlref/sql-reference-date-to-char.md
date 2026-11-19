@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # DATE\_TO\_CHAR
-<a name="sql-reference-date-to-char"></a>
 
 The DATE\_TO\_CHAR converts a date to a string.
 

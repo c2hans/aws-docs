@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Predef
 ---
 
 # PredefinedMetricSpecification
-<a name="API_PredefinedMetricSpecification"></a>
 
 A specification for a predefined metric.
 

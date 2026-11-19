@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/STS/latest/APIReference/API_FederatedUse
 ---
 
 # FederatedUser
-<a name="API_FederatedUser"></a>
 
 Identifiers for the federated user that is associated with the credentials.
 

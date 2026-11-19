@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_V
 ---
 
 # VolumeRecoveryPointInfo
-<a name="API_VolumeRecoveryPointInfo"></a>
 
 Describes a storage volume recovery point object.
 

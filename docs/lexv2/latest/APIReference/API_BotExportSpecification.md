@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotExportS
 ---
 
 # BotExportSpecification
-<a name="API_BotExportSpecification"></a>
 
 Provides the identity of a the bot that was exported.
 

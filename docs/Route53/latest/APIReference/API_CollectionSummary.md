@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Collecti
 ---
 
 # CollectionSummary
-<a name="API_CollectionSummary"></a>
 
 A complex type that is an entry in an [CidrCollection](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CidrCollection.html) array.
 

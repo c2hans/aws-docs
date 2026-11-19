@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ColumnStatisticsD
 ---
 
 # ColumnStatisticsData
-<a name="API_ColumnStatisticsData"></a>
 
 Contains the individual types of column statistics data. Only one data object should be set and indicated by the `Type` attribute.
 

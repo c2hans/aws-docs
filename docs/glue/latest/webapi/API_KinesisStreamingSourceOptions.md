@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_KinesisStreamingS
 ---
 
 # KinesisStreamingSourceOptions
-<a name="API_KinesisStreamingSourceOptions"></a>
 
 Additional options for the Amazon Kinesis streaming data source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_PendingResou
 ---
 
 # PendingResource
-<a name="API_PendingResource"></a>
 
 A structure that identifies a resource that is currently pending addition to the group as a member. Adding a resource to a resource group happens asynchronously as a background task and this one isn't completed yet.
 

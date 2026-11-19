@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/jobs
 ---
 
 # Encrypting logs
-<a name="jobs-log-encryption"></a>
 
 ## Encrypting EMR Serverless logs with managed storage
 <a name="jobs-log-encryption-managed-storage"></a>

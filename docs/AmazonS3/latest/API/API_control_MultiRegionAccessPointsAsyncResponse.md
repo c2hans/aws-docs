@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_MultiReg
 ---
 
 # MultiRegionAccessPointsAsyncResponse
-<a name="API_control_MultiRegionAccessPointsAsyncResponse"></a>
 
 The Multi-Region Access Point details that are returned when querying about an asynchronous request.
 

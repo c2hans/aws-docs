@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/userguide/ag-schema.html
 End of support notice: On October 7, 2026, AWS will end support for AWS Proton. After October 7, 2026, you will no longer be able to access the AWS Proton console or AWS Proton resources. Your deployed infrastructure will remain intact. For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # Schema file
-<a name="ag-schema"></a>
 
 As an administrator, when you use the Open API [Data Models (schemas) section](https://swagger.io/docs/specification/data-models/) to define a parameter schema YAML file for your template bundle, AWS Proton can validate parameter value inputs against the requirements that you defined in your schema.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Del
 ---
 
 # DeleteApplicationGrant
-<a name="API_DeleteApplicationGrant"></a>
 
 Deletes a grant from an application.
 

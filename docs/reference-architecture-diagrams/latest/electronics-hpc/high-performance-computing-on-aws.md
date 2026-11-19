@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/e
 ---
 
 # High Performance Computing on AWS
-<a name="high-performance-computing-on-aws"></a>
 
 Publication date: **September 1, 2021 ([Diagram history](diagram-history.md))**
 

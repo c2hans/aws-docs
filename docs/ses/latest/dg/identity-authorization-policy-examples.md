@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/identity-authorization-pol
 ---
 
 # Identity policy examples in Amazon SES
-<a name="identity-authorization-policy-examples"></a>
 
 Identity authorization enables you to specify the fine-grained conditions under which you allow or deny API actions for an identity.
 

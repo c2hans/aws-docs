@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Clarif
 ---
 
 # ClarifyTextConfig
-<a name="API_ClarifyTextConfig"></a>
 
 A parameter used to configure the SageMaker Clarify explainer to treat text features as text so that explanations are provided for individual units of text. Required only for natural language processing (NLP) explainability.
 

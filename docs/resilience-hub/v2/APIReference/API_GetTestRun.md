@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_GetTe
 ---
 
 # GetTestRun
-<a name="API_GetTestRun"></a>
 
 Retrieves a test run by ID, including its status, results, and the configuration snapshotted when the run started.
 

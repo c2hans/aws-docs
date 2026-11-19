@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/core
 ---
 
 # Managing core network endpoints
-<a name="core-network-endpoints-managing"></a>
 
 You can create a core network endpoint, view its details, list the endpoints for a global resolver, update an endpoint, and delete an endpoint. You can manage core network endpoints with the AWS Management Console, the AWS CLI, or the Amazon Route 53 Global Resolver API.
 

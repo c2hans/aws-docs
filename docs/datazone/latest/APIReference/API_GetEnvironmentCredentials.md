@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetEnvi
 ---
 
 # GetEnvironmentCredentials
-<a name="API_GetEnvironmentCredentials"></a>
 
 Gets the credentials of an environment in Amazon DataZone.
 

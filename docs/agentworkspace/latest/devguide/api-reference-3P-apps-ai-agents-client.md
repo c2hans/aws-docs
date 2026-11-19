@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/api-refer
 ---
 
 # Connect Customer SDK AI Agents API
-<a name="api-reference-3P-apps-ai-agents-client"></a>
 
 The Connect Customer SDK provides an `AIAgentsClient` which serves as an interface that your app can use to interact with AI Agent functionality. This client provides methods for real-time agent assistance use cases like checking AI Agent support, sending messages to AI Agents, retrieving message history, fetching knowledge content, and subscribing to real-time AI Agent message events.
 

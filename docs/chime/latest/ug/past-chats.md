@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/past-chats.html
 ---
 
 # Finding past chats
-<a name="past-chats"></a>
 
 When contacts no longer appear in the sidebar, you can use the following methods to restore them and view the messages you've exchanged.
 

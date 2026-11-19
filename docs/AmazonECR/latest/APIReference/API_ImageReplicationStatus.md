@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ImageR
 ---
 
 # ImageReplicationStatus
-<a name="API_ImageReplicationStatus"></a>
 
 The status of the replication process for an image.
 

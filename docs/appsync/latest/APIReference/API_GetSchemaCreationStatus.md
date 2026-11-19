@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_GetSchem
 ---
 
 # GetSchemaCreationStatus
-<a name="API_GetSchemaCreationStatus"></a>
 
 Retrieves the current status of a schema creation operation.
 

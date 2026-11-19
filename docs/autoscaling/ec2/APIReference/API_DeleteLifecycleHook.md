@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DeleteL
 ---
 
 # DeleteLifecycleHook
-<a name="API_DeleteLifecycleHook"></a>
 
 Deletes the specified lifecycle hook.
 

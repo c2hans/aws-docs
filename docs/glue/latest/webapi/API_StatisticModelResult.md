@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StatisticModelRes
 ---
 
 # StatisticModelResult
-<a name="API_StatisticModelResult"></a>
 
 The statistic model result.
 

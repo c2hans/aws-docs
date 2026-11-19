@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Start
 ---
 
 # StartMedicalTranscriptionJob
-<a name="API_StartMedicalTranscriptionJob"></a>
 
 Transcribes the audio from a medical dictation or conversation and applies any additional Request Parameters you choose to include in your request.
 
@@ -129,7 +128,7 @@ Required: Yes
 The Amazon Resource Name (ARN) of a KMS key that you want to use to encrypt your medical transcription output.
 KMS key ARNs have the format `arn:partition:kms:region:account:key/key-id`. For example: `arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab`. For more information, see [ KMS key ARNs](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN).
 If you do not specify an encryption key, your output is encrypted with the default Amazon S3 key (SSE-S3).
-Note that the role making the [StartMedicalTranscriptionJob](#API_StartMedicalTranscriptionJob) request and the role specified in the `DataAccessRoleArn` request parameter (if present) must have permission to use the specified KMS key.
+Note that the role making the [StartMedicalTranscriptionJob](API_StartMedicalTranscriptionJob.md) request and the role specified in the `DataAccessRoleArn` request parameter (if present) must have permission to use the specified KMS key.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `^[A-Za-z0-9][A-Za-z0-9:_/+=,@.-]{0,2048}$`
@@ -149,7 +148,7 @@ Pattern: `[a-zA-Z0-9-_.!*'()/]{1,1024}$`
 Required: No
 
  ** [Settings](#API_StartMedicalTranscriptionJob_RequestSyntax) **   <a name="transcribe-StartMedicalTranscriptionJob-request-Settings"></a>
-Specify additional optional settings in your [StartMedicalTranscriptionJob](#API_StartMedicalTranscriptionJob) request, including channel identification, alternative transcriptions, and speaker partitioning. You can use that to apply custom vocabularies to your transcription job.
+Specify additional optional settings in your [StartMedicalTranscriptionJob](API_StartMedicalTranscriptionJob.md) request, including channel identification, alternative transcriptions, and speaker partitioning. You can use that to apply custom vocabularies to your transcription job.
 Type: [MedicalTranscriptionSetting](API_MedicalTranscriptionSetting.md) object
 Required: No
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/flows-manage.ht
 ---
 
 # Managing Amazon AppFlow flows
-<a name="flows-manage"></a>
 
 After you create one or more flows, you can use the **Flows** page in the Amazon AppFlow console to manage them.
 

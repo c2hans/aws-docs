@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/referenc
 ---
 
 # JSON structure of AWS Secrets Manager secrets
-<a name="reference_secret_json_structure"></a>
 
 You can store any text or binary in a Secrets Manager secret up to the maximum size of 65,536 Bytes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_RS_GetRecommen
 ---
 
 # GetRecommendations
-<a name="API_RS_GetRecommendations"></a>
 
 Returns a list of recommended items. For campaigns, the campaign's Amazon Resource Name (ARN) is required and the required user and item input depends on the recipe type used to create the solution backing the campaign as follows:
 + USER\_PERSONALIZATION - `userId` required, `itemId` not used

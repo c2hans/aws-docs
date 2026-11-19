@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket RedirectRule
-<a name="aws-properties-s3-bucket-redirectrule"></a>
 
 Specifies how requests are redirected. In the event of an error, you can specify a different error code to return.
 

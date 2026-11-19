@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # Use cases for tuning queries
-<a name="query-tuning-use-cases"></a>
 
 This guide covers the following use cases for tuning query performance:
 + Collations

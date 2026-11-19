@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayTestTrafficHeader
-<a name="API_GatewayTestTrafficHeader"></a>
 
 A header-based rule that identifies test traffic for progressive deployments.
 

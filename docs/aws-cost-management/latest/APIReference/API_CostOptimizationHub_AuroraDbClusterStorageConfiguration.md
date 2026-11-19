@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AuroraDbClusterStorageConfiguration
-<a name="API_CostOptimizationHub_AuroraDbClusterStorageConfiguration"></a>
 
 The Aurora DB cluster storage configuration used for recommendations.
 

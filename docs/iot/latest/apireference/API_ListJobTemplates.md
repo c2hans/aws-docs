@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListJobTempl
 ---
 
 # ListJobTemplates
-<a name="API_ListJobTemplates"></a>
 
 Returns a list of job templates.
 

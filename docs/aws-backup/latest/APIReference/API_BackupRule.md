@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Backu
 ---
 
 # BackupRule
-<a name="API_BackupRule"></a>
 
 Specifies a scheduled task used to back up a selection of resources.
 

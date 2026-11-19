@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/compile-software.html
 ---
 
 # Prepare to compile software on an AL2 instance
-<a name="compile-software"></a>
 
 Open-source software is available on the internet that has not been pre-compiled and made available for download from a package repository. You might eventually discover a software package that you need to compile yourself, from its source code. For your system to be able to compile software in AL2 and Amazon Linux, you need to install several development tools, such as **make**, **gcc**, and **autoconf**.
 

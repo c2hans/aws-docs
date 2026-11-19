@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/APIReference/API_CreateTem
 AWS has decided to discontinue AWS Proton, with support ending on October 7, 2026. New customers will not be able to sign up after October 7, 2025, but existing customers can continue to use the service until October 7, 2026.For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # CreateTemplateSyncConfig
-<a name="API_CreateTemplateSyncConfig"></a>
 
 Set up a template to create new template versions automatically by tracking a linked repository. A linked repository is a repository that has been registered with AWS Proton. For more information, see [CreateRepository](API_CreateRepository.md).
 

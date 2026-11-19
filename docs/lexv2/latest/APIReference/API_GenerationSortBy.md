@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Generation
 ---
 
 # GenerationSortBy
-<a name="API_GenerationSortBy"></a>
 
 Specifies the attribute and method by which to sort the generation request information.
 

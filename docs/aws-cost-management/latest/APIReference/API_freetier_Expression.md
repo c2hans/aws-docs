@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Expression
-<a name="API_freetier_Expression"></a>
 
 Use `Expression` to filter in the `GetFreeTierUsage` API operation.
 
@@ -36,7 +35,7 @@ In the following **Contents**, you must specify exactly one of the following roo
 
  ** And **   <a name="awscostmanagement-Type-freetier_Expression-And"></a>
 Return results that match all `Expressions` that you specified in the array.
-Type: Array of [Expression](#API_freetier_Expression) objects
+Type: Array of [Expression](API_freetier_Expression.md) objects
 Required: No
 
  ** Dimensions **   <a name="awscostmanagement-Type-freetier_Expression-Dimensions"></a>
@@ -46,12 +45,12 @@ Required: No
 
  ** Not **   <a name="awscostmanagement-Type-freetier_Expression-Not"></a>
 Return results that don’t match the `Expression` that you specified.
-Type: [Expression](#API_freetier_Expression) object
+Type: [Expression](API_freetier_Expression.md) object
 Required: No
 
  ** Or **   <a name="awscostmanagement-Type-freetier_Expression-Or"></a>
 Return results that match any of the `Expressions` that you specified. in the array.
-Type: Array of [Expression](#API_freetier_Expression) objects
+Type: Array of [Expression](API_freetier_Expression.md) objects
 Required: No
 
 ## See Also

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Strin
 ---
 
 # StringChange
-<a name="API_StringChange"></a>
 
 Describes a change from one string value to another.
 

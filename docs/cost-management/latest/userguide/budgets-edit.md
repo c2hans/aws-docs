@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/budgets
 ---
 
 # Editing a budget
-<a name="budgets-edit"></a>
 
 **Note**
 You can't edit the budget name.

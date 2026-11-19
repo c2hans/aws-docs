@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Step 3: Launch the target account stack in the target AWS account
-<a name="launch-target-account-stack"></a>
 
 This automated AWS CloudFormation template deploys IAM roles in the target AWS account to allow the factory account to assume roles and perform MGN actions in the target account. Repeat this step for each target account. If the factory stack in the previous step is a target account, it will need to have this target stack deployed to it.
 

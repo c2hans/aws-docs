@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_ListMicr
 ---
 
 # ListMicrosoftTeamsConfiguredTeams
-<a name="API_ListMicrosoftTeamsConfiguredTeams"></a>
 
 Lists all authorized Microsoft Teams for an AWS Account
 

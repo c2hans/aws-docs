@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/managed-entitle
 ---
 
 # Subscribing to third-party Bedrock models through Private Offer
-<a name="managed-entitlements-subscribing"></a>
 
 Before you can distribute licenses, you must first subscribe to a Bedrock model through AWS Marketplace.
 

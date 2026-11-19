@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotAnalyze
 ---
 
 # BotAnalyzerRecommendation
-<a name="API_BotAnalyzerRecommendation"></a>
 
 Contains a recommendation for bot optimization identified by the Bot Analyzer.
 

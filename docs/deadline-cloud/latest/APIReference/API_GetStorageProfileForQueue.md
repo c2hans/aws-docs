@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetStorageProfileForQueue
-<a name="API_GetStorageProfileForQueue"></a>
 
 Gets a storage profile for a queue.
 

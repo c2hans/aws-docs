@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/s3-
 ---
 
 # Amazon Simple Storage Service (Amazon S3) controls
-<a name="s3-rules"></a>
 
 **Topics**
 + [[CT.S3.PR.1] Require an Amazon S3 bucket to have block public access settings configured](#ct-s3-pr-1-description)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetR
 ---
 
 # GetResourceGateway
-<a name="API_GetResourceGateway"></a>
 
 Retrieves information about the specified resource gateway.
 

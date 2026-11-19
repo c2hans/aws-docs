@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Vers
 ---
 
 # Versions
-<a name="API_Versions"></a>
 
 Object specifying the acceptable range of challenge versions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Preval
 ---
 
 # PrevalidationSignalsBody
-<a name="API_PrevalidationSignalsBody"></a>
 
 Projected content for an EVIDENCE artifact carrying prioritization's prevalidation signals.
 

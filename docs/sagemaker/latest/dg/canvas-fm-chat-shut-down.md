@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-fm-chat-shut-
 ---
 
 # Shut down models
-<a name="canvas-fm-chat-shut-down"></a>
 
 We highly recommend that you shut down models that you aren’t using. The models automatically shut down after 2 hours of inactivity. However, to manually shut down a model, you can do the following:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/va-task-result-poll.
 ---
 
 # Polling for task results for the Amazon Chime SDK
-<a name="va-task-result-poll"></a>
 
 **Important**
 By default, voice analytics makes results available for 7 days, then it deletes the data automatically. You must store your task data if you want to use it for a longer time, or to comply with data-retention laws. For more information, see [Understanding data retention for Amazon Chime SDK voice analytics](va-data-retention.md), later in this guide.

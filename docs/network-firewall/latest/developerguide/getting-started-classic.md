@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/g
 ---
 
 # Getting started with a Classic AWS Network Firewall policy
-<a name="getting-started-classic"></a>
 
 This tutorial walks you through creating a Classic AWS Network Firewall firewall using the AWS Management Console. A Classic policy uses stateless rule groups and stateful rule groups. You create a stateless rule group and a stateful rule group, combine them in a Classic firewall policy, create a firewall, and route your VPC traffic through the firewall endpoint. For a tutorial that uses a Next Generation policy instead, see [Getting started with a Next Generation policy](getting-started-v2.md). For the differences between the two policy types, see [AWS Network Firewall firewall policy versions](firewall-policy-versions.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Replic
 ---
 
 # ReplicationBackfillResult
-<a name="API_ReplicationBackfillResult"></a>
 
 An object representing the result of a single replication during a replication backfill. Each image and tag combination is replicated as a single replication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/pacemaker-t
 ---
 
 # Prerequisites and cluster setup
-<a name="pacemaker-tutorial-prerequisites"></a>
 
 In this section, you set up the infrastructure for the high availability tutorial. You create a security group, create a key pair, launch Amazon EC2 instances, install Pacemaker and DRBD, create a cluster, and configure block-level replication between instances.
 

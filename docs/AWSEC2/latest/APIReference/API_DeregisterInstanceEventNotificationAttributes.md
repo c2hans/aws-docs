@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Deregiste
 ---
 
 # DeregisterInstanceEventNotificationAttributes
-<a name="API_DeregisterInstanceEventNotificationAttributes"></a>
 
 Deregisters tag keys to prevent tags that have the specified tag keys from being included in scheduled event notifications for resources in the Region.
 

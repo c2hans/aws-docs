@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Reg
 ---
 
 # RegisterWebhookWithThirdParty
-<a name="API_RegisterWebhookWithThirdParty"></a>
 
 Configures a connection between the webhook that was created and the external tool with events to be detected.
 

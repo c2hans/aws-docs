@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/systemsmanager-get
 ---
 
 # AWS SSM Get Parameter task
-<a name="systemsmanager-getparameter"></a>
 
 (AWS Systems Manager Get Parameter Task)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Managing SageMaker HyperPod EKS clusters using the AWS CLI
-<a name="sagemaker-hyperpod-eks-operate-cli-command"></a>
 
 The following topics provide guidance on writing SageMaker HyperPod API request files in JSON format and run them using the AWS CLI commands.
 

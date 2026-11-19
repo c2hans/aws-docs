@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-inte
 ---
 
 # Creating an intermediate table
-<a name="create-intermediate-table"></a>
 
 You can create an intermediate table to cache analysis results for reuse in subsequent queries within a collaboration.
 

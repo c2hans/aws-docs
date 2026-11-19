@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/grammar-ecmascript-spec.
 ---
 
 # Script format
-<a name="grammar-ecmascript-spec"></a>
 
 Amazon Lex V2 supports the following ECMAScript features for defining grammars.
 

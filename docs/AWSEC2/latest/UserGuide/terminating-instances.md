@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-inst
 ---
 
 # Terminate Amazon EC2 instances
-<a name="terminating-instances"></a>
 
 **Warning**
 **Terminating an instance is permanent and irreversible.**

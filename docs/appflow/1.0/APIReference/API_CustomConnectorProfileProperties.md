@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_CustomConne
 ---
 
 # CustomConnectorProfileProperties
-<a name="API_CustomConnectorProfileProperties"></a>
 
 The profile properties required by the custom connector.
 

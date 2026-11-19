@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/updates-reordering-colu
 ---
 
 # Reorder columns
-<a name="updates-reordering-columns"></a>
 
 You can reorder columns only for tables with data in formats that read by name, such as JSON or Parquet, which reads by name by default. You can also make ORC read by name, if needed. For information, see [Understand index access for Apache ORC and Apache Parquet](handling-schema-updates-chapter.md#index-access).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ar
 ---
 
 # ArtifactSummary
-<a name="API_ArtifactSummary"></a>
 
 Contains summary information about an artifact.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # AssociateFirewallPolicy
-<a name="API_AssociateFirewallPolicy"></a>
 
 Associates a [FirewallPolicy](API_FirewallPolicy.md) to a [Firewall](API_Firewall.md).
 

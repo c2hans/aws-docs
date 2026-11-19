@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 ---
 
 # Clear cached connections
-<a name="sagemaker-sql-extension-features-clear-cached-connection"></a>
 
 To clear all cached connections, run the following command:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ---
 
 # How to get administrative address names
-<a name="how-to-get-place-address-names-mode"></a>
 
 Use the `address-names-mode` query parameter set to `Administrative` to return official administrative names for address components. `Administrative` currently applies only to addresses in the United States.
 

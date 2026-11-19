@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Ranking_T
 ---
 
 # TagResource
-<a name="API_Ranking_TagResource"></a>
 
 Adds a specified tag to a specified rescore execution plan. A rescore execution plan is an Amazon Kendra Intelligent Ranking resource used for provisioning the `Rescore` API. If the tag already exists, the existing value is replaced with the new value.
 

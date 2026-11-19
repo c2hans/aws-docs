@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Sort.htm
 ---
 
 # Sort
-<a name="API_Sort"></a>
 
 A structure that defines the field name to sort by and a sort order.
 

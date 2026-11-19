@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # AWS WAF – Intelligent threat mitigation
-<a name="aws-waf-intelligent-threat-mitigation"></a>
 
  Botnets are a serious security threat and are commonly used to carry out illegal or harmful activities such as sending spam, stealing sensitive data, initiating ransomware attacks, committing ad fraud through fraudulent clicks, or launching distributed denial-of-service (DDoS) attacks. To prevent bot attacks, use the [AWS WAF Bot Control](https://docs.aws.amazon.com/waf/latest/developerguide/waf-bot-control.html) managed rule group. This rule group provides a basic, Common protection level that adds labels to self-identifying bots, verifies generally desirable bots, and detects high confidence bot signatures and a Targeted protection level that adds detection for advanced bots that don't self-identify.
 

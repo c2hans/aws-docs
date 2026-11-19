@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CreateLoadBalancerTlsCertificate
-<a name="API_CreateLoadBalancerTlsCertificate"></a>
 
 Creates an SSL/TLS certificate for an Amazon Lightsail load balancer.
 

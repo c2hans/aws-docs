@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentCl
 ---
 
 # ExperimentCloudWatchLogsLogConfiguration
-<a name="API_ExperimentCloudWatchLogsLogConfiguration"></a>
 
 Describes the configuration for experiment logging to Amazon CloudWatch Logs.
 

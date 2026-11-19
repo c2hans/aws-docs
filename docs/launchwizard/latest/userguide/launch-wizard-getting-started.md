@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Get started with AWS Launch Wizard for SQL Server
-<a name="launch-wizard-getting-started"></a>
 
  This section contains information to help you set up your environment to deploy SQL Server with Launch Wizard, including:
 + Active Directory permissions

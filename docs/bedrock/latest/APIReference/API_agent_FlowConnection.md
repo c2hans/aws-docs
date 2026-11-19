@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fl
 ---
 
 # FlowConnection
-<a name="API_agent_FlowConnection"></a>
 
 Contains information about a connection between two nodes in the flow.
 

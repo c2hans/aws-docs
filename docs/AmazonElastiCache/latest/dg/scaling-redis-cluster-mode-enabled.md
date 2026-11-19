@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/scaling-redi
 ---
 
 # Scaling Valkey or Redis OSS (Cluster Mode Enabled) clusters
-<a name="scaling-redis-cluster-mode-enabled"></a>
 
 As demand on your clusters changes, you might decide to improve performance or reduce costs by changing the number of shards in your Valkey or Redis OSS (cluster mode enabled) cluster. We recommend using online horizontal scaling to do so, because it allows your cluster to continue serving requests during the scaling process.
 

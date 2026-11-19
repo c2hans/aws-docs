@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::StateTemplate
-<a name="aws-resource-iotfleetwise-statetemplate"></a>
 
 Creates a mechanism for vehicle owners to track the state of their vehicles. State templates determine which signal updates the vehicle sends to the cloud.
 

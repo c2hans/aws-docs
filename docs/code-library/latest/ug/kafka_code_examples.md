@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/kafka_code_exampl
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Code examples for Amazon MSK using AWS SDKs
-<a name="kafka_code_examples"></a>
 
 The following code examples show you how to use Amazon Managed Streaming for Apache Kafka with an AWS software development kit (SDK).
 

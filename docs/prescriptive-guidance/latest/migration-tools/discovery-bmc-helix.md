@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # BMC Helix Discovery
-<a name="discovery-bmc-helix"></a>
 
 *Last update: May 15, 2023*
 

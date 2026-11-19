@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/e
 ---
 
 # DescribeForMe Web App
-<a name="describe-for-me-web-app"></a>
 
 Publication date: **September 1, 2023 ([Diagram history](diagram-history.md))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Expiry.h
 ---
 
 # Expiry
-<a name="API_Expiry"></a>
 
 An object to specify the expiration of a routing step.
 

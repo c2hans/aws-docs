@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DataSha
 ---
 
 # DataShareAssociation
-<a name="API_DataShareAssociation"></a>
 
 The association of a datashare from a producer account with a data consumer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # OfferSetInformation
-<a name="API_marketplace-discovery_OfferSetInformation"></a>
 
 Summary information about an offer set, including the identifier and seller of record.
 

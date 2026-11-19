@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Target
 ---
 
 # TargetTrackingScalingPolicyConfiguration
-<a name="API_TargetTrackingScalingPolicyConfiguration"></a>
 
 The auto scaling policy that scales a table based on the ratio of consumed to provisioned capacity.
 

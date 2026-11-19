@@ -2,8 +2,7 @@
 source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-dq-key-capabilities.html
 ---
 
-# Key capabilities
-<a name="emr-dq-key-capabilities"></a>
+# Key capabilities of Amazon EMR Data Quality
 
 The capabilities below are available to any Amazon EMR Spark application that uses the `EvaluateDataQuality` transform. All of them behave the same on Amazon EMR as on AWS Glue; the sections that follow summarize each one and link to the detailed reference in the *AWS Glue Developer Guide*.
 

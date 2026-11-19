@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # RemoveTagsFromResource
-<a name="API_RemoveTagsFromResource"></a>
 
 Removes tag keys from the specified resource.
 

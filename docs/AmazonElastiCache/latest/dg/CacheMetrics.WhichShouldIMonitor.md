@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheMetrics
 ---
 
 # Which Metrics Should I Monitor?
-<a name="CacheMetrics.WhichShouldIMonitor"></a>
 
 The following CloudWatch metrics offer good insight into ElastiCache performance. In most cases, we recommend that you set CloudWatch alarms for these metrics so that you can take corrective action before performance issues occur.
 

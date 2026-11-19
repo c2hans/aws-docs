@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeModel
-<a name="API_DescribeModel"></a>
 
 Describes a model that you created using the `CreateModel` API.
 

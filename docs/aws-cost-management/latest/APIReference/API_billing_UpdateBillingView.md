@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UpdateBillingView
-<a name="API_billing_UpdateBillingView"></a>
 
 An API to update the attributes of the billing view.
 

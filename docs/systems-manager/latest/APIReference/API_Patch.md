@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # Patch
-<a name="API_Patch"></a>
 
 Represents metadata about a patch.
 

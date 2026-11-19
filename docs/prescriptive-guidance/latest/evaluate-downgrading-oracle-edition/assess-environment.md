@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-do
 ---
 
 # Assessing your environment
-<a name="assess-environment"></a>
 
 To assess your Oracle database and find out whether Enterprise Edition features are being used, you can use one of the following approaches:
 + SQL commands

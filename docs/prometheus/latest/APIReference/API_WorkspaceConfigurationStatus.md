@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Works
 ---
 
 # WorkspaceConfigurationStatus
-<a name="API_WorkspaceConfigurationStatus"></a>
 
 This structure displays the current status of the workspace configuration, and might also contain a reason for that status.
 

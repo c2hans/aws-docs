@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Integ
 ---
 
 # IntegerValueWhenUnsetConfiguration
-<a name="API_IntegerValueWhenUnsetConfiguration"></a>
 
 A parameter declaration for the `Integer` data type.
 

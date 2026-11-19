@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/port-support.html
 ---
 
 # AWS Glue support for Port
-<a name="port-support"></a>
 
 AWS Glue supports Port as follows:
 

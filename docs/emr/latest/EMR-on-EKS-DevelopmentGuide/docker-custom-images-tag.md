@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/d
 ---
 
 # Details for selecting a base image URI
-<a name="docker-custom-images-tag"></a>
 
 **Note**
 For Amazon EMR 6.9.0 releases and later, you can retrieve the base image from Amazon ECR Public Gallery, so you don't need to construct the base image URI as the instructions on this page direct. To find the container image tag for your base image, refer to the [release notes page](emr-eks-releases.md) for the corresponding release of Amazon EMR on EKS.

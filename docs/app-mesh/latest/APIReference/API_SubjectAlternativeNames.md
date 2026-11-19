@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Subject
 ---
 
 # SubjectAlternativeNames
-<a name="API_SubjectAlternativeNames"></a>
 
 An object that represents the subject alternative names secured by the certificate.
 

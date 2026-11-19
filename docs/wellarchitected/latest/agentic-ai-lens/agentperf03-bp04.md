@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTPERF03-BP04 Establish efficient agent caching and data access patterns
-<a name="agentperf03-bp04"></a>
 
  Agents that repeatedly fetch the same data benefit from caching, breaking the cycle of redundant retrievals speeds up every reasoning iteration. Agentic workloads often access the same tool outputs, retrieved documents, computed embeddings, and configuration data across multiple reasoning iterations, sessions, or agents in a multi-agent workflow. Without caching, each access pays the full latency and cost of the original operation.
 

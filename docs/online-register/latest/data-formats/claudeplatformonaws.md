@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/clau
 ---
 
 # Data retrieval APIs for Claude Platform on AWS
-<a name="claudeplatformonaws"></a>
 
 Claude Platform on AWS provides the following APIs for data retrieval.
 

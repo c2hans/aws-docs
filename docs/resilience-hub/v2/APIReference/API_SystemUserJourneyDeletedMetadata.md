@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Syste
 ---
 
 # SystemUserJourneyDeletedMetadata
-<a name="API_SystemUserJourneyDeletedMetadata"></a>
 
 Metadata for a system user journey deleted event.
 

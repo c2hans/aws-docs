@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-use
 ---
 
 # Viewing the activity of specific users in Amazon Q Developer
-<a name="q-admin-user-telemetry"></a>
 
 You can configure Amazon Q to collect user activity telemetry of individual Amazon Q Developer subscribers in your organization and present that information in a report. The report gives you insights into how specific users are using Amazon Q.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/containe
 ---
 
 # Draining Amazon ECS container instances
-<a name="container-instance-draining"></a>
 
 There might be times when you need to remove a container instance from your cluster, for example, to perform system updates or to scale down the cluster capacity. Amazon ECS provides the ability to transition a container instance to a `DRAINING` status. This is referred to as *container instance draining*. When a container instance is set to `DRAINING`, Amazon ECS prevents new tasks from being scheduled for placement on the container instance.
 

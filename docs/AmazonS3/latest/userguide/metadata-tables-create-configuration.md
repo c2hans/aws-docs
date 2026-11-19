@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/metadata-table
 ---
 
 # Creating metadata table configurations
-<a name="metadata-tables-create-configuration"></a>
 
 To generate and store Amazon S3 Metadata in fully managed Apache Iceberg metadata tables, you create a metadata table configuration for your general purpose bucket. Amazon S3 is designed to continuously update the metadata tables to reflect the latest changes to your data as long as the configuration is active on the bucket. Additionally, Amazon S3 continuously optimizes your metadata tables to help reduce storage costs and improve analytics query performance.
 
@@ -244,7 +243,7 @@ To migrate from an old metadata configuration to a new configuration, do the fol
 
 1. Delete your existing metadata table configuration. For step-by-step instructions, see [Deleting metadata table configurations](metadata-tables-delete-configuration.md).
 
-1. Create a new metadata table configuration. For step-by-step instructions, see [Creating metadata table configurations](#metadata-tables-create-configuration).
+1. Create a new metadata table configuration. For step-by-step instructions, see [Creating metadata table configurations](metadata-tables-create-configuration.md).
 
 If you need assistance with migrating your configuration, contact AWS Support.
 

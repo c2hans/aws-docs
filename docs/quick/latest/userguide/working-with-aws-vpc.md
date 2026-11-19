@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/working-with-aws-
 ---
 
 # Configuring VPC connections in AWS Quick Sight
-<a name="working-with-aws-vpc"></a>
 
 |  |
 | --- |

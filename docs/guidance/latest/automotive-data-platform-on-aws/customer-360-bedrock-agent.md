@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Bedrock AI Agent
-<a name="customer-360-bedrock-agent"></a>
 
 The Bedrock AI Agent provides conversational analytics with natural language queries and AI-powered recommendations.
 

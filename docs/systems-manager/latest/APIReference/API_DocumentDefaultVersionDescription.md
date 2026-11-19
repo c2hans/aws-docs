@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DocumentDefaultVersionDescription
-<a name="API_DocumentDefaultVersionDescription"></a>
 
 A default version of a document.
 

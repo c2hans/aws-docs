@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DescribeReplicationGroups
-<a name="API_DescribeReplicationGroups"></a>
 
 Returns information about a particular replication group. If no identifier is specified, `DescribeReplicationGroups` returns information about all replication groups.
 

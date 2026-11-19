@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # GetAccountLevelServiceConfiguration
-<a name="API_GetAccountLevelServiceConfiguration"></a>
 
 Retrieves the status of your account's AWS service access, and validates the service linked role required to access the multi-account search feature. Only the management account can invoke this API call.
 

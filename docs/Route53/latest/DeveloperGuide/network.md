@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/network.ht
 ---
 
 # .network
-<a name="network"></a>
 
 Used by those in the network industry or those who want to build connections through networking.
 

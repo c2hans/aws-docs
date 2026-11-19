@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/userguide/tutorials-two-
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Create and deploy the web form to use SMS messaging for Amazon Pinpoint
-<a name="tutorials-two-way-sms-part-5"></a>
 
 All of the components that use AWS services for SMS messaging using Amazon Pinpoint are now in place. The last step is to create and deploy the web form that captures customer's data.
 

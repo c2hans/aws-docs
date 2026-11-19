@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListAI
 ---
 
 # ListAIWorkloadConfigs
-<a name="API_ListAIWorkloadConfigs"></a>
 
 Returns a list of AI workload configurations in your account. You can filter the results by name and creation time, and sort the results. The response is paginated.
 

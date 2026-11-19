@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/f
 ---
 
 # Flight Planning Using Data Lakes and AI/ML
-<a name="flight-planning-data-lakes"></a>
 
 Publication date: **July 16, 2020 ([Diagram history](#flight-planning-history))**
 

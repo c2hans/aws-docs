@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-routing-ena
 ---
 
 # Disabling modalities and routing file types
-<a name="bda-routing-enablement"></a>
 
 By default, projects in BDA process supported file types, by sorting them to different semantic modalities. When creating or editing your project, you can modify what modalities will be processed, and which file types will be sent to which modalities. In this section, we will go through enabling and disabling different modalities, routing files to specific modalities, and the default routing procedure for BDA.
 

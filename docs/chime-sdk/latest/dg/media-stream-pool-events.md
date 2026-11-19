@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/media-stream-pool-ev
 ---
 
 # Understanding Kinesis Video Streams pool events for Amazon Chime SDK media stream pipelines
-<a name="media-stream-pool-events"></a>
 
 Media pipelines send the following events to Event Bridge when the pools' states change. Expand each section to learn more.
 

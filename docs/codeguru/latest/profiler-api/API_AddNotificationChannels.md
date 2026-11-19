@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AddNoti
 ---
 
 # AddNotificationChannels
-<a name="API_AddNotificationChannels"></a>
 
 Add up to 2 anomaly notifications channels for a profiling group.
 

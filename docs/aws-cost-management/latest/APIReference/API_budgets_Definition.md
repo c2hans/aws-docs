@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Definition
-<a name="API_budgets_Definition"></a>
 
 Specifies all of the type-specific parameters.
 

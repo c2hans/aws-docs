@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/custom-sharin
 ---
 
 # Manage your shares
-<a name="custom-sharing-manage"></a>
 
 ## List the shares that you own
 <a name="custom-sharing-manage-list"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-sma
 ---
 
 # Fetching the SMART on FHIR Discovery Document
-<a name="reference-smart-on-fhir-discovery-document"></a>
 
 SMART defines a Discovery Document that allows clients to learn the authorization endpoint URLs and features a HealthLake data store supports. This information helps clients direct authorization requests to the right endpoint and construct authorization requests the HealthLake data store supports.
 

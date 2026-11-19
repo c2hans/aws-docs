@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/security-lf-enable.html
 ---
 
 # Using AWS Glue with AWS Lake Formation for fine-grained access control
-<a name="security-lf-enable"></a>
 
 ## Overview
 <a name="security-lf-enable-overview"></a>

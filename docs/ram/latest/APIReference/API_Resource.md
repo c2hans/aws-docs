@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_Resource.htm
 ---
 
 # Resource
-<a name="API_Resource"></a>
 
 Describes a resource associated with a resource share in AWS RAM.
 

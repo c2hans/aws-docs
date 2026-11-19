@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Ena
 ---
 
 # EnabledBaselineDriftStatusSummary
-<a name="API_EnabledBaselineDriftStatusSummary"></a>
 
 The drift summary of the enabled baseline. AWS Control Tower reports inheritance drift when an enabled baseline configuration of a member account is different than the configuration that applies to the OU. AWS Control Tower reports this type of drift for a parent or child enabled baseline. One way to repair this drift by resetting the parent enabled baseline, on the OU.
 

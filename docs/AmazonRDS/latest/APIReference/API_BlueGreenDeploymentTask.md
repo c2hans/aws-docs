@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_BlueGr
 ---
 
 # BlueGreenDeploymentTask
-<a name="API_BlueGreenDeploymentTask"></a>
 
 Details about a task for a blue/green deployment.
 

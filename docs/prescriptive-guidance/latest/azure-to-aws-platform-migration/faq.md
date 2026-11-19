@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/azure-to-aw
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## Why AI-assisted instead of manual documentation?
 <a name="why-ai-assisted-instead-of-manual-documentation-.ba3e0335-a245-566f-b482-e3cdb5b52a76"></a>

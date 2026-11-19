@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/mdis-reference.html
 ---
 
 # Detailed reference: Managed data identifiers by category
-<a name="mdis-reference"></a>
 
 In Amazon Macie, *managed data identifiers* are built-in criteria and techniques that are designed to detect specific types of sensitive data. They can detect a large and growing list of sensitive data types for many countries and regions, including multiple types of credentials data, financial information, and personal information. Each managed data identifier is designed to detect a specific type of sensitive data—for example, AWS secret access keys, credit card numbers, or passport numbers for a particular country or region.
 

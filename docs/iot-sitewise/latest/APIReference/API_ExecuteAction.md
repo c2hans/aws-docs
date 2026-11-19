@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Exe
 ---
 
 # ExecuteAction
-<a name="API_ExecuteAction"></a>
 
 Executes an action on a target resource.
 

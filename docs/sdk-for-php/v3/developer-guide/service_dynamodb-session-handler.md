@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/service_d
 ---
 
 # Using the DynamoDB session handler with AWS SDK for PHP Version 3
-<a name="service_dynamodb-session-handler"></a>
 
 The DynamoDB Session Handler is a custom session handler for PHP that enables developers to use Amazon DynamoDB as a session store. Using DynamoDB for session storage alleviates issues that occur with session handling in a distributed web application by moving sessions off of the local file system and into a shared location. DynamoDB is fast, scalable, easy to set up, and handles replication of your data automatically.
 

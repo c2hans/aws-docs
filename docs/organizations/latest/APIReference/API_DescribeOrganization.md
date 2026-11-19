@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_De
 ---
 
 # DescribeOrganization
-<a name="API_DescribeOrganization"></a>
 
 Retrieves information about the organization that the user's account belongs to.
 

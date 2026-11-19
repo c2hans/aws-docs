@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_GatewayInsta
 ---
 
 # GatewayInstance
-<a name="API_GatewayInstance"></a>
 
  The settings for an instance in a gateway.
 

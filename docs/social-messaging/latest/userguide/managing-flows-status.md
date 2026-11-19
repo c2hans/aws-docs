@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/managi
 ---
 
 # Understanding Flow status
-<a name="managing-flows-status"></a>
 
 Each WhatsApp Flow has a status that represents its lifecycle state. The status determines what actions you can take on the Flow.
 

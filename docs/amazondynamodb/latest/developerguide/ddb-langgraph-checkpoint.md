@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ddb
 ---
 
 # Using DynamoDB as a checkpoint store for LangGraph agents
-<a name="ddb-langgraph-checkpoint"></a>
 
 [LangGraph](https://langchain-ai.github.io/langgraph/) is a framework for building stateful, multi-actor AI applications with Large Language Models (LLMs). LangGraph agents require persistent storage to maintain conversation state, enable human-in-the-loop workflows, support fault tolerance, and provide time-travel debugging capabilities. DynamoDB's serverless architecture, single-digit millisecond latency, and automatic scaling make it an ideal checkpoint store for production LangGraph deployments on AWS.
 

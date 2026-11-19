@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # RegistryRecordOAuthCredentialProvider
-<a name="API_RegistryRecordOAuthCredentialProvider"></a>
 
 The configuration for an OAuth 2.0 credential provider that authenticates requests to a registry record's source.
 

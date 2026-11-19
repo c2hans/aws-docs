@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/diagnosing-str
 ---
 
 # Diagnosing Stream Limits
-<a name="diagnosing-stream-limits"></a>
 
 **Troubleshooting "Stream limit exceeded for your AWS account"**
 

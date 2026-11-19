@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd05-b
 ---
 
 # FND05-BP06 Remediate non-compliant resources
-<a name="fnd05-bp06"></a>
 
  Verify that all resources in your cloud environment comply with your organization's policies and standards to maintain a secure and efficient infrastructure. When you identify non-compliant resources, remediate them.
 

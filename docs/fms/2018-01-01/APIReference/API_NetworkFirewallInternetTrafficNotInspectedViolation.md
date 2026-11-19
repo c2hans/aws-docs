@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_NetworkF
 ---
 
 # NetworkFirewallInternetTrafficNotInspectedViolation
-<a name="API_NetworkFirewallInternetTrafficNotInspectedViolation"></a>
 
 Violation detail for the subnet for which internet traffic that hasn't been inspected.
 

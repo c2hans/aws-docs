@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # GetServiceQuotaIncreaseRequestFromTemplate
-<a name="API_GetServiceQuotaIncreaseRequestFromTemplate"></a>
 
 Retrieves information about the specified quota increase request in your quota request template.
 

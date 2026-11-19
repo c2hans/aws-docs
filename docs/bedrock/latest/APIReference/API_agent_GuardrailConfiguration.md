@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Gu
 ---
 
 # GuardrailConfiguration
-<a name="API_agent_GuardrailConfiguration"></a>
 
 Details about a guardrail associated with a resource.
 

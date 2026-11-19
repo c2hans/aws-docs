@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteReplic
 ---
 
 # DeleteReplicationConfigurationTemplate
-<a name="API_DeleteReplicationConfigurationTemplate"></a>
 
 Deletes a single Replication Configuration Template by ID
 

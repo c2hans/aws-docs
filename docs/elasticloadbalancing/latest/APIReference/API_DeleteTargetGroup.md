@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DeleteTargetGroup
-<a name="API_DeleteTargetGroup"></a>
 
 Deletes the specified target group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Isoline
 ---
 
 # IsolineScooterOptions
-<a name="API_IsolineScooterOptions"></a>
 
 Vehicle characteristics that affect which roads and paths can be used when calculating reachable areas for scooters. This includes areas such as bike lanes, shared paths, and roads where scooters are permitted.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateAccess
 ---
 
 # UpdateAccessEntry
-<a name="API_UpdateAccessEntry"></a>
 
 Updates an access entry.
 

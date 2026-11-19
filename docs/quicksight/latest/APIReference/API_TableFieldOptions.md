@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableFieldOptions
-<a name="API_TableFieldOptions"></a>
 
 The field options of a table visual.
 

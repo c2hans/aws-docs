@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Pro
 ---
 
 # Programmatic interfaces that work with DynamoDB
-<a name="Programming.SDKs.Interfaces"></a>
 
 Every [AWS SDK](https://aws.amazon.com/tools) provides one or more programmatic interfaces for working with Amazon DynamoDB. These interfaces range from simple low-level DynamoDB wrappers to object-oriented persistence layers. The available interfaces vary depending on the AWS SDK and programming language that you use.
 

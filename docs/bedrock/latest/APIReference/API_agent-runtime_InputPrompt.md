@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # InputPrompt
-<a name="API_agent-runtime_InputPrompt"></a>
 
 Contains information about the prompt to optimize.
 

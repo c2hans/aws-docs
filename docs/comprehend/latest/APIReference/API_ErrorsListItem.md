@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Error
 ---
 
 # ErrorsListItem
-<a name="API_ErrorsListItem"></a>
 
 Text extraction encountered one or more page-level errors in the input document.
 

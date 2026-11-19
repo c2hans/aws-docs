@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/failure-mod
 ---
 
 # Failure Mode and Effects Analysis for applications on AWS
-<a name="introduction"></a>
 
 *Thiago Jose Ruiz, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/security-log-moni
 ---
 
 # Logging and monitoring in AWS Elemental MediaPackage
-<a name="security-log-monitor"></a>
 
 This section provides an overview of the options for logging and monitoring in AWS Elemental MediaPackage for security purposes. For more information about logging and monitoring in MediaPackage see [Logging and monitoring in AWS Elemental MediaPackage](monitoring.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_S
 ---
 
 # StartSearchJob
-<a name="API_BKS_StartSearchJob"></a>
 
 This operation creates a search job which returns recovery points filtered by SearchScope and items filtered by ItemFilters.
 

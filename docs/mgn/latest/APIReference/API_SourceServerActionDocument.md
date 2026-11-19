@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_SourceServer
 ---
 
 # SourceServerActionDocument
-<a name="API_SourceServerActionDocument"></a>
 
 ## Contents
 <a name="API_SourceServerActionDocument_Contents"></a>

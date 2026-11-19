@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/advanced-ddb-
 ---
 
 # Advanced DynamoDB backup
-<a name="advanced-ddb-backup"></a>
 
 AWS Backup supports additional, advanced features for your Amazon DynamoDB data protection needs.
 

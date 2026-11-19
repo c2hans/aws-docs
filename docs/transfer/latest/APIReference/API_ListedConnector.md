@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListedC
 ---
 
 # ListedConnector
-<a name="API_ListedConnector"></a>
 
 Returns details of the connector that is specified.
 

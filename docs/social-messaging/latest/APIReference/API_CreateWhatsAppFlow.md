@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # CreateWhatsAppFlow
-<a name="API_CreateWhatsAppFlow"></a>
 
 Creates a new WhatsApp Flow. Flows enable businesses to create rich, interactive forms and experiences that users can complete without leaving WhatsApp. The Flow is created in DRAFT status. If `publish` is set to `true` and a valid `flowJson` is provided, the Flow is published immediately.
 

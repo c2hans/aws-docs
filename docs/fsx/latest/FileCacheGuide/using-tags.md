@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/using-tags.htm
 ---
 
 # Using tags with Amazon File Cache
-<a name="using-tags"></a>
 
 You can use tags to control access to Amazon File Cache resources and to implement attribute-based access control (ABAC). Users need to have permission to apply tags to Amazon File Cache resources during creation.
 

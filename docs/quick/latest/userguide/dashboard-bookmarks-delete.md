@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/dashboard-bookmar
 ---
 
 # Deleting bookmarks in AWS Quick Sight
-<a name="dashboard-bookmarks-delete"></a>
 
 Use the following procedure to delete a bookmark.
 

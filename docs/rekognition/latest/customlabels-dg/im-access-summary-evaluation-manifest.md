@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/im-ac
 ---
 
 # Accessing the summary file and evaluation manifest snapshot (SDK)
-<a name="im-access-summary-evaluation-manifest"></a>
 
 To get training results, you call [DescribeProjectVersions](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeProjectVersions). For example code, see [Describing a model (SDK)](md-describing-model-sdk.md).
 

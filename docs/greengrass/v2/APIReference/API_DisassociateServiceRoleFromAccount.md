@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Disassoci
 ---
 
 # DisassociateServiceRoleFromAccount
-<a name="API_DisassociateServiceRoleFromAccount"></a>
 
 Disassociates the Greengrass service role from AWS IoT Greengrass for your AWS account in this AWS Region. Without a service role, AWS IoT Greengrass can't verify the identity of client devices or manage core device connectivity information. For more information, see [Greengrass service role](https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-service-role.html) in the * AWS IoT Greengrass Version 2 Developer Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_IntentLeve
 ---
 
 # IntentLevelSlotResolutionTestResults
-<a name="API_IntentLevelSlotResolutionTestResults"></a>
 
 Indicates the success or failure of slots at the intent level.
 

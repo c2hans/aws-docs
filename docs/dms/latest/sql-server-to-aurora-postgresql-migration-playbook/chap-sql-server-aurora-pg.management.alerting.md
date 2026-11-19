@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Alerting features
-<a name="chap-sql-server-aurora-pg.management.alerting"></a>
 
 This topic provides reference information about alert and notification systems in SQL Server and Amazon Aurora PostgreSQL. You can understand how SQL Server Agent generates alerts for various events and performance conditions, and how it allows for customized responses.
 

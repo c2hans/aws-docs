@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVSUS05-BP03 Optimize content moderation systems for sustainable operation
-<a name="advsus05-bp03"></a>
 
  As an organization's content library grows, optimizing content moderation systems improves sustainability-related KPIs. Build architectures that use efficient machine learning models, automated scaling, and optimized storage patterns so that moderation capacity tracks demand instead of running continuously at peak.
 

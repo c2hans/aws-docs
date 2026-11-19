@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/migrating-hana-sizin
 ---
 
 # SAP HANA Sizing
-<a name="migrating-hana-sizing"></a>
 
 The size of the SAP HANA system required on the AWS Cloud depends on the migration scenario. As mentioned earlier, migrating SAP HANA to AWS involves two possible scenarios: rehosting or replatforming.
 

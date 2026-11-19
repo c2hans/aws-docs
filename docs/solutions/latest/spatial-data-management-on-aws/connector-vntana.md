@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Integrating with VNTANA for 3D optimization
-<a name="connector-vntana"></a>
 
  [VNTANA](https://aws.amazon.com/marketplace/pp/prodview-ooio3bidshgy4), available on AWS Marketplace, provides automated 3D model optimization — converting CAD files into web-ready formats like glTF/GLB, USDZ, FBX, and generating thumbnails, all through a containerized processing pipeline. The VNTANA connector for SDMA brings this capability directly into your governed asset workflow. The connector uses SDMA’s [connector framework](connectors.md) and runs processing jobs through [AWS Deadline Cloud](connector-deadline-cloud.md).
 

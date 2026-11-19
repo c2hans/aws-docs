@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cloudwatch-
 ---
 
 # cloudwatch-alarm-settings-check
-<a name="cloudwatch-alarm-settings-check"></a>
 
 Checks whether CloudWatch alarms with the given metric name have the specified settings.
 

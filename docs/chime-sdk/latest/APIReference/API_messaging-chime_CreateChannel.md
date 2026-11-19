@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # CreateChannel
-<a name="API_messaging-chime_CreateChannel"></a>
 
 Creates a channel to which you can add users and send messages.
 

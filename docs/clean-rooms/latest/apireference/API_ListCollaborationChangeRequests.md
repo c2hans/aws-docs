@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_List
 ---
 
 # ListCollaborationChangeRequests
-<a name="API_ListCollaborationChangeRequests"></a>
 
 Lists all change requests for a collaboration with pagination support. Returns change requests sorted by creation time.
 

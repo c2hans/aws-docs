@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # StepParameterChunks
-<a name="API_StepParameterChunks"></a>
 
 Defines how a step parameter range should be divided into chunks.
 

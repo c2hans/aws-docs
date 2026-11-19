@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/access-entries.html
 ---
 
 # EKS Access Entries
-<a name="access-entries"></a>
 
 You can use eksctl to manage EKS Access Entries. Use access entries to grant Kubernetes permissions to AWS IAM Identities. For example, you might grant a developer role permission to read Kubernetes resources in a cluster.
 

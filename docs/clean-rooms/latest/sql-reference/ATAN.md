@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/ATAN.ht
 ---
 
 # ATAN function
-<a name="ATAN"></a>
 
 ATAN is a trigonometric function that returns the arc tangent of a number. The return value is in radians and is between `-PI` and `PI`.
 

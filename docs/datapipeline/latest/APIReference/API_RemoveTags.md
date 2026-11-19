@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Rem
 ---
 
 # RemoveTags
-<a name="API_RemoveTags"></a>
 
 Removes existing tags from the specified pipeline.
 

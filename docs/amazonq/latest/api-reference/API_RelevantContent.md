@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Relevan
 ---
 
 # RelevantContent
-<a name="API_RelevantContent"></a>
 
 Represents a piece of content that is relevant to a search query.
 

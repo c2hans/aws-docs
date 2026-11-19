@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ResourceLocation
-<a name="API_ResourceLocation"></a>
 
 The location of the browser extension.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-cr
 ---
 
 # Create a custom policy for repository creation templates
-<a name="repository-creation-templates-custom"></a>
 
 You can use the AWS Management Console to define a policy that will be subsequently associated with an IAM role. This IAM role can then be utilized as a repository creation role when configuring a repository creation template.
 

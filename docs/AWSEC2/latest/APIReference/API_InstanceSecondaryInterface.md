@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceS
 ---
 
 # InstanceSecondaryInterface
-<a name="API_InstanceSecondaryInterface"></a>
 
 Describes a secondary interface attached to an instance.
 

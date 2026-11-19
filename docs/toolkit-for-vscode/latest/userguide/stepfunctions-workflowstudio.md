@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/step
 ---
 
 # Working with AWS Step Functions Workflow Studio
-<a name="stepfunctions-workflowstudio"></a>
 
 The following sections describe how to work with AWS Step Functions Workflow Studio in the AWS Toolkit for Visual Studio Code. For detailed information about AWS Step Functions Workflow Studio, see the [Developing workflows](https://docs.aws.amazon.com/step-functions/latest/dg/developing-workflows.html) topic in the *AWS Step Functions* Developer Guide
 

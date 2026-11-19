@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # DescribeScalingActivities
-<a name="API_DescribeScalingActivities"></a>
 
 Provides descriptive information about the scaling activities in the specified namespace from the previous six weeks.
 

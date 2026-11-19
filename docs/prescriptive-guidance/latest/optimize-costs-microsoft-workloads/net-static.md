@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Support dynamic scaling for static .NET Framework apps
-<a name="net-static"></a>
 
 ## Overview
 <a name="net-static-overview"></a>

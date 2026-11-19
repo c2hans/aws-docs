@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateTa
 ---
 
 # UpdateTaskTemplate
-<a name="API_UpdateTaskTemplate"></a>
 
 Updates details about a specific task template in the specified Connect Customer instance. This operation does not support partial updates. Instead it does a full update of template content.
 

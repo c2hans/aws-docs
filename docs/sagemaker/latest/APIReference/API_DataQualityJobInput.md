@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DataQu
 ---
 
 # DataQualityJobInput
-<a name="API_DataQualityJobInput"></a>
 
 The input for the data quality monitoring job. Currently endpoints are supported for input.
 

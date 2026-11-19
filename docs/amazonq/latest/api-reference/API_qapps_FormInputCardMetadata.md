@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_F
 ---
 
 # FormInputCardMetadata
-<a name="API_qapps_FormInputCardMetadata"></a>
 
 The metadata of the form input card.
 

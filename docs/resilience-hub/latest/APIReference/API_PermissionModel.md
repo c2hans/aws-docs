@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_P
 ---
 
 # PermissionModel
-<a name="API_PermissionModel"></a>
 
 Defines the roles and credentials that AWS Resilience Hub would use while creating the application, importing its resources, and running an assessment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/distrib
 ---
 
 # Auditing and logging Distributor activity
-<a name="distributor-logging-auditing"></a>
 
 You can use AWS CloudTrail to audit activity related to Distributor. For more information about auditing and logging options for Systems Manager, see [Logging and monitoring in AWS Systems Manager](monitoring.md).
 

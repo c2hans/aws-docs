@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MemoryContent
-<a name="API_MemoryContent"></a>
 
 Contains the content of a memory record.
 

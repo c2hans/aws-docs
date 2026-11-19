@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/st
 ---
 
 # More patterns
-<a name="storageandbackup-more-patterns-pattern-list"></a>
 
 **Topics**
 + [Automatically back up SAP HANA databases using Systems Manager and EventBridge](automatically-back-up-sap-hana-databases-using-systems-manager-and-eventbridge.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteCo
 ---
 
 # DeleteContactEvaluation
-<a name="API_DeleteContactEvaluation"></a>
 
 Deletes a contact evaluation in the specified Connect Customer instance.
 

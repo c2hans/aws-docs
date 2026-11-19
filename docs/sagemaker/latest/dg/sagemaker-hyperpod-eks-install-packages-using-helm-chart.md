@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Installing packages on the Amazon EKS cluster using Helm
-<a name="sagemaker-hyperpod-eks-install-packages-using-helm-chart"></a>
 
 Before creating a SageMaker HyperPod cluster and attaching it to an Amazon EKS cluster, you should install packages using [Helm](https://helm.sh/), a package manager for Kubernetes. Helm is an open-source tool for setting up a installation process for Kubernetes clusters. It enables the automation and streamlining of dependency installations and simplifies various setups needed for preparing the Amazon EKS cluster as the orchestrator (control plane) for a SageMaker HyperPod cluster.
 

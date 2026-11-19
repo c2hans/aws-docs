@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/produ
 ---
 
 # product\_alternate
-<a name="product-alternate-entity"></a>
 
 **Primary key (PK)**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Isoline
 ---
 
 # IsolineAvoidanceZoneCategory
-<a name="API_IsolineAvoidanceZoneCategory"></a>
 
 Types of regulated zones that may affect routing.
 

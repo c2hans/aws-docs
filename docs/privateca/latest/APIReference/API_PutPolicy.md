@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/APIReference/API_PutPol
 ---
 
 # PutPolicy
-<a name="API_PutPolicy"></a>
 
 Attaches a resource-based policy to a private CA.
 

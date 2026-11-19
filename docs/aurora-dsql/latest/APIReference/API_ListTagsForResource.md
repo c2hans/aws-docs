@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_List
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Lists all of the tags for a resource.
 

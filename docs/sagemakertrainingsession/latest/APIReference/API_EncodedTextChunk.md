@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # EncodedTextChunk
-<a name="API_EncodedTextChunk"></a>
 
 A chunk of pre-tokenized text represented as a list of token IDs.
 

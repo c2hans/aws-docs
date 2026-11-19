@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_WalletPasswo
 ---
 
 # WalletPasswordSourceConfiguration
-<a name="API_WalletPasswordSourceConfiguration"></a>
 
 The configuration of the wallet password source. This is a union, so only one of the following members can be specified.
 

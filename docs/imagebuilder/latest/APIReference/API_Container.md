@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Con
 ---
 
 # Container
-<a name="API_Container"></a>
 
 Details of the container images that are output resources of an image build in a given AWS Region: the Region, and the URIs of the container images.
 

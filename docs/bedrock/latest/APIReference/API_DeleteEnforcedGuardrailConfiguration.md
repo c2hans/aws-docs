@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteEn
 ---
 
 # DeleteEnforcedGuardrailConfiguration
-<a name="API_DeleteEnforcedGuardrailConfiguration"></a>
 
 Deletes the account-level enforced guardrail configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchGetSecurityRequirements
-<a name="API_BatchGetSecurityRequirements"></a>
 
 Batch retrieves security requirements from a pack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_We
 ---
 
 # WebAppConfiguration
-<a name="API_WebAppConfiguration"></a>
 
 Configuration for the Domain web application, including Identity Center settings. If provided, all fields are required.
 

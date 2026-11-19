@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SubSlotSet
 ---
 
 # SubSlotSetting
-<a name="API_SubSlotSetting"></a>
 
 Specifications for the constituent sub slots and the expression for the composite slot.
 

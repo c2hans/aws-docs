@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/ecs-migration-202
 ---
 
 # How to migrate from ECS AL2 to ECS AL2023
-<a name="ecs-migration-2023"></a>
 
 AL2023 is a Linux-based operating system designed to provide a secure, stable, and high-performance environment for your cloud applications. For more information about the differences between AL2 and AL2023 see [Compare Amazon Linux 2023 and Amazon Linux 2](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html) in the *Amazon Linux 2023 User Guide*.
 

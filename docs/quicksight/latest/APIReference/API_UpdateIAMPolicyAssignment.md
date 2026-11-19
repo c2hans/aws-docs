@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateIAMPolicyAssignment
-<a name="API_UpdateIAMPolicyAssignment"></a>
 
 Updates an existing IAM policy assignment. This operation updates only the optional parameter or parameters that are specified in the request. This overwrites all of the users included in `Identities`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Appli
 ---
 
 # ApplicationComponent
-<a name="API_ApplicationComponent"></a>
 
 Describes a standalone resource or similarly grouped resources that the application is made up of.
 

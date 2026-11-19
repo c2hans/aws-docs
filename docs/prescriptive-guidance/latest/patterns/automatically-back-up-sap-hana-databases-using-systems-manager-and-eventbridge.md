@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automatically back up SAP HANA databases using Systems Manager and EventBridge
-<a name="automatically-back-up-sap-hana-databases-using-systems-manager-and-eventbridge"></a>
 
 *Ambarish Satarkar and Gaurav Rath, Amazon Web Services*
 

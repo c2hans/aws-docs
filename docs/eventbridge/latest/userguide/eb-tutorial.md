@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-tutorial
 ---
 
 # Amazon EventBridge tutorials
-<a name="eb-tutorial"></a>
 
 EventBridge integrates with a number of AWS services and SaaS partners. These tutorials are designed to help you get familiar with the basics of EventBridge and how it can be part of your serverless architecture.
 

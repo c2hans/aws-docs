@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_ListTas
 ---
 
 # ListTaskExecutions
-<a name="API_ListTaskExecutions"></a>
 
 Returns a list of executions for an AWS DataSync transfer task.
 

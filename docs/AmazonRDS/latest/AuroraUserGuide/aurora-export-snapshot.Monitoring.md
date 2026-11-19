@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Monitoring snapshot exports
-<a name="aurora-export-snapshot.Monitoring"></a>
 
 You can monitor DB snapshot exports using the AWS Management Console, the AWS CLI, or the RDS API.
 

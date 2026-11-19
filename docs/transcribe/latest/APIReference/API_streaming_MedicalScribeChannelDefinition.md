@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # MedicalScribeChannelDefinition
-<a name="API_streaming_MedicalScribeChannelDefinition"></a>
 
 Makes it possible to specify which speaker is on which channel. For example, if the clinician is the first participant to speak, you would set the `ChannelId` of the first `ChannelDefinition` in the list to `0` (to indicate the first channel) and `ParticipantRole` to `CLINICIAN` (to indicate that it's the clinician speaking). Then you would set the `ChannelId` of the second `ChannelDefinition` in the list to `1` (to indicate the second channel) and `ParticipantRole` to `PATIENT` (to indicate that it's the patient speaking).
 

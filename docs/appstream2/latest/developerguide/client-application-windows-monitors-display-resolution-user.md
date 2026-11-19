@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/client-
 ---
 
 # Monitors
-<a name="client-application-windows-monitors-display-resolution-user"></a>
 
 ## Monitors and Display Resolution
 <a name="monitors-display-resolution"></a>

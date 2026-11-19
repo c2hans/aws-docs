@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetails
-<a name="API_AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetails"></a>
 
 Information about the Amazon Elastic File System file system that is used for task storage.
 

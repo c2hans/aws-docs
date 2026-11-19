@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ContinuationEven
 ---
 
 # ContinuationEvent
-<a name="API_ContinuationEvent"></a>
 
 ## Contents
 <a name="API_ContinuationEvent_Contents"></a>

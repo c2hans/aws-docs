@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Scenario 6: Implementation of RTB Fabric for RTB workloads on AWS
-<a name="scenario-06-rtb-fabric"></a>
 
  AdTech companies can replace public internet connectivity and NAT Gateway-based RTB architectures with AWS RTB Fabric, a purpose-built private network for programmatic advertising that delivers single-digit millisecond latency and transaction-based pricing. RTB Fabric helps AdTech companies connect with their partners over a purpose-built, private network to run real-time bidding workloads with optimized data transfer costs and enhanced infrastructure utilization.
 

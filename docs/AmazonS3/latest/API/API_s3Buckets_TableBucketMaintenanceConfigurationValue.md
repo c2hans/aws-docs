@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_TableB
 ---
 
 # TableBucketMaintenanceConfigurationValue
-<a name="API_s3Buckets_TableBucketMaintenanceConfigurationValue"></a>
 
 Details about the values that define the maintenance configuration for a table bucket.
 

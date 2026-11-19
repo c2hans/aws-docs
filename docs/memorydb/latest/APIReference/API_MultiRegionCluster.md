@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_MultiRe
 ---
 
 # MultiRegionCluster
-<a name="API_MultiRegionCluster"></a>
 
 Represents a multi-Region cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_Connection.h
 ---
 
 # Connection
-<a name="API_Connection"></a>
 
 Status of the connection between an endpoint and a replication instance, including Amazon Resource Names (ARNs) and the last error message issued.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # JobResult
-<a name="API_JobResult"></a>
 
 Pairs an asynchronous job with the resource identifier from your request that the job processes.
 

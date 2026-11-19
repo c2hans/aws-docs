@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayConnectRequestBgpOptions
-<a name="API_TransitGatewayConnectRequestBgpOptions"></a>
 
 The BGP options for the Connect attachment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_RuntimeInf
 ---
 
 # RuntimeInfo
-<a name="API_RuntimeInfo"></a>
 
 Summary information about a runtime returned by ListRuntimes.
 

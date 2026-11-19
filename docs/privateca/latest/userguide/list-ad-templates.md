@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/list-ad-templ
 ---
 
 # List connector templates
-<a name="list-ad-templates"></a>
 
 You can use the AWS Private CA Connector for Active Directory console or AWS CLI to list templates for connectors that you own. Connector templates are based on AWS Private CA [ BlankEndEntityCertificate\_APIPassthrough/V1](https://docs.aws.amazon.com/privateca/latest/userguide/UsingTemplates.html#BlankEndEntityCertificate_APIPassthrough) templates.
 

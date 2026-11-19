@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/examples-
 ---
 
 # Getting Metrics from CloudWatch
-<a name="examples-cloudwatch-get-metrics"></a>
 
 ## Prerequisites
 <a name="codeExamplePrereq"></a>

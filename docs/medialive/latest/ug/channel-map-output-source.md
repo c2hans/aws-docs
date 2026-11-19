@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/channel-map-output-s
 ---
 
 # Map the output encodes to the sources
-<a name="channel-map-output-source"></a>
 
 In the first step of planning the channel, you identified the number of encodes you need in each output group. You must now determine which assets from the source you can use to produce those encodes.
 

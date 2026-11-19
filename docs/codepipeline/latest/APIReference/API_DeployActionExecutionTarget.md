@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Dep
 ---
 
 # DeployActionExecutionTarget
-<a name="API_DeployActionExecutionTarget"></a>
 
 The target for the deploy action.
 

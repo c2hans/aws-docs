@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_WorkflowGraph.htm
 ---
 
 # WorkflowGraph
-<a name="API_WorkflowGraph"></a>
 
 A workflow graph represents the complete workflow containing all the AWS Glue components present in the workflow and all the directed connections between them.
 

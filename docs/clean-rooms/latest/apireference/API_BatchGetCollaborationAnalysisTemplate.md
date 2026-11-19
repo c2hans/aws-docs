@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Batc
 ---
 
 # BatchGetCollaborationAnalysisTemplate
-<a name="API_BatchGetCollaborationAnalysisTemplate"></a>
 
 Retrieves multiple analysis templates within a collaboration by their Amazon Resource Names (ARNs).
 

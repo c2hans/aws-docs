@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Use
 ---
 
 # UserIdentity
-<a name="API_UserIdentity"></a>
 
 Contains information for a user identity in an access policy.
 

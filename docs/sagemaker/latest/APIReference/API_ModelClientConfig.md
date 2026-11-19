@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelC
 ---
 
 # ModelClientConfig
-<a name="API_ModelClientConfig"></a>
 
 Configures the timeout and maximum number of retries for processing a transform job invocation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-stored-
 ---
 
 # Setting and showing binary log configuration
-<a name="mysql-stored-proc-configuring"></a>
 
 The following stored procedures set and show configuration parameters, such as for binary log file retention.
 

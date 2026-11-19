@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/outbound-calli
 ---
 
 # Outbound calling restrictions in Connect Customer
-<a name="outbound-calling-restrictions"></a>
 
 This topic explains restrictions that are in place for outbound calling with Connect Customer.
 

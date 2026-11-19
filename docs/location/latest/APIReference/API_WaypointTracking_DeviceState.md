@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # DeviceState
-<a name="API_WaypointTracking_DeviceState"></a>
 
 The device's position, IP address, and Wi-Fi access points.
 

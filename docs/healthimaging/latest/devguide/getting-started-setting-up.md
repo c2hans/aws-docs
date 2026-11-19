@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/getting-st
 ---
 
 # Setting up AWS HealthImaging
-<a name="getting-started-setting-up"></a>
 
 You must set up your AWS environment before using AWS HealthImaging. The following topics are prerequisites for the [tutorial](getting-started-tutorial.md) located in the next section.
 

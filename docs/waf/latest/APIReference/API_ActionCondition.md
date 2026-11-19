@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ActionCondit
 ---
 
 # ActionCondition
-<a name="API_ActionCondition"></a>
 
 A single action condition for a [Condition](API_Condition.md) in a logging filter.
 

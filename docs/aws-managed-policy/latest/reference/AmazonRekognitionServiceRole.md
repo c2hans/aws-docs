@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRekognitionServiceRole
-<a name="AmazonRekognitionServiceRole"></a>
 
 **Description**: Allows Rekognition to call AWS services on your behalf.
 

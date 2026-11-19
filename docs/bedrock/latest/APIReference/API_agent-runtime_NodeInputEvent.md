@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # NodeInputEvent
-<a name="API_agent-runtime_NodeInputEvent"></a>
 
 Contains information about the inputs provided to a specific node during a flow execution.
 

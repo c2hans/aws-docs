@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Update Dashboards
-<a name="update-dashboards"></a>
 
 ## Update Dashboards
 <a name="update-dashboards-2"></a>

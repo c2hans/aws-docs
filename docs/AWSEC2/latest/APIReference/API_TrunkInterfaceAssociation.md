@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TrunkInte
 ---
 
 # TrunkInterfaceAssociation
-<a name="API_TrunkInterfaceAssociation"></a>
 
 Information about an association between a branch network interface with a trunk network interface.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/example_eve
 ---
 
 # Hello EventBridge
-<a name="example_eventbridge_Hello_section"></a>
 
 The following code examples show how to get started using EventBridge.
 

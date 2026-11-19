@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_SetDefaultAu
 ---
 
 # SetDefaultAuthorizer
-<a name="API_SetDefaultAuthorizer"></a>
 
 Sets the default authorizer. This will be used if a websocket connection is made without specifying an authorizer.
 

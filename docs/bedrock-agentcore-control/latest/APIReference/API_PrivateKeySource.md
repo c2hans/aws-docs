@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # PrivateKeySource
-<a name="API_PrivateKeySource"></a>
 
 Contains the private key source configuration for a JWT client assertion.
 

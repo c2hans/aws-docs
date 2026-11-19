@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RegistrationVersionInformation
-<a name="API_RegistrationVersionInformation"></a>
 
 Provides information about the specified version of the registration.
 

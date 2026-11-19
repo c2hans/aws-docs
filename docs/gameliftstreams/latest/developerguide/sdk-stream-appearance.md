@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/sd
 ---
 
 # Customize stream appearance
-<a name="sdk-stream-appearance"></a>
 
 ## Loading screen
 <a name="sdk-loading-screen"></a>

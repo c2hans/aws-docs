@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/APIReference/API_F
 ---
 
 # FilterExpression
-<a name="API_FilterExpression"></a>
 
 Filters environmental impact values by specific dimension values.
 

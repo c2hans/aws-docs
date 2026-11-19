@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # CopyClusterSnapshot
-<a name="API_elastic_CopyClusterSnapshot"></a>
 
 Copies a snapshot of an elastic cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_P
 ---
 
 # ProvisioningArtifactPreferences
-<a name="API_ProvisioningArtifactPreferences"></a>
 
 The user-defined preferences that will be applied during product provisioning, unless overridden by `ProvisioningPreferences` or `UpdateProvisioningPreferences`.
 

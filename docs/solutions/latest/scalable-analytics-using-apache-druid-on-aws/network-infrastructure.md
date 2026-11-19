@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Network infrastructure
-<a name="network-infrastructure"></a>
 
 By default, the guidance provisions a new Virtual Private Cloud (VPC) consisting of three types of subnets: public, private, and isolated. The subnet type is determined by how you configure routing for your subnets. To read more, refer to the [Subnet types for Amazon VPC](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html#subnet-types) section.
 

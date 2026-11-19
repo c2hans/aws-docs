@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Recipe.html
 ---
 
 # Recipe
-<a name="API_Recipe"></a>
 
 A AWS Glue Studio node that uses a AWS Glue DataBrew recipe in AWS Glue jobs.
 

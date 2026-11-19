@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_GetRene
 ---
 
 # GetRenewalPricing
-<a name="API_GetRenewalPricing"></a>
 
 Gets all available renewal pricing options for the specified Outpost.
 

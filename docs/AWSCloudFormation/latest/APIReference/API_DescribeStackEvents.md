@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DescribeStackEvents
-<a name="API_DescribeStackEvents"></a>
 
 Returns all stack related events for a specified stack in reverse chronological order. For more information about a stack's event history, see [Understand CloudFormation stack creation events](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stack-resource-configuration-complete.html) in the * AWS CloudFormation User Guide*.
 

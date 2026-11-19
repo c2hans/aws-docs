@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_SystemSt
 ---
 
 # SystemStatus
-<a name="API_SystemStatus"></a>
 
 CPU utilization and load average metrics for an Amazon EC2 instance.
 

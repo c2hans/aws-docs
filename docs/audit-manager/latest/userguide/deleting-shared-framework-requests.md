@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/deleting-
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Deleting share requests in AWS Audit Manager
-<a name="deleting-shared-framework-requests"></a>
 
 When you no longer need a share request, you can delete it from your Audit Manager environment. This enables you to clean up your workspace and focus on the requests that are relevant to your current tasks and priorities.
 

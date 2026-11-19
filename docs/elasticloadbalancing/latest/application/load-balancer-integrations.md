@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Integrations for your Application Load Balancer
-<a name="load-balancer-integrations"></a>
 
 You can optimize your Application Load Balancer architecture by integrating with several other AWS services to enhance the performance, security, and availability of your application.
 

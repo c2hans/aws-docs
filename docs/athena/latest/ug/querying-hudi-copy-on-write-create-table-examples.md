@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-hudi-copy-on-w
 ---
 
 # Copy on write (CoW) create table examples
-<a name="querying-hudi-copy-on-write-create-table-examples"></a>
 
 If you have Hudi tables already created in AWS Glue, you can query them directly in Athena. When you create partitioned Hudi tables in Athena, you must run `ALTER TABLE ADD PARTITION` to load the Hudi data before you can query it.
 

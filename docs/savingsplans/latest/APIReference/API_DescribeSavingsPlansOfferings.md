@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_Des
 ---
 
 # DescribeSavingsPlansOfferings
-<a name="API_DescribeSavingsPlansOfferings"></a>
 
 Describes the offerings for the specified Savings Plans.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Disconnect a participant from a contact in Connect Customer agent workspace
-<a name="3P-apps-contact-requests-disconnectparticipant"></a>
 
 Disconnects a specific participant from the contact.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-hp-rft-
 ---
 
 # Reinforcement Learning
-<a name="nova-hp-rft-forge"></a>
 
 **Note**
 Detailed documentation is provided once subscribed

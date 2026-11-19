@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/user-in
 ---
 
 # Have Your Users Install the WorkSpaces Applications Client Themselves
-<a name="user-install-client"></a>
 
 For step-by-step guidance that you can provide your users to help them install the WorkSpaces Applications client, see [Setup for Windows](client-application-windows-installation-user.md) or [Setup and installation for macOS](client-application-mac-installation-user.md).
 

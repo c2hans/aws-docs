@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # LogPublishingOptionsStatus
-<a name="API_LogPublishingOptionsStatus"></a>
 
 The configured log publishing options for the domain and their current status.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow S3InputFormatConfig
-<a name="aws-properties-appflow-flow-s3inputformatconfig"></a>
 
  When you use Amazon S3 as the source, the configuration format that you provide the flow input data.
 

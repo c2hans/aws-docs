@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/input-output-re
 ---
 
 # Specifying state output using ResultPath in Step Functions
-<a name="input-output-resultpath"></a>
 
 **Managing state and transforming data**
 This page refers to JSONPath. Step Functions recently added variables and JSONata to manage state and transform data.

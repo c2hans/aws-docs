@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_DataR
 ---
 
 # DataRecoveryTargets
-<a name="API_DataRecoveryTargets"></a>
 
 Defines data recovery targets for a resilience policy.
 

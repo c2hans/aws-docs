@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/monitoring-insights.htm
 ---
 
 # Monitor Event Function performance with Amazon CloudWatch Lambda Insights
-<a name="monitoring-insights"></a>
 
 Amazon CloudWatch Lambda Insights collects and aggregates Lambda Event Function runtime performance metrics and logs for your serverless applications. This page describes how to enable and use Lambda Insights to diagnose issues with your Lambda Event Functions.
 

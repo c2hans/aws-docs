@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel10-b
 ---
 
 # REL10-BP01 Deploy the workload to multiple locations
-<a name="rel10-bp01"></a>
 
  Fires, floods, power loss, network faults, and human error can disable a data center or affect an entire geographic area. Distributing a workload's compute and data across multiple isolated locations removes this single point of failure, so the workload stays available when one location fails. The right number of locations depends on how much downtime and data loss the business can accept.
 

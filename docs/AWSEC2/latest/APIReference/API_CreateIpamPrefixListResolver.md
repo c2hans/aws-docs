@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpa
 ---
 
 # CreateIpamPrefixListResolver
-<a name="API_CreateIpamPrefixListResolver"></a>
 
 Creates an IPAM prefix list resolver.
 

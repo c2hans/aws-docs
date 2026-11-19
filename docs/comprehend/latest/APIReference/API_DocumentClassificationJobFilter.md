@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Docum
 ---
 
 # DocumentClassificationJobFilter
-<a name="API_DocumentClassificationJobFilter"></a>
 
 Provides information for filtering a list of document classification jobs. For more information, see the [ListDocumentClassificationJobs](API_ListDocumentClassificationJobs.md) operation. You can provide only one filter parameter in each request.
 

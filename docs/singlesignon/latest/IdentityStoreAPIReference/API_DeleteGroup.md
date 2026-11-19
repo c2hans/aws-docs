@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # DeleteGroup
-<a name="API_DeleteGroup"></a>
 
 Delete a group within an identity store given `GroupId`.
 

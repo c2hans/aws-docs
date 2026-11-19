@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # MergeProfiles
-<a name="API_connect-customer-profiles_MergeProfiles"></a>
 
 Runs an AWS Lambda job that does the following:
 

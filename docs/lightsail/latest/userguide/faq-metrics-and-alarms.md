@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/faq-metrics-a
 ---
 
 # Resource health metrics and alarms
-<a name="faq-metrics-and-alarms"></a>
 
 ## What are metrics?
 <a name="what-are-metrics"></a>

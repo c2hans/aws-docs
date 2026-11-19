@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ---
 
 # How to geocode a point of interest
-<a name="how-to-geocode-poi"></a>
 
 You can use the geocode API to geocode the coordinates of a known place (Point of interest) such as business addresses, landmark, or tourist spot. The API response contains location information, including geographical coordinates, and match scores that indicate how well the result matches the query.
 

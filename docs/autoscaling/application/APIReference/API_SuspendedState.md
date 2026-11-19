@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # SuspendedState
-<a name="API_SuspendedState"></a>
 
 Specifies whether the scaling activities for a scalable target are in a suspended state.
 

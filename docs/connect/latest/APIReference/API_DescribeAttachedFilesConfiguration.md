@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeAttachedFilesConfiguration
-<a name="API_DescribeAttachedFilesConfiguration"></a>
 
 Describes the attached files configuration for the specified Connect Customer instance and attachment scope.
 

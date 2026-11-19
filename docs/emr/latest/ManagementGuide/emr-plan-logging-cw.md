@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-logg
 ---
 
 # Publish Amazon EMR logs to CloudWatch Logs
-<a name="emr-plan-logging-cw"></a>
 
 ## Overview
 <a name="emr-plan-logging-cw-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/APITrou
 ---
 
 # Troubleshooting applications on Aurora
-<a name="APITroubleshooting"></a>
 
 Amazon RDS provides specific and descriptive errors to help you troubleshoot problems while interacting with the Amazon RDS API.
 

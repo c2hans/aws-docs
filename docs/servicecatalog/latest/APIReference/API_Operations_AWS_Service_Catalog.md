@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_O
 ---
 
 # AWS Service Catalog
-<a name="API_Operations_AWS_Service_Catalog"></a>
 
 The following actions are supported by AWS Service Catalog:
 +  [AcceptPortfolioShare](API_AcceptPortfolioShare.md)

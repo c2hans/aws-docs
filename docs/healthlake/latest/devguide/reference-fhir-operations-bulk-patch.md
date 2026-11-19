@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # Patching resources at scale with `$bulk-patch`
-<a name="reference-fhir-operations-bulk-patch"></a>
 
 AWS HealthLake supports the `$bulk-patch` operation for applying patch operations to large numbers of FHIR resources asynchronously. You can target a specific list of resources by ID, or all resources of a given type within a datastore. With this operation, you can modify resources at scale without updating each resource individually.
 

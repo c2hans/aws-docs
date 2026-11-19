@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost06-
 ---
 
 # COST06-BP02 Select resource type, size, and number based on data
-<a name="cost06-bp02"></a>
 
  Base the type, size, and number of resources on evidence of the workload's compute, memory, throughput, and storage demands. Draw that evidence from a prior version of the workload, vendor documentation, published benchmarks, or a cost model.
 

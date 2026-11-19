@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/signing-up
 ---
 
 # Signing up and confirming user accounts
-<a name="signing-up-users-in-your-app"></a>
 
 User accounts are added to your user pool in one of the following ways:
 + The user signs up in your user pool's client app. This can be a mobile or web app.

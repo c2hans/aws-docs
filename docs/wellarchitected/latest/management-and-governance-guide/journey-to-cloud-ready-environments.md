@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # Journey to cloud-ready environments
-<a name="journey-to-cloud-ready-environments"></a>
 
 A cornerstone of a successful, cost-efficient, secure, and compliant cloud strategy is to emphasize proactive management and governance. Incorporating best practices from the M&G Guide helps you grow with AWS, whether you are in the setup, migrate, or operate phase of the cloud journey. The progression along that journey includes the adoption of management and governance capabilities as you mature. The three phases of a typical cloud journey are described in the following sections.
 

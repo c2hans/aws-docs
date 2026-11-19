@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Modeling data with Amazon DynamoDB
-<a name="introduction"></a>
 
 *Camilo Gonzalez, Moinul Al-Mamun, Satheish Kumar Chandraprakasam, and Santiago Segura, Amazon Web Services*
 

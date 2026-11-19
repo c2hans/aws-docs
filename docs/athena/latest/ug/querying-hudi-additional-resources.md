@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-hudi-additiona
 ---
 
 # Additional resources
-<a name="querying-hudi-additional-resources"></a>
 
 For additional resources on using Apache Hudi with Athena, see the following resources.
 

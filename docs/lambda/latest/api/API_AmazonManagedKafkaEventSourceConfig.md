@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_AmazonManagedKafka
 ---
 
 # AmazonManagedKafkaEventSourceConfig
-<a name="API_AmazonManagedKafkaEventSourceConfig"></a>
 
 Specific configuration settings for an Amazon Managed Streaming for Apache Kafka (Amazon MSK) event source.
 

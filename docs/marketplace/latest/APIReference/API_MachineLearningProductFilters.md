@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Mach
 ---
 
 # MachineLearningProductFilters
-<a name="API_MachineLearningProductFilters"></a>
 
 The filters that you can use with the ListEntities operation to filter machine learning products. You can filter by `EntityId`, `astModifiedDate`, `ProductTitle`, and `Visibility`.
 

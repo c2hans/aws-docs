@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/ecs-managed-insta
 ---
 
 # Job definitions on Amazon ECS Managed Instances
-<a name="ecs-managed-instances-job-definitions"></a>
 
 AWS Batch jobs on Amazon ECS Managed Instances use the `ecsProperties` job definition format with a platform capability of `MANAGED_INSTANCES`. Amazon ECS Managed Instances jobs do not support legacy `containerProperties`.
 

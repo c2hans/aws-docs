@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle local and global partitioned indexes and PostgreSQL partitioned indexes
-<a name="chap-oracle-aurora-pg.tables.partitioned"></a>
 
 With AWS DMS, you can migrate partitioned tables from Oracle and PostgreSQL databases to Amazon Aurora. Oracle local and global partitioned indexes and PostgreSQL partitioned indexes are database objects that improve query performance by dividing large tables into smaller, more manageable pieces called partitions.
 

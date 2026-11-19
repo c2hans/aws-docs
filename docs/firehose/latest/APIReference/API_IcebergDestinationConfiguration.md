@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Iceberg
 ---
 
 # IcebergDestinationConfiguration
-<a name="API_IcebergDestinationConfiguration"></a>
 
  Specifies the destination configure settings for Apache Iceberg Table.
 

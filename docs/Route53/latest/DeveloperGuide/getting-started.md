@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-st
 ---
 
 # Getting started with Amazon Route 53
-<a name="getting-started"></a>
 
 Get started by registering a domain with Amazon Route 53 and configuring Route 53 to respond to DNS queries for a static website. The first topic hosts a static website in an open Amazon S3 bucket. The second topic uses a Amazon CloudFront distribution to serve the website with SSL/TLS.
 

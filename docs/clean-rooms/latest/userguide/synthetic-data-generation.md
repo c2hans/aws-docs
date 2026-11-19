@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/synthetic-d
 ---
 
 # Privacy-enhanced synthetic dataset generation
-<a name="synthetic-data-generation"></a>
 
 A *synthetic dataset* has similar statistical properties to the original dataset it's based on, but doesn't contain the real-world observations present in the original dataset. By using privacy-enhanced synthetic datasets, you can unlock new machine learning (ML) model training use cases that data privacy concerns previously prevented. When you create an ML input channel, you can generate synthetic data to protect sensitive information while training ML models.
 

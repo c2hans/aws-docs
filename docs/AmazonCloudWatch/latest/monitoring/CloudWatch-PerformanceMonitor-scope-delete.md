@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Delete the scope in Performance Monitor
-<a name="CloudWatch-PerformanceMonitor-scope-delete"></a>
 
 Before you can delete your scope, you must delete all of your Performance Monitor and Network Flow Monitor monitors. It can take about 15 minutes to complete removing monitors after you request to delete them. For more information, see [Delete a monitor in Performance Monitor](CloudWatch-PerformanceMonitor-monitors-delete.md).
 

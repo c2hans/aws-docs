@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EbsStatus
 ---
 
 # EbsStatusSummary
-<a name="API_EbsStatusSummary"></a>
 
 Provides a summary of the attached EBS volume status for an instance.
 

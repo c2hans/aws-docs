@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-mtrl
 ---
 
 # Sample datasets and tutorials
-<a name="model-customize-mtrl-samples"></a>
 
 ## End-to-end example: Customer onboarding agent
 <a name="model-customize-mtrl-samples-e2e"></a>

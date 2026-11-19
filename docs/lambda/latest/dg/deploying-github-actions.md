@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/deploying-github-action
 ---
 
 # Using GitHub Actions to deploy Event Functions
-<a name="deploying-github-actions"></a>
 
 You can use [GitHub Actions](https://github.com/features/actions) to automatically deploy Lambda Event Functions when you push code or configuration changes to your repository. The [Deploy Lambda Function](https://github.com/aws-actions/aws-lambda-deploy) action provides a declarative, simple YAML interface that eliminates the complexity of manual deployment steps.
 

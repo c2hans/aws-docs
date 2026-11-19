@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/aws-ground-stat
 ---
 
 # AWS Ground Station Locations
-<a name="aws-ground-station-antenna-locations"></a>
 
  AWS Ground Station provides a global network of ground stations in close proximity to our global network of AWS infrastructure regions. You can configure your use of these locations from any supported AWS Region. This includes the AWS Region in which data is delivered.
 

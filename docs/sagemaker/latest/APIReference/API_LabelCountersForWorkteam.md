@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_LabelC
 ---
 
 # LabelCountersForWorkteam
-<a name="API_LabelCountersForWorkteam"></a>
 
 Provides counts for human-labeled tasks in the labeling job.
 

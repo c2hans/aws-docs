@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Persiste
 ---
 
 # PersistentConnectionConfig
-<a name="API_PersistentConnectionConfig"></a>
 
 Configuration settings for persistent connection for a specific channel.
 

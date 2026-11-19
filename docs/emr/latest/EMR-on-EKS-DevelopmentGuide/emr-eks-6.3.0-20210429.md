@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # emr-6.3.0-20210429
-<a name="emr-eks-6.3.0-20210429"></a>
 
 **Release notes**: `emr-6.3.0-20210429` was released on April 29, 2021. This is the initial release of Amazon EMR 6.3.0.
 

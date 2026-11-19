@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UntagResourc
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 This action removes a tag from an Amazon FSx resource.
 

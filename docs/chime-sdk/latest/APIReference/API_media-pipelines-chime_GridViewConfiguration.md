@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # GridViewConfiguration
-<a name="API_media-pipelines-chime_GridViewConfiguration"></a>
 
 Specifies the type of grid layout.
 

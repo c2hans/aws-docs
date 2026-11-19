@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/bu
 ---
 
 # Build a cold start forecasting model by using DeepAR for time series in Amazon SageMaker AI Studio Lab
-<a name="build-a-cold-start-forecasting-model-by-using-deepar"></a>
 
 *Ivan Cui and Eyal Shacham, Amazon Web Services*
 

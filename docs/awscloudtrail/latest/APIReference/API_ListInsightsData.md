@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Li
 ---
 
 # ListInsightsData
-<a name="API_ListInsightsData"></a>
 
 Returns Insights events generated on a trail that logs data events. You can list Insights events that occurred in a Region within the last 90 days.
 

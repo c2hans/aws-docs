@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableIm
 ---
 
 # DisableImageDeprecation
-<a name="API_DisableImageDeprecation"></a>
 
 Cancels the deprecation of the specified AMI.
 

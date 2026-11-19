@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf03-
 ---
 
 # PERF03-BP02 Evaluate available configuration options for data store
-<a name="perf03-bp02"></a>
 
  A data store's default configuration rarely matches a specific workload. Every store exposes options that trade cost, capacity, consistency, and speed against one another. Evaluate and test the configuration before you rely on it.
 

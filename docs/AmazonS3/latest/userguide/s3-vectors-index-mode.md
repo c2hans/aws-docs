@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-ind
 ---
 
 # Changing a vector index's mode
-<a name="s3-vectors-index-mode"></a>
 
 A vector index whose index mode is `ENHANCED` applies your metadata filter before the vector search, ensuring high recall even when filters match a small fraction of vectors, and it supports the `$startsWith` filter operator. Indexes in vector buckets created before September 30, 2026 use `CLASSIC` by default, including indexes you create in those buckets later. We recommend moving these indexes to `ENHANCED`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Recording
 ---
 
 # RecordingStrategy
-<a name="API_RecordingStrategy"></a>
 
 Specifies the recording strategy of the configuration recorder.
 

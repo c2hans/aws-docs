@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RoutingP
 ---
 
 # RoutingProfileQueueConfigSummary
-<a name="API_RoutingProfileQueueConfigSummary"></a>
 
 Contains summary information about a routing profile queue.
 

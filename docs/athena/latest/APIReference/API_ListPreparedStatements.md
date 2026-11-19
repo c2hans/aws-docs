@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ListPrepa
 ---
 
 # ListPreparedStatements
-<a name="API_ListPreparedStatements"></a>
 
 Lists the prepared statements in the specified workgroup.
 

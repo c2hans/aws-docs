@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/athena-bi-tools-jdbc-od
 ---
 
 # Connect to Amazon Athena with ODBC and JDBC drivers
-<a name="athena-bi-tools-jdbc-odbc"></a>
 
 To explore and visualize your data with business intelligence tools, download, install, and configure an ODBC (Open Database Connectivity) or JDBC (Java Database Connectivity) driver.
 

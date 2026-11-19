@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-connec
 ---
 
 # Connecting to Amazon Neptune databases using IAM authentication with Gremlin console
-<a name="iam-auth-connecting-gremlin-console"></a>
 
 To connect to Amazon Neptune using the Gremlin console with Signature Version 4 authentication, you use `requestInterceptor()` to plug in a SigV4 signer to the connection established by the `:remote` command. This requires you to configure the `Cluster` object manually and then pass it to the `:remote` command.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Batc
 ---
 
 # BatchGetSchema
-<a name="API_BatchGetSchema"></a>
 
 Retrieves multiple schemas by their identifiers.
 

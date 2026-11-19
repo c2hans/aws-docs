@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AWS Billing and Cost Management Dashboards
-<a name="API_Operations_AWS_Billing_and_Cost_Management_Dashboards"></a>
 
 The following actions are supported by AWS Billing and Cost Management Dashboards:
 +  [CreateDashboard](API_bcmDashboards_CreateDashboard.md)

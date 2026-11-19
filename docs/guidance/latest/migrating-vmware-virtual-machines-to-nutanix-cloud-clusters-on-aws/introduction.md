@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/migrating-vmware-virtual
 ---
 
 # Guidance for Migrating VMware Virtual Machines to Nutanix Cloud Clusters on AWS
-<a name="introduction"></a>
 
 ## Overview
 <a name="overview"></a>

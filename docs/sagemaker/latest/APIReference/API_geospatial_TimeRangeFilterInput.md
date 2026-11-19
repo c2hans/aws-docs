@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # TimeRangeFilterInput
-<a name="API_geospatial_TimeRangeFilterInput"></a>
 
 The input for the time-range filter.
 

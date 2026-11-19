@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Pip
 ---
 
 # PipelineDescription
-<a name="API_PipelineDescription"></a>
 
 Contains pipeline metadata.
 

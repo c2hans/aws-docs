@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Owners
 ---
 
 # OwnershipSettingsSummary
-<a name="API_OwnershipSettingsSummary"></a>
 
 Specifies summary information about the ownership settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/cw-metrics-
 ---
 
 # View CloudWatch metrics for on-premises resources
-<a name="cw-metrics-on-premises"></a>
 
 AWS Global Networks for Transit Gateways publishes data points to Amazon CloudWatch for your on-premises resources, including devices and links. CloudWatch enables you to retrieve statistics about those data points as an ordered set of time series data, known as metrics. Each data point has an associated timestamp and an optional unit of measurement.
 

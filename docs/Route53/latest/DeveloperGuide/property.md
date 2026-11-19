@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/property.h
 ---
 
 # .property
-<a name="property"></a>
 
 Used for information about any type of property, including real estate or intellectual property. Also used by those who have houses, buildings, or land to sell, lease, or rent.
 

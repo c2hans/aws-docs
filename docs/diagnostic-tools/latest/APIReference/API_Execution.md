@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/diagnostic-tools/latest/APIReference/API
 ---
 
 # Execution
-<a name="API_Execution"></a>
 
 Information about Diagnostic Tool Execution.
 

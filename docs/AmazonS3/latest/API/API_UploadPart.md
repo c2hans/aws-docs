@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPart.html
 ---
 
 # UploadPart
-<a name="API_UploadPart"></a>
 
 Uploads a part in a multipart upload.
 
@@ -215,6 +214,7 @@ x-amz-server-side-encryption-customer-key-MD5: {{SSECustomerKeyMD5}}
 x-amz-server-side-encryption-aws-kms-key-id: {{SSEKMSKeyId}}
 x-amz-server-side-encryption-bucket-key-enabled: {{BucketKeyEnabled}}
 x-amz-request-charged: {{RequestCharged}}
+x-amz-version-id: {{VersionId}}
 ```
 
 ## Response Elements
@@ -281,6 +281,11 @@ This functionality is not supported for directory buckets.
 If server-side encryption with a customer-provided encryption key was requested, the response will include this header to provide the round-trip message integrity verification of the customer-provided encryption key.
 This functionality is not supported for directory buckets.
 
+ ** [x-amz-version-id](#API_UploadPart_ResponseSyntax) **   <a name="AmazonS3-UploadPart-response-header-VersionId"></a>
+Version ID of the object.
+Returns the Version ID of the object for the uploaded part, if bucket versioning is enabled.
+This functionality is not supported for directory buckets.
+
 ## Examples
 <a name="API_UploadPart_Examples"></a>
 
@@ -316,8 +321,25 @@ Connection: keep-alive
 Server: AmazonS3
 ```
 
-### Example for general purpose buckets: Upload a part with an encryption key in the request for server-side encryption
+### Sample Response for general purpose buckets when the object is versioned
 <a name="API_UploadPart_Example_3"></a>
+
+If versioning is enabled on the bucket, Amazon S3 includes the `x-amz-version-id` response header.
+
+```
+HTTP/1.1 200 OK
+x-amz-id-2: Vvag1LuByRx9e6j5Onimru9pO4ZVKnJ2Qz7/C1NPcfTWAtRPfTaOFg==
+x-amz-request-id: 318BC8BC148832E5
+x-amz-version-id: 3/L4kqtJlcpXroDTDmJ+rmSpXd3QBpUMLUo
+Date:  Mon, 1 Nov 2010 20:34:56 GMT
+ETag: "b54357faf0632cce46e942fa68356b38"
+Content-Length: 0
+Connection: keep-alive
+Server: AmazonS3
+```
+
+### Example for general purpose buckets: Upload a part with an encryption key in the request for server-side encryption
+<a name="API_UploadPart_Example_4"></a>
 
 If you initiated a multipart upload with a request to save an object using server-side encryption with a customer-provided encryption key, each part upload must also include the same set of encryption-specific headers as shown in the following example request.
 
@@ -332,7 +354,7 @@ x-amz-server-side-encryption-customer-algorithm: AES256
 ```
 
 ### Example for general purpose buckets
-<a name="API_UploadPart_Example_4"></a>
+<a name="API_UploadPart_Example_5"></a>
 
 In the response, Amazon S3 returns encryption-specific headers providing the encryption algorithm used and MD5 digest of the encryption key you provided in the request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emulator/latest/userguide/cli-reference.
 ---
 
 # AWS Emulator command reference
-<a name="cli-reference"></a>
 
 The `aws-emulator` command starts an instance of AWS Emulator. You install it with the Linux package, or run it in a container that you build. For installation, see [Getting started with AWS Emulator](getting-started.md). The container takes the same options as the native command.
 

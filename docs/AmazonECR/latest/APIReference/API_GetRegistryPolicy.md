@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetReg
 ---
 
 # GetRegistryPolicy
-<a name="API_GetRegistryPolicy"></a>
 
 Retrieves the permissions policy for a registry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_Autoshift
 ---
 
 # AutoshiftInResource
-<a name="API_AutoshiftInResource"></a>
 
 A complex structure that lists an autoshift that is currently active for a managed resource and information about the autoshift.
 

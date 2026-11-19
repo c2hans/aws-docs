@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/percentileOver-fu
 ---
 
 # percentileOver
-<a name="percentileOver-function"></a>
 
 The `percentileOver` function calculates the *n*th percentile of a measure partitioned by a list of dimensions. There are two varieties of the `percentileOver` calculation available in Quick:
 + [percentileContOver](https://docs.aws.amazon.com/quicksight/latest/user/percentileContOver-function.html) uses linear interpolation to determine result.

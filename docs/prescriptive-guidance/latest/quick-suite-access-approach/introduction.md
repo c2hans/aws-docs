@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite
 ---
 
 # Choosing the right access approach for AWS Quick
-<a name="introduction"></a>
 
 *Henry Kong, Amazon Web Services*
 

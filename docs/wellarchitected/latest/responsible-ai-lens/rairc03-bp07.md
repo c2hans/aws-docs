@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIRC03-BP07 Measure user controllability of system behavior
-<a name="rairc03-bp07"></a>
 
  To verify that users can effectively control your AI system when they need to override, adjust, or roll back its behavior, develop quantitative measures that assess how well user controls correlate with intended system outcomes. Test the range and granularity of control effectiveness by measuring whether adjustments produce the expected changes in system behavior. Create metrics that capture both the responsiveness of controls and their precision. Your metrics should measure when controls fail to work as intended or when they produce unexpected side effects.
 

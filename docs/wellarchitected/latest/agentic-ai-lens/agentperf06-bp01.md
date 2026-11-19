@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTPERF06-BP01 Design optimized tool integration strategies
-<a name="agentperf06-bp01"></a>
 
  Agents that surface the right tools at the right time respond faster and make better decisions. LLMs make increasingly poor tool selection decisions once the candidate set grows beyond 10-15 tools, so dynamic filtering, parallel execution, and cached results keep the reasoning loop tight even as the tool catalog grows. Tool invocations happen inside the reasoning loop, which means their latency adds directly to response time.
 

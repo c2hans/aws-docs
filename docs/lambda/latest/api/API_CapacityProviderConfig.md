@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CapacityProviderCo
 ---
 
 # CapacityProviderConfig
-<a name="API_CapacityProviderConfig"></a>
 
 Configuration for the capacity provider that manages compute resources for Lambda functions.
 

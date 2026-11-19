@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/ps-defa
 ---
 
 # Specifying a default parameter tier for your AWS account and AWS Region
-<a name="ps-default-tier"></a>
 
 If you create or update a parameter but don't specify a parameter tier in the command, the default tier setting determines the tier. By default, Parameter Store sets the default setting to the standard parameter tier.
 

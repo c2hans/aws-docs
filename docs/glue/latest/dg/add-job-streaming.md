@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/add-job-streaming.html
 ---
 
 # Streaming ETL jobs in AWS Glue
-<a name="add-job-streaming"></a>
 
 You can create streaming extract, transform, and load (ETL) jobs that run continuously, consume data from streaming sources like Amazon Kinesis Data Streams, Apache Kafka, and Amazon Managed Streaming for Apache Kafka (Amazon MSK). The jobs cleanse and transform the data, and then load the results into Amazon S3 data lakes or JDBC data stores.
 

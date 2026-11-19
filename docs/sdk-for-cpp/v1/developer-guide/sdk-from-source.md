@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/sdk-from-
 ---
 
 # Getting the AWS SDK for C\+\+ from source code
-<a name="sdk-from-source"></a>
 
 You can use the AWS SDK for C\+\+ from your code by first building the SDK from source and then installing it locally.
 

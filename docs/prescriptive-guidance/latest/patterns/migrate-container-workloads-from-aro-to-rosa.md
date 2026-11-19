@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate your container workloads from Azure Red Hat OpenShift (ARO) to Red Hat OpenShift Service on AWS (ROSA)
-<a name="migrate-container-workloads-from-aro-to-rosa"></a>
 
 *Naveen Ramasamy, Srikanth Rangavajhala, and Gireesh Sreekantan, Amazon Web Services*
 

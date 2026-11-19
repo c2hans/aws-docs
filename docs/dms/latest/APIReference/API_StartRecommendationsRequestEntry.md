@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StartRecomme
 ---
 
 # StartRecommendationsRequestEntry
-<a name="API_StartRecommendationsRequestEntry"></a>
 
 Provides information about the source database to analyze and provide target recommendations according to the specified requirements.
 

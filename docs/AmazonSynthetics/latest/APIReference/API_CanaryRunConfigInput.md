@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # CanaryRunConfigInput
-<a name="API_CanaryRunConfigInput"></a>
 
 A structure that contains input information for a canary run.
 

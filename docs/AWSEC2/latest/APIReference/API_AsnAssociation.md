@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AsnAssoci
 ---
 
 # AsnAssociation
-<a name="API_AsnAssociation"></a>
 
 An Autonomous System Number (ASN) and BYOIP CIDR association.
 

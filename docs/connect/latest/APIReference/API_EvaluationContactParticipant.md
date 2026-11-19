@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationContactParticipant
-<a name="API_EvaluationContactParticipant"></a>
 
 Information about a contact participant in the evaluation.
 

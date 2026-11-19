@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registration-
 ---
 
 # Realty Brokers
-<a name="registration-help-vertical-realty"></a>
 
 This guide covers A2P SMS registration requirements specific to real estate brokerages, agents, and property management companies. Real estate messaging is permitted but requires careful attention to brand identity, lead source disclosure, and consent collection.
 

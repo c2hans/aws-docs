@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ListingFacet
-<a name="API_marketplace-discovery_ListingFacet"></a>
 
 A facet value with display information and a count of matching listings. Used to build filter and browse experiences.
 

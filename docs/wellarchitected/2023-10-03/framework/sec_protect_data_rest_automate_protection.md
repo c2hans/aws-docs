@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC08-BP03 Automate data at rest protection
-<a name="sec_protect_data_rest_automate_protection"></a>
 
  Use automated tools to validate and enforce data at rest controls continuously, for example, verify that there are only encrypted storage resources. You can [automate validation that all EBS volumes are encrypted](https://docs.aws.amazon.com/config/latest/developerguide/encrypted-volumes.html) using [AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html). [AWS Security Hub CSPM](http://aws.amazon.com/security-hub/) can also verify several different controls through automated checks against security standards. Additionally, your AWS Config Rules can automatically [remediate noncompliant resources](https://docs.aws.amazon.com/config/latest/developerguide/remediation.html#setup-autoremediation).
 

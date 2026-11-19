@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetDocumentati
 ---
 
 # GetDocumentationVersion
-<a name="API_GetDocumentationVersion"></a>
 
 Gets a documentation version.
 

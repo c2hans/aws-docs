@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBugBustPlayerAccess
-<a name="AWSBugBustPlayerAccess"></a>
 
 **Description**: This IAM policy grants users access to participate in AWS BugBust events
 

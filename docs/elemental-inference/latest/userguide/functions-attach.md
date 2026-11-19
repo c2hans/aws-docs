@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Attaching a function to a feed
-<a name="functions-attach"></a>
 
 You attach a function to a feed by adding a *function output* to the feed, in the same way that you add an output for any other feature. The following table lists the fields of a function output.
 

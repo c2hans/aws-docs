@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/accessin
 ---
 
 # Accessing AWS services
-<a name="accessing-aws-services"></a>
 
 ------
 #### [ AWS Management Console ]

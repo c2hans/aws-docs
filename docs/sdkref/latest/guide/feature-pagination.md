@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/feature-pagination.h
 ---
 
 # Pagination
-<a name="feature-pagination"></a>
 
 Many AWS service operations can return more results than fit in a single response. When this occurs, the response includes a pagination token that indicates more results are available. To retrieve the next page of results, you include that token in a subsequent request. This process repeats until no token is returned, indicating you have received all results.
 

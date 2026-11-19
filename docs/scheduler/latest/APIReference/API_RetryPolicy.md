@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_RetryP
 ---
 
 # RetryPolicy
-<a name="API_RetryPolicy"></a>
 
 A `RetryPolicy` object that includes information about the retry policy settings, including the maximum age of an event, and the maximum number of times EventBridge Scheduler will try to deliver the event to a target.
 

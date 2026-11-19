@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Amazon SQS AWS JSON protocol FAQs
-<a name="sqs-json-faqs"></a>
 
 This topic covers frequently asked questions about using AWS JSON protocol with Amazon SQS.
 

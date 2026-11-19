@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Mea
 ---
 
 # MeasurementProcessingConfig
-<a name="API_MeasurementProcessingConfig"></a>
 
 The processing configuration for the given measurement property. You can configure measurements to be kept at the edge or forwarded to the AWS Cloud. By default, measurements are forwarded to the cloud.
 

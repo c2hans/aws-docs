@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedded-analytic
 ---
 
 # Embedding the AWS Quick Sight console using GetSessionEmbedUrl (old API)
-<a name="embedded-analytics-full-console-for-authenticated-users-get"></a>
 
 **Important**
 AWS Quick Sight has new APIs for embedding analytics: `GenerateEmbedUrlForAnonymousUser` and `GenerateEmbedUrlForRegisteredUser`.

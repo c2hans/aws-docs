@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/provide-c
 ---
 
 # Provide client certificates for mutual TLS
-<a name="provide-client-certificates"></a>
 
 Attach a client certificate to a penetration test so that AWS Security Agent can test endpoints that require mutual Transport Layer Security (mTLS). An mTLS endpoint accepts a connection only when the client presents a certificate during the TLS handshake. Without a client certificate, the endpoint rejects the connection and AWS Security Agent cannot test it.
 

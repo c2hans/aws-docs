@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/i
 ---
 
 # Determine which paths to invalidate
-<a name="invalidation-access-logs"></a>
 
 If you want to invalidate multiple files such as all of the files in a directory or all files that begin with the same characters, you can include the `*` wildcard at the end of the invalidation path. For more information about using the ` *` wildcard, see [Invalidation paths](invalidation-specifying-objects.md#invalidation-specifying-objects-paths).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 ---
 
 # Best practice 15.7 – Efficiently manage your analytics infrastructure to reduce underutilized resources
-<a name="best-practice-15.7-efficiently-manage-your-analytics-infrastructure-to-reduce-underutilized-resources"></a>
 
  Ensuring your organization has the correct amount of resource provisioned for your workload is a diﬃcult and challenging task. The common approach for ensuring your organization has the suﬃcient number of resources available for unpredicted peaks is to overprovision your resources. However, this approach generally leads to underutilization, and energy waste.
 

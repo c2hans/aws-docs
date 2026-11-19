@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_ThirdPa
 ---
 
 # ThirdPartySourceRepository
-<a name="API_ThirdPartySourceRepository"></a>
 
 Information about a third-party source repository connected to CodeGuru Reviewer.
 

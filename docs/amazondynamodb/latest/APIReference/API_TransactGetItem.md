@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_T
 ---
 
 # TransactGetItem
-<a name="API_TransactGetItem"></a>
 
 Specifies an item to be retrieved as part of the transaction.
 

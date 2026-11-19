@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_InsightSummary.html
 ---
 
 # InsightSummary
-<a name="API_InsightSummary"></a>
 
 Information that describes an insight.
 

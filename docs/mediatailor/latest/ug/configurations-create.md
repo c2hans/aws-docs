@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/configurations-cre
 ---
 
 # Creating an MediaTailor playback configuration
-<a name="configurations-create"></a>
 
 This topic shows how to create a configuration to start receiving content streams with AWS Elemental MediaTailor. It also shows how to provide an access point for downstream playback devices to request content.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Expression
-<a name="API_Expression"></a>
 
 Use `Expression` to filter in various Cost Explorer APIs.
 
@@ -40,7 +39,7 @@ For the `GetReservationPurchaseRecommendation` action, only NOT is supported. AN
 
  ** And **   <a name="awscostmanagement-Type-Expression-And"></a>
 Return results that match both `Dimension` objects.
-Type: Array of [Expression](#API_Expression) objects
+Type: Array of [Expression](API_Expression.md) objects
 Required: No
 
  ** CostCategories **   <a name="awscostmanagement-Type-Expression-CostCategories"></a>
@@ -55,12 +54,12 @@ Required: No
 
  ** Not **   <a name="awscostmanagement-Type-Expression-Not"></a>
 Return results that don't match a `Dimension` object.
-Type: [Expression](#API_Expression) object
+Type: [Expression](API_Expression.md) object
 Required: No
 
  ** Or **   <a name="awscostmanagement-Type-Expression-Or"></a>
 Return results that match either `Dimension` object.
-Type: Array of [Expression](#API_Expression) objects
+Type: Array of [Expression](API_Expression.md) objects
 Required: No
 
  ** ProductAttributes **   <a name="awscostmanagement-Type-Expression-ProductAttributes"></a>

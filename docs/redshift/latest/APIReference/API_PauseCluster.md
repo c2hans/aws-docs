@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_PauseCl
 ---
 
 # PauseCluster
-<a name="API_PauseCluster"></a>
 
 Pauses a cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-Mean.html
 ---
 
 # Mean
-<a name="dqdl-rule-types-Mean"></a>
 
 Checks whether the mean (average) of all the values in a column matches a given expression.
 

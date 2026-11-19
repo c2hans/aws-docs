@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-snowflake-target
 ---
 
 # Creating a Snowflake target node
-<a name="creating-snowflake-target-node"></a>
 
 ## Permissions needed
 <a name="creating-snowflake-target-node-permissions"></a>

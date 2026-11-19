@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_C
 ---
 
 # CachediSCSIVolume
-<a name="API_CachediSCSIVolume"></a>
 
 Describes an iSCSI cached volume.
 

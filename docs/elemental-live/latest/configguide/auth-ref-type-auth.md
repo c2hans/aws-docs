@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/auth-r
 ---
 
 # Supported types of user authentication
-<a name="auth-ref-type-auth"></a>
 
 AWS Elemental Live supports the following types of user authentication:
 

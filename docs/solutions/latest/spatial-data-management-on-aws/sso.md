@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Single sign-on (SSO)
-<a name="sso"></a>
 
 Spatial Data Management on AWS (SDMA) authenticates users with an Amazon Cognito user pool that the solution creates at deployment time. Instead of managing users and groups directly in Amazon Cognito, you can federate the user pool with your organization’s external identity provider (IdP). With federation, you can enable single sign-on (SSO): your users sign in to the Spatial Data Portal with their existing corporate credentials, and user and group management stays centralized in your identity system.
 

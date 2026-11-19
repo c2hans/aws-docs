@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/add-analysi
 ---
 
 # Adding an analysis rule to a configured table
-<a name="add-analysis-rule"></a>
 
 The following sections describe how to add an analysis rule to your configured table. By deﬁning the analysis rules, you can authorize the member who can query to run queries that match a speciﬁc analysis rule supported by AWS Clean Rooms.
 

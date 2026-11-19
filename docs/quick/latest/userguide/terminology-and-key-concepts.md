@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/terminology-and-k
 ---
 
 # Terminology and key concepts
-<a name="terminology-and-key-concepts"></a>
 
 Understanding the core terminology and concepts helps you effectively create, run, share, and maintain flows within your organization.
 

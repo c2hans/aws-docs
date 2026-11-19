@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResetImag
 ---
 
 # ResetImageAttribute
-<a name="API_ResetImageAttribute"></a>
 
 Resets an attribute of an AMI to its default value.
 

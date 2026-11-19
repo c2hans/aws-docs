@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/security-scp-admi
 ---
 
 # Using service control policies to restrict AWS Quick sign-up options
-<a name="security-scp-admin"></a>
 
 If you're an administrator in AWS Organizations, you can use service control policies (SCPs) to restrict how individuals in your organization can sign up for AWS Quick. You can restrict the edition of Quick they can sign up for, and also the type of user that they can sign up for.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Gutte
 ---
 
 # GutterStyle
-<a name="API_GutterStyle"></a>
 
 The display options for gutter spacing between tiles on a sheet.
 

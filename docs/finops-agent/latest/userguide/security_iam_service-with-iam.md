@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/finops-agent/latest/userguide/security_i
 AWS FinOps Agent is in preview release and is subject to change.
 
 # How AWS FinOps Agent works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to AWS FinOps Agent, learn what IAM features are available to use with AWS FinOps Agent.
 

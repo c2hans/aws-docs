@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/t
 ---
 
 # MACsec Security in AWS Direct Connect
-<a name="encryption-macsec"></a>
 
 Publication date: **March 5, 2025 ([Diagram history](#temac-diagram-history))**
 

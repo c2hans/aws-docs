@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchGetCustomEnt
 ---
 
 # BatchGetCustomEntityTypes
-<a name="API_BatchGetCustomEntityTypes"></a>
 
 Retrieves the details for the custom patterns specified by a list of names.
 

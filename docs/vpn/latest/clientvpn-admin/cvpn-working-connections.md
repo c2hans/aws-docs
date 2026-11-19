@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # AWS Client VPN client connections
-<a name="cvpn-working-connections"></a>
 
 AWS Client VPN connections are active VPN sessions that have been established by clients to a specific Client VPN endpoint as well as connections that had been terminated within the last 60 minutes for that endpoint. A connection is established when a client successfully connects to a Client VPN endpoint. Terminating a session ends that client connection to the Client VPN endpoint.
 

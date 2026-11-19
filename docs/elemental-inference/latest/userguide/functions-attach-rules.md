@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Rules that Elemental Inference checks when you attach a function
-<a name="functions-attach-rules"></a>
 
 Elemental Inference rejects an attachment that it can't run, at the time you save the feed rather than at the time the function would first fire. The following table lists the rules.
 

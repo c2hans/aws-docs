@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/troubleshootin
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Troubleshooting scaling issues
-<a name="troubleshooting-v3-scaling-issues"></a>
 
 This section is relevant to clusters that were installed using AWS ParallelCluster version 3.0.0 and later with the Slurm job scheduler. For more information about configuring multiple queues, see [Configuration of multiple queues](configuration-of-multiple-queues-v3.md).
 

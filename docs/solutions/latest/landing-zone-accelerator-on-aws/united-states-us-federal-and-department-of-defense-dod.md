@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Deploy to AWS GovCloud (US) Regions
-<a name="united-states-us-federal-and-department-of-defense-dod"></a>
 
 We architected this solution to follow the Defense Information Systems Agency (DISA) Cloud Computing Security Requirements Guide (CC SRG) for hosting Impact Level (IL)4 and IL5 workloads in the cloud when deployed in AWS GovCloud (US) Regions. Using this solution, you can deploy an architecture baseline that accommodates US Federal and DoD requirements to rapidly achieve Authority to Operate (ATO).
 

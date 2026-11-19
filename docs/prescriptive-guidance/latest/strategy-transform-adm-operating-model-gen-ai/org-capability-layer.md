@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ---
 
 # Organization capability layer of an ADM operating model
-<a name="org-capability-layer"></a>
 
 Traditionally, organizational capabilities such as knowledge management, communication and collaboration, and program or change management tools lack an AI-specific focus. As you integrate generative AI into your ADM practices, your organizational capabilities must evolve. This section outlines key areas for transformation and strategies to make effective use of your AMS partners. This section also explores how AI drives global resource distribution, cultivates essential skills, develops new competencies, establishes AI CoEs, and fosters a continuous learning culture.
 

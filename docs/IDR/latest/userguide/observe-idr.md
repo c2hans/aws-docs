@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IDR/latest/userguide/observe-idr.html
 ---
 
 # AWS Incident Detection and Response monitoring and observability
-<a name="observe-idr"></a>
 
 AWS Incident Detection and Response offers you expert guidance on defining observability across your workloads from the application layer to the underlying infrastructure. Monitoring tells you that something is wrong. Observability uses data collection to tell you what is wrong and why it happened.
 

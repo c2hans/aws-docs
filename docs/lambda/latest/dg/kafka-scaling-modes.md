@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/kafka-scaling-modes.htm
 ---
 
 # Apache Kafka event poller scaling modes in Lambda
-<a name="kafka-scaling-modes"></a>
 
 You can choose between two modes of event poller scaling for Amazon MSK and self-managed Apache Kafka event source mappings:
 + [On-demand mode (default)](#kafka-default-mode)

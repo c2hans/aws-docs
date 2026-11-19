@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # Quotas for configuring and running a REST API in API Gateway
-<a name="api-gateway-execution-service-limits-table"></a>
 
 The following quotas apply to configuring and running a REST API in Amazon API Gateway. If the quota is per-API, it can only be increased on specific APIs, not for all the APIs in an account.
 

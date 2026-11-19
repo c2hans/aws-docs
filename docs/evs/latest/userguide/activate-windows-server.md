@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/activate-windows-se
 ---
 
 # Activate Windows Server on entitled VMs
-<a name="activate-windows-server"></a>
 
 Amazon Elastic VMware Service provides Windows Server activation for VMs that have Windows Server entitlements. You create an Amazon EVS Windows Server activation VPC endpoint in the VPC of your environment, and then configure each entitled VM to activate against it.
 

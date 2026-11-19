@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # Interact with web applications using Amazon Bedrock AgentCore Browser
-<a name="browser-tool"></a>
 
 The Amazon Bedrock AgentCore Browser provides a secure, isolated browser environment for your agents to interact with web applications. It runs in a containerized environment, keeping web activity separate from your system. It includes security features such as session isolation, built-in observability through live viewing, CloudTrail logging, and session replay capabilities.
 

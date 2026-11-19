@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ExchangeCodeForTokenRequestBody
-<a name="API_ExchangeCodeForTokenRequestBody"></a>
 
 Describes the configuration of a request to exchange an access code for a token.
 

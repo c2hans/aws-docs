@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/patternmatch-ope
 ---
 
 # PatternMatch Operands
-<a name="patternmatch-operands"></a>
 
 Each operand is an array of Pattern match objects.
 

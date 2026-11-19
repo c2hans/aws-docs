@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-vpc.html
 ---
 
 # Give Amazon SageMaker Clarify Jobs Access to Resources in Your Amazon VPC
-<a name="clarify-vpc"></a>
 
 To control access to your data and SageMaker Clarify jobs, we recommend that you create a private Amazon VPC and configure it so that your jobs aren't accessible over the public internet. For information about creating and configuring an Amazon VPC for processing jobs, see [Give SageMaker Processing Jobs Access to Resources in Your Amazon VPC](https://docs.aws.amazon.com/sagemaker/latest/dg/process-vpc).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_NetworkF
 ---
 
 # NetworkFirewallMissingExpectedRTViolation
-<a name="API_NetworkFirewallMissingExpectedRTViolation"></a>
 
 Violation detail for AWS Network Firewall for a subnet that's not associated to the expected Firewall Manager managed route table.
 

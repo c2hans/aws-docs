@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/examples-
 ---
 
 # Sending, Receiving, and Deleting Amazon SQS Messages
-<a name="examples-sqs-messages"></a>
 
 Messages are always delivered using an [SQS queue](examples-sqs-message-queues.md). These C\+\+ examples show you how to use the AWS SDK for C\+\+ to send, receive, and delete Amazon SQS messages from SQS queues.
 

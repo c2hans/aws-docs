@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodePipeline::Pipeline PipelineTriggerDeclaration
-<a name="aws-properties-codepipeline-pipeline-pipelinetriggerdeclaration"></a>
 
 Represents information about the specified trigger configuration, such as the filter criteria and the source stage for the action that contains the trigger.
 

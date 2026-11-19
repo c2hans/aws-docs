@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_P
 ---
 
 # PrincipalOutput
-<a name="API_qapps_PrincipalOutput"></a>
 
 The principal for which the permission applies.
 

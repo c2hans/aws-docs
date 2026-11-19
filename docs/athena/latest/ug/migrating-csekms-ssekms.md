@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/migrating-csekms-ssekms
 ---
 
 # Migrate from CSE-KMS to SSE-KMS
-<a name="migrating-csekms-ssekms"></a>
 
 You can specify CSE-KMS encryption in two ways – during the workgroup query results encryption configuration and in the client-side settings. For more information, see [Encrypt Athena query results stored in Amazon S3](encrypting-query-results-stored-in-s3.md). During the migration process, it's important to audit your existing workflows that read and write CSE-KMS data, identify workgroups where CSE-KMS is configured, and locate instances where CSE-KMS is set through client-side parameters.
 

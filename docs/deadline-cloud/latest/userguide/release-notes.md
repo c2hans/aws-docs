@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/release-
 ---
 
 # Deadline Cloud release notes
-<a name="release-notes"></a>
 
 This page contains information about the latest releases and updates to AWS Deadline Cloud.
 

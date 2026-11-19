@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/deleting-metric-at
 ---
 
 # Deleting an Amazon Personalize metric attribution
-<a name="deleting-metric-attribution"></a>
 
 If you no longer want to generate reports, you can delete a metric attribution. Deleting a metric attribution deletes all of its metrics and output configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-
 ---
 
 # Choosing an NLP approach for healthcare and life sciences
-<a name="choosing-approach"></a>
 
 The [Generative AI and NLP approaches for healthcare and life sciences](hcls-options.md) section describes the following approaches for addressing natural language processing (NLP) tasks for healthcare and life science applications:
 + Using Amazon Comprehend Medical

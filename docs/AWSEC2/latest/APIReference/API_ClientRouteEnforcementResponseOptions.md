@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientRou
 ---
 
 # ClientRouteEnforcementResponseOptions
-<a name="API_ClientRouteEnforcementResponseOptions"></a>
 
 The current status of Client Route Enforcement.
 

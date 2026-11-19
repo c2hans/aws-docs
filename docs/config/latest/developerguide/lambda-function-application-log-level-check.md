@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/lambda-func
 ---
 
 # lambda-function-application-log-level-check
-<a name="lambda-function-application-log-level-check"></a>
 
 Checks if AWS Lambda functions with JSON structured logs are configured with a specified application log level. The rule is NON\_COMPLIANT if configuration.loggingConfig.applicationLogLevel is not a value specified in the required rule parameter.
 

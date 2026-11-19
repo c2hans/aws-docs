@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_G
 ---
 
 # GroupingAppComponent
-<a name="API_GroupingAppComponent"></a>
 
 Creates a new recommended Application Component (AppComponent).
 

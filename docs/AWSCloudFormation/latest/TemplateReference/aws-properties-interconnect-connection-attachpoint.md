@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Interconnect::Connection AttachPoint
-<a name="aws-properties-interconnect-connection-attachpoint"></a>
 
 The logical attachment point in your AWS network where the managed connection is connected. Currently, the only supported type of attach point is a AWS Direct Connect gateway.
 

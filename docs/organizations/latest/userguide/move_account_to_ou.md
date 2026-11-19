@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/move_acco
 ---
 
 # Moving accounts to an organizational unit (OU) or between the root and OUs with AWS Organizations
-<a name="move_account_to_ou"></a>
 
 When you sign in to your organization's management account, you can move accounts in your organization from the root to an OU, from one OU to another, or back to the root from an OU. Placing an account inside an OU makes it subject to any policies that are attached to the parent OU and any OUs in the parent chain up to the root. If an account isn't in an OU, it's subject to only the policies that are attached directly to the root and any policies that are attached directly to the account. To move accounts, complete the following steps.
 

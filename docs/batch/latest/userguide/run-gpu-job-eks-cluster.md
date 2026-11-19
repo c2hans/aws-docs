@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/run-gpu-job-eks-c
 ---
 
 # Run a GPU job in your Amazon EKS cluster
-<a name="run-gpu-job-eks-cluster"></a>
 
 The GPU resource is non-compressible. AWS Batch creates a pod spec for GPU jobs where the value of **request** equals the value of **limits**. This is a Kubernetes requirement.
 

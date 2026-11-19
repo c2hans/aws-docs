@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Transcript
 ---
 
 # TranscriptSourceSetting
-<a name="API_TranscriptSourceSetting"></a>
 
 Indicates the setting of the location where the transcript is stored.
 

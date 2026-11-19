@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_AppBl
 ---
 
 # AppBlockBuilder
-<a name="API_AppBlockBuilder"></a>
 
 Describes an app block builder.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/authentication
 ---
 
 # Set IP address restrictions and session timeouts in Connect Customer
-<a name="authentication-profiles"></a>
 
 **Note**
 This feature is in preview release and subject to change. To obtain access to this feature, contact your Connect Customer Solutions Architect, Technical Account Manager, or Support.

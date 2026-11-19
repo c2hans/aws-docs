@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ListFailuresForLicenseConfigurationOperations
-<a name="API_ListFailuresForLicenseConfigurationOperations"></a>
 
 Lists the license configuration operations that failed.
 

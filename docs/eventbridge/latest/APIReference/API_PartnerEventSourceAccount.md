@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Part
 ---
 
 # PartnerEventSourceAccount
-<a name="API_PartnerEventSourceAccount"></a>
 
 The AWS account that a partner event source has been offered to.
 

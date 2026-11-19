@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_PutHubCon
 ---
 
 # PutHubConfiguration
-<a name="API_PutHubConfiguration"></a>
 
 Update a hub configuration.
 

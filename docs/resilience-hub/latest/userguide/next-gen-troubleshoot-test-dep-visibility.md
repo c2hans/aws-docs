@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Not all dependencies visible in the test
-<a name="next-gen-troubleshoot-test-dep-visibility"></a>
 
 **Symptom:** Not all discovered dependencies are shown in the dropdown.
 

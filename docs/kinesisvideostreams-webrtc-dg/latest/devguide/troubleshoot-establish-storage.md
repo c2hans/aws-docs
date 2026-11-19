@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 ---
 
 # Troubleshoot issues connecting with the storage session
-<a name="troubleshoot-establish-storage"></a>
 
 This section provides guidance on troubleshooting issues related to setting up and configuring storage for recording video streams.
 

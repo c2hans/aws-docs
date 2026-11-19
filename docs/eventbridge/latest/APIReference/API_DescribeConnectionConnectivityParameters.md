@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Desc
 ---
 
 # DescribeConnectionConnectivityParameters
-<a name="API_DescribeConnectionConnectivityParameters"></a>
 
 If the connection uses a private OAuth endpoint, the parameters for EventBridge to use when authenticating against the endpoint.
 

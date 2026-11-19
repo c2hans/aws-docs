@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Slac
 ---
 
 # SlackChannel
-<a name="API_SlackChannel"></a>
 
 Represents a Slack channel with its ID and optional name.
 

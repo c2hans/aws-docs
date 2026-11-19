@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hcatalog-usi
 ---
 
 # Using HCatalog
-<a name="emr-hcatalog-using"></a>
 
 You can use HCatalog within various applications that use the Hive metastore. The examples in this section show how to create a table and use it in the context of Pig and Spark SQL.
 

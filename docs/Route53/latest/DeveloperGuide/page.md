@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/page.html
 ---
 
 # .page
-<a name="page"></a>
 
 Used to build a simple, secure online presence.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::WebFunctionRevision ServiceConfig
-<a name="aws-properties-lambda-webfunctionrevision-serviceconfig"></a>
 
 The service configuration for a web function revision, including execution role, timeout, VPC network access, concurrency, and telemetry settings.
 

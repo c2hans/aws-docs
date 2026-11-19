@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CommandParam
 ---
 
 # CommandParameterValueComparisonOperand
-<a name="API_CommandParameterValueComparisonOperand"></a>
 
 The comparison operand used to compare the defined value against the value supplied in request.
 

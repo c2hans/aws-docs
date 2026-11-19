@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SpaceJ
 ---
 
 # SpaceJupyterLabAppSettings
-<a name="API_SpaceJupyterLabAppSettings"></a>
 
 The settings for the JupyterLab application within a space.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/incl
 ---
 
 # Included AWS Services
-<a name="included-aws-services-marketplace-metering"></a>
 
 Partner Revenue Measurement automatically measures service consumption for Amazon Machine Image (AMI) and Machine Learning (ML) products listed on AWS Marketplace. The following services are supported:
 

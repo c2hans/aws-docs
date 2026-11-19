@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/capacity-reservatio
 ---
 
 # Using I-ODCRs with AWS PCS
-<a name="capacity-reservations-iodcr"></a>
 
  Interruptible On-Demand Capacity Reservations (I-ODCRs) let ODCR owners temporarily share unused reserved capacity with other accounts in their AWS organization. Consumer instances receive a **2-minute termination warning** when the owner reclaims capacity, making I-ODCRs suitable for fault-tolerant workloads such as batch processing, ML training, and data analysis.
 

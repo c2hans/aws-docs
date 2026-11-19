@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_GetPolicyVer
 ---
 
 # GetPolicyVersion
-<a name="API_GetPolicyVersion"></a>
 
 Returns details for the version of a policy. Policies define the permissions for team resources.
 

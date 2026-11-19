@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateStudioLifecycleConfig
-<a name="API_CreateStudioLifecycleConfig"></a>
 
 Creates a new Amazon SageMaker AI Studio Lifecycle Configuration.
 

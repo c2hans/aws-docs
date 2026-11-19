@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/examples-g
 ---
 
 # Example: Kinesis Video Streams producer SDK GStreamer Plugin - kvssink
-<a name="examples-gstreamer-plugin"></a>
 
 This topic describes how to build the Amazon Kinesis Video Streams producer SDK to use as a GStreamer plugin.
 

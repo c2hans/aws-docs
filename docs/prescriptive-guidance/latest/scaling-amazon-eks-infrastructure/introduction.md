@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/scaling-ama
 ---
 
 # Scaling Amazon EKS infrastructure to optimize compute, workloads, and network performance
-<a name="introduction"></a>
 
 *Aniket Dekate, Ishwar Chauthaiwale, and Aniket Kurzadkar, Amazon Web Services*
 

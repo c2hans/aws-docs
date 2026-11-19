@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-tags
 ---
 
 # Remove tags from an Amazon EMR cluster
-<a name="emr-plan-tags-delete"></a>
 
 If you no longer need a tag, you can remove it from the cluster.
 

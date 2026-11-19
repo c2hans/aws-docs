@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Creat
 ---
 
 # CreateRepository
-<a name="API_CreateRepository"></a>
 
 Creates a new, empty repository.
 

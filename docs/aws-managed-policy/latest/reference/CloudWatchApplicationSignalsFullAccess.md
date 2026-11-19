@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchApplicationSignalsFullAccess
-<a name="CloudWatchApplicationSignalsFullAccess"></a>
 
 **Description**: Provide full access to CloudWatch Application Signals service and scoped access to the dependencies needed to use and operate this service.
 

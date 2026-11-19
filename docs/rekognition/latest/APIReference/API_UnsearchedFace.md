@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Unse
 ---
 
 # UnsearchedFace
-<a name="API_UnsearchedFace"></a>
 
 Face details inferred from the image but not used for search. The response attribute contains reasons for why a face wasn't used for Search.
 

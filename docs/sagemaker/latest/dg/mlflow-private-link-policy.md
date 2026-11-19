@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-private-link-
 ---
 
 # Create a VPC Endpoint Policy for SageMaker AI MLflow
-<a name="mlflow-private-link-policy"></a>
 
 You can attach an Amazon VPC endpoint policy to the interface VPC endpoints that you use to connect to SageMaker AI MLflow. The endpoint policy controls access to MLflow. You can specify the following:
 + The principal that can perform actions.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Document.
 ---
 
 # Document
-<a name="API_Document"></a>
 
 A document in an index.
 

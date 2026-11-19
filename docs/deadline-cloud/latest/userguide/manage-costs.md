@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/manage-c
 ---
 
 # Manage costs and usage for Deadline Cloud farms
-<a name="manage-costs"></a>
 
 Use the cost management topics to control estimated spending and capacity, review farm usage, and understand what drives your actual costs.
 

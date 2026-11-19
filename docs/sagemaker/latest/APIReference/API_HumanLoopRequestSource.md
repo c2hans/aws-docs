@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanL
 ---
 
 # HumanLoopRequestSource
-<a name="API_HumanLoopRequestSource"></a>
 
 Container for configuring the source of human task requests.
 

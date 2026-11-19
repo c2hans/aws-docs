@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/enable-checkpo
 ---
 
 # Enable checkpoints using the using the AWS Management Console or AWS CLI
-<a name="enable-checkpoints-console-cli"></a>
 
 You can use the AWS Management Console or AWS CLI to enable checkpoints.
 

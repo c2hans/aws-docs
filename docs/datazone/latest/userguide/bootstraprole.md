@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/bootstraprole.
 ---
 
 # AmazonDataZoneProvisioningRole-<domainAccountId>
-<a name="bootstraprole"></a>
 
 The `AmazonDataZoneProvisioningRole-<domainAccountId>` has the `AmazonDataZoneRedshiftGlueProvisioningPolicy` attached. This role grants Amazon DataZone the permissions required to interoperate with AWS Glue and Amazon Redshift.
 

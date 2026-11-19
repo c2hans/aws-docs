@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/list-cluster
 ---
 
 # List clusters
-<a name="list-clusters"></a>
 
 The following is an example of a request to list the clusters in an account, and the response.
 

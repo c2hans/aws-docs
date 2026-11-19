@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Unta
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from the specified AWS DevOps Agent resource.
 

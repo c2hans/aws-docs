@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListReadSetUploadPa
 ---
 
 # ListReadSetUploadParts
-<a name="API_ListReadSetUploadParts"></a>
 
 Lists all parts in a multipart read set upload for a sequence store and returns the metadata in a JSON formatted output.
 

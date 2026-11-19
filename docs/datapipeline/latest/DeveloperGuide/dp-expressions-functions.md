@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-ex
 AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
 
 # Pipeline Expressions and Functions
-<a name="dp-expressions-functions"></a>
 
 This section explains the syntax for using expressions and functions in pipelines, including the associated data types.
 

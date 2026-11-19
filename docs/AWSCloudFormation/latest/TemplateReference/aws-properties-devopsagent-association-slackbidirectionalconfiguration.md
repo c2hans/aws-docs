@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Association SlackBidirectionalConfiguration
-<a name="aws-properties-devopsagent-association-slackbidirectionalconfiguration"></a>
 
 Configuration for bidirectional communication between AWS DevOps Agent and the Slack channel of this association. Use `RoleArn` to specify the IAM role that the agent assumes to handle conversations in that channel. Use `Enabled` to control whether the agent responds to mentions in that channel.
 

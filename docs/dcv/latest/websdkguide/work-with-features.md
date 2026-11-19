@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/websdkguide/work-with-feature
 ---
 
 # Work with Amazon DCV features
-<a name="work-with-features"></a>
 
 The availability of Amazon DCV features depends on the permissions configured for the Amazon DCV session and the capabilities of the client's web browser.
 

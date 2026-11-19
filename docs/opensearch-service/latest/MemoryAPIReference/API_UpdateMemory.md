@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # UpdateMemory
-<a name="API_UpdateMemory"></a>
 
 Updates a memory in place. Supply only the fields to change. Omitted fields keep their stored values. A request must supply `content` or `metadata`, or it fails with `ValidationException`. Supplying `content` re-embeds the memory. A change to metadata alone doesn't.
 

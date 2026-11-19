@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-permissions.html
 ---
 
 # Managing permissions in AWS Lambda
-<a name="lambda-permissions"></a>
 
 You can use AWS Identity and Access Management (IAM) to manage permissions in AWS Lambda. There are two main categories of permissions that you need to consider when working with Lambda Event Functions:
 + Permissions that your Lambda functions need to perform API actions and access other AWS resources

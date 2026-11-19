@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/language-runtimes.html
 ---
 
 # Getting started with programming runtimes on AL2027
-<a name="language-runtimes"></a>
 
 **AL2027 Preview**
 AL2027 is currently available for preview. It is intended for evaluation and testing only and is not recommended for production workloads.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/zeek-
 ---
 
 # CloudWatch pipelines configuration for Zeek
-<a name="zeek-pipeline-setup"></a>
 
 The Zeek setup on AWS reads log data from Amazon S3 buckets using Amazon SQS notifications for new object events.
 

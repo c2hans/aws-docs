@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # The STAR Booking Contract
-<a name="extend-star-contract"></a>
 
 Every booking-shaped artifact AVX produces — service request tickets, appointment proposals, warranty pre-checks — is emitted as **STAR-shaped JSON**. The structure maps 1:1 to the Standards for Technology in Automotive Retail (STAR) XML message types, so tenants already consuming STAR XML can receive a JSON equivalent and enable an optional XML converter via the `booking.starXmlConversion` tenant config flag.
 

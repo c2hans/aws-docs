@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateUserDefined
 ---
 
 # UpdateUserDefinedFunction
-<a name="API_UpdateUserDefinedFunction"></a>
 
 Updates an existing function definition in the Data Catalog.
 

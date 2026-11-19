@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_EC2Repla
 ---
 
 # EC2ReplaceRouteTableAssociationAction
-<a name="API_EC2ReplaceRouteTableAssociationAction"></a>
 
 Information about the ReplaceRouteTableAssociation action in Amazon EC2.
 

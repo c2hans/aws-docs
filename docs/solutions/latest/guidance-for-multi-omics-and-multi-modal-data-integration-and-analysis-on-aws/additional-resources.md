@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 ---
 
 # Additional resources
-<a name="additional-resources"></a>
 
 <table>
 <thead>

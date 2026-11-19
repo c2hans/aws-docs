@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_CreateStandbyW
 ---
 
 # CreateStandbyWorkspaces
-<a name="API_CreateStandbyWorkspaces"></a>
 
 Creates a standby WorkSpace in a secondary Region.
 

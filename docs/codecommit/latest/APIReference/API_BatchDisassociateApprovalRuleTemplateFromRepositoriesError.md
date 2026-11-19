@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Batch
 ---
 
 # BatchDisassociateApprovalRuleTemplateFromRepositoriesError
-<a name="API_BatchDisassociateApprovalRuleTemplateFromRepositoriesError"></a>
 
 Returns information about errors in a BatchDisassociateApprovalRuleTemplateFromRepositories operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_De
 ---
 
 # DescribeResourcePolicy
-<a name="API_DescribeResourcePolicy"></a>
 
 Retrieves information about a resource policy.
 

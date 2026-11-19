@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/rbp-remove-
 ---
 
 # Removing resource-based policies
-<a name="rbp-remove-policy"></a>
 
 You can remove resource-based policies from clusters to change access controls.
 

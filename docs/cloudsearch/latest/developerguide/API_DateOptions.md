@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Da
 ---
 
 # DateOptions
-<a name="API_DateOptions"></a>
 
 ## Description
 <a name="API_DateOptions_Description"></a>

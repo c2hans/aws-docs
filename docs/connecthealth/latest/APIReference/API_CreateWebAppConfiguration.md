@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Cr
 ---
 
 # CreateWebAppConfiguration
-<a name="API_CreateWebAppConfiguration"></a>
 
 Input configuration for creating a web application. Used only in CreateDomain operation input.
 

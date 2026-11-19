@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-ack.html
 ---
 
 # `cdk acknowledge`
-<a name="ref-cli-cmd-ack"></a>
 
 Acknowledge a notice by issue number and hide it from displaying again.
 

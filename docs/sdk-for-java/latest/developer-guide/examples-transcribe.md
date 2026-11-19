@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Work with Amazon Transcribe
-<a name="examples-transcribe"></a>
 
 The following example shows how bidirectional streaming works using Amazon Transcribe. Bidirectional streaming implies that there’s both a stream of data going to the service and being received back in real time. The example uses Amazon Transcribe streaming transcription to send an audio stream and receive a stream of transcribed text back in real time.
 

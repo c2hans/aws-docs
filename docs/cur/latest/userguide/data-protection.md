@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/data-protection.htm
 ---
 
 # Data protection in Data Exports
-<a name="data-protection"></a>
 
 Learn how the AWS shared responsibility model applies to data protection in Data Exports.
 

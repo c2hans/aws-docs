@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-models-framew
 ---
 
 # Deploy models with DJL Serving
-<a name="deploy-models-frameworks-djl-serving"></a>
 
 DJL Serving is a high performance universal stand-alone model serving solution. It takes a deep learning model, several models, or workflows and makes them available through an HTTP endpoint.
 

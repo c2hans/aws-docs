@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListD
 ---
 
 # ListDistributionsByOriginRequestPolicyId
-<a name="API_ListDistributionsByOriginRequestPolicyId"></a>
 
 Gets a list of distribution IDs for distributions that have a cache behavior that's associated with the specified origin request policy.
 

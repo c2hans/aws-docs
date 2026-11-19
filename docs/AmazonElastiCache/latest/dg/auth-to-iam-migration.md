@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/auth-to-iam-
 ---
 
 # Migrating from password-based authentication (AUTH) to IAM authentication
-<a name="auth-to-iam-migration"></a>
 
 This guide describes how to migrate your Amazon ElastiCache node-based cluster or serverless cache from password-based authentication (AUTH) to AWS Identity and Access Management (IAM) authentication without service interruption.
 

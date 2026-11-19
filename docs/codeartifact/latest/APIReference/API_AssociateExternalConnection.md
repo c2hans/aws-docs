@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Ass
 ---
 
 # AssociateExternalConnection
-<a name="API_AssociateExternalConnection"></a>
 
 Adds an existing external connection to a repository. One external connection is allowed per repository.
 

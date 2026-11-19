@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteE
 ---
 
 # DeleteEnvironment
-<a name="API_DeleteEnvironment"></a>
 
 Deletes an environment in Amazon DataZone.
 

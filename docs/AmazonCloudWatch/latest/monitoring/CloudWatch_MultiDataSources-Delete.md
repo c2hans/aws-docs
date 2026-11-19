@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Delete a connector to a data source
-<a name="CloudWatch_MultiDataSources-Delete"></a>
 
  The instructions in this section describe how to delete a connector to a data source.
 

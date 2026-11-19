@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/install-gre
 ---
 
 # Install the AWS IoT Greengrass Core software (console)
-<a name="install-greengrass-v2-console"></a>
 
 1. Sign in to the [AWS IoT Greengrass console](https://console.aws.amazon.com/greengrass).
 

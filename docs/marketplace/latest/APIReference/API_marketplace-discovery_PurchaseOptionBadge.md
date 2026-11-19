@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PurchaseOptionBadge
-<a name="API_marketplace-discovery_PurchaseOptionBadge"></a>
 
 A badge indicating a special attribute of a purchase option, such as private pricing or future dated.
 

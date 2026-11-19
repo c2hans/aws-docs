@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cluste
 ---
 
 # Use a customer managed key to encrypt the cluster secret
-<a name="working-with_clusters_secrets_cmk"></a>
 
 By default, AWS PCS stores the cluster secret in AWS Secrets Manager encrypted with an AWS managed key. AWS PCS doesn't require additional authorization to use the AWS managed key. Alternatively, you can encrypt the cluster secret with a customer managed key. The customer managed key must be a symmetric encryption key (`SYMMETRIC_DEFAULT`, `ENCRYPT_DECRYPT`) in the same AWS account and AWS Region as the cluster.
 

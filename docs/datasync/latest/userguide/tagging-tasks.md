@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/tagging-tasks.
 ---
 
 # Tagging your AWS DataSync tasks
-<a name="tagging-tasks"></a>
 
 *Tags* are key-value pairs that help you manage, filter, and search for your AWS DataSync resources. You can add up to 50 tags to each DataSync task and task execution.
 

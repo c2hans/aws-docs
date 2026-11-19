@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CodeFilePa
 ---
 
 # CodeFilePath
-<a name="API_CodeFilePath"></a>
 
 Contains information on where a code vulnerability is located in your Lambda function.
 

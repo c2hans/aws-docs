@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-acl.
 ---
 
 # Access Control Lists awareness enablement
-<a name="kb-managed-acl"></a>
 
 Bedrock Managed Knowledge Base supports *ACL-aware retrieval* — the ability to filter query results based on document-level access control lists (ACLs) crawled from your connected data sources. When ACL awareness is enabled on a data source, Bedrock Managed Knowledge Base ingests the permissions (allowed users, denied users, allowed groups, denied groups) alongside document content. At query time, you supply a user context and Bedrock Managed Knowledge Base returns only the documents that user is permitted to access. For the request syntax used to pass user context at retrieval time, see [ACL-aware retrieval on managed knowledge bases](kb-test-retrieve-acl.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/manifest-query-par
 ---
 
 # MediaTailor CDN integration and parameter routing
-<a name="manifest-query-parameters-cdn-integration"></a>
 
 AWS Elemental MediaTailor manifest query parameters enable sophisticated CDN integration scenarios. You can use them for dynamic routing, authorization, and load balancing.
 

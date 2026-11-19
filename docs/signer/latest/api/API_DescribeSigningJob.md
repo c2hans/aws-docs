@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_DescribeSigningJob
 ---
 
 # DescribeSigningJob
-<a name="API_DescribeSigningJob"></a>
 
 Returns information about a specific code signing job. You specify the job by using the `jobId` value that is returned by the [StartSigningJob](API_StartSigningJob.md) operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Enforce tagging consistency
-<a name="orgs_manage_policies_tag-policies-enforcement"></a>
 
 Tag policies provide two capabilities to help you enforce tagging consistency across your AWS environments: "Basic compliance rules" and "Required tag key". You can use these capabilities with two tag policy modes: enforcement and reporting. This section highlights enforcement mode for both capabilities. For details on reporting mode for both capabilities, see "Reporting tagging compliance".
 

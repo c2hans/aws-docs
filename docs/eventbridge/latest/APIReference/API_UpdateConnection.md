@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Upda
 ---
 
 # UpdateConnection
-<a name="API_UpdateConnection"></a>
 
 Updates settings for a connection.
 

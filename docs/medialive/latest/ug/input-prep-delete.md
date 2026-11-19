@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-prep-delete.ht
 ---
 
 # Deleting and stopping input prepare actions in the MediaLive schedule
-<a name="input-prep-delete"></a>
 
 You can delete input prepare actions from the schedule. There are different rules for deleting actions depending on the current state of the channel. The channel can be running, idle, or recovering. The channel is idle if you manually stopped it. The channel is recovering if it failed and MediaLive is automatically restarting it.
 

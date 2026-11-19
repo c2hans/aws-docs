@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableIma
 ---
 
 # EnableImageBlockPublicAccess
-<a name="API_EnableImageBlockPublicAccess"></a>
 
 Enables *block public access for AMIs* at the account level in the specified AWS Region. This prevents the public sharing of your AMIs. However, if you already have public AMIs, they will remain publicly available.
 

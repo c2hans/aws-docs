@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnScheduleUpdate
 ---
 
 # OnScheduleUpdate
-<a name="OnScheduleUpdate"></a>
 
 The OnScheduleUpdate event source runs a rule when a published schedule is updated.
 

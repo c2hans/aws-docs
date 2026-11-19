@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Snaps
 ---
 
 # SnapshotDestinationConfiguration
-<a name="API_SnapshotDestinationConfiguration"></a>
 
 A structure that contains information on the Amazon S3 destinations of the generated snapshot.
 

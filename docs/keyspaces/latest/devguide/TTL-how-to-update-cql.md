@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/TTL-how-to-upd
 ---
 
 # Use the `UPDATE` statement to edit custom Time to Live (TTL) settings for rows and columns
-<a name="TTL-how-to-update-cql"></a>
 
 **Note**
 Before you can set custom TTL values for rows and columns, you must enable TTL on the table first. For more information, see [Update table with custom Time to Live (TTL)](TTL-how-to-enable-custom-alter.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/sum.html
 ---
 
 # $sum
-<a name="sum"></a>
 
 The `$sum` operator in Amazon DocumentDB returns the sum of the specified expression for each document in a group. It is a group accumulator operator that is typically used in the $group stage of an aggregation pipeline to perform summation calculations.
 

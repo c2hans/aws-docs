@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/u
 ---
 
 # Update Code dialog box
-<a name="update-code-dialog"></a>
 
 The **Update Code** dialog box in the AWS Toolkit for JetBrains is displayed whenever you update an AWS Lambda function.
 

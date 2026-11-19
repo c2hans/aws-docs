@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateWo
 ---
 
 # UpdateWorkspaceTheme
-<a name="API_UpdateWorkspaceTheme"></a>
 
 Updates the theme configuration for a workspace, including colors and styling.
 

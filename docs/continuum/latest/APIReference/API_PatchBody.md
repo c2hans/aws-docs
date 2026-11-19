@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_PatchB
 ---
 
 # PatchBody
-<a name="API_PatchBody"></a>
 
 Projected content for a PATCH artifact: the remediation patch for one repository, with the descriptors needed to verify and apply it and the state of its delivery to the customer's own bucket or repository.
 

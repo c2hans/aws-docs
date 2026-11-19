@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_GetDataS
 ---
 
 # GetDataSource
-<a name="API_GetDataSource"></a>
 
 Retrieves a `DataSource` object.
 

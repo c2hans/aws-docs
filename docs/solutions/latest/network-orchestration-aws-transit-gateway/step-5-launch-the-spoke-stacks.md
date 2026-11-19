@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Step 5: Launch the spoke stack(s)
-<a name="step-5-launch-the-spoke-stacks"></a>
 
 Follow the step-by-step instructions in this section to configure and deploy the spoke stack(s) into your account(s).
 

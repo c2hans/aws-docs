@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Seman
 ---
 
 # SemanticEntityType
-<a name="API_SemanticEntityType"></a>
 
 A structure that represents a semantic entity type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # DeleteMessageTemplateAttachment
-<a name="API_amazon-q-connect_DeleteMessageTemplateAttachment"></a>
 
 Deletes the attachment file from the Amazon Q in Connect message template that is referenced by `$LATEST` qualifier. Attachments on available message template versions will remain unchanged.
 

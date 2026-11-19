@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_R
 ---
 
 # RecommendationResourcesAggregates
-<a name="API_RecommendationResourcesAggregates"></a>
 
 Aggregation of Recommendation Resources
 

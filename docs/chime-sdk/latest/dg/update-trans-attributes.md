@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/update-trans-attribu
 ---
 
 # Updating TransactionAttributes
-<a name="update-trans-attributes"></a>
 
 To modify stored `TransactionAttributes`, update the contents of the JSON object with new values. In the following example, the keys `NewKey1` and `NewKey2` are added to the `TransactionAttributes`. These keys are paired with the values `NewValue1` and `NewValue2`, respectively.
 

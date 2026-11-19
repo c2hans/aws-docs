@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-install
 ---
 
 # Install the AWS IoT Greengrass Secret Manager component on the device
-<a name="gs-install-secrets-manager"></a>
 
 The Amazon Kinesis Video Streams Edge Agent requires the AWS IoT Greengrass Secret Manager component to be installed on the device first.
 

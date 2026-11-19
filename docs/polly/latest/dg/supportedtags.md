@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/supportedtags.html
 ---
 
 # Supported SSML tags
-<a name="supportedtags"></a>
 
 All tags except for `<amazon:domain name="news">` are supported for Standard voices. Tag availability for other voices is provided in the following table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Exe
 ---
 
 # ExecutionDetails
-<a name="API_ExecutionDetails"></a>
 
 The details of the actions taken and results produced on an artifact as it passes through stages in the pipeline.
 

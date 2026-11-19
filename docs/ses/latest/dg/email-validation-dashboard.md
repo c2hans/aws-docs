@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/email-validation-dashboard
 ---
 
 # Email Validation Dashboard
-<a name="email-validation-dashboard"></a>
 
 The Email Validation Dashboard provides visibility into your email validation activity, showing validation results categorized by delivery likelihood confidence levels. You can monitor validation trends for API validations and console validations to understand the quality of your email lists and make informed decisions about your sending practices.
 

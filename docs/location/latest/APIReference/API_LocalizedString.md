@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Localiz
 ---
 
 # LocalizedString
-<a name="API_LocalizedString"></a>
 
 The localized string.
 

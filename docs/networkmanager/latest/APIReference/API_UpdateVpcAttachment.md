@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_U
 ---
 
 # UpdateVpcAttachment
-<a name="API_UpdateVpcAttachment"></a>
 
 Updates a VPC attachment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Security with Amazon Aurora PostgreSQL
-<a name="AuroraPostgreSQL.Security"></a>
 
 For a general overview of Aurora security, see [Security in Amazon Aurora](UsingWithRDS.md). You can manage security for Amazon Aurora PostgreSQL at a few different levels:
 + To control who can perform Amazon RDS management actions on Aurora PostgreSQL DB clusters and DB instances, use AWS Identity and Access Management (IAM). IAM handles the authentication of user identity before the user can access the service. It also handles authorization, that is, whether the user is allowed to do what they're trying to do. IAM database authentication is an additional authentication method that you can choose when you create your Aurora PostgreSQL DB cluster. For more information, see [Identity and access management for Amazon Aurora](UsingWithRDS.IAM.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/c
 ---
 
 # Creating App Runner services
-<a name="creating-service-apprunner"></a>
 
 You can create an App Runner service in AWS Toolkit for JetBrains by using the **Create App Runner Service** dialog box. You can use its interface to select a source repository and configure the service instance where your application runs.
 

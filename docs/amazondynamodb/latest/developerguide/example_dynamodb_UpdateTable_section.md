@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Use `UpdateTable` with an AWS SDK or CLI
-<a name="example_dynamodb_UpdateTable_section"></a>
 
 The following code examples show how to use `UpdateTable`.
 

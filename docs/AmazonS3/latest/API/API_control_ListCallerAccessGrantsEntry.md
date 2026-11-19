@@ -3,12 +3,18 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListCall
 ---
 
 # ListCallerAccessGrantsEntry
-<a name="API_control_ListCallerAccessGrantsEntry"></a>
 
-Part of `ListCallerAccessGrantsResult`. Each entry includes the permission level (READ, WRITE, or READWRITE) and the grant scope of the access grant. If the grant also includes an application ARN, the grantee can only access the S3 data through this application.
+Part of `ListCallerAccessGrantsResult`. Each entry includes the permission level (READ, WRITE, or READWRITE) and the grant scope of the access grant. Each entry also includes the ARN of the S3 Access Grants instance in which the grant was created. If the grant also includes an application ARN, the grantee can only access the S3 data through this application.
 
 ## Contents
 <a name="API_control_ListCallerAccessGrantsEntry_Contents"></a>
+
+ ** AccessGrantsInstanceArn **   <a name="AmazonS3-Type-control_ListCallerAccessGrantsEntry-AccessGrantsInstanceArn"></a>
+The Amazon Resource Name (ARN) of the S3 Access Grants instance in which the grant was created.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `arn:[a-z\-]+:s3:[a-z0-9\-]+:\d{12}:access\-grants\/[a-zA-Z0-9\-]+`
+Required: No
 
  ** ApplicationArn **   <a name="AmazonS3-Type-control_ListCallerAccessGrantsEntry-ApplicationArn"></a>
 The Amazon Resource Name (ARN) of an AWS IAM Identity Center application associated with your Identity Center instance. If the grant includes an application ARN, the grantee can only access the S3 data through this application.

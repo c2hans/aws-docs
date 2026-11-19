@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebsapi-permissions.
 ---
 
 # Control access to EBS direct APIs using IAM
-<a name="ebsapi-permissions"></a>
 
 A user must have the following policies to use the EBS direct APIs. For more information, see [ Changing permissions for a user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html).
 

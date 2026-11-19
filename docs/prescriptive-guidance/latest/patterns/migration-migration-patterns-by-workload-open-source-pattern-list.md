@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Open source
-<a name="migration-migration-patterns-by-workload-open-source-pattern-list"></a>
 
 **Topics**
 + [Create application users and roles in Aurora PostgreSQL-Compatible](create-application-users-and-roles-in-aurora-postgresql-compatible.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Disassoc
 ---
 
 # DisassociateTrafficDistributionGroupUser
-<a name="API_DisassociateTrafficDistributionGroupUser"></a>
 
 Disassociates an agent from a traffic distribution group. This API can be called only in the Region where the traffic distribution group is created.
 

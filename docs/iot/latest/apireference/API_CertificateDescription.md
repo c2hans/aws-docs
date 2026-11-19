@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CertificateD
 ---
 
 # CertificateDescription
-<a name="API_CertificateDescription"></a>
 
 Describes a certificate.
 

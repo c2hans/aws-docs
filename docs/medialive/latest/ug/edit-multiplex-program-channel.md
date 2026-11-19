@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/edit-multiplex-progr
 ---
 
 # Editing multiplexes, programs, and channels
-<a name="edit-multiplex-program-channel"></a>
 
 In MediaLive, you can edit a multiplex, the programs in a multiplex, and the channels in a multiplex. There are specific rules that are based on the state (running or idle) of the item that you want to work with, as described in this section.
 

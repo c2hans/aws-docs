@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/troubleshootin
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Retrieving and preserving logs
-<a name="troubleshooting-v3-get-logs"></a>
 
 AWS ParallelCluster creates Amazon EC2 metrics for HeadNode and Compute instances and storage. You can view the metrics in the CloudWatch console **Custom Dashboards**. AWS ParallelCluster also creates cluster CloudWatch log streams in log groups. You can view these logs in the CloudWatch console **Custom Dashboards** or **Log groups**. The [Monitoring](Monitoring-v3.md#yaml-Monitoring-Logs-CloudWatch) cluster configuration section describes how you can modify the cluster CloudWatch logs and dashboard. For more information, see [Integration with Amazon CloudWatch Logs](cloudwatch-logs-v3.md) and [Amazon CloudWatch dashboard](cloudwatch-dashboard-v3.md).
 

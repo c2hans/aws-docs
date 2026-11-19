@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Updating a firewall in AWS Network Firewall
-<a name="firewall-updating"></a>
 
 To make changes to your firewall settings through the console, use the following procedure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DomainU
 ---
 
 # DomainUnitPolicyGrantPrincipal
-<a name="API_DomainUnitPolicyGrantPrincipal"></a>
 
 The domain unit principal to whom the policy is granted.
 

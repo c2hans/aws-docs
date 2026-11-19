@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCAConnectorAD::Connector
-<a name="aws-resource-pcaconnectorad-connector"></a>
 
 Creates a connector between AWS Private CA and an Active Directory. You must specify the private CA, directory ID, and security groups.
 

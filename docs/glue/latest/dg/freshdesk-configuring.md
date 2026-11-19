@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/freshdesk-configuring.htm
 ---
 
 # Configuring Freshdesk
-<a name="freshdesk-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Freshdesk, you must meet these requirements:
 

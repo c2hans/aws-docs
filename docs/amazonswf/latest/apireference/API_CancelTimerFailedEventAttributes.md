@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Cancel
 ---
 
 # CancelTimerFailedEventAttributes
-<a name="API_CancelTimerFailedEventAttributes"></a>
 
 Provides the details of the `CancelTimerFailed` event.
 

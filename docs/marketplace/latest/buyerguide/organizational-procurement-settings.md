@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/organizati
 ---
 
 # Configuring organizational procurement settings
-<a name="organizational-procurement-settings"></a>
 
 AWS Marketplace provides organizational procurement settings that give procurement, software asset management, and cloud governance teams greater control over purchasing processes. These capabilities help enforce compliance with internal policies while maintaining the speed and flexibility that makes AWS Marketplace valuable to end users.
 

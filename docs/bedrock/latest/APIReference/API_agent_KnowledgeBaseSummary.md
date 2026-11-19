@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Kn
 ---
 
 # KnowledgeBaseSummary
-<a name="API_agent_KnowledgeBaseSummary"></a>
 
 Contains details about a knowledge base.
 

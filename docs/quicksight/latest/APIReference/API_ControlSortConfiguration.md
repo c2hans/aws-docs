@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Contr
 ---
 
 # ControlSortConfiguration
-<a name="API_ControlSortConfiguration"></a>
 
 The sort configuration for control values. This is a tagged union type. Specify either `SelectableValuesSort` or `ControlColumnSort`, but not both.
 

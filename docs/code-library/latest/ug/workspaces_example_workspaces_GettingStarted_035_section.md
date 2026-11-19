@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/workspaces_exampl
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Creating and managing personal virtual desktops
-<a name="workspaces_example_workspaces_GettingStarted_035_section"></a>
 
 The following code example shows how to:
 + Verify WorkSpaces availability in your region

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Get started with AgentCore Runtime
-<a name="runtime-getting-started"></a>
 
 You can use the following tutorials to get started with Amazon Bedrock AgentCore Runtime.
 

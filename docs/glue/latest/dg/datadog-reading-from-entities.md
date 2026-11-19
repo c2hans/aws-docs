@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/datadog-reading-from-enti
 ---
 
 # Reading from Datadog entities
-<a name="datadog-reading-from-entities"></a>
 
  **Prerequisites**
 

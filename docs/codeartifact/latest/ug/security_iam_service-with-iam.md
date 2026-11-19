@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/security_iam_serv
 ---
 
 # How AWS CodeArtifact works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to CodeArtifact, learn what IAM features are available to use with CodeArtifact.
 

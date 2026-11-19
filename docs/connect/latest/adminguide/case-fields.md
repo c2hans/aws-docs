@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/case-fields.ht
 ---
 
 # Create case fields in Connect Customer Cases
-<a name="case-fields"></a>
 
 *Case fields* are the building blocks for *case templates*. You create all of the possible fields of information (for example, VIN number, policy number, make/model of car) that you want agents to collect for a given customer issue.
 

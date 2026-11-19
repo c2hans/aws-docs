@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
  **Pre-Production Validation**
 

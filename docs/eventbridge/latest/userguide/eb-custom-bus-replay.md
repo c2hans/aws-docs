@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Replaying retained events to a subscriber
-<a name="eb-custom-bus-replay"></a>
 
 To deliver events that the bus already holds, create a subscriber with `--starting-position POINT_IN_TIME` and a starting point inside the bus's retention window, for example `--point-in-time-configuration '{ "PointType": "TIMESTAMP", "StartingPoint": "2026-09-01T00:00:00Z" }'`. There is no separate replay API: a subscriber reads retained events from its starting position, so anything still inside the retention period can be delivered again. `DescribeEventBus` returns `RetentionWindowStartTime`, the earliest point a subscriber can read from; on a new bus that is the bus's creation time, so a recent timestamp can still fall outside the window. For the retention period itself, see [Choosing the retention period](eb-custom-bus-create.md#eb-custom-bus-create-retention).
 

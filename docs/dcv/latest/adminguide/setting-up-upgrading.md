@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-upgradi
 ---
 
 # Upgrading the Amazon DCV Server
-<a name="setting-up-upgrading"></a>
 
 The following topic describes how to upgrade the Amazon DCV server.
 

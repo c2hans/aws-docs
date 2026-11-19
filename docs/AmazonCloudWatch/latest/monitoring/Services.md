@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Servi
 ---
 
 # Monitor the operational health of your applications with Application Signals
-<a name="Services"></a>
 
 Use Application Signals within the [CloudWatch console](https://console.aws.amazon.com/cloudwatch/) to monitor and troubleshoot the operational health of your applications:
 + **Monitor your application services** — As part of daily operational monitoring, use the [Services](Services-page.md) page to see a summary of all your services. See services with the highest fault rate or latency, and see which services have unhealthy [service level indicators (SLIs)](CloudWatch-ServiceLevelObjectives.md). Select a service to open the [Service detail](ServiceDetail.md) page and see detailed metrics, service operations, Synthetics canaries, and client requests. This can help you troubleshoot and identify the root cause of operational issues.

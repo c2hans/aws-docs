@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/cognit
 The AWS Mobile SDK for Unity is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Unity. For more information, see [What is the AWS Mobile SDK for Unity?](what-is-unity-plugin.md)
 
 # Amazon Cognito Identity
-<a name="cognito-identity"></a>
 
 ## What is Amazon Cognito Identity?
 <a name="what-is-amazon-cognito-identity"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CancelProfileUpdateTask
-<a name="API_account_CancelProfileUpdateTask"></a>
 
 Cancels an in-progress profile update task, stopping any pending changes to the partner profile.
 

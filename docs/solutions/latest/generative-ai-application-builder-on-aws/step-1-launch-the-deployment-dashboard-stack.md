@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Step 1: Launch the Deployment dashboard stack
-<a name="step-1-launch-the-deployment-dashboard-stack"></a>
 
 Follow the step-by-step instructions in this section to configure and deploy the solution into your account.
 

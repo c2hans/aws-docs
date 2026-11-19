@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Set up your query engine and permissions for creating a knowledge base with structured data store
-<a name="knowledge-base-prereq-structured"></a>
 
 This topic describes the permissions that you need when connecting your knowledge base to a structured data store. If you plan to connect an Amazon Bedrock knowledge base to a structured data store, you need to fulfill the prerequisites. For general permissions requirements to be fulfilled, see [Set up permissions for a user or role to create and manage knowledge bases](knowledge-base-prereq-permissions-general.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/output.html
 ---
 
 # Speech mark output
-<a name="output"></a>
 
 Amazon Polly returns speech mark objects in a line-delimited JSON stream. A speech mark object contains the following fields:
 +  **time** – the timestamp in milliseconds from the beginning of the corresponding audio stream

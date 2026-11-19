@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_AccessEndpoint
 ---
 
 # AccessEndpointConfig
-<a name="API_AccessEndpointConfig"></a>
 
 Describes the access endpoint configuration for a WorkSpace.
 

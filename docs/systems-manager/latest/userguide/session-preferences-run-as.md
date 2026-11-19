@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/session
 ---
 
 # Turn on Run As support for Linux and macOS managed nodes
-<a name="session-preferences-run-as"></a>
 
 By default, Session Manager authenticates connections using the credentials of the system-generated `ssm-user` account that is created on a managed node. On Linux and macOS machines, this account is added to `/etc/sudoers/`. You can instead authenticate sessions using the credentials of an OS user account, or a domain user for instances joined to Active Directory. In this case, Session Manager verifies that the OS account exists on the node, or in the domain, before starting the session. If the OS account doesn't exist on the node or in the domain, the connection fails.
 

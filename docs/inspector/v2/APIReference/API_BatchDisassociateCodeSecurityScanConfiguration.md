@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchDisas
 ---
 
 # BatchDisassociateCodeSecurityScanConfiguration
-<a name="API_BatchDisassociateCodeSecurityScanConfiguration"></a>
 
 Disassociates multiple code repositories from an Amazon Inspector code security scan configuration.
 

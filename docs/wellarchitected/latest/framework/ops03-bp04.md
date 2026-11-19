@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops03-b
 ---
 
 # OPS03-BP04 Fully automate integration and deployment
-<a name="ops03-bp04"></a>
 
  Manual steps in integration and deployment are where errors and delay accumulate. A developer who logs into a console to promote a change, or waits for a scheduled release window, adds risk and lead time. Full automation of the path from code commit through build, test, deployment, and validation removes those steps, so changes flow to production consistently.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/evaluation-and
 ---
 
 # Assign security profile permissions for performance evaluations and coaching
-<a name="evaluation-and-coaching-permissions"></a>
 
 To allow users to create, automate, and access evaluation forms, assign the following **Analytics and optimization** security profile permissions:
 + **Evaluation forms - manage form definitions**: Allows admins and managers to [create](create-evaluation-forms.md) and [manage](evaluationform-audit-trail.md) evaluation forms.

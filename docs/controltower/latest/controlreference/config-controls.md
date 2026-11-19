@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/con
 ---
 
 # Integrated AWS Config controls available in AWS Control Tower
-<a name="config-controls"></a>
 
 AWS Control Tower is integrated with AWS Config to provide over 500 selected additional detective controls that help you monitor and manage your AWS environment. These AWS Config controls are available in the AWS Control Tower console and the Control Catalog APIs. The **Control owner** or **Implementation** field for these controls is displayed as AWS Config or `AWS::Config::ConfigRule`.
 

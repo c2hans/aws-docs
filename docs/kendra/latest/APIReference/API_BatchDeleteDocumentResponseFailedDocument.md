@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_BatchDele
 ---
 
 # BatchDeleteDocumentResponseFailedDocument
-<a name="API_BatchDeleteDocumentResponseFailedDocument"></a>
 
 Provides information about documents that could not be removed from an index by the `BatchDeleteDocument` API.
 

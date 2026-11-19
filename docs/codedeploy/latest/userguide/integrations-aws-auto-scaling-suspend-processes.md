@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations
 ---
 
 # Suspending Amazon EC2 Auto Scaling processes during deployments
-<a name="integrations-aws-auto-scaling-suspend-processes"></a>
 
 Amazon EC2 Auto Scaling can remove or replace instances during an in-place deployment, including instances that CodeDeploy is updating. For example, a scale-in event can terminate an instance in the middle of its update, or rebalancing can move instances between Availability Zones. To prevent this, you can choose Amazon EC2 Auto Scaling processes for CodeDeploy to suspend while the deployment runs. CodeDeploy suspends these processes before it deploys to instances in your Auto Scaling groups. It resumes them when the deployment succeeds, fails, or is stopped.
 

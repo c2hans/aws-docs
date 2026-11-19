@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/userguide/getting-started-ste
 ---
 
 # Tagging Resources
-<a name="getting-started-step2"></a>
 
 You can begin tagging your migrated resources in order for them to be included in your MAP 2.0 incentive calculations. Tagging your migrated workloads with the `map-migrated` tag gives you the following benefits:
 

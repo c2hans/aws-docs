@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # RuntimeConfiguration
-<a name="API_RuntimeConfiguration"></a>
 
 A set of instructions that define the set of server processes to run on computes in a fleet. Server processes run either an executable in a custom game build or a Amazon GameLift Servers Realtime script. Amazon GameLift Servers launches the processes, manages their life cycle, and replaces them as needed. Computes check regularly for an updated runtime configuration.
 

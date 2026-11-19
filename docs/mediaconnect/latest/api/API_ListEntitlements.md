@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListEntitlem
 ---
 
 # ListEntitlements
-<a name="API_ListEntitlements"></a>
 
  Displays a list of all entitlements that have been granted to this account. This request returns 20 results per page.
 

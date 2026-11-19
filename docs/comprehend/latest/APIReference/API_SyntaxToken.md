@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Synta
 ---
 
 # SyntaxToken
-<a name="API_SyntaxToken"></a>
 
 Represents a work in the input text that was recognized and assigned a part of speech. There is one syntax token record for each word in the source text.
 

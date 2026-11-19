@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Cr
 ---
 
 # CreateConfiguredModelAlgorithmAssociation
-<a name="API_CreateConfiguredModelAlgorithmAssociation"></a>
 
 Associates a configured model algorithm to a collaboration for use by any member of the collaboration.
 

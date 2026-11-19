@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ec2-examp
 ---
 
 # Working with security groups in Amazon EC2 with AWS SDK for PHP Version 3
-<a name="ec2-examples-using-security-groups"></a>
 
 An Amazon EC2 security group acts as a virtual firewall that controls the traffic for one or more instances. You add rules to each security group to allow traffic to or from its associated instances. You can modify the rules for a security group at any time. The new rules are automatically applied to all instances that are associated with the security group.
 

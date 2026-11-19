@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/coding-plugin-for-sap-abap/latest/devgui
 ---
 
 # Document history
-<a name="doc-history"></a>
 
 The following table describes important changes to the AWS Coding Plugin for SAP ABAP Developer Guide.
 

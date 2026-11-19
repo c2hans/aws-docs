@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_EndPo
 ---
 
 # EndPoint
-<a name="API_EndPoint"></a>
 
 Contains information about the Amazon Kinesis data stream where you're sending real-time log data in a real-time log configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel06.h
 ---
 
 # Monitor workload resources
-<a name="rel06"></a>
 
  A workload gives up signals about its health through the logs and metrics its components emit. When you collect those signals and act on them, you detect degradation early and recover before customers feel it. The failure mode that monitoring exists to prevent is the silent failure, where a function stops working and nothing catches it until a customer reports the problem. Alerting on that condition, through a path that stays up even when the workload does not, is one of the main reasons you monitor at all.
 

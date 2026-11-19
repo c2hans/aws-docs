@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_AssetIn
 ---
 
 # AssetInfo
-<a name="API_AssetInfo"></a>
 
  Information about hardware assets.
 

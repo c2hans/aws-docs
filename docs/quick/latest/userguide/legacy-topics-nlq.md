@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/legacy-topics-nlq
 ---
 
 # Making legacy Topics natural-language-friendly
-<a name="legacy-topics-nlq"></a>
 
 To improve the accuracy of answers in a legacy Topic, configure the following metadata:
 

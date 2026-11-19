@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DescribeS
 ---
 
 # DescribeSnapshotOperation
-<a name="API_DescribeSnapshotOperation"></a>
 
 Provides a detailed description of a specified operation that was performed on an enhanced snapshot. To see a list of the operations of a snapshot, use `ListSnapshotOperations`.
 

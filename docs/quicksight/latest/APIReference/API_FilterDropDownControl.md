@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # FilterDropDownControl
-<a name="API_FilterDropDownControl"></a>
 
 A control to display a dropdown list with buttons that are used to select a single value.
 

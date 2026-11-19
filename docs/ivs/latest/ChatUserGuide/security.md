@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/security.html
 ---
 
 # Amazon IVS Chat Security
-<a name="security"></a>
 
 Cloud security at AWS is the highest priority. As an AWS customer, you benefit from a data center and network architecture that are built to meet the requirements of the most security-sensitive organizations.
 

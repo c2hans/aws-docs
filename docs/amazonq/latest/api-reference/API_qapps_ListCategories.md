@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_L
 ---
 
 # ListCategories
-<a name="API_qapps_ListCategories"></a>
 
 Lists the categories of a Amazon Q Business application environment instance. For more information, see [Custom labels for Amazon Q Apps](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qapps-custom-labels.html).
 

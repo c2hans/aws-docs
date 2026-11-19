@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-a
 ---
 
 # Authorizer
-<a name="apis-apiid-authorizers-authorizerid"></a>
 
 Represents an authorizer. `JWT` authorizers are supported only for HTTP APIs.
 

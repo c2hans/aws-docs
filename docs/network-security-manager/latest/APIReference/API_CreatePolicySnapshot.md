@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # CreatePolicySnapshot
-<a name="API_CreatePolicySnapshot"></a>
 
 Creates a snapshot of the current published version of the specified policy.
 

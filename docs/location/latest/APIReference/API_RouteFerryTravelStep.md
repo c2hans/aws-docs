@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteFe
 ---
 
 # RouteFerryTravelStep
-<a name="API_RouteFerryTravelStep"></a>
 
 Steps of a leg that must be performed during the travel portion of the leg.
 

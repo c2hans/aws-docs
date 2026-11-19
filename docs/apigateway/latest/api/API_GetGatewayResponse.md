@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetGatewayResp
 ---
 
 # GetGatewayResponse
-<a name="API_GetGatewayResponse"></a>
 
 Gets a GatewayResponse of a specified response type on the given RestApi.
 

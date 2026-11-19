@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/managing-sche
 ---
 
 # Changing the schedule state in EventBridge Scheduler
-<a name="managing-schedule-state"></a>
 
  An EventBridge Scheduler schedule has two states: *enabled* and *disabled*. The following example uses `UpdateSchedule` to disable a schedule that fires every five minutes and invokes a Lambda target.
 

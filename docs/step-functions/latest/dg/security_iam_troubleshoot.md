@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/security_iam_tr
 ---
 
 # Troubleshooting identity and access issues in Step Functions
-<a name="security_iam_troubleshoot"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with Step Functions and IAM.
 

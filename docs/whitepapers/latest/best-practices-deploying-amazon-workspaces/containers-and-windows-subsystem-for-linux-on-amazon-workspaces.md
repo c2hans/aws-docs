@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Containers and Windows subsystem for Linux on Amazon WorkSpaces
-<a name="containers-and-windows-subsystem-for-linux-on-amazon-workspaces"></a>
 
 ## Containers and Amazon WorkSpaces
 <a name="containers-and-amazon-workspaces"></a>

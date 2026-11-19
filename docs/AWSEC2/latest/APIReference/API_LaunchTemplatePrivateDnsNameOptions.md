@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplatePrivateDnsNameOptions
-<a name="API_LaunchTemplatePrivateDnsNameOptions"></a>
 
 Describes the options for instance hostnames.
 

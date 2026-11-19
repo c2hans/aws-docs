@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/ev-rules-f
 ---
 
 # Use EventBridge with Image Builder pipelines
-<a name="ev-rules-for-pipeline"></a>
 
 AWS and partner services stream events to Amazon EventBridge event buses in near real time. You can also send your own custom events. Event buses use rules to route each event to one or more targets.
 

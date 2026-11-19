@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/examples-blocks.html
 ---
 
 # Tutorials
-<a name="examples-blocks"></a>
 
 [Block](https://docs.aws.amazon.com/textract/latest/APIReference/API_Block.html) objects that are returned from Amazon Textract operations contain the results of text detection and text analysis operations, such as [AnalyzeDocument](https://docs.aws.amazon.com/textract/latest/APIReference/API_AnalyzeDocument.html). The following Python tutorials show some of the different ways that you can use Block objects. For example, you can export table information to a comma-separated values (CSV) file.
 

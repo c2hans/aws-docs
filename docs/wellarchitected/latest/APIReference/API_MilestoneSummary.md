@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # MilestoneSummary
-<a name="API_MilestoneSummary"></a>
 
 A milestone summary return object.
 

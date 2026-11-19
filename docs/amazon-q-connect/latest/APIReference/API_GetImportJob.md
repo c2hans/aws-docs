@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # GetImportJob
-<a name="API_amazon-q-connect_GetImportJob"></a>
 
 Retrieves the started import job.
 

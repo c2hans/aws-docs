@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/internetwork
 ---
 
 # Internetwork traffic privacy
-<a name="internetwork-traffic-privacy"></a>
 
 Amazon ElastiCache uses the following techniques to secure your cache data and protect it from unauthorized access:
 + **[Amazon VPCs and ElastiCache security](VPCs.md)** explains the type of security group you need for your installation.

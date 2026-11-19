@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/agent-credentials.ht
 ---
 
 # Manage AWS credentials
-<a name="agent-credentials"></a>
 
 Manage your AWS credentials using one of the following methods:
 + Create a custom credentials provider. For details, see [Create custom credential providers](custom-cred-provider.md).

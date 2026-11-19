@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Remote
 ---
 
 # RemotePortDetails
-<a name="API_RemotePortDetails"></a>
 
 Contains information about the remote port.
 

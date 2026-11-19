@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # CreateKnowledgeBase
-<a name="API_amazon-q-connect_CreateKnowledgeBase"></a>
 
 Creates a knowledge base.
 

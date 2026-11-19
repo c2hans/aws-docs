@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/analyzing-document-te
 ---
 
 # Analyzing Document Text with Amazon Textract
-<a name="analyzing-document-text"></a>
 
 To analyze text in a document, you use the [AnalyzeDocument](https://docs.aws.amazon.com/textract/latest/APIReference/API_AnalyzeDocument.html) operation, and pass a document file as input. `AnalyzeDocument` returns a JSON structure that contains the analyzed text. For more information, see [Analyzing Documents](how-it-works-analyzing.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes the specified tags from the specified space.
 

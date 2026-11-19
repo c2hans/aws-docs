@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeliverySourceConfigurationSchema
-<a name="API_DeliverySourceConfigurationSchema"></a>
 
 A structure that describes a single configuration for a log type, including its name, value type, default value, and the range of supported values.
 

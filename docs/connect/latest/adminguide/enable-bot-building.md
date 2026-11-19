@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-bot-bui
 ---
 
 # Enable bot building and analytics in Connect Customer
-<a name="enable-bot-building"></a>
 
 Complete the following steps to enable users to create Amazon Lex bots in the Connect Customer admin website and view metrics about bot performance.
 

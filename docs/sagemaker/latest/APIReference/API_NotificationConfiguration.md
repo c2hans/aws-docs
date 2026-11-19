@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Notifi
 ---
 
 # NotificationConfiguration
-<a name="API_NotificationConfiguration"></a>
 
 Configures Amazon SNS notifications of available or expiring work items for work teams.
 

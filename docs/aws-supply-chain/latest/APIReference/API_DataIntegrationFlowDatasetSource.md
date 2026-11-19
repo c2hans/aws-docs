@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationFlowDatasetSource
-<a name="API_DataIntegrationFlowDatasetSource"></a>
 
 The details of a flow execution with dataset source.
 

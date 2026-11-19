@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/config
 ---
 
 # List configuration bundles
-<a name="configuration-bundles-list"></a>
 
 List configuration bundles in your account, or list versions of a specific bundle. Two operations are available:
 +  **ListConfigurationBundles** — Returns all bundles in your account with summary information.

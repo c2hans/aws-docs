@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/schema-reference/v1-r
 ---
 
 # Registries
-<a name="v1-registries"></a>
 
 ## URI
 <a name="v1-registries-url"></a>

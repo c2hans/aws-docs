@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/agent-file.html
 ---
 
 # Agent Configuration File
-<a name="agent-file"></a>
 
 The agent configuration file (`/etc/dcv-session-manager-agent/agent.conf` for Linux and macOS, and `C:\Program Files\NICE\DCVSessionManagerAgent\conf\agent.conf` for Windows) includes parameters that can be configured to customize the Session Manager functionality. You can edit the configuration file using your preferred text editor.
 

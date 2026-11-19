@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/ke
 ---
 
 # Configure key store actions
-<a name="keystore-actions"></a>
 
 Key store actions determine what operations your users can perform and how their AWS KMS Hierarchical keyring uses the KMS keys allowlisted in your key store. The AWS Encryption SDK supports the following key store action configurations.
 

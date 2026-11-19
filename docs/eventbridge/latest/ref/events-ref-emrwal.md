@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-emrwal
 ---
 
 # Amazon EMR events
-<a name="events-ref-emrwal"></a>
 
 Amazon EMR sends service events to EventBridge via AWS CloudTrail.
 

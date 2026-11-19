@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Software and architecture
-<a name="software-and-architecture"></a>
 
 |  EUCSUS05: Do you use an automation pipeline to manage your images?  |
 | --- |

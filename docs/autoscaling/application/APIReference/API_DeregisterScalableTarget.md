@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # DeregisterScalableTarget
-<a name="API_DeregisterScalableTarget"></a>
 
 Deregisters an Application Auto Scaling scalable target when you have finished using it. To see which resources have been registered, use [DescribeScalableTargets](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_DescribeScalableTargets.html).
 

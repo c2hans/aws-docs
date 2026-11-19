@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/secondary-networ
 ---
 
 # Secondary Networks
-<a name="secondary-networks"></a>
 
 Secondary Networks are virtual networks purpose-built for specialized networking use cases. These networks are logically isolated within partitions of the AWS cloud. You can create resources such as secondary subnets within your secondary network. Secondary networks are tightly coupled with Amazon VPCs, such that select instances are multi-homed and launched into both a VPC and a Secondary Network.
 

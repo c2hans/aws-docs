@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Tagging.Mana
 ---
 
 # Managing your cost allocation tags using the AWS CLI
-<a name="Tagging.Managing.CLI"></a>
 
 You can use the AWS CLI to add, modify, or remove cost allocation tags.
 

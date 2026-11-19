@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_SendEmail.ht
 ---
 
 # SendEmail
-<a name="API_SendEmail"></a>
 
 Composes an email message and immediately queues it for sending. To send email using this operation, your message must meet the following requirements:
 + The message must be sent from a verified email address or domain. If you attempt to send email using a non-verified address or domain, the operation results in an "Email address not verified" error.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_QueryT
 ---
 
 # QueryTimeWindow
-<a name="API_QueryTimeWindow"></a>
 
 Contains the start and end of a time window.
 

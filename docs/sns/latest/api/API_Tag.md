@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_Tag.html
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 The list of tags to be added to the specified topic.
 

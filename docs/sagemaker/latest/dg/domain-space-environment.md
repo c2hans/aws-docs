@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/domain-space-environ
 ---
 
 # View domain environment details
-<a name="domain-space-environment"></a>
 
 This page gives information about modifications to the Amazon SageMaker AI domain environment. Complete the following procedure to view the custom images, lifecycle configurations, and git repositories attached to a domain environment.
 

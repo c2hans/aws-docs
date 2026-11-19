@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ClusterMet
 ---
 
 # ClusterMetadata
-<a name="API_ClusterMetadata"></a>
 
 The metadata for a cluster.
 

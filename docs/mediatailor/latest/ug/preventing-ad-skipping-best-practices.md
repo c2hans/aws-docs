@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/preventing-ad-skip
 ---
 
 # MediaTailor ad skipping prevention best practices
-<a name="preventing-ad-skipping-best-practices"></a>
 
 Implementing these best practices helps prevent ad skipping issues before they occur, ensuring better ad insertion performance and revenue protection with AWS Elemental MediaTailor. These proactive measures address the most common causes of ad skipping and help maintain consistent ad delivery.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-cudf.h
 ---
 
 # Use the NVIDIA cuDF Plugin for Apache Spark
-<a name="emr-spark-cudf"></a>
 
 With Amazon EMR release 6.2.0 and later, you can use the [cuDF Plugin for Apache Spark](https://docs.nvidia.com/cudf-spark/latest/overview.html) by NVIDIA to accelerate Spark using EC2 graphics processing unit (GPU) instance types. cuDF will GPU-accelerate your Apache Spark 3.0\+ data science pipelines without code changes, and speed up data processing and model training while substantially lowering infrastructure costs.
 
@@ -120,7 +119,7 @@ For details on how to use GPU on YARN, see [Using GPU on YARN](https://hadoop.ap
 
 **3. Configure Spark to use cuDF**
 
-Here are the required configurations to enable Spark to use cuDF plugin:
+The following configuration enables Spark to use the cuDF plugin:
 
 ```
 {
@@ -133,7 +132,7 @@ Here are the required configurations to enable Spark to use cuDF plugin:
 }
 ```
 
-[XGBoost4J-Spark library](https://xgboost.readthedocs.io/en/latest/jvm/xgboost4j_spark_tutorial.html) in XGBoost documentation is also available when the cuDF plugin is enabled on your cluster. You can use the following configuration to integrate XGBoost with you Spark job:
+[XGBoost4J-Spark library](https://xgboost.readthedocs.io/en/latest/jvm/xgboost4j_spark_tutorial.html) in XGBoost documentation is also available when the cuDF plugin is enabled on your cluster. You can use the following configuration to integrate XGBoost with your Spark job:
 
 ```
 {
@@ -333,7 +332,7 @@ The following example scripts show how to make a bootstrap action file for Amazo
 
 **Example `my-bootstrap-action.sh` file for Amazon EMR 7.x**
 
-To use YARN to manage GPU resources with Amazon EMR 7.x releases, you must manually mount CGroup v1 on your cluster. You can do this with as bootstrap action script, as shown in this example.
+To use YARN to manage GPU resources with Amazon EMR 7.x releases, you must manually mount CGroup v1 on your cluster. You can do this with a bootstrap action script, as shown in this example.
 
 ```
 #!/bin/bash
@@ -364,7 +363,7 @@ sudo chmod a+rwx -R /sys/fs/cgroup/devices
 ## Launch your cluster
 <a name="emr-spark-cudf-launchcluster"></a><a name="emr-spark-rapids-launchcluster"></a>
 
-The last step is to launch your cluster with the cluster configurations mentioned above. Here's an example command to launch a cluster from the Amazon EMR CLI:
+The last step is to launch your cluster with the configurations from the previous steps. The following AWS CLI command launches a cluster that uses the cuDF plugin:
 
 ```
  aws emr create-cluster \

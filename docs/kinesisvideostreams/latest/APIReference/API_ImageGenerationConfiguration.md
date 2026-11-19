@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # ImageGenerationConfiguration
-<a name="API_ImageGenerationConfiguration"></a>
 
 The structure that contains the information required for the KVS images delivery. If null, the configuration will be deleted from the stream.
 

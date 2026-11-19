@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_ChildW
 ---
 
 # ChildWorkflowExecutionTerminatedEventAttributes
-<a name="API_ChildWorkflowExecutionTerminatedEventAttributes"></a>
 
 Provides the details of the `ChildWorkflowExecutionTerminated` event.
 

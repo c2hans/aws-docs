@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # Subscribe to session expiration warning event in Connect Customer agent workspace
-<a name="3P-apps-activity-onexpirationwarning"></a>
 
 Subscribes a callback function to be invoked whenever the agent's session is about to expire due to inactivity.
 

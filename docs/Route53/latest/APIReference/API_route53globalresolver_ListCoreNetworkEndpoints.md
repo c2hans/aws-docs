@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # ListCoreNetworkEndpoints
-<a name="API_route53globalresolver_ListCoreNetworkEndpoints"></a>
 
 Lists the core network endpoints in your AWS account, with pagination support.
 

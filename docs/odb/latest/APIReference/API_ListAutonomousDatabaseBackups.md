@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListAutonomo
 ---
 
 # ListAutonomousDatabaseBackups
-<a name="API_ListAutonomousDatabaseBackups"></a>
 
 Lists the backups of the specified Autonomous Database.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DeleteNetworkFirewallTransitGatewayAttachment
-<a name="API_DeleteNetworkFirewallTransitGatewayAttachment"></a>
 
 Deletes a transit gateway attachment from a Network Firewall. Either the firewall owner or the transit gateway owner can delete the attachment.
 

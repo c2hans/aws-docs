@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TimeSe
 ---
 
 # TimeSeriesTransformations
-<a name="API_TimeSeriesTransformations"></a>
 
 Transformations allowed on the dataset. Supported transformations are `Filling` and `Aggregation`. `Filling` specifies how to add values to missing values in the dataset. `Aggregation` defines how to aggregate data that does not align with forecast frequency.
 

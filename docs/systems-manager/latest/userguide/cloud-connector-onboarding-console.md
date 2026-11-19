@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/cloud-c
 ---
 
 # Enable VM onboarding (AWS Management Console)
-<a name="cloud-connector-onboarding-console"></a>
 
 To enable VM onboarding in the AWS Management Console:
 

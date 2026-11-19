@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelS
 ---
 
 # ModelShardingConfig
-<a name="API_ModelShardingConfig"></a>
 
 Settings for the model sharding technique that's applied by a model optimization job.
 

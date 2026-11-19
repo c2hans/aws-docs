@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/applications-
 ---
 
 # Publishing applications
-<a name="applications-publish"></a>
 
 When you've finished creating and configuring your application the next step is to publish it to test data transfers or share it with end users. To understand publishing applications in App Studio, it's important to understand the available environments. App Studio provides three separate environments, which are described in the following list:
 

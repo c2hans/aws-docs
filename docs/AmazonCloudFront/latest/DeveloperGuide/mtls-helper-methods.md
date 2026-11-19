@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/m
 ---
 
 # Helper methods for mutual TLS
-<a name="mtls-helper-methods"></a>
 
 CloudFront provides mTLS-specific helper functions in the `cf.mtls` namespace for viewer request functions. These functions rename, reformat, or combine client certificate headers before forwarding the request to your origin.
 

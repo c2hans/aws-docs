@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/regis
 ---
 
 # Use third-party public extensions from the CloudFormation registry
-<a name="registry-public"></a>
 
 To use a third-party public extension in your template, you must first *activate* the extension for the account and Region where you want to use it. Activating an extension makes it usable in stack operations in the account and Region where it's activated.
 

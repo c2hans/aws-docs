@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # SalesforceSourceProperties
-<a name="API_connect-customer-profiles_SalesforceSourceProperties"></a>
 
 The properties that are applied when Salesforce is being used as a source.
 

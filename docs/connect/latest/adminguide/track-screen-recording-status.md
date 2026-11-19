@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/track-screen-r
 ---
 
 # Use Amazon EventBridge events to track screen recording status
-<a name="track-screen-recording-status"></a>
 
 With Amazon EventBridge, you can view the status of [agent screen recordings](agent-screen-recording.md) in near real-time. The event for each agent screen recording includes success/failure status, failure codes with descriptions, recording location, recording size, installed client version, and screen recording start and end times.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/recomm
 ---
 
 # Start a tool description recommendation
-<a name="recommendations-tool-description"></a>
 
 Start a recommendation to generate optimized tool descriptions for your agent. The service analyzes agent traces to identify tool selection confusion and produces sharpened descriptions that reduce ambiguity when the agent chooses between tools.
 

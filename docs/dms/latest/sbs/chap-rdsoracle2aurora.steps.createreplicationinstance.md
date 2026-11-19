@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-rdsoracle2aurora.ste
 ---
 
 # Step 7: Create an AWS DMS Replication Instance
-<a name="chap-rdsoracle2aurora.steps.createreplicationinstance"></a>
 
 After we validate the schema structure between source and target databases, as described preceding, we proceed to the core part of this walkthrough, which is the data migration. The following illustration shows a high-level view of the migration process.
 

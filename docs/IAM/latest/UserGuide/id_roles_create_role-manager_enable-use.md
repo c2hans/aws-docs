@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_rol
 ---
 
 # Manage access to role manager
-<a name="id_roles_create_role-manager_enable-use"></a>
 
 You control access to role manager at two levels. IAM permissions determine who in an account can enable role manager and who can use the roles it provides. In an organization, service control policies (SCPs) determine what member accounts can do.
 

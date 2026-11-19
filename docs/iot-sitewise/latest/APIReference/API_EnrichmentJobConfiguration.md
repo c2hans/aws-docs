@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Enr
 ---
 
 # EnrichmentJobConfiguration
-<a name="API_EnrichmentJobConfiguration"></a>
 
 Configuration for the enrichment job defining which analysis type to perform on video time-series data. Currently supports event detection enrichment. Exactly one member must be specified.
 

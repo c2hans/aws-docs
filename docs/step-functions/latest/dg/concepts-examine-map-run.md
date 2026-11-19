@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/concepts-examin
 ---
 
 # Viewing a Distributed Map Run execution in Step Functions
-<a name="concepts-examine-map-run"></a>
 
 The Step Functions console provides a *Map Run Details* page which displays all the information related to a *Distributed Map state* execution. For example, you can view the status of the *Distributed Map state*'s execution, the Map Run's ARN, and the statuses of the items processed in the child workflow executions started by the *Distributed Map state*. You can also view a list of all child workflow executions and access their details. If your Map Run was [redriven](redrive-map-run.md), you will see redrive details in the Map Run execution summary too.
 

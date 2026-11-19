@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_VP
 ---
 
 # Scenarios for accessing a DB cluster in a VPC
-<a name="USER_VPC.Scenarios"></a>
 
 Amazon Aurora supports the following scenarios for accessing a DB cluster in a VPC:
 + [An Amazon EC2 instance in the same VPC](#USER_VPC.Scenario1)

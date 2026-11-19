@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/enforceme
 ---
 
 # Correcting non-compliant tags in resources
-<a name="enforcement-correcting"></a>
 
 After finding non-compliant tags, make corrections using any of the following methods. You must be signed in to the account that has the resource with non-compliant tags:
 + Use the console or tagging API operations of the AWS service that created the non-compliant resources.

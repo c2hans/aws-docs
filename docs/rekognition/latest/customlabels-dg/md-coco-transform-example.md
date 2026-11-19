@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-co
 ---
 
 # Transforming a COCO dataset
-<a name="md-coco-transform-example"></a>
 
 Use the following Python example to transform bounding box information from a COCO format dataset into an Amazon Rekognition Custom Labels manifest file. The code uploads the created manifest file to your Amazon S3 bucket. The code also provides an AWS CLI command that you can use to upload your images.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_RequestE
 ---
 
 # RequestEnvironmentInfo
-<a name="API_RequestEnvironmentInfo"></a>
 
 Initiates a request to compile the specified type of information of the deployed environment.
 

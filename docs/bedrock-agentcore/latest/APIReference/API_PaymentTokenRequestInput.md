@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # PaymentTokenRequestInput
-<a name="API_PaymentTokenRequestInput"></a>
 
 Vendor-specific token request configuration.
 

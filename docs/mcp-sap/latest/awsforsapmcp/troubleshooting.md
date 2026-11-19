@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mcp-sap/latest/awsforsapmcp/troubleshoot
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 Use this section to diagnose and resolve common issues with the AWS for SAP Model Context Protocol (MCP) Server. You can find CloudWatch Logs Insights queries for log analysis, common error scenarios with resolutions, and guidance on contacting AWS Support.
 

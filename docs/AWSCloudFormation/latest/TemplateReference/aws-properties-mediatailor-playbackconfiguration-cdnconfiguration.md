@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::PlaybackConfiguration CdnConfiguration
-<a name="aws-properties-mediatailor-playbackconfiguration-cdnconfiguration"></a>
 
 The configuration for using a content delivery network (CDN), like Amazon CloudFront, for content and ad segment management.
 

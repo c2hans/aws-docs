@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zuora-configuring.html
 ---
 
 # Configuring Zuora
-<a name="zuora-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Zuora, you must meet the following requirements:
 

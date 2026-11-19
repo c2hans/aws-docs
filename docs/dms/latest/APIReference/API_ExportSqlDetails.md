@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ExportSqlDet
 ---
 
 # ExportSqlDetails
-<a name="API_ExportSqlDetails"></a>
 
 The Amazon S3 location of the ZIP archive that contains the exported data definition language (DDL) scripts.
 

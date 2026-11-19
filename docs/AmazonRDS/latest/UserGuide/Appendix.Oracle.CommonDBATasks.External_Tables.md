@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Working with external tables in RDS for Oracle
-<a name="Appendix.Oracle.CommonDBATasks.External_Tables"></a>
 
 *Oracle external tables *are tables with data that is not in the database. Instead, the data is in external files that the database can access. By using external tables, you can access data without loading it into the database. For more information about external tables, see [Managing external tables](https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/managing-tables.html) in the Oracle documentation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_G
 ---
 
 # GlobalSecondaryIndexInfo
-<a name="API_GlobalSecondaryIndexInfo"></a>
 
 Represents the properties of a global secondary index for the table when the backup was created.
 

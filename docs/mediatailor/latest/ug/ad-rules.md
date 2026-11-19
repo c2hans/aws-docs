@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ad-rules.html
 ---
 
 # Customizing ad break behavior with ad break suppression
-<a name="ad-rules"></a>
 
 When you create a configuration in AWS Elemental MediaTailor, you can specify optional ad break configuration settings that govern the behavior of ad breaks, including the ability to configure ad break suppression. This allows you to tailor the ad break experiences for your video content to meet your specific requirements.
 

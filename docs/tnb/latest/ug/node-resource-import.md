@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-resource-import.html
 ---
 
 # AWS.Resource.Import
-<a name="node-resource-import"></a>
 
 You can import the following AWS resources into AWS TNB:
 + VPC

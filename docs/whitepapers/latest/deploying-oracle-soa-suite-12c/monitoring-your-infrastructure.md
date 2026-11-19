@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/deploying-oracle-soa-
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Monitoring your infrastructure
-<a name="monitoring-your-infrastructure"></a>
 
  After you migrate your Oracle WebLogic applications to AWS, you can continue to use the monitoring tools you are familiar with to monitor your Oracle SOA Suite 12c environment.
 

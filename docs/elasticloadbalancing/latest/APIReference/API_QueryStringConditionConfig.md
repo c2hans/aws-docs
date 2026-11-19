@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # QueryStringConditionConfig
-<a name="API_QueryStringConditionConfig"></a>
 
 Information about a query string condition.
 

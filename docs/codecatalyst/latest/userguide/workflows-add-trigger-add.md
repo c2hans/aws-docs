@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Adding triggers to workflows
-<a name="workflows-add-trigger-add"></a>
 
 Use the following instructions to add a push, pull, or schedule trigger to your Amazon CodeCatalyst workflow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Delete all objects in a given Amazon S3 bucket using an AWS SDK
-<a name="s3_example_s3_Scenario_DeleteAllObjects_section"></a>
 
 The following code example shows how to delete all of the objects in an Amazon S3 bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_UntagResou
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Deletes specified tags from a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/cfn-engine-upda
 ---
 
 # Using a CloudFormation template to update the engine version of your Neptune DB Cluster
-<a name="cfn-engine-update"></a>
 
 You can re-use the Neptune CloudFormation template that you used to create your Neptune DB Cluster to update its engine version.
 

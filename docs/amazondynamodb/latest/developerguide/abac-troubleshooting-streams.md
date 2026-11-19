@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/aba
 ---
 
 # Troubleshooting common ABAC errors for DynamoDB Streams
-<a name="abac-troubleshooting-streams"></a>
 
 If you receive an `AccessDeniedException` or your tag-based conditions don't behave as expected after you enable ABAC for DynamoDB Streams, use this topic to diagnose and resolve the most common causes.
 

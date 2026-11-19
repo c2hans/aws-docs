@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Re
 ---
 
 # ResourceTag
-<a name="API_ResourceTag"></a>
 
 Information about a tag associated with an Direct Connect resource.
 

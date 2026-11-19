@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gv-tool.html
 ---
 
 # G.V() graph database client
-<a name="gv-tool"></a>
 
 [G.V()](https://gdotv.com/) is an all-in-one graph database client built for developers and data professionals to explore and interact with Amazon Neptune graph data.
 

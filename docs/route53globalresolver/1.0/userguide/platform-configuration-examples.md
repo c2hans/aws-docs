@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/plat
 ---
 
 # Platform configuration examples
-<a name="platform-configuration-examples"></a>
 
 Use these platform-specific examples to configure client devices with your Amazon Route 53 Global Resolver access tokens and connection details.
 

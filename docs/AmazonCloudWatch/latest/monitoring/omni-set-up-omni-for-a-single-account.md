@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Set up Omni for a single account
-<a name="omni-set-up-omni-for-a-single-account"></a>
 
 Use this guide to set up CloudWatch Omni in a single AWS account. You create an Account domain and a space together in one console session. When you finish, you have a working Omni space ready to receive telemetry.
 

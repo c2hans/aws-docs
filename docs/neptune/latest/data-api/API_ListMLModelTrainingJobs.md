@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_ListMLModelT
 ---
 
 # ListMLModelTrainingJobs
-<a name="API_ListMLModelTrainingJobs"></a>
 
 Lists Neptune ML model-training jobs. See [Model training using the `modeltraining` command](https://docs.aws.amazon.com/neptune/latest/userguide/machine-learning-api-modeltraining.html).
 

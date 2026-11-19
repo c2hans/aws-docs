@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # ListStreamGroups
-<a name="API_ListStreamGroups"></a>
 
 Retrieves a list of all Amazon GameLift Streams stream groups that are associated with the AWS account in use. This operation returns stream groups in all statuses, in no particular order. You can paginate the results as needed.
 

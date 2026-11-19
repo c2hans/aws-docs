@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_CreateCluste
 ---
 
 # CreateCluster
-<a name="API_CreateCluster"></a>
 
 Creates a cluster in your account. AWS PCS creates the cluster controller in a service-owned account. The cluster controller communicates with the cluster resources in your account. The subnets and security groups for the cluster must already exist before you use this API action.
 

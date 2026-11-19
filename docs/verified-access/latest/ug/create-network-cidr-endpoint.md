@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/create-network
 ---
 
 # Create a network CIDR endpoint for Verified Access
-<a name="create-network-cidr-endpoint"></a>
 
 Use the following procedure to create a network CIDR endpoint. For example, you can use a network CIDR endpoint to enable access to EC2 instances in a specific subnet over port 22 (SSH).
 

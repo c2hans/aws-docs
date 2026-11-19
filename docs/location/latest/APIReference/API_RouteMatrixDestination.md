@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixDestination
-<a name="API_RouteMatrixDestination"></a>
 
 The route destination.
 

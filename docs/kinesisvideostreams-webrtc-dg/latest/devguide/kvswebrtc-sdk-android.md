@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 ---
 
 # Amazon Kinesis Video Streams WebRTC SDK for Android
-<a name="kvswebrtc-sdk-android"></a>
 
 The following step-by-step instructions describe how to download, build, and run the Kinesis Video Streams with WebRTC SDK for Android and its corresponding samples.
 

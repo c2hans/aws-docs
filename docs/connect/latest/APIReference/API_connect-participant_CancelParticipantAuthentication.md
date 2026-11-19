@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CancelParticipantAuthentication
-<a name="API_connect-participant_CancelParticipantAuthentication"></a>
 
 Cancels the authentication session. The opted out branch of the Authenticate Customer flow block will be taken.
 

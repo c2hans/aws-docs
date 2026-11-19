@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/te
 ---
 
 # Industry terminology
-<a name="terminology"></a>
 
 **Topics**
 + [Common key types](#key-types)

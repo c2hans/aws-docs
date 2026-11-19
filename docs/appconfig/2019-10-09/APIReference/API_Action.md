@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ac
 ---
 
 # Action
-<a name="API_Action"></a>
 
 An action defines the tasks that the extension performs during the AWS AppConfig workflow. Each action includes an action point, as shown in the following list:
 +  `PRE_CREATE_HOSTED_CONFIGURATION_VERSION`

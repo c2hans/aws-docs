@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ji
 ---
 
 # JiraIntegrationInput
-<a name="API_JiraIntegrationInput"></a>
 
 The configuration for creating a Jira integration.
 

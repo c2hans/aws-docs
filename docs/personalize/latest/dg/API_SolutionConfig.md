@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_SolutionConfig
 ---
 
 # SolutionConfig
-<a name="API_SolutionConfig"></a>
 
 Describes the configuration properties for the solution.
 

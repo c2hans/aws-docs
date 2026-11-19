@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel11-b
 ---
 
 # REL11-BP04 Rely on the data plane and not the control plane during recovery
-<a name="rel11-bp04"></a>
 
  A control plane creates, changes, and describes resources, while a data plane carries the day-to-day traffic those resources serve. During a large impairment, when you most need recovery to work, control planes are more likely to be degraded and slower to respond. Design recovery to lean on data plane actions and to use as few control plane operations as possible.
 

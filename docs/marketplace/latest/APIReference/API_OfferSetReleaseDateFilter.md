@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferSetReleaseDateFilter
-<a name="API_OfferSetReleaseDateFilter"></a>
 
 Allows filtering on the `ReleaseDate` of an offer set.
 

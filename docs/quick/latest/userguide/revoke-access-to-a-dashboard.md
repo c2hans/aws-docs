@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/revoke-access-to-
 ---
 
 # Revoke access to a shared dashboard
-<a name="revoke-access-to-a-dashboard"></a>
 
 Use the following procedure to revoke user access to a dashboard.
 

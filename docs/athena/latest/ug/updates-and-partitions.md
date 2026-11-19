@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/updates-and-partitions.
 ---
 
 # Update tables with partitions
-<a name="updates-and-partitions"></a>
 
 In Athena, a table and its partitions must use the same data formats but their schemas may differ. When you create a new partition, that partition usually inherits the schema of the table. Over time, the schemas may start to differ. Reasons include:
 + If your table's schema changes, the schemas for partitions are not updated to remain in sync with the table's schema.

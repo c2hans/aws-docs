@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/register-cross-
 ---
 
 # Registering an Amazon S3 table bucket in another AWS account
-<a name="register-cross-account-s3-table-bucket"></a>
 
 You can register individual Amazon S3 table buckets (ARN format:`arn:aws:s3tables:us-east-1:{{account-id}}:bucket/{{bucket-name}}`) from one AWS account with Lake Formation in another account. For example, you can register a table bucket from account A in account B's Lake Formation.
 

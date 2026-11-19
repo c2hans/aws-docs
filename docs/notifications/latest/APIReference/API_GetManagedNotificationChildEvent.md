@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ge
 ---
 
 # GetManagedNotificationChildEvent
-<a name="API_GetManagedNotificationChildEvent"></a>
 
 Returns the child event of a specific given `ManagedNotificationEvent`.
 

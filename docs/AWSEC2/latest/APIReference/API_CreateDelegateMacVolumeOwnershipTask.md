@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateDel
 ---
 
 # CreateDelegateMacVolumeOwnershipTask
-<a name="API_CreateDelegateMacVolumeOwnershipTask"></a>
 
 Delegates ownership of the Amazon EBS root volume for an Apple silicon Mac instance to an administrative user.
 

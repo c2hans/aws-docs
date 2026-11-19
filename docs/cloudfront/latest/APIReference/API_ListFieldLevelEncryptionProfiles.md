@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListF
 ---
 
 # ListFieldLevelEncryptionProfiles
-<a name="API_ListFieldLevelEncryptionProfiles"></a>
 
 Request a list of field-level encryption profiles that have been created in CloudFront for this account.
 

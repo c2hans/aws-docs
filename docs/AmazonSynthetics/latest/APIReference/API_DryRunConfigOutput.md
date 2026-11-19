@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # DryRunConfigOutput
-<a name="API_DryRunConfigOutput"></a>
 
 Returns the dry run configurations set for a canary.
 

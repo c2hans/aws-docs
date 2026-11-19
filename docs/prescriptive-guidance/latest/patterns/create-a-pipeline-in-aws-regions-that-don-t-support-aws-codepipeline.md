@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cr
 ---
 
 # Create a pipeline in AWS Regions that don’t support AWS CodePipeline
-<a name="create-a-pipeline-in-aws-regions-that-don-t-support-aws-codepipeline"></a>
 
 *Anand Krishna Varanasi, Amazon Web Services*
 

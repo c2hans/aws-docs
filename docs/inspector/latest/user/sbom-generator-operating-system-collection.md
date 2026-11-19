@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ope
 ---
 
 # Amazon Inspector SBOM Generator comprehensive operating system collection
-<a name="sbom-generator-operating-system-collection"></a>
 
  The Amazon Inspector SBOM Generator scans different operating systems to guarantee a robust and detailed analysis of system components. Generating an SBOM helps you understand the composition of your operating system, so you can identify vulnerabilities in system managed packages. This topic describes key features of different operating system package collections the Amazon Inspector SBOM Generator supports. For information about the operating systems that Amazon Inspector supports, see [Supported operating systems and programming languages for Amazon Inspector](https://docs.aws.amazon.com/inspector/latest/user/supported.html).
 

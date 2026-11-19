@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_CustomWorkspac
 ---
 
 # CustomWorkspaceImageImportErrorDetails
-<a name="API_CustomWorkspaceImageImportErrorDetails"></a>
 
 Describes in-depth details about the error. These details include the possible causes of the error and troubleshooting information.
 

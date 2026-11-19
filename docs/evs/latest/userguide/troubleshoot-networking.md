@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/troubleshoot-networ
 ---
 
 # Troubleshoot networking
-<a name="troubleshoot-networking"></a>
 
 Network problems in an Amazon Elastic VMware Service environment might involve DNS, Amazon VPC Route Server, route tables, network ACLs, or the NSX distributed firewall. These solutions apply to both deployment modes. For BGP symptoms between the NSX Edge nodes and VPC Route Server in a Self-deployed environment, see [NSX Edge and BGP symptoms](troubleshoot-self-deployed.md#troubleshoot-sd-nsx).
 

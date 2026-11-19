@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_Recomme
 ---
 
 # RecommendationFeedback
-<a name="API_RecommendationFeedback"></a>
 
 Information about the recommendation feedback.
 

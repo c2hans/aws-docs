@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/APIReference/API_ChangedBlock
 ---
 
 # ChangedBlock
-<a name="API_ChangedBlock"></a>
 
 A block of data in an Amazon Elastic Block Store snapshot that is different from another snapshot of the same volume/snapshot lineage.
 

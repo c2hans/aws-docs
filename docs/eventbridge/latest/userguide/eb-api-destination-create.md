@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-api-dest
 ---
 
 # Create an API destination in Amazon EventBridge
-<a name="eb-api-destination-create"></a>
 
 Creating an API destination enables you to specify an HTTP endpoint as the target of a rule.
 

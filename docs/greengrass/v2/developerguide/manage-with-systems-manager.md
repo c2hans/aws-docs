@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/manage-with
 ---
 
 # Manage Greengrass core devices with AWS Systems Manager
-<a name="manage-with-systems-manager"></a>
 
 **Note**
 AWS IoT Greengrass doesn't currently support this feature on Windows core devices.

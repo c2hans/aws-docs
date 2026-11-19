@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Design considerations
-<a name="design-considerations"></a>
 
  A functional AD DS deployment in the AWS Cloud requires a good understanding of both Active Directory concepts and specific AWS services. This section discusses key design considerations when deploying AD DS for Amazon WorkSpaces, VPC best practices for AWS Directory Service, DHCP and DNS requirements, AD Connector specifics, and AD sites and services.
 

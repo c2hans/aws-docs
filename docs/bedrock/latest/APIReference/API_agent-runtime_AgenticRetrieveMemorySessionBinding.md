@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveMemorySessionBinding
-<a name="API_agent-runtime_AgenticRetrieveMemorySessionBinding"></a>
 
 The short-term memory session that this retrieval reads from and writes to.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBackupGatewayServiceRolePolicyForVirtualMachineMetadataSync
-<a name="AWSBackupGatewayServiceRolePolicyForVirtualMachineMetadataSync"></a>
 
 **Description**: Provides AWS BackupGateway permission to sync the metadata of Virtual Machines on your behalf
 

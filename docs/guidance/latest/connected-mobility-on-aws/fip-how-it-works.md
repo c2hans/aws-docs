@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # How it works
-<a name="fip-how-it-works"></a>
 
 Each screen in the portal reads the output of a stream-processing flow or a command path. The subsections below describe each flow end to end, from vehicle telemetry to the record the portal renders.
 

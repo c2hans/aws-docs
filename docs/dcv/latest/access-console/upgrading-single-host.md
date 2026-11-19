@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/upgrading-sing
 ---
 
 # Upgrading Amazon DCV Access Console on a single host
-<a name="upgrading-single-host"></a>
 
 The Wizard will update the components for the Access Console, reload and restart all of the Access Console components. The components can be downloaded using steps in [Preparing the components and the Setup Wizard](https://docs.aws.amazon.com/dcv/latest/access-console/prepare-environment.html).
 

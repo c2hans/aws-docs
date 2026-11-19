@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/smartsheet-configuring.ht
 ---
 
 # Configuring Smartsheet
-<a name="smartsheet-configuring"></a>
 
 Before you can use AWS Glue to transfer from Smartsheet, you must meet the following requirements:
 

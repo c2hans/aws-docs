@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/notific
 ---
 
 # Web callback notification
-<a name="notification-web"></a>
 
 You can configure AWS Elemental Conductor Live to send you web callback notifications when alerts occur.
 

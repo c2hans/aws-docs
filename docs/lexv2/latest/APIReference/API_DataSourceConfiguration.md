@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DataSource
 ---
 
 # DataSourceConfiguration
-<a name="API_DataSourceConfiguration"></a>
 
 Contains details about the configuration of the knowledge store used for the `AMAZON.QnAIntent`. You must have already created the knowledge store and indexed the documents within it.
 

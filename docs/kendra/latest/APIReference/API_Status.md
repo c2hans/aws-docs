@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Status.ht
 ---
 
 # Status
-<a name="API_Status"></a>
 
 Provides information about the status of documents submitted for indexing.
 

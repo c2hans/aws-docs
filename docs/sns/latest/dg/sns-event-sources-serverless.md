@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-event-sources-serverle
 ---
 
 # Serverless services
-<a name="sns-event-sources-serverless"></a>
 
 The following table describes how Amazon SNS integrates with services like Amazon DynamoDB, Amazon EventBridge, and Lambda to send notifications for key events such as maintenance updates, real-time data streams, and Lambda function outputs.
 

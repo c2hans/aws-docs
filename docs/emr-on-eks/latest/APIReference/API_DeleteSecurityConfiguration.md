@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Delet
 ---
 
 # DeleteSecurityConfiguration
-<a name="API_DeleteSecurityConfiguration"></a>
 
 Deletes a security configuration.
 

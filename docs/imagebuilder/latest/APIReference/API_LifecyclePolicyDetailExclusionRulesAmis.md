@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 ---
 
 # LifecyclePolicyDetailExclusionRulesAmis
-<a name="API_LifecyclePolicyDetailExclusionRulesAmis"></a>
 
 Defines criteria for AMIs that are excluded from lifecycle actions.
 

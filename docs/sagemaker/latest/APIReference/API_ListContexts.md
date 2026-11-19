@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListCo
 ---
 
 # ListContexts
-<a name="API_ListContexts"></a>
 
 Lists the contexts in your account and their properties.
 

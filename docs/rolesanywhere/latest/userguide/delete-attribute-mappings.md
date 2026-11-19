@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/delete-at
 ---
 
 # Delete attribute mappings
-<a name="delete-attribute-mappings"></a>
 
 ## Delete attribute mappings (command line interface)
 <a name="delete-attribute-mapping-cli"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp
 ---
 
 # Permissions for AssumeRole, AssumeRoleWithSAML, and AssumeRoleWithWebIdentity
-<a name="id_credentials_temp_control-access_assumerole"></a>
 
 The permissions policy of the role that is being assumed determines the permissions for the temporary security credentials that are returned by `AssumeRole`, `AssumeRoleWithSAML`, and `AssumeRoleWithWebIdentity`. You define these permissions when you create or update the role.
 

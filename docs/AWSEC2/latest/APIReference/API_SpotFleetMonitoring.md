@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SpotFleet
 ---
 
 # SpotFleetMonitoring
-<a name="API_SpotFleetMonitoring"></a>
 
 Describes whether monitoring is enabled.
 

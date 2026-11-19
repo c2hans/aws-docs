@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataCatalogEncryp
 ---
 
 # DataCatalogEncryptionSettings
-<a name="API_DataCatalogEncryptionSettings"></a>
 
 Contains configuration information for maintaining Data Catalog security.
 

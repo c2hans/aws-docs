@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StartB
 ---
 
 # StartBuildBatch
-<a name="API_StartBuildBatch"></a>
 
 Starts a batch build for a project.
 

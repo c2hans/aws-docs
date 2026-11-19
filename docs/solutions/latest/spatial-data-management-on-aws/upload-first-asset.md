@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Upload your first asset
-<a name="upload-first-asset"></a>
 
 This section walks you through creating your first project and uploading your first spatial asset to Spatial Data Management on AWS.
 

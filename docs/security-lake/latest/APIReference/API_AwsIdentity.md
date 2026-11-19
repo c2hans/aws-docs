@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Aw
 ---
 
 # AwsIdentity
-<a name="API_AwsIdentity"></a>
 
 The AWS identity.
 

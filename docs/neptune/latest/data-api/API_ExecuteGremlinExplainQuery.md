@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_ExecuteGreml
 ---
 
 # ExecuteGremlinExplainQuery
-<a name="API_ExecuteGremlinExplainQuery"></a>
 
 Executes a Gremlin Explain query.
 

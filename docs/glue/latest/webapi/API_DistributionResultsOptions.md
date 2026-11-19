@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DistributionResul
 ---
 
 # DistributionResultsOptions
-<a name="API_DistributionResultsOptions"></a>
 
 The configuration for writing distribution results.
 

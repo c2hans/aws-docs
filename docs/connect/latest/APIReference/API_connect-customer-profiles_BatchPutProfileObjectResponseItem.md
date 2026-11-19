@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # BatchPutProfileObjectResponseItem
-<a name="API_connect-customer-profiles_BatchPutProfileObjectResponseItem"></a>
 
 An item that was successfully added to the domain.
 

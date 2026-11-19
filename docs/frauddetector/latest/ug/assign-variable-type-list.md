@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/ug/assign-variable-
 Amazon Fraud Detector is no longer open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker, AutoGluon, and AWS WAF.
 
 # Assign a variable type to a list
-<a name="assign-variable-type-list"></a>
 
 Every list you use in a rule must be associated with an Amazon Fraud Detector's [Variable types](variables.md#variable-types) variable type. By default, Amazon Fraud Detector assumes the list to be of FREE\_FORM\_TEXT variable type. It is important to note that a list that consists of IP addresses must be associated with IP\_ADDRESS variable type.
 

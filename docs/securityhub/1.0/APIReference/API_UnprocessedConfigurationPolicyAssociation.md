@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Unproce
 ---
 
 # UnprocessedConfigurationPolicyAssociation
-<a name="API_UnprocessedConfigurationPolicyAssociation"></a>
 
  An array of configuration policy associations, one for each configuration policy association identifier, that was specified in a `BatchGetConfigurationPolicyAssociations` request but couldn’t be processed due to an error.
 

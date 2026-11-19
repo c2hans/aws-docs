@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Realt
 ---
 
 # RealtimeLogConfigs
-<a name="API_RealtimeLogConfigs"></a>
 
 A list of real-time log configurations.
 

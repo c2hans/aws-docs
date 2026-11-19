@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AwsG
 ---
 
 # AwsGlueSessionUserRestrictedPolicy
-<a name="AwsGlueSessionUserRestrictedPolicy"></a>
 
 **Description**: Provides permissions that allows users to create and use only the interactive sessions that are associated with the user. This policy also includes permissions to explicitly allow users to pass a restricted Glue session role.
 

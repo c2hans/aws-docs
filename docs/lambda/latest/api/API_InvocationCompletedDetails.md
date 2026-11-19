@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_InvocationComplete
 ---
 
 # InvocationCompletedDetails
-<a name="API_InvocationCompletedDetails"></a>
 
 Details about a function invocation that completed.
 

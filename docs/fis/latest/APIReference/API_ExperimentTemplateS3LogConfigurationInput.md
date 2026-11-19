@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentTe
 ---
 
 # ExperimentTemplateS3LogConfigurationInput
-<a name="API_ExperimentTemplateS3LogConfigurationInput"></a>
 
 Specifies the configuration for experiment logging to Amazon S3.
 

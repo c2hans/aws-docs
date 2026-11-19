@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/sample-batch-fa
 ---
 
 # Fan out batch jobs with Map state
-<a name="sample-batch-fan-out"></a>
 
 This sample project demonstrates how to use Step Functions’s [Map workflow state](state-map.md) state to fan out AWS Batch jobs.
 

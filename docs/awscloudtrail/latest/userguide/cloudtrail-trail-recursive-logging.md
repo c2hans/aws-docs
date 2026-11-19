@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # Suppressing recursive events with recursive logging
-<a name="cloudtrail-trail-recursive-logging"></a>
 
 ## What is recursive logging?
 <a name="cloudtrail-recursive-logging-overview"></a>

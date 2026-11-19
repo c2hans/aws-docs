@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Descr
 ---
 
 # DescribeTrustedAdvisorCheckRefreshStatuses
-<a name="API_DescribeTrustedAdvisorCheckRefreshStatuses"></a>
 
 Returns the refresh status of the AWS Trusted Advisor checks that have the specified check IDs. You can get the check IDs by calling the [DescribeTrustedAdvisorChecks](API_DescribeTrustedAdvisorChecks.md) operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AddonVersion
 ---
 
 # AddonVersionInfo
-<a name="API_AddonVersionInfo"></a>
 
 Information about an add-on version.
 

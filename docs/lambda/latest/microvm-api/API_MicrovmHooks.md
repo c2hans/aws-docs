@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_MicrovmHoo
 ---
 
 # MicrovmHooks
-<a name="API_MicrovmHooks"></a>
 
 Configuration for lifecycle hooks invoked during MicroVM events such as run, resume, suspend, and terminate.
 

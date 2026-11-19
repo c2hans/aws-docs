@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListAutonomo
 ---
 
 # ListAutonomousDatabaseCharacterSets
-<a name="API_ListAutonomousDatabaseCharacterSets"></a>
 
 Lists the available character sets for Autonomous Databases.
 

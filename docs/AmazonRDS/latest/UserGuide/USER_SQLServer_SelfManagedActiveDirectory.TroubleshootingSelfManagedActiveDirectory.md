@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_SQLServe
 ---
 
 # Troubleshooting self-managed Active Directory
-<a name="USER_SQLServer_SelfManagedActiveDirectory.TroubleshootingSelfManagedActiveDirectory"></a>
 
 The following are issues you might encounter when you set up or modify self-managed AD.
 

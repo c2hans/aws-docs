@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/self-deployed-verif
 ---
 
 # Step 7: Verify the environment
-<a name="self-deployed-verify"></a>
 
 After you have added hosts, installed VMware Cloud Foundation (VCF), configured NSX networking, and created at least one connector, verify that the environment works. You can check the Amazon Elastic VMware Service resources with the Amazon EVS console or the AWS CLI. These checks apply to hosts with local storage and to diskless hosts.
 

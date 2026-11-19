@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/SKEWNES
 ---
 
 # SKEWNESS function
-<a name="SKEWNESS"></a>
 
 The SKEWNESS function returns the skewness value calculated from values of a group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Dele
 ---
 
 # DeleteAccessLogSubscription
-<a name="API_DeleteAccessLogSubscription"></a>
 
 Deletes the specified access log subscription.
 

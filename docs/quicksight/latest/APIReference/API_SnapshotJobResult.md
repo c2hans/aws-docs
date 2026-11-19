@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Snaps
 ---
 
 # SnapshotJobResult
-<a name="API_SnapshotJobResult"></a>
 
 An object that provides information on the result of a snapshot job. This object provides information about the job, the job status, and the location of the generated file.
 

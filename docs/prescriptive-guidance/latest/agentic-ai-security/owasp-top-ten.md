@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Mapping to OWASP top 10 for LLM applications
-<a name="owasp-top-ten"></a>
 
 The following are the suggested control mappings between this guide and the [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/).
 

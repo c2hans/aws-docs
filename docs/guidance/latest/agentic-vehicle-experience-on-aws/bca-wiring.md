@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Wiring a new AVX deployment to existing CMS and ADP
-<a name="bca-wiring"></a>
 
 This section gives the prescriptive sequence for connecting a new AVX deployment to CMS and ADP foundations that are already deployed. Follow this sequence in order — each step depends on outputs from the prior step.
 

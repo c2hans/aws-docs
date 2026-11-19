@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/operational-readi
 ---
 
 # Appendix A: Creating ORR guidance from an incident
-<a name="appendix-a-creating-orr-guidance-from-an-incident"></a>
 
 This section will provide an example of using a post-incident analysis to generate questions and guidance for an ORR.
 

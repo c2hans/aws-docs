@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/mount-fs-auto-mount-onrebo
 ---
 
 # Automatically mounting EFS file systems
-<a name="mount-fs-auto-mount-onreboot"></a>
 
 You can use the EFS mount helper or NFS to configure an Amazon EC2 instance to automatically mount an EFS file system when the instance starts.
 + Using the EFS mount helper:

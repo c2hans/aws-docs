@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_S
 ---
 
 # SearchStatus
-<a name="API_SearchStatus"></a>
 
 The current status of an archive search job.
 

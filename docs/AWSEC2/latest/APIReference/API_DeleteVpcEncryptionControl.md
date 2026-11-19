@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpc
 ---
 
 # DeleteVpcEncryptionControl
-<a name="API_DeleteVpcEncryptionControl"></a>
 
 Deletes a VPC Encryption Control configuration. This removes the encryption policy enforcement from the specified VPC.
 

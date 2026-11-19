@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteJo
 ---
 
 # DeleteJobTagging
-<a name="API_control_DeleteJobTagging"></a>
 
 Removes the entire tag set from the specified S3 Batch Operations job.
 

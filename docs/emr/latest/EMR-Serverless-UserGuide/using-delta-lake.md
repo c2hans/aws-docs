@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/usin
 ---
 
 # Using Delta Lake OSS with EMR Serverless
-<a name="using-delta-lake"></a>
 
 ## Amazon EMR versions 6.9.0 and higher
 <a name="using-delta-lake-6.9.0"></a>

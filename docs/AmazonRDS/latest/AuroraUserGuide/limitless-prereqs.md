@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Prerequisites for using Aurora PostgreSQL Limitless Database
-<a name="limitless-prereqs"></a>
 
 To use Aurora PostgreSQL Limitless Database, you must first perform the following tasks.
 

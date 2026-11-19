@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/arabic-exams/ar
 ---
 
 # AWS Certification Exams (Arabic)
-<a name="arabic-exams"></a>
 
 AWS Certification exams are available in Arabic for candidates who prefer to take exams in Arabic. This guide provides information about accessing the Arabic versions of exam guides.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-instance-types
 ---
 
 # Choose instance types
-<a name="plan-instance-types"></a>
 
 Each Amazon Elastic VMware Service host is an Amazon Elastic Compute Cloud (Amazon EC2) bare metal instance. The instance type sets the storage, vCPUs, and memory of the host. Choose the storage model first, and then the size. The storage model decides your deployment path and which VMware Cloud Foundation (VCF) versions you can use.
 

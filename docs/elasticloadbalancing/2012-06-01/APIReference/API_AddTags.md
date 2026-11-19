@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # AddTags
-<a name="API_AddTags"></a>
 
 Adds the specified tags to the specified load balancer. Each load balancer can have a maximum of 10 tags.
 

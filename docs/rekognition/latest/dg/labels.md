@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/labels.html
 ---
 
 # Detecting objects and concepts
-<a name="labels"></a>
 
 This section provides information for detecting labels in images and videos with Amazon Rekognition Image and Amazon Rekognition Video.
 

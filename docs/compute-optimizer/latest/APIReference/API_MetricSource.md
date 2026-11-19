@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # MetricSource
-<a name="API_MetricSource"></a>
 
  The list of metric sources required to generate recommendations for commercial software licenses.
 

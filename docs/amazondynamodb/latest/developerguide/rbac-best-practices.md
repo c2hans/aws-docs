@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rba
 ---
 
 # DynamoDB resource-based policy best practices
-<a name="rbac-best-practices"></a>
 
 This topic describes the best practices for defining access permissions for your DynamoDB resources and the actions allowed on these resources.
 

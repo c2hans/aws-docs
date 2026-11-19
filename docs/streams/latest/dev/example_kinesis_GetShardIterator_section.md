@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/example_kinesis_GetSh
 ---
 
 # Use `GetShardIterator` with an AWS SDK or CLI
-<a name="example_kinesis_GetShardIterator_section"></a>
 
 The following code examples show how to use `GetShardIterator`.
 

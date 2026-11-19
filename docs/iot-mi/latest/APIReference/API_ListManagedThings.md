@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListManag
 ---
 
 # ListManagedThings
-<a name="API_ListManagedThings"></a>
 
 Listing all managed things with provision for filters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GenerateClient
 ---
 
 # GenerateClientCertificate
-<a name="API_GenerateClientCertificate"></a>
 
 Generates a ClientCertificate resource.
 

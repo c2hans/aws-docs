@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListD
 ---
 
 # ListDataSets
-<a name="API_ListDataSets"></a>
 
 Lists all of the datasets belonging to the current AWS account in an AWS Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/host-setup-fsx-sap-h
 ---
 
 # Set up host
-<a name="host-setup-fsx-sap-hana"></a>
 
 This section walks you through an example host setup for deploying SAP HANA scale-up and scale-out systems on AWS using Amazon FSx for NetApp ONTAP as the primary storage solution.
 

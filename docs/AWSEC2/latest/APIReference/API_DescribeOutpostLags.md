@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeO
 ---
 
 # DescribeOutpostLags
-<a name="API_DescribeOutpostLags"></a>
 
 Describes the Outposts link aggregation groups (LAGs).
 

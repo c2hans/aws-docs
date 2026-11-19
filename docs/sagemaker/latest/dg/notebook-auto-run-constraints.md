@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/notebook-auto-run-co
 ---
 
 # Constraints and considerations
-<a name="notebook-auto-run-constraints"></a>
 
 Review the following constraints to ensure your notebook jobs complete successfully. Studio uses Papermill to run notebooks. You might need to update Jupyter notebooks to align to Papermill's requirements. There are also restrictions on the content of LCC scripts and important details to understand regarding VPC configuration.
 

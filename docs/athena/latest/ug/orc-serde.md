@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/orc-serde.html
 ---
 
 # ORC SerDe
-<a name="orc-serde"></a>
 
 Use the ORC SerDe to create Athena tables from ORC data.
 

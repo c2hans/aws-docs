@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ViolationEve
 ---
 
 # ViolationEventAdditionalInfo
-<a name="API_ViolationEventAdditionalInfo"></a>
 
  The details of a violation event.
 

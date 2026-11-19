@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # PricingPlanTier
-<a name="API_billing_PricingPlanTier"></a>
 
 A tier within an Enterprise Support pricing plan.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Verify execution log delivery
-<a name="rest-api-verify-log-delivery"></a>
 
 After you create a log delivery, verify that the delivery is active and that execution logs are arriving at your destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # MessageTemplateBodyContentProvider
-<a name="API_amazon-q-connect_MessageTemplateBodyContentProvider"></a>
 
 The container of the message template body.
 

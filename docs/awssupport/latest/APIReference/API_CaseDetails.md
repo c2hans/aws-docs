@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_CaseD
 ---
 
 # CaseDetails
-<a name="API_CaseDetails"></a>
 
 A JSON-formatted object that contains the metadata for a support case. It is contained in the response from a [DescribeCases](API_DescribeCases.md) request. **CaseDetails** contains the following fields:
 +  **caseId** - The support case ID requested or returned in the call. The case ID is an alphanumeric string formatted as shown in this example: case-*12345678910-exen-2025-c4c1d2bf33c5cf47*.

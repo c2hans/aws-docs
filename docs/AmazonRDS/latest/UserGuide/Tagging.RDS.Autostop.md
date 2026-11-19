@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Tagging.RDS.A
 ---
 
 # Tutorial: Specify which DB instances to stop by using tags
-<a name="Tagging.RDS.Autostop"></a>
 
 This tutorial assumes that you have several DB instances in a development or test environment. You need to keep these DB instances for several days. Some DB instances run tests overnight, whereas others can be stopped overnight and started again the next day.
 

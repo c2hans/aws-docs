@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateUplo
 ---
 
 # CreateUploadUrl
-<a name="API_CreateUploadUrl"></a>
 
 Gets a pre-signed S3 write URL that you use to upload the zip archive when importing a bot or a bot locale.
 

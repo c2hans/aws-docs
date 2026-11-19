@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Deploy a workload
-<a name="sagemaker-hyperpod-eks-autoscaling-workload"></a>
 
 The following examples demonstrate how HyperPod autoscaling with Karpenter automatically provisions nodes in response to workload demands. These examples show basic scaling behavior and multi-availability zone distribution patterns.
 

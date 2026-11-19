@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StartBlueprintRun
 ---
 
 # StartBlueprintRun
-<a name="API_StartBlueprintRun"></a>
 
 Starts a new run of the specified blueprint.
 

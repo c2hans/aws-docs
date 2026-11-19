@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_PolicySu
 ---
 
 # PolicySummary
-<a name="API_PolicySummary"></a>
 
 Details of the AWS Firewall Manager policy.
 

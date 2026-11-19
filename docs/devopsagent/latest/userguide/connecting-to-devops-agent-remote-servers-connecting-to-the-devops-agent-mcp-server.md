@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/connecting-
 ---
 
 # Connecting to the DevOps Agent MCP server
-<a name="connecting-to-devops-agent-remote-servers-connecting-to-the-devops-agent-mcp-server"></a>
 
 ## Connect with Kiro
 <a name="connect-with-kiro"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Limitations
-<a name="babelfish-kerberos-securityad-limitations"></a>
 + Dump/Restore utility doesn’t support dumping the pg\_ad\_mapping extension mappings. You will need to recreate those mappings after restore.
 + Blue-Green deployment isn't supported for Babelfish and Aurora PostgreSQL instances with `pg_ad_mapping`.
 + Implicit schema creation is not supported. DDL statements that requires implicit schema creation isn't supported.

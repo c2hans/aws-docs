@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd04.h
 ---
 
 # Resource and inventory management
-<a name="fnd04"></a>
 
  Clear visibility and control over cloud resources is essential for running an efficient and compliant environment at scale. This capability covers the best practices for standardized attribution, organization-wide inventory and dependency views, central repositories of shared patterns, patch management, service quota management, and the resilience foundations — centralized backup, cross-Region replication and failover, and resilience testing — that protect the resources workloads depend on. Together these give teams the metadata, discoverability, reusable building blocks, and recovery capabilities they need to move fast without creating drift or losing data during the events that matter most.
 

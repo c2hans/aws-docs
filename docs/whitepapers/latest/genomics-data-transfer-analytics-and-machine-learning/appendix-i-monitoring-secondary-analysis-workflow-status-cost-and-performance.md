@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Appendix I: Monitoring secondary analysis workflow status, cost, and performance
-<a name="appendix-i-monitoring-secondary-analysis-workflow-status-cost-and-performance"></a>
 
  Monitoring and alerting are an important part of operational excellence. Both AWS Step Functions and AWS Batch produce a variety of operational metrics and events to monitor secondary analysis status and performance and alert you if there is an issue requiring remediation.
 

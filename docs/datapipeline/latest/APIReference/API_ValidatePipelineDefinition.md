@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Val
 ---
 
 # ValidatePipelineDefinition
-<a name="API_ValidatePipelineDefinition"></a>
 
 Validates the specified pipeline definition to ensure that it is well formed and can be run without error.
 

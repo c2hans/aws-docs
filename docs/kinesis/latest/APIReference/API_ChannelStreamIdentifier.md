@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ChannelS
 ---
 
 # ChannelStreamIdentifier
-<a name="API_ChannelStreamIdentifier"></a>
 
 Identifies a source stream associated with a channel.
 

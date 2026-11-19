@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_ListPhoneNumbersOpted
 ---
 
 # ListPhoneNumbersOptedOut
-<a name="API_ListPhoneNumbersOptedOut"></a>
 
 Returns a list of phone numbers that are opted out, meaning you cannot send SMS messages to them.
 

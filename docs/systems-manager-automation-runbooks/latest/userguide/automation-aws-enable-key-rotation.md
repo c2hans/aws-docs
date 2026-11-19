@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableKeyRotation`
-<a name="automation-aws-enable-key-rotation"></a>
 
  **Description**
 

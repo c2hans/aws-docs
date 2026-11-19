@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MemoryInf
 ---
 
 # MemoryInfo
-<a name="API_MemoryInfo"></a>
 
 Describes the memory for the instance type.
 

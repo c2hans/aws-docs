@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cloudfront_code_e
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # CloudFront Functions examples for CloudFront
-<a name="cloudfront_code_examples_cloudfront_functions_examples"></a>
 
 The following code examples show how to use CloudFront with AWS SDKs.
 

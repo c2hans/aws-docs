@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-action-res
 ---
 
 # AWS IoT Core action resources
-<a name="iot-action-resources"></a>
 
 To specify a resource for an AWS IoT Core policy action, use the Amazon Resource Name (ARN) of the resource. All resource ARNs follow the following format:
 

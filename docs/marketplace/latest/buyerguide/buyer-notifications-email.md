@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-noti
 ---
 
 # Email and chatbot notifications for AWS Marketplace events
-<a name="buyer-notifications-email"></a>
 
 **Update your email filters**
 When you opt in to managed notifications, AWS Marketplace email is sent from `marketplace@aws.com` instead of `no-reply@marketplace.aws`. If you filter, forward, or allowlist AWS Marketplace email, update your rules to allow `marketplace@aws.com` so you don't miss notifications. All accounts are enrolled in the new experience automatically by January 2027.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CodeEd
 ---
 
 # CodeEditorAppSettings
-<a name="API_CodeEditorAppSettings"></a>
 
 The Code Editor application settings.
 

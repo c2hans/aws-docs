@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/efs
 ---
 
 # Amazon Elastic File System controls
-<a name="efs-rules"></a>
 
 **Topics**
 + [[CT.ELASTICFILESYSTEM.PR.1] Require an Amazon EFS file system to encrypt file data at rest using AWS KMS](#ct-elasticfilesystem-pr-1-description)

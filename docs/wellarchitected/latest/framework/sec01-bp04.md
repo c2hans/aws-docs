@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec01-b
 ---
 
 # SEC01-BP04 Reduce security management scope
-<a name="sec01-bp04"></a>
 
  Every control you operate yourself is a control you must configure, patch, monitor, and prove. Managed services shift some of that operational work to the provider, which reduces the surface you maintain and the compliance scope you own. Choosing where to hand off management is a deliberate trade-off between control, effort, and total cost of ownership.
 

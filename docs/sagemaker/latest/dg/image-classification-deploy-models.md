@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/image-classification
 ---
 
 # Deploy Autopilot models for real-time inference
-<a name="image-classification-deploy-models"></a>
 
 After you train your Amazon SageMaker Autopilot models, you can set up an endpoint and obtain predictions interactively. The following section describes the steps for deploying your model to a SageMaker AI real-time inference endpoint to get predictions from your model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/reference/what-is-eventsbi
 ---
 
 # Bill to AWS for re:Invent
-<a name="what-is-eventsbilltoaws"></a>
 
  Bill to AWS allows attendees to bill re:Invent pass purchases directly to their AWS account. An AWS account administrator must authorize the billing by attaching the `ReInventTicketApprovalAccess` managed policy to the approver's AWS Identity and Access Management (IAM) identity.
 

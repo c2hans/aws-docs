@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/iotsitewise
 ---
 
 # IoT SiteWise OPC UA collector
-<a name="iotsitewise-opcua-collector-component"></a>
 
 The IoT SiteWise OPC UA collector component (`aws.iot.SiteWiseEdgeCollectorOpcua`) enables AWS IoT SiteWise gateways to collect data from local OPC UA servers.
 

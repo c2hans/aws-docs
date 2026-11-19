@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Secti
 ---
 
 # SectionBasedLayoutPaperCanvasSizeOptions
-<a name="API_SectionBasedLayoutPaperCanvasSizeOptions"></a>
 
 The options for a paper canvas of a section-based layout.
 

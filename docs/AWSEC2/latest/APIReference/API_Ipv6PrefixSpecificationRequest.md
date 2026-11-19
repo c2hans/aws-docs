@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Ipv6Prefi
 ---
 
 # Ipv6PrefixSpecificationRequest
-<a name="API_Ipv6PrefixSpecificationRequest"></a>
 
 Describes the IPv6 prefix option for a network interface.
 

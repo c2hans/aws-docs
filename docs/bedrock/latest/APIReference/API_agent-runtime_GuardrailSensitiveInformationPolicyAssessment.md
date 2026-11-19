@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # GuardrailSensitiveInformationPolicyAssessment
-<a name="API_agent-runtime_GuardrailSensitiveInformationPolicyAssessment"></a>
 
 The details of the sensitive policy assessment used in the Guardrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteTopicV2
-<a name="API_DeleteTopicV2"></a>
 
 Deletes a Q topic.
 

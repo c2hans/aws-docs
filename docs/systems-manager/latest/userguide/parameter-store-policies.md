@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 ---
 
 # Assigning parameter policies in Parameter Store
-<a name="parameter-store-policies"></a>
 
 Parameter policies help you manage a growing set of parameters by allowing you to assign specific criteria to a parameter such as an expiration date or *time to live*. Parameter policies are especially helpful in forcing you to update or delete configuration data stored in Parameter Store, a tool in AWS Systems Manager. Parameter Store offers the following types of policies: `Expiration`, `ExpirationNotification`, and `NoChangeNotification`.
 

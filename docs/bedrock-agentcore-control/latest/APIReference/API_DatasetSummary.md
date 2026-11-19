@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DatasetSummary
-<a name="API_DatasetSummary"></a>
 
  Summary information about a dataset.
 

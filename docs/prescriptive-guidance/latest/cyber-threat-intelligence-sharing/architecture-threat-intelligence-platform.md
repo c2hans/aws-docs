@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threa
 ---
 
 # Deploying a threat intelligence platform
-<a name="architecture-threat-intelligence-platform"></a>
 
 A threat intelligence platform ingests, aggregates, and organizes threat intelligence data from multiple sources and in different formats. It allows analysts to view, prioritize, and act on cyber threat intelligence (CTI) that has been received from their trust community.
 

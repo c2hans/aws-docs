@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionConfiguration
-<a name="API_ActionConfiguration"></a>
 
 Represents information about an action configuration.
 

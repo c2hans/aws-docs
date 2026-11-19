@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/create-and-verify.
 ---
 
 # Create and verify a domain
-<a name="create-and-verify"></a>
 
 A domain name verification is an entity that you use to prove your ownership of a given domain. As a resource provider, you can use the domain and its subdomains as custom domain names for your resource configurations. Resource consumers can see the verification status of your custom domain name when they describe the resource configuration.
 

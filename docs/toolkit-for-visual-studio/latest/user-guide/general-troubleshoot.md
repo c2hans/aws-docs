@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Troubleshooting the AWS Toolkit for Visual Studio
-<a name="general-troubleshoot"></a>
 
 The following sections contain general troubleshooting information about the AWS Toolkit for Visual Studio and working with AWS services from the toolkit.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/order-port-nigeria.h
 ---
 
 # Nigeria
-<a name="order-port-nigeria"></a>
 
 The following tables list and describe the requirements for ordering phone numbers in Nigeria.
 

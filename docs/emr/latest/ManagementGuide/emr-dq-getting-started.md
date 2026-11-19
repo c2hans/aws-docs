@@ -3,13 +3,12 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-dq-gettin
 ---
 
 # Getting started with Amazon EMR Data Quality
-<a name="emr-dq-getting-started"></a>
 
 This section walks you through running your first Amazon EMR Data Quality evaluation end to end: the permissions your Amazon EMR Spark application needs, and a walkthrough that submits a DQDL ruleset against a DataFrame on Amazon EMR and retrieves the result.
-+ [Prerequisites](#emr-dq-prerequisites)
++ [Prerequisites for Amazon EMR Data Quality](#emr-dq-prerequisites)
 + [Run your first evaluation](#emr-dq-walkthrough)
 
-## Prerequisites
+## Prerequisites for Amazon EMR Data Quality
 <a name="emr-dq-prerequisites"></a>
 
 ### IAM permissions

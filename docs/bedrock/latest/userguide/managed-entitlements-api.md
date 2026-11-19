@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/managed-entitle
 ---
 
 # API Reference
-<a name="managed-entitlements-api"></a>
 
 This section provides comprehensive API documentation for programmatically managing Managed Entitlements for Bedrock. All APIs interact with AWS License Manager in the us-east-1 region.
 

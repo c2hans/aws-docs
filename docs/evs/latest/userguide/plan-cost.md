@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-cost.html
 ---
 
 # Plan costs and licenses
-<a name="plan-cost"></a>
 
 An Amazon Elastic VMware Service environment has charges from more than one AWS service. You also bring your own VMware Cloud Foundation (VCF) subscription from Broadcom. Plan all of them before you deploy, so that your estimate matches your bill. For current prices in each AWS Region, see [Amazon EVS pricing](https://aws.amazon.com/evs/pricing).
 

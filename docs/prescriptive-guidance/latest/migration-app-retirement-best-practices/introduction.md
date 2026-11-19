@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-a
 ---
 
 # Best practices for retiring applications before decommissioning infrastructure
-<a name="introduction"></a>
 
 *Ben Tailor-Hamblin, Amazon Web Services*
 

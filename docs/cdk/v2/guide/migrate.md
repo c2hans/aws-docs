@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/migrate.html
 ---
 
 # Migrate existing resources and AWS CloudFormation templates to the AWS CDK
-<a name="migrate"></a>
 
 |  |
 | --- |

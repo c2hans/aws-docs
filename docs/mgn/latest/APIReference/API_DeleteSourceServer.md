@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DeleteSource
 ---
 
 # DeleteSourceServer
-<a name="API_DeleteSourceServer"></a>
 
 Deletes a single source server by ID.
 

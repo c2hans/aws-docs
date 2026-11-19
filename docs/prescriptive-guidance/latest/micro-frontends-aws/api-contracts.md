@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # API contracts
-<a name="api-contracts"></a>
 
 Each micro-frontend is a system capable of encapsulating opinions, logic, and complexity. Cross-cutting concerns usually include the following:
 + **Design systems** ‒ Tooling to develop UIs distributed as libraries

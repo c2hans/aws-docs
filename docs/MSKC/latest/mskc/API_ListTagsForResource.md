@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_ListTagsForResource
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Lists all the tags attached to the specified resource.
 

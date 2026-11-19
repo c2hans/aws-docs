@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observ
 ---
 
 # Add observability to your Amazon Bedrock AgentCore resources
-<a name="observability-configure"></a>
 
 Amazon Bedrock AgentCore provides a number of built-in metrics to monitor the performance of resources for the AgentCore runtime, memory, gateway, built-in tools, and identity resource types. This default data is available in AgentCore and Amazon CloudWatch. To view the full range of observability data, or to output custom runtime metrics for agents, you need to instrument your code using the AWS Distro for Open Telemetry (ADOT) SDK.
 

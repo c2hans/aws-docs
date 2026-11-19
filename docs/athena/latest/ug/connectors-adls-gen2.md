@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-adls-gen2.ht
 ---
 
 # Amazon Athena Azure Data Lake Storage (ADLS) Gen2 connector
-<a name="connectors-adls-gen2"></a>
 
 The Amazon Athena connector for [Azure Data Lake Storage (ADLS) Gen2](https://docs.microsoft.com/en-us/azure/databricks/data/data-sources/azure/adls-gen2/) enables Amazon Athena to run SQL queries on data stored on ADLS. Athena cannot access stored files in the data lake directly.
 

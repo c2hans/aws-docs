@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Hidden
 ---
 
 # HiddenSageMakerImage
-<a name="API_HiddenSageMakerImage"></a>
 
 The SageMaker images that are hidden from the Studio user interface. You must specify the SageMaker image name and version aliases.
 

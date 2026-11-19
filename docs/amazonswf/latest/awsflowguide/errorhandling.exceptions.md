@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/errorhandl
 ---
 
 # AWS Flow Framework for Java Exceptions
-<a name="errorhandling.exceptions"></a>
 
 The following exceptions are used by the AWS Flow Framework for Java. This section provides an overview of the exception. For more details, see the AWS SDK for Java documentation of the individual exceptions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/getting-started.htm
 ---
 
 # Get started with AWS Parallel Computing Service
-<a name="getting-started"></a>
 
 This is a tutorial to create a simple cluster that you can use to try AWS PCS. The following figure shows the design of the cluster.
 

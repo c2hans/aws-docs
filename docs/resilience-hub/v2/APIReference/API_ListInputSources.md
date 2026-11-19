@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListI
 ---
 
 # ListInputSources
-<a name="API_ListInputSources"></a>
 
 Lists input sources for a service.
 

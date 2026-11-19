@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sending-authorization-poli
 ---
 
 # Sending policy examples
-<a name="sending-authorization-policy-examples"></a>
 
 Sending authorization enables you to specify the fine-grained conditions under which you allow delegate senders to send on your behalf.
 

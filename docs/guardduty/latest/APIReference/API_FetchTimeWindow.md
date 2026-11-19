@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_FetchT
 ---
 
 # FetchTimeWindow
-<a name="API_FetchTimeWindow"></a>
 
 Contains the time range of the data that GuardDuty requested. The range is defined by a start time and a duration.
 

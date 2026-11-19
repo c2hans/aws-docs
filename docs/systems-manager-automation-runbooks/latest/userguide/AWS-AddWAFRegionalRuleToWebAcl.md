@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-AddWAFRegionalRuleToWebAcl`
-<a name="AWS-AddWAFRegionalRuleToWebAcl"></a>
 
  **Description**
 

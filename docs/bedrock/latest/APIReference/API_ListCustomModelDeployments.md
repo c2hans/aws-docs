@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListCust
 ---
 
 # ListCustomModelDeployments
-<a name="API_ListCustomModelDeployments"></a>
 
 Lists custom model deployments in your account. You can filter the results by creation time, name, status, and associated model. Use this operation to manage and monitor your custom model deployments.
 

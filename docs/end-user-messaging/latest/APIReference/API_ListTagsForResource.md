@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Retrieves the tags that are associated with a resource.
 

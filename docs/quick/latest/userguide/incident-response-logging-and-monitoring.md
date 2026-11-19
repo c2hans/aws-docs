@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/incident-response
 ---
 
 # Incident response, logging, and monitoring in AWS Quick
-<a name="incident-response-logging-and-monitoring"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_FailedWorkspac
 ---
 
 # FailedWorkspaceChangeRequest
-<a name="API_FailedWorkspaceChangeRequest"></a>
 
 Describes a WorkSpace that could not be rebooted. ([RebootWorkspaces](API_RebootWorkspaces.md)), rebuilt ([RebuildWorkspaces](API_RebuildWorkspaces.md)), restored ([RestoreWorkspace](API_RestoreWorkspace.md)), terminated ([TerminateWorkspaces](API_TerminateWorkspaces.md)), started ([StartWorkspaces](API_StartWorkspaces.md)), or stopped ([StopWorkspaces](API_StopWorkspaces.md)).
 

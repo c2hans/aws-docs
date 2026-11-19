@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf03-
 ---
 
 # PERF03-BP05 Implement data access patterns that utilize caching
-<a name="perf03-bp05"></a>
 
  You don't need to fetch frequently accessed data from its primary store on every request. A cache keeps a copy closer to the reader, so repeated reads return faster and the primary store carries less load. Caching helps only when the access pattern suits it.
 

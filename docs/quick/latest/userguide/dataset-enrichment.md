@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/dataset-enrichmen
 ---
 
 # Dataset Enrichment
-<a name="dataset-enrichment"></a>
 
 Dataset Enrichment is a capability in AWS Quick Sight that enables dataset authors to add rich semantic metadata to their datasets. By providing descriptions, custom instructions, and structured metadata, you ensure that both human consumers and AI-powered agents understand what a dataset represents and how to use it.
 

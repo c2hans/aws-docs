@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # UpdateAnswer
-<a name="API_UpdateAnswer"></a>
 
 Update the answer to a specific question in a workload review.
 

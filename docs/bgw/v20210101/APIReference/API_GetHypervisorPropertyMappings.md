@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_GetHyperv
 ---
 
 # GetHypervisorPropertyMappings
-<a name="API_GetHypervisorPropertyMappings"></a>
 
 This action retrieves the property mappings for the specified hypervisor. A hypervisor property mapping displays the relationship of entity properties available from the hypervisor to the properties available in AWS.
 

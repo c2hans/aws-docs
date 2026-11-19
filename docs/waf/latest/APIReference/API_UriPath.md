@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_UriPath.html
 ---
 
 # UriPath
-<a name="API_UriPath"></a>
 
 Inspect the path component of the URI of the web request. This is the part of the web request that identifies a resource. For example, `/images/daily-ad.jpg`.
 

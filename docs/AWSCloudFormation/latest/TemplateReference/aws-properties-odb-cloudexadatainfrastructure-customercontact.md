@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ODB::CloudExadataInfrastructure CustomerContact
-<a name="aws-properties-odb-cloudexadatainfrastructure-customercontact"></a>
 
 A contact to receive notification from Oracle about maintenance updates for a specific Exadata infrastructure.
 

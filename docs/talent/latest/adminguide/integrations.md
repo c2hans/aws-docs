@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/talent/latest/adminguide/integrations.ht
 ---
 
 # Add your ATS integration
-<a name="integrations"></a>
 
 **Note**
 ATS integrations are not available at launch. Support for ATS integrations is coming soon.

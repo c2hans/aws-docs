@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-la
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 Taylor Riggan, AWS Principal Graph Architect, Amazon Neptune
 

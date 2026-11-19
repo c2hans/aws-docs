@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/quickstart-glu
 ---
 
 # Amazon DataZone quickstart with AWS Glue data
-<a name="quickstart-glue"></a>
 
 Complete the following quickstart steps to run through the complete data producer and data consumer workflows in Amazon DataZone with sample AWS Glue data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Visibility and alerting
-<a name="visibility-and-alerting"></a>
 
  [**AWS Security Hub CSPM**](https://aws.amazon.com/security-hub/) – AWS Security Hub CSPM provides customers with a comprehensive view of high-priority security alerts and compliance statuses across AWS accounts. Security Hub CSPM aggregates, organizes, and prioritizes findings from AWS services such as Amazon GuardDuty, Amazon Inspector, Amazon Macie, and AWS Partner solutions. Findings are visually summarized on integrated dashboards with actionable graphs and tables. You can also continuously monitor your environment using automated compliance checks based on the AWS best practices and industry standards your organization follows.
 

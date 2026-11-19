@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_D
 ---
 
 # DisassociateCrossAccountReplica
-<a name="API_DisassociateCrossAccountReplica"></a>
 
 Removes the link between a primary secret in your account and a cross-account replica secret, and stops replication to the replica secret. Call this operation on the primary secret. This action removes the replica association created by [AssociateCrossAccountReplica](API_AssociateCrossAccountReplica.md).
 

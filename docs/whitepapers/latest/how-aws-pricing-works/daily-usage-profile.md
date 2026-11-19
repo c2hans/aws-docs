@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Daily usage proﬁle
-<a name="daily-usage-profile"></a>
 
  You can monitor daily usage for your application so that you can better estimate your costs. For instance, you can look at the daily pattern to ﬁgure out how your application handles traffic. For each hour, track how many hits you get on your website and how many instances are running, and then add up the total number of hits for that day.
 

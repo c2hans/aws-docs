@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Extract
 ---
 
 # Extraction
-<a name="API_Extraction"></a>
 
 Contains information extracted by an analysis operation after using StartLendingAnalysis.
 

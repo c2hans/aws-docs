@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Ba
 ---
 
 # BatchCreateRumMetricDefinitionsError
-<a name="API_BatchCreateRumMetricDefinitionsError"></a>
 
 A structure that defines one error caused by a [BatchCreateRumMetricsDefinitions](https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_BatchCreateRumMetricsDefinitions.html) operation.
 

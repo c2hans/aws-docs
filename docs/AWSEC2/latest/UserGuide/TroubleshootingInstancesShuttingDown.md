@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingI
 ---
 
 # Troubleshoot Amazon EC2 instance termination issues
-<a name="TroubleshootingInstancesShuttingDown"></a>
 
 Shutting down or deleting your instance is known as instance termination. The following information can help you troubleshoot issues when you terminate your instance.
 

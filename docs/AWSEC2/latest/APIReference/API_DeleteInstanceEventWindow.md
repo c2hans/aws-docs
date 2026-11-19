@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIns
 ---
 
 # DeleteInstanceEventWindow
-<a name="API_DeleteInstanceEventWindow"></a>
 
 Deletes the specified event window.
 

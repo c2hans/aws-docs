@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribeAgreement
-<a name="API_DescribeAgreement"></a>
 
 Describes the agreement that's identified by the `AgreementId`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_NetworkMigra
 ---
 
 # NetworkMigrationDeployedStackDetails
-<a name="API_NetworkMigrationDeployedStackDetails"></a>
 
 Details about a CloudFormation stack that has been deployed as part of the network migration.
 

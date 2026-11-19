@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Manage privacy protection for domain contacts in Lightsail
-<a name="amazon-lightsail-domain-privacy-protection"></a>
 
 When you register a domain on Amazon Lightsail, we activate privacy protection by default for all the domain contacts. This typically hides most of your contact information from WHOIS ("Who is") queries and reduces the amount of spam that you receive. Your contact information is replaced with either the contact information for the registrar or with the phrase "REDACTED FOR PRIVACY." There are no charges for using privacy protection.
 

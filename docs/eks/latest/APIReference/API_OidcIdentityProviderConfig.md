@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_OidcIdentity
 ---
 
 # OidcIdentityProviderConfig
-<a name="API_OidcIdentityProviderConfig"></a>
 
 An object representing the configuration for an OpenID Connect (OIDC) identity provider.
 

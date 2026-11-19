@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/s
 ---
 
 # Configure standard logging (v2)
-<a name="standard-logging"></a>
 
 You can enable access logs (standard logs) when you create or update a distribution. Standard logging (v2) includes the following features:
 + Send access logs to Amazon CloudWatch Logs, Amazon Data Firehose, and Amazon Simple Storage Service (Amazon S3).

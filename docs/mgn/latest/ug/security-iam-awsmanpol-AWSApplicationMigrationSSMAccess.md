@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/security-iam-awsmanpol-AWS
 ---
 
 # AWS managed policy: AWSApplicationMigrationSSMAccess
-<a name="security-iam-awsmanpol-AWSApplicationMigrationSSMAccess"></a>
 
 You can attach the `AWSApplicationMigrationSSMAccess` policy to your IAM identities.
 

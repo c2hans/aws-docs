@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTREL04-BP03 Implement fallback mechanisms and graceful degradation for collaborative workflows
-<a name="agentrel04-bp03"></a>
 
  One unavailable agent should not take down an entire workflow. Pre-defined fallback chains let orchestrators swap in alternatives, preserving forward progress with reduced quality rather than a complete stall.
 

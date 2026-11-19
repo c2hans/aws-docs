@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/alter-table-add-columns
 ---
 
 # ALTER TABLE ADD COLUMNS
-<a name="alter-table-add-columns"></a>
 
 Adds one or more columns to an existing table. When the optional `PARTITION` syntax is used, updates partition metadata.
 

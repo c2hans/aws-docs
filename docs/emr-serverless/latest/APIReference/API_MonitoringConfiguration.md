@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_M
 ---
 
 # MonitoringConfiguration
-<a name="API_MonitoringConfiguration"></a>
 
 The configuration setting for monitoring.
 

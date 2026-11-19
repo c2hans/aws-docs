@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/be
 ---
 
 # Best practices for the AWS Encryption SDK
-<a name="best-practices"></a>
 
 The AWS Encryption SDK is designed to make it easy for you to protect your data using industry standards and best practices. While many best practices are selected for you in default values, some practices are optional but recommended whenever it's practical.
 

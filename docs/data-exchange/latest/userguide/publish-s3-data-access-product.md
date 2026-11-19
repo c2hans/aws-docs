@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/publish-s
 ---
 
 # Publishing a product in AWS Data Exchange containing Amazon S3 data access
-<a name="publish-s3-data-access-product"></a>
 
 With AWS Data Exchange for Amazon S3, providers can share direct access to Amazon S3 buckets or specific prefixes and Amazon S3 objects. Providers also use AWS Data Exchange to automatically manage subscriptions, entitlements, billing, and payments.
 
@@ -326,7 +325,7 @@ We recommend choosing a top-level folder where a majority of objects and prefixe
 
    1. To add a bucket policy, copy the bucket statement to your clipboard. In the Amazon S3 console, from the **Amazon S3 permissions** tab, choose **Edit** in the **bucket policy** section, paste the bucket policy into the statement, and **Save changes**.
 
-1. If the Amazon S3 bucket contains objects encrypted using AWS KMS customer managed keys, you must share all such KMS keys with AWS Data Exchange. For information about required prerequisites when using KMS keys to encrypt objects in your Amazon S3 bucket, see [Publishing a product in AWS Data Exchange containing Amazon S3 data access](#publish-s3-data-access-product). To share these KMS keys with AWS Data Exchange, do the following:
+1. If the Amazon S3 bucket contains objects encrypted using AWS KMS customer managed keys, you must share all such KMS keys with AWS Data Exchange. For information about required prerequisites when using KMS keys to encrypt objects in your Amazon S3 bucket, see [Publishing a product in AWS Data Exchange containing Amazon S3 data access](publish-s3-data-access-product.md). To share these KMS keys with AWS Data Exchange, do the following:
 
    1. From the **Configure Amazon S3 data access** page, in **Customer managed KMS keys**, select **Choose from your AWS KMS keys** or **Enter AWS KMS key ARN** and select all **AWS KMS keys** currently being used to encrypt the Amazon S3 shared locations. AWS Data Exchange uses these KMS keys to create grants for subscribers to access your shared locations. For more information, see [Grants in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html).
 **Note**

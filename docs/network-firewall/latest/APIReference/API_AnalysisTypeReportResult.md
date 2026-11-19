@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # AnalysisTypeReportResult
-<a name="API_AnalysisTypeReportResult"></a>
 
 The results of a `COMPLETED` analysis report generated with [StartAnalysisReport](API_StartAnalysisReport.md).
 

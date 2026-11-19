@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Query.h
 ---
 
 # Query
-<a name="API_Query"></a>
 
 Each query contains the question you want to ask in the Text and the alias you want to associate.
 

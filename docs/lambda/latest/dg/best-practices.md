@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html
 ---
 
 # Best practices for working with AWS Lambda Event Functions
-<a name="best-practices"></a>
 
 The following are recommended best practices for using AWS Lambda:
 

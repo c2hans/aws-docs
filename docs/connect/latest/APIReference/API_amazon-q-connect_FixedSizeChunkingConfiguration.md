@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # FixedSizeChunkingConfiguration
-<a name="API_amazon-q-connect_FixedSizeChunkingConfiguration"></a>
 
 Configurations for when you choose fixed-size chunking. If you set the `chunkingStrategy` as `NONE`, exclude this field.
 

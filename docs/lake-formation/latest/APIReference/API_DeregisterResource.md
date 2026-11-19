@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_D
 ---
 
 # DeregisterResource
-<a name="API_DeregisterResource"></a>
 
 Deregisters the resource as managed by the Data Catalog.
 

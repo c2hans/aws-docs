@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSetupStartSSMAssociationsExecutionPolicy
-<a name="AWSQuickSetupStartSSMAssociationsExecutionPolicy"></a>
 
 **Description**: This policy grants permissions that allow principals to run the AWSQuickSetupType-StartSSMAssociations Automation runbook, which starts State Manager Associations.
 

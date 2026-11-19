@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ReportConfig
 ---
 
 # ReportConfigurationCloudWatchDashboardInput
-<a name="API_ReportConfigurationCloudWatchDashboardInput"></a>
 
 Specifies the CloudWatch dashboard for the experiment report.
 

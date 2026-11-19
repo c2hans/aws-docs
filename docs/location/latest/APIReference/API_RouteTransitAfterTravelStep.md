@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTr
 ---
 
 # RouteTransitAfterTravelStep
-<a name="API_RouteTransitAfterTravelStep"></a>
 
 A step that must be performed after the travel portion of the leg.
 

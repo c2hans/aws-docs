@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_DevOp
 ---
 
 # DevOpsAgentInvestigation
-<a name="API_DevOpsAgentInvestigation"></a>
 
 The result when DevOps Agent investigates a resilience test run. The verdict is advisory and builds on the test run's own result, which remains authoritative.
 

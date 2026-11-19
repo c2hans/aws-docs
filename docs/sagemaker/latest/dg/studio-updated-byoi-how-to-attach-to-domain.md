@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-byoi-
 ---
 
 # Attach your custom image to your domain
-<a name="studio-updated-byoi-how-to-attach-to-domain"></a>
 
 This page provides instructions on how to attach your custom image to your domain. Use the following procedure to use the Amazon SageMaker AI console to navigate to your domain and start the **Attach image** process.
 

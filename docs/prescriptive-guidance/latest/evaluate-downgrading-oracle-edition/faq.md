@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-do
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## How can I migrate from Oracle Database EE to Oracle Database SE2?
 <a name="how-migrate"></a>

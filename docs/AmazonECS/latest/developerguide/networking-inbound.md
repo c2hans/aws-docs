@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/networki
 ---
 
 # Best practices for receiving inbound connections to Amazon ECS from the internet
-<a name="networking-inbound"></a>
 
 If you run a public service, you must accept inbound traffic from the internet. For example, your public website must accept inbound HTTP requests from browsers. In such case, other hosts on the internet must also initiate an inbound connection to the host of your application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/durable-security.html
 ---
 
 # Security and permissions for Lambda durable functions
-<a name="durable-security"></a>
 
 AWS Lambda durable functions require specific IAM permissions to run and manage durable executions. Follow the principle of least privilege by granting only the permissions each principal needs.
 

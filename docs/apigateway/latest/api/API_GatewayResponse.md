@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GatewayRespons
 ---
 
 # GatewayResponse
-<a name="API_GatewayResponse"></a>
 
 A gateway response of a given response type and status code, with optional response parameters and mapping templates.
 

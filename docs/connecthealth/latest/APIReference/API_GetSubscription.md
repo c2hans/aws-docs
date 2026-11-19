@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Ge
 ---
 
 # GetSubscription
-<a name="API_GetSubscription"></a>
 
 Retrieves information about a Subscription.
 

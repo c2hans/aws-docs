@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_List
 ---
 
 # ListChannels
-<a name="API_ListChannels"></a>
 
 Retrieves information about the channels that are associated with the current AWS account.
 

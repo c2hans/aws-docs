@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Su
 ---
 
 # SummarizationDimensionOverview
-<a name="API_SummarizationDimensionOverview"></a>
 
 Provides an overview of how data is summarized across different dimensions.
 

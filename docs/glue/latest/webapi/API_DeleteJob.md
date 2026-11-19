@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteJob.html
 ---
 
 # DeleteJob
-<a name="API_DeleteJob"></a>
 
 Deletes a specified job definition. If the job definition is not found, no exception is thrown.
 

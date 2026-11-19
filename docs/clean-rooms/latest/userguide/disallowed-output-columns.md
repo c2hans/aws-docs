@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/disallowed-
 ---
 
 # Disallowed output columns
-<a name="disallowed-output-columns"></a>
 
 The `disallowedOutputColumns` control in the custom analysis rule lets you define the list of columns that cannot be projected in the query result. Any reference to a disallowed column through transformation, aliasing, or other means cannot appear in the final SELECT (projection) of the query.
 

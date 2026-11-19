@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListArtifacts
-<a name="API_ListArtifacts"></a>
 
 Returns a paginated list of artifact summaries for the specified agent space.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 7.1 – Understand your SAP user categories and access mechanisms
-<a name="best-practice-7-1"></a>
 
 The types of users accessing your SAP system will determine the security controls you need to apply. By examining each use case, you can develop a strategy. This should include how you manage identities, authentication, tooling and mechanisms to support those requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
 ---
 
 # Install the CodeDeploy agent for Ubuntu Server
-<a name="codedeploy-agent-operations-install-ubuntu"></a>
 
 **To install the CodeDeploy agent on Ubuntu Server**
 

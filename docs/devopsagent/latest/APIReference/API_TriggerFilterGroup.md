@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Trig
 ---
 
 # TriggerFilterGroup
-<a name="API_TriggerFilterGroup"></a>
 
 A group of trigger conditions. The group matches when ALL present conditions pass. A group cannot be empty: at least one condition must be present.
 

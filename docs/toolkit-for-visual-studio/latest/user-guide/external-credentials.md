@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Setting up external credentials
-<a name="external-credentials"></a>
 
 If you have a method to generate or look up credentials that isn't directly supported by AWS, you can add to the shared credentials file a profile that contains the `credential_process` setting. This setting specifies an external command that's run to generate or retrieve authentication credentials to use. For example, you might include an entry similar to the following in the `config` file:
 

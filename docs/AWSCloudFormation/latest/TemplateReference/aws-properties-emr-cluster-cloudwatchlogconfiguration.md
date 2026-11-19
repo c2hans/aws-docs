@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMR::Cluster CloudWatchLogConfiguration
-<a name="aws-properties-emr-cluster-cloudwatchlogconfiguration"></a>
 
 Holds CloudWatch log configuration settings and metadata that specify settings like log files to monitor and where to send them.
 

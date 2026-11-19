@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-bamb
 ---
 
 # BambooHR connector for Amazon AppFlow
-<a name="connectors-bamboohr"></a>
 
 BambooHR is a human resources software as a service (SaaS) solution. If you’re a BambooHR user, your account contains data on employees and applicants, such as employee information, benefits, vacation time, openings, reports, files, and more. You can use Amazon AppFlow to transfer data from BambooHR to certain AWS services or other supported applications.
 

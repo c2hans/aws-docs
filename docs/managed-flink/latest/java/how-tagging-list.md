@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-tagging-li
 ---
 
 # List tags for an application
-<a name="how-tagging-list"></a>
 
 To list existing tags, you use the [ListTagsForResource](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ListTagsForResource.html) action.
 

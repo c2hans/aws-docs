@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Creating a DB cluster that uses Aurora serverless
-<a name="aurora-serverless-v2.create"></a>
 
 To create an Aurora cluster where you can add Aurora serverless DB instances, you follow the same procedure as in [Creating an Amazon Aurora DB cluster](Aurora.CreateInstance.md). With Aurora serverless, your clusters are interchangeable with provisioned clusters. You can have clusters where some DB instances use Aurora serverless and some DB instances are provisioned.
 

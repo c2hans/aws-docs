@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/members-disass
 ---
 
 # Member Disassociation
-<a name="members-disassociate-id"></a>
 
 The Member Disassociation resource provides access to associations between an Amazon Macie administrator account and its member accounts. If you're a Macie administrator, you can use this resource to disassociate a member account from your account. For information about managing relationships between administrator and member accounts, see [Managing multiple accounts](https://docs.aws.amazon.com/macie/latest/user/macie-accounts.html) in the *Amazon Macie User Guide*.
 

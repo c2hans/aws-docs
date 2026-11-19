@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # Invoke the DAG
-<a name="invoke-the-dag"></a>
 
 Complete the following steps to invoke the DAG.
 

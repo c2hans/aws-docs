@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/limits.
 ---
 
 # Limits in AWS Device Farm
-<a name="limits"></a>
 
 **Topics**
 + [Service limits](#service-limits)

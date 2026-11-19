@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_AddTa
 ---
 
 # AddTagsToOnPremisesInstances
-<a name="API_AddTagsToOnPremisesInstances"></a>
 
 Adds tags to on-premises instances.
 

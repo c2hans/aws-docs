@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ConnectorOperator
-<a name="API_connect-customer-profiles_ConnectorOperator"></a>
 
 The operation to be performed on the provided source fields.
 

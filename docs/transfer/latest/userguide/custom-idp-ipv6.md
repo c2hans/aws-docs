@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/custom-idp-ipv
 ---
 
 # IPv6 support for custom identity providers
-<a name="custom-idp-ipv6"></a>
 
 AWS Transfer Family custom identity providers fully support IPv6 connections. When implementing a custom identity provider, your Lambda function can receive and process authentication requests from both IPv4 and IPv6 clients without any additional configuration. The Lambda function receives the client's IP address in the `sourceIp` field of the request, which can be either an IPv4 address (for example, `203.0.113.42`) or an IPv6 address (for example, `2001:db8:85a3:8d3:1319:8a2e:370:7348`). Your custom identity provider implementation should handle both address formats appropriately.
 

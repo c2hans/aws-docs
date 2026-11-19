@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PartitionValueLis
 ---
 
 # PartitionValueList
-<a name="API_PartitionValueList"></a>
 
 Contains a list of values defining partitions.
 

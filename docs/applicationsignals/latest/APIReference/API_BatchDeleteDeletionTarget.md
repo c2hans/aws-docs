@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # BatchDeleteDeletionTarget
-<a name="API_BatchDeleteDeletionTarget"></a>
 
 The batch delete target selection. Exactly one of the two modes must be specified.
 

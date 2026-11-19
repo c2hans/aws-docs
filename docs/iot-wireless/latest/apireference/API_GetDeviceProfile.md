@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetDeviceProfile
-<a name="API_GetDeviceProfile"></a>
 
 Gets information about a device profile.
 

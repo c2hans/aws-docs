@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-data-par
 ---
 
 # Amazon SageMaker AI data parallelism library examples
-<a name="distributed-data-parallel-v2-examples"></a>
 
 This page provides Jupyter notebooks that present examples of implementing the SageMaker AI distributed data parallelism (SMDDP) library to run distributed training jobs on SageMaker AI.
 

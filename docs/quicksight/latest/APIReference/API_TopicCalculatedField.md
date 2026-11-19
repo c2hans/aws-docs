@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicCalculatedField
-<a name="API_TopicCalculatedField"></a>
 
 A structure that represents a calculated field.
 

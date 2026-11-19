@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Di
 ---
 
 # DialogAction
-<a name="API_runtime_DialogAction"></a>
 
 The next action that Amazon Lex should take.
 

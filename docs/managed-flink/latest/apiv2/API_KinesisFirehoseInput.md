@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_KinesisFi
 ---
 
 # KinesisFirehoseInput
-<a name="API_KinesisFirehoseInput"></a>
 
 For a SQL-based Kinesis Data Analytics application, identifies a Kinesis Data Firehose delivery stream as the streaming source. You provide the delivery stream's Amazon Resource Name (ARN).
 

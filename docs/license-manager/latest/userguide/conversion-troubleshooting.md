@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/convers
 ---
 
 # Troubleshooting license type conversion in License Manager
-<a name="conversion-troubleshooting"></a>
 
 **Topics**
 + [Windows activation](#conversion-troubleshooting-kms)

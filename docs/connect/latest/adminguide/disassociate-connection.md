@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/disassociate-c
 ---
 
 # Disconnect Connect Customer from a third-party connection
-<a name="disassociate-connection"></a>
 
 At any time you can disassociate a connection, and stop the automatic generation of tasks based on events from the external application.
 

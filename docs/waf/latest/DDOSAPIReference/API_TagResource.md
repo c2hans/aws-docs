@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_TagResou
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds or updates tags for a resource in AWS Shield.
 

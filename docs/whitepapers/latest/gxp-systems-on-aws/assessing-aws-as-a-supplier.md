@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/as
 ---
 
 # Assessing AWS as a supplier
-<a name="assessing-aws-as-a-supplier"></a>
 
  This section of the whitepaper provides information and insights into AWS to assist with a supplier assessment.
 

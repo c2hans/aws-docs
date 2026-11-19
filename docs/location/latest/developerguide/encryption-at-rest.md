@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/encryptio
 ---
 
 # Data encryption at rest for Amazon Location Service
-<a name="encryption-at-rest"></a>
 
 Amazon Location Service provides encryption by default to protect sensitive customer data at rest using AWS owned encryption keys.
 + **AWS owned keys** — Amazon Location uses these keys by default to automatically encrypt personally identifiable data. You can't view, manage, or use AWS owned keys, or audit their use. However, you don't have to take any action or change any programs to protect the keys that encrypt your data. For more information, see [AWS owned keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk) in the *AWS Key Management Service Developer Guide*.

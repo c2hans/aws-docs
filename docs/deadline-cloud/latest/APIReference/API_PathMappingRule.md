@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_P
 ---
 
 # PathMappingRule
-<a name="API_PathMappingRule"></a>
 
 The details of a source and destination path.
 

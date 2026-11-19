@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # MSFTREL01-BP01 Define availability goals for Microsoft workloads
-<a name="msftrel01-bp01"></a>
 
  Identifying your organization's specific availability objectives is crucial as it guides your focus towards critical factors. This clarity enables you to establish relevant criteria for assessing and selecting the most appropriate architectural patterns for your workload.
 

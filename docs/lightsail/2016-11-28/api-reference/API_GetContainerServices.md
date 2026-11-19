@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetContainerServices
-<a name="API_GetContainerServices"></a>
 
 Returns information about one or more of your Amazon Lightsail container services.
 

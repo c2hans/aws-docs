@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityAgent::Application
-<a name="aws-resource-securityagent-application"></a>
 
 The `AWS::SecurityAgent::Application` resource specifies a Security Agent application. An application provides the top-level configuration for Security Agent, including identity and access management settings and encryption options.
 

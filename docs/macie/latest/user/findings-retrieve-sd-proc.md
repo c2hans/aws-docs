@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/findings-retrieve-sd-p
 ---
 
 # Retrieving sensitive data samples for a Macie finding
-<a name="findings-retrieve-sd-proc"></a>
 
 By using Amazon Macie, you can retrieve and reveal samples of sensitive data that Macie reports in individual sensitive data findings. This includes sensitive data that Macie detects using [managed data identifiers](managed-data-identifiers.md), and data that matches the criteria of [custom data identifiers](custom-data-identifiers.md). The samples can help you verify the nature of the sensitive data that Macie found. They can also help you tailor your investigation of an affected Amazon Simple Storage Service (Amazon S3) object and bucket. You can retrieve and reveal sensitive data samples in all the AWS Regions where Macie is currently available except the Asia Pacific (Osaka) and Israel (Tel Aviv) Regions.
 

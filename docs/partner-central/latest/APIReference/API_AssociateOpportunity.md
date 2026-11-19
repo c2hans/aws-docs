@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AssociateOpportunity
-<a name="API_AssociateOpportunity"></a>
 
 Enables you to create a formal association between an `Opportunity` and various related entities, enriching the context and details of the opportunity for better collaboration and decision making. You can associate an opportunity with the following entity types:
 + Partner Solution: A software product or consulting practice created and delivered by AWS Partners. Partner Solutions help customers address business challenges using AWS services.

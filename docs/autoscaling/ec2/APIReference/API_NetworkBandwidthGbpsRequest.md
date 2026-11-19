@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Network
 ---
 
 # NetworkBandwidthGbpsRequest
-<a name="API_NetworkBandwidthGbpsRequest"></a>
 
 Specifies the minimum and maximum for the `NetworkBandwidthGbps` object when you specify [InstanceRequirements](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_InstanceRequirements.html) for an Auto Scaling group.
 

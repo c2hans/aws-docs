@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Signal
 ---
 
 # SignalExternalWorkflowExecutionInitiatedEventAttributes
-<a name="API_SignalExternalWorkflowExecutionInitiatedEventAttributes"></a>
 
 Provides the details of the `SignalExternalWorkflowExecutionInitiated` event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListedRouter
 ---
 
 # ListedRouterOutput
-<a name="API_ListedRouterOutput"></a>
 
 A summary of a router output, including its name, type, ARN, ID, state, routed state, and other key details. This structure is used in the response of the ListRouterOutputs operation.
 

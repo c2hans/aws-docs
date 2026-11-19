@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds or edits tags on an AWS Payment Cryptography key.
 

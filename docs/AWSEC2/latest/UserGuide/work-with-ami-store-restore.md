@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/work-with-ami-st
 ---
 
 # Create a store image task
-<a name="work-with-ami-store-restore"></a>
 
 When you store an AMI in an S3 bucket, a store image task is created. You can use the store image task to monitor the progress and outcome of the process.
 

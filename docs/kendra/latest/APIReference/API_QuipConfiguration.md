@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_QuipConfi
 ---
 
 # QuipConfiguration
-<a name="API_QuipConfiguration"></a>
 
 Provides the configuration information to connect to Quip as your data source.
 

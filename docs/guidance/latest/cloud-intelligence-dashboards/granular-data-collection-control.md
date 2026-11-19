@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Granular Account and Region Control over Data Collection
-<a name="granular-data-collection-control"></a>
 
 ## Last Updated
 <a name="last-updated"></a>

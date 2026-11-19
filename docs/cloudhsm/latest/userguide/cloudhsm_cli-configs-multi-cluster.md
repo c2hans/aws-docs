@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-c
 ---
 
 # Connecting to multiple clusters with CloudHSM CLI
-<a name="cloudhsm_cli-configs-multi-cluster"></a>
 
  With AWS CloudHSM Client SDK 5, you can configure CloudHSM CLI to allow connections to multiple CloudHSM clusters from a single CLI instance.
 

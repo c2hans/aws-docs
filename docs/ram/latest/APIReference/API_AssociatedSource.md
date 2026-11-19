@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_AssociatedSo
 ---
 
 # AssociatedSource
-<a name="API_AssociatedSource"></a>
 
 Information about a source association in a resource share. Source associations control which sources can be used with service principals.
 

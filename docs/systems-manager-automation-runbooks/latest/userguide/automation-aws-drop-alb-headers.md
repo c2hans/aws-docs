@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-DropInvalidHeadersForALB`
-<a name="automation-aws-drop-alb-headers"></a>
 
  **Description**
 

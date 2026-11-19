@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_C
 ---
 
 # CreateCachediSCSIVolume
-<a name="API_CreateCachediSCSIVolume"></a>
 
 Creates a cached volume on a specified cached volume gateway. This operation is only supported in the cached volume gateway type.
 

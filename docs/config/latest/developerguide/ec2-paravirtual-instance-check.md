@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-paravir
 ---
 
 # ec2-paravirtual-instance-check
-<a name="ec2-paravirtual-instance-check"></a>
 
 Checks if the virtualization type of an EC2 instance is paravirtual. This rule is NON\_COMPLIANT for an EC2 instance if 'virtualizationType' is set to 'paravirtual'.
 

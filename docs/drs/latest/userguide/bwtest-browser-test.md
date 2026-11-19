@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/bwtest-browser-test
 ---
 
 # Test with the browser
-<a name="bwtest-browser-test"></a>
 
 This test is an alternative to the command-line test in [Test with the command line](bwtest-cli-test.md). The endpoint serves its own single-page test UI at `/`. Use the browser instead of the command-line client when you want a quick interactive result from a source server that has a desktop, or when you want a person to watch the test run.
 

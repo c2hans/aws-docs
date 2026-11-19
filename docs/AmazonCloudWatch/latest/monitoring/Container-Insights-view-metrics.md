@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Viewing Container Insights metrics
-<a name="Container-Insights-view-metrics"></a>
 
 After you have Container Insights set up and it is collecting metrics, you can view those metrics in the CloudWatch console.
 

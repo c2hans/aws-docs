@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # AreaOfInterest
-<a name="API_geospatial_AreaOfInterest"></a>
 
 The geographic extent of the Earth Observation job.
 

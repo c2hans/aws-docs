@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-library-del
 ---
 
 # Deleting Vocabulary List
-<a name="bda-library-deleting-cv"></a>
 
 Use the [InvokeDataAutomationLibraryIngestionJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-automation_InvokeDataAutomationLibraryIngestionJob.html) with "DELETE" operation type to remove specific entities from your library.
 

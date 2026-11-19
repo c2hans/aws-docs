@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 ---
 
 # Amazon Bedrock
-<a name="amazon-bedrock"></a>
 
 ## Amazon Bedrock
 <a name="amazon-bedrock.d465481c-ec1e-51cd-9360-79cbffcb0f37"></a>

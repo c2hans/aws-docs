@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Managing data source associations and Virtual Private Cloud access permissions
-<a name="application-data-sources-and-vpc"></a>
 
 Use the procedures in this section to manage data source associations and to configure any needed access permissions for a virtual private cloud (VPC).
 

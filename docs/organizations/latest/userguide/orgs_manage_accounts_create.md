@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Creating a member account in an organization with AWS Organizations
-<a name="orgs_manage_accounts_create"></a>
 
 This topic describes how to create AWS accounts within your organization in AWS Organizations. For information about creating a single AWS account, see the [Getting Started Resource Center](https://aws.amazon.com/getting-started/).
 

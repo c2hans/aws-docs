@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GetPackageCo
 ---
 
 # GetPackageConfiguration
-<a name="API_GetPackageConfiguration"></a>
 
 Gets information about the specified software package's configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 ---
 
 # Data retrieval APIs for AWS Security Hub
-<a name="awssecurityhub"></a>
 
 AWS Security Hub provides the following APIs for data retrieval.
 

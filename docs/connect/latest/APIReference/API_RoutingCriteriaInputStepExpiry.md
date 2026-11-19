@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RoutingC
 ---
 
 # RoutingCriteriaInputStepExpiry
-<a name="API_RoutingCriteriaInputStepExpiry"></a>
 
 Specify whether this routing criteria step should apply for only a limited amount of time, or if it should never expire.
 

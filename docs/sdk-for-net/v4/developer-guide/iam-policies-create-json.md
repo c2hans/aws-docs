@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Creating IAM managed policies from JSON
-<a name="iam-policies-create-json"></a>
 
 This example shows you how to use the AWS SDK for .NET to create an [IAM managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) from a given policy document in JSON. The application creates an IAM client object, reads the policy document from a file, and then creates the policy.
 

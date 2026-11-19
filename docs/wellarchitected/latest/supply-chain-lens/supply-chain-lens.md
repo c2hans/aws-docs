@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Supply Chain Lens - AWS Well-Architected Framework
-<a name="supply-chain-lens"></a>
 
 Publication date: **September 9, 2025** ([Document revisions](document-revisions.md))
 

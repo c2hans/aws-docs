@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnSchedulePublis
 ---
 
 # OnSchedulePublish
-<a name="OnSchedulePublish"></a>
 
 The OnSchedulePublish event source runs a rule when a schedule is published.
 

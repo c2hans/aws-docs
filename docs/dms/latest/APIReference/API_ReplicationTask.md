@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ReplicationT
 ---
 
 # ReplicationTask
-<a name="API_ReplicationTask"></a>
 
 Provides information that describes a replication task created by the `CreateReplicationTask` operation.
 

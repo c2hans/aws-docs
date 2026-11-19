@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-mkt-create
 ---
 
 # Create a Model Package Resource
-<a name="sagemaker-mkt-create-model-package"></a>
 
 To create a model package resource that you can use to create deployable models in Amazon SageMaker AI and publish on AWS Marketplace specify the following information:
 + The Docker container that contains the inference code, or the algorithm resource that was used to train the model.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-nodejs.html
 ---
 
 # Building Lambda Event Functions with Node.js
-<a name="lambda-nodejs"></a>
 
 You can run JavaScript code with Node.js in AWS Lambda Event Functions. Lambda provides [runtimes](lambda-runtimes.md) for Node.js that run your code to process events. Your code runs in an environment that includes the AWS SDK for JavaScript, with credentials from an AWS Identity and Access Management (IAM) role that you manage. To learn more about the SDK versions included with the Node.js runtimes, see [Runtime-included SDK versions](#nodejs-sdk-included).
 

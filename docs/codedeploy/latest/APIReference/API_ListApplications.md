@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_ListA
 ---
 
 # ListApplications
-<a name="API_ListApplications"></a>
 
 Lists the applications registered with the user or AWS account.
 

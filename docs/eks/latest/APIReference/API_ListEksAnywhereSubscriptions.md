@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ListEksAnywh
 ---
 
 # ListEksAnywhereSubscriptions
-<a name="API_ListEksAnywhereSubscriptions"></a>
 
 Displays the full description of the subscription.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # PaymentInstrumentSummary
-<a name="API_PaymentInstrumentSummary"></a>
 
 Summary of a payment instrument for list operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_CompleteReadSetUplo
 ---
 
 # CompleteReadSetUploadPartListItem
-<a name="API_CompleteReadSetUploadPartListItem"></a>
 
  Part of the response to the CompleteReadSetUpload API, including metadata.
 

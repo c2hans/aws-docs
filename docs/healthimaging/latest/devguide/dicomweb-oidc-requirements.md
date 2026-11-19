@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/dicomweb-o
 ---
 
 # Set up an AWS Lambda authorizer for OIDC authentication
-<a name="dicomweb-oidc-requirements"></a>
 
 This guide assumes you have already configured your Identity Provider (IdP) of choice to provide access tokens compatible with the requirements of the HealthImaging OIDC authentication feature.
 

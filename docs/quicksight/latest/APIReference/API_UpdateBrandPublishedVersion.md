@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateBrandPublishedVersion
-<a name="API_UpdateBrandPublishedVersion"></a>
 
 Updates the published version of a brand.
 

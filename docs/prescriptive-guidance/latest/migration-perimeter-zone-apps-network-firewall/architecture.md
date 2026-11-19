@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-p
 ---
 
 # Architecture
-<a name="architecture"></a>
 
 ## Traditional perimeter zone architecture
 <a name="traditional-perimeter-zone-architecture"></a>

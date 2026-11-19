@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/rekognition-video-
 ---
 
 # Searching faces in a streaming video
-<a name="rekognition-video-stream-processor-search-faces"></a>
 
 **Note**
 Streaming Video and Bulk Image Analysis is no longer available to new customers. For more information, see [Amazon Rekognition feature availability changes](rekognition-availability-changes.md).

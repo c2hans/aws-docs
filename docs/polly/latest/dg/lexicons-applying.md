@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/lexicons-applying.html
 ---
 
 # Using multiple lexicons
-<a name="lexicons-applying"></a>
 
 You can apply up to five lexicons to your text. If the same grapheme appears in more than one lexicon that you apply to your text, the order in which they are applied can make a difference in the resulting speech. For example, given the following text, "Hello, my name is Bob." and two lexemes in different lexicons that both use the grapheme `Bob`.
 

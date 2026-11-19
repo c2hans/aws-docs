@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/dollar-projec
 ---
 
 # $
-<a name="dollar-projection"></a>
 
 The `$` projection operator limits the contents of an array field to return only the first element that matches the query condition. It is used to project a single matching array element.
 

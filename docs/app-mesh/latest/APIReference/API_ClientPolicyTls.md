@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ClientP
 ---
 
 # ClientPolicyTls
-<a name="API_ClientPolicyTls"></a>
 
 A reference to an object that represents a Transport Layer Security (TLS) client policy.
 

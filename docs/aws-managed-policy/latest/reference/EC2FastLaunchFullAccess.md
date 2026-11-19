@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2F
 ---
 
 # EC2FastLaunchFullAccess
-<a name="EC2FastLaunchFullAccess"></a>
 
 **Description**: This policy grants full access to EC2 Fast Launch actions
 

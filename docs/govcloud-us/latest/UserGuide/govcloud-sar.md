@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-sa
 ---
 
 # AWS Serverless Application Repository in AWS GovCloud (US)
-<a name="govcloud-sar"></a>
 
 The AWS Serverless Application Repository is a managed repository for serverless applications. It enables teams, organizations, and individual developers to find, deploy, publish, share, store, and easily assemble serverless architectures.
 

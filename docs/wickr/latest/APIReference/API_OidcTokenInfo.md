@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_OidcTokenI
 ---
 
 # OidcTokenInfo
-<a name="API_OidcTokenInfo"></a>
 
 Contains OAuth token information returned from the identity provider, including access tokens, ID tokens, and PKCE parameters used for secure authentication.
 

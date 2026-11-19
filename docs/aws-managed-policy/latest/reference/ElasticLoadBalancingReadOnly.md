@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Elas
 ---
 
 # ElasticLoadBalancingReadOnly
-<a name="ElasticLoadBalancingReadOnly"></a>
 
 **Description**: Provides read only access to Amazon ElasticLoadBalancing and dependent services
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolFuncti
 ---
 
 # GetSolFunctionPackage
-<a name="API_GetSolFunctionPackage"></a>
 
 Gets the details of an individual function package, such as the operational state and whether the package is in use.
 

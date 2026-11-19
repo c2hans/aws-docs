@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/scheduled-q
 ---
 
 # Updating a scheduled query
-<a name="scheduled-queries-updating"></a>
 
 Modify your scheduled query configuration to change the query string, schedule, destinations, or execution role as your requirements evolve.
 

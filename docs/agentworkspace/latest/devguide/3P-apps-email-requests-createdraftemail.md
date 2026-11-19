@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-e
 ---
 
 # Create a draft email contact in Connect Customer agent workspace
-<a name="3P-apps-email-requests-createdraftemail"></a>
 
 Creates a draft outbound email contact; can either be an agent initiated outbound draft email, an agent reply draft email, or a forwarded email. Upon successful draft creation, the email contact will be in connected state. Returns an object that includes:
 + `contactId: string`: The contact id of the newly created draft email contact

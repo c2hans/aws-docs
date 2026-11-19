@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_In
 ---
 
 # InferenceReceiverMember
-<a name="API_InferenceReceiverMember"></a>
 
 Defines who will receive inference results.
 

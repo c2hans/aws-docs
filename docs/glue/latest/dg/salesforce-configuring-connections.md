@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-configuring-co
 ---
 
 # Configuring Salesforce connections
-<a name="salesforce-configuring-connections"></a>
 
 To configure a Salesforce connection:
 

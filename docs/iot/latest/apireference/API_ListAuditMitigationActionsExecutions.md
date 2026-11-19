@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListAuditMit
 ---
 
 # ListAuditMitigationActionsExecutions
-<a name="API_ListAuditMitigationActionsExecutions"></a>
 
 Gets the status of audit mitigation action tasks that were executed.
 

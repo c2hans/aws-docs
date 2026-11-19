@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Collec
 ---
 
 # CollectorDetails
-<a name="API_CollectorDetails"></a>
 
 Collector data access configuration returned for an environment.
 

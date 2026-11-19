@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_VdmAttrib
 ---
 
 # VdmAttributes
-<a name="API_VdmAttributes"></a>
 
 The VDM attributes that apply to your Amazon SES account.
 

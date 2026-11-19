@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Overrid
 ---
 
 # OverrideDomainUnitOwnersPolicyGrantDetail
-<a name="API_OverrideDomainUnitOwnersPolicyGrantDetail"></a>
 
 The grant details of the override domain unit owners policy.
 

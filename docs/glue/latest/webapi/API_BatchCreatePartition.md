@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchCreatePartit
 ---
 
 # BatchCreatePartition
-<a name="API_BatchCreatePartition"></a>
 
 Creates one or more partitions in a batch operation.
 

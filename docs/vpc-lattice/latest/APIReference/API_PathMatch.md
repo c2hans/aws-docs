@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Path
 ---
 
 # PathMatch
-<a name="API_PathMatch"></a>
 
 Describes the conditions that can be applied when matching a path for incoming requests.
 

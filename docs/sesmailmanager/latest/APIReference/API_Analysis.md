@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_A
 ---
 
 # Analysis
-<a name="API_Analysis"></a>
 
 The result of an analysis can be used in conditions to trigger actions. Analyses can inspect the email content and report a certain aspect of the email.
 

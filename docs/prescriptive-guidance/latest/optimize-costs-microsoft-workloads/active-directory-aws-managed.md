@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # AWS Managed Microsoft AD
-<a name="active-directory-aws-managed"></a>
 
 ## Overview
 <a name="active-directory-aws-managed-overview"></a>

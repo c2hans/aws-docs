@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVer
 ---
 
 # ModifyVerifiedAccessTrustProviderOidcOptions
-<a name="API_ModifyVerifiedAccessTrustProviderOidcOptions"></a>
 
 Options for an OpenID Connect-compatible user-identity trust provider.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/HTTPPOSTF
 ---
 
 # POST with adobe flash (AWS signature version 2)
-<a name="HTTPPOSTFlash"></a>
 
 This section describes how to use `POST` with Adobe Flash.
 

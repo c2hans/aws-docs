@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/setting-up-mv-hev
 ---
 
 # Job settings to create an MV-HEVC output
-<a name="setting-up-mv-hevc-job"></a>
 
 To set up a job with an MV-HEVC output, you create the output in the File group output group. Then you specify MP4 or MOV as the output container, choose H.265 as the video codec, and configure `multiViewSettings` on your inputs to provide the right eye enhancement layer.
 

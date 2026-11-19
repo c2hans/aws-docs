@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to
 ---
 
 # Routing traffic to an Amazon EC2 instance
-<a name="routing-to-ec2-instance"></a>
 
 Amazon EC2 provides scalable computing capacity in the AWS Cloud. You can launch an EC2 virtual computing environment (an instance) using a preconfigured template (an Amazon Machine Image or AMI). When you launch an EC2 instance, EC2 automatically installs the operating system (Linux or Microsoft Windows) and additional software included in the AMI, such as web server or database software.
 

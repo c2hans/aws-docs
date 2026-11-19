@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_HostedZo
 ---
 
 # HostedZoneFailureReasons
-<a name="API_HostedZoneFailureReasons"></a>
 
 Contains information about why certain features failed to be enabled or configured for the hosted zone.
 

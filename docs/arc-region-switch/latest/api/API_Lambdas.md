@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Lambdas
 ---
 
 # Lambdas
-<a name="API_Lambdas"></a>
 
 Configuration for AWS Lambda functions used in a Region switch plan.
 

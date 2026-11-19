@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_De
 ---
 
 # DeleteComponentType
-<a name="API_DeleteComponentType"></a>
 
 Deletes a component type.
 

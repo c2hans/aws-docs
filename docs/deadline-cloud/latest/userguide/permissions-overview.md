@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/permissi
 ---
 
 # How permissions work in Deadline Cloud
-<a name="permissions-overview"></a>
 
 AWS Deadline Cloud (Deadline Cloud) controls access with two systems. *Access levels* control what you can see and do when you sign in to the Deadline Cloud monitor or submit jobs from your workstation. *AWS Identity and Access Management (IAM) policies* control what AWS credentials can do, such as administering farms in the Deadline Cloud console or calling the API from a pipeline script.
 

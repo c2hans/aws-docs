@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ApplicationRes
 ---
 
 # ApplicationResourceAssociation
-<a name="API_ApplicationResourceAssociation"></a>
 
 Describes the association between an application and an application resource.
 

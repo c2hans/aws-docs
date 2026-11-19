@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/blackbaud-connection-limi
 ---
 
 # Blackbaud Raiser's Edge NXT limitations
-<a name="blackbaud-connection-limitations"></a>
 
 The following are limitations or notes for Blackbaud Raiser's Edge NXT:
 + The SaaS only supports the `EQUAL_TO` operator, which returns results created or modified on or after the specified date. Additionally, the "id" field is a String data type. There is also no identification of non-nullable fields. Therefore, field-based partitioning is not supported.

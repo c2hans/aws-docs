@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_CreatePermis
 ---
 
 # CreatePermission
-<a name="API_CreatePermission"></a>
 
 Creates a customer managed permission for a specified resource type that you can attach to resource shares. It is created in the AWS Region in which you call the operation.
 

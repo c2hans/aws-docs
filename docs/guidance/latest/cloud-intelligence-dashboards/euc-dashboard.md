@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # AWS End User Computing (EUC) Dashboard
-<a name="euc-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

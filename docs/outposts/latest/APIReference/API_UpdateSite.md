@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_UpdateS
 ---
 
 # UpdateSite
-<a name="API_UpdateSite"></a>
 
 Updates the specified site.
 

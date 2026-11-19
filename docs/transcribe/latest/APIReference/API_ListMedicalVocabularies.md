@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_ListM
 ---
 
 # ListMedicalVocabularies
-<a name="API_ListMedicalVocabularies"></a>
 
 Provides a list of custom medical vocabularies that match the specified criteria. If no criteria are specified, all custom medical vocabularies are returned.
 

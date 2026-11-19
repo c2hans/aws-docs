@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/accept-decline-b
 ---
 
 # Accept or reject billing of a shared EC2 Capacity Reservation
-<a name="accept-decline-billing-transfer"></a>
 
 If you receive a billing assignment request for a Capacity Reservation that is shared with you, you can either accept or reject it. The request remains in the `pending` state until it is accepted or rejected.
 

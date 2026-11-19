@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/optimize-
 ---
 
 # How to optimize waypoints for a route with access hours awareness
-<a name="optimize-waypoints-access-hours"></a>
 
 The OptimizeWaypoints API also calculates the optimal route between a set of waypoints, with the goal of minimizing either the travel time or the total distance covered. It solves the Traveling Salesman Problem of determining the most efficient path, taking into account factors such as the road network and traffic conditions.
 

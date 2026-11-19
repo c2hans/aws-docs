@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/exampl
 ---
 
 # Time-based policies
-<a name="example-policies-time-based"></a>
 
 The policies in this section decide from **wall-clock time** — a promotional window, business hours, or a combination of the two. They read `context.system.now`, which the service supplies on every request.
 

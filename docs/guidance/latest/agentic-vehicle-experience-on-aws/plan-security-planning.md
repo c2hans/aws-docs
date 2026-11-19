@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Security Planning
-<a name="plan-security-planning"></a>
 
 Security for a multi-tenant, voice-capable AI platform requires deliberate planning across several dimensions before deployment begins. The full security design — covering multi-tenant Cognito authentication, tenant isolation via IAM conditions and DynamoDB partition-key prefixing, cross-account grant model, PII handling, consent and redaction, and the P0 safety guardrail — is covered in the [Security](security.md) chapter.
 

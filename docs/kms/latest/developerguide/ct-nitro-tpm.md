@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-nitro-tpm.h
 ---
 
 # Monitoring requests for NitroTPM
-<a name="ct-nitro-tpm"></a>
 
 For NitroTPM attestation, the CloudTrail log includes the module ID (`attestationDocumentModuleId`) and platform configuration registers (PCRs) from the attestation document.
 

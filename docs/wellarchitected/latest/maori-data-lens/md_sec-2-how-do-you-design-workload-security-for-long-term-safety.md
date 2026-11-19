@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/maori-data-lens/m
 ---
 
 # MD\_SEC 2: How do you design workload security for long-term safety?
-<a name="md_sec-2-how-do-you-design-workload-security-for-long-term-safety"></a>
 
  Certain Māori data may need to be available for generations to come. Consult with Māori customers and advisers about what data retention policies they recommend according to the different types of data. These data retention policies can be revisited in the future too. Regardless of how long you are intending to store this data, all data needs to be properly secured for the protection of taonga (treasure) for generations to come.
 

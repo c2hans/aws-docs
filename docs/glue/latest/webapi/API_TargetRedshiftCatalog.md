@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TargetRedshiftCat
 ---
 
 # TargetRedshiftCatalog
-<a name="API_TargetRedshiftCatalog"></a>
 
 A structure that describes a target catalog for resource linking.
 

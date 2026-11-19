@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/join
 ---
 
 # Manually joining an Amazon EC2 Linux instance to your AWS Managed Microsoft AD Active Directory
-<a name="join_linux_instance"></a>
 
 In addition to Amazon EC2 Windows instances, you can also join certain Amazon EC2 Linux instances to your AWS Managed Microsoft AD Active Directory. The following Linux instance distributions and versions are supported:
 + Amazon Linux AMI 2018.03.0

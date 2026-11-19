@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DeleteVolume
 ---
 
 # DeleteVolumeOpenZFSConfiguration
-<a name="API_DeleteVolumeOpenZFSConfiguration"></a>
 
 A value that specifies whether to delete all child volumes and snapshots.
 

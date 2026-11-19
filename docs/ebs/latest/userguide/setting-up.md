@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/setting-up.html
 ---
 
 # Set up for Amazon EBS
-<a name="setting-up"></a>
 
 Complete the tasks in this section to get set up for working with Amazon EBS resources.
 

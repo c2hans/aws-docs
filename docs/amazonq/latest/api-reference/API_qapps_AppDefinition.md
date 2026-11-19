@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_A
 ---
 
 # AppDefinition
-<a name="API_qapps_AppDefinition"></a>
 
 The definition of the Q App, specifying the cards and flow.
 

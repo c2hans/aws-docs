@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_QueryL
 ---
 
 # QueryLineage
-<a name="API_QueryLineage"></a>
 
 Use this action to inspect your lineage and discover relationships between entities. For more information, see [ Querying Lineage Entities](https://docs.aws.amazon.com/sagemaker/latest/dg/querying-lineage-entities.html) in the *Amazon SageMaker Developer Guide*.
 

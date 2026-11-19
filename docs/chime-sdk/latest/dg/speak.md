@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/speak.html
 ---
 
 # Speak
-<a name="speak"></a>
 
 You can play speech on any call leg by providing text. You can use plain text or Speech Synthesis Markup Language (SSML). SSML provides more control over how the Amazon Chime SDK generates speech by adding pauses, emphasizing certain words, or changing the speaking style.
 

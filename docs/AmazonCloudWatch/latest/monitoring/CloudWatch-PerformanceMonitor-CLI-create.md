@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Create a monitor
-<a name="CloudWatch-PerformanceMonitor-CLI-create"></a>
 
 The following `create-performance-monitor` example creates a monitor that targets two VPCs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/secur
 ---
 
 # Upgrade IAM policies to IPv6
-<a name="security_iam_cwim_security-ipv6-upgrade"></a>
 
 Internet Monitor customers use IAM policies to set an allowed range of IP addresses, to prevent any IP addresses outside the configured range from being able to access Internet Monitor APIs.
 

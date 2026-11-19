@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ddb-caching.
 ---
 
 # DynamoDB caching
-<a name="ddb-caching"></a>
 
 DynamoDB caching is a feature of Amazon ElastiCache Serverless for Valkey that provides write-through caching for Amazon DynamoDB table data. DynamoDB caching delivers sub-millisecond read latencies for cached data and can help reduce the impact of DynamoDB throttling because of high read activity on a subset of items (hot keys). DynamoDB caching can also reduce read costs for frequently read DynamoDB data while requiring minimal application changes.
 

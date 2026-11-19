@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribePredefinedAttribute
-<a name="API_DescribePredefinedAttribute"></a>
 
 Describes a predefined attribute for the specified Connect Customer instance. A *predefined attribute* is made up of a name and a value. You can use predefined attributes for:
 + Routing proficiency (for example, agent certification) that has predefined values (for example, a list of possible certifications). For more information, see [Create predefined attributes for routing contacts to agents](https://docs.aws.amazon.com/connect/latest/adminguide/predefined-attributes.html).

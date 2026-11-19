@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/appstream-w
 ---
 
 # Applying the AWS Well-Architected Framework to Amazon WorkSpaces Applications
-<a name="introduction"></a>
 
 *Mohamed Wali, Amazon Web Services*
 

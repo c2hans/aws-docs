@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StopRouterOu
 ---
 
 # StopRouterOutput
-<a name="API_StopRouterOutput"></a>
 
 Stops a router output in AWS Elemental MediaConnect.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/suppor
 ---
 
 # Claude Agent SDK
-<a name="supported-frameworks-claude-agent-sdk"></a>
 
 This page explains how to instrument a [Claude Agent SDK](https://docs.claude.com/en/api/agent-sdk/overview) agent, how spans are identified, and how evaluation fields are extracted.
 

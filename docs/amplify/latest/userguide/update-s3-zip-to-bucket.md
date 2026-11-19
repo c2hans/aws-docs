@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/update-s3-zip-t
 ---
 
 # Updating an S3 deployment to use a bucket and prefix instead of a .zip file
-<a name="update-s3-zip-to-bucket"></a>
 
 If you already have an existing static website deployed to Amplify Hosting from a .zip file in an Amazon S3 general purpose bucket, you can update the application deployment to use the bucket name and prefix that contain the objects to host. This type of deployment eliminates the need to upload a separate file to your bucket that contains the zipped contents of the build output.
 

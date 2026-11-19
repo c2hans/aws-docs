@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloud
 ---
 
 # Validate templates with Guard
-<a name="cloudformation-guard"></a>
 
 AWS CloudFormation Guard (`cfn-guard`) is a policy-as-code tool. You write rules in the Guard language that describe required or prohibited configurations, and then Guard checks JSON or YAML data against those rules. For example, you can require every Amazon S3 bucket in a template to use encryption, or block security group rules that open port 22 to the internet.
 

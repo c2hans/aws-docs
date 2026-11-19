@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DisassociateServiceActionFromProvisioningArtifact
-<a name="API_DisassociateServiceActionFromProvisioningArtifact"></a>
 
 Disassociates the specified self-service action association from the specified provisioning artifact.
 

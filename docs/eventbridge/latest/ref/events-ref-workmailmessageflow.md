@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-workma
 ---
 
 # Amazon WorkMail Message Flow events
-<a name="events-ref-workmailmessageflow"></a>
 
 Amazon WorkMail Message Flow sends service events to EventBridge via AWS CloudTrail.
 

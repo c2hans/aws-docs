@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # Document an API using the API Gateway REST API
-<a name="api-gateway-documenting-api-quick-start-with-restapi"></a>
 
 In this section, we describe how to create and maintain documentation parts of an API using the API Gateway REST API.
 

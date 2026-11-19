@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateAp
 ---
 
 # CreateApiCache
-<a name="API_CreateApiCache"></a>
 
 Creates a cache for the GraphQL API.
 

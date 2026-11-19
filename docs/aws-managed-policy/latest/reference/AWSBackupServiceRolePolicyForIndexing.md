@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBackupServiceRolePolicyForIndexing
-<a name="AWSBackupServiceRolePolicyForIndexing"></a>
 
 **Description**: Policy containing permissions necessary for AWS Backup to index recovery points.
 

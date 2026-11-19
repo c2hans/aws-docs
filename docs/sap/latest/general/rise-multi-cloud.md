@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-multi-cloud.html
 ---
 
 # Connectivity patterns for multi-cloud
-<a name="rise-multi-cloud"></a>
 
 In complex multi-cloud scenarios, your RISE with SAP environment might need to connect with on-premises systems, AWS-hosted workloads, SaaS solutions, and other cloud service providers.
 

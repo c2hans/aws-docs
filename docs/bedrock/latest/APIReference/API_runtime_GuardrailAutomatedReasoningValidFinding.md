@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailAutomatedReasoningValidFinding
-<a name="API_runtime_GuardrailAutomatedReasoningValidFinding"></a>
 
 Indicates that the claims are definitively true and logically implied by the premises, with no possible alternative interpretations.
 

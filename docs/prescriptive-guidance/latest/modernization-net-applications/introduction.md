@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Choosing an approach for modernizing .NET applications
-<a name="introduction"></a>
 
 *Mathew George and Fabian Jahnke, Amazon Web Services*
 

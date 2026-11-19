@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-rotatekey.h
 ---
 
 # RotateKey
-<a name="ct-rotatekey"></a>
 
 These examples show the AWS CloudTrail log entries for the operations that rotate AWS KMS keys. For information about rotating KMS keys, see [Rotate AWS KMS keys](rotate-keys.md).
 

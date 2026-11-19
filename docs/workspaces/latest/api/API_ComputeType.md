@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ComputeType.ht
 ---
 
 # ComputeType
-<a name="API_ComputeType"></a>
 
 Describes the compute type of the bundle.
 

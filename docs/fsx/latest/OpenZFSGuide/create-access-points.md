@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/create-access-po
 ---
 
 # Creating access points
-<a name="create-access-points"></a>
 
 The FSx for OpenZFS volume must already exist in your account when creating an S3 access point for your volume.
 

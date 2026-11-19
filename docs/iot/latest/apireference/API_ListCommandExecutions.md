@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListCommandE
 ---
 
 # ListCommandExecutions
-<a name="API_ListCommandExecutions"></a>
 
 List all command executions.
 

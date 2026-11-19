@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Creat
 ---
 
 # CreateDataTransformationProfile
-<a name="API_CreateDataTransformationProfile"></a>
 
 Creates a data transformation profile in DRAFT state. Specify a built-in starter profile, an existing profile version, raw profile content, or a sample data file as the source.
 

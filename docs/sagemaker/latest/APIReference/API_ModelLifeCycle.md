@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelL
 ---
 
 # ModelLifeCycle
-<a name="API_ModelLifeCycle"></a>
 
  A structure describing the current state of the model in its life cycle.
 

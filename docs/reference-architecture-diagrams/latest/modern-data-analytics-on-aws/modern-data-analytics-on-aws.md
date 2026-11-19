@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Modern Data Analytics Reference Architecture on AWS Diagram
-<a name="modern-data-analytics-on-aws"></a>
 
 Publication date: **May 31, 2022 ([Diagram history](#diagram-history))**
 

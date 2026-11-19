@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Aut
 ---
 
 # AuthenticationMethod
-<a name="API_AuthenticationMethod"></a>
 
 A structure that describes an authentication method that can be used by an application.
 

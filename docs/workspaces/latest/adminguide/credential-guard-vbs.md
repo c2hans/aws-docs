@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/credential-
 ---
 
 # Credential Guard / Virtualization-Based Security (VBS)
-<a name="credential-guard-vbs"></a>
 
 Windows WorkSpaces can utilize Credential Guard and Virtualization-Based Security (VBS) to provide hardware-based isolation and protect credentials within the operating system. You can disable Credential Guard or VBS through Group Policy settings.
 

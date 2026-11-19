@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_R
 ---
 
 # ReservationDetails
-<a name="API_ReservationDetails"></a>
 
 Details of a ground station reservation.
 

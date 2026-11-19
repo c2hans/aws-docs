@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Model routing and fallback
-<a name="gateway-rules-fallback"></a>
 
 When you route inference traffic through a gateway, a request can fail when the target that serves the requested model is throttled, out of capacity, or unreachable. With model fallback, you define an ordered chain of alternative destinations, and the gateway automatically tries the next one when the primary fails. Fallback gives you higher availability and more control over cost and model coverage, without each calling client implementing its own fallback logic.
 

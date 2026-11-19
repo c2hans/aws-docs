@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/examples-elast
 ---
 
 # Examples for working with Elastic Load Balancing using the AWS CLI
-<a name="examples-elastic-load-balancing-aws-cli"></a>
 
 Use the AWS Command Line Interface (AWS CLI) to attach, detach, and describe load balancers and target groups, add and remove Elastic Load Balancing health checks, and change which Availability Zones are enabled.
 

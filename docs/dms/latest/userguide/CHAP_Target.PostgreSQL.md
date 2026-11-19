@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.Postgre
 ---
 
 # Using a PostgreSQL database as a target for AWS Database Migration Service
-<a name="CHAP_Target.PostgreSQL"></a>
 
 You can migrate data to PostgreSQL databases using AWS DMS, either from another PostgreSQL database or from one of the other supported databases.
 

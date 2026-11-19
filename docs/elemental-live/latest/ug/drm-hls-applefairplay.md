@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/drm-hls-applefa
 ---
 
 # HLS output with Apple FairPlay
-<a name="drm-hls-applefairplay"></a>
 
 Encryption mode: Always AES CBC (Sample AES)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailConverseTextBlock
-<a name="API_runtime_GuardrailConverseTextBlock"></a>
 
 A text block that contains text that you want to assess with a guardrail. For more information, see [GuardrailConverseContentBlock](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_GuardrailConverseContentBlock.html).
 

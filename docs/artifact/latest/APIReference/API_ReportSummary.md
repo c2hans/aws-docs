@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_ReportS
 ---
 
 # ReportSummary
-<a name="API_ReportSummary"></a>
 
 Summary for report resource.
 

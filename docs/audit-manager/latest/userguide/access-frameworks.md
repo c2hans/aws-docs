@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/access-fr
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Finding the available frameworks in AWS Audit Manager
-<a name="access-frameworks"></a>
 
 You can find all available frameworks on the **Framework library** page in the Audit Manager console.
 

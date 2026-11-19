@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetParameterHistory
-<a name="API_GetParameterHistory"></a>
 
 Retrieves the history of all changes to a parameter.
 

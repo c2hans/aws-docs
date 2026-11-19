@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCent
 ---
 
 # Configuring an existing CloudWatch alarm to create OpsItems (programmatically)
-<a name="OpsCenter-configuring-an-existing-alarm-programmatically"></a>
 
 You can configure Amazon CloudWatch alarms to create OpsItems programmatically by using the AWS Command Line Interface (AWS CLI), AWS CloudFormation templates, or Java code snippets.
 

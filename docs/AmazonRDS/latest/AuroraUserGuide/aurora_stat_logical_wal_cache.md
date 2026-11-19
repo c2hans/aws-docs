@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora_
 ---
 
 # aurora\_stat\_logical\_wal\_cache
-<a name="aurora_stat_logical_wal_cache"></a>
 
 Shows logical write-ahead log (WAL) cache usage per slot.
 

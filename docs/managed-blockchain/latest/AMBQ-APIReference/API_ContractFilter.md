@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # ContractFilter
-<a name="API_ContractFilter"></a>
 
 The contract or wallet address by which to filter the request.
 

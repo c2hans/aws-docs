@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAppS
 ---
 
 # AwsAppSyncGraphQlApiAdditionalAuthenticationProvidersDetails
-<a name="API_AwsAppSyncGraphQlApiAdditionalAuthenticationProvidersDetails"></a>
 
  A list of additional authentication providers for the GraphqlApi API.
 

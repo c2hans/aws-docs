@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/update-securit
 ---
 
 # Updating Amazon MSK cluster security settings using the AWS CLI
-<a name="update-security-cli"></a>
 
 1. Create a JSON file that contains the encryption settings that you want the cluster to have. The following is an example.
 **Note**

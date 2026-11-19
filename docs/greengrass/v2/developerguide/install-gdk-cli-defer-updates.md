@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/install-gdk
 ---
 
 # Step 1: Install the Greengrass Development Kit CLI
-<a name="install-gdk-cli-defer-updates"></a>
 
 The [Greengrass Development Kit CLI (GDK CLI)](greengrass-development-kit-cli.md) provides features that help you develop custom Greengrass components. You can use the GDK CLI to create, build, and publish custom components.
 

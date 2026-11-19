@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_List
 ---
 
 # ListRuleNamesByTarget
-<a name="API_ListRuleNamesByTarget"></a>
 
 Lists the rules for the specified target. You can see which of the rules in Amazon EventBridge can invoke a specific target in your account.
 

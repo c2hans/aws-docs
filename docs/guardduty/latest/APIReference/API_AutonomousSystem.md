@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Autono
 ---
 
 # AutonomousSystem
-<a name="API_AutonomousSystem"></a>
 
 Contains information about the Autonomous System (AS) associated with the network endpoints involved in an attack sequence.
 

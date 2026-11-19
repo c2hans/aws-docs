@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GetStored
 ---
 
 # GetStoredQuery
-<a name="API_GetStoredQuery"></a>
 
 Returns the details of a specific stored query.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 ---
 
 # Prerequisites for AgentCore payments
-<a name="payments-prerequisites"></a>
 
 Complete the prerequisites on this page before you use AgentCore payments.
 

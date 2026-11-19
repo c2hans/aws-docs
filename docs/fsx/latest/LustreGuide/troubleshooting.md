@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/troubleshooting.h
 ---
 
 # Troubleshooting Amazon FSx for Lustre
-<a name="troubleshooting"></a>
 
 This section covers various troubleshooting scenarios and solutions for Amazon FSx for Lustre file systems.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/action-recommendat
 ---
 
 # Action recommendation filter expression examples
-<a name="action-recommendation-filter-examples"></a>
 
 The following filter expression examples show how to filter actions based on action interactions data, action data. and user data. They are organized by data type.
 

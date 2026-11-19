@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # Consent
-<a name="API_domains_Consent"></a>
 
  The maximum amount that you agree to pay for an operation, and the currency for that amount.
 

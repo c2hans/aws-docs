@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/update-routi
 ---
 
 # Update state for two routing controls at the same time, in a batch
-<a name="update-routing-control-state-batch"></a>
 
 The following is an example of a request to update two routing control states at the same time. It sets one to the state OFF and the other to the state ON. Updating routing control states with this command doesn't return a response.
 

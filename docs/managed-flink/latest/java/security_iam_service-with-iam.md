@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/security_iam_s
 ---
 
 # How Amazon Managed Service for Apache Flink works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 In Amazon MSF, you use IAM in the following different contexts:
 + [Application permissions](#security_iam_application_permissions): Control access by the application to external resources, such as Amazon S3, Amazon Kinesis Data Streams, or Amazon DynamoDB, that use IAM authentication.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_S3Targ
 ---
 
 # S3Target
-<a name="API_S3Target"></a>
 
 The s3 Target.
 

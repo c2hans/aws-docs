@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_StopQuery
 ---
 
 # StopQueryExecution
-<a name="API_StopQueryExecution"></a>
 
 Stops a query execution. Requires you to have access to the workgroup in which the query ran.
 

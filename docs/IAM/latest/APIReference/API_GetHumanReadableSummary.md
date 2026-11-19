@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetHumanRead
 ---
 
 # GetHumanReadableSummary
-<a name="API_GetHumanReadableSummary"></a>
 
 Retrieves a human readable summary for a given entity. At this time, the only supported entity type is `delegation-request`
 

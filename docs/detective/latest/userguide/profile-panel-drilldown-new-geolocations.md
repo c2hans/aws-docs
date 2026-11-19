@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/profile-panel
 ---
 
 # Activity details for a geolocation
-<a name="profile-panel-drilldown-new-geolocations"></a>
 
 The activity details for **Newly observed geolocations** show the API calls that were issued from a geolocation during the scope time. The API calls include all calls issued from the geolocation. They are not limited to calls that used the finding or profile entity. For S3 buckets, the activity calls are API calls made to the S3 bucket.
 

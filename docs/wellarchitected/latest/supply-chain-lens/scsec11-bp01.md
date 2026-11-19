@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCSEC11-BP01 Develop and implement a comprehensive incident response plan
-<a name="scsec11-bp01"></a>
 
  Establish a comprehensive incident response plan tailored specifically for supply chain disruptions that clearly defines roles, responsibilities, and escalation procedures across all stakeholders including suppliers and logistics partners. Regularly conduct tabletop exercises and simulations to test the effectiveness of response protocols under various supply chain threat scenarios, making sure teams are prepared to act decisively during actual incidents.
 

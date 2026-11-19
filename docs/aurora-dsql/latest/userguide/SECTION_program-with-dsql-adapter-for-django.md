@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/SECTION_pro
 ---
 
 # Aurora DSQL adapter for Django
-<a name="SECTION_program-with-dsql-adapter-for-django"></a>
 
 The Amazon Aurora DSQL adapter for Django (`aurora-dsql-django`) integrates Django object-relational mapping (ORM) with Aurora DSQL. It handles IAM authentication, Secure Sockets Layer (SSL) configuration, DDL generation differences (async indexes, identity/sequence columns), and connection management, so you can use the full Django ORM against a distributed Aurora DSQL cluster with minimal configuration. For more information, see the [Aurora DSQL adapter for Django](https://github.com/awslabs/aurora-dsql-orms/tree/main/python/django) and the [Django pet clinic example application](https://github.com/awslabs/aurora-dsql-orms/tree/main/python/django/examples/pet-clinic-app) on the GitHub website.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/video-gen-code-exa
 ---
 
 # Multi-shot video generation code examples
-<a name="video-gen-code-examples2"></a>
 
 The following examples provide sample code for various multi-shot (longer than 6 seconds) video generation tasks.
 

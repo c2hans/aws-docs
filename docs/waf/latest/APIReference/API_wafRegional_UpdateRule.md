@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_
 ---
 
 # UpdateRule
-<a name="API_wafRegional_UpdateRule"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.
@@ -22,7 +21,7 @@ To create and configure a `Rule`, perform the following steps:
 
 1. Create the `Rule`. See [CreateRule](API_wafRegional_CreateRule.md).
 
-1. Use `GetChangeToken` to get the change token that you provide in the `ChangeToken` parameter of an [UpdateRule](#API_wafRegional_UpdateRule) request.
+1. Use `GetChangeToken` to get the change token that you provide in the `ChangeToken` parameter of an [UpdateRule](API_wafRegional_UpdateRule.md) request.
 
 1. Submit an `UpdateRule` request to add predicates to the `Rule`.
 

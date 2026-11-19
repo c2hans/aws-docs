@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Setting up vertical autoscaling for Amazon EMR on EKS
-<a name="jobruns-vas-setup"></a>
 
 This topic helps you get your Amazon EKS cluster ready to submit Amazon EMR Spark jobs with vertical autoscaling. The setup process requires you to confirm or complete the tasks in the following sections:
 

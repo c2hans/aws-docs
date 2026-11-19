@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/transform-outbound
 ---
 
 # Outbound EDI
-<a name="transform-outbound-variations"></a>
 
 You can use AWS B2B Data Interchange to generate X12 EDI documents for purposes of sending transactional data to your partners. AWS B2B Data Interchange also automatically generates X12 functional acknowledgements (including TA1s, 997s, and 999s) in response to inbound EDI.
 

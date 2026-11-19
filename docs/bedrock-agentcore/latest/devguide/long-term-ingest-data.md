@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/long-t
 ---
 
 # Ingest content into long-term memory
-<a name="long-term-ingest-data"></a>
 
 Use [IngestData](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_IngestData.html) to submit content directly for long-term memory extraction, without persisting it as a short-term memory event.
 

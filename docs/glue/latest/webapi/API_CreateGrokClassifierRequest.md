@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateGrokClassif
 ---
 
 # CreateGrokClassifierRequest
-<a name="API_CreateGrokClassifierRequest"></a>
 
 Specifies a `grok` classifier for `CreateClassifier` to create.
 

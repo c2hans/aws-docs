@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Endpoi
 ---
 
 # EndpointDescription
-<a name="API_EndpointDescription"></a>
 
 A complex type for an endpoint. Each endpoint group can include one or more endpoints, such as load balancers.
 

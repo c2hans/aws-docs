@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-workforce-create
 ---
 
 # Create a Private Workforce (Amazon Cognito)
-<a name="sms-workforce-create-private"></a>
 
 When you use Amazon Cognito, you can create a private workforce in one of the following ways:
 + Create a new workforce while you are creating your labeling job. To learn how, see [Create an Amazon Cognito Workforce When Creating a Labeling Job](sms-workforce-create-private-console.md#create-workforce-labeling-job).

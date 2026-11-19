@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSTrustedAdvisorPriorityReadOnlyAccess
-<a name="AWSTrustedAdvisorPriorityReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to AWS Trusted Advisor Priority. This includes permission to view the delegated administrator accounts.
 

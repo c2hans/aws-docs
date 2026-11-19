@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Launch AWS MGN jobs from Cloud Migration Factory
-<a name="launch-aws-mgn-jobs-from-cloud-migration-factory"></a>
 
 The Cloud Migration Factory on AWS solution has built in automation to initiate and manage Rehost migration using AWS MGN. These automations allow migration teams to manage all aspects of their migration from a single user interface, combining the key actions available within the AWS MGN service console, with the AWS Cloud Migration Factory automation library that extends the functionality with prebuilt scripts for mass migrations, which helps to increase the speed of the migration activities. Refer to List of automated migration activities for AWS Application Migration Service (AWS MGN) for a full list of AWS MGN automation jobs available. Using AWS Cloud Migration Factory also provides seamless multi account migrations using AWS MGN as the Cloud Migration Factory has the ability to assume roles in different target accounts automatically based on the Cloud Migration Factory application and server definitions being migrated.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteDa
 ---
 
 # DeleteDataTableAttribute
-<a name="API_DeleteDataTableAttribute"></a>
 
 Deletes an attribute and all its values from a data table.
 

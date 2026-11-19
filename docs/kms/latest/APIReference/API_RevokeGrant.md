@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_RevokeGrant.
 ---
 
 # RevokeGrant
-<a name="API_RevokeGrant"></a>
 
 Deletes the specified grant. You revoke a grant to terminate the permissions that the grant allows. For more information, see [Retiring and revoking grants](https://docs.aws.amazon.com/kms/latest/developerguide/grant-delete.html) in the * * AWS Key Management Service Developer Guide* *.
 

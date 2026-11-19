@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_lambda_ListTags
 ---
 
 # Use `ListTags` with a CLI
-<a name="example_lambda_ListTags_section"></a>
 
 The following code examples show how to use `ListTags`.
 

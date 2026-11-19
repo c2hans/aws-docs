@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/content-switchi
 ---
 
 # The procedures
-<a name="content-switching-procedure"></a>
 
 **Topics**
 + [General procedure](general-procedure.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # GDPR Overview
-<a name="gdpr-overview"></a>
 
 The GDPR is a European data protection law (Regulation 2016/679 of the European Parliament and of the Council of April 27, 2016) that became enforceable on May 25, 2018. The GDPR replaced the EU Data Protection Directive (Directive 95/46/EC), and harmonized data protection laws throughout the European Union (EU) by applying a single data protection law that is binding throughout each EU Member State.
 

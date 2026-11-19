@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # DeleteIndex
-<a name="API_DeleteIndex"></a>
 
 Deletes the specified index and turns off AWS Resource Explorer in the specified AWS Region. When you delete an index, Resource Explorer stops discovering and indexing resources in that Region. Resource Explorer also deletes all views in that Region. These actions occur as asynchronous background tasks. You can check to see when the actions are complete by using the [GetIndex](API_GetIndex.md) operation and checking the `Status` response value.
 

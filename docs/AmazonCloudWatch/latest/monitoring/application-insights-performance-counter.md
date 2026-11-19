@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appli
 ---
 
 # Performance Counter metrics
-<a name="application-insights-performance-counter"></a>
 
 Performance Counter metrics are recommended for instances only when the corresponding Performance Counter sets are installed on the Windows instances.
 

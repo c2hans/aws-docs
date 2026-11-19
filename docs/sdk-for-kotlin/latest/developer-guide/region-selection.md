@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/re
 ---
 
 # AWS Region selection
-<a name="region-selection"></a>
 
 With AWS Regions, you can access AWS services that operate in a specific geographic area. This can be useful both for redundancy and to keep your data and applications running close to where you and your users will access them.
 

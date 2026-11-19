@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-copy-snapshot.h
 ---
 
 # Copy an Amazon EBS snapshot
-<a name="ebs-copy-snapshot"></a>
 
 After you create a snapshot, and it has reached the `completed` state, you can create a copy of it. The snapshot copy is an exact copy of the original, but it has a unique resource ID. You can copy snapshots that you own and snapshots that are shared with you, privately or publicly. You might need to copy a snapshot for the following use cases:
 + Geographic expansion — You need to launch your applications in a new Region.

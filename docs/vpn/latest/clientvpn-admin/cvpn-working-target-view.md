@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # View AWS Client VPN target networks
-<a name="cvpn-working-target-view"></a>
 
 You can view the targets associated with a Client VPN endpoint using the console or the AWS CLI.
 

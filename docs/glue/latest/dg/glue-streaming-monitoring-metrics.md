@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-streaming-monitoring
 ---
 
 # Using AWS Glue streaming metrics
-<a name="glue-streaming-monitoring-metrics"></a>
 
 This section describes each of the metrics and how they co-relate with each other.
 

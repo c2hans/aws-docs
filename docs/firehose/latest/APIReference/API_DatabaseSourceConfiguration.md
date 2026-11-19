@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Databas
 ---
 
 # DatabaseSourceConfiguration
-<a name="API_DatabaseSourceConfiguration"></a>
 
  The top level object for configuring streams with database as a source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Put
 ---
 
 # PutInlinePolicyToPermissionSet
-<a name="API_PutInlinePolicyToPermissionSet"></a>
 
 Attaches an inline policy to a permission set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AwsG
 ---
 
 # AwsGlueSessionUserRestrictedNotebookServiceRole
-<a name="AwsGlueSessionUserRestrictedNotebookServiceRole"></a>
 
 **Description**: Provides full access to all AWS Glue resources except for sessions. Allows users to create and use only the notebook sessions that are associated with the user. This policy also includes other permissions needed by AWS Glue to manage Glue resources in other AWS services.
 

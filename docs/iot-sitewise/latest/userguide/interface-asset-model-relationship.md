@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/interface-
 ---
 
 # Understand the interface-asset model relationship
-<a name="interface-asset-model-relationship"></a>
 
 Interfaces and asset models work together in a complementary relationship:
 

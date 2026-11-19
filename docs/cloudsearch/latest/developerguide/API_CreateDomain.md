@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Cr
 ---
 
 # CreateDomain
-<a name="API_CreateDomain"></a>
 
 ## Description
 <a name="API_CreateDomain_Description"></a>

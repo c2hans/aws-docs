@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/teams-iam-ro
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # IAM role for Microsoft Teams connector
-<a name="teams-iam-role"></a>
 
 **Note**
 This section applies to both new and original Microsoft Teams connector versions.

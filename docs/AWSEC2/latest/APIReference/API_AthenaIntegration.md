@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AthenaInt
 ---
 
 # AthenaIntegration
-<a name="API_AthenaIntegration"></a>
 
 Describes integration options for Amazon Athena.
 

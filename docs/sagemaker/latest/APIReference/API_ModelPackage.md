@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelP
 ---
 
 # ModelPackage
-<a name="API_ModelPackage"></a>
 
 A container for your trained model that can be deployed for SageMaker inference. This can include inference code, artifacts, and metadata. The model package type can be one of the following.
 + Versioned model: A part of a model package group in Model Registry.

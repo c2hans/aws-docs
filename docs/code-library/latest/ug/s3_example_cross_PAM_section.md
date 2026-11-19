@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/s3_example_cross_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create a photo asset management application that lets users manage photos using labels
-<a name="s3_example_cross_PAM_section"></a>
 
 The following code examples show how to create a serverless application that lets users manage photos using labels.
 

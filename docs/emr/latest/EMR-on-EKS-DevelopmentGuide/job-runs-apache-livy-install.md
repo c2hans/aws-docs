@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Getting started with Apache Livy on Amazon EMR on EKS
-<a name="job-runs-apache-livy-install"></a>
 
 Complete the following steps to install Apache Livy. They include configuring the package manager, creating a namespace for running Spark workloads, installing Livy, setting up load balancing, and verification steps. You have to complete these steps in order to run a batch job with Spark.
 

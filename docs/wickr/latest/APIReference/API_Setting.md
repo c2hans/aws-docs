@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_Setting.ht
 ---
 
 # Setting
-<a name="API_Setting"></a>
 
 Represents a single network-level configuration setting with its name, value, and data type. Settings control network-wide behaviors and features.
 

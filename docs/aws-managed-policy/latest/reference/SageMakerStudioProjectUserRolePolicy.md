@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Sage
 ---
 
 # SageMakerStudioProjectUserRolePolicy
-<a name="SageMakerStudioProjectUserRolePolicy"></a>
 
 **Description**: Amazon SageMaker Studio creates IAM roles for projects users to perform data analytics, artificial intelligence, and machine learning actions, and uses this policy when creating these roles to define the permissions.
 

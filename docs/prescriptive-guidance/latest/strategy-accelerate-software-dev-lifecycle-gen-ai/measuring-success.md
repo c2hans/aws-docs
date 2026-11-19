@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Measuring the success of generative AI in software development
-<a name="measuring-success"></a>
 
 To effectively measure the effect of implementing a generative AI-powered software development experience, you need to establish a comprehensive set of metrics that span across various dimensions of your software development lifecycle (SDLC). These metrics should capture immediate improvements in efficiency and productivity and also reflect long-term gains in software quality, team satisfaction, and business value.
 

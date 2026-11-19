@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_PardotConne
 ---
 
 # PardotConnectorProfileCredentials
-<a name="API_PardotConnectorProfileCredentials"></a>
 
 The connector-specific profile credentials required when using Salesforce Pardot.
 

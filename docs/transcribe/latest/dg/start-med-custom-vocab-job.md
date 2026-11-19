@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/start-med-custom-vo
 ---
 
 # Transcribing an audio file using a medical custom vocabulary
-<a name="start-med-custom-vocab-job"></a>
 
 Use the [`StartMedicalTranscriptionJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartMedicalTranscriptionJob.html) or the AWS Management Console to start a transcription job that uses a custom vocabulary to improve transcription accuracy.
 

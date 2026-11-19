@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_PutFileS
 ---
 
 # PutFileSystemPolicy
-<a name="API_S3Files_PutFileSystemPolicy"></a>
 
 Creates or replaces the IAM resource policy for an S3 File System to control access permissions.
 

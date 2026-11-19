@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ScanCo
 ---
 
 # ScanConditionPair
-<a name="API_ScanConditionPair"></a>
 
 Represents the `key:value` pair to be matched against given resource property.
 

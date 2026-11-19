@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Policy
-<a name="policy"></a>
 
 The purpose of an encryption policy is to establish, at a senior management level, the business and compliance expectations that the organization needs to meet. The policy serves as a starting point to define a suitable encryption strategy. The policy should be abstract enough to provide freedom and flexibility for implementation. At the same time, it must be specific enough to define the confines of an acceptable implementation that meets organizational objectives. In general, policies are technology-agnostic and very infrequently changed because they define the fundamental characteristics of your enterprise encryption strategy.
 

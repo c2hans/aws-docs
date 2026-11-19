@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-a-data-perim
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
  This paper has reviewed how to implement a data perimeter on AWS using SCPs, RCPs, and VPC endpoint policies. These controls are used to ensure **Only Trusted Identities**, **Only Trusted Resources**, and **Only Expected Networks** are allowed access to *my AWS*.
 

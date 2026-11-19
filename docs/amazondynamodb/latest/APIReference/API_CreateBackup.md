@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_C
 ---
 
 # CreateBackup
-<a name="API_CreateBackup"></a>
 
 Creates a backup for an existing table.
 

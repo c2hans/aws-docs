@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListShar
 ---
 
 # ListShards
-<a name="API_ListShards"></a>
 
 Lists the shards in a stream and provides information about each shard. This operation has a limit of 1000 transactions per second per data stream.
 

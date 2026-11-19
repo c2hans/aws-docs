@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_AssociationC
 ---
 
 # AssociationConfig
-<a name="API_AssociationConfig"></a>
 
 Specifies custom configurations for the associations between the web ACL and protected resources.
 

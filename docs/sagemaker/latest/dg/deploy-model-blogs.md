@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model-blogs.h
 ---
 
 # Blogs, example notebooks, and additional resources
-<a name="deploy-model-blogs"></a>
 
 The following sections contain examples and additional resources for you to learn more about Amazon SageMaker AI.
 

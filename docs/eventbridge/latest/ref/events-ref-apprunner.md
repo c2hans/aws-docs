@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-apprun
 ---
 
 # AWS App Runner events
-<a name="events-ref-apprunner"></a>
 
 App Runner sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

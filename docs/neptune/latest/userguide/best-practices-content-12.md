@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-
 ---
 
 # Prefer the properties function over individual property lookup when retrieving all property values
-<a name="best-practices-content-12"></a>
 
  The `properties()` function is used to return a map containing all properties for an entity, and is much more efficient than returning properties individually.
 

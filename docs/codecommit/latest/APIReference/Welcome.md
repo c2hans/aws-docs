@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/Welcome.h
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 This is the * AWS CodeCommit API Reference*. This reference provides descriptions of the operations and data types for AWS CodeCommit API along with usage examples.
 
@@ -111,4 +110,4 @@ Triggers, by calling the following:
 
 For information about how to use AWS CodeCommit, see the [AWS CodeCommit User Guide](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

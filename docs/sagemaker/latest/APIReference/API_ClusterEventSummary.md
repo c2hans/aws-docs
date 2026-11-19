@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterEventSummary
-<a name="API_ClusterEventSummary"></a>
 
 A summary of an event in a HyperPod cluster.
 

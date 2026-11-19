@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/afr-bridgekeep
 ---
 
 # Run Bluetooth Low Energy tests
-<a name="afr-bridgekeeper-dt-bt"></a>
 
 This section describes how to set up and run Bluetooth Low Energy tests using AWS IoT Device Tester for FreeRTOS.
 

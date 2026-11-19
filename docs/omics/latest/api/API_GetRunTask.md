@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetRunTask.html
 ---
 
 # GetRunTask
-<a name="API_GetRunTask"></a>
 
 Gets detailed information about a run task using its ID.
 

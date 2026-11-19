@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_LicenseInfo.
 ---
 
 # LicenseInfo
-<a name="API_LicenseInfo"></a>
 
  The license information that Amazon EVS requires to create an environment. Amazon EVS requires two license keys: a VCF solution key and a vSAN license key.
 

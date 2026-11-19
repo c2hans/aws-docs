@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/porn.html
 ---
 
 # .porn
-<a name="porn"></a>
 
 Used for adults-only websites.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackInstanceResourceDriftsSummary
-<a name="API_StackInstanceResourceDriftsSummary"></a>
 
 The structure containing summary information about resource drifts for a stack instance.
 

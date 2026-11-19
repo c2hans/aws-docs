@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST07-BP05 Perform pricing model analysis at the management account level
-<a name="cost_pricing_model_master_analysis"></a>
 
 |  |
 | --- |

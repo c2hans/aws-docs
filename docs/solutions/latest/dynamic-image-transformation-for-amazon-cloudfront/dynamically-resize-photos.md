@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Dynamically resize photos
-<a name="dynamically-resize-photos"></a>
 
 This solution offers the following **fit** options to dynamically resize an image: `cover`, `contain`, `fill`, `inside`, and `outside`. Refer to the [sharp documentation](https://sharp.pixelplumbing.com/api-resize) for a description of each fit. For example:
 

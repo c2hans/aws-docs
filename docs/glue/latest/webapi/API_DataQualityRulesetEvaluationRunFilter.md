@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityRulese
 ---
 
 # DataQualityRulesetEvaluationRunFilter
-<a name="API_DataQualityRulesetEvaluationRunFilter"></a>
 
 The filter criteria.
 

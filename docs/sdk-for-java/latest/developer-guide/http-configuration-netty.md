@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http
 ---
 
 # Configure the Netty-based HTTP client
-<a name="http-configuration-netty"></a>
 
 The default HTTP client for asynchronous operations in the AWS SDK for Java 2.x is the Netty-based [NettyNioAsyncHttpClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/nio/netty/NettyNioAsyncHttpClient.html). The Netty-based client is based on the asynchronous event-driven network framework of the [Netty project](https://netty.io/).
 

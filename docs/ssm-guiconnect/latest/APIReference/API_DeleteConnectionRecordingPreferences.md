@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-guiconnect/latest/APIReference/API_D
 ---
 
 # DeleteConnectionRecordingPreferences
-<a name="API_DeleteConnectionRecordingPreferences"></a>
 
 Deletes the preferences for recording RDP connections.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-cognit
 ---
 
 # Amazon Cognito Identity events
-<a name="events-ref-cognito-identity"></a>
 
 Amazon Cognito Identity sends service events to EventBridge via AWS CloudTrail.
 

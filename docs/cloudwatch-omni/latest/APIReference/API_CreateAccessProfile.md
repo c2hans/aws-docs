@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # CreateAccessProfile
-<a name="API_CreateAccessProfile"></a>
 
 Creates an access profile in a space.
 

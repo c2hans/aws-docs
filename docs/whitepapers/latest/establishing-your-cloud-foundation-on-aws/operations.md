@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Operations
-<a name="operations"></a>
 
 Enable your developers and operations teams to innovate faster, while ensuring the quality of application and infrastructure updates. The capabilities within this area enable you to build, deploy, and operate, workloads with ease in the cloud with developer experience and tools capabilities.
 

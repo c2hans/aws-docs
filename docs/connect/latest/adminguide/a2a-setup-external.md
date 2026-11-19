@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/a2a-setup-exte
 ---
 
 # Set up an external AI agent integration
-<a name="a2a-setup-external"></a>
 
 This page explains how to configure your Connect AI agent to collaborate with an external AI agent. An external agent runs outside of your Amazon Connect Customer instance, on infrastructure that you or a third-party provider manages. Agents that you host on Amazon Bedrock AgentCore are also external agents, and you set them up the same way.
 

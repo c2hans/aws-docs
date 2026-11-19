@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListConfigurations.
 ---
 
 # ListConfigurations
-<a name="API_ListConfigurations"></a>
 
 List all configurations for the account.
 

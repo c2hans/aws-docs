@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/forec
 ---
 
 # supplementary\_time\_series
-<a name="forecast-supp-timeseries-entity"></a>
 
 **Note**
 If you cannot locate the supplementary\_time\_series data entity, your instance might be using an older data model version. You can contact AWS Support to upgrade your data model version or create a new data connection.

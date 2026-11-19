@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANJoinEventNotificationConfigurations
-<a name="API_LoRaWANJoinEventNotificationConfigurations"></a>
 
 Object for LoRaWAN join resource type event configuration.
 

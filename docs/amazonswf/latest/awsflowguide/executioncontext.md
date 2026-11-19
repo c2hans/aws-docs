@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/executionc
 ---
 
 # Execution Context
-<a name="executioncontext"></a>
 
 **Topics**
 + [Decision Context](#executioncontext.decision)

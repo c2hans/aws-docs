@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/datafirehos
 ---
 
 # Security Hub CSPM controls for Amazon Data Firehose
-<a name="datafirehose-controls"></a>
 
 These Security Hub CSPM controls evaluate the Amazon Data Firehose service and resources.
 

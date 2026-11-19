@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/how-d
 ---
 
 # How Data Transfer Hub works
-<a name="how-data-transfer-hub-works"></a>
 
  This Guidance has three components: a web console, the Amazon S3 transfer engine, and the Amazon ECR transfer engine.
 

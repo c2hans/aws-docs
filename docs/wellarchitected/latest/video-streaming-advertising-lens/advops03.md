@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Change and launch readiness
-<a name="advops03"></a>
 
  Publisher changes can alter auction competition, manifest behavior, channel schedules, and partner demand without causing an immediate service outage. Teams need release controls that reflect how each change propagates, formal evidence that a workload is ready for production, and ongoing management of external integrations. This capability defines how teams prepare, validate, release, and reassess those changes.
 

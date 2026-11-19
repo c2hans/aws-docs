@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Mean time to recover
-<a name="mean-time-to-recover"></a>
 
  *Mean time to recover* is the average time it takes to fully return so safe operations from a possible security incident. Specifically, this is the time between initial alert or discovery of a possible security incident and when the business is back to operating normally and safely without being affected by the incident.
 

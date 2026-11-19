@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ManagedTh
 ---
 
 # ManagedThingSchemaListItem
-<a name="API_ManagedThingSchemaListItem"></a>
 
 Structure representing one schema item associated with a managed thing.
 

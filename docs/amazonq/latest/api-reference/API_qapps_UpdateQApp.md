@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_U
 ---
 
 # UpdateQApp
-<a name="API_qapps_UpdateQApp"></a>
 
 Updates an existing Amazon Q App, allowing modifications to its title, description, and definition.
 

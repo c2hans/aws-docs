@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # DescribeAccountSettings
-<a name="API_query_DescribeAccountSettings"></a>
 
 Describes the settings for your account that include the query pricing model and the configured maximum TCUs the service can use for your query workload.
 

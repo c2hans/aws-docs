@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-regi
 ---
 
 # S3 Tables AWS Regions, endpoints, and service quotas
-<a name="s3-tables-regions-quotas"></a>
 
 The following sections include the supported AWS Regions and service quotas for S3 Tables.
 

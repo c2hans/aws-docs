@@ -7,7 +7,6 @@ This whitepaper is for historical reference only and will be deprecated in the f
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # DevOps with cloud-managed service provider
-<a name="devops-with-cloud-managed-service-provider"></a>
 
 The DevOps with cloud-managed service provider model follows a *you build it, you run it* methodology for application teams. However, your organization may not have the existing skills or team members to support a dedicated platform engineering and operations team, or you may not be in a position to make the time and effort investments to do so.
 

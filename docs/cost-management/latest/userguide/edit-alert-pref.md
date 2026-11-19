@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/edit-al
 ---
 
 # Editing your alert preferences
-<a name="edit-alert-pref"></a>
 
 You can adjust your cost monitors and alert subscriptions in AWS Billing and Cost Management to match your needs.
 

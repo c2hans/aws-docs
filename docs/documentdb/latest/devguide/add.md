@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/add.html
 ---
 
 # $add
-<a name="add"></a>
 
 The `$add` operator in Amazon DocumentDB is used to add numbers or dates together. It can be used to perform arithmetic operations on numeric fields or to perform date arithmetic by adding a number of time units to a date field.
 

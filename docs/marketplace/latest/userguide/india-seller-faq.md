@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/india-selle
 ---
 
 # Sellers in India FAQ
-<a name="india-seller-faq"></a>
 
 This FAQ addresses common questions for sellers in India who want to list products on AWS Marketplace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_auth_Subject
 ---
 
 # Subject
-<a name="API_auth_Subject"></a>
 
 An object containing the name of the Kubernetes service account inside the cluster to associate the IAM credentials with.
 

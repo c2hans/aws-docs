@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # View AWS Client VPN endpoints
-<a name="cvpn-working-endpoint-view"></a>
 
 You can view information about Client VPN endpoints by using the Amazon VPC Console or the AWS CLI.
 

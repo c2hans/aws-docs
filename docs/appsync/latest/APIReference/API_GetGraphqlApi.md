@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_GetGraph
 ---
 
 # GetGraphqlApi
-<a name="API_GetGraphqlApi"></a>
 
 Retrieves a `GraphqlApi` object.
 

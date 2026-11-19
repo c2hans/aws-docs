@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DeletePipelineEndpoint
-<a name="API_osis_DeletePipelineEndpoint"></a>
 
 Deletes a VPC endpoint for an OpenSearch Ingestion pipeline.
 

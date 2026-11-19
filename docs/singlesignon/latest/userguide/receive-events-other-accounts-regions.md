@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/receive-ev
 ---
 
 # Receive events in other accounts and Regions
-<a name="receive-events-other-accounts-regions"></a>
 
 By default, you receive event notifications on the default event bus in the account and AWS Region where your IAM Identity Center instance is enabled. If you want a central security team to monitor identity changes, or if your instance is replicated to additional AWS Regions, you can process the events in a different AWS account or Region.
 

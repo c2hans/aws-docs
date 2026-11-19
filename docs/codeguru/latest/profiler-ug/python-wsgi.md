@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/python-wsgi.
 ---
 
 # WSGI servers
-<a name="python-wsgi"></a>
 
 Start the profiler based on the configuration for your web server.
 

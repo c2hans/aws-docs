@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/setting-up.html
 ---
 
 # Step 1: Set Up an AWS Account and Create a User
-<a name="setting-up"></a>
 
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>

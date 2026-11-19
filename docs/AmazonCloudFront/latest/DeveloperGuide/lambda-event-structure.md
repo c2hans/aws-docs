@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/l
 ---
 
 # Lambda@Edge event structure
-<a name="lambda-event-structure"></a>
 
 The following topics describe the request and response event objects that CloudFront passes to a Lambda@Edge function when it's triggered.
 

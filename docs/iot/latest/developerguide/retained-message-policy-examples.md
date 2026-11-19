@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/retained-messa
 ---
 
 # Retained message policy examples
-<a name="retained-message-policy-examples"></a>
 
 Using [retained messages](mqtt.md#mqtt-retain) requires specific policies. Retained messages are MQTT messages published with the RETAIN flag set and stored by AWS IoT Core. This section presents examples of policies that allow common uses of retained messages.
 

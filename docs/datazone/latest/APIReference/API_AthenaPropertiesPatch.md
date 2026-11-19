@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AthenaP
 ---
 
 # AthenaPropertiesPatch
-<a name="API_AthenaPropertiesPatch"></a>
 
 The Amazon Athena properties patch of a connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Subscrib
 ---
 
 # SubscribeToShardEvent
-<a name="API_SubscribeToShardEvent"></a>
 
 After you call [SubscribeToShard](API_SubscribeToShard.md), Kinesis Data Streams sends events of this type over an HTTP/2 connection to your consumer.
 

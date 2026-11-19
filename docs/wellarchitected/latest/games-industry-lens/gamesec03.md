@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Identity and access management
-<a name="gamesec03"></a>
 
 |  GAMESEC03: How do you manage player identity and access management?  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Daemon
 ---
 
 # DaemonVolume
-<a name="API_DaemonVolume"></a>
 
 A data volume definition for a daemon task.
 

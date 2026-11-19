@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListBillScenarioCommitmentModifications
-<a name="API_AWSBCMPricingCalculator_ListBillScenarioCommitmentModifications"></a>
 
  Lists the commitment modifications associated with a bill scenario.
 

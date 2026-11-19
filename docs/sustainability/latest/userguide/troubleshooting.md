@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/userguide/troubles
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 The following topics provide troubleshooting advice for errors and issues that you could encounter when using the AWS Sustainability service. If you find an issue that isn't listed here, you can use the feedback button on this page to report it.
 

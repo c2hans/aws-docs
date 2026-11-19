@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Setting up the SageMakerAIDomain blueprint for code spaces
-<a name="sagemaker-ai-domain"></a>
 
 The SageMakerAIDomain blueprint provisions a standalone Amazon SageMaker AI domain for a project. This domain is separate from the one that the Tooling blueprint creates. With this blueprint, you control the code spaces experience for project members, including which application types are available and which space configurations members can choose.
 

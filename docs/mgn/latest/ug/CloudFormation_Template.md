@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/CloudFormation_Template.ht
 ---
 
 # Deploy role using a CloudFormation template
-<a name="CloudFormation_Template"></a>
 
 For multiple accounts, you can use CloudFormation StackSets to deploy the **AWSApplicationMigrationConnectorSharingRole\_management-account-id** role to member accounts. The MGN console provides templates for download, as described in [Download the CloudFormation templates](create-permissions-console.md#download-cloudformation-templates) under "Create roles using the MGN console".
 

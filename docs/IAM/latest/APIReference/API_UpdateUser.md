@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateUser.h
 ---
 
 # UpdateUser
-<a name="API_UpdateUser"></a>
 
 Updates the name and/or the path of the specified IAM user.
 

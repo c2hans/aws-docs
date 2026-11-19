@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_
 ---
 
 # Deactivate an MFA device
-<a name="id_credentials_mfa_disable"></a>
 
 If you are having trouble signing in with a multi-factor authentication (MFA) device as an IAM user, contact your administrator for help.
 

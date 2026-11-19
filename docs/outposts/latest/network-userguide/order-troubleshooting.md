@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/network-userguide/order-
 ---
 
 # Troubleshooting capacity task issues
-<a name="order-troubleshooting"></a>
 
 Review the following known issues to resolve an issue related to capacity management in a new order. If you do not see your issue listed, contact Support.
 

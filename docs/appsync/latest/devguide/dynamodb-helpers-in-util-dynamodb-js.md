@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/dynamodb-helpers
 ---
 
 # DynamoDB helpers in util.dynamodb
-<a name="dynamodb-helpers-in-util-dynamodb-js"></a>
 
 `util.dynamodb` contains helper methods that make it easier to write and read data to Amazon DynamoDB, such as automatic type mapping and formatting.
 

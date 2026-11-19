@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_FlushStageAuth
 ---
 
 # FlushStageAuthorizersCache
-<a name="API_FlushStageAuthorizersCache"></a>
 
 Flushes all authorizer cache entries on a stage.
 

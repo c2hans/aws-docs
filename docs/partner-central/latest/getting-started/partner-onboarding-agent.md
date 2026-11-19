@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/p
 ---
 
 # Agents for partner onboarding
-<a name="partner-onboarding-agent"></a>
 
 AWS Partner Central uses AI-powered agents to guide you through partner onboarding — from completing your partner profile and setting up as a Marketplace seller, to achieving PRM (Partner Revenue Measurement) compliance.
 

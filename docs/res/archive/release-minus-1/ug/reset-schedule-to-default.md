@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/reset-sch
 ---
 
 # Reset schedule to default
-<a name="reset-schedule-to-default"></a>
 
 If you have customized the schedule for a virtual desktop, you can reset it back to the system default schedule set by your administrator.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Generative AI maturity model level 4: Scale
-<a name="level-4"></a>
 
 Level 4 of the generative AI maturity model, the Scale level, transitions from operational excellence to scalable innovation. Organizations begin to move beyond individual production deployments to create a robust ecosystem of reusable components, standardized patterns, and automated workflows. This ecosystem helps organizations to accelerate generative AI adoption across multiple departments while maintaining robust governance and cost optimization. By establishing scalable architectures and self-service capabilities, this maturity levels empowers enterprises to efficiently deploy numerous generative AI applications, which ultimately drive organization-wide transformation and sustainable innovation.
 

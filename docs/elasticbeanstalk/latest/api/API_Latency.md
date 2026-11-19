@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Latency.
 ---
 
 # Latency
-<a name="API_Latency"></a>
 
 Represents the average latency for the slowest X percent of requests over the last 10 seconds.
 

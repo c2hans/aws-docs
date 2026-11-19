@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Ec2Cap
 ---
 
 # Ec2CapacityReservation
-<a name="API_Ec2CapacityReservation"></a>
 
 The EC2 capacity reservations that are shared to an ML capacity reservation.
 

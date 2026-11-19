@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Medi
 ---
 
 # MediaAnalysisJobFailureDetails
-<a name="API_MediaAnalysisJobFailureDetails"></a>
 
 Details about the error that resulted in failure of the job.
 

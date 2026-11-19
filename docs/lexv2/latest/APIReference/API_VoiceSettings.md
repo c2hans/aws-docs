@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_VoiceSetti
 ---
 
 # VoiceSettings
-<a name="API_VoiceSettings"></a>
 
 Defines settings for using an Amazon Polly voice to communicate with a user.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_PurchaseOffe
 ---
 
 # PurchaseOffering
-<a name="API_PurchaseOffering"></a>
 
  Submits a request to purchase an offering. If you already have an active reservation, you can't purchase another offering.
 

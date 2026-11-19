@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ListSnaps
 ---
 
 # ListSnapshots
-<a name="API_ListSnapshots"></a>
 
 Lists the enhanced snapshots in your account. Snapshots are not scoped to an application. To list the snapshots that were created from a specific application, use the `SourceApplicationName` parameter.
 

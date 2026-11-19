@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AgentRegistry::Registry ApprovalConfiguration
-<a name="aws-properties-agentregistry-registry-approvalconfiguration"></a>
 
 Configuration for the registry's record approval workflow. It controls whether submitted records require manual review before becoming discoverable, or are automatically approved. When no auto-approval rules are configured, submitted records require manual review.
 

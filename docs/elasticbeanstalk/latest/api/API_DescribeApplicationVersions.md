@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Describe
 ---
 
 # DescribeApplicationVersions
-<a name="API_DescribeApplicationVersions"></a>
 
 Retrieve a list of application versions.
 

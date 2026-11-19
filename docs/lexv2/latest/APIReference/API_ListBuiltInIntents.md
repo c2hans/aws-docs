@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBuiltI
 ---
 
 # ListBuiltInIntents
-<a name="API_ListBuiltInIntents"></a>
 
 Gets a list of built-in intents provided by Amazon Lex that you can use in your bot.
 

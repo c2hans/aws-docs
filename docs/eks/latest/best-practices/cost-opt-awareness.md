@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/cost-opt-aware
 ---
 
 # Expenditure awareness
-<a name="cost-opt-awareness"></a>
 
 Expenditure awareness is understanding who, where and what is causing expenditures in your EKS cluster. Getting an accurate picture of this data will help raise awareness of your spend and highlight areas to remediate.
 

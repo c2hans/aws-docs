@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchApplicationSignalsReadOnlyAccess
-<a name="CloudWatchApplicationSignalsReadOnlyAccess"></a>
 
 **Description**: Provides read only access to CloudWatch Application Signals service and scoped access to the dependencies needed to use this service
 

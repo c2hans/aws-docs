@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetSubs
 ---
 
 # GetSubscriptionTarget
-<a name="API_GetSubscriptionTarget"></a>
 
 Gets the subscription target in Amazon DataZone.
 

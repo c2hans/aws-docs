@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Adding and removing AWS Managed Microsoft AD members to groups and groups to groups
-<a name="ms_ad_add_remove_user_group"></a>
 
  With the [AWS Directory Service Data API](https://docs.aws.amazon.com/directoryservicedata/latest/DirectoryServiceDataAPIReference/Welcome.html), a member can be a user, group, or computer. A user represents a person or entity that can access your directory. Groups allow you to grant and deny permissions to more than one user at a time.
 

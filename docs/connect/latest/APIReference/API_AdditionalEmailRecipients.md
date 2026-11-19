@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Addition
 ---
 
 # AdditionalEmailRecipients
-<a name="API_AdditionalEmailRecipients"></a>
 
 List of additional email addresses for an email contact.
 

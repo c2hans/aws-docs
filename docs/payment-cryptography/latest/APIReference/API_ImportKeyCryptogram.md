@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # ImportKeyCryptogram
-<a name="API_ImportKeyCryptogram"></a>
 
 Parameter information for key material import using asymmetric RSA wrap and unwrap key exchange method.
 

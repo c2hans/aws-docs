@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/bugsnag-connection-option
 ---
 
 # BugSnag connection options
-<a name="bugsnag-connection-options"></a>
 
 The following are connection options for BugSnag:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the BugSnag object to read.

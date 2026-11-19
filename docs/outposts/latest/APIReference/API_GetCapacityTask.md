@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_GetCapa
 ---
 
 # GetCapacityTask
-<a name="API_GetCapacityTask"></a>
 
 Gets details of the specified capacity task.
 

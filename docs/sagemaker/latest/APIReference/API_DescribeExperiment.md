@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeExperiment
-<a name="API_DescribeExperiment"></a>
 
 Provides a list of an experiment's properties.
 

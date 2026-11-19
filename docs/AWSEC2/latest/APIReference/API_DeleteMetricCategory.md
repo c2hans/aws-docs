@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteMet
 ---
 
 # DeleteMetricCategory
-<a name="API_DeleteMetricCategory"></a>
 
 Deletes the specified metric category. Associations between the metric category and your instances are removed asynchronously.
 

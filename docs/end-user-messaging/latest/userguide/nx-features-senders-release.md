@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Release a sender ID
-<a name="nx-features-senders-release"></a>
 
 If you don't need a sender ID anymore, you can remove it from your account. When you remove a sender ID, we stop charging you for it in your bill for the next calendar month.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationSearchFilter
-<a name="API_EvaluationSearchFilter"></a>
 
 Filters to be applied to search results.
 

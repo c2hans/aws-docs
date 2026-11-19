@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/async-inference-trou
 ---
 
 # Troubleshooting
-<a name="async-inference-troubleshooting"></a>
 
 The following FAQs can help you troubleshoot issues with your Amazon SageMaker Asynchronous Inference endpoints.
 

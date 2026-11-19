@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicRangeFilterConstant
-<a name="API_TopicRangeFilterConstant"></a>
 
 A constant value that is used in a range filter to specify the endpoints of the range.
 

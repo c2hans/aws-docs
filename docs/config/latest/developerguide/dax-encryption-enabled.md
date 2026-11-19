@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/dax-encrypt
 ---
 
 # dax-encryption-enabled
-<a name="dax-encryption-enabled"></a>
 
 Checks if Amazon DynamoDB Accelerator (DAX) clusters are encrypted. The rule is NON\_COMPLIANT if a DAX cluster is not encrypted.
 

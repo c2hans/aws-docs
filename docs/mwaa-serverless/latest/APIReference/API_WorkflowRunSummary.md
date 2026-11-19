@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_
 ---
 
 # WorkflowRunSummary
-<a name="API_WorkflowRunSummary"></a>
 
 Summary information about a workflow run, including basic identification and status information.
 

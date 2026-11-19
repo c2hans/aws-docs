@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_StreamFile.h
 ---
 
 # StreamFile
-<a name="API_StreamFile"></a>
 
 Represents a file to stream.
 

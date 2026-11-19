@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # UpdateClippingDataSourceConfiguration
-<a name="API_UpdateClippingDataSourceConfiguration"></a>
 
 Attaches a game to an event clipping output at the action's scheduled time. This is a type of ScheduleActionOperation, and the output must be an event clipping output.
 

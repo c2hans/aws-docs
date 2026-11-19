@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ssai-cdn-workflow.
 ---
 
 # Set up SSAI with a CDN for personalized video advertising
-<a name="ssai-cdn-workflow"></a>
 
 This section provides comprehensive guidance for integrating AWS Elemental MediaTailor server-side ad insertion (SSAI) with a content delivery network (CDN). Follow these steps to set up, configure, and optimize your SSAI CDN integration.
 

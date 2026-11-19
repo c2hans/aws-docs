@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_Tr
 ---
 
 # Troubleshooting for Amazon Aurora
-<a name="CHAP_Troubleshooting"></a>
 
 Use the following sections to help troubleshoot problems you have with DB instances in Amazon RDS and Amazon Aurora.
 

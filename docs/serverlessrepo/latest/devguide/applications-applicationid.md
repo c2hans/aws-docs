@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applicati
 ---
 
 # Applications applicationId
-<a name="applications-applicationid"></a>
 
 ## URI
 <a name="applications-applicationid-url"></a>

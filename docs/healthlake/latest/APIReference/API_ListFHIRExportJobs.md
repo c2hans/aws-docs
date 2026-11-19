@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListF
 ---
 
 # ListFHIRExportJobs
-<a name="API_ListFHIRExportJobs"></a>
 
 Lists all FHIR export jobs associated with an account and their statuses.
 

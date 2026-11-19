@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-
 ---
 
 # Creating and configuring an Amazon MQ network of brokers
-<a name="amazon-mq-creating-configuring-network-of-brokers"></a>
 
 A *network of brokers* is comprised of multiple simultaneously active [single-instance brokers](amazon-mq-broker-architecture.md#single-broker-deployment) or [active/standby brokers](amazon-mq-broker-architecture.md#active-standby-broker-deployment). In this tutorial, you learn how to create a two-broker network of brokers with a *source and sink* topology.
 

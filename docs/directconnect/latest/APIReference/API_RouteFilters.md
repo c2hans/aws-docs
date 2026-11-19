@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Ro
 ---
 
 # RouteFilters
-<a name="API_RouteFilters"></a>
 
 The filters used to limit the routes returned by [ListVirtualInterfaceRoutes](API_ListVirtualInterfaceRoutes.md).
 

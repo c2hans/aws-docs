@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/EKS-tutorial-s
 ---
 
 # Step 2: Configure the application
-<a name="EKS-tutorial-step2"></a>
 
 In this step you build your application that connects to Amazon Keyspaces using the SigV4 plugin. You can view and download the example Java application from the Amazon Keyspaces example code repo on [Github](https://github.com/aws-samples/amazon-keyspaces-examples/tree/main/java/datastax-v4/eks). Or you can follow along using your own application, making sure to complete all configuration steps.
 

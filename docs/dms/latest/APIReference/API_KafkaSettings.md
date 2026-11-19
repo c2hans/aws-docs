@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_KafkaSetting
 ---
 
 # KafkaSettings
-<a name="API_KafkaSettings"></a>
 
 Provides information that describes an Apache Kafka endpoint. This information includes the output format of records applied to the endpoint and details of transaction and control table data information.
 

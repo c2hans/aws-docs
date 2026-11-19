@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/analyzing-document-ex
 ---
 
 # Analyzing Invoices and Receipts with Amazon Textract
-<a name="analyzing-document-expense"></a>
 
 To analyze invoice and receipt documents, use the AnalyzeExpense API operations and pass a document file as input. `AnalyzeExpense` is a synchronous operation that returns a JSON structure that contains the analyzed text. For more information, see [Analyzing Invoices and Receipts](invoices-receipts.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/periodToDateMax-f
 ---
 
 # periodToDateMax
-<a name="periodToDateMax-function"></a>
 
 The `periodToDateMax` function returns the maximum value of the specified measure for a given time granularity (for instance, a quarter) up to a point in time, relative to that point.
 

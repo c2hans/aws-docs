@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/developerguide/health-chec
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # Calling the local health check API
-<a name="health-check"></a>
 
 AWS IoT Greengrass contains a local HTTP API that provides a snapshot of the current state of local worker processes that were started by AWS IoT Greengrass. This snapshot includes user-defined Lambda functions and system Lambda functions. System Lambda functions are part of the AWS IoT Greengrass Core software. They run as local worker processes on the core device and manage operations such as message routing, local shadow sync, and automatic IP address detection.
 

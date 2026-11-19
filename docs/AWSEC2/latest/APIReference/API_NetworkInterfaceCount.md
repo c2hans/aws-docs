@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkIn
 ---
 
 # NetworkInterfaceCount
-<a name="API_NetworkInterfaceCount"></a>
 
 The minimum and maximum number of network interfaces.
 

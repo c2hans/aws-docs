@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-conside
 ---
 
 # Considerations and limitations
-<a name="notebooks-spark-considerations-and-limitations"></a>
 
 ## Apache Spark version 3.5
 <a name="notebooks-spark-considerations-spark-35"></a>

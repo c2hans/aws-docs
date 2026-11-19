@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/exampl
 ---
 
 # Action and resource scoped policies
-<a name="example-policies-action-resource"></a>
 
 The policies in this section are matched on **what is being called** — which action, on which gateway, with which input values — rather than on who is calling. They do not govern which principals may take the action; any caller the gateway authenticates is in scope.
 

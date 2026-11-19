@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/turn-off-ebs-h
 ---
 
 # Turn off the Amazon EBS health checks for an Auto Scaling group
-<a name="turn-off-ebs-health-checks"></a>
 
 The following topic describes how to turn off Amazon EBS health checks for an Auto Scaling group. If you don't require Amazon EBS health checks anymore, use the following procedure to turn them off.
 

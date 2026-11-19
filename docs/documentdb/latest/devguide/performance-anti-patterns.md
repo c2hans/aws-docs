@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/performance-a
 ---
 
 # Anti-patterns
-<a name="performance-anti-patterns"></a>
 
 This section covers common anti-patterns that can negatively impact Amazon DocumentDB performance.
 

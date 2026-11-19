@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_TemplateS
 ---
 
 # TemplateSSMDocumentDetails
-<a name="API_TemplateSSMDocumentDetails"></a>
 
 This API allows you to create a conformance pack template with an AWS Systems Manager document (SSM document). To deploy a conformance pack using an SSM document, first create an SSM document with conformance pack content, and then provide the `DocumentName` in the [PutConformancePack API](https://docs.aws.amazon.com/config/latest/APIReference/API_PutConformancePack.html). You can also provide the `DocumentVersion`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ManagedResourceSummary
-<a name="API_ManagedResourceSummary"></a>
 
 Summary information about a managed resource.
 

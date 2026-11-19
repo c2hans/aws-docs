@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
 ---
 
 # Send CodeDeploy agent logs to CloudWatch
-<a name="codedeploy-agent-operations-cloudwatch-agent"></a>
 
 You can send CodeDeploy agent metric and log data to CloudWatch using the [unified CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/UseCloudWatchUnifiedAgent.html), or more simply, the CloudWatch agent.
 

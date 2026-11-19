@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/using-router-cont
 ---
 
 # Using the router control panel view in MediaConnect
-<a name="using-router-control-panel"></a>
 
 The router control panel view provides an intuitive interface for taking inputs and monitoring your routes in real time, similar to a traditional broadcast router. You can use the control panel to see your current routing assignments at a glance, and make immediate changes.
 

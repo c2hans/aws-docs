@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sqs_example_sqs_G
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `GetQueueUrl` with an AWS SDK or CLI
-<a name="sqs_example_sqs_GetQueueUrl_section"></a>
 
 The following code examples show how to use `GetQueueUrl`.
 

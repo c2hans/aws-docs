@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateRoleMa
 ---
 
 # UpdateRoleMappings
-<a name="API_UpdateRoleMappings"></a>
 
 Updates to RBAC role mappings for an Argo CD capability. You can add, update, or remove role mappings in a single operation.
 

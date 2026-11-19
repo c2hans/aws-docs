@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AssociateTar
 ---
 
 # AssociateTargetsWithJob
-<a name="API_AssociateTargetsWithJob"></a>
 
 Associates a group with a continuous job. The following criteria must be met:
 + The job must have been created with the `targetSelection` field set to "CONTINUOUS".

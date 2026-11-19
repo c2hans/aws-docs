@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateWorkflow.ht
 ---
 
 # CreateWorkflow
-<a name="API_CreateWorkflow"></a>
 
 Creates a new workflow.
 

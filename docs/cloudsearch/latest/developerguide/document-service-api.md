@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/docume
 ---
 
 # Document Service API Reference for Amazon CloudSearch
-<a name="document-service-api"></a>
 
 You use the document service API to add, replace, or delete documents in your Amazon CloudSearch domain. For more information managing the documents in your search domain, see [Uploading Data to an Amazon CloudSearch Domain](uploading-data.md).
 

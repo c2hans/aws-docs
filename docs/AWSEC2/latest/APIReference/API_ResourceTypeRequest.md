@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResourceT
 ---
 
 # ResourceTypeRequest
-<a name="API_ResourceTypeRequest"></a>
 
 A resource type to check for image references. Associated options can also be specified if the resource type is an EC2 instance or launch template.
 

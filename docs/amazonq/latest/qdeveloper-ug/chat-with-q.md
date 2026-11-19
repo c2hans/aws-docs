@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/chat-with-q
 ---
 
 # Chatting with Amazon Q Developer about AWS
-<a name="chat-with-q"></a>
 
 The Amazon Q Developer conversational experience in the AWS Management Console and AWS Console Mobile Application is now called the AWS assistant. On the AWS Marketing website, it's now Ask AWS. On the AWS Documentation website, it's now the AWS documentation assistant.
 

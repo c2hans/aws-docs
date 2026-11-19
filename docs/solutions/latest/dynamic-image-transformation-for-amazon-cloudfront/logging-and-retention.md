@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Logging and retention
-<a name="logging-and-retention"></a>
 
  **CloudWatch log retention**
 

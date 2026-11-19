@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/adding-instance-
 ---
 
 # Add instance store volumes to an Amazon EC2 AMI
-<a name="adding-instance-storage-ami"></a>
 
 You can create an AMI with a block device mapping that includes instance store volumes.
 

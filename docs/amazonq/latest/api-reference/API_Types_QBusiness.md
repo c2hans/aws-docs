@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Types_Q
 ---
 
 # QBusiness
-<a name="API_Types_QBusiness"></a>
 
 The following data types are supported by QBusiness:
 +  [AccessConfiguration](API_AccessConfiguration.md)

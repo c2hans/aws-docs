@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-mobile-sdk
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # How the AWS WAF mobile SDK works
-<a name="waf-mobile-sdk-how-it-works"></a>
 
 This section explains how the AWS WAF mobile SDK classes, properties, and operations work together.
 

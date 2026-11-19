@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModel
 ---
 
 # GetModelInvocationJob
-<a name="API_GetModelInvocationJob"></a>
 
 Gets details about a batch inference job. For more information, see [Monitor batch inference jobs](https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-monitor)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/backup_restor
 ---
 
 # Creating a manual cluster snapshot
-<a name="backup_restore-create_manual_cluster_snapshot"></a>
 
 You can create a manual snapshot using either the AWS Management Console or AWS CLI. The amount of time it takes to create a snapshot varies with the size of your databases. When you create a snapshot, you must do the following:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_CodeCo
 ---
 
 # CodeCoverage
-<a name="API_CodeCoverage"></a>
 
 Contains code coverage report information.
 

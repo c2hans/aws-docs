@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteVi
 ---
 
 # DeleteViewVersion
-<a name="API_DeleteViewVersion"></a>
 
 Deletes the particular version specified in `ViewVersion` identifier.
 

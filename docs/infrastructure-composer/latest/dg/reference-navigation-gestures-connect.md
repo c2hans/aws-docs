@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/refere
 ---
 
 # Connect cards on Infrastructure Composer's visual canvas
-<a name="reference-navigation-gestures-connect"></a>
 
 Use this topic to understand how to connect cards in Infrastructure Composer. This section includes details on connecting enhanced component cards and standard component cards. It also provides a few examples that illustrate the different ways cards can be connected.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::StorageLens StorageLensGroupLevel
-<a name="aws-properties-s3-storagelens-storagelensgrouplevel"></a>
 
 This resource determines the scope of Storage Lens group data that is displayed in the Storage Lens dashboard.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBProxyTargets
-<a name="API_DescribeDBProxyTargets"></a>
 
 Returns information about `DBProxyTarget` objects. This API supports pagination.
 

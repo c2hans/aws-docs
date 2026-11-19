@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBedrockAgentCoreRuntimeInstancesServiceRolePolicy
-<a name="AWSBedrockAgentCoreRuntimeInstancesServiceRolePolicy"></a>
 
 **Description**: Allows Bedrock AgentCore Runtime Instances to manage compute resources on your behalf.
 

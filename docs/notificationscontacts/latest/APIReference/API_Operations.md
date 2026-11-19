@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notificationscontacts/latest/APIReferenc
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [ActivateEmailContact](API_ActivateEmailContact.md)

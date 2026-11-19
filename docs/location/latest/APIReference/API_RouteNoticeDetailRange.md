@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteNo
 ---
 
 # RouteNoticeDetailRange
-<a name="API_RouteNoticeDetailRange"></a>
 
 Notice Detail that is a range.
 

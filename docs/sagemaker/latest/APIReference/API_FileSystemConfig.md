@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_FileSy
 ---
 
 # FileSystemConfig
-<a name="API_FileSystemConfig"></a>
 
 The Amazon Elastic File System storage configuration for a SageMaker AI image.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/desktop-interface
 ---
 
 # Understanding the desktop interface
-<a name="desktop-interface"></a>
 
 The interface is organized into a left navigation rail, a main content area, a top bar, and overlay panels.
 

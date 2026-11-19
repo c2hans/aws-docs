@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-known-iss
 ---
 
 # Known issues and limitations for Amazon RDS for Db2
-<a name="db2-known-issues-limitations"></a>
 
 The following items are known issues and limitations for working with Amazon RDS for Db2:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrating-s
 ---
 
 # Architecture
-<a name="architecture"></a>
 
 Earlier SAS platforms, such as SAS 9.4 and SAS Grid Manager, run on AWS, and users can expect to see cost benefits and performance boosts depending on their selected compute and storage options. (Note that the Always-On Amazon EC2 instance–based system must provision itself for peak workloads.) The SAS Viya on Amazon EKS architecture illustrated in the following diagramnot only helps with shifting workload demands but also provides the following benefits:
 + Containerized microservices

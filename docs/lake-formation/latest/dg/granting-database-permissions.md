@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/granting-databa
 ---
 
 # Granting database permissions using the named resource method
-<a name="granting-database-permissions"></a>
 
 The following steps explain how to grant database permissions by using the named resource method.
 

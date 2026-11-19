@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # CacheNodeTypeSpecificValue
-<a name="API_CacheNodeTypeSpecificValue"></a>
 
 A value that applies only to a certain cache node type.
 

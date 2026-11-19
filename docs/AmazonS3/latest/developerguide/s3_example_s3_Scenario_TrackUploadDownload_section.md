@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Track an Amazon S3 object upload or download using an AWS SDK
-<a name="s3_example_s3_Scenario_TrackUploadDownload_section"></a>
 
 The following code example shows how to track an Amazon S3 object upload or download.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-monit
 ---
 
 # Monitoring S3 Files with Amazon CloudWatch
-<a name="s3-files-monitoring-cloudwatch"></a>
 
 You can monitor S3 Files file systems using [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html), which collects and processes raw data from Amazon S3 Files into readable metrics. These metrics are retained for 15 months, so you can access historical information and gain a better perspective on how your file systems are performing.
 

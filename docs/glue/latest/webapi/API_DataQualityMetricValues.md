@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityMetric
 ---
 
 # DataQualityMetricValues
-<a name="API_DataQualityMetricValues"></a>
 
 Describes the data quality metric value according to the analysis of historical data.
 

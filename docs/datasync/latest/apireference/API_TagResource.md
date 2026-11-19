@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_TagReso
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Applies a *tag* to an AWS resource. Tags are key-value pairs that can help you manage, filter, and search for your resources.
 

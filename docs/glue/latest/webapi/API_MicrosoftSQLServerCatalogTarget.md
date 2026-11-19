@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_MicrosoftSQLServe
 ---
 
 # MicrosoftSQLServerCatalogTarget
-<a name="API_MicrosoftSQLServerCatalogTarget"></a>
 
 Specifies a target that uses Microsoft SQL.
 

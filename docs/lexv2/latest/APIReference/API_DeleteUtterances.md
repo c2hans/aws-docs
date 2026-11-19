@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteUtte
 ---
 
 # DeleteUtterances
-<a name="API_DeleteUtterances"></a>
 
 Deletes stored utterances.
 

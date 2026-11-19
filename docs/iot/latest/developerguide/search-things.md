@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/search-things.
 ---
 
 # Describe things
-<a name="search-things"></a>
 
 You can use the **DescribeThing** command to display more detailed information about a thing:
 

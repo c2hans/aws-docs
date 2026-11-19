@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_StreamFi
 ---
 
 # StreamFilter
-<a name="API_StreamFilter"></a>
 
 Filters [ListChannels](API_ListChannels.md) results by source stream.
 

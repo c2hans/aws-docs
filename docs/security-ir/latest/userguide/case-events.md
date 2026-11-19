@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/case-events
 ---
 
 # Case Events
-<a name="case-events"></a>
 
 Case Created by AWS Responder
 

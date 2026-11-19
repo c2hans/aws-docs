@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSO
 ---
 
 # AWSOutpostsServiceRolePolicy
-<a name="AWSOutpostsServiceRolePolicy"></a>
 
 **Description**: Service Linked Role policy to enable access to AWS resources managed by AWS Outposts
 

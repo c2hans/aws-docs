@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Compute selection
-<a name="gameperf05"></a>
 
 |  GAMEPERF05: How do you select the appropriate compute solution for your game?  |
 | --- |

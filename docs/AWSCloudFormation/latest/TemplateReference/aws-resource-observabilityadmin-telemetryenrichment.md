@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::TelemetryEnrichment
-<a name="aws-resource-observabilityadmin-telemetryenrichment"></a>
 
  Enables the Resource tags for telemetry feature for your account. When enabled, CloudWatch creates an AWS Resource Explorer index and managed view so that it can discover resources and tags in your account. CloudWatch uses this information to enrich your telemetry with related AWS resource tags. For more information, see [Resource tags for telemetry documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/resource-tags-for-telemetry.html).
 

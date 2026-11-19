@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ips-create-channel-t
 ---
 
 # Create the channel
-<a name="ips-create-channel-tips"></a>
 
 This section is a supplement to the information in [Creating a channel from scratch](creating-channel-scratch.md). It provides information that applies specifically to creating a MediaLive channel that contains multiple input attachments.
 

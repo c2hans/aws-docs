@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # ConnectPeer
-<a name="API_ConnectPeer"></a>
 
 Describes a core network Connect peer.
 

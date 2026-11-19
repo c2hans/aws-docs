@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # UI configuration troubleshooting
-<a name="runtimeconfig-troubleshooting"></a>
 
 ## Problem: Fleet Intelligence portal shows missing endpoints after fresh deploy
 <a name="problem-runtimeconfig-endpoint-race"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # LandsatCloudCoverLandInput
-<a name="API_geospatial_LandsatCloudCoverLandInput"></a>
 
 The structure representing Land Cloud Cover property for Landsat data collection.
 

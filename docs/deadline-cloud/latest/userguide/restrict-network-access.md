@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/restrict
 ---
 
 # Restrict farm access to your network
-<a name="restrict-network-access"></a>
 
 Every request to your farm goes through the Deadline Cloud APIs. The monitor, the AWS CLI, the submitters, and the AWS Management Console all call the APIs with temporary credentials, so the network boundary belongs on the API calls. The monitor URL is reachable from any location on the internet and holds no farm data. For more information, see [Access to the monitor web application](security-data-flow.md#security-data-flow-monitor).
 

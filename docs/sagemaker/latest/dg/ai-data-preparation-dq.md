@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ai-data-preparation-
 ---
 
 # Data quality evaluation
-<a name="ai-data-preparation-dq"></a>
 
 ## What it is
 <a name="ai-data-preparation-dq-overview"></a>

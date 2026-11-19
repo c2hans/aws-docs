@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateEncryp
 ---
 
 # UpdateEncryptionConfiguration
-<a name="API_UpdateEncryptionConfiguration"></a>
 
 Updates the encryption configuration. By default, AWS IoT Core encrypts your data at rest using AWS owned keys. AWS IoT Core also supports symmetric customer managed keys from AWS Key Management Service (AWS KMS). With customer managed keys, you create, own, and manage the KMS keys in your AWS account.
 

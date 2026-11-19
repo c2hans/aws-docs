@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_AuthMater
 ---
 
 # AuthMaterial
-<a name="API_AuthMaterial"></a>
 
 The authorization material containing the Secrets Manager arn and version.
 

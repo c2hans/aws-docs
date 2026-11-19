@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Intege
 ---
 
 # IntegerParameterRangeSpecification
-<a name="API_IntegerParameterRangeSpecification"></a>
 
 Defines the possible values for an integer hyperparameter.
 

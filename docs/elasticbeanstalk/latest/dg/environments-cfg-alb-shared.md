@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-
 ---
 
 # Configuring a shared Application Load Balancer
-<a name="environments-cfg-alb-shared"></a>
 
 When you [enable load balancing](using-features-managing-env-types.md#using-features.managing.changetype), your AWS Elastic Beanstalk environment is equipped with an Elastic Load Balancing load balancer to distribute traffic among the instances in your environment. Elastic Load Balancing supports several load balancer types. To learn about them, see the [Elastic Load Balancing User Guide](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/). Elastic Beanstalk can create a load balancer for you, or enable you to specify a shared load balancer that you've created.
 

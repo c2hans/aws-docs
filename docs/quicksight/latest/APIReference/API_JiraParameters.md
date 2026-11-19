@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_JiraP
 ---
 
 # JiraParameters
-<a name="API_JiraParameters"></a>
 
 The parameters for Jira.
 

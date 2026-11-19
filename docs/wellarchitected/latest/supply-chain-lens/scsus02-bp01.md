@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCSUS02-BP01 Use the available AWS infrastructure to implement your distributed architecture
-<a name="scsus02-bp01"></a>
 
  Consider optimizing where you run your workloads using the extensive AWS infrastructure and a distributed architecture to enable your trading partners to rely on services based on their predominant areas of operation.
 

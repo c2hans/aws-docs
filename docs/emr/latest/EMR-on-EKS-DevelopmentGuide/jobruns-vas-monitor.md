@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Monitoring vertical autoscaling for Amazon EMR on EKS
-<a name="jobruns-vas-monitor"></a>
 
 You can use the **kubectl** Kubernetes command line tool to list the active, vertical autoscaling-related recommendations on your cluster. You can also view your tracked job signatures, and purge any unneeded resources that are associated with the signatures.
 

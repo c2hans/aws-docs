@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_DeleteRo
 ---
 
 # DeleteRoom
-<a name="API_DeleteRoom"></a>
 
 Deletes the specified room.
 

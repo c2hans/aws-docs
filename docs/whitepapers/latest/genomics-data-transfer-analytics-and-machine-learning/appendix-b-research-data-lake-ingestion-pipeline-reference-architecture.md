@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Appendix B: Research data lake ingestion pipeline reference architecture
-<a name="appendix-b-research-data-lake-ingestion-pipeline-reference-architecture"></a>
 
  The following reference architecture shows an example end-to-end research data lake data ingestion AWS Glue pipeline using the data lake reference architectures described in this paper. The AWS Glue workflows enable you to construct data pipelines using extract, transform, and load (ETL) functions, crawlers, and triggers.
 

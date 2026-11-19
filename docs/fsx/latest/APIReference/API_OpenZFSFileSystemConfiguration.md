@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_OpenZFSFileS
 ---
 
 # OpenZFSFileSystemConfiguration
-<a name="API_OpenZFSFileSystemConfiguration"></a>
 
 The configuration for the Amazon FSx for OpenZFS file system.
 

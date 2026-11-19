@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/get-place
 ---
 
 # How to use Get Place
-<a name="get-place-how-to"></a>
 
 This section contains a variety of how to guides and examples for how to use Get Place APIs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Merge
 ---
 
 # MergeHunk
-<a name="API_MergeHunk"></a>
 
 Information about merge hunks in a merge or pull request operation.
 

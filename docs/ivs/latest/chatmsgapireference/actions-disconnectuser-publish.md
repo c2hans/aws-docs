@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/actions-d
 ---
 
 # DisconnectUser (Publish)
-<a name="actions-disconnectuser-publish"></a>
 
 Disconnects another viewer from the Chat room. Use this in conjunction with the CreateChatToken flow to implement time-based or permanent user bans. For example, to permanently ban a user (viewer), precede this operation with a call to your application service, to prevent the application service from creating another token to the same room. To lift the ban (time- or logic-based), simply resume calling CreateChatToken.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Developer Tools
-<a name="aurora-faq-developer-tools"></a>
 
 **Topics**
 + [What are Aurora MCP servers?](#aurora-faq-what-are-aurora-mcp-servers)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/custom-sche
 ---
 
 # custom-schema-registry-policy-attached
-<a name="custom-schema-registry-policy-attached"></a>
 
 Checks if custom Amazon EventBridge schema registries have a resource policy attached. The rule is NON\_COMPLIANT for custom schema registries without a resource policy attached.
 

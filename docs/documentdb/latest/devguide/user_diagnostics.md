@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/user_diagnost
 ---
 
 # Troubleshooting performance and resource utilization
-<a name="user_diagnostics"></a>
 
 This section provides questions and solutions for common diagnostics issues in Amazon DocumentDB deployments. The examples provided use the *mongo shell* and are scoped to an individual instance. To find an instance endpoint, see [Understanding Amazon DocumentDB endpoints](endpoints.md).
 

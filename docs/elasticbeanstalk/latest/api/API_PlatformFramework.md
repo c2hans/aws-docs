@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Platform
 ---
 
 # PlatformFramework
-<a name="API_PlatformFramework"></a>
 
 A framework supported by the platform.
 

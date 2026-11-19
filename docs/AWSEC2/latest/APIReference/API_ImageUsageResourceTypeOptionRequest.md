@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImageUsag
 ---
 
 # ImageUsageResourceTypeOptionRequest
-<a name="API_ImageUsageResourceTypeOptionRequest"></a>
 
 The options that affect the scope of the report.
 

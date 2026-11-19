@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/Athena-using-th
 ---
 
 # Using Athena data source
-<a name="Athena-using-the-data-source"></a>
 
 ## IAM policies
 <a name="Athena-policies"></a>

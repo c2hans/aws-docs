@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrialC
 ---
 
 # TrialComponentMetricSummary
-<a name="API_TrialComponentMetricSummary"></a>
 
 A summary of the metrics of a trial component.
 

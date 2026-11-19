@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS08-BP07 Alert when workload anomalies are detected
-<a name="ops_workload_health_workload_anomaly_alerts"></a>
 
  Raise an alert when workload anomalies are detected so that you can respond appropriately if necessary.
 

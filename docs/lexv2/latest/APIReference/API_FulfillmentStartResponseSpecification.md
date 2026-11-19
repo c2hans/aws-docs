@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Fulfillmen
 ---
 
 # FulfillmentStartResponseSpecification
-<a name="API_FulfillmentStartResponseSpecification"></a>
 
 Provides settings for a message that is sent to the user when a fulfillment Lambda function starts running.
 

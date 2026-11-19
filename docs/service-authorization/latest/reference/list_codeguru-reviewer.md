@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon CodeGuru Reviewer
-<a name="list_codeguru-reviewer"></a>
 
 Amazon CodeGuru Reviewer (service prefix: `codeguru-reviewer`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

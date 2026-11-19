@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchUpdateWorkloadEstimateUsage
-<a name="API_AWSBCMPricingCalculator_BatchUpdateWorkloadEstimateUsage"></a>
 
  Update a newly added or existing usage lines. You can update the usage amounts and usage group based on a usage ID and a Workload estimate ID.
 

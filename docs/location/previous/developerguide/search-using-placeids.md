@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/search-
 ---
 
 # Use place IDs with Amazon Location
-<a name="search-using-placeids"></a>
 
 Searching for places returns a list of results. Most results include a `PlaceId` for that result. You can use a `PlaceId` in a `[GetPlace](https://docs.aws.amazon.com/location/previous/APIReference/API_GetPlace.html)` operation to return the information about that place (including name, address, location, or other details).
 

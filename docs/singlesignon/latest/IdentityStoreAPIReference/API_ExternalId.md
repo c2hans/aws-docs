@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # ExternalId
-<a name="API_ExternalId"></a>
 
 The identifier issued to this resource by an external identity provider.
 

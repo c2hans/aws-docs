@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/int-actions-best-
 ---
 
 # Best practices
-<a name="int-actions-best-practices"></a>
 
 Following best practices for connectors helps ensure secure, reliable, and efficient operations. These practices help you maintain optimal performance, protect sensitive data, and minimize operational issues.
 

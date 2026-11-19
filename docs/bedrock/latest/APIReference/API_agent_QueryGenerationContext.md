@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Qu
 ---
 
 # QueryGenerationContext
-<a name="API_agent_QueryGenerationContext"></a>
 
 >Contains configurations for context to use during query generation.
 

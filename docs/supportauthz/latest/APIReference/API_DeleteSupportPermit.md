@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Del
 ---
 
 # DeleteSupportPermit
-<a name="API_DeleteSupportPermit"></a>
 
 Deletes a support permit, revoking the authorization previously granted to the AWS support operator.
 

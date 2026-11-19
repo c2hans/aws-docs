@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/conne
 ---
 
 # Connecting to S/4 HANA
-<a name="connecting-sap-hana"></a>
 
 Before you can connect to your S/4 HANA data source, you must complete the following prerequisites. After that, AWS Supply Chain automatically creates the Amazon S3 paths and ingests data from the SAP source tables.
 

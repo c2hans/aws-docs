@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_ListTagsForC
 ---
 
 # ListTagsForCertificate
-<a name="API_ListTagsForCertificate"></a>
 
 Lists the tags that have been applied to the ACM certificate. Use the certificate's Amazon Resource Name (ARN) to specify the certificate. To add a tag to an ACM certificate, use the [AddTagsToCertificate](API_AddTagsToCertificate.md) action. To delete a tag, use the [RemoveTagsFromCertificate](API_RemoveTagsFromCertificate.md) action.
 

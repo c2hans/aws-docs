@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_LinkRoutingRul
 ---
 
 # LinkRoutingRuleSummary
-<a name="API_LinkRoutingRuleSummary"></a>
 
 A summary of a link routing rule.
 

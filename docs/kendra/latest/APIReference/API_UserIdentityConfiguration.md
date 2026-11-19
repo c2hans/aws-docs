@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_UserIdent
 ---
 
 # UserIdentityConfiguration
-<a name="API_UserIdentityConfiguration"></a>
 
 Provides the configuration information for the identifiers of your users.
 

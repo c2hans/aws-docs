@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite
 ---
 
 # Granting Quick access through IAM Identity Center integration
-<a name="iam-identity-center-integration"></a>
 
 **Note**
 This access approach is available only for the Enterprise edition of AWS Quick. For more information, see [User management for Enterprise edition](https://docs.aws.amazon.com/quicksuite/latest/userguide/editions.html#edition-user-management-enterprise) in the Quick documentation.

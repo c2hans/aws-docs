@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ListMilestones
-<a name="API_ListMilestones"></a>
 
 List all milestones for an existing workload.
 

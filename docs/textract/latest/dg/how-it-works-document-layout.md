@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/how-it-works-document
 ---
 
 # Text Detection and Document Analysis Response Objects
-<a name="how-it-works-document-layout"></a>
 
 When Amazon Textract processes a document, it creates a list of [Block](https://docs.aws.amazon.com/textract/latest/APIReference/API_Block.html) objects for the detected or analyzed text. Each block contains information about a detected item, where it's located, and the confidence that Amazon Textract has in the accuracy of the processing.
 

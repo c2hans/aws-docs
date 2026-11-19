@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ExecutionRe
 ---
 
 # ExecutionRecord
-<a name="API_ExecutionRecord"></a>
 
  Specifies information about the past flow run instances for a given flow.
 

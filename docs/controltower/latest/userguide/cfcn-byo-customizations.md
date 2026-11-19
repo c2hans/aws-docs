@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/cfcn-byo-c
 ---
 
 # Build your own customizations
-<a name="cfcn-byo-customizations"></a>
 
 To build your own customizations, you can modify the CfCT `manifest.yaml` file by adding or updating service control policies (SCPs), resource control policies (RCPs), and CloudFormation resources. For resources that must be deployed, you can add or remove accounts and OUs. You can add or modify the templates in the package folders, create your own folders, and reference the templates or folders in the `manifest.yaml` file.
 

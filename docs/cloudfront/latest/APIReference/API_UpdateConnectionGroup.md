@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateConnectionGroup
-<a name="API_UpdateConnectionGroup"></a>
 
 Updates a connection group.
 

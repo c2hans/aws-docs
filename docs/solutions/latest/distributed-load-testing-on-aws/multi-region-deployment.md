@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Multi-Region deployment
-<a name="multi-region-deployment"></a>
 
  **Time to deploy:** Approximately 5 minutes per Region
 

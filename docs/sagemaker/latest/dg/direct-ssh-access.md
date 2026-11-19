@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/direct-ssh-access.ht
 ---
 
 # Direct SSH
-<a name="direct-ssh-access"></a>
 
 **Security notice**
 Direct SSH opens an inbound TCP port on your cluster pods. We recommend [Remote access using SSH over SSM](vscode-access.md) because it requires no open inbound ports. Only enable Direct SSH if remote access through SSM cannot meet your needs (for example, no internet access, or standard SSH tooling required).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_NodeRepairCo
 ---
 
 # NodeRepairConfigOverrides
-<a name="API_NodeRepairConfigOverrides"></a>
 
 Specify granular overrides for specific repair actions. These overrides control the repair action and the repair delay time before a node is considered eligible for repair. If you use this, you must specify all the values.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchQu
 ---
 
 # SearchQuickConnects
-<a name="API_SearchQuickConnects"></a>
 
 Searches quick connects in an Connect Customer instance, with optional filtering.
 

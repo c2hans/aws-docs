@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ranger-tr
 ---
 
 # Apache Ranger troubleshooting
-<a name="emr-ranger-troubleshooting"></a>
 
 Here are some commonly diagnosed issues related to using Apache Ranger.
 

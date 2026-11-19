@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Dat
 ---
 
 # DatasetItem
-<a name="API_DatasetItem"></a>
 
 A dataset to process.
 

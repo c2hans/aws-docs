@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-video-worker-ins
 ---
 
 # Understand Release, Stop and Resume, and Decline Task Options
-<a name="sms-video-worker-instructions-skip-reject-ot"></a>
 
 **Note**
 Amazon SageMaker Ground Truth is no longer open to new customers. Existing customers can continue to use the service as normal. AWS continues to invest in security and availability improvements for Ground Truth, but we do not plan to introduce new features.

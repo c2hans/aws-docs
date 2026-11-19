@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/lt.html
 ---
 
 # $lt
-<a name="lt"></a>
 
 The `$lt` operator in Amazon DocumentDB is used to match values that are less than the specified value. This operator is useful for filtering and querying data based on numerical comparisons.
 

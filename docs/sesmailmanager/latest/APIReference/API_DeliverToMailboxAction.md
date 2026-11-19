@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_D
 ---
 
 # DeliverToMailboxAction
-<a name="API_DeliverToMailboxAction"></a>
 
 This action to delivers an email to a mailbox.
 

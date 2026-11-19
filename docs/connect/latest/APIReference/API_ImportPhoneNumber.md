@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ImportPh
 ---
 
 # ImportPhoneNumber
-<a name="API_ImportPhoneNumber"></a>
 
 Imports a claimed phone number from an external service, such as AWS End User Messaging, into an Connect Customer instance. You can call this API only in the same AWS Region where the Connect Customer instance was created.
 

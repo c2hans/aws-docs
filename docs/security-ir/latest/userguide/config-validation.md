@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/config-vali
 ---
 
 # Validating your AWS Security Incident Response configuration
-<a name="config-validation"></a>
 
  After you complete onboarding, you can validate that enrollment, detection sources, AWS Identity and Access Management (IAM) permissions, containment, and notifications are configured correctly before a real security event occurs. This section provides step-by-step verification procedures using both the AWS Management Console and the AWS CLI.
 

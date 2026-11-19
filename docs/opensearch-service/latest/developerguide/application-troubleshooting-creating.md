@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # An OpenSearch UI application remains in the Creating state
-<a name="application-troubleshooting-creating"></a>
 
 An OpenSearch UI application usually becomes active within a few minutes. In some cases it can remain in the Creating state for longer. Before you investigate, compare the elapsed time against the following expected durations.
 

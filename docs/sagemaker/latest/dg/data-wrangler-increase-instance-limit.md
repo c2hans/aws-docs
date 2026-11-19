@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler-increa
 ---
 
 # Increase Amazon EC2 Instance Limit
-<a name="data-wrangler-increase-instance-limit"></a>
 
 You might see the following error message when you're using Data Wrangler: `The following instance type is not available: ml.m5.4xlarge. Try selecting a different instance below.`
 

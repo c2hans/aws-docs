@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_LakeFor
 ---
 
 # LakeFormationScopeUnion
-<a name="API_LakeFormationScopeUnion"></a>
 
 A list of scopes set up for Lake Formation integration.
 

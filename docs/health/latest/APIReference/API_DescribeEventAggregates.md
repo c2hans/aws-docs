@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeE
 ---
 
 # DescribeEventAggregates
-<a name="API_DescribeEventAggregates"></a>
 
 Returns the number of events of each event type (issue, scheduled change, and account notification). If no filter is specified, the counts of all events in each category are returned.
 
@@ -46,11 +45,9 @@ This API operation uses pagination. Specify the `nextToken` parameter in the nex
             "to": {{number}}
          }
       ],
-      "tags": [
-         {
-            "{{string}}" : "{{string}}"
-         }
-      ]
+      "tags": {
+         "{{string}}" : [ "{{string}}" ]
+      }
    },
    "maxResults": {{number}},
    "nextToken": "{{string}}"

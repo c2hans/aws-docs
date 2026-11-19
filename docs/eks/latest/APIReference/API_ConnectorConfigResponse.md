@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ConnectorCon
 ---
 
 # ConnectorConfigResponse
-<a name="API_ConnectorConfigResponse"></a>
 
 The full description of your connected cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSSUS01-BP01 Select the Region for your OpenSearch Service deployment based on a combination of business requirements and sustainability goals
-<a name="aossus01-bp01"></a>
 
  Improve alignment with business objectives, meet compliance requirements, and reduce non-compliance risk by selecting the OpenSearch Service Region that best aligns with your company's needs and sustainability goals.
 

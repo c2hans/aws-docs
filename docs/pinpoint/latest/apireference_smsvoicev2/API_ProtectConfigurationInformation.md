@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # ProtectConfigurationInformation
-<a name="API_ProtectConfigurationInformation"></a>
 
 Provides information on the specified protect configuration.
 

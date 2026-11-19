@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Advertise
 ---
 
 # AdvertiseByoipCidr
-<a name="API_AdvertiseByoipCidr"></a>
 
 Advertises an IPv4 or IPv6 address range that is provisioned for use with your AWS resources through bring your own IP addresses (BYOIP).
 

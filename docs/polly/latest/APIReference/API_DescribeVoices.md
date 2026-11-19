@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_DescribeVo
 ---
 
 # DescribeVoices
-<a name="API_DescribeVoices"></a>
 
 Returns the list of voices that are available for use when requesting speech synthesis. Each voice speaks a specified language, is either male or female, and is identified by an ID, which is the ASCII version of the voice name.
 

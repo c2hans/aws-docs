@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/example-filter-policies.ht
 ---
 
 # Amazon SNS example filter policies
-<a name="example-filter-policies"></a>
 
 The following example shows a message payload delivered by an Amazon SNS topic that processes customer transactions.
 

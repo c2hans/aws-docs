@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/remove-az
 ---
 
 # Remove an Azure DevOps integration
-<a name="remove-azure-devops"></a>
 
 This procedure removes the connection between AWS Security Agent and an Azure DevOps organization. Use it when you no longer need AWS Security Agent to access that organization’s repositories.
 

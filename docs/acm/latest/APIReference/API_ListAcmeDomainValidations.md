@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_ListAcmeDoma
 ---
 
 # ListAcmeDomainValidations
-<a name="API_ListAcmeDomainValidations"></a>
 
 Retrieves a list of domain validations for the specified ACME endpoint.
 

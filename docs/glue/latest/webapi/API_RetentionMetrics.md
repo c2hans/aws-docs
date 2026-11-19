@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RetentionMetrics.
 ---
 
 # RetentionMetrics
-<a name="API_RetentionMetrics"></a>
 
 A structure that contains retention metrics for the optimizer run.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_InboundR
 ---
 
 # InboundRawMessage
-<a name="API_InboundRawMessage"></a>
 
 Information about the raw email body content.
 

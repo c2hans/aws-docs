@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Tem
 ---
 
 # Accessing the tempdb database on Microsoft SQL Server DB instances on Amazon RDS
-<a name="SQLServer.TempDB"></a>
 
 You can access the `tempdb` database on your Microsoft SQL Server DB instances on Amazon RDS. You can run code on `tempdb` by using Transact-SQL through Microsoft SQL Server Management Studio (SSMS), or any other standard SQL client application. For more information about connecting to your DB instance, see [Connecting to your Microsoft SQL Server DB instance](USER_ConnectToMicrosoftSQLServerInstance.md).
 

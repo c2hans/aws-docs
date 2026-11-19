@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_UpdateAcmeDo
 ---
 
 # UpdateAcmeDomainValidation
-<a name="API_UpdateAcmeDomainValidation"></a>
 
 Updates the prevalidation configuration of an existing domain validation.
 

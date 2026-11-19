@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Err
 ---
 
 # ErrorDetails
-<a name="API_ErrorDetails"></a>
 
 Represents information about an error in CodePipeline.
 

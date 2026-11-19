@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Aw
 ---
 
 # AwsLogSourceConfiguration
-<a name="API_AwsLogSourceConfiguration"></a>
 
 To add a natively-supported AWS service as a log source, use these parameters to specify the configuration settings for the log source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Dele
 ---
 
 # DeleteWorkspaceInstance
-<a name="API_DeleteWorkspaceInstance"></a>
 
 Deletes the specified WorkSpace
 

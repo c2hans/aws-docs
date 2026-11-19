@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Deploy
 ---
 
 # DeploymentEarlySuccessCriteria
-<a name="API_DeploymentEarlySuccessCriteria"></a>
 
 **Note**
 You can use early success criteria only with rolling deployment strategy.

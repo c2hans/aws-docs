@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-ap
 ---
 
 # Validate your AppSpec File and file location
-<a name="reference-appspec-file-validate"></a>
 
  **File syntax**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Partner Central Selling API
-<a name="API_Operations_Partner_Central_Selling_API"></a>
 
 The following actions are supported by Partner Central Selling API:
 +  [AcceptEngagementInvitation](API_AcceptEngagementInvitation.md)

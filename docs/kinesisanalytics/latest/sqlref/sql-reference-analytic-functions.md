@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Analytic Functions
-<a name="sql-reference-analytic-functions"></a>
 
 An analytic function is one that returns a result calculated from data in (or about) a finite set of rows identified by a [SELECT clause](sql-reference-select-clause.md) or in the [ORDER BY clause](sql-reference-order-by-clause.md).
 

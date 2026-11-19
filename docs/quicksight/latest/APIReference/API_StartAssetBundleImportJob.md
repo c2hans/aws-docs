@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Start
 ---
 
 # StartAssetBundleImportJob
-<a name="API_StartAssetBundleImportJob"></a>
 
 Starts an Asset Bundle import job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/tagging-connec
 ---
 
 # Tagging an Connect Customer instance
-<a name="tagging-connect-instance"></a>
 
 Instance Tagging provides the ability for you to tag Connect Customer instances and build tailored authorization through tag-based access control (TBAC). To help you manage your Connect Customer instances, you can assign your own metadata in the form of tags to the instance. If you have multiple Connect Customer instances in a single AWS account, each serving different functions or catering to specific lines of business, using tags can help you better organize and apply tag-based access control (TBAC) policies to these instances for improved management and control.
 

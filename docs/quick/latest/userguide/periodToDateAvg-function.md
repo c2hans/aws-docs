@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/periodToDateAvg-f
 ---
 
 # periodToDateAvg
-<a name="periodToDateAvg-function"></a>
 
 The `periodToDateAvg` function averages the set of numbers in the specified measure for a given time granularity (for instance, a quarter) up to a point in time, relative to that period.
 

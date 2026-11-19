@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::AccessGrant ResourceScope
-<a name="aws-properties-cloudwatch-accessgrant-resourcescope"></a>
 
 A single resource scope entry within an access grant. Associates a resource type with optional ARN patterns, tag conditions, and row-level filters.
 

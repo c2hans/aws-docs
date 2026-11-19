@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/discovery-too
 ---
 
 # Deploy on VMware
-<a name="discovery-tool-deploy-vmware"></a>
 
 ## VMware virtual machine specifications
 <a name="discovery-tool-vmware-vm-specs"></a>

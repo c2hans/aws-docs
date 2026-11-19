@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Secur
 ---
 
 # SecureNamespaceInfo
-<a name="API_SecureNamespaceInfo"></a>
 
 Namespace inputs for the system job.
 

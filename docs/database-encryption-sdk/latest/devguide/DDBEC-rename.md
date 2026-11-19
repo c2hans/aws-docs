@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Amazon DynamoDB Encryption Client rename
-<a name="DDBEC-rename"></a>
 
 |  |
 | --- |

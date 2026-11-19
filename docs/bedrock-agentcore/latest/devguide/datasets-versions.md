@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/datase
 ---
 
 # Manage dataset versions
-<a name="datasets-versions"></a>
 
 Use `CreateDatasetVersion` to publish the current Draft as an immutable numbered version. The Draft persists unchanged after publishing — `draftStatus` changes from `MODIFIED` to `UNMODIFIED`.
 

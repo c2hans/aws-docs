@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/generic-packages-
 ---
 
 # Generic packages overview
-<a name="generic-packages-overview"></a>
 
 Using the `generic` package format, you can upload any type of file to create a package in a CodeArtifact repository. Generic packages aren't associated with any specific programming language, file type, or package management ecosystem. This can be useful for storing and versioning arbitrary build artifacts, such as application installers, machine learning models, configuration files, and others.
 

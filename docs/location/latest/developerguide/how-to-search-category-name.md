@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to search using category name or food type
-<a name="how-to-search-category-name"></a>
 
 The `SearchText` API enables you to search by name of category such as restaurants, schools and more. You can also search by food type.
 

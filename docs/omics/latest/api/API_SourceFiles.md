@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_SourceFiles.html
 ---
 
 # SourceFiles
-<a name="API_SourceFiles"></a>
 
 Source files for a sequence.
 

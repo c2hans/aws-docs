@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl
 ---
 
 # Creating a read replica in a different AWS Region
-<a name="USER_ReadRepl.XRgn"></a>
 
 With Amazon RDS, you can create a read replica in a different AWS Region from the source DB instance.
 

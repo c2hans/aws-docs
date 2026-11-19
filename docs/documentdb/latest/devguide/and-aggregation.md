@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/and-aggregati
 ---
 
 # $and
-<a name="and-aggregation"></a>
 
 The `$and` aggregation operator evaluates multiple expressions and returns `true` only if all expressions evaluate to `true`. If any expression is `false`, it returns `false`.
 

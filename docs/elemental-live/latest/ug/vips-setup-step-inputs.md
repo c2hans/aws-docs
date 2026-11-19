@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/vips-setup-step
 ---
 
 # Step 3: Set up the inputs in the event
-<a name="vips-setup-step-inputs"></a>
 
 **To set up an MPTS program**
 

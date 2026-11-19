@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Technical domains
-<a name="technical-domains"></a>
 
 This section provides an overview of the main technology domains for containerization. The following diagram shows the architecture of a traditional Java EE application.
 

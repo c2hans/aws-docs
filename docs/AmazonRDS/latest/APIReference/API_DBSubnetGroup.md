@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBSubn
 ---
 
 # DBSubnetGroup
-<a name="API_DBSubnetGroup"></a>
 
 Contains the details of an Amazon RDS DB subnet group.
 

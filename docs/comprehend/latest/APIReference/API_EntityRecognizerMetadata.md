@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Entit
 ---
 
 # EntityRecognizerMetadata
-<a name="API_EntityRecognizerMetadata"></a>
 
 Detailed information about an entity recognizer.
 

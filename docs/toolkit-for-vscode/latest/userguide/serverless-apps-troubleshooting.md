@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/serv
 ---
 
 # Troubleshooting serverless applications
-<a name="serverless-apps-troubleshooting"></a>
 
 This topic details common errors that you might encounter when creating serverless applications with the Toolkit for VS Code and how to resolve them.
 

@@ -3,14 +3,14 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Multi-service remediation
-<a name="multi-service-remediation"></a>
 
 In addition to AWS Security Hub CSPM control findings (identified by control IDs such as `S3.1` or `IAM.7`), the solution can remediate findings from additional AWS security services. These findings are categorized by service name, finding type, and resource type rather than by a Security Hub control ID. The preprocessor maps each service and finding type to the appropriate remediation. Multi-service remediations use the same two-tier runbook architecture, ingestion, and orchestration flow as control-based remediations. Configure them the same way through the Remediation Configuration Amazon DynamoDB table.
 
-This release supports one finding type per service:
+The solution supports the following finding types:
 
 | Service | Control ID | Supported resource types | Remediation | Manual follow-up required |
 | --- | --- | --- | --- | --- |
+| IAM Access Analyzer |  `IAMAccessAnalyzer.ExternalAccess`  | S3 buckets and KMS keys | Tightens the resource policy. Replaces wildcard principals (`"*"`) with the owning account ID, and adds an `aws:PrincipalOrgID` condition if the account is a member of an organization in AWS Organizations. To remediate only some of these resource types, see [Filter a remediation by resource type](manage-automated-remediation.md#filter-by-resource-type). | Only when the policy grants access to a specific external account. The solution does not remove that access, and leaves the finding open for review. |
 | Amazon Inspector |  `Inspector.InstanceVulnerability`  | EC2 instances managed by AWS Systems Manager | Runs the `AWS-RunPatchBaseline` Systems Manager command to install the specific vulnerable packages identified in the finding. The Systems Manager Agent must be version 2.0.834.0 or later. | No |
 | Amazon GuardDuty |  `GuardDuty.IAMUser`  | IAM access keys | Contains the potentially compromised IAM user by disabling its access keys, removing console access, and attaching a deny-all policy, using the AWS-managed `AWSSupport-ContainIAMPrincipal` runbook. The solution backs up the original configuration, so you can roll back the containment from the Web UI. | Yes |
 | Amazon Macie |  `Macie.SensitiveDataS3Object`  | S3 buckets containing objects with sensitive data | Enables S3 Block Public Access on the bucket to prevent public exposure of the sensitive data. | Yes |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-TerminateEc2Instance`
-<a name="automation-awssupportremediator-terminateec2instance"></a>
 
 **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/cdns-edit.html
 ---
 
 # Editing a Distribution
-<a name="cdns-edit"></a>
 
 Edit an Amazon CloudFront distribution from the CloudFront console.
 

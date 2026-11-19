@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # ListKeys
-<a name="API_ListKeys"></a>
 
 Lists the keys in the caller's AWS account and AWS Region. You can filter the list of keys.
 

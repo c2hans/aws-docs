@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-send-da
 ---
 
 # Send data to an Amazon Kinesis video stream
-<a name="gs-send-data"></a>
 
 This section describes how to send media data from a camera to the Kinesis video stream that you created in the previous section. This section uses the [Use the C\+\+ producer library](producer-sdk-cpp.md) as a [Example: Kinesis Video Streams producer SDK GStreamer Plugin - kvssink](examples-gstreamer-plugin.md) plugin.
 

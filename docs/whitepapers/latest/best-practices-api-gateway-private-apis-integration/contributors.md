@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-ga
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this document include:
 +  Takaki Matsumoto, Cloud Support Engineer II, Premium Support

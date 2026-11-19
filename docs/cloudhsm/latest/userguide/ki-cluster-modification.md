@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ki-cluster-mod
 ---
 
 # Known issues for AWS CloudHSM cluster modification
-<a name="ki-cluster-modification"></a>
 
 The following issues impact customers attempting to use the modify-cluster API to change the HSM type of a cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # Database decomposition on AWS
-<a name="introduction"></a>
 
 *Philippe Wanner and Saurabh Sharma, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/streams-using-d
 ---
 
 # Disabling Neptune Streams
-<a name="streams-using-disabling"></a>
 
 You can turn Neptune Streams off any time that it is running.
 

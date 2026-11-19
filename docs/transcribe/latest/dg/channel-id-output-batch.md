@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/channel-id-output-b
 ---
 
 # Example channel identification output (batch)
-<a name="channel-id-output-batch"></a>
 
 Here's an output example for a batch transcription with channel identification enabled.
 

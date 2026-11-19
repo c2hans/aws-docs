@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CreateGlobalNetwork
-<a name="API_CreateGlobalNetwork"></a>
 
 Creates a new, empty global network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Con
 ---
 
 # Content
-<a name="API_Content"></a>
 
 Contains the cited text from the data source.
 

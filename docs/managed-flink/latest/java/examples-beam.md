@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/examples-beam.
 ---
 
 # Create an application using Apache Beam
-<a name="examples-beam"></a>
 
 In this exercise, you create a Managed Service for Apache Flink application that transforms data using [Apache Beam](https://beam.apache.org/). Apache Beam is a programming model for processing streaming data. For information about using Apache Beam with Managed Service for Apache Flink, see [Use Apache Beam with Managed Service for Apache Flink applications](how-creating-apps-beam.md).
 

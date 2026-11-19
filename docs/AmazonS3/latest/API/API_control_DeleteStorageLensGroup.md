@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteSt
 ---
 
 # DeleteStorageLensGroup
-<a name="API_control_DeleteStorageLensGroup"></a>
 
  Deletes an existing S3 Storage Lens group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayConnectorDeregistrationDelay
-<a name="API_GatewayConnectorDeregistrationDelay"></a>
 
 The amount of time to allow in-flight requests to complete before a deregistering target is removed.
 

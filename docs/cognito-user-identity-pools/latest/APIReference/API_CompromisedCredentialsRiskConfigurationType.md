@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # CompromisedCredentialsRiskConfigurationType
-<a name="API_CompromisedCredentialsRiskConfigurationType"></a>
 
 Settings for compromised-credentials actions and authentication-event sources with threat protection in full-function `ENFORCED` mode.
 

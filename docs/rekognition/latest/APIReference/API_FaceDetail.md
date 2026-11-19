@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Face
 ---
 
 # FaceDetail
-<a name="API_FaceDetail"></a>
 
 Structure containing attributes of the face that the algorithm detected.
 

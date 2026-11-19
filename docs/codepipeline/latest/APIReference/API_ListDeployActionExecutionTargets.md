@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Lis
 ---
 
 # ListDeployActionExecutionTargets
-<a name="API_ListDeployActionExecutionTargets"></a>
 
 Lists the targets for the deploy action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DeleteProvisionedProductPlan
-<a name="API_DeleteProvisionedProductPlan"></a>
 
 Deletes the specified plan.
 

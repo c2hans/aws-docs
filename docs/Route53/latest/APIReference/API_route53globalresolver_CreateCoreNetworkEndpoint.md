@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # CreateCoreNetworkEndpoint
-<a name="API_route53globalresolver_CreateCoreNetworkEndpoint"></a>
 
 Creates a core network endpoint, which enables DNS resolution for AWS Cloud WAN core network segments. The endpoint connects a Route 53 Global Resolver to an AWS Cloud WAN core network so that resources attached to the core network can send DNS queries to the resolver.
 

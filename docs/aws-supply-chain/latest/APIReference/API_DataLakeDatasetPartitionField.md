@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataLakeDatasetPartitionField
-<a name="API_DataLakeDatasetPartitionField"></a>
 
 The detail of the partition field.
 

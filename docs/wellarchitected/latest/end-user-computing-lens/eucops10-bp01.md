@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCOPS10-BP01 Encourage user participation during service development and rollout to maximize engagement and project success
-<a name="eucops10-bp01"></a>
 
  Encourage users to participate in online and in-person training for any new service to promote trust in the new service, increase employee engagement, and reduce support overheads.
 

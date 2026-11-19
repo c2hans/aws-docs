@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-cmd-dns-
 ---
 
 # Mounting on Amazon EC2 with a DNS name
-<a name="mounting-fs-mount-cmd-dns-name"></a>
 
 **Note**
 Prior to mounting your file system, you need to add a rule to the mount target security group that allows inbound NFS access on port 2049 from the EC2 security group. For more information, see [Using VPC security groups](network-access.md).

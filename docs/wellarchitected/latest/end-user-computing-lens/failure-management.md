@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Failure management
-<a name="failure-management"></a>
 
 |  EUCREL12: How do you address EUC specific issues and requirements in your incident response plan?  |
 | --- |

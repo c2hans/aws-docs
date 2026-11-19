@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/aws-nvme-drivers
 ---
 
 # NVMe drivers
-<a name="aws-nvme-drivers"></a>
 
 Amazon EBS volumes and instance store volumes are exposed as NVMe block devices on [Nitro-based instances](instance-types.md#instance-hypervisor-type). To fully use the performance and capabilities of Amazon EBS features for volumes exposed as NVMe block devices, the instance must have the AWS NVMe driver installed. All current generation AWS Windows AMIs come with the AWS NVMe driver installed by default.
 

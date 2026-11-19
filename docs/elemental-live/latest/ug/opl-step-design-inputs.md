@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/opl-step-design
 ---
 
 # Design the inputs
-<a name="opl-step-design-inputs"></a>
 
 When you design a workflow that implements Elemental Live output locking, you must obtain information about the sources.
 

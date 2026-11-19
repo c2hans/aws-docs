@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/quota
 ---
 
 # Quotas for Resource Explorer
-<a name="quotas"></a>
 
 Your AWS account has default quotas for each AWS service. Unless otherwise noted, quotas are Region-specific. You cannot increase the quotas for AWS Resource Explorer.
 

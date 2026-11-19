@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/tim
 ---
 
 # Enable time to live (TTL) in DynamoDB
-<a name="time-to-live-ttl-how-to"></a>
 
 **Note**
 To assist in debugging and verification of proper operation of the TTL feature, the values provided for the item TTL are logged in plaintext in DynamoDB diagnostic logs.

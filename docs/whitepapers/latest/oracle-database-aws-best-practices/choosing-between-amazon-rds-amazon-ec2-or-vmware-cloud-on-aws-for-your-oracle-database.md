@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-b
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Choosing between Amazon RDS, Amazon EC2, or VMware Cloud on AWS for your Oracle database
-<a name="choosing-between-amazon-rds-amazon-ec2-or-vmware-cloud-on-aws-for-your-oracle-database"></a>
 
  Both Amazon RDS and Amazon EC2 offer different advantages for running Oracle Database. Amazon RDS is easier to set up, manage, and maintain than running Oracle Database on Amazon EC2, and lets you focus on other important tasks, rather than the day-to-day administration of Oracle Database. Alternatively, running Oracle Database on Amazon EC2 gives you more control, flexibility, and choice. Depending on your application and your requirements, you might prefer one over the other.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/assign-per
 ---
 
 # Create roles and assign permissions
-<a name="assign-permissions"></a>
 
 Roles and permissions give you access to resources, in AWS Control Tower and in other AWS services, including programmatic access to resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-python-pro
 ---
 
 # Program your Managed Service for Apache Flink Python application
-<a name="how-python-programming"></a>
 
 You code your Managed Service for Apache Flink for Python application using the Apache Flink Python Table API. The Apache Flink engine translates Python Table API statements (running in the Python VM) into Java Table API statements (running in the Java VM).
 

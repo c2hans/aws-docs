@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/quicksigh
 ---
 
 # Integration with AWS Quick
-<a name="quicksight-integration"></a>
 
 **Integration type:** Subscriber
 

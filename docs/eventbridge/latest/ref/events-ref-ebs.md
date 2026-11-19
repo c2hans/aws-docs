@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-ebs.ht
 ---
 
 # Amazon Elastic Block Store events
-<a name="events-ref-ebs"></a>
 
 Amazon EBS sends service events to EventBridge via AWS CloudTrail.
 

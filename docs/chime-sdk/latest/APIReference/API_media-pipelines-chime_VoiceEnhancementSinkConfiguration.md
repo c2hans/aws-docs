@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # VoiceEnhancementSinkConfiguration
-<a name="API_media-pipelines-chime_VoiceEnhancementSinkConfiguration"></a>
 
 A static structure that contains the configuration data for a `VoiceEnhancementSinkConfiguration` element.
 

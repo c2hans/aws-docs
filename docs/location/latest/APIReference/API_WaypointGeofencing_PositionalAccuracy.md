@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # PositionalAccuracy
-<a name="API_WaypointGeofencing_PositionalAccuracy"></a>
 
 ## Contents
 <a name="API_WaypointGeofencing_PositionalAccuracy_Contents"></a>

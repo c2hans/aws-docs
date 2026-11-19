@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/devenviron
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Troubleshooting problems with devfiles
-<a name="devenvironments-devenvironments-devfile"></a>
 
 Consult the following sections to troubleshoot problems related to devfiles in CodeCatalyst. For more information on devfiles, see [Configuring a devfile for a Dev Environment](devenvironment-devfile.md).
 

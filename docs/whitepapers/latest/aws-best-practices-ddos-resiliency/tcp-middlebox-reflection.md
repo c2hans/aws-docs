@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # TCP middlebox reflection
-<a name="tcp-middlebox-reflection"></a>
 
  This relatively new attack vector was first disclosed in an [academic whitepaper](https://www.usenix.org/system/files/sec21fall-bock.pdf) in August 2021 that explained how TCP non-compliance in network firewalls could result in these being tricked into becoming a TCP amplification vector. We've seen these attacks since early 2022 and continue to see them today. The amplification factor varies because of the different ways vendors have implemented this feature but can exceed Memcached UDP amplification.
 

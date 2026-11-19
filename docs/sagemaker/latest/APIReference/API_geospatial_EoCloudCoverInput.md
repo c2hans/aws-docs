@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # EoCloudCoverInput
-<a name="API_geospatial_EoCloudCoverInput"></a>
 
 The structure representing the EoCloudCover filter.
 

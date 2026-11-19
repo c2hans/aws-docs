@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/budget-
 ---
 
 # Budget methods
-<a name="budget-methods"></a>
 
 You can set the budgeted amount of your cost or usage budget in one of the following ways. You can set one of these budgets no matter whether you're budgeting in a traditional sense—tracking to plan, for example—or if you want to monitor spend and receive alerts when costs increase beyond your threshold.
 

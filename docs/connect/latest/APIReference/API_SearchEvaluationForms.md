@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchEv
 ---
 
 # SearchEvaluationForms
-<a name="API_SearchEvaluationForms"></a>
 
 Searches evaluation forms in an Connect Customer instance, with optional filtering.
 

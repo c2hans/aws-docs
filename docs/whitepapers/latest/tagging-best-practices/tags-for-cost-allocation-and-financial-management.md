@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Tags for cost allocation and financial management
-<a name="tags-for-cost-allocation-and-financial-management"></a>
 
  One of the first tagging use cases organizations often tackle is visibility and management of cost and usage. There are usually a few reasons for this:
 +  **It's typically a well understood scenario and requirements are well known.** For example, finance teams want to see the total cost of workloads and infrastructure that span across multiple services, features, accounts, or teams. One way to achieve this cost visibility is through consistent tagging of resources.

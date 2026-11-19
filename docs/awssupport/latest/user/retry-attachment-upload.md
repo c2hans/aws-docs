@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/retry-attachment-
 ---
 
 # Retrying a failed upload
-<a name="retry-attachment-upload"></a>
 
 If a file upload fails, you can retry the upload.
 

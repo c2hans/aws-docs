@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concept
 ---
 
 # Amazon AuroraDB instance classes
-<a name="Concepts.DBInstanceClass"></a>
 
 The DB instance class determines the computation and memory capacity of an Amazon Aurora DB instance. The DB instance class that you need depends on your processing power and memory requirements.
 

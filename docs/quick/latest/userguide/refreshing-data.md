@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/refreshing-data.h
 ---
 
 # Refreshing data in AWS Quick Sight
-<a name="refreshing-data"></a>
 
 When refreshing data, AWS Quick Sight handles datasets differently depending on the connection properties and the storage location of the data.
 

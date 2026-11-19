@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/conversation
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Chat and conversation management for an Amazon Q Business application using APIs
-<a name="conversation-api"></a>
 
 Chatting in an Amazon Q Business web experience preview and a deployed Amazon Q Business web experience uses the following API operations.
 

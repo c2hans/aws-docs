@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Git
 ---
 
 # GitFilePathFilterCriteria
-<a name="API_GitFilePathFilterCriteria"></a>
 
 The Git repository file paths specified as filter criteria to start the pipeline.
 

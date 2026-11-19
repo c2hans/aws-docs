@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeR
 ---
 
 # DescribeRegions
-<a name="API_DescribeRegions"></a>
 
 Describes the Regions that are enabled for your account, or all Regions.
 

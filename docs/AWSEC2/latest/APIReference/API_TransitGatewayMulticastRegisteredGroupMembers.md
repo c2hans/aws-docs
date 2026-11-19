@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayMulticastRegisteredGroupMembers
-<a name="API_TransitGatewayMulticastRegisteredGroupMembers"></a>
 
 Describes the registered transit gateway multicast group members.
 

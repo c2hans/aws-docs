@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-update-tie
 ---
 
 # Update tiered storage on an existing Amazon MSK cluster using the console
-<a name="msk-update-tiered-storage-console"></a>
 
 This process describes how to updated a tiered storage Amazon MSK cluster using the AWS Management Console.
 

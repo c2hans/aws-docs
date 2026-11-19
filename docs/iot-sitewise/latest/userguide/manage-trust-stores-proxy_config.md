@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/manage-tru
 ---
 
 # Configure proxy settings during AWS IoT SiteWise Edge gateway installation
-<a name="manage-trust-stores-proxy_config"></a>
 
 You can configure AWS IoT SiteWise Edge to work with a proxy server during gateway installation. The installation script supports both HTTP and HTTPS proxies and can automatically configure trust stores for secure proxy connections.
 

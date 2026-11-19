@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeV
 ---
 
 # DescribeVolumeAttribute
-<a name="API_DescribeVolumeAttribute"></a>
 
 Describes the specified attribute of the specified volume. You can specify only one attribute at a time.
 

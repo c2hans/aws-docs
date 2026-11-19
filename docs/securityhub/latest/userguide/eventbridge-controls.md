@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/eventbridge
 ---
 
 # Security Hub CSPM controls for EventBridge
-<a name="eventbridge-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the Amazon EventBridge service and resources.
 

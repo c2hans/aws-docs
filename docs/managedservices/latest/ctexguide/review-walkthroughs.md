@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctexguide/review-
 ---
 
 # review-walkthroughs
-<a name="review-walkthroughs"></a>
 
 **Topics**
 + [Create a managed prefix list](#ex-vpc-prefix-list-create-col)

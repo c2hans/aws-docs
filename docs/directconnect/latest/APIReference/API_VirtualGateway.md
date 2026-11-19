@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Vi
 ---
 
 # VirtualGateway
-<a name="API_VirtualGateway"></a>
 
 Information about a virtual private gateway for a private virtual interface.
 

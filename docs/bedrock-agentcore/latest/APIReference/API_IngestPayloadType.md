@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # IngestPayloadType
-<a name="API_IngestPayloadType"></a>
 
 A single content payload item to ingest. A payload item contains either conversational or JSON content.
 

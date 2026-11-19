@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AppS
 ---
 
 # AppStudioServiceRolePolicy
-<a name="AppStudioServiceRolePolicy"></a>
 
 **Description**: Allows AppStudio to manage associated AWS resources on your behalf.
 

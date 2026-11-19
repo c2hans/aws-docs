@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/ug/aws-health-events-event
 ---
 
 # Reference: AWS Health events Amazon EventBridge schema
-<a name="aws-health-events-eventbridge-schema"></a>
 
 The following is the schema for AWS Health events. The contents of the details parameter follows in a second table. Sample payloads ares provided after the schema tables.
 

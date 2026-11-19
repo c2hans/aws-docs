@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ad-reporting-clien
 ---
 
 # Client-side ad-tracking integrations
-<a name="ad-reporting-client-side-ad-tracking-integrations"></a>
 
 This section describes integrations between MediaTailor and various client-side ad-tracking servers.
 

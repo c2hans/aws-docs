@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/maps-best
 ---
 
 # Best practices
-<a name="maps-best-practices"></a>
 
 When working with Amazon Location Service, adhering to best practices ensures your maps are optimized for performance, accuracy, and user experience. This section outlines key considerations for working with static maps, geographical bounds, and GeoJSON data to enhance map functionality and visualization.
 

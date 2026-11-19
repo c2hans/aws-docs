@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/secrets-
 ---
 
 # Pass Systems Manager parameters through Amazon ECS environment variables
-<a name="secrets-envvar-ssm-paramstore"></a>
 
 Amazon ECS allows you to inject sensitive data into your containers by storing your sensitive data in AWS Systems Manager Parameter Store parameters and then referencing them in your container definition.
 

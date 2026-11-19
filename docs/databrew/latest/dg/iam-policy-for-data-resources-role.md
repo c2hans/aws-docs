@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/iam-policy-for-data-r
 ---
 
 # AwsGlueDataBrewDataResourcePolicy
-<a name="iam-policy-for-data-resources-role"></a>
 
 The `AwsGlueDataBrewDataResourcePolicy` policy grants the permissions needed to connect to data and to configure DataBrew.
 

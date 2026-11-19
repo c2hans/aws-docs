@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Upda
 ---
 
 # UpdateCloudFormationCollectionFilter
-<a name="API_UpdateCloudFormationCollectionFilter"></a>
 
  Contains the names of AWS CloudFormation stacks used to update a collection of stacks. You can specify up to 1000 AWS CloudFormation stacks.
 

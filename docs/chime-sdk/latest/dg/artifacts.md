@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/artifacts.html
 ---
 
 # Working with Amazon Chime SDK media capture artifacts
-<a name="artifacts"></a>
 
 During an Amazon Chime SDK meeting, a media capture pipeline creates the following types of artifacts.
 + Audio

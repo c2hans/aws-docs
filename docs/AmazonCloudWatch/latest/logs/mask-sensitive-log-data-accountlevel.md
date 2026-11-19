@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/mask-sensit
 ---
 
 # Create an account-wide data protection policy
-<a name="mask-sensitive-log-data-accountlevel"></a>
 
 You can use the CloudWatch Logs console or AWS CLI commands to create a data protection policy to mask sensitive data for all log groups in your account. Doing so affects both current log groups and log groups that you create in the future.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AuthorizerDe
 ---
 
 # AuthorizerDescription
-<a name="API_AuthorizerDescription"></a>
 
 The authorizer description.
 

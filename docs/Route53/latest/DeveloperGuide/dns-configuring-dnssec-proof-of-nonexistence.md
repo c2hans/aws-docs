@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-config
 ---
 
 # DNSSEC proofs of nonexistence in Route 53
-<a name="dns-configuring-dnssec-proof-of-nonexistence"></a>
 
 **Note**
 Route 53 uses the following rule which might change. Any future changes will not reduce your zone's or Route 53's security posture.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Co
 ---
 
 # ComponentSummary
-<a name="API_ComponentSummary"></a>
 
 An object that returns information about a component summary.
 

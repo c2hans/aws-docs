@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # What is Performance Monitor?
-<a name="CloudWatch-PerformanceMonitor-What-is"></a>
 
 Performance Monitor is a feature of Amazon CloudWatch Network Monitoring. Performance Monitors monitor the traffic of the VPCs that you select to determine whether the AWS network is causing issues for your workloads. Using Performance Monitor, you can identify network degradation across paths between Availability Zones and across Regions. Performance Monitor uses an impact score, which maps to an impact level of None, Low, Medium, or High, to indicate how much a network path is experiencing unusual degradation relative to its normal behavior and the broader network.
 

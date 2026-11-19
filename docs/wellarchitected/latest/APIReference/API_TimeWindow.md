@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # TimeWindow
-<a name="API_TimeWindow"></a>
 
 An inclusive time window used by Organizational Report filters. Both bounds are optional, but at least one of from or to must be set when the structure is present.
 

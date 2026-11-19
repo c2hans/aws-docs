@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # Creating resource types using the CloudFormation CLI
-<a name="resource-types"></a>
 
 If you use third-party resources in your infrastructure and applications, you can now model and automate those resources by developing them as *resource types* for use within CloudFormation. A resource type includes a resource type specification and handlers that control API interactions with the underlying AWS or third-party services. These interactions include create, read, update, delete, and list (CRUDL) operations for resources. Use resource types to model and provision resources using CloudFormation.
 

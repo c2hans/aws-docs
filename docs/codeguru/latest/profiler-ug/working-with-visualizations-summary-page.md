@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/working-with
 ---
 
 # Understanding the summary page
-<a name="working-with-visualizations-summary-page"></a>
 
 The Amazon CodeGuru Profiler summary page displays the status of your profiling group and relevant metrics gathered during profiling. The metrics shown are for any data gathered in the last 12 hours, up to the beginning of the current UTC hour.
 

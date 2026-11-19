@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # AWS WAF and rate-based rules
-<a name="amazon-waf"></a>
 
 This solution’s default configuration doesn’t deploy an AWS WAF web application firewall (WAF) in front of the image endpoint or the API endpoints, and we strongly recommend adding one. The solution can’t attach a web ACL on your behalf to a CloudFront distribution or custom endpoint that you own or place in front of the solution, so this is a step to configure in your own account for proper protection.
 

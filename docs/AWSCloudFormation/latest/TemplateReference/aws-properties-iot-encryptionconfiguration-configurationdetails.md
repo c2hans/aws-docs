@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::EncryptionConfiguration ConfigurationDetails
-<a name="aws-properties-iot-encryptionconfiguration-configurationdetails"></a>
 
 The encryption configuration details that include the status information of the AWS Key Management Service (AWS KMS) key and the AWS KMS access role.
 

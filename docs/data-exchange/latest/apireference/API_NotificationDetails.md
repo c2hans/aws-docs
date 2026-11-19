@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_No
 ---
 
 # NotificationDetails
-<a name="API_NotificationDetails"></a>
 
 Extra details specific to this notification.
 

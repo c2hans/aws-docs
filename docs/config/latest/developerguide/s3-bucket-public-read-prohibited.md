@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-p
 ---
 
 # s3-bucket-public-read-prohibited
-<a name="s3-bucket-public-read-prohibited"></a>
 
 Checks if your Amazon S3 buckets do not allow public read access. The rule checks the Block Public Access settings, the bucket policy, and the bucket access control list (ACL).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/schema-reference/v1-r
 ---
 
 # Search Schemas
-<a name="v1-registries-name-registryname-schemas-search"></a>
 
 ## URI
 <a name="v1-registries-name-registryname-schemas-search-url"></a>

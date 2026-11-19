@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-conf
 ---
 
 # Examples of S3 Lifecycle configurations
-<a name="lifecycle-configuration-examples"></a>
 
 This section provides examples of S3 Lifecycle configuration. Each example shows how you can specify the XML in each of the example scenarios.
 

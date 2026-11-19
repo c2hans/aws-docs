@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ListDocumentVersions
-<a name="API_ListDocumentVersions"></a>
 
 List all versions for a document.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # ListBrandProfileAttributes
-<a name="API_ListBrandProfileAttributes"></a>
 
 Retrieves a paginated list of the attributes for a brand profile.
 

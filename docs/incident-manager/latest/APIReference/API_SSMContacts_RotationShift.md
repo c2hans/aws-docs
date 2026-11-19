@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # RotationShift
-<a name="API_SSMContacts_RotationShift"></a>
 
 Information about a shift that belongs to an on-call rotation.
 

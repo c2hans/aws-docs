@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/aws-support-conso
 ---
 
 # About the Support Center Console API
-<a name="aws-support-console"></a>
 
 The Support Center Console API enhances your experience with the Support Center Console. Examples of the functionality provided by the Support Center Console API include the following:
 + The ability for you to create and update a draft of your support case

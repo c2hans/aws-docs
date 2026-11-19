@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Delet
 ---
 
 # DeleteNetworkProfile
-<a name="API_DeleteNetworkProfile"></a>
 
 Deletes a network profile.
 

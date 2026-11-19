@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ErrorInfo.ht
 ---
 
 # ErrorInfo
-<a name="API_ErrorInfo"></a>
 
 Error information.
 

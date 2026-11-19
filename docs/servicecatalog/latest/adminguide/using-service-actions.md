@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/using-s
 ---
 
 # AWS Service Catalog Service Actions
-<a name="using-service-actions"></a>
 
 **Note**
 AWS Service Catalog does not support service actions for Terraform Open Source or Terraform Cloud products.

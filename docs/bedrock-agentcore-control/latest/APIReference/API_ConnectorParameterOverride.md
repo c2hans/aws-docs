@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ConnectorParameterOverride
-<a name="API_ConnectorParameterOverride"></a>
 
 Specifies a parameter override for a connector tool, allowing you to control parameter visibility and descriptions.
 

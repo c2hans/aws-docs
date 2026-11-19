@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSPERF11-BP02 Monitor data usage patterns and automatically adjust storage tiers for cost optimization
-<a name="lsperf11-bp02"></a>
 
  Track how often different datasets are accessed to make smart decisions about where to store them. Set up automatic monitoring that identifies when data usage patterns change and triggers moves to appropriate storage tiers.
 

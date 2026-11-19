@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_StartApprova
 ---
 
 # StartApprovalTeamBaseline
-<a name="API_StartApprovalTeamBaseline"></a>
 
 Starts a baseline session for specified approvers on an `ACTIVE` approval team.
 

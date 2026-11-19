@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonVPCFullAccess
-<a name="AmazonVPCFullAccess"></a>
 
 **Description**: Provides full access to Amazon VPC via the AWS Management Console.
 

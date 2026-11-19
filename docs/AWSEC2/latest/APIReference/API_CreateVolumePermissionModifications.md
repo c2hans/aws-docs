@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVol
 ---
 
 # CreateVolumePermissionModifications
-<a name="API_CreateVolumePermissionModifications"></a>
 
 Describes modifications to the list of create volume permissions for a volume.
 

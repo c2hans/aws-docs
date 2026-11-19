@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Filter.
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 Used to streamline results of a search based on the property being filtered.
 

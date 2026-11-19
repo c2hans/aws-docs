@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/distillation-pr
 ---
 
 # Prepare your training datasets for distillation
-<a name="distillation-prepare-datasets"></a>
 
 Before you can begin a model customization job, you need to minimally prepare a training dataset. To prepare input datasets for your custom model, you create `.jsonl` files, each line of which is a JSON object corresponding to a record. The files you create must conform to the format for model distillation and model that you choose. The records in it must also conform to size requirements.
 

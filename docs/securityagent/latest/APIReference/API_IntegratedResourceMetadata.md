@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_In
 ---
 
 # IntegratedResourceMetadata
-<a name="API_IntegratedResourceMetadata"></a>
 
 Contains metadata about an integrated resource. This is a union type that contains provider-specific metadata.
 

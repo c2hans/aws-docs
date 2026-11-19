@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # 10DLC brand vetting form
-<a name="registrations-10dlc-vetting"></a>
 
 If your company's registration is successful and you want to register a 10DLC campaign with higher throughput capabilities, then you must vet your company registration.
 

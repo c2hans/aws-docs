@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/front-reading-from-entiti
 ---
 
 # Reading from Front entities
-<a name="front-reading-from-entities"></a>
 
 **Prerequisites**
 

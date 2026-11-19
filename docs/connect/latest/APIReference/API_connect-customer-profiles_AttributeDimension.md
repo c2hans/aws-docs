@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # AttributeDimension
-<a name="API_connect-customer-profiles_AttributeDimension"></a>
 
 Object that segments on various Customer Profile's fields.
 

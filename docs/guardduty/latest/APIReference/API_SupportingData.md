@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Suppor
 ---
 
 # SupportingData
-<a name="API_SupportingData"></a>
 
 Contains the structured details for an investigation record. Only the member that matches the record type is set.
 

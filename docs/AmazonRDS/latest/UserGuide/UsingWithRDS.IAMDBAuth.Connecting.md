@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.
 ---
 
 # Connecting to your DB instance using IAM authentication
-<a name="UsingWithRDS.IAMDBAuth.Connecting"></a>
 
 With IAM database authentication, you use an authentication token when you connect to your DB instance. An *authentication token* is a string of characters that you use instead of a password. After you generate an authentication token, it's valid for 15 minutes before it expires. If you try to connect using an expired token, the connection request is denied.
 

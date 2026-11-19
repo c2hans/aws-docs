@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/vpc-endpoints-
 ---
 
 # Using Amazon Keyspaces CDC streams with interface VPC endpoints
-<a name="vpc-endpoints-streams"></a>
 
 Interface VPC endpoints enable private communication between your virtual private cloud (VPC) running in Amazon VPC and Amazon Keyspaces. Interface VPC endpoints are powered by AWS PrivateLink, which is an AWS service that enables private communication between VPCs and AWS services.
 

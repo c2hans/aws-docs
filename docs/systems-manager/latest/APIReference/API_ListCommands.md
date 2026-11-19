@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ListCommands
-<a name="API_ListCommands"></a>
 
 Lists the commands requested by users of the AWS account.
 

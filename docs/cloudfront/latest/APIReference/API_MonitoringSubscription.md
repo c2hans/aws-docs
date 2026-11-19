@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Monit
 ---
 
 # MonitoringSubscription
-<a name="API_MonitoringSubscription"></a>
 
 A monitoring subscription. This structure contains information about whether additional CloudWatch metrics are enabled for a given CloudFront distribution.
 

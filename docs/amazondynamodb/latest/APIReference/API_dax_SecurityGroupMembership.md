@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # SecurityGroupMembership
-<a name="API_dax_SecurityGroupMembership"></a>
 
 An individual VPC security group and its status.
 

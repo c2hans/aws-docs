@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/dedicated-num
 ---
 
 # Denmark dedicated number registration in AWS End User Messaging SMS
-<a name="dedicated-number-denmark"></a>
 
 Registering a dedicated number is the first step in creating an origination identity.
 

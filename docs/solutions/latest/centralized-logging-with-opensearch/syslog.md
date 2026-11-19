@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Syslog
-<a name="syslog"></a>
 
 Centralized Logging with OpenSearch collects syslog logs through UDP or TCP protocol.
 

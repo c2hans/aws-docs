@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNet
 ---
 
 # DeleteNetworkingFlexCostAllocationPolicies
-<a name="API_DeleteNetworkingFlexCostAllocationPolicies"></a>
 
 Deletes one or more flex cost allocation policies.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-create-node-ro
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Amazon EKS Auto Mode node IAM role
-<a name="auto-create-node-role"></a>
 
 **Note**
 You can’t use the same role that is used to create any clusters.

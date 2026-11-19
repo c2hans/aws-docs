@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListMo
 ---
 
 # ListModelQualityJobDefinitions
-<a name="API_ListModelQualityJobDefinitions"></a>
 
 Gets a list of model quality monitoring job definitions in your account.
 

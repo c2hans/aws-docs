@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-a
 ---
 
 # FAQ
-<a name="faq"></a>
 
 **Q. **Why focus on the AWS Provider?
 

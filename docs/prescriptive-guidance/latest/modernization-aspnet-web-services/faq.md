@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # FAQ
-<a name="faq"></a>
 
 This section provides answers to commonly raised questions about modernizing legacy ASP.NET web services.
 

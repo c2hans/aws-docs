@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/cng-node-lifecycle-
 ---
 
 # Configure node lifecycle actions in AWS PCS
-<a name="cng-node-lifecycle-actions-configure"></a>
 
 You define node lifecycle actions in your compute node group configuration. This topic describes how to define a script, control whether it re-runs on reboot, store it, pass it arguments, handle failures, cache it, validate its integrity, and read its logs.
 

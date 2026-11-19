@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonWorkSpacesSecureBrowserReadOnly
-<a name="AmazonWorkSpacesSecureBrowserReadOnly"></a>
 
 **Description**: Provides read-only access to Amazon WorkSpaces Secure Browser and its dependencies through the AWS Management Console, SDK, and CLI.
 

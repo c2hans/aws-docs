@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/manua
 ---
 
 # Uploading data to an Amazon S3 bucket
-<a name="manually-uploading-data"></a>
 
 **Note**
 Follow this procedure for the SAP ERP Component Central (ECC) connector, and the EDI connector to manually ingest data in the S3 bucket associated with the AWS Supply Chain instance. If you're using the Amazon S3 API to upload data, see [Connecting to SAP ECC 6.0](connecting-sap-ecc.md), or [Connecting to an EDI](connecting-edi.md).

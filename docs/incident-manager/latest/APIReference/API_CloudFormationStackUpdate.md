@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # CloudFormationStackUpdate
-<a name="API_CloudFormationStackUpdate"></a>
 
 Information about an AWS CloudFormation stack creation or update that occurred around the time of an incident and could be a potential cause of the incident.
 

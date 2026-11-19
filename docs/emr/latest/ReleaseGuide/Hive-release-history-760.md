@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ---
 
 # Amazon EMR 7.6.0 - Hive release notes
-<a name="Hive-release-history-760"></a>
 
 ## Amazon EMR 7.6.0 - Hive changes
 <a name="Hive-release-history-changes-760"></a>

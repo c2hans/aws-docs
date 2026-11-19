@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Alert
 ---
 
 # AlertManagerDefinitionStatus
-<a name="API_AlertManagerDefinitionStatus"></a>
 
 The status of the alert manager.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Conforman
 ---
 
 # ConformancePackEvaluationResult
-<a name="API_ConformancePackEvaluationResult"></a>
 
 The details of a conformance pack evaluation. Provides AWS Config rule and AWS resource type that was evaluated, the compliance of the conformance pack, related time stamps, and supplementary information.
 

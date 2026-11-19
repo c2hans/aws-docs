@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ListMessages
-<a name="API_amazon-q-connect_ListMessages"></a>
 
 Lists messages on an Amazon Q in Connect session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteFe
 ---
 
 # RouteFerryOverviewSummary
-<a name="API_RouteFerryOverviewSummary"></a>
 
 Summary including duration and distance for the entire leg.
 

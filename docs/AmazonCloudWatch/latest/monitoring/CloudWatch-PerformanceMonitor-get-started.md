@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Get started with Performance Monitor
-<a name="CloudWatch-PerformanceMonitor-get-started"></a>
 
 To help you get started, this section provides a high-level overview of the steps to configure and gain insights with Performance Monitor.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AllowedValue
 ---
 
 # AllowedValuesConstraint
-<a name="API_AllowedValuesConstraint"></a>
 
 A constraint specifying the allowed values for a parameter.
 

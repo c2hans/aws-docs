@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_GetMem
 ---
 
 # GetMembers
-<a name="API_GetMembers"></a>
 
 Returns the membership details for specified member accounts for a behavior graph.
 

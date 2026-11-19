@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/manage-sending-quotas-moni
 ---
 
 # Monitoring your Amazon SES sending quotas
-<a name="manage-sending-quotas-monitor"></a>
 
 You can monitor your sending quotas by using the Amazon SES console or through the Amazon SES API, whether by calling the Query (HTTPS) interface directly or indirectly through an [AWS SDK](https://aws.amazon.com/tools/), the [AWS Command Line Interface](https://aws.amazon.com/cli/), or the [AWS Tools for Windows PowerShell](https://aws.amazon.com/powershell/).
 

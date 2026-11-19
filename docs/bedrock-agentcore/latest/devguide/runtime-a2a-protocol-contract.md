@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # A2A protocol contract
-<a name="runtime-a2a-protocol-contract"></a>
 
 The A2A protocol contract defines the requirements for implementing agent-to-agent communication in Amazon Bedrock AgentCore Runtime. This contract specifies the technical requirements, endpoints, and communication patterns that your A2A server must implement.
 

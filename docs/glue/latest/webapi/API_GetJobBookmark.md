@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetJobBookmark.ht
 ---
 
 # GetJobBookmark
-<a name="API_GetJobBookmark"></a>
 
 Returns information on a job bookmark entry.
 

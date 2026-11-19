@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # UpdateComponent
-<a name="API_UpdateComponent"></a>
 
 Updates an existing component.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/getting-s
 ---
 
 # Install the Connect Customer SDK for developing applications for Connect Customer agent workspace
-<a name="getting-started-install-sdk"></a>
 
 To develop applications for the Connect Customer agent workspace you must first install the Connect Customer SDK.
 

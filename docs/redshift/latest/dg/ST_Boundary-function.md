@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/ST_Boundary-function.
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # ST\_Boundary
-<a name="ST_Boundary-function"></a>
 
 ST\_Boundary returns the boundary of an input geometry as follows:
 + If the input geometry is empty (that is, it contains no points) it is returned as is.

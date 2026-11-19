@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/prereqs-tutori
 ---
 
 # Set up the prerequisites for a simple IDT test suite
-<a name="prereqs-tutorial-custom"></a>
 
 To complete this tutorial, you need the following:
 +

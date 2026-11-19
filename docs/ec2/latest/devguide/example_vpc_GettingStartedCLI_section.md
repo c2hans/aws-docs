@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_vpc_GettingS
 ---
 
 # Getting started with virtual private networks
-<a name="example_vpc_GettingStartedCLI_section"></a>
 
 The following code example shows how to:
 + Create a VPC

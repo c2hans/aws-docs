@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Regist
 ---
 
 # RegisterDBProxyTargets
-<a name="API_RegisterDBProxyTargets"></a>
 
 Associate one or more `DBProxyTarget` data structures with a `DBProxyTargetGroup`.
 

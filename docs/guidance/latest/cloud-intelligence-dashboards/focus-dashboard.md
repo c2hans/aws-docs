@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # FOCUS Dashboard
-<a name="focus-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

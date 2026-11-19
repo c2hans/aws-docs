@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Gateway
 ---
 
 # GatewayRouteTarget
-<a name="API_GatewayRouteTarget"></a>
 
 An object that represents a gateway route target.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UntagResource
-<a name="API_AWSBCMPricingCalculator_UntagResource"></a>
 
  Removes one or more tags from a specified resource.
 

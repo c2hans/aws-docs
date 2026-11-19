@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/add-scope-ipam.html
 ---
 
 # Create additional scopes
-<a name="add-scope-ipam"></a>
 
 Follow the steps in this section to create an additional scope.
 

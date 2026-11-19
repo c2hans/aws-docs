@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/discover-devices-
 ---
 
 # Implement the AWS.DiscoverDevices operation
-<a name="discover-devices-op"></a>
 
 Device discovery aligns the list of physical devices owned by the end user with the digital representations of those end user devices maintained in Managed Integrations for AWS IoT Device Management. It is performed by an AWS customer on devices owned by the end user. For OAuth 2.0, this occurs after account linking is completed. For General Authorization, this can occur after the account association is created.
 

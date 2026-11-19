@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_ListIngestionDe
 ---
 
 # ListIngestionDestinations
-<a name="API_ListIngestionDestinations"></a>
 
 Returns a list of all ingestion destinations configured for an ingestion.
 

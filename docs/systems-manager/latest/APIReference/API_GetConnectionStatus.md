@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetConnectionStatus
-<a name="API_GetConnectionStatus"></a>
 
 Retrieves the Session Manager connection status for a managed node to determine whether it is running and ready to receive Session Manager connections.
 

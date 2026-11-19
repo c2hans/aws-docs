@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/wor
 ---
 
 # Building API operations
-<a name="workbench.querybuilder.operationbuilder.api"></a>
 
 To use NoSQL Workbench to build DynamoDB CRUD APIs, select **Operation builder** from the left of the NoSQL Workbench user interface.
 

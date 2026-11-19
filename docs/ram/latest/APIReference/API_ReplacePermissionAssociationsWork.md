@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ReplacePermi
 ---
 
 # ReplacePermissionAssociationsWork
-<a name="API_ReplacePermissionAssociationsWork"></a>
 
 A structure that represents the background work that AWS RAM performs when you invoke the [ReplacePermissionAssociations](API_ReplacePermissionAssociations.md) operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-goog
 ---
 
 # Set up service account authentication for Google Drive
-<a name="kb-managed-googledrive-service-account-setup"></a>
 
 Service account authentication (`SERVICE_ACCOUNT`) is the recommended method for a Google Drive data source. A Google Cloud service account authenticates with a private key, then impersonates a Google Workspace admin user to crawl Drive content for any user in your domain. This is the only method that supports document-level access control (ACLs).
 

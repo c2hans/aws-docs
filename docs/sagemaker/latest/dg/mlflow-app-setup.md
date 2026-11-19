@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-app-setup.htm
 ---
 
 # MLflow App Setup
-<a name="mlflow-app-setup"></a>
 
 An [MLflow App](https://mlflow.org/docs/latest/tracking.html#mlflow-tracking-server-optional) is a stand-alone HTTP server that serves multiple REST API endpoints for tracking runs and experiments. An MLflow App is required to begin tracking your machine learning (ML) experiments with SageMaker AI and MLflow. You can create an MLflow App through the Studio UI, or through the AWS CLI for more granular security customization.
 

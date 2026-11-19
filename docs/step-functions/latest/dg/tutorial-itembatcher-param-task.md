@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-itemba
 ---
 
 # Processing batch data with a Lambda function in Step Functions
-<a name="tutorial-itembatcher-param-task"></a>
 
 In this tutorial, you use the *Distributed Map state*'s [ItemBatcher (Map)](input-output-itembatcher.md) field to process an entire batch of items inside a Lambda function. Each batch contains a maximum of three items. The *Distributed Map state* starts four child workflow executions, where each execution processes three items, while one execution processes a single item. Each child workflow execution invokes a Lambda function that iterates over the individual items present in the batch.
 

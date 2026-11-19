@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-custom-m
 ---
 
 # Multi-account access roles for AWS Global Networks for Transit Gateways
-<a name="nm-custom-multi-role"></a>
 
 AWS Global Networks for Transit Gateways uses CloudFormation StackSets to deploy and manage the following two custom IAM roles in AWS Organizations member accounts to support multi-account permissions. These two roles are deployed to every member account in the organization when `AWSServiceAccess` is enabled (trusted access). For more information about multi-account, see [Manage multiple accounts in global networks using AWS Organizations](nm-multi-account.md#tgw-nm-multi).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_StopR
 ---
 
 # StopRemoteAccessSession
-<a name="API_StopRemoteAccessSession"></a>
 
 Ends a specified remote access session.
 

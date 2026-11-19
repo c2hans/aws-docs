@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # CheckoutBorrowLicense
-<a name="API_CheckoutBorrowLicense"></a>
 
 Checks out the specified license for offline use.
 

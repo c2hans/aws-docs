@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Cr
 ---
 
 # CreateAgentActionGroup
-<a name="API_agent_CreateAgentActionGroup"></a>
 
 Creates an action group for an agent. An action group represents the actions that an agent can carry out for the customer by defining the APIs that an agent can call and the logic for calling them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Regi
 ---
 
 # RegisterTargets
-<a name="API_RegisterTargets"></a>
 
 Registers the targets with the target group. If it's a Lambda target, you can only have one target in a target group.
 

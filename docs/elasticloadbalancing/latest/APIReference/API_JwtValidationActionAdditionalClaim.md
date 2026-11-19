@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # JwtValidationActionAdditionalClaim
-<a name="API_JwtValidationActionAdditionalClaim"></a>
 
 Information about an additional claim to validate.
 

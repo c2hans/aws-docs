@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_ListTagsForRes
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Get a list of [tags](https://docs.aws.amazon.com/personalize/latest/dg/tagging-resources.html) attached to a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/assistant/latest/userguide/datadog-plugi
 ---
 
 # Configuring the AWS assistant Datadog plugin
-<a name="datadog-plugin"></a>
 
 Datadog is a monitoring and security platform that provides infrastructure, application, and network monitoring and analytics. If you use Datadog to monitor your AWS applications, you can use the Datadog plugin in the AWS assistant to access monitoring information without leaving the AWS Management Console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/thumbnails.html
 ---
 
 # Viewing input thumbnails
-<a name="thumbnails"></a>
 
 MediaLive can generate thumbnails for the video from inputs in your channels. The thumbnail provides a visual verification that the content contains video. You can view the thumbnails for each channel on the MediaLive console. You can also use one of the AWS APIs to work with thumbnails programmatically.
 

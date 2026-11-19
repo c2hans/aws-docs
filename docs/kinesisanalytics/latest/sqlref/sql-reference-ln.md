@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # LN
-<a name="sql-reference-ln"></a>
 
 ```
 LN ( <number-expression> )

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 ---
 
 # Bundling FHIR resources
-<a name="managing-fhir-resources-bundle"></a>
 
 A FHIR `Bundle` is a container for a collection of FHIR resources in AWS HealthLake. AWS HealthLake supports two types of bundles with different processing behaviors.
 

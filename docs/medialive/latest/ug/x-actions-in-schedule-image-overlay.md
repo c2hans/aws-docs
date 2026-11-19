@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/x-actions-in-schedul
 ---
 
 # How image overlay actions work
-<a name="x-actions-in-schedule-image-overlay"></a>
 
 You can set up an action to insert and remove an image overlay on the video:
 + The activate action inserts an image overlay and activates it so that it is superimposed on the underlying video. If the image overlay information includes a duration, then at the appropriate time the image overlay is removed.

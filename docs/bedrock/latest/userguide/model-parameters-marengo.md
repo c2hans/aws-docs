@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # TwelveLabs Marengo Embed 2.7
-<a name="model-parameters-marengo"></a>
 
 The TwelveLabs Marengo Embed 2.7 model generates embeddings from video, text, audio, or image inputs. These embeddings can be used for similarity search, clustering, and other machine learning tasks.
 + Provider — TwelveLabs

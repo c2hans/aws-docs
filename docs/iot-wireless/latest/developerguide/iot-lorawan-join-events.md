@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-l
 ---
 
 # Enable notifications for LoRaWAN join events
-<a name="iot-lorawan-join-events"></a>
 
 AWS IoT Core for LoRaWAN can publish messages to notify you of join events for LoRaWAN devices that you onboard to AWS IoT. Join events notify you when a join or rejoin request of type 0 or type 2 is received, and the device has joined with AWS IoT Core for LoRaWAN.
 

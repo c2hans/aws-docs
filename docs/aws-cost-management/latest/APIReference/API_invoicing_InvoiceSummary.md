@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # InvoiceSummary
-<a name="API_invoicing_InvoiceSummary"></a>
 
  The invoice that the API retrieved.
 

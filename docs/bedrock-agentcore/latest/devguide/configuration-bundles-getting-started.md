@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/config
 ---
 
 # Getting started with configuration bundles
-<a name="configuration-bundles-getting-started"></a>
 
 This walkthrough takes you from zero to a versioned configuration bundle that your agent reads at runtime. You will create a bundle, update it to produce a new version, read the configuration, and view version history.
 

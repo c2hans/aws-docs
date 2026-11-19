@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Up
 ---
 
 # UpdateAccountSettings
-<a name="API_UpdateAccountSettings"></a>
 
 Updates the value of the `DeletionProtection` parameter.
 

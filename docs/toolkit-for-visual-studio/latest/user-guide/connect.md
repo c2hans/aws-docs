@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Connecting to AWS
-<a name="connect"></a>
 
 The following sections describe how to get started with the AWS Toolkit for Visual Studio with Amazon Q. The first time you launch Visual Studio after installing the extension, a **Getting Started** displays in the editor window. From the **Getting Started** tab you can complete the following actions.
 + Enable or disable Amazon Q and the AWS Toolkit.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # Testing, evaluation, and validation frameworks
-<a name="agentops06"></a>
 
 Systematic testing and evaluation processes confirm agent quality, reliability, and alignment with business objectives through both traditional software testing and AI-specific quality assessment. Without a framework that covers every stage of the agent lifecycle, quality regressions from prompt changes, tool updates, or model updates reach users before anyone notices.
 

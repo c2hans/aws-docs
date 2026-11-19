@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_LineC
 ---
 
 # LineChartAggregatedFieldWells
-<a name="API_LineChartAggregatedFieldWells"></a>
 
 The field well configuration of a line chart.
 

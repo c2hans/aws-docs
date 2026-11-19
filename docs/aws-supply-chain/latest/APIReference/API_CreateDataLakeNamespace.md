@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # CreateDataLakeNamespace
-<a name="API_CreateDataLakeNamespace"></a>
 
 Enables you to programmatically create an AWS Supply Chain data lake namespace. Developers can create the namespaces for a given instance ID.
 

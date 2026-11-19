@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service_
 ---
 
 # Amazon ECS service definition parameters
-<a name="service_definition_parameters"></a>
 
 A service definition defines how to run your Amazon ECS service. The following parameters can be specified in a service definition.
 

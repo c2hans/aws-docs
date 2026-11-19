@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 If you're ready to migrate your on-premises PostgreSQL database to Amazon EC2, then we recommend that you consider the following next steps:
 

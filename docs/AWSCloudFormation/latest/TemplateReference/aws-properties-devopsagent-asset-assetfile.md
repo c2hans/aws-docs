@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Asset AssetFile
-<a name="aws-properties-devopsagent-asset-assetfile"></a>
 
 A single file within an asset bundle. `Path` is the key used to match files on update; the file contents are write-only and are not returned by read operations.
 

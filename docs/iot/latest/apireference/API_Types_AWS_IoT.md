@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Types_AWS_Io
 ---
 
 # AWS IoT
-<a name="API_Types_AWS_IoT"></a>
 
 The following data types are supported by AWS IoT:
 +  [AbortConfig](API_AbortConfig.md)

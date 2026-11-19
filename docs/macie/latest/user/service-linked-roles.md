@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/service-linked-roles.h
 ---
 
 # Using service-linked roles for Macie
-<a name="service-linked-roles"></a>
 
 Amazon Macie uses an AWS Identity and Access Management (IAM) [service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html#id_roles_terms-and-concepts) named `AWSServiceRoleForAmazonMacie`. This service-linked role is an IAM role that's linked directly to Macie. It's predefined by Macie and it includes all the permissions that Macie requires to call other AWS services and monitor AWS resources on your behalf. Macie uses this service-linked role in all the AWS Regions where Macie is available.
 

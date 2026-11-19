@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Alarm.h
 ---
 
 # Alarm
-<a name="API_Alarm"></a>
 
 Describes an alarm.
 

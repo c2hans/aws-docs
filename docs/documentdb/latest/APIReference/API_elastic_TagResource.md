@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # TagResource
-<a name="API_elastic_TagResource"></a>
 
 Adds metadata tags to an elastic cluster resource
 

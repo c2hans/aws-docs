@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/web-acl-proces
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Setting rule priority
-<a name="web-acl-processing-order"></a>
 
 This section explains how AWS WAF uses numeric priority settings to set the evaluation order for rules.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodePipeline::Pipeline GitPullRequestFilter
-<a name="aws-properties-codepipeline-pipeline-gitpullrequestfilter"></a>
 
 The event criteria for the pull request trigger configuration, such as the lists of branches or file paths to include and exclude.
 

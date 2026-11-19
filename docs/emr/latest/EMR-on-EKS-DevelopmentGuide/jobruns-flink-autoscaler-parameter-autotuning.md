@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Autoscaler parameter autotuning
-<a name="jobruns-flink-autoscaler-parameter-autotuning"></a>
 
 This section describes auto-tuning behavior for various Amazon EMR versions. It also goes into detail regarding different auto-scaling configurations.
 

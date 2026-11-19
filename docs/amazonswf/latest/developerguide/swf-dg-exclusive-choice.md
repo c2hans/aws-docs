@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dg-e
 ---
 
 # Implementing exclusive choice with Amazon SWF
-<a name="swf-dg-exclusive-choice"></a>
 
 In some scenarios, you might want to schedule a different set of activities based on the outcome of a previous activity. With the exclusive choice pattern, you can create flexible workflows that meet the complex requirements of your application.
 

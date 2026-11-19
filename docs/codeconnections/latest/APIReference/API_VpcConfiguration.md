@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # VpcConfiguration
-<a name="API_VpcConfiguration"></a>
 
 The VPC configuration provisioned for the host.
 

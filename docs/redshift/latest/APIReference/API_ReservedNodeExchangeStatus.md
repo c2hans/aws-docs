@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Reserve
 ---
 
 # ReservedNodeExchangeStatus
-<a name="API_ReservedNodeExchangeStatus"></a>
 
 Reserved-node status details, such as the source reserved-node identifier, the target reserved-node identifier, the node type, the node count, and other details.
 

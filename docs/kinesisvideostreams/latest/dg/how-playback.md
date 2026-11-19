@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/how-playba
 ---
 
 # Kinesis Video Streams playback
-<a name="how-playback"></a>
 
 You can view a Kinesis video stream using the following methods:
 + **GetMedia** – You can use the `GetMedia` API to build your own applications to process Kinesis Video Streams. `GetMedia` is a real-time API with low latency. To create a player that uses `GetMedia`, you must build it yourself. For information about how to develop an application that displays a Kinesis video stream using `GetMedia`, see [Stream using parser library](parser-library.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/NULLIF_
 ---
 
 # NULLIF function
-<a name="NULLIF_function"></a>
 
 Compares two arguments and returns null if the arguments are equal. If they aren't equal, the first argument is returned.
 

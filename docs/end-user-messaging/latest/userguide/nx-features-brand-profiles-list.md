@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # List brand profiles
-<a name="nx-features-brand-profiles-list"></a>
 
 List all of the brand profiles in your account and AWS Region. Each entry includes the profile name, ID, status, and creation date.
 

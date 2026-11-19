@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Generate
 ---
 
 # GeneratedManifestEncryption
-<a name="API_control_GeneratedManifestEncryption"></a>
 
 The encryption configuration to use when storing the generated manifest.
 

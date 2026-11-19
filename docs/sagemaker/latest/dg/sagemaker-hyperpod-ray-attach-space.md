@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Attaching a Ray cluster to a space
-<a name="sagemaker-hyperpod-ray-attach-space"></a>
 
 Attaching a Ray cluster to a space points your IDE or notebook session at that cluster, so `ray.init()` connects to it. Inside the space, the cluster is reachable on port 8265 for interactive development, the same port a local Ray cluster uses. You get the experience of running Ray on a laptop, with cloud-scale compute behind it.
 

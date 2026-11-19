@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/secretsmanager-get
 ---
 
 # AWS Secrets Manager Get Secret task
-<a name="secretsmanager-getsecret"></a>
 
 ## Synopsis
 <a name="synopsis"></a>

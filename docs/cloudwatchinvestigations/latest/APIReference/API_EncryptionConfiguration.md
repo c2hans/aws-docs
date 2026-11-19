@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchinvestigations/latest/APIRefer
 ---
 
 # EncryptionConfiguration
-<a name="API_EncryptionConfiguration"></a>
 
 Use this structure to specify a customer managed AWS KMS key to use to encrypt investigation data.
 

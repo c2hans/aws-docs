@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchD
 ---
 
 # BatchDeleteClusterNodes
-<a name="API_BatchDeleteClusterNodes"></a>
 
 Deletes specific nodes within a SageMaker HyperPod cluster. `BatchDeleteClusterNodes` accepts a cluster name and a list of node IDs.
 

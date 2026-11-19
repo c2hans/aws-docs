@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/APIReference/API_DescribeE
 ---
 
 # DescribeEnvironments
-<a name="API_DescribeEnvironments"></a>
 
 Gets information about AWS Cloud9 development environments.
 

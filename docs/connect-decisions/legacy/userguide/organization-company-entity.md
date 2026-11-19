@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/organ
 ---
 
 # company
-<a name="organization-company-entity"></a>
 
 **Primary key (PK)**
 

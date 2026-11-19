@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Disassoci
 ---
 
 # DisassociateResourceTypes
-<a name="API_DisassociateResourceTypes"></a>
 
 Removes all resource types specified in the `ResourceTypes` list from the [RecordingGroup](https://docs.aws.amazon.com/config/latest/APIReference/API_RecordingGroup.html) of configuration recorder and excludes these resource types when recording.
 

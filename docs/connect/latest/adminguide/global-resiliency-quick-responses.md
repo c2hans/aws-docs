@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/global-resilie
 ---
 
 # Global Resiliency for quick responses
-<a name="global-resiliency-quick-responses"></a>
 
 Connect Customer Global Resiliency mirrors your quick responses, and the knowledge base that stores them, across your linked AWS Regions. Agents can search for and use the same quick responses in either Region. Quick responses and their knowledge base keep the same IDs in both Regions.
 

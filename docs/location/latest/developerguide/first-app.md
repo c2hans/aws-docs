@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/first-app
 ---
 
 # Create your first Amazon Location Maps and Places application
-<a name="first-app"></a>
 
 In this section, you will create your first application with Maps and Places.
 

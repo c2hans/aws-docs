@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_CreateP
 ---
 
 # CreateProfile
-<a name="API_CreateProfile"></a>
 
 Creates the local or partner profile to use for AS2 transfers.
 

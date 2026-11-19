@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/dynamodb-typed-v
 ---
 
 # Type system (request mapping)
-<a name="dynamodb-typed-values-request"></a>
 
 When using the AWS AppSync DynamoDB function to call your DynamoDB tables, you must specify your data using the DynamoDB type notation. For more information about DynamoDB data types, see the DynamoDB [Data type descriptors](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.LowLevelAPI.html#Programming.LowLevelAPI.DataTypeDescriptors) and [Data types](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes) documentation.
 

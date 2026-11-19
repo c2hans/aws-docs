@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadv
 ---
 
 # UntagResource
-<a name="API_iotdeviceadvisor_UntagResource"></a>
 
 Removes tags from an IoT Device Advisor resource.
 

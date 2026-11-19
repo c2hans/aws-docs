@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Create multiple connectors from a single source in AWS SAM
-<a name="connector-usage-single-source"></a>
 
 Within a source resource, you can define multiple connectors, each with a different destination resource.
 

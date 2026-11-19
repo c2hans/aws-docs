@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Templ
 ---
 
 # TemplateVersionSummary
-<a name="API_TemplateVersionSummary"></a>
 
 The template version.
 

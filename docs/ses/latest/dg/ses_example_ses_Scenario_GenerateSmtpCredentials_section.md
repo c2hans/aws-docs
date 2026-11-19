@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_ses_Scenario_G
 ---
 
 # Generate credentials to connect to an Amazon SES SMTP endpoint
-<a name="ses_example_ses_Scenario_GenerateSmtpCredentials_section"></a>
 
 The following code example shows how to generate credentials to connect to an Amazon SES SMTP endpoint.
 

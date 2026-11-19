@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTr
 ---
 
 # RouteTransitAgency
-<a name="API_RouteTransitAgency"></a>
 
 Details about the transit agency.
 

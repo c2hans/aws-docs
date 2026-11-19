@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserNoti
 ---
 
 # UserNotificationSummary
-<a name="API_UserNotificationSummary"></a>
 
 Summary information about a notification for a specific user, including the user's read status.
 

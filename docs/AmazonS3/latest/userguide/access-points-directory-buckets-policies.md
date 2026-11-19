@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 ---
 
 # Configuring IAM policies for using access points for directory buckets
-<a name="access-points-directory-buckets-policies"></a>
 
 Access points support AWS Identity and Access Management (IAM) resource policies that allow you to control the use of the access point by resource, user, or other conditions. For an application or user to access objects through an access point, both the access point and the underlying bucket policy must permit the request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/APIReference/A
 ---
 
 # Appendix
-<a name="Appendix"></a>
 
 **Topics**
 + [DeleteAccountColor (Deprecated)](API_DeleteAccountColor.md)

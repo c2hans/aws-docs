@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_P
 ---
 
 # PredictAppDefinition
-<a name="API_qapps_PredictAppDefinition"></a>
 
 The definition of an Amazon Q App generated based on input such as a conversation or problem statement.
 

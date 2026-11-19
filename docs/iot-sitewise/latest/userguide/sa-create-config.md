@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sa-create-
 ---
 
 # Create a gateway for Siemens Industrial Edge
-<a name="sa-create-config"></a>
 
 After you have the proper Siemens accounts and IEM instances, you can create a SiteWise Edge gateway of deployment type **Siemens Industrial Edge device**.
 

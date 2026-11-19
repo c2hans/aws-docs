@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/a
 ---
 
 # HTTP responses
-<a name="api-making-requests-response"></a>
 
 All Network Firewall API actions include JSON-formatted data in the response.
 

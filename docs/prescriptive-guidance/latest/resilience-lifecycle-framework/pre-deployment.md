@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Pre-deployment activities
-<a name="pre-deployment"></a>
 
 ## Environment design
 <a name="environment-design"></a>

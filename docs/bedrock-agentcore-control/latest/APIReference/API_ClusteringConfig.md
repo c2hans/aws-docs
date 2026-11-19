@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ClusteringConfig
-<a name="API_ClusteringConfig"></a>
 
 Configuration for periodic batch evaluation clustering, specifying how often clustering jobs run.
 

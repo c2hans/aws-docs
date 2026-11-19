@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteIAMPolicyAssignment
-<a name="API_DeleteIAMPolicyAssignment"></a>
 
 Deletes an existing IAM policy assignment.
 

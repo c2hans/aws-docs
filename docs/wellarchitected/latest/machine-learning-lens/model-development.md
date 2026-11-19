@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Model development
-<a name="model-development"></a>
 
  Model development consists of model building, training, tuning, and evaluation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ReleaseP
 ---
 
 # ReleasePhoneNumber
-<a name="API_ReleasePhoneNumber"></a>
 
 Releases a phone number previously claimed to an Connect Customer instance or traffic distribution group. You can call this API only in the AWS Region where the number was claimed.
 

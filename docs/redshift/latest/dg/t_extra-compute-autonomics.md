@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/t_extra-compute-auton
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Allocating extra compute resources for automatic database optimization
-<a name="t_extra-compute-autonomics"></a>
 
 Autonomics improve query performances on your cluster and help manage storage costs and optimization. You can choose to allocate extra compute resources to make sure that autonomics features run consistently, even during times of high traffic, to benefit from the optimization. Note that autonomics run using these extra resources are billable. For more information on billing for autonomics, see [Billing for autonomics operations](t_autonomics-billing.md) and [Amazon Redshift pricing](https://aws.amazon.com/redshift/pricing/).
 

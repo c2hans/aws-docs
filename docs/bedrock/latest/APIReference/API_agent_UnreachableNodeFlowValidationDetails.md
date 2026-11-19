@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Un
 ---
 
 # UnreachableNodeFlowValidationDetails
-<a name="API_agent_UnreachableNodeFlowValidationDetails"></a>
 
 Details about an unreachable node in the flow. A node is unreachable when there are no paths to it from any starting node.
 

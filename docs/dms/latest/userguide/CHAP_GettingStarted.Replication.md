@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_GettingStarted
 ---
 
 # Set up replication for AWS Database Migration Service
-<a name="CHAP_GettingStarted.Replication"></a>
 
 In this topic, you set up replication between the source and target databases.
 

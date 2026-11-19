@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_La
 ---
 
 # LambdaParameters
-<a name="API_LambdaParameters"></a>
 
 Lambda invocation parameters for subscribers. Values are forwarded to the Lambda Invoke API. Every string member accepts a literal or a JSONata expression (e.g. "{% $events.Data.qualifier %}").
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PutResourcePolicy
 ---
 
 # PutResourcePolicy
-<a name="API_PutResourcePolicy"></a>
 
 Sets the Data Catalog resource policy for access control.
 

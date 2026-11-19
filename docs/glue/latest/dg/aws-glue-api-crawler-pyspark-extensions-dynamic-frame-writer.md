@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 ---
 
 # DynamicFrameWriter class
-<a name="aws-glue-api-crawler-pyspark-extensions-dynamic-frame-writer"></a>
 
 ##  methods
 <a name="aws-glue-api-crawler-pyspark-extensions-dynamic-frame-writer-_methods"></a>

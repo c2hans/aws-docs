@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/srt-in-out.html
 ---
 
 # Working with SRT
-<a name="srt-in-out"></a>
 
 Elemental Live supports both inputs and outputs that use the SRT (secure reliable transport) protocol.
 

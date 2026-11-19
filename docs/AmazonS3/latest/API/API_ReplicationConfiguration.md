@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ReplicationConfi
 ---
 
 # ReplicationConfiguration
-<a name="API_ReplicationConfiguration"></a>
 
 A container for replication rules. You can add up to 1,000 rules. The maximum size of a replication configuration is 2 MB.
 

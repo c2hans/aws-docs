@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/ug/example-govcloud-iam-
 ---
 
 # Example IAM policies for AWS Artifact in AWS GovCloud (US) Regions
-<a name="example-govcloud-iam-policies"></a>
 
 These policies are ONLY applicable in AWS GovCloud (US) Regions. For policies applicable to commercial AWS [Regions](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html?icmpid=docs_homepage_addtlrcs#region), see [Example IAM policies for AWS Artifact in commercial AWS Regions](https://docs.aws.amazon.com/artifact/latest/ug/example-iam-policies.html)
 

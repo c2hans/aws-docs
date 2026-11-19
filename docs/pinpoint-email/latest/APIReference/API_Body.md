@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_B
 ---
 
 # Body
-<a name="API_Body"></a>
 
 Represents the body of the email message.
 

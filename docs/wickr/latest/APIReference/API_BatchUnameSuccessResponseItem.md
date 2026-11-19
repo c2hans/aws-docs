@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_BatchUname
 ---
 
 # BatchUnameSuccessResponseItem
-<a name="API_BatchUnameSuccessResponseItem"></a>
 
 Contains information about a username hash that was successfully resolved in a batch uname lookup operation.
 

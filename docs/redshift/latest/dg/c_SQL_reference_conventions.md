@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_reference_conve
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # SQL reference conventions
-<a name="c_SQL_reference_conventions"></a>
 
 This section explains the conventions that are used to write the syntax for the SQL expressions, commands, and functions described in the SQL reference section.
 

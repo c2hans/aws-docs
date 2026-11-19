@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringScheduleConfig
-<a name="API_MonitoringScheduleConfig"></a>
 
 Configures the monitoring schedule and defines the monitoring job.
 

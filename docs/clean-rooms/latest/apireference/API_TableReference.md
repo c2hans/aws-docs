@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Tabl
 ---
 
 # TableReference
-<a name="API_TableReference"></a>
 
 A pointer to the dataset that underlies this table.
 

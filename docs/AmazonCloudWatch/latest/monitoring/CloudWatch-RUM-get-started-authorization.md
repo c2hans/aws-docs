@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Authorize your web application to send data to AWS
-<a name="CloudWatch-RUM-get-started-authorization"></a>
 
 You have four options to set up data authentication:
 + Use Amazon Cognito and let CloudWatch RUM create a new Amazon Cognito identity pool for the application. This method requires the least effort to set up.

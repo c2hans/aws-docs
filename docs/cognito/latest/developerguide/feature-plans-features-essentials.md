@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/feature-pl
 ---
 
 # Essentials plan features
-<a name="feature-plans-features-essentials"></a>
 
 The Essentials feature plan has most of the best and latest features of Amazon Cognito user pools. When you switch from the Lite to the Essentials plan, you get new features for your managed login pages, multi-factor authentication with email-message one-time passwords, an enhanced password policy, and custom access tokens. To stay up-to-date with new user pool features, choose the Essentials plan for your user pools.
 

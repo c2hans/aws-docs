@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v10-Grafana-API
 ---
 
 # Preferences API
-<a name="v10-Grafana-API-Preferences"></a>
 
 Use the Preferences API to work with user preferences in the Amazon Managed Grafana workspace.
 

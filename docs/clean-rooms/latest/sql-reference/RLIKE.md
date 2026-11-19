@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/RLIKE.h
 ---
 
 # RLIKE
-<a name="RLIKE"></a>
 
 The RLIKE operator allows you to check if a string matches a specified regular expression pattern.
 

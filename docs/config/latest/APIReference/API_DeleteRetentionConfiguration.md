@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteRet
 ---
 
 # DeleteRetentionConfiguration
-<a name="API_DeleteRetentionConfiguration"></a>
 
 Deletes the retention configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # BusinessChain
-<a name="API_geoplaces_BusinessChain"></a>
 
 A businesschain is a chain of businesses that belong to the same brand. For example `7-11`.
 

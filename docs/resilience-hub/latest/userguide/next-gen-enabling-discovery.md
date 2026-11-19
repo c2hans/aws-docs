@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Enabling dependency discovery for a service
-<a name="next-gen-enabling-discovery"></a>
 
 You can enable dependency discovery from the console or using the AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchinvestigations/latest/APIRefer
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Displays the tags associated with a CloudWatch investigations resource. Currently, investigation groups support tagging.
 

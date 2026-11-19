@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/airship-support.html
 ---
 
 # AWS Glue support for Airship
-<a name="airship-support"></a>
 
 AWS Glue supports Airship as follows:
 

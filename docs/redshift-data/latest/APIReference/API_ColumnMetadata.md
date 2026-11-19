@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_Co
 ---
 
 # ColumnMetadata
-<a name="API_ColumnMetadata"></a>
 
 The properties (metadata) of a column.
 

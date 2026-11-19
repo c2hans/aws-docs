@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteTemplate
-<a name="API_DeleteTemplate"></a>
 
 Deletes a template.
 

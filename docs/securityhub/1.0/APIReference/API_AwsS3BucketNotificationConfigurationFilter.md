@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Bu
 ---
 
 # AwsS3BucketNotificationConfigurationFilter
-<a name="API_AwsS3BucketNotificationConfigurationFilter"></a>
 
 Filtering information for the notifications. The filtering is based on Amazon S3 key names.
 

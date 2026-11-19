@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_ModifyDBInstan
 ---
 
 # ModifyDBInstance
-<a name="API_ModifyDBInstance"></a>
 
-Modifies settings for a DB instance. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. To learn what modifications you can make to your DB instance, call [DescribeValidDBInstanceModifications](API_DescribeValidDBInstanceModifications.md) before you call [ModifyDBInstance](#API_ModifyDBInstance).
+Modifies settings for a DB instance. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. To learn what modifications you can make to your DB instance, call [DescribeValidDBInstanceModifications](API_DescribeValidDBInstanceModifications.md) before you call [ModifyDBInstance](API_ModifyDBInstance.md).
 
 ## Request Parameters
 <a name="API_ModifyDBInstance_RequestParameters"></a>

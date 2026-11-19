@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_EnableMFADev
 ---
 
 # EnableMFADevice
-<a name="API_EnableMFADevice"></a>
 
 Enables the specified MFA device and associates it with the specified IAM user. When enabled, the MFA device is required for every subsequent login by the IAM user associated with the device.
 

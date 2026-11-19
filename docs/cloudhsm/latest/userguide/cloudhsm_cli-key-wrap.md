@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-k
 ---
 
 # The key wrap command in CloudHSM CLI
-<a name="cloudhsm_cli-key-wrap"></a>
 
 The **key wrap** command in CloudHSM CLI exports an encrypted copy of a symmetric or asymmetric private key from the hardware security module (HSM) to a file. When you run **key wrap**, you specify two things: The key to export and the output file. The key to export is a key on the HSM that will encrypt (wrap) the key that you want to export.
 

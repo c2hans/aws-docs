@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_GetRecoveryP
 ---
 
 # GetRecoveryPlanExecutionStep
-<a name="API_GetRecoveryPlanExecutionStep"></a>
 
 Gets the details of a step within a Recovery Plan execution.
 

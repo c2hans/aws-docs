@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DocDB::DBClusterParameterGroup Tag
-<a name="aws-properties-docdb-dbclusterparametergroup-tag"></a>
 
 Metadata assigned to an Amazon DocumentDB resource consisting of a key-value pair.
 

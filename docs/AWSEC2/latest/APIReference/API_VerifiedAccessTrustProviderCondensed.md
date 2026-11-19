@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessTrustProviderCondensed
-<a name="API_VerifiedAccessTrustProviderCondensed"></a>
 
 Condensed information about a trust provider.
 

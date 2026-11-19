@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/developerguide/servi
 ---
 
 # ServiceProviderConfig
-<a name="serviceproviderconfig"></a>
 
 You can use the `/ServiceProviderConfig` endpoint for `GET` requests to view additional information about the IAM Identity Center SCIM implementation. The `/ServiceProviderConfig` endpoint is read only.
 

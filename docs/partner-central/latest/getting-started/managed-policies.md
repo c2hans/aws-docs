@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/m
 ---
 
 # AWS managed policies for AWS Partner Central users
-<a name="managed-policies"></a>
 
 An AWS managed policy is a standalone policy created and administered by AWS. AWS managed policies provide permissions for many common use cases so that you can start assigning permissions to users, groups, and roles.
 

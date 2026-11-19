@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Profiles and Window Binding
-<a name="basic-use"></a>
 
 ## Profiles and Window Binding for the Toolkit for Visual Studio
 <a name="profiles-and-tvs-window-binding"></a>

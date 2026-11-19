@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Cre
 ---
 
 # CreateSnapshot
-<a name="API_CreateSnapshot"></a>
 
 Creates a snapshot of a Simple AD or Microsoft AD directory in the AWS cloud.
 

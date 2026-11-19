@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # AdminAccountDetails
-<a name="API_AdminAccountDetails"></a>
 
 The details of an AWS Network Security Manager administrator account.
 

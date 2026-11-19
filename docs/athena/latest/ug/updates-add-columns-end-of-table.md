@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/updates-add-columns-end
 ---
 
 # Add columns at the end of the table
-<a name="updates-add-columns-end-of-table"></a>
 
 If you create tables in any of the formats that Athena supports, such as Parquet, ORC, Avro, JSON, CSV, and TSV, you can use the `ALTER TABLE ADD COLUMNS` statement to add columns after existing columns but before partition columns.
 

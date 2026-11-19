@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetBillScenario
-<a name="API_AWSBCMPricingCalculator_GetBillScenario"></a>
 
  Retrieves details of a specific bill scenario.
 

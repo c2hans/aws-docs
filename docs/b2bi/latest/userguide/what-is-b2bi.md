@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/what-is-b2bi.html
 ---
 
 # What is AWS B2B Data Interchange?
-<a name="what-is-b2bi"></a>
 
 AWS B2B Data Interchange automates the transformation and generation of Electronic Interchange Data (EDI) documents to and from JSON and XML data formats. Businesses use EDI to exchange transactional data with trading partners, such as suppliers and end customers, using common EDI standardized formats such as X12, EDIFACT, or HL7v2.
 

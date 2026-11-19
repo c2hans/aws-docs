@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/us
 ---
 
 # AWS KMS ECDH keyrings
-<a name="use-kms-ecdh-keyring"></a>
 
 An AWS KMS ECDH keyring uses asymmetric key agreement [AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/key-types.html) to derive a shared symmetric wrapping key between two parties. First, the keyring uses the Elliptic Curve Diffie-Hellman (ECDH) key agreement algorithm to derive a shared secret from the private key in the sender's KMS key pair and the recipient's public key. Then, the keyring uses the shared secret to derive the shared wrapping key that protects your data encryption keys. The key derivation function that the AWS Encryption SDK uses (`KDF_CTR_HMAC_SHA384`) to derive the shared wrapping key conforms to [NIST recommendations for key derivation](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-108r1-upd1.pdf).
 

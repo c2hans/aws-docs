@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-microsoft-sq
 ---
 
 # Amazon Athena Microsoft SQL Server connector
-<a name="connectors-microsoft-sql-server"></a>
 
 The Amazon Athena connector for [Microsoft SQL Server](https://docs.microsoft.com/en-us/sql/?view=sql-server-ver15) enables Amazon Athena to run SQL queries on your data stored in Microsoft SQL Server using JDBC.
 

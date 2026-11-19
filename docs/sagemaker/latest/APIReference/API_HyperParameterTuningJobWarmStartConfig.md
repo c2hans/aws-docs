@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperP
 ---
 
 # HyperParameterTuningJobWarmStartConfig
-<a name="API_HyperParameterTuningJobWarmStartConfig"></a>
 
 Specifies the configuration for a hyperparameter tuning job that uses one or more previous hyperparameter tuning jobs as a starting point. The results of previous tuning jobs are used to inform which combinations of hyperparameters to search over in the new tuning job.
 

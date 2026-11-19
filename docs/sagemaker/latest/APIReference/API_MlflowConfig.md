@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Mlflow
 ---
 
 # MlflowConfig
-<a name="API_MlflowConfig"></a>
 
  The MLflow configuration using SageMaker managed MLflow.
 

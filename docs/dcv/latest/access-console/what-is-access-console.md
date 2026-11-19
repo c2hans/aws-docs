@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/what-is-access
 ---
 
 # What is Amazon DCV Access Console?
-<a name="what-is-access-console"></a>
 
 **Note**
 Amazon DCV was previously known as NICE DCV.

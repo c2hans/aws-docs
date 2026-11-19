@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Alarm
 ---
 
 # AlarmStateChangeDetail
-<a name="API_AlarmStateChangeDetail"></a>
 
 Details about a CloudWatch alarm state change observed during a test run.
 

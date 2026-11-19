@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicV2DataSetReference
-<a name="API_TopicV2DataSetReference"></a>
 
 A structure that represents a data set reference of a topic.
 

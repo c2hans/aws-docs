@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ReviewSourceSummary
-<a name="API_marketplace-discovery_ReviewSourceSummary"></a>
 
 A review summary from a specific source, including the average rating and total review count.
 

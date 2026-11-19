@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-suspend-res
 ---
 
 # Suspend and resume Amazon EC2 Auto Scaling processes
-<a name="as-suspend-resume-processes"></a>
 
 This topic describes how to suspend and then resume one or more of the processes for your Auto Scaling group to temporarily disable certain operations.
 

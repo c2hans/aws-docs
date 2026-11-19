@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsReds
 ---
 
 # AwsRedshiftClusterElasticIpStatus
-<a name="API_AwsRedshiftClusterElasticIpStatus"></a>
 
 The status of the elastic IP (EIP) address for an Amazon Redshift cluster.
 

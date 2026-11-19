@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/t
 ---
 
 # Temenos WealthSuite Front Office on AWS: Amazon VPC and networking
-<a name="temenos-wealthsuite-vpc-networking"></a>
 
 Publication date: **January 6, 2023 ([Diagram history](#tw-vpc-history))**
 

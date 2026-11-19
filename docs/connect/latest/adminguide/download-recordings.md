@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/download-recor
 ---
 
 # Download recordings and transcripts of past conversations in Connect Customer
-<a name="download-recordings"></a>
 
 These are the steps that a manager does to download past recordings or transcripts of conversations.
 + If the contact reached you by phone call (the Voice channel), you can download a .wav file.

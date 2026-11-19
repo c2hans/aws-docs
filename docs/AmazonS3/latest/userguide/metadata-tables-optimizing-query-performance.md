@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/metadata-table
 ---
 
 # Optimizing metadata table query performance
-<a name="metadata-tables-optimizing-query-performance"></a>
 
-Because S3 Metadata is based on the Apache Iceberg table format, you can optimize the performance and [cost](#metadata-tables-optimizing-query-performance) of your journal table queries by using specific time ranges.
+Because S3 Metadata is based on the Apache Iceberg table format, you can optimize the performance and [cost](metadata-tables-optimizing-query-performance.md) of your journal table queries by using specific time ranges.
 
 For example, the following SQL query provides the sensitivity level of new objects in an S3 general purpose bucket:
 

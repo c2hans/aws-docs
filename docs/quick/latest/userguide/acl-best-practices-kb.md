@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/acl-best-practice
 ---
 
 # Best practices for managing ACLs in knowledge bases
-<a name="acl-best-practices-kb"></a>
 
 With document-level access control lists (ACLs), AWS Quick enforces source-document permissions for an ACL-aware knowledge base. Each authorized user retrieves only the indexed documents they have permission to access. Use ACLs when different users need access to different documents in the same knowledge base.
 

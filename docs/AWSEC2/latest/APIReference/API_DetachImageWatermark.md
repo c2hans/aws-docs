@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachIma
 ---
 
 # DetachImageWatermark
-<a name="API_DetachImageWatermark"></a>
 
 Removes a watermark from the specified AMI. This is an idempotent operation. It succeeds even if the watermark does not exist on the image.
 

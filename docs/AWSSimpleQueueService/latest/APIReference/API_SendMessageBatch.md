@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # SendMessageBatch
-<a name="API_SendMessageBatch"></a>
 
 You can use `SendMessageBatch` to send up to 10 messages to the specified queue by assigning either identical or different values to each message (or by not assigning values at all). This is a batch version of ` SendMessage.` For a FIFO queue, multiple messages within a single batch are enqueued in the order they are sent.
 

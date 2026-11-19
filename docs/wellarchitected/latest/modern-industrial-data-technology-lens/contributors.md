@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this version of the Well-Architected Modern Industrial Technology Lens document include:
 +  Akash Bhatia, Principal Solutions Architect, Amazon Web Services

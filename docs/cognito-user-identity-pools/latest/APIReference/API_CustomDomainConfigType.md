@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # CustomDomainConfigType
-<a name="API_CustomDomainConfigType"></a>
 
 The configuration for a custom domain, including the SSL certificate and TLS security policy.
 

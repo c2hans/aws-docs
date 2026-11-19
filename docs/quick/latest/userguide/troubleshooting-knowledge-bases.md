@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshooting-k
 ---
 
 # Troubleshooting knowledge bases
-<a name="troubleshooting-knowledge-bases"></a>
 
 When you encounter issues with your Quick knowledge base, you can use this troubleshooting guide to identify and resolve common problems. Knowledge base issues typically involve document synchronization, refresh job failures, or access permissions.
 

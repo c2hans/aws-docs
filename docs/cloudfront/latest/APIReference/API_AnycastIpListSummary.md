@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Anyca
 ---
 
 # AnycastIpListSummary
-<a name="API_AnycastIpListSummary"></a>
 
 An abbreviated version of the [AnycastIpList](API_AnycastIpList.md) structure. Omits the allocated static IP addresses ([AnycastIpList:AnycastIps](API_AnycastIpList.md#cloudfront-Type-AnycastIpList-AnycastIps)).
 

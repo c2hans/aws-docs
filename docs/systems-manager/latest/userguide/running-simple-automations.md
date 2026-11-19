@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/running
 ---
 
 # Run an automated operation powered by Systems Manager Automation
-<a name="running-simple-automations"></a>
 
 When you run an automation, by default, the automation runs in the context of the user who initiated the automation. This means, for example, if your user has administrator permissions, then the automation runs with administrator permissions and full access to the resources being configured by the automation. As a security best practice, we recommend that you run automation by using an IAM service role that is known in this case as an *assume* role that is configured with the AmazonSSMAutomationRole managed policy. You might need to add additional IAM policies to your assume role to use various runbooks. Using an IAM service role to run automation is called *delegated administration*.
 

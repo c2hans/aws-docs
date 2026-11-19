@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-
 ---
 
 # Migrate an Amazon ECS short service ARN to a long ARN
-<a name="service-arn-migration"></a>
 
 Amazon ECS assigns a unique Amazon Resource Name (ARN) to each service. Services that were created before 2021 have a short ARN format:
 

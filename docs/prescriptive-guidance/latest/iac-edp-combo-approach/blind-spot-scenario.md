@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/iac-edp-com
 ---
 
 # Blind spot scenario
-<a name="blind-spot-scenario"></a>
 
 This section provides an example of a scenario where an engineering team can make an IT decision that results in a blind spot that has unintentional consequences that can harm their organization. The hypothetical scenario assumes that an [Amazon Elastic Block Store (Amazon EBS)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html) storage volume is created in the AWS Cloud by using [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) as part of an IaC approach.
 

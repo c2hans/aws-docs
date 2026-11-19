@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_AuthCha
 ---
 
 # AuthChallengeResponse
-<a name="API_AuthChallengeResponse"></a>
 
 Contains details of the authentication information received from a third party authentication server in response to an authentication challenge.
 

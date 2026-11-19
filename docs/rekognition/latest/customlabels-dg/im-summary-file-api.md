@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/im-su
 ---
 
 # Accessing the model summary file
-<a name="im-summary-file-api"></a>
 
 The summary file contains evaluation results information about the model as a whole and metrics for each label. The metrics are precision, recall, F1 score. The threshold value for the model is also supplied. The summary file location is accessible from the `EvaluationResult` object returned by `DescribeProjectVersions`. For more information, see [Reference: Training results summary file](im-summary-file.md).
 

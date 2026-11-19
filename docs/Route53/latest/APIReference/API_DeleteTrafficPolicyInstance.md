@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteTr
 ---
 
 # DeleteTrafficPolicyInstance
-<a name="API_DeleteTrafficPolicyInstance"></a>
 
 Deletes a traffic policy instance and all of the resource record sets that Amazon Route 53 created when you created the instance.
 

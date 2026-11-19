@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/scte-35-limitatio
 ---
 
 # SCTE-35 limitations
-<a name="scte-35-limitations"></a>
 
 Limitations to SCTE-35 support are as follows:
 + You can either specify insertion points using ESAM XML or pass through SCTE-35 messages from the input. You can't do both.

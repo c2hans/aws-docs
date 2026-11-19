@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-a
 ---
 
 # Getting Started​ with the IVS Android Broadcast SDK \| Real-Time Streaming
-<a name="broadcast-android-getting-started"></a>
 
 This document takes you through the steps involved in getting started with the IVS real-time streaming Android broadcast SDK.
 

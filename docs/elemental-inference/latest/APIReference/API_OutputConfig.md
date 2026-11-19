@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # OutputConfig
-<a name="API_OutputConfig"></a>
 
 Contains one typed output. It is used in the CreateOutput, GetOutput, and Update Output structures.
 

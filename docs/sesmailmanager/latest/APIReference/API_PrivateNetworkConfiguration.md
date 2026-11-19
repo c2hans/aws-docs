@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_P
 ---
 
 # PrivateNetworkConfiguration
-<a name="API_PrivateNetworkConfiguration"></a>
 
 Specifies the network configuration for the private ingress point.
 

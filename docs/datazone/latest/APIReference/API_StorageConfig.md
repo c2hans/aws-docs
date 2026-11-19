@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Storage
 ---
 
 # StorageConfig
-<a name="API_StorageConfig"></a>
 
 The storage configuration for a notebook run in Amazon SageMaker Unified Studio.
 

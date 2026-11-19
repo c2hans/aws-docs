@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Resour
 ---
 
 # ResourceNotFoundException
-<a name="API_ResourceNotFoundException"></a>
 
 The operation tried to access a keyspace, table, or type that doesn't exist. The resource might not be specified correctly, or its status might not be `ACTIVE`.
 

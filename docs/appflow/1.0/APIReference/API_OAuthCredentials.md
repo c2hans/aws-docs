@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_OAuthCreden
 ---
 
 # OAuthCredentials
-<a name="API_OAuthCredentials"></a>
 
  The OAuth credentials required for OAuth type authentication.
 

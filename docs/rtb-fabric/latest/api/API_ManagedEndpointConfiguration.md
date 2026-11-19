@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ManagedEndpoin
 ---
 
 # ManagedEndpointConfiguration
-<a name="API_ManagedEndpointConfiguration"></a>
 
 Describes the configuration of a managed endpoint.
 

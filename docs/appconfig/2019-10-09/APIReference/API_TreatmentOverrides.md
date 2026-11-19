@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Tr
 ---
 
 # TreatmentOverrides
-<a name="API_TreatmentOverrides"></a>
 
 Treatment assignment overrides that assign specific entity IDs to treatments, bypassing random assignment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListTagsFo
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Gets a list of tags associated with a resource. Only bots, bot aliases, and bot channels can have tags associated with them.
 

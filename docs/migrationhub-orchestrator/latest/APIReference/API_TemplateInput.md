@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIRefe
 ---
 
 # TemplateInput
-<a name="API_TemplateInput"></a>
 
 The input parameters of a template.
 

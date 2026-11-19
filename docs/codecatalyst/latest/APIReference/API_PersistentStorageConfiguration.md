@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Per
 ---
 
 # PersistentStorageConfiguration
-<a name="API_PersistentStorageConfiguration"></a>
 
 Information about the configuration of persistent storage for a Dev Environment.
 

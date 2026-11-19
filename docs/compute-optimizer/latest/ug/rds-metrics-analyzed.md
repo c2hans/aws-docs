@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/rds-metrics-
 ---
 
 # Aurora and RDS database metrics
-<a name="rds-metrics-analyzed"></a>
 
 Compute Optimizer analyzes the following CloudWatch metrics of your Amazon Aurora and RDS databases.
 

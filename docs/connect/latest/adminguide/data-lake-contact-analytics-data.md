@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-lake-cont
 ---
 
 # Contact analytics data in the Connect Customer data lake
-<a name="data-lake-contact-analytics-data"></a>
 
 The following tables contain contact analytics data.
 

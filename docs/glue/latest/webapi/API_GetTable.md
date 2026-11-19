@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetTable.html
 ---
 
 # GetTable
-<a name="API_GetTable"></a>
 
 Retrieves the `Table` definition in a Data Catalog for a specified table.
 

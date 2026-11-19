@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # SequenceNumberRange
-<a name="API_SequenceNumberRange"></a>
 
 Defines a range of sequence numbers within a change data capture stream's shard for Amazon Keyspaces.
 

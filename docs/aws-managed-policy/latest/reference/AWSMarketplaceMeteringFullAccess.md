@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMarketplaceMeteringFullAccess
-<a name="AWSMarketplaceMeteringFullAccess"></a>
 
 **Description**: Provides full access to AWS Marketplace Metering.
 

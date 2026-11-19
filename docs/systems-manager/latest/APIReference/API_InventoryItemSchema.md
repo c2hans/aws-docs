@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # InventoryItemSchema
-<a name="API_InventoryItemSchema"></a>
 
 The inventory item schema definition. Users can use this to compose inventory query filters.
 

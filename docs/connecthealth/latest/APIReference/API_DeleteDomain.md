@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_De
 ---
 
 # DeleteDomain
-<a name="API_DeleteDomain"></a>
 
 Deletes a Domain and all associated resources.
 

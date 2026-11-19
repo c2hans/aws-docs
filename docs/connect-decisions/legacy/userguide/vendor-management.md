@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/vendo
 ---
 
 # Vendor management
-<a name="vendor-management"></a>
 
 This section lists the data entities within the vendor management category.
 

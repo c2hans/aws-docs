@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/con
 ---
 
 # Mount persistent storage in a container
-<a name="containers-mount-persistent-storage"></a>
 
 When persistent storage is mounted on a service-managed fleet worker, Deadline Cloud sets `DEADLINE_PERSISTENT_MOUNT` to its host mount path. A custom Docker queue environment can detect the variable and mount the same path into the session container.
 

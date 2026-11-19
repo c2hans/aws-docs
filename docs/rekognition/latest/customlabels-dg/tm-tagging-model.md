@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/tm-ta
 ---
 
 # Tagging a model
-<a name="tm-tagging-model"></a>
 
 You can identify, organize, search for, and filter your Amazon Rekognition models by using tags. Each tag is a label consisting of a user-defined key and value. For example, to help determine billing for your models, tag your models with a `Cost center` key and add the appropriate cost center number as a value. For more information, see [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html).
 

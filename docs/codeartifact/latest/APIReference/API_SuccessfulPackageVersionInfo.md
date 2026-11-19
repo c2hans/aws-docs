@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Suc
 ---
 
 # SuccessfulPackageVersionInfo
-<a name="API_SuccessfulPackageVersionInfo"></a>
 
  Contains the revision and status of a package version.
 

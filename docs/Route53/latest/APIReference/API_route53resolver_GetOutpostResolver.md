@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # GetOutpostResolver
-<a name="API_route53resolver_GetOutpostResolver"></a>
 
 Gets information about a specified Resolver on the Outpost, such as its instance count and type, name, and the current status of the Resolver.
 

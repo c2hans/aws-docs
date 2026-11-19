@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_PutTab
 ---
 
 # PutTableBucketMetricsConfiguration
-<a name="API_s3Buckets_PutTableBucketMetricsConfiguration"></a>
 
 Sets the metrics configuration for a table bucket.
 

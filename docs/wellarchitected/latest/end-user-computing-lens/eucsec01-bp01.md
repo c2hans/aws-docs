@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCSEC01-BP01 Identify discrete groups of users that require access and implement security controls appropriate for their risk profiles
-<a name="eucsec01-bp01"></a>
 
  When modelling user access to computing systems, it is important to consider different risk profiles associated with discrete groups of users. For example, internal employees and external contractors will have different risk profiles associated with them. Because of their risk profile, different security controls should be applied to the groups of users.
 

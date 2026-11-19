@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/how-evide
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Understanding how AWS Audit Manager collects evidence
-<a name="how-evidence-is-collected"></a>
 
 Each active assessment in AWS Audit Manager automatically collects evidence from a range of data sources. In each assessment, you define which AWS accounts Audit Manager will collect evidence for, and Audit Manager manages which AWS services are in scope. Each of these services and accounts contain multiple resources that you own and use. Evidence collection in Audit Manager involves the assessment of each in-scope resource. This is referred to as a *resource assessment*.
 

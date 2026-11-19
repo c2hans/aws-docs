@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/describe-clu
 ---
 
 # Describe a cluster
-<a name="describe-cluster"></a>
 
 The following is an example of a request to describe a cluster, and the response.
 

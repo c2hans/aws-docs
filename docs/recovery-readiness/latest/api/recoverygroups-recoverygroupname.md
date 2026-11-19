@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/recoverygr
 ---
 
 # GetRecoveryGroup, UpdateRecoveryGroup, DeleteRecoveryGroup
-<a name="recoverygroups-recoverygroupname"></a>
 
 ## URI
 <a name="recoverygroups-recoverygroupname-url"></a>

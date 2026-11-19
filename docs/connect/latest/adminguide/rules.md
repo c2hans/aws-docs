@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/rules.html
 ---
 
 # Automatically categorize contacts by matching conversations with natural language statements, or specific words and phrases
-<a name="rules"></a>
 
 With Conversational analytics, you can automatically categorize contacts to identify top drivers, customer experience, and agent behavior for your contacts. On the **Contact details** page for a chat, categories appear above the transcript, as shown in the following image.
 

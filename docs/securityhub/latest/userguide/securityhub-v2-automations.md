@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Automations in Security Hub
-<a name="securityhub-v2-automations"></a>
 
  Security Hub includes features that automatically modify and take action on findings based on your specifications.
 

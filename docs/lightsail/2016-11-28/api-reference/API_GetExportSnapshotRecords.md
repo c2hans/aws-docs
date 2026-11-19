@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetExportSnapshotRecords
-<a name="API_GetExportSnapshotRecords"></a>
 
 Returns all export snapshot records created as a result of the `export snapshot` operation.
 

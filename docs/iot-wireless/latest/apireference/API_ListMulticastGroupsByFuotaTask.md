@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lis
 ---
 
 # ListMulticastGroupsByFuotaTask
-<a name="API_ListMulticastGroupsByFuotaTask"></a>
 
 List all multicast groups associated with a FUOTA task.
 

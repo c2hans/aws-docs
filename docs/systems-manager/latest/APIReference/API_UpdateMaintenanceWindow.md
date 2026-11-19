@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # UpdateMaintenanceWindow
-<a name="API_UpdateMaintenanceWindow"></a>
 
 Updates an existing maintenance window. Only specified parameters are modified.
 

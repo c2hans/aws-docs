@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/getting-starte
 ---
 
 # Tutorial prerequisites and considerations
-<a name="getting-started.before-you-begin"></a>
 
 Before you can get started with Amazon Keyspaces, follow the AWS setup instructions in [Accessing Amazon Keyspaces (for Apache Cassandra)](accessing.md). These steps include signing up for AWS and creating an AWS Identity and Access Management (IAM) user with access to Amazon Keyspaces.
 

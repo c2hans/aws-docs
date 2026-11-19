@@ -3,6 +3,5 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This section provides known issue resolution when deploying the guidance.

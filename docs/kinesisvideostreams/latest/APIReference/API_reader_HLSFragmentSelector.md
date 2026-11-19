@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # HLSFragmentSelector
-<a name="API_reader_HLSFragmentSelector"></a>
 
 Contains the range of timestamps for the requested media, and the source of the timestamps.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/g
 ---
 
 # Using AWS Site-to-Site VPN
-<a name="govcloud-site-to-site-vpn"></a>
 
 Publication date: **November 22, 2024 ([Diagram history](#gvpn-diagram-history))**
 

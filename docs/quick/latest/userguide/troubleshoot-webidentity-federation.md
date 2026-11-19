@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshoot-webi
 ---
 
 # Individuals in my organization get an "External Login is Unauthorized" message when they try to access Quick Sight
-<a name="troubleshoot-webidentity-federation"></a>
 
 |  |
 | --- |

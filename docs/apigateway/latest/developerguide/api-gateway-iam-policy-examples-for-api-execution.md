@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # IAM policy examples for API execution permissions
-<a name="api-gateway-iam-policy-examples-for-api-execution"></a>
 
 For permissions model and other background information, see [Control access for invoking an API](api-gateway-control-access-using-iam-policies-to-invoke-api.md).
 

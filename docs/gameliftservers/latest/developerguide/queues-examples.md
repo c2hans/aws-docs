@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/qu
 ---
 
 # Queue configuration examples
-<a name="queues-examples"></a>
 
 This topic provides example queue configurations for common game hosting scenarios. Each example includes the complete AWS Command Line Interface (AWS CLI) command and an explanation of when to use that configuration. For instructions on creating a queue, see [Create a game session queue](queues-creating.md). For more information about customizing queue behavior, see [Customize a game session queue](queues-design.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Appendix: Solr sample schema
-<a name="appendix"></a>
 
 This appendix provides a sample schema in Solr for a product catalog. For a closer look at schema elements, see the [Migrating your schema](migrating-schema.md) section earlier in this guide and [Schema Elements](https://solr.apache.org/guide/solr/latest/indexing-guide/schema-elements.html) in the Solr documentation.
 

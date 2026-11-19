@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IDR/latest/userguide/doc-history-idr.htm
 ---
 
 # Document history
-<a name="doc-history-idr"></a>
 
 The following table describes the important changes to the documentation since the last release of the IDR guide.
 

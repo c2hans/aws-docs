@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/voice-for-audi
 ---
 
 # Choose the text-to-speech voice and language for audio prompts in Connect Customer
-<a name="voice-for-audio-prompts"></a>
 
 You select the text-to-speech voice and language in the [Set voice](set-voice.md) block.
 

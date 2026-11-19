@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/EMR_Interactive_
 ---
 
 # Set up a Hive table to run Hive commands
-<a name="EMR_Interactive_Hive"></a>
 
 Apache Hive is a data warehouse application you can use to query data contained in Amazon EMR clusters using a SQL-like language. For more information about Hive, see [http://hive.apache.org/](http://hive.apache.org/).
 

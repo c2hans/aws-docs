@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 ---
 
 # Data retrieval APIs for AWS App Mesh Preview
-<a name="awsappmeshpreview"></a>
 
 AWS App Mesh Preview provides the following APIs for data retrieval.
 

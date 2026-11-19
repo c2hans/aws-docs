@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # LaunchParameters
-<a name="API_LaunchParameters"></a>
 
 The parameters for launching Amazon EC2 instances in a capacity provider.
 

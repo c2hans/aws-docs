@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/pacemaker-t
 ---
 
 # Tutorial: Set up high availability for AWS IoT Greengrass V2 with Pacemaker
-<a name="pacemaker-tutorial"></a>
 
 This tutorial shows you how to set up AWS AWS IoT AWS IoT Greengrass V2 in a high availability (HA) configuration using [Pacemaker](https://clusterlabs.org/projects/pacemaker/), a high-availability cluster resource manager. You configure multiple Amazon EC2 instances as cluster instances, use [DRBD](https://linbit.com/drbd/) for block-level data replication, and manage AWS IoT Greengrass V2 and load balancer services as Pacemaker resources with automatic failover.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # GenerativeReference
-<a name="API_amazon-q-connect_GenerativeReference"></a>
 
 Reference information about generative content.
 

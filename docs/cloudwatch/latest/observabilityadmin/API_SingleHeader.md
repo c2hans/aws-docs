@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # SingleHeader
-<a name="API_SingleHeader"></a>
 
  Structure containing a name field limited to 64 characters for header or query parameter identification.
 

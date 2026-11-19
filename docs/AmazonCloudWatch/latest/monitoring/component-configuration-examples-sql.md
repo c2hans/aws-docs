@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # SQL Always On Availability Group
-<a name="component-configuration-examples-sql"></a>
 
 The following example shows a component configuration in JSON format for SQL Always On Availability Group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr-troub
 ---
 
 # Troubleshoot high availability SAP HANA deployments
-<a name="hana-ops-ha-dr-troubleshoot"></a>
 
 This section provides guidance for troubleshooting SAP HANA high availability deployments.
 

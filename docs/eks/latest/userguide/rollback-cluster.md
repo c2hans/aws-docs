@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/rollback-cluster.ht
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Roll back a cluster to a previous Kubernetes version
-<a name="rollback-cluster"></a>
 
 With Amazon EKS version rollback, you can revert your cluster’s Kubernetes control plane to the previous minor version after performing an in-place upgrade. If you encounter issues after upgrading, such as application incompatibilities, deprecated API usage, or unexpected behavior, you can roll back to restore your cluster to a known good state.
 

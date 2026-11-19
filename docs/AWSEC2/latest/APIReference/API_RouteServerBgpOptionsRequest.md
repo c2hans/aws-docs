@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RouteServ
 ---
 
 # RouteServerBgpOptionsRequest
-<a name="API_RouteServerBgpOptionsRequest"></a>
 
 The BGP configuration options requested for a route server peer.
 

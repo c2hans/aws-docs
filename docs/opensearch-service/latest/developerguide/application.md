@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Using OpenSearch UI in Amazon OpenSearch Service
-<a name="application"></a>
 
 OpenSearch UI (user interface) is a modernized operational analytics experience for Amazon OpenSearch Service that provides a unified view for you to interact with data across multiple sources. Unlike OpenSearch Dashboards, which works with only the one domain or collection that hosts it, OpenSearch UI is hosted in the AWS Cloud. This makes it possible for OpenSearch UI to achieve high availability and stay functional during cluster upgrades, and to natively connect with multiple data sources. For information about OpenSearch Dashboards, see [Using OpenSearch Dashboards with Amazon OpenSearch Service](dashboards.md).
 

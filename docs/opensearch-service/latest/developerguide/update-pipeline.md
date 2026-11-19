@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Updating Amazon OpenSearch Ingestion pipelines
-<a name="update-pipeline"></a>
 
 You can update Amazon OpenSearch Ingestion pipelines using the AWS Management Console, the AWS CLI, or the OpenSearch Ingestion API. OpenSearch Ingestion initiates a blue/green deployment when you update a pipeline configuration. For more information, see [Blue/green deployments for pipeline updates](#pipeline-bg).
 

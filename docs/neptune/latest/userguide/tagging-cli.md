@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/tagging-cli.htm
 ---
 
 # Tagging in Neptune using the AWS CLI
-<a name="tagging-cli"></a>
 
 You can add, list, or remove tags for a DB instance in Neptune using the AWS CLI.
 + To add one or more tags to a Neptune resource, use the AWS CLI command [`add-tags-to-resource`](https://docs.aws.amazon.com/cli/latest/reference/neptune/add-tags-to-resource.html).

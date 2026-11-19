@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/custom-notifs.
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Custom notifications using Amazon Q Developer in chat applications
-<a name="custom-notifs"></a>
 
 You can customize messages for your application events or customize default AWS service notifications in Amazon Q Developer in chat applications using custom notifications. By customizing notification content, you can promptly receive important application updates with relevant contextual information in your chat channels. This increases visibility for your team and facilitates quicker responses. You can also thread custom notifications using the `threadId` parameter shown in [Parameter details](#parameter-details). Threaded notifications help you organize notification updates by grouping them in a thread in your chat channel.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_Q
 ---
 
 # QueueEnvironmentSummary
-<a name="API_QueueEnvironmentSummary"></a>
 
 The summary of a queue environment.
 

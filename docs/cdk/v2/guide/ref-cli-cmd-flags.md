@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-flags.html
 ---
 
 # `cdk flags`
-<a name="ref-cli-cmd-flags"></a>
 
 View and modify your feature flag configurations for the CDK CLI.
 

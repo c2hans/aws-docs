@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Deploy the solution
-<a name="deploy-the-solution"></a>
 
 This section provides detailed instructions for deploying the Spatial Data Management Application to your AWS account.
 

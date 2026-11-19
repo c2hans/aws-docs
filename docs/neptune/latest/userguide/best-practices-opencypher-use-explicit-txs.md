@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-
 ---
 
 # Use explicit transaction modes for reading and writing
-<a name="best-practices-opencypher-use-explicit-txs"></a>
 
 When using transactions with Neptune and the Bolt driver, it is best to explicitly set the access mode for both read and write transactions to the right settings.
 

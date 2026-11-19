@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_I
 ---
 
 # IpRule
-<a name="API_IpRule"></a>
 
 The IP rules of the IP access settings.
 

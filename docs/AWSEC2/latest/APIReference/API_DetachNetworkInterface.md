@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachNet
 ---
 
 # DetachNetworkInterface
-<a name="API_DetachNetworkInterface"></a>
 
 Detaches a network interface from an instance.
 

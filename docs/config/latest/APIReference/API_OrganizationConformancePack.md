@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Organizat
 ---
 
 # OrganizationConformancePack
-<a name="API_OrganizationConformancePack"></a>
 
 An organization conformance pack that has information about conformance packs that AWS Config creates in member accounts.
 

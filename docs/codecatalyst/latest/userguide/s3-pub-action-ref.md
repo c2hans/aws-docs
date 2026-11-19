@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/s3-pub-act
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # 'Amazon S3 publish' action YAML
-<a name="s3-pub-action-ref"></a>
 
 The following is the YAML definition of the **Amazon S3 publish** action. To learn how to use this action, see [Publishing files to Amazon S3 with a workflow](s3-pub-action.md).
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/s3_example_s3_Sce
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # A web page that lists Amazon S3 objects using an AWS SDK
-<a name="s3_example_s3_Scenario_ListObjectsWeb_section"></a>
 
 The following code example shows how to list Amazon S3 objects in a web page.
 

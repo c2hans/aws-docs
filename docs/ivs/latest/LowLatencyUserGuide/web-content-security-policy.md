@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/web-conte
 ---
 
 # Working With Content Security Policy
-<a name="web-content-security-policy"></a>
 
 The Amazon IVS Web player SDK is configured to work on pages that use Content Security Policy (CSP). A few key CSP directives must be in place. Here, we describe a minimal set of directives that are necessary. Additional directives and sources are likely necessary, depending on your specific setup.
 

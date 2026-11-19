@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-wind
 ---
 
 # Document Revisions
-<a name="bobi-windows-document-revisions"></a>
 
 | Date | Change |
 | --- | --- |

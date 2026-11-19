@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_O
 ---
 
 # OrganizationStatus
-<a name="API_OrganizationStatus"></a>
 
 The status of an Amazon Web Services Organization and the accounts within that organization.
 

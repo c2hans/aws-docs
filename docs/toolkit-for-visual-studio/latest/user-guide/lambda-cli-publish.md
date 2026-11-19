@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Deploying an AWS Lambda Project with the .NET Core CLI
-<a name="lambda-cli-publish"></a>
 
 The AWS Toolkit for Visual Studio includes AWS Lambda .NET Core project templates for Visual Studio. You can deploy Lambda functions built in Visual Studio using the .NET Core command line interface (CLI).
 

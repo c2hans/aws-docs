@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3Encryption.html
 ---
 
 # S3Encryption
-<a name="API_S3Encryption"></a>
 
 Specifies how Amazon Simple Storage Service (Amazon S3) data should be encrypted.
 

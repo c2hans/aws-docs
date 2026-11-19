@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/workload-discovery-on-a
 ---
 
 # Deploy a visualization tool that automatically generates architecture diagrams of AWS Cloud workloads
-<a name="solution-overview"></a>
 
 ## Notice of discontinuation
 <a name="notice-of-discontinuation"></a>

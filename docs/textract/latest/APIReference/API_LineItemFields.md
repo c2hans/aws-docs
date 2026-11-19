@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_LineIte
 ---
 
 # LineItemFields
-<a name="API_LineItemFields"></a>
 
 A structure that holds information about the different lines found in a document's tables.
 

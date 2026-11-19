@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateC
 ---
 
 # CreateConnectorV2
-<a name="API_CreateConnectorV2"></a>
 
 Grants permission to create a connectorV2 based on input parameters.
 

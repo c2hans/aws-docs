@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVer
 ---
 
 # ModifyVerifiedAccessEndpoint
-<a name="API_ModifyVerifiedAccessEndpoint"></a>
 
 Modifies the configuration of the specified AWS Verified Access endpoint.
 

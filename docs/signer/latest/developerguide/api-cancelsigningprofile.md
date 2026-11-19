@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/api-cancels
 ---
 
 # CancelSigningProfile
-<a name="api-cancelsigningprofile"></a>
 
 The following Java example shows how to use the [`CancelSigningProfile`](https://docs.aws.amazon.com/signer/latest/api/API_CancelSigningProfile.html) operation.
 

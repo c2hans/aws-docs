@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # EksAddOnOperatingSystem
-<a name="API_marketplace-discovery_EksAddOnOperatingSystem"></a>
 
 Describes an operating system supported by an EKS add-on fulfillment option.
 

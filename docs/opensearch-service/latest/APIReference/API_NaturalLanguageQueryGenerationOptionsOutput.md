@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # NaturalLanguageQueryGenerationOptionsOutput
-<a name="API_NaturalLanguageQueryGenerationOptionsOutput"></a>
 
 Container for parameters representing the state of the natural language query generation feature on the specified domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Templ
 ---
 
 # TemplateAlias
-<a name="API_TemplateAlias"></a>
 
 The template alias.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Standar
 ---
 
 # StandardsControlAssociationUpdate
-<a name="API_StandardsControlAssociationUpdate"></a>
 
 An array of requested updates to the enablement status of controls in specified standards. The objects in the array include a security control ID, the Amazon Resource Name (ARN) of the standard, the requested enablement status, and the reason for updating the enablement status.
 

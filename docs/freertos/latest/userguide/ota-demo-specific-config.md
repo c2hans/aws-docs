@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-demo-speci
 ---
 
 # Over-the-air demo configurations
-<a name="ota-demo-specific-config"></a>
 
 The OTA demo configurations are demo-specific configuration options provided in `aws_iot_ota_update_demo.c`. These configurations are different from the OTA library configurations provided in the OTA library config file.
 

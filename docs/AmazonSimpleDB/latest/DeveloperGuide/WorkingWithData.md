@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Wor
 ---
 
 # Working with Data
-<a name="WorkingWithData"></a>
 
 This section describes how to create, get, and delete attributes.
 

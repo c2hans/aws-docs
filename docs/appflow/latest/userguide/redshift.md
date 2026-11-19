@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/redshift.html
 ---
 
 # Amazon Redshift connector for Amazon AppFlow
-<a name="redshift"></a>
 
 Amazon Redshift is a data warehouse service in AWS. If you use Amazon Redshift, you can also use Amazon AppFlow to transfer data from supported sources into your Amazon Redshift databases. When you connect Amazon AppFlow to Amazon Redshift with the recommended settings, Amazon AppFlow transfers your data with the Amazon Redshift Data API.
 

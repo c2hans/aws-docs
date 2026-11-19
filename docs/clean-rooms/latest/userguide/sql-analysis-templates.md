@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/sql-analysi
 ---
 
 # SQL analysis templates
-<a name="sql-analysis-templates"></a>
 
 SQL analysis templates enable you to query and analyze data across different datasets within a collaboration. You can use these templates to perform various types of analysis, such as identifying audience overlaps and calculating aggregated metrics.
 

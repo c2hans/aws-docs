@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 ---
 
 # Identity federation and single sign-on
-<a name="identity-sso"></a>
 
 Ensuring consistent identity management across core systems is key to successfully and securely adopting any technology. Educational institutions are increasingly adopting cloud-based identity and single sign-on solutions such as [AWS IAM Identity Center](https://aws.amazon.com/iam/identity-center/), Microsoft Entra ID (formerly Azure Active Directory), Okta, JumpCloud, OneLogin, Ping Identity, and CyberArk to simplify identity management, lower operational burden, and centrally enforce best practices such as multi-factor authentication and least privilege access.
 

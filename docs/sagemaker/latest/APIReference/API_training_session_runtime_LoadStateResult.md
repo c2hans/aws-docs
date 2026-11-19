@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # LoadStateResult
-<a name="API_training_session_runtime_LoadStateResult"></a>
 
 The result of loading training state. An empty response indicates success.
 

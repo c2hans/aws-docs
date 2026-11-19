@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-rdsoracle2aurora.ste
 ---
 
 # Step 4: Test the Connectivity to the Aurora MySQL DB Instance
-<a name="chap-rdsoracle2aurora.steps.connectaurora"></a>
 
 Next, test your connection to your Aurora MySQL DB instance.
 

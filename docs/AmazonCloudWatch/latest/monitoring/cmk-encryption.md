@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cmk-e
 ---
 
 # Encryption at rest for OpenTelemetry metrics
-<a name="cmk-encryption"></a>
 
 ## What is a CloudWatch Dataset
 <a name="cmk-encryption-dataset-overview"></a>

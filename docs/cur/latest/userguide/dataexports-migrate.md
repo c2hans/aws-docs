@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/dataexports-migrate
 ---
 
 # Migrating from CUR to Data Exports CUR 2.0
-<a name="dataexports-migrate"></a>
 
 AWS Data Exports allows you to create exports of Cost and Usage Report 2.0 (CUR 2.0). The CUR 2.0 table provides the same information as Cost and Usage Reports (CUR) along with some improvements. Data Exports enables you to create a CUR 2.0 export that is backwards compatible with the data pipelines you’ve been using to process CUR.
 

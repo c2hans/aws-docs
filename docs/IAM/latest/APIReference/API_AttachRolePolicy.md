@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachRolePo
 ---
 
 # AttachRolePolicy
-<a name="API_AttachRolePolicy"></a>
 
 Attaches the specified managed policy to the specified IAM role. When you attach a managed policy to a role, the managed policy becomes part of the role's permission (access) policy.
 

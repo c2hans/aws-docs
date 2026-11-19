@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-whatsnew.htm
 ---
 
 # What's new?
-<a name="emr-whatsnew"></a>
 
 This page describes the changes and functionality available in the latest releases of Amazon EMR 7.x, 6.x, and 5.x.
 

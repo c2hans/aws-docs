@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/services-sns.htm
 **Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Amazon SNS
-<a name="services-sns"></a>
 
 [Amazon Simple Notification Service](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) (Amazon SNS) delivers each message that you publish to a topic to the endpoints subscribed to that topic. The examples on this page create and list topics, subscribe an endpoint, publish a message with message attributes, and remove subscriptions and topics.
 

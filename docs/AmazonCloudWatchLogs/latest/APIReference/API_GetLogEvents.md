@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # GetLogEvents
-<a name="API_GetLogEvents"></a>
 
 Lists log events from the specified log stream. You can list all of the log events or filter using a time range.
 

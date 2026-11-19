@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_EvaluateDataQuali
 ---
 
 # EvaluateDataQuality
-<a name="API_EvaluateDataQuality"></a>
 
 Specifies your data quality evaluation criteria.
 

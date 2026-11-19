@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/transfer-to-ag
 ---
 
 # Flow block in Connect Customer: Transfer to agent (beta)
-<a name="transfer-to-agent-block"></a>
 
 ## Description
 <a name="transfer-to-agent-block-description"></a>

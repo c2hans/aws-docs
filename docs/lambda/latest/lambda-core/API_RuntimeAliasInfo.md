@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_RuntimeAli
 ---
 
 # RuntimeAliasInfo
-<a name="API_RuntimeAliasInfo"></a>
 
 Summary information about a runtime alias returned by ListRuntimeAliases.
 

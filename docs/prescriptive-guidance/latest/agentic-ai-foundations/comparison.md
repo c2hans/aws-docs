@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Comparing traditional AI to software agents and agentic AI
-<a name="comparison"></a>
 
 The following table provides a detailed comparison of traditional AI, software agents, and agentic AI.
 

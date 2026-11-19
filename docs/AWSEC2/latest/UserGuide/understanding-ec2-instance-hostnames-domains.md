@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/understanding-ec
 ---
 
 # Understanding EC2 instance hostnames and domains
-<a name="understanding-ec2-instance-hostnames-domains"></a>
 
 A EC2 instance address is made up of different components. The following is an example of an EC2 instance address that uses the private IPv4 address of the instance:
 

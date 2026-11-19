@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_LegGe
 ---
 
 # LegGeometry
-<a name="API_LegGeometry"></a>
 
 Contains the geometry details for each path between a pair of positions. Used in plotting a route leg on a map.
 

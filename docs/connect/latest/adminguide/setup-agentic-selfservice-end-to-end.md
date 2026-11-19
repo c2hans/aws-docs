@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/setup-agentic-
 ---
 
 # How to set up your agentic self service chat experience end to end
-<a name="setup-agentic-selfservice-end-to-end"></a>
 
 **Note**
 Orchestration AI Agents require chat streaming to be enabled for chat contacts. Without chat streaming enabled, some messages will fail to render. See [Enable message streaming for AI-powered chat](message-streaming-ai-chat.md).

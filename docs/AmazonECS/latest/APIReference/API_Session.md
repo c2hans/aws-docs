@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Sessio
 ---
 
 # Session
-<a name="API_Session"></a>
 
 The details for the execute command session.
 

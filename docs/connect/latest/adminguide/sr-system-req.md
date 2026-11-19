@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/sr-system-req.
 ---
 
 # System and network requirements for screen recording in Connect Customer
-<a name="sr-system-req"></a>
 
 This topic provides the system requirements for using screen recording, and describes the detailed dataflow it uses in each platform.
 

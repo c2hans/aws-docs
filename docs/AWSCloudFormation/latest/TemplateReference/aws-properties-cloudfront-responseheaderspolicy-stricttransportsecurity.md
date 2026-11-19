@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::ResponseHeadersPolicy StrictTransportSecurity
-<a name="aws-properties-cloudfront-responseheaderspolicy-stricttransportsecurity"></a>
 
 Determines whether CloudFront includes the `Strict-Transport-Security` HTTP response header and the header's value.
 

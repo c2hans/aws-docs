@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Resource
 ---
 
 # ResourceTagsSearchCriteria
-<a name="API_ResourceTagsSearchCriteria"></a>
 
 The search criteria to be used to search tags.
 

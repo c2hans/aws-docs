@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_De
 ---
 
 # DeleteMembership
-<a name="API_DeleteMembership"></a>
 
 Deletes a membership, revoking a user's access to an agent space.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/config-cont
 ---
 
 # Security Hub CSPM controls for AWS Config
-<a name="config-controls"></a>
 
 These Security Hub CSPM controls evaluate the AWS Config service and resources.
 

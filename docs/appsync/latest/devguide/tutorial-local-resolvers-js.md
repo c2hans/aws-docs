@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-local-r
 ---
 
 # Using local resolvers in AWS AppSync
-<a name="tutorial-local-resolvers-js"></a>
 
 AWS AppSync allows you to use supported data sources (AWS Lambda, Amazon DynamoDB, or Amazon OpenSearch Service) to perform various operations. However, in certain scenarios, a call to a supported data source might not be necessary.
 

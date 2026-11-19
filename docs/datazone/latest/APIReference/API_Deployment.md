@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Deploym
 ---
 
 # Deployment
-<a name="API_Deployment"></a>
 
 The details of the last deployment of the environment.
 

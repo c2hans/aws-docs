@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-valid-curve.ht
 ---
 
 # Example: Viewing a Training and Validation Curve
-<a name="train-valid-curve"></a>
 
 Typically, you split the data on which you train your model into training and validation datasets. You use the training set to train the model parameters that are used to make predictions on the training dataset. Then you test how well the model makes predictions by calculating predictions for the validation set. To analyze the performance of a training job, you commonly plot a training curve against a validation curve.
 

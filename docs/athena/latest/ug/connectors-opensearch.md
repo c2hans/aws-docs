@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-opensearch.h
 ---
 
 # Amazon Athena OpenSearch connector
-<a name="connectors-opensearch"></a>
 
 OpenSearch Service
 

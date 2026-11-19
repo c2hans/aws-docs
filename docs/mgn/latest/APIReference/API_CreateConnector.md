@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_CreateConnec
 ---
 
 # CreateConnector
-<a name="API_CreateConnector"></a>
 
 Create Connector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Resource Explorer
-<a name="list_resource-explorer-2"></a>
 
 AWS Resource Explorer (service prefix: `resource-explorer-2`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

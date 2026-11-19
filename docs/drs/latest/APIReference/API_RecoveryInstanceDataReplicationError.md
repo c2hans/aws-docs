@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryInst
 ---
 
 # RecoveryInstanceDataReplicationError
-<a name="API_RecoveryInstanceDataReplicationError"></a>
 
 Error in data replication.
 

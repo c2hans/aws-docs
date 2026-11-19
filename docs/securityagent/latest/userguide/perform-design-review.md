@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/perform-d
 ---
 
 # Create a design review
-<a name="perform-design-review"></a>
 
 Assess your design documents against organization security requirements by uploading files for AWS Security Agent to review. Design reviews help identify security issues early in the development lifecycle, enabling you to address architectural concerns when they are most cost-effective to resolve.
 

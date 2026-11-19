@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # OSInfo
-<a name="API_OSInfo"></a>
 
  Information about the operating system.
 

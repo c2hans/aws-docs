@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/map-quota
 ---
 
 # Map quotas and usage
-<a name="map-quota-and-usage"></a>
 
 Amazon Location Service imposes specific service quotas and usage limits for both dynamic and static maps. These limits are put in place to ensure fair usage and performance efficiency across all users. Below are the service quotas and adjustable limits for each service.
 

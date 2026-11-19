@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Monitor performance of Amazon DynamoDB using an AWS SDK
-<a name="example_cross_MonitorDynamoDB_section"></a>
 
 The following code example shows how to configure an application's use of DynamoDB to monitor performance.
 

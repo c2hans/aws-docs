@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data
 ---
 
 # Data engineering principles
-<a name="data-engineering-principles"></a>
 
 We recommend that you adopt the principles in the following table when you build an architecture for a modern data pipeline.
 

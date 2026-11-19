@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Send
 ---
 
 # SendMessageSummaryEvent
-<a name="API_SendMessageSummaryEvent"></a>
 
 Event summarizing agent actions
 

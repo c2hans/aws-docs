@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_ses_DeleteRece
 ---
 
 # Use `DeleteReceiptRule` with an AWS SDK
-<a name="ses_example_ses_DeleteReceiptRule_section"></a>
 
 The following code examples show how to use `DeleteReceiptRule`.
 

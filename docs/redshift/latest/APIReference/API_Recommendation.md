@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Recomme
 ---
 
 # Recommendation
-<a name="API_Recommendation"></a>
 
 An Amazon Redshift Advisor recommended action on the Amazon Redshift cluster.
 

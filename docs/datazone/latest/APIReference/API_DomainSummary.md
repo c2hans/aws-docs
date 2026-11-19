@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DomainS
 ---
 
 # DomainSummary
-<a name="API_DomainSummary"></a>
 
 A summary of a Amazon DataZone domain.
 

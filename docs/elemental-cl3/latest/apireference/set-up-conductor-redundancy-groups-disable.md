@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # DELETE Disable: Disable Conductor Redundancy Group
-<a name="set-up-conductor-redundancy-groups-disable"></a>
 
 Disable Conductor Redundancy mode (high availability) on the two Conductor nodes in the Conductor redundancy group.
 

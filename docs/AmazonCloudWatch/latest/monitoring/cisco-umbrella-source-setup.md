@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cisco
 ---
 
 # Source configuration for Cisco Umbrella
-<a name="cisco-umbrella-source-setup"></a>
 
 ## Integrating with Cisco Umbrella
 <a name="cisco-umbrella-integration"></a>

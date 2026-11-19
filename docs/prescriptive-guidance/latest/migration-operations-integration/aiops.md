@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # AIOps
-<a name="aiops"></a>
 
 When you migrate your workloads to AWS, you can take advantage of various AWS monitoring services that are enhanced with AI and machine learning (ML) capabilities. Although traditional monitoring through Amazon CloudWatch events, alarms, and AWS Config Rules provides foundational insights, the integration of ML techniques elevates operational intelligence to new levels.
 

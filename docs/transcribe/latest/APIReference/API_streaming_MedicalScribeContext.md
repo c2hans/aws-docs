@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # MedicalScribeContext
-<a name="API_streaming_MedicalScribeContext"></a>
 
 The `MedicalScribeContext` object that contains contextual information which is used during clinical note generation to add relevant context to the note.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Strin
 ---
 
 # StringDatasetParameter
-<a name="API_StringDatasetParameter"></a>
 
 A string parameter for a dataset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/backup-cont
 ---
 
 # Security Hub CSPM controls for AWS Backup
-<a name="backup-controls"></a>
 
 These Security Hub CSPM controls evaluate the AWS Backup service and resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-inst
 ---
 
 # Use the Instance Metadata Service to access instance metadata
-<a name="configuring-instance-metadata-service"></a>
 
 You can access instance metadata from a running instance using one of the following methods:
 + Instance Metadata Service Version 2 (IMDSv2) – a session-oriented method

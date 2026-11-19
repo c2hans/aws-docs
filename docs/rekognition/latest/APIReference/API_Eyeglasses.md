@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Eyeg
 ---
 
 # Eyeglasses
-<a name="API_Eyeglasses"></a>
 
 Indicates whether or not the face is wearing eye glasses, and the confidence level in the determination.
 

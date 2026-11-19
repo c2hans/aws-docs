@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSApplicationAutoscalingEMRInstanceGroupPolicy
-<a name="AWSApplicationAutoscalingEMRInstanceGroupPolicy"></a>
 
 **Description**: Policy granting permissions to Application Auto Scaling to access Elastic Map Reduce and CloudWatch.
 

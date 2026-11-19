@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_LogoS
 ---
 
 # LogoSet
-<a name="API_LogoSet"></a>
 
 A set of logos.
 

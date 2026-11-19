@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/conta
 ---
 
 # Deploy Enhanced Container Insights (Classic) with CloudFormation or Helm
-<a name="container-insights-eks-classic-iac"></a>
 
 You can deploy Enhanced Container Insights (Classic) as infrastructure as code by using CloudFormation templates or Helm charts. This approach installs the `amazon-cloudwatch-observability` add-on with a version prior to v6.2.0 to enable the Classic metric pipeline. Choose this approach if you manage clusters through IaC pipelines and want repeatable, version-controlled deployments.
 

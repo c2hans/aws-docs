@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_CustomConne
 ---
 
 # CustomConnectorDestinationProperties
-<a name="API_CustomConnectorDestinationProperties"></a>
 
 The properties that are applied when the custom connector is being used as a destination.
 

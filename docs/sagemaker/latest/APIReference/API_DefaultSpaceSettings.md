@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Defaul
 ---
 
 # DefaultSpaceSettings
-<a name="API_DefaultSpaceSettings"></a>
 
 The default settings for shared spaces that users create in the domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_GetPriv
 ---
 
 # GetPrivateConnectivityConfig
-<a name="API_GetPrivateConnectivityConfig"></a>
 
 Gets the private connectivity configuration for the specified Outpost.
 

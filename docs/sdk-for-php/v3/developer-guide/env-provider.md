@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/env-provi
 ---
 
 # `env` provider in the SDK for PHP
-<a name="env-provider"></a>
 
 Using environment variables to contain your credentials prevents you from accidentally sharing your AWS secret access key. We recommend that you never add your AWS access keys directly to the client in any production files.
 

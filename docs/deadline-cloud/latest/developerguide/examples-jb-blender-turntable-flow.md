@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Publish renders to Autodesk Flow Production Tracking from Deadline Cloud
-<a name="examples-jb-blender-turntable-flow"></a>
 
 The [blender\_turntable\_to\_flow](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/blender_turntable_to_flow) job bundle on the GitHub website demonstrates how to integrate Deadline Cloud with Autodesk Flow Production Tracking (formerly ShotGrid). The bundle renders frames, encodes a review-ready movie, extracts a thumbnail, and publishes the result to Flow as a new Version on an Asset's review Task. The render step uses a Blender turntable as a placeholder — replace it with any renderer to adapt this pattern for your pipeline. For more information about Flow Production Tracking, see [Flow Production Tracking overview](https://www.autodesk.com/products/flow-production-tracking/overview) on the Autodesk website.
 

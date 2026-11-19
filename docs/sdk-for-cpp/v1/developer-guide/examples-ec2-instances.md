@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/examples-
 ---
 
 # Managing Amazon EC2 Instances
-<a name="examples-ec2-instances"></a>
 
 ## Prerequisites
 <a name="codeExamplePrereq"></a>

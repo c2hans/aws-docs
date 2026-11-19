@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ci
 ---
 
 # Releases
-<a name="releases"></a>
 
 One of the things that often makes a hotfix necessary is that, in a legacy workflow, the state of the application that developers are working on might contain several unreleased features that are not yet live in production. The production environment and the development environment only become in sync when a scheduled release occurs, and then they immediately begin to diverge again until the next scheduled release.
 

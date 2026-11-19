@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Viewe
 ---
 
 # ViewerCertificate
-<a name="API_ViewerCertificate"></a>
 
 A complex type that determines the distribution's SSL/TLS configuration for communicating with viewers.
 

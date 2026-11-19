@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-prer
 ---
 
 # Granting permissions for using AWS Resource Groups and Tag Editor
-<a name="gettingstarted-prereqs-permissions-howto"></a>
 
 To add a policy for using AWS Resource Groups and Tag Editor to a user, do the following.
 

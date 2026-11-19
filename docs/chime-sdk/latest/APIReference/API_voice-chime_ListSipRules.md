@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # ListSipRules
-<a name="API_voice-chime_ListSipRules"></a>
 
 Lists the SIP rules under the administrator's AWS account.
 

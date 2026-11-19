@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/fish.html
 ---
 
 # .fish
-<a name="fish"></a>
 
 Used as a general extension, but ideal for websites related to fish and fishing.
 

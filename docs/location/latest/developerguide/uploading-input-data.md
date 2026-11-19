@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/uploading
 ---
 
 # Upload input data
-<a name="uploading-input-data"></a>
 
 After preparing your input data in Apache Parquet format, upload the files to your Amazon S3 input bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/ghost-configuring.html
 ---
 
 # Configuring Ghost
-<a name="ghost-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Ghost, you must meet the following requirements:
 

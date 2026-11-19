@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/setting-up.ht
 ---
 
 # Setting up Amazon EventBridge Scheduler
-<a name="setting-up"></a>
 
 Before you can use EventBridge Scheduler, you must complete the following steps.
 

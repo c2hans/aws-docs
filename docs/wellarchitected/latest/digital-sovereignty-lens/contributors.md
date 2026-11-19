@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  The following individuals and organizations contributed to this document:
 +  Swapnonil Mukherjee, Senior Partner Solutions Architect - Sovereignty, Amazon Web Services

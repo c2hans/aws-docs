@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/security-too
 ---
 
 # Compatible security tools and services in AppFabric for security
-<a name="security-tools"></a>
 
 AWS AppFabric for security supports integration with the following security tools and services. Choose the name of a service for more information about how to set up AppFabric for security to connect to it.
 

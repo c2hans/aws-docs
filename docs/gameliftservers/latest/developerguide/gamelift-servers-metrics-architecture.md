@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # How it works
-<a name="gamelift-servers-metrics-architecture"></a>
 
 The telemetry metrics system follows a simple four-stage data flow from your game servers to visualization dashboards.
 

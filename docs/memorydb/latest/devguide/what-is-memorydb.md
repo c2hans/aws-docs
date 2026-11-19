@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/what-is-memoryd
 ---
 
 # What is MemoryDB
-<a name="what-is-memorydb"></a>
 
 Amazon MemoryDB is a durable, in-memory database service that delivers ultra-fast performance. It is purpose-built for modern applications with microservices architectures.
 

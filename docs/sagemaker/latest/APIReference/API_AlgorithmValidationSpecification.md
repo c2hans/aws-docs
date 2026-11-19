@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Algori
 ---
 
 # AlgorithmValidationSpecification
-<a name="API_AlgorithmValidationSpecification"></a>
 
 Specifies configurations for one or more training jobs that SageMaker runs to test the algorithm.
 

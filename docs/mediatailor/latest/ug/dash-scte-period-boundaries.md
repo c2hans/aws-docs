@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/dash-scte-period-b
 ---
 
 # SCTE-35 markers and period boundaries in DASH
-<a name="dash-scte-period-boundaries"></a>
 
 MediaTailor supports DASH origins that deliver either single-period or multi-period manifests. For single-period manifests, MediaTailor converts the manifest into a multi-period format using timing information from the `EventStream` to define period boundaries. After conversion, both single-period and multi-period manifests go through the same ad personalization workflow.
 

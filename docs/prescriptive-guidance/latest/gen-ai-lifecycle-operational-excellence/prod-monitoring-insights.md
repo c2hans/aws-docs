@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Turning insights into improvements in generative AI applications
-<a name="prod-monitoring-insights"></a>
 
 Production monitoring of generative AI applications generates valuable data about system performance, user interactions, and failure patterns. This section describes systematic approaches for converting monitoring insights into concrete improvements. It examines key intervention mechanisms for handling application failures, methods for conducting root-cause analysis, and processes for implementing improvements through the GLOE lifecycle. The patterns and workflows presented help teams to establish robust feedback loops between production observations and system enhancements. This promotes continuous improvement of generative AI applications while maintaining operational reliability.
 

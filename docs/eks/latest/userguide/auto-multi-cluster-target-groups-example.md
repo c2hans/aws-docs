@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-multi-cluster-
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Share a target group across two clusters
-<a name="auto-multi-cluster-target-groups-example"></a>
 
 The following example shares one target group between two clusters. The first cluster owns the Application Load Balancer through an Ingress, and the second cluster joins the shared target group through a manually created `TargetGroupBinding`. Before you begin, review [Configure multi-cluster target groups](auto-multi-cluster-target-groups.md) to understand how MultiCluster support works and how to enable it.
 

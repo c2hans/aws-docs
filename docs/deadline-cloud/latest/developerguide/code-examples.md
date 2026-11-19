@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/cod
 ---
 
 # Code examples for Deadline Cloud
-<a name="code-examples"></a>
 
 The [deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples) repository on the GitHub website contains a collection of working artifacts for AWS Deadline Cloud. The examples cover job submission, software packaging, infrastructure deployment, worker configuration, and more. You can submit, deploy, or adapt them for your own farms.
 

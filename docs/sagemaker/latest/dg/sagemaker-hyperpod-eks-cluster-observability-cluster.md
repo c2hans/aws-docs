@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Cluster and task observability
-<a name="sagemaker-hyperpod-eks-cluster-observability-cluster"></a>
 
 There are two options for monitoring SageMaker HyperPod clusters:
 

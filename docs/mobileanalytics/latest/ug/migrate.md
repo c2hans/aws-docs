@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mobileanalytics/latest/ug/migrate.html
 ---
 
 # Migrating from Amazon Mobile Analytics to Amazon Pinpoint
-<a name="migrate"></a>
 
 On April 30, 2018, the features of Amazon Mobile Analytics were migrated to Amazon Pinpoint.
 

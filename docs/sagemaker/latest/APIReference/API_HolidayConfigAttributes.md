@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Holida
 ---
 
 # HolidayConfigAttributes
-<a name="API_HolidayConfigAttributes"></a>
 
 Stores the holiday featurization attributes applicable to each item of time-series datasets during the training of a forecasting model. This allows the model to identify patterns associated with specific holidays.
 

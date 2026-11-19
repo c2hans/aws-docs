@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetTransitGatewayConnectPeerAssociations
-<a name="API_GetTransitGatewayConnectPeerAssociations"></a>
 
 Gets information about one or more of your transit gateway Connect peer associations in a global network.
 

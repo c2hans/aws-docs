@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Exe
 ---
 
 # ExecutionStatus
-<a name="API_ExecutionStatus"></a>
 
 The status of the execution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-rest-api-enab
 ---
 
 # Enabling Slurm REST API in AWS PCS
-<a name="slurm-rest-api-enable"></a>
 
 Enable the Slurm REST API to access your cluster's HTTP interface for programmatic job management and monitoring. You can enable this feature during cluster creation or update an existing cluster that meets the requirements.
 

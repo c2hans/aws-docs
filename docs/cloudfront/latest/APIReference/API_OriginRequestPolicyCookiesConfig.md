@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origi
 ---
 
 # OriginRequestPolicyCookiesConfig
-<a name="API_OriginRequestPolicyCookiesConfig"></a>
 
 An object that determines whether any cookies in viewer requests (and if so, which cookies) are included in requests that CloudFront sends to the origin.
 

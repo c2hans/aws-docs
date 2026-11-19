@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/postgresql-or
 ---
 
 # Working with Oracle databases by using the oracle\_fdw extension
-<a name="postgresql-oracle-fdw"></a>
 
 To access an Oracle database from your RDS for PostgreSQL DB instance you can install and use the `oracle_fdw` extension. This extension is a foreign data wrapper for Oracle databases. To learn more about this extension, see the [oracle\_fdw](https://github.com/laurenz/oracle_fdw) documentation.
 

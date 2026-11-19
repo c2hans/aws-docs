@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ProblemDetai
 ---
 
 # ProblemDetails
-<a name="API_ProblemDetails"></a>
 
 Details related to problems with AWS TNB resources.
 

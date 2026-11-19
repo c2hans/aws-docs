@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Best practices
-<a name="best-practices-sec"></a>
 
 **Topics**
 + [Security foundations](security-foundations.md)

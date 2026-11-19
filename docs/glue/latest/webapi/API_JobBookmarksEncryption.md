@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_JobBookmarksEncry
 ---
 
 # JobBookmarksEncryption
-<a name="API_JobBookmarksEncryption"></a>
 
 Specifies how job bookmark data should be encrypted.
 

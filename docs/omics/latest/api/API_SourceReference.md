@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_SourceReference.htm
 ---
 
 # SourceReference
-<a name="API_SourceReference"></a>
 
 Contains information about the source reference in a code repository, such as a branch, tag, or commit.
 

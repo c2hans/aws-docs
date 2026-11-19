@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/userguide/plans
 ---
 
 # Plans
-<a name="plans"></a>
 
 ## Planning with Amazon Connect Decisions
 <a name="plans-planning-with-amazon-connect-decisions"></a>

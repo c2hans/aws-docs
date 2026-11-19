@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/m
 ---
 
 # Mapping Partner Central Users to Managed Policies
-<a name="managed-policy-mappings"></a>
 
 ## Understanding Partner Central Personas and Policy Mapping
 <a name="understanding-personas"></a>

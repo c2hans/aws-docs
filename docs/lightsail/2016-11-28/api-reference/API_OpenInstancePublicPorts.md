@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_O
 ---
 
 # OpenInstancePublicPorts
-<a name="API_OpenInstancePublicPorts"></a>
 
 Opens ports for a specific Amazon Lightsail instance, and specifies the IP addresses allowed to connect to the instance through the ports, and the protocol.
 

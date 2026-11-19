@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST 7. How do you use pricing models to reduce cost?
-<a name="cost-07"></a>
 
 Use the pricing model that is most appropriate for your resources to minimize expense.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AsyncI
 ---
 
 # AsyncInferenceOutputConfig
-<a name="API_AsyncInferenceOutputConfig"></a>
 
 Specifies the configuration for asynchronous inference invocation outputs.
 

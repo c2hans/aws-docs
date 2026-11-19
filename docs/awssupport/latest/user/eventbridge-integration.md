@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/eventbridge-integ
 ---
 
 # Integrating AWS Support into event-driven applications using Amazon EventBridge
-<a name="eventbridge-integration"></a>
 
 You can incorporate AWS Support into event-driven applications (EDAs) that use events that occur in AWS Support to communicate between application components and initiate downstream processes.
 

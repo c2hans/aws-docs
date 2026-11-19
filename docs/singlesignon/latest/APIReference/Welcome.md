@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/Welcome
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS IAM Identity Center is the AWS solution for connecting your workforce users to AWS managed applications and other AWS resources. You can connect your existing identity provider and synchronize users and groups from your directory, or create and manage your users directly in IAM Identity Center. You can then use IAM Identity Center for either or both of the following:
 + User access to applications
@@ -19,4 +18,4 @@ Many API operations for IAM Identity Center rely on identifiers for users and gr
 **Note**
  AWS provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, and more). The SDKs provide a convenient way to create programmatic access to IAM Identity Center and other AWS services. For more information about the AWS SDKs, including how to download and install them, see [Tools for Amazon Web Services](http://aws.amazon.com/tools/).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

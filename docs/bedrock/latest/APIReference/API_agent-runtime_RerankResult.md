@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RerankResult
-<a name="API_agent-runtime_RerankResult"></a>
 
 Contains information about a document that was reranked.
 

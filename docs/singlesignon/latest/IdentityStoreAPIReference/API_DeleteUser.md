@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # DeleteUser
-<a name="API_DeleteUser"></a>
 
 Deletes a user within an identity store given `UserId`.
 

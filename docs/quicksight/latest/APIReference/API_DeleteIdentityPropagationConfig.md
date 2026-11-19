@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteIdentityPropagationConfig
-<a name="API_DeleteIdentityPropagationConfig"></a>
 
 Deletes all access scopes and authorized targets that are associated with a service from the Quick Sight IAM Identity Center application.
 

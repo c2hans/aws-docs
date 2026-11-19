@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBInst
 ---
 
 # DBInstanceAutomatedBackupsReplication
-<a name="API_DBInstanceAutomatedBackupsReplication"></a>
 
 Automated backups of a DB instance replicated to another AWS Region. They consist of system backups, transaction logs, and database instance properties.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVPERF03-BP03 Use a cloud file system to store shared data between applications
-<a name="advperf03-bp03"></a>
 
  Use [Amazon EFS](https://aws.amazon.com/efs/) as a cloud file system to store shared log files, configuration files, and other data accessed concurrently by multiple applications or instances across Availability Zones.
 

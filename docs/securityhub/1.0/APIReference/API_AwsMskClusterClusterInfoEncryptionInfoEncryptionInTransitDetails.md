@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsMskC
 ---
 
 # AwsMskClusterClusterInfoEncryptionInfoEncryptionInTransitDetails
-<a name="API_AwsMskClusterClusterInfoEncryptionInfoEncryptionInTransitDetails"></a>
 
  The settings for encrypting data in transit.
 

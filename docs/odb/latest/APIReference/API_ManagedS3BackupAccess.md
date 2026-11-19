@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ManagedS3Bac
 ---
 
 # ManagedS3BackupAccess
-<a name="API_ManagedS3BackupAccess"></a>
 
 The configuration for managed Amazon S3 backup access from the ODB network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ReadSetUploadPartLi
 ---
 
 # ReadSetUploadPartListFilter
-<a name="API_ReadSetUploadPartListFilter"></a>
 
  Filter settings that select for read set upload parts of interest.
 

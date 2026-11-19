@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListConta
 ---
 
 # ListContactsFilter
-<a name="API_ListContactsFilter"></a>
 
 A filter that can be applied to a list of contacts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/red-hat-ope
 ---
 
 # FAQ
-<a name="faq"></a>
 
 1. What happens if cluster provisioning fails?
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/addf-securi
 ---
 
 # ADDF security review process
-<a name="addf-security-review-process"></a>
 
 Autonomous Driving Data Framework (ADDF) was built with security in mind. Before release to the public, AWS performed an initial, internal security review of ADDF and resolved any identified security issues. Both AWS and the open-source community contribute to ongoing security reviews of the framework.
 

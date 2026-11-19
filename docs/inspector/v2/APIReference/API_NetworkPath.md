@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_NetworkPat
 ---
 
 # NetworkPath
-<a name="API_NetworkPath"></a>
 
 Information on the network path associated with a finding.
 

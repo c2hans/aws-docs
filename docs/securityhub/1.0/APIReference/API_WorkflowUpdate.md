@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Workflo
 ---
 
 # WorkflowUpdate
-<a name="API_WorkflowUpdate"></a>
 
 Used to update information about the investigation into the finding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_GetOidcInf
 ---
 
 # GetOidcInfo
-<a name="API_GetOidcInfo"></a>
 
 Retrieves the OpenID Connect (OIDC) configuration for a Wickr network, including SSO settings and optional token information if access token parameters are provided.
 

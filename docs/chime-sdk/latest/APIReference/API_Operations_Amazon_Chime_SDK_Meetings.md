@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operat
 ---
 
 # Amazon Chime SDK Meetings
-<a name="API_Operations_Amazon_Chime_SDK_Meetings"></a>
 
 The following actions are supported by Amazon Chime SDK Meetings:
 +  [BatchCreateAttendee](API_meeting-chime_BatchCreateAttendee.md)

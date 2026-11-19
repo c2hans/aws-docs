@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/run-batch-bui
 ---
 
 # Run a batch build (AWS CLI)
-<a name="run-batch-build-cli"></a>
 
 1. Run the `start-build-batch` command in one of the following ways:
 

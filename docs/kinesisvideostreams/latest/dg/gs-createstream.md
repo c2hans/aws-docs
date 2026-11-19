@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-creates
 ---
 
 # Create an Amazon Kinesis video stream
-<a name="gs-createstream"></a>
 
 This section describes how to create a Kinesis video stream.
 

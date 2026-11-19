@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AmiConfigu
 ---
 
 # AmiConfiguration
-<a name="API_AmiConfiguration"></a>
 
 The configuration that controls how Amazon Machine Images (AMIs) are scanned for an account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailConverseImageBlock
-<a name="API_runtime_GuardrailConverseImageBlock"></a>
 
 An image block that contains images that you want to assess with a guardrail.
 

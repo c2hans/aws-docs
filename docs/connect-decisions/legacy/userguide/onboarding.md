@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/onboa
 ---
 
 # Create your first demand plan
-<a name="onboarding"></a>
 
 When you log into Demand Planning for the first time, you will be able to view the onboarding pages that highlight key product features and help you get familiar with the Demand Planning capabilities.
 

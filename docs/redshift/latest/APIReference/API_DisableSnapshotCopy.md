@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Disable
 ---
 
 # DisableSnapshotCopy
-<a name="API_DisableSnapshotCopy"></a>
 
 Disables the automatic copying of snapshots from one region to another region for a specified cluster.
 

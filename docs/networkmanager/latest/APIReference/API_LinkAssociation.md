@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_L
 ---
 
 # LinkAssociation
-<a name="API_LinkAssociation"></a>
 
 Describes the association between a device and a link.
 

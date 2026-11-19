@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/job-authoring-custom-conn
 ---
 
 # Authoring jobs with custom connectors
-<a name="job-authoring-custom-connectors"></a>
 
 You can use connectors and connections for both data source nodes and data target nodes in AWS Glue Studio.
 

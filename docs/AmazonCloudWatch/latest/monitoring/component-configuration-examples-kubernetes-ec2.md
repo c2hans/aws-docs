@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # Kubernetes on Amazon EC2
-<a name="component-configuration-examples-kubernetes-ec2"></a>
 
 The following example shows a component configuration in JSON format for Kubernetes on Amazon EC2.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_
 ---
 
 # ListTaskInstances
-<a name="API_ListTaskInstances"></a>
 
 Lists all task instances for a specific workflow run, with optional pagination support.
 

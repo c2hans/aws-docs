@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Das
 ---
 
 # DashProgramInformation
-<a name="API_DashProgramInformation"></a>
 
 Details about the content that you want MediaPackage to pass through in the manifest to the playback device.
 

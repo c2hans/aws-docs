@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/voice-connector-use-
 ---
 
 # Amazon Chime SDK Voice Connector supported use cases
-<a name="voice-connector-use-cases"></a>
 
 Amazon Chime SDK Voice Connector is a SIP trunking service for connecting **existing enterprise telephony infrastructure** to AWS.
 

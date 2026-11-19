@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Aggre
 ---
 
 # AggregationFunction
-<a name="API_AggregationFunction"></a>
 
 An aggregation function aggregates values from a dimension or measure.
 

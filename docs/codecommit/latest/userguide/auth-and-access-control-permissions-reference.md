@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-acc
 ---
 
 # CodeCommit permissions reference
-<a name="auth-and-access-control-permissions-reference"></a>
 
 The following tables list each CodeCommit API operation, the corresponding actions for which you can grant permissions, and the format of the resource ARN to use for granting permissions. The CodeCommit APIs are grouped into tables based on the scope of the actions allowed by that API. Refer to it when setting up [Access control](auth-and-access-control.md#access-control) and writing permissions policies that you can attach to an IAM identity (identity-based policies).
 

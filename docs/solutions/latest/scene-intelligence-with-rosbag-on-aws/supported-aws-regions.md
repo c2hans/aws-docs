@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # Supported AWS Regions
-<a name="supported-aws-regions"></a>
 
 This solution uses the Amazon MWAA service, which is not currently available in all AWS Regions. For the most current availability of AWS services by Region, see the [AWS Regional Services List](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/).
 

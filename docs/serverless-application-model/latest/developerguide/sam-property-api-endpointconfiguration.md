@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # EndpointConfiguration
-<a name="sam-property-api-endpointconfiguration"></a>
 
 The endpoint type of a REST API.
 

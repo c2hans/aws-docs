@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BinWi
 ---
 
 # BinWidthOptions
-<a name="API_BinWidthOptions"></a>
 
 The options that determine the bin width of a histogram.
 

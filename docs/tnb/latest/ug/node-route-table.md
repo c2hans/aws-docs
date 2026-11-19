@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-route-table.html
 ---
 
 # AWS.Networking.RouteTable
-<a name="node-route-table"></a>
 
 A route table contains a set of rules, called routes, that determine where network traffic from subnets within your VPC or gateway is directed. You must associate a route table with a VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteDashboard
-<a name="API_DeleteDashboard"></a>
 
 Deletes a dashboard.
 

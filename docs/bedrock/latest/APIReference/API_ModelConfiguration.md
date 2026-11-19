@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ModelCon
 ---
 
 # ModelConfiguration
-<a name="API_ModelConfiguration"></a>
 
 Configuration for a model used in advanced prompt optimization.
 

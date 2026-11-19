@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_FunctionEnd
 ---
 
 # FunctionEndpointSummary
-<a name="API_FunctionEndpointSummary"></a>
 
 A summary of a web function endpoint.
 

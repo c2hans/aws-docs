@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-a
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 ## Capture dependencies
 <a name="dependencies"></a>

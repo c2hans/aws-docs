@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_L
 ---
 
 # ListAddonSubscriptions
-<a name="API_ListAddonSubscriptions"></a>
 
 Lists all Add On subscriptions in your account.
 

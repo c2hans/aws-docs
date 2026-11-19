@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Use `GetObjectAnnotation` with an AWS SDK
-<a name="s3_example_s3_GetObjectAnnotation_section"></a>
 
 The following code example shows how to use `GetObjectAnnotation`.
 

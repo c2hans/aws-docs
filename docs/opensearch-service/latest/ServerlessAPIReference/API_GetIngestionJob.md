@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # GetIngestionJob
-<a name="API_GetIngestionJob"></a>
 
 Returns information about an ingestion job, including its configuration, status, and processing state.
 

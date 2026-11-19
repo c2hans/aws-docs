@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchCre
 ---
 
 # BatchCreateDataTableValueSuccessResult
-<a name="API_BatchCreateDataTableValueSuccessResult"></a>
 
 A batch create data table value success result.
 

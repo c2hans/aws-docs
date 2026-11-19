@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_Assertio
 ---
 
 # AssertionAttributes
-<a name="API_AssertionAttributes"></a>
 
 A structure that defines which attributes in the IdP assertion are to be used to define information about the users authenticated by the IdP to use the workspace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/mgn-console.html
 ---
 
 # Using the AWS Transform MGN console
-<a name="mgn-console"></a>
 
 AWS Transform MGN is AWS Region-specific. Ensure that you select the correct Region from the **Select a Region** menu when using AWS Transform MGN, just like you would with other AWS Region-specific services such as Amazon EC2.
 

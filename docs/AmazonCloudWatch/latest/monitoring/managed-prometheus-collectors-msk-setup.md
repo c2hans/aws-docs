@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/manag
 ---
 
 # Integrate Amazon MSK
-<a name="managed-prometheus-collectors-msk-setup"></a>
 
 With an Amazon CloudWatch managed Prometheus collector, you can automatically discover and collect Prometheus metrics from your Amazon MSK clusters. When you enable Open Monitoring on your Amazon MSK cluster, it exposes Prometheus metrics through the Java Management Extensions (JMX) Exporter and Node Exporter. The managed collector connects to your VPC and scrapes these metrics from all brokers using DNS-based service discovery and delivers these metrics directly to CloudWatch. With this integration, you can monitor host-level metrics, JVM-level metrics, and Kafka broker metrics in CloudWatch without deploying any agents.
 

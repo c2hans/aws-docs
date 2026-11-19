@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/entityresolution_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `DeleteMatchingWorkflow` with an AWS SDK
-<a name="entityresolution_example_entityresolution_DeleteMatchingWorkflow_section"></a>
 
 The following code examples show how to use `DeleteMatchingWorkflow`.
 

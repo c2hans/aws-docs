@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_MultiRegionC
 ---
 
 # MultiRegionConfiguration
-<a name="API_MultiRegionConfiguration"></a>
 
 Describes the configuration of this multi-Region key. This field appears only when the KMS key is a primary or replica of a multi-Region key.
 

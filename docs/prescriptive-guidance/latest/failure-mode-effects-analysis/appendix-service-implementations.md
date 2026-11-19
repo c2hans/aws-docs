@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/failure-mod
 ---
 
 # Appendix: AWS service-specific FMEA implementation
-<a name="appendix-service-implementations"></a>
 
 This reference guide provides example pre-analyzed failure modes for common AWS services, including Risk Priority Number (RPN) calculations and recommended mitigation strategies. Use this as a starting point for your FMEA analysis and customize based on your specific application architecture and business requirements.
 

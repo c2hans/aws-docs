@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsDyna
 ---
 
 # AwsDynamoDbTableSseDescription
-<a name="API_AwsDynamoDbTableSseDescription"></a>
 
 Information about the server-side encryption for the table.
 

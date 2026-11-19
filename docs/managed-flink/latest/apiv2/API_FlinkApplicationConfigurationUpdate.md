@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_FlinkAppl
 ---
 
 # FlinkApplicationConfigurationUpdate
-<a name="API_FlinkApplicationConfigurationUpdate"></a>
 
 Describes updates to the configuration parameters for a Managed Service for Apache Flink application.
 

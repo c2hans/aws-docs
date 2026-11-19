@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/triggers-for-ad-avai
 ---
 
 # Triggers for ad avail blanking
-<a name="triggers-for-ad-avail-blanking"></a>
 
 For ad avail blanking, the ad avail mode that you set controls which SCTE 35 events result in the blanking of the content in the MediaLive outputs.
 

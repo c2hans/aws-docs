@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_J
 ---
 
 # JobLevelCostAllocationConfiguration
-<a name="API_JobLevelCostAllocationConfiguration"></a>
 
 The configuration object that enables job level cost allocation.
 

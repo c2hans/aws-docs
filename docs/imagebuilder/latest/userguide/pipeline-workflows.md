@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/pipeline-w
 ---
 
 # Configure image pipeline workflows in Image Builder
-<a name="pipeline-workflows"></a>
 
 With image workflows, you can customize the workflows that your pipeline runs to build, test, and distribute images according to your needs. The workflows that you define run within the context of the Image Builder workflow framework. For more information about the stages that make up the workflow framework, see [Manage build, test, and distribution workflows for Image Builder images](manage-image-workflows.md).
 

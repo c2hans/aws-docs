@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # RealTimeContactAnalysisSegmentsFilter
-<a name="API_connect-contact-lens_RealTimeContactAnalysisSegmentsFilter"></a>
 
 A filter that restricts the segments returned by `ListRealtimeContactAnalysisSegments`. It supports filtering category segments by the tags on the rules that create them, which enforces tag-based access control on the categories a caller can view.
 

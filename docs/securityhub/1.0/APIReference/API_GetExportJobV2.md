@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetExpo
 ---
 
 # GetExportJobV2
-<a name="API_GetExportJobV2"></a>
 
 Returns the details of a single findings export job, including its current `Status`, the `Destination` it writes to, the `OutputConfiguration` it was started with, and its `StartedAt` and `EndedAt` timestamps. Use this operation to poll an export job that you started with `StartExportJobV2` until it reaches a terminal state (`SUCCEEDED`, `FAILED`, or `CANCELLED`).
 

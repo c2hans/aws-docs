@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Disasso
 ---
 
 # DisassociateFromMasterAccount
-<a name="API_DisassociateFromMasterAccount"></a>
 
 This method is deprecated. Instead, use `DisassociateFromAdministratorAccount`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-content-sh
 ---
 
 # Enable deployment
-<a name="jumpstart-content-sharing-deployment"></a>
 
 When adding a model to share, you can optionally provide an inference environment in which collaborators in your organization can deploy the shared model for inference.
 

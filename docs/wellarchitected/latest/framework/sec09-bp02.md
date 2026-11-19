@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec09-b
 ---
 
 # SEC09-BP02 Enforce encryption in transit
-<a name="sec09-bp02"></a>
 
  Encryption in transit protects data as it moves between systems and across networks you do not control. Enforcing it means requiring secure protocols for sensitive traffic, rejecting weak or outdated ones, and confirming that both endpoints negotiate strong parameters. Your organization's policies, regulatory obligations, and standards define what counts as strong for your workloads.
 

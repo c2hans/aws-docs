@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetStringFilterCondition
-<a name="API_DataSetStringFilterCondition"></a>
 
 A filter condition for string columns, supporting both comparison and list-based filtering.
 

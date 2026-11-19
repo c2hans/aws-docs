@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/working
 ---
 
 # Working with license asset groups
-<a name="working-with-license-asset-groups"></a>
 
 This section describes how to create, update, delete, and manage license asset groups in AWS License Manager. License asset groups help track and manage licenses across your AWS resources.
 

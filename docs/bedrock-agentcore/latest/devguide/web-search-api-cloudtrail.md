@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/web-se
 ---
 
 # Log AgentCore Web Search API calls with AWS CloudTrail
-<a name="web-search-api-cloudtrail"></a>
 
  AWS CloudTrail records `InvokeWebSearch` requests as data events with the event name `InvokeWebSearch`, the event source `bedrock-agentcore.amazonaws.com`, and the resource type `AWS::BedrockAgentCore::WebSearch`. Each event lists the web search tool that the request named as its resource.
 

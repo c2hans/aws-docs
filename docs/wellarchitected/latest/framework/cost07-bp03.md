@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost07-
 ---
 
 # COST07-BP03 Select third-party agreements with cost-efficient terms
-<a name="cost07-bp03"></a>
 
  Choose agreements whose cost scales with the benefit they deliver, keeping cost justified as your usage grows.
 

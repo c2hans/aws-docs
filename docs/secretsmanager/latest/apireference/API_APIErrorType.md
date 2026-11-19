@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_A
 ---
 
 # APIErrorType
-<a name="API_APIErrorType"></a>
 
 The error Secrets Manager encountered while retrieving an individual secret as part of [BatchGetSecretValue](API_BatchGetSecretValue.md).
 

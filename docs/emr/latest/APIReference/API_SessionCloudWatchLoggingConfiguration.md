@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_SessionCloud
 ---
 
 # SessionCloudWatchLoggingConfiguration
-<a name="API_SessionCloudWatchLoggingConfiguration"></a>
 
 The CloudWatch Logs configuration for a session.
 

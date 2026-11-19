@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/lineage-tracking-ent
 ---
 
 # Lineage Tracking Entities
-<a name="lineage-tracking-entities"></a>
 
 Tracking entities maintain a representation of all the elements of your end-to-end machine learning workflow. You can use this representation to establish model governance, reproduce your workflow, and maintain a record of your work history.
 

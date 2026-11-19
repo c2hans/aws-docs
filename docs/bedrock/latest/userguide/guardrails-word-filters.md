@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-word
 ---
 
 # Remove a specific list of words and phrases from conversations with word filters
-<a name="guardrails-word-filters"></a>
 
 Amazon Bedrock Guardrails has word filters that you can use to block words and phrases in input prompts and model responses. You can use the following word filters to block profanity, offensive, or inappropriate content, or content with competitor or product names.
 + **Profanity filter** – Turn on to block profane words. The list of profanities is based on conventional definitions of profanity and it's continually updated.

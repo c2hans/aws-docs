@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/creating-auto-
 ---
 
 # Create Auto Scaling groups with AWS CloudFormation
-<a name="creating-auto-scaling-groups-with-cloudformation"></a>
 
 Amazon EC2 Auto Scaling is integrated with AWS CloudFormation, a service that helps you to model and set up your AWS resources so that you can spend less time creating and managing your resources and infrastructure. You create a template that describes all the AWS resources that you want (such as Auto Scaling groups), and CloudFormation provisions and configures those resources for you.
 

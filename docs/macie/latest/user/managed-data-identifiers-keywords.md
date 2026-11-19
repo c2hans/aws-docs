@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/managed-data-identifie
 ---
 
 # Keyword requirements for managed data identifiers
-<a name="managed-data-identifiers-keywords"></a>
 
 To detect certain types of sensitive data by using managed data identifiers, Amazon Macie requires a keyword to be in proximity of the data. If this is the case for a particular type of data, reference topics in this section indicate the keyword requirements for that data.
 

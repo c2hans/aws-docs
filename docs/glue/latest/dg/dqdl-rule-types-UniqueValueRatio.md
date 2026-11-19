@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-UniqueVal
 ---
 
 # UniqueValueRatio
-<a name="dqdl-rule-types-UniqueValueRatio"></a>
 
 Checks the *unique value ratio* of a column against a given expression. A unique value ratio is the fraction of unique values divided by the number of all distinct values in a column. Unique values occur exactly one time, while distinct values occur *at least* once.
 

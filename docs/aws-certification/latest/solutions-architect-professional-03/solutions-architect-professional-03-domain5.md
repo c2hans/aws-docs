@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/solutions-archi
 ---
 
 # Content Domain 5: Operational Excellence and Automation
-<a name="solutions-architect-professional-03-domain5"></a>
 
 **Topics**
 + [Task 5.1: Design infrastructure as code.](#solutions-architect-professional-03-domain5-task1)

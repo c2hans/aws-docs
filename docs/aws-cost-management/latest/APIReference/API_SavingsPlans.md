@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SavingsPlans
-<a name="API_SavingsPlans"></a>
 
 The Savings Plans commitment details.
 

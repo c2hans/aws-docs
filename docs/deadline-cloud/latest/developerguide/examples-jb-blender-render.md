@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Render Blender scenes on Deadline Cloud
-<a name="examples-jb-blender-render"></a>
 
 The [blender\_render](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/blender_render) job bundle on the GitHub website shows how to support a CLI application in about 100 lines of YAML. Most of the template is parameter metadata that defines parameter names, types, defaults, and user interface controls. The step definition includes a parameter space that creates a task for each frame in the Frames job parameter, and a short script that substitutes job parameters and the Frame task parameter into a command for each task.
 

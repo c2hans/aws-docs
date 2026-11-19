@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Defaul
 ---
 
 # DefaultServerSideEncryption
-<a name="API_DefaultServerSideEncryption"></a>
 
 Contains information on the server side encryption method used in the S3 bucket. See [S3 Server-Side Encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html) for more information.
 

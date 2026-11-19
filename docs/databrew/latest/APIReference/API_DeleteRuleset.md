@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_DeleteR
 ---
 
 # DeleteRuleset
-<a name="API_DeleteRuleset"></a>
 
 Deletes a ruleset.
 

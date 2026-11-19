@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Express::DirectoryBucket Tag
-<a name="aws-properties-s3express-directorybucket-tag"></a>
 
 A key-value pair that you use to label your directory buckets. You can add tags to new directory buckets when you create them, or you can add tags to existing directory buckets. Tags can help you organize, track costs for, and control access to directory buckets. For more information, see [Using tags with directory buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-tagging.html).
 

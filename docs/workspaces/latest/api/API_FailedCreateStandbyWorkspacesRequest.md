@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_FailedCreateSt
 ---
 
 # FailedCreateStandbyWorkspacesRequest
-<a name="API_FailedCreateStandbyWorkspacesRequest"></a>
 
 Describes the standby WorkSpace that could not be created.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/kinesis-fir
 ---
 
 # Firehose
-<a name="kinesis-firehose-component"></a>
 
 The Firehose component (`aws.greengrass.KinesisFirehose`) publishes data through Amazon Data Firehose delivery streams to destinations, such as Amazon S3, Amazon Redshift, and Amazon OpenSearch Service. For more information, see [What is Amazon Data Firehose?](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html) in the *Amazon Data Firehose Developer Guide*.
 

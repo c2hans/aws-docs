@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/xero-configuring.html
 ---
 
 # Configuring Xero
-<a name="xero-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Xero, you must meet the following requirements:
 

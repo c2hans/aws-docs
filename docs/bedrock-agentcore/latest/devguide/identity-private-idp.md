@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Connect to private identity providers
-<a name="identity-private-idp"></a>
 
 Amazon Bedrock AgentCore Identity supports connecting to OAuth 2.0 identity providers (IdPs) hosted inside your AWS VPC, such as self-hosted Keycloak, PingFederate, or other OIDC-compliant authorization servers, without exposing them to the public internet. This enables you to use private IdPs for both inbound JWT authorization with AgentCore Runtime and AgentCore Gateway as well as outbound OAuth2 credential providers.
 

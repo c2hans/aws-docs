@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/sexy.html
 ---
 
 # .sexy
-<a name="sexy"></a>
 
 Used for sexual content. Also used for describing the most popular and exciting brands, products, information, and websites.
 

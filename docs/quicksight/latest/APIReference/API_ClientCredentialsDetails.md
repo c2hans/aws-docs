@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Clien
 ---
 
 # ClientCredentialsDetails
-<a name="API_ClientCredentialsDetails"></a>
 
 Details for OAuth 2.0 client credentials grant authentication.
 

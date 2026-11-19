@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_HLC_End
 ---
 
 # Sending logs using the HLC endpoint (HLC Logs)
-<a name="CWL_HLC_Endpoint"></a>
 
 The HLC Logs endpoint (`/services/collector/event`) is based on the HTTP Log Collector (HLC) format.
 

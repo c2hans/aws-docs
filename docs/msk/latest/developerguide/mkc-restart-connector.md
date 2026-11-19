@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/mkc-restart-co
 ---
 
 # Restart a connector
-<a name="mkc-restart-connector"></a>
 
 You can restart a newly created connector and all of its tasks, or selectively restart only the failed tasks, while preserving configuration and committed offsets. This is useful when a connector has failed because of problems such as misconfigured parameters or temporary network connectivity issues. You can also restart connectors that have no failed tasks to recover from transient issues or to pick up changes in external systems or dependencies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DBClusterSnaps
 ---
 
 # DBClusterSnapshotAttributesResult
-<a name="API_DBClusterSnapshotAttributesResult"></a>
 
 Contains the results of a successful call to the [DescribeDBClusterSnapshotAttributes](API_DescribeDBClusterSnapshotAttributes.md) API action.
 

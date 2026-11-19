@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AllowedPr
 ---
 
 # AllowedPrincipal
-<a name="API_AllowedPrincipal"></a>
 
 Describes a principal.
 

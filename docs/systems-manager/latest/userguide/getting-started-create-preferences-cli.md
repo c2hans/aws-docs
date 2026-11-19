@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/getting
 ---
 
 # Create a Session Manager preferences document (command line)
-<a name="getting-started-create-preferences-cli"></a>
 
 Use the following procedure to create SSM documents that define your preferences for AWS Systems Manager Session Manager sessions. You can use the document to configure session options including data encryption, session duration, and logging. For example, you can specify whether to store session log data in an Amazon Simple Storage Service (Amazon S3) bucket or Amazon CloudWatch Logs log group. You can create documents that define general preferences for all sessions for an AWS account and AWS Region, or that define preferences for individual sessions.
 

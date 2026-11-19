@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/se
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Set credentials in Node.js
-<a name="setting-credentials-node"></a>
 
 We recommend that new users who are developing locally and are not given a method of authentication by their employer to set up AWS IAM Identity Center. For more information, see [SDK authentication with AWS](getting-your-credentials.md).
 

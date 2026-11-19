@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/migrationguide/mig
 ---
 
 # Install on a Dell
-<a name="migrate-worker-rhel9-dell"></a>
 
 You can install RHEL 9 on a Dell chassis either from the iDRAC interface or using a USB stick.
 

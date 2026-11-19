@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_sns.html
 ---
 
 # Subscribing to Amazon SNS GuardDuty announcements
-<a name="guardduty_sns"></a>
 
 This section provides information about subscribing to Amazon SNS (Simple Notification Service) for GuardDuty announcements to receive notifications about newly released finding types, updates to the existing finding types, and other functionality changes. Notifications are available in all formats that Amazon SNS supports.
 

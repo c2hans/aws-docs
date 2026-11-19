@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/diagnostic-tools/latest/APIReference/API
 ---
 
 # ListTools
-<a name="API_ListTools"></a>
 
 List all of the available tools.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origi
 ---
 
 # OriginCustomHeader
-<a name="API_OriginCustomHeader"></a>
 
 A complex type that contains `HeaderName` and `HeaderValue` elements, if any, for this distribution.
 

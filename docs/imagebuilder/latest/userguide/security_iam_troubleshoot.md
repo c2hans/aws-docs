@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/security_i
 ---
 
 # Troubleshoot IAM issues in Image Builder
-<a name="security_iam_troubleshoot"></a>
 
 **Topics**
 + [I am not authorized to perform an action in Image Builder](#security_iam_troubleshoot-no-permissions)

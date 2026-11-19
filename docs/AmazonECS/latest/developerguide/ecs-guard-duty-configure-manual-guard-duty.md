@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guar
 ---
 
 # Turning on Runtime Monitoring for Amazon ECS
-<a name="ecs-guard-duty-configure-manual-guard-duty"></a>
 
 You can turn on Runtime Monitoring for clusters with EC2 instances, or when you need granular control of Runtime Monitoring at the cluster-level on Fargate.
 

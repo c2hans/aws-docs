@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Specifying the version of a gate
-<a name="workflows-gates-version"></a>
 
 By default, when you add a gate to a workflow, CodeCatalyst adds the full version to the workflow definition file using the format:
 

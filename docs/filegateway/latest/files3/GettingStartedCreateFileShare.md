@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/GettingStarted
 ---
 
 # Creating a file share
-<a name="GettingStartedCreateFileShare"></a>
 
 In this section, you can find instructions on how to create a file share that can be accessed using the Network File System (NFS) or the Server Message Block (SMB) protocol.
 

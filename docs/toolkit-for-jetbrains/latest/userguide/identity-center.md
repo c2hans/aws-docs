@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/i
 ---
 
 # AWS IAM Identity Center
-<a name="identity-center"></a>
 
 AWS IAM Identity Center is the recommended best practice for managing your AWS account authentication.
 

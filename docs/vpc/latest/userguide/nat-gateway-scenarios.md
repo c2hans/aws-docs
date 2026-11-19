@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateway-scenari
 ---
 
 # NAT gateway use cases
-<a name="nat-gateway-scenarios"></a>
 
 The following are example use cases for public and private NAT gateways.
 

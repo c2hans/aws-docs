@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ConsumableDetails
-<a name="API_benefits_ConsumableDetails"></a>
 
 Contains information about consumable benefit fulfillment, such as usage quotas or service limits.
 

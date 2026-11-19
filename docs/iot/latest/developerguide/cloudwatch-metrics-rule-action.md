@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/cloudwatch-met
 ---
 
 # CloudWatch metrics
-<a name="cloudwatch-metrics-rule-action"></a>
 
 The CloudWatch metric (`cloudwatchMetric`) action captures an Amazon CloudWatch metric. You can specify the metric namespace, name, value, unit, and timestamp.
 

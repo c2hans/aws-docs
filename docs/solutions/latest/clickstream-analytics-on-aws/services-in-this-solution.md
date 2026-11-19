@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # AWS services in this guidance
-<a name="services-in-this-solution"></a>
 
 The following AWS services are included in this guidance:
 

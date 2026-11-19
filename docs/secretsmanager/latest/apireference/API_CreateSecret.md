@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_C
 ---
 
 # CreateSecret
-<a name="API_CreateSecret"></a>
 
 Creates a new secret. A *secret* can be a password, a set of credentials such as a user name and password, an OAuth token, or other secret information that you store in an encrypted form in Secrets Manager. The secret also includes the connection information to access a database or other service. Secrets Manager does not encrypt this connection information. A secret in Secrets Manager consists of both the encrypted secret versions and the metadata that Secrets Manager uses to manage the secret.
 

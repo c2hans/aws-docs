@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # RedshiftMetadata
-<a name="API_RedshiftMetadata"></a>
 
 Describes the `DataSource` details specific to Amazon Redshift.
 

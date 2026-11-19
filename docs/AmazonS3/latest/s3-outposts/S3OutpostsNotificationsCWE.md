@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/S3OutpostsNo
 ---
 
 # Receiving S3 on Outposts event notifications by using Amazon CloudWatch Events
-<a name="S3OutpostsNotificationsCWE"></a>
 
 You can use CloudWatch Events to create a rule for any Amazon S3 on Outposts API event. When you create a rule, you can choose to get notified through all supported CloudWatch targets, including Amazon Simple Queue Service (Amazon SQS), Amazon Simple Notification Service (Amazon SNS), and AWS Lambda. For more information, see the list of [AWS services that can be targets for CloudWatch Events](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html) in the *Amazon CloudWatch Events User Guide*. To choose a target service to work with your S3 on Outposts, see [Creating a CloudWatch Events rule that triggers on an AWS API call using AWS CloudTrail](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/Create-CloudWatch-Events-CloudTrail-Rule.html) in the *Amazon CloudWatch Events User Guide*.
 

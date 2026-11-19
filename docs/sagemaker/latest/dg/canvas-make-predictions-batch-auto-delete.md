@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-make-predicti
 ---
 
 # Delete your automatic batch prediction configuration
-<a name="canvas-make-predictions-batch-auto-delete"></a>
 
 To learn how to delete your automatic batch prediction configuration, see [Delete an automatic configuration](canvas-manage-automations-delete.md).
 

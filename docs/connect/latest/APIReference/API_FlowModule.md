@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_FlowModu
 ---
 
 # FlowModule
-<a name="API_FlowModule"></a>
 
  A list of Flow Modules an AI Agent can invoke as a tool
 

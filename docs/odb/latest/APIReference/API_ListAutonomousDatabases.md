@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListAutonomo
 ---
 
 # ListAutonomousDatabases
-<a name="API_ListAutonomousDatabases"></a>
 
 Returns information about the Autonomous Databases owned by your AWS account in the current AWS Region.
 

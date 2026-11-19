@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Entit
 ---
 
 # Entity
-<a name="API_Entity"></a>
 
 Provides information about an entity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Get
 ---
 
 # GetPipeline
-<a name="API_GetPipeline"></a>
 
 Returns the metadata, structure, stages, and actions of a pipeline. Can be used to return the entire structure of a pipeline in JSON format, which can then be modified and used to update the pipeline structure with [UpdatePipeline](API_UpdatePipeline.md).
 

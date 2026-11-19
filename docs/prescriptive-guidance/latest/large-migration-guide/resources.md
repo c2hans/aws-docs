@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS large migrations
 <a name="res-aws-large-migrations"></a>

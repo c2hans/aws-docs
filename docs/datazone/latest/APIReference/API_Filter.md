@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Filter.
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 A search filter in Amazon DataZone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetails
-<a name="API_AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetails"></a>
 
 ## Contents
 <a name="API_AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetails_Contents"></a>

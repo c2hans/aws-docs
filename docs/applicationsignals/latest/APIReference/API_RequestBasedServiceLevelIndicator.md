@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # RequestBasedServiceLevelIndicator
-<a name="API_RequestBasedServiceLevelIndicator"></a>
 
 This structure contains information about the performance metric that a request-based SLO monitors.
 

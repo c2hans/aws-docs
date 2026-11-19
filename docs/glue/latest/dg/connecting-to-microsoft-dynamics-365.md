@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-microsoft-d
 ---
 
 # Connecting to Microsoft Dynamics 365 CRM
-<a name="connecting-to-microsoft-dynamics-365"></a>
 
  Microsoft Dynamics 365 is a product line of enterprise resource planning and customer relationship management intelligent business applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/eks-resource-scali
 ---
 
 # Amazon EKS resource scaling execution block
-<a name="eks-resource-scaling-block"></a>
 
 The EKS resource scaling execution block enables you to scale EKS resources as part of your multi-Region recovery process. When you configure the execution block, you define a percentage of capacity to scale, relative to the capacity in the Region that is being deactivated.
 

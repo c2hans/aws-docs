@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Use Kubernetes volume storage with Amazon EBS
-<a name="ebs-csi"></a>
 
 **Note**
  **New:** Amazon EKS Auto Mode automates routine tasks for block storage. Learn how to [Deploy a sample stateful workload to EKS Auto Mode](sample-storage-workload.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/code-exampl
 ---
 
 # Actions
-<a name="code-examples-actions"></a>
 
 The following code examples demonstrate how to perform individual Signer actions with the AWS Java SDK.
 

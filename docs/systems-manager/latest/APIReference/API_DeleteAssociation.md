@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DeleteAssociation
-<a name="API_DeleteAssociation"></a>
 
 Disassociates the specified AWS Systems Manager document (SSM document) from the specified managed node. If you created the association by using the `Targets` parameter, then you must delete the association by using the association ID.
 

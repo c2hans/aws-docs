@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SecurityG
 ---
 
 # SecurityGroup
-<a name="API_SecurityGroup"></a>
 
 Describes a security group.
 

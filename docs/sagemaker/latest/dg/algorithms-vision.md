@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/algorithms-vision.ht
 ---
 
 # Built-in SageMaker AI Algorithms for Computer Vision
-<a name="algorithms-vision"></a>
 
 SageMaker AI provides image processing algorithms that are used for image classification, object detection, and computer vision.
 + [Image Classification - MXNet](image-classification.md)—uses example data with answers (referred to as a *supervised algorithm*). Use this algorithm to classify images.

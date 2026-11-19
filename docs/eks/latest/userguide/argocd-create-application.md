@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-create-appli
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create Applications
-<a name="argocd-create-application"></a>
 
 Applications represent deployments in target clusters. Each Application defines a source (Git repository) and destination (cluster and namespace). When applied, Argo CD will create the resources specified by manifests in the Git repository to the namespace in the cluster. Applications often specify workload deployments, but they can manage any Kubernetes resources available in the destination cluster.
 

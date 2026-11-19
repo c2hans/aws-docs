@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ConfigRul
 ---
 
 # ConfigRule
-<a name="API_ConfigRule"></a>
 
  AWS Config rules evaluate the configuration settings of your AWS resources. A rule can run when AWS Config detects a configuration change to an AWS resource or at a periodic frequency that you choose (for example, every 24 hours). There are two types of rules: * AWS Config Managed Rules* and * AWS Config Custom Rules*.
 

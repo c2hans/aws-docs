@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-
 ---
 
 # Using the Delta Lake framework in AWS Glue
-<a name="aws-glue-programming-etl-format-delta-lake"></a>
 
 AWS Glue 3.0 and later supports the Linux Foundation Delta Lake framework. Delta Lake is an open-source data lake storage framework that helps you perform ACID transactions, scale metadata handling, and unify streaming and batch data processing. This topic covers available features for using your data in AWS Glue when you transport or store your data in a Delta Lake table. To learn more about Delta Lake, see the official [Delta Lake documentation](https://docs.delta.io/latest/delta-intro.html).
 

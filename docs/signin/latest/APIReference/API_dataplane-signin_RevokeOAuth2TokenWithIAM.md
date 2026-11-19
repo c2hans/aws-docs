@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane
 ---
 
 # RevokeOAuth2TokenWithIAM
-<a name="API_dataplane-signin_RevokeOAuth2TokenWithIAM"></a>
 
 Revokes an OAuth 2.0 refresh token and its associated token chain.
 

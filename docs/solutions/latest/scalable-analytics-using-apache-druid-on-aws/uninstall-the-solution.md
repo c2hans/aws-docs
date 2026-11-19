@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Uninstall the guidance
-<a name="uninstall-the-solution"></a>
 
 You can uninstall the guidance by directly deleting the stacks from the AWS CloudFormation console.
 

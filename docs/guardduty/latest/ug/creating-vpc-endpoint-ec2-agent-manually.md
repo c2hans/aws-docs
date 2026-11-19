@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/creating-vpc-endpoin
 ---
 
 # Prerequisite – Creating Amazon VPC endpoint manually
-<a name="creating-vpc-endpoint-ec2-agent-manually"></a>
 
 Before you can install the GuardDuty security agent, you must create an Amazon Virtual Private Cloud (Amazon VPC) endpoint. This will help GuardDuty receive the runtime events of your Amazon EC2 instances.
 

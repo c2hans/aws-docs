@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailChecksSensitiveInformationUsage
-<a name="API_runtime_GuardrailChecksSensitiveInformationUsage"></a>
 
 The text unit usage for the sensitive information check.
 

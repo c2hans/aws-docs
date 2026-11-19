@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Observability in Amazon OpenSearch Service
-<a name="observability"></a>
 
 Observability is the practice of understanding the internal state and performance of complex systems by examining their outputs. Traditional monitoring tells you a system is down; observability helps you understand why by letting you ask new questions about your telemetry data.
 

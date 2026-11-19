@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Execute
 ---
 
 # ExecutePolicy
-<a name="API_ExecutePolicy"></a>
 
 Executes the specified policy. This can be useful for testing the design of your scaling policy.
 

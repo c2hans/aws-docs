@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/unowned-clusters.html
 ---
 
 # Non eksctl-created clusters
-<a name="unowned-clusters"></a>
 
 You can run `eksctl` commands against clusters which were not created by `eksctl`.
 

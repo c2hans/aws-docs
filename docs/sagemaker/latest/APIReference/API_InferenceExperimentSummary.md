@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceExperimentSummary
-<a name="API_InferenceExperimentSummary"></a>
 
 Lists a summary of properties of an inference experiment.
 

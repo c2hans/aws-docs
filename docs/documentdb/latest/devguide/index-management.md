@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/index-managem
 ---
 
 # Index management
-<a name="index-management"></a>
 
 This section covers index management topics for Amazon DocumentDB.
 

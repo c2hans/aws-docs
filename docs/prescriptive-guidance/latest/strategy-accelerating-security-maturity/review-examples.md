@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Examples
-<a name="review-examples"></a>
 
 The following are examples of the mature phase. These examples dive deeper into the models, tools, and processes for different business objectives, at a practical level.
 

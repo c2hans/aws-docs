@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSvmAct
 ---
 
 # CreateSvmActiveDirectoryConfiguration
-<a name="API_CreateSvmActiveDirectoryConfiguration"></a>
 
 The configuration that Amazon FSx uses to join the ONTAP storage virtual machine (SVM) to your self-managed (including on-premises) Microsoft Active Directory directory.
 

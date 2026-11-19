@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_Trait.
 ---
 
 # Trait
-<a name="API_Trait"></a>
 
  Provides contextual information about the extracted entity.
 

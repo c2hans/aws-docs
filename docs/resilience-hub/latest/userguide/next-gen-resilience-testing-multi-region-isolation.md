@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Multi-Region: isolation
-<a name="next-gen-resilience-testing-multi-region-isolation"></a>
 
 The **Multi-Region: isolation** test blocks connectivity between two Regions, including network traffic, cross-Region data replication, and selected dependencies. It can help you validate that your service operates independently when resources in another Region are not accessible, and surface cross-Region dependencies that could impact availability.
 

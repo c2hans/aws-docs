@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/monitoring-chann
 ---
 
 # Monitoring channels
-<a name="monitoring-channels"></a>
 
 **Topics**
 + [Monitoring the health of channels](#monitoring-for-failure)

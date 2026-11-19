@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/deleting-a-
 ---
 
 # Delete a connection using AWS Network Manager
-<a name="deleting-a-connection"></a>
 
 If you no longer need a connection, you can delete it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/unset-update.
 ---
 
 # $unset
-<a name="unset-update"></a>
 
 The `$unset` operator in Amazon DocumentDB is used to remove a specified field from a document. When a field is removed using `$unset`, the field is deleted from the document, and the document size is reduced accordingly. This can be useful when you want to remove unnecessary data from your documents.
 

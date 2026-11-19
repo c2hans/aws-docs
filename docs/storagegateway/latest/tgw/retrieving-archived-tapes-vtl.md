@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/retrieving-arc
 ---
 
 # Retrieving Archived Tapes
-<a name="retrieving-archived-tapes-vtl"></a>
 
 To access data stored on an archived virtual tape, you must first retrieve the tape that you want to your Tape Gateway. Your Tape Gateway provides one virtual tape library (VTL) for each gateway.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Viewing failure mode findings and recommendations
-<a name="next-gen-viewing-findings"></a>
 
 After an assessment completes, review the findings and recommendations:
 

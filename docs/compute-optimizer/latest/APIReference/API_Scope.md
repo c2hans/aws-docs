@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # Scope
-<a name="API_Scope"></a>
 
 Describes the scope of a recommendation preference.
 

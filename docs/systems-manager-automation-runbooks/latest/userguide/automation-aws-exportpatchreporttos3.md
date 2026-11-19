@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-ExportPatchReportToS3`
-<a name="automation-aws-exportpatchreporttos3"></a>
 
  **Description**
 

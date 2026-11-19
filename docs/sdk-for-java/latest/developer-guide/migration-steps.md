@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Migration step-by-step instructions with example
-<a name="migration-steps"></a>
 
 This section provides a step-by-step guide to migrate your application that currently uses the SDK for Java v1.x to the SDK for Java 2.x. The first part presents an overview of the steps followed by a detailed example of a migration.
 
@@ -463,7 +462,7 @@ We can replace the entire `do` clause with the following.
 ## Package name to Maven artifactId mappings
 <a name="migration-serviceid-artifactid-mapping"></a>
 
-When you migrate your Maven or Gradle project from v1 of the SDK for Java to v2, you need to figure out which dependencies to add to your build file. The approach described in the [Migration step-by-step instructions with example](#migration-steps) (step 3) uses the package names in import statements as a starting point to determine the dependencies (as artifactIds) to add to your build file.
+When you migrate your Maven or Gradle project from v1 of the SDK for Java to v2, you need to figure out which dependencies to add to your build file. The approach described in the [Migration step-by-step instructions with example](migration-steps.md) (step 3) uses the package names in import statements as a starting point to determine the dependencies (as artifactIds) to add to your build file.
 
 You can use the information in this topic to map the v1 package names to v2 artifactIds.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/alerting-monito
 ---
 
 # Alerting and monitoring
-<a name="alerting-monitoring-nw-sles"></a>
 
 This section covers the following topics.
 

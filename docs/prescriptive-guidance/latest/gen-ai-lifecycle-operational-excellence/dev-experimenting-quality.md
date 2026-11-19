@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Evaluating quality and reliability in generated outputs
-<a name="dev-experimenting-quality"></a>
 
 Evaluation is the most critical and challenging part of the generative AI development loop. Because the outputs are often unstructured and subjective, a multi-faceted evaluation strategy is required. The evaluation system itself should be treated as a product, a complex software component that needs to be designed, versioned, and validated to make sure that it provides a reliable signal of application quality.
 

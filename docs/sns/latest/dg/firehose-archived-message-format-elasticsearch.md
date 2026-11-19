@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/firehose-archived-message-
 ---
 
 # Storing and formatting Amazon SNS Notifications in OpenSearch Service indices
-<a name="firehose-archived-message-format-elasticsearch"></a>
 
 The following example demonstrates an Amazon SNS notification sent to an Amazon OpenSearch Service (OpenSearch Service) index called `my-index`. This index has a time filter field on the `Timestamp` field. The SNS notification is placed in the `_source` property of the payload.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HostReser
 ---
 
 # HostReservation
-<a name="API_HostReservation"></a>
 
 Details about the Dedicated Host Reservation and associated Dedicated Hosts.
 

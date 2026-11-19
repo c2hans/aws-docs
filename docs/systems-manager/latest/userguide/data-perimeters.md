@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/data-pe
 ---
 
 # Data perimeters in AWS Systems Manager
-<a name="data-perimeters"></a>
 
 A data perimeter is a set of preventive guardrails in your AWS environment that help make sure your data can only be accessed by trusted identities from expected networks and resources. When you implement data perimeter controls, you might need to include exceptions for AWS service-owned resources that Systems Manager accesses on your behalf.
 

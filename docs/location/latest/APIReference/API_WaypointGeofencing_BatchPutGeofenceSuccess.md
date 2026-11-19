@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # BatchPutGeofenceSuccess
-<a name="API_WaypointGeofencing_BatchPutGeofenceSuccess"></a>
 
 Contains a summary of each geofence that was successfully stored in a given geofence collection.
 

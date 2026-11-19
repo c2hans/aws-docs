@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # ClippingConfig
-<a name="API_ClippingConfig"></a>
 
 A type of OutputConfig, used when the output in a feed is for the clip feature.
 

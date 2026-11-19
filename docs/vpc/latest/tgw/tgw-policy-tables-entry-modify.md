@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-entry-m
 ---
 
 # Modify a policy table entry in AWS Transit Gateway
-<a name="tgw-policy-tables-entry-modify"></a>
 
 `ModifyTransitGatewayPolicyTableEntry` is a **PATCH-style update**. Only the fields you explicitly include in the request are modified. Fields you omit are left unchanged. They are **not** reset to Any (`*`).
 

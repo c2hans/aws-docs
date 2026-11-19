@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSIPERF01: How do you select the best performing architecture?
-<a name="fsiperf01"></a>
 
  Performance objectives for workloads can vary depending on the criticality of the workload. While more stringent performance requirements are expected for critical systems such as core banking, payments processing, trade performance, and market data feeds, all cloud workloads benefit from defining performance requirements.
 

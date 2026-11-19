@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # Naming requirements for CloudTrail resources, S3 buckets, and KMS keys
-<a name="cloudtrail-trail-naming-requirements"></a>
 
 This section provides information about the naming requirements for CloudTrail resources, Amazon S3 buckets, and KMS keys.
 

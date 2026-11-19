@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Enabling or disabling user and group management or AWS Directory Service Data
-<a name="ms_ad_users_groups_mgmt_enable_disable"></a>
 
 To use user and group management or AWS Directory Service Data, it must be enabled. Once enabled, you can manage users and groups from the AWS Management Console, AWS CLI, or AWS Tools for PowerShell.
 

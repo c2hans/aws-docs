@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/edit-details-bui
 ---
 
 # Edit your AWS Builder ID profile
-<a name="edit-details-builder-id"></a>
 
 You can change your profile information at any time. You can edit the **Email address** and **Name** that you used to create an AWS Builder ID, as well as your **Nickname** and **Language**. When using third-party logins like Google or Apple, only **Name**, **Nickname**, and **Language** are editable.
 

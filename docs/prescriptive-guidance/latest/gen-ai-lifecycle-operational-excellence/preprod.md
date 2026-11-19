@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # GLOE stage 2: Preproduction, validation, and staging for generative AI applications
-<a name="preprod"></a>
 
 The preproduction stage is a pivotal phase in the GenAIOps lifecycle. It bridges the gap between a controlled experiment and a full-scale production deployment. This stage moves beyond the lab and into a controlled, near-production environment with a select group of internal or beta users. This allows teams to gather crucial feedback, harden the system, and build a final, data-driven business case for a full release.
 

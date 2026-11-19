@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/flow-control-act
 ---
 
 # StartVoiceIdStream
-<a name="flow-control-actions-startvoiceidstream"></a>
 
 Sends audio to Connect Customer Voice ID to verify the caller's identity and match against fraudsters in watchlist, as soon as the call is connected to a flow.
 

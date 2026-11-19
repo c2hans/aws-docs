@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetMultiR
 ---
 
 # GetMultiRegionEndpoint
-<a name="API_GetMultiRegionEndpoint"></a>
 
 Displays the multi-region endpoint (global-endpoint) configuration.
 

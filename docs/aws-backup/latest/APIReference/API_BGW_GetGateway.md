@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BGW_G
 ---
 
 # GetGateway
-<a name="API_BGW_GetGateway"></a>
 
 By providing the ARN (Amazon Resource Name), this API returns the gateway.
 

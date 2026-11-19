@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/disaster
 ---
 
 # Resilience for AWS SDK for Ruby
-<a name="disaster-recovery-resiliency"></a>
 
 The Amazon Web Services (AWS) global infrastructure is built around AWS Regions and Availability Zones.
 

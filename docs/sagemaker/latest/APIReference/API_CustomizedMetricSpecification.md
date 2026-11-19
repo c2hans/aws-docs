@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Custom
 ---
 
 # CustomizedMetricSpecification
-<a name="API_CustomizedMetricSpecification"></a>
 
 A customized metric.
 

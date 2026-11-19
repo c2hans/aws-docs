@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/c
 ---
 
 # Viewing event logs for an AWS CloudFormation stack by using the AWS Toolkit for JetBrains
-<a name="cloudformation-logs"></a>
 
 1. Open AWS Explorer, if it isn't already open. If the stack is in an AWS Region that's different from the current one, switch to a different AWS Region that contains it.
 

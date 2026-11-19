@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/maxduration-tag.html
 ---
 
 # Setting a maximum duration for synthesized speech
-<a name="maxduration-tag"></a>
 
 *<prosody amazon:max-duration>*
 

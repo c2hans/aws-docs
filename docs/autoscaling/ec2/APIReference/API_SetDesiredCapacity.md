@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_SetDesi
 ---
 
 # SetDesiredCapacity
-<a name="API_SetDesiredCapacity"></a>
 
 Sets the size of the specified Auto Scaling group.
 

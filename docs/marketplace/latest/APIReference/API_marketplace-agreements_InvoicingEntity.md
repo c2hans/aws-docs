@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # InvoicingEntity
-<a name="API_marketplace-agreements_InvoicingEntity"></a>
 
 The entity responsible for issuing the invoice.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 ---
 
 # LifecycleExecution
-<a name="API_LifecycleExecution"></a>
 
 Contains metadata from a runtime instance of a lifecycle policy.
 

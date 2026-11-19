@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/googlesheets-configuring-
 ---
 
 # Configuring Google Sheets connections
-<a name="googlesheets-configuring-connections"></a>
 
 To configure a Google Sheet connection:
 

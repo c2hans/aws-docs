@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Noti
 ---
 
 # NotificationChannelConfig
-<a name="API_NotificationChannelConfig"></a>
 
  Information about notification channels you have configured with DevOps Guru. The one supported notification channel is Amazon Simple Notification Service (Amazon SNS).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/coding-plugin-for-sap-abap/latest/devgui
 ---
 
 # Architecture
-<a name="architecture"></a>
 
 The architecture consists of five connections:
 +  AWS Coding Plugin for SAP ABAP to Kiro CLI, using an stdio pipe and the Agent Client Protocol (ACP) to exchange prompts, statuses, and permission requests

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Normalize query string parameters in a CloudFront Functions viewer request
-<a name="example_cloudfront_functions_normalize_query_string_parameters_section"></a>
 
 The following code example shows how to normalize query string parameters in a CloudFront Functions viewer request.
 

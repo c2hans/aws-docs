@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsS
 ---
 
 # AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetails
-<a name="API_AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetails"></a>
 
 For tasks that use the `awsvpc` networking mode, the VPC subnet and security group configuration.
 

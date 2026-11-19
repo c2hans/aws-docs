@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.htm
 ---
 
 # IAM permissions
-<a name="AMG-and-IAM"></a>
 
 Access to Amazon Managed Grafana actions and data requires credentials. Those credentials must have permissions to perform the actions and to access the AWS resources, such as retrieving Amazon Managed Grafana data about your cloud resources. The following sections provide details about how you can use AWS Identity and Access Management and Amazon Managed Grafana to help secure your resources, by controlling who can access them. For more information, see [Policies and permissions in IAM.](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
 

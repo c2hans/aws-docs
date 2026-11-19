@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/security-groups.ht
 ---
 
 # Control traffic in VPC Lattice using security groups
-<a name="security-groups"></a>
 
 AWS security groups act as virtual firewalls, controlling the network traffic to and from the entities that they are associated with. With VPC Lattice, you can create security groups and assign them to the VPC association that connects a VPC to a service network to enforce additional network-level security protections for your service network. If you connect a VPC to a service network using a VPC endpoint, you can assign security groups to the VPC endpoint too. Similarly you can assign security groups to resource gateways that you create to enable access to resources in your VPC.
 

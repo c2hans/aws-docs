@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_SnsAction.ht
 ---
 
 # SnsAction
-<a name="API_SnsAction"></a>
 
 Describes an action to publish to an Amazon SNS topic.
 

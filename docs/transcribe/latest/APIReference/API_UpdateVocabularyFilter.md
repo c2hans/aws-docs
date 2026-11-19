@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Updat
 ---
 
 # UpdateVocabularyFilter
-<a name="API_UpdateVocabularyFilter"></a>
 
 Updates an existing custom vocabulary filter with a new list of words. The new list you provide overwrites all previous entries; you cannot append new terms onto an existing custom vocabulary filter.
 

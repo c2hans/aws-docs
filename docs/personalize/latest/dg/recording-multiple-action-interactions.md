@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/recording-multiple
 ---
 
 # Recording multiple action interaction events
-<a name="recording-multiple-action-interactions"></a>
 
 The following code shows how to record multiple action interaction events for the same user with the same sessionId.
 

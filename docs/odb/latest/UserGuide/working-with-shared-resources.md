@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/working-with-shared
 ---
 
 # Working with shared Oracle Database@AWS resources in a trusted account
-<a name="working-with-shared-resources"></a>
 
 After a resource has been shared with your trusted account and you've initialized the Oracle Database@AWS service, you can view and use the shared resource. This topic explains how to work with shared resources in a trusted account.
 

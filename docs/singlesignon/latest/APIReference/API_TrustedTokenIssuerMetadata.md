@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Tru
 ---
 
 # TrustedTokenIssuerMetadata
-<a name="API_TrustedTokenIssuerMetadata"></a>
 
 A structure that describes a trusted token issuer.
 

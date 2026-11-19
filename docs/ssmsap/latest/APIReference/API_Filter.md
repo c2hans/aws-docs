@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_Filter.ht
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 A specific result obtained by specifying the name, value, and operator.
 

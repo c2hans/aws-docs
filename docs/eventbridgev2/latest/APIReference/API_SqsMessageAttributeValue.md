@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Sq
 ---
 
 # SqsMessageAttributeValue
-<a name="API_SqsMessageAttributeValue"></a>
 
 A custom SQS message attribute (data type plus string or binary value).
 

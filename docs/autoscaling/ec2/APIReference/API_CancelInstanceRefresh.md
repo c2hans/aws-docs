@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_CancelI
 ---
 
 # CancelInstanceRefresh
-<a name="API_CancelInstanceRefresh"></a>
 
 Cancels an instance refresh or rollback that is in progress. If an instance refresh or rollback is not in progress, an `ActiveInstanceRefreshNotFound` error occurs.
 

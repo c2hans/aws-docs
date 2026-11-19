@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/not.html
 ---
 
 # $not
-<a name="not"></a>
 
 The `$not` operator is used to negate the result of a given expression. It allows you to select documents where the specified condition does not match.
 

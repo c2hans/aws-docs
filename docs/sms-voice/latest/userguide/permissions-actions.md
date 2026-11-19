@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/permissions-a
 ---
 
 # AWS End User Messaging SMS actions for IAM policies
-<a name="permissions-actions"></a>
 
 To manage access to AWS End User Messaging SMS resources in your AWS account, you can add AWS End User Messaging SMS actions to AWS Identity and Access Management (IAM) policies. By using actions in policies, you can control what users can do on the AWS End User Messaging SMS console. You can also control what users can do programmatically by using the AWS SDKs, the AWS Command Line Interface (AWS CLI), or the AWS End User Messaging SMS APIs directly.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_StepStartedDetails
 ---
 
 # StepStartedDetails
-<a name="API_StepStartedDetails"></a>
 
 Details about a step that has started.
 

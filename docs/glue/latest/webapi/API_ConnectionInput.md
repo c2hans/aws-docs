@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ConnectionInput.h
 ---
 
 # ConnectionInput
-<a name="API_ConnectionInput"></a>
 
 A structure that is used to specify a connection to create or update.
 

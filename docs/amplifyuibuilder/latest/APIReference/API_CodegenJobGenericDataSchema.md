@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # CodegenJobGenericDataSchema
-<a name="API_CodegenJobGenericDataSchema"></a>
 
 Describes the data schema for a code generation job.
 

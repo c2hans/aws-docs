@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/embedded-output-c
 ---
 
 # CEA/EIA-608 and CEA/EIA-708 (embedded) output captions
-<a name="embedded-output-captions"></a>
 
  This section covers how to configure embedded output captions in AWS Elemental MediaConvert. The main topics include:
 + Where to specify the captions.

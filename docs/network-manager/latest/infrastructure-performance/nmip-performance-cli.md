@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/infrastructure-pe
 ---
 
 # Monitor Infrastructure Performance using the AWS CLI
-<a name="nmip-performance-cli"></a>
 
 [GetAwsNetworkPerformanceData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetAwsNetworkPerformanceData.html) returns network performance metrics. For more information, see [GetAwsNetworkPerformanceData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetAwsNetworkPerformanceData.html).
 

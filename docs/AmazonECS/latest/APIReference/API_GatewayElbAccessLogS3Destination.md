@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayElbAccessLogS3Destination
-<a name="API_GatewayElbAccessLogS3Destination"></a>
 
 The Amazon S3 destination for the access logs of a gateway's load balancers.
 

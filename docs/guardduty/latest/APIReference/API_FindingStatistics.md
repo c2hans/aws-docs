@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Findin
 ---
 
 # FindingStatistics
-<a name="API_FindingStatistics"></a>
 
 Contains information about finding statistics.
 

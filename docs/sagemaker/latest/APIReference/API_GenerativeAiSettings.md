@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Genera
 ---
 
 # GenerativeAiSettings
-<a name="API_GenerativeAiSettings"></a>
 
 The generative AI settings for the SageMaker Canvas application.
 

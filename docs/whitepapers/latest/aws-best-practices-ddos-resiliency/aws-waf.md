@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # AWS WAF
-<a name="aws-waf"></a>
 
  By using AWS WAF, you can configure web access control lists (web ACLs) on your global CloudFront distributions or regional resources to filter, monitor and block requests based on request signatures. To determine whether to allow or block requests, you can consider factors such as the IP address or country of origin, certain strings or patterns in the request, the size of specific parts of the request, and the presence of malicious SQL code or scripting. You can also run [CAPTCHA puzzles and silent client session challenges](https://docs.aws.amazon.com/waf/latest/developerguide/waf-captcha-and-challenge-actions.html) against requests.
 

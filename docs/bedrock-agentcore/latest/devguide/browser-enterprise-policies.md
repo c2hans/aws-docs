@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # Using browser enterprise policies
-<a name="browser-enterprise-policies"></a>
 
 Enterprise policies allow you to control browser behavior using the [Chromium enterprise policy](https://www.chromium.org/administrators/linux-quick-start/) mechanism. You provide policy files as JSON in your Amazon S3 bucket, and the service applies them to browser sessions automatically.
 

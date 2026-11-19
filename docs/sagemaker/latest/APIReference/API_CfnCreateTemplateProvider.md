@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CfnCre
 ---
 
 # CfnCreateTemplateProvider
-<a name="API_CfnCreateTemplateProvider"></a>
 
  The CloudFormation template provider configuration for creating infrastructure resources.
 

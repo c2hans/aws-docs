@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetInstanceState
-<a name="API_GetInstanceState"></a>
 
 Returns the state of a specific instance. Works on one instance at a time.
 

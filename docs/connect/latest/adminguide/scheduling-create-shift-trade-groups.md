@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/scheduling-cre
 ---
 
 # Create shift trade groups
-<a name="scheduling-create-shift-trade-groups"></a>
 
 You create shift trade groups so that agents within the same forecast group can trade shifts with each other. For information about the shift exchange capability, see [Set up shift exchange in Connect Customer](shift-exchange.md).
 

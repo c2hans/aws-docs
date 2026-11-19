@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-con
 ---
 
 # Step 8: Clean up test infrastructure
-<a name="transform-containers-step-cleanup"></a>
 
 After you complete validation, AWS Transform tears down the test infrastructure to avoid unnecessary costs.
 

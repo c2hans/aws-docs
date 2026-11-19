@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/use-tags-voice-con.h
 ---
 
 # Using tags with Voice Connectors
-<a name="use-tags-voice-con"></a>
 
 The topics in this section explain how to use tags with your existing Amazon Chime SDK Voice Connectors. Tags allow you to assign metadata to your AWS resources, such as Voice Connectors. A tag consists of a key and an optional value that stores information about the resource, or the data retained on that resource. You define all keys and values. For example, you can create a tag key named `CostCenter` with a value of `98765` and use the pair for cost allocation purposes. You can add up to 50 tags to a Voice Connector.
 

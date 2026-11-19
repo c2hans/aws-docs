@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_De
 ---
 
 # DestinationConfiguration
-<a name="API_DestinationConfiguration"></a>
 
 The [link to action] metadata transfer job destination configuration.
 

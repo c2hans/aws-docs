@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/Integrating-wit
 ---
 
 # Integrating third-party services with Lake Formation
-<a name="Integrating-with-LakeFormation"></a>
 
 Integrating with AWS Lake Formation enables third-party services to securely access data in their Amazon S3 based data lakes. You can use Lake Formation as your authorization engine to manage or enforce permissions to your data lake with integrated AWS services such as AWS Glue ETL, Amazon Athena, Amazon EMR, and Redshift Spectrum. Lake Formation provides two options for integrating services:
 

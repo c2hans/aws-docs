@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflow-run-tasks.html
 ---
 
 # Task lifecycle in a HealthOmics run
-<a name="workflow-run-tasks"></a>
 
 A *task* is a single process within a run. HealthOmics maps each task in your workflow to an omics computing instance type that best fits the task's required resources. You specify the required resources in the workflow definition. For more information, See [Compute and memory requirements for HealthOmics tasks](memory-and-compute-tasks.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/datase
 ---
 
 # Manage datasets
-<a name="datasets-manage"></a>
 
 This topic covers creating, retrieving, listing, updating, and deleting datasets.
 

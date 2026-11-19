@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # ApplicationSummary
-<a name="API_ApplicationSummary"></a>
 
 Describes an application resource that represents a collection of content for streaming with Amazon GameLift Streams. To retrieve additional application details, call [GetApplication](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_GetApplication.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-con
 ---
 
 # Modifying the resources that Elastic Beanstalk creates for your environment
-<a name="customize-containers-format-resources-eb"></a>
 
 The resources that Elastic Beanstalk creates for your environment have names. You can use these names to get information about the resources with a [function](ebextensions-functions.md), or modify properties on the resources to customize their behavior. This topic describes the AWS resources that Elastic Beanstalk uses in the different types of environments.
 

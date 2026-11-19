@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guar
 ---
 
 # Turning on Runtime Monitoring for Amazon ECS
-<a name="ecs-guard-duty-configure-automatic-guard-duty"></a>
 
 You can configure GuardDuty to automatically manage the security agen for all your Fargate clusters.
 

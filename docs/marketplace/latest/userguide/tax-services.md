@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/tax-service
 ---
 
 # Tax Services
-<a name="tax-services"></a>
 
 This section describes the tax collection, invoicing, reporting, and remittance services that AWS provides for AWS Marketplace sellers in specific countries or regions. The applicable services depend on your country of incorporation and your tax registration status.
 

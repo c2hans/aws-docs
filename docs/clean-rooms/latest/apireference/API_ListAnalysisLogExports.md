@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_List
 ---
 
 # ListAnalysisLogExports
-<a name="API_ListAnalysisLogExports"></a>
 
 Lists analysis log exports, sorted by the most recent export. Results are paginated. Use the `nextToken` parameter to retrieve additional results.
 

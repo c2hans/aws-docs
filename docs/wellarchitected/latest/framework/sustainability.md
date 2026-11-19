@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sustain
 ---
 
 # Sustainability
-<a name="sustainability"></a>
 
  The discipline of sustainability addresses the long-term environmental, economic, and societal impact of your business activities. The [United Nations World Commission on Environment and Development](https://www.un.org/en/academic-impact/sustainability) defines sustainable development as "development that meets the needs of the present without compromising the ability of future generations to meet their own needs." A business can have negative environmental impacts such as direct or indirect carbon emissions, unrecyclable waste, and damage to shared resources like clean water.
 

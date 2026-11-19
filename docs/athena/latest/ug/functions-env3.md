@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/functions-env3.html
 ---
 
 # Athena engine version 3 functions
-<a name="functions-env3"></a>
 
 Functions in Athena engine version 3 are based on Trino. For information about Trino functions, operators, and expressions, see [Functions and operators](https://trino.io/docs/current/functions.html) and the following subsections from the Trino documentation.
 +  [Aggregate](https://trino.io/docs/current/functions/aggregate.html)

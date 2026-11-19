@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Agent
 ---
 
 # Agent
-<a name="API_Agent"></a>
 
 An agent resource in Amazon QuickSight that provides AI-powered conversational experiences.
 

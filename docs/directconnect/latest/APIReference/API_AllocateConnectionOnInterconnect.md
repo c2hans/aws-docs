@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Al
 ---
 
 # AllocateConnectionOnInterconnect
-<a name="API_AllocateConnectionOnInterconnect"></a>
 
 **Note**
 Deprecated. Use [AllocateHostedConnection](API_AllocateHostedConnection.md) instead.

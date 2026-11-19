@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteKe
 ---
 
 # RouteKeepStepDetails
-<a name="API_RouteKeepStepDetails"></a>
 
 Details that are specific to a Keep step.
 

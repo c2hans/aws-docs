@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-language
 ---
 
 # Key Amazon SNS access policy concepts
-<a name="sns-access-policy-language-key-concepts"></a>
 
 The following sections describe the concepts you need to understand to use the access policy language. They're presented in a logical order, with the first terms you need to know at the top of the list.
 

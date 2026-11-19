@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Accessing Amazon VPC Endpoints from On-Premises Environments
-<a name="on-premises-vpc-endpoints"></a>
 
 Publication date: **March 25, 2022 ([Diagram history](#onprem-diagram-history))**
 

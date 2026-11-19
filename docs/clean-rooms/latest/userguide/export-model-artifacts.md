@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/export-mode
 ---
 
 # Exporting model artifacts from AWS Clean Rooms ML
-<a name="export-model-artifacts"></a>
 
 This task is optional and should be completed when you have assigned the `CAN_RECEIVE_MODEL_OUTPUT` member ability to a member of the collaboration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-library-add
 ---
 
 # Adding New Vocabulary Entities
-<a name="bda-library-adding-cv"></a>
 
 You can add vocabulary to your library using the [InvokeDataAutomationLibraryIngestionJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-automation_InvokeDataAutomationLibraryIngestionJob.html) API. You can provide vocabulary through an S3 manifest file or inline payload.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/location-rule-
 ---
 
 # Location
-<a name="location-rule-action"></a>
 
 The Location (`location`) action sends your geographical location data to [Amazon Location Service](https://docs.aws.amazon.com/location/latest/developerguide/welcome.html).
 

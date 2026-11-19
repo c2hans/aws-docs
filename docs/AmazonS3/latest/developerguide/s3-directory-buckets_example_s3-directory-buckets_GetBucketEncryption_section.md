@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3-direct
 ---
 
 # Use `GetBucketEncryption` with an AWS SDK
-<a name="s3-directory-buckets_example_s3-directory-buckets_GetBucketEncryption_section"></a>
 
 The following code example shows how to use `GetBucketEncryption`.
 

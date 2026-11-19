@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Recursively upload a local directory to an Amazon Simple Storage Service (Amazon S3) bucket
-<a name="s3_example_s3_UploadDirectoryToBucket_section"></a>
 
 The following code example shows how to upload a local directory recursively to an Amazon Simple Storage Service (Amazon S3) bucket.
 

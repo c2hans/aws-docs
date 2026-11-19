@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_HorizontalPo
 ---
 
 # HorizontalPodAutoscalerControllerVersionConfig
-<a name="API_HorizontalPodAutoscalerControllerVersionConfig"></a>
 
 The horizontal pod autoscaler controller version configuration.
 

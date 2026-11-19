@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 ---
 
 # GetImagePolicy
-<a name="API_GetImagePolicy"></a>
 
 Retrieves an image policy.
 

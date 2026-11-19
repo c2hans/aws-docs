@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/introduction-prici
 ---
 
 # Pricing for zonal autoshift in ARC
-<a name="introduction-pricing-zonal-autoshift"></a>
 
 For zonal autoshift, AWS shifts traffic away from an Availability Zone on your behalf for supported resources when AWS determines that there is a potential issue that can adversely affect customer applications. There is no additional charge for enabling zonal autoshift.
 

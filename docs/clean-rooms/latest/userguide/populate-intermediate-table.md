@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/populate-in
 ---
 
 # Populating an intermediate table
-<a name="populate-intermediate-table"></a>
 
 After you create an intermediate table, you must populate it to materialize data. You can also repopulate an intermediate table to refresh the data when base tables are updated.
 

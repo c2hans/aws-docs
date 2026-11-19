@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_De
 ---
 
 # DeleteProfile
-<a name="API_DeleteProfile"></a>
 
 Deletes a profile.
 

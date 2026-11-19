@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/create-custom-
 ---
 
 # Tutorial: Develop a simple IDT test suite
-<a name="create-custom-tests"></a>
 
 A test suite combines the following:
 + Test executable that contain the test logic

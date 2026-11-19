@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-deploy.ht
 ---
 
 # **eb deploy**
-<a name="eb3-deploy"></a>
 
 ## Description
 <a name="eb3-deploydescription"></a>

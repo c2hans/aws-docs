@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # TelemetryRuleSummary
-<a name="API_TelemetryRuleSummary"></a>
 
  A summary of a telemetry rule's key properties.
 

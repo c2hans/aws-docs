@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # MetaFlowWhatsAppBusinessAccountInfo
-<a name="API_MetaFlowWhatsAppBusinessAccountInfo"></a>
 
 Contains WhatsApp Business Account metadata associated with a Flow, as returned by Meta.
 

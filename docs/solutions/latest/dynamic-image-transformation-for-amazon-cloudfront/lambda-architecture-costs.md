@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Lambda architecture costs
-<a name="lambda-architecture-costs"></a>
 
 You are responsible for the cost of the AWS services used while running the Lambda architecture. The below table gives the breakdown of costs for different workload sizes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/C
 ---
 
 # Create a URL signature using Java
-<a name="CFPrivateDistJavaDevelopment"></a>
 
 In addition to the following code example, you can use [the `CloudFrontUrlSigner` utility class in the AWS SDK for Java (version 1)](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/cloudfront/CloudFrontUrlSigner.html) to create [CloudFront signed URLs](private-content-signed-urls.md).
 

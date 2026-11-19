@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/aw
 ---
 
 # Restrict access based on IP address or geolocation by using AWS WAF
-<a name="aws-waf-restrict-access-geolocation"></a>
 
 *Louis Hourcade, Amazon Web Services*
 

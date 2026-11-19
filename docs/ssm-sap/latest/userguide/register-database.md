@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/register-databa
 ---
 
 # Register your SAP HANA databases with Systems Manager for SAP
-<a name="register-database"></a>
 
 You can register a single-node, multi-node (scale-out), or high availability setup for SAP HANA database with Systems Manager for SAP. Ensure that you have completed the setup perquisites described in [Get started with AWS Systems Manager for SAP](get-started.md). Follow along these steps to register your database.
 

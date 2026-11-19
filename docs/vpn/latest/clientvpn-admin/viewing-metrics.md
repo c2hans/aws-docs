@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/viewing-metri
 ---
 
 # View Client VPN endpoint metrics in Amazon CloudWatch
-<a name="viewing-metrics"></a>
 
 You can view the metrics for your Client VPN endpoint as follows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/managing-proj
 ---
 
 # Projects in Device Farm desktop browser testing
-<a name="managing-projects"></a>
 
  Selenium projects created, organized, and managed separately from native testing projects in Device Farm.
 

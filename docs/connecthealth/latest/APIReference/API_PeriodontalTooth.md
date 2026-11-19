@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Pe
 ---
 
 # PeriodontalTooth
-<a name="API_PeriodontalTooth"></a>
 
 The chart for one tooth.
 

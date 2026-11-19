@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkBa
 ---
 
 # NetworkBandwidthGbps
-<a name="API_NetworkBandwidthGbps"></a>
 
 The minimum and maximum amount of network bandwidth, in gigabits per second (Gbps).
 

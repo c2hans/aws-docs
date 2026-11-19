@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # SyncBlockerSummary
-<a name="API_SyncBlockerSummary"></a>
 
 A summary for sync blockers.
 

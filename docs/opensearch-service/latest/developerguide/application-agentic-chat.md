@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Agentic Chat in Amazon OpenSearch Service
-<a name="application-agentic-chat"></a>
 
 Agentic Chat is an AI assistant embedded in every page of OpenSearch UI. Choose the **Ask AI** button to open the chat panel, where you can ask questions about your data, generate queries, and initiate investigations. Agentic Chat understands the context of the page you're viewing in Discover and Investigation, and uses agentic tools to analyze the underlying data.
 

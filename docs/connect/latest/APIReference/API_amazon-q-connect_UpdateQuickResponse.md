@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # UpdateQuickResponse
-<a name="API_amazon-q-connect_UpdateQuickResponse"></a>
 
 Updates an existing Amazon Q in Connect quick response.
 

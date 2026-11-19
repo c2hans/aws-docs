@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_ListCustomVe
 ---
 
 # ListCustomVerificationEmailTemplates
-<a name="API_ListCustomVerificationEmailTemplates"></a>
 
 Lists the existing custom verification email templates for your account in the current AWS Region.
 

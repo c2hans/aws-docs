@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedJobMemberOutputConfigurationOutput
-<a name="API_ProtectedJobMemberOutputConfigurationOutput"></a>
 
  The protected job member output configuration output.
 

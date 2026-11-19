@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Servi
 ---
 
 # ServiceReference
-<a name="API_ServiceReference"></a>
 
 A reference to a service by ID and name.
 

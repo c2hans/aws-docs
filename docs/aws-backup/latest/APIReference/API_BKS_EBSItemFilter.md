@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_E
 ---
 
 # EBSItemFilter
-<a name="API_BKS_EBSItemFilter"></a>
 
 This contains arrays of objects, which may include CreationTimes time condition objects, FilePaths string objects, LastModificationTimes time condition objects,
 

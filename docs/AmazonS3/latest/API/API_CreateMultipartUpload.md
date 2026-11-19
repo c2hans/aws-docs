@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateMultipartU
 ---
 
 # CreateMultipartUpload
-<a name="API_CreateMultipartUpload"></a>
 
 **Important**
 End of support notice: As of October 1, 2025, Amazon S3 has discontinued support for Email Grantee Access Control Lists (ACLs). If you attempt to use an Email Grantee ACL in a request after October 1, 2025, the request will receive an `HTTP 405` (Method Not Allowed) error.
@@ -357,6 +356,7 @@ x-amz-server-side-encryption-bucket-key-enabled: {{BucketKeyEnabled}}
 x-amz-request-charged: {{RequestCharged}}
 x-amz-checksum-algorithm: {{ChecksumAlgorithm}}
 x-amz-checksum-type: {{ChecksumType}}
+x-amz-version-id: {{VersionId}}
 <?xml version="1.0" encoding="UTF-8"?>
 <InitiateMultipartUploadResult>
    <Bucket>string</Bucket>
@@ -416,6 +416,11 @@ This functionality is not supported for directory buckets.
 If server-side encryption with a customer-provided encryption key was requested, the response will include this header to provide the round-trip message integrity verification of the customer-provided encryption key.
 This functionality is not supported for directory buckets.
 
+ ** [x-amz-version-id](#API_CreateMultipartUpload_ResponseSyntax) **   <a name="AmazonS3-CreateMultipartUpload-response-header-VersionId"></a>
+Version ID of the object.
+Returns the Version ID of the object for the initiated multipart upload, if bucket versioning is enabled.
+This functionality is not supported for directory buckets.
+
 The following data is returned in XML format by the service.
 
  ** [InitiateMultipartUploadResult](#API_CreateMultipartUpload_ResponseSyntax) **   <a name="AmazonS3-CreateMultipartUpload-response-CreateMultipartUploadOutput"></a>
@@ -473,8 +478,31 @@ This example illustrates one usage of CreateMultipartUpload.
             </InitiateMultipartUploadResult>
 ```
 
-### Example for general purpose buckets: Initiate a multipart upload using server-side encryption with customer-provided encryption keys
+### Sample Response for general purpose buckets when the object is versioned
 <a name="API_CreateMultipartUpload_Example_3"></a>
+
+This example illustrates one usage of CreateMultipartUpload.
+
+```
+            HTTP/1.1 200 OK
+            x-amz-id-2: Uuag1LuByRx9e6j5Onimru9pO4ZVKnJ2Qz7/C1NPcfTWAtRPfTaOFg==
+            x-amz-request-id: 318BC8BC148832E5
+            x-amz-version-id: 3/L4kqtJlcpXroDTDmJ+rmSpXd3QBpUMLUo
+            Date:  Mon, 1 Nov 2010 20:34:56 GMT
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Server: AmazonS3
+
+            <?xml version="1.0" encoding="UTF-8"?>
+            <InitiateMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+              <Bucket>amzn-s3-demo-bucket</Bucket>
+              <Key>example-object</Key>
+              <UploadId>VXBsb2FkIElEIGZvciA2aWWpbmcncyBteS1tb3ZpZS5tMnRzIHVwbG9hZA</UploadId>
+            </InitiateMultipartUploadResult>
+```
+
+### Example for general purpose buckets: Initiate a multipart upload using server-side encryption with customer-provided encryption keys
+<a name="API_CreateMultipartUpload_Example_4"></a>
 
 This example, which initiates a multipart upload request, specifies server-side encryption with customer-provided encryption keys by adding relevant headers.
 
@@ -492,7 +520,7 @@ If you have server-side encryption with customer-provided keys (SSE-C) blocked f
 ```
 
 ### Sample Response for general purpose buckets
-<a name="API_CreateMultipartUpload_Example_4"></a>
+<a name="API_CreateMultipartUpload_Example_5"></a>
 
 In the response, Amazon S3 returns an `UploadId`. In addition, Amazon S3 returns the encryption algorithm and the MD5 digest of the encryption key that you provided in the request.
 

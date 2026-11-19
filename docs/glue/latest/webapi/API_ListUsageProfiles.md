@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListUsageProfiles
 ---
 
 # ListUsageProfiles
-<a name="API_ListUsageProfiles"></a>
 
 List all the AWS Glue usage profiles.
 

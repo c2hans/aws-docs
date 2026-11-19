@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Networking and content delivery
-<a name="networking-and-content-delivery"></a>
 
  The optimal networking solution for a workload varies based on latency, throughput requirements, jitter, and bandwidth. Physical constraints, such as the location of users and data sources, will affect the performance of the solution.
 

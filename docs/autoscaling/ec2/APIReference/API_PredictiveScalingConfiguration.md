@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Predict
 ---
 
 # PredictiveScalingConfiguration
-<a name="API_PredictiveScalingConfiguration"></a>
 
 Represents a predictive scaling policy configuration to use with Amazon EC2 Auto Scaling.
 

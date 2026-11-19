@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/config
 ---
 
 # Configuring Expressions in Amazon CloudSearch
-<a name="configuring-expressions"></a>
 
 You can define numeric expressions and use them to sort search results. Expressions can also be returned in search results. You can add expressions to the domain configuration or define expressions within search requests.
 

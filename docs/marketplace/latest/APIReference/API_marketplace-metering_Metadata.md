@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # Metadata
-<a name="API_marketplace-metering_Metadata"></a>
 
 Metadata associated with a resolved customer. Includes the `AgreementId` of the AWS Marketplace agreement the customer accepted.
 

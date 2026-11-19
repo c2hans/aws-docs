@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TargetNet
 ---
 
 # TargetNetwork
-<a name="API_TargetNetwork"></a>
 
 Describes a target network associated with a Client VPN endpoint.
 

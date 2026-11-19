@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/googlesheets-support.html
 ---
 
 # AWS Glue support for Google Sheets
-<a name="googlesheets-support"></a>
 
 AWS Glue supports Google Sheets as follows:
 

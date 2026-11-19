@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DisassociateOpsItemRelatedItem
-<a name="API_DisassociateOpsItemRelatedItem"></a>
 
 Deletes the association between an OpsItem and a related item. For example, this API operation can delete an Incident Manager incident from an OpsItem. Incident Manager is a tool in AWS Systems Manager.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/badge-statuse
 ---
 
 # CodeBuild badge statuses
-<a name="badge-statuses"></a>
 
 The CodeBuild build badge can have one of the following statuses.
 + **PASSING** The most recent build on the given branch passed.

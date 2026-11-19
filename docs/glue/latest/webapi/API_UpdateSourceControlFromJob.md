@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateSourceContr
 ---
 
 # UpdateSourceControlFromJob
-<a name="API_UpdateSourceControlFromJob"></a>
 
 Synchronizes a job to the source control repository. This operation takes the job artifacts from the AWS Glue internal stores and makes a commit to the remote repository that is configured on the job.
 

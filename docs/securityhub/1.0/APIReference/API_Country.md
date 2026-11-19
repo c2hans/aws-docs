@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Country
 ---
 
 # Country
-<a name="API_Country"></a>
 
 Information about a country.
 

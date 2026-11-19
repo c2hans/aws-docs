@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ListCustomLineItemsFilter
-<a name="API_ListCustomLineItemsFilter"></a>
 
 A filter that specifies the custom line items and billing groups to retrieve FFLI information.
 

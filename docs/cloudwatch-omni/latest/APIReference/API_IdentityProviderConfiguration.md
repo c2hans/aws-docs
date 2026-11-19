@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # IdentityProviderConfiguration
-<a name="API_IdentityProviderConfiguration"></a>
 
 Identity provider configuration for domain authentication. Contains provider-specific configuration blocks.
 

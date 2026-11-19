@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ToolResultStructuredContent
-<a name="API_ToolResultStructuredContent"></a>
 
 Contains structured content from a tool result.
 

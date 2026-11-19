@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SUS 1 How do you select Regions to support your sustainability goals?
-<a name="sus-01"></a>
 
 Choose Regions where you will implement your workloads based on both your business requirements and sustainability goals.
 

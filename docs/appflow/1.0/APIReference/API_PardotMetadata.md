@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_PardotMetad
 ---
 
 # PardotMetadata
-<a name="API_PardotMetadata"></a>
 
 The connector metadata specific to Salesforce Pardot.
 

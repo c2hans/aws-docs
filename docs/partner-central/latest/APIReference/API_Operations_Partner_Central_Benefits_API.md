@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Partner Central Benefits API
-<a name="API_Operations_Partner_Central_Benefits_API"></a>
 
 The following actions are supported by Partner Central Benefits API:
 +  [AmendBenefitApplication](API_benefits_AmendBenefitApplication.md)

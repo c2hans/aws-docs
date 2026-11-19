@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Disas
 ---
 
 # DisassociateAppBlockBuilderAppBlock
-<a name="API_DisassociateAppBlockBuilderAppBlock"></a>
 
 Disassociates a specified app block builder from a specified app block.
 

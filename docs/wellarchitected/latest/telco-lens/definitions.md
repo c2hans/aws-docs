@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/defini
 ---
 
 # Definitions
-<a name="definitions"></a>
 
  The following are common definitions used throughout the Telco Lens:
 +  **5G network:** The fifth generation of cellular network technology that provides significantly faster data speeds, lower latency, and higher capacity compared to previous 4G networks. 5G enables new use cases around the Internet of Things (IoT), augmented and virtual reality, autonomous vehicles, and more.

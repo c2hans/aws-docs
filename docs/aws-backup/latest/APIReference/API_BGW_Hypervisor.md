@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BGW_H
 ---
 
 # Hypervisor
-<a name="API_BGW_Hypervisor"></a>
 
 Represents the hypervisor's permissions to which the gateway will connect.
 

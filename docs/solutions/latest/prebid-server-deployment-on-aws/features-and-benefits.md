@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Features and benefits
-<a name="features-and-benefits"></a>
 
 Guidance for Deploying a Prebid Server on AWS provides the following features:
 

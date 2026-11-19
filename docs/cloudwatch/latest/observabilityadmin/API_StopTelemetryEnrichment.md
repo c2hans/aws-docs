@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # StopTelemetryEnrichment
-<a name="API_StopTelemetryEnrichment"></a>
 
  Disables the resource tags for telemetry feature for your account, stopping the enhancement of telemetry data with additional resource metadata.
 

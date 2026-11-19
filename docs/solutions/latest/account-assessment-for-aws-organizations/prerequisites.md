@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 Before you deploy the guidance:
 + Install [Git](https://git-scm.com/downloads).

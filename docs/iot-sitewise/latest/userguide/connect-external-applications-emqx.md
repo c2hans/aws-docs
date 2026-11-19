@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/connect-ex
 ---
 
 # Connect external applications to the EMQX broker
-<a name="connect-external-applications-emqx"></a>
 
 This guide explains how to connect external applications to your AWS IoT SiteWise Edge gateway through an EMQX broker on your deployed MQTT-enabled, V3 gateway. External applications might include custom monitoring tools, third-party visualization software, or legacy systems that need to interact with your industrial data at the edge.
 

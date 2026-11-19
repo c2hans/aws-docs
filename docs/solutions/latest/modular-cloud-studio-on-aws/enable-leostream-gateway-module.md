@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Step 4: Enable Leostream Gateway module
-<a name="enable-leostream-gateway-module"></a>
 
 Follow these steps to enable the Leostream Broker module.
 

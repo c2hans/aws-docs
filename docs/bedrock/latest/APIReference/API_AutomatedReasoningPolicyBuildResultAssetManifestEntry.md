@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyBuildResultAssetManifestEntry
-<a name="API_AutomatedReasoningPolicyBuildResultAssetManifestEntry"></a>
 
 Represents a single entry in the asset manifest, describing one artifact produced by the build workflow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshoot-athe
 ---
 
 # Insufficient permissions when using Athena with AWS Quick Sight
-<a name="troubleshoot-athena-insufficient-permissions"></a>
 
 If you receive an error message that says you have insufficient permissions, try the following steps to resolve your problem.
 

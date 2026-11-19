@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Lis
 ---
 
 # ListEnabledControls
-<a name="API_ListEnabledControls"></a>
 
 Lists the controls enabled by AWS Control Tower on the specified organizational unit and the accounts it contains. For usage examples, see the [*Controls Reference Guide*](https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html).
 

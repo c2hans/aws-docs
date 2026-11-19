@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElbA
 ---
 
 # AwsElbAppCookieStickinessPolicy
-<a name="API_AwsElbAppCookieStickinessPolicy"></a>
 
 Contains information about a stickiness policy that was created using `CreateAppCookieStickinessPolicy`.
 

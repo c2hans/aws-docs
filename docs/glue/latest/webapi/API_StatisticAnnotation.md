@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StatisticAnnotati
 ---
 
 # StatisticAnnotation
-<a name="API_StatisticAnnotation"></a>
 
 A Statistic Annotation.
 

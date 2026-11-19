@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # Unsubscribe from AI Agent message events
-<a name="3P-apps-ai-agents-offaiagentmessagereceived"></a>
 
 Removes a previously registered `onAIAgentMessageReceived` handler subscription.
 

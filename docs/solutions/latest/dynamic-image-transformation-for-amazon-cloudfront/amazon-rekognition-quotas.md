@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Amazon Rekognition quotas
-<a name="amazon-rekognition-quotas"></a>
 
 **Note**
  **Supported in:** ECS architecture only (v8.1\+).

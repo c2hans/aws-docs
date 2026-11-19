@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-or
 ---
 
 # Phases of migration
-<a name="phases"></a>
 
 AWS migration experts approach database migration in four phases:
 + Phase 1: Prepare

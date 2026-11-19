@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Using AWS Infrastructure Composer with AWS Step Functions
-<a name="using-composer-services-sf"></a>
 
 AWS Infrastructure Composer features an integration with [AWS Step Functions Workflow Studio](https://docs.aws.amazon.com/step-functions/latest/dg/workflow-studio.html). Use Infrastructure Composer to do the following:
 + Launch Step Functions Workflow Studio directly within Infrastructure Composer.

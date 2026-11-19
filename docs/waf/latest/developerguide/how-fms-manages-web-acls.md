@@ -7,9 +7,11 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/how-fms-manage
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Web ACL management for AWS WAF policies
-<a name="how-fms-manages-web-acls"></a>
 
-Firewall Manager creates and manages web ACLs for in-scope resources according to your configuration settings and general policy management.
+Firewall Manager, or its successor Network Security Manager, creates and manages web ACLs for in-scope resources according to your configuration settings and general policy management.
+
+**Note**
+Network Security Manager is the successor to Firewall Manager. Whenever this document mentions Firewall Manager, Network Security Manager's capabilities are similar to those described for Firewall Manager.
 
 **Note**
 If a resource that's configured with [advanced automatic application layer DDoS mitigation](ddos-automatic-app-layer-response.md) by another Firewall Manager Shield policy comes into scope of an AWS WAF policy, where the web ACL on the resource was created by that Firewall Manager Shield policy, Firewall Manager will be unable to apply the AWS WAF policy protections to the resource and will mark the resource noncompliant.

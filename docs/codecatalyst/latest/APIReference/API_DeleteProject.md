@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Del
 ---
 
 # DeleteProject
-<a name="API_DeleteProject"></a>
 
 Deletes a project in a space.
 

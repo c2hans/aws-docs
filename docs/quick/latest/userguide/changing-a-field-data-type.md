@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/changing-a-field-
 ---
 
 # Changing a field data type
-<a name="changing-a-field-data-type"></a>
 
 When Quick Sight retrieves data, it assigns each field a data type based on the data in the field. The possible data types are as follows:
 + Date – The date data type is used for date data in a supported format. For information about the date formats Quick Sight supports, see [Data source quotas](data-source-limits.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # Implementation priorities
-<a name="implementation-priorities-5"></a>
 
 ## Collect, aggregate, and protect event and log data
 <a name="mon-coll"></a>

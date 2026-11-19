@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-use.html
 ---
 
 # **eb use**
-<a name="eb3-use"></a>
 
 ## Description
 <a name="eb3-usedescription"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_S
 ---
 
 # SatelliteListItem
-<a name="API_SatelliteListItem"></a>
 
 Item in a list of satellites.
 

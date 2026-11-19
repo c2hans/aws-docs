@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterPatchSchedule
-<a name="API_ClusterPatchSchedule"></a>
 
 The schedule configuration for automatic patching.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Avai
 ---
 
 # AvailMatchingCriteria
-<a name="API_AvailMatchingCriteria"></a>
 
 MediaTailor only places (consumes) prefetched ads if the ad break meets the criteria defined by the dynamic variables. This gives you granular control over which ad break to place the prefetched ads into.
 

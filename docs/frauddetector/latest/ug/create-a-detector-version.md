@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/ug/create-a-detecto
 Amazon Fraud Detector is no longer open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker, AutoGluon, and AWS WAF.
 
 # Create a detector version
-<a name="create-a-detector-version"></a>
 
 A detector version defines the rules, rule execution order, and optionally a model version, that will be used as part of the request for generating fraud predictions. You can add any of the rules defined within a detector to the detector version. You can also add any model trained on the evaluated event type.
 

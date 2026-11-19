@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Crea
 ---
 
 # CreateCase
-<a name="API_CreateCase"></a>
 
 Creates a new case.
 

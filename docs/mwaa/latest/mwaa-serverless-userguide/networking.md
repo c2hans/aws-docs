@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/ne
 ---
 
 # Networking
-<a name="networking"></a>
 
 **Note**
 Creating a VPC network is **optional** with Amazon MWAA Serverless.

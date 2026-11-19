@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/troubl
 The AWS Mobile SDK for Unity is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Unity. For more information, see [What is the AWS Mobile SDK for Unity?](what-is-unity-plugin.md)
 
 # Troubleshooting
-<a name="troubleshooting-unity"></a>
 
 Due to limitations of the Unity.WWW class used by the AWS SDK for Unity, detailed error messages are not returned when a problem occurs while calling an AWS service. This topic describes some ideas for troubleshooting such problems.
 

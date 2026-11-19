@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/getresponse-configuring.h
 ---
 
 # Configuring GetResponse
-<a name="getresponse-configuring"></a>
 
 Before you can use AWS Glue to transfer data from GetResponse, you must meet the following requirements:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Workfl
 ---
 
 # WorkflowExecutionStartedEventAttributes
-<a name="API_WorkflowExecutionStartedEventAttributes"></a>
 
 Provides details of `WorkflowExecutionStarted` event.
 

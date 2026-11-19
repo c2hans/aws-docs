@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Li
 ---
 
 # ListTrails
-<a name="API_ListTrails"></a>
 
 Lists trails that are in the current account.
 

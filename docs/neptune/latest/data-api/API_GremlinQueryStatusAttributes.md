@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_GremlinQuery
 ---
 
 # GremlinQueryStatusAttributes
-<a name="API_GremlinQueryStatusAttributes"></a>
 
 Contains status components of a Gremlin query.
 

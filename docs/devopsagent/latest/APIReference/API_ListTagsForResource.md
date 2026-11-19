@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Lists tags for the specified AWS DevOps Agent resource.
 

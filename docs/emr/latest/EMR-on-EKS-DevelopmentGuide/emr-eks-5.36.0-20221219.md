@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # emr-5.36.0-20221219
-<a name="emr-eks-5.36.0-20221219"></a>
 
 **Release notes**: `emr-5.36.0-20221219` was released on Jan 27, 2023. Compared to the previous version, this version has been refreshed with the recently updated Amazon Linux packages.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/image-classification
 ---
 
 # Image Classification - MXNet
-<a name="image-classification"></a>
 
 The Amazon SageMaker image classification algorithm is a supervised learning algorithm that supports multi-label classification. It takes an image as input and outputs one or more labels assigned to that image. It uses a convolutional neural network that can be trained from scratch or trained using transfer learning when a large number of training images are not available
 

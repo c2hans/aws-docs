@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/ninja.html
 ---
 
 # .ninja
-<a name="ninja"></a>
 
 Used by individuals and businesses who want to associate themselves with the abilities of a ninja.
 

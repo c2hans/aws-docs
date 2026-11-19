@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/deploying-oracle-soa-
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Oracle SOA Suite components
-<a name="oracle-soa-suite-components"></a>
 
  Oracle SOA Suite 12c is deployed on [Oracle WebLogic Server](https://www.oracle.com/java/weblogic/) and includes the following major components:
 +  [Oracle SOA](https://docs.oracle.com/cd/E28280_01/doc.1111/e10223/index.htm)

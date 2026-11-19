@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-disaster-recover
 ---
 
 # Disaster recovery options
-<a name="rise-disaster-recovery-options"></a>
 
 You can implement a disaster recovery solution by replicating data into a second AWS Region. Your SAP workloads are protected in the event of rare occurrence of local or regional failures.
 

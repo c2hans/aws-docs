@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_TerminateSol
 ---
 
 # TerminateSolNetworkInstance
-<a name="API_TerminateSolNetworkInstance"></a>
 
 Terminates a network instance.
 

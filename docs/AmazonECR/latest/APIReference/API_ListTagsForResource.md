@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ListTa
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 List the tags for an Amazon ECR resource.
 

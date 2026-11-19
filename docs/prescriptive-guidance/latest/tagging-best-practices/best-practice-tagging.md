@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/tagging-bes
 ---
 
 # Best practices
-<a name="best-practice-tagging"></a>
 
 When using tags, it's important to understand current or potential company and use-case structure. Using this information, you can choose the right tags. For example, if you are building a data lake for the presales department, and you know that there are plans to expand the data lake to include data from the after-sales department, using the tag `department` will help identify the costs and performance of each department separately. Planning, cost allocation, and optimization of code or data can be identified with more accuracy. Without the `department` tag, if presales data needs 15 minutes for data modeling and aftersales data needs 45 minutes, developers must spend more time in root cause analysis. With the `department` tag, developers would know exactly where to look.
 

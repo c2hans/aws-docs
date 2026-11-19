@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2g
 ---
 
 # DynamoDB global tables versions
-<a name="V2globaltables_versions"></a>
 
 There are two versions of DynamoDB global tables available: Global Tables version 2019.11.21 (Current) and Global tables version 2017.11.29 (Legacy). We recommend using Global Tables version 2019.11.21 (Current), as it is easier to use, supported in more Regions, and lower cost for most workloads compared to version 2017.11.29 (Legacy).
 

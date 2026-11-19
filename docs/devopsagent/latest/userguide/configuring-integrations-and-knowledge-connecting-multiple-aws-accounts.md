@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring
 ---
 
 # Connecting multiple AWS Accounts
-<a name="configuring-integrations-and-knowledge-connecting-multiple-aws-accounts"></a>
 
 Secondary AWS accounts allow AWS DevOps Agent to investigate resources across multiple AWS accounts in your organization. When your applications span multiple accounts, adding secondary accounts ensures the agent has visibility into all relevant resources during incident investigations. Greater access to the accounts and resources composing an application ensures greater investigation accuracy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using
 ---
 
 # Get exported outputs from a deployed CloudFormation stack
-<a name="using-cfn-stack-exports"></a>
 
 When you have multiple stacks in the same AWS account and Region, you might want to share information between them. This is useful when one stack needs to use resources created by another stack.
 

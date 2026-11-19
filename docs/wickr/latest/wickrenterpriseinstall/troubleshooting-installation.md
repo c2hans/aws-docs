@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/wickrenterpriseinstall/trou
 This guide provides documentation for Wickr Enterprise. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html) or [AWS Wickr User Guide](https://docs.aws.amazon.com/wickr/latest/userguide/what-is-wickr.html).
 
 # Troubleshooting Wickr embedded cluster installations
-<a name="troubleshooting-installation"></a>
 
 All instances of these troubleshooting steps assume you have shell access to the instance running the Wickr Embedded Cluster installation and have run the `./wickr-enterprise-ha shell` command to be able to interact with the Kubernetes installation directly.
 

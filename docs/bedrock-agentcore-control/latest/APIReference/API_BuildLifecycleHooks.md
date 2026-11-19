@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # BuildLifecycleHooks
-<a name="API_BuildLifecycleHooks"></a>
 
 The lifecycle hooks that run when you create or update the AgentCore Runtime, before any sessions are created.
 

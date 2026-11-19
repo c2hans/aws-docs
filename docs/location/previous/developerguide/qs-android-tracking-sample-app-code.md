@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-andr
 ---
 
 # Tutorial: Set up the sample app code
-<a name="qs-android-tracking-sample-app-code"></a>
 
 This page provides a sample Android application code that demonstrates how to integrate the tracking capabilities of Amazon Location Service into your mobile applications.
 

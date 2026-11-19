@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Li
 ---
 
 # ListCollaborationTrainedModelInferenceJobs
-<a name="API_ListCollaborationTrainedModelInferenceJobs"></a>
 
 Returns a list of trained model inference jobs in a specified collaboration.
 

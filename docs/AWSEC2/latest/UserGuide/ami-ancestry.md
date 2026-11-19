@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-ancestry.htm
 ---
 
 # Use AMI ancestry to trace the origin of an AMI
-<a name="ami-ancestry"></a>
 
 AMI ancestry helps you trace the origin of an AMI by returning the IDs and Regions of all its ancestor AMIs. When you create or copy an AMI, the new AMI retains the ID and Region of its source (parent) AMI. This enables you to track the chain of AMIs back to the root AMI.
 

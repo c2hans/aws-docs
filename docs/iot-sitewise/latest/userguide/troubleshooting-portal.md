@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/troublesho
 ---
 
 # Troubleshoot an AWS IoT SiteWise portal
-<a name="troubleshooting-portal"></a>
 
 Troubleshoot common issues with your AWS IoT SiteWise portals.
 

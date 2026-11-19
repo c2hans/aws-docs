@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # CompromisedCredentialsActionsType
-<a name="API_CompromisedCredentialsActionsType"></a>
 
 Settings for user pool actions when Amazon Cognito detects compromised credentials with threat protection in full-function `ENFORCED` mode.
 

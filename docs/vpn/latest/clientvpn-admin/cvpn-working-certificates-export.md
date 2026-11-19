@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # Export an AWS Client VPN client certificate revocation list
-<a name="cvpn-working-certificates-export"></a>
 
 You can export Client VPN client certificate revocation lists using the console and the AWS CLI.
 

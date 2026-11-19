@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/redshift-cl
 ---
 
 # redshift-cluster-configuration-check
-<a name="redshift-cluster-configuration-check"></a>
 
 Checks if Amazon Redshift clusters have the specified settings. The rule is NON\_COMPLIANT if the Amazon Redshift cluster is not encrypted or encrypted with another key, or if a cluster does not have audit logging enabled.
 

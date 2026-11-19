@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Get the queue of the contact in Connect Customer agent workspace
-<a name="3P-apps-contact-requests-getqueue"></a>
 
 Returns the queue associated with the contact in the Connect Customer agent workspace. The `Queue` object has the following fields:
 + `name`: The name of the queue.

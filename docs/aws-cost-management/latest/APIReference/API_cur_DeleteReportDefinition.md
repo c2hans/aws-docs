@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteReportDefinition
-<a name="API_cur_DeleteReportDefinition"></a>
 
 Deletes the specified report. Any tags associated with the report are also deleted.
 

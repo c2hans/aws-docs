@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monitor-with-workf
 ---
 
 # Configuring workflow monitor to monitor AWS media services
-<a name="monitor-with-workflow-monitor-configure"></a>
 
 To setup workflow monitor for the first time; you create the alarm and event templates, and discover signal maps that are used to monitor your media workflows. The following guide contains the steps necessary to setup both Administrator and Operator level IAM roles, create workflow monitor resources, and deploy monitoring to your workflows.
 

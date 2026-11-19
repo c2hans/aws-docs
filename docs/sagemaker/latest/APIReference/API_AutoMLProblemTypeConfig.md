@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLProblemTypeConfig
-<a name="API_AutoMLProblemTypeConfig"></a>
 
 A collection of settings specific to the problem type used to configure an AutoML job V2. There must be one and only one config of the following type.
 

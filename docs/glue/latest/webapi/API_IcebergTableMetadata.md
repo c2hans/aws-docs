@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergTableMetad
 ---
 
 # IcebergTableMetadata
-<a name="API_IcebergTableMetadata"></a>
 
 The Apache Iceberg table metadata, including format version, table identifier, schemas, partition specifications, sort orders, and table properties. This structure captures the current state of an Iceberg table's metadata as managed by the AWS Glue Data Catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # PUT: MPTS Channel Swap
-<a name="working-with-members-of-mpts-mpts-channel-swap"></a>
 
 Swap the channel assigned to the MPTS.
 

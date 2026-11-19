@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafR
 ---
 
 # AwsWafRegionalWebAclRulesListActionDetails
-<a name="API_AwsWafRegionalWebAclRulesListActionDetails"></a>
 
 The action that AWS WAF takes when a web request matches all conditions in the rule, such as allow, block, or count the request.
 

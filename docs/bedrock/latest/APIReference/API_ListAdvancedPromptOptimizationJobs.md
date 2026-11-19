@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListAdva
 ---
 
 # ListAdvancedPromptOptimizationJobs
-<a name="API_ListAdvancedPromptOptimizationJobs"></a>
 
 Lists the advanced prompt optimization jobs in your account.
 

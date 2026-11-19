@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Associat
 ---
 
 # AssociateEnvironmentOperationsRole
-<a name="API_AssociateEnvironmentOperationsRole"></a>
 
 **Important**
 The operations role feature of AWS Elastic Beanstalk is in beta release and is subject to change.

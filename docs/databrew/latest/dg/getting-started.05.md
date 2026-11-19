@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/getting-started.05.ht
 ---
 
 # Step 5: Create a data profile
-<a name="getting-started.05"></a>
 
 When you work with on a project, DataBrew displays statistics such as the number of rows in the sample and the distribution of unique values in each column. These statistics, and many more, represent a *profile* of the sample.
 

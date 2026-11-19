@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amaz
 ---
 
 # Nova 2 Lite
-<a name="model-card-amazon-nova-2-lite"></a>
 
 ## ![Amazon logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/nova2pro.png) Amazon — Nova 2 Lite
 <a name="model-card-amazon-nova-2-lite-header"></a>

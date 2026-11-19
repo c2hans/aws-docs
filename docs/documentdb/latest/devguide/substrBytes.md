@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/substrBytes.h
 ---
 
 # $substrBytes
-<a name="substrBytes"></a>
 
 The `$substrBytes` operator in Amazon DocumentDB is used to extract a substring from a string based on a specified byte range. This operator is useful when you need to extract a substring from a string and the number of bytes required to represent each character in the string is important.
 

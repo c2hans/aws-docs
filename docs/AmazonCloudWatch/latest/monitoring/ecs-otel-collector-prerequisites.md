@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ecs-o
 ---
 
 # Prerequisites
-<a name="ecs-otel-collector-prerequisites"></a>
 
 Before you begin, make sure that you have the following:
 + **Task metadata endpoint version 4** Tasks on Fargate must use platform version 1.4.0 or later. Tasks on Amazon EC2 must use Amazon ECS container agent version 1.39.0 or later.

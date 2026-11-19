@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-getsta
 ---
 
 # More Elastic Beanstalk example applications and tutorials for Node.js
-<a name="nodejs-getstarted"></a>
 
 This section provides additional applications and tutorials. The [QuickStart for Node.js](nodejs-quickstart.md) topic located previously in this topic walks you through launching the sample Node.js application with the EB CLI.
 

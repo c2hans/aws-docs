@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitm
 ---
 
 # Resolving RabbitMQ paused queue synchronization
-<a name="rabbitmq-queue-sync"></a>
 
 In an Amazon MQ for RabbitMQ [cluster deployment](rabbitmq-broker-architecture.md#rabbitmq-broker-architecture-cluster), messages published to each queue are replicated across three broker nodes. This replication, referred to as *mirroring*, provides high availability (HA) for RabbitMQ brokers. Queues in a cluster deployment consist of a *main* replica on one node and one or more *mirrors*. Every operation applied to a mirrored queue, including enqueuing messages, is first applied to the main queue and then replicated across its mirrors.
 

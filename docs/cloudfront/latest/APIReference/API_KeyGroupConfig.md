@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_KeyGr
 ---
 
 # KeyGroupConfig
-<a name="API_KeyGroupConfig"></a>
 
 A key group configuration.
 

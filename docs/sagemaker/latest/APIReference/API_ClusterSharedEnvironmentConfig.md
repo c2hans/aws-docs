@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterSharedEnvironmentConfig
-<a name="API_ClusterSharedEnvironmentConfig"></a>
 
 The shared environment configuration for the restricted instance groups (RIG).
 

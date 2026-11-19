@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Put
 ---
 
 # PutActionRevision
-<a name="API_PutActionRevision"></a>
 
 Provides information to CodePipeline about new revisions to a source.
 

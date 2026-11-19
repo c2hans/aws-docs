@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle transparent data encryption and PostgreSQL encryption
-<a name="chap-oracle-aurora-pg.security.encryption"></a>
 
 With AWS DMS, you can securely migrate databases by encrypting data at rest using Oracle transparent data encryption or PostgreSQL encryption. Oracle transparent data encryption and PostgreSQL encryption are data-at-rest encryption solutions that protect sensitive data by encrypting database files, backups, and replicas.
 

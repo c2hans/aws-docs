@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Scale Geospatial Data Lakes on AWS
-<a name="template-ref-arch"></a>
 
 Publication date: **August 14, 2023 ([Diagram history](#diagram-history))**
 

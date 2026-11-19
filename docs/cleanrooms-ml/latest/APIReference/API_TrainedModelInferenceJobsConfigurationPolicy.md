@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Tr
 ---
 
 # TrainedModelInferenceJobsConfigurationPolicy
-<a name="API_TrainedModelInferenceJobsConfigurationPolicy"></a>
 
 Provides configuration information for the trained model inference job.
 

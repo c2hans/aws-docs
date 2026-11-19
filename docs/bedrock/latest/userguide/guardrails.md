@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html
 ---
 
 # Detect and filter harmful content by using Amazon Bedrock Guardrails
-<a name="guardrails"></a>
 
 Amazon Bedrock Guardrails provides configurable safeguards to help you build safe generative AI applications. With comprehensive safety and privacy controls across foundation models (FMs), Amazon Bedrock Guardrails offers a consistent user experience to help detect and filter undesirable content and protect sensitive information that might be present in user inputs or model responses (excluding reasoning content blocks).
 

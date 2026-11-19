@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_UpdateWorkflowVersi
 ---
 
 # UpdateWorkflowVersion
-<a name="API_UpdateWorkflowVersion"></a>
 
 Updates information about the workflow version. For more information, see [Workflow versioning in AWS HealthOmics](https://docs.aws.amazon.com/omics/latest/dev/workflow-versions.html) in the * AWS HealthOmics User Guide*.
 

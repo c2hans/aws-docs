@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # ListServiceDependencies
-<a name="API_ListServiceDependencies"></a>
 
 Returns a list of service dependencies of the service that you specify. A dependency is an infrastructure component that an operation of this service connects with. Dependencies can include AWS services, AWS resources, and third-party services.
 

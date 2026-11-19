@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/kNN-in-formats.html
 ---
 
 # Data Formats for k-NN Training Input
-<a name="kNN-in-formats"></a>
 
 All Amazon SageMaker AI built-in algorithms adhere to the common input training formats described in [Common Data Formats - Training](https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-training.html). This topic contains a list of the available input formats for the SageMaker AI k-nearest-neighbor algorithm.
 

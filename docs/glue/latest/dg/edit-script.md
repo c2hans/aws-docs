@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/edit-script.html
 ---
 
 # AWS Glue programming guide
-<a name="edit-script"></a>
 
 A script contains the code that extracts data from sources, transforms it, and loads it into targets. AWS Glue runs a script when it starts a job.
 

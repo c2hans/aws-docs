@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetLoadBalancerTlsCertificates
-<a name="API_GetLoadBalancerTlsCertificates"></a>
 
 Returns information about the TLS certificates that are associated with the specified Lightsail load balancer.
 

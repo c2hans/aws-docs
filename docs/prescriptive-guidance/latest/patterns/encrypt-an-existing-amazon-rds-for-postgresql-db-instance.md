@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/en
 ---
 
 # Encrypt an existing Amazon RDS for PostgreSQL DB instance
-<a name="encrypt-an-existing-amazon-rds-for-postgresql-db-instance"></a>
 
 *Piyush Goyal, Shobana Raghu, and Yaser Raja, Amazon Web Services*
 

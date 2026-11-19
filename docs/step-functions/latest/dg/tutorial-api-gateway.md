@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-api-ga
 ---
 
 # Creating a Step Functions API using API Gateway
-<a name="tutorial-api-gateway"></a>
 
 You can use Amazon API Gateway to associate your AWS Step Functions APIs with methods in an API Gateway API. When an HTTPS request is sent to an API method, API Gateway invokes your Step Functions API actions.
 

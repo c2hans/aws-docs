@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-storage
 ---
 
 # AWS storage for VMware professionals
-<a name="introduction"></a>
 
 *Phani Lingamallu and Hakan Yildirim, Amazon Web Services*
 

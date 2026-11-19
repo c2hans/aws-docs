@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSREL03-BP01 Regularly review your OpenSearch Service quotas
-<a name="aosrel03-bp01"></a>
 
  Prevent workload limitations in Amazon OpenSearch Service by regularly reviewing and updating your domain quotas for smooth operation.
 

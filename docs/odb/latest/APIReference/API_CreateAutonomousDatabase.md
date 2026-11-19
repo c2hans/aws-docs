@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateAutono
 ---
 
 # CreateAutonomousDatabase
-<a name="API_CreateAutonomousDatabase"></a>
 
 Creates a new Autonomous Database.
 

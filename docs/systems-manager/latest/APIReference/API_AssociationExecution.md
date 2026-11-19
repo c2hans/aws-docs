@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AssociationExecution
-<a name="API_AssociationExecution"></a>
 
 Includes information about the specified association.
 

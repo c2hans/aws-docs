@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_cloudfro
 ---
 
 # aws-cloudfront-apigateway
-<a name="aws_cloudfront_apigateway"></a>
 
 ![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
 

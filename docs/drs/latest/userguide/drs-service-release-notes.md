@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/drs-service-release
 ---
 
 # AWS Elastic Disaster Recovery Service Release Notes
-<a name="drs-service-release-notes"></a>
 
 ## October 2026
 <a name="release-notes-october-2026"></a>

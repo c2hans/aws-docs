@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/hybrid-
 ---
 
 # Install SSM Agent on hybrid Linux nodes
-<a name="hybrid-multicloud-ssm-agent-install-linux"></a>
 
 This topic describes how to install AWS Systems Manager SSM Agent on non-EC2 (Amazon Elastic Compute Cloud) Linux machines in a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment. For information about installing SSM Agent on EC2 instances for Linux, see [Manually installing and uninstalling SSM Agent on EC2 instances for Linux](manually-install-ssm-agent-linux.md).
 

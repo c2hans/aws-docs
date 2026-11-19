@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Label.html
 ---
 
 # Label
-<a name="API_Label"></a>
 
 A single label container. This is used as an element of a label array in multiple contexts, for example, in `RuleLabels` inside a [Rule](API_Rule.md) and in `Labels` inside a [SampledHTTPRequest](API_SampledHTTPRequest.md).
 

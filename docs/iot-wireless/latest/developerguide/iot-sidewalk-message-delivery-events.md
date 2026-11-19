@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-s
 ---
 
 # Enable notifications for message delivery status events
-<a name="iot-sidewalk-message-delivery-events"></a>
 
 Message delivery status events publish event notifications about the status of messages that are exchanged between your Sidewalk devices and AWS IoT Wireless. Event notifications are published for both downlink messages that are sent from AWS IoT Wireless to the Sidewalk device, and uplink messages that are sent from your device to AWS IoT Wireless.
 

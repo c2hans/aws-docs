@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/to-add-a-custom
 ---
 
 # Adding a custom domain managed by a third-party DNS provider
-<a name="to-add-a-custom-domain-managed-by-a-third-party-dns-provider"></a>
 
 If you are not using Amazon Route 53 to manage your domain, you can add a custom domain managed by a third-party DNS provider to your app deployed with Amplify.
 

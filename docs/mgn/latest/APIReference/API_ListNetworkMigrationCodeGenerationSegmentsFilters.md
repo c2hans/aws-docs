@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkM
 ---
 
 # ListNetworkMigrationCodeGenerationSegmentsFilters
-<a name="API_ListNetworkMigrationCodeGenerationSegmentsFilters"></a>
 
 Filters for listing code generation segments.
 

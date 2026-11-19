@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # `Ref`
-<a name="intrinsic-function-reference-ref"></a>
 
 The intrinsic function `Ref` returns the value of a specified parameter, resource, or another intrinsic function. This function is commonly used to create references between resources within a CloudFormation template.
 

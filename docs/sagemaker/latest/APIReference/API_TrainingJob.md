@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traini
 ---
 
 # TrainingJob
-<a name="API_TrainingJob"></a>
 
 Contains information about a training job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PrefixLe
 ---
 
 # PrefixLevelStorageMetrics
-<a name="API_control_PrefixLevelStorageMetrics"></a>
 
 A container for the prefix-level storage metrics for S3 Storage Lens.
 

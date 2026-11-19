@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/UsingWithRDS.
 ---
 
 # Using identity-based policies (IAM policies) for Amazon DocumentDB
-<a name="UsingWithRDS.IAM.AccessControl.IdentityBased"></a>
 
 **Important**
 For certain management features, Amazon DocumentDB uses operational technology that is shared with Amazon RDS. Amazon DocumentDB console, AWS CLI, and API calls are logged as calls made to the Amazon RDS API.

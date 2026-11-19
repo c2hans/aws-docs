@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListI
 ---
 
 # ListIdentityPropagationConfigs
-<a name="API_ListIdentityPropagationConfigs"></a>
 
 Lists all services and authorized targets that the Quick Sight IAM Identity Center application can access.
 

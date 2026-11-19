@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-query.ht
 ---
 
 # Query your Prometheus metrics
-<a name="AMP-query"></a>
 
 Now that metrics are being ingested to the workspace, you can query them.
 

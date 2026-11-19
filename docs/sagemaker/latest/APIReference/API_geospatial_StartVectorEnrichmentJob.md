@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # StartVectorEnrichmentJob
-<a name="API_geospatial_StartVectorEnrichmentJob"></a>
 
 Creates a Vector Enrichment job for the supplied job type. Currently, there are two supported job types: reverse geocoding and map matching.
 

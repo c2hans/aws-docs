@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_P
 ---
 
 # PrincipalRoleEntitlementDetails
-<a name="API_PrincipalRoleEntitlementDetails"></a>
 
 Contains detailed information about a principal-to-role entitlement, including the target account.
 

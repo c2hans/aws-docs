@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB
 ---
 
 # API Reference
-<a name="SDB_API"></a>
 
 **Topics**
 + [API Usage](APIUsage.md)

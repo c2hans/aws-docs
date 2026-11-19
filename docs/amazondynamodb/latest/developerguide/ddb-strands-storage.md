@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ddb
 ---
 
 # Using DynamoDB as a storage backend for Strands Agents
-<a name="ddb-strands-storage"></a>
 
 [Strands Agents](https://strandsagents.com/) is an open source SDK that takes a model-driven approach to building AI agents in a few lines of code, with first-class support for Amazon Bedrock and other model providers. Among its building blocks is a unified storage interface: a byte-oriented contract (`write`, `read`, `delete`, `list`) that every stateful subsystem in the SDK speaks. The Session Manager persists conversation snapshots through it, the Memory Manager stores long-term memories through it, and the context offloader and transcripts use the same operations.
 

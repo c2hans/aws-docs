@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/create-
 ---
 
 # Creating a Savings Plans budget
-<a name="create-savingsplans-budget"></a>
 
 Use this procedure to create a budget that's specifically for Savings Plans utilization or coverage.
 

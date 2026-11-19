@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel09.h
 ---
 
 # Back up data
-<a name="rel09"></a>
 
  Data can be lost or corrupted at any point, through a hardware fault, an operator error, a failed deployment, or a deliberate attack. Some of that data can be recreated from an authoritative source, but much of it cannot, and the copy you hold in a backup is the only path back to a working system. A backup that is untested, unencrypted, or reachable by the same credentials that run production offers far less protection than teams assume.
 

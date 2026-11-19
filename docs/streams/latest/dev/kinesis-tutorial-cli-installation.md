@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kinesis-tutorial-cli-
 ---
 
 # Tutorial: Install and configure the AWS CLI for Kinesis Data Streams
-<a name="kinesis-tutorial-cli-installation"></a>
 
 ## Install the AWS CLI
 <a name="install-cli"></a>

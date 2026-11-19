@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Gsm
 ---
 
 # GsmNmrObj
-<a name="API_GsmNmrObj"></a>
 
 GSM object for network measurement reports.
 

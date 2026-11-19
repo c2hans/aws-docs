@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Operations_A
 ---
 
 # AWS IoT
-<a name="API_Operations_AWS_IoT"></a>
 
 The following actions are supported by AWS IoT:
 +  [AcceptCertificateTransfer](API_AcceptCertificateTransfer.md)

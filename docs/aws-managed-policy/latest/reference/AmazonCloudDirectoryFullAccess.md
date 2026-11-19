@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonCloudDirectoryFullAccess
-<a name="AmazonCloudDirectoryFullAccess"></a>
 
 **Description**: Provides full access to Amazon Cloud Directory Service.
 

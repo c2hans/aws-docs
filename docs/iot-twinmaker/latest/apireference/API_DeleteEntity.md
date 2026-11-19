@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_De
 ---
 
 # DeleteEntity
-<a name="API_DeleteEntity"></a>
 
 Deletes an entity.
 

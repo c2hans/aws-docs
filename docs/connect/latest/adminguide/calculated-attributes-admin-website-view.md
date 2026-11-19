@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/calculated-att
 ---
 
 # View calculated attributes in Connect Customer
-<a name="calculated-attributes-admin-website-view"></a>
 
 1. Log in to the Connect Customer admin website at https://{{instance name}}.my.connect.aws/. Use an Admin account, or an account assigned to a security profile that has **Customer Profiles - Calculated Attributes** permission. permission.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/cfct-githu
 ---
 
 # Set up GitHub as the configuration source
-<a name="cfct-github-configuration-source"></a>
 
 This section tells you how to deploy Customizations for AWS Control Tower (CfCT) with GitHub as a source. The process has three main steps:
 + Prepare a GitHub repository

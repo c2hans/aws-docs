@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/batch-job-q
 ---
 
 # batch-job-queue-enabled
-<a name="batch-job-queue-enabled"></a>
 
 Checks if AWS Batch job queues are enabled. The rule is NON\_COMPLIANT if configuration.State is 'DISABLED'.
 

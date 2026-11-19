@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/protect-sen
 ---
 
 # Protected health information (PHI)
-<a name="protect-sensitive-log-data-types-health"></a>
 
 CloudWatch Logs data protection can find the following types of protected health information (PHI).
 

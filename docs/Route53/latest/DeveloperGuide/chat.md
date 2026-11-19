@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/chat.html
 ---
 
 # .chat
-<a name="chat"></a>
 
 Used by any kind of online chat website.
 

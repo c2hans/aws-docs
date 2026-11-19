@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_Alterna
 ---
 
 # AlternateContact
-<a name="API_AlternateContact"></a>
 
 A structure that contains the details of an alternate contact associated with an AWS account
 

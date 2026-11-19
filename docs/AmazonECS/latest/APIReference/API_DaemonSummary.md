@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Daemon
 ---
 
 # DaemonSummary
-<a name="API_DaemonSummary"></a>
 
 A summary of a daemon.
 

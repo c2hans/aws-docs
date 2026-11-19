@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # CustomJWTAuthorizerConfiguration
-<a name="API_CustomJWTAuthorizerConfiguration"></a>
 
 Configuration for a custom JWT authorizer that validates inbound bearer tokens against an OpenID Connect identity provider.
 

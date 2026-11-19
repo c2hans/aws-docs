@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_De
 ---
 
 # DescribePrivateConnection
-<a name="API_DescribePrivateConnection"></a>
 
 Retrieves the details of a private connection.
 

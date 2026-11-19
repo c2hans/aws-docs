@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/aggregated-
 ---
 
 # Creating Aggregators for AWS Config
-<a name="aggregated-create"></a>
 
 You can use the AWS Config console or the AWS CLI to create your aggregators. From the AWS Config you can choose **Add individual account IDs** or **Add my organization** from where you want to aggregate data. For the AWS CLI there are two different procedures.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Record
 ---
 
 # RecordMarkerFailedEventAttributes
-<a name="API_RecordMarkerFailedEventAttributes"></a>
 
 Provides the details of the `RecordMarkerFailed` event.
 

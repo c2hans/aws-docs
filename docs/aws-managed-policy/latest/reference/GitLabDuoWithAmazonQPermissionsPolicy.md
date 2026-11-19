@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/GitL
 ---
 
 # GitLabDuoWithAmazonQPermissionsPolicy
-<a name="GitLabDuoWithAmazonQPermissionsPolicy"></a>
 
 **Description**: This managed policy grants permission to connect with Amazon Q and utilize the features in the GitLab Duo with Amazon Q integration.
 

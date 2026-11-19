@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-loyal
 ---
 
 # Object type mapping for Item Catalog
-<a name="standard-loyalty-promotion-object-mapping-item-catalog"></a>
 
 | Field | Type | Description |
 | --- | --- | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dev-endpoint-tutorial-pyc
 ---
 
 # Tutorial: Set up PyCharm professional with a development endpoint
-<a name="dev-endpoint-tutorial-pycharm"></a>
 
 This tutorial shows you how to connect the [PyCharm Professional](https://www.jetbrains.com/pycharm/) Python IDE running on your local machine to a development endpoint so that you can interactively run, debug, and test AWS Glue ETL (extract, transfer, and load) scripts before deploying them. The instructions and screen captures in the tutorial are based on PyCharm Professional version 2019.3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/sample-dist-map
 ---
 
 # Process a CSV file from Amazon S3 using a Distributed Map
-<a name="sample-dist-map-csv-process"></a>
 
 This sample project demonstrates how you can use the [*Distributed Map state*](state-map-distributed.md) to iterate over 10,000 rows of a CSV file that is generated using a Lambda function. The CSV file contains shipping information of customer orders and is stored in an Amazon S3 bucket. The Distributed Map iterates over a batch of 10 rows in the CSV file for data analysis.
 

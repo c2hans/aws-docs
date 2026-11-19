@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/error-han
 ---
 
 # Error handling
-<a name="error-handling"></a>
 
 S3 Transfer Manager uses [promises](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-GuzzleHttp.Promise.Promise.html) for asynchronous operations. You can handle errors using the promise's `otherwise` or `then` method. You can also wrap your implementation in a `try-catch` block.
 

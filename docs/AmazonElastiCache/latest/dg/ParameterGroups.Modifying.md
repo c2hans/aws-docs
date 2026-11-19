@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ParameterGro
 ---
 
 # Modifying an ElastiCache parameter group
-<a name="ParameterGroups.Modifying"></a>
 
 **Important**
 You cannot modify any default parameter group.

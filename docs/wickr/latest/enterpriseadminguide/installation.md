@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/instal
 This guide provides documentation for Wickr Enterprise. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Installation
-<a name="installation"></a>
 
 The Wickr Enterprise Compliance Service requires the Wickr IO platform as it is now an integration within that framework. Wickr IO manages the server-side portions of the setup process while the Network Dashboard in your Enterprise deploy manages the bot users.
 

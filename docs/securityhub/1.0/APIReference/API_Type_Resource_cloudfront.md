@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Re
 ---
 
 # Amazon CloudFront
-<a name="API_Type_Resource_cloudfront"></a>
 
 ****Amazon CloudFront objects****
 + [AwsCloudFrontDistributionCacheBehavior](API_AwsCloudFrontDistributionCacheBehavior.md)

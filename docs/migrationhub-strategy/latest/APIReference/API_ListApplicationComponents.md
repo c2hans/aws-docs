@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # ListApplicationComponents
-<a name="API_ListApplicationComponents"></a>
 
 **Note**
  AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Migration Hub](https://aws.amazon.com/transform).
@@ -49,7 +48,7 @@ Valid Values: `NOT_DEFINED | APP_NAME | SERVER_ID | APP_TYPE | STRATEGY | DESTIN
 Required: No
 
  ** [filterValue](#API_ListApplicationComponents_RequestSyntax) **   <a name="migrationhubstrategy-ListApplicationComponents-request-filterValue"></a>
- Specify the value based on the application component criteria type. For example, if `applicationComponentCriteria` is set to `SERVER_ID` and `filterValue` is set to `server1`, then [ListApplicationComponents](#API_ListApplicationComponents) returns all the application components running on server1.
+ Specify the value based on the application component criteria type. For example, if `applicationComponentCriteria` is set to `SERVER_ID` and `filterValue` is set to `server1`, then [ListApplicationComponents](API_ListApplicationComponents.md) returns all the application components running on server1.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
 Pattern: `.*\S.*`

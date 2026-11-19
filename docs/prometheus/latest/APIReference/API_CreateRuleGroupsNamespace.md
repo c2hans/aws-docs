@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Creat
 ---
 
 # CreateRuleGroupsNamespace
-<a name="API_CreateRuleGroupsNamespace"></a>
 
 The `CreateRuleGroupsNamespace` operation creates a rule groups namespace within a workspace. A rule groups namespace is associated with exactly one rules file. A workspace can have multiple rule groups namespaces.
 

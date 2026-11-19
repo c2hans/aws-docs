@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # PartnerProfile
-<a name="API_account_PartnerProfile"></a>
 
 Contains comprehensive profile information for a partner including public-facing details.
 

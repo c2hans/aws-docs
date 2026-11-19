@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-sinks.html
 ---
 
 # Write data using sinks in Managed Service for Apache Flink
-<a name="how-sinks"></a>
 
 In your application code, you can use any [Apache Flink sink](https://nightlies.apache.org/flink/flink-docs-release-1.19/docs/connectors/datastream/overview/) connector to write into external systems, including AWS services, such as Kinesis Data Streams and DynamoDB.
 

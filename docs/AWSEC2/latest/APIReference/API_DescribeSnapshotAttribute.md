@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeS
 ---
 
 # DescribeSnapshotAttribute
-<a name="API_DescribeSnapshotAttribute"></a>
 
 Describes the specified attribute of the specified snapshot. You can specify only one attribute at a time.
 

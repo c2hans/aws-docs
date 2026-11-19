@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Ra
 ---
 
 # RateLimiterStatus
-<a name="API_RateLimiterStatus"></a>
 
 Contains information about the rate limiter status for a connection, including the maximum number of rate limiters allowed, the number currently in use, and the remaining capacity.
 

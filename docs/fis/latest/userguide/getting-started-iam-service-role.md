@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/getting-started-iam
 ---
 
 # IAM roles for AWS FIS experiments
-<a name="getting-started-iam-service-role"></a>
 
 AWS Identity and Access Management (IAM) is an AWS service that helps an administrator securely control access to AWS resources. To use AWS FIS, you must create an IAM role that grants AWS FIS the permissions required so that AWS FIS can run experiments on your behalf. You specify this experiment role when you create an experiment template. For a single-account experiment, the IAM policy for the experiment role must grant permission to modify the resources that you specify as targets in your experiment template. For a multi-account experiment, the experiment role must grant the orchestrator role permission to assume the IAM role for each target account. For more information, see [Permissions for multi-account experiments](multi-account-prerequisites.md#permissions).
 

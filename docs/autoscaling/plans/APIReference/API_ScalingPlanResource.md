@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_Scali
 ---
 
 # ScalingPlanResource
-<a name="API_ScalingPlanResource"></a>
 
 Represents a scalable resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Data
 ---
 
 # DataEncryptionMetadata
-<a name="API_DataEncryptionMetadata"></a>
 
 The settings for client-side encryption for cryptographic computing.
 

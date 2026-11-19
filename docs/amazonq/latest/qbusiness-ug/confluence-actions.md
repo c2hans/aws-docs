@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/confluence-a
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Configuring an Atlassian Confluence plugin for Amazon Q Business
-<a name="confluence-actions"></a>
 
 Atlassian Confluence is a collaborative work-management tool designed for sharing, storing, and working on project planning, software development, and product management. If you’re a Atlassian Confluence user, you can create an Amazon Q Business plugin to allow your end users to search pages from within their web experience chat.
 

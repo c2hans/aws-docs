@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyTypeValueAnnotation
-<a name="API_AutomatedReasoningPolicyTypeValueAnnotation"></a>
 
 An annotation for managing values within custom types, including adding, updating, or removing specific type values.
 

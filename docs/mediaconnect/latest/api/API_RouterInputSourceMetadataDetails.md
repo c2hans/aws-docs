@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterInputS
 ---
 
 # RouterInputSourceMetadataDetails
-<a name="API_RouterInputSourceMetadataDetails"></a>
 
 Detailed metadata information about a router input source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Expo
 ---
 
 # ExportFilterElement
-<a name="API_ExportFilterElement"></a>
 
 Specifies whihc properties of that label should be included in the export.
 

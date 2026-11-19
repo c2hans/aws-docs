@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Accoun
 ---
 
 # AccountFreeTrialInfo
-<a name="API_AccountFreeTrialInfo"></a>
 
 Provides details of the GuardDuty member account that uses a free trial service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # BillingGroupListElement
-<a name="API_BillingGroupListElement"></a>
 
 A representation of a billing group.
 

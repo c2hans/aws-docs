@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Overview of the cutover phase
-<a name="overview-cutover-phase"></a>
 
 In the cutover phase of the migration process, you move network traffic from your existing endpoints to your newly deployed resources in the AWS Cloud. For example, you may update the Domain Name System (DNS) records to the endpoints for your newly provisioned Elastic Load Balancer. For most applications, you'll likely have multiple integration points that must be cut over during this phase of the migration (for example, cutting over the application and database tier to migrate a two-tier application).
 

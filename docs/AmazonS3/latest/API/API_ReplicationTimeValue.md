@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ReplicationTimeV
 ---
 
 # ReplicationTimeValue
-<a name="API_ReplicationTimeValue"></a>
 
  A container specifying the time value for S3 Replication Time Control (S3 RTC) and replication metrics `EventThreshold`.
 

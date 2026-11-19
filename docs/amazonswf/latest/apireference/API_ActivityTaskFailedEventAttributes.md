@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Activi
 ---
 
 # ActivityTaskFailedEventAttributes
-<a name="API_ActivityTaskFailedEventAttributes"></a>
 
 Provides the details of the `ActivityTaskFailed` event.
 

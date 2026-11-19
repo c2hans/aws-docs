@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Lis
 ---
 
 # ListPackageGroups
-<a name="API_ListPackageGroups"></a>
 
 Returns a list of package groups in the requested domain.
 

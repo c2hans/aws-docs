@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListProfileAttributeValues
-<a name="API_connect-customer-profiles_ListProfileAttributeValues"></a>
 
 Fetch the possible attribute values given the attribute name.
 

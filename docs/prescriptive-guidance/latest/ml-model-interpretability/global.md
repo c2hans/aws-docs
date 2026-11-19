@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ml-model-in
 ---
 
 # Global interpretability
-<a name="global"></a>
 
 Understanding how features contribute to a model's output overall provides general insight that is useful for feature selection and model development. To measure the effect of adding a new feature, you typically run cross-validation with and without the feature. However, running a cross-validation for all feature combinations and all model types under consideration is often infeasible due to the computational cost. Other methods for determining feature importance are therefore useful for making quick decisions. Our recommendation for determining global feature attributions is to aggregate the local feature attribution scores recommended in the [previous section](local.md) across all data. We also recommend computing the change in the cross-validation score when a feature is removed, if time and computational constraints allow it. The following example illustrates the aggregation of local attribution scores. It  averages the magnitudes of the SHAP values for the iris classification model (from the [overview](overview.md)) and plots them as a heatmap.  You can see that the sepal measurements don't play a strong role in the model for determining the iris class.
 

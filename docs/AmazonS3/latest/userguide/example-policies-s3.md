@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-polici
 ---
 
 # Identity-based policy examples for Amazon S3
-<a name="example-policies-s3"></a>
 
 This section shows several example AWS Identity and Access Management (IAM) identity-based policies for controlling access to Amazon S3. For example *bucket policies* (resource-based policies), see [Bucket policies for Amazon S3](bucket-policies.md). For information about IAM policy language, see [Policies and permissions in Amazon S3](access-policy-language-overview.md).
 

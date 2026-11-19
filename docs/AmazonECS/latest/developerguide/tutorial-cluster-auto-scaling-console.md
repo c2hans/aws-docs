@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tutorial
 ---
 
 # Creating resources for Amazon ECS cluster auto scaling using the AWS Management Console
-<a name="tutorial-cluster-auto-scaling-console"></a>
 
 Learn how to create the resources for cluster auto scaling using the AWS Management Console. Where resources require a name, we use the prefix `ConsoleTutorial` to ensure they all have unique names and to make them easy to locate.
 

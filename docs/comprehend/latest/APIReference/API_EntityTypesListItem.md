@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Entit
 ---
 
 # EntityTypesListItem
-<a name="API_EntityTypesListItem"></a>
 
 An entity type within a labeled training dataset that Amazon Comprehend uses to train a custom entity recognizer.
 

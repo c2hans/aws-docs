@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Trigge
 ---
 
 # TriggerDetails
-<a name="API_TriggerDetails"></a>
 
 Represents the reason the scan was triggered.
 

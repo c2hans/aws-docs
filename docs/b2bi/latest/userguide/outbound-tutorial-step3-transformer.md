@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/outbound-tutorial-
 ---
 
 # Step 3: Creating an outbound transformer
-<a name="outbound-tutorial-step3-transformer"></a>
 
 An outbound transformer defines how to convert JSON data to X12 EDI format. It contains the mapping logic that takes structured JSON purchase order data and transforms it into properly formatted X12 850 EDI documents for transmission to your trading partners.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon GroundTruth Labeling
-<a name="amazongroundtruthlabeling"></a>
 
 Amazon GroundTruth Labeling provides the following APIs for data retrieval.
 

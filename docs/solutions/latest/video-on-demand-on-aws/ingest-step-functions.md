@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/
 ---
 
 # Ingest Step Functions
-<a name="ingest-step-functions"></a>
 
 ## Video-only workflow
 <a name="video-only-workflow"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Ingesting from Amazon S3
-<a name="serverless-intelligent-ingestion-s3"></a>
 
 Intelligent ingestion reads structured data and unstructured documents from Amazon Simple Storage Service (Amazon S3), processes their content, and indexes the results in your Amazon OpenSearch Serverless (OpenSearch Serverless) NextGen collection. This topic explains how intelligent ingestion works with Amazon S3 and the content that it processes.
 

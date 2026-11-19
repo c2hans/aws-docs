@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AgentCon
 ---
 
 # AgentContactReference
-<a name="API_AgentContactReference"></a>
 
 Information about the [contact](https://docs.aws.amazon.com/connect/latest/APIReference/API_Contact.html) associated to the user.
 

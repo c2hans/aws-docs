@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/how-object-typ
 ---
 
 # How object type mapping works in Customer Profiles
-<a name="how-object-type-mapping-works"></a>
 
 This topic describes what happens to your data from the moment it's ingested to the moment it becomes part of a unified, searchable profile. Understanding this flow helps you design mappings that match objects to the right profiles and avoid unwanted duplicate profiles.
 

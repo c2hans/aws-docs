@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CustomerCont
 ---
 
 # CustomerContact
-<a name="API_CustomerContact"></a>
 
 A contact to receive notification from Oracle about maintenance updates for a specific Exadata infrastructure.
 

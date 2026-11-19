@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DkimAttri
 ---
 
 # DkimAttributes
-<a name="API_DkimAttributes"></a>
 
 An object that contains information about the DKIM authentication status for an email identity.
 

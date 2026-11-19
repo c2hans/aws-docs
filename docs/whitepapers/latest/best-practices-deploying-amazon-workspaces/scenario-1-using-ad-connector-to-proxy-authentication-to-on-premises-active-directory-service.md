@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Scenario 1: Using AD connector to proxy authentication to on-premises Active Directory Service
-<a name="scenario-1-using-ad-connector-to-proxy-authentication-to-on-premises-active-directory-service"></a>
 
  This scenario is for customers who don’t want to extend their on-premises AD service into AWS, or where a new deployment of AD DS is not an option. The following figure shows at a high level, each of the components, and the user authentication flow.
 

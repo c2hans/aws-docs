@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcor
 ---
 
 # Failure management
-<a name="telcorel04"></a>
 
  The failure management section focuses on proactive measures to mitigate and rapidly respond to various failure scenarios in the telecom network. This includes implementing bypass mode on peripheral network devices, deploying redundant control and user plane architectures, and providing infrastructure mechanisms that let network functions degrade gracefully when dependent services such as billing are unavailable.
 

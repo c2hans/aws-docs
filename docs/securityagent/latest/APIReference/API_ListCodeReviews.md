@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListCodeReviews
-<a name="API_ListCodeReviews"></a>
 
 Returns a paginated list of code review summaries for the specified agent space.
 

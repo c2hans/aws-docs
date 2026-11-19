@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-RowCountM
 ---
 
 # RowCountMatch
-<a name="dqdl-rule-types-RowCountMatch"></a>
 
 Checks the ratio of the row count of the primary dataset and the row count of a reference dataset against the given expression.
 

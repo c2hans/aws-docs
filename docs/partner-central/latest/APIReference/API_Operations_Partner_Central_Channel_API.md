@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Partner Central Channel API
-<a name="API_Operations_Partner_Central_Channel_API"></a>
 
 The following actions are supported by Partner Central Channel API:
 +  [AcceptChannelHandshake](API_channel_AcceptChannelHandshake.md)

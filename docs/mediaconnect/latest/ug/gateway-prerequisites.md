@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/gateway-prerequis
 ---
 
 # Supported operating systems and system architectures for using MediaConnect Gateway
-<a name="gateway-prerequisites"></a>
 
 Before you can use AWS Elemental MediaConnect Gateway, you need an AWS account and the appropriate permissions to access, view, and edit MediaConnect components. Additionally, you will need physical hardware that complies to the MediaConnect Gateway requirements listed in the following sections.
 

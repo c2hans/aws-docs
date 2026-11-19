@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/REPEAT.
 ---
 
 # REPEAT function
-<a name="REPEAT"></a>
 
 Repeats a string the specified number of times. If the input parameter is numeric, REPEAT treats it as a string.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ts-as-loadbala
 ---
 
 # Troubleshoot Amazon EC2 Auto Scaling: Load balancer issues
-<a name="ts-as-loadbalancer"></a>
 
 This page provides information about issues caused by the load balancer associated with your Auto Scaling group, potential causes, and the steps you can take to resolve the issues.
 

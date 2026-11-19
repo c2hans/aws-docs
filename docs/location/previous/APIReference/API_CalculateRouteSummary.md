@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Calcu
 ---
 
 # CalculateRouteSummary
-<a name="API_CalculateRouteSummary"></a>
 
 A summary of the calculated route.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/sap-ibm-pacemaker-b
 ---
 
 # Business Continuity
-<a name="sap-ibm-pacemaker-business-continuity"></a>
 
 We recommend that you architect your business-critical applications to be fault tolerant. Depending on your availability requirements, there are different ways to achieve this. In this section we will discuss how you can set up highly available IBM Db2 for SAP applications.
 

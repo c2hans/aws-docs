@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/awsshell.html
 ---
 
 # AWS Shell Script task
-<a name="awsshell"></a>
 
 ## Synopsis
 <a name="synopsis"></a>

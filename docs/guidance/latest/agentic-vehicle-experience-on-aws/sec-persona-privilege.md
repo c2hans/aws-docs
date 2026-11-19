@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Server-side persona inference as a privilege boundary
-<a name="sec-persona-privilege"></a>
 
 The persona shapes which agent tools, which grounding surfaces, and which data products a session can access. It is therefore a security boundary, not merely a UI-framing decision. For this reason, the persona is always inferred server-side and is never accepted from the client.
 

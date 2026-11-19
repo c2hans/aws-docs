@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ProcessedUpdateAction
-<a name="API_ProcessedUpdateAction"></a>
 
 Update action that has been processed for the corresponding apply/stop request
 

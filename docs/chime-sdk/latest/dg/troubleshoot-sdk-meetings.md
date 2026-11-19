@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/troubleshoot-sdk-mee
 ---
 
 # Troubleshooting and debugging Amazon Chime SDK meetings
-<a name="troubleshoot-sdk-meetings"></a>
 
 Use the following topics to help diagnose and troubleshoot issues that you encounter when working with the Amazon Chime SDK.
 

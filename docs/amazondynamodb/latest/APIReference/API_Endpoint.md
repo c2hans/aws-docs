@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_E
 ---
 
 # Endpoint
-<a name="API_Endpoint"></a>
 
 An endpoint information details.
 

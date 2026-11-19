@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchCreateBillScenarioCommitmentModification
-<a name="API_AWSBCMPricingCalculator_BatchCreateBillScenarioCommitmentModification"></a>
 
  Create Compute Savings Plans, EC2 Instance Savings Plans, or EC2 Reserved Instances commitments that you want to model in a Bill Scenario.
 

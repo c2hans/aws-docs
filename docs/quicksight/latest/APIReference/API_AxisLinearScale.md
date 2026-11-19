@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AxisL
 ---
 
 # AxisLinearScale
-<a name="API_AxisLinearScale"></a>
 
 The liner axis scale setup.
 

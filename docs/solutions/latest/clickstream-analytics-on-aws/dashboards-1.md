@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Dashboard
-<a name="dashboards-1"></a>
 
 ## Overview
 <a name="overview-6"></a>

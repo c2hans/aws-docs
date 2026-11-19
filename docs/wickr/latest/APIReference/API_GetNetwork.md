@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_GetNetwork
 ---
 
 # GetNetwork
-<a name="API_GetNetwork"></a>
 
 Retrieves detailed information about a specific Wickr network, including its configuration, access level, and status.
 

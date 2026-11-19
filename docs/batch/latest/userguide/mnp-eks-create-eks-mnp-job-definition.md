@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/mnp-eks-create-ek
 ---
 
 # Create an Amazon EKS MNP job definition
-<a name="mnp-eks-create-eks-mnp-job-definition"></a>
 
 To define and run MNP jobs on Amazon EKS, there are new parameters within the [`RegisterJobDefinition`](https://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html) and [`SubmitJob`](https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitJob.html) API operations.
 + Use [`eksProperties`](https://docs.aws.amazon.com/batch/latest/APIReference/API_EksProperties.html) under the [`nodeProperties`](https://docs.aws.amazon.com/batch/latest/APIReference/API_NodeProperties.html) section to define your MNP job definition.

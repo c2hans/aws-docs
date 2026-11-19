@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-q-se
 ---
 
 # Security for cost management capabilities in AWS assistant
-<a name="ce-q-security"></a>
 
 The following provides an overview of permissions and data protection for the cost management capabilities in the AWS assistant.
 

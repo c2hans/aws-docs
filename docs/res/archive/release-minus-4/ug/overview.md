@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/overview.
 ---
 
 # Overview
-<a name="overview"></a>
 
 **Important**
 This version of the User Guide covers release 2025.09 of Research and Engineering Studio on AWS. For the current version, see the [Research and Engineering Studio on AWS User Guide](https://docs.aws.amazon.com/res/latest/ug/overview.html).

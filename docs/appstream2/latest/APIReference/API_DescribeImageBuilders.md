@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Descr
 ---
 
 # DescribeImageBuilders
-<a name="API_DescribeImageBuilders"></a>
 
 Retrieves a list that describes one or more specified image builders, if the image builder names are provided. Otherwise, all image builders in the account are described.
 

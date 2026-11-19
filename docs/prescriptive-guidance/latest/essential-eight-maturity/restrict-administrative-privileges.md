@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Restrict administrative privileges
-<a name="restrict-administrative-privileges"></a>
 
 |
 |

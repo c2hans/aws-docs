@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # ContainerGroupDefinition
-<a name="API_ContainerGroupDefinition"></a>
 
 The properties that describe a container group resource. You can update all properties of a container group definition. Updates to a container group definition are saved as new versions.
 

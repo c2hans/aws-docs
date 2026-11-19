@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Additional considerations
-<a name="considerations"></a>
 
 This section covers general considerations on Java containerization that are not specific to Java EE applications.
 

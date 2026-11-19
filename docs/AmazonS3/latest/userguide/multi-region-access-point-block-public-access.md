@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/multi-region-a
 ---
 
 # Blocking public access with Amazon S3 Multi-Region Access Points
-<a name="multi-region-access-point-block-public-access"></a>
 
 Each Multi-Region Access Point has distinct settings for Amazon S3 Block Public Access. These settings operate in conjunction with the Block Public Access settings for the AWS account that owns the Multi-Region Access Point and the underlying buckets.
 

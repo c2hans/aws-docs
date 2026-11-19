@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Expression
-<a name="API_bcmDashboards_Expression"></a>
 
 Defines complex filtering conditions using logical operators (`AND`, `OR`, `NOT`) and various filter types.
 
@@ -12,7 +11,7 @@ Defines complex filtering conditions using logical operators (`AND`, `OR`, `NOT`
 
  ** and **   <a name="awscostmanagement-Type-bcmDashboards_Expression-and"></a>
 A list of expressions to combine with AND logic.
-Type: Array of [Expression](#API_bcmDashboards_Expression) objects
+Type: Array of [Expression](API_bcmDashboards_Expression.md) objects
 Required: No
 
  ** costCategories **   <a name="awscostmanagement-Type-bcmDashboards_Expression-costCategories"></a>
@@ -27,12 +26,12 @@ Required: No
 
  ** not **   <a name="awscostmanagement-Type-bcmDashboards_Expression-not"></a>
 An expression to negate with NOT logic.
-Type: [Expression](#API_bcmDashboards_Expression) object
+Type: [Expression](API_bcmDashboards_Expression.md) object
 Required: No
 
  ** or **   <a name="awscostmanagement-Type-bcmDashboards_Expression-or"></a>
 A list of expressions to combine with OR logic.
-Type: Array of [Expression](#API_bcmDashboards_Expression) objects
+Type: Array of [Expression](API_bcmDashboards_Expression.md) objects
 Required: No
 
  ** productAttributes **   <a name="awscostmanagement-Type-bcmDashboards_Expression-productAttributes"></a>

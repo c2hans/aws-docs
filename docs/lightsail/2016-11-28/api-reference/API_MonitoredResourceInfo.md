@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_M
 ---
 
 # MonitoredResourceInfo
-<a name="API_MonitoredResourceInfo"></a>
 
 Describes resource being monitored by an alarm.
 

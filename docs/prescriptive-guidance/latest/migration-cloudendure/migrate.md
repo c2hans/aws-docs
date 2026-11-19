@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-c
 ---
 
 # Migrating your workload
-<a name="migrate"></a>
 
 To migrate your workload to AWS, you use CloudEndure's web-based console to configure your source and target environments and to set up your replication servers. In this phase, you also install the CloudEndure Agent on your source machines, and specify a Blueprint for creating and configuring your target machine With these components and configurations in place, replication from the source environment to the lightweight staging area can begin.
 

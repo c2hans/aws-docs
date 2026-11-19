@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_P
 ---
 
 # PutAttachmentRoutingPolicyLabel
-<a name="API_PutAttachmentRoutingPolicyLabel"></a>
 
 Applies a routing policy label to an attachment for traffic routing decisions.
 

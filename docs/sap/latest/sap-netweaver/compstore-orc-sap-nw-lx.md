@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/compstore-orc-s
 ---
 
 # Compute & storage
-<a name="compstore-orc-sap-nw-lx"></a>
 
 ## Compute
 <a name="compute-compstore-orc-sap-nw-lx"></a>

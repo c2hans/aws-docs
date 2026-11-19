@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Studio
 ---
 
 # StudioWebPortalSettings
-<a name="API_StudioWebPortalSettings"></a>
 
 Studio settings. If these settings are applied on a user level, they take priority over the settings applied on a domain level.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Workload architecture
-<a name="gamerel01"></a>
 
 |  GAMEREL01: Is your game architecture taking advantage of the cloud's resiliency?  |
 | --- |

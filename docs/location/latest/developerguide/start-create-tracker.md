@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/start-cre
 ---
 
 # Create a tracker
-<a name="start-create-tracker"></a>
 
 Create a tracker resource to store and process position updates from your devices. You can use the Amazon Location Service console, the AWS CLI, or the Amazon Location APIs.
 

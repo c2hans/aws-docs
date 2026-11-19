@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Detect
 ---
 
 # DetectionRuleEcsFargateRequirements
-<a name="API_DetectionRuleEcsFargateRequirements"></a>
 
 The requirements for running a Runtime Monitoring custom detection rule on Amazon ECS with the Fargate launch type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sitewise-a
 ---
 
 # Native anomaly detection
-<a name="sitewise-anomaly-detection"></a>
 
  AWS IoT SiteWise native anomaly detection is a machine learning (ML) feature for monitoring industrial equipment that detects abnormal equipment behavior and identifies potential failures. With native anomaly detection, you can implement predictive maintenance programs and identify suboptimal equipment processes.
 

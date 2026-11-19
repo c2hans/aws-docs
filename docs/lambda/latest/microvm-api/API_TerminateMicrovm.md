@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_TerminateM
 ---
 
 # TerminateMicrovm
-<a name="API_TerminateMicrovm"></a>
 
 Terminates a MicroVM. This operation is idempotent; terminating a MicroVM that has already been terminated succeeds without error.
 

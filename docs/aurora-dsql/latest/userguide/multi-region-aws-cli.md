@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/multi-regio
 ---
 
 # Using AWS CLI
-<a name="multi-region-aws-cli"></a>
 
 The AWS CLI provides a command-line interface for managing your multi-Region Aurora DSQL clusters. The following examples demonstrate how to create, configure, and delete multi-Region clusters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/parametergroups
 ---
 
 # Parameter group tiers
-<a name="parametergroups.tiers"></a>
 
 *MemoryDB parameter group tiers*
 

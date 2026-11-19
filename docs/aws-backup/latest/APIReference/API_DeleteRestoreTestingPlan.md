@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Delet
 ---
 
 # DeleteRestoreTestingPlan
-<a name="API_DeleteRestoreTestingPlan"></a>
 
 This request deletes the specified restore testing plan.
 

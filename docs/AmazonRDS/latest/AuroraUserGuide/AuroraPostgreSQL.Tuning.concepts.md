@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Essential concepts for Aurora PostgreSQL tuning
-<a name="AuroraPostgreSQL.Tuning.concepts"></a>
 
 Before you tune your Aurora PostgreSQL database, make sure to learn what wait events are and why they occur. Also review the basic memory and disk architecture of Aurora PostgreSQL. For a helpful architecture diagram, see the [PostgreSQL](https://en.wikibooks.org/wiki/PostgreSQL/Architecture) wikibook.
 

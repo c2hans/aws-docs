@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/infor-nexus.htm
 ---
 
 # Infor Nexus
-<a name="infor-nexus"></a>
 
 The following are the requirements and connection instructions for using Infor Nexus with Amazon AppFlow.
 

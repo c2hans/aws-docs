@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 ---
 
 # Modifying Resources with PATCH Operation
-<a name="managing-fhir-resources-patch"></a>
 
 AWS HealthLake supports the PATCH operation for FHIR resources, enabling you to modify resources by targeting specific elements to add, replace, or delete without updating the entire resource. This operation is particularly useful when you need to:
 + Make targeted updates to large resources

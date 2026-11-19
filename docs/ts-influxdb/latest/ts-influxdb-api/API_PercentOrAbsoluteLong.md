@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_P
 ---
 
 # PercentOrAbsoluteLong
-<a name="API_PercentOrAbsoluteLong"></a>
 
 Percent or Absolute Long for InfluxDB parameters
 

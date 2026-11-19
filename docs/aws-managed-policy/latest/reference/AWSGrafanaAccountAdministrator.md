@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSG
 ---
 
 # AWSGrafanaAccountAdministrator
-<a name="AWSGrafanaAccountAdministrator"></a>
 
 **Description**: Provides access within Amazon Grafana to create and manage workspaces for the entire organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpa
 ---
 
 # DeleteIpamPrefixListResolver
-<a name="API_DeleteIpamPrefixListResolver"></a>
 
 Deletes an IPAM prefix list resolver. Before deleting a resolver, you must first delete all resolver targets associated with it.
 

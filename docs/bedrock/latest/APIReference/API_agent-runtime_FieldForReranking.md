@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FieldForReranking
-<a name="API_agent-runtime_FieldForReranking"></a>
 
 Contains information for a metadata field to include in or exclude from consideration when reranking.
 

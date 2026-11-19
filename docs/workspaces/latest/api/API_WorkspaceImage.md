@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_WorkspaceImage
 ---
 
 # WorkspaceImage
-<a name="API_WorkspaceImage"></a>
 
 Describes a WorkSpace image.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-mtrl
 ---
 
 # Training job submission
-<a name="model-customize-mtrl-job"></a>
 
 ## Launching Training Jobs
 <a name="model-customize-mtrl-job-launching"></a>

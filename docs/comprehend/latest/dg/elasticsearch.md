@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/elasticsearch.html
 ---
 
 # Solution: Analyzing text with Amazon Comprehend and OpenSearch
-<a name="elasticsearch"></a>
 
 AWS provides a reference implementation of text analysis using Amazon Comprehend and the OpenSearch service. Amazon Comprehend provides text analysis and OpenSearch provides document indexing, searching, and visualization.
 

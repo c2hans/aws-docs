@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_PostLaunchAc
 ---
 
 # PostLaunchActionsStatus
-<a name="API_PostLaunchActionsStatus"></a>
 
 Status of the Post Launch Actions running on the Test or Cutover instance.
 

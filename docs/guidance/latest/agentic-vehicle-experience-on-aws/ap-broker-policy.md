@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Broker policy surfaces
-<a name="ap-broker-policy"></a>
 
 The broker is invoked from a DynamoDB stream on `vsa-{stage}-avx-findings`. For each new or updated Finding, it evaluates the following in order:
 

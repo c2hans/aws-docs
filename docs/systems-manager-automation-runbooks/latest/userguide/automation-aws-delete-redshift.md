@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-DeleteRedshiftCluster`
-<a name="automation-aws-delete-redshift"></a>
 
  **Description**
 

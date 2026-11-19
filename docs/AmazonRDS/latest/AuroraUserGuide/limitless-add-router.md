@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Adding a router to a DB shard group
-<a name="limitless-add-router"></a>
 
 You can add a router to a DB shard group.
 

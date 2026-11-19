@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Notifica
 ---
 
 # Notification
-<a name="API_Notification"></a>
 
 Contains information about a notification, including its content, priority, recipients, and metadata.
 

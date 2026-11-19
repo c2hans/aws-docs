@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_UpdateAut
 ---
 
 # UpdateAutoshiftObserverNotificationStatus
-<a name="API_UpdateAutoshiftObserverNotificationStatus"></a>
 
 Update the status of autoshift observer notification. Autoshift observer notification enables you to be notified, through Amazon EventBridge, when there is an autoshift event for zonal autoshift.
 

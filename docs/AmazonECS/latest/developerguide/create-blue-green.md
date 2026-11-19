@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-b
 ---
 
 # Tutorial: Creating a Service Using a Blue/Green Deployment
-<a name="create-blue-green"></a>
 
 Amazon ECS has integrated blue/green deployments into the Create Service wizard on the Amazon ECS console. For more information, see [Creating an Amazon ECS rolling update deployment](create-service-console-v2.md).
 

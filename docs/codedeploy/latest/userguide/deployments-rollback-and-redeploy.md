@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-
 ---
 
 # Redeploy and roll back a deployment with CodeDeploy
-<a name="deployments-rollback-and-redeploy"></a>
 
 CodeDeploy rolls back deployments by redeploying a previously deployed revision of an application as a new deployment. These rolled-back deployments are technically new deployments, with new deployment IDs, rather than restored versions of a previous deployment.
 

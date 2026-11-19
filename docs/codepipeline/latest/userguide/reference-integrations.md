@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/reference-
 ---
 
 # Integration model reference
-<a name="reference-integrations"></a>
 
 There are several pre-built integrations for third-party services to help build existing customer tools into the pipeline release process. Partners, or third-party service providers, use an integration model to implement action types for use in CodePipeline.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/failback-failover-c
 ---
 
 # Performing a cross-account failback
-<a name="failback-failover-cross-account"></a>
 
  AWS Elastic Disaster Recovery (AWS DRS) allows you to perform failover and failback on your EC2-based applications from one AWS account to another AWS account. The failover process is the same as failing over into an AWS account from a source outside of AWS, but the failback process is different. The instructions below describe the complete cross-account failover and failback process.
 

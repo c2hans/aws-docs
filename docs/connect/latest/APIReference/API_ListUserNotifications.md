@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListUser
 ---
 
 # ListUserNotifications
-<a name="API_ListUserNotifications"></a>
 
 Retrieves a paginated list of notifications for a specific user, including the notification status for that user.
 

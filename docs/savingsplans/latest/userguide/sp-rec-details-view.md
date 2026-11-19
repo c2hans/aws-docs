@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/sp-rec-det
 ---
 
 # Viewing Savings Plans recommendation details
-<a name="sp-rec-details-view"></a>
 
 Savings Plans recommendation details offer visibility into the potential impact of a recommended Savings Plan on your hourly On-Demand cost, coverage, and utilization. Each recommendation is designed to maximize your savings, taking into account your chosen **Recommendation parameters**, your current Savings Plans inventory, and your On-Demand spend over the lookback period. You can also access **Purchase Analyzer** from the **Recommendation details** page to customize your recommendations and estimate the cost, coverage, and utilization impact of your next Savings Plan purchase for custom commitments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_DescribeLife
 ---
 
 # DescribeLifecycleConfiguration
-<a name="API_DescribeLifecycleConfiguration"></a>
 
 Returns the current `LifecycleConfiguration` object for the specified EFS file system. Lifecycle management uses the `LifecycleConfiguration` object to identify when to move files between storage classes. For a file system without a `LifecycleConfiguration` object, the call returns an empty array in the response.
 

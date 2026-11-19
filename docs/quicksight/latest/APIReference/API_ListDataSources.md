@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListD
 ---
 
 # ListDataSources
-<a name="API_ListDataSources"></a>
 
 Lists data sources in current AWS Region that belong to this AWS account.
 

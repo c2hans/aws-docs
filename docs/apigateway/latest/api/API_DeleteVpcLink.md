@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteVpcLink.
 ---
 
 # DeleteVpcLink
-<a name="API_DeleteVpcLink"></a>
 
 Deletes an existing VpcLink of a specified identifier.
 

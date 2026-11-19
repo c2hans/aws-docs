@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/how-to-u
 ---
 
 # How to use the lens
-<a name="how-to-use-the-lens"></a>
 
 Use this lens to evaluate SAP on AWS workloads — before, during, and after implementation. This lens provides additional content to the AWS Well-Architected Framework and clarifies how to interpret and adopt those foundational best practices into SAP workload designs.
 

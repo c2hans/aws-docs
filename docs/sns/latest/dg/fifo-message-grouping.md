@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/fifo-message-grouping.html
 ---
 
 # Amazon SNS message grouping for FIFO topics
-<a name="fifo-message-grouping"></a>
 
 Messages that belong to the same group are processed one by one, in a strict order relative to the group.
 

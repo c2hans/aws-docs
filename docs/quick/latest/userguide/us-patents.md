@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/us-patents.html
 ---
 
 # Using third party data in Quick Research (US Patents)
-<a name="us-patents"></a>
 
 This integration provides access to 20 years of US patents from the US Patent and Trademark Office (USPTO). For more information, see [USPTO](https://www.uspto.gov/).
 

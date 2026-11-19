@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax
 ---
 
 # Managing cluster operations
-<a name="dax-cluster-operations"></a>
 
 DAX handles the cluster’s maintenance and health for you. However, you need to provide operational input to scale the cluster horizontally or vertically to match your usage patterns. This section describes the recommended process to scale your DAX clusters.
 

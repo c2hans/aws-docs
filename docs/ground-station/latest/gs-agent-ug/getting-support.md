@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug/gettin
 ---
 
 # Getting support
-<a name="getting-support"></a>
 
 Contact the Ground Station team through AWS Support.
 

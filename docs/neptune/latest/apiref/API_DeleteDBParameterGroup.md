@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DeleteDBParame
 ---
 
 # DeleteDBParameterGroup
-<a name="API_DeleteDBParameterGroup"></a>
 
 Deletes a specified DBParameterGroup. The DBParameterGroup to be deleted can't be associated with any DB instances.
 

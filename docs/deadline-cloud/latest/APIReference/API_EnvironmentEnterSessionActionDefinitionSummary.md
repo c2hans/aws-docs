@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_E
 ---
 
 # EnvironmentEnterSessionActionDefinitionSummary
-<a name="API_EnvironmentEnterSessionActionDefinitionSummary"></a>
 
 Defines the environment a session action enters in.
 

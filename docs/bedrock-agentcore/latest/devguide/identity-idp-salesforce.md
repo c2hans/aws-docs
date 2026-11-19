@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Salesforce
-<a name="identity-idp-salesforce"></a>
 
 Salesforce can be configured as an AgentCore Identity credential provider for outbound resource access. This allows your agents to authenticate users through Salesforce’s OAuth2 service and obtain access tokens for Salesforce API resources.
 

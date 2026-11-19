@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/dataexports-edit-ex
 ---
 
 # Editing export tags
-<a name="dataexports-edit-export-tags"></a>
 
 You can use the **Data Exports** page in the AWS Billing and Cost Management console to edit your export tags.
 

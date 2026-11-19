@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Data processing
-<a name="ops-data-processing"></a>
 
 **Topics**
 + [MLOPS03-BP01 Profile data to improve quality](mlops03-bp01.md)

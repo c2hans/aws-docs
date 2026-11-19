@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_BatchDel
 ---
 
 # BatchDeleteEvaluationJob
-<a name="API_BatchDeleteEvaluationJob"></a>
 
 Deletes a batch of evaluation jobs. An evaluation job can only be deleted if it has following status `FAILED`, `COMPLETED`, and `STOPPED`. You can request up to 25 model evaluation jobs be deleted in a single request.
 

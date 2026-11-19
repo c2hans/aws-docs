@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/what-is-dcv.html
 ---
 
 # What Is Amazon DCV?
-<a name="what-is-dcv"></a>
 
 **Note**
 Amazon DCV was previously known as NICE DCV.

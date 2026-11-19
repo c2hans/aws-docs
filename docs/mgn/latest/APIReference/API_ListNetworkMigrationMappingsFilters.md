@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkM
 ---
 
 # ListNetworkMigrationMappingsFilters
-<a name="API_ListNetworkMigrationMappingsFilters"></a>
 
 Filters for listing network migration mapping jobs.
 

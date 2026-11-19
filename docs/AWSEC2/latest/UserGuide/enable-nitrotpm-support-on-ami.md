@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enable-nitrotpm-
 ---
 
 # Enable a Linux AMI for NitroTPM
-<a name="enable-nitrotpm-support-on-ami"></a>
 
 To enable NitroTPM for an instance, you must launch the instance using an AMI with NitroTPM enabled. You must configure your Linux AMI with NitroTPM support when you register it. You can't configure NitroTPM support later on.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/get-tra
 ---
 
 # Tutorial: Get tracker details with Amazon Location
-<a name="get-tracker-details"></a>
 
 You can get details about any tracker in your AWS account by using the Amazon Location console, the AWS CLI, or the Amazon Location APIs.
 

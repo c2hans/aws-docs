@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/add-initial
 ---
 
 # Step 3: Add initial product version
-<a name="add-initial-version"></a>
 
  This page guides you through adding the initial version of your product. Your product may have multiple versions throughout its lifecycle, and each version is identified by a unique SageMaker AI ARN.
 

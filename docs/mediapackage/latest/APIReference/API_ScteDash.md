@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Sct
 ---
 
 # ScteDash
-<a name="API_ScteDash"></a>
 
 The SCTE configuration.
 

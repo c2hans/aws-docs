@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-moisture-c
 ---
 
 # Step 3: Create an Amazon SNS topic and subscription
-<a name="iot-moisture-create-sns-topic"></a>
 
 Create an Amazon SNS topic and subscription.
 

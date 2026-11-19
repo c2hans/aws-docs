@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/iam
 ---
 
 # IAM policy for read and write access to a DynamoDB Accelerator (DAX) cluster
-<a name="iam-policy-example-read-write-dax-access"></a>
 
 The following policy allows read, write, update, and delete access to a DynamoDB Accelerator (DAX) cluster, but not to the associated DynamoDB table. To use this policy, substitute the AWS Region name, your account ID, and the name of your DAX cluster.
 

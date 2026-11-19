@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_DeprecateRul
 ---
 
 # DeprecateRule
-<a name="API_DeprecateRule"></a>
 
  **[Custom AMI policies only]** Specifies an AMI deprecation rule for AMIs created by an AMI lifecycle policy.
 

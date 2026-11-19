@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/api-gateway_examp
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create a rest API with function proxy integration
-<a name="api-gateway_example_api_gateway_GettingStarted_087_section"></a>
 
 The following code example shows how to:
 + Create an IAM role for Lambda execution

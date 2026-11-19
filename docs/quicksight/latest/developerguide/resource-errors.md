@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/resourc
 ---
 
 # Quick Sight API errors
-<a name="resource-errors"></a>
 
 Quick Sight has two types of error codes:
 + **Client errors** – These errors are usually caused by something the client did. An example is specifying an incorrect or invalid parameter in the request. Another is using an action or resource for a user that doesn't have permission to use the action or resource. These errors are accompanied by a 400-series HTTP response code.

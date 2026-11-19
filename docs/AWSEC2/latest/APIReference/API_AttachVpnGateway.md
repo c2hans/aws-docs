@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachVpn
 ---
 
 # AttachVpnGateway
-<a name="API_AttachVpnGateway"></a>
 
 Attaches an available virtual private gateway to a VPC. You can attach one virtual private gateway to one VPC at a time.
 

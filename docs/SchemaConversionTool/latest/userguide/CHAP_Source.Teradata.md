@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Connecting to a Teradata Data Warehouse with the AWS Schema Conversion Tool
-<a name="CHAP_Source.Teradata"></a>
 
 You can use AWS SCT to convert schemas, code objects, and application code from Teradata to Amazon Redshift or Amazon Redshift and AWS Glue used in combination.
 

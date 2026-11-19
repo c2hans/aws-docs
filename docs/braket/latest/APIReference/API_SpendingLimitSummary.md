@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_SpendingL
 ---
 
 # SpendingLimitSummary
-<a name="API_SpendingLimitSummary"></a>
 
 Contains summary information about a spending limit, including current spending status and configuration details.
 

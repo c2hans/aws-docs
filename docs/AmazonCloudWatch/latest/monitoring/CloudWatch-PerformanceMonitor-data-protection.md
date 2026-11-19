@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Data protection in Performance Monitor
-<a name="CloudWatch-PerformanceMonitor-data-protection"></a>
 
 Performance Monitor processes network telemetry data from the AWS infrastructure layer. This data includes the following:
 + Network path routing information

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/postman-reading-from-enti
 ---
 
 # Reading from Postman entities
-<a name="postman-reading-from-entities"></a>
 
 **Prerequisites**
 

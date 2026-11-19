@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/windows-ami-reference/ec2-win
 ---
 
 # AWS Windows AMI version history
-<a name="ec2-windows-ami-version-history"></a>
 
 The following tables summarize the changes to each release of the AWS Windows AMIs. Note that some changes apply to all AWS Windows AMIs, while others apply to only a subset of these AMIs.
 

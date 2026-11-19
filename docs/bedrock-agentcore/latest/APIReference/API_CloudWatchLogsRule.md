@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # CloudWatchLogsRule
-<a name="API_CloudWatchLogsRule"></a>
 
 A rule configuration for filtering agent traces from CloudWatch Logs.
 

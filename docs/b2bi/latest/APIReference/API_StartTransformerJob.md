@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_StartTransf
 ---
 
 # StartTransformerJob
-<a name="API_StartTransformerJob"></a>
 
 Runs a job, using a transformer, to parse input EDI (electronic data interchange) file into the output structures used by AWS B2B Data Interchange.
 

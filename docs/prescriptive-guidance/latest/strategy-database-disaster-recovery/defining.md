@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Defining your disaster recovery strategy
-<a name="defining"></a>
 
 Depending on how critical the applications in your organization are to your business, you might decide on a uniform strategy for all applications or develop a more complex DR strategy based on the criticality of each application. Your organization might tolerate a downtime of several hours before all applications are brought up in the DR site. In this case, you can opt for a cost-effective DR strategy based on backup and restore for all databases. On the other hand, your organization's business might depend on some critical services or applications becoming available rapidly, with more aggressive RPO and RTO requirements, whereas other applications might tolerate less stringent RPO and RTO needs. In this case, you will need to assign the right DR strategy for each tier of applications and databases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/p
 ---
 
 # Product Recommendations Powered by Neo4j
-<a name="product-recommendations-neo4j"></a>
 
 Publication date: **September 20, 2022 ([Diagram history](#neo4j-rec-history))**
 

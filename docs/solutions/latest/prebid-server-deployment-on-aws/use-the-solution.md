@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Use the solution
-<a name="use-the-solution"></a>
 
 ## Demo website
 <a name="demo-website"></a>

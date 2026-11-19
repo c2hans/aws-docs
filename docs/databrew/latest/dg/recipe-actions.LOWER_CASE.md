@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.LOWER_
 ---
 
 # LOWER\_CASE
-<a name="recipe-actions.LOWER_CASE"></a>
 
 Changes each string in a column to lowercase, for example: the quick brown fox jumped over the fence
 

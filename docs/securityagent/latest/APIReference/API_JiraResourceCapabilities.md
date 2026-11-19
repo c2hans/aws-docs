@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ji
 ---
 
 # JiraResourceCapabilities
-<a name="API_JiraResourceCapabilities"></a>
 
 Capabilities for an integrated Jira project.
 

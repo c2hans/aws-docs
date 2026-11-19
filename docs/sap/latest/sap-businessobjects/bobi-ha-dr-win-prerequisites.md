@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-ha-d
 ---
 
 # Prerequisite Knowledge
-<a name="bobi-ha-dr-win-prerequisites"></a>
 
 ## AWS Services
 <a name="bobi-ha-dr-win-aws-services"></a>

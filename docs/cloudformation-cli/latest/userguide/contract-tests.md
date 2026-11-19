@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/cont
 ---
 
 # Contract tests for resource types
-<a name="contract-tests"></a>
 
 As part of testing your resource, the CloudFormation CLI performs a suite of tests, each written to test a requirement contained in the [resource type handler contract](resource-type-test-contract.md). Each handler invocation is expected to follow the general requirements for that handler listed in the contract. This topic lists tests that explicitly test some more specific requirements.
 

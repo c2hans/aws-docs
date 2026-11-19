@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/analytics-api.html
 ---
 
 # Using APIs for analytics
-<a name="analytics-api"></a>
 
 This section describes the API operations that you use to retrieve analytics for a bot.
 

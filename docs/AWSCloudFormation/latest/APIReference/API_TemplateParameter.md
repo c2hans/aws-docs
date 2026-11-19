@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # TemplateParameter
-<a name="API_TemplateParameter"></a>
 
 The `TemplateParameter` data type.
 

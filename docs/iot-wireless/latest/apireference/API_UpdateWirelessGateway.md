@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Upd
 ---
 
 # UpdateWirelessGateway
-<a name="API_UpdateWirelessGateway"></a>
 
 Updates properties of a wireless gateway.
 

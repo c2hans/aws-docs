@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrieveAndGenerateOutput
-<a name="API_agent-runtime_RetrieveAndGenerateOutput"></a>
 
 Contains the response generated from querying the knowledge base.
 

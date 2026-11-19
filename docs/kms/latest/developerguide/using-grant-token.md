@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/using-grant-to
 ---
 
 # Using a grant token
-<a name="using-grant-token"></a>
 
 The AWS KMS API follows an [eventual consistency](grants.md#terms-eventual-consistency) model. When you create a grant, the grant might not be effective immediately. There might be a brief delay before the change is available throughout AWS KMS. It typically takes less than a few seconds for the change to propagate throughout the system, but in some cases it can take several minutes. Once the change has fully propagated throughout the system, the grantee principal can use the permissions in the grant without specifying the grant token or any evidence of the grant. However, if a grant that is so new that it is not yet known to all of AWS KMS, the request might fail with an `AccessDeniedException` error.
 

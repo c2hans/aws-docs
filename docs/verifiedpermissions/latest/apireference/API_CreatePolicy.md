@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # CreatePolicy
-<a name="API_CreatePolicy"></a>
 
 Creates a Cedar policy and saves it in the specified policy store. You can create either a static policy or a policy linked to a policy template.
 + To create a static policy, provide the Cedar policy text in the `StaticPolicy` section of the `PolicyDefinition`.

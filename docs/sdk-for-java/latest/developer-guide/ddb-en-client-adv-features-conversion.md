@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Control attribute conversion
-<a name="ddb-en-client-adv-features-conversion"></a>
 
 By default, a table schema provides converters for many common Java types through a default implementation of the `[AttributeConverterProvider](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/AttributeConverterProvider.html)` interface. You can change the overall default behavior with a custom `AttributeConverterProvider` implementation. You can also change the converter for a single attribute.
 

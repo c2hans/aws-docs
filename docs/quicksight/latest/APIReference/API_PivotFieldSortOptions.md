@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotFieldSortOptions
-<a name="API_PivotFieldSortOptions"></a>
 
 The field sort options for a pivot table sort configuration.
 

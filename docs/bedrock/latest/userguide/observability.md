@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/observability.h
 ---
 
 # Observability
-<a name="observability"></a>
 
 Observability in Amazon Bedrock helps you track performance, manage resources, and automate deployments. The observability options available depend on which inference endpoint your application uses.
 

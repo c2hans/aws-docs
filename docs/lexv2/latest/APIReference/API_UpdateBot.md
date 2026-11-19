@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UpdateBot.
 ---
 
 # UpdateBot
-<a name="API_UpdateBot"></a>
 
 Updates the configuration of an existing bot.
 

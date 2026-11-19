@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/request-billing-
 ---
 
 # Assign billing of a shared EC2 Capacity Reservation to another account
-<a name="request-billing-transfer"></a>
 
 To assign billing of the available capacity of a shared Capacity Reservation to another account, the Capacity Reservation owner must initiate a request to the required account. In the Amazon EC2 console, this request is called a *transfer request*.
 

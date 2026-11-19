@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # PutScheduledAction
-<a name="API_PutScheduledAction"></a>
 
 Creates or updates a scheduled action for an Application Auto Scaling scalable target.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Logging OpenSearch Serverless API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Amazon OpenSearch Serverless is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Serverless.
 

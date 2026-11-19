@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateQu
 ---
 
 # CreateQueryLoggingConfig
-<a name="API_CreateQueryLoggingConfig"></a>
 
 Creates a configuration for DNS query logging. After you create a query logging configuration, Amazon Route 53 begins to publish log data to an Amazon CloudWatch Logs log group.
 

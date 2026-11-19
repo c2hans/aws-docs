@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReferenc
 ---
 
 # RequiredTag
-<a name="API_RequiredTag"></a>
 
 Information that describes the required tags for a given resource type.
 

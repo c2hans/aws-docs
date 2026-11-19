@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Coll
 ---
 
 # CollaborationAnalysisTemplateSummary
-<a name="API_CollaborationAnalysisTemplateSummary"></a>
 
 The metadata of the analysis template within a collaboration.
 

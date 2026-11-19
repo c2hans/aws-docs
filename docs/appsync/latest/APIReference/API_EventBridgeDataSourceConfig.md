@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_EventBri
 ---
 
 # EventBridgeDataSourceConfig
-<a name="API_EventBridgeDataSourceConfig"></a>
 
 Describes an Amazon EventBridge bus data source configuration.
 

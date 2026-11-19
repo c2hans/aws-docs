@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # RdsDbClusterSnapshotConfiguration
-<a name="API_RdsDbClusterSnapshotConfiguration"></a>
 
 The proposed access control configuration for an Amazon RDS DB cluster snapshot. You can propose a configuration for a new Amazon RDS DB cluster snapshot or an Amazon RDS DB cluster snapshot that you own by specifying the `RdsDbClusterSnapshotAttributeValue` and optional AWS KMS encryption key. For more information, see [ModifyDBClusterSnapshotAttribute](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBClusterSnapshotAttribute.html).
 

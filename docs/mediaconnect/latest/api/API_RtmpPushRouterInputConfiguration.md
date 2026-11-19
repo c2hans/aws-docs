@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RtmpPushRout
 ---
 
 # RtmpPushRouterInputConfiguration
-<a name="API_RtmpPushRouterInputConfiguration"></a>
 
 The configuration settings for a router input using the RTMP (Real-Time Messaging Protocol) protocol.
 

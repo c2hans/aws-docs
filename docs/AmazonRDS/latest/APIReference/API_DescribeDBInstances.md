@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBInstances
-<a name="API_DescribeDBInstances"></a>
 
 Describes provisioned RDS instances. This API supports pagination.
 

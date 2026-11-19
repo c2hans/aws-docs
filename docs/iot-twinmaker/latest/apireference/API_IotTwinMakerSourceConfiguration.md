@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Io
 ---
 
 # IotTwinMakerSourceConfiguration
-<a name="API_IotTwinMakerSourceConfiguration"></a>
 
 The metadata transfer job AWS IoT TwinMaker source configuration.
 

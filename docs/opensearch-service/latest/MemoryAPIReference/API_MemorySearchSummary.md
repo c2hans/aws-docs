@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # MemorySearchSummary
-<a name="API_MemorySearchSummary"></a>
 
 A `SearchMemories` result: a matching memory and its relevance score.
 

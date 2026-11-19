@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/minN.html
 ---
 
 # $minN
-<a name="minN"></a>
 
 New from version 8.0.1.
 

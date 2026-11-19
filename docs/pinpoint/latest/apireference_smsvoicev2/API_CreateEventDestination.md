@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # CreateEventDestination
-<a name="API_CreateEventDestination"></a>
 
 Creates a new event destination in a configuration set.
 

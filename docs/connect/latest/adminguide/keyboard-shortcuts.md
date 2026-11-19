@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/keyboard-short
 ---
 
 # Keyboard shortcuts for the Connect Customer flow designer
-<a name="keyboard-shortcuts"></a>
 
 The Connect Customer flow designer includes keyboard shortcuts to help you use the designer efficiently.
 

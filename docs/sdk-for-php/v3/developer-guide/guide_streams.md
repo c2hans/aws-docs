@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_str
 ---
 
 # Streams in the AWS SDK for PHP Version 3
-<a name="guide_streams"></a>
 
 As part of its integration of the [PSR-7](http://www.php-fig.org/psr/psr-7/) HTTP message standard, the AWS SDK for PHP uses the [PSR-7 StreamInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Psr.Http.Message.StreamInterface.html) internally as its abstraction over [PHP streams](http://php.net/manual/en/intro.stream.php). Any command with an input field defined as a blob, such as the `Body` parameter on an [S3::PutObject command](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3-2006-03-01.html#putobject), can be satisfied with a string, a PHP stream resource, or an instance of `Psr\Http\Message\StreamInterface`.
 

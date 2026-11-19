@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/troubleshooting.htm
 ---
 
 # Troubleshooting AWS FIS
-<a name="troubleshooting"></a>
 
 To troubleshoot errors, AWS FIS returns detailed errors from the `GetExperiment` API and FIS experiment logs. Errors are returned as part of the experiment state when the status of the experiment is **failed**. When multiple actions fail, the first failed action is returned as the experiment error. You can review your FIS experiment logs for any other errors. To learn how to log and monitor AWS FIS experiments, see [Monitoring AWS FIS experiments](monitoring-experiments.md).
 

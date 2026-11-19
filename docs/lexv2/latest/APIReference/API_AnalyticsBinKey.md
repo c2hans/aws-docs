@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsB
 ---
 
 # AnalyticsBinKey
-<a name="API_AnalyticsBinKey"></a>
 
 An object containing the criterion by which to bin the results and the value that defines that bin.
 

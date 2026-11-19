@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/s3b
 ---
 
 # S3Buckets
-<a name="s3buckets"></a>
 
 List the Amazon S3 buckets in your AWS account.
 

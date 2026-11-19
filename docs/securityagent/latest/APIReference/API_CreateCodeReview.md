@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Cr
 ---
 
 # CreateCodeReview
-<a name="API_CreateCodeReview"></a>
 
 Creates a new code review configuration in an agent space. A code review defines the parameters for automated security-focused code analysis.
 

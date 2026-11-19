@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-b
 ---
 
 # Broker Reboot
-<a name="brokers-broker-id-reboot"></a>
 
 To apply a new configuration to a broker or to initiate a failover in a multi-AZ broker, you can reboot the broker. In addition, if your broker becomes unresponsive, you can reboot it to recover from a faulty state.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Problem: Deletion of the guidance stack fails
-<a name="problem-deletion-of-the-solution-stack-fails"></a>
 
 When deleting the guidance stack, you may see the following error from AWS CloudFormation console.
 

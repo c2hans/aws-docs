@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/asff-top-le
 ---
 
 # Optional top-level ASFF attributes
-<a name="asff-top-level-attributes"></a>
 
 The following top-level attributes in the AWS Security Finding Format (ASFF) are optional for findings in Security Hub CSPM. For more information about these attributes, see [AwsSecurityFinding](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecurityFinding.html) in the *AWS Security Hub API Reference*.
 

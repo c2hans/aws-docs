@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeStorageConfiguration
-<a name="API_DescribeStorageConfiguration"></a>
 
 Retrieves information about the storage configuration for AWS IoT SiteWise.
 

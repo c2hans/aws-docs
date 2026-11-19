@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Module Library
-<a name="module-library"></a>
 
 The Module Library serves as the central hub for managing Third-Party Modules in your MCS deployment that extend the capabilities of your cloud studio environment.
 

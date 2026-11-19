@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/q.html
 ---
 
 # Amazon Q data integration in AWS Glue
-<a name="q"></a>
 
 Amazon Q data integration in AWS Glue is a new generative AI capability of AWS Glue that enables data engineers and ETL developers to build data integration jobs using natural language. Engineers and developers can ask Amazon Q to author jobs, troubleshoot issues, and answer questions about AWS Glue and data integration.
 

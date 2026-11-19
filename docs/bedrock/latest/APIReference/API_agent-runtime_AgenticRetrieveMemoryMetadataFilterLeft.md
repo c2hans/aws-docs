@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveMemoryMetadataFilterLeft
-<a name="API_agent-runtime_AgenticRetrieveMemoryMetadataFilterLeft"></a>
 
 The left operand of a metadata filter expression. Set exactly one member.
 

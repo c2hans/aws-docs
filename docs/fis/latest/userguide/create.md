@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/create.html
 ---
 
 # Create a multi-account experiment template
-<a name="create"></a>
 
 **To learn how to create an experiment template via the AWS Management Console**
 See [Create an experiment template](create-template.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dg-d
 ---
 
 # Developing an Activity Worker in Amazon SWF
-<a name="swf-dg-develop-activity"></a>
 
 An activity worker provides the implementation of one or more activity types. An activity worker communicates with Amazon SWF to receive activity tasks and perform them. You can have a fleet of multiple activity workers performing activity tasks of the same activity type.
 

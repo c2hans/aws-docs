@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Reshard
 ---
 
 # ReshardingStatus
-<a name="API_ReshardingStatus"></a>
 
 The status of the online resharding
 

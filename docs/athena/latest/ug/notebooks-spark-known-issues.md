@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-known-i
 ---
 
 # Learn about known issues in Athena for Spark
-<a name="notebooks-spark-known-issues"></a>
 
 This page documents some of the known issues in Athena for Apache Spark.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Enc
 ---
 
 # EncryptionMethod
-<a name="API_EncryptionMethod"></a>
 
 The encryption type.
 

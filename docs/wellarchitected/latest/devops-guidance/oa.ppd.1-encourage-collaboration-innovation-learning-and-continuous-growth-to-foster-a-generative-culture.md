@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.PPD.1] Encourage collaboration, innovation, learning, and continuous growth to foster a generative culture
-<a name="oa.ppd.1-encourage-collaboration-innovation-learning-and-continuous-growth-to-foster-a-generative-culture"></a>
 
  **Category:** FOUNDATIONAL
 

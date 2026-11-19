@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-plan-utiliz
 ---
 
 # Training plans utilization for SageMaker training jobs
-<a name="training-plan-utilization-for-training-jobs"></a>
 
 You can use a SageMaker training plans for your training jobs by specifying the plan of your choice when creating a training job.
 

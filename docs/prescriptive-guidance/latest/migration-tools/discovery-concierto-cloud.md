@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Concierto.cloud
-<a name="discovery-concierto-cloud"></a>
 
 *Last update: November 17, 2025*
 

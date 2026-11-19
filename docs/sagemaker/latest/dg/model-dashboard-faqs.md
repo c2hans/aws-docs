@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-dashboard-faqs
 ---
 
 # Model Dashboard FAQ
-<a name="model-dashboard-faqs"></a>
 
 Refer to the following FAQ topics for answers to commonly asked questions about Amazon SageMaker Model Dashboard.
 

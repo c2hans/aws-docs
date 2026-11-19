@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-sqs-example.html
 ---
 
 # Tutorial: Using Lambda with Amazon SQS
-<a name="with-sqs-example"></a>
 
 In this tutorial, you create a Lambda Event Function that consumes messages from an [Amazon Simple Queue Service (Amazon SQS)](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html) queue. The Lambda Event Function runs whenever a new message is added to the queue. The function writes the messages to an Amazon CloudWatch Logs stream. The following diagram shows the AWS resources you use to complete the tutorial.
 

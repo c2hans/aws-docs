@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/notify-quotas
 ---
 
 # Notify quotas and limits
-<a name="notify-quotas"></a>
 
 This section describes the default quotas, rate limits, and supported countries for Notify.
 

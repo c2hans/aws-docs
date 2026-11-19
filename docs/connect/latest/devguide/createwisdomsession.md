@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/createwisdomsess
 ---
 
 # CreateWisdomSession
-<a name="createwisdomsession"></a>
 
 Associates a Wisdom domain to a contact that is being executed in a Flow to enable real-time recommendations on the current contact.
 

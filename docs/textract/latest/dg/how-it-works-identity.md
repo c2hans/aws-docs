@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/how-it-works-identity
 ---
 
 # Analyzing Identity Documents
-<a name="how-it-works-identity"></a>
 
  Amazon Textract can extract relevant information from passports, driver licenses, and other identity documentation issued by the US Government using the AnalyzeID API. With Analyze ID, businesses can quickly, and accurately extract information from IDs such as US driver licenses, and passports that have different template or format. AnalyzeID API returns three categories of data types:
 +  Key-value pairs available on ID such as Date of Birth, Date of Issue, ID \#, Class, and Restrictions.

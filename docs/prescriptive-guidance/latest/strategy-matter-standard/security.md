@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # Security
-<a name="security"></a>
 
 *Security by design *is the practice of incorporating security functions during the device design stage, rather than as an afterthought during the later stages of development*.* Encrypted communication and over-the-air (OTA) updates are examples of security by design. Matter helps provide a foundation for smart-home devices by implementing security by design, starting in a trusted, secure manufacturing facility. Matter is designed so that only owners of a known, trusted Product Attestation Authority (PAA) certificate authority (CA) can manufacture and provision Matter devices.
 

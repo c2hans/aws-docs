@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/monitoring-vpn-health-
 ---
 
 # AWS Health and AWS Site-to-Site VPN events
-<a name="monitoring-vpn-health-events"></a>
 
 AWS Site-to-Site VPN automatically sends notifications to the [Health Dashboard](https://docs.aws.amazon.com/health/latest/ug/aws-health-dashboard-status.html). This dashboard requires no setup, and is ready to use for authenticated AWS users. You can configure multiple actions in response to event notifications through the Health Dashboard.
 

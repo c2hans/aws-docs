@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/resol
 ---
 
 # Resolving an inventory risk insight
-<a name="resolving-insights"></a>
 
 Insights recommends one or more ways to resolve an inventory risk depending on the distance, time horizon, available transportation modes in the ingested data (transportation\_lane.trans\_mode), shipping costs (transportation\_lane.unit\_costs), and emissions that you've configured under Insights settings. The recommendation might include an inventory transfer from other locations within a certain distance and this would resolve an inventory risk in the location under review.
 

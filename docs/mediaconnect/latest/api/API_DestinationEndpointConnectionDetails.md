@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DestinationE
 ---
 
 # DestinationEndpointConnectionDetails
-<a name="API_DestinationEndpointConnectionDetails"></a>
 
 The connection details for a destination endpoint. After the destination endpoint connects to a source endpoint, MediaConnect populates these details to describe the connected source. This is a union type, so exactly one of its members is set, depending on the destination endpoint type.
 

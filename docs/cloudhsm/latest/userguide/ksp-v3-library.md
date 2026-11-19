@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-v3-library
 ---
 
 # Cryptography API: Next Generation (CNG) and key storage providers (KSP) for AWS CloudHSM
-<a name="ksp-v3-library"></a>
 
 The AWS CloudHSM client for Windows includes CNG and KSP providers.
 

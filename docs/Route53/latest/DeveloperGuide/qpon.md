@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/qpon.html
 ---
 
 # .qpon
-<a name="qpon"></a>
 
 Used for coupons and promo codes.
 

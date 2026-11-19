@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-storage
 ---
 
 # Security
-<a name="security-features"></a>
 
 VMware implements security through vCenter's role-based access controls, vSAN encryption, VM-level security policies, and integration with enterprise identity systems. AWS adheres to a shared responsibility model that provides integrated security layers across storage services.
 

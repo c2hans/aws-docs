@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/schedule-adher
 ---
 
 # Examples of adherence thresholds for agent shifts in Connect Customer
-<a name="schedule-adherence-examples"></a>
 
 Assume a shift that starts at 9:00 AM and ends at 5:00 PM with a 30-minute break and a 1-hour lunch. This arrangement is shown in the following image of the shift profile.
 

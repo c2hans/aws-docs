@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-prompt
 ---
 
 # How Advanced Prompt Optimization works
-<a name="advanced-prompt-optimization-how"></a>
 
 ## Overview
 <a name="advanced-prompt-optimization-how-overview"></a>

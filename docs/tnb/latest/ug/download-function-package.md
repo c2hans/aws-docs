@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/download-function-package.
 ---
 
 # Download a function package from AWS TNB
-<a name="download-function-package"></a>
 
 Learn how to download a function package from the AWS TNB network functions catalog.
 

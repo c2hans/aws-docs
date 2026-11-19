@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/clusters.viewde
 ---
 
 # Viewing a cluster's details
-<a name="clusters.viewdetails"></a>
 
 You can view detail information about one or more clusters using the MemoryDB console, AWS CLI, or MemoryDB API.
 

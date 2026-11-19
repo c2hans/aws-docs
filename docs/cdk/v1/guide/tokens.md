@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cdk/v1/guide/tokens.html
 This is the AWS CDK v1 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and will now only receive critical bug fixes and security patches. New features will be developed for CDK v2 exclusively. Support for CDK v1 will end entirely on June 1, 2023. [Migrate to CDK v2](work-with-cdk-v2.md) to have access to the latest features and fixes.
 
 # Tokens
-<a name="tokens"></a>
 
 Tokens represent values that can only be resolved at a later time in the lifecycle of an app (see [App lifecycle](apps.md#lifecycle)). For example, the name of an Amazon S3 bucket that you define in your AWS CDK app is only allocated when the CloudFormation template is synthesized. If you print the `bucket.bucketName` attribute, which is a string, you see it contains something like the following.
 

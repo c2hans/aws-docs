@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/cpp_code_
 ---
 
 # SDK for C\+\+ code examples
-<a name="cpp_code_examples"></a>
 
 The code examples in this topic show you how to use the AWS SDK for C\+\+ with AWS.
 

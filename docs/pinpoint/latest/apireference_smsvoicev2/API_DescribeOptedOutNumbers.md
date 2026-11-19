@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DescribeOptedOutNumbers
-<a name="API_DescribeOptedOutNumbers"></a>
 
 Describes the specified opted out destination numbers or all opted out destination numbers in an opt-out list.
 

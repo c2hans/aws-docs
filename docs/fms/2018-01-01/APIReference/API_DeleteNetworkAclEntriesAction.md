@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_DeleteNe
 ---
 
 # DeleteNetworkAclEntriesAction
-<a name="API_DeleteNetworkAclEntriesAction"></a>
 
 Information about the `DeleteNetworkAclEntries` action in Amazon EC2. This is a remediation option in `RemediationAction`.
 

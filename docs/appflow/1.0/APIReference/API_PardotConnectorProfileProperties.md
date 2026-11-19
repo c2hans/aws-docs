@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_PardotConne
 ---
 
 # PardotConnectorProfileProperties
-<a name="API_PardotConnectorProfileProperties"></a>
 
 The connector-specific profile properties required when using Salesforce Pardot.
 

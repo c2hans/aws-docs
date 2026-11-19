@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-pyspark-tran
 ---
 
 # FormatPhoneNumber class
-<a name="aws-glue-api-pyspark-transforms-FormatPhoneNumber"></a>
 
 The `FormatPhoneNumber` transform returns a column in which a phone number string is converted into a formatted value.
 

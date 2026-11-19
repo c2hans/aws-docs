@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec11-b
 ---
 
 # SEC11-BP08 Regularly assess security properties of the pipelines
-<a name="sec11-bp08"></a>
 
  A pipeline holds the permissions to build and deploy your software, which makes it a high-value target. Apply the same security principles to the pipeline that you apply to any workload, with particular attention to separating permissions. Reassess the pipeline's security properties on a schedule.
 

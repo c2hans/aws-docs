@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/security-iam-s
 ---
 
 # Identity and access management for enhanced snapshots
-<a name="security-iam-snapshots"></a>
 
 The permissions on this page apply only to enhanced snapshots in Amazon Managed Service for Apache Flink. If you do not use enhanced snapshots, you do not need these permissions. For more information about enhanced snapshots, see [How enhanced snapshots work](snapshots-how-it-works.md).
 

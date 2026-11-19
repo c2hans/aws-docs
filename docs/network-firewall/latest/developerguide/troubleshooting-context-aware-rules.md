@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/t
 ---
 
 # Troubleshooting context-aware rules in AWS Network Firewall
-<a name="troubleshooting-context-aware-rules"></a>
 
 Use the information here to help you diagnose common issues with context-aware rules. For how context-aware rules work, see [Context-aware rules in AWS Network Firewall](context-aware-rules.md).
 

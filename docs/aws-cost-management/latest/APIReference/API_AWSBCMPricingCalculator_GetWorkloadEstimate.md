@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetWorkloadEstimate
-<a name="API_AWSBCMPricingCalculator_GetWorkloadEstimate"></a>
 
  Retrieves details of a specific workload estimate.
 

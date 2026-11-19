@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Tr
 ---
 
 # TrainedModelExportOutputConfiguration
-<a name="API_TrainedModelExportOutputConfiguration"></a>
 
 Information about the output of the trained model export job.
 

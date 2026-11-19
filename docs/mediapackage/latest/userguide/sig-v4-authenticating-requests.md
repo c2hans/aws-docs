@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/sig-v4-aut
 ---
 
 # Authenticating Requests (AWS Signature Version 4)
-<a name="sig-v4-authenticating-requests"></a>
 
 Every interaction with MediaPackage is either authenticated or anonymous. This section explains request authentication with the AWS Signature Version 4 algorithm.
 

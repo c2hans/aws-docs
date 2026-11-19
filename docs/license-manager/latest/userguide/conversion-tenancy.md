@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/convers
 ---
 
 # Tenancy conversion in License Manager
-<a name="conversion-tenancy"></a>
 
 You can change the tenancy of your instance to best suit your use case. You can use the [modify-instance-placement](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-placement.html) AWS CLI command to switch among the following tenancies:
 + Shared

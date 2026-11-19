@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # NodeLogPublishingConfiguration
-<a name="API_NodeLogPublishingConfiguration"></a>
 
 Configuration properties for logging events associated with a peer node on a Hyperledger Fabric network on Managed Blockchain.
 

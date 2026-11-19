@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/integrating
 ---
 
 # Integrating API-based AI agent products
-<a name="integrating-api-ai-agents-tools"></a>
 
 ## API-based AI agent products guidelines
 <a name="api-ai-agents-guidelines"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/qbiz-indexes-crea
 ---
 
 # Creating knowledge bases from Amazon Q Business indexes
-<a name="qbiz-indexes-creating-datasets"></a>
 
 After setting up permissions, Admin or Admin Pro users can create knowledge bases from Amazon Q Business indexes:
 

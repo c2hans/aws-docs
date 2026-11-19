@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Verified Permissions
-<a name="amazonverifiedpermissions"></a>
 
 Amazon Verified Permissions provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_DeleteMi
 ---
 
 # DeleteMicrosoftTeamsChannelConfiguration
-<a name="API_DeleteMicrosoftTeamsChannelConfiguration"></a>
 
 Deletes a Microsoft Teams channel configuration for Amazon Q Developer.
 

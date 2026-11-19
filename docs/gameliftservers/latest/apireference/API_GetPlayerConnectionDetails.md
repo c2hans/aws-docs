@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # GetPlayerConnectionDetails
-<a name="API_GetPlayerConnectionDetails"></a>
 
  **This API works with the following fleet types:** EC2 (server SDK 5.x or later), Container
 

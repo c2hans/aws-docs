@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/show-tblproperties.html
 ---
 
 # SHOW TBLPROPERTIES
-<a name="show-tblproperties"></a>
 
 Lists table properties for the named table.
 

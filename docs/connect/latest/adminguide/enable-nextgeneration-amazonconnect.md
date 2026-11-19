@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-nextgen
 ---
 
 # Connect Customer
-<a name="enable-nextgeneration-amazonconnect"></a>
 
 Connect Customer is an agentic AI solution for customer experience. It supports the full lifecycle of customer interactions — from proactive outreach to self-service resolution to agent assistance — across any channel. For more information about pricing, see [Connect Customer Pricing](https://aws.amazon.com/connect/pricing/).
 

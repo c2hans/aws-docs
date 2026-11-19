@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # EventSearchSummary
-<a name="API_EventSearchSummary"></a>
 
 A `SearchEvents` result: the matching chunk of an event and its provenance. Unlike `EventSummary` from `ListEvents`, it has a relevance score and the matched content, but not the full payload.
 

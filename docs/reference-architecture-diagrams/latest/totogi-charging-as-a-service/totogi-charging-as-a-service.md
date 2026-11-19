@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/t
 ---
 
 # Totogi Charging-as-a-Service for On-Premises 4G/5G
-<a name="totogi-charging-as-a-service"></a>
 
 Publication date: **November 16, 2022 ([Diagram history](#totogi-history))**
 

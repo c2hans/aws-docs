@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Remov
 ---
 
 # RemoveTagsFromOnPremisesInstances
-<a name="API_RemoveTagsFromOnPremisesInstances"></a>
 
 Removes one or more tags from one or more on-premises instances.
 

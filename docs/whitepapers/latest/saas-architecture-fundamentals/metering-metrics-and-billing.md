@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Metering, metrics, and billing
-<a name="metering-metrics-and-billing"></a>
 
  Discussions of SaaS also tend to include the notion of *metering*, *metrics*, and *billing*. These concepts often get folded together into one concept. However, it’s important to distinguish the different roles that metering, metrics, and billing play in a SaaS environment.
 

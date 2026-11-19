@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_SystemTab
 ---
 
 # SystemTableStatus
-<a name="API_SystemTableStatus"></a>
 
 The enablement status of a single system table. Because system tables are enabled at the account level, every status reflects the same account-wide state.
 

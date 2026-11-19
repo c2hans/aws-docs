@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Associate a registration with an agent
-<a name="nx-features-rcs-agents-associate"></a>
 
 An AWS RCS Agent is gated by a registration. After you create the agent and create a registration (a testing registration or a country launch registration), you associate the registration with the agent so that AWS End User Messaging can review and approve it.
 

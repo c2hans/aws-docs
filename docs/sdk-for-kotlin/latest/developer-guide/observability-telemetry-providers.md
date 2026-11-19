@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/ob
 ---
 
 # Telemetry providers
-<a name="observability-telemetry-providers"></a>
 
 The SDK currently supports [OpenTelemetry](https://opentelemetry.io/) (OTel) as a provider. The SDK might offer additional telemetry providers in the future.
 

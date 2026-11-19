@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/your-algorithms-mark
 ---
 
 # Custom algorithms and models with the AWS Marketplace
-<a name="your-algorithms-marketplace"></a>
 
 The following sections show how to create algorithm and model package resources that you can use locally and publish to the AWS Marketplace.
 

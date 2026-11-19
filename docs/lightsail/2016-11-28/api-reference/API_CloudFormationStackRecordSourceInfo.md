@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CloudFormationStackRecordSourceInfo
-<a name="API_CloudFormationStackRecordSourceInfo"></a>
 
 Describes the source of a CloudFormation stack record (i.e., the export snapshot record).
 

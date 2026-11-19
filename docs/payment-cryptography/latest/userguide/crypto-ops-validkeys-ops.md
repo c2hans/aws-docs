@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/cr
 ---
 
 # Valid keys for cryptographic operations
-<a name="crypto-ops-validkeys-ops"></a>
 
 Certain keys can only be used for certain operations. Additionally, some operations may limit the key modes of use for keys. Please see the following table for allowed combinations.
 

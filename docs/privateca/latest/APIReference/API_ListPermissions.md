@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/APIReference/API_ListPe
 ---
 
 # ListPermissions
-<a name="API_ListPermissions"></a>
 
 List all permissions on a private CA, if any, granted to the AWS Certificate Manager (ACM) service principal (acm.amazonaws.com).
 

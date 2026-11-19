@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/split.html
 ---
 
 # $split
-<a name="split"></a>
 
 The `$split` aggregation operator in Amazon DocumentDB is used to split a string into an array of substrings, based on a specified delimiter. This can be useful for parsing complex string fields and extracting individual components for further processing.
 

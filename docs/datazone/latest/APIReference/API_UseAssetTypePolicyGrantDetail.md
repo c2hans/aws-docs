@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UseAsse
 ---
 
 # UseAssetTypePolicyGrantDetail
-<a name="API_UseAssetTypePolicyGrantDetail"></a>
 
 Specifies the domain unit(s) whose projects can use this asset type while creating asset or asset revisions.
 

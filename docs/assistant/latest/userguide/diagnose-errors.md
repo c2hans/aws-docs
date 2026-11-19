@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/assistant/latest/userguide/diagnose-erro
 ---
 
 # Diagnosing console errors with the AWS assistant
-<a name="diagnose-errors"></a>
 
 With the AWS assistant, you can diagnose common console errors. Examples include missing permissions, incorrect settings, and exceeded service quotas. It supports errors in the following services:
 + Amazon Elastic Compute Cloud (Amazon EC2)

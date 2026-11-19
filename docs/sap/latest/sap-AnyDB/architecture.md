@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/architecture.html
 ---
 
 # Architecture diagrams for databases with Amazon FSx for NetApp ONTAP
-<a name="architecture"></a>
 
 See the following tabs for the architecture diagram of each database.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/example_clo
 ---
 
 # Use `GetQueryResults` with an AWS SDK
-<a name="example_cloudwatch-logs_GetQueryResults_section"></a>
 
 The following code examples show how to use `GetQueryResults`.
 

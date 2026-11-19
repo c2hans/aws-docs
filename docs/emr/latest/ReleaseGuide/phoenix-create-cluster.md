@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/phoenix-create-c
 ---
 
 # Creating a cluster with Phoenix
-<a name="phoenix-create-cluster"></a>
 
 You install Phoenix by choosing the application when you create a cluster in the console or using the AWS CLI. The following procedures and examples show how to create a cluster with Phoenix and HBase. For more information about creating clusters using the console, including **Advanced Options** see [Plan and configure clusters](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan.html) in the *Amazon EMR Management Guide*.
 

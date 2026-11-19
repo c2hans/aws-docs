@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_E
 ---
 
 # Eirp
-<a name="API_Eirp"></a>
 
 Object that represents EIRP.
 

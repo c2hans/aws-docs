@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/repair-ec2config
 ---
 
 # Troubleshoot issues with the EC2Config launch agent
-<a name="repair-ec2config"></a>
 
 The following information can help you troubleshoot issues with the EC2Config service.
 

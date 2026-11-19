@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/eventbridg
 ---
 
 # Workflow monitor: EventBridge rule template groups ID
-<a name="eventbridge-rule-template-groups-identifier"></a>
 
 ## URI
 <a name="eventbridge-rule-template-groups-identifier-url"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/create-vpn-concentrator-a
 ---
 
 # Create a VPN Concentrator attachment in AWS Transit Gateway
-<a name="create-vpn-concentrator-attachment"></a>
 
 **Prerequisites**
 + You must have an existing transit gateway in your account.

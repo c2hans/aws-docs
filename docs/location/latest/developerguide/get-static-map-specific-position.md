@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/get-stati
 ---
 
 # How to get a static map of a specific position
-<a name="get-static-map-specific-position"></a>
 
 In this topic, you will learn how to retrieve static maps from Amazon Location Service based on specific parameters. You will learn how to generate a static map for a center position, a bounding box, and a set of bounded positions. The examples provided will help you customize the width, height, and style of the map.
 

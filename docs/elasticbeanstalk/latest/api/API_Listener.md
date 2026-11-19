@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Listener
 ---
 
 # Listener
-<a name="API_Listener"></a>
 
 Describes the properties of a Listener for the LoadBalancer.
 

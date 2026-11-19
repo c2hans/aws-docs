@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v9-alerting-use
 ---
 
 # Migrating classic dashboard alerts to Grafana alerting
-<a name="v9-alerting-use-grafana-alerts"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 9.x**.

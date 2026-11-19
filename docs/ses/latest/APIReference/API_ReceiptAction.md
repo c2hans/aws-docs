@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_ReceiptActio
 ---
 
 # ReceiptAction
-<a name="API_ReceiptAction"></a>
 
 An action that Amazon SES can take when it receives an email on behalf of one or more email addresses or domains that you own. An instance of this data type can represent only one action.
 

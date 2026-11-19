@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kinesis-kpl-upgrades.
 ---
 
 # Transition to Amazon Trust Services (ATS) certificates for the KPL
-<a name="kinesis-kpl-upgrades"></a>
 
 On February 9, 2018, at 9:00 AM PST, Amazon Kinesis Data Streams installed ATS certificates. To continue to be able to write records to Kinesis Data Streams using the Amazon Kinesis Producer Library (KPL), you must upgrade your installation of the KPL to [version 0.12.6](http://search.maven.org/#artifactdetails|com.amazonaws|amazon-kinesis-producer|0.12.6|jar) or later. This change affects all AWS Regions.
 

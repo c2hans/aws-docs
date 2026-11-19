@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # MediaPipelineSummary
-<a name="API_media-pipelines-chime_MediaPipelineSummary"></a>
 
 The summary of the media pipeline.
 

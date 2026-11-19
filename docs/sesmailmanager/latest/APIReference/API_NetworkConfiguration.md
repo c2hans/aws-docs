@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_N
 ---
 
 # NetworkConfiguration
-<a name="API_NetworkConfiguration"></a>
 
 The network type (IPv4-only, Dual-Stack, PrivateLink) of the ingress endpoint resource.
 

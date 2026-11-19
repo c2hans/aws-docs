@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/importing-
 ---
 
 # Register an existing organizational unit with AWS Control Tower
-<a name="importing-existing"></a>
 
 An efficient way to bring multiple, existing AWS accounts into AWS Control Tower is to *extend governance* by AWS Control Tower to an entire organizational unit (OU).
 

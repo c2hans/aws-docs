@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Troubleshooting
-<a name="CloudWatch-OTLPTroubleshooting"></a>
 
 The following are the common troubleshooting scenarios and solutions for OTLP endpoint.
 

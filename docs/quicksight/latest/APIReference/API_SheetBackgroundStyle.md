@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetBackgroundStyle
-<a name="API_SheetBackgroundStyle"></a>
 
 The background configuration for sheets.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/colle
 ---
 
 # Collect and send telemetry
-<a name="collect-send-telemetry"></a>
 
 CloudWatch provides multiple methods to collect and send telemetry data from your applications and infrastructure. For new work, use OpenTelemetry. You send OpenTelemetry metrics, logs, and traces to the CloudWatch OTLP endpoints, either from the CloudWatch agent or from an OpenTelemetry collector. For more information, see [OpenTelemetry](CloudWatch-OpenTelemetry-Sections.md).
 

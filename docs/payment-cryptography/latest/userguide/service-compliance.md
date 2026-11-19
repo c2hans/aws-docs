@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/se
 ---
 
 # Compliance of the service
-<a name="service-compliance"></a>
 
 Third-party auditors assess the security and compliance of AWS Payment Cryptography as part of multiple AWS compliance programs. These include SOC, PCI, and others.
 

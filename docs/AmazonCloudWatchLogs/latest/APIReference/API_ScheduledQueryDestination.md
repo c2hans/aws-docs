@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ScheduledQueryDestination
-<a name="API_ScheduledQueryDestination"></a>
 
 Information about a destination where scheduled query results are processed, including processing status and any error messages.
 

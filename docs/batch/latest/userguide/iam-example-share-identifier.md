@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/iam-example-share
 ---
 
 # Resource: Use the `batch:ShareIdentifier` condition key
-<a name="iam-example-share-identifier"></a>
 
 Use the following policy to submit jobs that use the `jobDefA` job definition to the `jobqueue1` job queue with the `lowCpu` share identifier.
 

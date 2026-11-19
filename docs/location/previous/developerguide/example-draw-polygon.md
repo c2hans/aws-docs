@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/example
 ---
 
 # Example: Draw a polygon
-<a name="example-draw-polygon"></a>
 
 ![Map showing Vancouver neighborhoods highlighted in purple, including Fairview, Mt Pleasant, and Sunset.](https://docs.aws.amazon.com/location/previous/developerguide/images/samples/polygons_small.png)
 

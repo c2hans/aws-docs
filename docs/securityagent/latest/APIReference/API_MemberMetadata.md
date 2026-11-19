@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Me
 ---
 
 # MemberMetadata
-<a name="API_MemberMetadata"></a>
 
 Contains metadata about a member. This is a union type that contains member-type-specific metadata.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy
 ---
 
 # Deploying .NET Windows applications with Elastic Beanstalk
-<a name="create_deploy_NET"></a>
 
 **Check out the *.NET on AWS Developer Center***
 

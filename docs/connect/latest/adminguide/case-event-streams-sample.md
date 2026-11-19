@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/case-event-str
 ---
 
 # Case event payload and schema in Connect Customer Cases
-<a name="case-event-streams-sample"></a>
 
 When you request to include case data in the event payload, the data reflects the version of the case after that particular edit.
 

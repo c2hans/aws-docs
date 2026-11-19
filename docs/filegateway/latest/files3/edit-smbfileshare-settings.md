@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/edit-smbfilesh
 ---
 
 # Edit settings for your SMB file share
-<a name="edit-smbfileshare-settings"></a>
 
 You can edit the following settings for an existing SMB file share:
 + **File share name** - choose a name for the file share

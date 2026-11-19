@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Access CloudWatch container insights dashboard
-<a name="sagemaker-hyperpod-eks-cluster-observability-cluster-cloudwatch-ci-access-dashboard"></a>
 
 1. Open the CloudWatch console at [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/).
 

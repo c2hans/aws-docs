@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/writing-bes
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## Why is it important to optimize documents for RAG applications?
 <a name="faq-1"></a>

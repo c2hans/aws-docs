@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/W
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## Amazon OpenSearch Service
 <a name="Welcome_Amazon_OpenSearch_Service"></a>

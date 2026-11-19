@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Enumerating security groups
-<a name="enumerate-security-groups"></a>
 
 This example shows you how to use the AWS SDK for .NET to enumerate security groups. If you supply an [Amazon Virtual Private Cloud](https://docs.aws.amazon.com/vpc/latest/userguide/) ID, the application enumerates the security groups for that particular VPC. Otherwise, the application simply displays a list of all available security groups.
 

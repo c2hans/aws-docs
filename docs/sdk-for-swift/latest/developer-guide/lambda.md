@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/lam
 ---
 
 # Creating AWS Lambda functions using the AWS SDK for Swift
-<a name="lambda"></a>
 
 ## Overview
 <a name="lambda-overview"></a>

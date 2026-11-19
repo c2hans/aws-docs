@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeAdjustmentTypes
-<a name="API_DescribeAdjustmentTypes"></a>
 
 Describes the available adjustment types for step scaling and simple scaling policies.
 

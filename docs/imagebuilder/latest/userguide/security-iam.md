@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/security-i
 ---
 
 # Identity and Access Management integration for Image Builder
-<a name="security-iam"></a>
 
 **Topics**
 + [Audience](#security-iam-audience)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # CloudFormation CLI command reference
-<a name="resource-type-cli"></a>
 
 The following commands are available through the CloudFormation Command Line Interface (CLI).
 

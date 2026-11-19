@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/rest-op-disassoci
 ---
 
 # DisassociateFavorite
-<a name="rest-op-disassociatefavorite"></a>
 
 Removes one session from your favorites. Give the session ID in the path. If it is not there, the call returns `404`. You must sign in.
 

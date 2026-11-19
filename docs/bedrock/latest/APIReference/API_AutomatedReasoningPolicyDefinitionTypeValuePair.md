@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyDefinitionTypeValuePair
-<a name="API_AutomatedReasoningPolicyDefinitionTypeValuePair"></a>
 
 Associates a type name with a specific value name, used for referencing type values in rules and other policy elements.
 

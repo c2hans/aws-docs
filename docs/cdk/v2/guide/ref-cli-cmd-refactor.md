@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-refactor.html
 ---
 
 # `cdk refactor`
-<a name="ref-cli-cmd-refactor"></a>
 
 **Important**
 The `cdk refactor` command is in preview release and is subject to change.

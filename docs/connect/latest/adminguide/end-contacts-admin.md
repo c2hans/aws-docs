@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/end-contacts-a
 ---
 
 # End contacts from the Contact details page in Connect Customer
-<a name="end-contacts-admin"></a>
 
 On the **Contact details** page of an in-progress contact, you can end a contact. Ending a contact results in the contact being disconnected. If the contact was already connected to an agent, ending the contact starts After Contact Work (ACW) for the contact.
 

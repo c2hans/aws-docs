@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Updat
 ---
 
 # UpdateDirectoryConfig
-<a name="API_UpdateDirectoryConfig"></a>
 
 Updates the specified Directory Config object in WorkSpaces Applications. This object includes the configuration information required to join fleets and image builders to Microsoft Active Directory domains.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CloudT
 ---
 
 # CloudTrailConfigurationResult
-<a name="API_CloudTrailConfigurationResult"></a>
 
 Contains information on the status of CloudTrail as a data source for the detector.
 

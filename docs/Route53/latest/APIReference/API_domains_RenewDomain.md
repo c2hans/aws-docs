@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # RenewDomain
-<a name="API_domains_RenewDomain"></a>
 
 This operation renews a domain for the specified number of years. The cost of renewing your domain is billed to your AWS account.
 

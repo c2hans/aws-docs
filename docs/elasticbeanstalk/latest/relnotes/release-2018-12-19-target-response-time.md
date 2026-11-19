@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: AWS Elastic Beanstalk adds TargetResponseTime Auto Scaling trigger metric on December 19, 2018
-<a name="release-2018-12-19-target-response-time"></a>
 
 Elastic Beanstalk added the option to trigger Auto Scaling events based on response time for environments with Application Load Balancers.
 

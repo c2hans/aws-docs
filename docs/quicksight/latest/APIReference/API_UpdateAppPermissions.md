@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateAppPermissions
-<a name="API_UpdateAppPermissions"></a>
 
 Updates the resource permissions for an app. You can grant or revoke permissions and, optionally, change the app's visibility.
 

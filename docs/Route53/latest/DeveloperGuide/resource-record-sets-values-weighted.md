@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-r
 ---
 
 # Values specific for weighted records
-<a name="resource-record-sets-values-weighted"></a>
 
 When you create weighted records, you specify the following values.
 

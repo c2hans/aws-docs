@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_Connector.ht
 ---
 
 # Connector
-<a name="API_Connector"></a>
 
 ## Contents
 <a name="API_Connector_Contents"></a>

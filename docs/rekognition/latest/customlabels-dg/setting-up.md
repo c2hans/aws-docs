@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/setti
 ---
 
 # Setting up Amazon Rekognition Custom Labels
-<a name="setting-up"></a>
 
 The following instructions show how to set up the Amazon Rekognition Custom Labels console and SDK.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Outbound
 ---
 
 # OutboundStrategyConfig
-<a name="API_OutboundStrategyConfig"></a>
 
 The config of the outbound strategy.
 

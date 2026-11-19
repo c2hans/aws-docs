@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/jarsigner_set_
 ---
 
 # Set up AWS CloudHSM keys and certificates with Jarsigner
-<a name="jarsigner_set_up_certificates"></a>
 
 Before you can sign AWS CloudHSM JAR files with Jarsigner, make sure you have set up or completed the following steps:
 

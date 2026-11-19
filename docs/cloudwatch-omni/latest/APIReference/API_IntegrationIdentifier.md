@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # IntegrationIdentifier
-<a name="API_IntegrationIdentifier"></a>
 
 Identifies a single integration by exactly one of its unique keys: the integration id, the integration ARN, or the integration name.
 

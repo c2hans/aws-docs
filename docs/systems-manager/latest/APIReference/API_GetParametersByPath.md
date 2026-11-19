@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetParametersByPath
-<a name="API_GetParametersByPath"></a>
 
 Retrieve information about one or more parameters under a specified level in a hierarchy.
 

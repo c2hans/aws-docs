@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # IAM permissions for Network Synthetic Monitor
-<a name="CloudWatch-NW-permissions"></a>
 
 To use Network Synthetic Monitor users must have the correct permissions.
 

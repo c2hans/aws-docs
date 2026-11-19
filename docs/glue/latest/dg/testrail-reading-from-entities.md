@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/testrail-reading-from-ent
 ---
 
 # Reading from TestRail entities
-<a name="testrail-reading-from-entities"></a>
 
 **Prerequisites**
 

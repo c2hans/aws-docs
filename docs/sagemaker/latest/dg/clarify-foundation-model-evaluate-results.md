@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-foundation-m
 ---
 
 # Understand the results of your model evaluation job
-<a name="clarify-foundation-model-evaluate-results"></a>
 
 Use the following sections to learn how to interpret the results of your model evaluation job. The output JSON data saved in Amazon S3 for both automatic and human based model evaluation jobs are different. You can find where the results of a job are saved in Amazon S3 using Studio. To do so, open the **Model evaluations** home page in Studio, and choose your job from the table.
 

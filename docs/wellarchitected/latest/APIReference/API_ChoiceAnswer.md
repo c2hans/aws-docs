@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ChoiceAnswer
-<a name="API_ChoiceAnswer"></a>
 
 A choice that has been answered on a question in your workload.
 

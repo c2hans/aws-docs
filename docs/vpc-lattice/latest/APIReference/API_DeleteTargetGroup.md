@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Dele
 ---
 
 # DeleteTargetGroup
-<a name="API_DeleteTargetGroup"></a>
 
 Deletes a target group. You can't delete a target group if it is used in a listener rule or if the target group creation is in progress.
 

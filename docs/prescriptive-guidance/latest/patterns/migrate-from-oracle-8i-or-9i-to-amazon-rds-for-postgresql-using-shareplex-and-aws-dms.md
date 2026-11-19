@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate from Oracle 8i or 9i to Amazon RDS for PostgreSQL using SharePlex and AWS DMS
-<a name="migrate-from-oracle-8i-or-9i-to-amazon-rds-for-postgresql-using-shareplex-and-aws-dms"></a>
 
 *Kumar Babu P G, Amazon Web Services*
 

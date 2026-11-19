@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_SecurityProf
 ---
 
 # SecurityProfileIdentifier
-<a name="API_SecurityProfileIdentifier"></a>
 
 Identifying information for a Device Defender security profile.
 

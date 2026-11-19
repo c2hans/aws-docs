@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_LambdaGr
 ---
 
 # LambdaGraderConfig
-<a name="API_LambdaGraderConfig"></a>
 
  Configuration for using an AWS Lambda function to grade model responses during reinforcement fine-tuning training.
 

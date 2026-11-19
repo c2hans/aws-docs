@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectAnnotat
 ---
 
 # GetObjectAnnotation
-<a name="API_GetObjectAnnotation"></a>
 
 Retrieves an annotation from an Amazon S3 object. To use this operation, you must have the `s3:GetObjectAnnotation` permission.
 

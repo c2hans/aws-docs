@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyC
 ---
 
 # ModifyClusterDbRevision
-<a name="API_ModifyClusterDbRevision"></a>
 
 Modifies the database revision of a cluster. The database revision is a unique revision of the database running in a cluster.
 

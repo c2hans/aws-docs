@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Well
 ---
 
 # WellArchitectedConsoleFullAccess
-<a name="WellArchitectedConsoleFullAccess"></a>
 
 **Description**: Provides full access to AWS Well-Architected Tool via the AWS Management Console
 

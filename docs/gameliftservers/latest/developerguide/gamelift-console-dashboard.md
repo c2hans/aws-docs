@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Hosting dashboard in the Amazon GameLift Servers console
-<a name="gamelift-console-dashboard"></a>
 
 Use the Amazon GameLift Servers console dashboard to get a high-level snapshot about the current status of the Amazon GameLift Servers hosting resources in your AWS account. The **Amazon GameLift Servers dashboard** provides a view of the following:
 + The number of builds in **Ready**, **Initialized**, and **Failed** statuses. Choose **View builds** for details about builds in your current Region.

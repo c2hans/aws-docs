@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Resources
-<a name="resources-rel"></a>
 
 ## Change management
 <a name="resources-rel-chg-mgmt"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Complianc
 ---
 
 # ComplianceSummaryByResourceType
-<a name="API_ComplianceSummaryByResourceType"></a>
 
 The number of AWS resources of a specific type that are compliant or noncompliant, up to a maximum of 100 for each.
 

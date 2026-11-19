@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/bu
 ---
 
 # Build multi-account AWS connectivity with VPC Lattice as the sole network fabric
-<a name="build-multi-account-aws-connectivity-vpc-lattice-sole-network-fabric"></a>
 
 *Rahul Sahotay, Amazon Web Services*
 

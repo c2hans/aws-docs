@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # ScheduledAction
-<a name="API_ScheduledAction"></a>
 
 Represents a scheduled action.
 

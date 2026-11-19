@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Securi
 ---
 
 # SecurityContext
-<a name="API_SecurityContext"></a>
 
 Container security context.
 

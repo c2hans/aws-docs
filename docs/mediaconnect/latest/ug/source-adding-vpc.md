@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/source-adding-vpc
 ---
 
 # Adding a VPC source to an existing MediaConnect flow
-<a name="source-adding-vpc"></a>
 
 You can add a second source to an existing transport stream flow for failover. Both sources on the flow must be binary identical (come from the same encoder) and they must use the same protocol. (However, you can have one source that uses RTP and the other that uses RTP-FEC.) For more information about source failover, see [Source failover](source-failover.md).
 

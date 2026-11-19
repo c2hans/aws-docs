@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitori
 ---
 
 # Viewing metrics in the Amazon RDS console
-<a name="USER_Monitoring"></a>
 
 Amazon RDS integrates with Amazon CloudWatch to display a variety of RDS DB instance metrics in the RDS console. For descriptions of these metrics, see [Metrics reference for Amazon RDS](metrics-reference.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemake
 ---
 
 # Setup Overview
-<a name="sap-nw-pacemaker-sles-setup-overview"></a>
 
 You must meet the following prerequisites before commencing setup.
 

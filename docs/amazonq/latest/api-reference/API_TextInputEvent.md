@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_TextInp
 ---
 
 # TextInputEvent
-<a name="API_TextInputEvent"></a>
 
 An input event for a end user message in an Amazon Q Business web experience.
 

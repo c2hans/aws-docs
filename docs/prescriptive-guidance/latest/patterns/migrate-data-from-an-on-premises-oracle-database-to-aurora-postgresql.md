@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate data from an on-premises Oracle database to Aurora PostgreSQL
-<a name="migrate-data-from-an-on-premises-oracle-database-to-aurora-postgresql"></a>
 
 *Michelle Deng and Shunan Xiang, Amazon Web Services*
 

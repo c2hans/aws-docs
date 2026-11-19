@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # DeleteLicense
-<a name="API_DeleteLicense"></a>
 
 Deletes the specified license.
 

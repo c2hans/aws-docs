@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/hub-sdk-client-ap
 ---
 
 # Hub SDK client API reference
-<a name="hub-sdk-client-api-reference"></a>
 
 The Hub SDK client (DeviceSDKClient class) provides an interface for your custom application to interact with the managed integrations Device SDK. With this client, you can do the following:
 + Subscribe to provision-related and control-related tasks from the managed integrations components.

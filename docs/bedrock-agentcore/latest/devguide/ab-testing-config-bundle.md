@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/ab-tes
 ---
 
 # Run an A/B test with configuration bundles
-<a name="ab-testing-config-bundle"></a>
 
 Use a configuration bundle when you are testing only a configuration change, such as a system prompt, model ID, or tool descriptions. Both variants run on the same AgentCore Runtime with different configuration bundle versions. When you run the A/B test, your agent receives the assigned bundle reference through W3C baggage headers, a standard mechanism for passing context between services. You deploy one AgentCore Runtime and one online evaluation configuration.
 

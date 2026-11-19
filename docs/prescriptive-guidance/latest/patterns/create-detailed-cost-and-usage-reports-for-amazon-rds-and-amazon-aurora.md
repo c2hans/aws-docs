@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cr
 ---
 
 # Create detailed cost and usage reports for Amazon RDS and Amazon Aurora
-<a name="create-detailed-cost-and-usage-reports-for-amazon-rds-and-amazon-aurora"></a>
 
 *Lakshmanan Lakshmanan and Sudarshan Narasimhan, Amazon Web Services*
 

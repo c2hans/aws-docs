@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_ConversionPr
 ---
 
 # ConversionProperties
-<a name="API_ConversionProperties"></a>
 
 Properties of a conversion job
 

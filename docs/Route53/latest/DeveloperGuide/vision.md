@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/vision.htm
 ---
 
 # .vision
-<a name="vision"></a>
 
 Used as a general extension, but ideal for vision specialists such as optometrists and ophthalmologists.
 

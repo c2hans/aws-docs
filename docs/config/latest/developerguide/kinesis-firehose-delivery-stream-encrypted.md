@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/kinesis-fir
 ---
 
 # kinesis-firehose-delivery-stream-encrypted
-<a name="kinesis-firehose-delivery-stream-encrypted"></a>
 
 Checks if Amazon Kinesis Data Firehose delivery streams are encrypted at rest with server-side encryption. The rule is NON\_COMPLIANT if a Kinesis Data Firehose delivery stream is not encrypted at rest with server-side encryption.
 

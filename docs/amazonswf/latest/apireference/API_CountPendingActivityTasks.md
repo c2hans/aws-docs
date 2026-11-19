@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_CountP
 ---
 
 # CountPendingActivityTasks
-<a name="API_CountPendingActivityTasks"></a>
 
 Returns the estimated number of activity tasks in the specified task list. The count returned is an approximation and isn't guaranteed to be exact. If you specify a task list that no activity task was ever scheduled in then `0` is returned.
 

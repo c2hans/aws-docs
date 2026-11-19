@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # Capacity
-<a name="API_devicemanagement_Capacity"></a>
 
 The physical capacity of the AWS Snow Family device.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Batc
 ---
 
 # BatchDescribeErrorDetail
-<a name="API_BatchDescribeErrorDetail"></a>
 
 An object that contains an error code and error message.
 

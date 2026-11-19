@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-it
 ---
 
 # Maintaining U.S. International Traffic in Arms Regulations (ITAR) Compliance
-<a name="govcloud-itar"></a>
 
 If you store and process ITAR-regulated data in the AWS GovCloud (US) Regions, you must conform to the following ITAR requirements, in addition to any other ITAR or export control restrictions that may be applicable to you:
 + You are an individual or entity that qualifies as a U.S. Person under the applicable regulations.

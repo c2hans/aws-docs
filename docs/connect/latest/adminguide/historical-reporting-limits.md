@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/historical-rep
 ---
 
 # Historical metrics report limits in Connect Customer
-<a name="historical-reporting-limits"></a>
 
 Historical metrics reports have the following limits:
 

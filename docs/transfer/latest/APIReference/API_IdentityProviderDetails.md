@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Identit
 ---
 
 # IdentityProviderDetails
-<a name="API_IdentityProviderDetails"></a>
 
 Returns information related to the type of user authentication that is in use for a file transfer protocol-enabled server's users. A server can have only one method of authentication.
 

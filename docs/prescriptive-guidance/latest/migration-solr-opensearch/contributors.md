@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 The following AWS experts contributed to this guide:
 + Bharav Patel, Specialist Solutions Architect, OpenSearch, AWS

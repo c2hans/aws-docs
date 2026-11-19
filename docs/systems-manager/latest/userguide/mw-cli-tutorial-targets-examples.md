@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/mw-cli-
 ---
 
 # Examples: Register targets with a maintenance window
-<a name="mw-cli-tutorial-targets-examples"></a>
 
 You can register a single node as a target using its node ID, as demonstrated in [Step 2: Register a target node with the maintenance window using the AWS CLI](mw-cli-tutorial-targets.md). You can also register one or more nodes as targets using the command formats on this page.
 

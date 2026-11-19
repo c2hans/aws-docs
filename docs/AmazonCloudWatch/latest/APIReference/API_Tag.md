@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A key-value pair associated with a CloudWatch resource.
 

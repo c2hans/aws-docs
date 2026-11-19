@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cluste
 ---
 
 # Get the Slurm cluster secret
-<a name="working-with_clusters_secrets_get"></a>
 
 You can use Secrets Manager to get the current version of a Slurm cluster secret. Secrets Manager returns the secret as a base64-encoded string. The following example uses the AWS CLI. Make the following substitutions before running the command.
 + Replace `{{region}}` with the AWS Region to create your cluster in, such as `us-east-1`.

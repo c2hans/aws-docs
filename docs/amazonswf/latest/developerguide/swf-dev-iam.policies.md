@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-
 ---
 
 # Amazon SWF IAM Policies
-<a name="swf-dev-iam.policies"></a>
 
 An IAM policy contains one or more `Statement` elements, each of which contains a set of elements that define the policy. For a complete list of elements and a general discussion of how to construct policies, see [The Access Policy Language](https://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPolicyLanguage.html). Amazon SWF access control is based on the following elements:
 

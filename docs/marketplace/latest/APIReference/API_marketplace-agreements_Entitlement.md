@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # Entitlement
-<a name="API_marketplace-agreements_Entitlement"></a>
 
 Represents an entitlement associated with an agreement.
 

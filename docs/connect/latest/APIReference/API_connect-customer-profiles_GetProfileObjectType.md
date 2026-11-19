@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetProfileObjectType
-<a name="API_connect-customer-profiles_GetProfileObjectType"></a>
 
 Returns the object types for a specific domain.
 

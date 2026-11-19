@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Bedrock Powered by AWS Mantle
-<a name="amazonbedrockpoweredbyawsmantle"></a>
 
 Amazon Bedrock Powered by AWS Mantle provides the following APIs for data retrieval.
 

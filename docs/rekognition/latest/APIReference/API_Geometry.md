@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Geom
 ---
 
 # Geometry
-<a name="API_Geometry"></a>
 
 Information about where an object ([DetectCustomLabels](API_DetectCustomLabels.md)) or text ([DetectText](API_DetectText.md)) is located on an image.
 

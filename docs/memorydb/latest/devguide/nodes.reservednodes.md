@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/nodes.reservedn
 ---
 
 # MemoryDB reserved nodes
-<a name="nodes.reservednodes"></a>
 
 Reserved nodes provide you with a significant discount compared to on-demand node pricing. Reserved nodes are not physical nodes, but rather a billing discount applied to the use of on-demand nodes in your account. Discounts for reserved nodes are tied to node type and AWS Region.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::ConnectorProfile OAuth2Properties
-<a name="aws-properties-appflow-connectorprofile-oauth2properties"></a>
 
 The OAuth 2.0 properties required for OAuth 2.0 authentication.
 

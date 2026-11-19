@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-working-wi
 ---
 
 # Get started with Amazon MSK encryption
-<a name="msk-working-with-encryption"></a>
 
 When creating an MSK cluster, you can specify encryption settings in JSON format. The following is an example.
 

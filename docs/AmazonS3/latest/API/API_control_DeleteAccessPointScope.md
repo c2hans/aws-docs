@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAc
 ---
 
 # DeleteAccessPointScope
-<a name="API_control_DeleteAccessPointScope"></a>
 
  Deletes an existing access point scope for a directory bucket.
 

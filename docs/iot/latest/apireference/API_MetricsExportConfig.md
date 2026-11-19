@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_MetricsExpor
 ---
 
 # MetricsExportConfig
-<a name="API_MetricsExportConfig"></a>
 
 Set configurations for metrics export.
 

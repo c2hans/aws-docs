@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_TerminateWorks
 ---
 
 # TerminateWorkspaces
-<a name="API_TerminateWorkspaces"></a>
 
 Terminates the specified WorkSpaces.
 

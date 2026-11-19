@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-EnableDocumentDbClusterDeletionProtection`
-<a name="automation-awssupportremediator-enabledocumentdbclusterdeletionprotection"></a>
 
 **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mobileanalytics/latest/ug/migrate-sdk.ht
 ---
 
 # Migrating to Amazon Pinpoint in the AWS Mobile SDKs or JavaScript Library
-<a name="migrate-sdk"></a>
 
 After April 30, 2018, the Amazon Mobile Analytics client in the AWS Mobile SDKs will no longer be updated, and support for existing versions of the client will no longer be offered.
 

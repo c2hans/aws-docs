@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-ap
 ---
 
 # Troubleshooting Amazon RDS Data API
-<a name="data-api.troubleshooting"></a>
 
 Use the following sections, titled with common error messages, to help troubleshoot problems that you have with the Amazon RDS Data API (Data API).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora_
 ---
 
 # aurora\_volume\_logical\_start\_lsn
-<a name="aurora_volume_logical_start_lsn"></a>
 
 Returns the log sequence number (LSN) used for identifying the beginning of a record in the logical write-ahead log (WAL) stream of the Aurora cluster volume.
 

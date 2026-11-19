@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-inst
 ---
 
 # Import a VM as an EC2 instance using VM Import/Export
-<a name="vmimport-instance-import"></a>
 
 **Important**
 We strongly recommend that you import VMs as Amazon Machine Images (AMI) instead of instances. For more information, see [Import a VM to Amazon EC2 as an image using VM Import/Export](vmimport-image-import.md).

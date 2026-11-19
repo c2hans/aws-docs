@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/s3-outposts-
 ---
 
 # AWS Signature Version 4 (SigV4) authentication-specific policy keys
-<a name="s3-outposts-bucket-policy-s3-sigv4-conditions"></a>
 
 The following table shows the condition keys related to AWS Signature Version 4 (SigV4) authentication that you can use with Amazon S3 on Outposts. In a bucket policy, you can add these conditions to enforce specific behavior when requests are authenticated by using Signature Version 4. For example policies, see [Bucket policy examples that use Signature Version 4-related condition keys](#s3-outposts-bucket-policy-sig-v4-condition-key-example). For more information about authenticating requests using Signature Version 4, see [Authenticating requests (AWS Signature Version 4)](https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html) in the *Amazon Simple Storage Service API Reference*
 

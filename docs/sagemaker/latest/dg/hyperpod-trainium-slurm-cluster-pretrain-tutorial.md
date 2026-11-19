@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/hyperpod-trainium-sl
 ---
 
 # Trainium Slurm cluster pre-training tutorial
-<a name="hyperpod-trainium-slurm-cluster-pretrain-tutorial"></a>
 
 The following tutorial sets up a Trainium environment on a Slurm cluster and starts a training job on a Llama 8 billion parameter model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # PlayerConnectionEndpoint
-<a name="API_PlayerConnectionEndpoint"></a>
 
 Network address(es) and port(s) for connecting to a game session.
 

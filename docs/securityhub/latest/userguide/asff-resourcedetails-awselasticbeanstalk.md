@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/asff-resour
 ---
 
 # AwsElasticBeanstalk resources in ASFF
-<a name="asff-resourcedetails-awselasticbeanstalk"></a>
 
 The following are examples of the AWS Security Finding Format (ASFF) syntax for `AwsElasticBeanstalk` resources.
 

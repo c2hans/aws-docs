@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/service-protocol-upd
 ---
 
 # Protocol support changes for AWS service clients
-<a name="service-protocol-updates"></a>
 
 AWS SDKs handle the wire protocols used to serialize requests and deserialize responses when communicating with AWS services. If your SDK client supports the change, your application automatically uses the updated protocol without code changes. A protocol support change does not change the modeled service API. However, applications and infrastructure that depend on a specific wire representation might require testing or updates.
 

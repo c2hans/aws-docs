@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EmailAdd
 ---
 
 # EmailAddressInfo
-<a name="API_EmailAddressInfo"></a>
 
 Contains information about a source or destination email address.
 

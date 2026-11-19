@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/productboard-reading-from
 ---
 
 # Reading from Productboard entities
-<a name="productboard-reading-from-entities"></a>
 
  **Prerequisites**
 

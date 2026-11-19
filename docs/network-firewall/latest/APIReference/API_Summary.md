@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # Summary
-<a name="API_Summary"></a>
 
 A complex type containing summaries of security protections provided by a rule group.
 

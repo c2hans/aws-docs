@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Cr
 ---
 
 # CreateRevision
-<a name="API_CreateRevision"></a>
 
 This operation creates a revision for a data set.
 

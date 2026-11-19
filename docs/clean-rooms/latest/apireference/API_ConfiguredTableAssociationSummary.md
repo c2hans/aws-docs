@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Conf
 ---
 
 # ConfiguredTableAssociationSummary
-<a name="API_ConfiguredTableAssociationSummary"></a>
 
 The configured table association summary for the objects listed by the request.
 

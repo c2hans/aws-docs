@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/emla-deploy-design-c
 ---
 
 # Designing the cluster
-<a name="emla-deploy-design-cluster"></a>
 
 This section is intended for the video engineer who is responsible for designing the MediaLive Anywhere workflows. You must design the cluster and provide information to the network engineer who is responsible for connecting the MediaLive Anywhere nodes to your organization's network.
 

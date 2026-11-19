@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateFolderPermissions
-<a name="API_UpdateFolderPermissions"></a>
 
 Updates permissions of a folder.
 

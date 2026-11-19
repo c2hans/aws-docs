@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ScanJ
 ---
 
 # ScanJob
-<a name="API_ScanJob"></a>
 
 Contains metadata about a scan job, including information about the scanning process, results, and associated resources.
 

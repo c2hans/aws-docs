@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Conversati
 ---
 
 # ConversationLogsDataSourceFilterBy
-<a name="API_ConversationLogsDataSourceFilterBy"></a>
 
 The selected data source to filter the conversation log.
 

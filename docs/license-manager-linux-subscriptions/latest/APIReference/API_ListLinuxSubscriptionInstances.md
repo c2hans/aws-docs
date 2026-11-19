@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-linux-subscriptions/late
 ---
 
 # ListLinuxSubscriptionInstances
-<a name="API_ListLinuxSubscriptionInstances"></a>
 
 Lists the running Amazon EC2 instances that were discovered with commercial Linux subscriptions.
 

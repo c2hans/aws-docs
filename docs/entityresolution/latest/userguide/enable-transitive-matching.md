@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/enable
 ---
 
 # Enabling transitive matching (API)
-<a name="enable-transitive-matching"></a>
 
 **Important**
 Transitive matching is an API-only feature. You cannot enable transitive matching through the AWS Entity Resolution console.

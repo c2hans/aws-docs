@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/mnp-env-vars.html
 ---
 
 # Environment variables
-<a name="mnp-env-vars"></a>
 
 At runtime, each node is configured the standard environment variables that all AWS Batch jobs receive. In addition, the nodes are configured with the following environment variables that are specific to multi-node parallel jobs:
 

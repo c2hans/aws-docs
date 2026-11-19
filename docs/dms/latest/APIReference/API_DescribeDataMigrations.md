@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeData
 ---
 
 # DescribeDataMigrations
-<a name="API_DescribeDataMigrations"></a>
 
 Returns information about data migrations.
 

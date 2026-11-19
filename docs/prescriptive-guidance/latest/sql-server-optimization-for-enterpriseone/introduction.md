@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Optimizing SQL Server on Amazon EC2 for Oracle JD Edwards EnterpriseOne
-<a name="introduction"></a>
 
 *Jeremy Shearer, Amazon Web Services*
 

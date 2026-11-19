@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/cre
 ---
 
 # Create a conda build recipe for Blender
-<a name="create-conda-recipe-blender"></a>
 
 Blender is free to use and simple to package with conda, which makes it a good starting point for learning how to create conda packages for AWS Deadline Cloud (Deadline Cloud). The Blender Foundation provides [application archives](https://download.blender.org/release/Blender4.5/) on the Blender website for multiple operating systems. The [Blender 4.5 sample recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/blender-4.5) in the Deadline Cloud samples repository on the GitHub website packages these archives into a conda package.
 

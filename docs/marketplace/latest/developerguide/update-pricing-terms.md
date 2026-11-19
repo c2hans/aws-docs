@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/update
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Update pricing terms
-<a name="update-pricing-terms"></a>
 
 You can use the Catalog API to update the pricing of your machine learning products in AWS Marketplace.
 

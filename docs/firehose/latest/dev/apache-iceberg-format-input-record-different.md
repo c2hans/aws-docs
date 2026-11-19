@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/apache-iceberg-forma
 ---
 
 # Route incoming records to different Iceberg tables
-<a name="apache-iceberg-format-input-record-different"></a>
 
 Amazon Data Firehose can route incoming records in a stream to different Iceberg tables based on the content of the record. Records are not kept in order when delivered from Amazon Data Firehose. Consider the following sample input record.
 

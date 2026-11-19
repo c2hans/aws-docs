@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/TutorialAd
 ---
 
 # Adding another Region to your latency-based routing in Amazon Route 53
-<a name="TutorialAddingLBRRegion"></a>
 
 If you're using latency based routing and you want to add an instance in a new region, you can gradually shift traffic to the new region in the same way that you gradually shifted traffic to latency-based routing in [Transitioning to latency-based routing in Amazon Route 53](TutorialTransitionToLBR.md).
 

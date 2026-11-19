@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Elasticsearc
 ---
 
 # ElasticsearchAction
-<a name="API_ElasticsearchAction"></a>
 
 Describes an action that writes data to an Amazon OpenSearch Service domain.
 

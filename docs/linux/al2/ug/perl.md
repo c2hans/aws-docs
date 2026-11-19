@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/perl.html
 ---
 
 # Perl in AL2
-<a name="perl"></a>
 
 AL2 provides version 5.16 of the [Perl](https://www.perl.org/) programming language.
 

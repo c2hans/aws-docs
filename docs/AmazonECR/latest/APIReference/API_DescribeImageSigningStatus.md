@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Descri
 ---
 
 # DescribeImageSigningStatus
-<a name="API_DescribeImageSigningStatus"></a>
 
 Returns the signing status for a specified image. If the image matched signing rules that reference different signing profiles, a status is returned for each profile.
 

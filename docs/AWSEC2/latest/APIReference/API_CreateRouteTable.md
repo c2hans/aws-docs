@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRou
 ---
 
 # CreateRouteTable
-<a name="API_CreateRouteTable"></a>
 
 Creates a route table for the specified VPC. After you create a route table, you can add routes and associate the table with a subnet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Notifica
 ---
 
 # NotificationSearchCriteria
-<a name="API_NotificationSearchCriteria"></a>
 
 The search criteria to be used to return notifications.
 
@@ -12,12 +11,12 @@ The search criteria to be used to return notifications.
 
  ** AndConditions **   <a name="connect-Type-NotificationSearchCriteria-AndConditions"></a>
 A list of conditions that must all be satisfied.
-Type: Array of [NotificationSearchCriteria](#API_NotificationSearchCriteria) objects
+Type: Array of [NotificationSearchCriteria](API_NotificationSearchCriteria.md) objects
 Required: No
 
  ** OrConditions **   <a name="connect-Type-NotificationSearchCriteria-OrConditions"></a>
 A list of conditions to be met, where at least one condition must be satisfied.
-Type: Array of [NotificationSearchCriteria](#API_NotificationSearchCriteria) objects
+Type: Array of [NotificationSearchCriteria](API_NotificationSearchCriteria.md) objects
 Required: No
 
  ** StringCondition **   <a name="connect-Type-NotificationSearchCriteria-StringCondition"></a>

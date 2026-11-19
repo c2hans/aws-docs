@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StandardSour
 ---
 
 # StandardSourceEndpointConfiguration
-<a name="API_StandardSourceEndpointConfiguration"></a>
 
 The configuration settings for a standard source endpoint.
 

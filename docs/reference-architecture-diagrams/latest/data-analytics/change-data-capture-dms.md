@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Change data capture using AWS Database Migration Service
-<a name="change-data-capture-dms"></a>
 
 Publication date: **August 2, 2021 ([Diagram history](diagram-history.md))**
 

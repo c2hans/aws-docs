@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ConnectorSource
-<a name="API_ConnectorSource"></a>
 
 The source identifying the connector integration.
 

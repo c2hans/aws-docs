@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # AssociateUser
-<a name="API_AssociateUser"></a>
 
 Associates the user to an EC2 instance to utilize user-based subscriptions.
 

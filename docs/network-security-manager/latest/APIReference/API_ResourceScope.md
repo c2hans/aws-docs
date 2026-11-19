@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ResourceScope
-<a name="API_ResourceScope"></a>
 
 Defines which resources of a given type are in scope. Exactly one of `includeAll`, `include`, or `exclude` is set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 ---
 
 # Using controls to govern resources and monitor compliance
-<a name="controls"></a>
 
 [AWS Control Tower controls](https://docs.aws.amazon.com/controltower/latest/controlreference/controls.html) are high-level rules that provide ongoing governance and enforce specific policies for your AWS environment. Controls can be applied to organizational units (OUs) and have three different types: *preventive*, *detective, *and *proactive*.
 + **Preventive controls** help ensure that your accounts maintain compliance by disallowing actions that cause policy violations. Preventive controls are implemented with [service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html), which are part of AWS Organizations. For example, the control [Disallow Actions as a Root User](https://docs.aws.amazon.com/controltower/latest/controlreference/strongly-recommended-controls.html#disallow-root-auser-actions) helps ensure that the high privilege root user can't be used for unrestricted access to all resources in an account. Instead, users are forced to use more restricted IAM roles.

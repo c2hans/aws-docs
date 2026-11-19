@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Im
 ---
 
 # ImportSource
-<a name="API_ImportSource"></a>
 
  The import source.
 

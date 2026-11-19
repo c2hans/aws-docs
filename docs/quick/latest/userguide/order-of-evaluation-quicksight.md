@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/order-of-evaluati
 ---
 
 # Order of evaluation in AWS Quick Sight
-<a name="order-of-evaluation-quicksight"></a>
 
 When you open or update an analysis, before displaying it AWS Quick Sight evaluates everything that is configured in the analysis in a specific sequence. AWS Quick Sight translates the configuration into a query that a database engine can run. The query returns the data in a similar way whether you connect to a database, a software as a service (SaaS) source, or the AWS Quick Sight analytics engine ([SPICE](spice.md)).
 

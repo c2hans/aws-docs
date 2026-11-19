@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Km
 ---
 
 # KmsKeyToGrant
-<a name="API_KmsKeyToGrant"></a>
 
 The Amazon Resource Name (ARN) of the AWS KMS key used to encrypt the shared S3 objects.
 

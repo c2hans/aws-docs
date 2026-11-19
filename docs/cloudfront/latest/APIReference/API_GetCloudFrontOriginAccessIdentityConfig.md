@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetCl
 ---
 
 # GetCloudFrontOriginAccessIdentityConfig
-<a name="API_GetCloudFrontOriginAccessIdentityConfig"></a>
 
 Get the configuration information about an origin access identity.
 

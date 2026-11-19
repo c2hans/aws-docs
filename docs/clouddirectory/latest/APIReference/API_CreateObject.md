@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/clouddirectory/latest/APIReference/API_C
 Amazon Cloud Directory is no longer open to new customers, and will reach end of support on July 24, 2027. For alternatives to Cloud Directory, explore [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) and [Amazon Neptune](https://aws.amazon.com/neptune/). If you need help choosing the right alternative for your use case, or for any other questions, contact [AWS Support](https://aws.amazon.com/support/).
 
 # CreateObject
-<a name="API_CreateObject"></a>
 
 Creates an object in a [Directory](API_Directory.md). Additionally attaches the object to a parent, if a parent reference and `LinkName` is specified. An object is simply a collection of [Facet](API_Facet.md) attributes. You can also use this API call to create a policy object, if the facet from which you create the object is a policy facet.
 

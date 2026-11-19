@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_List
 ---
 
 # ListImportTasks
-<a name="API_ListImportTasks"></a>
 
 Lists import tasks.
 

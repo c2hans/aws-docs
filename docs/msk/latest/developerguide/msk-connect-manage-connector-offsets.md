@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-connect-ma
 ---
 
 # Manage source connector offsets using `offset.storage.topic`
-<a name="msk-connect-manage-connector-offsets"></a>
 
 This section provides information to help you manage source connector offsets using the *offset storage topic*. The offset storage topic is an internal topic that Kafka Connect uses to store connector and task configuration offsets.
 

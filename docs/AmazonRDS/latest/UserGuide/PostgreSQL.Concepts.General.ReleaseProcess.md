@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Co
 ---
 
 # Understanding the RDS for PostgreSQL incremental release process
-<a name="PostgreSQL.Concepts.General.ReleaseProcess"></a>
 
 RDS for PostgreSQL delivers security fixes, performance improvements, and new features through incremental releases while maintaining minor version compatibility. These releases are labeled as R1, R2, R3, and so on.
 

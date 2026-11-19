@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_PolicyIdenti
 ---
 
 # PolicyIdentifier
-<a name="API_PolicyIdentifier"></a>
 
 Identifies one or more policies as a union type. Specify exactly one of `PolicyType`, `PolicyArn`, or `InlinePolicyIdentifier` to identify policies by their type, by Amazon Resource Name (ARN), or by the name of an inline policy and the entity it is attached to.
 

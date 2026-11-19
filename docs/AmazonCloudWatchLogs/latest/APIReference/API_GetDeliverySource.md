@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # GetDeliverySource
-<a name="API_GetDeliverySource"></a>
 
 Retrieves complete information about one delivery source.
 

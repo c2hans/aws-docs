@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # BatchDeleteGeofence
-<a name="API_WaypointGeofencing_BatchDeleteGeofence"></a>
 
 Deletes a batch of geofences from a geofence collection.
 

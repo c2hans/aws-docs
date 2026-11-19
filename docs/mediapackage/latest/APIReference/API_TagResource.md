@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Tag
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Assigns one of more tags (key-value pairs) to the specified MediaPackage resource.
 

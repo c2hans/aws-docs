@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyAddRuleFromNaturalLanguageAnnotation
-<a name="API_AutomatedReasoningPolicyAddRuleFromNaturalLanguageAnnotation"></a>
 
 An annotation for adding a new rule to the policy by converting a natural language description into a formal logical expression.
 

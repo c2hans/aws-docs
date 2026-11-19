@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeepgramSp
 ---
 
 # DeepgramSpeechModelConfig
-<a name="API_DeepgramSpeechModelConfig"></a>
 
 Configuration settings for integrating Deepgram speech-to-text models with Amazon Lex.
 

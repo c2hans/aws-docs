@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Rej
 ---
 
 # RejectSupportPermitRequest
-<a name="API_RejectSupportPermitRequest"></a>
 
 Rejects a permit request from an AWS support operator. The operator cannot proceed with the requested action.
 

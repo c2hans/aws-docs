@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 ---
 
 # Setting the Parameter Store default tier using the console, AWS CLI, or PowerShell
-<a name="parameter-store-tier-changing"></a>
 
 By default, Parameter Store sets the default setting to the standard parameter tier. You can set the default parameter tier for your AWS account and Region using the Systems Manager console, AWS CLI, or PowerShell. For example, you can change the default tier to advanced and then back to standard.
 

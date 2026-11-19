@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Certi
 ---
 
 # CertificateDetails
-<a name="API_CertificateDetails"></a>
 
 Returns the details of the DB instance’s server certificate.
 

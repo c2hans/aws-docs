@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # SearchNearbyResultItem
-<a name="API_geoplaces_SearchNearbyResultItem"></a>
 
 The search results of nearby places.
 

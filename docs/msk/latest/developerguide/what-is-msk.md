@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/what-is-msk.ht
 ---
 
 # Welcome to the Amazon MSK Developer Guide
-<a name="what-is-msk"></a>
 
 Welcome to the *Amazon Managed Streaming for Apache Kafka Developer Guide*. The following topics can help you get started using this guide, based on what you're trying to do.
 + Create an MSK Provisioned cluster by following the [Get started using Amazon MSK](getting-started.md) tutorial.

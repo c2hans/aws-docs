@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/make-schema-updates.htm
 ---
 
 # Make schema updates
-<a name="make-schema-updates"></a>
 
 This topic describes some of the changes that you can make to the schema in `CREATE TABLE` statements without actually altering your data. To update a schema, you can in some cases use an `ALTER TABLE` command, but in other cases you do not actually modify an existing table. Instead, you create a table with a new name that modifies the schema that you used in your original `CREATE TABLE` statement.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_OAuthUpda
 ---
 
 # OAuthUpdate
-<a name="API_OAuthUpdate"></a>
 
 Structure containing updated OAuth configuration settings.
 

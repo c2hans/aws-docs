@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-get-tcpdump.ht
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Capture network traffic on an EKS Auto Mode node using kubectl and Amazon S3
-<a name="auto-get-tcpdump"></a>
 
 Learn how to capture network traffic on an Amazon EKS Auto Mode node. The EKS node monitoring agent runs `tcpdump` on the node, compresses capture files, and uploads them to your S3 bucket.
 

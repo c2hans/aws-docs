@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/extended-thinking.
 ---
 
 # Understanding model reasoning with extended reasoning
-<a name="extended-thinking"></a>
 
 **Note**
 This documentation is for Version 1. For information on how to use Extended thinking in version 2, visit [Extended thinking](https://docs.aws.amazon.com/nova/latest/nova2-userguide/extended-thinking.html).

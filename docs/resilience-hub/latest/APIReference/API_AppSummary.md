@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_A
 ---
 
 # AppSummary
-<a name="API_AppSummary"></a>
 
 Defines an application summary.
 

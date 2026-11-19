@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSSEC01-BP04 Encrypt slow and error logs in Amazon CloudWatch to protect sensitive information
-<a name="aossec01-bp04"></a>
 
  Protect sensitive information in slow and error logs by encrypting them, keeping them confidential even when stored in Amazon CloudWatch.
 

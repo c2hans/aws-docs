@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/gw-admin/session-resolver.htm
 ---
 
 # Setting up a Session Resolver
-<a name="session-resolver"></a>
 
 The *Session Resolver* is the component responsible for mapping *Session IDs* to a destination host running the Amazon DCV server. The logic of this mapping is specific to how each customer designs and plans to use its infrastructure.
 

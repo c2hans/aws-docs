@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # PutVectors
-<a name="API_S3VectorBuckets_PutVectors"></a>
 
 Adds one or more vectors to a vector index. To specify the vector index, you can either use both the vector bucket name and the vector index name, or use the vector index Amazon Resource Name (ARN).
 

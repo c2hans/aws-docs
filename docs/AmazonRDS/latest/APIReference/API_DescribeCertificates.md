@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeCertificates
-<a name="API_DescribeCertificates"></a>
 
 Lists the set of certificate authority (CA) certificates provided by Amazon RDS for this AWS account.
 

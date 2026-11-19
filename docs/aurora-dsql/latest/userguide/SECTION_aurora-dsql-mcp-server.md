@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/SECTION_aur
 ---
 
 # AWS Labs Aurora DSQL MCP Server
-<a name="SECTION_aurora-dsql-mcp-server"></a>
 
  An AWS Labs Model Context Protocol (MCP) server for Aurora DSQL
 

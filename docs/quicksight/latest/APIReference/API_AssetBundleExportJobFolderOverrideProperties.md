@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleExportJobFolderOverrideProperties
-<a name="API_AssetBundleExportJobFolderOverrideProperties"></a>
 
 Controls how a specific `Folder` resource is parameterized in the returned CloudFormation template.
 

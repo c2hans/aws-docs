@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTr
 ---
 
 # RouteTransitPedestrianOptions
-<a name="API_RouteTransitPedestrianOptions"></a>
 
 Options for the pedestrian leg of the transit route.
 

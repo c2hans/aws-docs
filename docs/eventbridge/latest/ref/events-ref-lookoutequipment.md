@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-lookou
 ---
 
 # Amazon Lookout for Equipment events
-<a name="events-ref-lookoutequipment"></a>
 
 Lookout for Equipment sends service events to EventBridge via AWS CloudTrail.
 

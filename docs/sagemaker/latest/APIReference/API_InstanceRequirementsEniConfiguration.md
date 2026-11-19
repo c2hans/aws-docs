@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Instan
 ---
 
 # InstanceRequirementsEniConfiguration
-<a name="API_InstanceRequirementsEniConfiguration"></a>
 
 The customer ENI and additional ENIs associated with a network interface category.
 

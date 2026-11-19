@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/r
 ---
 
 # Deleting a resource group in AWS Network Firewall
-<a name="resource-group-deleting"></a>
 
 You can delete your resource group in the Network Firewall console or the AWS Resource Groups [DeleteGroup](https://docs.aws.amazon.com/ARG/latest/APIReference/API_DeleteGroup.html) API. To delete a resource group in the Network Firewall console, perform the following procedure.
 

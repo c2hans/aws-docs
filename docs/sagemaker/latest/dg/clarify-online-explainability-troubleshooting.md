@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-expla
 ---
 
 # Troubleshooting guide
-<a name="clarify-online-explainability-troubleshooting"></a>
 
 If you encounter errors using SageMaker Clarify online explainability, consult the topics in this section.
 

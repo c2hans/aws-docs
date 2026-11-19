@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListQueueMembers
-<a name="API_ListQueueMembers"></a>
 
 Lists the members in a queue.
 

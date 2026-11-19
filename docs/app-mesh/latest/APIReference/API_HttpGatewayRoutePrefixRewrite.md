@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpGat
 ---
 
 # HttpGatewayRoutePrefixRewrite
-<a name="API_HttpGatewayRoutePrefixRewrite"></a>
 
 An object representing the beginning characters of the route to rewrite.
 

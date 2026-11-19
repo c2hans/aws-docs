@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Migration tools and high-level migration steps
-<a name="tools-steps"></a>
 
 After you deploy MongoDB Atlas on AWS, you can use the following tools to migrate data from the source (a public cloud, your data center, or a third-party DBaaS provider) to MongoDB Atlas on AWS, with minimal impact on your applications. There are three basic steps for the simplified data migration process:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # TokenBasedTrigger
-<a name="API_TokenBasedTrigger"></a>
 
 Trigger configuration based on tokens.
 

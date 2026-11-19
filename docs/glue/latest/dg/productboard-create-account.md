@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/productboard-create-accou
 ---
 
 # Creating an Productboard account
-<a name="productboard-create-account"></a>
 
 1. Navigate to the [Productboard sign up page](https://app.productboard.com/), enter your email ID and password, and then choose **Log me in**.
 

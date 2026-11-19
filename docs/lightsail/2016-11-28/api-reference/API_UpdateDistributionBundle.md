@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_U
 ---
 
 # UpdateDistributionBundle
-<a name="API_UpdateDistributionBundle"></a>
 
 Updates the bundle of your Amazon Lightsail content delivery network (CDN) distribution.
 

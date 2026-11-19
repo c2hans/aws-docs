@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk new console design in AWS China Regions and AWS GovCloud (US) Regions on May 08, 2023
-<a name="release-2023-05-08-eb-console-region-ch-usg"></a>
 
 AWS Elastic Beanstalk launches new console design in AWS China Regions and AWS GovCloud (US) Regions.
 

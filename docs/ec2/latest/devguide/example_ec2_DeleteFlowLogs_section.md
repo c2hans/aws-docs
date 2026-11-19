@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ec2_DeleteFl
 ---
 
 # Use `DeleteFlowLogs` with a CLI
-<a name="example_ec2_DeleteFlowLogs_section"></a>
 
 The following code examples show how to use `DeleteFlowLogs`.
 

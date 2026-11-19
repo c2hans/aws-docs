@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Datas
 ---
 
 # DatastoreFilter
-<a name="API_DatastoreFilter"></a>
 
 The filters applied to a data store query.
 

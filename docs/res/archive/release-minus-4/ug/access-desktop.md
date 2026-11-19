@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/access-de
 ---
 
 # Access your desktop
-<a name="access-desktop"></a>
 
 To access a virtual desktop, choose the card for the desktop and connect using either the web or a DCV client.
 

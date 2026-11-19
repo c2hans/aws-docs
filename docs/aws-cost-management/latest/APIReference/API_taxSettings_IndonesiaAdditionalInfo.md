@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # IndonesiaAdditionalInfo
-<a name="API_taxSettings_IndonesiaAdditionalInfo"></a>
 
 Additional tax information associated with your TRN in Indonesia.
 

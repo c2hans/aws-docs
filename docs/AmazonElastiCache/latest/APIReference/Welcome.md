@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/We
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Amazon ElastiCache is a web service that makes it easier to set up, operate, and scale a distributed cache in the cloud.
 
@@ -11,4 +10,4 @@ With ElastiCache, customers get all of the benefits of a high-performance, in-me
 
 In addition, through integration with Amazon CloudWatch, customers get enhanced visibility into the key performance statistics associated with their cache and can receive alarms if a part of their cache runs hot.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

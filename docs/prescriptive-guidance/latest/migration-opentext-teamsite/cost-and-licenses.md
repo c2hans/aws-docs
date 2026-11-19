@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Cost and licenses
-<a name="cost-and-licenses"></a>
 
 When assessing the costs and licenses required to migrate OpenText TeamSite, LiveSite, and Media Management workloads to the AWS Cloud, we assume that you have development, QA, and production environments to migrate. Your DevOps toolset should also include the following AWS services:
 + [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) and [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) for monitoring and logging

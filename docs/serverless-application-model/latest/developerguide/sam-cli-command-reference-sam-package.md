@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # sam package
-<a name="sam-cli-command-reference-sam-package"></a>
 
 The AWS Serverless Application Model Command Line Interface (AWS SAM CLI) packages an AWS SAM application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/configuri
 ---
 
 # Configuring intent and slot matching
-<a name="configuring-intent-and-slot-matching"></a>
 
 The guidance supports different types of question and answer workflows. For example:
 + You can create a question and answer experience to help answer frequently asked questions. In this model, the user asks a question and QnABot on AWS responds with the most relevant answer to the question (from the list of created Item IDs). For more information, see [Step 3. Populate the chatbot with your questions and answers](step-3-populate-the-chatbot-with-your-questions-and-answers.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-s
 ---
 
 # Viewing the cluster state
-<a name="sap-hana-pacemaker-sles-ops-cluster-state"></a>
 
 You can view the state of the cluster in two ways - based on your operating system or with a web based console provided by SUSE.
 

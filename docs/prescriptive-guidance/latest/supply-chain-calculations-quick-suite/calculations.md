@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/supply-chai
 ---
 
 # Calculations
-<a name="calculations"></a>
 
 The supply chain calculations in this guide have been separated into the following categories:
 + [Forecast error](forecast-error.md) – These calculations help you evaluate the accuracy of previous forecasts.

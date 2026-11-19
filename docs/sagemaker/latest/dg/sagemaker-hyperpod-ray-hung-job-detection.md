@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Hung job detection
-<a name="sagemaker-hyperpod-ray-hung-job-detection"></a>
 
 Distributed Ray Train jobs can stall without producing an error. A single worker fails silently, and every other worker blocks at the next collective operation, waiting indefinitely. GPUs remain allocated with model weights loaded but produce no useful compute. Because there is no error message or crash, the stall often goes unnoticed for hours until someone checks job progress manually.
 

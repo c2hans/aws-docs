@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Describ
 ---
 
 # DescribeMesh
-<a name="API_DescribeMesh"></a>
 
 Describes an existing service mesh.
 

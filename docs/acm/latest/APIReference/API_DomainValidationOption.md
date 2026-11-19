@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DomainValida
 ---
 
 # DomainValidationOption
-<a name="API_DomainValidationOption"></a>
 
 Contains information about the domain names that you want ACM to use to send you emails that enable you to validate domain ownership.
 

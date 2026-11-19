@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSStorageGatewayReadOnlyAccess
-<a name="AWSStorageGatewayReadOnlyAccess"></a>
 
 **Description**: Provides access to AWS Storage Gateway via the AWS Management Console.
 

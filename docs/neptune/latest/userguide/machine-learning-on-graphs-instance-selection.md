@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Instance selection for the Neptune ML stages
-<a name="machine-learning-on-graphs-instance-selection"></a>
 
 The different stages of Neptune ML processing use different SageMaker AI instances. Here, we discuss how to choose the right instance type for each stage. You can find information about SageMaker AI instance types and pricing at [Amazon SageMaker Pricing](https://aws.amazon.com/sagemaker/pricing/).
 

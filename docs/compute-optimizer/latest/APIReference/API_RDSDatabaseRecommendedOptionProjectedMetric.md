@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RDSDatabaseRecommendedOptionProjectedMetric
-<a name="API_RDSDatabaseRecommendedOptionProjectedMetric"></a>
 
  Describes the projected metrics of an Amazon Aurora and RDS database recommendation option.
 

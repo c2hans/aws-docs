@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/troubleshooting-event-s
 ---
 
 # Troubleshoot event source mapping issues in Lambda
-<a name="troubleshooting-event-source-mapping"></a>
 
 Issues in Lambda that relate to an [event source mapping](invocation-eventsourcemapping.md) can be more complex because they involve debugging across multiple services. Moreover, event source behavior can differ based on the exact event source used. This section lists common issues that involve event source mappings, and provides guidance on how to identify and troubleshoot them.
 

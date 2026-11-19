@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/s3-i
 The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin.
 
 # Using the S3 Transfer Utility
-<a name="s3-integration-transferutility"></a>
 
 The S3 Transfer Utility makes it easier to upload and download files to S3 from your Xamarin application.
 

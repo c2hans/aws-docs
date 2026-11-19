@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_SnapToR
 ---
 
 # SnapToRoads
-<a name="API_SnapToRoads"></a>
 
  `SnapToRoads` matches GPS trace to roads most likely traveled on. Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
 

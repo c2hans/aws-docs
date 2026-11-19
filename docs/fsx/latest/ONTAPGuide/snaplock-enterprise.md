@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/snaplock-enterpris
 ---
 
 # Understanding SnapLock Enterprise
-<a name="snaplock-enterprise"></a>
 
 This section describes use cases and considerations for the SnapLock Enterprise retention mode.
 

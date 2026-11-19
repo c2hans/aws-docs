@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # CreateEventTrigger
-<a name="API_connect-customer-profiles_CreateEventTrigger"></a>
 
 Creates an event trigger, which specifies the rules when to perform action based on customer's ingested data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # SendDataIntegrationEvent
-<a name="API_SendDataIntegrationEvent"></a>
 
 Send the data payload for the event with real-time data for analysis or monitoring. The real-time data events are stored in an AWS service before being processed and stored in data lake.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-dynamodb.htm
 ---
 
 # Amazon Athena DynamoDB connector
-<a name="connectors-dynamodb"></a>
 
 The Amazon Athena DynamoDB connector enables Amazon Athena to communicate with DynamoDB so that you can query your tables with SQL. Write operations like [INSERT INTO](insert-into.md) are not supported.
 

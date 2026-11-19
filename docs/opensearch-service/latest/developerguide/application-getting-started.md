@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Getting started with the OpenSearch user interface in Amazon OpenSearch Service
-<a name="application-getting-started"></a>
 
 In Amazon OpenSearch Service, an *application* is an instance of the OpenSearch user interface (OpenSearch UI). Each application can be associated with multiple data sources, and a single source can be associated with multiple applications. You can create multiple applications for different administrators using different supported authentication options.
 

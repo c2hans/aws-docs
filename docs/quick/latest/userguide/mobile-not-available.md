@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/mobile-not-availa
 ---
 
 # What is not available on mobile
-<a name="mobile-not-available"></a>
 
 The following capabilities are available on desktop but not on mobile. Use the desktop application for these tasks.
 + Apps (Apps in AWS Quick): build and run apps on desktop.

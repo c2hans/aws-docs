@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_L
 ---
 
 # ListVolumeRecoveryPoints
-<a name="API_ListVolumeRecoveryPoints"></a>
 
 Lists the recovery points for a specified gateway. This operation is only supported in the cached volume gateway type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-l
 ---
 
 # What particular configurations HyperPod manages in Slurm configuration files
-<a name="sagemaker-hyperpod-lifecycle-best-practices-slurm-what-hyperpod-overrides-in-slurm-conf"></a>
 
 When you create a Slurm cluster on HyperPod, the HyperPod agent sets up the [`slurm.conf`](https://slurm.schedmd.com/slurm.conf.html) and [`gres.conf`](https://slurm.schedmd.com/gres.conf.html) files at `/opt/slurm/etc/` to manage the Slurm cluster based on your HyperPod cluster creation request and lifecycle scripts. The following list shows which specific parameters the HyperPod agent handles and overwrites.
 

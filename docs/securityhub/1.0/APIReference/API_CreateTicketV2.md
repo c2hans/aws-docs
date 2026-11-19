@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateT
 ---
 
 # CreateTicketV2
-<a name="API_CreateTicketV2"></a>
 
 Grants permission to create a ticket in the chosen ITSM based on finding information for the provided finding metadata UID.
 

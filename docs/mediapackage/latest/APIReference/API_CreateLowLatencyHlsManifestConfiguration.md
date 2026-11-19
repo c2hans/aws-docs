@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Cre
 ---
 
 # CreateLowLatencyHlsManifestConfiguration
-<a name="API_CreateLowLatencyHlsManifestConfiguration"></a>
 
 Create a low-latency HTTP live streaming (HLS) manifest configuration.
 

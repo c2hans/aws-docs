@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-b
 ---
 
 # Automate job runs on a scheduled frequency
-<a name="scheduled"></a>
 
 Using the flow that you created in the previous steps, you can add basic and runtime scheduling.
 + Basic scheduling defines which days a job can run (for example, every weekday, only on working days, month end, or quarter end).

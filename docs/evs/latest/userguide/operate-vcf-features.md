@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/operate-vcf-feature
 ---
 
 # Use VCF features on Amazon EVS
-<a name="operate-vcf-features"></a>
 
 For VMware Cloud Foundation (VCF) features, follow the Broadcom documentation. For some features, Amazon Elastic VMware Service adds steps or conditions of its own.
 

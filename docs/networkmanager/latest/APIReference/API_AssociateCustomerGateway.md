@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_A
 ---
 
 # AssociateCustomerGateway
-<a name="API_AssociateCustomerGateway"></a>
 
 Associates a customer gateway with a device and optionally, with a link. If you specify a link, it must be associated with the specified device.
 

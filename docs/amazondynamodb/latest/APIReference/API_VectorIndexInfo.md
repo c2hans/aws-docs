@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_V
 ---
 
 # VectorIndexInfo
-<a name="API_VectorIndexInfo"></a>
 
 Contains the configuration of a vector index as it existed at the time a backup was created.
 

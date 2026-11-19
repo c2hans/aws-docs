@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyBuildResultAssetManifest
-<a name="API_AutomatedReasoningPolicyBuildResultAssetManifest"></a>
 
 A catalog of all artifacts produced by a build workflow, providing a comprehensive list of available assets including their types and identifiers.
 

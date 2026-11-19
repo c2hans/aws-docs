@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost03-
 ---
 
 # COST03-BP03 Enforce data retention policies
-<a name="cost03-bp03"></a>
 
  Every object, backup, snapshot, and log you keep occupies storage you pay for, and much of it outlives its usefulness. Data retention policies define how long each type of data must be kept and when to move it to cheaper storage or delete it. Automating those policies controls storage cost and improves your ability to meet retention requirements.
 

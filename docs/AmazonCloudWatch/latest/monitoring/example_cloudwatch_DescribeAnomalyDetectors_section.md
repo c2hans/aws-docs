@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/examp
 ---
 
 # Use `DescribeAnomalyDetectors` with an AWS SDK or CLI
-<a name="example_cloudwatch_DescribeAnomalyDetectors_section"></a>
 
 The following code examples show how to use `DescribeAnomalyDetectors`.
 

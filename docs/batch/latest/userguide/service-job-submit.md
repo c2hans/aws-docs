@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/service-job-submi
 ---
 
 # Submit a service job in AWS Batch
-<a name="service-job-submit"></a>
 
 To submit service jobs to AWS Batch, you use the [SubmitServiceJob](https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitServiceJob.html) API. You can submit jobs using the AWS CLI or SDK.
 

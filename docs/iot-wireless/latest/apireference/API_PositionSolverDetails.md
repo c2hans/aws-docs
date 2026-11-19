@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Pos
 ---
 
 # PositionSolverDetails
-<a name="API_PositionSolverDetails"></a>
 
 The wrapper for position solver details.
 

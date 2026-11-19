@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Lic
 ---
 
 # LicenseInfo
-<a name="API_LicenseInfo"></a>
 
  Details of the license data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayResourceFailure
-<a name="API_GatewayResourceFailure"></a>
 
 The failures for a single resource that was touched by an asynchronous gateway process.
 

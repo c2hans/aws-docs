@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/welcome-conne
 ---
 
 # What third-party providers can I create connections for?
-<a name="welcome-connections-supported-providers"></a>
 
 Connections can associate your AWS resources with the following third-party repositories:
 + Azure DevOps

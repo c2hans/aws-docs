@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-chat-in
 ---
 
 # Set up your customer's chat experience in Connect Customer
-<a name="enable-chat-in-app"></a>
 
 You can provide a chat experience to your customers by using one of the following methods:
 + [Add a chat user interface to your website hosted by Connect Customer](add-chat-to-website.md).

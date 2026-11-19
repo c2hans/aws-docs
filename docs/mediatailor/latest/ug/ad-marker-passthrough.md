@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ad-marker-passthro
 ---
 
 # Enabling ad marker passthrough
-<a name="ad-marker-passthrough"></a>
 
 By default for HLS, MediaTailor personalized manifests don't include the SCTE-35 ad markers from the origin manifests. When ad marker passthrough is enabled, MediaTailor passes through the following ad markers from origin manifests into personalized manifests:
 + EXT-X-CUE-IN

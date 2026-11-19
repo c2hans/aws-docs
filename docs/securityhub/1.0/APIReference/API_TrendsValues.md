@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_TrendsV
 ---
 
 # TrendsValues
-<a name="API_TrendsValues"></a>
 
 Contains the aggregated finding values for a specific point in the findings trend timeline.
 

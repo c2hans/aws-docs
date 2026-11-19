@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GetConfor
 ---
 
 # GetConformancePackComplianceDetails
-<a name="API_GetConformancePackComplianceDetails"></a>
 
 Returns compliance details of a conformance pack for all AWS resources that are monitered by conformance pack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/tiered-sto
 ---
 
 # Amazon Kinesis Video Streams Tiered Storage
-<a name="tiered-storage"></a>
 
  Amazon Kinesis Video Streams Tiered Storage enables you to optimize costs associated with storing and consuming media based on expected consumption needs, data access frequency, and retention length. KVS offers two storage tiers to help you balance cost and performance requirements.
 

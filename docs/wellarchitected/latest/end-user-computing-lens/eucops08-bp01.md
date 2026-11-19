@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCOPS08-BP01 Adopt a mandatory and formalized process for managing any changes to EUC services and dependent infrastructure
-<a name="eucops08-bp01"></a>
 
  Create a new process or integrate with existing processes that track all changes that can affect the stability and security of your EUC deployment.
 

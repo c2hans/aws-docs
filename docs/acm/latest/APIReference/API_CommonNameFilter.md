@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_CommonNameFi
 ---
 
 # CommonNameFilter
-<a name="API_CommonNameFilter"></a>
 
 Filters certificates by common name.
 

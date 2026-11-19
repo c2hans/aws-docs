@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_StorageL
 ---
 
 # StorageLensExpandedPrefixesDataExport
-<a name="API_control_StorageLensExpandedPrefixesDataExport"></a>
 
 A container for your S3 Storage Lens expanded prefix metrics report configuration. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration.
 

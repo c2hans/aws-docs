@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-produc
 ---
 
 # Configuring SaaS product settings in AWS Marketplace
-<a name="saas-product-settings"></a>
 
 After you [create a software as a service (SaaS) product](saas-create-product.md) in AWS Marketplace, you can modify many of the product settings. The following sections show you how to submit change requests and modify product settings, such as updating pricing details, product visibility, and other settings.
 

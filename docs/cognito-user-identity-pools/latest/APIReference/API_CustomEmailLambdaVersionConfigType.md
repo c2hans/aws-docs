@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # CustomEmailLambdaVersionConfigType
-<a name="API_CustomEmailLambdaVersionConfigType"></a>
 
 The properties of a custom email sender Lambda trigger.
 

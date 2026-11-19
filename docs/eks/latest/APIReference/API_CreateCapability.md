@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateCapabi
 ---
 
 # CreateCapability
-<a name="API_CreateCapability"></a>
 
 Creates a managed capability resource for an Amazon EKS cluster.
 

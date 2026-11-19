@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Str
 ---
 
 # Tutorial \#2: Using filters to process some events with DynamoDB and Lambda
-<a name="Streams.Lambda.Tutorial2"></a>
 
 In this tutorial, you will create an AWS Lambda trigger to process only some events in a stream from a DynamoDB table.
 

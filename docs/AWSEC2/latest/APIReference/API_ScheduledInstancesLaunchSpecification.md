@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Scheduled
 ---
 
 # ScheduledInstancesLaunchSpecification
-<a name="API_ScheduledInstancesLaunchSpecification"></a>
 
 Describes the launch specification for a Scheduled Instance.
 

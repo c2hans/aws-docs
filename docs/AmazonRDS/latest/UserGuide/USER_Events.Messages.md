@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.M
 ---
 
 # Amazon RDS event categories and event messages
-<a name="USER_Events.Messages"></a>
 
 Amazon RDS generates a significant number of events in categories that you can subscribe to using the Amazon RDS Console, AWS CLI, or the API.
 

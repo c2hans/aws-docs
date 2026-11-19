@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_B
 ---
 
 # BrandingConfigurationCreateInput
-<a name="API_BrandingConfigurationCreateInput"></a>
 
 The input configuration for creating branding settings.
 

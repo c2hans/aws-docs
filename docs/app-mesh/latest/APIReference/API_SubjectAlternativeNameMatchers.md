@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Subject
 ---
 
 # SubjectAlternativeNameMatchers
-<a name="API_SubjectAlternativeNameMatchers"></a>
 
 An object that represents the methods by which a subject alternative name on a peer Transport Layer Security (TLS) certificate can be matched.
 

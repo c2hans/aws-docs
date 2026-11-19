@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/isv.html
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Amazon Q index for independent software vendors (ISVs)
-<a name="isv"></a>
 
 As an ISV, you can leverage Amazon Q index to access and integrate your customers' enterprise data into your applications. This integration enables you to enhance your applications with generative AI capabilities powered by your customers' data, without having to directly connect to or index individual data sources. Your customers simply need to add you as a data accessor and provide you with the configuration details, allowing you to retrieve relevant content through the `SearchRelevantContent` API operation.
 

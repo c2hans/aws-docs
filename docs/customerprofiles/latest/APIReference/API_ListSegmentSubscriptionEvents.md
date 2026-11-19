@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListSegmentSubscriptionEvents
-<a name="API_connect-customer-profiles_ListSegmentSubscriptionEvents"></a>
 
 Returns the most recent membership events for a segment. Each event represents a profile that entered or exited the segment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cwan-mod
 ---
 
 # Manage AWS Cloud WAN Flow Logs tags
-<a name="cwan-modify-tags-flow-logs"></a>
 
 You can add or remove tags for a flow log in the Network Manager console.
 

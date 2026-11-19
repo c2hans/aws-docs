@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-az
 ---
 
 # Remediating exposures for Azure Graph users
-<a name="exposure-azure-graph-user"></a>
 
 AWS Security Hub can generate exposure findings for Azure Graph users.
 

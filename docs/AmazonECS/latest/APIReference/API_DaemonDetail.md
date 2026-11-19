@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Daemon
 ---
 
 # DaemonDetail
-<a name="API_DaemonDetail"></a>
 
 The detailed information about a daemon.
 

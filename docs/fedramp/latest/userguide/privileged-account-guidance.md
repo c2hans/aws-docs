@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fedramp/latest/userguide/privileged-acco
 ---
 
 # Privileged Account Guidance
-<a name="privileged-account-guidance"></a>
 
 This guide provides security configuration for privileged account access.
 

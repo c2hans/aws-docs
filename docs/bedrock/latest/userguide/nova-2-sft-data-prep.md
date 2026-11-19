@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/nova-2-sft-data
 ---
 
 # Fine-tune Amazon Nova models with supervised fine-tuning
-<a name="nova-2-sft-data-prep"></a>
 
 Amazon Nova 2.0 SFT data uses the same Converse API format as Amazon Nova 1.0, with the addition of optional reasoning content fields. For complete format specifications, see [ReasoningContentBlock](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ReasoningContentBlock.html) and [Converse API schema](https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-call.html).
 

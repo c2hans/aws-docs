@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Multi-Region: recovery
-<a name="next-gen-resilience-testing-multi-region-recovery"></a>
 
 The **Multi-Region: recovery** test introduces failures into dependencies in one Region to validate that your service can recover and serve clients from a recovery Region within your recovery objectives. This test applies to both active/active and active/passive architectures. For example, you can initiate your recovery procedure and confirm your service recovers within your defined Recovery Time Objective (RTO) in the recovery Region.
 

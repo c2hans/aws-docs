@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ResultAttribute
-<a name="API_ResultAttribute"></a>
 
 The inventory item result attribute.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # ScheduledQueryRunSummary
-<a name="API_query_ScheduledQueryRunSummary"></a>
 
 Run summary for the scheduled query
 

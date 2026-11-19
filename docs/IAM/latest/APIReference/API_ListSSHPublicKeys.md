@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListSSHPubli
 ---
 
 # ListSSHPublicKeys
-<a name="API_ListSSHPublicKeys"></a>
 
 Returns information about the SSH public keys associated with the specified IAM user. If none exists, the operation returns an empty list.
 

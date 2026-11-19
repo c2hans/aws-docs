@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TransformConfigPa
 ---
 
 # TransformConfigParameter
-<a name="API_TransformConfigParameter"></a>
 
 Specifies the parameters in the config file of the dynamic transform.
 

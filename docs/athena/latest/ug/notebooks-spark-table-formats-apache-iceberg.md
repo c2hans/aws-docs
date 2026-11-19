@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-table-f
 ---
 
 # Use Apache Iceberg tables in Athena for Spark
-<a name="notebooks-spark-table-formats-apache-iceberg"></a>
 
 [Apache Iceberg](https://iceberg.apache.org/) is an open table format for large datasets in Amazon Simple Storage Service (Amazon S3). It provides you with fast query performance over large tables, atomic commits, concurrent writes, and SQL-compatible table evolution.
 

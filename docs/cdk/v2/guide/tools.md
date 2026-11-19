@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/tools.html
 ---
 
 # Tools that work with the AWS CDK
-<a name="tools"></a>
 
 You can use other tools with the AWS CDK to improve your development workflows.
 

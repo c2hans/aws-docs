@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/viewing-volumes.ht
 ---
 
 # Monitoring volumes
-<a name="viewing-volumes"></a>
 
 You can see the volumes that are currently on your file system using the Amazon FSx console, the AWS CLI, and the Amazon FSx API and SDKs.
 

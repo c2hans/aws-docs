@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # PI
-<a name="recipe-actions.functions.PI"></a>
 
 Returns the value of pi (3.141592653589793) in a new column.
 

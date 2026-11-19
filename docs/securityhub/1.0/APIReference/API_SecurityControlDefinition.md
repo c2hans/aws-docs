@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Securit
 ---
 
 # SecurityControlDefinition
-<a name="API_SecurityControlDefinition"></a>
 
  Provides metadata for a security control, including its unique standard-agnostic identifier, title, description, severity, availability in AWS Regions, and a link to remediation steps.
 

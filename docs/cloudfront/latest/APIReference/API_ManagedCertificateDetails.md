@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Manag
 ---
 
 # ManagedCertificateDetails
-<a name="API_ManagedCertificateDetails"></a>
 
 Contains details about the CloudFront managed ACM certificate.
 

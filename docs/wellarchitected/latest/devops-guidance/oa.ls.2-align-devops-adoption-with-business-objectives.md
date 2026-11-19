@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.LS.2] Align DevOps adoption with business objectives
-<a name="oa.ls.2-align-devops-adoption-with-business-objectives"></a>
 
  **Category:** FOUNDATIONAL
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListHost
 ---
 
 # ListHostedZones
-<a name="API_ListHostedZones"></a>
 
 Retrieves a list of the public and private hosted zones that are associated with the current AWS account. The response includes a `HostedZones` child element for each hosted zone.
 

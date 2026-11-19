@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/ams-wai
 ---
 
 # cpu
-<a name="ams-waits.cpu"></a>
 
 The `cpu` wait event occurs when a thread is active in CPU or is waiting for CPU.
 

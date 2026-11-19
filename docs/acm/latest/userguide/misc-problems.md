@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/misc-problems.html
 ---
 
 # Troubleshoot other problems
-<a name="misc-problems"></a>
 
 This section includes guidance for problems not related to issuing or validating ACM certificates.
 

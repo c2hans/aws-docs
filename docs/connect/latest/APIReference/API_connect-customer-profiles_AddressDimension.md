@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # AddressDimension
-<a name="API_connect-customer-profiles_AddressDimension"></a>
 
 Object that segments on Customer Profile's address object.
 

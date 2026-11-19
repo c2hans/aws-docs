@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Associa
 ---
 
 # AssociationStateDetails
-<a name="API_AssociationStateDetails"></a>
 
  Describes the state of an association between a route table and a subnet or gateway.
 

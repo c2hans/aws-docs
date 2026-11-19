@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Pos
 ---
 
 # Positioning
-<a name="API_Positioning"></a>
 
 The FPorts for the position information.
 

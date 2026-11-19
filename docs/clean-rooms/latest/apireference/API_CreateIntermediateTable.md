@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Crea
 ---
 
 # CreateIntermediateTable
-<a name="API_CreateIntermediateTable"></a>
 
 Creates an intermediate table in a membership. The intermediate table is owned by the member with the CAN\_QUERY ability. To populate the table with results, use `PopulateIntermediateTable`.
 

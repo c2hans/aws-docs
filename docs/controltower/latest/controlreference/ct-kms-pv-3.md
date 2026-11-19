@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ct-
 ---
 
 # [CT.KMS.PV.3] Require that an AWS KMS key is configured with the bypass policy lockout safety check enabled
-<a name="ct-kms-pv-3"></a>
 
 This control disallows bypassing the KMS key policy lockout safety check when creating a KMS key or updating its key policy.
 

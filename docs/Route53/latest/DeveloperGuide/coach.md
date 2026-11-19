@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/coach.html
 ---
 
 # .coach
-<a name="coach"></a>
 
 Used by anyone with an interest in coaching, such as sports professionals, lifestyle coaches, or corporate trainers.
 

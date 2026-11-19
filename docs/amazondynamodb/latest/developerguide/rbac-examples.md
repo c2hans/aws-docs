@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rba
 ---
 
 # DynamoDB resource-based policy examples
-<a name="rbac-examples"></a>
 
 When you specify an ARN in the `Resource` field of a resource-based policy, the policy takes effect only if the specified ARN matches the ARN of the DynamoDB resource to which it is attached.
 

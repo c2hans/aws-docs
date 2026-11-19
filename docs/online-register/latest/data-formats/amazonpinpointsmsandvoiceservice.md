@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Pinpoint SMS and Voice Service
-<a name="amazonpinpointsmsandvoiceservice"></a>
 
 Amazon Pinpoint SMS and Voice Service provides the following APIs for data retrieval.
 

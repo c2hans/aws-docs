@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/lambda-iam-auth.
 ---
 
 # Publishing from a NodeJS Lambda function with IAM auth using AppSyncJs
-<a name="lambda-iam-auth"></a>
 
 AWS AppSync Events allows you to create Event APIs to enable real-time capabilities in your applications. In this tutorial, you use AWS CDK to create your API and a Lambda function that publishes messages. You'll use IAM auth as the authorization mode to publish to your configured channel.
 

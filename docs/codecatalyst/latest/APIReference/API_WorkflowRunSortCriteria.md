@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Wor
 ---
 
 # WorkflowRunSortCriteria
-<a name="API_WorkflowRunSortCriteria"></a>
 
 Information used to sort workflow runs in the returned list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/agent-install-linux
 ---
 
 # Linux agent installation errors
-<a name="agent-install-linux-errors"></a>
 
 This topic covers errors that you might encounter during or after installing the AWS Elastic Disaster Recovery agent on Linux source servers. Each section describes an error message, its cause, and the resolution.
 

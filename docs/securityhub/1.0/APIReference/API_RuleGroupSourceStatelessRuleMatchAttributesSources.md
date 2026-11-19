@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_RuleGro
 ---
 
 # RuleGroupSourceStatelessRuleMatchAttributesSources
-<a name="API_RuleGroupSourceStatelessRuleMatchAttributesSources"></a>
 
 A source IP addresses and address range to inspect for.
 

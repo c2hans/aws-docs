@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/repostprivate/latest/APIReference/API_Sp
 ---
 
 # SpaceData
-<a name="API_SpaceData"></a>
 
 A structure that contains some information about a private re:Post in the account.
 

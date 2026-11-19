@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/con
 ---
 
 # Run a portable job locally and in a container
-<a name="containers-portable-job"></a>
 
 A portable job template defines the application command and arguments without selecting the runtime. The following example requires `bash`. It doesn't contain Docker commands, an image URI, or Amazon ECR authentication.
 

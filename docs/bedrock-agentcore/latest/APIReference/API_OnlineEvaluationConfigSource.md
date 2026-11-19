@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # OnlineEvaluationConfigSource
-<a name="API_OnlineEvaluationConfigSource"></a>
 
 A reference to an existing online evaluation configuration to use as the data source for batch evaluation.
 

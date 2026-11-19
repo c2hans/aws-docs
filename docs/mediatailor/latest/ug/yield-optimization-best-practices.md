@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/yield-optimization
 ---
 
 # Best practices
-<a name="yield-optimization-best-practices"></a>
 
 ## Template construction
 <a name="yield-optimization-best-practices-template"></a>

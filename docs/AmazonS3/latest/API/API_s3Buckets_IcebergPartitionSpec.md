@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Iceber
 ---
 
 # IcebergPartitionSpec
-<a name="API_s3Buckets_IcebergPartitionSpec"></a>
 
 Defines how data in an Iceberg table is partitioned. Partitioning helps optimize query performance by organizing data into separate files based on field values. Each partition field specifies a transform to apply to a source field.
 

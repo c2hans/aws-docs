@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-viewin
 ---
 
 # Viewing CEV details for Amazon RDS Custom for SQL Server
-<a name="custom-viewing-sqlserver"></a>
 
 You can view details about your CEV by using the AWS Management Console or the AWS CLI.
 

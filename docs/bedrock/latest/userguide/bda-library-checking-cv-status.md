@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-library-che
 ---
 
 # Checking Vocabulary Ingestion Job Status
-<a name="bda-library-checking-cv-status"></a>
 
 ```
 aws bedrock-data-automation get-data-automation-library-ingestion-job \

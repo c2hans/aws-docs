@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/api/API_PutKMSEncry
 Amazon Fraud Detector is no longer be open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker AI, AutoGluon, and AWS WAF.
 
 # PutKMSEncryptionKey
-<a name="API_PutKMSEncryptionKey"></a>
 
 Specifies the KMS key to be used to encrypt content in Amazon Fraud Detector.
 

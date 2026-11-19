@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/using-byoip
 ---
 
 # Use your BYOIP address with an accelerator in Global Accelerator
-<a name="using-byoip.create-accelerator"></a>
 
 After you complete the steps to add an address range with BYOIP, you can create an accelerator with your BYOIP IP addresses. If you brought one address range to AWS, you can assign one IP address to your accelerator. If you brought two address ranges, you can assign one IP address from each address range to your accelerator.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # GROUP BY for ANSI SQL
-<a name="chap-sql-server-aurora-mysql.sql.groupby"></a>
 
 This topic provides reference content comparing the GROUP BY functionality in Microsoft SQL Server 2019 and Amazon Aurora MySQL. It explores the similarities and differences in syntax, supported features, and aggregate functions between the two database systems.
 

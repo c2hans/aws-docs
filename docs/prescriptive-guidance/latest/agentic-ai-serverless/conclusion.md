@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 The convergence of serverless computing and generative AI is reshaping how modern applications are designed, delivered, and governed. AI is no longer confined to experimental use cases or isolated chat interfaces. Instead, it's becoming a foundational layer of enterprise systems, capable of reasoning, decision-making, and autonomous orchestration at scale.
 

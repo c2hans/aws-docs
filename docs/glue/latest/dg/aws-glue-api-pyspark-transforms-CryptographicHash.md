@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-pyspark-tran
 ---
 
 # CryptographicHash class
-<a name="aws-glue-api-pyspark-transforms-CryptographicHash"></a>
 
  The `CryptographicHash` transform applies an algorithm to hash values in the column.
 

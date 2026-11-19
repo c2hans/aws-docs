@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UpdateU
 ---
 
 # UpdateUserProfile
-<a name="API_UpdateUserProfile"></a>
 
 Updates the specified user profile in Amazon DataZone.
 

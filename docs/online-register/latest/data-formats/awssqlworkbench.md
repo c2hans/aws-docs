@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 ---
 
 # Data retrieval APIs for AWS SQL Workbench
-<a name="awssqlworkbench"></a>
 
 AWS SQL Workbench provides the following APIs for data retrieval.
 

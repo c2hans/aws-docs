@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/views-prereqs.h
 ---
 
 # Prerequisites for creating views
-<a name="views-prereqs"></a>
 + To create views in Data Catalog, you must register the underlying Amazon S3 data locations of the reference tables with Lake Formation. For details on registering data with Lake Formation, see [Adding an Amazon S3 location to your data lake](register-data-lake.md).
 + Only IAM roles can create Data Catalog views. Other IAM identities can't create Data Catalog views.
 + The IAM role that defines the view must have the following permissions:

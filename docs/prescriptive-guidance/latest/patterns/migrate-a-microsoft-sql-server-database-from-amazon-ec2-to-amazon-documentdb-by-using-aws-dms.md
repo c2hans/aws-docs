@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate a Microsoft SQL Server database from Amazon EC2 to Amazon DocumentDB by using AWS DMS
-<a name="migrate-a-microsoft-sql-server-database-from-amazon-ec2-to-amazon-documentdb-by-using-aws-dms"></a>
 
 *Umamaheswara Nooka, Amazon Web Services*
 

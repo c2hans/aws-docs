@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/operation-list-wavel
 ---
 
 # AWS Wavelength actions
-<a name="operation-list-wavelength"></a>
 
 The following API actions are available for AWS Wavelength. For more information, see the [AWS Wavelength documentation](https://docs.aws.amazon.com/).
 

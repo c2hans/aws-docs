@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BarCh
 ---
 
 # BarChartVisual
-<a name="API_BarChartVisual"></a>
 
 A bar chart.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/troubleshoot-delivery.html
 ---
 
 # Amazon SES Delivery problems
-<a name="troubleshoot-delivery"></a>
 
 After you make a successful request to Amazon SES, your message is often sent immediately. At other times, there might be a short delay. In any case, you can be assured that your email will be sent.
 

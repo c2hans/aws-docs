@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-gl
 ---
 
 # Overview
-<a name="overview"></a>
 
 ## Key facts
 <a name="key-facts"></a>

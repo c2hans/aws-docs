@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-plan-releas
 ---
 
 # Release notes
-<a name="training-plan-release-notes"></a>
 
 See the following release notes to track the latest updates for SageMaker training plans.
 

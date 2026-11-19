@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/api-refer
 ---
 
 # Launch an application in Connect Customer agent workspace
-<a name="api-reference-3P-apps-app-controller-launchapp"></a>
 
 Launch the application in the agent workspace for the given application ARN or name. It supports optional launch options to fine tune the launch behavior.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Validati
 ---
 
 # ValidationEnum
-<a name="API_ValidationEnum"></a>
 
 Defines enumeration validation for attribute values. Allows specifying a list of permitted values and whether custom values beyond the enumerated list are allowed.
 

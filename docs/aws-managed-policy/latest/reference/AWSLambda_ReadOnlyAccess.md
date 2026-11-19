@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLambda\_ReadOnlyAccess
-<a name="AWSLambda_ReadOnlyAccess"></a>
 
 **Description**: Grants read-only access to AWS Lambda service, AWS Lambda console features, and other related AWS services.
 

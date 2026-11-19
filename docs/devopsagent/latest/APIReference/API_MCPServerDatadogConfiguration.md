@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MCPS
 ---
 
 # MCPServerDatadogConfiguration
-<a name="API_MCPServerDatadogConfiguration"></a>
 
 Mixin for webhook update support.
 

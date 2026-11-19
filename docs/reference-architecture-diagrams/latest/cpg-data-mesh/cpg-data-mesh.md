@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Consumer Packaged Goods Data Mesh
-<a name="cpg-data-mesh"></a>
 
 Publication date: **May 11, 2021 ([Diagram history](#cpgmesh-history))**
 

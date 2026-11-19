@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRServerless::Application InitialCapacityConfigKeyValuePair
-<a name="aws-properties-emrserverless-application-initialcapacityconfigkeyvaluepair"></a>
 
 <a name="aws-properties-emrserverless-application-initialcapacityconfigkeyvaluepair-description"></a>The `InitialCapacityConfigKeyValuePair` property type specifies Property description not available. for an [AWS::EMRServerless::Application](aws-resource-emrserverless-application.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_A
 ---
 
 # AttributeFilter
-<a name="API_qapps_AttributeFilter"></a>
 
 The filter criteria used on responses based on document attributes or metadata fields.
 
@@ -12,7 +11,7 @@ The filter criteria used on responses based on document attributes or metadata f
 
  ** andAllFilters **   <a name="qbusiness-Type-qapps_AttributeFilter-andAllFilters"></a>
 Performs a logical `AND` operation on all supplied filters.
-Type: Array of [AttributeFilter](#API_qapps_AttributeFilter) objects
+Type: Array of [AttributeFilter](API_qapps_AttributeFilter.md) objects
 Required: No
 
  ** containsAll **   <a name="qbusiness-Type-qapps_AttributeFilter-containsAll"></a>
@@ -52,12 +51,12 @@ Required: No
 
  ** notFilter **   <a name="qbusiness-Type-qapps_AttributeFilter-notFilter"></a>
 Performs a logical `NOT` operation on all supplied filters.
-Type: [AttributeFilter](#API_qapps_AttributeFilter) object
+Type: [AttributeFilter](API_qapps_AttributeFilter.md) object
 Required: No
 
  ** orAllFilters **   <a name="qbusiness-Type-qapps_AttributeFilter-orAllFilters"></a>
  Performs a logical `OR` operation on all supplied filters.
-Type: Array of [AttributeFilter](#API_qapps_AttributeFilter) objects
+Type: Array of [AttributeFilter](API_qapps_AttributeFilter.md) objects
 Required: No
 
 ## See Also

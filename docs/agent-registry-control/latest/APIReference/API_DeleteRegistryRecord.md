@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # DeleteRegistryRecord
-<a name="API_DeleteRegistryRecord"></a>
 
 Deletes a registry record
 

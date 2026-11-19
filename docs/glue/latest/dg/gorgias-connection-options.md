@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gorgias-connection-option
 ---
 
 # Gorgias connection options
-<a name="gorgias-connection-options"></a>
 
 The following are connection options for Gorgias:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Gorgias object to read.

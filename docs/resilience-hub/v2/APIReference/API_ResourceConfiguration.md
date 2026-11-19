@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Resou
 ---
 
 # ResourceConfiguration
-<a name="API_ResourceConfiguration"></a>
 
 Resource configuration for an input source. Provide exactly one field.
 

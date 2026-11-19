@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # FlexMatch rule set examples
-<a name="match-examples"></a>
 
 FlexMatch rule sets can cover a variety of matchmaking scenarios. The following examples conform to the FlexMatch configuration structure and property expression language. Copy these rule sets in their entirety or choose components as needed.
 

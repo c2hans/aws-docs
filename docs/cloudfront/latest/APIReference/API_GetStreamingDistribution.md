@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetSt
 ---
 
 # GetStreamingDistribution
-<a name="API_GetStreamingDistribution"></a>
 
 Gets information about a specified RTMP distribution, including the distribution configuration.
 

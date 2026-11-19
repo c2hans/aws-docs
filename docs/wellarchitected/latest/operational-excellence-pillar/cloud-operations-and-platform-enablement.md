@@ -7,7 +7,6 @@ This whitepaper is for historical reference only and will be deprecated in the f
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Cloud operations and platform enablement (COPE)
-<a name="cloud-operations-and-platform-enablement"></a>
 
 This cloud operations and platform enablement (COPE) model seeks to establish a *you build it, you run it* methodology by supporting application teams to perform the engineering and operations activities for their workloads, adopting a DevOps culture.
 

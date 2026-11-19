@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Re
 ---
 
 # RecordingConfigurationSummary
-<a name="API_RecordingConfigurationSummary"></a>
 
 Summary information about a RecordingConfiguration.
 

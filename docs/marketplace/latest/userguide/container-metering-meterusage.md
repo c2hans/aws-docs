@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/container-m
 ---
 
 # Configuring custom metering for container products with AWS Marketplace Metering Service
-<a name="container-metering-meterusage"></a>
 
 **Note**
  For Amazon EKS deployments, your software must use [IAM roles for service accounts (IRSA)](https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html) to sign the API call for the [`MeterUsage`](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-metering_MeterUsage.html) API operation. Using [EKS Pod Identity](https://docs.aws.amazon.com/eks/latest/userguide/pod-identities.html), the node role, or long-term access keys are not supported.

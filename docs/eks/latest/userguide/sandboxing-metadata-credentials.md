@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/sandboxing-metadata
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Pod Identity and credentials
-<a name="sandboxing-metadata-credentials"></a>
 
 Pods running in a Nitro Sandbox cannot reach the parent instance’s network services directly. The sandbox provides local surrogates for instance metadata and Pod Identity credentials so that workloads behave the same as pods running on a standard node.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/use-cases-
 ---
 
 # Availability of IAM Identity Center use cases in the primary and additional Regions
-<a name="use-cases-across-regions"></a>
 
 | Feature | Regional availability |
 | --- | --- |

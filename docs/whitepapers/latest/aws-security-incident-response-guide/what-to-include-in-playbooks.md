@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # What to include in playbooks
-<a name="what-to-include-in-playbooks"></a>
 
  Playbooks should contain technical steps for a security analyst to complete in order to adequately investigate and respond to a potential security incident.
 

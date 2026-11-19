@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # QueryCondition
-<a name="API_amazon-q-connect_QueryCondition"></a>
 
 Information about how to query content.
 

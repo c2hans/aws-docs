@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListBudgets
-<a name="API_ListBudgets"></a>
 
 A list of budgets in a farm.
 

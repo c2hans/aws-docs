@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/jobs-term
 ---
 
 # Jobs terminology
-<a name="jobs-terminology"></a>
 
 This section provides essential definitions to understand core concepts within Amazon Location Service Jobs, such as job states, data formats, and processing features.
 

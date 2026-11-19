@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyBuildStep
-<a name="API_AutomatedReasoningPolicyBuildStep"></a>
 
 Represents a single step in the policy build process, containing context about what was being processed and any messages or results.
 

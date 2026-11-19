@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestT
 ---
 
 # TestTemplate
-<a name="API_TestTemplate"></a>
 
 A pre-configured, AWS recommended test that defines which resilience capability to validate, the fault actions it runs, and the parameters it accepts.
 

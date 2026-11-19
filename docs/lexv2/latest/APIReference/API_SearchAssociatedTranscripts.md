@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SearchAsso
 ---
 
 # SearchAssociatedTranscripts
-<a name="API_SearchAssociatedTranscripts"></a>
 
 Search for associated transcripts that meet the specified criteria.
 

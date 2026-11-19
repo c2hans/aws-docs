@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Single-account execution role
-<a name="next-gen-resilience-testing-iam-single-account"></a>
 
 For a single-account test, create one execution role with a trust policy that allows AWS FIS to assume it and a permissions policy for the test template that you use.
 

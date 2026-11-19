@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BatchGetRout
 ---
 
 # BatchGetRouterOutputError
-<a name="API_BatchGetRouterOutputError"></a>
 
 An error that occurred when retrieving multiple router outputs in the BatchGetRouterOutput operation, including the ARN, error code, and error message.
 

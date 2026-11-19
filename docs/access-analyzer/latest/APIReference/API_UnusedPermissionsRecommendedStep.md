@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # UnusedPermissionsRecommendedStep
-<a name="API_UnusedPermissionsRecommendedStep"></a>
 
 Contains information about the action to take for a policy in an unused permissions finding.
 

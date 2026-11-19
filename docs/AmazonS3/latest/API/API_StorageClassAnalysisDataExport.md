@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_StorageClassAnal
 ---
 
 # StorageClassAnalysisDataExport
-<a name="API_StorageClassAnalysisDataExport"></a>
 
 Container for data related to the storage class analysis for an Amazon S3 bucket for export.
 

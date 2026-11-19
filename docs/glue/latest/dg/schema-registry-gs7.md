@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/schema-registry-gs7.html
 ---
 
 # Deleting a schema or registry
-<a name="schema-registry-gs7"></a>
 
 Deleting a schema, a schema version, or a registry are permanent actions that cannot be undone.
 

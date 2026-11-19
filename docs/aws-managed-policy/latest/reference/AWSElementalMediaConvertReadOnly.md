@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElementalMediaConvertReadOnly
-<a name="AWSElementalMediaConvertReadOnly"></a>
 
 **Description**: Provides read only access to AWS Elemental MediaConvert via the AWS Management Console and SDK.
 

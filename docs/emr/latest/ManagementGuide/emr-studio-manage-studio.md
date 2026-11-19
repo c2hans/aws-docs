@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-ma
 ---
 
 # Monitor, update and delete Amazon EMR Studio resources
-<a name="emr-studio-manage-studio"></a>
 
 This section includes instructions to help you monitor, update, or delete an EMR Studio resource. For information about assigning users or updating user permissions, see [Assign and manage EMR Studio users](emr-studio-manage-users.md).
 

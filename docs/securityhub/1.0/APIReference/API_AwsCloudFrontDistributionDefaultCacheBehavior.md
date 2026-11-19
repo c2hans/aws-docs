@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsClou
 ---
 
 # AwsCloudFrontDistributionDefaultCacheBehavior
-<a name="API_AwsCloudFrontDistributionDefaultCacheBehavior"></a>
 
 Contains information about the default cache configuration for the CloudFront distribution.
 

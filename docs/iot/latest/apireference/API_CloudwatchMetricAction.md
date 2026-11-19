@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CloudwatchMe
 ---
 
 # CloudwatchMetricAction
-<a name="API_CloudwatchMetricAction"></a>
 
 Describes an action that captures a CloudWatch metric.
 

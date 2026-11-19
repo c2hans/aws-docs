@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ml-operatio
 ---
 
 # Planning for successful MLOps
-<a name="introduction"></a>
 
 *Bruno Klein, Amazon Web Services*
 

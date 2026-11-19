@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_Group.html
 ---
 
 # Group
-<a name="API_Group"></a>
 
 A resource group that contains AWS resources. You can assign resources to the group by associating either of the following elements with the group:
 +  [ResourceQuery](API_ResourceQuery.md) - Use a resource query to specify a set of tag keys and values. All resources in the same AWS Region and AWS account that have those keys with the same values are included in the group. You can add a resource query when you create the group, or later by using the [PutGroupConfiguration](API_PutGroupConfiguration.md) operation.

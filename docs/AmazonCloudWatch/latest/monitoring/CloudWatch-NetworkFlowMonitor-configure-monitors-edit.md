@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Edit a monitor in Network Flow Monitor
-<a name="CloudWatch-NetworkFlowMonitor-configure-monitors-edit"></a>
 
 You can edit a monitor at any time, to add or remove network flows.
 

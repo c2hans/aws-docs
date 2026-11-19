@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/verify-iid.html
 ---
 
 # Verify the instance identity document for an Amazon EC2 instance
-<a name="verify-iid"></a>
 
 If you intend to use the contents of the instance identity document for an important purpose, you should verify its contents and authenticity before using it.
 

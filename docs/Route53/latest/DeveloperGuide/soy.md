@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/soy.html
 ---
 
 # .soy
-<a name="soy"></a>
 
 Used for the digital needs of the US Hispanic market, for brands, publishers, and consumers.
 

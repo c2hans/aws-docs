@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENOPS02-BP02 Monitor foundation model metrics
-<a name="genops02-bp02"></a>
 
  It's critical to set up continuous monitoring and alerting for foundation models for performance, security, and cost-efficiency. This best practice offers a structured approach to monitor models that fosters rapid identification and resolution of issues like data drift, model degradation, and security threats. Adopting this practice enhances reliability, efficiency, and trust in your applications, driving better business outcomes and user satisfaction. It can also help you with regulatory compliance and optimizes resource utilization.
 

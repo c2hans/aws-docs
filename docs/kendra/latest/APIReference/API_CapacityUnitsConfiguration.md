@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_CapacityU
 ---
 
 # CapacityUnitsConfiguration
-<a name="API_CapacityUnitsConfiguration"></a>
 
 Specifies additional capacity units configured for your Enterprise Edition index. You can add and remove capacity units to fit your usage requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Dis
 ---
 
 # DisassociateWirelessGatewayFromThing
-<a name="API_DisassociateWirelessGatewayFromThing"></a>
 
 Disassociates a wireless gateway from its currently associated thing.
 

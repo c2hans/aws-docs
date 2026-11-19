@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Predefin
 ---
 
 # PredefinedAttributeConfiguration
-<a name="API_PredefinedAttributeConfiguration"></a>
 
 Custom metadata that is associated to predefined attributes to control behavior in upstream services, such as controlling how a predefined attribute should be displayed in the Connect Customer admin website.
 

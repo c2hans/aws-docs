@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # OptimizerStepConfig
-<a name="API_OptimizerStepConfig"></a>
 
 The configuration for an optimizer step that updates model weights using gradients accumulated from previous forward-backward passes.
 

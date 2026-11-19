@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Del
 ---
 
 # DeleteOriginEndpoint
-<a name="API_DeleteOriginEndpoint"></a>
 
 Origin endpoints can serve content until they're deleted. Delete the endpoint if it should no longer respond to playback requests. You must delete all endpoints from a channel before you can delete the channel.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Argentina
-<a name="nx-reg-short-ar"></a>
 
 To send messages that use a short code in Argentina, you must complete the Argentina short code registration.
 

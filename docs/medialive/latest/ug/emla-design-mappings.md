@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/emla-design-mappings
 ---
 
 # Designing mappings for node interfaces
-<a name="emla-design-mappings"></a>
 
 This section is intended for the video engineer who is responsible for designing the MediaLive Anywhere workflows.
 

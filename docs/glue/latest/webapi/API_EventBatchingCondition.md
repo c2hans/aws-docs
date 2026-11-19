@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_EventBatchingCond
 ---
 
 # EventBatchingCondition
-<a name="API_EventBatchingCondition"></a>
 
 Batch condition that must be met (specified number of events received or batch time window expired) before EventBridge event trigger fires.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TrafficD
 ---
 
 # TrafficDistributionGroup
-<a name="API_TrafficDistributionGroup"></a>
 
 Information about a traffic distribution group.
 

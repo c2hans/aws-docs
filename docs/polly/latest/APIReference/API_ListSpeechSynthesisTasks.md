@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_ListSpeech
 ---
 
 # ListSpeechSynthesisTasks
-<a name="API_ListSpeechSynthesisTasks"></a>
 
 Returns a list of SpeechSynthesisTask objects ordered by their creation date. This operation can filter the tasks by their status, for example, allowing users to list only tasks that are completed.
 

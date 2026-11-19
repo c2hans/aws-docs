@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # Example
-<a name="working-with-mpts-swap-allocation-example"></a>
 
 This request swaps the allocation\_message\_priority values of the MPTS with ID 3 and the MPTS with the ID 4.
 

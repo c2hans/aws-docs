@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/custom-idp-mfa
 ---
 
 # Using multiple authentication methods
-<a name="custom-idp-mfa"></a>
 
 The Transfer Family server controls the AND logic when you use multiple authentication methods. Transfer Family treats this as two separate requests to your custom identity provider: however, their effect is combined.
 

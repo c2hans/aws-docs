@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ChainedInvokeOptio
 ---
 
 # ChainedInvokeOptions
-<a name="API_ChainedInvokeOptions"></a>
 
 Configuration options for chained function invocations in durable executions, including retry settings and timeout configuration.
 

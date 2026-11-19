@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_DnsConfigChange
 ---
 
 # DnsConfigChange
-<a name="API_DnsConfigChange"></a>
 
 A complex type that contains information about changes to the Route 53 DNS records that AWS Cloud Map creates when you register an instance.
 

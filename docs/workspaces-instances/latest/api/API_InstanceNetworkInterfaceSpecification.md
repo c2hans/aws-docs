@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Inst
 ---
 
 # InstanceNetworkInterfaceSpecification
-<a name="API_InstanceNetworkInterfaceSpecification"></a>
 
 Defines network interface configuration for WorkSpace Instance.
 

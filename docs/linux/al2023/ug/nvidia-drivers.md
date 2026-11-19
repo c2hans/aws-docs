@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/nvidia-drivers.html
 ---
 
 # NVIDIA drivers
-<a name="nvidia-drivers"></a>
 
  Amazon Linux 2023 provides NVIDIA GPU drivers and CUDA Toolkit packages through a dedicated repository. AWS maintains this repository and provides security advisories through the [Amazon Linux Security Center (ALAS)](https://alas.aws.amazon.com).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateDataSource
-<a name="API_UpdateDataSource"></a>
 
 Updates a data source.
 

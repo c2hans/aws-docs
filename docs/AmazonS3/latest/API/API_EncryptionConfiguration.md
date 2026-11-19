@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_EncryptionConfig
 ---
 
 # EncryptionConfiguration
-<a name="API_EncryptionConfiguration"></a>
 
 Specifies encryption-related information for an Amazon S3 bucket that is a destination for replicated objects.
 

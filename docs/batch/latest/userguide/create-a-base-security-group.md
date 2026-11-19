@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/create-a-base-sec
 ---
 
 # Create a security group
-<a name="create-a-base-security-group"></a>
 
 Security groups act as a firewall for associated compute environment container instances, controlling both inbound and outbound traffic at the container instance level. A security group can be used only in the VPC for which it is created.
 

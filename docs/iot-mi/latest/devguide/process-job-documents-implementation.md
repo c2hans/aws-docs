@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/process-job-docum
 ---
 
 # Process job documents
-<a name="process-job-documents-implementation"></a>
 
 When you create an OTA task, the jobs handler runs the following steps on your device. When an update is available, it requests the job document over MQTT.
 

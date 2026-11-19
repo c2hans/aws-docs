@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Security controls for the development stage
-<a name="dev-security"></a>
 
 The development stage requires foundational security controls that establish essential protections without impeding the rapid iteration and experimentation that characterizes the PoC objectives. At this stage, security focuses on building secure practices into the development workflow while maintaining the agility needed for innovation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_OverrideActi
 ---
 
 # OverrideAction
-<a name="API_OverrideAction"></a>
 
 The action to use in the place of the action that results from the rule group evaluation. Set the override action to none to leave the result of the rule group alone. Set it to count to override the result to count only.
 

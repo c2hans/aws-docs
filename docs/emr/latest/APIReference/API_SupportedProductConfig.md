@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_SupportedPro
 ---
 
 # SupportedProductConfig
-<a name="API_SupportedProductConfig"></a>
 
 The list of supported product configurations that allow user-supplied arguments. Amazon EMR accepts these arguments and forwards them to the corresponding installation script as bootstrap action arguments.
 

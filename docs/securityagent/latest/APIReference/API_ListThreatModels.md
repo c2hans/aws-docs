@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListThreatModels
-<a name="API_ListThreatModels"></a>
 
 Returns a paginated list of threat model summaries for the specified agent space.
 

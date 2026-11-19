@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Count
 ---
 
 # Counters
-<a name="API_Counters"></a>
 
 Represents entity counters.
 

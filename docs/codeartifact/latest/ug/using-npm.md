@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/using-npm.html
 ---
 
 # Using CodeArtifact with npm
-<a name="using-npm"></a>
 
 These topics describe how to use npm, the Node.js package manager, with CodeArtifact.
 

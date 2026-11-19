@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-con
 ---
 
 # AWS Client VPN for Linux
-<a name="client-vpn-connect-linux"></a>
 
 These sections describe how to establish a VPN connection using the AWS provided client for Linux. For the latest updates and downloads, see the [AWS Client VPN for Linux release notes](client-vpn-connect-linux-release-notes.md).
 

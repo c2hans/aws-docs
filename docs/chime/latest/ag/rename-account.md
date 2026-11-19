@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ag/rename-account.html
 **End of support notice**: On February 20, 2026, AWS will end support for the Amazon Chime service. After February 20, 2026, you will no longer be able to access the Amazon Chime console or Amazon Chime application resources. For more information, visit the [blog post](https://aws.amazon.com/blogs/messaging-and-targeting/update-on-support-for-amazon-chime/). **Note:** This does not impact the availability of the [Amazon Chime SDK service](https://aws.amazon.com/chime/chime-sdk/).
 
 # Renaming your account
-<a name="rename-account"></a>
 
 The following steps explain how to rename the Amazon Chime team and enterprise accounts that you administer. The name you choose appears in the emails that invite users to join Amazon Chime.
 

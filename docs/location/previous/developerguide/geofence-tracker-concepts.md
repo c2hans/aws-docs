@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/geofenc
 ---
 
 # Learn about geofences and trackers in Amazon Location Service
-<a name="geofence-tracker-concepts"></a>
 
 This section provides and overview of the concepts of working with Amazon Location Service geofences and trackers. Geofences are polygon boundaries that you can use to be notified when devices or positions move in and out of the areas. Tracker resources are used to store and update positions for devices as they move.
 

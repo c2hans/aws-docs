@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/query-i
 ---
 
 # Querying Apache Iceberg and Parquet data directly in Aurora PostgreSQL
-<a name="query-iceberg-and-parquet-data"></a>
 
 Amazon Aurora PostgreSQL-Compatible Edition enables you to directly query Apache Iceberg and Parquet data in your data lake alongside your operational data in Aurora, using the same PostgreSQL endpoint, drivers, and SQL that your applications already use.
 

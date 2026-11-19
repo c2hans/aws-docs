@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # MemberSummary
-<a name="API_MemberSummary"></a>
 
 A summary of configuration properties for a member.
 

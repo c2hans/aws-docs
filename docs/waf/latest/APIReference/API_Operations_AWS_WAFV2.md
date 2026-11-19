@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Operations_A
 ---
 
 # AWS WAFV2
-<a name="API_Operations_AWS_WAFV2"></a>
 
 The following actions are supported by AWS WAFV2:
 +  [AssociateWebACL](API_AssociateWebACL.md)

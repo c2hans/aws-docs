@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLoc
 ---
 
 # DeleteLocalGatewayRoute
-<a name="API_DeleteLocalGatewayRoute"></a>
 
 Deletes the specified route from the specified local gateway route table.
 

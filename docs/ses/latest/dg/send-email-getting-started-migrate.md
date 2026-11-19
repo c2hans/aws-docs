@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-email-getting-started
 ---
 
 # Migrating to Amazon SES from another email-sending solution
-<a name="send-email-getting-started-migrate"></a>
 
 This topic provides an overview of the steps that you have to take if you want to move your email-sending solution to Amazon SES from a solution that's hosted on-premises, or from one hosted on an Amazon EC2 instance.
 

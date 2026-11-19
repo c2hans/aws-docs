@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/samples-oracle.htm
 ---
 
 # Creating a custom plugin with Oracle
-<a name="samples-oracle"></a>
 
 The following sample walks you through the steps to create a custom plugin using Oracle for Amazon MWAA and can be combined with other custom plugins and binaries in your plugins.zip file.
 

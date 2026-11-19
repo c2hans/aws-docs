@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/claude-platform/latest/userguide/doc-his
 ---
 
 # Document history
-<a name="doc-history"></a>
 
 The following table describes important changes to the *Claude Platform on AWS User Guide*.
 

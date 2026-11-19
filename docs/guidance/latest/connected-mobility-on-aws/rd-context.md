@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Context
-<a name="rd-context"></a>
 
 ## What ASAM SOVD standardises
 <a name="rd-what-sovd-standardises"></a>

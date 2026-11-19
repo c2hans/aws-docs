@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Database Query Metadata Service
-<a name="list_dbqms"></a>
 
 Database Query Metadata Service (service prefix: `dbqms`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/windows-optional
 ---
 
 # Add optional Windows Server components to Amazon EC2 Windows instances
-<a name="windows-optional-components"></a>
 
 To access and install the optional components, you must find the correct EBS snapshot for your version of Windows Server, create a volume from the snapshot, and attach the volume to your instance.
 

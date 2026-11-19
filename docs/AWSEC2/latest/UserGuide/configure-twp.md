@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-twp.ht
 ---
 
 # Configure your workload on Amazon EC2 for torn write prevention
-<a name="configure-twp"></a>
 
 Torn write prevention is enabled by default on [supported instance types with supported volumes](supported-block-sizes.md). You don't need to configure any additional settings to enable torn write prevention.
 

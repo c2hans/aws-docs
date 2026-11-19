@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/amplitude-experiment-read
 ---
 
 # Reading from Amplitude Experiment entities
-<a name="amplitude-experiment-reading-from-entities"></a>
 
 **Prerequisites**
 

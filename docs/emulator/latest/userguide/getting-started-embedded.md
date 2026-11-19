@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emulator/latest/userguide/getting-starte
 ---
 
 # Getting started with embedded mode
-<a name="getting-started-embedded"></a>
 
 Embedded mode runs the emulator in the same process as your tests. Each test gets its own emulator and its own data. This lets you run tests in parallel. Your code calls the emulator directly, not over the network. You don’t set an endpoint URL or a certificate.
 

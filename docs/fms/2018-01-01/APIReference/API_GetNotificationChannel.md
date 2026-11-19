@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_GetNotif
 ---
 
 # GetNotificationChannel
-<a name="API_GetNotificationChannel"></a>
 
 Information about the Amazon Simple Notification Service (SNS) topic that is used to record AWS Firewall Manager SNS logs.
 

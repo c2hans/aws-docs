@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # DoubleCriteriaCondition
-<a name="API_automation_DoubleCriteriaCondition"></a>
 
 Defines a condition for filtering based on double/floating-point numeric values with comparison operators.
 

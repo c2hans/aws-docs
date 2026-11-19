@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/furniture.
 ---
 
 # .furniture
-<a name="furniture"></a>
 
 Used by furniture makers and sellers and anyone affiliated with the furniture industry.
 

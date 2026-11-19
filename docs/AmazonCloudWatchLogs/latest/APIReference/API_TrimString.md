@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # TrimString
-<a name="API_TrimString"></a>
 
 Use this processor to remove leading and trailing whitespace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html
 ---
 
 # AWS Glossary
-<a name="glos-chap"></a>
 
  [Numbers and symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ)
 

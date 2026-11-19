@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateStorag
 ---
 
 # UpdateStorageVirtualMachine
-<a name="API_UpdateStorageVirtualMachine"></a>
 
 Updates an FSx for ONTAP storage virtual machine (SVM).
 

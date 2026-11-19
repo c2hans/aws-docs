@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/3d-lut-use.html
 ---
 
 # Configuring a job with 3D LUTs
-<a name="3d-lut-use"></a>
 
 MediaConvert only applies color space conversions with your 3D LUTs to sets of inputs and outputs that match the settings that you specify. You can apply custom color mapping to some of your outputs, and apply default color mapping to others.
 

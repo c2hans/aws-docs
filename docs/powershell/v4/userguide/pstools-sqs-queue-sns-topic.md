@@ -7,7 +7,6 @@ AWS Tools for PowerShell V4 has reached end of support.
 We recommend that you migrate to [AWS Tools for PowerShell V5](https://docs.aws.amazon.com/powershell/v5/userguide/). For additional details and information on how to migrate, please refer to our [end of support announcement](https://aws.amazon.com/blogs/developer/aws-tools-for-powershell-v4-end-of-support-announcement/).
 
 # Amazon SQS, Amazon SNS and Tools for Windows PowerShell
-<a name="pstools-sqs-queue-sns-topic"></a>
 
 This section provides examples that show how to:
 + Create an Amazon SQS queue and get queue ARN (Amazon Resource Name).

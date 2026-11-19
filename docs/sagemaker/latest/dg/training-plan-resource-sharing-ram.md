@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-plan-resour
 ---
 
 # Setting up cross-account sharing for SageMaker training plans
-<a name="training-plan-resource-sharing-ram"></a>
 
 Amazon SageMaker AI integrates with AWS Resource Access Manager (AWS RAM) so that you can share a training plan that you own with other AWS accounts in your organization in AWS Organizations. Workloads in those accounts can then run on the plan's reserved capacity. With AWS RAM, you share resources that you own by creating a *resource share*. In a resource share, you specify the resources to share and the consumers with whom to share them. For training plans, consumers can be AWS accounts in your organization, organizational units (OUs), or your entire organization.
 

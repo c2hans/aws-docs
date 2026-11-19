@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/get-celebrity-info
 ---
 
 # Getting information about a celebrity
-<a name="get-celebrity-info-procedure"></a>
 
 In these procedures, you get celebrity information by using the [getCelebrityInfo](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetCelebrityInfo.html) API operation. The celebrity is identified by using the celebrity ID that's returned from a previous call to [RecognizeCelebrities](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_RecognizeCelebrities.html).
 

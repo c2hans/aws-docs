@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/enable-lifecycle-managemen
 ---
 
 # Configuring lifecycle policies
-<a name="enable-lifecycle-management"></a>
 
 When you create an EFS file system that has the recommended settings using the AWS Management Console, the file system is automatically configured with the following default lifecycle configuration:
 + **Transition into IA** is set to **30 days since last access**.

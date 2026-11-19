@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::GlobalTable ContributorInsightsSpecification
-<a name="aws-properties-dynamodb-globaltable-contributorinsightsspecification"></a>
 
 Configures contributor insights settings for a replica or one of its indexes.
 

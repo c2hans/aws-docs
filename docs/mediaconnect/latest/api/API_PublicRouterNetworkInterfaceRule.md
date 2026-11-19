@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_PublicRouter
 ---
 
 # PublicRouterNetworkInterfaceRule
-<a name="API_PublicRouterNetworkInterfaceRule"></a>
 
 A rule that allows a specific CIDR block to access the public router network interface.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TextGe
 ---
 
 # TextGenerationJobConfig
-<a name="API_TextGenerationJobConfig"></a>
 
 The collection of settings used by an AutoML job V2 for the text generation problem type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/managing-ip-space-ipam.h
 ---
 
 # Managing IP address space in IPAM
-<a name="managing-ip-space-ipam"></a>
 
 The tasks in this section are optional. Note that this section is a grouping of procedures all related to working with IPAM. The procedures are ordered alphabetically.
 

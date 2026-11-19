@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DescribeSour
 ---
 
 # DescribeSourceServers
-<a name="API_DescribeSourceServers"></a>
 
 Lists all Source Servers or multiple Source Servers filtered by ID.
 

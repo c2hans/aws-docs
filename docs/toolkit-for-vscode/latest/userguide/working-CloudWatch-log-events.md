@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/work
 ---
 
 # Working with CloudWatch log events in log streams by using the AWS Toolkit for Visual Studio Code
-<a name="working-CloudWatch-log-events"></a>
 
 After you've opened the **Log Steam** editor, you can access the log events in each stream. Log events are records of activity recorded by the application or resource being monitored.
 

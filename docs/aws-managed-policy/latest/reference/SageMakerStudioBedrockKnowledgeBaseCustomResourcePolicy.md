@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Sage
 ---
 
 # SageMakerStudioBedrockKnowledgeBaseCustomResourcePolicy
-<a name="SageMakerStudioBedrockKnowledgeBaseCustomResourcePolicy"></a>
 
 **Description**: Provides access to configure vector stores and Amazon Bedrock knowledge bases in SageMaker Studio.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/example-sns-fork-use-case.
 ---
 
 # AWS Event Fork Pipelines use case example
-<a name="example-sns-fork-use-case"></a>
 
 The following scenario describes an event-driven, serverless e-commerce application that uses AWS Event Fork Pipelines. You can use this [example e-commerce application](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:077246666028:applications~fork-example-ecommerce-checkout-api) in the AWS Serverless Application Repository and then deploy it in your AWS account using the AWS Lambda console, where you can test it and examine its source code in GitHub.
 

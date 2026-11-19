@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-alertman
 ---
 
 # Upload your alert manager configuration file to Amazon Managed Service for Prometheus
-<a name="AMP-alertmanager-upload"></a>
 
 Once you know what you want in your Alert manager configuration file, you can create and edit it within the console, or you can upload an existing file with the Amazon Managed Service for Prometheus console or AWS CLI.
 

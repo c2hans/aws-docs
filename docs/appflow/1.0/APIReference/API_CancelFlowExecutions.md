@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_CancelFlowE
 ---
 
 # CancelFlowExecutions
-<a name="API_CancelFlowExecutions"></a>
 
 Cancels active runs for a flow.
 

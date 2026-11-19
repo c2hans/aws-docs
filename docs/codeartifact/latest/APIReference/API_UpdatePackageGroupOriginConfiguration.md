@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Upd
 ---
 
 # UpdatePackageGroupOriginConfiguration
-<a name="API_UpdatePackageGroupOriginConfiguration"></a>
 
 Updates the package origin configuration for a package group.
 

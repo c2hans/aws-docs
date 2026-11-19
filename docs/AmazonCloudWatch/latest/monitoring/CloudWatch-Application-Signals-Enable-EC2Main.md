@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Enable your applications on Amazon EC2
-<a name="CloudWatch-Application-Signals-Enable-EC2Main"></a>
 
 Enable CloudWatch Application Signals on Amazon EC2 by using the custom setup steps described in this section.
 

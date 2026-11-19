@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Delet
 ---
 
 # DeleteScraperLoggingConfiguration
-<a name="API_DeleteScraperLoggingConfiguration"></a>
 
 Deletes the logging configuration for a Amazon Managed Service for Prometheus scraper.
 

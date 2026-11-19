@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/documen
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Documentation and infrastructure
-<a name="documentation-and-infrastructure"></a>
 
  When running a WAFR, you may find that for many of the best practices you are following, you will have a documented process, standard operating procedure (SOP), runbook, or playbook. During the WAFR, record information and context in the notes field within the Well-Architected Tool (WA Tool). You can save time during the review by gathering all relevant documentation artifacts that relate to the workload in advance.
 

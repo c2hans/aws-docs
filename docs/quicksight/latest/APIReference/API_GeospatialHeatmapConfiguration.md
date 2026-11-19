@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialHeatmapConfiguration
-<a name="API_GeospatialHeatmapConfiguration"></a>
 
 The heatmap configuration of the geospatial point style.
 

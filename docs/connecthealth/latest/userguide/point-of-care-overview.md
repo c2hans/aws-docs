@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/point-of-
 ---
 
 # Point of care agents
-<a name="point-of-care-overview"></a>
 
 Amazon Connect Health point of care features are AI-powered capabilities that streamline administrative workflows in outpatient clinical settings. Point of care agentic capabilities combine speech recognition, generative AI, and reasoning to reduce documentation burden for clinicians and back-office staff.
 

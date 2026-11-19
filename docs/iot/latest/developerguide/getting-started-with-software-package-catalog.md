@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/getting-starte
 ---
 
 # Getting started with Software Package Catalog
-<a name="getting-started-with-software-package-catalog"></a>
 
 You can build and maintain the AWS IoT Device Management Software Package Catalog through the AWS Management Console, AWS IoT Core API operations, and AWS Command Line Interface (AWS CLI).
 

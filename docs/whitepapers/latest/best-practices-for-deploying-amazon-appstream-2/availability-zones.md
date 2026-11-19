@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Availability Zones
-<a name="availability-zones"></a>
 
  An [*Availability Zone*](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) (AZ) is one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region. Availability Zones are more highly available, fault tolerant, and scalable than traditional single or multiple data center infrastructures.
 

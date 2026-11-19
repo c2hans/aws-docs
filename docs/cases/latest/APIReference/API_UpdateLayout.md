@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_UpdateLayo
 ---
 
 # UpdateLayout
-<a name="API_connect-cases_UpdateLayout"></a>
 
 Updates the attributes of an existing layout.
 

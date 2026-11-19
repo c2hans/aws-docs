@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/administrator
 ---
 
 # Administrator documentation
-<a name="administrator-documentation"></a>
 
 The following topics contain information to help users who are managing third-party service connections and access, users, and roles in App Studio.
 

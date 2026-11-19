@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/viewing-monito
 ---
 
 # View monitoring graphs in the Amazon EC2 Auto Scaling console
-<a name="viewing-monitoring-graphs"></a>
 
 In the Amazon EC2 Auto Scaling section of the Amazon EC2 console, you can monitor minute-by-minute progress of individual Auto Scaling groups using CloudWatch metrics.
 

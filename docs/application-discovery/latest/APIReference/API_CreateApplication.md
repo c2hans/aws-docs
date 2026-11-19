@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/application-discovery/latest/APIReferenc
 ---
 
 # CreateApplication
-<a name="API_CreateApplication"></a>
 
 **Important**
  AWS Application Discovery Service is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Application Discovery Service availability change](https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html).

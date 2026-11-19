@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-az
 ---
 
 # Remediating exposures for Azure Storage blob containers
-<a name="exposure-azure-storage-blob-container"></a>
 
 AWS Security Hub can generate exposure findings for Azure Storage blob containers.
 

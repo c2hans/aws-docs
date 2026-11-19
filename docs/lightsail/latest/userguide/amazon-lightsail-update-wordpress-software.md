@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Update software on your WordPress instance
-<a name="amazon-lightsail-update-wordpress-software"></a>
 
 **Important**
 This tutorial applies to instances that use the **WordPress** blueprint. If your instance uses **WordPress packaged by Bitnami**, see the [Bitnami WordPress documentation](https://docs.bitnami.com/general/apps/wordpress/administration/upgrade/) instead. Instances that use WordPress packaged by Bitnami store WordPress in a different location (`/opt/bitnami`) and use different service management tools.

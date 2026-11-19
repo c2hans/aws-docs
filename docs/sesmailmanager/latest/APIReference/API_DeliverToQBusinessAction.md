@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_D
 ---
 
 # DeliverToQBusinessAction
-<a name="API_DeliverToQBusinessAction"></a>
 
 The action to deliver incoming emails to an Amazon Q Business application for indexing.
 

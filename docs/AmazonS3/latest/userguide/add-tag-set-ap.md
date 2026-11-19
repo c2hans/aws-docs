@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/add-tag-set-ap
 ---
 
 # Add a tag-set through an access point for a general purpose bucket
-<a name="add-tag-set-ap"></a>
 
 This section explains how to add a tag-set through an access point for a general purpose bucket using the AWS Management Console, AWS Command Line Interface, or REST API. For more information, see [Tagging your objects](object-tagging.md).
 

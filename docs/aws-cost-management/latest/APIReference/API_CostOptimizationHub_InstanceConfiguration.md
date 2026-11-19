@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # InstanceConfiguration
-<a name="API_CostOptimizationHub_InstanceConfiguration"></a>
 
 The instance configuration used for recommendations.
 

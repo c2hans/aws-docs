@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DimensionValuesWithAttributes
-<a name="API_DimensionValuesWithAttributes"></a>
 
 The metadata of a specific type that you can use to filter and group your results. You can use `GetDimensionValues` to find specific values.
 

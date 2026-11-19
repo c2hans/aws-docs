@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceS
 ---
 
 # InstanceStateChange
-<a name="API_InstanceStateChange"></a>
 
 Describes an instance state change.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/findi
 ---
 
 # Search for available metrics
-<a name="finding_metrics_with_cloudwatch"></a>
 
 You can search within all of the metrics in your account using targeted search terms. Metrics are returned that have matching results within their namespace, metric name, or dimensions.
 

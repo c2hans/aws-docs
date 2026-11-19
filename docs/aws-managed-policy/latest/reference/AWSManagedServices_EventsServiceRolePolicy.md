@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSManagedServices\_EventsServiceRolePolicy
-<a name="AWSManagedServices_EventsServiceRolePolicy"></a>
 
 **Description**: AWS Managed Services policy to enable AMS event processor feature.
 

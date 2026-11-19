@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # PreferencesDescription
-<a name="structures-PreferencesDescription"></a>
 
 Complex type specifying preferences configured on the client.
 

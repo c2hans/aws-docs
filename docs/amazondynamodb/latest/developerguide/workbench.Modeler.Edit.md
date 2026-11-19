@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/wor
 ---
 
 # Editing an existing data model
-<a name="workbench.Modeler.Edit"></a>
 
 **To edit an existing model**
 

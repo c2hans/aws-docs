@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AllowedE
 ---
 
 # AllowedExtension
-<a name="API_AllowedExtension"></a>
 
 Information about an allowed file extension.
 

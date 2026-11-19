@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # PutReportDefinition
-<a name="API_cur_PutReportDefinition"></a>
 
 Creates a new report using the description that you provide.
 

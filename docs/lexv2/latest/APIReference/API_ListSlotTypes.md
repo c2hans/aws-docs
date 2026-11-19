@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListSlotTy
 ---
 
 # ListSlotTypes
-<a name="API_ListSlotTypes"></a>
 
 Gets a list of slot types that match the specified criteria.
 

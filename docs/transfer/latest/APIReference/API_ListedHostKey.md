@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListedH
 ---
 
 # ListedHostKey
-<a name="API_ListedHostKey"></a>
 
 Returns properties of the host key that's specified.
 

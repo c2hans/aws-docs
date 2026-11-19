@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/object-ids
 ---
 
 # Set up AWS IoT SiteWise object IDs
-<a name="object-ids"></a>
 
  AWS IoT SiteWise defines various types of persistent objects, such as assets, asset models, properties, and hierarchies. All such objects have unique identifiers that you can use to retrieve, update, and delete them.
 

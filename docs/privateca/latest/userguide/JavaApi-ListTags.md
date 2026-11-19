@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-ListT
 ---
 
 # ListTags
-<a name="JavaApi-ListTags"></a>
 
 The following Java sample shows how to use the [ListTags](https://docs.aws.amazon.com/privateca/latest/APIReference/API_ListTags.html) operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_LifeCycleLas
 ---
 
 # LifeCycleLastCutover
-<a name="API_LifeCycleLastCutover"></a>
 
 Lifecycle last Cutover .
 

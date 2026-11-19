@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # TokenIdentifier
-<a name="API_TokenIdentifier"></a>
 
 The container for the identifier for the token including the unique token ID and its blockchain network.
 

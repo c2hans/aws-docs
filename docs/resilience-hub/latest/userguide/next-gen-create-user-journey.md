@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Create a user journey
-<a name="next-gen-create-user-journey"></a>
 
 **To create a user journey (console)**
 

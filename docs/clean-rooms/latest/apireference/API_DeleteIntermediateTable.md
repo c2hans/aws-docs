@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Dele
 ---
 
 # DeleteIntermediateTable
-<a name="API_DeleteIntermediateTable"></a>
 
 Deletes an intermediate table. The delete is idempotent. Only the intermediate table owner can call this operation.
 

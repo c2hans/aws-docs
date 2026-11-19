@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/on-demand-cap
 ---
 
 # Use capacity reservations with instance fleets in Amazon EMR
-<a name="on-demand-capacity-reservations"></a>
 
 To launch On-Demand Instance fleets with capacity reservations options, attach additional service role permissions which are required to use capacity reservation options. Since capacity reservation options must be used together with On-Demand allocation strategy, you also have to include the permissions required for allocation strategy in your service role and managed policy. For more information, see [Allocation strategy permissions](emr-instance-fleet.md#create-cluster-allocation-policy).
 

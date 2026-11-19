@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # GrantItem
-<a name="API_marketplace-agreements_GrantItem"></a>
 
 Entitlements granted to the acceptor of fixed upfront as part of agreement execution.
 

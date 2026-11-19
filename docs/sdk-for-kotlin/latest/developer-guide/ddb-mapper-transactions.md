@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 ---
 
 # Perform transactional operations
-<a name="ddb-mapper-transactions"></a>
 
 Transactional operations group multiple reads or multiple writes into a single **all-or-nothing** unit across one or more tables. Like batch operations, they’re invoked on the **mapper**:
 +  [`transactGetItems`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html): atomically read items.

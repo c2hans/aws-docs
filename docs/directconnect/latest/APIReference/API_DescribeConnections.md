@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DescribeConnections
-<a name="API_DescribeConnections"></a>
 
 Displays the specified connection or all connections in this Region.
 

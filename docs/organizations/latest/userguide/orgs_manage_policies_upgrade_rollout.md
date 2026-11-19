@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Upgrade rollout policies
-<a name="orgs_manage_policies_upgrade_rollout"></a>
 
 AWS Organizations upgrade rollout policies allow you to centrally manage and stagger automatic upgrades across multiple AWS resources and accounts in your organization. With these policies, you can define the order in which resources receive upgrades, ensuring changes are validated in less critical environments before reaching production.
 

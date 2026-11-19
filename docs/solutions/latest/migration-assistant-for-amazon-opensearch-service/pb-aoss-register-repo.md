@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 5: Register the snapshot repository on the source
-<a name="pb-aoss-register-repo"></a>
 
 RFS reads from a snapshot that lives in an Amazon S3 repository registered on the source domain. Register the repository directly through the source domain’s API from the Migration Console pod. The following uses the Amazon S3 plugin repository type and points at the migration bucket:
 

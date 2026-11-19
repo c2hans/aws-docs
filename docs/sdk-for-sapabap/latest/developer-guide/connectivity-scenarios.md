@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/c
 ---
 
 # Advanced connectivity scenarios
-<a name="connectivity-scenarios"></a>
 
 AWS SDK for SAP ABAP consumes AWS services by making HTTPS calls to AWS endpoints. In general, AWS endpoints are accessible over the internet. An SAP system must be able to reach out to the internet to establish these outbound connections. SDK for SAP ABAP never requires an inbound connection from the internet into the SAP system.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableVPCFlowLogsToS3Bucket`
-<a name="automation-aws-enable-flow-logs-s3"></a>
 
  **Description**
 

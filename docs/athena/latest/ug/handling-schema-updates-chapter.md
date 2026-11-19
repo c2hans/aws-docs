@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/handling-schema-updates
 ---
 
 # Handle schema updates
-<a name="handling-schema-updates-chapter"></a>
 
 This section provides guidance on handling schema updates for various data formats. Athena is a schema-on-read query engine. This means that when you create a table in Athena, it applies schemas when reading the data. It does not change or rewrite the underlying data.
 

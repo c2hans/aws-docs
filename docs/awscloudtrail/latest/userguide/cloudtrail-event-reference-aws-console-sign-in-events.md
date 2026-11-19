@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # AWS Management Console sign-in events
-<a name="cloudtrail-event-reference-aws-console-sign-in-events"></a>
 
 CloudTrail logs attempts to sign in to the AWS Management Console, the AWS Discussion Forums, and the AWS Support Center. All IAM user and root user sign-in events, as well as all federated user sign-in events, generate records in CloudTrail log files. For information about finding and viewing logs, see [Finding your CloudTrail log files](get-and-view-cloudtrail-log-files.md#cloudtrail-find-log-files) and [Downloading your CloudTrail log files](cloudtrail-read-log-files.md).
 

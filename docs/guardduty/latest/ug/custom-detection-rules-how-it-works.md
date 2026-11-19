@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/custom-detection-rul
 ---
 
 # How Custom Detection Rules work
-<a name="custom-detection-rules-how-it-works"></a>
 
 Begin by browsing the rules that GuardDuty offers to identify the ones that detect activity relevant to your environment. Then associate each rule with the accounts where the activity is unexpected. For more information about associating rules with accounts, see [Managing Custom Detection Rules](custom-detection-rules-managing.md).
 

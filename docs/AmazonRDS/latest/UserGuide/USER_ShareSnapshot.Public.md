@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ShareSna
 ---
 
 # Sharing public snapshots for Amazon RDS
-<a name="USER_ShareSnapshot.Public"></a>
 
 You can share an unencrypted manual snapshot as public, which makes the snapshot available to all AWS accounts. Make sure when sharing a snapshot as public that none of your private information is included in the public snapshot.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # AtlassianOauth2ProviderConfigOutput
-<a name="API_AtlassianOauth2ProviderConfigOutput"></a>
 
 The configuration details returned for an Atlassian OAuth2 provider, including the client ID and OAuth2 discovery information.
 

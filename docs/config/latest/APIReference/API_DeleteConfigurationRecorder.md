@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteCon
 ---
 
 # DeleteConfigurationRecorder
-<a name="API_DeleteConfigurationRecorder"></a>
 
 Deletes the customer managed configuration recorder.
 

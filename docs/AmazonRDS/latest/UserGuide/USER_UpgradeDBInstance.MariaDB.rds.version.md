@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeD
 ---
 
 # RDS version numbers in RDS for MariaDB
-<a name="USER_UpgradeDBInstance.MariaDB.rds.version"></a>
 
 RDS version numbers use either the `{{major}}.{{minor}}.{{patch}}` or the `{{major}}.{{minor}}.{{patch.YYYYMMDD}}` naming scheme. An RDS patch version includes important bug fixes added to a minor version after its release. An RDS date version ({{YYMMDD}}) is a security patch. A security patch doesn't include any fixes that might change the engine's behavior.
 

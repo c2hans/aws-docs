@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/create-vpc-endoin
 ---
 
 # Create a VPC endpoint policy for CodeArtifact
-<a name="create-vpc-endoint-policy"></a>
 
  To create a VPC endpoint policy for CodeArtifact, specify the following:
 +  The principal that can perform actions.

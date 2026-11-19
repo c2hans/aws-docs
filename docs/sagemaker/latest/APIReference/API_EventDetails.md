@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_EventD
 ---
 
 # EventDetails
-<a name="API_EventDetails"></a>
 
 Detailed information about a specific event, including event metadata.
 

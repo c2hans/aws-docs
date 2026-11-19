@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnContactEvaluat
 ---
 
 # OnContactEvaluationSubmit
-<a name="OnContactEvaluationSubmit"></a>
 
 ## Agent Hierarchy
 <a name="agent-hierarchy-contact"></a>

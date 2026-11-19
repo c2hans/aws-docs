@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQL
 ---
 
 # Differences between a relational (SQL) database and DynamoDB when writing data to a table
-<a name="SQLtoNoSQL.WriteData"></a>
 
 Relational database tables contain *rows* of data. Rows are composed of *columns*. Amazon DynamoDB tables contain *items*. Items are composed of *attributes*.
 

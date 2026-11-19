@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Deploy the guidance
-<a name="deploy-the-solution"></a>
 
 This solution uses [AWS Cloud Development Kit (AWS CDK)](https://aws.amazon.com/cdk/) for infrastructure as code deployment. The CDK application synthesizes AWS CloudFormation templates and deploys them through a phase-based approach that ensures proper dependency management.
 

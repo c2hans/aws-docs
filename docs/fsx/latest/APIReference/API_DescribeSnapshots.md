@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeSnap
 ---
 
 # DescribeSnapshots
-<a name="API_DescribeSnapshots"></a>
 
 Returns the description of specific Amazon FSx for OpenZFS snapshots, if a `SnapshotIds` value is provided. Otherwise, this operation returns all snapshots owned by your AWS account in the AWS Region of the endpoint that you're calling.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSISUS04: How do you prioritize business critical functions over non-critical functions?
-<a name="fsisus04"></a>
 
  Determine what is defined as a business-critical process and workload, and protect and prioritize it. Model and prioritize individual functions and workloads by recording relevant metadata, such as interdependencies, SLAs for particular flows, and nuances of user access.
 

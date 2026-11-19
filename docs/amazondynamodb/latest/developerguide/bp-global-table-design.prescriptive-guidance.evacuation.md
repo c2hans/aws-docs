@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-
 ---
 
 # Evacuation processes
-<a name="bp-global-table-design.prescriptive-guidance.evacuation"></a>
 
 Evacuating a Region is the process of migrating activity, usually read and write activity or read activity, away from that Region.
 

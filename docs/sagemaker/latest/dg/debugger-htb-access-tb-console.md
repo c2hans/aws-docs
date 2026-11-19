@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-htb-access-
 ---
 
 # Open TensorBoard through the SageMaker AI console
-<a name="debugger-htb-access-tb-console"></a>
 
 You can also use the SageMaker AI console UI to open the TensorBoard application. There are two options to open the TensorBoard application through the SageMaker AI console.
 

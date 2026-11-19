@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_CreateP
 ---
 
 # CreateProfilingGroup
-<a name="API_CreateProfilingGroup"></a>
 
 Creates a profiling group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/permissions-managed-pol
 ---
 
 # Working with AWS managed policies in the execution role
-<a name="permissions-managed-policies"></a>
 
 The following AWS managed policies provide permissions that are required to use Lambda features.
 

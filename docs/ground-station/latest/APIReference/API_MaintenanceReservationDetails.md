@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_M
 ---
 
 # MaintenanceReservationDetails
-<a name="API_MaintenanceReservationDetails"></a>
 
 Details of a maintenance reservation.
 

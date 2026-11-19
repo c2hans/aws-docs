@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # PaymentOutput
-<a name="API_PaymentOutput"></a>
 
 The payment output details, which vary by payment type.
 

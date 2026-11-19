@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pc-crea
 ---
 
 # Adding historical usage to your bill scenario
-<a name="pc-create-bill-scenario-historical-usage"></a>
 
 This section outlines how to add historical usage to your bill scenario.
 

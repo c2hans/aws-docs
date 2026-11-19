@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_
 ---
 
 # Controls for cross-partition identity federation
-<a name="id_roles_providers_outbound_cross_partition_controls"></a>
 
 Cross-partition identity federation involves three access decisions: who can request a token in the source account, which JWTs can be used to assume a role in the destination account, and what the resulting role session can access. [IAM](access_policies.md) and [AWS Organizations policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies.html) govern these decisions. This page explains where each policy applies and provides examples for controlling access at each stage.
 

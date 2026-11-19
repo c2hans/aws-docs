@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/go
 ---
 
 # AWS Encryption SDK for Go example code
-<a name="go-examples"></a>
 
 The following examples show the basic coding patterns that you use when programming with the AWS Encryption SDK for Go. Specifically, you instantiate the AWS Encryption SDK and the material providers library. Then, before calling each method, you instantiate the object that defines the input for the method.
 

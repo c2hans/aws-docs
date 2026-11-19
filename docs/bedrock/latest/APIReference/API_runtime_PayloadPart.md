@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # PayloadPart
-<a name="API_runtime_PayloadPart"></a>
 
 Payload content included in the response.
 

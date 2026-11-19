@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 ---
 
 # Updating a FHIR resource
-<a name="managing-fhir-resources-update"></a>
 
 The FHIR `update` interaction creates a new current version for an existing resource or creates an initial version if no resource already exists for the given `id`. For additional information, see [`update`](https://hl7.org/fhir/R4/http.html#update) in the **FHIR R4 RESTful API documentation**.
 

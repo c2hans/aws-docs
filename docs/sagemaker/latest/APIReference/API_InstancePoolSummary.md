@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Instan
 ---
 
 # InstancePoolSummary
-<a name="API_InstancePoolSummary"></a>
 
 A summary of an instance pool for a production variant, including the instance type and the current number of instances.
 

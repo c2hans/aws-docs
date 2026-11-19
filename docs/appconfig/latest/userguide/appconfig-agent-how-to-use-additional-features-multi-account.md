@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-age
 ---
 
 # Configuring AWS AppConfig Agent to retrieve configurations from multiple accounts
-<a name="appconfig-agent-how-to-use-additional-features-multi-account"></a>
 
 You can configure AWS AppConfig Agent to retrieve configurations from multiple AWS accounts by entering credential overrides in the AWS AppConfig Agent manifest. *Credential overrides* include the Amazon Resource Name (ARN) of an AWS Identity and Access Management (IAM) role, a role ID, a session name, and a duration for how long the agent can assume the role.
 

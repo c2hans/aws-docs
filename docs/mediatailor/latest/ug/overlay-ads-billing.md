@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/overlay-ads-billin
 ---
 
 # Billing for overlay ads in MediaTailor
-<a name="overlay-ads-billing"></a>
 
 MediaTailor bills customers based on the number of non-linear ads in the ADS response. This number includes non-linear ads that extend past the break duration. After MediaTailor fills the avail, it bills for the ads it filled.
 

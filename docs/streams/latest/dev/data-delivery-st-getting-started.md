@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-st-gett
 ---
 
 # Getting started with streaming tables
-<a name="data-delivery-st-getting-started"></a>
 
  This tutorial walks you through creating your first streaming table delivery to send records from an Amazon Kinesis Data Streams stream to a streaming table on Apache Iceberg, verifying it, and cleaning up.
 

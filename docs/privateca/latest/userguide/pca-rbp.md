@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/pca-rbp.html
 ---
 
 # Resource-based policies
-<a name="pca-rbp"></a>
 
 Resource-based policies are permissions policies that you create and manually attach to a resource (in this case, a private CA) rather than to a user identity or role. Or, instead of creating your own policies, you can use AWS managed policies for AWS Private CA. Using AWS RAM to apply a resource-based policy, an AWS Private CA administrator can share access to a CA with a user in a different AWS account directly or through AWS Organizations. Alternatively, an AWS Private CA administrator can use the PCA APIs [PutPolicy](https://docs.aws.amazon.com/privateca/latest/APIReference/API_PutPolicy.html), [GetPolicy](https://docs.aws.amazon.com/privateca/latest/APIReference/API_GetPolicy.html), and [DeletePolicy](https://docs.aws.amazon.com/privateca/latest/APIReference/API_DeletePolicy.html), or the corresponding AWS CLI commands [put-policy](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/put-policy.html), [get-policy](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/get-policy.html), and [delete-policy](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/delete-policy.html), to apply and manage resource-based policies.
 

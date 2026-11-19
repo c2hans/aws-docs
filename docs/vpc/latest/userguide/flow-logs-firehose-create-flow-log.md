@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-firehose-
 ---
 
 # Create a flow log that publishes to Amazon Data Firehose
-<a name="flow-logs-firehose-create-flow-log"></a>
 
 You can create flow logs for your VPCs, subnets, or network interfaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/reachability/manage-delegated
 ---
 
 # Manage delegated administrator accounts in Reachability Analyzer
-<a name="manage-delegated-administrators"></a>
 
 You can register up to 5 delegated administrator accounts in Reachability Analyzer. If you deregister a delegated administrator account, the users in the account can't run a new cross-account analysis, but they can still see the previously run analyses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-
 ---
 
 # Monitor the solution with Service Catalog AppRegistry
-<a name="monitor-the-solution-with-service-catalog-appregistry"></a>
 
  The solution includes a Service Catalog AppRegistry resource to register the CloudFormation template and underlying resources as an application in both Service Catalog AppRegistry and AWS Systems Manager Application Manager.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fl
 ---
 
 # FlowVersionSummary
-<a name="API_agent_FlowVersionSummary"></a>
 
 Contains information about a version of a flow.
 

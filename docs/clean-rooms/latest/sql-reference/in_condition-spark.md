@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/in_cond
 ---
 
 # IN condition
-<a name="in_condition-spark"></a>
 
 An IN condition tests a value for membership in a set of values or in a subquery.
 

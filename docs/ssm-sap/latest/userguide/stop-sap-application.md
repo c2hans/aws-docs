@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/stop-sap-applic
 ---
 
 # Stop SAP application
-<a name="stop-sap-application"></a>
 
 You can perform a stop operation on a single node or HA (high availability) SAP HANA application or on a single node or distrubuted setup of SAP ABAP application that has been registered with AWS Systems Manager for SAP.
 

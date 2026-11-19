@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/maxOver-function.
 ---
 
 # maxOver
-<a name="maxOver-function"></a>
 
 The `maxOver` function calculates the maximum of a measure or date partitioned by a list of dimensions.
 

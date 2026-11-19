@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloud
 ---
 
 # SQL inference
-<a name="cloudwatch-metrics-insights-inference"></a>
 
 CloudWatch Metrics Insights uses several mechanisms to infer the intention of a given SQL query.
 

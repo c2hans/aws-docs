@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListCrede
 ---
 
 # ListCredentialLockers
-<a name="API_ListCredentialLockers"></a>
 
 List information on an existing credential locker.
 

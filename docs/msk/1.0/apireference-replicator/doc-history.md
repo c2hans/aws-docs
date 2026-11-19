@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference-replicator/doc-hist
 ---
 
 # Document History
-<a name="doc-history"></a>
 
 The following table describes the documentation for this release of ServiceName.
 + **API version: 1.0**

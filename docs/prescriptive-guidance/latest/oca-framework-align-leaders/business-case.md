@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 2.5 Business case for change
-<a name="business-case"></a>
 
 ## Overview
 <a name="business-case-overview"></a>

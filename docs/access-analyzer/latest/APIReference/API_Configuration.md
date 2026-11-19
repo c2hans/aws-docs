@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # Configuration
-<a name="API_Configuration"></a>
 
 Access control configuration structures for your resource. You specify the configuration as a type-value pair. You can specify only one type of access control configuration.
 

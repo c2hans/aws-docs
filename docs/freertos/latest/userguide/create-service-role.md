@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/create-service
 ---
 
 # Create an OTA Update service role
-<a name="create-service-role"></a>
 
 The OTA Update service assumes this role to create and manage OTA update jobs on your behalf.<a name="create-service-role-steps"></a>
 

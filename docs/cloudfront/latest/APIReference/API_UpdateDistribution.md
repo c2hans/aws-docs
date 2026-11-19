@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateDistribution
-<a name="API_UpdateDistribution"></a>
 
 Updates the configuration for a CloudFront distribution.
 

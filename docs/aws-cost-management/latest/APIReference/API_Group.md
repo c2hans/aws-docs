@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Group
-<a name="API_Group"></a>
 
 One level of grouped data in the results.
 

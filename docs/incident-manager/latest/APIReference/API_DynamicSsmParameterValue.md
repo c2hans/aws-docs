@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # DynamicSsmParameterValue
-<a name="API_DynamicSsmParameterValue"></a>
 
 The dynamic SSM parameter value.
 

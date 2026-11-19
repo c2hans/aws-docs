@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/traini
 ---
 
 # Training algorithms
-<a name="training-algorithms"></a>
 
  **Proximal Policy Optimization (PPO) versus Soft Actor Critic (SAC)**
 

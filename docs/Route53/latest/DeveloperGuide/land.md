@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/land.html
 ---
 
 # .land
-<a name="land"></a>
 
 Used by farmers, real estate agents, commercial developers, and anyone with an interest in property.
 

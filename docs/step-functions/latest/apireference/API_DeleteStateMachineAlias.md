@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_D
 ---
 
 # DeleteStateMachineAlias
-<a name="API_DeleteStateMachineAlias"></a>
 
 Deletes a state machine [alias](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-state-machine-alias.html).
 

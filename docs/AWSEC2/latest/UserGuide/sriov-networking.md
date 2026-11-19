@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sriov-networking
 ---
 
 # Enhanced networking with the Intel 82599 VF interface
-<a name="sriov-networking"></a>
 
 For [Xen-based instances](instance-types.md#instance-hypervisor-type), the Intel 82599 Virtual Function (VF) interface provides enhanced networking capabilities. The interface uses the Intel `ixgbevf` driver.
 

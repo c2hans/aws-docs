@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/presigned-u
 ---
 
 # Appendix B: How controls for presigned URLs affect AWS services
-<a name="appendix-b"></a>
 
 This appendix describes interactions between the AWS services that use presigned URLs, as described in [Appendix A](appendix-a.md), and the controls described earlier in this guide.
 

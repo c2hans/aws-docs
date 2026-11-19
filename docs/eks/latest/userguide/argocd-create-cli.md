@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-create-cli.h
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create an Argo CD capability using the AWS CLI
-<a name="argocd-create-cli"></a>
 
 Create an Argo CD capability on your Amazon EKS cluster using the AWS CLI. This procedure walks you through creating an IAM role, configuring AWS Identity Center integration, and verifying the capability is active.
 

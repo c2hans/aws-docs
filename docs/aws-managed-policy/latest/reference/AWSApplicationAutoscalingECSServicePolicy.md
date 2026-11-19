@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSApplicationAutoscalingECSServicePolicy
-<a name="AWSApplicationAutoscalingECSServicePolicy"></a>
 
 **Description**: Policy granting permissions to Application Auto Scaling to access EC2 Container Service and CloudWatch.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # CustomOrchestration
-<a name="API_agent-runtime_CustomOrchestration"></a>
 
 Contains details of the custom orchestration configured for the agent.
 

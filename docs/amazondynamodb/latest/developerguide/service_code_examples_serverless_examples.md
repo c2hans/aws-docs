@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ser
 ---
 
 # Serverless examples for DynamoDB
-<a name="service_code_examples_serverless_examples"></a>
 
 The following code examples show how to use DynamoDB with AWS SDKs.
 

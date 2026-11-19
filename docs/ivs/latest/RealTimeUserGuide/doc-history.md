@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/doc-history
 ---
 
 # IVS Document History \| Real-Time Streaming
-<a name="doc-history"></a>
 
 The following tables describe the important changes to the documentation for Amazon IVS Real-Time Streaming. We update the documentation frequently, for new releases and to address the feedback that you send us.
 

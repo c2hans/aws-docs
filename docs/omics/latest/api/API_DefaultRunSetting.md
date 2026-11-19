@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_DefaultRunSetting.h
 ---
 
 # DefaultRunSetting
-<a name="API_DefaultRunSetting"></a>
 
 Shared configuration applied to all runs in a batch. Fields specified in a per-run `InlineSetting` entry override the corresponding fields in this object for that run. The `parameters` and `runTags` fields are merged rather than replaced — run-specific values take precedence when keys overlap.
 

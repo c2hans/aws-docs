@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # RemoveKnowledgeBaseTemplateUri
-<a name="API_amazon-q-connect_RemoveKnowledgeBaseTemplateUri"></a>
 
 Removes a URI template from a knowledge base.
 

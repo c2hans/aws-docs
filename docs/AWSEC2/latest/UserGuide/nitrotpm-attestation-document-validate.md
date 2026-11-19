@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitrotpm-attesta
 ---
 
 # Validate a NitroTPM Attestation Document
-<a name="nitrotpm-attestation-document-validate"></a>
 
 **Note**
 This topic is intended for users who are using a third-party key management service, and need to build their own Attestation Document validation mechanisms.

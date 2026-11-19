@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/customizing-models-d
 ---
 
 # Deploying customized models
-<a name="customizing-models-deployment"></a>
 
 After customizing and evaluating your model, deploy it for inference. The deployment path depends on the model type. For end-to-end serverless deployment workflows (including one-click deploy from **Studio UI**), see [Serverless model customization](customize-model.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GetLoggingOp
 ---
 
 # GetLoggingOptions
-<a name="API_GetLoggingOptions"></a>
 
 Gets the logging options.
 

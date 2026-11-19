@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRule
 ---
 
 # ListRules
-<a name="API_ListRules"></a>
 
 List all rules for the specified Connect Customer instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # AudioExtractionCategory
-<a name="API_data-automation_AudioExtractionCategory"></a>
 
 Settings for generating data from audio.
 

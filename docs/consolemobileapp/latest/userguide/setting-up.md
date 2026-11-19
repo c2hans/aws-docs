@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/consolemobileapp/latest/userguide/settin
 ---
 
 # Setting up for the AWS Console Mobile Application
-<a name="setting-up"></a>
 
 Complete the tasks in this section to get set up to use the Console Mobile Application.
 

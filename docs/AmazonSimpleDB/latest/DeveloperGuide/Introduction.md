@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Int
 ---
 
 # Introduction to Amazon SimpleDB
-<a name="Introduction"></a>
 
 **Topics**
 + [Features](#Features)

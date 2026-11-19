@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Contex
 ---
 
 # ContextAttribute
-<a name="API_ContextAttribute"></a>
 
 The additional attributes of `RecommendedAction` data type.
 

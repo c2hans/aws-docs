@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Amazon Bedrock troubleshooting
-<a name="bedrock-troubleshooting"></a>
 
 The in-UI conversational assistant is served by the companion Agentic Vehicle Experience (AVX) accelerator’s Amazon Bedrock AgentCore text runtime. Bedrock invocation errors (for example, `AccessDeniedException` when the AgentCore runtime calls a foundation model or a cross-account knowledge base) are diagnosed and remediated on the AVX side — see the AVX repository’s troubleshooting guide for the cross-region inference-profile IAM patterns and the ADP Knowledge Base cross-account resource-based policy.
 

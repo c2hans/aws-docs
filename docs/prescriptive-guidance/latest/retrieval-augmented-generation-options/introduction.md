@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-a
 ---
 
 # Retrieval Augmented Generation options and architectures on AWS
-<a name="introduction"></a>
 
 *Mithil Shah, Natacha Fort, and Rajeev Muralidhar, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/money.html
 ---
 
 # .money
-<a name="money"></a>
 
 Used for websites that focus on money and money-related activities.
 

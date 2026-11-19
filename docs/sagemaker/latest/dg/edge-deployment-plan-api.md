@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-deployment-plan
 ---
 
 # Deploy the Model Package Directly with SageMaker Edge Manager Deployment API
-<a name="edge-deployment-plan-api"></a>
 
 SageMaker Edge Manager provides a deployment API that you can use to deploy models to device targets without AWS IoT Greengrass. It is useful in situations where you want to update models independently of firmware updates or application deployment mechanisms. You can use the API to integrate your edge deployments into a CI/CD workflow to automatically deploy models once you have validated your model for accuracy. The API also has convenient rollback and staged rollout options for you to ensure models work well in a particular environment before wider rollout.
 

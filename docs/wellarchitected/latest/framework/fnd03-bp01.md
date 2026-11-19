@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd03-b
 ---
 
 # FND03-BP01 Define observability standards and policies
-<a name="fnd03-bp01"></a>
 
  Clear observability standards and policies keep operational visibility and control across your cloud environment. This best practice focuses on defining and enforcing consistent observability requirements across both foundation components and workloads so telemetry is complete and meaningful. Teams keep flexibility in choosing monitoring tools and instrumentation libraries, and organizational standards keep telemetry consistent and available for operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Managing users in Amazon SageMaker Unified Studio
-<a name="user-management"></a>
 
 Users can access the Amazon SageMaker Unified Studio data portal by using either their AWS credentials or single sign-on (SSO) credentials. For IAM-based domains, see [Managing users for IAM-based domains](manage-users-iam-based-domains.md) to manage users in the domain management portal. For Identity Center-based domains, see [Managing users for Identity Center-based domains](manage-users-idc-based-domains.md) to manage users in the Amazon SageMaker Unified Studio console.
 

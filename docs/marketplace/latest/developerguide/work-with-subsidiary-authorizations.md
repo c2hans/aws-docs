@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/work-w
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Work with subsidiary authorizations using the AWS Marketplace APIs
-<a name="work-with-subsidiary-authorizations"></a>
 
 With the AWS Marketplace Catalog API, you can automate tasks for working with subsidiary authorizations.
 

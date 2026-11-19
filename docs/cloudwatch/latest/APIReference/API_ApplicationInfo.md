@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Appli
 ---
 
 # ApplicationInfo
-<a name="API_ApplicationInfo"></a>
 
 Describes the status of the application.
 

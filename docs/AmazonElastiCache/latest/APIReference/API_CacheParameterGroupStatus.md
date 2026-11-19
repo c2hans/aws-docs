@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # CacheParameterGroupStatus
-<a name="API_CacheParameterGroupStatus"></a>
 
 Status of the cache parameter group.
 

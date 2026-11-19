@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Physica
 ---
 
 # PhysicalEndpoint
-<a name="API_PhysicalEndpoint"></a>
 
 The physical endpoints of a connection.
 

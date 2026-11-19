@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonAPIGatewayInvokeFullAccess
-<a name="AmazonAPIGatewayInvokeFullAccess"></a>
 
 **Description**: Provides full access to invoke APIs in Amazon API Gateway.
 

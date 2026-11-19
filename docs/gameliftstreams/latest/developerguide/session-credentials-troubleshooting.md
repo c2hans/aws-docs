@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/se
 ---
 
 # Troubleshooting session credentials
-<a name="session-credentials-troubleshooting"></a>
 
 **"Cannot assume role" error on StartStreamSession**
 The role's trust policy does not allow `gameliftstreams.amazonaws.com` to assume it. Verify that:

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # FirewallRuleDomain
-<a name="API_route53resolver_FirewallRuleDomain"></a>
 
 A domain that DNS Firewall observed for an AutoAllowlist rule, with its review status and request volume. Counts are aggregated across all VPCs that use the rule group, through a rule group association or through a Route 53 Profile that includes the rule group, including VPCs in other accounts. The domain isn't attributed to the VPC or account in which it was observed.
 

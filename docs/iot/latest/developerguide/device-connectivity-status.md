@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-connect
 ---
 
 # Device connectivity status queries
-<a name="device-connectivity-status"></a>
 
 AWS IoT Fleet Indexing supports individual device connectivity querying, allowing you to efficiently retrieve connectivity status and related metadata for specific devices. This feature complements existing fleet-wide indexing and querying capabilities.
 

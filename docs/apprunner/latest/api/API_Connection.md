@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_Connection.html
 ---
 
 # Connection
-<a name="API_Connection"></a>
 
 Describes an AWS App Runner connection resource.
 

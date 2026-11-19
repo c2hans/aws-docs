@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_JDBCConnectorOpti
 ---
 
 # JDBCConnectorOptions
-<a name="API_JDBCConnectorOptions"></a>
 
 Additional connection options for the connector.
 

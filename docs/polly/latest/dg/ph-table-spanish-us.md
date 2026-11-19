@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/ph-table-spanish-us.html
 ---
 
 # Spanish (US) (es-US)
-<a name="ph-table-spanish-us"></a>
 
 The following table lists the International Phonetic Alphabet (IPA) phonemes, the Extended Speech Assessment Methods Phonetic Alphabet (X-SAMPA) symbols, and the corresponding visemes for the US Spanish voices that are supported by Amazon Polly.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListCl
 ---
 
 # ListClusterExtensionVersions
-<a name="API_ListClusterExtensionVersions"></a>
 
 Lists the versions of an extension that you can install on a SageMaker HyperPod cluster, from the highest version to the lowest. Use a version from this list as the `ExtensionVersion` in `CreateClusterExtension` or `UpdateClusterExtension`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/IAMU
 ---
 
 # IAMUserChangePassword
-<a name="IAMUserChangePassword"></a>
 
 **Description**: Provides the ability for an IAM user to change their own password.
 

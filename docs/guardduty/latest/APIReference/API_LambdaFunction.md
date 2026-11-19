@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Lambda
 ---
 
 # LambdaFunction
-<a name="API_LambdaFunction"></a>
 
 Contains details about an AWS Lambda function.
 

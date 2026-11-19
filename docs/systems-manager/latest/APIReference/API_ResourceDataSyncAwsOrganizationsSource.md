@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ResourceDataSyncAwsOrganizationsSource
-<a name="API_ResourceDataSyncAwsOrganizationsSource"></a>
 
 Information about the `AwsOrganizationsSource` resource data sync source. A sync source of this type can synchronize data from AWS Organizations or, if an AWS organization isn't present, from multiple AWS Regions.
 

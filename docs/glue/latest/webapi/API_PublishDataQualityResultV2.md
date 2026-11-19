@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PublishDataQualit
 ---
 
 # PublishDataQualityResultV2
-<a name="API_PublishDataQualityResultV2"></a>
 
 **Note**
 This operation is intended for internal use. Do not call it directly.

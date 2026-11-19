@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Forma
 ---
 
 # FormatConfiguration
-<a name="API_FormatConfiguration"></a>
 
 The formatting configuration for all types of field.
 

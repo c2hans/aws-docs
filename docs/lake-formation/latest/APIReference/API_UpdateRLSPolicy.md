@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_U
 ---
 
 # UpdateRLSPolicy
-<a name="API_UpdateRLSPolicy"></a>
 
 Updates the filter expression of an existing row-level security policy. The change applies to all attachments of the policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # MetaFlowSummary
-<a name="API_MetaFlowSummary"></a>
 
 Contains summary information about a WhatsApp Flow, including its ID, name, status, and categories.
 

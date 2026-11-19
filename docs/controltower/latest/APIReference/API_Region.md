@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Reg
 ---
 
 # Region
-<a name="API_Region"></a>
 
 An AWS Region in which AWS Control Tower expects to find the control deployed.
 

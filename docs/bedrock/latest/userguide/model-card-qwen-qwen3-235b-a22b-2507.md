@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen
 ---
 
 # Qwen3 235B A22B 2507
-<a name="model-card-qwen-qwen3-235b-a22b-2507"></a>
 
 ## ![Qwen logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/qwen.png) Qwen — Qwen3 235B A22B 2507
 <a name="model-card-qwen-qwen3-235b-a22b-2507-header"></a>

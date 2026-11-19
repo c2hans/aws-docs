@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_SearchQua
 ---
 
 # SearchQuantumTasks
-<a name="API_SearchQuantumTasks"></a>
 
 Searches for tasks that match the specified filter values.
 

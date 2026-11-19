@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Standards
-<a name="standards"></a>
 
 Standards are derived from your policy. These are narrower in scope and help define the framework and architecture for implementation. For example, if your organization's policy is to encrypt your data at rest, then a standard would define what type of encryption is required and provide general direction about how to adhere to the policy.
 

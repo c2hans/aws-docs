@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # ClusterSnapshotInList
-<a name="API_elastic_ClusterSnapshotInList"></a>
 
 A list of elastic cluster snapshots.
 

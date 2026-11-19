@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # MessageTemplateFilterField
-<a name="API_amazon-q-connect_MessageTemplateFilterField"></a>
 
 The message template fields to filter the message template query results by. The following is the list of supported field names:
 + name

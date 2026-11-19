@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Bu
 ---
 
 # AwsS3BucketObjectLockConfigurationRuleDefaultRetentionDetails
-<a name="API_AwsS3BucketObjectLockConfigurationRuleDefaultRetentionDetails"></a>
 
  The default S3 Object Lock retention mode and period that you want to apply to new objects placed in the specified Amazon S3 bucket.
 

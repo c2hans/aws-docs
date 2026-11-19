@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_cross_Redshift
 ---
 
 # Create an Amazon Redshift item tracker
-<a name="ses_example_cross_RedshiftDataTracker_section"></a>
 
 The following code examples show how to create a web application that tracks and reports on work items using an Amazon Redshift database.
 

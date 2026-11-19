@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_D
 ---
 
 # DeleteApp
-<a name="API_DeleteApp"></a>
 
 Deletes an AWS Resilience Hub application. This is a destructive action that can't be undone.
 

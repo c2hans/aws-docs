@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # UpdateEventTrigger
-<a name="API_connect-customer-profiles_UpdateEventTrigger"></a>
 
 Update the properties of an Event Trigger.
 

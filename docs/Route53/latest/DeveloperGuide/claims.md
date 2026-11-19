@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/claims.htm
 ---
 
 # .claims
-<a name="claims"></a>
 
 Used by companies that handle insurance claims or provide legal services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Guidance for Contextual Intelligence for Advertising
-<a name="contextual-intelligence-advertising"></a>
 
 Publication date: **April 6, 2022 ([Diagram history](#cia-history))**
 

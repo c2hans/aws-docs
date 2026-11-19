@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-creati
 ---
 
 # Create Iceberg tables
-<a name="querying-iceberg-creating-tables"></a>
 
 To create an Iceberg table for use in Athena, you can use a `CREATE TABLE` statement as documented on this page, or you can use an AWS Glue crawler.
 

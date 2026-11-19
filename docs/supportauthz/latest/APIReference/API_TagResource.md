@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Tag
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds or overwrites one or more tags for a support permit resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Cre
 ---
 
 # CreateImage
-<a name="API_CreateImage"></a>
 
 Creates a new image along with all configured output resources defined in the distribution configuration. You must specify exactly one recipe for your image, using either a `containerRecipeArn` or an `imageRecipeArn`.
 

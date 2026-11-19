@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Comp
 ---
 
 # CompareFaces
-<a name="API_CompareFaces"></a>
 
 Compares a face in the *source* input image with each of the 100 largest faces detected in the *target* input image.
 

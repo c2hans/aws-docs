@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-participant/latest/APIReference/
 ---
 
 # UploadMetadata
-<a name="API_connect-participant_UploadMetadata"></a>
 
 Fields to be used while uploading the attachment.
 

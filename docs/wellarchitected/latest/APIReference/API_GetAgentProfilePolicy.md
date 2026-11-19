@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # GetAgentProfilePolicy
-<a name="API_GetAgentProfilePolicy"></a>
 
 Retrieves the resource-based policy attached to an Agent Profile. Only the profile owner can call this operation.
 

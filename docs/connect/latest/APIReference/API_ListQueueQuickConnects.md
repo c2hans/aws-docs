@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListQueu
 ---
 
 # ListQueueQuickConnects
-<a name="API_ListQueueQuickConnects"></a>
 
 Lists the quick connects associated with a queue.
 

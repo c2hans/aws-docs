@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # Identity and Access Management
-<a name="iam"></a>
 
 [AWS Identity and Access Management](https://aws.amazon.com/iam) (IAM) defines the controls and polices that are used to manage access to AWS resources. Using IAM you can create users and groups and define permissions to various DevOps services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # View logs for the Guard Hooks in your account
-<a name="guard-hooks-view-logs"></a>
 
 When you activate a Guard Hook, you can specify an Amazon S3 bucket as the destination for the Hook output report. Once activated, the Hook automatically stores the results of your Guard rule validations in the specified bucket. You can then view these results in the Amazon S3 console.
 

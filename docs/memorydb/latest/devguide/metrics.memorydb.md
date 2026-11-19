@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/metrics.memoryd
 ---
 
 # Metrics for MemoryDB
-<a name="metrics.memorydb"></a>
 
 The `AWS/MemoryDB` namespace includes the following metrics.
 

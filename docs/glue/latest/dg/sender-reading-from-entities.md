@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sender-reading-from-entit
 ---
 
 # Reading from Sender entities
-<a name="sender-reading-from-entities"></a>
 
 **Prerequisites**
 

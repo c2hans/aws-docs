@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ValidationExceptionField
-<a name="API_benefits_ValidationExceptionField"></a>
 
 Represents a field-specific validation error with detailed information.
 

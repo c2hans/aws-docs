@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_PolicyVersio
 ---
 
 # PolicyVersion
-<a name="API_PolicyVersion"></a>
 
 Contains information about a version of a managed policy.
 

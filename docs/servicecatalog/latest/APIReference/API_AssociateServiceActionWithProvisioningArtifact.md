@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_A
 ---
 
 # AssociateServiceActionWithProvisioningArtifact
-<a name="API_AssociateServiceActionWithProvisioningArtifact"></a>
 
 Associates a self-service action with a provisioning artifact.
 

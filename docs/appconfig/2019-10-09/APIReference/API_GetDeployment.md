@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ge
 ---
 
 # GetDeployment
-<a name="API_GetDeployment"></a>
 
 Retrieves information about a configuration deployment.
 

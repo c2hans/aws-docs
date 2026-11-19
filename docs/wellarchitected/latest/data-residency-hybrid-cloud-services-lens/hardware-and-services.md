@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Hardware and services
-<a name="hardware-and-services"></a>
 
 | DRHCSUS06: How do you choose and update EC2 instances to support both data-residency workload and sustainability goals? |
 | --- |

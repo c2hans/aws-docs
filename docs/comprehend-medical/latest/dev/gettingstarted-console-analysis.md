@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/dev/gettingsta
 ---
 
 # Analyzing clinical text using the console
-<a name="gettingstarted-console-analysis"></a>
 
 The Comprehend Medical console enables you to analyze the contents of clinical text, up to 20,000 characters long. The results are shown in the console so that you can review the analysis.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Acce
 ---
 
 # AccessBudgetsPrivacyTemplateParametersOutput
-<a name="API_AccessBudgetsPrivacyTemplateParametersOutput"></a>
 
 Output parameters for privacy budget templates with access budgets support, containing the configured budget information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CloudWatc
 ---
 
 # CloudWatchLoggingOptionDescription
-<a name="API_CloudWatchLoggingOptionDescription"></a>
 
 Describes the Amazon CloudWatch logging option.
 

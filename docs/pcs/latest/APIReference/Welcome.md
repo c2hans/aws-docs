@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS Parallel Computing Service (AWS PCS) is a managed service that makes it easier for you to run and scale your high performance computing (HPC) workloads, and build scientific and engineering models on AWS using Slurm. For more information, see the [AWS Parallel Computing Service User Guide](https://docs.aws.amazon.com/pcs/latest/userguide).
 
@@ -13,4 +12,4 @@ The API actions operate on AWS PCS resources. A *resource* is an entity in AWS t
 
 An AWS PCS *compute node* is an Amazon EC2 instance. You don't launch compute nodes directly. AWS PCS uses configuration information that you provide to launch compute nodes in your AWS account. You receive billing charges for your running compute nodes. AWS PCS automatically terminates your compute nodes when you delete the AWS PCS resources related to those compute nodes.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

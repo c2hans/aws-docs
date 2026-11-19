@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # KMS permissions for exporting asset metadata in Amazon SageMaker Unified Studio
-<a name="sagemaker-unified-studio-export-asset-metadata-kms-permissions"></a>
 
 **Topics**
 + [Granting the Amazon SageMaker Catalog export service principal and S3 Tables maintenance service principal permissions to your KMS key](#export-asset-metadata-kms-permissions-service-principal)

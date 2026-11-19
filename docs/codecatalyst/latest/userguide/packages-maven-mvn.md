@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/packages-m
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Configuring and using mvn
-<a name="packages-maven-mvn"></a>
 
 You use the `mvn` command to run Maven builds. You must configure `mvn` to use your package repository and provide a personal access token (PAT) for authentication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_S
 ---
 
 # S3ItemFilter
-<a name="API_BKS_S3ItemFilter"></a>
 
 This contains arrays of objects, which may include ObjectKeys, Sizes, CreationTimes, VersionIds, and/or Etags.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/newrelic-integrat
 ---
 
 # New Relic integration
-<a name="newrelic-integration"></a>
 
 With the New Relic connector, you can access the New Relic observability platform directly in AWS Quick through natural language. You can investigate incidents, analyze application performance, query telemetry data, and generate reports without leaving AWS Quick.
 

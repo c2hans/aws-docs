@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_PutA
 ---
 
 # PutAuthPolicy
-<a name="API_PutAuthPolicy"></a>
 
 Creates or updates the auth policy. The policy string in JSON must not contain newlines or blank lines.
 

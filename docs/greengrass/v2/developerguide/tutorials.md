@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/tutorials.h
 ---
 
 # AWS IoT Greengrass V2 tutorials
-<a name="tutorials"></a>
 
 AWS IoT Greengrass is a service that enables you to run AWS Lambda functions, machine learning models, and other code on edge devices. This allows you to process data locally, reducing latency and bandwidth costs while maintaining secure communication with the cloud.
 

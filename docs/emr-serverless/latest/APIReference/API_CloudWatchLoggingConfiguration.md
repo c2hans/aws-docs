@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_C
 ---
 
 # CloudWatchLoggingConfiguration
-<a name="API_CloudWatchLoggingConfiguration"></a>
 
 The Amazon CloudWatch configuration for monitoring logs. You can configure your jobs to send log information to CloudWatch.
 

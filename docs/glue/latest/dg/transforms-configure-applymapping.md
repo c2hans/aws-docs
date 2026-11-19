@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-configure-appl
 ---
 
 # Using Change Schema to remap data property keys
-<a name="transforms-configure-applymapping"></a>
 
 A *Change Schema* transform remaps the source data property keys into the desired configured for the target data. In a Change Schema transform node, you can:
 + Change the name of multiple data property keys.

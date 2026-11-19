@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Di
 ---
 
 # DiffSource
-<a name="API_DiffSource"></a>
 
 Source of the diff for a differential code scan.
 

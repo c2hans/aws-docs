@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-eip
 ---
 
 # Associate an Elastic IP address with an instance
-<a name="working-with-eips"></a>
 
 After you allocate an Elastic IP address, you can associate it with an AWS resource, such as an EC2 instance, NAT gateway, or Network Load Balancer. To associate an Elastic IP address with a different AWS resource later on, you can disassociate it from its current resource and then associated it with the new resource.
 

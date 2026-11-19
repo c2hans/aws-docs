@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-generate-
 ---
 
 # Generate the CloudFormation template using the AWS CLI
-<a name="flow-logs-generate-template-cli"></a>
 
 After the first flow logs are delivered to your S3 bucket, you can generate and use a CloudFormation template to integrate with Athena.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/diagno
 ---
 
 # Diagnostic skill source
-<a name="diagnose-evaluation-skill-source"></a>
 
 The following is the full source of the AgentCore Evaluation Diagnostic Skill. The skill follows the open [Agent Skills](https://agentskills.io) standard. Copy the entire code block and save it as `SKILL.md` inside a new folder named `agentcore-eval-diagnostic/` on your machine, then load the skill folder into your AI coding assistant as described in [Load the skill into your AI coding assistant](diagnose-evaluation-issues.md#load-the-skill).
 

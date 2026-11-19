@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEMRReadOnlyAccessPolicy\_v2
-<a name="AmazonEMRReadOnlyAccessPolicy_v2"></a>
 
 **Description**: Provides read only access to Amazon EMR and the associated CloudWatch Metrics.
 

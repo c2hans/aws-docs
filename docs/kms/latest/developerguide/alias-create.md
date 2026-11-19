@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/alias-create.h
 ---
 
 # Create aliases
-<a name="alias-create"></a>
 
 You can create aliases in the AWS KMS console or by using AWS KMS API operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Send call events
-<a name="nx-features-whatsapp-voice-events"></a>
 
 You send WhatsApp call events, such as connecting or ending a call, using the `SendWhatsAppCallEvent` operation. AWS End User Messaging passes the call event through to Meta's calling API. The operation returns the call identifier that Meta assigns to the call.
 

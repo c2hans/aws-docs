@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-instanc
 ---
 
 # ec2-instance-no-public-ip
-<a name="ec2-instance-no-public-ip"></a>
 
 Checks whether Amazon Elastic Compute Cloud (Amazon EC2) instances have a public IP association. The rule is NON\_COMPLIANT if the publicIp field is present in the Amazon EC2 instance configuration item. This rule applies only to IPv4.
 

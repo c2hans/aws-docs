@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PrivateDn
 ---
 
 # PrivateDnsDetails
-<a name="API_PrivateDnsDetails"></a>
 
 Information about the Private DNS name for interface endpoints.
 

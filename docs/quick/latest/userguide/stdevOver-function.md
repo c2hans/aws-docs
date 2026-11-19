@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/stdevOver-functio
 ---
 
 # stdevOver
-<a name="stdevOver-function"></a>
 
 The `stdevOver` function calculates the standard deviation of the specified measure, partitioned by the chosen attribute or attributes, based on a sample.
 

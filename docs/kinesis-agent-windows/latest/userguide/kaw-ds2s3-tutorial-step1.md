@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/k
 ---
 
 # Step 1: Configure AWS services
-<a name="kaw-ds2s3-tutorial-step1"></a>
 
 Follow these steps to prepare your environment for streaming log data to Amazon Simple Storage Service (Amazon S3) using Amazon Kinesis Agent for Microsoft Windows. For more information and prerequisites, see [Tutorial: Stream JSON Log Files to Amazon S3 Using Kinesis Agent for Windows](directory-source-to-s3-tutorial.md).
 

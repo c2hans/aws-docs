@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # IAM Identity Center support for Amazon OpenSearch Serverless
-<a name="serverless-iam-identity-center"></a>
 
 ## IAM Identity Center support for Amazon OpenSearch Serverless
 <a name="serverless-iam-identity-support"></a>

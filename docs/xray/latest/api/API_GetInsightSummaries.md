@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_GetInsightSummaries.
 ---
 
 # GetInsightSummaries
-<a name="API_GetInsightSummaries"></a>
 
 Retrieves the summaries of all insights in the specified group matching the provided filter values.
 

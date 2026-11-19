@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # DSOPS01-BP03 Implement compliance training and awareness
-<a name="dsops01-bp03"></a>
 
  When teams operate across jurisdictions with delegated compliance responsibilities, they need targeted knowledge to make sound decisions within their scope. Generic security training doesn't prepare teams for the jurisdiction-specific decisions they face daily.
 

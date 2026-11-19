@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-ru
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # AWS Managed Rules rule groups list
-<a name="aws-managed-rule-groups-list"></a>
 
 This section provides a list of available AWS Managed Rules rule groups.
 

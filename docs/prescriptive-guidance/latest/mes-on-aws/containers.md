@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/
 ---
 
 # Containers for computing
-<a name="containers"></a>
 
 Containers are a popular choice for a modern MES that comprises microservices. Containers are a powerful way for MES developers to package and deploy their applications—they are lightweight and provide consistent, portable software for MES applications to run and scale anywhere. Containers are also preferred for running batch jobs such as interface processing, running machine learning applications for use cases such as automated quality inspection, and moving legacy MES modules to the cloud. Almost all MES modules can use containers for computing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # AIAgentData
-<a name="API_amazon-q-connect_AIAgentData"></a>
 
 The data for the AI Agent.
 

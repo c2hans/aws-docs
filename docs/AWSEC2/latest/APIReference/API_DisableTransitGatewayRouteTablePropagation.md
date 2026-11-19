@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableTr
 ---
 
 # DisableTransitGatewayRouteTablePropagation
-<a name="API_DisableTransitGatewayRouteTablePropagation"></a>
 
 Disables the specified resource attachment from propagating routes to the specified propagation route table.
 

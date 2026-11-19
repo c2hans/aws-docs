@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Understanding continuous assessment data requirements
-<a name="understanding-continuous-assessment-data-requirements"></a>
 
 Data requirements for continuous assessment and improvement of the application portfolio are a combination of data requirements from previous sections. To continuously manage the portfolio migration and its evolution, see the following sections to understand data requirements:
 + For wave assessment and application optimization, use the data requirements from the [Prioritized applications assessment](understanding-detailed-assessment-data-requirements.md) section.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cf2/latest/migrationguide/migr
 ---
 
 # Switching to Legacy on a SuperMicro
-<a name="migrate-topic-bios-supermicro"></a>
 
 To switch the boot mode from UEFI back to BIOS (Legacy mode), you can use the IPMI interface, or you can work when directly connected to the server.
 

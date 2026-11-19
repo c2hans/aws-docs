@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Si
 ---
 
 # SignalCatalogSummary
-<a name="API_SignalCatalogSummary"></a>
 
 Information about a collection of standardized signals, which can be attributes, branches, sensors, or actuators.
 

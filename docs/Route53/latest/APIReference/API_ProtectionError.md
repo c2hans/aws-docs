@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Protecti
 ---
 
 # ProtectionError
-<a name="API_ProtectionError"></a>
 
 Describes one entry in a `CreateResourceRecordSetProtections` or `DeleteResourceRecordSetProtections` request that Route 53 couldn't process.
 

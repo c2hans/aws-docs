@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/folder-
 ---
 
 # Folder operations
-<a name="folder-operations"></a>
 
 In Quick Sight Enterprise Edition, you can create personal and shared folders to add hierarchical structure to Quick Sight asset management. Using folders, people can more easily organize, navigate through, and discover dashboards, analyses, and datasets. Within a folder, you can still use your usual tools to search for assets or to add assets to your favorites list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/s
 ---
 
 # Working with AWS serverless applications by using the AWS Toolkit for JetBrains
-<a name="sam"></a>
 
 The following topics describe how to use the AWS Toolkit for JetBrains to work with AWS serverless applications in an AWS account.
 

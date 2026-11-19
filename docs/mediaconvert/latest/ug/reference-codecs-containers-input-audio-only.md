@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/reference-codecs-
 ---
 
 # Supported input formats for audio-only workflows
-<a name="reference-codecs-containers-input-audio-only"></a>
 
 When you create audio-only outputs, MediaConvert supports audio-only inputs with the following containers and codecs.
 

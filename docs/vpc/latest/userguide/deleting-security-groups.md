@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/deleting-security-g
 ---
 
 # Delete a security group
-<a name="deleting-security-groups"></a>
 
 When you are finished with a security group that you created, you can delete it.
 

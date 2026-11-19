@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Connection type and authentication are separate axes
-<a name="dp-connection-auth"></a>
 
 Connection type is an enum with genuinely different fields per value, and both the definition flow and the product detail view branch on it:
 

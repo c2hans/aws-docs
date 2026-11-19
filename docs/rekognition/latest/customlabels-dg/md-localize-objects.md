@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-lo
 ---
 
 # Labeling objects with bounding boxes
-<a name="md-localize-objects"></a>
 
 If you want your model to detect the location of objects within an image, you must identify what the object is and where it is in the image. A bounding box is a box that isolates an object in an image. You use bounding boxes to train a model to detect different objects in the same image. You identify the object by assigning a label to the bounding box.
 

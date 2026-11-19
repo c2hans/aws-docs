@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachUserPo
 ---
 
 # AttachUserPolicy
-<a name="API_AttachUserPolicy"></a>
 
 Attaches the specified managed policy to the specified user.
 

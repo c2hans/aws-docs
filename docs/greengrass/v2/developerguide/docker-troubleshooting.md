@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/docker-trou
 ---
 
 # Troubleshooting AWS IoT Greengrass in a Docker container
-<a name="docker-troubleshooting"></a>
 
 Use the following information to help you troubleshoot issues with running AWS IoT Greengrass in a Docker container and to debug issues with AWS IoT Greengrass in the Docker container.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeMetric
 ---
 
 # DescribeMetricAttribution
-<a name="API_DescribeMetricAttribution"></a>
 
 Describes a metric attribution.
 

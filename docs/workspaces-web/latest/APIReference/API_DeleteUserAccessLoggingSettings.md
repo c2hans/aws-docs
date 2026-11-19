@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_D
 ---
 
 # DeleteUserAccessLoggingSettings
-<a name="API_DeleteUserAccessLoggingSettings"></a>
 
 Deletes user access logging settings.
 

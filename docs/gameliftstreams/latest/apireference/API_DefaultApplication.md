@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # DefaultApplication
-<a name="API_DefaultApplication"></a>
 
 Represents the default Amazon GameLift Streams application that a stream group hosts.
 

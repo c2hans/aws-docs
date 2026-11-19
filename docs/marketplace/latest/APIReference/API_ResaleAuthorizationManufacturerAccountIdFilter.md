@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Resa
 ---
 
 # ResaleAuthorizationManufacturerAccountIdFilter
-<a name="API_ResaleAuthorizationManufacturerAccountIdFilter"></a>
 
 Allows filtering on the `ManufacturerAccountId` of a ResaleAuthorization.
 

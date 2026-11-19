@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-sts.ht
 ---
 
 # AWS Security Token Service events
-<a name="events-ref-sts"></a>
 
 AWS STS sends service events to EventBridge via AWS CloudTrail.
 

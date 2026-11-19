@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-honeyc
 ---
 
 # Connecting to Honeycomb in AWS Glue Studio
-<a name="connecting-to-data-honeycomb"></a>
 
 Honeycomb is an observability platform for high-cardinality event data, used to debug and understand production systems. Because you are a Honeycomb user, you can connect AWS Glue to your Honeycomb account. You can then use Honeycomb as a data source in your AWS Glue ETL jobs to transfer data between Honeycomb and AWS services or other supported applications.
 

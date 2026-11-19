@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/neptune-serverl
 ---
 
 # Using Amazon Neptune Serverless
-<a name="neptune-serverless-using"></a>
 
 You can create a new Neptune DB cluster as a serverless one, or in some cases you can convert an existing DB cluster to use serverless. You can also convert DB instances in a serverless DB cluster to and from serverless instances. You can only use Neptune Serverless in one of the AWS Regions where it's supported, with a few other limitations (see [Amazon Neptune Serverless constraints](neptune-serverless.md#neptune-serverless-limitations)).
 

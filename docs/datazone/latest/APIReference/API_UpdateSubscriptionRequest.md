@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UpdateS
 ---
 
 # UpdateSubscriptionRequest
-<a name="API_UpdateSubscriptionRequest"></a>
 
 Updates a specified subscription request in Amazon DataZone.
 

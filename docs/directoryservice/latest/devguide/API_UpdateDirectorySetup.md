@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Upd
 ---
 
 # UpdateDirectorySetup
-<a name="API_UpdateDirectorySetup"></a>
 
 Updates directory configuration for the specified update type.
 

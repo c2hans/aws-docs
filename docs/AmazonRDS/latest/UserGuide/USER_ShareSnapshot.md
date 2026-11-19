@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ShareSna
 ---
 
 # Sharing a DB snapshot for Amazon RDS
-<a name="USER_ShareSnapshot"></a>
 
 Using Amazon RDS, you can share a manual DB snapshot in the following ways:
 + Sharing a manual DB snapshot, whether encrypted or unencrypted, enables authorized AWS accounts to copy the snapshot.

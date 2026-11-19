@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/re
 ---
 
 # Resolve connection errors after migrating Microsoft SQL Server to the AWS Cloud
-<a name="resolve-connection-errors-after-migrating-microsoft-sql-server-to-the-aws-cloud"></a>
 
 *Premkumar Chelladurai, Amazon Web Services*
 

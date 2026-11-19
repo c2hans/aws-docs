@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # RestoreFromRecoveryPoint
-<a name="API_RestoreFromRecoveryPoint"></a>
 
 Restore the data from a recovery point.
 

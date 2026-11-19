@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ad-reporting-hybri
 ---
 
 # Hybrid mode with server-side ad beacons
-<a name="ad-reporting-hybrid-mode"></a>
 
 MediaTailor supports a hybrid mode for session tracking. In this mode, the service emits playback-related ad-tracking events, but makes the complete client-side tracking payload available for the session
 

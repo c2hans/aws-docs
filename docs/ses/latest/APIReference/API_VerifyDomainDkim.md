@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_VerifyDomain
 ---
 
 # VerifyDomainDkim
-<a name="API_VerifyDomainDkim"></a>
 
 Returns a set of DKIM tokens for a domain identity.
 

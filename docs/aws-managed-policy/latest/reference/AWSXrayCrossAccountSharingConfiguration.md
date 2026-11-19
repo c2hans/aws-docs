@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSX
 ---
 
 # AWSXrayCrossAccountSharingConfiguration
-<a name="AWSXrayCrossAccountSharingConfiguration"></a>
 
 **Description**: Provides capabilities to manage Observability Access Manager links and establish sharing of X-Ray traces
 

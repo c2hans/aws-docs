@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-fo
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create an IAM OIDC provider for your cluster
-<a name="enable-iam-roles-for-service-accounts"></a>
 
 Your cluster has an [OpenID Connect](https://openid.net/connect/) (OIDC) issuer URL associated with it. To use AWS Identity and Access Management (IAM) roles for service accounts, an IAM OIDC provider must exist for your cluster’s OIDC issuer URL.
 

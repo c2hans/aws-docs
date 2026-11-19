@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_Quic
 ---
 
 # QuickSetupTypeOutput
-<a name="API_QuickSetupTypeOutput"></a>
 
 Information about the Quick Setup type.
 

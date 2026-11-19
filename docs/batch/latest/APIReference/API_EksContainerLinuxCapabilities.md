@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EksContain
 ---
 
 # EksContainerLinuxCapabilities
-<a name="API_EksContainerLinuxCapabilities"></a>
 
 The Linux capabilities for the container. For more information, see [Set capabilities for a container](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-capabilities-for-a-container) in the *Kubernetes documentation*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 Follow these general best practices when migrating your SSIS jobs to AWS:
 + If you're migrating your databases to an AWS managed service such as Amazon Relational Database Service (Amazon RDS), descope [maintenance tasks](https://docs.microsoft.com/en-us/sql/integration-services/control-flow/integration-services-tasks) (such as backup, restore, update statistics, or check database integrity) that are not applicable or managed by AWS.

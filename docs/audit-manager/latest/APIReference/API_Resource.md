@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Re
 ---
 
 # Resource
-<a name="API_Resource"></a>
 
  A system asset that's evaluated in an Audit Manager assessment.
 

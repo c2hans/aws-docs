@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Updat
 ---
 
 # UpdateStack
-<a name="API_UpdateStack"></a>
 
 Updates the specified fields for the specified stack.
 
@@ -38,6 +37,13 @@ Updates the specified fields for the specified stack.
       "SettingsGroup": "{{string}}"
    },
    "AttributesToDelete": [ "{{string}}" ],
+   "ContentRedirection": {
+      "HostToClient": {
+         "AllowedUrls": [ "{{string}}" ],
+         "DeniedUrls": [ "{{string}}" ],
+         "Enabled": {{boolean}}
+      }
+   },
    "DeleteStorageConnectors": {{boolean}},
    "Description": "{{string}}",
    "DisplayName": "{{string}}",
@@ -93,7 +99,12 @@ Required: No
  ** [AttributesToDelete](#API_UpdateStack_RequestSyntax) **   <a name="WorkSpacesApplications-UpdateStack-request-AttributesToDelete"></a>
 The stack attributes to delete.
 Type: Array of strings
-Valid Values: `STORAGE_CONNECTORS | STORAGE_CONNECTOR_HOMEFOLDERS | STORAGE_CONNECTOR_GOOGLE_DRIVE | STORAGE_CONNECTOR_ONE_DRIVE | REDIRECT_URL | FEEDBACK_URL | THEME_NAME | USER_SETTINGS | EMBED_HOST_DOMAINS | IAM_ROLE_ARN | ACCESS_ENDPOINTS | STREAMING_EXPERIENCE_SETTINGS | AGENT_ACCESS_CONFIG | STORAGE_CONNECTOR_AUTHENTICATION | AGENT_ACCESS_CONFIG_KMS_KEY_ARN`
+Valid Values: `STORAGE_CONNECTORS | STORAGE_CONNECTOR_HOMEFOLDERS | STORAGE_CONNECTOR_GOOGLE_DRIVE | STORAGE_CONNECTOR_ONE_DRIVE | REDIRECT_URL | FEEDBACK_URL | THEME_NAME | USER_SETTINGS | EMBED_HOST_DOMAINS | IAM_ROLE_ARN | ACCESS_ENDPOINTS | STREAMING_EXPERIENCE_SETTINGS | CONTENT_REDIRECTION | AGENT_ACCESS_CONFIG | STORAGE_CONNECTOR_AUTHENTICATION | AGENT_ACCESS_CONFIG_KMS_KEY_ARN`
+Required: No
+
+ ** [ContentRedirection](#API_UpdateStack_RequestSyntax) **   <a name="WorkSpacesApplications-UpdateStack-request-ContentRedirection"></a>
+Configuration for bidirectional URL redirection between the streaming session and the local client. Use HostToClient to redirect URLs from the remote desktop to the local browser.
+Type: [ContentRedirection](API_ContentRedirection.md) object
 Required: No
 
  ** [DeleteStorageConnectors](#API_UpdateStack_RequestSyntax) **   <a name="WorkSpacesApplications-UpdateStack-request-DeleteStorageConnectors"></a>
@@ -195,6 +206,13 @@ Required: No
          "SettingsGroup": "string"
       },
       "Arn": "string",
+      "ContentRedirection": {
+         "HostToClient": {
+            "AllowedUrls": [ "string" ],
+            "DeniedUrls": [ "string" ],
+            "Enabled": boolean
+         }
+      },
       "CreatedTime": number,
       "Description": "string",
       "DisplayName": "string",

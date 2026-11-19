@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListAccountAssignments
-<a name="API_ListAccountAssignments"></a>
 
 Lists the assignee of the specified AWS account with the specified permission set.
 

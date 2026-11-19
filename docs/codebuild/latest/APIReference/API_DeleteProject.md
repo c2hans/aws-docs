@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Delete
 ---
 
 # DeleteProject
-<a name="API_DeleteProject"></a>
 
  Deletes a build project. When you delete a project, its builds are not deleted.
 

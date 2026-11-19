@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Descr
 ---
 
 # DescribeRuleGroupsNamespace
-<a name="API_DescribeRuleGroupsNamespace"></a>
 
 Returns complete information about one rule groups namespace. To retrieve a list of rule groups namespaces, use `ListRuleGroupsNamespaces`.
 

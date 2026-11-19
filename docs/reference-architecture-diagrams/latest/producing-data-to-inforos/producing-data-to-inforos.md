@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/p
 ---
 
 # Producing Data to InforOS over SFTP
-<a name="producing-data-to-inforos"></a>
 
 Publication date: **March 20, 2021 ([Diagram history](#pdi-diagram-history))**
 

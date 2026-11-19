@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Update the IP address types for your Application Load Balancer
-<a name="load-balancer-ip-address-type"></a>
 
 You can configure your Application Load Balancer so that clients can communicate with the load balancer using IPv4 addresses only, or using both IPv4 and IPv6 addresses (dualstack). The load balancer communicates with targets based on the IP address type of the target group. For more information, see [IP address type](application-load-balancers.md#ip-address-type).
 

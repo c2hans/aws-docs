@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Problem: Suspended account causing enrollment or environment validation failure
-<a name="problem-suspended-account-causing-enrollment-or-environment-validation-failure"></a>
 
 After you suspend accounts from your AWS Organization, the solution environment validation feature still attempts to enroll and validate these suspended accounts in the **Prepare** stage unless you contain them within an ignored OU. You will receive a [Core pipeline error](problem-core-pipeline-failure.md) until you complete the following resolution steps.
 

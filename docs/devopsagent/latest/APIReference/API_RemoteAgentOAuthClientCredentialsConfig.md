@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Remo
 ---
 
 # RemoteAgentOAuthClientCredentialsConfig
-<a name="API_RemoteAgentOAuthClientCredentialsConfig"></a>
 
 OAuth client credentials configuration for remote A2A agent.
 

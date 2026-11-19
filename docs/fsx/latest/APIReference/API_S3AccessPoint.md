@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_S3AccessPoin
 ---
 
 # S3AccessPoint
-<a name="API_S3AccessPoint"></a>
 
 Describes the S3 access point configuration of the S3 access point attachment.
 

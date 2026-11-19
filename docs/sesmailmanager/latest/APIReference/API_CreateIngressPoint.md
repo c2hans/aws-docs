@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_C
 ---
 
 # CreateIngressPoint
-<a name="API_CreateIngressPoint"></a>
 
 Provision a new ingress endpoint resource.
 

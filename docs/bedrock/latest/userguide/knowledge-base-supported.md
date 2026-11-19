@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Supported models and Regions for Amazon Bedrock knowledge bases
-<a name="knowledge-base-supported"></a>
 
 To see which models support Knowledge Bases, please refer to [Models at a glance](model-cards.md) and choose the model you are interested in.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 Before you migrate from Teradata Vantage to the AWS Cloud, we recommend that you meet the following prerequisites:
 + Update your on-premises ecosystem where possible, including upgrading to the latest versions of Teradata Tools and Utilities (TTU) and third-party applications.

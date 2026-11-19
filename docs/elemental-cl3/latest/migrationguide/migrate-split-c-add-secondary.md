@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Step G: Add node Y to cluster
-<a name="migrate-split-c-add-secondary"></a>
 
 1. Add node Y to the new cluster, and add it to the HA group in that cluster. Node Y will assume the role of secondary Conductor. See [Adding the secondary Conductor node to the cluster](migrate-topic-add-conductor.md).
 

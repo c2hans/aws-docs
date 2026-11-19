@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # ListMediaCapturePipelines
-<a name="API_media-pipelines-chime_ListMediaCapturePipelines"></a>
 
 Returns a list of media pipelines.
 

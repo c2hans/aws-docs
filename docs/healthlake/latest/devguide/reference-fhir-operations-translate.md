@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # Mapping Codes Between Terminologies with `$translate`
-<a name="reference-fhir-operations-translate"></a>
 
 AWS HealthLake supports the `$translate` operation for ConceptMap resources, enabling you to map a code from one code system to an equivalent code in another using ConceptMaps you have ingested into your datastore. This operation is particularly useful when you need to:
 + Map codes between terminologies (for example, ICD-10-CM to SNOMED CT)

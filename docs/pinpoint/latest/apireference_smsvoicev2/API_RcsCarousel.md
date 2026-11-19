@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RcsCarousel
-<a name="API_RcsCarousel"></a>
 
 A carousel of 2 to 10 scrollable rich cards.
 

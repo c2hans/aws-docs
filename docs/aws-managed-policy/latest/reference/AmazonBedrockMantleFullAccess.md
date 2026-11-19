@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonBedrockMantleFullAccess
-<a name="AmazonBedrockMantleFullAccess"></a>
 
 **Description**: Provides full access to Amazon Bedrock Mantle as well as limited access to related services that are required by it
 

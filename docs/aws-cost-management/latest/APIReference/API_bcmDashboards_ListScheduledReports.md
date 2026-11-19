@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListScheduledReports
-<a name="API_bcmDashboards_ListScheduledReports"></a>
 
 Returns a list of scheduled reports in your account.
 

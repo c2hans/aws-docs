@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Recomm
 ---
 
 # RecommendationJobInferenceBenchmark
-<a name="API_RecommendationJobInferenceBenchmark"></a>
 
 The details for a specific benchmark from an Inference Recommender job.
 

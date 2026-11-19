@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ch
 ---
 
 # Appendix A ‒ Goal types for chaos engineering
-<a name="appendix-a"></a>
 
 The following descriptions of goal types include real-world examples of how Amazon and other organizations have designed goals for chaos engineering.
 

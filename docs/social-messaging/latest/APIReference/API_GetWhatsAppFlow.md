@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # GetWhatsAppFlow
-<a name="API_GetWhatsAppFlow"></a>
 
 Retrieves the metadata and status of a WhatsApp Flow, including validation errors, preview information, and health status.
 

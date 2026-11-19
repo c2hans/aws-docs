@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-to-mac-i
 ---
 
 # Connect to your Mac instance using SSH or a GUI
-<a name="connect-to-mac-instance"></a>
 
 You can connect to your Mac instance using SSH or a graphical user interface (GUI).
 

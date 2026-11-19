@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/monitor-ai-age
 ---
 
 # Monitor AI agents using CloudWatch
-<a name="monitor-ai-agents"></a>
 
 To gain visibility into the real-time recommendations that AI agents provide to your agents, and the customer intents they detect through natural language understanding, you can query CloudWatch Logs. CloudWatch Logs give you visibility into the entire contact journey: the conversation, triggers, intents, recommendations. You can also use this information for debugging, or provide it to Support when you contact them for help.
 

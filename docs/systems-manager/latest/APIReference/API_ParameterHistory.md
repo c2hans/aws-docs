@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ParameterHistory
-<a name="API_ParameterHistory"></a>
 
 Information about parameter usage.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeEffectivePatchesForPatchBaseline
-<a name="API_DescribeEffectivePatchesForPatchBaseline"></a>
 
 Retrieves the current effective patches (the patch and the approval state) for the specified patch baseline. Applies to patch baselines for Windows only.
 

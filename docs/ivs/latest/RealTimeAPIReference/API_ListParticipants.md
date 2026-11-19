@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_List
 ---
 
 # ListParticipants
-<a name="API_ListParticipants"></a>
 
 Lists all participants in a specified stage session.
 

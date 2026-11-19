@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCPERF10-BP03 Install only the application features required by end users
-<a name="eucperf10-bp03"></a>
 
  Some applications provide the ability to tailor an installation to remove features that are not required by users.
 

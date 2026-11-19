@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html
 ---
 
 # Tutorial: Using an Amazon S3 trigger to invoke a Lambda Event Function
-<a name="with-s3-example"></a>
 
 In this tutorial, you use the console to create a Lambda Event Function and configure a trigger for an Amazon Simple Storage Service (Amazon S3) bucket. Every time that you add an object to your Amazon S3 bucket, your function runs and outputs the object type to Amazon CloudWatch Logs.
 

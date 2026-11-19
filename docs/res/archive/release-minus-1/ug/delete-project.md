@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/delete-pr
 ---
 
 # Delete a project
-<a name="delete-project"></a>
 
 To delete a project:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Ena
 ---
 
 # EnableCAEnrollmentPolicy
-<a name="API_EnableCAEnrollmentPolicy"></a>
 
 Enables certificate authority (CA) enrollment policy for the specified directory. This allows domain-joined clients to automatically request and receive certificates from the specified AWS Private Certificate Authority.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Address
 ---
 
 # Address
-<a name="API_Address"></a>
 
  Information about an address.
 

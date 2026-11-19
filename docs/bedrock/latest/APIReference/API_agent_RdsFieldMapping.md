@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Rd
 ---
 
 # RdsFieldMapping
-<a name="API_agent_RdsFieldMapping"></a>
 
 Contains the names of the fields to which to map information about the vector store.
 

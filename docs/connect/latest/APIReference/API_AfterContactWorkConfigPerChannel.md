@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AfterCon
 ---
 
 # AfterContactWorkConfigPerChannel
-<a name="API_AfterContactWorkConfigPerChannel"></a>
 
 Configuration settings for after contact work (ACW) timeout for a specific channel.
 

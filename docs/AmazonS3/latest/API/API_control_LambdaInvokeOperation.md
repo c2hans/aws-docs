@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_LambdaIn
 ---
 
 # LambdaInvokeOperation
-<a name="API_control_LambdaInvokeOperation"></a>
 
 Contains the configuration parameters for a `Lambda Invoke` operation.
 

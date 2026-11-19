@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AccountAgg
 ---
 
 # AccountAggregation
-<a name="API_AccountAggregation"></a>
 
 An object that contains details about an aggregation response based on AWS accounts.
 

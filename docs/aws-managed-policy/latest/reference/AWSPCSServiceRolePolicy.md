@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPCSServiceRolePolicy
-<a name="AWSPCSServiceRolePolicy"></a>
 
 **Description**: Grants permissions to PCS to manage resources on your behalf.
 

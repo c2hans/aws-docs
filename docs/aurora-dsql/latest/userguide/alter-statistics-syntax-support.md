@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/alter-stati
 ---
 
 # `ALTER STATISTICS`
-<a name="alter-statistics-syntax-support"></a>
 
 ## Supported syntax
 <a name="alter-statistics-supported-syntax"></a>

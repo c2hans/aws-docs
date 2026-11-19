@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/connector-tool-pe
 ---
 
 # Tool permissions
-<a name="connector-tool-permissions"></a>
 
 Connector owners and administrators can enable or disable individual tools within a connector to control which tools are available to users. Tool permission settings also let connector owners decide which tools require user consent before running, and which tools users can configure for themselves.
 

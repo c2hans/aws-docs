@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-transf
 ---
 
 # Transfer files and directories
-<a name="s3-transfers"></a>
 
 The AWS SDK for PHP Version 3 provides two approaches for transferring files and directories to and from Amazon S3. Both solutions handle the complexity of multipart uploads and downloads for large files, but they differ in their design philosophy, feature set, and usage patterns.
 

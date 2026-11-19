@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/db-cluster-vi
 ---
 
 # Describing Amazon DocumentDB clusters
-<a name="db-cluster-view-details"></a>
 
 You can use either Amazon DocumentDB Management Console or the AWS CLI to see details such as connection endpoints, security groups, VPCs, and parameter groups pertaining to your Amazon DocumentDB clusters.
 

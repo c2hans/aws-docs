@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_VpcConnector.ht
 ---
 
 # VpcConnector
-<a name="API_VpcConnector"></a>
 
 Describes an AWS App Runner VPC connector resource. A VPC connector describes the Amazon Virtual Private Cloud (Amazon VPC) that an App Runner service is associated with, and the subnets and security group that are used.
 

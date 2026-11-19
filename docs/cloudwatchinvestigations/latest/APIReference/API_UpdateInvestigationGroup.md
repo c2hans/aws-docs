@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchinvestigations/latest/APIRefer
 ---
 
 # UpdateInvestigationGroup
-<a name="API_UpdateInvestigationGroup"></a>
 
 Updates the configuration of the specified investigation group.
 

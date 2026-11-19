@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListHarnessEndpoints
-<a name="API_ListHarnessEndpoints"></a>
 
 Operation to list the endpoints of a harness.
 

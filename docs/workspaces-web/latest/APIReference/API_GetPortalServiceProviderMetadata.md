@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_G
 ---
 
 # GetPortalServiceProviderMetadata
-<a name="API_GetPortalServiceProviderMetadata"></a>
 
 Gets the service provider metadata.
 

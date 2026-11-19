@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Descri
 ---
 
 # DescribeDaemonTaskDefinition
-<a name="API_DescribeDaemonTaskDefinition"></a>
 
 Describes a daemon task definition. You can specify a `family` and `revision` to find information about a specific daemon task definition, or you can simply specify the family to find the latest `ACTIVE` revision in that family.
 

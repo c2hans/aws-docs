@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/delete-traffic
 ---
 
 # Delete traffic distribution groups in Connect Customer
-<a name="delete-traffic-distribution-groups"></a>
 
 Use the [DeleteTrafficDistributionGroup](https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteTrafficDistributionGroup.html) API to delete a traffic distribution group that is no longer needed.
 

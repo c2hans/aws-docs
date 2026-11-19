@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/nested-virt
 ---
 
 # Nested virtualization for WorkSpaces Personal
-<a name="nested-virtualization"></a>
 
 Nested virtualization allows you to run hypervisors such as Hyper-V and KVM inside your WorkSpace. This enables you to use development tools and workflows that require hardware virtualization support, including:
 + Docker Desktop

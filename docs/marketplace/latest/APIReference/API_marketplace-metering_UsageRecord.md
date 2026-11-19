@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # UsageRecord
-<a name="API_marketplace-metering_UsageRecord"></a>
 
 A `UsageRecord` indicates a quantity of usage for a given product, customer, dimension and time.
 

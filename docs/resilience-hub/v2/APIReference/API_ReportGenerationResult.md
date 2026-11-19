@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Repor
 ---
 
 # ReportGenerationResult
-<a name="API_ReportGenerationResult"></a>
 
 Result of a report generation attempt.
 

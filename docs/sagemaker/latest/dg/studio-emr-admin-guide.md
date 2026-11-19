@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-emr-admin-gui
 ---
 
 # Admin guide
-<a name="studio-emr-admin-guide"></a>
 
 This section provides prerequisites, networking instructions for allowing the communication between Studio or Studio Classic and Amazon EMR clusters. It covers different deployment scenarios - when Studio and Amazon EMR are provisioned within private Amazon VPCs without public internet access, as well as when they need to communicate over the internet.
 

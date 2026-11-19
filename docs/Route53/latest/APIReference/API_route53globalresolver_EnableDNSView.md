@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # EnableDNSView
-<a name="API_route53globalresolver_EnableDNSView"></a>
 
 Enables a disabled DNS view, allowing it to serve DNS queries again.
 

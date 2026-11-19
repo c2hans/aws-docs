@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Expenditure and usage awareness
-<a name="gamecost01"></a>
 
 |  GAMECOST01: How do you measure the cost of your game environments?  |
 | --- |

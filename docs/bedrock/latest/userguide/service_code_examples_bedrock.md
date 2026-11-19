@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/service_code_ex
 ---
 
 # Code examples for Amazon Bedrock using AWS SDKs
-<a name="service_code_examples_bedrock"></a>
 
 The following code examples show how to use Amazon Bedrock with an AWS software development kit (SDK).
 

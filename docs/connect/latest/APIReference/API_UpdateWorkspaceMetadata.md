@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateWo
 ---
 
 # UpdateWorkspaceMetadata
-<a name="API_UpdateWorkspaceMetadata"></a>
 
 Updates the metadata of a workspace, such as its name and description.
 

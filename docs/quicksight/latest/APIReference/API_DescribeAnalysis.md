@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeAnalysis
-<a name="API_DescribeAnalysis"></a>
 
 Provides a summary of the metadata for an analysis.
 

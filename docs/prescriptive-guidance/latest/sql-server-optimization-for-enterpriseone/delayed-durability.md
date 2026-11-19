@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Enable delayed durability
-<a name="delayed-durability"></a>
 
 Certain processes such as EnterpriseOne's Material Requirements Planning (MRP) encounter a bottleneck caused by the disk latency of committing transactions to the transaction log. Moving the transaction log (LDF) to `io2 `or `io2 `Block Express storage often improves the performance sufficiently to meet business requirements. If this is insufficient, you can configure delayed durability in the database.
 

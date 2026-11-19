@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # AI Assistant in Amazon OpenSearch Service
-<a name="application-ai-assistant"></a>
 
 OpenSearch UI includes a suite of agentic AI capabilities designed to simplify operational analytics and accelerate incident investigations for your engineering and support teams.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/microvms-images.html
 ---
 
 # MicroVM images
-<a name="microvms-images"></a>
 
 This section describes how to build, configure, update, and manage MicroVM images.
 

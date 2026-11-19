@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/o
 ---
 
 # Omni-channel Customer Engagement for Airlines
-<a name="omni-channel-customer-engagement-for-airlines"></a>
 
 Publication date: **August 15, 2022 ([Diagram history](#diagram-history))**
 

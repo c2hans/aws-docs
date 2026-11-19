@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/ha-dr-dep-orc-s
 ---
 
 # HA/DR deployment
-<a name="ha-dr-dep-orc-sap-nw-lx"></a>
 
 ## Installing SAP Oracle on Amazon EC2 instances and configuring HA/DR
 <a name="steps-ha-dr-dep-orc-sap-nw-lx"></a>

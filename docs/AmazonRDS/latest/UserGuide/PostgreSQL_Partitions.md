@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL_Pa
 ---
 
 # Managing PostgreSQL partitions with the pg\_partman extension
-<a name="PostgreSQL_Partitions"></a>
 
 PostgreSQL table partitioning provides a framework for high-performance handling of data input and reporting. Use partitioning for databases that require very fast input of large amounts of data. Partitioning also provides for faster queries of large tables. Partitioning helps maintain data without impacting the database instance because it requires fewer I/O resources.
 

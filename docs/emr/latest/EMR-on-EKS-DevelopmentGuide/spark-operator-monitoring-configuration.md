@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Using monitoring configuration to monitor the Spark Kubernetes operator and Spark jobs
-<a name="spark-operator-monitoring-configuration"></a>
 
 Monitoring configuration lets you easily set up log archiving of your Spark application and operator logs to Amazon S3 or to Amazon CloudWatch. You can choose one or both. Doing so adds a log agent sidecar to your spark operator pod, driver, and executor pods, and subsequently forwards these components' logs to your configured sinks.
 

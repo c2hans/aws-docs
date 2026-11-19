@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/reward-function
 ---
 
 # Setting up reward functions for Amazon Nova models
-<a name="reward-functions"></a>
 
 Reward functions evaluate response quality and provide feedback signals for model training. You can set up reward functions using custom Lambda functions or Amazon Bedrock-hosted foundation models as judges. Guided templates are available to simplify reward function creation for common tasks like instruction following and format validation. Choose the approach that matches your task requirements.
 

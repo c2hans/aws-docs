@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/example_glue_DeleteCrawle
 ---
 
 # Use `DeleteCrawler` with an AWS SDK
-<a name="example_glue_DeleteCrawler_section"></a>
 
 The following code examples show how to use `DeleteCrawler`.
 

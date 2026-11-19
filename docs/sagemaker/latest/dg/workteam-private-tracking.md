@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/workteam-private-tra
 ---
 
 # Track Worker Performance Metrics
-<a name="workteam-private-tracking"></a>
 
  Amazon SageMaker Ground Truth logs worker events to Amazon CloudWatch, such as when a worker starts or submits a task. Use Amazon CloudWatch metrics to measure and track throughput across a team or for individual workers.
 

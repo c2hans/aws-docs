@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # BatchPutLimitEntry
-<a name="API_BatchPutLimitEntry"></a>
 
 A rate limit definition within a batch put request. If you provide a `rateLimitId`, the service uses it for upsert matching against existing rate limits.
 

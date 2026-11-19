@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/xml-helpers-in-u
 ---
 
 # XML helpers in util.xml
-<a name="xml-helpers-in-util-xml-js"></a>
 
  `util.xml` contains methods to help with XML string conversion.
 

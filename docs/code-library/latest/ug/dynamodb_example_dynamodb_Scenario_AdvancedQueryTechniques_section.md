@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/dynamodb_example_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Perform advanced DynamoDB query operations using an AWS SDK
-<a name="dynamodb_example_dynamodb_Scenario_AdvancedQueryTechniques_section"></a>
 
 The following code examples show how to perform advanced query operations in DynamoDB.
 + Query tables using various filtering and condition techniques.

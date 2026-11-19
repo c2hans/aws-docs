@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_JobLogEventD
 ---
 
 # JobLogEventData
-<a name="API_JobLogEventData"></a>
 
 Metadata associated with a Job log.
 

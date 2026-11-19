@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterCert
 ---
 
 # RegisterCertificateWithoutCA
-<a name="API_RegisterCertificateWithoutCA"></a>
 
 Register a certificate that does not have a certificate authority (CA). For supported certificates, consult [ Certificate signing algorithms supported by AWS IoT](https://docs.aws.amazon.com/iot/latest/developerguide/x509-client-certs.html#x509-cert-algorithms).
 

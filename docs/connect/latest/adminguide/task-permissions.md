@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/task-permissio
 ---
 
 # Block agents from creating tasks in the Connect Customer Contact Control Panel (CCP)
-<a name="task-permissions"></a>
 
 To block agents from being able to create tasks, assign the **Contact Control Panel (CCP)**, **Restrict task creation** permission. By default this permissions is unchecked, which means all agents can create tasks.
 

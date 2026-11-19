@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/display-max-d
 ---
 
 # View AWS Client VPN current maximum VPN session duration
-<a name="display-max-duration"></a>
 
 Use the following steps to view the current Client VPN maximum VPN session duration.
 

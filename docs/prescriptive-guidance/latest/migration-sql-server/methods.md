@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # SQL Server database migration methods
-<a name="methods"></a>
 
 There are various methods to migrate your SQL Server databases to AWS. You can choose from AWS services and SQL Server native features based on your assessment and requirements. This section describes some of the most common methods, which are summarized in the following two tables. Detailed discussions of some of these methods are included in the sections on Amazon EC2 and Amazon RDS later in this guide.
 

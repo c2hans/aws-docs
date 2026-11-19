@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/find-instance-
 ---
 
 # Find your Connect Customer instance name
-<a name="find-instance-name"></a>
 
 1. Open the Connect Customer console at [https://console.aws.amazon.com/connect/](https://console.aws.amazon.com/connect/).
 

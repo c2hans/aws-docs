@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/glo
 ---
 
 # DynamoDB global tables security
-<a name="globaltables_MA_security"></a>
 
 Global tables replicas are DynamoDB tables, so you use the same methods for controlling access to replicas that you do for single-Region tables, including AWS Identity and Access Management (IAM) identity policies and resource-based policies. This topic covers how to secure DynamoDB multi-account global tables using IAM permissions and AWS Key Management Service (AWS KMS) encryption. You learn about the resource based policies and service-linked roles (SLR) that allow cross-Region cross-account replication and auto-scaling, the IAM permissions needed to create, update, and delete global tables, for a multi-Region eventual consistency (MREC) tables. You also learn about AWS KMS encryption keys to manage cross-Region replication securely.
 

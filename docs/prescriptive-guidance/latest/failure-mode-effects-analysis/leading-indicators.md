@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/failure-mod
 ---
 
 # Leading indicators
-<a name="leading-indicators"></a>
 
 *Leading indicators* tell you whether teams are adopting the methodology and acting on what they find. These metrics give you early signals to course-correct before gaps show up in production.
 

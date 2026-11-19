@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # ListAlerts
-<a name="API_ListAlerts"></a>
 
 Lists alerts within a space, optionally filtered by exact name(s), a single name prefix, or exact alertId(s), with pagination.
 

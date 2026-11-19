@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 ---
 
 # [QA.TEM.3] Store and manage test results
-<a name="qa.tem.3-store-and-manage-test-results"></a>
 
  **Category:** FOUNDATIONAL
 

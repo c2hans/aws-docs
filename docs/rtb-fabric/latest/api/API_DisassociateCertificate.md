@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_DisassociateCe
 ---
 
 # DisassociateCertificate
-<a name="API_DisassociateCertificate"></a>
 
 Removes a certificate association from a responder gateway.
 

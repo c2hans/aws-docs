@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/configuration-envvars-e
 ---
 
 # Securing Lambda environment variables
-<a name="configuration-envvars-encryption"></a>
 
 For securing your environment variables, you can use server-side encryption to protect your data at rest and client-side encryption to protect your data in transit.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-adva
 ---
 
 # Exploring more data for advanced cost analysis
-<a name="ce-advanced-cost-analysis"></a>
 
 Cost Explorer provides AWS cost and usage data for the current month and up to the previous 13 months at daily and monthly granularity. You can query this data in the console or using the Cost Explorer API.
 

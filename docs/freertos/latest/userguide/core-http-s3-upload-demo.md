@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/core-http-s3-u
 ---
 
 # coreHTTP basic Amazon S3 upload demo
-<a name="core-http-s3-upload-demo"></a>
 
 **Important**  <a name="deprecation-message-demo"></a>
 This demo is hosted on the Amazon-FreeRTOS repository which is deprecated. We recommend that you [start here](freertos-getting-started-modular.md) when you create a new project. If you already have an existing FreeRTOS project based on the now deprecated Amazon-FreeRTOS repository, see the [Amazon-FreeRTOS Github Repository Migration Guide](github-repo-migration.md).

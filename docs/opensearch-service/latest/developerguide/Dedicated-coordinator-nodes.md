@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Dedicated coordinator nodes in Amazon OpenSearch Service
-<a name="Dedicated-coordinator-nodes"></a>
 
 Dedicated coordinator nodes in Amazon OpenSearch Service are specialized nodes that offload coordination tasks from data nodes. These tasks include managing search requests and hosting OpenSearch Dashboards. By separating these functions, dedicated coordinator nodes reduce the load on data nodes, which allows them to focus on data storage, indexing, and search operations. This improves overall cluster performance and resource utilization.
 

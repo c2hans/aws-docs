@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateTrialComponent
-<a name="API_UpdateTrialComponent"></a>
 
 Updates one or more properties of a trial component.
 

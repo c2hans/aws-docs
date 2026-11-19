@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Use the SDK for Java 1.x and 2.x side-by-side
-<a name="migration-side-by-side"></a>
 
 You can use both versions of the AWS SDK for Java in your projects.
 

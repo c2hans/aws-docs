@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/config
 ---
 
 # Configuring Access for Amazon CloudSearch
-<a name="configuring-access"></a>
 
 You use AWS Identity and Access Management (IAM) access policies to control access to the Amazon CloudSearch configuration service and each search domain's document, search, and suggest services. An IAM access policy is a JSON document that explicitly lists permissions that define what actions people or processes are allowed to perform. For an introduction to IAM access policies, see [Overview of AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/PoliciesOverview.html).
 

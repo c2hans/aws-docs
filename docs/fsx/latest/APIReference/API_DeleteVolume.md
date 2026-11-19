@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DeleteVolume
 ---
 
 # DeleteVolume
-<a name="API_DeleteVolume"></a>
 
 Deletes an Amazon FSx for NetApp ONTAP or Amazon FSx for OpenZFS volume.
 

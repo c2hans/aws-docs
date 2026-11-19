@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_InventoryS3Bucke
 ---
 
 # InventoryS3BucketDestination
-<a name="API_InventoryS3BucketDestination"></a>
 
 Contains the bucket name, file format, bucket owner (optional), and prefix (optional) where S3 Inventory results are published.
 

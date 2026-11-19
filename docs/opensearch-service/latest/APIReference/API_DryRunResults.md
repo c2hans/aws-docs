@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DryRunResults
-<a name="API_DryRunResults"></a>
 
 Results of a dry run performed in an update domain request.
 

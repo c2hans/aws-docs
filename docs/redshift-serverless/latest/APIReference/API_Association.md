@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # Association
-<a name="API_Association"></a>
 
 An object that represents the custom domain name association.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/ctas-partitioning-and-b
 ---
 
 # What is partitioning?
-<a name="ctas-partitioning-and-bucketing-what-is-partitioning"></a>
 
 Partitioning means organizing data into directories (or "prefixes") on Amazon S3 based on a particular property of the data. Such properties are called partition keys. A common partition key is the date or some other unit of time such as the year or month. However, a dataset can be partitioned by more than one key. For example, data about product sales might be partitioned by date, product category, and market.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/working-with-
 ---
 
 # Step 1: Create a Lambda function for a custom AWS AppConfig extension
-<a name="working-with-appconfig-extensions-creating-custom-lambda"></a>
 
 For most use-cases, to create a custom extension, you must create an AWS Lambda function to perform any computation and processing defined in the extension. This section includes Lambda function sample code for a custom AWS AppConfig extension. This section also includes payload request and response reference details. For information about creating a Lambda function, see [Getting started with Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html) in the *AWS Lambda Developer Guide*.
 

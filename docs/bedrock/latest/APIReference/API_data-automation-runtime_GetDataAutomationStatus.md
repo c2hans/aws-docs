@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # GetDataAutomationStatus
-<a name="API_data-automation-runtime_GetDataAutomationStatus"></a>
 
 Gets details about a data automation invocation. To process data, start an invocation with [InvokeDataAutomationAsync](API_data-automation-runtime_InvokeDataAutomationAsync.md). When the status is `Success`, retrieve the output from the S3 bucket.
 

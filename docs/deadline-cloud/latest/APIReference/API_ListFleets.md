@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListFleets
-<a name="API_ListFleets"></a>
 
 Lists fleets.
 

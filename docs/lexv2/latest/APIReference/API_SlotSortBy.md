@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotSortBy
 ---
 
 # SlotSortBy
-<a name="API_SlotSortBy"></a>
 
 Specifies attributes for sorting a list of bots.
 

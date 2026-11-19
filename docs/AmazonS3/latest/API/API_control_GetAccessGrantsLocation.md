@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAcces
 ---
 
 # GetAccessGrantsLocation
-<a name="API_control_GetAccessGrantsLocation"></a>
 
 Retrieves the details of a particular location registered in your S3 Access Grants instance.
 

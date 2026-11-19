@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_TagR
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds tags to a WorkSpace Instance.
 

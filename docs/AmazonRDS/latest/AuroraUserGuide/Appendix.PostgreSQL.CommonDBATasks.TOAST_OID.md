@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Appendi
 ---
 
 # Managing TOAST OID contention in Amazon Aurora PostgreSQL
-<a name="Appendix.PostgreSQL.CommonDBATasks.TOAST_OID"></a>
 
 TOAST (The Oversized-Attribute Storage Technique) is a PostgreSQL feature designed to handle large data values that exceed the typical 8KB database block size. PostgreSQL doesn't allow physical rows to span multiple blocks. The block size acts as an upper limit on row size. TOAST overcomes this restriction by splitting large field values into smaller chunks. It stores them separately in a dedicated TOAST table linked to the main table. For more information, see the [PostgreSQL TOAST storage mechanism and implementation documentation](https://www.postgresql.org/docs/current/storage-toast.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-ai21
 ---
 
 # Jamba 1.5 Mini
-<a name="model-card-ai21-labs-jamba-1-5-mini"></a>
 
 ## ![AI21 Labs logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/ai21.png) AI21 Labs — Jamba 1.5 Mini
 <a name="model-card-ai21-labs-jamba-1-5-mini-header"></a>

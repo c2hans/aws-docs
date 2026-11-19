@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Provide
 ---
 
 # ProviderSummary
-<a name="API_ProviderSummary"></a>
 
 The connectorV2 third-party provider configuration summary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/nuclino-configuring.html
 ---
 
 # Configuring Nuclino
-<a name="nuclino-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Nuclino, you must meet the following requirements:
 

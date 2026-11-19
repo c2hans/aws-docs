@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_SetInst
 ---
 
 # SetInstanceHealth
-<a name="API_SetInstanceHealth"></a>
 
 Sets the health status of the specified instance.
 

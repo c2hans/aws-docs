@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Credentials by reference, never by value
-<a name="dp-credentials"></a>
 
 The catalog stores an AWS Secrets Manager ARN. The secret itself never enters the catalog record and never reaches the browser.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # GetProtectConfigurationCountryRuleSet
-<a name="API_GetProtectConfigurationCountryRuleSet"></a>
 
 Retrieve the CountryRuleSet for the specified NumberCapability from a protect configuration.
 

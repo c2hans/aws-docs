@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceS
 ---
 
 # InstanceSecondaryInterfacePrivateIpAddressRequest
-<a name="API_InstanceSecondaryInterfacePrivateIpAddressRequest"></a>
 
 Describes a private IPv4 address for a secondary interface request.
 

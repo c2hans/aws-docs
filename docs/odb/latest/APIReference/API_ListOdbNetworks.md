@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListOdbNetwo
 ---
 
 # ListOdbNetworks
-<a name="API_ListOdbNetworks"></a>
 
 Returns information about the ODB networks owned by your AWS account.
 

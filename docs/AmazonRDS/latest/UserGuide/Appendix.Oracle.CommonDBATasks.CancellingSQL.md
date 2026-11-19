@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Canceling a SQL statement in a session
-<a name="Appendix.Oracle.CommonDBATasks.CancellingSQL"></a>
 
 To cancel a SQL statement in a session, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.cancel`.
 

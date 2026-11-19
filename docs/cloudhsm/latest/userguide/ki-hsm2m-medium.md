@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ki-hsm2m-mediu
 ---
 
 # Known issues for AWS CloudHSM hsm2m.medium instances
-<a name="ki-hsm2m-medium"></a>
 
 The following issues impact all AWS CloudHSM hsm2m.medium instances.
 

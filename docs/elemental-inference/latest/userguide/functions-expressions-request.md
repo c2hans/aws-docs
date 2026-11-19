@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Request expression examples by model family
-<a name="functions-expressions-request"></a>
 
 Each model family has its own request body, so the reference for the body shape is always the Amazon Bedrock documentation for the model that you chose. The examples in this section use the Anthropic Claude Messages API to show the technique; the placement of `media.frames` is the same whichever family you use, and only the field names around it change.
 

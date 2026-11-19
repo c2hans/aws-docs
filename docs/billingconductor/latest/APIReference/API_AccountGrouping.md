@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # AccountGrouping
-<a name="API_AccountGrouping"></a>
 
 The set of accounts that will be under the billing group. The set of accounts resemble the linked accounts in a consolidated billing family.
 

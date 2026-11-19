@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLJobObjective
-<a name="API_AutoMLJobObjective"></a>
 
 Specifies a metric to minimize or maximize as the objective of an AutoML job.
 

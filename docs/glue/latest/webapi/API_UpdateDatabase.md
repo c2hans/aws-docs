@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateDatabase.ht
 ---
 
 # UpdateDatabase
-<a name="API_UpdateDatabase"></a>
 
 Updates an existing database definition in a Data Catalog.
 

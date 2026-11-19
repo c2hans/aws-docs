@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-service-role.
 ---
 
 # Create a service role for Amazon Chime SDK messaging
-<a name="create-service-role"></a>
 
 AWS uses service roles to grant permissions to an AWS service so it can access AWS resources. The policies that you attach to a service role determine which resources the service can access and what it can do with those resources. The service role that you create for the Amazon Chime SDK gives the service permission to make `SendMessages` calls to your Amazon Pinpoint application.
 

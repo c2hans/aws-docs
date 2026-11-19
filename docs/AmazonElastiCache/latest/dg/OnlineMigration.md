@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/OnlineMigrat
 ---
 
 # Online migration to ElastiCache node-based clusters
-<a name="OnlineMigration"></a>
 
 With online migration, you can migrate your data from self-managed Valkey or Redis OSS on Amazon EC2 to a node-based Amazon ElastiCache cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/service-network-ta
 ---
 
 # Manage tags for a VPC Lattice service network
-<a name="service-network-tags"></a>
 
 Tags help you to categorize your service network in different ways, for example, by purpose, owner, or environment.
 

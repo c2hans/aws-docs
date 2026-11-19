@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/userguide/network-troubl
 ---
 
 # Outposts rack network troubleshooting checklist
-<a name="network-troubleshoot"></a>
 
 Use this checklist to help troubleshoot a service link that has a status of `DOWN`.
 

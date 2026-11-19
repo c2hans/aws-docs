@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_StopIngestion.h
 ---
 
 # StopIngestion
-<a name="API_StopIngestion"></a>
 
 Stops (disables) an ingestion.
 

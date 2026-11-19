@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Valida
 ---
 
 # ValidationEvidenceBody
-<a name="API_ValidationEvidenceBody"></a>
 
 Projected content for a VALIDATION\_EVIDENCE artifact: the validation agent's durable proof of exploitability.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/step1.html
 ---
 
 # Step 1. Launch the stack
-<a name="step1"></a>
 
 The CloudFormation template in this section deploys *Customizations for AWS Control Tower* (CfCT) in your account.
 

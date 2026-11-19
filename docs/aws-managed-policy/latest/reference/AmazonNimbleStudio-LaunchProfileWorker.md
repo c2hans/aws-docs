@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonNimbleStudio-LaunchProfileWorker
-<a name="AmazonNimbleStudio-LaunchProfileWorker"></a>
 
 **Description**: This policy grants access to resources needed by Nimble Studio Launch Profile workers. Attach this policy to EC2 instances created by Nimble Studio Builder.
 

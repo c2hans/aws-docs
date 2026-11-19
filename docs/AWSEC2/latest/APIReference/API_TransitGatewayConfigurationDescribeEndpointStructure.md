@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayConfigurationDescribeEndpointStructure
-<a name="API_TransitGatewayConfigurationDescribeEndpointStructure"></a>
 
 Describes the Transit Gateway configuration for a Client VPN endpoint.
 

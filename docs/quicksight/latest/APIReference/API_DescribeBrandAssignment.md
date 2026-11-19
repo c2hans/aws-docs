@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeBrandAssignment
-<a name="API_DescribeBrandAssignment"></a>
 
 Describes a brand assignment.
 

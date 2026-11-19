@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReferenc
 ---
 
 # TagResources
-<a name="API_TagResources"></a>
 
 Applies one or more tags to the specified resources. Note the following:
 + Not all resources can have tags. For a list of services with resources that support tagging using this operation, see [Services that support the Resource Groups Tagging API](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/supported-services.html). If the resource doesn't yet support this operation, the resource's service might support tagging using its own API operations. For more information, refer to the documentation for that service.

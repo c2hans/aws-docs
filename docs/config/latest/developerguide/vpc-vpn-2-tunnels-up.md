@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/vpc-vpn-2-t
 ---
 
 # vpc-vpn-2-tunnels-up
-<a name="vpc-vpn-2-tunnels-up"></a>
 
 Checks if both virtual private network (VPN) tunnels provided by AWS Site-to-Site VPN are in UP status. The rule is NON\_COMPLIANT if one or both tunnels are in DOWN status.
 

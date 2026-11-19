@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/orgs_tr
 ---
 
 # Viewing Billing and Cost Management data as a Bill Transfer account
-<a name="orgs_transfer_billing-view-account"></a>
 
 When the transfer begins, the bill transfer account:
 + Receives distinct AWS invoices (for example, distinct consolidated bills) for charges from bill source accounts after the transfer becomes effective. These appear only in the bill transfer account. For more information, see [What is AWS Billing and Cost Management?](billing-what-is.md).

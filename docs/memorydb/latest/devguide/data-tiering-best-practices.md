@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/data-tiering-be
 ---
 
 # Best practices
-<a name="data-tiering-best-practices"></a>
 
 We recommend the following best practices:
 + Data tiering is ideal for workloads that access up to 20 percent of their overall dataset regularly, and for applications that can tolerate additional latency when accessing data on SSD.

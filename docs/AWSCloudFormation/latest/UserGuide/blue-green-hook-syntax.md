@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/blue-
 ---
 
 # `AWS::CodeDeploy::BlueGreen` hook syntax
-<a name="blue-green-hook-syntax"></a>
 
 The following syntax describes the structure of an `AWS::CodeDeploy::BlueGreen` hook for ECS blue/green deployments.
 

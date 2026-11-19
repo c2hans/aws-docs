@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/troubleshooting
 ---
 
 # Troubleshooting build issues
-<a name="troubleshooting-build-issues"></a>
 
 If you encounter issues when creating or building an Amplify application, consult the topics in this section for help.
 

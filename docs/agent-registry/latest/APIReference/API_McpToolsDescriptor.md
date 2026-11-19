@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_M
 ---
 
 # McpToolsDescriptor
-<a name="API_McpToolsDescriptor"></a>
 
 MCP tools descriptor containing tool definitions
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_J
 ---
 
 # JobAttachmentSettings
-<a name="API_JobAttachmentSettings"></a>
 
 The job attachment settings. These are the Amazon S3 bucket name and the Amazon S3 prefix.
 

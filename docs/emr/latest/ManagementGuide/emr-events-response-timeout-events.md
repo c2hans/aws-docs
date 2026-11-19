@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-events-re
 ---
 
 # Responding to Amazon EMR cluster instance fleet resize timeout events
-<a name="emr-events-response-timeout-events"></a>
 
 ## Overview
 <a name="emr-events-response-timeout-events-overview"></a>

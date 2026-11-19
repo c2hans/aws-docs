@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-troubleshooting.
 ---
 
 # Troubleshooting issues in Lambda
-<a name="lambda-troubleshooting"></a>
 
 The following topics provide troubleshooting advice for errors and issues that you might encounter when using the Lambda API, console, or tools. If you find an issue that is not listed here, you can use the **Feedback** button on this page to report it.
 

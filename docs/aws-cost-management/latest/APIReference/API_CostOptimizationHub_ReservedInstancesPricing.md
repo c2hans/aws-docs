@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ReservedInstancesPricing
-<a name="API_CostOptimizationHub_ReservedInstancesPricing"></a>
 
 Pricing details for your recommended reserved instance.
 

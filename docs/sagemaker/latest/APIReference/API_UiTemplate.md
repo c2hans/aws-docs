@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UiTemp
 ---
 
 # UiTemplate
-<a name="API_UiTemplate"></a>
 
 The Liquid template for the worker user interface.
 

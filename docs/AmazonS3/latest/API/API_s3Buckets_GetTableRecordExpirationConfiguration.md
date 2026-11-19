@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_GetTab
 ---
 
 # GetTableRecordExpirationConfiguration
-<a name="API_s3Buckets_GetTableRecordExpirationConfiguration"></a>
 
 Retrieves the expiration configuration settings for records in a table, and the status of the configuration. If the status of the configuration is `enabled`, records expire and are automatically removed from the table after the specified number of days.
 

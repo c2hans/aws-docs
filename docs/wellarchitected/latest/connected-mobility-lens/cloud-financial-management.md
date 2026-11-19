@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Cloud Financial Management
-<a name="cloud-financial-management"></a>
 
 | CMCOST\_5: Have you defined a tagging strategy for your connected mobility workloads?  |
 | --- |

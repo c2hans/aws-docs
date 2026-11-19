@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_IntentConf
 ---
 
 # IntentConfirmationSetting
-<a name="API_IntentConfirmationSetting"></a>
 
 Provides a prompt for making sure that the user is ready for the intent to be fulfilled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ListingSummaryAssociatedEntity
-<a name="API_marketplace-discovery_ListingSummaryAssociatedEntity"></a>
 
 A product associated with a listing summary.
 

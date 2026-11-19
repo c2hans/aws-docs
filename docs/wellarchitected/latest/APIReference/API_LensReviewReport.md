@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # LensReviewReport
-<a name="API_LensReviewReport"></a>
 
 A report of a lens review.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationFlowDedupeStrategy
-<a name="API_DataIntegrationFlowDedupeStrategy"></a>
 
 The deduplication strategy details.
 

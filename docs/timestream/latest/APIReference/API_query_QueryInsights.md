@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # QueryInsights
-<a name="API_query_QueryInsights"></a>
 
  `QueryInsights` is a performance tuning feature that helps you optimize your queries, reducing costs and improving performance. With `QueryInsights`, you can assess the pruning efficiency of your queries and identify areas for improvement to enhance query performance. With `QueryInsights`, you can also analyze the effectiveness of your queries in terms of temporal and spatial pruning, and identify opportunities to improve performance. Specifically, you can evaluate how well your queries use time-based and partition key-based indexing strategies to optimize data retrieval. To optimize query performance, it's essential that you fine-tune both the temporal and spatial parameters that govern query execution.
 

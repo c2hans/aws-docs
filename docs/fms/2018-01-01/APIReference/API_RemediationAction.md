@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Remediat
 ---
 
 # RemediationAction
-<a name="API_RemediationAction"></a>
 
 Information about an individual action you can take to remediate a violation.
 

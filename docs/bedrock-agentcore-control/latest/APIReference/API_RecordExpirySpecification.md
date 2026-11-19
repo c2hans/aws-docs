@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # RecordExpirySpecification
-<a name="API_RecordExpirySpecification"></a>
 
 Specifies the record expiry (long-term memory time-to-live) for a memory strategy. Provide exactly one of `recordExpiryDurationDays` or `action`. Set `recordExpiryDurationDays` to configure or update the time-to-live, or set `action` to `REMOVE` to remove a previously configured time-to-live.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/tag-per
 ---
 
 # Grant permission to tag resources
-<a name="tag-permissions"></a>
 
 You can use IAM policies to control access to your Amazon Location resources and grant permission to tag a resource on creation. In addition to granting permission to create resources, the policy can include `Action` permissions to allow tagging operations:
 + `geo:TagResource` – Allows a user to assign one or more tags to a specified Amazon Location resource.

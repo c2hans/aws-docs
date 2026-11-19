@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/influxdb-rule-
 ---
 
 # InfluxDB
-<a name="influxdb-rule-action"></a>
 
 Choose this action when you want to query device telemetry for operational trends or monitor time-series data in real time. You can use client-side or server-side batching to combine multiple points in one write request. AWS IoT Core converts each message to InfluxDB line protocol and writes it to the specified database and table. For more information about the format, see [InfluxDB line protocol](https://docs.influxdata.com/influxdb3/enterprise/reference/line-protocol/) in the InfluxData documentation. For information about managed clusters, see [Amazon Timestream for InfluxDB](https://docs.aws.amazon.com/timestream/latest/developerguide/influxdb3.html).
 

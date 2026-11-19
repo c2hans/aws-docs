@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSAutoScalingPlansEC2AutoScalingPolicy
-<a name="AWSAutoScalingPlansEC2AutoScalingPolicy"></a>
 
 **Description**: Policy granting permissions to AWS Auto Scaling to periodically forecast capacity and generate scheduled scaling actions for Auto Scaling groups in a scaling plan
 

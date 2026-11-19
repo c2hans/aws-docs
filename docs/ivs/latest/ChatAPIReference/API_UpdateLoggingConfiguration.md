@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_UpdateLo
 ---
 
 # UpdateLoggingConfiguration
-<a name="API_UpdateLoggingConfiguration"></a>
 
 Updates a specified logging configuration.
 

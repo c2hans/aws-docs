@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_DescribeFile
 ---
 
 # DescribeFileSystemPolicy
-<a name="API_DescribeFileSystemPolicy"></a>
 
 Returns the `FileSystemPolicy` for the specified EFS file system.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-EnableAthenaWorkGroupEncryptionAtRest`
-<a name="aws-enable-athena-workgroup-encryption-at-rest"></a>
 
  **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestR
 ---
 
 # TestRun
-<a name="API_TestRun"></a>
 
 Represents a single run of a test. Configuration is snapshotted from the test and service at the time the run is started.
 

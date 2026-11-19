@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Using Aurora serverless
-<a name="aurora-serverless-v2"></a><a name="serverless_v2"></a><a name="asv2"></a>
+<a name="serverless_v2"></a><a name="asv2"></a>
 
  Aurora serverless is an on-demand, autoscaling configuration for Amazon Aurora. Aurora serverless helps to automate the processes of monitoring the workload and adjusting the capacity for your databases. Capacity is adjusted automatically based on application demand. You're charged only for the resources that your DB clusters consume. Thus, Aurora serverless can help you to stay within budget and avoid paying for computer resources that you don't use.
 

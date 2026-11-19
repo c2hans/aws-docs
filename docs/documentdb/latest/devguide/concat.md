@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/concat.html
 ---
 
 # $concat
-<a name="concat"></a>
 
 The `$concat` aggregation operator in Amazon DocumentDB concatenates (or combines) multiple strings in a document to produce a single string that can be returned to the application. This reduces the work done in the application, as the string manipulation is performed at the database level.
 

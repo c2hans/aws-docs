@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/tm-sw-asset-s
 ---
 
 # Asset sync limits
-<a name="tm-sw-asset-sync-limits"></a>
 
 **Important**
 See [Differences between custom and default workspaces](tm-sw-default-ws-diffs.md) for information about the differences between the custom and default workspaces.

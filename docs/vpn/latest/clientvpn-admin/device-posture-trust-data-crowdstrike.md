@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 ---
 
 # CrowdStrike (context.crowdstrike.\*)
-<a name="device-posture-trust-data-crowdstrike"></a>
 
 When CrowdStrike is configured as a trust provider, the following fields are available in the Cedar context under the `context.crowdstrike` namespace.
 

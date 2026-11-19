@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpcEncryp
 ---
 
 # VpcEncryptionControlExclusions
-<a name="API_VpcEncryptionControlExclusions"></a>
 
 Describes the exclusion configurations for various resource types in VPC Encryption Control.
 

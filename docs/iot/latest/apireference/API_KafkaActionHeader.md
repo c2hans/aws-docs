@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_KafkaActionH
 ---
 
 # KafkaActionHeader
-<a name="API_KafkaActionHeader"></a>
 
 Specifies a Kafka header using key-value pairs when you create a Rule’s Kafka Action. You can use these headers to route data from IoT clients to downstream Kafka clusters without modifying your message payload.
 

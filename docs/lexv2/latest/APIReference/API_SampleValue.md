@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SampleValu
 ---
 
 # SampleValue
-<a name="API_SampleValue"></a>
 
 Defines one of the values for a slot type.
 

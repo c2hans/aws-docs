@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ap
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## Guides and strategies
 <a name="guides-and-strategies.b5aa9cf0-a1ca-5edd-bde2-fa208af97510"></a>

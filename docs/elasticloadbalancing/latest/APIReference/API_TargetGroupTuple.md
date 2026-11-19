@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # TargetGroupTuple
-<a name="API_TargetGroupTuple"></a>
 
 Information about how traffic will be distributed between multiple target groups in a forward rule.
 

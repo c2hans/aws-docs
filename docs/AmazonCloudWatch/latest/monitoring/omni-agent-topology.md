@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Agent topology
-<a name="omni-agent-topology"></a>
 
 The agent topology shows how the parts of your agent connect — agents, tools, and models — as a graph built from your traces. Where a trace shows one run in sequence, the topology aggregates the paths your agent took across runs: which components exist, which call which, and where latency concentrates.
 

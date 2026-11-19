@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # HelmFulfillmentOption
-<a name="API_marketplace-discovery_HelmFulfillmentOption"></a>
 
 Describes a Helm chart fulfillment option for Kubernetes deployment.
 

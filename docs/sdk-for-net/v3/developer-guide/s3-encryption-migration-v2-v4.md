@@ -7,7 +7,6 @@ The AWS SDK for .NET V3 has reached end-of-support.
 We recommend that you migrate to [AWS SDK for .NET V4](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/welcome.html). For additional details and information on how to migrate, please refer to our [end-of-support announcement](https://aws.amazon.com/blogs/developer/aws-sdk-for-net-v3-end-of-support-announcement/).
 
 # Amazon S3 Encryption Client Migration (V2 to V4)
-<a name="s3-encryption-migration-v2-v4"></a>
 
 **Note**
 If you are using V1 and want to migrate to V4, you must first migrate to V2. See [Amazon S3 Encryption Client Migration (V1 to V2)](s3-encryption-migration-v1-v2.md).

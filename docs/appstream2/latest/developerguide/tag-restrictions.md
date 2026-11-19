@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/tag-res
 ---
 
 # Tag Restrictions for Amazon WorkSpaces Applications
-<a name="tag-restrictions"></a>
 + The maximum number of tags per WorkSpaces Applications resource is 50.
 + The maximum key length is 128 Unicode characters in UTF-8.
 + The maximum value length is 256 Unicode characters in UTF-8.

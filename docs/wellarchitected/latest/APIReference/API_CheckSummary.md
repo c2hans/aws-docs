@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # CheckSummary
-<a name="API_CheckSummary"></a>
 
 Trusted Advisor check summary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-gl
 ---
 
 # Write to any Region mode (no primary)
-<a name="write-to-any-region"></a>
 
 The *write to any Region *write mode, illustrated in the following diagram, is fully active-active and doesn't impose restrictions on where a write operation may occur. Any Region can accept a write request at any time. This is the simplest mode; however, it can be used only with some types of applications. This mode is suitable for all MRSC tables. It's also suitable for MREC tables when all write operations are idempotent. *Idempotent* means that they are safely repeatable so that concurrent or repeated write operations across Regions are not in conflict―for example, when a user updates their contact data. It also works well for an append-only dataset where all write operations are unique inserts under a deterministic primary key, which is a special case of being idempotent. Lastly, this mode is suitable for MREC where the risk of conflicting write operations is acceptable.
 

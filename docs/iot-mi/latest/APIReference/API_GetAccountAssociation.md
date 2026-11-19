@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetAccoun
 ---
 
 # GetAccountAssociation
-<a name="API_GetAccountAssociation"></a>
 
 Get an account association for an AWS account linked to a customer-managed destination.
 

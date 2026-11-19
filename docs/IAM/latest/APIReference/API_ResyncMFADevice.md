@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ResyncMFADev
 ---
 
 # ResyncMFADevice
-<a name="API_ResyncMFADevice"></a>
 
 Synchronizes the specified MFA device with its IAM resource object on the AWS servers.
 

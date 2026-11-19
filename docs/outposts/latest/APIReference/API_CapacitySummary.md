@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Capacit
 ---
 
 # CapacitySummary
-<a name="API_CapacitySummary"></a>
 
 A summary of the capacity changes for a quote option.
 

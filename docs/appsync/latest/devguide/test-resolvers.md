@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/test-resolvers.h
 ---
 
 # Testing your resolver and function handlers in AWS AppSync
-<a name="test-resolvers"></a>
 
 You can use the `EvaluateCode` API command to remotely test your resolver and function handlers with mocked data before ever saving your code to a resolver or function. To get started with the command, make sure you have added the `appsync:evaluatecode` permission to your policy. For example:
 

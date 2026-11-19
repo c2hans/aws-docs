@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/serverles
 ---
 
 # How to Deploy Applications
-<a name="serverlessrepo-how-to-consume"></a>
 
 This section provides you with procedures for deploying serverless applications from the AWS Serverless Application Repository by using the AWS Management Console or the AWS CLI.
 

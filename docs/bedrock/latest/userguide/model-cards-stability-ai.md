@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-sta
 ---
 
 # Stability AI
-<a name="model-cards-stability-ai"></a>
 
 The following Stability AI models are available in Amazon Bedrock:
 

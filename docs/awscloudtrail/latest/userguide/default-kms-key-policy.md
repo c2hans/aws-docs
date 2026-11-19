@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/default-k
 ---
 
 # Default KMS key policy created in CloudTrail console
-<a name="default-kms-key-policy"></a>
 
 If you create an AWS KMS key in the CloudTrail console, the following policies are automatically created for you. The policy allows these permissions:
 + Allows AWS account (root) permissions for the KMS key.

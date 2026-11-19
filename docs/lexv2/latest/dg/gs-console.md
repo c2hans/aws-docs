@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/gs-console.html
 ---
 
 # Step 2: Getting started (console)
-<a name="gs-console"></a>
 
 ## Console Overview
 <a name="console-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/job-definition-te
 ---
 
 # Job definition template that uses ContainerProperties
-<a name="job-definition-template"></a>
 
 The following is an empty job definition template that includes a single container. You can use this template to create your job definition, which can then be saved to a file and used with the AWS CLI `--cli-input-json` option. For more information about these parameters, see [JobDefinition](https://docs.aws.amazon.com/batch/latest/APIReference/API_JobDefinition.html).
 

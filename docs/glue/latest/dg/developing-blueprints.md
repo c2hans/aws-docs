@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/developing-blueprints.htm
 ---
 
 # Developing blueprints in AWS Glue
-<a name="developing-blueprints"></a>
 
 As an AWS Glue developer, you can create and publish blueprints that data analysts can use to generate workflows.
 

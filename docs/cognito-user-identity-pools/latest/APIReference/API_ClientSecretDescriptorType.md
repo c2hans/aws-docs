@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ClientSecretDescriptorType
-<a name="API_ClientSecretDescriptorType"></a>
 
 Contains information about a client secret, including its unique identifier, value, and creation timestamp.
 

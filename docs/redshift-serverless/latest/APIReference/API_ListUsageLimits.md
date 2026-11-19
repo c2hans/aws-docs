@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ListUsageLimits
-<a name="API_ListUsageLimits"></a>
 
 Lists all usage limits within Amazon Redshift Serverless.
 

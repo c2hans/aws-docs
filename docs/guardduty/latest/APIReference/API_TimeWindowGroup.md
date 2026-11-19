@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_TimeWi
 ---
 
 # TimeWindowGroup
-<a name="API_TimeWindowGroup"></a>
 
 Contains the number of findings in a time window.
 

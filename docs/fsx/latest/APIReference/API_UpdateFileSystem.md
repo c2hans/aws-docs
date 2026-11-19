@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSy
 ---
 
 # UpdateFileSystem
-<a name="API_UpdateFileSystem"></a>
 
 Use this operation to update the configuration of an existing Amazon FSx file system. You can update multiple properties in a single request.
 

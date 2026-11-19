@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-clipping.html
 ---
 
 # Clipping the content of a file input
-<a name="input-clipping"></a>
 
 You can clip a file input so that MediaLive ingests only a portion of the file. The file must be an MP4 file that is stored on Amazon S3 or an HTTP server that supports HTTP range requests.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock_example
 ---
 
 # Use `ListFoundationModels` with an AWS SDK
-<a name="bedrock_example_bedrock_ListFoundationModels_section"></a>
 
 The following code examples show how to use `ListFoundationModels`.
 

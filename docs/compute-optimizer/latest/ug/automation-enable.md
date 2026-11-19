@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/automation-e
 ---
 
 # Enabling Automation
-<a name="automation-enable"></a>
 
 When you access the Automation section of the Compute Optimizer console for the first time, you're asked to enable the feature using the account that you’re signed in with. You can also opt in using the Compute Optimizer Automation API, AWS Command Line Interface (AWSCLI), or SDKs.
 
@@ -21,7 +20,7 @@ To enable Automation, you need specific permissions to update the Automation enr
 
 1. When prompted, review the note on service-linked role permissions and choose **Enable Automation**.
 
-To enable Automation using IAM policies, see [Enabling Automation](#automation-enable).
+To enable Automation using IAM policies, see [Enabling Automation](automation-enable.md).
 
 If you're enabling Automation for member accounts in your organization, the management account also needs permissions to associate and disassociate accounts. These permissions allow the management account to enable Automation for member accounts and configure whether the management account can implement optimizations on behalf of the member account. For more information, see [Enabling Automation for your organization](automation-org.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/outbound-campa
 ---
 
 # Outbound campaigns performance dashboard
-<a name="outbound-campaigns-performance-dashboard"></a>
 
 You can use the outbound campaigns performance dashboard to understand the performance of your outbound campaigns across your email, SMS, telephony, WhatsApp, and web notification delivery modes. You can view and compare campaigns performance over a configurable period of time using key metrics such as delivery attempts, delivered rate, human answered rate, campaign contact abandoned rate, spam, bounces and more.
 

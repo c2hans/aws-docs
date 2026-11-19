@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIRefe
 ---
 
 # WorkflowStepGroupSummary
-<a name="API_WorkflowStepGroupSummary"></a>
 
 The summary of a step group in a workflow.
 

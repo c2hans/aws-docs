@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # ClusterInList
-<a name="API_elastic_ClusterInList"></a>
 
 A list of Amazon DocumentDB elastic clusters.
 

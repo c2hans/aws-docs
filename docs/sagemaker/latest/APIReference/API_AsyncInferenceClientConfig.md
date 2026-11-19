@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AsyncI
 ---
 
 # AsyncInferenceClientConfig
-<a name="API_AsyncInferenceClientConfig"></a>
 
 Configures the behavior of the client used by SageMaker to interact with the model container during asynchronous inference.
 

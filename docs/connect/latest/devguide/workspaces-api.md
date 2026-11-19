@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/workspaces-api.h
 ---
 
 # Workspace actions
-<a name="workspaces-api"></a>
 
 The following API actions are available for workspaces:
 + [AssociateWorkspace](https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociateWorkspace.html)

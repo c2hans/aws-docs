@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Data processing
-<a name="data-processing"></a>
 
  In ML workloads, the data (inputs and corresponding desired output) serves important functions including:
 +  Defining the goal of the system: the output representation and the relationship of each output to each input, by means of the input and output pairs.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_CreateWorkerConfigu
 ---
 
 # CreateWorkerConfiguration
-<a name="API_CreateWorkerConfiguration"></a>
 
 Creates a worker configuration using the specified properties.
 

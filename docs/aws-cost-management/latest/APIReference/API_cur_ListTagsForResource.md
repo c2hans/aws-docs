@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListTagsForResource
-<a name="API_cur_ListTagsForResource"></a>
 
 Lists the tags associated with the specified report definition.
 

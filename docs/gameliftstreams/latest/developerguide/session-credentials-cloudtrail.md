@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/se
 ---
 
 # Auditing with CloudTrail
-<a name="session-credentials-cloudtrail"></a>
 
 When Amazon GameLift Streams assumes your role, the `RoleSessionName` in CloudTrail is set to:
 

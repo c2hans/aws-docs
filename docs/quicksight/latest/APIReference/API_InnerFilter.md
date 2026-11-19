@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Inner
 ---
 
 # InnerFilter
-<a name="API_InnerFilter"></a>
 
 The `InnerFilter` defines the subset of data to be used with the `NestedFilter`.
 

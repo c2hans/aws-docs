@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Chan
 ---
 
 # ChangeSummary
-<a name="API_ChangeSummary"></a>
 
 This object is a container for common summary information about the change. The summary doesn't contain the whole change structure.
 

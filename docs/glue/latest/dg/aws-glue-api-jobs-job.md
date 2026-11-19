@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-job.htm
 ---
 
 # Jobs
-<a name="aws-glue-api-jobs-job"></a>
 
 The Jobs API describes the data types and API related to creating, updating, deleting, or viewing jobs in AWS Glue.
 

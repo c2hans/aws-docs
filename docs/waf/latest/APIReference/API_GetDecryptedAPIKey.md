@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_GetDecrypted
 ---
 
 # GetDecryptedAPIKey
-<a name="API_GetDecryptedAPIKey"></a>
 
 Returns your API key in decrypted form. Use this to check the token domains that you have defined for the key.
 

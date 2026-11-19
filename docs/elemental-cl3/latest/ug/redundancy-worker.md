@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/redundancy-worke
 ---
 
 # Worker node redundancy
-<a name="redundancy-worker"></a>
 
 This section describes redundancy options for worker nodes in an AWS Elemental Conductor Live cluster. Worker nodes are Elemental Live nodes and Elemental Statmux nodes. The same redundancy options are available to both types of worker nodes.
 

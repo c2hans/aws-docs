@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-r
 ---
 
 # SAP HANA and Cluster Setup
-<a name="sap-hana-pacemaker-rhel-deployment-cluster"></a>
 
 **Topics**
 + [SAP HANA Setup and HSR](sap-hana-pacemaker-rhel-hana-setup-hsr.md)

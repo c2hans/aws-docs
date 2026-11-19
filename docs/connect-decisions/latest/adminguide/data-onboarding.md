@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/data
 ---
 
 # Data Onboarding
-<a name="data-onboarding"></a>
 
 ## 1. Glossary
 <a name="data-onboarding-glossary"></a>

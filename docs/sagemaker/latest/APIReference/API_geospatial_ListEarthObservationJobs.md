@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # ListEarthObservationJobs
-<a name="API_geospatial_ListEarthObservationJobs"></a>
 
 Use this operation to get a list of the Earth Observation jobs associated with the calling AWS account.
 

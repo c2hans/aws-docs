@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Transit gateway attachments to a VPC
-<a name="tgw-attachments-to-vpc"></a>
 
 This section provides instructions for attaching VPCs to your transit gateway.
 

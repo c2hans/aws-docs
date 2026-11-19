@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/min.html
 ---
 
 # $min
-<a name="min"></a>
 
 The `$min` aggregation operator returns the minimum value of a specified field across a set of documents. This operator is useful for finding the lowest value in a set of documents.
 

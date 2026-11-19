@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # UpdateScheduledQuery
-<a name="API_query_UpdateScheduledQuery"></a>
 
 Update a scheduled query.
 

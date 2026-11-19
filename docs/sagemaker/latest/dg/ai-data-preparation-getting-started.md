@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ai-data-preparation-
 ---
 
 # Get started with SageMaker AI Data Preparation
-<a name="ai-data-preparation-getting-started"></a>
 
 Synthetic data generation, data quality evaluation, data transformation, and auto-labeling jobs use the same setup. Complete it once, and then go to the page for the capability that fits your situation. Human-in-the-loop annotation also needs a labeling space, which its page describes.
 

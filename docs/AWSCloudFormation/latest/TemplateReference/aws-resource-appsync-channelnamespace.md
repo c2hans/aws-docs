@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppSync::ChannelNamespace
-<a name="aws-resource-appsync-channelnamespace"></a>
 
 The `AWS::AppSync::ChannelNamespace` resource creates a channel namespace associated with an `Api`. The `ChannelNamespace` contains the definitions for code handlers for the `Api`.
 

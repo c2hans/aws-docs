@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_L
 ---
 
 # ListCoreNetworkPrefixListAssociations
-<a name="API_ListCoreNetworkPrefixListAssociations"></a>
 
 Lists the prefix list associations for a core network.
 

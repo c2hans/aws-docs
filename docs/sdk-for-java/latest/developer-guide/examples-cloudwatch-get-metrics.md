@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Get metrics from CloudWatch
-<a name="examples-cloudwatch-get-metrics"></a>
 
 ## Listing metrics
 <a name="listing-metrics"></a>

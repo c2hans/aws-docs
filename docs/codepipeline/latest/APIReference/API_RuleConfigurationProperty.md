@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Rul
 ---
 
 # RuleConfigurationProperty
-<a name="API_RuleConfigurationProperty"></a>
 
 Represents information about a rule configuration property.
 

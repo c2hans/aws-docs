@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Send
 ---
 
 # SendFeedback
-<a name="API_SendFeedback"></a>
 
 Submits feedback about an investigation action or result. This operation allows users to provide usefulness ratings and comments to help improve the quality of investigation recommendations and actions.
 

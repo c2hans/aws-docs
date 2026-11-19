@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/custom-com
 ---
 
 # Custom composite models (components)
-<a name="custom-composite-models"></a>
 
  When you're modeling an especially complex industrial asset, such as a complicated piece of machinery that has many parts, it can become a challenge to keep your asset models organized and maintainable.
 

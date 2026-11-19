@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/manager-assist
 ---
 
 # Summaries
-<a name="manager-assist-summaries"></a>
 
 You can generate operational summaries that consolidate multiple metrics into a single narrative response. Instead of reading through individual dashboard widgets, you can request an overview and receive a short summary that highlights key trends and anomalies across your metrics.
 

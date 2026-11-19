@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_LifeCycleLas
 ---
 
 # LifeCycleLastLaunch
-<a name="API_LifeCycleLastLaunch"></a>
 
 An object containing information regarding the last launch of a Source Server.
 

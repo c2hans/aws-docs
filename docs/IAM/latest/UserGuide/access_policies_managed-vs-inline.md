@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_man
 ---
 
 # Managed policies and inline policies
-<a name="access_policies_managed-vs-inline"></a>
 
 When you set the permissions for an identity in IAM, you must decide whether to use an AWS managed policy, a customer managed policy, or an inline policy. The following topics provide more information about each of the types of identity-based policies and when to use them.
 

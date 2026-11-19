@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetCalculatedAttributeDefinition
-<a name="API_connect-customer-profiles_GetCalculatedAttributeDefinition"></a>
 
 Provides more information on a calculated attribute definition for Customer Profiles.
 

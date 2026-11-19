@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Repository
 ---
 
 # RepositoryAggregationResponse
-<a name="API_RepositoryAggregationResponse"></a>
 
 A response that contains details on the results of a finding aggregation by repository.
 

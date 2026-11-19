@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::IdNamespaceAssociation IdNamespaceAssociationInputReferenceProperties
-<a name="aws-properties-cleanrooms-idnamespaceassociation-idnamespaceassociationinputreferenceproperties"></a>
 
 Provides the information for the ID namespace association input reference properties.
 

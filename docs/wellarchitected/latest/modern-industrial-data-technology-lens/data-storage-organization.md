@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Data storage organization
-<a name="data-storage-organization"></a>
 
 | MIDAPERF06: How do you organize your data storage to balance performance to cost? |
 | --- |

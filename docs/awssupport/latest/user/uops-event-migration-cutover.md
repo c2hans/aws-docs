@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/uops-event-migrat
 ---
 
 # Unified Operations Event migration or cutover
-<a name="uops-event-migration-cutover"></a>
 
 Event migration or cutover in Unified Operations includes the following key elements.
 + **Real-time bridge to resolution:** AWS experts join your communication channels to monitor events and resolve issues during critical business periods.

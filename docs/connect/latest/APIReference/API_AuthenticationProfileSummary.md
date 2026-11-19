@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Authenti
 ---
 
 # AuthenticationProfileSummary
-<a name="API_AuthenticationProfileSummary"></a>
 
 This API is in preview release for Connect Customer and is subject to change. To request access to this API, contact Support.
 

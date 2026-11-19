@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Clou
 ---
 
 # CloudFormationHealth
-<a name="API_CloudFormationHealth"></a>
 
  Information about the health of AWS resources in your account that are specified by an AWS CloudFormation stack.
 

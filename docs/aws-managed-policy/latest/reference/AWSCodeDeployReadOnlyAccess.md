@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCodeDeployReadOnlyAccess
-<a name="AWSCodeDeployReadOnlyAccess"></a>
 
 **Description**: Provides read only access to CodeDeploy resources.
 

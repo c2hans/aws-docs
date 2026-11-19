@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agent-ops-m
 ---
 
 # Architecture overview
-<a name="targeted-business-outcomes"></a>
 
 The guidance defines two primary deployment models. The single-account model is appropriate for proof-of-concept work and individual experimentation. The multi-account model is required for production workloads.
 
@@ -17,7 +16,7 @@ The guidance defines two primary deployment models. The single-account model is 
 Within the multi-account model, you adopt the accounts relevant to your current stage and expand incrementally as requirements grow. The architecture is designed so that teams with an existing landing zone add only the net-new accounts their Agentic AI platform requires, rather than re-creating governance infrastructure that already exists elsewhere.
 
 ## Architecture diagram
-<a name="architecture-diagram.a03e23e8-0953-531c-ae16-0e93370625d4"></a>
+<a name="architecture-diagram.82a76558-fd18-5140-99d8-981231b3777c"></a>
 
 The architecture diagram accompanying this guide illustrates the full multi-account topology, including the Agentic OU, the Gateway OU, CI/CD pipeline flow across the shared tooling account, and the relationship between workload accounts, gateway accounts, observability and data lake accounts. The numbered callouts on the diagram correspond to the descriptions below.
 
@@ -65,7 +64,7 @@ The single-account model consolidates all AI agent platform components into one 
 | --- |
 
 #### Multi-account
-<a name="multi-account.9f98486e-6736-5615-9247-24b86b43806c"></a>
+<a name="multi-account.7e1ddfd4-0b76-57b6-9e60-03701ac21e50"></a>
 
 The multi-account topology introduces dedicated accounts for management, security, observability, shared tooling, generative AI gateways, workload environments, and data. The following sections describe each account, its purpose, the services it hosts, and the design decisions behind its placement.
 
@@ -103,11 +102,11 @@ Key services in this account include Amazon CloudWatch cross-account observabili
 This account hosts the CI/CD pipeline and container registry that build, test, and promote agent artifacts across all environments. Amazon ECR stores container images built once and promoted by reference, not by rebuilding, guaranteeing that the artifact deployed to production is byte-for-byte identical to the artifact validated in staging. On-demand evaluations for agent benchmarking and regression testing run as part of the pipeline before promotion decisions are made.
 
 ##### agentic-ai-platform-dev
-<a name="agentic-ai-platform-dev.0230f476-bd85-58ff-b317-135f965f2abe"></a>
+<a name="agentic-ai-platform-dev.d72a27c3-f536-5fd8-b89e-41515887de48"></a>
 
 The development account is where agentic engineers build, iterate, and test. It hosts the agent runtime, integration tests against the dev gateway account, MCP server development, and on-demand evaluation runs triggered by the CI/CD pipeline.
 
-Services in this account include Amazon Bedrock for model access, AWS Lambda or Amazon ECS for agent runtime execution, and Amazon DynamoDB or Amazon Aurora for agent state persistence. The account is intentionally permissive relative to staging and production to support rapid iteration, but SCPs at the Agentic OU level enforce the boundaries that matter: region restrictions, service allowlisting, and prevention of privilege escalation.
+Services in this account include Amazon Bedrock for model access, AgentCore Runtime for runtime execution, and Amazon DynamoDB or Amazon Aurora for agent state persistence. The account is intentionally permissive relative to staging and production to support rapid iteration, but SCPs at the Agentic OU level enforce the boundaries that matter: region restrictions, service allowlisting, and prevention of privilege escalation.
 
 ##### agentic-ai-platform-gateway-dev
 <a name="agentic-ai-platform-gateway-dev.065fe8c5-1204-51d5-b869-e17f88eaa5c9"></a>

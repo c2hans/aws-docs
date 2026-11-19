@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCCOST03-BP02 Adjust collection frequency depending on the context
-<a name="sccost03-bp02"></a>
 
  Optimize data collection frequency based on business needs and context using event-based triggers and thresholds to reduce costs while maintaining performance and efficiency.
 

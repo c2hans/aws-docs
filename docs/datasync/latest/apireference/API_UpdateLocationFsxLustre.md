@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_UpdateL
 ---
 
 # UpdateLocationFsxLustre
-<a name="API_UpdateLocationFsxLustre"></a>
 
 Modifies the following configuration parameters of the Amazon FSx for Lustre transfer location that you're using with AWS DataSync.
 

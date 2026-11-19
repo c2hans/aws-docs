@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MCPS
 ---
 
 # MCPServerAuthorizationConfig
-<a name="API_MCPServerAuthorizationConfig"></a>
 
 Authorization configuration options for MCP server, supporting OAuth, API key, bearer token, and authorization discovery methods.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/prompting-tools-fu
 ---
 
 # Tool calling systems
-<a name="prompting-tools-function"></a>
 
 Tool calling is available for the Amazon Nova models by passing a tool configuration schema in your request. The prompt for the model is going to be augmented with this tool configuration so it is a highly impactful place to begin optimizing your tool calling system.
 

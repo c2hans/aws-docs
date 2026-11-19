@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTra
 ---
 
 # CreateTransitGatewayPeeringAttachment
-<a name="API_CreateTransitGatewayPeeringAttachment"></a>
 
 Requests a transit gateway peering attachment between the specified transit gateway (requester) and a peer transit gateway (accepter). The peer transit gateway can be in your account or a different AWS account.
 

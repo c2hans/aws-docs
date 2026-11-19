@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/clie
 ---
 
 # Client creation defaults
-<a name="client-creation-defaults"></a>
 
 In version 2.x, the following changes have been made to the default client creation logic.
 + The default credential provider chain for S3 no longer includes anonymous credentials. You must manually specify anonymous access to S3 by using the `AnonymousCredentialsProvider`.

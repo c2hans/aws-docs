@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Logical replication
-<a name="logical-replication"></a>
 
 Logical replication is row-level replication. You can set up logical replication between primary and secondary databases. Logical replication supports INSERT, UPDATE, DELETE, and TRUNCATE operations, but it doesn't support DDL operations such as CREATE, ALTER, and DROP.
 

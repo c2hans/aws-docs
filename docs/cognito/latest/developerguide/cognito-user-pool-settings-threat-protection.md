@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-us
 ---
 
 # Advanced security with threat protection
-<a name="cognito-user-pool-settings-threat-protection"></a>
 
 After you create your user pool, you have access to **Threat protection** in the navigation menu in the Amazon Cognito console. You can turn threat protection features on and customize the actions that are taken in response to different risks. Or you can use audit mode to gather metrics on detected risks without applying any security mitigations. In audit mode, threat protection publishes metrics to Amazon CloudWatch. You can see metrics after Amazon Cognito generates its first event. See [Viewing threat protection metrics](metrics-for-cognito-user-pools.md#user-pool-settings-viewing-threat-protection-metrics).
 

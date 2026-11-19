@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # Unsubscribe from AI Agent contact ready event
-<a name="3P-apps-ai-agents-offaiagentcontactready"></a>
 
 Removes a previously registered `onAIAgentContactReady` handler subscription.
 

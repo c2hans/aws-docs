@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Predict
 ---
 
 # PredictiveScalingPredefinedLoadMetric
-<a name="API_PredictiveScalingPredefinedLoadMetric"></a>
 
 Describes a load metric for a predictive scaling policy.
 

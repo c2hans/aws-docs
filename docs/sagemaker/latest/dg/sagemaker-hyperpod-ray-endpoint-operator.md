@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Installing the HyperPod Ray Endpoint Operator
-<a name="sagemaker-hyperpod-ray-endpoint-operator"></a>
 
 The HyperPod Ray Endpoint Operator generates authenticated public endpoints for Ray clusters on HyperPod. After installation, you can access the Ray Dashboard securely from anywhere with internet access, submit and monitor jobs, and view logs and cluster metrics without setting up `kubectl port-forward`.
 

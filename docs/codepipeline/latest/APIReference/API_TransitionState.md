@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Tra
 ---
 
 # TransitionState
-<a name="API_TransitionState"></a>
 
 Represents information about the state of transitions between one stage and another stage.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-applic
 ---
 
 # AWS Application Cost Profiler events
-<a name="events-ref-application-cost-profiler"></a>
 
 Application Cost Profiler sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

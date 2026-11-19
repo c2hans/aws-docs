@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Creating multi checks blueprint canary
-<a name="CloudWatch_Synthetics_Canaries_MultiCheck_Blueprint"></a>
 
 Amazon CloudWatch Synthetics multi checks blueprint helps you create a Synthetics canary by providing a simple JSON configuration. You can save costs by bundling up to 10 different types of HTTP/DNS/SSL/TCP checks in a step-based sequential manner. Each check includes assertions that provide basic verification against a check result.
 

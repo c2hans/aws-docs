@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Authentic
 ---
 
 # AuthenticationConfiguration
-<a name="API_AuthenticationConfiguration"></a>
 
 Provides the configuration information to connect to websites that require user authentication.
 

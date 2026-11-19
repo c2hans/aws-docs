@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Put
 ---
 
 # PutApprovalResult
-<a name="API_PutApprovalResult"></a>
 
 Provides the response to a manual approval request to CodePipeline. Valid responses include Approved and Rejected.
 

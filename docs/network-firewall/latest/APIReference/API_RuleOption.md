@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # RuleOption
-<a name="API_RuleOption"></a>
 
 Additional settings for a stateful rule. This is part of the [StatefulRule](API_StatefulRule.md) configuration.
 

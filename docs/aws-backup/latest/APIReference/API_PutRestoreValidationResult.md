@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_PutRe
 ---
 
 # PutRestoreValidationResult
-<a name="API_PutRestoreValidationResult"></a>
 
 This request allows you to send your independent self-run restore test validation results. `RestoreJobId` and `ValidationStatus` are required. Optionally, you can input a `ValidationStatusMessage`.
 

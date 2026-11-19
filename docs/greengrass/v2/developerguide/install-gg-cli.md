@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/install-gg-
 ---
 
 # Install the Greengrass CLI
-<a name="install-gg-cli"></a>
 
 You can install the Greengrass CLI in one of the following ways:
 + Use the `--deploy-dev-tools` argument when you first set up AWS IoT Greengrass Core software on your device. You must also specify `--provision true` to apply this argument.

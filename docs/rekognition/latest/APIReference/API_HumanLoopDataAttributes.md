@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Huma
 ---
 
 # HumanLoopDataAttributes
-<a name="API_HumanLoopDataAttributes"></a>
 
 Allows you to set attributes of the image. Currently, you can declare an image as free of personally identifiable information.
 

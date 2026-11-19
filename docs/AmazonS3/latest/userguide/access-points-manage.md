@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 ---
 
 # Managing your Amazon S3 access points for general purpose buckets
-<a name="access-points-manage"></a>
 
 This section explains how to manage your Amazon S3 access points for general purpose buckets using the AWS Management Console, AWS Command Line Interface, or REST API. For information on managing access points attached to an FSx for OpenZFS volume, see [Managing your Amazon S3 access points](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/access-points-manage.html) in the *FSx for OpenZFS User Guide*.
 

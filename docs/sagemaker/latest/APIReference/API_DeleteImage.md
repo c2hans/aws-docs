@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteImage
-<a name="API_DeleteImage"></a>
 
 Deletes a SageMaker AI image and all versions of the image. The container images aren't deleted.
 

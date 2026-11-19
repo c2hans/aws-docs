@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::DistributionTenant ManagedCertificateRequest
-<a name="aws-properties-cloudfront-distributiontenant-managedcertificaterequest"></a>
 
 An object that represents the request for the Amazon CloudFront managed ACM certificate.
 

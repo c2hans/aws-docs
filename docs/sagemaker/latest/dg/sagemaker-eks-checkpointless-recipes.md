@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-eks-checkp
 ---
 
 # Amazon SageMaker HyperPod checkpointless training tutorials
-<a name="sagemaker-eks-checkpointless-recipes"></a>
 
 [ HyperPod checkpointless training recipes](https://github.com/aws/sagemaker-hyperpod-checkpointless-training) are predefined job configurations with checkpointless training features enabled. Using these recipes, makes it easier to get started with checkpointless training on HyperPod.
 

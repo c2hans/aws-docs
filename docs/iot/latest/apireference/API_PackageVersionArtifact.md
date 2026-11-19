@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_PackageVersi
 ---
 
 # PackageVersionArtifact
-<a name="API_PackageVersionArtifact"></a>
 
 A specific package version artifact associated with a software package version.
 

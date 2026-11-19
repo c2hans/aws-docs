@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/solutions-archi
 ---
 
 # Content Domain 4: Resilience, Migration, and Business Continuity
-<a name="solutions-architect-professional-03-domain4"></a>
 
 **Topics**
 + [Task 4.1: Design migration strategies by using AWS frameworks.](#solutions-architect-professional-03-domain4-task1)

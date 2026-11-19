@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Distr
 ---
 
 # DistributionConfigWithTags
-<a name="API_DistributionConfigWithTags"></a>
 
 A distribution Configuration and a list of tags to be associated with the distribution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/temporary-delegatio
 ---
 
 # Understanding your integration
-<a name="temporary-delegation-understanding-integration"></a>
 
 After completing the onboarding process, you can build your integration with IAM temporary delegation. A complete integration typically involves three main categories of work:
 

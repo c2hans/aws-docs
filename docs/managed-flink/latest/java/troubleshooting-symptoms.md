@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/troubleshootin
 ---
 
 # Application issues
-<a name="troubleshooting-symptoms"></a>
 
 This section contains solutions for error conditions that you may encounter with your Managed Service for Apache Flink application.
 

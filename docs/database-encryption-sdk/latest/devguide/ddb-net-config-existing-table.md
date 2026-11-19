@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Configure an existing DynamoDB table to use the AWS Database Encryption SDK for DynamoDB
-<a name="ddb-net-config-existing-table"></a>
 
 With version 3.*x* of the .NET client-side encryption library for DynamoDB, you can configure your existing Amazon DynamoDB tables for client-side encryption. This topic provides guidance on the three steps you must take to add version 3.*x* to an existing, populated DynamoDB table.
 

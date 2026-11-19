@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_WebACLHa
 ---
 
 # WebACLHasOutOfScopeResourcesViolation
-<a name="API_WebACLHasOutOfScopeResourcesViolation"></a>
 
 The violation details for a web ACL that's associated with at least one resource that's out of scope of the Firewall Manager policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_GetB
 ---
 
 # GetBacklogTask
-<a name="API_GetBacklogTask"></a>
 
 Gets a backlog task for the specified agent space and task id
 

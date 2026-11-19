@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_UpdateResponde
 ---
 
 # UpdateResponderGateway
-<a name="API_UpdateResponderGateway"></a>
 
 Updates the description, Auto Scaling group managed endpoint configuration, trust store configuration, and client routing policy of a responder gateway. This operation also updates the `protocols` list in the listener configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreatePartnerAppPresignedUrl
-<a name="API_CreatePartnerAppPresignedUrl"></a>
 
 Creates a presigned URL to access an Amazon SageMaker Partner AI App.
 

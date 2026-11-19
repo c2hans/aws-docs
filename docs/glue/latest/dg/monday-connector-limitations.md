@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/monday-connector-limitati
 ---
 
 # Limitations
-<a name="monday-connector-limitations"></a>
 
 The following are limitations for the Monday connector:
 +  The dynamic metadata response has certain conflicts with the documentation as mentioned below:

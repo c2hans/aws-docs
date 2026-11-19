@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_GetIdentityN
 ---
 
 # GetIdentityNotificationAttributes
-<a name="API_GetIdentityNotificationAttributes"></a>
 
 Given a list of verified identities (email addresses and/or domains), returns a structure describing identity notification attributes.
 

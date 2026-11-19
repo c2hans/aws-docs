@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Component
 ---
 
 # ComponentDeploymentSpecification
-<a name="API_ComponentDeploymentSpecification"></a>
 
 Contains information about a component to deploy.
 

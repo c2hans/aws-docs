@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Aurora PostgreSQL Limitless Database sample schemas
-<a name="limitless-sample-schemas"></a>
 
 We provide the following sample schemas for Aurora PostgreSQL Limitless Database:
 + [Limitless E-Commerce sample schema](https://github.com/aws-samples/sample-schemas-for-amazon-aurora-postgresql-limitless-database/tree/main/limitless_ec_sample_schema)

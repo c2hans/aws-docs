@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Tra
 ---
 
 # TraceContent
-<a name="API_TraceContent"></a>
 
 Trace content for your wireless devices, gateways, and multicast groups.
 

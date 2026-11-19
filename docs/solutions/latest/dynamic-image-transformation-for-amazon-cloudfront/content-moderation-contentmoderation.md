@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Content moderation (`contentModeration`)
-<a name="content-moderation-contentmoderation"></a>
 
 The `contentModeration` transformation accepts `true` (defaults) or an object:
 

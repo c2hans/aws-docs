@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_GetRep
 ---
 
 # GetReportGroupTrend
-<a name="API_GetReportGroupTrend"></a>
 
 Analyzes and accumulates test report values for the specified test reports.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/protect-terminology.
 ---
 
 # Encrypting your terminology
-<a name="protect-terminology"></a>
 
 Amazon Translate endeavors to protect all your data and your custom terminologies are no different. When created, each custom terminology is encrypted so it accessible only by you.
 

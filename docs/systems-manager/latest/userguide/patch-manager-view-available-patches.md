@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # Viewing available patches
-<a name="patch-manager-view-available-patches"></a>
 
 With Patch Manager, you can view all available patches for a specified operating system and, optionally, a specific operating system version.
 

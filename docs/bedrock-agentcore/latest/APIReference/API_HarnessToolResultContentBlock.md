@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessToolResultContentBlock
-<a name="API_HarnessToolResultContentBlock"></a>
 
 A content block within a tool result.
 

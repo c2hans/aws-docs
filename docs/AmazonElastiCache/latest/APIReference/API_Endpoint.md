@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # Endpoint
-<a name="API_Endpoint"></a>
 
 Represents the information required for client programs to connect to a cache node. This value is read-only.
 

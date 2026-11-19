@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/add-dynamic-pla
 ---
 
 # Add dynamic playlist inputs
-<a name="add-dynamic-playlist-inputs"></a>
 
 In the specified event (which must be currently running), add the specified input or inputs (maximum 29 inputs for a total of 30, including the Active input) to the end of the dynamic playlist.
 

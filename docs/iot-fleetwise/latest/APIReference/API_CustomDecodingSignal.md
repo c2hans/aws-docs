@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Cu
 ---
 
 # CustomDecodingSignal
-<a name="API_CustomDecodingSignal"></a>
 
 Information about signals using a custom decoding protocol as defined by the customer.
 

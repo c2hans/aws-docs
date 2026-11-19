@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/adding-tag-vec
 ---
 
 # Adding a tag to a vector bucket
-<a name="adding-tag-vector-bucket"></a>
 
 You can add tags to Amazon S3 vector buckets and modify these tags. There is no additional charge for using tags on vector buckets beyond the standard S3 API request rates. For more information, see [Amazon S3 pricing](https://aws.amazon.com/s3/pricing/). For more information about tagging vector buckets, see [Using tags with S3 vector buckets](s3-vectors-tags.md).
 

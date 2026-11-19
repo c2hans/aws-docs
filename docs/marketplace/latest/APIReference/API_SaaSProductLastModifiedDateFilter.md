@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_SaaS
 ---
 
 # SaaSProductLastModifiedDateFilter
-<a name="API_SaaSProductLastModifiedDateFilter"></a>
 
 Object that allows filtering based on the last modified date of SaaS products
 

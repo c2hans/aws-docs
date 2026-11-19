@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDirectConnectReadOnlyAccess
-<a name="AWSDirectConnectReadOnlyAccess"></a>
 
 **Description**: Provides read only access to AWS Direct Connect via the AWS Management Console.
 

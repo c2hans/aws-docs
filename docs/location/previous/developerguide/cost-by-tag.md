@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/cost-by
 ---
 
 # Track resource cost by tag
-<a name="cost-by-tag"></a>
 
 You can use tags for cost allocation to track your AWS cost in detail. After you activate the cost allocation tags, AWS uses the cost allocation tags to organize your resource billing on your cost allocation report. This helps you categorize and track your usage costs.
 

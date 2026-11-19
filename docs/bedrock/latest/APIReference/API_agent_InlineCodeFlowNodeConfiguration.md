@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_In
 ---
 
 # InlineCodeFlowNodeConfiguration
-<a name="API_agent_InlineCodeFlowNodeConfiguration"></a>
 
 Contains configurations for an inline code node in your flow. Inline code nodes let you write and execute code directly within your flow, enabling data transformations, custom logic, and integrations without needing an external Lambda function.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v12-drilldown-t
 ---
 
 # Traces Drilldown
-<a name="v12-drilldown-traces"></a>
 
 The Traces Drilldown app provides a queryless experience for exploring distributed Tempo traces. You can use Rate, Errors, and Duration (RED) metrics derived from traces to investigate and understand errors and latency issues within complex distributed systems.
 

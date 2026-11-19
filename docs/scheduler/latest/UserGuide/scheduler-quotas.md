@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/scheduler-quo
 ---
 
 # Quotas for Amazon EventBridge Scheduler
-<a name="scheduler-quotas"></a>
 
 Your AWS account has default quotas, formerly referred to as limits, for each AWS service. Unless otherwise noted, each quota is Region-specific. You can request increases for most quotas, but some cannot be increased.
 

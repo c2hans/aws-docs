@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/agent-step-4.html
 ---
 
 # Step 4: Set up Amazon Cognito
-<a name="agent-step-4"></a>
 
 To manage permissions and users for the web application, you need to set up Amazon Cognito. Amazon Cognito ensures that the web application is secure and has access control. Amazon Cognito uses identity pools to provide AWS credentials that grant your users access to other AWS services. For this tutorial, it provides access to Amazon Lex V2.
 

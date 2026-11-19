@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ErrorObject.html
 ---
 
 # ErrorObject
-<a name="API_ErrorObject"></a>
 
 An object that contains error information.
 

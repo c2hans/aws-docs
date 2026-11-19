@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ResourceSynchronizationStatusSummary
-<a name="API_ResourceSynchronizationStatusSummary"></a>
 
 The synchronization status of a resource covered by a deployment.
 

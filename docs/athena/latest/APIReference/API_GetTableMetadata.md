@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetTableM
 ---
 
 # GetTableMetadata
-<a name="API_GetTableMetadata"></a>
 
 Returns table metadata for the specified catalog, database, and table.
 

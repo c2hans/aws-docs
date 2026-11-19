@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_HostVo
 ---
 
 # HostVolumeProperties
-<a name="API_HostVolumeProperties"></a>
 
 Details on a container instance bind mount host volume.
 

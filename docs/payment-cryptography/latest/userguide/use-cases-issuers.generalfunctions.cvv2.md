@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/us
 ---
 
 # Generate or verify a CVV2 for a specific card
-<a name="use-cases-issuers.generalfunctions.cvv2"></a>
 
 [CVV2](terminology.md#terms.cvv2) is a value that is traditionally provided on the back of a card and is used for online purchases. For virtual cards, it might also be displayed on an app or a screen. Cryptographically, it is the same as CVV1 but with a different service code value.
 

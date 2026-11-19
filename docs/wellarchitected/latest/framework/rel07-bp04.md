@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel07-b
 ---
 
 # REL07-BP04 Load test your workload
-<a name="rel07-bp04"></a>
 
  A load test drives representative traffic at a workload until something breaks, which reveals where capacity runs out and which metric warns you first. Without this evidence, you discover your limits during a real peak.
 

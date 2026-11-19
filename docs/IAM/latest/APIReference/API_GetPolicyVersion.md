@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetPolicyVer
 ---
 
 # GetPolicyVersion
-<a name="API_GetPolicyVersion"></a>
 
 Retrieves information about the specified version of the specified managed policy, including the policy document.
 

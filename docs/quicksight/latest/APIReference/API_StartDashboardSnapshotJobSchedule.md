@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Start
 ---
 
 # StartDashboardSnapshotJobSchedule
-<a name="API_StartDashboardSnapshotJobSchedule"></a>
 
 Starts an asynchronous job that runs an existing dashboard schedule and sends the dashboard snapshot through email.
 

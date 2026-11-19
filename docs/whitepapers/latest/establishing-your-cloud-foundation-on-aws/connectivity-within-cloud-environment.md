@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Connectivity within the cloud environment
-<a name="connectivity-within-cloud-environment"></a>
 
 As you create virtual networks in your cloud environment you need to establish connectivity between the different workloads and their components. These connections within the cloud can be consumed in a service model, where you grant access between the workloads to connect and retrieve or send data. On the cloud, your workloads can have private or public IP addresses, allowing connectivity between them.
 

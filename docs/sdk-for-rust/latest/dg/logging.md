@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/logging.html
 ---
 
 # Configuring and using logging in the AWS SDK for Rust
-<a name="logging"></a>
 
 The AWS SDK for Rust uses the [tracing](http://tracing.rs/) framework for logging. To enable logging, add the `tracing-subscriber` crate and initialize it in your Rust application. Logs include timestamps, log levels, and module paths, helping debug API requests and SDK behavior. Use the `RUST_LOG` environment variable to control log verbosity, filtering by module if needed.
 

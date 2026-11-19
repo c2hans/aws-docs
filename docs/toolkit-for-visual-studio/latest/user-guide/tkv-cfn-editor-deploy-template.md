@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Deploying a CloudFormation Template in Visual Studio
-<a name="tkv-cfn-editor-deploy-template"></a>
 
  **To deploy an CFN template**
 

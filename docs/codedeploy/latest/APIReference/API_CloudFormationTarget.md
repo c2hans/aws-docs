@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Cloud
 ---
 
 # CloudFormationTarget
-<a name="API_CloudFormationTarget"></a>
 
  Information about the target to be updated by an CloudFormation blue/green deployment. This target type is used for all deployments initiated by a CloudFormation stack update.
 

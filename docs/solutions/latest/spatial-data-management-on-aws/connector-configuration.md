@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Connector configuration
-<a name="connector-configuration"></a>
 
 ## Triggers
 <a name="_triggers"></a>

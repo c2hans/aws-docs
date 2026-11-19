@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-
 ---
 
 # Create a log-group-level transformer by copying an existing one
-<a name="CloudWatch-Logs-Transformation-Copy"></a>
 
 You can use the console to copy the JSON configuration of an existing transformer. You can then use that code to create an identical transformer by using the AWS CLI, or you can modify the configuration first.
 

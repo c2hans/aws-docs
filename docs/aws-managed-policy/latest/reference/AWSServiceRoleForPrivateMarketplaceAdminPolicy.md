@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForPrivateMarketplaceAdminPolicy
-<a name="AWSServiceRoleForPrivateMarketplaceAdminPolicy"></a>
 
 **Description**: Provides permissions to describe and update Private Marketplace resources and describe AWS Organizations
 

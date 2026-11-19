@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/n
 ---
 
 # Managed rule groups in AWS Network Firewall
-<a name="nwfw-managed-rule-groups"></a>
 
 Managed rule groups are collections of predefined, ready-to-use rules that AWS writes and maintains for you. Most AWS managed rule groups are available for at no additional cost to Network Firewall customers. The managed rule groups offered by Network Firewall combine thorough security coverage with the convenience and experitise of AWS managed solutions.
 

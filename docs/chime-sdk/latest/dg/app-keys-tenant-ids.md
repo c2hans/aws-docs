@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/app-keys-tenant-ids.
 ---
 
 # Using AppKeys and TenantIDs for Amazon Chime SDK
-<a name="app-keys-tenant-ids"></a>
 
 You can use AppKeys and TenantIDs to limit access *from a network* to specific applications' Amazon Chime SDK WebRTC media sessions.
 

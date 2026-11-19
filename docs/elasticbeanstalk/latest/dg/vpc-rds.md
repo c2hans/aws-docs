@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/vpc-rds.html
 ---
 
 # Example: Launching an Elastic Beanstalk in a VPC with Amazon RDS
-<a name="vpc-rds"></a>
 
 This section walks you through the tasks to deploy an Elastic Beanstalk application with Amazon RDS in a VPC using a NAT gateway.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/step-prepare-th
 ---
 
 # Step B: Prepare the HTML5 asset
-<a name="step-prepare-the-html5-asset"></a>
 
 You use an authoring system to create the asset and to manage the content, including implementation of features such as fade or opacity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Event sources for a Custom Event Bus
-<a name="eb-custom-bus-event-sources"></a>
 
 An event source ingests events from an AWS service or a SaaS partner onto a Custom Event Bus. You create it with `CreateEventSource`, naming a destination bus and one origin, for example `aws.s3`, and EventBridge delivers events from the origin to the bus. Your own applications publish to the bus directly, so you need an event source only for events you do not produce yourself.
 

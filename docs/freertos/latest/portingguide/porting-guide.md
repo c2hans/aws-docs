@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/portingguide/porting-gui
 ---
 
 # FreeRTOS Porting
-<a name="porting-guide"></a>
 
 ## What is FreeRTOS
 <a name="porting-what-is-afr"></a>

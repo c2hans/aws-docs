@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # ColorDisplayed
-<a name="API_rekognitionstreaming_ColorDisplayed"></a>
 
 Contains information regarding `SequenceNumber`, `CurrentColor`, `PreviousColor`, and `CurrentColorStartTimestamp`.
 

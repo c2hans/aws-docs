@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ListResourceSynchronizationStatuses
-<a name="API_ListResourceSynchronizationStatuses"></a>
 
 Lists the synchronization statuses of the resources covered by the specified deployment. You can filter the results by synchronization status and page through them.
 

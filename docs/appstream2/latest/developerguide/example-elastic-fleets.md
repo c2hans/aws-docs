@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/example
 ---
 
 # Example: WorkSpaces Applications Elastic fleets session script Amazon S3 bucket policy cross-service confused deputy prevention
-<a name="example-elastic-fleets"></a>
 
 **Example `aws:SourceAccount` Conditional:**
 

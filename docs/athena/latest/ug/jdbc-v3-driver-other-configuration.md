@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/jdbc-v3-driver-other-co
 ---
 
 # Other JDBC 3.x configuration
-<a name="jdbc-v3-driver-other-configuration"></a>
 
 The following sections describe some additional configuration settings for the JDBC 3.x driver.
 

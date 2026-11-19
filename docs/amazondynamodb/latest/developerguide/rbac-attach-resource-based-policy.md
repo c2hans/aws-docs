@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rba
 ---
 
 # Attach a policy to an DynamoDB existing table
-<a name="rbac-attach-resource-based-policy"></a>
 
 You can attach a resource-based policy to an existing table or modify an existing policy by using the DynamoDB console, [PutResourcePolicy](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutResourcePolicy.html) API, the AWS CLI, AWS SDK, or an [CloudFormation template](rbac-create-table.md#rbac-create-table-cfn).
 

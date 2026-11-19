@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/stream-service-linke
 ---
 
 # Using service-linked roles for data streaming in Amazon Chime SDK messaging
-<a name="stream-service-linked"></a>
 
 The following sections explain how to manage the service-linked role for data streaming.
 

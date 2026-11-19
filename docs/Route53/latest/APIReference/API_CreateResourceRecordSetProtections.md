@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateRe
 ---
 
 # CreateResourceRecordSetProtections
-<a name="API_CreateResourceRecordSetProtections"></a>
 
 Creates one or more resource record set protections in a hosted zone. A protection applies to every resource record set in the hosted zone that has the specified name and type. While a protection exists, Route 53 rejects any `ChangeResourceRecordSets` request that creates, updates, or deletes a resource record set with that name and type, and returns an `InvalidChangeBatch` error. To change a protected resource record set, first delete its protection by using `DeleteResourceRecordSetProtections`.
 

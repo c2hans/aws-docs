@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/service-quo
 ---
 
 # Service Quotas
-<a name="service-quotas"></a>
 
 ## AWS Security Incident Response
 <a name="aws-security-incident-response-service"></a>

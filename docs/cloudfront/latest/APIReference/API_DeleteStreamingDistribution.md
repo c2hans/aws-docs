@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Delet
 ---
 
 # DeleteStreamingDistribution
-<a name="API_DeleteStreamingDistribution"></a>
 
 Delete a streaming distribution. To delete an RTMP distribution using the CloudFront API, perform the following steps.
 

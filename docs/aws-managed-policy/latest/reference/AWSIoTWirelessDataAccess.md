@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTWirelessDataAccess
-<a name="AWSIoTWirelessDataAccess"></a>
 
 **Description**: Allows the associated identity data access to AWS IoT Wireless devices.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ge
 ---
 
 # Get Amazon SNS notifications when the key state of an AWS KMS key changes
-<a name="get-amazon-sns-notifications-when-kms-key-state-changes"></a>
 
 *Shubham Harsora, Aromal Raj Jayarajan, Prasobh S P, and Vishnu Unnikrishnan, Amazon Web Services*
 

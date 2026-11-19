@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ParameterDetail
-<a name="API_agent-runtime_ParameterDetail"></a>
 
  Contains details about a parameter in a function for an action group.
 

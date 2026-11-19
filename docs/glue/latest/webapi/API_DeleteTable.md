@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteTable.html
 ---
 
 # DeleteTable
-<a name="API_DeleteTable"></a>
 
 Removes a table definition from the Data Catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Secure HTAP Data Architecture Using TiDB Cloud
-<a name="secure-htap-data-architecture-with-tidb-cloud"></a>
 
 Publication date: **June 13, 2023 ([Diagram history](#diagram-history))**
 

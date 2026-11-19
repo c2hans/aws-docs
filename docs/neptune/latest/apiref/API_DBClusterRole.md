@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DBClusterRole.
 ---
 
 # DBClusterRole
-<a name="API_DBClusterRole"></a>
 
 Describes an Amazon Identity and Access Management (IAM) role that is associated with a DB cluster.
 

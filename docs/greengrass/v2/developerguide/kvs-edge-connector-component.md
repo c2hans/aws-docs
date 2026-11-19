@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/kvs-edge-co
 ---
 
 # Edge connector for Kinesis Video Streams
-<a name="kvs-edge-connector-component"></a>
 
 The edge connector for Kinesis Video Streams component (`aws.iot.EdgeConnectorForKVS`) reads video feeds from local cameras and publishes the streams to Kinesis Video Streams. You can configure this component to read video feeds from Internet Protocol (IP) cameras using Real Time Streaming Protocol (RTSP). Then, you can set up dashboards in [Amazon Managed Grafana](https://docs.aws.amazon.com/grafana/latest/userguide/what-is-Amazon-Managed-Service-Grafana.html) or local Grafana servers to monitor and interact with the video streams.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_No
 ---
 
 # NotificationHubOverview
-<a name="API_NotificationHubOverview"></a>
 
 Describes an overview of a `NotificationHub`.
 

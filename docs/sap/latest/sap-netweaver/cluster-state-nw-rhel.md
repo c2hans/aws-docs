@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-state-n
 ---
 
 # Viewing the cluster state
-<a name="cluster-state-nw-rhel"></a>
 
 You can view the state of the cluster in two ways - based on your operating system or with a web based console provided by Red Hat.
 

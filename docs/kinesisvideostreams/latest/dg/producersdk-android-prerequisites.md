@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 ---
 
 # Prerequisites
-<a name="producersdk-android-prerequisites"></a>
 
 We recommend [Android Studio](https://developer.android.com/studio/index.html) for examining, editing, and running the application code. We recommend using the latest stable version.
 

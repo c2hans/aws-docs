@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/cng-node-lifecycle-
 ---
 
 # Run custom scripts with node lifecycle actions in AWS PCS
-<a name="cng-node-lifecycle-actions"></a>
 
 Node lifecycle actions run custom scripts at defined points in a compute node's lifecycle. Use them to mount file systems, join directory services, install software, or set up monitoring. You define scripts in the compute node group configuration and reuse them across compute node groups and clusters.
 

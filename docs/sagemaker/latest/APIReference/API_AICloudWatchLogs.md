@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIClou
 ---
 
 # AICloudWatchLogs
-<a name="API_AICloudWatchLogs"></a>
 
 CloudWatch log information for an AI benchmark or recommendation job.
 

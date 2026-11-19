@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Creat
 ---
 
 # CreateAppBlockBuilder
-<a name="API_CreateAppBlockBuilder"></a>
 
 Creates an app block builder.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-global-e
 ---
 
 # Making applications Regional-fault tolerant with global endpoints in EventBridge
-<a name="eb-global-endpoints"></a>
 
 You can improve your application's availability with Amazon EventBridge global endpoints. Global endpoints help make your application regional-fault tolerant at no additional cost. To start, you assign an Amazon Route 53 health check to the endpoint. When failover is initiated, the health check reports an “unhealthy” state. Within minutes of failover initiation, all custom [events](eb-events.md) are routed to an [event bus](eb-event-bus.md) in the secondary Region and are processed by that event bus. Once the health check reports a “healthy” state, events are processed by the event bus in the primary Region.
 

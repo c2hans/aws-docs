@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cy
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## What is the difference between upside risk and positive risk?
 <a name="upside-vs-positive"></a>

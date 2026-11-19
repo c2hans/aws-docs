@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/s3-perm
 ---
 
 # Amazon S3 Bucket Permissions
-<a name="s3-permissions"></a>
 
 The Amazon S3 bucket that you choose must have a bucket policy that provides sufficient access to the WorkSpaces Applications service principal to access and download objects from the Amazon S3 bucket. You will need to modify the following bucket policy, then apply it to the Amazon S3 bucket you intend to use for application icons, setup scripts, and VHDs. For more information about how to apply a policy to an Amazon S3 bucket, see [Adding a bucket policy using the Amazon S3 console](https://docs.aws.amazon.com/AmazonS3/latest/userguide/add-bucket-policy.html).
 

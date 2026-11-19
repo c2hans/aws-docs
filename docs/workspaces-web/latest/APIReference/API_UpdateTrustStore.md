@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_U
 ---
 
 # UpdateTrustStore
-<a name="API_UpdateTrustStore"></a>
 
 Updates the trust store.
 

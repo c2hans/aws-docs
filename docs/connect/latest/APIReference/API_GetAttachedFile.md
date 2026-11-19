@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_GetAttac
 ---
 
 # GetAttachedFile
-<a name="API_GetAttachedFile"></a>
 
 Provides a pre-signed URL for download of an approved attached file. This API also returns metadata about the attached file. It will only return a downloadURL if the status of the attached file is `APPROVED`.
 

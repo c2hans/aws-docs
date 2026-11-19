@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Hard limits
-<a name="next-gen-quotas-hard-limits"></a>
 
 The following quotas cannot be increased.
 

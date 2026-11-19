@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutEmailI
 ---
 
 # PutEmailIdentityDkimSigningAttributes
-<a name="API_PutEmailIdentityDkimSigningAttributes"></a>
 
 Used to configure or change the DKIM authentication settings for an email domain identity. You can use this operation to do any of the following:
 + Update the signing attributes for an identity that uses Bring Your Own DKIM (BYODKIM).

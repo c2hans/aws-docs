@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListFlow
 ---
 
 # ListFlowAssociations
-<a name="API_ListFlowAssociations"></a>
 
 List the flow association based on the filters.
 

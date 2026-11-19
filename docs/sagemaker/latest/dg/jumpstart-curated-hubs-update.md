@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hu
 ---
 
 # Update resources in a private hub
-<a name="jumpstart-curated-hubs-update"></a>
 
 You can update resources in your private hub to make changes to their metadata. The resources that you can update include model references to Amazon SageMaker JumpStart models, custom models, notebooks, datasets, and JsonDoc.
 

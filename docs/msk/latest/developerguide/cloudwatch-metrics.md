@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/cloudwatch-met
 ---
 
 # View Amazon MSK metrics using CloudWatch
-<a name="cloudwatch-metrics"></a>
 
 You can monitor metrics for Amazon MSK using the CloudWatch console, the command line, or the CloudWatch API. The following procedures show you how to access metrics using these different methods.
 

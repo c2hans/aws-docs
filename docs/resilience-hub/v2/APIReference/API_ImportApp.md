@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Impor
 ---
 
 # ImportApp
-<a name="API_ImportApp"></a>
 
 Imports a V1 app into the V2 resource model, creating a service with the same name.
 

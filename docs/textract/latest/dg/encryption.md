@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/encryption.html
 ---
 
 # Encryption in Amazon Textract
-<a name="encryption"></a>
 
 Data encryption refers to protecting data while in transit and at rest. You can protect your data by using Amazon S3-Managed Keys or AWS KMS key at rest, alongside standard Transport Layer Security while in transit.
 

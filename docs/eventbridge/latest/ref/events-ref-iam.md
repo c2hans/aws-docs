@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-iam.ht
 ---
 
 # AWS Identity and Access Management events
-<a name="events-ref-iam"></a>
 
 IAM sends service events to EventBridge via AWS CloudTrail.
 

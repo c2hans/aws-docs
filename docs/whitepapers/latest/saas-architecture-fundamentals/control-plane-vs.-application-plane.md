@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Control plane vs. application plane
-<a name="control-plane-vs.-application-plane"></a>
 
  The previous diagram provides a conceptual view of the core SaaS architecture concepts. Now let’s drill down into that deeper, and better define how your SaaS environment decomposed into distinct layers. Having this clearer picture of the boundaries between SaaS concepts will make it easier to describe the moving parts of a SaaS solution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetAcc
 ---
 
 # GetAccountSetting
-<a name="API_GetAccountSetting"></a>
 
 Retrieves the account setting value for the specified setting name.
 

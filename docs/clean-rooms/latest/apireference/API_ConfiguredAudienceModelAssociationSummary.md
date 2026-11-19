@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Conf
 ---
 
 # ConfiguredAudienceModelAssociationSummary
-<a name="API_ConfiguredAudienceModelAssociationSummary"></a>
 
 A summary of the configured audience model association.
 

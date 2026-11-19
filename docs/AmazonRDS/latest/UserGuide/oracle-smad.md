@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-smad.h
 ---
 
 # Working with self-managed Active Directory with an Amazon RDS for Oracle DB instance
-<a name="oracle-smad"></a>
 
 Amazon RDS for Oracle integrates with your self-managed Microsoft Active Directory (AD) domain. Your AD can run in your data center, on Amazon Elastic Compute Cloud (EC2), or with another cloud provider. With this integration, users in your AD authenticate to your Amazon RDS for Oracle DB instance with the Kerberos protocol, eliminating the need for complex intermediary domains or forest trusts. When a user connects with a Kerberos ticket issued by your domain controllers, RDS for Oracle validates the ticket against a service key that Amazon RDS registers in your domain. You keep your existing identity management structure while you use the managed database capabilities of Amazon RDS.
 

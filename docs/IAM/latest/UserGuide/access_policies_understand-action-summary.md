@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_und
 ---
 
 # Action summary (list of resources)
-<a name="access_policies_understand-action-summary"></a>
 
 Policies are summarized in three tables: the [policy summary](access_policies_understand-policy-summary.md), the [service summary](access_policies_understand-service-summary.md), and the action summary. The *action summary* table includes a list of resources and the associated conditions that apply to the chosen action.
 

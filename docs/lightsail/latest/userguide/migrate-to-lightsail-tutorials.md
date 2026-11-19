@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/migrate-to-li
 ---
 
 # Migrate to Lightsail
-<a name="migrate-to-lightsail-tutorials"></a>
 
 This section covers the following topics related to migrating to Lightsail:
 

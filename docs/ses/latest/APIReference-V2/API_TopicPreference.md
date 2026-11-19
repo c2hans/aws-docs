@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_TopicPref
 ---
 
 # TopicPreference
-<a name="API_TopicPreference"></a>
 
 The contact's preference for being opted-in to or opted-out of a topic.
 

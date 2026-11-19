@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-functions.html
 ---
 
 # Configuring AWS Lambda Event Functions
-<a name="lambda-functions"></a>
 
 Learn how to configure the core capabilities and options for your Lambda Event Function using the Lambda API or console.
 

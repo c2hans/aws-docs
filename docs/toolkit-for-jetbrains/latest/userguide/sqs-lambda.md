@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/s
 ---
 
 # Using Amazon SQS with AWS Lambda in the AWS Toolkit for JetBrains
-<a name="sqs-lambda"></a>
 
 The following procedure details how to configure Amazon SQS queues as Lambda triggers in the AWS Toolkit for JetBrains.
 

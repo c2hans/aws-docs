@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/version-suppor
 ---
 
 # Amazon MSK version support
-<a name="version-support"></a>
 
 This topic describes the [Amazon MSK version support policy](#version-support-policy) and the procedure for [Upgrade the Apache Kafka version](version-upgrades.md). If you're upgrading your Kafka version, follow the best practices outlined in [Best practices for version upgrades](version-upgrades-best-practices.md).
 

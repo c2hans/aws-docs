@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-with-df
 ---
 
 # Using Gremlin with the Amazon Neptune DFE query engine
-<a name="gremlin-with-dfe"></a>
 
 You can enable Neptune's [alternative query engine](neptune-dfe-engine.md), known as DFE, in two ways:
 + Set the [`neptune_dfe_query_engine`](parameters.md#parameters-instance-parameters-neptune_dfe_query_engine) instance parameter to `enabled` for all queries on the instance.

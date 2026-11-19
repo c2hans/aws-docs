@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_I
 ---
 
 # ImplementationDetails
-<a name="API_ImplementationDetails"></a>
 
 An object that describes the implementation type for a control.
 

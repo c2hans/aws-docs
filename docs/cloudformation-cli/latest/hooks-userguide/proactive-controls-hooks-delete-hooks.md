@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Delete proactive control-based Hooks in your account
-<a name="proactive-controls-hooks-delete-hooks"></a>
 
 When you no longer need an activated proactive control-based Hook, use the following procedures to delete it in your account.
 

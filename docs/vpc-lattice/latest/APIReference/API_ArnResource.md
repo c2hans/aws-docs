@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_ArnR
 ---
 
 # ArnResource
-<a name="API_ArnResource"></a>
 
 The Amazon Resource Name (ARN) of the resource.
 

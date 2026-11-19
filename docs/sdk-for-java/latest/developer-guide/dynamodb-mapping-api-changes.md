@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/dyna
 ---
 
 # Changes in the DynamoDB mapping APIs between version 1 and version 2 of the SDK for Java
-<a name="dynamodb-mapping-api-changes"></a>
 
 ## Create a client
 <a name="dynamodb-mapping-api-changes-client"></a>

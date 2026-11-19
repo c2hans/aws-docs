@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Contr
 ---
 
 # ControlTitleFormatText
-<a name="API_ControlTitleFormatText"></a>
 
 The title format text configuration for a sheet control. This is a tagged union type. Specify either `PlainText` or `RichText`, but not both.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # CreatePaymentInstrument
-<a name="API_CreatePaymentInstrument"></a>
 
 Create a new payment instrument for a connector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-c
 ---
 
 # Validating Prometheus setup on the head node of a HyperPod cluster
-<a name="sagemaker-hyperpod-cluster-observability-slurm-validate-prometheus-setup"></a>
 
 After you have successfully set up your HyperPod cluster installed with the exporter packages, check if Prometheus is properly set up on the head node of your HyperPod cluster.
 

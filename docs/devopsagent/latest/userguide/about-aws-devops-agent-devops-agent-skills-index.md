@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-d
 ---
 
 # DevOps Agent Skills
-<a name="about-aws-devops-agent-devops-agent-skills-index"></a>
 
 AWS DevOps Agent Skills are modular instruction sets that extend the agent's capabilities with specialized domain knowledge and investigation methodologies tailored to your infrastructure and operational workflows.
 

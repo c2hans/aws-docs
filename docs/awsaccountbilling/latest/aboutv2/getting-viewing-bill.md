@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/getting
 ---
 
 # Understanding your bill
-<a name="getting-viewing-bill"></a>
 
 |  |
 | --- |

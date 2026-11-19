@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Globa
 ---
 
 # GlobalTableBorderOptions
-<a name="API_GlobalTableBorderOptions"></a>
 
 Determines the border options for a table visual.
 

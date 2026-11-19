@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeC
 ---
 
 # DescribeCarrierGateways
-<a name="API_DescribeCarrierGateways"></a>
 
 Describes one or more of your carrier gateways.
 

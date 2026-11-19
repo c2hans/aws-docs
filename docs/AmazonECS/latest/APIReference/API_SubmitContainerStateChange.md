@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Submit
 ---
 
 # SubmitContainerStateChange
-<a name="API_SubmitContainerStateChange"></a>
 
 **Note**
 This action is only used by the Amazon ECS agent, and it is not intended for use outside of the agent.

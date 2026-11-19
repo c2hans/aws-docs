@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rudderstack-configuring-c
 ---
 
 # Configuring RudderStack connections
-<a name="rudderstack-configuring-connections"></a>
 
 RudderStack connections authenticate with an API key (or token). You store the key in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

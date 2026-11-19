@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-iam-
 ---
 
 # Controlling access to AWS Marketplace subscriptions
-<a name="buyer-iam-users-groups-policies"></a>
 
 AWS IAM Identity Center helps you securely create or connect your workforce identities and manage their access centrally across AWS accounts and applications. IAM Identity Center is the recommended approach for workforce authentication and authorization in AWS for organizations of any size and type. For additional configuration guidance, review the [AWS Security Reference Architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/org-management.html#mgmt-sso).
 

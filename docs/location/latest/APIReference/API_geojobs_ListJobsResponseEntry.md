@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geojobs
 ---
 
 # ListJobsResponseEntry
-<a name="API_geojobs_ListJobsResponseEntry"></a>
 
 Job summary information returned in list operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/UNION.h
 ---
 
 # Set operators
-<a name="UNION"></a>
 
 The *set operators* are used to compare and merge the results of two separate query expressions.
 

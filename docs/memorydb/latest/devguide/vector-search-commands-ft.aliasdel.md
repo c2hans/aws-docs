@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/vector-search-c
 ---
 
 # FT.ALIASDEL
-<a name="vector-search-commands-ft.aliasdel"></a>
 
 Delete an existing alias for an index.
 

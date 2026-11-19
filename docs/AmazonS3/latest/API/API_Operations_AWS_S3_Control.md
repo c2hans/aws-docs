@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations_AWS_S
 ---
 
 # Amazon S3 Control
-<a name="API_Operations_AWS_S3_Control"></a>
 
 The following actions are supported by Amazon S3 Control:
 +  [AssociateAccessGrantsIdentityCenter](API_control_AssociateAccessGrantsIdentityCenter.md)

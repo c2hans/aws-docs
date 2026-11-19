@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cloudwatch-events
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Code examples for CloudWatch Events using AWS SDKs
-<a name="cloudwatch-events_code_examples"></a>
 
 The following code examples show you how to use Amazon CloudWatch Events with an AWS software development kit (SDK).
 

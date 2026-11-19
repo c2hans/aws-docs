@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/microvms-troubleshootin
 ---
 
 # Troubleshooting
-<a name="microvms-troubleshooting"></a>
 
 This section describes how to debug and troubleshoot common issues when working with AWS Lambda MicroVMs.
 

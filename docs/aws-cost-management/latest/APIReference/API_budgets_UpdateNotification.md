@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UpdateNotification
-<a name="API_budgets_UpdateNotification"></a>
 
 Updates a notification.
 

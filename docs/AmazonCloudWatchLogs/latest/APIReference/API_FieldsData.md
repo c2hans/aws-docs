@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # FieldsData
-<a name="API_FieldsData"></a>
 
 A structure containing the extracted fields from a log event. These fields are extracted based on the log format and can be used for structured querying and analysis.
 

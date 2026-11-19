@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub/latest/ug/auth-and-access-c
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Identity and access management in AWS Migration Hub
-<a name="auth-and-access-control"></a>
 
 Access to AWS Migration Hub requires credentials that AWS can use to authenticate your requests. Those credentials must have permissions to access AWS resources, such as an Migration Hub ProgressUpdateStream or an Amazon EC2 instance. The following sections provide details on how you can use [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) and Migration Hub to help secure your resources by controlling who can access them:
 + [Authentication](#authentication)

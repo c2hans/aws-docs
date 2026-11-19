@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # ROWTIME
-<a name="sql-reference-rowtime"></a>
 
 ROWTIME is an operator and system column that returns the time at which a particular row of a stream was created.
 

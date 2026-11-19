@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/select-reso
 ---
 
 # Stopping AWS Config from recording with the customer managed configuration recorder
-<a name="select-resources-stopping-recording"></a>
 
 You can stop AWS Config from recording with the customer managed configuration recorder any time. After AWS Config stops recording a resource, it retains the configuration information that was previously captured, and you can continue to access this information.
 

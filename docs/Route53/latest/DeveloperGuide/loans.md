@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/loans.html
 ---
 
 # .loans
-<a name="loans"></a>
 
 Used by lenders, borrowers, and credit professionals.
 

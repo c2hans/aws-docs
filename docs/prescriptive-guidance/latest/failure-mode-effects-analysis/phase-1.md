@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/failure-mod
 ---
 
 # Phase 1: Foundation setup (weeks 1-2)
-<a name="phase-1"></a>
 
 The first two weeks focus on building the knowledge, tooling, and baseline data your teams need before FMEA becomes part of the sprint cycle. You'll designate champions, train the team on RPN scoring, wire up your project management tools for risk tracking, and run a pilot analysis on one or two applications to calibrate your scoring criteria against real-world conditions.
 

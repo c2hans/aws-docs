@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Performance monitoring and continuous improvement for generative AI applications
-<a name="prod-monitoring"></a>
 
 Performance monitoring and continuous improvement are essential components for maintaining generative AI applications in production environments. As these systems operate in dynamic conditions with evolving user behaviors and data patterns, robust monitoring frameworks and improvement mechanisms are crucial for ensuring sustained reliability, effectiveness, and safety. This section provides a comprehensive examination of the key operational requirements and technical approaches for managing generative AI applications at scale.
 

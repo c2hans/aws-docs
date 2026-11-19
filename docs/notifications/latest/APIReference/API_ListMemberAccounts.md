@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Li
 ---
 
 # ListMemberAccounts
-<a name="API_ListMemberAccounts"></a>
 
 Returns a list of member accounts associated with a notification configuration.
 

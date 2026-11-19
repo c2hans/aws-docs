@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/apigateway-
 ---
 
 # apigateway-stage-access-logs-enabled
-<a name="apigateway-stage-access-logs-enabled"></a>
 
 Checks if Amazon API Gateway stages have access logging enabled. The rule is NON\_COMPLIANT if 'accessLogSettings' is not present in Stage configuration.
 

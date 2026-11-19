@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_VpcCon
 ---
 
 # VpcConfig
-<a name="API_VpcConfig"></a>
 
 Amazon Virtual Private Cloud configuration details associated with your Lambda function.
 

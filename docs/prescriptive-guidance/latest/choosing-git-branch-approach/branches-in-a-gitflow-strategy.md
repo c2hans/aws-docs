@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Branches in a Gitflow strategy
-<a name="branches-in-a-gitflow-strategy"></a>
 
 A Gitflow branching strategy commonly has the following branches.
 

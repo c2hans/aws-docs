@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PutSchemaVersionM
 ---
 
 # PutSchemaVersionMetadata
-<a name="API_PutSchemaVersionMetadata"></a>
 
 Puts the metadata key value pair for a specified schema version ID. A maximum of 10 key value pairs will be allowed per schema version. They can be added over one or more calls.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Creat
 ---
 
 # CreateRemoteAccessSessionConfiguration
-<a name="API_CreateRemoteAccessSessionConfiguration"></a>
 
 Configuration settings for a remote access session, including billing method.
 

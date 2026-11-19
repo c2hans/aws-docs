@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_AssociateApp
 ---
 
 # AssociateApplications
-<a name="API_AssociateApplications"></a>
 
 Associate applications to wave.
 

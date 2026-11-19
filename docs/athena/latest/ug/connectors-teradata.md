@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-teradata.htm
 ---
 
 # Amazon Athena Teradata connector
-<a name="connectors-teradata"></a>
 
  The Amazon Athena connector for Teradata enables Athena to run SQL queries on data stored in your Teradata databases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_EnableOutbou
 ---
 
 # EnableOutboundWebIdentityFederation
-<a name="API_EnableOutboundWebIdentityFederation"></a>
 
 Enables the outbound identity federation feature for your AWS account. When enabled, IAM principals in your account can use the `GetWebIdentityToken` API to obtain JSON Web Tokens (JWTs) for secure authentication with external services. This operation also generates a unique issuer URL for your AWS account.
 

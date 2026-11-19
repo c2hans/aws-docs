@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_VpcConfigResponse.
 ---
 
 # VpcConfigResponse
-<a name="API_VpcConfigResponse"></a>
 
 The VPC security groups and subnets that are attached to a Lambda function.
 

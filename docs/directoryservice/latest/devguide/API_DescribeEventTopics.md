@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Des
 ---
 
 # DescribeEventTopics
-<a name="API_DescribeEventTopics"></a>
 
 Obtains information about which Amazon SNS topics receive status messages from the specified directory.
 

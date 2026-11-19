@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/flow-tutorial-s
 ---
 
 # Step 4: Transfer data from a SaaS source to Amazon S3
-<a name="flow-tutorial-salesforce-s3"></a>
 
 Suppose you now want to transfer your data from Salesforce to Amazon S3. With Amazon S3, you can synchronize and replicate customer relationship management (CRM) data into data lakes to analyze or use to drive machine learning. To keep this information up to date, you can create an event-triggered flow from Salesforce to Amazon S3. An event-triggered flow runs when Amazon AppFlow detects a change to the target data in the CRM storage service.
 

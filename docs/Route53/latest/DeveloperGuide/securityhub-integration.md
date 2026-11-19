@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/securityhu
 ---
 
 # Sending findings from Resolver DNS Firewall to Security Hub CSPM
-<a name="securityhub-integration"></a>
 
 [AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html) provides you with a comprehensive view of your security state in AWS and helps you to check your environment against security industry standards and best practices. Security Hub CSPM collects security data from across AWS accounts, AWS services, and supported third-party partner products, and helps you to analyze security trends and identify the highest priority security issues.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/setup.html
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # Setting up Team for AWS Cloud9
-<a name="setup"></a>
 
 This topic explains how to use [AWS IAM Identity Center](https://aws.amazon.com/iam/) to enable multiple users within a single AWS account to use AWS Cloud9. To set up to use AWS Cloud9 for any other usage pattern, see [Setting up AWS Cloud9](setting-up.md) for the correct instructions.
 

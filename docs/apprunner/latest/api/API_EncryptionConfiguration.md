@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_EncryptionConfi
 ---
 
 # EncryptionConfiguration
-<a name="API_EncryptionConfiguration"></a>
 
 Describes a custom encryption key that AWS App Runner uses to encrypt copies of the source repository and service logs.
 

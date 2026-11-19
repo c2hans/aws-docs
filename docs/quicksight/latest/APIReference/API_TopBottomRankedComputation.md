@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TopBo
 ---
 
 # TopBottomRankedComputation
-<a name="API_TopBottomRankedComputation"></a>
 
 The top ranked and bottom ranked computation configuration.
 

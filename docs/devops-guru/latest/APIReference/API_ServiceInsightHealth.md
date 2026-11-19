@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Serv
 ---
 
 # ServiceInsightHealth
-<a name="API_ServiceInsightHealth"></a>
 
 Contains the number of open proactive and reactive insights in an analyzed AWS service.
 

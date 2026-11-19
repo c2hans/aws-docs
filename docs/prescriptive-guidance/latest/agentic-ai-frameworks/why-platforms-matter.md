@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Why platforms matter
-<a name="why-platforms-matter"></a>
 
 Agentic AI solutions help organizations operationalize autonomous systems in production. They offer the following capabilities:
 + Provide **runtime orchestration** for hosting, scaling, and coordinating agents.

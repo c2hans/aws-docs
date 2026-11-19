@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mist
 ---
 
 # Voxtral Small 24B 2507
-<a name="model-card-mistral-ai-voxtral-small-24b-2507"></a>
 
 ## ![Mistral AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/mistralai.png) Mistral AI — Voxtral Small 24B 2507
 <a name="model-card-mistral-ai-voxtral-small-24b-2507-header"></a>

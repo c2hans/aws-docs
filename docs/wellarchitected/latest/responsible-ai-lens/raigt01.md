@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Guiding
-<a name="raigt01"></a>
 
 | RAIGT01: How will downstream stakeholders learn how to responsibly use the AI system (guiding)? |
 | --- |

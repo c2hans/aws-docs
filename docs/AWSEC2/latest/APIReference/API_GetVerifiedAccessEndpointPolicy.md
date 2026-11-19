@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetVerifi
 ---
 
 # GetVerifiedAccessEndpointPolicy
-<a name="API_GetVerifiedAccessEndpointPolicy"></a>
 
 Get the Verified Access policy associated with the endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListReadSetExportJo
 ---
 
 # ListReadSetExportJobs
-<a name="API_ListReadSetExportJobs"></a>
 
 Retrieves a list of read set export jobs in a JSON formatted response. This API operation is used to check the status of a read set export job initiated by the `StartReadSetExportJob` API operation.
 

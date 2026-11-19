@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # Rationale
-<a name="API_agent-runtime_Rationale"></a>
 
 Contains the reasoning, based on the input, that the agent uses to justify carrying out an action group or getting information from a knowledge base.
 

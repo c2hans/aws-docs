@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Daemon
 ---
 
 # DaemonDeploymentSummary
-<a name="API_DaemonDeploymentSummary"></a>
 
 A summary of a daemon deployment.
 

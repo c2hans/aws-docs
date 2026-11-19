@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_C
 ---
 
 # CreateMissionProfile
-<a name="API_CreateMissionProfile"></a>
 
 Creates a mission profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/permission
 ---
 
 # permissions reference
-<a name="permissions-reference"></a>
 
 Use the following table as a reference when you are setting up access control and writing permissions policies that you can attach to an IAM identity (identity-based policies). The table lists each API operation and the corresponding actions for which you can grant permissions to perform the action. For operations that support *resource-level permissions*, the table lists the AWS resource for which you can grant the permissions. You specify the actions in the policy's `Action` field.
 

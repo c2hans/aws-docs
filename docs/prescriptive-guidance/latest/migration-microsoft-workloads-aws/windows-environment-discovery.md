@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Windows environment discovery
-<a name="windows-environment-discovery"></a>
 
 With today's available technologies, such as AWS Transform MGN, moving Windows Server, Linux, and other x86-based operating systems and their workloads to AWS is fairly straightforward. Getting those workloads to work properly and doing it at scale, however, presents a different set of challenges. This section is intended to identify migration considerations that can enable you to quickly, securely, and smoothly migrate your Microsoft workloads.
 

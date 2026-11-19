@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/datasync-large
 ---
 
 # Estimating migration timelines
-<a name="datasync-large-migration-timelines"></a>
 
 Using the information you've collected to this point, you can estimate how long the migration will take using AWS DataSync.
 

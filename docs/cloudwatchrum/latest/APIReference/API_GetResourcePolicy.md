@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Ge
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
 Use this operation to retrieve information about a resource-based policy that is attached to an app monitor.
 

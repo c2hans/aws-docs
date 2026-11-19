@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-locatio
 ---
 
 # AWS IoT Core Device Location
-<a name="device-location"></a>
 
 |  |
 | --- |

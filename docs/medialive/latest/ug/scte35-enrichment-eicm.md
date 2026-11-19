@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/scte35-enrichment-ei
 ---
 
 # EICM payload: Contextual metadata enrichment
-<a name="scte35-enrichment-eicm"></a>
 
 The `EICM` (Elemental Inference Contextual Metadata) feature payload carries the information that downstream consumers need to query AWS Elemental Inference for contextual metadata at ad-decision time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to search nearby from a position
-<a name="how-to-search-nearby"></a>
 
 The SearchNearby API enables querying for all nearby places and points of interest (POI) without entering any specific text. Users can explore neighborhoods, discover POIs, and more using this API. It requires a `QueryPosition`, which can represent a device's location, IP-based position, or the map viewport center. Alternatively, users can specify a city or place to bias results based on the geocoordinates of that location.
 

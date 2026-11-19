@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Virtana
-<a name="discovery-virtana"></a>
 
 *Last update: February 16, 2024*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/security-updates/securit
 ---
 
 # FreeRTOS Security Updates
-<a name="security-updates"></a>
 
 The table below lists FreeRTOS security updates and the corresponding [Common Vulnerabilities and Exposures](https://cve.mitre.org/) (CVE) number.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # CloudFormation resources generated when AWS::Serverless::CapacityProvider is specified
-<a name="sam-specification-generated-resources-capacityprovider"></a>
 
 When an `AWS::Serverless::CapacityProvider` is specified, AWS Serverless Application Model (AWS SAM) generates an `AWS::Lambda::CapacityProvider` base CloudFormation resource.
 

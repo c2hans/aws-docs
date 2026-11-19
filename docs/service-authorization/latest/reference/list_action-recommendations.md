@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Action Recommendations
-<a name="list_action-recommendations"></a>
 
 AWS Action Recommendations (service prefix: `action-recommendations`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Searc
 ---
 
 # SearchApps
-<a name="API_SearchApps"></a>
 
 Searches for apps in an AWS account using the specified filters. This operation is eventually consistent; the results might not reflect very recent updates. Results are paginated; use the `NextToken` parameter to retrieve additional results.
 

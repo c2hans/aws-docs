@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_Inquiry
 ---
 
 # InquiryContent
-<a name="API_InquiryContent"></a>
 
 Content for creating a compliance inquiry - either a single query or file content.
 

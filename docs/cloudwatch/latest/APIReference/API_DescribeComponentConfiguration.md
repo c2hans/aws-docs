@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Descr
 ---
 
 # DescribeComponentConfiguration
-<a name="API_DescribeComponentConfiguration"></a>
 
 Describes the monitoring configuration of the component.
 

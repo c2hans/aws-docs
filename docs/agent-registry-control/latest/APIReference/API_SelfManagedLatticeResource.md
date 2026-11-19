@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # SelfManagedLatticeResource
-<a name="API_SelfManagedLatticeResource"></a>
 
 A self-managed private endpoint backed by a VPC Lattice resource configuration. Exactly one member is set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Pare
 ---
 
 # Parent
-<a name="API_Parent"></a>
 
 A parent label for a label. A label can have 0, 1, or more parents.
 

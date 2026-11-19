@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd02-b
 ---
 
 # FND02-BP10 Establish workload and machine identity federation
-<a name="fnd02-bp10"></a>
 
  Workloads and machines need to access AWS resources at least as often as people do, but they require a unique form of identity federation. Long-lived access keys stored in CI/CD systems, containers, or on-premises servers are a persistent source of credential exposure. Federating workload identities so they receive short-lived credentials from a trusted identity source removes the need to issue, store, and rotate those keys.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_S3D
 ---
 
 # S3DestinationConfig
-<a name="API_S3DestinationConfig"></a>
 
 Configuration parameters for where in an S3 bucket to place the harvested content.
 

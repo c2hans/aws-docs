@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Impact
-<a name="API_Impact"></a>
 
 The dollar value of the anomaly.
 

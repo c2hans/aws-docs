@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_T
 ---
 
 # TimeAzEl
-<a name="API_TimeAzEl"></a>
 
 Time-tagged azimuth elevation pointing data.
 

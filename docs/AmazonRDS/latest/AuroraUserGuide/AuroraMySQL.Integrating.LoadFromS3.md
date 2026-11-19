@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Loading data into an Amazon Aurora MySQL DB cluster from text files in an Amazon S3 bucket
-<a name="AuroraMySQL.Integrating.LoadFromS3"></a><a name="load_from_s3"></a><a name="load_data"></a><a name="load_xml"></a>
+<a name="load_from_s3"></a><a name="load_data"></a><a name="load_xml"></a>
 
 You can use the `LOAD DATA FROM S3` or `LOAD XML FROM S3` statement to load data from files stored in an Amazon S3 bucket. In Aurora MySQL, the files are first stored on the local disk, and then imported to the database. After the imports to the database are done, the local files are deleted.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/client-author
 ---
 
 # Client authorization in AWS Client VPN
-<a name="client-authorization"></a>
 
 Client VPN supports two types of client authorization: security groups and network-based authorization (using authorization rules).
 

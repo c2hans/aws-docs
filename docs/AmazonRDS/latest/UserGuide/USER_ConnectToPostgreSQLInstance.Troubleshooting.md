@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectT
 ---
 
 # Troubleshooting connections to your RDS for PostgreSQL instance
-<a name="USER_ConnectToPostgreSQLInstance.Troubleshooting"></a>
 
 **Topics**
 + [Error – FATAL: database {{name}} does not exist](#USER_ConnectToPostgreSQLInstance.Troubleshooting-DBname)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Getting started with EC2 policies
-<a name="orgs_manage_policies-ec2_getting-started"></a>
 
 EC2 policies let you enforce declarative configurations across accounts in your organization. This topic walks you through the steps to enable, create, and attach EC2 policies.
 

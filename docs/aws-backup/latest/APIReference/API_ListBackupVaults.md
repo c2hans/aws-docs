@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListB
 ---
 
 # ListBackupVaults
-<a name="API_ListBackupVaults"></a>
 
 Returns a list of recovery point storage containers along with information about them.
 

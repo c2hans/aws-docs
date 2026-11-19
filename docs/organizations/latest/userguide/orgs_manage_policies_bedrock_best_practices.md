@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Best practices for using Amazon Bedrock policies
-<a name="orgs_manage_policies_bedrock_best_practices"></a>
 
 ## Use a valid guardrail identifier
 <a name="use-valid-guardrail-identifier"></a>

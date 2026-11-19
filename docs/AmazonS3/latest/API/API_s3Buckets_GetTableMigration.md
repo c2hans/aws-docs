@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_GetTab
 ---
 
 # GetTableMigration
-<a name="API_s3Buckets_GetTableMigration"></a>
 
 Gets the details of a migration, including its state, the reason it failed, its statistics and the location of its reports. Identify the migration by its `migrationId`, or specify the `tableARN` of a destination table to get that table's most recent migration.
 

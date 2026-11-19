@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Bat
 ---
 
 # BatchGetAssetPropertyValueHistoryErrorInfo
-<a name="API_BatchGetAssetPropertyValueHistoryErrorInfo"></a>
 
 The error information, such as the error code and the timestamp.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ChainedInvokeFaile
 ---
 
 # ChainedInvokeFailedDetails
-<a name="API_ChainedInvokeFailedDetails"></a>
 
 Contains details about a failed chained function invocation, including error information and failure reason.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanp
 ---
 
 # AWS Managed Policies for SageMaker Projects and JumpStart
-<a name="security-iam-awsmanpol-sc"></a>
 
 These AWS managed policies add permissions to use built-in Amazon SageMaker AI project templates and JumpStart solutions. The policies are available in your AWS account and are used by execution roles created from the SageMaker AI console.
 

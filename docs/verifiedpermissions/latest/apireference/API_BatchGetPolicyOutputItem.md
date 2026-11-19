@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # BatchGetPolicyOutputItem
-<a name="API_BatchGetPolicyOutputItem"></a>
 
 Contains information about a policy returned from a `BatchGetPolicy` API request.
 

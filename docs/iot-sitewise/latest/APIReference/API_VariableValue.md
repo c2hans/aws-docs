@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Var
 ---
 
 # VariableValue
-<a name="API_VariableValue"></a>
 
 Identifies a property value used in an expression.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLambdaBasicDurableExecutionRolePolicy
-<a name="AWSLambdaBasicDurableExecutionRolePolicy"></a>
 
 **Description**: Provides write permissions to CloudWatch Logs and read/write permissions to durable execution APIs used by Lambda durable functions
 

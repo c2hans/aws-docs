@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-t
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Troubleshooting AWS Well-Architected Agent
-<a name="agent-troubleshooting"></a>
 
 This section provides solutions to common issues you may encounter when setting up and using AWS Well-Architected Agent.
 

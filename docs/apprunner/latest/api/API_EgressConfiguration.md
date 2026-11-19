@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_EgressConfigura
 ---
 
 # EgressConfiguration
-<a name="API_EgressConfiguration"></a>
 
 Describes configuration settings related to outbound network traffic of an AWS App Runner service.
 

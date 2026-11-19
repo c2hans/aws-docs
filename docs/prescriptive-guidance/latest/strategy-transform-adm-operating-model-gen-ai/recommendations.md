@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ---
 
 # Action areas and recommendations
-<a name="recommendations"></a>
 
 To integrate generative AI into your ADM operating model successfully, consider the recommendations in the following action areas. These recommendations can help you navigate your organization's transformation journey and overcome common challenges.
 

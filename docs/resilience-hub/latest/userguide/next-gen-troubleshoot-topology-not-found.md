@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Assessment fails with topology not found
-<a name="next-gen-troubleshoot-topology-not-found"></a>
 
 **Symptom:** `StartFailureModeAssessment` returns an error about missing topology.
 

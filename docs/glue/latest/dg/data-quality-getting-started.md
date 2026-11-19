@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-getting-star
 ---
 
 # Getting started with AWS Glue Data Quality for the Data Catalog
-<a name="data-quality-getting-started"></a>
 
  This getting started section provides instructions to help you get started with AWS Glue Data Quality on the AWS Glue console. You'll learn how to complete essential tasks such as generating data quality rule recommendations and evaluating a ruleset against your data.
 

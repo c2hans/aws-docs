@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/how-it-works-implementatio
 ---
 
 # Implementation summary
-<a name="how-it-works-implementation"></a>
 
 In Amazon EFS, a file system is the primary resource. Each file system has properties such as ID, creation token, creation time, file system size in bytes, number of mount targets created for the file system, and the file system lifecycle policies.
 

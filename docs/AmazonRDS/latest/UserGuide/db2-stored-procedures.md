@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-stored-pr
 ---
 
 # Amazon RDS for Db2 stored procedure reference
-<a name="db2-stored-procedures"></a>
 
 You can manage your Amazon RDS for Db2 DB instances running the Db2 engine by calling built-in stored procedures.
 

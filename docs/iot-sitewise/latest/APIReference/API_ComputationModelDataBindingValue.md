@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Com
 ---
 
 # ComputationModelDataBindingValue
-<a name="API_ComputationModelDataBindingValue"></a>
 
 Contains computation model data binding value information, which can be one of `assetModelProperty`, `list`.
 
@@ -22,7 +21,7 @@ Required: No
 
  ** list **   <a name="iotsitewise-Type-ComputationModelDataBindingValue-list"></a>
 Specifies a list of data binding value.
-Type: Array of [ComputationModelDataBindingValue](#API_ComputationModelDataBindingValue) objects
+Type: Array of [ComputationModelDataBindingValue](API_ComputationModelDataBindingValue.md) objects
 Required: No
 
 ## See Also

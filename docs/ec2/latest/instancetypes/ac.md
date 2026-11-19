@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html
 ---
 
 # Specifications for Amazon EC2 accelerated computing instances
-<a name="ac"></a>
 
 Accelerated computing instances use hardware accelerators, or co-processors, to perform functions, such as floating point number calculations, graphics processing, or data pattern matching, more efficiently than is possible in software running on CPUs.
 

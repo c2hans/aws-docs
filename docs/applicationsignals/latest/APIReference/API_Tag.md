@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A key-value pair associated with a resource. Tags can help you organize and categorize your resources.
 

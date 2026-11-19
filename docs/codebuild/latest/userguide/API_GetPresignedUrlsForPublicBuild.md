@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/API_GetPresig
 ---
 
 # GetPresignedUrlsForPublicBuild
-<a name="API_GetPresignedUrlsForPublicBuild"></a>
 
 **Note**
 This API element is not contained in the AWS CLI or AWS SDKs.

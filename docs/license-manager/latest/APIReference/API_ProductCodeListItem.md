@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ProductCodeListItem
-<a name="API_ProductCodeListItem"></a>
 
 A list item that contains a product code.
 

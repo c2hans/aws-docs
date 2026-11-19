@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_List
 ---
 
 # ListServiceNetworks
-<a name="API_ListServiceNetworks"></a>
 
 Lists the service networks owned by or shared with this account. The account ID in the ARN shows which account owns the service network.
 

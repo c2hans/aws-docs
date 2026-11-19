@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/create-manage-vpn-conc
 ---
 
 # Create and manage AWS Site-to-Site VPN Concentrators
-<a name="create-manage-vpn-concentrators"></a>
 
  Site-to-Site VPN Concentrators allow you to aggregate and manage multiple VPN connections from remote sites, providing centralized management.
 

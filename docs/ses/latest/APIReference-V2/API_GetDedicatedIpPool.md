@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetDedica
 ---
 
 # GetDedicatedIpPool
-<a name="API_GetDedicatedIpPool"></a>
 
 Retrieve information about the dedicated pool.
 

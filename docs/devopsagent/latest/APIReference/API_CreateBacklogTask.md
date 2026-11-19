@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Crea
 ---
 
 # CreateBacklogTask
-<a name="API_CreateBacklogTask"></a>
 
 Creates a new backlog task in the specified agent space
 

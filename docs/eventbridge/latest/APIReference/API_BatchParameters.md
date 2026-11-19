@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Batc
 ---
 
 # BatchParameters
-<a name="API_BatchParameters"></a>
 
 The custom parameters to be used when the target is an AWS Batch job.
 

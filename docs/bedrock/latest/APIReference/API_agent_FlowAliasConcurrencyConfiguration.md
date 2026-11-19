@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fl
 ---
 
 # FlowAliasConcurrencyConfiguration
-<a name="API_agent_FlowAliasConcurrencyConfiguration"></a>
 
 Determines how multiple nodes in a flow can run in parallel. Running nodes concurrently can improve your flow's performance.
 

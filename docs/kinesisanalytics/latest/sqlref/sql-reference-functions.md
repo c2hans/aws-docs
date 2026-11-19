@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Functions
-<a name="sql-reference-functions"></a>
 
 The topics in this section describe functions supported by streaming SQL.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-b
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Network configuration
-<a name="network-configuration"></a>
 
  With Amazon Virtual Private Cloud (Amazon VPC), you can provision a logically isolated section of the AWS Cloud that is dedicated to your account. You have complete control over your virtual networking environment, including selection of your own IP address range, creation of subnets, security settings, and configuration of route tables and network gateways.
 

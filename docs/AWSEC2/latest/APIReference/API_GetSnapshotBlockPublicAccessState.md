@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetSnapsh
 ---
 
 # GetSnapshotBlockPublicAccessState
-<a name="API_GetSnapshotBlockPublicAccessState"></a>
 
 Gets the current state of *block public access for snapshots* setting for the account and Region.
 

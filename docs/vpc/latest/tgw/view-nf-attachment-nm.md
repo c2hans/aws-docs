@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/view-nf-attachment-nm.htm
 ---
 
 # View AWS Transit Gateway network function attachments
-<a name="view-nf-attachment-nm"></a>
 
 You can view both network function attachment types in Amazon VPC Console and the Network Manager console.
 

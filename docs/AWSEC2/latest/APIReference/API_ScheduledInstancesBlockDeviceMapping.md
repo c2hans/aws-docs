@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Scheduled
 ---
 
 # ScheduledInstancesBlockDeviceMapping
-<a name="API_ScheduledInstancesBlockDeviceMapping"></a>
 
 Describes a block device mapping for a Scheduled Instance.
 

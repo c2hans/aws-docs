@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDataZoneProjectDeploymentPermissionsBoundary
-<a name="AmazonDataZoneProjectDeploymentPermissionsBoundary"></a>
 
 **Description**: Amazon DataZone creates IAM roles that it uses for deploying data analytics projects. DataZone uses this policy when creating these roles to define the boundary of their permissions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_CancelReplic
 ---
 
 # CancelReplicationTaskAssessmentRun
-<a name="API_CancelReplicationTaskAssessmentRun"></a>
 
 Cancels a single premigration assessment run.
 

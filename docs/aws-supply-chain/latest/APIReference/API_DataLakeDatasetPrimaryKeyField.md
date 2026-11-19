@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataLakeDatasetPrimaryKeyField
-<a name="API_DataLakeDatasetPrimaryKeyField"></a>
 
 The detail of the primary key field.
 

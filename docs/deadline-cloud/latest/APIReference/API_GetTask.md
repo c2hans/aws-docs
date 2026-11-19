@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetTask
-<a name="API_GetTask"></a>
 
 Gets a task.
 

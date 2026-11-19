@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/durable-execution-sdk-r
 ---
 
 # Retries for Lambda durable functions
-<a name="durable-execution-sdk-retries"></a>
 
 Durable functions provide automatic retry capabilities that make your applications resilient to transient failures. The SDK handles retries at two levels: step retries for business logic failures and backend retries for infrastructure failures.
 

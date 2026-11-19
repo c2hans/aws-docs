@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Delet
 ---
 
 # DeleteRepository
-<a name="API_DeleteRepository"></a>
 
 Deletes a repository. If a specified repository was already deleted, a null repository ID is returned.
 

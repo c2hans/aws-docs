@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_InputD
 ---
 
 # InputDataConfig
-<a name="API_InputDataConfig"></a>
 
 The input configuration properties for requesting a batch translation job.
 

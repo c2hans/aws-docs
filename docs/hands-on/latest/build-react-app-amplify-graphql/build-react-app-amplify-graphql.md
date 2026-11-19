@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-react-app-amplify-
 ---
 
 # Build a Full Stack React Application
-<a name="build-react-app-amplify-graphql"></a>
 
 |  |  |
 | --- |--- |

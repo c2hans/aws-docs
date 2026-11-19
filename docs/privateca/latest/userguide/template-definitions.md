@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/template-defi
 ---
 
 # AWS Private CA template definitions
-<a name="template-definitions"></a>
 
 The following sections provide configuration details about supported AWS Private CA certificate templates.
 

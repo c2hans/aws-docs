@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/peering/security-iam.html
 ---
 
 # Identity and access management for VPC peering
-<a name="security-iam"></a>
 
 By default, users cannot create or modify VPC peering connections. To grant access to VPC peering resources, attach an IAM policy to an IAM identity, such as a role.
 

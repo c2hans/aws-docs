@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-de
 ---
 
 # DevOps for AWS Mainframe Modernization
-<a name="introduction"></a>
 
 *Vaidy Sankaran and Praveen Kumar Jeyarajan, Amazon Web Services*
 

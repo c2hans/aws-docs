@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_QBusi
 ---
 
 # QBusinessParameters
-<a name="API_QBusinessParameters"></a>
 
 The parameters that are required to connect to an Amazon Q Business data source.
 

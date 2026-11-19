@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_
 ---
 
 # Secure API access with MFA
-<a name="id_credentials_mfa_configure-api-require"></a>
 
 With IAM policies, you can specify which API operations a user is allowed to call. You can apply additional security by requiring users to authenticate with multi-factor authentication (MFA) before you allow them to perform particularly sensitive actions.
 

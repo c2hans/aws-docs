@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_IBMDb2Settin
 ---
 
 # IBMDb2Settings
-<a name="API_IBMDb2Settings"></a>
 
 Provides information that defines an IBM Db2 LUW endpoint.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/packages-p
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Using Python
-<a name="packages-python"></a>
 
 These topics describe how to use `pip`, the Python package manager, and `twine`, the Python package publishing utility, with CodeCatalyst.
 

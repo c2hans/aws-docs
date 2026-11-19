@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/managing-memory
 ---
 
 # Managing your MemoryDB implementation
-<a name="managing-memorydb"></a>
 
 In this section, you can find details about how to manage the various components of your MemoryDB implementation.
 

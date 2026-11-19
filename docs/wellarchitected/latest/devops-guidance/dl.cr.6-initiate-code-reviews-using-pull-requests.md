@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CR.6] Initiate code reviews using pull requests
-<a name="dl.cr.6-initiate-code-reviews-using-pull-requests"></a>
 
  **Category:** RECOMMENDED
 

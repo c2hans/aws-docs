@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/forec
 ---
 
 # Forecast lock
-<a name="forecast_lock"></a>
 
 You can use the forecast lock feature to lock specific periods in your forecast to prevent any further edits or adjustments. To configure the forecast lock, enter a number between zero and time horizon -1 in the Demand Plan settings page to lock the first *x* forecast period. The default value is 0, indicating no periods are locked.
 

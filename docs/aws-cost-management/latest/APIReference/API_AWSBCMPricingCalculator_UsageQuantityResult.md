@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UsageQuantityResult
-<a name="API_AWSBCMPricingCalculator_UsageQuantityResult"></a>
 
  Represents the result of a usage quantity calculation.
 

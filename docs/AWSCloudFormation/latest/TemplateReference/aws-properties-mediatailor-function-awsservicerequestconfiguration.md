@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::Function AwsServiceRequestConfiguration
-<a name="aws-properties-mediatailor-function-awsservicerequestconfiguration"></a>
 
 <a name="aws-properties-mediatailor-function-awsservicerequestconfiguration-description"></a>The `AwsServiceRequestConfiguration` property type specifies Property description not available. for an [AWS::MediaTailor::Function](aws-resource-mediatailor-function.md).
 

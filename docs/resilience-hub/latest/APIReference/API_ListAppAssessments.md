@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_L
 ---
 
 # ListAppAssessments
-<a name="API_ListAppAssessments"></a>
 
 Lists the assessments for an AWS Resilience Hub application. You can use request parameters to refine the results for the response object.
 

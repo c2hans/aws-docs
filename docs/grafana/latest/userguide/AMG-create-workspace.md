@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-create-work
 ---
 
 # Create an Amazon Managed Grafana workspace
-<a name="AMG-create-workspace"></a>
 
 A *workspace* is a logical Grafana server. You can have as many as five workspaces in each AWS Region in your account.
 

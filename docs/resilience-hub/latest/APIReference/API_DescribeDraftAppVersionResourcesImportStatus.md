@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_D
 ---
 
 # DescribeDraftAppVersionResourcesImportStatus
-<a name="API_DescribeDraftAppVersionResourcesImportStatus"></a>
 
 Describes the status of importing resources to an application version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-int
 ---
 
 # Adding the AWS AppConfig Agent Lambda extension
-<a name="appconfig-integration-lambda-extensions-add"></a>
 
 To use the AWS AppConfig Agent Lambda extension, you need to add the extension to your Lambda. This can be done by adding the AWS AppConfig Agent Lambda extension to your Lambda function as a layer or by enabling the extension on a Lambda function as a container image.
 

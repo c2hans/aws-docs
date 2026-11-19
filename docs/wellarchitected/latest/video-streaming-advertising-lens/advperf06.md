@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Real-time bidding and media delivery performance
-<a name="advperf06"></a>
 
  When architecting advertising workloads, there are principles and practices that help you run efficient, high-performing cloud workloads. This capability focuses on optimizing real-time bidding systems and media delivery infrastructure where sub-millisecond to single-digit-millisecond latency determines competitive advantage. It covers chipset-agnostic design for Spot cost optimization, network protocol optimization, ARTF agent container performance, Prebid Server auction tuning, SGAI ad break latency optimization, real-time bid stream analytics pipelines, and contextual pre-classification at ingest time.
 

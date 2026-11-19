@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_InputProc
 ---
 
 # InputProcessingConfigurationDescription
-<a name="API_InputProcessingConfigurationDescription"></a>
 
 For a SQL-based Kinesis Data Analytics application, provides the configuration information about an input processor. Currently, the only input processor available is [Amazon Lambda](https://docs.aws.amazon.com/lambda/).
 

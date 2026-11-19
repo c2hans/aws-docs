@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/kro-comparison.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Comparing EKS Capability for kro to self-managed kro
-<a name="kro-comparison"></a>
 
 The EKS Capability for kro provides the same functionality as self-managed kro, but with significant operational advantages. For a general comparison of EKS Capabilities vs self-managed solutions, see [EKS Capabilities considerations](capabilities-considerations.md).
 

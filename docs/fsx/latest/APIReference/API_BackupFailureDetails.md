@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_BackupFailur
 ---
 
 # BackupFailureDetails
-<a name="API_BackupFailureDetails"></a>
 
 If backup creation fails, this structure contains the details of that failure.
 

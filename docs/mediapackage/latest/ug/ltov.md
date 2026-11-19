@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/ltov.html
 ---
 
 # Creating live-to-VOD assets with AWS Elemental MediaPackage
-<a name="ltov"></a>
 
 A live-to-VOD (video on demand) asset is a portion of a live stream that's been extracted and saved for playback later. For example, you might save clips from a game for a highlight reel, or a clip of a broadcast show to use later in advertisements for the show.
 

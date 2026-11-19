@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/freshsales-reading-from-e
 ---
 
 # Reading from Freshsales entities
-<a name="freshsales-reading-from-entities"></a>
 
 **Prerequisite**
 

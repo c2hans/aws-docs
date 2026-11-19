@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/
 ---
 
 # Developer guide
-<a name="developer-guide"></a>
 
 This section provides the source code for the solution and details about [workflow configuration](workflow-configuration.md), the [metadata file](metadata-file.md), and [MediaConvert templates](mediaconvert-templates.md).
 

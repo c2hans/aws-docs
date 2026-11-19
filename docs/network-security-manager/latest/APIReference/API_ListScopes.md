@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ListScopes
-<a name="API_ListScopes"></a>
 
 Lists the scopes in the account. You can filter the results by status and page through them using `maxResults` and `nextToken`.
 

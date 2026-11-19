@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Rule
 ---
 
 # RuleMatch
-<a name="API_RuleMatch"></a>
 
 Describes a rule match.
 

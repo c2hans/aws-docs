@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribedProfile
-<a name="API_DescribedProfile"></a>
 
 The details for a local or partner AS2 profile.
 

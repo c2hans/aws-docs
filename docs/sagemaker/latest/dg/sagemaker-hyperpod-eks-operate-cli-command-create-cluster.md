@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Creating a SageMaker HyperPod cluster
-<a name="sagemaker-hyperpod-eks-operate-cli-command-create-cluster"></a>
 
 Learn how to create SageMaker HyperPod clusters orchestrated by Amazon EKS using the AWS CLI.
 

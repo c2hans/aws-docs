@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/setup-assistant.html
 ---
 
 # Setting up the Amazon Chime Assistant
-<a name="setup-assistant"></a>
 
 You must set up the Amazon Chime Assistant before you can use it.
 

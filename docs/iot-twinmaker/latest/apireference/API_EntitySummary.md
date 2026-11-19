@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_En
 ---
 
 # EntitySummary
-<a name="API_EntitySummary"></a>
 
 An object that contains information about an entity.
 

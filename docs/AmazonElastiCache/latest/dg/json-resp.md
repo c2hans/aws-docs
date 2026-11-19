@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-resp.ht
 ---
 
 # JSON.RESP
-<a name="json-resp"></a>
 
 Returns the JSON value at the given path in the Valkey or Redis OSS Serialization Protocol (RESP). If the value is container, the response is a RESP array or nested array.
 + JSON null is mapped to the RESP Null Bulk String.

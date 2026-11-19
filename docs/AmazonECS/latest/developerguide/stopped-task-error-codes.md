@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/stopped-
 ---
 
 # Amazon ECS stopped tasks error messages
-<a name="stopped-task-error-codes"></a>
 
 The following are the possible error messages you may receive when your task stops unexpectedly.
 

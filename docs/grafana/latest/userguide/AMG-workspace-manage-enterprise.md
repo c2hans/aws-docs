@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-workspace-m
 ---
 
 # Managing your access to Amazon Managed Grafana Enterprise plugins
-<a name="AMG-workspace-manage-enterprise"></a>
 
 **To manage your access to Enterprise plugins**
 

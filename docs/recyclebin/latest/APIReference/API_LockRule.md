@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_LockR
 ---
 
 # LockRule
-<a name="API_LockRule"></a>
 
 Locks a Region-level retention rule. A locked retention rule can't be modified or deleted.
 

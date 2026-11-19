@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gorgias-configuring.html
 ---
 
 # Configuring Gorgias
-<a name="gorgias-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Gorgias, you must meet the following requirements:
 

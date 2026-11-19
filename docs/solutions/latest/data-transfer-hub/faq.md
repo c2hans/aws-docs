@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/faq.h
 ---
 
 # FAQ
-<a name="faq"></a>
 
  The following are common questions you might have when deploying and using the Guidance.
 

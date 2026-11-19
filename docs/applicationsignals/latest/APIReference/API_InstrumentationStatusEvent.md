@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # InstrumentationStatusEvent
-<a name="API_InstrumentationStatusEvent"></a>
 
 A status event for an instrumentation configuration returned by `GetInstrumentationConfigurationStatus`. Events include the timestamp and, for errors, an error cause.
 

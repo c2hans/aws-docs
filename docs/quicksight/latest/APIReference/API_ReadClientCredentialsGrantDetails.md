@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ReadC
 ---
 
 # ReadClientCredentialsGrantDetails
-<a name="API_ReadClientCredentialsGrantDetails"></a>
 
 Read-only configuration details for OAuth2 client credentials grant flow, including client ID and token endpoint.
 

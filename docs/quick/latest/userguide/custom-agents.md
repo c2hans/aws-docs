@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/custom-agents.htm
 ---
 
 # Custom chat agents
-<a name="custom-agents"></a>
 
 Custom chat agents enable AWS Quick users to create tailored conversational interfaces for specific business needs. Unlike the system chat agent, which is available to all users with chat permissions by default, custom chat agents can be selectively shared and configured by authorized users. Each custom chat agent keeps its own memories; see [Memories](memories-desktop.md).
 

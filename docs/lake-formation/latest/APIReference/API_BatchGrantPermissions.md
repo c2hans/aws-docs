@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_B
 ---
 
 # BatchGrantPermissions
-<a name="API_BatchGrantPermissions"></a>
 
 Batch operation to grant permissions to the principal.
 

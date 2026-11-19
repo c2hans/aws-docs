@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # RDSDatabaseCredentials
-<a name="API_RDSDatabaseCredentials"></a>
 
 The database credentials to connect to a database on an RDS DB instance.
 

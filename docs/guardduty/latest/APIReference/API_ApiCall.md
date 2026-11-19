@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ApiCal
 ---
 
 # ApiCall
-<a name="API_ApiCall"></a>
 
 Contains information about an API call that was observed as part of an activity.
 

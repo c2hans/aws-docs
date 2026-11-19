@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/wickrio/build.html
 This guide provides documentation for Wickr IO Integrations. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Build
-<a name="build"></a>
 
 Custom integrations in Wickr IO must be made available to the Wickr IO Docker container as a tarball named `software.tar.gz`. You can build that tarball from your source directory:
 

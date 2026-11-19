@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/console-account-ali
 ---
 
 # Using an alias for your AWS account ID
-<a name="console-account-alias"></a>
 
 Your account ID is a 12-digit number that uniquely identifies your account. By default, IAM users in the account sign in using a web URL that includes the account ID. If they don't have the URL, they can provide the account ID on the AWS sign-in page when they sign-in.
 

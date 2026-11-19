@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Hardware and services
-<a name="hardware-and-services"></a>
 
 | SCSUS07: Do you plan and design your supply chain and sustainability needs for automation? |
 | --- |

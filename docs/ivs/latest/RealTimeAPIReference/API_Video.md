@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Vide
 ---
 
 # Video
-<a name="API_Video"></a>
 
 Settings for video.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DeleteDataLakeNamespace
-<a name="API_DeleteDataLakeNamespace"></a>
 
 Enables you to programmatically delete an AWS Supply Chain data lake namespace and its underling datasets. Developers can delete the existing namespaces for a given instance ID and namespace name.
 

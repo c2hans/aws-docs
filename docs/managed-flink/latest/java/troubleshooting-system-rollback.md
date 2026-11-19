@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/troubleshootin
 ---
 
 # System rollback best practices
-<a name="troubleshooting-system-rollback"></a>
 
 With automatic system rollback and operations visibility capabilities in Amazon Managed Service for Apache Flink, you can identify and resolve issues with your applications.
 

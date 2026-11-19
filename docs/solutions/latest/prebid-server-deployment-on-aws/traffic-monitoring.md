@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Traffic monitoring and troubleshooting
-<a name="traffic-monitoring"></a>
 
 This section provides traffic monitoring and troubleshooting instructions for deploying and using the solution. If this information don’t help address your issue, [Contact Support](contact-aws-support.md) provides instructions for opening an AWS Support case for this solution.
 

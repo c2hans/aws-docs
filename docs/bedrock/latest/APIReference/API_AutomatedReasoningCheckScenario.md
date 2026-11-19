@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningCheckScenario
-<a name="API_AutomatedReasoningCheckScenario"></a>
 
 Represents a logical scenario where claims can be evaluated as true or false, containing specific logical assignments.
 

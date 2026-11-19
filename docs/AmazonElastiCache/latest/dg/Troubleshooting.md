@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Troubleshoot
 ---
 
 # Troubleshooting applications
-<a name="Troubleshooting"></a>
 
 ElastiCache provides specific and descriptive errors to help you troubleshoot problems while interacting with the ElastiCache API.
 

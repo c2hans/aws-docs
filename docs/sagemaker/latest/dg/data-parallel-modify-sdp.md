@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel-modify
 ---
 
 # Distributed training with the SageMaker AI distributed data parallelism library
-<a name="data-parallel-modify-sdp"></a>
 
 The SageMaker AI distributed data parallelism (SMDDP) library is designed for ease of use and to provide seamless integration with PyTorch.
 

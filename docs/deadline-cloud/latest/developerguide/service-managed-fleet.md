@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/ser
 ---
 
 # Add a service-managed fleet to your developer farm in Deadline Cloud
-<a name="service-managed-fleet"></a>
 
 AWS CloudShell does not provide enough compute capacity to test larger workloads. It's also not configured to work with jobs that distribute tasks on multiple worker hosts.
 

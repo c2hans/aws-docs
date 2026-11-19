@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Update
 ---
 
 # UpdateMemberDetectors
-<a name="API_UpdateMemberDetectors"></a>
 
 Contains information on member accounts to be updated.
 

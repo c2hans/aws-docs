@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/operate-overview.ht
 ---
 
 # Operate
-<a name="operate-overview"></a>
 
 After you deploy an Amazon Elastic VMware Service environment, you operate it. Amazon EVS is a self-managed service, so you’re responsible for the VMware Cloud Foundation (VCF) software on your hosts, for monitoring host health, and for replacing hosts that fail. For who manages what in each deployment mode, see [Shared responsibility and support](plan-shared-responsibility.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Key AWS services
-<a name="key-aws-services-sec"></a>
 
  The AWS service that is essential to security is AWS Identity and Access Management, which allows you to securely control access to AWS services and resources for your users. The following services and features support the four areas of security:
 

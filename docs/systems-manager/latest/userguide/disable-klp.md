@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/disable
 ---
 
 # Turning off Kernel Live Patching using Run Command
-<a name="disable-klp"></a>
 
 To turn off Kernel Live Patching, you can either run `yum` commands on your managed nodes or use Run Command and the custom SSM document `AWS-ConfigureKernelLivePatching`.
 

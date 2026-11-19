@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateSpacePermissions
-<a name="API_UpdateSpacePermissions"></a>
 
 Updates the permissions for an Amazon QuickSight space.
 

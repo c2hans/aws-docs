@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-goog
 ---
 
 # Gemma 4 31B
-<a name="model-card-google-gemma-4-31b"></a>
 
 ## ![Google logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/google.png) Google — Gemma 4 31B
 <a name="model-card-google-gemma-4-31b-header"></a>

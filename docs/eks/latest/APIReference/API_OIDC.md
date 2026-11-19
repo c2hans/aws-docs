@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_OIDC.html
 ---
 
 # OIDC
-<a name="API_OIDC"></a>
 
 An object representing the [OpenID Connect](https://openid.net/connect/) (OIDC) identity provider information for the cluster.
 

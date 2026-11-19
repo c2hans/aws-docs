@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Creating a SageMaker HyperPod cluster with Amazon EKS orchestration
-<a name="sagemaker-hyperpod-eks-operate-console-ui-create-cluster"></a>
 
 The following tutorial demonstrates how to create a new SageMaker HyperPod cluster and set it up with Amazon EKS orchestration through the SageMaker AI console UI.
 

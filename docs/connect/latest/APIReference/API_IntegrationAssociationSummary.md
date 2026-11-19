@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Integrat
 ---
 
 # IntegrationAssociationSummary
-<a name="API_IntegrationAssociationSummary"></a>
 
 Contains summary information about the associated AppIntegrations.
 

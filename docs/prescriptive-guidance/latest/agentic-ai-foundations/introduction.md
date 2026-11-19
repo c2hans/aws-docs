@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Foundations of agentic AI on AWS
-<a name="introduction"></a>
 
 *Aaron Sempf, Tod Golding, Andrew Hooker, and Joshua Samuel, Amazon Web Services*
 

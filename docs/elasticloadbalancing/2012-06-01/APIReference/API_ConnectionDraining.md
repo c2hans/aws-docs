@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # ConnectionDraining
-<a name="API_ConnectionDraining"></a>
 
 Information about the `ConnectionDraining` attribute.
 

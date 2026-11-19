@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_KPIFi
 ---
 
 # KPIFieldWells
-<a name="API_KPIFieldWells"></a>
 
 The field well configuration of a KPI visual.
 

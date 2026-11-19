@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Hyb
 ---
 
 # HybridUpdateActivities
-<a name="API_HybridUpdateActivities"></a>
 
 Contains information about update activities for different components of a hybrid directory.
 

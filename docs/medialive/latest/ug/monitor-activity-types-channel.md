@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/monitor-activity-typ
 ---
 
 # States for channels and multiplexes
-<a name="monitor-activity-types-channel"></a>
 
 You can monitor the states of MediaLive channels and multiplexes.
 

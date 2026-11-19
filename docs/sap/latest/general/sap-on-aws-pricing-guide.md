@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/sap-on-aws-pricing-gu
 ---
 
 # SAP on AWS cost estimation
-<a name="sap-on-aws-pricing-guide"></a>
 
  *Last updated: May 2023*
 

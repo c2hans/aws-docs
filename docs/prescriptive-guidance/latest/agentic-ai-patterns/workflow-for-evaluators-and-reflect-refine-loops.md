@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Workflow for evaluators and reflect-refine loops
-<a name="workflow-for-evaluators-and-reflect-refine-loops"></a>
 
 This workflow provides a feedback loop where one LLM generates a result, and another evaluates or critiques the result. This promotes self-reflection, optimization, and iterative improvements.
 

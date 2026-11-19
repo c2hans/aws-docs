@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchLogsAPIKeyAccess
-<a name="CloudWatchLogsAPIKeyAccess"></a>
 
 **Description**: Grants permissions to call CloudWatch Logs using API key authentication.
 

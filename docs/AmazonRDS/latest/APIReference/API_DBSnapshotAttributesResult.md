@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBSnap
 ---
 
 # DBSnapshotAttributesResult
-<a name="API_DBSnapshotAttributesResult"></a>
 
 Contains the results of a successful call to the `DescribeDBSnapshotAttributes` API action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListTasks
-<a name="API_ListTasks"></a>
 
 Lists tasks in a workspace. To get complete details about a task, use [DescribeTask](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeTask.html).
 

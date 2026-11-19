@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIpa
 ---
 
 # ModifyIpamPrefixListResolver
-<a name="API_ModifyIpamPrefixListResolver"></a>
 
 Modifies an IPAM prefix list resolver. You can update the description and CIDR selection rules. Changes to rules will trigger re-evaluation and potential updates to associated prefix lists.
 

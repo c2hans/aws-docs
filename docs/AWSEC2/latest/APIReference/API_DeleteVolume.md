@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVol
 ---
 
 # DeleteVolume
-<a name="API_DeleteVolume"></a>
 
 Deletes the specified EBS volume. The volume must be in the `available` state (not attached to an instance).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-exten
 ---
 
 # FP16 Training with Model Parallelism
-<a name="model-parallel-extended-features-pytorch-fp16"></a>
 
 For FP16 training, apply the following modifications to your training script and ModelTrainer.
 

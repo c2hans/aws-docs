@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribedWebApp
-<a name="API_DescribedWebApp"></a>
 
 A structure that describes the parameters for the web app, as identified by the `WebAppId`.
 

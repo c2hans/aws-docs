@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteCodeRepository
-<a name="API_DeleteCodeRepository"></a>
 
 Deletes the specified Git repository from your account.
 

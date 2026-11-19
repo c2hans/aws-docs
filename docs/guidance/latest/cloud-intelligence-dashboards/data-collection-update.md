@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Update
-<a name="data-collection-update"></a>
 
 ## Update Process
 <a name="update-process"></a>

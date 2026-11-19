@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Dis
 ---
 
 # DistributionConfigurationSummary
-<a name="API_DistributionConfigurationSummary"></a>
 
 A high-level overview of a distribution configuration.
 

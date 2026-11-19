@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_OAuth
 ---
 
 # OAuthClientApplication
-<a name="API_OAuthClientApplication"></a>
 
 An OAuth client application that is used to authenticate connections to a data source through an OAuth identity provider.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # ListNotifyCodeConfigurations
-<a name="API_ListNotifyCodeConfigurations"></a>
 
 Retrieves a paginated list of the notify code configurations in your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_T
 ---
 
 # TagResource
-<a name="API_qapps_TagResource"></a>
 
 Associates tags with an Amazon Q Apps resource.
 

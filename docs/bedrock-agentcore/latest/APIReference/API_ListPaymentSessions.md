@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ListPaymentSessions
-<a name="API_ListPaymentSessions"></a>
 
 List payment sessions.
 

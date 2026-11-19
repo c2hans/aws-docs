@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-concept
 ---
 
 # Policy table concepts in AWS Transit Gateway
-<a name="tgw-policy-tables-concepts"></a>
 
 This topic describes the key concepts for transit gateway policy tables and Policy-Based Routing (PBR).
 

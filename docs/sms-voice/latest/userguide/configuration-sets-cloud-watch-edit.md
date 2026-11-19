@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/configuration
 ---
 
 # Edit an Amazon CloudWatch event destination in AWS End User Messaging SMS
-<a name="configuration-sets-cloud-watch-edit"></a>
 
 Use the AWS End User Messaging SMS console or AWS CLI to edit a CloudWatch event destination.
 

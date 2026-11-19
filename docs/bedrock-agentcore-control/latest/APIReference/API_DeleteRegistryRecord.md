@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DeleteRegistryRecord
-<a name="API_DeleteRegistryRecord"></a>
 
 Deletes a registry record. The record's status transitions to `DELETING` and the record is removed asynchronously.
 

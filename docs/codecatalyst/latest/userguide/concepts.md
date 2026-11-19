@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/concepts.h
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # CodeCatalyst concepts
-<a name="concepts"></a>
 
 Get familiar with the key concepts to help speed up your collaboration and application development in Amazon CodeCatalyst. These concepts include terms used in source control, continuous integration and continuous delivery (CI/CD), and modeling and configuring automated release processes.
 

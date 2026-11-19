@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-nat-gateway.html
 ---
 
 # AWS.Networking.NATGateway
-<a name="node-nat-gateway"></a>
 
 You can define a public or private NAT Gateway node over a subnet. For a public gateway, if you do not provide an Elastic IP allocation id, AWS TNB will allocate an Elastic IP for your account and associate that to the gateway.
 

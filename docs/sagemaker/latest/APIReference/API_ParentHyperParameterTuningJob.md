@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Parent
 ---
 
 # ParentHyperParameterTuningJob
-<a name="API_ParentHyperParameterTuningJob"></a>
 
 A previously completed or stopped hyperparameter tuning job to be used as a starting point for a new hyperparameter tuning job.
 

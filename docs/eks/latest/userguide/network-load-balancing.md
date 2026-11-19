@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/network-load-balanc
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Route TCP and UDP traffic with Network Load Balancers
-<a name="network-load-balancing"></a>
 
 **Note**
  **New:** Amazon EKS Auto Mode automates routine tasks for load balancing. For more information, see:

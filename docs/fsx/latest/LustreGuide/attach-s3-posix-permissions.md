@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/attach-s3-posix-p
 ---
 
 # Walkthrough: Attaching POSIX permissions when uploading objects into an Amazon S3 bucket
-<a name="attach-s3-posix-permissions"></a>
 
 The following procedure walks you through the process of uploading objects into Amazon S3 with POSIX permissions. Doing so allows you to import the POSIX permissions when you create an Amazon FSx file system that is linked to that S3 bucket.
 

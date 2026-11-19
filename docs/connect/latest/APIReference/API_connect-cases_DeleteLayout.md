@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DeleteLayout
-<a name="API_connect-cases_DeleteLayout"></a>
 
 Deletes a layout from a Cases template. You can delete up to 100 layouts per domain.
 

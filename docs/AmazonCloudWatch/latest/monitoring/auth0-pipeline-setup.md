@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/auth0
 ---
 
 # Pipeline configuration for Okta Auth0
-<a name="auth0-pipeline-setup"></a>
 
 Collects log data from Okta Auth0 using OAuth2 authentication.
 

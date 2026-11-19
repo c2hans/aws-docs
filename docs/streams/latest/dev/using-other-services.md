@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/using-other-services.
 ---
 
 # Write to Kinesis Data Streams using other AWS services
-<a name="using-other-services"></a>
 
 The following AWS services can integrate directly with Amazon Kinesis Data Streams to write data to Kinesis data streams. Review the information for each service that you are interested in and refer to the provided references.
 

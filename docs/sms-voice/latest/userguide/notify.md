@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/notify.html
 ---
 
 # What is AWS End User Messaging Notify?
-<a name="notify"></a>
 
 AWS End User Messaging Notify is a templated messaging feature that enables you to send SMS and voice messages using AWS-managed identities and pre-approved templates. With Notify, you can start sending code verification messages in minutes without provisioning phone numbers, managing sender IDs, or navigating carrier registration processes.
 

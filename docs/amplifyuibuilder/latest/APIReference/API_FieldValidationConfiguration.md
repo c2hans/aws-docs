@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # FieldValidationConfiguration
-<a name="API_FieldValidationConfiguration"></a>
 
 Describes the validation configuration for a field.
 

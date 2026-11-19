@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnZendeskTicketS
 ---
 
 # OnZendeskTicketStatusUpdate
-<a name="OnZendeskTicketStatusUpdate"></a>
 
 ## Type condition
 <a name="typeu-condition"></a>

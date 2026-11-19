@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/webex-support.html
 ---
 
 # AWS Glue support for Webex
-<a name="webex-support"></a>
 
 AWS Glue supports Webex as follows:
 

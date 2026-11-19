@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/fargate-compute-e
 ---
 
 # Compute environments on Fargate
-<a name="fargate-compute-environments"></a>
 
 AWS Batch compute environments on AWS Fargate don't support all of the compute environment parameters that are available. Some parameters are not supported at all. Others have specific requirements for Fargate.
 

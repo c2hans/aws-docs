@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_IAMCo
 ---
 
 # IAMConfiguration
-<a name="API_IAMConfiguration"></a>
 
 Contains the IAM settings for a security configuration, including the system role used for authentication.
 

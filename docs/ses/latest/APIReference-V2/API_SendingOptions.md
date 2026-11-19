@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendingOp
 ---
 
 # SendingOptions
-<a name="API_SendingOptions"></a>
 
 Used to enable or disable email sending for messages that use this configuration set in the current AWS Region.
 

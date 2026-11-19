@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/patient-e
 ---
 
 # Patient engagement
-<a name="patient-engagement-overview"></a>
 
 Amazon Connect Health provides the agentic capabilities for patient access to handle routine patient calls. Patients call one phone number and have one conversation. The agent greets the caller, verifies the patient when a task needs it, and then helps with one or more tasks in the same call. Patients speak naturally instead of choosing options from a phone menu.
 

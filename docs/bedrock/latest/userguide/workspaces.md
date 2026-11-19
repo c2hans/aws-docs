@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/workspaces.html
 ---
 
 # Workspaces (Anthropic-compatible)
-<a name="workspaces"></a>
 
 Amazon Bedrock Workspaces provide application-level isolation for your generative AI workloads using the Anthropic-compatible Messages API on the `bedrock-mantle` endpoint. Workspaces enable you to segment your AI applications for cost tracking, observability, and access control.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 ---
 
 # Data retrieval APIs for AWS Elastic Beanstalk
-<a name="awselasticbeanstalk"></a>
 
 AWS Elastic Beanstalk provides the following APIs for data retrieval.
 

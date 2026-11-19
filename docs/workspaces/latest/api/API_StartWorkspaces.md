@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_StartWorkspace
 ---
 
 # StartWorkspaces
-<a name="API_StartWorkspaces"></a>
 
 Starts the specified WorkSpaces.
 

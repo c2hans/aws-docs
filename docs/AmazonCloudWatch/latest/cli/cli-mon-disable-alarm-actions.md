@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/cli-mon-disa
 ---
 
 # mon-disable-alarm-actions
-<a name="cli-mon-disable-alarm-actions"></a>
 
 ## Description
 <a name="w2aab9c31b3"></a>

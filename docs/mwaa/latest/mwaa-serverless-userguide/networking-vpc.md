@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/ne
 ---
 
 # Create a VPC network
-<a name="networking-vpc"></a>
 
 Creating a VPC network is **optional** with Amazon MWAA Serverless. This section describes the different options you can use if you choose to create a Amazon VPC network.
 

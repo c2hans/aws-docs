@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateIntegrat
 ---
 
 # UpdateIntegrationResponse
-<a name="API_UpdateIntegrationResponse"></a>
 
 Represents an update integration response.
 

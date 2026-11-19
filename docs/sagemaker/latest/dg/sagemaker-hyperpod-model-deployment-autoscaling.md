@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Autoscaling policies for your HyperPod inference model deployment
-<a name="sagemaker-hyperpod-model-deployment-autoscaling"></a>
 
 This following information provides practical examples and configurations for implementing autoscaling policies on Amazon SageMaker HyperPod inference model deployments.
 

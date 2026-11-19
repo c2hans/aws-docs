@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # Submit a job run with `StartJobRun`
-<a name="emr-eks-jobs-submit"></a>
 
 **To submit a job run with a JSON file with specified parameters**
 

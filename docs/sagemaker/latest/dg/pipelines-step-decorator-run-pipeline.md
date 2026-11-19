@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-step-decor
 ---
 
 # Run a pipeline
-<a name="pipelines-step-decorator-run-pipeline"></a>
 
 The following page describes how to run a pipeline with Amazon SageMaker Pipelines, either with SageMaker AI resources or locally.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteRou
 ---
 
 # DeleteRouteServerEndpoint
-<a name="API_DeleteRouteServerEndpoint"></a>
 
 Deletes the specified route server endpoint.
 

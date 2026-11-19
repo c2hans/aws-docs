@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ---
 
 # MCP server deployment models
-<a name="best-practices"></a>
 
 Understanding where and how to deploy Model Context Protocol (MCP) servers is fundamental to building scalable AI-powered applications. MCP servers can run:
 

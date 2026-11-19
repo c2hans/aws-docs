@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Lifecyc
 ---
 
 # LifecycleHookSpecification
-<a name="API_LifecycleHookSpecification"></a>
 
 Describes information used to specify a lifecycle hook for an Auto Scaling group.
 

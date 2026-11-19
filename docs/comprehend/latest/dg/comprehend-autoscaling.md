@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/comprehend-autoscal
 ---
 
 # Auto scaling with endpoints
-<a name="comprehend-autoscaling"></a>
 
 Instead of manually adjusting the number of inference units provisioned for your document classification endpoints and entity recognizer endpoints, you can use auto scaling to automatically set endpoint provisioning to fit your capacity needs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Lis
 ---
 
 # ListActionTypes
-<a name="API_ListActionTypes"></a>
 
 Gets a summary of all CodePipeline action types associated with your account.
 

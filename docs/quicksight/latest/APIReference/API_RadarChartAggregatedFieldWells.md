@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Radar
 ---
 
 # RadarChartAggregatedFieldWells
-<a name="API_RadarChartAggregatedFieldWells"></a>
 
 The aggregated field well configuration of a `RadarChartVisual`.
 

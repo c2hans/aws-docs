@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Pip
 ---
 
 # PipelineExecutionSummary
-<a name="API_PipelineExecutionSummary"></a>
 
 Summary information about a pipeline execution.
 

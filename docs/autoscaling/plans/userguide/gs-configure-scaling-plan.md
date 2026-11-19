@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/userguide/gs-configure
 ---
 
 # Step 2: Specify the scaling strategy
-<a name="gs-configure-scaling-plan"></a>
 
 Use the following procedure to specify scaling strategies for the resources that were found in the previous step.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/sample-project-
 ---
 
 # Process high-volume messages from Amazon SQS with Step Functions Express workflows
-<a name="sample-project-express-high-volume-sqs"></a>
 
 This sample project demonstrates how to use an AWS Step Functions Express Workflow to process messages or data from a high-volume event source, such as Amazon Simple Queue Service (Amazon SQS). Because Express Workflows can be started at a very high rate, they are ideal for high-volume event processing or streaming data workloads.
 

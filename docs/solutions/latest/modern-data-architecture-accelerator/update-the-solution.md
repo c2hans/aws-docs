@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Update the solution
-<a name="update-the-solution"></a>
 
 MDAA follows semantic versioning. Minor releases (for example, 1.6.0 to 1.7.0) are generally backward compatible with existing configurations. However, upgrades may include underlying CDK version changes and new module behaviors, so reviewing changes before deploying is recommended.
 

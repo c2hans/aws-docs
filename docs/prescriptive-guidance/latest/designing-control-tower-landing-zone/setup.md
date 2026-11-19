@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 ---
 
 # Setting up a landing zone
-<a name="setup"></a>
 
 AWS Control Tower automates the setup of a landing zone by using best-practice templates for identity, federated access, controls, and account structure. AWS Control Tower offers the easiest way to set up and govern a secure, multi-account AWS environment. From a feature perspective, the [AWS Control Tower dashboard](https://aws.amazon.com/controltower/features/) provides visibility into your landing zone environment, an aggregated view of organizational units (OUs) and accounts in the organization, the controls that are enabled, and the compliance status of OUs and accounts with those controls. A list of non-compliant resources is also provided to identify any required actions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveTraceEventAttributes
-<a name="API_agent-runtime_AgenticRetrieveTraceEventAttributes"></a>
 
 Attributes describing the details of an agentic retrieval trace event.
 

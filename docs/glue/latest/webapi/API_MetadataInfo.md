@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_MetadataInfo.html
 ---
 
 # MetadataInfo
-<a name="API_MetadataInfo"></a>
 
 A structure containing metadata information for a schema version.
 

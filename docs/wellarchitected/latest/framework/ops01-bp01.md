@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops01-b
 ---
 
 # OPS01-BP01 Develop application telemetry
-<a name="ops01-bp01"></a>
 
  Application telemetry is the metrics, logs, and traces your workload emits about its own behavior. Without it, you cannot tell whether a release improved or degraded the experience. When telemetry ties technical signals to business outcomes, you see both system health and whether the workload delivers the results the business expects.
 

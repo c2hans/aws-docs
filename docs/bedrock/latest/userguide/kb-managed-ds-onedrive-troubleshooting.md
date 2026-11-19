@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-o
 ---
 
 # Troubleshoot a OneDrive data source
-<a name="kb-managed-ds-onedrive-troubleshooting"></a>
 
 Use this page to diagnose common issues with OneDrive authentication, data source creation, and syncing. For issues specific to document-level access control, see the troubleshooting table in [Document-level access controls](kb-managed-ds-onedrive-acl.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonKendraFullAccess
-<a name="AmazonKendraFullAccess"></a>
 
 **Description**: Provides full access to Amazon Kendra via the AWS Management Console.
 

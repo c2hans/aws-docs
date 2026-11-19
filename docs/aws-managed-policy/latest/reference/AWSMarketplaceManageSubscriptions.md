@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMarketplaceManageSubscriptions
-<a name="AWSMarketplaceManageSubscriptions"></a>
 
 **Description**: Provides the ability to subscribe and unsubscribe to AWS Marketplace software
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTOPS03-BP02 Implement CI/CD pipelines tailored to agentic system deployment (AgentOps)
-<a name="agentops03-bp02"></a>
 
  Manual agent deployments and informal testing can keep a project stuck in the pilot phase. An agent-aware pipeline, with behavioral evaluation gates, staged rollout, and automated rollback can help your organization realize the goal of daily deployment of behavioral improvements.
 

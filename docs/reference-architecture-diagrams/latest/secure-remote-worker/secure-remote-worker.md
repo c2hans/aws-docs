@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Secure Remote Worker Environment
-<a name="secure-remote-worker"></a>
 
 Publication date: **January 31, 2022 ([Diagram history](#diagram-history))**
 

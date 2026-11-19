@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_HttpEnd
 ---
 
 # HttpEndpointCommonAttribute
-<a name="API_HttpEndpointCommonAttribute"></a>
 
 Describes the metadata that's delivered to the specified HTTP endpoint destination.
 

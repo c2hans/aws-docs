@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # AgentRuntimeVersionSummary
-<a name="API_AgentRuntimeVersionSummary"></a>
 
 Summary information about an agent runtime version associated with a capacity provider. This is returned by `ListAgentRuntimeVersionsByCapacityProvider`.
 

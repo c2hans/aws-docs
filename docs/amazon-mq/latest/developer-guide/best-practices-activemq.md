@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/best-pr
 ---
 
 # Amazon MQ for ActiveMQ best practices
-<a name="best-practices-activemq"></a>
 
 Use this as a reference to quickly find recommendations for maximizing performance and minimizing throughput costs when working with ActiveMQ brokers on Amazon MQ.
 

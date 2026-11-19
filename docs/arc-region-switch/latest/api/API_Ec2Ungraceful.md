@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Ec2Ungr
 ---
 
 # Ec2Ungraceful
-<a name="API_Ec2Ungraceful"></a>
 
 Configuration for handling failures when performing operations on EC2 resources.
 

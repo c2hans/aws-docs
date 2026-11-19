@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/f
 ---
 
 # AWS SDK for SAP ABAP features
-<a name="features"></a>
 
 AWS SDK for SAP ABAP provides the following features.
 

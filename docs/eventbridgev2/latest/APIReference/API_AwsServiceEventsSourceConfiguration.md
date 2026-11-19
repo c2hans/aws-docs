@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Aw
 ---
 
 # AwsServiceEventsSourceConfiguration
-<a name="API_AwsServiceEventsSourceConfiguration"></a>
 
 Configuration for forwarding a single AWS service's events from the account's default event bus.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # Generate incident reports
-<a name="Investigations-Incident-Reports"></a>
 
 Incident reports help you more quickly and easily write a report about your incident investigation. You can use this report to provide details to management or to help your team learn from the incident and take actions to prevent future such occurrences. The structure of the report is based on industry standards for these types of reports and can be copied into other repositories for long-term retention.
 

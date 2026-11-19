@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Activate
 ---
 
 # ActivateEvaluationForm
-<a name="API_ActivateEvaluationForm"></a>
 
 Activates an evaluation form in the specified Connect Customer instance. After the evaluation form is activated, it is available to start new evaluations based on the form.
 

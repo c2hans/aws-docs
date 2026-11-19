@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/image-signi
 ---
 
 # Prerequisites for signing container images
-<a name="image-signing-prerequisites"></a>
 
 Before you begin signing, you need to set up an environment that bridges AWS Signer with Amazon ECR. Complete the following steps.
 

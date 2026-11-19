@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/s3-canned-acl.html
 ---
 
 # Using ACLs for delivery to Amazon S3
-<a name="s3-canned-acl"></a>
 
 In a MediaLive channel, you might have one or more outputs where the destination is a bucket in Amazon Simple Storage Service (Amazon S3). If the bucket is owned by another AWS account (another organization), you typically want the other account to become the owner of the output files.
 

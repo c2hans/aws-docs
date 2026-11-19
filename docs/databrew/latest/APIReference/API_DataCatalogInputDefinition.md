@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_DataCat
 ---
 
 # DataCatalogInputDefinition
-<a name="API_DataCatalogInputDefinition"></a>
 
 Represents how metadata stored in the AWS Glue Data Catalog is defined in a DataBrew dataset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/dolby-metadata-
 ---
 
 # Source of Elemental Live metadata
-<a name="dolby-metadata-source"></a>
 
 The metadata that Elemental Live emits can come from one of two sources:
 + Metadata that is already in the source. Only audio sources that use a Dolby codec can include this metadata. Different Dolby codecs include different categories of metadata as shown in this table.

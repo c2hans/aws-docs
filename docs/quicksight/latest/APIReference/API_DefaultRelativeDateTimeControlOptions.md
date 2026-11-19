@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Defau
 ---
 
 # DefaultRelativeDateTimeControlOptions
-<a name="API_DefaultRelativeDateTimeControlOptions"></a>
 
 The default options that correspond to the `RelativeDateTime` filter control type.
 

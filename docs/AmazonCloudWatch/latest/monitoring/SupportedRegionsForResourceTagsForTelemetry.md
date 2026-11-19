@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Suppo
 ---
 
 # Supported AWS Regions for resource tags for telemetry
-<a name="SupportedRegionsForResourceTagsForTelemetry"></a>
 
 The following table lists the AWS Regions where the resource tags for telemetry feature is available.
 

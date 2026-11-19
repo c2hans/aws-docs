@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet-web-ap
 ---
 
 # Modernizing .NET code with the AWS Transform web application
-<a name="dotnet-web-app"></a>
 
 You can modernize your .NET code using the AWS Transform web application (described here) or the [Visual Studio IDE](dotnet-ide.md). The web application is best suited for IT professionals interested in large-scale transformation. It works at repository level, and can transform as many as 5,000 repositories in a single job.
 

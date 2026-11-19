@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # RecurringPaymentTerm
-<a name="API_marketplace-discovery_RecurringPaymentTerm"></a>
 
 Defines a recurring payment term with fixed charges at regular billing intervals.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/jit-provisioni
 ---
 
 # Just-in-time provisioning
-<a name="jit-provisioning"></a>
 
 You can use just-in-time provisioning (JITP) to provision your devices when they first attempt to connect to AWS IoT. To provision the device, you must enable automatic registration and associate a provisioning template with the CA certificate used to sign the device certificate. Provisioning successes and errors are logged as [Device provisioning metrics](metrics_dimensions.md#provisioning-metrics) in Amazon CloudWatch.
 

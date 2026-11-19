@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2-instance-connect/latest/APIReference
 ---
 
 # SendSSHPublicKey
-<a name="API_SendSSHPublicKey"></a>
 
 Pushes an SSH public key to the specified EC2 instance for use by the specified user. The key remains for 60 seconds. For more information, see [Connect to your Linux instance using EC2 Instance Connect](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Connect-using-EC2-Instance-Connect.html) in the *Amazon EC2 User Guide*.
 

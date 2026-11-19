@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/updates-changing-column
 ---
 
 # Change a column data type
-<a name="updates-changing-column-type"></a>
 
 You might want to use a different column type when the existing type can no longer hold the amount of information required. For example, an ID column's values might exceed the size of the `INT` data type and require the use of the `BIGINT` data type.
 

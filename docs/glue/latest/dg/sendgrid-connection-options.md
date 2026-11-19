@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sendgrid-connection-optio
 ---
 
 # SendGrid connection options
-<a name="sendgrid-connection-options"></a>
 
 The following are connection options for SendGrid:
 + `ENTITY_NAME`(String) - (Required) Used for Read. The name of your object in SendGrid.

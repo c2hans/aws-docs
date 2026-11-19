@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/myApp-add-
 ---
 
 # Adding resources in myApplications
-<a name="myApp-add-resources"></a>
 
 Adding resources to your applications allows you to group them and manage their security, performance, and compliance. You can add resources to existing applications by searching for them and selecting them or by using existing tags and performing a tag-sync.
 

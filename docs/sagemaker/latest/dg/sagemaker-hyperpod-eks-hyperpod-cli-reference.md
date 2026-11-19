@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # SageMaker HyperPod CLI commands
-<a name="sagemaker-hyperpod-eks-hyperpod-cli-reference"></a>
 
 The following table summarizes the SageMaker HyperPod CLI commands.
 

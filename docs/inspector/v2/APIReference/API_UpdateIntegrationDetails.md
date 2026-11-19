@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateInte
 ---
 
 # UpdateIntegrationDetails
-<a name="API_UpdateIntegrationDetails"></a>
 
 Contains details required to update a code security integration with a specific repository provider.
 

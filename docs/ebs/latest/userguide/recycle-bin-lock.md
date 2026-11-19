@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/recycle-bin-lock.ht
 ---
 
 # Lock a Recycle Bin retention rule to prevent it from being updated or deleted
-<a name="recycle-bin-lock"></a>
 
 Recycle Bin lets you lock Region-level retention rules at any time.
 

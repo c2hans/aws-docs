@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_PolicyRefere
 ---
 
 # PolicyReference
-<a name="API_PolicyReference"></a>
 
 Contains the Amazon Resource Name (ARN) for a policy. Policies define what operations a team that define the permissions for team resources.
 

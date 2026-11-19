@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GetTopicRule
 ---
 
 # GetTopicRule
-<a name="API_GetTopicRule"></a>
 
 Gets information about the rule.
 

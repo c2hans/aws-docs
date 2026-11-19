@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetJobRuns.html
 ---
 
 # GetJobRuns
-<a name="API_GetJobRuns"></a>
 
 Retrieves metadata for all runs of a given job definition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Db2.Concepts.
 ---
 
 # Db2 on Amazon RDS versions
-<a name="Db2.Concepts.VersionMgmt"></a>
 
 For Db2, version numbers take the form of *major.minor.build.revision*, for example, 11.5.9.0.sb00000000.r1. Our version implementation matches that of Db2.
 

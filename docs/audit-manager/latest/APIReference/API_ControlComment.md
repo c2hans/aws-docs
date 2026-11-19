@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Co
 ---
 
 # ControlComment
-<a name="API_ControlComment"></a>
 
  A comment that's posted by a user on a control. This includes the author's name, the comment text, and a timestamp.
 

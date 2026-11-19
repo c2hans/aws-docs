@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/readonly-repor
 ---
 
 # Make a report in Connect Customer read-only
-<a name="readonly-reports"></a>
 
 To prevent others from saving changes to your report, you can make the report read-only before sharing it.
 

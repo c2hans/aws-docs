@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/viewi
 ---
 
 # Viewing inventory insights
-<a name="viewing-inventory-insights"></a>
 
 When you create a watchlist for a specific product, site, risk type, and planning horizon, depending on the notifications settings, you will get notified when Insights detects an inventory risk. You will receive notifications through the web application or email. You can view the inventory risks in *Card* or *Table* view. By using the *Card* view, you can view the risks in a list format separated by when the risks will happen. For example, 0 to 7 days, 7 to 14 days, or 14\+ days.
 

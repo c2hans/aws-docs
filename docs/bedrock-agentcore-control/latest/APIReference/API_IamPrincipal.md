@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # IamPrincipal
-<a name="API_IamPrincipal"></a>
 
 An IAM principal specification for rule matching.
 

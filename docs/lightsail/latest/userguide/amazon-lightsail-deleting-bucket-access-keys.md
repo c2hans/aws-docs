@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Delete access keys for a Lightsail object storage bucket
-<a name="amazon-lightsail-deleting-bucket-access-keys"></a>
 
 Access keys are a set of credentials that grant full access to a bucket and its objects. Access keys consist of an access key ID and a secret access key as a set. If your secret access key is copied, is lost, or becomes compromised, you should delete your access key.
 

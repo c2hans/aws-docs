@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebsapi-pricing.html
 ---
 
 # Pricing for EBS direct APIs
-<a name="ebsapi-pricing"></a>
 
 ## Pricing for APIs
 <a name="api-pricing"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Delet
 ---
 
 # DeleteGlobalCluster
-<a name="API_DeleteGlobalCluster"></a>
 
 Deletes a global cluster. The primary and secondary clusters must already be detached or deleted before attempting to delete a global cluster.
 

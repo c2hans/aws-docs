@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_PutSourceSer
 ---
 
 # PutSourceServerAction
-<a name="API_PutSourceServerAction"></a>
 
 Put source server post migration custom action.
 

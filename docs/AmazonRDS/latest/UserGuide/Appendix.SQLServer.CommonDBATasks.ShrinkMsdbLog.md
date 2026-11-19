@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Shrinking the msdb transaction log file for Amazon RDS for SQL Server
-<a name="Appendix.SQLServer.CommonDBATasks.ShrinkMsdbLog"></a>
 
 If the transaction log file of the `msdb` system database has grown larger than you need, you can shrink it by using the `rds_shrink_msdb_log_file` stored procedure. The target size must be smaller than the current size of the log file. There is no downtime for your DB instance when you run the procedure.
 

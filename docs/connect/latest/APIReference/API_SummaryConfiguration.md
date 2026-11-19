@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SummaryC
 ---
 
 # SummaryConfiguration
-<a name="API_SummaryConfiguration"></a>
 
 The summary configuration for conversational analytics.
 

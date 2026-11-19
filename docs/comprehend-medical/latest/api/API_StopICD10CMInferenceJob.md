@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_StopIC
 ---
 
 # StopICD10CMInferenceJob
-<a name="API_StopICD10CMInferenceJob"></a>
 
 Stops an InferICD10CM inference job in progress.
 

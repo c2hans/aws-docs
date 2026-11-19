@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # InstanceAssociationStatusInfo
-<a name="API_InstanceAssociationStatusInfo"></a>
 
 Status information about the association.
 

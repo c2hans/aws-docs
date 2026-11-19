@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-de
 ---
 
 # Best practices for development value stream mapping
-<a name="best-practices"></a>
 
 Use the following best practices when creating and using a development value stream map:
 + If someone says that something can't be changed, challenge that assumption.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetStep
-<a name="API_GetStep"></a>
 
 Gets a step.
 

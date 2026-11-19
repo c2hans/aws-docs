@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Member
 ---
 
 # MemberAccountRanking
-<a name="API_MemberAccountRanking"></a>
 
 Contains information about the position of a member account in a ranking.
 

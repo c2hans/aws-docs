@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_GetCol
 ---
 
 # GetCollectorDataAccessAuthorization
-<a name="API_GetCollectorDataAccessAuthorization"></a>
 
 Authorizes an Environment's access to a Collector's data. Continuum calls this operation with the Environment's Collector data-access role before it reads the Collector's inventory, so grant continuum:GetCollectorDataAccessAuthorization to that role and, for a Collector in another account, in the Collector's resource policy. The operation evaluates the action against the exact Collector ARN and the Collector's current resource policy using IAM and the caller's authenticated request context, with environmentArn as the continuum:EnvironmentArn condition key. A successful request returns HTTP 200 with no response members. If access is not granted, the operation returns AccessDeniedException without disclosing Collector existence, ownership, or the policy layer that denied access. The service does not reinterpret the policy using only an account ID.
 

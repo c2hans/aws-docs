@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Sour
 ---
 
 # SourceAwsConfiguration
-<a name="API_SourceAwsConfiguration"></a>
 
 Configuration for AWS source account integration. Setting the role ARNs on this configuration requires the caller to have at least the iam:PassRole permission (see assumableRoleArn).
 

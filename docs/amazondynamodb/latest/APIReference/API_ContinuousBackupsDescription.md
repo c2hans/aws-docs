@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_C
 ---
 
 # ContinuousBackupsDescription
-<a name="API_ContinuousBackupsDescription"></a>
 
 Represents the continuous backups and point in time recovery settings on the table.
 

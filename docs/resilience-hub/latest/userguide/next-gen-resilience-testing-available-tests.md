@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Available tests
-<a name="next-gen-resilience-testing-available-tests"></a>
 
 Next generation Resilience Hub provides the following pre-configured test templates:
 + **Availability Zone: recovery** – Validate your service can detect and recover from an Availability Zone impairment.

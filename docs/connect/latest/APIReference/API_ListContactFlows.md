@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListCont
 ---
 
 # ListContactFlows
-<a name="API_ListContactFlows"></a>
 
 Provides information about the flows for the specified Connect Customer instance.
 

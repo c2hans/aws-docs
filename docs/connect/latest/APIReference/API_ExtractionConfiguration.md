@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Extracti
 ---
 
 # ExtractionConfiguration
-<a name="API_ExtractionConfiguration"></a>
 
 The extraction configuration that defines how data is extracted from customer interactions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_PutEnd
 ---
 
 # PutEndpointPolicy
-<a name="API_PutEndpointPolicy"></a>
 
 Attaches a resource-based policy to an endpoint. With an endpoint policy, you can allow other AWS accounts to send requests to your endpoint, or to inference components on it, through an inference router. The policy that you specify replaces the endpoint's existing policy, if it has one.
 

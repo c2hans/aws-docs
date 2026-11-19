@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Applicati
 ---
 
 # ApplicationOperationInfoDetails
-<a name="API_ApplicationOperationInfoDetails"></a>
 
 A description of the application operation that provides information about the updates that were made to the application.
 

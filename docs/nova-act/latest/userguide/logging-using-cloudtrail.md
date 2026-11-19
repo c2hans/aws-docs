@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/logging-using-
 ---
 
 # Logging Amazon Nova Act API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Amazon Nova Act is integrated with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html), a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all API calls for Nova Act as events. The calls captured include calls from the Nova Act console and code calls to the Nova Act API operations. Using the information collected by CloudTrail, you can determine the request that was made to Nova Act, the IP address from which the request was made, when it was made, and additional details.
 

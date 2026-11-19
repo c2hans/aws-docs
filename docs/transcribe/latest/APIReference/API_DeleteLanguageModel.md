@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Delet
 ---
 
 # DeleteLanguageModel
-<a name="API_DeleteLanguageModel"></a>
 
 Deletes a custom language model. To use this operation, specify the name of the language model you want to delete using `ModelName`. custom language model names are case sensitive.
 

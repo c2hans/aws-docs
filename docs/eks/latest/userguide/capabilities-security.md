@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/capabilities-securi
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Security considerations for EKS Capabilities
-<a name="capabilities-security"></a>
 
 This topic covers important security considerations for EKS Capabilities, including IAM role configuration, Kubernetes permissions, and architectural patterns for multi-cluster deployments and cross-account AWS resource management.
 

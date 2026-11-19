@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # AWS Identity and Access Management (IAM)
-<a name="aws-identity-and-access-management-iam"></a>
 
 ## Managing access in the AWS Cloud
 <a name="managing-access-in-the-aws-cloud"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSOPS03-BP02 Limit available services to improve regulatory adherence
-<a name="lsops03-bp02"></a>
 
  Use infrastructure tooling to allow only services that fit into required regulatory frameworks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/viewing-bucket
 ---
 
 # Viewing the settings for an S3 Bucket Key
-<a name="viewing-bucket-key-settings"></a>
 
 You can view the settings for an S3 Bucket Key at the bucket or object level by using the Amazon S3 console, REST API, AWS Command Line Interface (AWS CLI), or AWS SDKs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/accelerate-
 ---
 
 # How it works
-<a name="f-sx-for-ontap-as-the-storage-solution"></a>
 
 ## Amazon FSx for NetApp ONTAP as the storage solution
 <a name="amazon-fsx-for-netapp-ontap-as-the-storage-solution.2f54237e-df1c-5e56-82aa-74ba999bbbfb"></a>

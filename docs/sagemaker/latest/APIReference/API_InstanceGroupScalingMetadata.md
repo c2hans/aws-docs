@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Instan
 ---
 
 # InstanceGroupScalingMetadata
-<a name="API_InstanceGroupScalingMetadata"></a>
 
 Metadata information about scaling operations for an instance group.
 

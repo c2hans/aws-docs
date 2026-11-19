@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListDomai
 ---
 
 # ListDomainDeliverabilityCampaigns
-<a name="API_ListDomainDeliverabilityCampaigns"></a>
 
 Retrieve deliverability data for all the campaigns that used a specific domain to send email during a specified time range. This data is available for a domain only if you enabled the Deliverability dashboard for the domain.
 

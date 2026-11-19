@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/dev-ove
 ---
 
 # Get started as a developer using Amazon Location Service
-<a name="dev-overview"></a>
 
 You can use Amazon Location Service to provide geographic-related functionality for apps across many different form factors and systems, including backend web services, web applications, and mobile applications. There are many tools provided to help you build your applications, including SDKs, libraries, and sample code.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ConfigurableUpfrontRateCardItem
-<a name="API_marketplace-agreements_ConfigurableUpfrontRateCardItem"></a>
 
 Within the prepaid payment model defined under `ConfigurableUpfrontPricingTerm`, the `RateCardItem` defines all the various rate cards (including pricing and dimensions) that have been proposed.
 

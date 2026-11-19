@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/jenkins-configuring-conne
 ---
 
 # Configuring Jenkins connections
-<a name="jenkins-configuring-connections"></a>
 
 Jenkins connections use basic authentication. You store the credential in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

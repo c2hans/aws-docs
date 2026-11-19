@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_S3Location.h
 ---
 
 # S3Location
-<a name="API_S3Location"></a>
 
 The S3 location.
 

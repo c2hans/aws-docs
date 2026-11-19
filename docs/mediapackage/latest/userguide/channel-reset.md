@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/channel-re
 ---
 
 # Resetting channel history in AWS Elemental MediaPackage
-<a name="channel-reset"></a>
 
 These steps show how to reset a channel in MediaPackage. Resetting the channel history clears out previously ingested content from the channel. For information about when you might want to reset, see [Reset for AWS Elemental MediaPackage channels and endpoints](resetting.md).
 

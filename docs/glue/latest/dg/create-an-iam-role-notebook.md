@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/create-an-iam-role-notebo
 ---
 
 # Step 5: Create an IAM role for notebook servers
-<a name="create-an-iam-role-notebook"></a>
 
 If you plan to use notebooks with development endpoints, you need to grant the IAM role permissions. You provide those permissions by using AWS Identity and Access Management IAM, through an IAM role.
 

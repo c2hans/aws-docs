@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Recomm
 ---
 
 # RecommendationJobInputConfig
-<a name="API_RecommendationJobInputConfig"></a>
 
 The input configuration of the recommendation job.
 

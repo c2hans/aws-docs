@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Prerequisites
-<a name="nx-rcs-gsu-prerequisites"></a>
 
 Before you begin, complete the following:
 

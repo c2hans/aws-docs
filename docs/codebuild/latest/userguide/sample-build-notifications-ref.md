@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-build-
 ---
 
 # Build notifications input format reference
-<a name="sample-build-notifications-ref"></a>
 
 CloudWatch delivers notifications in JSON format.
 

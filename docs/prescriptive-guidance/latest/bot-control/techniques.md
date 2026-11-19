@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/bot-control
 ---
 
 # Techniques for bot control
-<a name="techniques"></a>
 
 The main goal of bot mitigation is limiting the negative impact of automated bot activity on an organization's web sites, services, and applications. The technology and techniques used depend on the type of traffic or activity you want to defend against. Understanding the application and its traffic is key to accomplishing this. For more information on where to start, see the [Guidelines for monitoring and visibility](monitoring.md) section in this guide.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_DnsE
 ---
 
 # DnsEntry
-<a name="API_DnsEntry"></a>
 
 Describes the DNS information of a service.
 

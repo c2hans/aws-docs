@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricingplanmanager/latest/APIReference/A
 ---
 
 # Subscription
-<a name="API_Subscription"></a>
 
 The full details of a flat-rate pricing subscription, including its current configuration, status, and associated resources.
 

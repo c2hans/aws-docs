@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # CancelTask
-<a name="API_devicemanagement_CancelTask"></a>
 
 Sends a cancel request for a specified task. You can cancel a task only if it's still in a `QUEUED` state. Tasks that are already running can't be cancelled.
 

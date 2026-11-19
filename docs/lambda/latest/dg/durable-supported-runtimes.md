@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/durable-supported-runti
 ---
 
 # Supported runtimes for durable functions
-<a name="durable-supported-runtimes"></a>
 
 Durable functions are available for selected managed runtimes and OCI container images for additional runtime version flexibility. You can create durable functions for Node.js, Python, Java, and C\# (.NET) using managed runtimes directly in the console or programmatically through infrastructure-as-code.
 

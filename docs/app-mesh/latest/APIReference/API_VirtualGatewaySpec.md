@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualGatewaySpec
-<a name="API_VirtualGatewaySpec"></a>
 
 An object that represents the specification of a service mesh resource.
 

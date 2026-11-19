@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_PipC
 ---
 
 # PipConfiguration
-<a name="API_PipConfiguration"></a>
 
 Configuration information specific to Picture-in-Picture (PiP) layout, for [server-side composition](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/server-side-composition.html).
 

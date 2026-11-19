@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/testing-language
 ---
 
 # Send Instruction
-<a name="testing-language-actions-send-instruction"></a>
 
 Simulates customer input during the test execution. This action allows you to send DTMF tones or voice input as if a customer were interacting with the flow.
 

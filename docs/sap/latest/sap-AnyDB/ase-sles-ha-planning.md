@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/ase-sles-ha-plannin
 ---
 
 # Planning
-<a name="ase-sles-ha-planning"></a>
 
 This section covers the following topics.
 

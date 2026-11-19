@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AddBridgeSou
 ---
 
 # AddBridgeSources
-<a name="API_AddBridgeSources"></a>
 
  Adds sources to an existing bridge.
 

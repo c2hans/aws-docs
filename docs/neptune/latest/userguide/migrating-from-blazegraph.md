@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/migrating-from-
 ---
 
 # Migrating from Blazegraph to Amazon Neptune
-<a name="migrating-from-blazegraph"></a>
 
 If you have a graph in the open-source [Blazegraph](https://blazegraph.com/) RDF triplestore, you can migrate to your graph data to Amazon Neptune using the following steps:
 + *Provision AWS infrastructure.* Begin by provisioning the required Neptune infrastructure using an AWS CloudFormation template (see [Create Neptune cluster](get-started-create-cluster.md) ).

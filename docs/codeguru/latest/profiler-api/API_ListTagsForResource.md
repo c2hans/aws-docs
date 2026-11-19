@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ListTag
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
  Returns a list of the tags that are assigned to a specified resource.
 

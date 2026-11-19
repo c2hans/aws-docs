@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListData
 ---
 
 # ListDataTables
-<a name="API_ListDataTables"></a>
 
 Lists all data tables for the specified Amazon Connect instance. Returns summary information for each table including basic metadata and modification details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Res
 ---
 
 # ResetEnabledControl
-<a name="API_ResetEnabledControl"></a>
 
 Resets an enabled control. Does not work for controls implemented with SCPs.
 

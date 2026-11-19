@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # CreateVoiceProfile
-<a name="API_voice-chime_CreateVoiceProfile"></a>
 
 Creates a voice profile, which consists of an enrolled user and their latest voice print.
 

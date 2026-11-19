@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_R
 ---
 
 # RegistryRecordsEntry
-<a name="API_RegistryRecordsEntry"></a>
 
  Binds one registry to the record IDs requested from it.
 

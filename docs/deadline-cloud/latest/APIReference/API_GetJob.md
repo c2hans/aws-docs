@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetJob
-<a name="API_GetJob"></a>
 
 Gets a Deadline Cloud job.
 

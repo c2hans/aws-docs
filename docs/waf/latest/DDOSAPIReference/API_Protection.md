@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Protecti
 ---
 
 # Protection
-<a name="API_Protection"></a>
 
 An object that represents a resource that is under DDoS protection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-embedded-c
 ---
 
 # Tutorial: Using the AWS IoT Device SDK for Embedded C
-<a name="iot-embedded-c-sdk"></a>
 
 This section describes how to run the AWS IoT Device SDK for Embedded C.
 

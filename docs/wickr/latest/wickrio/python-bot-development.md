@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/wickrio/python-bot-developm
 This guide provides documentation for Wickr IO Integrations. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Python Bot Development
-<a name="python-bot-development"></a>
 
 To develop Wickr IO integrations in languages other than JavaScript such as Python, you will need to set up a Web REST API Interface integration on your machine and send HTTP/HTTPS requests to it. The following examples show how to do it in Python:
 

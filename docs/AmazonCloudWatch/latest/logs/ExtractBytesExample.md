@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/ExtractByte
 ---
 
 # Example: Extract fields from an Apache log and assign dimensions
-<a name="ExtractBytesExample"></a>
 
 Sometimes, instead of counting, it is helpful to use values within individual log events for metric values. This example shows how you can create an extraction rule to create a metric that measures the bytes transferred by an Apache webserver.
 

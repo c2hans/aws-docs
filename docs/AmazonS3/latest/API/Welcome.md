@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## Amazon S3
 <a name="Welcome_Amazon_Simple_Storage_Service"></a>

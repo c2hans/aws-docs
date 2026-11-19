@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_T
 ---
 
 # TapeArchive
-<a name="API_TapeArchive"></a>
 
 Represents a virtual tape that is archived in the virtual tape shelf (VTS).
 

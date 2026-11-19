@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Protecting your gateway with AWS WAF
-<a name="gateway-waf"></a>
 
 You can use AWS WAF with Amazon Bedrock AgentCore Gateway to protect your gateway from web exploits, bot traffic, and volumetric attacks. AWS WAF provides an inline security layer that evaluates all inbound requests before they reach your targets.
 

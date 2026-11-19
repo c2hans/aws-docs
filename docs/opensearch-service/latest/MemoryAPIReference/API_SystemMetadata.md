@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # SystemMetadata
-<a name="API_SystemMetadata"></a>
 
 System-generated provenance for a memory or event: the owning actor and session, and the creation and last-update timestamps. `SearchMemories`, `SearchEvents`, `ListMemories`, and `GetMemory` return the same block.
 

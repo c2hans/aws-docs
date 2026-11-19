@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/java-pg-conne
 ---
 
 # Connecting to Amazon DocumentDB with a MongoDB Java driver
-<a name="java-pg-connect-mongo-driver"></a>
 
 This section provides a step-by-step guide for connecting to Amazon DocumentDB using Java drivers. This will get you started with integrating DocumentDB into your Java applications.
 

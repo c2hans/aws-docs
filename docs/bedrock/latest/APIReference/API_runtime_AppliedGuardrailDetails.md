@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # AppliedGuardrailDetails
-<a name="API_runtime_AppliedGuardrailDetails"></a>
 
 Details about the specific guardrail that was applied during this assessment, including its identifier, version, ARN, origin, and ownership information.
 

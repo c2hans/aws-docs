@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTDeviceDefenderEnableIoTLoggingMitigationAction
-<a name="AWSIoTDeviceDefenderEnableIoTLoggingMitigationAction"></a>
 
 **Description**: Provides access for enabling IoT logging for execution of ENABLE\_IOT\_LOGGING mitigation action
 

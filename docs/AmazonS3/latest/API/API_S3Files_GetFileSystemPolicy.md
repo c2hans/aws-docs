@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_GetFileS
 ---
 
 # GetFileSystemPolicy
-<a name="API_S3Files_GetFileSystemPolicy"></a>
 
 Returns the IAM resource policy of an S3 File System.
 

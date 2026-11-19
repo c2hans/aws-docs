@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Tracki
 ---
 
 # TrackingServerSummary
-<a name="API_TrackingServerSummary"></a>
 
 The summary of the tracking server to list.
 

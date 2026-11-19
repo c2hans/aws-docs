@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # VerificationDetails
-<a name="API_account_VerificationDetails"></a>
 
 A union structure containing the specific details required for different types of verification processes supported by AWS Partner Central.
 

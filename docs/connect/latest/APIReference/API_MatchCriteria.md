@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MatchCri
 ---
 
 # MatchCriteria
-<a name="API_MatchCriteria"></a>
 
 An object to define AgentsCriteria.
 

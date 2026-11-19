@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNCOST02-BP01 Track and analyze hybrid networking expenses
-<a name="hncost02-bp01"></a>
 
  By implementing comprehensive cost monitoring tools and establishing standardized expense categorization, businesses can gain visibility into spending across different networking components. This holistic approach enables finance and technical teams to identify optimization opportunities, allocate costs accurately to business units, forecast future expenditures based on growth patterns, and ultimately make informed decisions that balance performance requirements with financial considerations while avoiding unexpected budget overruns.
 

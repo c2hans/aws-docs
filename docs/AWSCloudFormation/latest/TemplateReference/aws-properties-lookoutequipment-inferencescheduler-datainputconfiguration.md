@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::LookoutEquipment::InferenceScheduler DataInputConfiguration
-<a name="aws-properties-lookoutequipment-inferencescheduler-datainputconfiguration"></a>
 
 <a name="aws-properties-lookoutequipment-inferencescheduler-datainputconfiguration-description"></a>The `DataInputConfiguration` property type specifies Property description not available. for an [AWS::LookoutEquipment::InferenceScheduler](aws-resource-lookoutequipment-inferencescheduler.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/supported-serdes.html
 ---
 
 # Choose a SerDe for your data
-<a name="supported-serdes"></a>
 
 The following table lists the data formats supported in Athena and their corresponding SerDe libraries.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/smf
 ---
 
 # Connect service-managed fleets to a custom license server
-<a name="smf-byol"></a>
 
 You can bring your own license server to use with a Deadline Cloud service-managed fleet. To bring your own license, you can configure a license server using a queue environment in your farm. To configure your license server, you should already have a farm and queue set up.
 

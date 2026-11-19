@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/serverless-endpoints
 ---
 
 # Delete a serverless endpoint
-<a name="serverless-endpoints-delete"></a>
 
 You can delete your serverless endpoint using the [SageMaker AI console](https://console.aws.amazon.com/sagemaker/home), the [DeleteEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteEndpoint.html) API, or the AWS CLI. The following examples show you how to delete your endpoint through the API and the SageMaker AI console.
 

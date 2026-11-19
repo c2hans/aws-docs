@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/pc-py-library-
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # AWS ParallelCluster Python library API
-<a name="pc-py-library-v3"></a>
 
 Starting with AWS ParallelCluster version 3.5.0, you can access AWS ParallelCluster with the AWS ParallelCluster Python library. You can access the AWS ParallelCluster library in your `pcluster` environment or from within an AWS Lambda runtime. Learn how to access the AWS ParallelCluster API by using the AWS ParallelCluster Python library. The AWS ParallelCluster Python library offers the same functionality that the AWS ParallelCluster API delivers.
 
@@ -87,4 +86,4 @@ The hosted zip file URL is in the format: `s3://{{aws-region-id}}-aws-parallelcl
 
 1. Your Lambda needs permissions to manage clusters created with AWS ParallelCluster. Create a Lambda role with the permissions listed in [Base AWS ParallelCluster `pcluster` user policy](iam-roles-in-parallelcluster-v3.md#iam-roles-in-parallelcluster-v3-base-user-policy).
 
-You can now access AWS ParallelCluster from the Python library as described in [AWS ParallelCluster Python library API](#pc-py-library-v3).
+You can now access AWS ParallelCluster from the Python library as described in [AWS ParallelCluster Python library API](pc-py-library-v3.md).

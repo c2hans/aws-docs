@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MemoryRecordDeleteInput
-<a name="API_MemoryRecordDeleteInput"></a>
 
 Input structure to delete an existing memory record.
 

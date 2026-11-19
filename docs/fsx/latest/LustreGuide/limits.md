@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/limits.html
 ---
 
 # Service quotas for Amazon FSx for Lustre
-<a name="limits"></a>
 
 Following, you can find out about quotas when working with Amazon FSx for Lustre.
 

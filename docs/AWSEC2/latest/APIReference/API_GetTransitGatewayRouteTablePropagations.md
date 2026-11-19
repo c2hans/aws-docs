@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransi
 ---
 
 # GetTransitGatewayRouteTablePropagations
-<a name="API_GetTransitGatewayRouteTablePropagations"></a>
 
 Gets information about the route table propagations for the specified transit gateway route table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate shared file systems in an AWS large migration
-<a name="migrate-shared-file-systems-in-an-aws-large-migration"></a>
 
 *Amit Rudraraju, Sam Apa, Bheemeswararao Balla, Wally Lu, and Sanjeev Prakasam, Amazon Web Services*
 

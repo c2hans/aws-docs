@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/fl
 ---
 
 # Set Amazon GameLift Servers capacity limits
-<a name="fleets-capacity-limits"></a>
 
 When scaling hosting capacity for an Amazon GameLift Servers fleet location, either manually or by auto scaling, consider the location's scaling limits. All fleet locations have a minimum and maximum limit that define the allowed range for the location's capacity. By default, limits on fleet locations have a minimum of 0 instances and a maximum of 1 instance. Before you can scale a fleet location, adjust the limits.
 

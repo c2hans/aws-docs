@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DeleteCloudE
 ---
 
 # DeleteCloudExadataInfrastructure
-<a name="API_DeleteCloudExadataInfrastructure"></a>
 
 Deletes the specified Exadata infrastructure. Before you use this operation, make sure to delete all of the VM clusters that are hosted on this Exadata infrastructure.
 

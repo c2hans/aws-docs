@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes one or more tags from the specified AWS Agent Registry resource. The operation removes only the tags whose keys you supply; other tags on the resource remain unchanged.
 

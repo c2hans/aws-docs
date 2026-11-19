@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/implementing-serv
 ---
 
 # Implementing server-side encryption
-<a name="implementing-server-side-encryption"></a>
 
 Server-side encryption with Amazon S3 is one of the encryption options that you can use with AWS Elemental MediaConvert.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Op
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [BuildSuggesters](API_BuildSuggesters.md)

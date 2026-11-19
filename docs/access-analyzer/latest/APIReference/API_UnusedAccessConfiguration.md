@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # UnusedAccessConfiguration
-<a name="API_UnusedAccessConfiguration"></a>
 
 Contains information about an unused access analyzer.
 

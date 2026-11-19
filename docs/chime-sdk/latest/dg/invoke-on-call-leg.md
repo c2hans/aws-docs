@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/invoke-on-call-leg.h
 ---
 
 # Responding to invocations with action lists using the Amazon Chime SDK PSTN audio service
-<a name="invoke-on-call-leg"></a>
 
 You can respond to an AWS Lambda invocation event with a list of actions to run on the individual participants in a call. You can respond with a maximum of 10 actions for each AWS Lambda invocation, and you can invoke an AWS Lambda function 1,000 times per call.
 

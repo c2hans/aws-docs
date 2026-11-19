@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UpdateSec
 ---
 
 # UpdateSecurityGroupRuleDescriptionsEgress
-<a name="API_UpdateSecurityGroupRuleDescriptionsEgress"></a>
 
 Updates the description of an egress (outbound) security group rule. You can replace an existing description, or add a description to a rule that did not have one previously. You can remove a description for a security group rule by omitting the description parameter in the request.
 

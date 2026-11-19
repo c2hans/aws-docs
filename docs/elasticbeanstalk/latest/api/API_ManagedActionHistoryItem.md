@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_ManagedA
 ---
 
 # ManagedActionHistoryItem
-<a name="API_ManagedActionHistoryItem"></a>
 
 The record of a completed or failed managed action.
 

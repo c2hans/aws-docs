@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/doc-history-ec2-sap.h
 ---
 
 # Document history for instance types for SAP on AWS
-<a name="doc-history-ec2-sap"></a>
 
 | Change | Date |
 | --- | --- |

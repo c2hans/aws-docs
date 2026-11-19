@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Fil
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 Information about a filter used to limit results of a query.
 

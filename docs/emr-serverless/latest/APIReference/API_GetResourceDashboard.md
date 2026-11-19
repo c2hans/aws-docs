@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_G
 ---
 
 # GetResourceDashboard
-<a name="API_GetResourceDashboard"></a>
 
 Returns a URL that you can use to access the application UIs for a specified resource, such as a session.
 

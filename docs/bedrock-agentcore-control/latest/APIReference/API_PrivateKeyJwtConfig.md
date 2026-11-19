@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # PrivateKeyJwtConfig
-<a name="API_PrivateKeyJwtConfig"></a>
 
 The private key configuration for private\_key\_jwt client authentication.
 

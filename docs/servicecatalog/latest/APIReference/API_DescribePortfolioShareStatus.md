@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DescribePortfolioShareStatus
-<a name="API_DescribePortfolioShareStatus"></a>
 
 Gets the status of the specified portfolio share operation. This API can only be called by the management account in the organization or by a delegated admin.
 

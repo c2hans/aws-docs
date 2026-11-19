@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cross
 ---
 
 # Cross-account cross-Region CloudWatch console
-<a name="Cross-Account-Cross-Region"></a>
 
 **Note**
 We recommend that you use CloudWatch cross-account observability to get the richest cross-account observability and discovery experience for your metrics, logs, and traces within a Region. For more information, see [CloudWatch cross-account observability](CloudWatch-Unified-Cross-Account.md).

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/projects-c
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Creating a project
-<a name="projects-create"></a>
 
 With CodeCatalyst projects, you can conduct development tasks with shared continuous integration/continuous delivery (CI/CD) workflows and repositories, manage resources, track issues, and add users.
 

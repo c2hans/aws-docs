@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-best-pr
 ---
 
 # Best practices for data delivery
-<a name="data-delivery-best-practices"></a>
 
  The following best practices help you get the most out of data delivery in Amazon Kinesis Data Streams. For the complete list of delivery metrics referenced in these recommendations, see [Monitoring data delivery](data-delivery-monitoring.md).
 

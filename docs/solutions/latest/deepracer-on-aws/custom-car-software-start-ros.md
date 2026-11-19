@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/custom
 ---
 
 # Start the ROS server
-<a name="custom-car-software-start-ros"></a>
 
 1. SSH into the Raspberry Pi:
 

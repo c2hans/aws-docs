@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPrefi
 ---
 
 # IpamPrefixListResolverRuleCondition
-<a name="API_IpamPrefixListResolverRuleCondition"></a>
 
 Describes a condition within a CIDR selection rule. Conditions define the criteria for selecting CIDRs from IPAM's database based on resource attributes.
 

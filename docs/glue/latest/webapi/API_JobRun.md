@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_JobRun.html
 ---
 
 # JobRun
-<a name="API_JobRun"></a>
 
 Contains information about a job run.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/logging-using-
 ---
 
 # Log Verified Access API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 AWS Verified Access is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Verified Access. CloudTrail captures API calls for Verified Access as events. The calls captured include calls from the Verified Access console and code calls to the Verified Access API operations. Using the information collected by CloudTrail, you can determine the request that was made to Verified Access, the IP address from which the request was made, when it was made, and additional details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/SupportedCom
 ---
 
 # Supported and restricted Valkey, Memcached, and Redis OSS commands
-<a name="SupportedCommands"></a>
 
 ## Supported Valkey and Redis OSS commands
 <a name="SupportedCommandsRedis"></a>

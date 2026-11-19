@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIRefer
 ---
 
 # ListAlertManagerAlerts
-<a name="AMP-APIReference-ListAlertManagerAlerts"></a>
 
 The `ListAlertManagerAlerts` retrieves information about the alerts currently firing in alert manager in the workspace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-open
 ---
 
 # Prerequisites
-<a name="model-customize-open-weight-prereq"></a>
 
 Before you begin, complete the following prerequisites:
 + Onboard to a SageMaker AI domain with Studio access. If you don't have permissions to set Studio as the default experience for your domain, contact your administrator. For more information, see [Amazon SageMaker AI domain overview](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-onboard.html).

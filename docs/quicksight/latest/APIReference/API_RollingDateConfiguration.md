@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Rolli
 ---
 
 # RollingDateConfiguration
-<a name="API_RollingDateConfiguration"></a>
 
 The rolling date configuration of a date time filter.
 

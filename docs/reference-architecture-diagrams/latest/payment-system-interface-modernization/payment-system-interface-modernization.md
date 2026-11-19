@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/p
 ---
 
 # Payment System Interface Modernization on AWS: Modern Cloud-Native Payment Systems
-<a name="payment-system-interface-modernization"></a>
 
 Publication date: **April 6, 2022 ([Diagram history](#diagram-history))**
 

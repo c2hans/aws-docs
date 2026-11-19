@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-nummultby.
 ---
 
 # JSON.NUMMULTBY
-<a name="json-nummultby"></a>
 
 Multiply the number values at the path by a given number.
 

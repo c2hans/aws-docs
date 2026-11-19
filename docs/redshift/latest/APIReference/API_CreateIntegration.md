@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateI
 ---
 
 # CreateIntegration
-<a name="API_CreateIntegration"></a>
 
 Creates a zero-ETL integration or S3 event integration with Amazon Redshift.
 

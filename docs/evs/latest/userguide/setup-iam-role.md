@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/setup-iam-role.html
 ---
 
 # Create an IAM role for Amazon EVS administrators
-<a name="setup-iam-role"></a>
 
 Create an IAM role with a permissions policy that allows Amazon Elastic VMware Service operations, so that your administrators use temporary credentials instead of long-term keys. You can use the IAM console or the AWS CLI.
 

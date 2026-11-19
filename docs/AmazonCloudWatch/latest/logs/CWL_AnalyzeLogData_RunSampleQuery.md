@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Analyze
 ---
 
 # Tutorial: Run and modify a sample query
-<a name="CWL_AnalyzeLogData_RunSampleQuery"></a>
 
 The following tutorial helps you get started with CloudWatch Logs Insights. You run a sample query in Logs Insights QL, and then see how to modify and rerun it.
 

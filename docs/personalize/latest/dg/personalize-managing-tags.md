@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/personalize-managi
 ---
 
 # Guidelines and requirements
-<a name="personalize-managing-tags"></a>
 
 Each tag consists of a required tag key and an optional tag value, both of which you define. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor for a tag key.
 

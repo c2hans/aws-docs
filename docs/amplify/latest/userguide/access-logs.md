@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/access-logs.htm
 ---
 
 # Monitoring an Amplify application
-<a name="access-logs"></a>
 
 AWS Amplify provides the following features for monitoring your hosted applications:
 + **CloudWatch metrics** – Amplify emits metrics through Amazon CloudWatch that you can use to monitor traffic, errors, data transfer, and latency for your applications.

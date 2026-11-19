@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-bucket-
 ---
 
 # Accessing an Amazon S3 general purpose bucket
-<a name="access-bucket-intro"></a>
 
 You can access your Amazon S3 general purpose buckets by using the Amazon S3 console, AWS Command Line Interface, AWS SDKs, or the Amazon S3 REST API. Each method of accessing an S3 general purpose bucket supports specific use cases. For more information, see the following sections.
 

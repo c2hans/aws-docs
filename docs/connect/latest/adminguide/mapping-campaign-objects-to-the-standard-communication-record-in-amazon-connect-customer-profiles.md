@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/mapping-campai
 ---
 
 # Mapping Campaign objects to the standard communication record in Amazon Connect Customer Profiles
-<a name="mapping-campaign-objects-to-the-standard-communication-record-in-amazon-connect-customer-profiles"></a>
 
  This topic lists which fields in Campaign objects map to fields in the standard communication record object in Customer Profiles.
 

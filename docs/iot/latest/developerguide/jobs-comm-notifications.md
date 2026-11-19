@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/jobs-comm-noti
 ---
 
 # Jobs notifications
-<a name="jobs-comm-notifications"></a>
 
 The AWS IoT Jobs service publishes MQTT messages to reserved topics when jobs are pending or when the first job execution in the list changes. Devices can track pending jobs by subscribing to these topics.
 

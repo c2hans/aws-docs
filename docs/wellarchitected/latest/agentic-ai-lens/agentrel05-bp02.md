@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTREL05-BP02 Facilitate reliable adaptation through evaluation-driven improvement cycles
-<a name="agentrel05-bp02"></a>
 
  Agents degrade quietly when no one is watching, and runtime self-modification based on noisy feedback makes things worse. Structured feedback collection with offline evaluation and validated deployments keeps adaptation reliable because every change is measured before it reaches users.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53p
 ---
 
 # ListProfileAssociations
-<a name="API_route53profiles_ListProfileAssociations"></a>
 
  Lists all the VPCs that the specified Route 53 Profile is associated with.
 

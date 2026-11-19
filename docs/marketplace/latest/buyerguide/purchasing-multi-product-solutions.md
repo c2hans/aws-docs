@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/purchasing
 ---
 
 # Purchasing a Multi-Product Solution
-<a name="purchasing-multi-product-solutions"></a>
 
 ## Step 1: Request a Private Offer
 <a name="step-1-request-private-offer"></a>

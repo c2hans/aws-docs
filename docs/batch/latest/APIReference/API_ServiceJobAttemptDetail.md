@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ServiceJob
 ---
 
 # ServiceJobAttemptDetail
-<a name="API_ServiceJobAttemptDetail"></a>
 
 Detailed information about an attempt to run a service job.
 

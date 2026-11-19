@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Components and terms for Internet Monitor
-<a name="CloudWatch-IM-components"></a>
 
 Internet Monitor uses or references the following concepts.
 

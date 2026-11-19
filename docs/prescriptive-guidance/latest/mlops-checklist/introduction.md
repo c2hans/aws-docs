@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mlops-check
 ---
 
 # Evaluating your ML project with the MLOps checklist
-<a name="introduction"></a>
 
 *Charles Frenzel, Sharath Nagaraja, and Spencer Romo, Amazon Web Services*
 

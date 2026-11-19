@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-
 ---
 
 # PartiQL delete statements for DynamoDB
-<a name="ql-reference.delete"></a>
 
 Use the `DELETE` statement to delete an existing item from your Amazon DynamoDB table.
 

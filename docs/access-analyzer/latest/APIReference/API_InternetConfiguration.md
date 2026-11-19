@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # InternetConfiguration
-<a name="API_InternetConfiguration"></a>
 
 This configuration sets the network origin for the Amazon S3 access point or multi-region access point to `Internet`.
 

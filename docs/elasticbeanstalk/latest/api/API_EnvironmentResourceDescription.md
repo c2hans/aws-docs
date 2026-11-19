@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Environm
 ---
 
 # EnvironmentResourceDescription
-<a name="API_EnvironmentResourceDescription"></a>
 
 Describes the AWS resources in use by this environment. This data is live.
 

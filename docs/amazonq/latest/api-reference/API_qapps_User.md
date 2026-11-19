@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_U
 ---
 
 # User
-<a name="API_qapps_User"></a>
 
 A user of an Amazon Q App.
 

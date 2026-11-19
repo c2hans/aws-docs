@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Create a build from a file directory
-<a name="gamelift-build-cli-uploading-upload-build"></a>
 
 To create a game build stored in any location, including a local directory, use the [`upload-build`](https://docs.aws.amazon.com/cli/latest/reference/gamelift/upload-build.html) AWS CLI command. This command creates a new build record in Amazon GameLift Servers and uploads files from a location that you specify.
 

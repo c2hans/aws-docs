@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMachineLearningManageRealTimeEndpointOnlyAccess
-<a name="AmazonMachineLearningManageRealTimeEndpointOnlyAccess"></a>
 
 **Description**: Grants users permission to create and delete the real-time endpoint for Amazon Machine Learning models.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Core components
-<a name="core-components"></a>
 
  **Amazon API Gateway** - RESTful API endpoint for image transformation requests - Request validation and parameter parsing - Integration with AWS Lambda for processing - Built-in throttling and caching capabilities
 

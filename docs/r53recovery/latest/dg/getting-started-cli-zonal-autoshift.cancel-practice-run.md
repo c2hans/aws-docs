@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/getting-started-cl
 ---
 
 # Cancel an in-progress practice run
-<a name="getting-started-cli-zonal-autoshift.cancel-practice-run"></a>
 
 You can cancel an in-progress practice run with the CLI by using the `cancel-practice-run` command.
 

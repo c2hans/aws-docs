@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_Administrati
 ---
 
 # AdministrativeActionFailureDetails
-<a name="API_AdministrativeActionFailureDetails"></a>
 
 Provides information about a failed administrative action.
 

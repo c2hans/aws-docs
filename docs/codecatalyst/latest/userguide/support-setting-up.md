@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/support-se
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Setting up your space for Support for Amazon CodeCatalyst
-<a name="support-setting-up"></a>
 
 Support for Amazon CodeCatalyst manages support cases as part of Support API integration with CodeCatalyst.
 

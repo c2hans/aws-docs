@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NeuronDev
 ---
 
 # NeuronDeviceMemoryInfo
-<a name="API_NeuronDeviceMemoryInfo"></a>
 
 Describes the memory available to the neuron accelerator.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/ack-permissions.htm
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure ACK permissions
-<a name="ack-permissions"></a>
 
 ACK requires IAM permissions to create and manage AWS resources on your behalf. This topic explains how IAM works with ACK and provides guidance on configuring permissions for different use cases.
 

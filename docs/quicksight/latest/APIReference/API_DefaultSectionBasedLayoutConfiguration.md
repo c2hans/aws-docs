@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Defau
 ---
 
 # DefaultSectionBasedLayoutConfiguration
-<a name="API_DefaultSectionBasedLayoutConfiguration"></a>
 
 The options that determine the default settings for a section-based layout configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation
 ---
 
 # Fine-tune a large language model (LLM) using domain adaptation
-<a name="jumpstart-foundation-models-fine-tuning-domain-adaptation"></a>
 
 Domain adaptation fine-tuning allows you to leverage pre-trained foundation models and adapt them to specific tasks using limited domain-specific data. If prompt engineering efforts do not provide enough customization, you can use domain adaption fine-tuning to get your model working with domain-specific language, such as industry jargon, technical terms, or other specialized data. This fine-tuning process modifies the weights of the model.
 

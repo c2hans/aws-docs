@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AnalysisC
 ---
 
 # AnalysisComponent
-<a name="API_AnalysisComponent"></a>
 
 Describes a path component.
 

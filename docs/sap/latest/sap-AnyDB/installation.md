@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/installation.html
 ---
 
 # Installing the databases
-<a name="installation"></a>
 
 See the following tabs for more information.
 

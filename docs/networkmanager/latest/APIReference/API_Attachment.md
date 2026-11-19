@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_A
 ---
 
 # Attachment
-<a name="API_Attachment"></a>
 
 Describes a core network attachment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/googleads-reading-from-en
 ---
 
 # Reading from Google Ads entities
-<a name="googleads-reading-from-entities"></a>
 
  **Prerequisites**
 +  A Google Ads Object you would like to read from. Refer the supported entities table below to check the available entities.

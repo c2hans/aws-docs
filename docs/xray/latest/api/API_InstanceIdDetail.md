@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_InstanceIdDetail.htm
 ---
 
 # InstanceIdDetail
-<a name="API_InstanceIdDetail"></a>
 
 A list of EC2 instance IDs corresponding to the segments in a trace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/network-userguide/sl-pub
 ---
 
 # Service link public connectivity options
-<a name="sl-public-connectivity"></a>
 
 You can configure the service link with a public connection for the traffic between the Outposts and home AWS Region. You can choose to use the public internet or Direct Connect public VIFs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # AccessDeniedException
-<a name="API_AccessDeniedException"></a>
 
 The AWS account doesn’t have access to this resource.
 

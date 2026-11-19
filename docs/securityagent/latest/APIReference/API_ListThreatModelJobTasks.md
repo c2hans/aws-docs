@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListThreatModelJobTasks
-<a name="API_ListThreatModelJobTasks"></a>
 
 Returns a paginated list of task summaries for the specified threat model job.
 

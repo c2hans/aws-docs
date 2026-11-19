@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_Reten
 ---
 
 # RetentionPeriod
-<a name="API_RetentionPeriod"></a>
 
 Information about the retention period for which the retention rule is to retain resources.
 

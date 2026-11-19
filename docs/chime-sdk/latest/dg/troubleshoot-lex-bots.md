@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/troubleshoot-lex-bot
 ---
 
 # Troubleshooting AppInstanceBots configured with Amazon Lex V2 bots for Amazon Chime SDK messaging
-<a name="troubleshoot-lex-bots"></a>
 
 The following topics explain how to troubleshoot common problems with AppInstanceBots.
 

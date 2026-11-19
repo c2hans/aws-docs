@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachVer
 ---
 
 # AttachVerifiedAccessTrustProvider
-<a name="API_AttachVerifiedAccessTrustProvider"></a>
 
 Attaches the specified AWS Verified Access trust provider to the specified AWS Verified Access instance.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-co
 AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
 
 # Upload and Activate the Pipeline Definition
-<a name="dp-copydata-redshift-upload-cli"></a>
 
 You must upload your pipeline definition and activate your pipeline. In the following example commands, replace {{pipeline\_name}} with a label for your pipeline and {{pipeline\_file}} with the fully-qualified path for the pipeline definition `.json` file.
 

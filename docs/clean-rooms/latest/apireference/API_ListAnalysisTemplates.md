@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_List
 ---
 
 # ListAnalysisTemplates
-<a name="API_ListAnalysisTemplates"></a>
 
 Lists analysis templates that the caller owns.
 

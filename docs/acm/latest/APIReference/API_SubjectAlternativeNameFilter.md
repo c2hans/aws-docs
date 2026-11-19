@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_SubjectAlter
 ---
 
 # SubjectAlternativeNameFilter
-<a name="API_SubjectAlternativeNameFilter"></a>
 
 Filters certificates by subject alternative name attributes.
 

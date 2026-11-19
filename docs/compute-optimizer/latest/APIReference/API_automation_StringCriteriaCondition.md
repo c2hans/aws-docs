@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # StringCriteriaCondition
-<a name="API_automation_StringCriteriaCondition"></a>
 
 Criteria condition for filtering based on string values, including comparison operators and target values.
 

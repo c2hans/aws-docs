@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Phase 4: Application migration execution
-<a name="phase-4-application-migration-execution"></a>
 
 **Considering migration** **scope of 1 cluster \| 100\+ applications. The following table represents the application migration execution effort.**
 

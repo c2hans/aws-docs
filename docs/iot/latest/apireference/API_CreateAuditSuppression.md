@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateAuditS
 ---
 
 # CreateAuditSuppression
-<a name="API_CreateAuditSuppression"></a>
 
  Creates a Device Defender audit suppression.
 

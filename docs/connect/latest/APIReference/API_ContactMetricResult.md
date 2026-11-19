@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactM
 ---
 
 # ContactMetricResult
-<a name="API_ContactMetricResult"></a>
 
 Contains the result of a requested metric for the contact. This object is returned as part of the GetContactMetrics response and includes both the metric name and its calculated value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Network reliability
-<a name="genrel02"></a>
 
 | GENREL02: How do you maintain reliable communication among different components of your generative AI architecture? |
 | --- |

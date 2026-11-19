@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/customization.html
 ---
 
 # Customize add-on
-<a name="customization"></a>
 
 ## Template
 <a name="customization-template"></a>

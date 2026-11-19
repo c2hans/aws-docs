@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEC2SpotFleetAutoscaleRole
-<a name="AmazonEC2SpotFleetAutoscaleRole"></a>
 
 **Description**: Policy to enable Autoscaling for Amazon EC2 Spot Fleet
 

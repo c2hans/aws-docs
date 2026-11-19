@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # AWS Systems Manager Incident Manager
-<a name="API_Operations_AWS_Systems_Manager_Incident_Manager"></a>
 
 The following actions are supported by AWS Systems Manager Incident Manager:
 +  [BatchGetIncidentFindings](API_BatchGetIncidentFindings.md)

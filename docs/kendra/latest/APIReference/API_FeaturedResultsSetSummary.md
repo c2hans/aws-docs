@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_FeaturedR
 ---
 
 # FeaturedResultsSetSummary
-<a name="API_FeaturedResultsSetSummary"></a>
 
 Summary information for a set of featured results. Featured results are placed above all other results for certain queries. If there's an exact match of a query, then one or more specific documents are featured in the search results.
 

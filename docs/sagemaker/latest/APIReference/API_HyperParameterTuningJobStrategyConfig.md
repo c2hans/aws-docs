@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperP
 ---
 
 # HyperParameterTuningJobStrategyConfig
-<a name="API_HyperParameterTuningJobStrategyConfig"></a>
 
 The configuration for a training job launched by a hyperparameter tuning job. Choose `Bayesian` for Bayesian optimization, and `Random` for random search optimization. For more advanced use cases, use `Hyperband`, which evaluates objective metrics for training jobs after every epoch. For more information about strategies, see [How Hyperparameter Tuning Works](https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning-how-it-works.html).
 

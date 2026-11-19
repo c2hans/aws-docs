@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_SsmDocu
 ---
 
 # SsmDocumentConfig
-<a name="API_SsmDocumentConfig"></a>
 
 The Systems Manager document to run and the managed nodes to target for a single AWS Region.
 

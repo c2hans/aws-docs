@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListEn
 ---
 
 # ListEndpointConfigs
-<a name="API_ListEndpointConfigs"></a>
 
 Lists endpoint configurations.
 

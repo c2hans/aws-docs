@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Descri
 ---
 
 # DescribeImages
-<a name="API_DescribeImages"></a>
 
 Returns metadata about the images in a repository.
 

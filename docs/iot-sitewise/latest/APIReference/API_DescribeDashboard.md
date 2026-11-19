@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeDashboard
-<a name="API_DescribeDashboard"></a>
 
 Retrieves information about a dashboard.
 

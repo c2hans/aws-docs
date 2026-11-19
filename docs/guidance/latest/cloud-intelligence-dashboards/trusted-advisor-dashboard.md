@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Trusted Advisor Organizational (TAO) Dashboard
-<a name="trusted-advisor-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

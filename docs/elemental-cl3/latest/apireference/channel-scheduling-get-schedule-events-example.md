@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/channe
 ---
 
 # Example
-<a name="channel-scheduling-get-schedule-events-example"></a>
 
 This response shows the information for the schedule with the ID 15.
 

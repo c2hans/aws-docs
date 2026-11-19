@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/access-s
 ---
 
 # Accessing the Resiliency score of your applications
-<a name="access-score"></a>
 
 You can view the Resiliency score of your application by choosing **Dashboard** or **Applications** from the navigation menu.
 

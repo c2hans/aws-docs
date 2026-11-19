@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_B
 ---
 
 # BudgetDetail
-<a name="API_BudgetDetail"></a>
 
 Information about a budget.
 

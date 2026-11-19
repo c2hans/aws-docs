@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Enable bucket access logging in Lightsail
-<a name="amazon-lightsail-enabling-bucket-access-logs"></a>
 
 Access logging provides detailed records for the requests that are made to a bucket in the Amazon Lightsail object storage service. Access logs are useful for many applications. For example, access log information can be useful in security and access audits. It can also help you learn about your customer base.
 

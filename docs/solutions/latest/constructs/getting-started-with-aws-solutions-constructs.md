@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/getting-star
 ---
 
 # Getting Started with AWS Solutions Constructs
-<a name="getting-started-with-aws-solutions-constructs"></a>
 
 This topic describes how to install and configure AWS Cloud Development Kit (AWS CDK), AWS Solutions Constructs, and create your first AWS CDK app using AWS Solutions Constructs patterns.
 

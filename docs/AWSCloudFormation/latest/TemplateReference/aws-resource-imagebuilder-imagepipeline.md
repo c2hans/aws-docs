@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::ImagePipeline
-<a name="aws-resource-imagebuilder-imagepipeline"></a>
 
 Defines the automation configuration for building, testing, and distributing images. A pipeline references the resources that its builds use, such as the recipe and infrastructure configuration. It also holds the settings that control its builds, such as the schedule and custom workflows.
 

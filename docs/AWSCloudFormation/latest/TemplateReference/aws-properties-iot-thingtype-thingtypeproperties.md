@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::ThingType ThingTypeProperties
-<a name="aws-properties-iot-thingtype-thingtypeproperties"></a>
 
 The ThingTypeProperties contains information about the thing type including: a thing type description, and a list of searchable thing attribute names.
 

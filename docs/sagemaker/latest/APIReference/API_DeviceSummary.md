@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Device
 ---
 
 # DeviceSummary
-<a name="API_DeviceSummary"></a>
 
 Summary of the device.
 

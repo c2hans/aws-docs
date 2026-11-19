@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ScoreAt
 ---
 
 # ScoreAttributes
-<a name="API_ScoreAttributes"></a>
 
 Provides information about the relevance score of content.
 

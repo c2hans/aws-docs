@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus02-b
 ---
 
 # SUS02-BP02 Provision development, build, and test resources dynamically
-<a name="sus02-bp02"></a>
 
  Workloads use non-production resources intermittently and for a limited amount of time along the development lifecycle. Examples are developers' workstations, compute instances for builds, user acceptance tests, and pre-production environments. To reduce the resource consumption of your software development lifecycle, maintain development and test resources only when actively needed, rather than keeping them permanently provisioned. By using automation to create and decommission environments on demand, resources are only consumed during active development and testing phases.
 

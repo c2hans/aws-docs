@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Types_Ag
 ---
 
 # Agents for Amazon Bedrock Runtime
-<a name="API_Types_Agents_for_Amazon_Bedrock_Runtime"></a>
 
 The following data types are supported by Agents for Amazon Bedrock Runtime:
 +  [ActionGroupExecutor](API_agent-runtime_ActionGroupExecutor.md)

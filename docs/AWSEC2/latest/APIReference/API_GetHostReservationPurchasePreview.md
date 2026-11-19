@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetHostRe
 ---
 
 # GetHostReservationPurchasePreview
-<a name="API_GetHostReservationPurchasePreview"></a>
 
 Preview a reservation purchase with configurations that match those of your Dedicated Host. You must have active Dedicated Hosts in your account before you purchase a reservation.
 

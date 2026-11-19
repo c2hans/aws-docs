@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Work with immutable data classes
-<a name="ddb-en-client-use-immut"></a>
 
 The mapping feature of the DynamoDB Enhanced Client API works with immutable data classes. An immutable class has only getters and requires a builder class that the SDK uses to create instances of the class. Instead of using the `@DynamoDbBean` annotation as shown in the [Customer class](ddb-en-client-gs-tableschema.md#ddb-en-client-gs-tableschema-anno-bean-cust), immutable classes use the `@DynamoDbImmutable` annotation, which takes a parameter that indicates the builder class to use.
 

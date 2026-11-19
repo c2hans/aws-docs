@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_S3Buck
 ---
 
 # S3Bucket
-<a name="API_S3Bucket"></a>
 
 Contains information about the Amazon S3 bucket policies and encryption.
 

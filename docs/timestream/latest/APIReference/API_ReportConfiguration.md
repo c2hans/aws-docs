@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Repor
 ---
 
 # ReportConfiguration
-<a name="API_ReportConfiguration"></a>
 
 Report configuration for a batch load task. This contains details about where error reports are stored.
 

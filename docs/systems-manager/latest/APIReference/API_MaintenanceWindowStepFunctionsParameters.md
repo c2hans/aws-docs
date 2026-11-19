@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # MaintenanceWindowStepFunctionsParameters
-<a name="API_MaintenanceWindowStepFunctionsParameters"></a>
 
 The parameters for a `STEP_FUNCTIONS` task.
 

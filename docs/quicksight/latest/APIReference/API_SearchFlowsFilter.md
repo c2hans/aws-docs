@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Searc
 ---
 
 # SearchFlowsFilter
-<a name="API_SearchFlowsFilter"></a>
 
 A structure that contains the filter information when searching flows.
 

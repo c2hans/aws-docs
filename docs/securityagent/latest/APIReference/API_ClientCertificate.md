@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Cl
 ---
 
 # ClientCertificate
-<a name="API_ClientCertificate"></a>
 
 A client certificate for mutual TLS (mTLS) authentication to target hosts.
 

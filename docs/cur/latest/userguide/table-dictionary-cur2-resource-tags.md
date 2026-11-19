@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 ---
 
 # Resource tags columns
-<a name="table-dictionary-cur2-resource-tags"></a>
 
 Resource tags columns contain data about resource tags that apply to the line item. Note that you don’t need to select this column if you selected the Tags column because resource tags are also included under the Tags column.
 

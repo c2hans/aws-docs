@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # Tag
-<a name="API_marketplace-metering_Tag"></a>
 
 Metadata assigned to an allocation. Each tag is made up of a `key` and a `value`.
 

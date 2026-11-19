@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/enclaves/latest/user/connect-enclave-kms
 ---
 
 # Getting started: Connect an enclave with AWS KMS for cryptographic attestation and secrets management
-<a name="connect-enclave-kms"></a>
 
 Use this pattern to access secrets only from inside a validated enclave.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Da
 ---
 
 # DataDestinationConfig
-<a name="API_DataDestinationConfig"></a>
 
 The destination where the campaign sends data. You can send data to an MQTT topic, or store it in Amazon S3 or Amazon Timestream.
 

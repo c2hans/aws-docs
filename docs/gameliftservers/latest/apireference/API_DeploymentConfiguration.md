@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # DeploymentConfiguration
-<a name="API_DeploymentConfiguration"></a>
 
 Set of rules for processing a deployment for a container fleet update. For how Amazon GameLift Servers validates and rolls out a deployment, see [Container fleet deployments](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/containers-deployment-validation.html).
 

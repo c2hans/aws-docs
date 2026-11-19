@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/work-w
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Work with renewals
-<a name="work-with-renewals"></a>
 
 Renewals in AWS Marketplace enable sellers, including independent software vendors (ISVs) and channel partners, to seamlessly extend existing agreements with customers. During the renewal process, sellers have the option to adjust terms by creating a new offer.
 

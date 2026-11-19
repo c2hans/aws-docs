@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Uninstall solution stacks
-<a name="uninstall-isb"></a>
 
 You can uninstall the stacks, use the AWS Management Console or the AWS Command Line Interface (AWS CLI).
 

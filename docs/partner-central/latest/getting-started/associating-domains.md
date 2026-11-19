@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/a
 ---
 
 # Associating domains for AWS Training and Certification tracking
-<a name="associating-domains"></a>
 
 AWS uses Training and Certification achievements to validate technical expertise. These achievements are required for Tier progression and certain APN program eligibility.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_ListSc
 ---
 
 # ListScheduleGroups
-<a name="API_ListScheduleGroups"></a>
 
 Returns a paginated list of your schedule groups.
 

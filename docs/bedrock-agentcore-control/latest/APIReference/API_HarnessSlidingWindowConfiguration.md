@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessSlidingWindowConfiguration
-<a name="API_HarnessSlidingWindowConfiguration"></a>
 
 Configuration for sliding window truncation strategy.
 

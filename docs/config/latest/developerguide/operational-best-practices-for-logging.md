@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/operational
 ---
 
 # Operational Best Practices for Logging
-<a name="operational-best-practices-for-logging"></a>
 
  This conformance pack contains AWS Config rules based on logging within AWS. For a list of all managed rules supported by AWS Config, see [List of AWS Config Managed Rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html).
 

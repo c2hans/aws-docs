@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/release-notes/all-packages-
 ---
 
 # Amazon Linux 2027 RPM packages as of the 2027.0.20260903 release
-<a name="all-packages-AL2027"></a>
 
 The following list includes all packages for Amazon Linux 2027 release [2027.0.20260903](relnotes-2027.0.20260903.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_GetWork
 ---
 
 # GetWorkflowDefinition
-<a name="API_GetWorkflowDefinition"></a>
 
 Retrieves the details and configuration of a specific workflow definition.
 

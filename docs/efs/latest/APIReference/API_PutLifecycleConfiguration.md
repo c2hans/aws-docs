@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_PutLifecycle
 ---
 
 # PutLifecycleConfiguration
-<a name="API_PutLifecycleConfiguration"></a>
 
 Use this action to manage storage for your file system. A `LifecycleConfiguration` consists of one or more `LifecyclePolicy` objects that define the following:
 +  ** `TransitionToIA` ** – When to move files in the file system from primary storage (Standard storage class) into the Infrequent Access (IA) storage.

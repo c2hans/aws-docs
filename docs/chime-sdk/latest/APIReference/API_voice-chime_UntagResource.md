@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # UntagResource
-<a name="API_voice-chime_UntagResource"></a>
 
 Removes tags from a resource.
 

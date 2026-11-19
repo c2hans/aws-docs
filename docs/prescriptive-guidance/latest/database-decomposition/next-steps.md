@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # Next steps for database decomposition on AWS
-<a name="next-steps"></a>
 
 After implementing initial database decomposition strategies through database wrapper services and moving business logic to the application layer, organizations must plan their next evolution. This section outlines key considerations for continuing your modernization journey.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-plans-crea
 ---
 
 # Creating a recovery plan
-<a name="recovery-plans-creating"></a>
 
 Create an empty plan, then add the steps that define your recovery order. A plan cannot be run until it contains at least one server step:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # GetUploadJob
-<a name="API_connect-customer-profiles_GetUploadJob"></a>
 
 This API retrieves the details of a specific upload job.
 

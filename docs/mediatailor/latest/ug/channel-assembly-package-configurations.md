@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/channel-assembly-p
 ---
 
 # Using package configurations
-<a name="channel-assembly-package-configurations"></a>
 
 A package configuration is a representation of the source that contains the various packaging characteristics required for playback on different devices. For example, you might have a source that has three packaged formats: HLS with DRM, DASH with segment timeline addressing, and HLS with CMAF segments.
 

@@ -3,13 +3,12 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DeleteFirewall
-<a name="API_DeleteFirewall"></a>
 
 Deletes the specified [Firewall](API_Firewall.md) and its [FirewallStatus](API_FirewallStatus.md). This operation requires the firewall's `DeleteProtection` flag to be `FALSE`. You can't revert this operation.
 
 You can check whether a firewall is in use by reviewing the route tables for the Availability Zones where you have firewall subnet mappings. Retrieve the subnet mappings by calling [DescribeFirewall](API_DescribeFirewall.md). You define and update the route tables through Amazon VPC. As needed, update the route tables for the zones to remove the firewall endpoints. When the route tables no longer use the firewall endpoints, you can remove the firewall safely.
 
-To delete a firewall, remove the delete protection if you need to using [UpdateFirewallDeleteProtection](API_UpdateFirewallDeleteProtection.md), then delete the firewall by calling [DeleteFirewall](#API_DeleteFirewall).
+To delete a firewall, remove the delete protection if you need to using [UpdateFirewallDeleteProtection](API_UpdateFirewallDeleteProtection.md), then delete the firewall by calling [DeleteFirewall](API_DeleteFirewall.md).
 
 Deleting a proxy mode firewall detaches its NAT gateways. To also delete the NAT gateways that Network Firewall created for the firewall, specify `DeleteAssociatedNatGateways`.
 

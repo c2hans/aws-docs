@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appintegrations/latest/APIReference/API_
 ---
 
 # UpdateDataIntegrationAssociation
-<a name="API_connect-app-integrations_UpdateDataIntegrationAssociation"></a>
 
 Updates and persists a DataIntegrationAssociation resource.
 

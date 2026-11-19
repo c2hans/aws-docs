@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # MatchmakingConfiguration
-<a name="API_MatchmakingConfiguration"></a>
 
 Guidelines for use with FlexMatch to match players into games. All matchmaking requests must specify a matchmaking configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_ia
 ---
 
 # Amazon Q Developer permissions reference
-<a name="security_iam_permissions"></a>
 
 Amazon Q Developer uses two types of APIs to provide the service:
 + User and administrator permissions, which can be used in policies to control usage of Amazon Q

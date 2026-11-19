@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/iottwinmake
 ---
 
 # Security Hub CSPM controls for AWS IoT TwinMaker
-<a name="iottwinmaker-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the AWS IoT TwinMaker service and resources.
 

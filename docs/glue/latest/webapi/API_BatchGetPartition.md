@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchGetPartition
 ---
 
 # BatchGetPartition
-<a name="API_BatchGetPartition"></a>
 
 Retrieves partitions in a batch request.
 

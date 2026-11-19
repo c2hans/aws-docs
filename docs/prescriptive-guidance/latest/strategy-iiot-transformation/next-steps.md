@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ii
 ---
 
 # Conclusion and next steps
-<a name="next-steps"></a>
 
 The latest industrial revolution, the IIoT digital transformation, is unlocking new possibilities for businesses of all sizes and in every industry. Using IIoT data helps solve business problems and create new opportunities. Businesses that embrace this IIoT journey are quickly realizing the benefits of improved insights and productivity.
 

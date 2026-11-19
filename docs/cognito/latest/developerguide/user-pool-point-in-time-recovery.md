@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-
 ---
 
 # Point-in-time recovery for user pools
-<a name="user-pool-point-in-time-recovery"></a>
 
 With point-in-time recovery, you can restore the user data in your user pool to its state at a point in time in the past. Use point-in-time recovery when users, their attributes, or their sign-in credentials are deleted or modified by mistake, for example by an administrative script, an application bug, or unauthorized activity in your AWS account. Point-in-time recovery restores the MFA settings and passkeys of users, and the passwords of deleted users, so recovered users can sign in with their existing credentials and don't have to reset their passwords.
 

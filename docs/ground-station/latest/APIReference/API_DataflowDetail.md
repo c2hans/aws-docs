@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_D
 ---
 
 # DataflowDetail
-<a name="API_DataflowDetail"></a>
 
 Information about a dataflow edge used in a contact.
 

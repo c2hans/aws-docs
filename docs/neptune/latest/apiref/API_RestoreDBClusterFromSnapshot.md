@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_RestoreDBClust
 ---
 
 # RestoreDBClusterFromSnapshot
-<a name="API_RestoreDBClusterFromSnapshot"></a>
 
 Creates a new DB cluster from a DB snapshot or DB cluster snapshot.
 

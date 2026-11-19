@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/iam-roles-ds
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # IAM role for Amazon Q Business data source connectors
-<a name="iam-roles-ds"></a>
 
 You can use either the Amazon Q Business console or the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) API operation to connect your data source. However, you must first provide Amazon Q Business with an IAM role that has permissions to access the data source resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDeepLensLambdaFunctionAccessPolicy
-<a name="AWSDeepLensLambdaFunctionAccessPolicy"></a>
 
 **Description**: This policy specifies permissions required by DeepLens Administrative lambda functions that run on a DeepLens device
 

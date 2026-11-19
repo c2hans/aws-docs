@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/ml-inference-fast-m
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Accelerate model loading on Amazon EKS
-<a name="ml-inference-fast-model-loading"></a>
 
 When you deploy large language models (LLMs) on Amazon EKS, model loading time directly affects how quickly Pods can start serving inference requests. This is especially true during scale up events, when new Pods or nodes must load the model before handling traffic. Model startup has two phases that you can improve with tuning and compile artifact caching:
 +  **Weights loading** — Streaming model weight files from Amazon S3 into GPU memory using [Run:ai Model Streamer](https://github.com/run-ai/runai-model-streamer).

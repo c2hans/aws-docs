@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EventsV2::Subscriber SqsParameters
-<a name="aws-properties-eventsv2-subscriber-sqsparameters"></a>
 
 Parameters for sending events to an Amazon SQS queue target.
 

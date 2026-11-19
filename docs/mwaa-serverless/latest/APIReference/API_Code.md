@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_
 ---
 
 # Code
-<a name="API_Code"></a>
 
 Specifies the Amazon S3 location of code artifacts that workflows use during execution.
 

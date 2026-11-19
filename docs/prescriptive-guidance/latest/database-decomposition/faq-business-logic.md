@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # FAQs about migrating the business logic to the application layer
-<a name="faq-business-logic"></a>
 
 Migrating business logic from the database to the application layer is a critical and complex aspect of database modernization. This business logic migration is discussed in the [Migrating business logic from the database to the application layer](logic.md) section of this guide. This FAQ section addresses common questions about managing this transition effectively, from selecting initial candidates for migration to handling complex stored procedures and triggers.
 

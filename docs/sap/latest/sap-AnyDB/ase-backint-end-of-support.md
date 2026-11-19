@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/ase-backint-end-of-
 ---
 
 # AWS Backint Agent for SAP ASE end of support
-<a name="ase-backint-end-of-support"></a>
 
 After careful consideration, we have decided to end support for AWS Backint Agent for SAP ASE, effective September 29, 2027. Beginning October 29, 2026, AWS Backint Agent for SAP ASE will no longer be available to download for new customers. As an existing customer, you can continue to use AWS Backint Agent for SAP ASE until September 29, 2027. After September 29, 2027, AWS Backint Agent for SAP ASE will no longer be available to download, existing installations will no longer be supported, and backup and restore operations that use the agent will no longer be supported and might not function as expected.
 

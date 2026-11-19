@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PcaCloudWatch
 ---
 
 # AWS Private CA CloudWatch metrics
-<a name="PcaCloudWatch"></a>
 
 Amazon CloudWatch is a monitoring service for AWS resources. You can use CloudWatch to collect and track metrics, set alarms, and automatically react to changes in your AWS resources. CloudWatch metrics are published at least once.
 

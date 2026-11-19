@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Manage Lightsail domains with advanced Route 53 features
-<a name="amazon-lightsail-manage-domain-advanced"></a>
 
 Amazon Lightsail registers domains through Amazon Route 53, a highly available and scalable DNS web service. When you register a domain using Lightsail, you can manage the domain in both Lightsail and Route 53.
 

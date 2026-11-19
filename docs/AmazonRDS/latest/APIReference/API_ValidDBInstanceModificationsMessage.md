@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ValidD
 ---
 
 # ValidDBInstanceModificationsMessage
-<a name="API_ValidDBInstanceModificationsMessage"></a>
 
 Information about valid modifications that you can make to your DB instance. Contains the result of a successful call to the `DescribeValidDBInstanceModifications` action. You can use this information when you call `ModifyDBInstance`.
 

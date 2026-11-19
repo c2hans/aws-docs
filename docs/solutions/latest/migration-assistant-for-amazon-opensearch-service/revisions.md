@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 The following table describes the important changes to the documentation since the last release of Migration Assistant for Amazon OpenSearch Service. For notification about updates to this documentation, you can subscribe to an RSS feed.
 

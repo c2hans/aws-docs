@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd07.h
 ---
 
 # Networking and connectivity
-<a name="fnd07"></a>
 
  A strong networking foundation balances centralized governance with operational efficiency. Decisions about network topology, protection controls, and shared services such as DNS shape how workloads connect, how traffic is inspected, and how teams move through normal and exceptional scenarios. This capability covers the best practices for designing, securing, and centrally managing network connectivity across the enterprise.
 

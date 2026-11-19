@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_PauseReplica
 ---
 
 # PauseReplication
-<a name="API_PauseReplication"></a>
 
 Pause Replication.
 

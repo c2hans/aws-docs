@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ListUsers
-<a name="API_ListUsers"></a>
 
 Given a user pool ID, returns a list of users and their basic details in a user pool.
 

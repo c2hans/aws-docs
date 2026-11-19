@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/create
 ---
 
 # Prerequisites
-<a name="create-idmw-two-accounts-prerequisite"></a>
 
 Before you create an ID mapping workflow across two AWS accounts, you must first do the following:
 + Complete the tasks in [Set up AWS Entity Resolution](setting-up.md).

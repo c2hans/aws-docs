@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/scale-sqs-queu
 ---
 
 # Configure scaling based on Amazon SQS
-<a name="scale-sqs-queue-cli"></a>
 
 The following procedure describes how to configure automatic scaling based on Amazon SQS. You'll learn how to create a CloudWatch custom metric, how to set up a target tracking policy using the AWS CLI, and how to test your configuration.
 

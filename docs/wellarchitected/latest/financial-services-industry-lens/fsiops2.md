@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSIOPS2: Have you completed an operational risk assessment?
-<a name="fsiops2"></a>
 
  Financial services workloads should be continually reviewed and prioritized with regard to their risk impact to the overall business (for example, based on their reputational, financial, or regulatory impact).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Ena
 ---
 
 # EnabledBaselineSummary
-<a name="API_EnabledBaselineSummary"></a>
 
 Returns a summary of information about an `EnabledBaseline` object.
 

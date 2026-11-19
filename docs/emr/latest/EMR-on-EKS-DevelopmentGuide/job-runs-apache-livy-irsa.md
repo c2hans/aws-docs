@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Setting up access permissions with IAM roles for service accounts (IRSA)
-<a name="job-runs-apache-livy-irsa"></a>
 
 By default, the Livy server and Spark application's driver and executors don't have access to AWS resources. The server service account and spark service account controls access to AWS resources for the Livy server and spark application's pods. To grant access, you need to map the service accounts with an IAM role that has the necessary AWS permissions.
 

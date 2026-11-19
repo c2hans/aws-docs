@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-su
 ---
 
 # How to get cross-references from suggestions
-<a name="how-to-suggest-cross-references"></a>
 
 Include `CrossReferences` in the `AdditionalFeatures` parameter to retrieve third-party supplier identifiers for place suggestions.
 

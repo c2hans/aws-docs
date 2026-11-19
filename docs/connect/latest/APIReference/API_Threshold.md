@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Threshol
 ---
 
 # Threshold
-<a name="API_Threshold"></a>
 
 Contains information about the threshold for service level metrics.
 

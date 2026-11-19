@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/parallel-test
 ---
 
 # Enable parallel test execution in batch builds
-<a name="parallel-test-enable"></a>
 
 To run tests in parallel, update the batch build buildspec file to include the build-fanout field and the number of parallel builds to split the test suite in the `parallelism` field as shown below. The `parallelism` field specifies how many independent executors are set up to execute the test suite.
 

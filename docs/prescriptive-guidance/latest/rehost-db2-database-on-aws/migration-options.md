@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-db2-
 ---
 
 # Migration options
-<a name="migration-options"></a>
 
 The following decision tree diagram presents the options as different migration paths based on the platform family, outage requirements, and configuration. These paths can help you understand different options:
 + Little endian compared with big endian

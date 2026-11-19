@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Di
 ---
 
 # DirectConnectGatewayAttachment
-<a name="API_DirectConnectGatewayAttachment"></a>
 
 Information about an attachment between a Direct Connect gateway and a virtual interface.
 

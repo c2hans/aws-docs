@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this document include:
 +  Daniel Yu, Senior Technical Account Manager, AWS Enterprise Support

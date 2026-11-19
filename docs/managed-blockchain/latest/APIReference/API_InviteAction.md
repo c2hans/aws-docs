@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # InviteAction
-<a name="API_InviteAction"></a>
 
 An action to invite a specific AWS account to create a member and join the network. The `InviteAction` is carried out when a `Proposal` is `APPROVED`.
 

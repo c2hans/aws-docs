@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Limitations
-<a name="aurora-analytics-limitations"></a>
 
 The following limitations apply to foreign tables. For supported engine versions, instance classes, and Regions, see [Querying Apache Iceberg and Parquet data directly in Aurora PostgreSQL](query-iceberg-and-parquet-data.md).
 

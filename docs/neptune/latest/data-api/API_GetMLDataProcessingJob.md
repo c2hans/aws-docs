@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_GetMLDataPro
 ---
 
 # GetMLDataProcessingJob
-<a name="API_GetMLDataProcessingJob"></a>
 
 Retrieves information about a specified data processing job. See [The `dataprocessing` command](https://docs.aws.amazon.com/neptune/latest/userguide/machine-learning-api-dataprocessing.html).
 

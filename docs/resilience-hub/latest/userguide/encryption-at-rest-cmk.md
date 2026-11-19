@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/encrypti
 ---
 
 # Encryption at rest with customer managed keys
-<a name="encryption-at-rest-cmk"></a>
 
 Next generation Resilience Hub provides encryption by default to protect sensitive customer data at rest using AWS owned keys.
 + **** Next generation Resilience Hub uses these keys by default to automatically encrypt sensitive data. You cannot view, manage, or use AWS owned keys, or audit their use. However, you do not have to take any action or change any programs to protect the keys that encrypt your data. For more information, see [https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk) in the *AWS Key Management Service Developer Guide*.

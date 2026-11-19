@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_S
 ---
 
 # StopAddressListImportJob
-<a name="API_StopAddressListImportJob"></a>
 
 Stops an ongoing import job for an address list.
 

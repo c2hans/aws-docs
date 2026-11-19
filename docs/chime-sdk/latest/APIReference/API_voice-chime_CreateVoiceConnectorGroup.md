@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # CreateVoiceConnectorGroup
-<a name="API_voice-chime_CreateVoiceConnectorGroup"></a>
 
 Creates an Amazon Chime SDK Voice Connector group under the administrator's AWS account. You can associate Amazon Chime SDK Voice Connectors with the Voice Connector group by including `VoiceConnectorItems` in the request.
 

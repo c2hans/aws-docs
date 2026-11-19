@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # DeleteRecommenderSchema
-<a name="API_connect-customer-profiles_DeleteRecommenderSchema"></a>
 
 Deletes a recommender schema from a domain.
 

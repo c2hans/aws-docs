@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/overview-architect
 ---
 
 # DLAMI Architecture Options
-<a name="overview-architecture"></a>
 
 AWS Deep Learning AMIss are offered with either x86-based or Arm64-based [AWS Graviton2](https://aws.amazon.com/ec2/graviton/) architectures.
 

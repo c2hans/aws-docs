@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_FormatO
 ---
 
 # FormatOptions
-<a name="API_FormatOptions"></a>
 
 Represents a set of options that define the structure of either comma-separated value (CSV), Excel, or JSON input.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/cancel-network-operation.h
 ---
 
 # Cancel a AWS TNB network operation
-<a name="cancel-network-operation"></a>
 
 Learn how to cancel a network operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cloudtrail-
 ---
 
 # cloudtrail-security-trail-enabled
-<a name="cloudtrail-security-trail-enabled"></a>
 
 Checks that there is at least one AWS CloudTrail trail defined with security best practices. This rule is COMPLIANT if there is at least one trail that meets all of the following:
 + records global service events

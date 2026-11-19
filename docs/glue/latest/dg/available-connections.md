@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/available-connections.htm
 ---
 
 # Available connections
-<a name="available-connections"></a>
 
 AWS Glue supports the following connection types:
 + Adobe Analytics

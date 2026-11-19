@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Session-based game server hosting with serverless backend
-<a name="session-based-game-server-hosting-with-serverless-backend"></a>
 
  When developing an architecture for your game, consider the features and capabilities you need and the level of operational management overhead that you are prepared to own. To provide the best balance between ease of operations and flexibility, you can build your game using managed services from cloud providers. Managed services give you the control to develop and customize your own custom game features, while also reducing your burden to deploy and manage infrastructure.
 

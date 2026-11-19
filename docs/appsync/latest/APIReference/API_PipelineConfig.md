@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Pipeline
 ---
 
 # PipelineConfig
-<a name="API_PipelineConfig"></a>
 
 The pipeline configuration for a resolver of kind `PIPELINE`.
 

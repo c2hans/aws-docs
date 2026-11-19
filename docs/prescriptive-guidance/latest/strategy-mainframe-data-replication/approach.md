@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # Strategic approach for mainframe data replication
-<a name="approach"></a>
 
 Data replication from a mainframe to the AWS Cloud is a process that involves transferring data from your on-premises mainframe systems to the cloud environment.
 

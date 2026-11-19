@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/yield-optimization
 ---
 
 # Example 2: Dynamic template with player parameters
-<a name="yield-optimization-examples-dynamic"></a>
 
 Uses player parameters for app and device identification. Suitable for production multi-device deployments.
 

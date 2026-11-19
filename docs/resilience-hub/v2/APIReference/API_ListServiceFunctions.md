@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListS
 ---
 
 # ListServiceFunctions
-<a name="API_ListServiceFunctions"></a>
 
 Lists service functions for a service.
 

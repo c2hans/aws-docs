@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-participant/latest/APIReference/
 ---
 
 # MessageMetadata
-<a name="API_connect-participant_MessageMetadata"></a>
 
 Contains metadata related to a message.
 

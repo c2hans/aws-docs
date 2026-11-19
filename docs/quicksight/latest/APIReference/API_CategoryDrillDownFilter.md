@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Categ
 ---
 
 # CategoryDrillDownFilter
-<a name="API_CategoryDrillDownFilter"></a>
 
 The category drill down filter.
 

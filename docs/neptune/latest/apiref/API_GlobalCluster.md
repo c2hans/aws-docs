@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_GlobalCluster.
 ---
 
 # GlobalCluster
-<a name="API_GlobalCluster"></a>
 
 Contains the details of an Amazon Neptune global database.
 

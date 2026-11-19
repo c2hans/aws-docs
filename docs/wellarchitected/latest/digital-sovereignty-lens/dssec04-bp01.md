@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # DSSEC04-BP01 Enhance threat detection through targeted intelligence
-<a name="dssec04-bp01"></a>
 
  By using region- and domain-specific threat intelligence, organizations can enhance their detection capabilities. With this targeted approach, security teams can contextualize threats within their specific regulatory and infrastructure environment.
 

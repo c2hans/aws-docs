@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # test
-<a name="resource-type-cli-test"></a>
 
 ## Description
 <a name="resource-type-cli-test-description"></a>

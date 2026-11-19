@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_BackupR
 ---
 
 # BackupRetentionPolicy
-<a name="API_BackupRetentionPolicy"></a>
 
 A policy that defines the number of days to retain backups.
 

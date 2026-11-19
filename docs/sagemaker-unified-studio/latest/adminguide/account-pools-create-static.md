@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Create an account pool with a static list of account and region pairs
-<a name="account-pools-create-static"></a>
 
 You can create an account pool where the accounts are provided as a list of static accounts. Use these steps when your account pool source is a static list and not provided by the custom Lambda function.
 + Open a terminal (Linux, macOS, or Unix) or command prompt (Windows) and use the AWS CLI to run the `get-account-pool` command with the following format, where the domain ID, account pool name, and source of accounts are required arguments.

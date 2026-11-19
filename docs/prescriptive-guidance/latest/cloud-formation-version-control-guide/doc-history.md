@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-forma
 ---
 
 # Document history
-<a name="doc-history"></a>
 
 This table describes significant changes to this guide.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Functions quick start guide
-<a name="monetization-functions-quickstart"></a>
 
 This guide walks you through creating your first function, attaching it to a playback configuration, and verifying that it ran. By the end, you will have a working function that classifies each viewer's device type (`ctv`, `mobile`, or `desktop`) and stores it as a player parameter available in every ADS request.
 

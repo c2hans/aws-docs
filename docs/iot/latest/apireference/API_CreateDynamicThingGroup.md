@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateDynami
 ---
 
 # CreateDynamicThingGroup
-<a name="API_CreateDynamicThingGroup"></a>
 
 Creates a dynamic thing group.
 

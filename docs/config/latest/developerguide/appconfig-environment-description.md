@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/appconfig-e
 ---
 
 # appconfig-environment-description
-<a name="appconfig-environment-description"></a>
 
 Checks if AWS AppConfig environments have a description. The rule is NON\_COMPLIANT if configuration.Description does not exist or is an empty string.
 

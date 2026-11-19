@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/using-servic
 ---
 
 # Using service-linked roles for AWS Compute Optimizer
-<a name="using-service-linked-roles"></a>
 
 AWS Compute Optimizer uses AWS Identity and Access Management (IAM) [service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role). A service-linked role is a unique type of IAM role that's linked directly to Compute Optimizer. Service-linked roles are predefined by Compute Optimizer and include all of the permissions that the service requires to call other on your behalf.
 

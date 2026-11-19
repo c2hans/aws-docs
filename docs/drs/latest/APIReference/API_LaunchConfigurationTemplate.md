@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_LaunchConfig
 ---
 
 # LaunchConfigurationTemplate
-<a name="API_LaunchConfigurationTemplate"></a>
 
 Account level Launch Configuration Template.
 

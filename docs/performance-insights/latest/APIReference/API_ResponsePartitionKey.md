@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # ResponsePartitionKey
-<a name="API_ResponsePartitionKey"></a>
 
 If `PartitionBy` was specified in a `DescribeDimensionKeys` request, the dimensions are returned in an array. Each element in the array specifies one dimension.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-create-load
 ---
 
 # Configure an Application Load Balancer or Network Load Balancer from the console
-<a name="as-create-load-balancer-console"></a>
 
 Use the following procedure to create and attach an Application Load Balancer or a Network Load Balancer as you create your Auto Scaling group.
 

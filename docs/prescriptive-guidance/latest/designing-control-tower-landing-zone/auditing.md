@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 ---
 
 # Auditing and alerting
-<a name="auditing"></a>
 
 The Audit account is tailored for auditors and security administrators. In this account, you can give auditors read-only access to all accounts in the organization, so they can conduct thorough reviews. Additionally, the Audit account can be the delegated administrator for several security services that monitor the accounts in the organization for threats and compliance.
 

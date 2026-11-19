@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/s
 ---
 
 # Application Recovery Controller examples using SDK for SAP ABAP
-<a name="sap-abap_route53-recovery-cluster_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for SAP ABAP with Application Recovery Controller.
 

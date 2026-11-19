@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Scatt
 ---
 
 # ScatterPlotSortConfiguration
-<a name="API_ScatterPlotSortConfiguration"></a>
 
 The sort configuration of a scatter plot.
 

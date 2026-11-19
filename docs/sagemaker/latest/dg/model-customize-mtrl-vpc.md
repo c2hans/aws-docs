@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-mtrl
 ---
 
 # Configure a VPC for multi-turn RL jobs
-<a name="model-customize-mtrl-vpc"></a>
 
 When you provide a `VpcConfig` in your multi-turn RL job configuration, Amazon SageMaker AI places a proxy elastic network interface (ENI) in your VPC. All customer data traffic — including access to your S3 buckets, agent invocations, and logging — flows through this ENI. This keeps data within your VPC network boundary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # FieldOptionError
-<a name="API_connect-cases_FieldOptionError"></a>
 
 Object for field Options errors.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeP
 ---
 
 # DescribePrefixLists
-<a name="API_DescribePrefixLists"></a>
 
 Describes available AWS services in a prefix list format, which includes the prefix list name and prefix list ID of the service and the IP address range for the service.
 

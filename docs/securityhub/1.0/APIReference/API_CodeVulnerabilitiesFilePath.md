@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CodeVul
 ---
 
 # CodeVulnerabilitiesFilePath
-<a name="API_CodeVulnerabilitiesFilePath"></a>
 
  Provides details about where a code vulnerability is located in your AWS Lambda function.
 

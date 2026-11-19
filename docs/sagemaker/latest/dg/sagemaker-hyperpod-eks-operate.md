@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Managing SageMaker HyperPod clusters orchestrated by Amazon EKS
-<a name="sagemaker-hyperpod-eks-operate"></a>
 
 This section provides guidance on managing SageMaker HyperPod through the SageMaker AI console UI or the AWS Command Line Interface (CLI). It explains how to perform various tasks related to SageMaker HyperPod, whether you prefer a visual interface or working with commands.
 

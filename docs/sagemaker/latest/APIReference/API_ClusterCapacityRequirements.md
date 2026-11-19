@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterCapacityRequirements
-<a name="API_ClusterCapacityRequirements"></a>
 
 Defines the instance capacity requirements for an instance group, including configurations for both Spot and On-Demand capacity types.
 

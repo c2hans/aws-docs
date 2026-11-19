@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-type-bo
 ---
 
 # Determine the supported boot modes of an EC2 instance type
-<a name="instance-type-boot-mode"></a>
 
 You can determine the supported boot modes of an instance type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSy
 ---
 
 # CreateFileSystemOpenZFSConfiguration
-<a name="API_CreateFileSystemOpenZFSConfiguration"></a>
 
 The Amazon FSx for OpenZFS configuration properties for the file system that you are creating.
 

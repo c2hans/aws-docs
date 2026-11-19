@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/d
 ---
 
 # Document History for Amazon Kinesis Agent for Microsoft Windows User Guide
-<a name="doc-history"></a>
 
 **API version: 2018-10-15**
 

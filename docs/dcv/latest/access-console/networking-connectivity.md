@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/networking-con
 ---
 
 # Networking and connectivity
-<a name="networking-connectivity"></a>
 
 The Amazon DCV Access Console components can all be installed on a single host or on different hosts.
 

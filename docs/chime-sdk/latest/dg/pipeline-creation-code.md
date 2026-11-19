@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/pipeline-creation-co
 ---
 
 # Example code for Amazon Chime SDK media stream pipelines
-<a name="pipeline-creation-code"></a>
 
 The following examples show how to create media stream pipelines for mixed audio, individual audio, and both. Expand each section to learn more.
 

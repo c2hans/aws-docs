@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Resolver
 ---
 
 # Resolver
-<a name="API_Resolver"></a>
 
 Describes a resolver.
 

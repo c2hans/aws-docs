@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origi
 ---
 
 # OriginRequestPolicyQueryStringsConfig
-<a name="API_OriginRequestPolicyQueryStringsConfig"></a>
 
 An object that determines whether any URL query strings in viewer requests (and if so, which query strings) are included in requests that CloudFront sends to the origin.
 

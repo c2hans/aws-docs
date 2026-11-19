@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsS
 ---
 
 # AwsEcsServiceCapacityProviderStrategyDetails
-<a name="API_AwsEcsServiceCapacityProviderStrategyDetails"></a>
 
 Strategy item for the capacity provider strategy that the service uses.
 

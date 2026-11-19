@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # DestinationMetricsConfiguration
-<a name="API_DestinationMetricsConfiguration"></a>
 
 Configuration for centralization destination metrics, including backup settings.
 

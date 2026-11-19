@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # SearchTextResultItem
-<a name="API_geoplaces_SearchTextResultItem"></a>
 
 The text search result.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/repostprivate/latest/APIReference/API_Ba
 ---
 
 # BatchError
-<a name="API_BatchError"></a>
 
 An error that occurred during a batch operation.
 

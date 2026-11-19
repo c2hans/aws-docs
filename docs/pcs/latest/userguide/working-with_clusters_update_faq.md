@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cluste
 ---
 
 # Frequently asked questions about updating clusters in AWS PCS
-<a name="working-with_clusters_update_faq"></a>
 
 Get answers to common questions about updating cluster configurations in AWS PCS.
 

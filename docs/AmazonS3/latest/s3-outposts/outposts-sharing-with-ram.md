@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/outposts-sha
 ---
 
 # Sharing S3 on Outposts by using AWS RAM
-<a name="outposts-sharing-with-ram"></a>
 
 Amazon S3 on Outposts supports sharing S3 capacity across multiple accounts within an organization by using AWS Resource Access Manager ([AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html)). With S3 on Outposts sharing, you can allow others to create and manage buckets, endpoints, and access points on your Outpost.
 

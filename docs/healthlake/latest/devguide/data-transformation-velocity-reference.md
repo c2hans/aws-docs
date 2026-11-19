@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/data-transfor
 ---
 
 # Understanding C-CDA profiles
-<a name="data-transformation-velocity-reference"></a>
 
 Complete reference for all Velocity helper functions in HealthLake Data Transformation Agent. All helpers are automatically registered in the Velocity context.
 

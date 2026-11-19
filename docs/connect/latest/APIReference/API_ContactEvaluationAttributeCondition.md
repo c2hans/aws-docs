@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactE
 ---
 
 # ContactEvaluationAttributeCondition
-<a name="API_ContactEvaluationAttributeCondition"></a>
 
 An attribute condition for contact evaluation filtering.
 

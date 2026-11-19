@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # CreateLoadBalancerPolicy
-<a name="API_CreateLoadBalancerPolicy"></a>
 
 Creates a policy with the specified attributes for the specified load balancer.
 

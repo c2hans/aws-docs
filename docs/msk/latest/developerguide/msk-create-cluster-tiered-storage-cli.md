@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-create-clu
 ---
 
 # Create an Amazon MSK cluster with tiered storage with the AWS CLI
-<a name="msk-create-cluster-tiered-storage-cli"></a>
 
 To enable tiered storage on a cluster, create the cluster with the correct Apache Kafka version and attribute for tiered storage. Follow the code example below. Also, complete the steps in the next section to [Create a Kafka topic with tiered storage enabled with the AWS CLI](#msk-create-topic-tiered-storage-cli).
 

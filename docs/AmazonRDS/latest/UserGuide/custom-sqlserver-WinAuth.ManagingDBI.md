@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-sqlser
 ---
 
 # Managing a DB instance in a Domain
-<a name="custom-sqlserver-WinAuth.ManagingDBI"></a>
 
  You can use the console, AWS CLI, or the Amazon RDS API to manage your DB instance and its relationship with your domain. For example, you can move the DB instance into, out of, or between domains.
 

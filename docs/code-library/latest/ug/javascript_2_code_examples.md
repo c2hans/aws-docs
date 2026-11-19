@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/javascript_2_code
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Code examples for SDK for JavaScript (v2)
-<a name="javascript_2_code_examples"></a>
 
 The following code examples show you how to use the AWS SDK for JavaScript (v2) with AWS.
 

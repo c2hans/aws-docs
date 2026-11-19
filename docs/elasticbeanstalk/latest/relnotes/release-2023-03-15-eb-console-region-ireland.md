@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk launches new console design in AWS Region Europe (Ireland) on March 15, 2023
-<a name="release-2023-03-15-eb-console-region-ireland"></a>
 
 AWS Elastic Beanstalk launches new console design in AWS Region *Europe (Ireland)*.
 

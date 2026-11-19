@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Plan your deployment
-<a name="governance-deployment"></a>
 
 ## GDPR Supportive Capabilities
 <a name="gdpr-supportive-capabilities"></a>

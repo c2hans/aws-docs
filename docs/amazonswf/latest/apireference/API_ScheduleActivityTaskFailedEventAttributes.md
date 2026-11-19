@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Schedu
 ---
 
 # ScheduleActivityTaskFailedEventAttributes
-<a name="API_ScheduleActivityTaskFailedEventAttributes"></a>
 
 Provides the details of the `ScheduleActivityTaskFailed` event.
 

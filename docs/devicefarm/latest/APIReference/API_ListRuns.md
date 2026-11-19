@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListR
 ---
 
 # ListRuns
-<a name="API_ListRuns"></a>
 
 Gets information about runs, given an AWS Device Farm project ARN.
 

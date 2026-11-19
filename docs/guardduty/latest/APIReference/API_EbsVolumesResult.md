@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_EbsVol
 ---
 
 # EbsVolumesResult
-<a name="API_EbsVolumesResult"></a>
 
 Describes the configuration of scanning EBS volumes as a data source.
 

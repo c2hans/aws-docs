@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/refere
 ---
 
 # Export an image of Infrastructure Composer's visual canvas
-<a name="reference-features-export"></a>
 
 This topic describes the AWS Infrastructure Composer console **export canvas** feature.
 

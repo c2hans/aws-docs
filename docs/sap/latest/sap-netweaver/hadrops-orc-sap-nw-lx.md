@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/hadrops-orc-sap
 ---
 
 # HA/DR operations
-<a name="hadrops-orc-sap-nw-lx"></a>
 
 ## Oracle Data Guard
 <a name="odg-hadrops-orc-sap-nw-lx"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-kms-bes
 ---
 
 # Detection and monitoring best practices for AWS KMS
-<a name="monitoring"></a>
 
 Detection and monitoring are an important part of understanding the availability, state, and usage of your AWS Key Management Service (AWS KMS) keys. Monitoring helps maintain the security, reliability, availability, and performance of your AWS solutions. AWS provides several tools for monitoring your KMS keys and AWS KMS operations. This section describes how to configure and use these tools to gain greater visibility into your environment and monitor the usage of your KMS keys.
 

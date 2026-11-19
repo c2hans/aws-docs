@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CacheSettings
-<a name="API_CacheSettings"></a>
 
 Describes the cache settings of an Amazon Lightsail content delivery network (CDN) distribution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/connectors-sa
 ---
 
 # Connect to Salesforce
-<a name="connectors-salesforce"></a>
 
 To connect App Studio with Salesforce to enable builders to access and use Salesforce resources in applications, you must create and configure a connected app in Salesforce and create a Salesforce connector in App Studio.
 

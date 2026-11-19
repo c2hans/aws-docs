@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsDyna
 ---
 
 # AwsDynamoDbTableBillingModeSummary
-<a name="API_AwsDynamoDbTableBillingModeSummary"></a>
 
 Provides information about the billing for read/write capacity on the table.
 

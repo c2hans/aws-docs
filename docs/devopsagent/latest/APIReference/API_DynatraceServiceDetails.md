@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Dyna
 ---
 
 # DynatraceServiceDetails
-<a name="API_DynatraceServiceDetails"></a>
 
 Complete service details for Dynatrace integration.
 

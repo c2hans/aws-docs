@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_WaitCancelledDetai
 ---
 
 # WaitCancelledDetails
-<a name="API_WaitCancelledDetails"></a>
 
 Details about a wait operation that was cancelled.
 

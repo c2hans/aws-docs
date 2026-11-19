@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Des
 ---
 
 # DescribeDirectoryDataAccess
-<a name="API_DescribeDirectoryDataAccess"></a>
 
 Obtains status of directory data access enablement through the Directory Service Data API for the specified directory.
 

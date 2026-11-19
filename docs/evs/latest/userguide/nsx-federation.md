@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/nsx-federation.html
 ---
 
 # Set up NSX Federation
-<a name="nsx-federation"></a>
 
 With VMware NSX Federation, you can manage networking and security for several NSX sites from one Global Manager. You can use NSX Federation with Amazon Elastic VMware Service for disaster recovery and multi-site networking across AWS Regions, Availability Zones, and on-premises sites.
 

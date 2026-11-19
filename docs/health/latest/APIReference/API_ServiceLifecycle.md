@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_ServiceLi
 ---
 
 # ServiceLifecycle
-<a name="API_ServiceLifecycle"></a>
 
 Contains lifecycle information for an AWS service version, including lifecycle events and version recommendations.
 

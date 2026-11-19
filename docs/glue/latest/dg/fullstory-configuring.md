@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/fullstory-configuring.htm
 ---
 
 # Configuring Fullstory
-<a name="fullstory-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Fullstory, you must meet the following requirements:
 

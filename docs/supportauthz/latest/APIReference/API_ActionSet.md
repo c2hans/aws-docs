@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Act
 ---
 
 # ActionSet
-<a name="API_ActionSet"></a>
 
 The set of actions authorized by a permit. Specify either all actions or a list of specific actions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Build an environment to upgrade, migrate, and compare OpenSearch clusters
-<a name="solution-overview"></a>
 
 **Tip**
 For a guided, conversational experience that handles configuration generation, schema extraction, and troubleshooting automatically, use Migration Assistant AI agent mode. See [AI-assisted migration](agent-assisted-migration.md).
@@ -62,7 +61,7 @@ The intended audience for using this solution’s features and capabilities in t
 
 To follow the migration story end to end, read this guide in this order:
 
-1.  [Solution overview](#solution-overview) - confirm the supported migration path and core concepts.
+1.  [Solution overview](solution-overview.md) - confirm the supported migration path and core concepts.
 
 1.  [Prepare for migration](prepare-for-migration.md) - understand the architecture, plan the deployment, and deploy Migration Assistant.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Update
 ---
 
 # UpdateDatasourcePackages
-<a name="API_UpdateDatasourcePackages"></a>
 
 Starts a data source package for the Detective behavior graph.
 

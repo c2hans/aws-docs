@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Maturity model for adopting generative AI on AWS
-<a name="introduction"></a>
 
 *Haofei Feng, Xin Chen, Chris Dorrington, Sam Edwards, Melanie Li, Bin Liu, and Romain Vivier, Amazon Web Services*
 

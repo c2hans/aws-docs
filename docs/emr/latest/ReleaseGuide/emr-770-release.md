@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-770-release.
 ---
 
 # Amazon EMR release 7.7.0
-<a name="emr-770-release"></a>
 
 ## 7.7.0 supported lifecycle
 <a name="emr-770-supported-lifecycle"></a>

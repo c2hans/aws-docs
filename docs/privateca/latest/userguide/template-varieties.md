@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/template-vari
 ---
 
 # AWS Private CA template varieties
-<a name="template-varieties"></a>
 
 AWS Private CA supports four varieties of template.
 + **Base templates**

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/p
 ---
 
 # Opportunity pipeline analysis
-<a name="partner-analytics-opportunity-pipeline"></a>
 
 **Note**
 Data is available for download from January 2021 onward.

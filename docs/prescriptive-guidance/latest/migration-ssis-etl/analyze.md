@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Analysis phase
-<a name="analyze"></a>
 
 Analyzing the information from the discovery phase helps you understand the patterns and design the target architecture better. Follow these pointers to improve the outcome of analysis:
 + The logging option at the [package level](https://learn.microsoft.com/en-us/sql/integration-services/performance/integration-services-ssis-logging) logs events and captures runtime information for each component. Use custom logging so that you can configure log files to include additional information, such as execution IDs and other runtime values.

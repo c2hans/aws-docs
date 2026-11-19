@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/view-function-package.html
 ---
 
 # View a function package in AWS TNB
-<a name="view-function-package"></a>
 
 Learn how to view the content of a function package.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/TTL-how-to-upd
 ---
 
 # Update the default Time to Live (TTL) value of a table
-<a name="TTL-how-to-update-default"></a>
 
 You can update an existing table with a new default TTL value. TTL values are set in seconds, and the maximum configurable value is 630,720,000 seconds, which is the equivalent of 20 years.
 

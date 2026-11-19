@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Task governance setup
-<a name="sagemaker-hyperpod-eks-operate-console-ui-governance-setup-task-governance"></a>
 
 This section includes information on how to set up the Amazon SageMaker HyperPod task governance EKS add-on. This includes granting permissions that allows you to set task prioritization, compute allocation for teams, how idle compute is shared, and task preemption for teams.
 

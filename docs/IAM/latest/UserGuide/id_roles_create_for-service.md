@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for
 ---
 
 # Create a role to delegate permissions to an AWS service
-<a name="id_roles_create_for-service"></a>
 
 Many AWS services require that you use roles to allow the service to access resources in other services on your behalf. A role that a service assumes to perform actions on your behalf is called a [service role](id_roles.md#iam-term-service-role). When a role serves a specialized purpose for a service, it is categorized as a [service-linked role](id_roles.md#iam-term-service-linked-role). To see what services support using service-linked roles, or whether a service supports any form of temporary credentials, see [AWS services that work with IAM](reference_aws-services-that-work-with-iam.md). To learn how an individual service uses roles, choose the service name in the table to view the documentation for that service.
 

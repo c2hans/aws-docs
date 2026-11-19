@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafR
 ---
 
 # AwsWafRateBasedRuleMatchPredicate
-<a name="API_AwsWafRateBasedRuleMatchPredicate"></a>
 
 A match predicate. A predicate might look for characteristics such as specific IP addresses, geographic locations, or sizes.
 

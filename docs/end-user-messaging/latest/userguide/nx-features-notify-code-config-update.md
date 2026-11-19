@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Update a notify code configuration
-<a name="nx-features-notify-code-config-update"></a>
 
 Update a notify code configuration to change its passcode policy, channel templates, name, or deletion protection setting. The updated policy applies to new verifications; verifications already in progress keep the policy captured when they were sent.
 

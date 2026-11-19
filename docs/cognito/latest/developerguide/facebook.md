@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/facebook.h
 ---
 
 # Setting up Facebook as an identity pools IdP
-<a name="facebook"></a>
 
 Amazon Cognito identity pools work with Facebook to provide federated authentication for your application users. This section explains how to register and set up your application with Facebook as an IdP.
 

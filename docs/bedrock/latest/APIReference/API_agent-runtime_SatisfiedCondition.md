@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # SatisfiedCondition
-<a name="API_agent-runtime_SatisfiedCondition"></a>
 
 Represents a condition that was satisfied during a condition node evaluation in a flow execution.
 

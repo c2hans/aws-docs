@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_DeleteEntitl
 ---
 
 # DeleteEntitlement
-<a name="API_DeleteEntitlement"></a>
 
 Deletes a Windows Server License entitlement for virtual machines in an Amazon EVS environment. Deleting an entitlement stops usage tracking for the specified virtual machines.
 

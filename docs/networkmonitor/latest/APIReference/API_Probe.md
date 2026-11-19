@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_P
 ---
 
 # Probe
-<a name="API_Probe"></a>
 
 Describes information about a network monitor probe.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Custom
 ---
 
 # CustomRoutingEndpointDescription
-<a name="API_CustomRoutingEndpointDescription"></a>
 
 A complex type for an endpoint for a custom routing accelerator. Each endpoint group can include one or more endpoints, which are virtual private cloud (VPC) subnets.
 

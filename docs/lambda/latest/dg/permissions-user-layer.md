@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/permissions-user-layer.
 ---
 
 # Granting users access to a Lambda layer
-<a name="permissions-user-layer"></a>
 
 Use [identity-based policies](access-control-identity-based.md) to allow users, user groups, or roles to perform operations on Lambda layers. The following policy grants a user permission to create layers and use them with functions. The resource patterns allow the user to work in any AWS Region and with any layer version, as long as the name of the layer starts with `test-`.
 

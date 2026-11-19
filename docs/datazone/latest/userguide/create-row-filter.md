@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/create-row-fil
 ---
 
 # Create row filters in Amazon DataZone
-<a name="create-row-filter"></a>
 
 Amazon DataZone allows you to create row filters that you can use when approving subscriptions to make sure that the subscriber can only access rows of data as defined in the row filters. To create a row filter, follow the steps below:
 

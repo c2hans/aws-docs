@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteRecove
 ---
 
 # DeleteRecoveryPlanStep
-<a name="API_DeleteRecoveryPlanStep"></a>
 
 Deletes a step from a Recovery Plan.
 

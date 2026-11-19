@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 ---
 
 # Cost
-<a name="cost"></a>
 
  You are responsible for the cost of the AWS services used while running this guidance. As of this revision, the cost for running this guidance with the default settings in the US East (N. Virginia) Region is approximately **$620.55 per month**. These costs are for the resources shown in the [Sample cost table](#sample-cost-table).
 

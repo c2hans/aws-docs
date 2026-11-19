@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-packaging-job-b
 ---
 
 # Package a Model (Boto3)
-<a name="edge-packaging-job-boto3"></a>
 
 You can create a SageMaker Edge Manager packaging job with the AWS SDK for Python (Boto3). Before continuing, make sure you have satisfied the [Complete prerequisites](edge-packaging-job-prerequisites.md).
 

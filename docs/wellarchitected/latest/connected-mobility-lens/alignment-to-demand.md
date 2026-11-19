@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Alignment to demand
-<a name="alignment-to-demand"></a>
 
 | CMSUS\_2: Are you scaling the infrastructure in use at edge and cloud as per workload requirements? Do you have this process under full automation?  |
 | --- |

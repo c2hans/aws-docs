@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/cloudwatch-ut
 ---
 
 # CodeBuild CloudWatch resource utilization metrics
-<a name="cloudwatch-utilization-metrics"></a>
 
 **Note**
 CodeBuild resource utilization metrics are only available in the following regions:

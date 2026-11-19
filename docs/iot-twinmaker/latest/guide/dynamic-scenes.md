@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/dynamic-scene
 ---
 
 # Dynamic scenes
-<a name="dynamic-scenes"></a>
 
 AWS IoT TwinMaker scenes unlock the power of the [knowledge graph](tm-knowledge-graph.md) by storing scene nodes and settings in an entity component. Use the AWS IoT TwinMaker console to create **dynamic scenes** to more easily manage, build, and render 3D scenes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DeleteDBCluste
 ---
 
 # DeleteDBClusterSnapshot
-<a name="API_DeleteDBClusterSnapshot"></a>
 
 Deletes a DB cluster snapshot. If the snapshot is being copied, the copy operation is terminated.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/thumbnail-limits.htm
 ---
 
 # Limit on thumbnails in MediaLive
-<a name="thumbnail-limits"></a>
 
 There is a limit to the number of MediaLive thumbnails that you can view or retrieve. The limit is:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/sysops-administ
 ---
 
 # Content Domain 3: Deployment, Provisioning, and Automation
-<a name="sysops-administrator-associate-03-domain3"></a>
 
 **Topics**
 + [Task 3.1: Provision and maintain cloud resources.](#sysops-administrator-associate-03-domain3-task1)

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::ConfiguredTableAssociation ConfiguredTableAssociationAnalysisRuleAggregation
-<a name="aws-properties-cleanrooms-configuredtableassociation-configuredtableassociationanalysisruleaggregation"></a>
 
  The configured table association analysis rule applied to a configured table with the aggregation analysis rule.
 

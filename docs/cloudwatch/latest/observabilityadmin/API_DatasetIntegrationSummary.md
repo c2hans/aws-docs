@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # DatasetIntegrationSummary
-<a name="API_DatasetIntegrationSummary"></a>
 
 Contains summary information about a dataset integration, including its ARN, associated IAM role, and creation and update timestamps, as returned by `ListDatasetIntegrations`.
 

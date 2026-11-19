@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/snap-to
 ---
 
 # Positions not located on a road in Amazon Location
-<a name="snap-to-nearby-road"></a>
 
 When using `CalculateRoute` or `CalculateRouteMatrix`, if you specify a departure, destination, or waypoint position that's not located on a road Amazon Location moves the position to a nearby road.
 

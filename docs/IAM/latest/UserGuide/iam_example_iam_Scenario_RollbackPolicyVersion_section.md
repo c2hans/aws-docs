@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Sce
 ---
 
 # Roll back an IAM policy version using an AWS SDK
-<a name="iam_example_iam_Scenario_RollbackPolicyVersion_section"></a>
 
 The following code example shows how to:
 + Get the list of policy versions in order by date.

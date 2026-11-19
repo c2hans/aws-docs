@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeScalingActivities
-<a name="API_DescribeScalingActivities"></a>
 
 Gets information about the scaling activities in the account and Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-sa
 ---
 
 # Remediating exposures for Amazon SageMaker models
-<a name="exposure-sagemaker-model"></a>
 
 AWS Security Hub can generate exposure findings for Amazon SageMaker models. A model whose artifact runs malicious code when it loads can act with the permissions of the model's execution role. Remediate these findings before you deploy or continue to serve the model.
 

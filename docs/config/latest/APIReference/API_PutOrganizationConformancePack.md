@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutOrgani
 ---
 
 # PutOrganizationConformancePack
-<a name="API_PutOrganizationConformancePack"></a>
 
 Deploys conformance packs across member accounts in an AWS Organization. For information on how many organization conformance packs and how many AWS Config rules you can have per account, see [**Service Limits**](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html) in the * AWS Config Developer Guide*.
 

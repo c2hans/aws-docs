@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite
 ---
 
 # Granting Quick access to IAM users
-<a name="iam-users"></a>
 
 **Note**
 An *IAM user* is an entity that you create in AWS Identity and Access Management (IAM). This type of entity accesses your AWS account by using long-term credentials. As a best practice, AWS recommends that you grant access through temporary credentials by using identity federation and IAM roles. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).

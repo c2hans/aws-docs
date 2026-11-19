@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMediaTailorServiceRolePolicy
-<a name="AWSMediaTailorServiceRolePolicy"></a>
 
 **Description**: Enable access to AWS Resources used or managed by MediaTailor
 

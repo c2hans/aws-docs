@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/endpoints-smooth.
 ---
 
 # Creating a Microsoft Smooth Streaming endpoint
-<a name="endpoints-smooth"></a>
 
 Create an endpoint that formats content for devices that support Microsoft Smooth Streaming.
 

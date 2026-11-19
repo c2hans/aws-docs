@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # UpdateSessionData
-<a name="API_amazon-q-connect_UpdateSessionData"></a>
 
 Updates the data stored on an Amazon Q in Connect Session.
 

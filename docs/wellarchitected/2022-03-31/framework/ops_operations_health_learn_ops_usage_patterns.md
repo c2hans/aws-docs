@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS09-BP05 Learn the expected patterns of activity for operations
-<a name="ops_operations_health_learn_ops_usage_patterns"></a>
 
  Establish patterns of operations activities to identify anomalous activity so that you can respond appropriately if necessary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_GetCoreDe
 ---
 
 # GetCoreDevice
-<a name="API_GetCoreDevice"></a>
 
 Retrieves metadata for a Greengrass core device.
 

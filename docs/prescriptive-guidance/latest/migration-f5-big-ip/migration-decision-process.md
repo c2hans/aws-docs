@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Deciding what to migrate
-<a name="migration-decision-process"></a>
 
 When you migrate, you have to decide which workloads are essential; which workloads are "nice to have" but not essential; and which workloads are not necessary and can be [retired once the migration is complete.](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-retiring-applications/welcome.html)
 

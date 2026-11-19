@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # RDS for PostgreSQL
-<a name="rds-PostgreSQL"></a>
 
 Complete the following steps to configure an OpenSearch Ingestion pipeline with Amazon RDS for PostgreSQL.
 

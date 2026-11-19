@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_De
 ---
 
 # DeleteConfigurationProfile
-<a name="API_DeleteConfigurationProfile"></a>
 
 Deletes a configuration profile.
 

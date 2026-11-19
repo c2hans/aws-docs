@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MPA::ApprovalTeam Policy
-<a name="aws-properties-mpa-approvalteam-policy"></a>
 
 Contains details for a policy. Policies define what operations a team that define the permissions for team resources.
 

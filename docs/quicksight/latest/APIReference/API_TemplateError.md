@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Templ
 ---
 
 # TemplateError
-<a name="API_TemplateError"></a>
 
 List of errors that occurred when the template version creation failed.
 

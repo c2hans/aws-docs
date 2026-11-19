@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/using-byoip
 ---
 
 # Requirements
-<a name="using-byoip.requirements"></a>
 
 You can bring up to two qualifying IP address ranges to AWS Global Accelerator per AWS account.
 

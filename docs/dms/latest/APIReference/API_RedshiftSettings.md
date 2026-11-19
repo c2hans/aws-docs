@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_RedshiftSett
 ---
 
 # RedshiftSettings
-<a name="API_RedshiftSettings"></a>
 
 Provides information that defines an Amazon Redshift endpoint.
 

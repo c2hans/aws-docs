@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-read-repl
 ---
 
 # Working with RDS for Db2 replica backups
-<a name="db2-read-replicas.backups"></a>
 
 You can create and restore backups of an RDS for Db2 replica just like a primary database. However, there are important differences in how replica backups work, particularly regarding restore timing and backup retention settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # AttributeValueItem
-<a name="API_connect-customer-profiles_AttributeValueItem"></a>
 
 List containing the values for the given attribute.
 

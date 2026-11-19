@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Using APIs with Amazon SQS
-<a name="sqs-working-with-apis"></a>
 
 This topic provides information about constructing Amazon SQS endpoints, making query API requests using the GET and POST methods, and using batch API actions. For detailed information about Amazon SQS [actions](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_Operations.html)—including parameters, errors, examples, and [data types](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_Types.html), see the [*Amazon Simple Queue Service API Reference*](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/).
 

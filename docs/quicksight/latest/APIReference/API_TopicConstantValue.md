@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicConstantValue
-<a name="API_TopicConstantValue"></a>
 
 The definition for a `TopicConstantValue`.
 

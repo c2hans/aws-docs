@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Serv
 ---
 
 # ServiceHealth
-<a name="API_ServiceHealth"></a>
 
 Represents the health of an AWS service.
 

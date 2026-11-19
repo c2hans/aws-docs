@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # QuestionMetric
-<a name="API_QuestionMetric"></a>
 
 A metric for a particular question in the pillar.
 

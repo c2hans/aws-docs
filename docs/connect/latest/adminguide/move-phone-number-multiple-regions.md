@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/move-phone-num
 ---
 
 # Move a claimed phone number to multiple Connect Customer instances across AWS Regions
-<a name="move-phone-number-multiple-regions"></a>
 
 **Note**
 **New user?** Check out the [Connect Customer Global Resiliency Workshop](https://catalog.workshops.aws/amazon-connect-global-resiliency/en-US). This online course guides you through the process of onboarding and testing phone number and agent failover using new APIs through the AWS CLI.

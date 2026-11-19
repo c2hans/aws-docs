@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/how-it-works.da
 ---
 
 # Use AWS Ground Station Dataflow endpoint groups
-<a name="how-it-works.dataflow-endpoint-group"></a>
 
  *Dataflow endpoints* define the location where you want the data to be synchronously streamed to or from during contacts. Dataflow endpoints are always created as part of a *dataflow endpoint group*. By including multiple dataflow endpoints in a group, you are asserting that the specified endpoints can all be used together during a single contact. For example, if a contact needs to send data to three separate dataflow endpoints, you must have three endpoints in a single dataflow endpoint group that match the dataflow endpoint configs in your mission profile.
 

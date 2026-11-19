@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/how-to-create-
 ---
 
 # Create an outbound campaign using event triggers
-<a name="how-to-create-campaigns-using-event-triggers"></a>
 
 **Set up event triggers in the Connect Customer admin website**
 

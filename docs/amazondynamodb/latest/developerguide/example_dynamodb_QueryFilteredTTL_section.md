@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Query a DynamoDB table for TTL items using an AWS SDK
-<a name="example_dynamodb_QueryFilteredTTL_section"></a>
 
 The following code examples show how to query for TTL items.
 

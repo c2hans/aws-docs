@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/sdk-witho
 ---
 
 # Updating the bundle
-<a name="sdk-without-package-manager-updating"></a>
 
 When a new version of the SDK is released:
 

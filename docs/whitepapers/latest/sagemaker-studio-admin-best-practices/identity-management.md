@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Identity management
-<a name="identity-management"></a>
 
  This section discusses how workforce users in a corporate directory federate into AWS accounts and access SageMaker AI Studio. First, we will briefly describe how users, groups, and roles are mapped, and how user federation works.
 

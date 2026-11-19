@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/ssml.html
 ---
 
 # Generating speech from SSML documents
-<a name="ssml"></a>
 
 You can use Amazon Polly to generate speech from either plain text or from documents marked up with Speech Synthesis Markup Language (SSML). Using SSML-enhanced text gives you additional control over how Amazon Polly generates speech from the text you provide.
 

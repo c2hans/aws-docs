@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForLogDeliveryPolicy
-<a name="AWSServiceRoleForLogDeliveryPolicy"></a>
 
 **Description**: Allows Log Delivery service to deliver logs by calling log destination on your behalf.
 

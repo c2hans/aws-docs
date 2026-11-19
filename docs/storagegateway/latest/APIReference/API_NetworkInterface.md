@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_N
 ---
 
 # NetworkInterface
-<a name="API_NetworkInterface"></a>
 
 Describes a gateway's network interface.
 

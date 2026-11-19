@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/stopping-router-i
 ---
 
 # Stopping a router I/O in MediaConnect
-<a name="stopping-router-io"></a>
 
 You can stop a router input or output when you need to temporarily pause its operation. When you stop an I/O, it changes to a `Standby` state and stops incurring charges.
 

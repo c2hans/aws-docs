@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # Goal
-<a name="API_Goal"></a>
 
 This structure contains the attributes that determine the goal of an SLO. This includes the time period for evaluation and the attainment threshold.
 

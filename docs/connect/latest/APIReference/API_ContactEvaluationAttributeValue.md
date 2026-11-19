@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactE
 ---
 
 # ContactEvaluationAttributeValue
-<a name="API_ContactEvaluationAttributeValue"></a>
 
 The value of a contact evaluation attribute condition.
 

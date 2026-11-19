@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/error-handling.ht
 ---
 
 # Handling errors in the AWS SDK for Rust
-<a name="error-handling"></a>
 
 Understanding how and when the AWS SDK for Rust returns errors is important to building high-quality applications using the SDK. The following sections describe the different errors you might encounter from the SDK and how to handle them appropriately.
 

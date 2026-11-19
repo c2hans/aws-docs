@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/starting-health-scr
 ---
 
 # Starting an AWS HealthScribe transcription job
-<a name="starting-health-scribe-job"></a>
 
 You can start an AWS HealthScribe job using the AWS CLI or AWS SDKs.
 

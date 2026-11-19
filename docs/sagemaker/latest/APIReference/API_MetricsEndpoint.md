@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Metric
 ---
 
 # MetricsEndpoint
-<a name="API_MetricsEndpoint"></a>
 
 Specifies a metrics endpoint for a container, including the path where the container exposes Prometheus-formatted metrics and the frequency at which to publish them to Amazon CloudWatch.
 

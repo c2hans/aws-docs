@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Disaggregated Prefill and Decode for HyperPod inference
-<a name="sagemaker-hyperpod-model-deployment-dpd"></a>
 
 Disaggregated Prefill and Decode (DPD) separates the two phases of LLM inference, prefill and decode, onto dedicated GPU pools and transfers key-value (KV) cache between them over Elastic Fabric Adapter (EFA) using GPU-Direct Remote Direct Memory Access (RDMA).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/step-create-mpts
 ---
 
 # Advanced tab – Suppressing generation of SI/PSI tables
-<a name="step-create-mpts-tab-advanced"></a>
 
 Many of the fields on this tab let you control generation of all the SI/PSI tables that Elemental Statmux can generate. For guidance for disabling generation of these tables, see [Passing through SI/PSI tables](mpts-passthrough-PSI-pids.md).
 

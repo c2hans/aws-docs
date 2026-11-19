@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-forma
 ---
 
 # Targeted business outcomes
-<a name="targeted-business-outcomes"></a>
 
 The approach in this guide helps organizations achieve the following outcomes.
 

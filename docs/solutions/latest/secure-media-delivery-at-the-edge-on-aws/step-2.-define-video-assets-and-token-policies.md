@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Step 2. Define video assets and token policies
-<a name="step-2.-define-video-assets-and-token-policies"></a>
 
  After the solution’s CloudFormation stack is deployed, you can define your video assets details (if you haven’t provided them as CloudFormation stack input) by following the next steps:
 

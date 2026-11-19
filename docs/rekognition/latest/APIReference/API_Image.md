@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Imag
 ---
 
 # Image
-<a name="API_Image"></a>
 
 Provides the input image either as bytes or an S3 object.
 

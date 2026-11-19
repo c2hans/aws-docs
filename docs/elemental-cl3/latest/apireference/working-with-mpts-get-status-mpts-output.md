@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # GET Status: Get the Status of an MPTS Output
-<a name="working-with-mpts-get-status-mpts-output"></a>
 
 ## HTTP Request and Response
 <a name="working-with-mpts-get-status-mpts-output-http-request-response"></a>

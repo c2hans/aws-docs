@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/prompting-video-ca
 ---
 
 # Camera controls
-<a name="prompting-video-camera-control"></a>
 
 The follow terminology will be useful in achieving specific camera shots, framing, and movement in your videos.
 

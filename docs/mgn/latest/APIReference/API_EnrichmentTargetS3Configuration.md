@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_EnrichmentTa
 ---
 
 # EnrichmentTargetS3Configuration
-<a name="API_EnrichmentTargetS3Configuration"></a>
 
 S3 configuration for storing the enriched import file.
 

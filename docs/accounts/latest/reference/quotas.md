@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/quotas.html
 ---
 
 # Quotas for AWS Account Management
-<a name="quotas"></a>
 
 Your AWS account has default quotas, formerly referred to as limits, for each AWS service.
 

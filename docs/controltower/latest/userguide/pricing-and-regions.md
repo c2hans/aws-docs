@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/pricing-an
 ---
 
 # Step 2a. Review and select your AWS Regions
-<a name="pricing-and-regions"></a>
 
 Be sure you've correctly designated the AWS Region that you select for your home Region. After you've deployed AWS Control Tower, you can't change the home Region.
 

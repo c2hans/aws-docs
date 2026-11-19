@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceC
 ---
 
 # InstanceConnectEndpointDnsNames
-<a name="API_InstanceConnectEndpointDnsNames"></a>
 
 The DNS names of the endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # GetScope
-<a name="API_GetScope"></a>
 
 Retrieves the details of the specified scope.
 

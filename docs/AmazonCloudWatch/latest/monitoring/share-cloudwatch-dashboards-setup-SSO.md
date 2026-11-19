@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/share
 ---
 
 # Setting up SSO for CloudWatch dashboard sharing
-<a name="share-cloudwatch-dashboards-setup-SSO"></a>
 
 To set up dashboard sharing through a third-party single sign-on provider that supports SAML, follow these steps.
 

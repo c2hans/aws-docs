@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-distrib
 ---
 
 # Distributed System Deployment
-<a name="net-win-distributed-system-deployment"></a>
 
 Distributed system: every instance of SAP NetWeaver (ASCS/SCS, database, PAS, and optionally AAS) can run on a separate Amazon EC2 instance. This option is suited for both production and non-production workloads.
 

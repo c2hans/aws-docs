@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Memory strategies in Amazon OpenSearch Memory
-<a name="memory-strategies"></a>
 
 In Amazon OpenSearch Memory, a *memory strategy* defines one kind of memory that a space extracts from its events. Each strategy has a type, a name, an optional description, and an optional configuration that controls when and how it extracts. A space can have up to 10 strategies, and each one extracts from the same events independently, so one conversation can produce facts, a summary, and domain-specific records at the same time.
 

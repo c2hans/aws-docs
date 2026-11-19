@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/sip-applications-mai
 ---
 
 # Amazon Chime SDK SIP media applications availability change
-<a name="sip-applications-maintenance-mode"></a>
 
 After careful consideration, we have made the decision to put the Amazon Chime SDK PSTN Audio service into Maintenance Mode, effective September 29, 2026. As of this date, there is no new feature or capability development for the service, and as of October 29, 2026, the service is no longer open to new customers.
 

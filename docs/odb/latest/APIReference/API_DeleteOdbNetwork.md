@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DeleteOdbNet
 ---
 
 # DeleteOdbNetwork
-<a name="API_DeleteOdbNetwork"></a>
 
 Deletes the specified ODB network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormItemEnablementConditionOperand
-<a name="API_EvaluationFormItemEnablementConditionOperand"></a>
 
 An operand of the enablement condition.
 

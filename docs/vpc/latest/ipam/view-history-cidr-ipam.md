@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/view-history-cidr-ipam.h
 ---
 
 # View IP address history
-<a name="view-history-cidr-ipam"></a>
 
 Follow the steps in this section to view the history of an IP address or CIDR in an IPAM scope. You can use the historical data to analyze and audit your network security and routing policies. IPAM automatically retains IP address monitoring data for up to three years.
 

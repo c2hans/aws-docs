@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # DescribeDefaultParameters
-<a name="API_dax_DescribeDefaultParameters"></a>
 
 Returns the default system parameter information for the DAX caching software.
 

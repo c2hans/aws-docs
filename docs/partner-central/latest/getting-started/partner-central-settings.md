@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/p
 ---
 
 # AWS Partner Central settings
-<a name="partner-central-settings"></a>
 
 In addition to capturing company profile details in the Partner and Seller profile sections, partners can manage other details, such as contact information, tags, and domains in the AWS Partner Central settings tab.
 

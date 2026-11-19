@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_PlainTextM
 ---
 
 # PlainTextMessage
-<a name="API_PlainTextMessage"></a>
 
 Defines an ASCII text message to send to the user.
 

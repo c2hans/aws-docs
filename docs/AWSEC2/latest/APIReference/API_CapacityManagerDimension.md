@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityM
 ---
 
 # CapacityManagerDimension
-<a name="API_CapacityManagerDimension"></a>
 
  Represents dimension values for capacity metrics, including resource identifiers, geographic information, and reservation details used for grouping and filtering capacity data.
 

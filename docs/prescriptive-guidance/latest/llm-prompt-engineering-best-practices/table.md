@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/llm-prompt-
 ---
 
 # Comparison table
-<a name="table"></a>
 
 In the following table, green highlights denote a desired response and red highlights denote an unsuccessful defense. No highlights indicate an ambiguous or neutral outcome (not necessarily good or bad). For the final tally at the bottom, green cells count for \+1, red for -1, and neutral for 0.
 

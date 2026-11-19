@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # GroupingConfiguration
-<a name="API_amazon-q-connect_GroupingConfiguration"></a>
 
 The configuration information of the grouping of Amazon Q in Connect users.
 

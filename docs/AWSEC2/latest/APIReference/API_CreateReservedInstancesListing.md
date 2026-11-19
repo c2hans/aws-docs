@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRes
 ---
 
 # CreateReservedInstancesListing
-<a name="API_CreateReservedInstancesListing"></a>
 
 Creates a listing for Amazon EC2 Standard Reserved Instances to be sold in the Reserved Instance Marketplace. You can submit one Standard Reserved Instance listing at a time. To get a list of your Standard Reserved Instances, you can use the [DescribeReservedInstances](API_DescribeReservedInstances.md) operation.
 

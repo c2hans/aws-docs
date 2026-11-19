@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UnusedP
 ---
 
 # UnusedPermissionsRecommendationStep
-<a name="API_UnusedPermissionsRecommendationStep"></a>
 
 Contains information about the action to take for a policy in an unused permissions finding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # Location
-<a name="API_Location"></a>
 
 A location in a policy that is represented as a path through the JSON representation and a corresponding span.
 

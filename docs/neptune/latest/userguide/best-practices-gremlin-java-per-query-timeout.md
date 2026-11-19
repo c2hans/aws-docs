@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-
 ---
 
 # Optionally, set timeouts at a per-query level
-<a name="best-practices-gremlin-java-per-query-timeout"></a>
 
 Neptune provides you with the ability to set a timeout for your queries using the parameter group option `neptune_query_timeout` (see [Parameters](parameters.md)). You can also override the global timeout, with code like this:
 

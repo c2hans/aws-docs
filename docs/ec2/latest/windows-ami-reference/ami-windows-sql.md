@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/windows-ami-reference/ami-win
 ---
 
 # AWS Windows Server license-included SQL Server AMIs
-<a name="ami-windows-sql"></a>
 
 AWS Windows AMIs with Microsoft SQL Server include one of the following SQL Server editions. Launching an instance from a Windows AMI with Microsoft SQL Server enables you to run the instance as a database server.
 + SQL Enterprise Edition

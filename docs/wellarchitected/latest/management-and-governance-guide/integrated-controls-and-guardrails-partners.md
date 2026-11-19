@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # Integrated controls partners
-<a name="integrated-controls-and-guardrails-partners"></a>
 
  The M&G Guide recommends you consider the following questions when choosing an AWS Partner solution for controls:
 +  Does it integrate with lifecycle events for AWS Control Tower?

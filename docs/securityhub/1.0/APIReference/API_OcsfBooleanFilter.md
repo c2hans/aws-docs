@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_OcsfBoo
 ---
 
 # OcsfBooleanFilter
-<a name="API_OcsfBooleanFilter"></a>
 
 Enables filtering of security findings based on boolean field values in OCSF.
 

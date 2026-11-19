@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Timestream::ScheduledQuery TargetConfiguration
-<a name="aws-properties-timestream-scheduledquery-targetconfiguration"></a>
 
 Configuration used for writing the output of a query.
 

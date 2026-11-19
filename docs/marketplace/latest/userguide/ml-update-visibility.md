@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-update-v
 ---
 
 # Updating product visibility
-<a name="ml-update-visibility"></a>
 
 1.  Sign in to your seller account in the [AWS Partner Central](https://us-east-1.console.aws.amazon.com/partnercentral/home).
 

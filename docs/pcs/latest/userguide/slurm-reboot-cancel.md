@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-reboot-cancel
 ---
 
 # Cancel a pending reboot in AWS PCS
-<a name="slurm-reboot-cancel"></a>
 
 Cancel a pending reboot to avoid unnecessary downtime when the issue has been resolved or when reboot is no longer needed.
 

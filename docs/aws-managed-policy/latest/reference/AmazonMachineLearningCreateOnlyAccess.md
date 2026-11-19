@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMachineLearningCreateOnlyAccess
-<a name="AmazonMachineLearningCreateOnlyAccess"></a>
 
 **Description**: Provides create access for non-prediction Amazon Machine Learning resources.
 

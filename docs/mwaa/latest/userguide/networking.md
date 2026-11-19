@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/networking.html
 ---
 
 # Networking
-<a name="networking"></a>
 
 This guide describes the Amazon VPC network setup you'll need for an Amazon MWAA environment.
 

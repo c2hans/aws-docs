@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_GrantFlowEnt
 ---
 
 # GrantFlowEntitlements
-<a name="API_GrantFlowEntitlements"></a>
 
  Grants entitlements to an existing flow.
 

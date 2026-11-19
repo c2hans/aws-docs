@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DeleteC
 ---
 
 # DeleteCluster
-<a name="API_DeleteCluster"></a>
 
 Deletes a cluster. It also deletes all associated nodes and node endpoints.
 

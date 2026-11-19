@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicVisual
-<a name="API_TopicVisual"></a>
 
 The definition for a `TopicVisual`.
 
@@ -26,7 +25,7 @@ Required: No
 
  ** SupportingVisuals **   <a name="QS-Type-TopicVisual-SupportingVisuals"></a>
 The supporting visuals for the `TopicVisual`.
-Type: Array of [TopicVisual](#API_TopicVisual) objects
+Type: Array of [TopicVisual](API_TopicVisual.md) objects
 Required: No
 
  ** VisualId **   <a name="QS-Type-TopicVisual-VisualId"></a>

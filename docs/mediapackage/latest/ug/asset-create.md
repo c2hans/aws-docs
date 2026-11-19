@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/asset-create.html
 ---
 
 # Ingesting an asset
-<a name="asset-create"></a>
 
 To ingest source content, create an asset in AWS Elemental MediaPackage. When MediaPackage ingests content, it creates a unique playback URL for every packaging configuration that's associated with the asset.
 

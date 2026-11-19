@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Pa
 ---
 
 # PatternObjectFilterConfiguration
-<a name="API_agent_PatternObjectFilterConfiguration"></a>
 
 The configuration of filtering certain objects or content types of the data source.
 

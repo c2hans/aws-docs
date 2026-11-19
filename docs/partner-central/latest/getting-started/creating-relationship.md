@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/c
 ---
 
 # Creating a relationship
-<a name="creating-relationship"></a>
 
 When creating a new relationship, you'll need to provide specific information to properly configure the connection:
 

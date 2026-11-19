@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteWo
 ---
 
 # DeleteWorkspace
-<a name="API_DeleteWorkspace"></a>
 
 Deletes a workspace and removes all associated view and resource assignments.
 

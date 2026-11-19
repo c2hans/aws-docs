@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Gi
 ---
 
 # GitLabResourceCapabilities
-<a name="API_GitLabResourceCapabilities"></a>
 
 Capabilities for an integrated GitLab repository.
 

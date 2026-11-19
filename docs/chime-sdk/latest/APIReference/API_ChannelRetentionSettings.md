@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Channe
 ---
 
 # ChannelRetentionSettings
-<a name="API_ChannelRetentionSettings"></a>
 
 The details of the retention settings for a channel.
 

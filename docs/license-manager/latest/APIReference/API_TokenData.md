@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # TokenData
-<a name="API_TokenData"></a>
 
 Describes a token.
 

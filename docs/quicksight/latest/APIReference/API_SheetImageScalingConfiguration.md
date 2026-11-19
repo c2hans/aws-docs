@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetImageScalingConfiguration
-<a name="API_SheetImageScalingConfiguration"></a>
 
 Determines how the image is scaled
 

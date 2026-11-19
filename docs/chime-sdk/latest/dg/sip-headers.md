@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/sip-headers.html
 ---
 
 # Using SIP headers in the Amazon Chime SDK PTSN audio service
-<a name="sip-headers"></a>
 
 You can now send and receive a User-To-User header, a Diversion header, and custom SIP headers in your AWS Lambda functions when you want to exchange call context information with your SIP infrastructure.
 + The User-to-User (UUI) header can be used to send call control data. This data is inserted by the application initiating a session and used by the application accepting the session. It is not used for any basic SIP functionality. For example, you could use the UUI header in a call center to pass information between agents about a call.

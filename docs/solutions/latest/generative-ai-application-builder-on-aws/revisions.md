@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 Publication date: *October 2023 (last update: January 2025)*
 

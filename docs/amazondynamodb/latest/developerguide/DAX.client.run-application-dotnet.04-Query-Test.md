@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # 04-Query-Test.cs
-<a name="DAX.client.run-application-dotnet.04-Query-Test"></a>
 
 The `04-Query-Test.cs` program performs `Query` operations on `TryDaxTable`.
 

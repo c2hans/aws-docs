@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_L
 ---
 
 # ListOrganizationPortfolioAccess
-<a name="API_ListOrganizationPortfolioAccess"></a>
 
 Lists the organization nodes that have access to the specified portfolio. This API can only be called by the management account in the organization or by a delegated admin.
 

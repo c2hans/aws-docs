@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/test-report-j
 ---
 
 # Set up test reporting with Jasmine
-<a name="test-report-jasmine"></a>
 
 The following procedure demonstrates how to set up test reporting in AWS CodeBuild with the [JasmineBDD testing framework](http://jasmine.github.io/).
 

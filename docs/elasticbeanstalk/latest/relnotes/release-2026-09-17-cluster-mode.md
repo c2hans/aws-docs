@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk Cluster Mode for running multiple applications on shared infrastructure on September 17, 2026
-<a name="release-2026-09-17-cluster-mode"></a>
 
 AWS Elastic Beanstalk introduces Cluster Mode, a new deployment mode that lets you run and manage multiple applications on shared infrastructure in your account, powered by Amazon Elastic Kubernetes Service (Amazon EKS).
 

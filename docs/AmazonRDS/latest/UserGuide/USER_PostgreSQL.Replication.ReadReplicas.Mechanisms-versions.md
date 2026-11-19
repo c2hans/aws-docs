@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PostgreS
 ---
 
 # How streaming replication works for different RDS for PostgreSQL versions
-<a name="USER_PostgreSQL.Replication.ReadReplicas.Mechanisms-versions"></a>
 
 As discussed in [Read replica configuration with PostgreSQL](USER_PostgreSQL.Replication.ReadReplicas.Configuration.md), RDS for PostgreSQL uses PostgreSQL's native streaming replication protocol to send WAL data from the source DB instance. It sends source WAL data to read replicas for both in-Region and cross-Region read replicas. With version 9.4, PostgreSQL introduced physical replication slots as a supporting mechanism for the replication process.
 

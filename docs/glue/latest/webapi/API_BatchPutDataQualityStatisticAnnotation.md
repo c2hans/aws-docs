@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchPutDataQuali
 ---
 
 # BatchPutDataQualityStatisticAnnotation
-<a name="API_BatchPutDataQualityStatisticAnnotation"></a>
 
 Annotate datapoints over time for a specific data quality statistic. The API requires both profileID and statisticID as part of the InclusionAnnotation input. The API only works for a single statisticId across multiple profiles.
 

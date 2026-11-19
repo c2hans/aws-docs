@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetTables.html
 ---
 
 # GetTables
-<a name="API_GetTables"></a>
 
 Retrieves the definitions of some or all of the tables in a given `Database`.
 

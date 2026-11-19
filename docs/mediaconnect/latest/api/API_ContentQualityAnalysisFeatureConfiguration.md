@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ContentQuali
 ---
 
 # ContentQualityAnalysisFeatureConfiguration
-<a name="API_ContentQualityAnalysisFeatureConfiguration"></a>
 
 Configures the content quality analysis features for the router input.
 

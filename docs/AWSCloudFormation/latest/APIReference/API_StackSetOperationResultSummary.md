@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackSetOperationResultSummary
-<a name="API_StackSetOperationResultSummary"></a>
 
 The structure that contains information about a specified operation's results for a given account in a given Region.
 

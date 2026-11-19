@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/workbench.data
 ---
 
 # Create a new data model with NoSQL Workbench
-<a name="workbench.datamodel.new"></a>
 
 You can use the NoSQL Workbench data modeler to design new data models based on your application's data access patterns. To create a new data model for Amazon Keyspaces, you can use the NoSQL Workbench data modeler to create keyspaces, tables, and columns. Follow these steps to create a new data model.
 

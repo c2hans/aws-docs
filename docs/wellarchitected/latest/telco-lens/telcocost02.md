@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoc
 ---
 
 # Cost-effective resources
-<a name="telcocost02"></a>
 
 |  TELCOCOST02: How are you choosing the right compute solution for your telco Network Functions?  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/next-generation-sagemaker/latest/usergui
 ---
 
 # Get started with uploading and querying data in Amazon SageMaker Unified Studio
-<a name="upload-query"></a>
 
 You can use the query editor to perform analysis using SQL. The query editor tool provides a place to write and run queries, view results, and share your work with your team.
 

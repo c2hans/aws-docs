@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Deploy an application with AWS Launch Wizard for SQL Server on Windows (Console)
-<a name="launch-wizard-deploying"></a>
 
 ## Access AWS Launch Wizard
 <a name="accessing-launch-wizard"></a>

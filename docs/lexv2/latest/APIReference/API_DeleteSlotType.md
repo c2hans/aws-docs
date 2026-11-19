@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteSlot
 ---
 
 # DeleteSlotType
-<a name="API_DeleteSlotType"></a>
 
 Deletes a slot type from a bot locale.
 

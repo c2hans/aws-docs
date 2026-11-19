@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Prelo
 ---
 
 # PreloadDataConfig
-<a name="API_PreloadDataConfig"></a>
 
 The input properties for the preloaded (Synthea) data store.
 

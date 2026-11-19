@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListGoals
-<a name="API_ListGoals"></a>
 
 Lists goals in the specified agent space with optional filtering
 

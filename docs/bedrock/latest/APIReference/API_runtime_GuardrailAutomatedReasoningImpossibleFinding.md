@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailAutomatedReasoningImpossibleFinding
-<a name="API_runtime_GuardrailAutomatedReasoningImpossibleFinding"></a>
 
 Indicates that no valid claims can be made due to logical contradictions in the premises or rules.
 

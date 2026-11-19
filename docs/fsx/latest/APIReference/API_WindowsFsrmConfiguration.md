@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_WindowsFsrmC
 ---
 
 # WindowsFsrmConfiguration
-<a name="API_WindowsFsrmConfiguration"></a>
 
 The File Server Resource Manager (FSRM) configuration that Amazon FSx for Windows File Server uses for the file system. When FSRM is enabled, you can manage and monitor storage quotas, file screening, storage reports, and file classification.
 

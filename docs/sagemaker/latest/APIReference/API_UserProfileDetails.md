@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UserPr
 ---
 
 # UserProfileDetails
-<a name="API_UserProfileDetails"></a>
 
 The user profile details.
 

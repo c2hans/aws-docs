@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Electro-Optical Imagery on AWS
-<a name="electro-optical-imagery"></a>
 
 Publication date: **May 13, 2021 ([Diagram history](diagram-history.md))**
 

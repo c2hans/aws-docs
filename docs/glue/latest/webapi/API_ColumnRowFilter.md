@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ColumnRowFilter.h
 ---
 
 # ColumnRowFilter
-<a name="API_ColumnRowFilter"></a>
 
 A filter that uses both column-level and row-level filtering.
 

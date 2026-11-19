@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Opera
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [BatchDetectDominantLanguage](API_BatchDetectDominantLanguage.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_E
 ---
 
 # ExportStatus
-<a name="API_ExportStatus"></a>
 
 The current status of an archive export job.
 

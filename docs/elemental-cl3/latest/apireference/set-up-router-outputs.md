@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # Setting Up Router Outputs
-<a name="set-up-router-outputs"></a>
 
 The Router Outputs entity holds information about each router output that is connected to an SDI card on an AWS Elemental Live appliance. The information is a mapping from the router output to the SDI input.
 

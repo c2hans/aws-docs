@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Distribu
 ---
 
 # Distribution
-<a name="API_Distribution"></a>
 
 Information about a traffic distribution.
 

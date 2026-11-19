@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # autoregress
-<a name="CWL_QuerySyntax-Autoregress"></a>
 
 Use the `autoregress` command to create lagged (previous-row) copies of a field's values. This is the lag/lead equivalent for CloudWatch Logs Insights.
 

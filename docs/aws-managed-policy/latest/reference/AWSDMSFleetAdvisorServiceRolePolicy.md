@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDMSFleetAdvisorServiceRolePolicy
-<a name="AWSDMSFleetAdvisorServiceRolePolicy"></a>
 
 **Description**: Allows DMS Fleet Advisor to manage CloudWatch metrics on your behalf.
 

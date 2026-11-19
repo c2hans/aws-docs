@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Ori
 ---
 
 # OriginEndpointListConfiguration
-<a name="API_OriginEndpointListConfiguration"></a>
 
 The configuration of the origin endpoint.
 

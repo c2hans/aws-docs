@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 ---
 
 # Data retrieval APIs for AWS CodeDeploy secure host commands service
-<a name="awscodedeploysecurehostcommandsservice"></a>
 
 AWS CodeDeploy secure host commands service provides the following APIs for data retrieval.
 

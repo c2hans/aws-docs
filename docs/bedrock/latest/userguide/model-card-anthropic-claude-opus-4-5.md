@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anth
 ---
 
 # Claude Opus 4.5
-<a name="model-card-anthropic-claude-opus-4-5"></a>
 
 ## ![Anthropic logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png) Anthropic — Claude Opus 4.5
 <a name="model-card-anthropic-claude-opus-4-5-header"></a>

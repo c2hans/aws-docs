@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIDP03-BP02 Minimize unwanted bias in your datasets
-<a name="raidp03-bp02"></a>
 
  When assessing the quality of a dataset, determine whether it appropriately represents the demographics of the expected range of system users. Consider datasets that include self-reported demographic labels. Calculate if datasets contain sufficient representation across demographic groups to enable statistically valid fairness assessments or fairness outcomes.
 

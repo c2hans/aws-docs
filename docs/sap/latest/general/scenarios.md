@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/scenarios.html
 ---
 
 # Disaster recovery scenarios
-<a name="scenarios"></a>
 
 The following are the three disaster recovery scenarios.
 

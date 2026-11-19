@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-describe-d
 ---
 
 # Describing an ACME domain validation
-<a name="sdk-acme-describe-domain-validation"></a>
 
 The following example shows how to use the [DescribeAcmeDomainValidation](https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeAcmeDomainValidation.html) function.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # StartServicePeriodTypeSort
-<a name="API_channel_StartServicePeriodTypeSort"></a>
 
 Sorting options specific to start service period handshakes.
 

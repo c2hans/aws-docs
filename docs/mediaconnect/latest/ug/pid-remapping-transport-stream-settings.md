@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/pid-remapping-tra
 ---
 
 # Transport stream settings
-<a name="pid-remapping-transport-stream-settings"></a>
 
 PID remapping changes the transport stream itself. MediaConnect makes the following changes at the transport stream level:
 + Regenerates the Program Association Table (PAT), Program Map Table (PMT), and Service Description Table (SDT) so that they describe the updated structure of the output streams. The PMT preserves the input stream details, such as language and codec.

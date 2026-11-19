@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/describe-agent-clien
 ---
 
 # describe-agent-clients
-<a name="describe-agent-clients"></a>
 
 Describes the agents that are registered with the broker.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-password-r
 ---
 
 # Rotating sign-in credentials
-<a name="msk-password-rotation"></a>
 
 Amazon MSK supports password-only rotation, where an associated secret keeps a single username and rotation changes only the password. This corresponds to the Secrets Manager [single-user rotation strategy](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets_strategies.html#rotating-secrets-one-user-one-password). After the updated password propagates to the brokers, new authentication attempts require the new password, and the previous password stops authenticating.
 

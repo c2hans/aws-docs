@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/directories-v3
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # AWS ParallelCluster internal directories
-<a name="directories-v3"></a>
 
 There are several internal directories that AWS ParallelCluster uses to share data within the cluster. The following directories are shared between the head node, compute nodes, and login nodes:
 + `/opt/slurm`

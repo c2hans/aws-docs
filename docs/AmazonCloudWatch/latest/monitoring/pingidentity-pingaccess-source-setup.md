@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/pingi
 ---
 
 # Source configuration for Ping Identity PingAccess
-<a name="pingidentity-pingaccess-source-setup"></a>
 
 ## Integrating with Ping Identity PingAccess
 <a name="pingidentity-pingaccess-integration"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/enabling-the
 ---
 
 # Enabling the agent with code
-<a name="enabling-the-agent-with-code"></a>
 
 You can enable the Amazon CodeGuru Profiler agent in your application by adding code inside the startup routine of your application.
 

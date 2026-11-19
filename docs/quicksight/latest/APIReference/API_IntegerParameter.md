@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Integ
 ---
 
 # IntegerParameter
-<a name="API_IntegerParameter"></a>
 
 An integer parameter.
 

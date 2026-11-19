@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_CountC
 ---
 
 # CountClosedWorkflowExecutions
-<a name="API_CountClosedWorkflowExecutions"></a>
 
 Returns the number of closed workflow executions within the given domain that meet the specified filtering criteria.
 

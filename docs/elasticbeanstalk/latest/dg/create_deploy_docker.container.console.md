@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy
 ---
 
 # Configuring Elastic Beanstalk Docker environments
-<a name="create_deploy_docker.container.console"></a>
 
 This chapter explains additional configuration information for all of the supported Docker platform branches, including the ECS managed Docker platform branch. Unless a specific platform branch or platform branch component is identified in a section, it applies to all environments that are running supported Docker and ECS manged Docker platforms.
 

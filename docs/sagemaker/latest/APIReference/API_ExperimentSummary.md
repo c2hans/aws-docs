@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Experi
 ---
 
 # ExperimentSummary
-<a name="API_ExperimentSummary"></a>
 
 A summary of the properties of an experiment. To get the complete set of properties, call the [DescribeExperiment](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeExperiment.html) API and provide the `ExperimentName`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/disaster-reco
 ---
 
 # Resilience in AWS Backup
-<a name="disaster-recovery-resiliency"></a>
 
  AWS Backup takes its resilience — and your data security — extremely seriously.
 

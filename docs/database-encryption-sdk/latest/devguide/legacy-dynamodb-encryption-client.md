@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Legacy DynamoDB Encryption Client
-<a name="legacy-dynamodb-encryption-client"></a>
 
 On June 9, 2023, our client-side encryption library was renamed to AWS Database Encryption SDK. The AWS Database Encryption SDK continues to support legacy DynamoDB Encryption Client versions. For more information on the different parts of the client-side encryption library that changed with the rename, see [Amazon DynamoDB Encryption Client rename](DDBEC-rename.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/analyticsdataset
 ---
 
 # Analytics data lake actions
-<a name="analyticsdataset-api"></a>
 
 These APIs are in preview release for Connect Customer and are subject to change.
 

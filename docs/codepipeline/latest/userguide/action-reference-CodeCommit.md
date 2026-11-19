@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # CodeCommit source action reference
-<a name="action-reference-CodeCommit"></a>
 
 Starts the pipeline when a new commit is made on the configured CodeCommit repository and branch.
 

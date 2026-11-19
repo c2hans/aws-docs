@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
  While serverless applications take the undifferentiated heavy-lifting off developers, there are still important principles to apply.
 

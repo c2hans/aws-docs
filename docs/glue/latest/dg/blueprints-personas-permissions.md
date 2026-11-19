@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/blueprints-personas-permi
 ---
 
 # Permissions for personas and roles for AWS Glue blueprints
-<a name="blueprints-personas-permissions"></a>
 
 The following are the typical personas and suggested AWS Identity and Access Management (IAM) permissions policies for personas and roles for AWS Glue blueprints.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ClientAuthenticationResultType
-<a name="API_ClientAuthenticationResultType"></a>
 
 The access token and its metadata from a machine-to-machine (M2M) client credentials grant.
 

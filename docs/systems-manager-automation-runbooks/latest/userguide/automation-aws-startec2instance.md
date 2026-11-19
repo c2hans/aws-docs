@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-StartEC2Instance`
-<a name="automation-aws-startec2instance"></a>
 
 **Description**
 

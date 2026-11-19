@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_AutoSc
 ---
 
 # AutoScalingSettings
-<a name="API_AutoScalingSettings"></a>
 
 The optional auto scaling settings for a table with provisioned throughput capacity.
 

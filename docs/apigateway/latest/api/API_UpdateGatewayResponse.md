@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateGatewayR
 ---
 
 # UpdateGatewayResponse
-<a name="API_UpdateGatewayResponse"></a>
 
 Updates a GatewayResponse of a specified response type on the given RestApi.
 

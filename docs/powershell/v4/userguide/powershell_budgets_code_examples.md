@@ -7,7 +7,6 @@ AWS Tools for PowerShell V4 has reached end of support.
 We recommend that you migrate to [AWS Tools for PowerShell V5](https://docs.aws.amazon.com/powershell/v5/userguide/). For additional details and information on how to migrate, please refer to our [end of support announcement](https://aws.amazon.com/blogs/developer/aws-tools-for-powershell-v4-end-of-support-announcement/).
 
 # AWS Budgets examples using Tools for PowerShell V4
-<a name="powershell_budgets_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS Tools for PowerShell V4 with AWS Budgets.
 

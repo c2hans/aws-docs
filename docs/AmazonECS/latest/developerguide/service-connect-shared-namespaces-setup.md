@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-
 ---
 
 # Using shared AWS Cloud Map namespaces with Amazon ECS Service Connect
-<a name="service-connect-shared-namespaces-setup"></a>
 
 Setting up shared AWS Cloud Map namespaces for Service Connect involves the following steps: Namespace owner creating the namespace, owner sharing it through AWS Resource Access Manager (AWS RAM), consumer accepting the resource share, and consumer configuring Service Connect to use the shared namespace.
 

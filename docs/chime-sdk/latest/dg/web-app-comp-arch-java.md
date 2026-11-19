@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/web-app-comp-arch-ja
 ---
 
 # Understanding web application component architecture for the Amazon Chime SDK
-<a name="web-app-comp-arch-java"></a>
 
 This diagram shows the architecture of an Amazon Chime SDK web client application:
 

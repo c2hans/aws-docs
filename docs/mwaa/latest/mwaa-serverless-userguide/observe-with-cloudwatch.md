@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/ob
 ---
 
 # Observability with CloudWatch
-<a name="observe-with-cloudwatch"></a>
 
 You may view and manage your workflows on the [Amazon MWAA Serverless Console](https://us-east-2.console.aws.amazon.com/mwaa/home#serverlessWorkflows) however, for advanced observability Amazon MWAA Serverless Serverless provides integration with Amazon CloudWatch where tasks logs are stored in a log group provided by you. If you do not provide a log group name while creating a workflow, Amazon MWAA Serverless will create a new log group.
 

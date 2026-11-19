@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/removing-an-add-on.
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Remove an Amazon EKS add-on from a cluster
-<a name="removing-an-add-on"></a>
 
 You can remove an Amazon EKS add-on from your cluster using `eksctl`, the AWS Management Console, or the AWS CLI.
 

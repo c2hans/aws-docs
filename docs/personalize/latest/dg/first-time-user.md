@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/first-time-user.ht
 ---
 
 # Guidance for first-time Amazon Personalize users
-<a name="first-time-user"></a>
 
 If you're a first-time user of Amazon Personalize, the following resources can help you get started.
 

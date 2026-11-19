@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-sha
 ---
 
 # Unshare an Image Builder resource from AWS RAM
-<a name="manage-shared-resources-unshare"></a>
 
 To unshare an Image Builder resource that you own, such as a shared component, image, or recipe, you must remove it from the AWS Resource Access Manager resource share. You can do this using the AWS RAM console or the AWS CLI.
 

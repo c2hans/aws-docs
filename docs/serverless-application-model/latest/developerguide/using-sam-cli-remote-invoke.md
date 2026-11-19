@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Introduction to testing in the cloud with sam remote invoke
-<a name="using-sam-cli-remote-invoke"></a>
 
 Use the AWS Serverless Application Model Command Line Interface (AWS SAM CLI) `sam remote invoke` command to interact with supported AWS resources in the AWS Cloud. You can use `sam remote invoke` to invoke the following resources:
 + **Amazon Kinesis Data Streams** – Send data records to Kinesis Data Streams applications.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchNetworkFlowMonitorAgentPublishPolicy
-<a name="CloudWatchNetworkFlowMonitorAgentPublishPolicy"></a>
 
 **Description**: You can use this policy in IAM roles that are attached to Amazon EC2 and Amazon EKS instance resources to send telemetry reports (metrics) to a Network Flow Monitor endpoint.
 

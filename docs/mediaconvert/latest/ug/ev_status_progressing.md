@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/ev_status_progres
 ---
 
 # Events with PROGRESSING status
-<a name="ev_status_progressing"></a>
 
 MediaConvert sends the event for `PROGRESSING` when a job moves from the `SUBMITTED` state to the `PROGRESSING` state.
 

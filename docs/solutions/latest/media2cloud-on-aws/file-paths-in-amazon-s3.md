@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/file
 ---
 
 # File paths in Amazon S3
-<a name="file-paths-in-amazon-s3"></a>
 
  When a customer deploys Media2Cloud on AWS, the solution creates four different Amazon Simple Storage Service (Amazon S3) buckets to store assets:
 +  A web bucket that stores the static HTML, CSS, and JavaScript files for the web interface.

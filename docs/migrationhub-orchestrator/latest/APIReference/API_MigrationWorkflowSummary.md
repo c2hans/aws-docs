@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIRefe
 ---
 
 # MigrationWorkflowSummary
-<a name="API_MigrationWorkflowSummary"></a>
 
 The summary of a migration workflow.
 

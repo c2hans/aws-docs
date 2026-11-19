@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/sdk-programmatic-a
 ---
 
 # Grant programmatic access
-<a name="sdk-programmatic-access"></a>
 
 You can run the AWS CLI and code examples in this guide on your local computer or other AWS environments, such as an Amazon Elastic Compute Cloud instance. To run the examples, you need to grant access to the AWS SDK operations that the examples use.
 

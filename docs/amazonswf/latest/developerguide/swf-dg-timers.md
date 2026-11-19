@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dg-t
 ---
 
 # Timers in Amazon SWF
-<a name="swf-dg-timers"></a>
 
 With a timer, you can notify your decider when a certain amount of time has elapsed.
 

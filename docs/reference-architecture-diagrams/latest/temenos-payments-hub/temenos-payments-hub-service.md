@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/t
 ---
 
 # Temenos Payments Hub: Service architecture
-<a name="temenos-payments-hub-service"></a>
 
 Publication date: **September 2, 2021 ([Diagram history](#tph-svc-history))**
 

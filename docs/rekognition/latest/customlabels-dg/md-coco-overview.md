@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-co
 ---
 
 # The COCO dataset format
-<a name="md-coco-overview"></a>
 
 A COCO dataset consists of five sections of information that provide information for the entire dataset. The format for a COCO object detection dataset is documented at [COCO Data Format](http://cocodataset.org/#format-data).
 + info – general information about the dataset.

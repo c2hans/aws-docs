@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # AWS Database Migration Service overview
-<a name="chap-sql-server-aurora-pg.tools.awsdms"></a>
 
 This topic provides conceptual information about AWS Database Migration Service (AWS DMS). It introduces you to the capabilities and benefits of AWS DMS for migrating databases to AWS quickly and securely
 

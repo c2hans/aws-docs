@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # ServerStrategy
-<a name="API_ServerStrategy"></a>
 
  Contains information about a strategy recommendation for a server.
 

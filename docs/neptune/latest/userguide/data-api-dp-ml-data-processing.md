@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/data-api-dp-ml-
 ---
 
 # Neptune ML data-processing API
-<a name="data-api-dp-ml-data-processing"></a>
 
 **Data-processing actions:**
 + [StartMLDataProcessingJob (action)](#StartMLDataProcessingJob)

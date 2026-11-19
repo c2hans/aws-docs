@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_B
 ---
 
 # BounceAction
-<a name="API_BounceAction"></a>
 
 The action to send a bounce response for the email. When executed, this action generates a non-delivery report (bounce) back to the sender.
 

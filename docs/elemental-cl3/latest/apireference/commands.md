@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/comman
 ---
 
 # Conductor Live Commands
-<a name="commands"></a>
 
 **Topics**
 + [Profiles](commands-profiles.md)

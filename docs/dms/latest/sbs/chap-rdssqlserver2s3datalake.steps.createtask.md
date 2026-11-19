@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-rdssqlserver2s3datal
 ---
 
 # Step 6: Create an AWS DMS Task
-<a name="chap-rdssqlserver2s3datalake.steps.createtask"></a>
 
 After you configured the replication instance and endpoints, you need to analyze your source database. A good understanding of the workload helps plan an effective migration approach and minimize configuration issues. Find some of the important considerations following and learn how they apply to our walkthrough.
 

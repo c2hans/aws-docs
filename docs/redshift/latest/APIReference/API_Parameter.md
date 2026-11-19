@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Paramet
 ---
 
 # Parameter
-<a name="API_Parameter"></a>
 
 Describes a parameter in a cluster parameter group.
 

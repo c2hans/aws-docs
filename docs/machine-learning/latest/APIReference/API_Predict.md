@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # Predict
-<a name="API_Predict"></a>
 
 Generates a prediction for the observation using the specified `ML Model`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CodeSigning.
 ---
 
 # CodeSigning
-<a name="API_CodeSigning"></a>
 
 Describes the method to use when code signing a file.
 

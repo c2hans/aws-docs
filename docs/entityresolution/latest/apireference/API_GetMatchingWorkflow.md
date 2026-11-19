@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # GetMatchingWorkflow
-<a name="API_GetMatchingWorkflow"></a>
 
 Returns the `MatchingWorkflow` with a given name, if it exists.
 

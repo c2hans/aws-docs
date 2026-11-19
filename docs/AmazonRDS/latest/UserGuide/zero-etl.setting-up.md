@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.sett
 ---
 
 # Getting started with Amazon RDS zero-ETL integrations
-<a name="zero-etl.setting-up"></a>
 
 Before you create a zero-ETL integration, configure your RDS database and your data warehouse with the required parameters and permissions. During setup, you'll complete the following steps:
 

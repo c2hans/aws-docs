@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # How Amazon SageMaker Unified Studio works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Amazon SageMaker Unified Studio, learn what IAM features are available to use with Amazon SageMaker Unified Studio.
 

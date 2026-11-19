@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ResizeI
 ---
 
 # ResizeInfo
-<a name="API_ResizeInfo"></a>
 
 Describes a resize operation.
 

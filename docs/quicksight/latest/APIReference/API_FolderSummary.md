@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Folde
 ---
 
 # FolderSummary
-<a name="API_FolderSummary"></a>
 
 A summary of information about an existing Quick Sight folder.
 

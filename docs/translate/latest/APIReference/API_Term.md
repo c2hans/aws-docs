@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Term.h
 ---
 
 # Term
-<a name="API_Term"></a>
 
 The term being translated by the custom terminology.
 

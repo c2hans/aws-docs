@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/schedule-fields-acti
 ---
 
 # Fields for activating a per-outputs image overlay
-<a name="schedule-fields-activate-image-per-output"></a>
 
 This table shows the fields that apply for an action to activate an image overlay.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/pstn-invocations.htm
 ---
 
 # Understanding telephony events for Amazon Chime SDK PSTN audio service
-<a name="pstn-invocations"></a>
 
 The Audio Service invokes your AWS AWS Lambda function when certain events occur during a call. The following example shows the events, and text after the example explains each event.
 

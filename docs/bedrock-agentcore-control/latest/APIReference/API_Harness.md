@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Harness
-<a name="API_Harness"></a>
 
 Representation of a harness.
 

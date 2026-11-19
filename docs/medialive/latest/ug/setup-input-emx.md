@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-input-emx.html
 ---
 
 # Create a MediaConnect input
-<a name="setup-input-emx"></a>
 
 After MediaConnect is set up, you can create the MediaConnect input. A MediaLive user performs this step.
 

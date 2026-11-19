@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Job
 ---
 
 # JobWorkerExecutorConfiguration
-<a name="API_JobWorkerExecutorConfiguration"></a>
 
 Details about the polling configuration for the `JobWorker` action engine, or executor.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # LambdaSavingsEstimationMode
-<a name="API_LambdaSavingsEstimationMode"></a>
 
  Describes the savings estimation used for calculating savings opportunity for Lambda functions.
 

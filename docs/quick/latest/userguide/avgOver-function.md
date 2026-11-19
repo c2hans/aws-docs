@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/avgOver-function.
 ---
 
 # avgOver
-<a name="avgOver-function"></a>
 
 The `avgOver` function calculates the average of a measure partitioned by a list of dimensions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-IsUnique.
 ---
 
 # IsUnique
-<a name="dqdl-rule-types-IsUnique"></a>
 
 Checks whether all of the values in a column are unique, and returns a Boolean value.
 

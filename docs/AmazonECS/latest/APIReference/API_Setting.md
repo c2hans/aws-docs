@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Settin
 ---
 
 # Setting
-<a name="API_Setting"></a>
 
 The current account setting for a resource.
 

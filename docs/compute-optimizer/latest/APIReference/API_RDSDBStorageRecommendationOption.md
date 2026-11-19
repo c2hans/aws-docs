@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RDSDBStorageRecommendationOption
-<a name="API_RDSDBStorageRecommendationOption"></a>
 
  Describes the recommendation options for DB storage.
 

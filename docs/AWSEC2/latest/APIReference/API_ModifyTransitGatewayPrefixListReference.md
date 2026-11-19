@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTra
 ---
 
 # ModifyTransitGatewayPrefixListReference
-<a name="API_ModifyTransitGatewayPrefixListReference"></a>
 
 Modifies a reference (route) to a prefix list in a specified transit gateway route table.
 

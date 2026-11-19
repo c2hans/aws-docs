@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # ConnectPeerBgpConfiguration
-<a name="API_ConnectPeerBgpConfiguration"></a>
 
 Describes a core network BGP configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Analytics Studio
-<a name="analytics-studio"></a>
 
 Analytics Studio is a unified web interface for business analysts or data analysts to create and view dashboards, query and explore clickstream data, and manage metadata.
 

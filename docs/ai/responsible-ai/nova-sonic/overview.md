@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/nova-sonic/overview.ht
 ---
 
 # Amazon Nova Sonic
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/nova-sonic/images/card-background.jpg)
 

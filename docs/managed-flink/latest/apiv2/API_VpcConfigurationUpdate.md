@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_VpcConfig
 ---
 
 # VpcConfigurationUpdate
-<a name="API_VpcConfigurationUpdate"></a>
 
 Describes updates to the VPC configuration used by the application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/mfa-enabled
 ---
 
 # mfa-enabled-for-iam-console-access
-<a name="mfa-enabled-for-iam-console-access"></a>
 
 Checks if AWS multi-factor authentication (MFA) is enabled for all AWS Identity and Access Management (IAM) users that use a console password. The rule is COMPLIANT if MFA is enabled.
 

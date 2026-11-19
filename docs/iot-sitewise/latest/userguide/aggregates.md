@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/aggregates
 ---
 
 # Query asset property aggregates in AWS IoT SiteWise
-<a name="aggregates"></a>
 
 AWS IoT SiteWise automatically computes aggregated asset property values, which are a set of basic metrics calculated over multiple time intervals. AWS IoT SiteWise computes the following aggregates every minute, hour, and day for your asset properties:
 + **average** – The average (mean) of a property's values over a time interval.

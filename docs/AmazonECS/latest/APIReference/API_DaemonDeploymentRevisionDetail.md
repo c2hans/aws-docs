@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Daemon
 ---
 
 # DaemonDeploymentRevisionDetail
-<a name="API_DaemonDeploymentRevisionDetail"></a>
 
 Details about a daemon revision during a deployment, including running and draining instance counts per capacity provider.
 

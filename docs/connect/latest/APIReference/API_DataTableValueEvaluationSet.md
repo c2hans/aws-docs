@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DataTabl
 ---
 
 # DataTableValueEvaluationSet
-<a name="API_DataTableValueEvaluationSet"></a>
 
 A data table value evaluation set.
 

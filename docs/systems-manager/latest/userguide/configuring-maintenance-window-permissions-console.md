@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/configu
 ---
 
 # Control access to maintenance windows using the console
-<a name="configuring-maintenance-window-permissions-console"></a>
 
 The following procedures describe how to use the AWS Systems Manager console to create the required permissions and roles for maintenance windows.
 

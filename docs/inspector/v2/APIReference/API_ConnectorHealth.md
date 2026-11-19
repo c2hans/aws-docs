@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ConnectorH
 ---
 
 # ConnectorHealth
-<a name="API_ConnectorHealth"></a>
 
 The health and connectivity status of a connector, including the last time the status was checked and any diagnostic message. Returned as part of the `Connector` structure.
 

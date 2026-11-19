@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/nld-examples.html
 ---
 
 # Example bot descriptions for descriptive bot builder
-<a name="nld-examples"></a>
 
 Here are some helpful example bot descriptions you can use with descriptive bot builder in Amazon Lex V2.
 

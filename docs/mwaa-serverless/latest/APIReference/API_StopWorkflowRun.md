@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_
 ---
 
 # StopWorkflowRun
-<a name="API_StopWorkflowRun"></a>
 
 Stops a running workflow execution. This operation terminates all running tasks and prevents new tasks from starting. Amazon Managed Workflows for Apache Airflow Serverless gracefully shuts down the workflow execution by stopping task scheduling and terminating active ECS worker containers. The operation transitions the workflow run to a `STOPPING` state and then to `STOPPED` once all cleanup is complete. In-flight tasks may complete or be terminated depending on their current execution state.
 

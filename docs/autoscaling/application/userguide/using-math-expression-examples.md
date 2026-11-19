@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/using-
 ---
 
 # Use metric math expressions
-<a name="using-math-expression-examples"></a>
 
 The following section provides information and examples of predictive scaling policies that show how you can use metric math in your policy.
 

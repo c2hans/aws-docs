@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # ExecuteTrainingOperation
-<a name="API_ExecuteTrainingOperation"></a>
 
 Submits an asynchronous training operation to the specified training session. The service executes operations in sequence number order. The session must be in `Running` or `Blocked` state. Use `GetTrainingOperationResult` to poll for the result. Supported operation types: `forward`, `forwardBackward`, `optimizerStep`, `saveWeights`, `saveState`, and `loadState`.
 

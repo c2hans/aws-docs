@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # GenerateFindingRecommendation
-<a name="API_GenerateFindingRecommendation"></a>
 
 Creates a recommendation for an unused permissions finding.
 

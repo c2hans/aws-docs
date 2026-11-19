@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CreateEngagementInvitation
-<a name="API_CreateEngagementInvitation"></a>
 
  This action creates an invitation from a sender to a single receiver to join an engagement.
 

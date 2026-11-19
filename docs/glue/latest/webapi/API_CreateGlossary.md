@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateGlossary.ht
 ---
 
 # CreateGlossary
-<a name="API_CreateGlossary"></a>
 
 Creates a business glossary in AWS Glue Data Catalog. A glossary is a container for glossary terms that define business concepts.
 

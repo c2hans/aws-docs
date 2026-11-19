@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserIden
 ---
 
 # UserIdentityInfo
-<a name="API_UserIdentityInfo"></a>
 
 Contains information about the identity of a user.
 

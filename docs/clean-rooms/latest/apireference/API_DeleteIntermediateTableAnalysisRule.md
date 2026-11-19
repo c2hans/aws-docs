@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Dele
 ---
 
 # DeleteIntermediateTableAnalysisRule
-<a name="API_DeleteIntermediateTableAnalysisRule"></a>
 
 Deletes an analysis rule from an intermediate table. After the analysis rule is deleted, the intermediate table becomes unqueryable until a new analysis rule is attached. Only the intermediate table owner can call this operation.
 

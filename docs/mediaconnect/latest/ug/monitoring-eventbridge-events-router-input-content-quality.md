@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/monitoring-eventb
 ---
 
 # MediaConnect router input content quality event
-<a name="monitoring-eventbridge-events-router-input-content-quality"></a>
 
 AWS Elemental MediaConnect publishes the following event when the content quality status changes on a router input: `MediaConnect Router Input Content Quality`
 

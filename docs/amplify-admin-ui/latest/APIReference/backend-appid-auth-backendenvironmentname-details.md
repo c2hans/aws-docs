@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Auth backendEnvironmentName Details
-<a name="backend-appid-auth-backendenvironmentname-details"></a>
 
 The authentication and authorization settings from your Amplify project.
 

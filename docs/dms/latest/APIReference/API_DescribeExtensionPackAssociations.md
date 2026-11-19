@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeExte
 ---
 
 # DescribeExtensionPackAssociations
-<a name="API_DescribeExtensionPackAssociations"></a>
 
 Returns a paginated list of extension pack installation requests for a migration project, initiated by [StartExtensionPackAssociation](https://docs.aws.amazon.com/dms/latest/APIReference/API_StartExtensionPackAssociation.html).
 

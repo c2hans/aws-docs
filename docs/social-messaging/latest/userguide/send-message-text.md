@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/send-m
 ---
 
 # Example of sending a template message in AWS End User Messaging Social
-<a name="send-message-text"></a>
 
 For more information on the types of message templates that can be sent, see [Message template](https://developers.facebook.com/docs/whatsapp/cloud-api/guides/send-message-templates) in the *WhatsApp Business Platform Cloud API Reference*. For a list of message types that can be sent, see [Messages](https://developers.facebook.com/docs/whatsapp/conversation-types/) in the *WhatsApp Business Platform Cloud API Reference*.
 

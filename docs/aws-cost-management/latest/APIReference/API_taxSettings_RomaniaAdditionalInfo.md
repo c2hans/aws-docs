@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RomaniaAdditionalInfo
-<a name="API_taxSettings_RomaniaAdditionalInfo"></a>
 
 Additional tax information to specify for a TRN in Romania.
 

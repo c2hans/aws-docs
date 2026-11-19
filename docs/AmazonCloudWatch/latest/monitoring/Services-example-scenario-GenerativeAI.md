@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Servi
 ---
 
 # Example: Use Application Signals to troubleshoot generative AI applications interacting with Amazon Bedrock models
-<a name="Services-example-scenario-GenerativeAI"></a>
 
 You can use Application Signals to troubleshoot your generative AI applications that interact with Amazon Bedrock models. Application Signals streamlines this process by providing out-of-the-box telemetry data, offering deeper insights into your application's interactions with LLM models. It helps address key use cases such as:
 + Model configuration issues

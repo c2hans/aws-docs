@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_Untag
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Unassigns a tag from a retention rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/view-vpn-attachment.html
 ---
 
 # View a VPN attachment in AWS Transit Gateway
-<a name="view-vpn-attachment"></a>
 
 **To view your VPN attachments using the console**
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::Image
-<a name="aws-resource-imagebuilder-image"></a>
 
 An image resource represents a versioned AMI or container image that Image Builder produces. Each image is built from a recipe, tested, and then distributed to the Regions and accounts that you specify.
 

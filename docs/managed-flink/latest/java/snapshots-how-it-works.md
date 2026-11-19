@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/snapshots-how-
 ---
 
 # How enhanced snapshots work
-<a name="snapshots-how-it-works"></a>
 
 This page explains how enhanced snapshots work in Amazon Managed Service for Apache Flink. Read it before you upgrade an application to enhanced snapshot mode.
 

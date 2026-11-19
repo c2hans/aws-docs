@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ToolConfiguration
-<a name="API_amazon-q-connect_ToolConfiguration"></a>
 
 Configuration settings for a tool used by AI Agents.
 

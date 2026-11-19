@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf01.
 ---
 
 # Validate workload performance requirements
-<a name="perf01"></a>
 
  Performance efficiency starts with knowing what the business actually needs from a workload. Validating performance requirements gives technical teams and business stakeholders a common language and a shared set of goals, so performance carries appropriate weight in decisions at every level. When requirements are vague or assumed, teams optimize the wrong things and spend effort where it returns little value.
 

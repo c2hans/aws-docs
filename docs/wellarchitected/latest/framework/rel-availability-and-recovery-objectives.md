@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel-ava
 ---
 
 # Availability and recovery objectives
-<a name="rel-availability-and-recovery-objectives"></a>
 
  Availability and recovery objectives are the measures that turn reliability from an intention into a target you can design and test against. Availability quantifies how much of the time a workload performs its function. Recovery objectives set the limits on downtime and data loss you are willing to accept after a disruption. These are among the most misunderstood concepts in reliability, so this page defines them precisely and shows how to determine the levels your workload actually needs.
 

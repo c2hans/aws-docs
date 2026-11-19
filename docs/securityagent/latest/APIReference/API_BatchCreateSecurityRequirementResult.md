@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchCreateSecurityRequirementResult
-<a name="API_BatchCreateSecurityRequirementResult"></a>
 
 Contains information about a successfully created security requirement.
 

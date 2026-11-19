@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AwsEcrCont
 ---
 
 # AwsEcrContainerImageDetails
-<a name="API_AwsEcrContainerImageDetails"></a>
 
 The image details of the Amazon ECR container image.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v10-panels.html
 ---
 
 # Panels and visualizations in Grafana version 10
-<a name="v10-panels"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 10.x**.

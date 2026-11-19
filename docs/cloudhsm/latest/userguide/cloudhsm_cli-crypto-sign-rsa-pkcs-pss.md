@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-c
 ---
 
 # Generate a signature with the RSA-PKCS-PSS mechanism in CloudHSM CLI
-<a name="cloudhsm_cli-crypto-sign-rsa-pkcs-pss"></a>
 
 Use the **crypto sign rsa-pkcs-pss** command in CloudHSM CLI to generate a signature using an RSA private key and the `RSA-PKCS-PSS` signing mechanism.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Descri
 ---
 
 # DescribeGateway
-<a name="API_DescribeGateway"></a>
 
 Describes a gateway, including its configuration, status, and the type-specific infrastructure settings that it uses.
 

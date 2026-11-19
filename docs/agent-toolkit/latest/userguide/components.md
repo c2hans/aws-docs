@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/component
 ---
 
 # Agent Toolkit for AWS components
-<a name="components"></a>
 
 The Agent Toolkit for AWS includes four components that work together to help AI coding agents build, deploy, and manage applications on AWS.
 + **[AWS MCP Server](mcp-server.md)** — A managed server that gives agents access to AWS through the Model Context Protocol.

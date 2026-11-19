@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Datab
 ---
 
 # Edit a fleet health view for CloudWatch Database Insights
-<a name="Database-Insights-fleet-views-edit"></a>
 
 To edit a fleet health view, use the following procedure.
 

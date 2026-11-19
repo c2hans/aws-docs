@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveResponseEvent
-<a name="API_agent-runtime_AgenticRetrieveResponseEvent"></a>
 
 A chunk of the generated answer text.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ConfidenceInterval
-<a name="API_ConfidenceInterval"></a>
 
 A confidence interval for a statistical measurement.
 

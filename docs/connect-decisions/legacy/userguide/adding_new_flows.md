@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/addin
 ---
 
 # Adding a new data source
-<a name="adding_new_flows"></a>
 
 You can use AWS Supply Chain to ingest your data stored in your data source and extract your supply chain information. AWS Supply Chain can store the extracted information in your Amazon S3 buckets and use the data for *Demand planning*, *Insights*, *Supply Planning*, *N-Tier Visibility*, *Work Order Insights*, and *Sustainability*.
 

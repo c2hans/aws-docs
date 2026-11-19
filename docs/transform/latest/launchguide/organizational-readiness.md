@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/launchguide/organizatio
 ---
 
 # Organizational readiness
-<a name="organizational-readiness"></a>
 
 Organizational readiness is a critical factor for maximizing value in the cloud. Organizations that assess their gaps early and put in place the right transformation plans have significantly higher chances of achieving their business goals when moving to the cloud.
 

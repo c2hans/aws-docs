@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A custom key-value pair associated with an ML object, such as an ML model.
 

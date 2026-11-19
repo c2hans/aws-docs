@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/how_to_use_met
 ---
 
 # How to use Amazon File Cache metrics
-<a name="how_to_use_metrics"></a>
 
 The metrics reported by Amazon File Cache provide information that you can analyze in different ways. The following list shows some common uses for the metrics. These are suggestions to get you started, not a comprehensive list.
 

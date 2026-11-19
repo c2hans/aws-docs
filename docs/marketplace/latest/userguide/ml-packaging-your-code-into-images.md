@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-packagin
 ---
 
 # Packaging your code into images for machine learning products in AWS Marketplace
-<a name="ml-packaging-your-code-into-images"></a>
 
 Machine learning products in AWS Marketplace use Amazon SageMaker AI to create and run the machine learning logic you provide for buyers. SageMaker AI runs Docker container images that contain your logic. SageMaker AI runs these containers in a secure and scalable infrastructure. For more information, see [Security and intellectual property with Amazon SageMaker AI](ml-security-and-intellectual-property.md). The following sections provide information about how to package your code into Docker container images for SageMaker AI.
 

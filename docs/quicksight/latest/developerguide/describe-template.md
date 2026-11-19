@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/describ
 ---
 
 # DescribeTemplate
-<a name="describe-template"></a>
 
 Use the `DescribeTemplate` operation to describe a template's metadata. To use this operation, you need the ID of the template that you want to describe. You can use the `ListTemplates` operation to list all templates and their corresponding template IDs.
 

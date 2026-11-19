@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Wo
 ---
 
 # Associating a DB parameter group with a DB instance in Amazon Aurora
-<a name="USER_WorkingWithParamGroups.Associating"></a>
 
 You can create your own DB parameter groups with customized settings. You can associate a DB parameter group with a DB instance using the AWS Management Console, the AWS CLI, or the RDS API. You can do so when you create or modify a DB instance.
 

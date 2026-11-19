@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/sparql-query-hi
 ---
 
 # The `rangeSafe` SPARQL query hint
-<a name="sparql-query-hints-rangeSafe"></a>
 
 Use this query hint to turn off type promotion for a SPARQL query.
 

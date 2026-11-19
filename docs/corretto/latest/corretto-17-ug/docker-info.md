@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/docker-in
 ---
 
 # Amazon Corretto 17 Guide for Docker
-<a name="docker-info"></a>
 
 This section describes simple use cases for using Amazon Corretto 17 in Docker containers.
 

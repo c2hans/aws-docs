@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-categories.htm
 ---
 
 # Categories for inputs
-<a name="input-categories"></a>
 
 In MediaLive, inputs can be categorized in several ways:
 + **Type** – An input has a type of source and delivery protocol. For example, an HLS input or an RTMP input. For more information, see [Input types supported in MediaLive](inputs-supported-containers.md).

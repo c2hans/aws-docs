@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-mig
 ---
 
 # Discovery, assessment, and planning
-<a name="transform-migrations-discover-assess-plan"></a>
 
 Migration jobs include discovery, assessment, and migration planning in one job step, **Assessments and Migration Planning**. Discovery imports your inventory. Assessment estimates your costs on AWS and builds a business case. Migration planning groups your servers into applications and plans migration waves.
 

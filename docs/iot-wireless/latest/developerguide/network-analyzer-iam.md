@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/netwo
 ---
 
 # Add necessary IAM role for network analyzer
-<a name="network-analyzer-iam"></a>
 
 When you use network analyzer, you must grant a user permission to use the API operations [UpdateNetworkAnalyzerConfiguration](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateNetworkAnalyzerConfiguration.html) and [GetNetworkAnalyzerConfiguration](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetNetworkAnalyzerConfiguration.html) to access network analyzer resources. The following shows the IAM policies that you use to grant permissions.
 

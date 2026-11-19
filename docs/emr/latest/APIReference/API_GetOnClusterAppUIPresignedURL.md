@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_GetOnCluster
 ---
 
 # GetOnClusterAppUIPresignedURL
-<a name="API_GetOnClusterAppUIPresignedURL"></a>
 
 The presigned URL properties for the cluster's application user interface.
 

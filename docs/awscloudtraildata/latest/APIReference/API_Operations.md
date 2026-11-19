@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtraildata/latest/APIReference/AP
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [PutAuditEvents](API_PutAuditEvents.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-
 ---
 
 # Tutorial: Use full clone with a CodeCommit pipeline source
-<a name="tutorials-codecommit-gitclone"></a>
 
 You can choose the full clone option for your CodeCommit source action in CodePipeline. Use this option to allow CodeBuild to access Git metadata in your pipeline build action.
 

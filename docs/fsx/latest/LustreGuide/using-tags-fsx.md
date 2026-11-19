@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/using-tags-fsx.ht
 ---
 
 # Using tags with Amazon FSx
-<a name="using-tags-fsx"></a>
 
 You can use tags to control access to Amazon FSx resources and to implement attribute-based access control (ABAC). To apply tags to Amazon FSx resources during creation, users must have certain AWS Identity and Access Management (IAM) permissions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Detection
-<a name="detection"></a>
 
 |  EUCSEC07: How do you monitor and track access to EUC environment?  |
 | --- |

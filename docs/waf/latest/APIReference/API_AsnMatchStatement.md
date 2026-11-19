@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_AsnMatchStat
 ---
 
 # AsnMatchStatement
-<a name="API_AsnMatchStatement"></a>
 
 A rule statement that inspects web traffic based on the Autonomous System Number (ASN) associated with the request's IP address.
 

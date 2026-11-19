@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/datase
 ---
 
 # Getting started
-<a name="datasets-getting-started"></a>
 
 This topic provides an end-to-end workflow for creating, populating, and publishing a dataset.
 

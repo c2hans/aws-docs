@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # StepDetailsIdentifiers
-<a name="API_StepDetailsIdentifiers"></a>
 
 The details of identifiers for a step.
 

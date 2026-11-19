@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS IoT Device Tester
-<a name="list_iot-device-tester"></a>
 
 AWS IoT Device Tester (service prefix: `iot-device-tester`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

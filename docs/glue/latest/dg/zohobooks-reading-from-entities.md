@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zohobooks-reading-from-en
 ---
 
 # Reading from Zoho Books entities
-<a name="zohobooks-reading-from-entities"></a>
 
 **Prerequisites**
 

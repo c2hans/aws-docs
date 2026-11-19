@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Agg
 ---
 
 # Aggregates
-<a name="API_Aggregates"></a>
 
 Contains the (pre-calculated) aggregate values for an asset property.
 

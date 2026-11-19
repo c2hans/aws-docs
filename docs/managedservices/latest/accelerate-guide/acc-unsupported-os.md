@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Capabilities for unsupported operating systems in Accelerate
-<a name="acc-unsupported-os"></a>
 
 An *unsupported* operating system is any operating system not listed in the [Supported configurations](acc-sd.md#supported-configs). AMS considers instances with unsupported operating systems to be "Customer-Requested Configurations" that are subject to the [AWS Betas and Previews service terms](https://aws.amazon.com/service-terms/#2._Betas_and_Previews).
 

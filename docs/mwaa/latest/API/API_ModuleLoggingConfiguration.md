@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_ModuleLoggingConfigu
 ---
 
 # ModuleLoggingConfiguration
-<a name="API_ModuleLoggingConfiguration"></a>
 
 Describes the Apache Airflow log details for the log type (e.g. `DagProcessingLogs`).
 

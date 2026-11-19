@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/grant-access-s
 ---
 
 # Granting access to an Amazon S3 bucket
-<a name="grant-access-s3"></a>
 
 When you create a file share, your File Gateway requires access to upload files into your Amazon S3 bucket, and to perform actions on any access points or virtual private cloud (VPC) endpoints that it uses to connect to the bucket. To grant this access, your File Gateway assumes an AWS Identity and Access Management (IAM) role that is associated with an IAM policy that grants this access.
 

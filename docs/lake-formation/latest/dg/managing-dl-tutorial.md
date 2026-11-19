@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/managing-dl-tut
 ---
 
 # Managing a data lake using Lake Formation tag-based access control
-<a name="managing-dl-tutorial"></a>
 
 Thousands of customers are building petabyte-scale data lakes on AWS. Many of these customers use AWS Lake Formation to easily build and share their data lakes across the organization. As the number of tables and users increase, data stewards and administrators are looking for ways to manage permissions on data lakes easily at scale. Lake Formation Tag-based access control (LF-TBAC) solves this problem by allowing data stewards to create *LF-tags* (based on their data classification and ontology) that can then be attached to resources.
 

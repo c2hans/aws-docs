@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Workspac
 ---
 
 # WorkspaceSearchCriteria
-<a name="API_WorkspaceSearchCriteria"></a>
 
 Defines the search criteria for filtering workspaces.
 
@@ -12,12 +11,12 @@ Defines the search criteria for filtering workspaces.
 
  ** AndConditions **   <a name="connect-Type-WorkspaceSearchCriteria-AndConditions"></a>
 A list of conditions that must all be satisfied.
-Type: Array of [WorkspaceSearchCriteria](#API_WorkspaceSearchCriteria) objects
+Type: Array of [WorkspaceSearchCriteria](API_WorkspaceSearchCriteria.md) objects
 Required: No
 
  ** OrConditions **   <a name="connect-Type-WorkspaceSearchCriteria-OrConditions"></a>
 A list of conditions to be met, where at least one condition must be satisfied.
-Type: Array of [WorkspaceSearchCriteria](#API_WorkspaceSearchCriteria) objects
+Type: Array of [WorkspaceSearchCriteria](API_WorkspaceSearchCriteria.md) objects
 Required: No
 
  ** StringCondition **   <a name="connect-Type-WorkspaceSearchCriteria-StringCondition"></a>

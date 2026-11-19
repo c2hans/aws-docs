@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Job.html
 ---
 
 # Job
-<a name="API_Job"></a>
 
 The `Job` object contains details about a job.
 

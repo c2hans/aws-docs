@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Vect
 ---
 
 # VectorSearchConfiguration
-<a name="API_VectorSearchConfiguration"></a>
 
 Specifies the number of dimensions for vector embeddings loaded into the graph. Max = 65535
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/scanning-cis-view-
 ---
 
 # Downloading a CIS scan results
-<a name="scanning-cis-view-download-cis-scan-configuration"></a>
 
  You can download a PDF or CSV of a CIS scan using the Amazon Inspector console or API.
 

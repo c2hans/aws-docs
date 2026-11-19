@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_As2Asyn
 ---
 
 # As2AsyncMdnConnectorConfig
-<a name="API_As2AsyncMdnConnectorConfig"></a>
 
 Contains the configuration details for asynchronous Message Disposition Notification (MDN) responses in AS2 connectors. This configuration specifies where asynchronous MDN responses should be sent and which servers should handle them.
 

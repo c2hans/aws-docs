@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_VpcIngressConne
 ---
 
 # VpcIngressConnectionSummary
-<a name="API_VpcIngressConnectionSummary"></a>
 
 Provides summary information about an VPC Ingress Connection, which includes its VPC Ingress Connection ARN and its associated Service ARN.
 

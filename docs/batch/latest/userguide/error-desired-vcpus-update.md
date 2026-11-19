@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/error-desired-vcp
 ---
 
 # Error message when you update the `desiredvCpus` setting
-<a name="error-desired-vcpus-update"></a>
 
 You see the following error message when you use the AWS Batch API to update the desired vCPUs (`desiredvCpus`) setting.
 

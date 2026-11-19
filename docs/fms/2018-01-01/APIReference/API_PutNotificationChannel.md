@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_PutNotif
 ---
 
 # PutNotificationChannel
-<a name="API_PutNotificationChannel"></a>
 
 Designates the IAM role and Amazon Simple Notification Service (SNS) topic that Firewall Manager uses to record SNS logs.
 

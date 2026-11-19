@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_A
 ---
 
 # AutomaticTapeCreationPolicyInfo
-<a name="API_AutomaticTapeCreationPolicyInfo"></a>
 
 Information about the gateway's automatic tape creation policies, including the automatic tape creation rules and the gateway that is using the policies.
 

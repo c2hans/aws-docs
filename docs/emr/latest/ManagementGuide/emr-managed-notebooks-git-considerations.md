@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-n
 ---
 
 # Prerequisites and considerations when integrating an EMR notebook with a repository
-<a name="emr-managed-notebooks-git-considerations"></a>
 
 Consider the following best practices regarding commits, permissions, and hosting when planning to integrate a Git-based repository with EMR Notebooks.
 

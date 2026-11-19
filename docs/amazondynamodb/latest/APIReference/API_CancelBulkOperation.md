@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_C
 ---
 
 # CancelBulkOperation
-<a name="API_CancelBulkOperation"></a>
 
 Cancels an in-progress bulk operation asynchronously. Cancellation doesn't remove items that the operation has already written. Use `DescribeBulkOperation` to monitor the operation until it reaches a terminal status.
 

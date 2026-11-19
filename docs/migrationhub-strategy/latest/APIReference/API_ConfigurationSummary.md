@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # ConfigurationSummary
-<a name="API_ConfigurationSummary"></a>
 
 Summary of the collector configuration.
 

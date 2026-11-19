@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/swift_1_lambda_co
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Lambda examples using SDK for Swift
-<a name="swift_1_lambda_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Swift with Lambda.
 

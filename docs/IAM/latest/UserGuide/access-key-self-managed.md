@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access-key-self-man
 ---
 
 # How IAM users can manage their own access keys
-<a name="access-key-self-managed"></a>
 
 IAM administrators can grant IAM users the permission to self-manage their access keys by attaching the policy described in [Permissions required to manage access keys](access-keys_required-permissions.md).
 

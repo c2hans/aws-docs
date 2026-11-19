@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Signu
 ---
 
 # SignupResponse
-<a name="API_SignupResponse"></a>
 
 A `SignupResponse` object that contains a summary of a newly created account.
 

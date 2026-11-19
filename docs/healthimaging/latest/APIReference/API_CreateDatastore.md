@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Cr
 ---
 
 # CreateDatastore
-<a name="API_CreateDatastore"></a>
 
 Create a data store.
 

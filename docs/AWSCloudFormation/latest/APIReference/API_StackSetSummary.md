@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackSetSummary
-<a name="API_StackSetSummary"></a>
 
 The structures that contain summary information about the specified StackSet.
 

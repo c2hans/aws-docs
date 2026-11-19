@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Seconda
 ---
 
 # SecondaryClusterInfo
-<a name="API_SecondaryClusterInfo"></a>
 
 The AvailabilityZone and ClusterNodes information of the secondary compute unit.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Anal
 ---
 
 # AnalysisRule
-<a name="API_AnalysisRule"></a>
 
 A specification about how data from the configured table can be used in a query.
 

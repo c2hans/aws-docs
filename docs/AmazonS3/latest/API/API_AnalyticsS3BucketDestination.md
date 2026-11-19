@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_AnalyticsS3Bucke
 ---
 
 # AnalyticsS3BucketDestination
-<a name="API_AnalyticsS3BucketDestination"></a>
 
 Contains information about where to publish the analytics results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CodeInterpreterNetworkConfiguration
-<a name="API_CodeInterpreterNetworkConfiguration"></a>
 
 The network configuration for a code interpreter. This structure defines how the code interpreter connects to the network.
 

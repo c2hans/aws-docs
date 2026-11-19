@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/build-sample.h
 ---
 
 # Build the sample test suite
-<a name="build-sample"></a>
 
 The `{{<device-tester-extract-location>}}/samples/python` folder contains sample configuration files, source code, and the IDT Client SDK that you can combine into a test suite using the provided build scripts. The following directory tree shows the location of these sample files:
 

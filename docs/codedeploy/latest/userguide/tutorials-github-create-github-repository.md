@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials-gi
 ---
 
 # Step 2: Create a GitHub repository
-<a name="tutorials-github-create-github-repository"></a>
 
 You will need a GitHub repository to store the revision.
 

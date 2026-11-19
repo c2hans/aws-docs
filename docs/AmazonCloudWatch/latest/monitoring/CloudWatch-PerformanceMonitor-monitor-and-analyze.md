@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Monitor and analyze with Performance Monitor
-<a name="CloudWatch-PerformanceMonitor-monitor-and-analyze"></a>
 
 The monitor details page provides the following views:
 + **Overview** tab – Aggregated impact level for the monitor, the top network paths table, and summary metrics.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle and PostgreSQL configuration
-<a name="chap-oracle-aurora-pg.configuration"></a>
 
 This section provides pages about Oracle and PostgreSQL configuration topics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Amazon Verified Permissions example policies
-<a name="policies-examples"></a>
 
 Some of the policy examples included here are basic Cedar policy examples and some are Verified Permissions-specific. The basic ones link to the Cedar policy language Reference Guide and are included there. For more information about Cedar policy syntax, see [Basic policy construction in Cedar](https://docs.cedarpolicy.com/policies/syntax-policy.html) in the Cedar policy language Reference Guide.
 

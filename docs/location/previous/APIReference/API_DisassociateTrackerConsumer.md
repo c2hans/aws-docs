@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Disas
 ---
 
 # DisassociateTrackerConsumer
-<a name="API_DisassociateTrackerConsumer"></a>
 
 Removes the association between a tracker resource and a geofence collection.
 

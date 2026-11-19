@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/apg-wai
 ---
 
 # Lock:tuple
-<a name="apg-waits.locktuple"></a>
 
 The `Lock:tuple` event occurs when a backend process is waiting to acquire a lock on a tuple.
 

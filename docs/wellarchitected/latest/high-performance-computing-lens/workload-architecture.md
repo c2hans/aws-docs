@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Workload architecture
-<a name="workload-architecture"></a>
 
 | HPCREL01: How does your architecture optimize for capacity pool flexibility? |
 | --- |

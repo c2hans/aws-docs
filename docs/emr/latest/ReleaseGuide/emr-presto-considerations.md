@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-presto-consi
 ---
 
 # Considerations with Presto on Amazon EMR
-<a name="emr-presto-considerations"></a>
 
 Consider the following limitations when you run [Presto](https://aws.amazon.com/big-data/what-is-presto/) on Amazon EMR.
 

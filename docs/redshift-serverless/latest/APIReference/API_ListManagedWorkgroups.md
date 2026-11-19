@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ListManagedWorkgroups
-<a name="API_ListManagedWorkgroups"></a>
 
 Returns information about a list of specified managed workgroups in your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DeleteTagOption
-<a name="API_DeleteTagOption"></a>
 
 Deletes the specified TagOption.
 

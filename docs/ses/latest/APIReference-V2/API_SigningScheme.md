@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SigningSc
 ---
 
 # SigningScheme
-<a name="API_SigningScheme"></a>
 
 Specifies the signing scheme to apply to messages sent with a configuration set. This is a union type, so you specify exactly one of its members.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ListCustomDomainAssociations
-<a name="API_ListCustomDomainAssociations"></a>
 
  Lists custom domain associations for Amazon Redshift Serverless.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # GetFindingsStatistics
-<a name="API_GetFindingsStatistics"></a>
 
 Retrieves a list of aggregated finding statistics for an external access or unused access analyzer.
 

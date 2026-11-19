@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/privatelink
 ---
 
 # Delivering your products through a Amazon VPC using AWS PrivateLink
-<a name="privatelink"></a>
 
 AWS Marketplace supports AWS PrivateLink, an AWS service that allows you to use the Amazon network to provide buyers with access to products you sell through AWS Marketplace. The following sections outline the process for configuring and delivering your products through an Amazon Virtual Private Cloud (VPC) endpoint using AWS PrivateLink technology.
 

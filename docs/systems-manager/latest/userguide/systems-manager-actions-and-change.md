@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 ---
 
 # AWS Systems Manager change management tools
-<a name="systems-manager-actions-and-change"></a>
 
 AWS Systems Manager provides the following tools for making changes to your AWS resources.
 

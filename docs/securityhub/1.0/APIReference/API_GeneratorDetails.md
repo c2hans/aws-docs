@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Generat
 ---
 
 # GeneratorDetails
-<a name="API_GeneratorDetails"></a>
 
  Provides metadata for the Amazon CodeGuru detector associated with a finding. This field pertains to findings that relate to AWS Lambda functions. Amazon Inspector identifies policy violations and vulnerabilities in Lambda function code based on internal detectors developed in collaboration with Amazon CodeGuru. AWS Security Hub CSPM receives those findings.
 

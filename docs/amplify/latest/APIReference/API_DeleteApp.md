@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_DeleteAp
 ---
 
 # DeleteApp
-<a name="API_DeleteApp"></a>
 
 Deletes an existing Amplify app specified by an app ID.
 

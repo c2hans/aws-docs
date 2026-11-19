@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_ServiceQuota
 ---
 
 # ServiceQuotaExceededException
-<a name="API_ServiceQuotaExceededException"></a>
 
 The request exceeds the service quota for your account. Request a quota increase or reduce your request size.
 

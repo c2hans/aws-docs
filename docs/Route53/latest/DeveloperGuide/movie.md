@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/movie.html
 ---
 
 # .movie
-<a name="movie"></a>
 
 Used for websites that provide information about movies and movie-making. Suitable for both professionals and fans.
 

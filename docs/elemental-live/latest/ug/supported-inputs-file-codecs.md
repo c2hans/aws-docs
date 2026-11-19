@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/supported-input
 ---
 
 # Supported codecs
-<a name="supported-inputs-file-codecs"></a>
 
 This table specifies the codecs that are supported for each type of file input container.
 

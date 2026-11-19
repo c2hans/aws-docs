@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 ---
 
 # GetComponent
-<a name="API_GetComponent"></a>
 
 Retrieves a component object.
 

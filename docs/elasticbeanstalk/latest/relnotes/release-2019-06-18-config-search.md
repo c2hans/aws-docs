@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk console adds environment configuration option search on June 18, 2019
-<a name="release-2019-06-18-config-search"></a>
 
 The Elastic Beanstalk console adds a new table view to environment configuration. You can search for options by name or value.
 

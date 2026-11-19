@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/making-instance-
 ---
 
 # Make instance store volume available for use on an EC2 instance
-<a name="making-instance-stores-available-on-your-instances"></a>
 
 After you launch an instance with attached instance store volumes, you must mount the volumes before you can access them.
 

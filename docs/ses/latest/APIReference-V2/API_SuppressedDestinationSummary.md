@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Suppresse
 ---
 
 # SuppressedDestinationSummary
-<a name="API_SuppressedDestinationSummary"></a>
 
 A summary that describes the suppressed email address.
 

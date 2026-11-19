@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-EnableEc2InstanceDetailedMonitoring`
-<a name="automation-awssupportremediator-enableec2instancedetailedmonitoring"></a>
 
 **Description**
 

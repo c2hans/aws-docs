@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/image-classification
 ---
 
 # Image Classification - TensorFlow
-<a name="image-classification-tensorflow"></a>
 
 The Amazon SageMaker Image Classification - TensorFlow algorithm is a supervised learning algorithm that supports transfer learning with many pretrained models from the [TensorFlow Hub](https://tfhub.dev/s?fine-tunable=yes&module-type=image-classification&subtype=module,placeholder&tf-version=tf2). Use transfer learning to fine-tune one of the available pretrained models on your own dataset, even if a large amount of image data is not available. The image classification algorithm takes an image as input and outputs a probability for each provided class label. Training datasets must consist of images in .jpg, .jpeg, or .png format. This page includes information about Amazon EC2 instance recommendations and sample notebooks for Image Classification - TensorFlow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/cr-upd-con
 ---
 
 # Create and update distribution settings for container images
-<a name="cr-upd-container-distribution-settings"></a>
 
 This section covers creating and updating distribution settings for Image Builder container images.
 

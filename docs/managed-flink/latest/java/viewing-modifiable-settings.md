@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/viewing-modifi
 ---
 
 # View configured Flink properties
-<a name="viewing-modifiable-settings"></a>
 
 You can view Apache Flink properties you have configured yourself or requested to be modified through a [support case](https://support.console.aws.amazon.com/support/home#/) via the Apache Flink Dashboard and following these steps:
 

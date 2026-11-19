@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_JobCheckp
 ---
 
 # JobCheckpointConfig
-<a name="API_JobCheckpointConfig"></a>
 
 Contains information about the output locations for hybrid job checkpoint data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/modify-metadata-p
 ---
 
 # Increasing metadata performance
-<a name="modify-metadata-performance"></a>
 
 You can increase a file system's metadata performance by using the Amazon FSx console, the AWS CLI, or the Amazon FSx API.
 

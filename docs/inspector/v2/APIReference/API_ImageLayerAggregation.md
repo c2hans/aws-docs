@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ImageLayer
 ---
 
 # ImageLayerAggregation
-<a name="API_ImageLayerAggregation"></a>
 
 The details that define an aggregation based on container image layers.
 

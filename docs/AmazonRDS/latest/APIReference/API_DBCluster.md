@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBClus
 ---
 
 # DBCluster
-<a name="API_DBCluster"></a>
 
 Contains the details of an Amazon Aurora DB cluster or Multi-AZ DB cluster.
 

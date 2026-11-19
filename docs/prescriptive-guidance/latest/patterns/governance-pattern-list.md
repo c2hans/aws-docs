@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/go
 ---
 
 # Management & governance
-<a name="governance-pattern-list"></a>
 
 **Topics**
 + [Automate adding or updating Windows registry entries using AWS Systems Manager](automate-adding-or-updating-windows-registry-entries-using-aws-systems-manager.md)

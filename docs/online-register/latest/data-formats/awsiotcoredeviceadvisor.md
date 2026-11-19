@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 ---
 
 # Data retrieval APIs for AWS IoT Core Device Advisor
-<a name="awsiotcoredeviceadvisor"></a>
 
 AWS IoT Core Device Advisor provides the following APIs for data retrieval.
 

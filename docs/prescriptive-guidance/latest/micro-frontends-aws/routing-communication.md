@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Routing and communication across micro-frontends
-<a name="routing-communication"></a>
 
 Routing options depend on the composition approach. You can improve communication by reducing coupling between front-end components.
 

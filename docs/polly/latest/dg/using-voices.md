@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/using-voices.html
 ---
 
 # Choosing a voice engine
-<a name="using-voices"></a>
 
 You can access Amazon Polly voices through the Amazon Polly console or AWS CLI.
 

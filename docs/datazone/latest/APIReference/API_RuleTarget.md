@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_RuleTar
 ---
 
 # RuleTarget
-<a name="API_RuleTarget"></a>
 
 The target of the rule.
 

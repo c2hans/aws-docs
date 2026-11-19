@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/manage-s3-tables-catalog-
 ---
 
 # Managing S3 Tables integration
-<a name="manage-s3-tables-catalog-integration"></a>
 
 ## Enable AWS Lake Formation
 <a name="manage-s3-tables-enable-lf"></a>

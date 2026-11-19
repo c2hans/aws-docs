@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_AmpCo
 ---
 
 # AmpConfiguration
-<a name="API_AmpConfiguration"></a>
 
 The `AmpConfiguration` structure defines the Amazon Managed Service for Prometheus instance a scraper should send metrics to.
 

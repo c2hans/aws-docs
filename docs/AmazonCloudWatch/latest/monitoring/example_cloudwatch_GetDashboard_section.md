@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/examp
 ---
 
 # Use `GetDashboard` with an AWS SDK or CLI
-<a name="example_cloudwatch_GetDashboard_section"></a>
 
 The following code examples show how to use `GetDashboard`.
 

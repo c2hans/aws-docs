@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/f
 ---
 
 # Determine function purpose
-<a name="function-code-choose-purpose"></a>
 
 Before you write your function code, determine the purpose of your function. Most functions in CloudFront Functions have one of the following purposes.
 

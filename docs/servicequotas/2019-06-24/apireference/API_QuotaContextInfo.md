@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # QuotaContextInfo
-<a name="API_QuotaContextInfo"></a>
 
 A structure that describes the context for a resource-level quota. For resource-level quotas, such as `Instances per OpenSearch Service Domain`, you can apply the quota value at the resource-level for each OpenSearch Service Domain in your AWS account. Together the attributes of this structure help you understand how the quota is implemented by AWS and how you can manage it. For quotas such as `Amazon OpenSearch Service Domains` which can be managed at the account-level for each AWS Region, the `QuotaContext` field is absent. See the attribute descriptions below to further understand how to use them.
 

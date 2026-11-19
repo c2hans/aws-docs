@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # TemplateProgress
-<a name="API_TemplateProgress"></a>
 
 A summary of the progress of the template generation.
 

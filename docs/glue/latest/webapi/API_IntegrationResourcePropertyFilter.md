@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IntegrationResour
 ---
 
 # IntegrationResourcePropertyFilter
-<a name="API_IntegrationResourcePropertyFilter"></a>
 
 A filter for integration resource properties.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/s-tag.html
 ---
 
 # Adding a pause between sentences
-<a name="s-tag"></a>
 
 *<s>*
 

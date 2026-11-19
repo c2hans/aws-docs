@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotValueR
 ---
 
 # SlotValueRegexFilter
-<a name="API_SlotValueRegexFilter"></a>
 
 Provides a regular expression used to validate the value of a slot.
 

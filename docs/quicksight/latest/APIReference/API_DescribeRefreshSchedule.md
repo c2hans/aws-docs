@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeRefreshSchedule
-<a name="API_DescribeRefreshSchedule"></a>
 
 Provides a summary of a refresh schedule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_LaunchI
 ---
 
 # LaunchInstancesError
-<a name="API_LaunchInstancesError"></a>
 
  Contains details about errors encountered during instance launch attempts.
 

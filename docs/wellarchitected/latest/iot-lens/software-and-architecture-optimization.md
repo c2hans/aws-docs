@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/software
 ---
 
 # Software and architecture optimization
-<a name="software-and-architecture-optimization"></a>
 
 | IOTSUS01: How do you optimize software and firmware to reduce device's carbon footprint? |
 | --- |

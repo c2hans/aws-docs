@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Inference Gateway for Amazon SageMaker HyperPod Inference
-<a name="sagemaker-hyperpod-model-deployment-inference-gateway"></a>
 
 The Amazon SageMaker HyperPod Inference Gateway is a Kubernetes-native, large language model (LLM)-aware routing and orchestration layer for HyperPod clusters on Amazon EKS. It inspects inference requests, reads the model name from each request, and selects a model-serving pod based on GPU load, so that traffic for multiple models is routed efficiently through a single gateway endpoint.
 

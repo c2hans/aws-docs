@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/runningMax-functi
 ---
 
 # runningMax
-<a name="runningMax-function"></a>
 
 The `runningMax` function calculates a running maximum for a measure based on the specified dimensions and sort orders.
 

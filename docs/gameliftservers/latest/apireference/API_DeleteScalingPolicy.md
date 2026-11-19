@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # DeleteScalingPolicy
-<a name="API_DeleteScalingPolicy"></a>
 
  **This API works with the following fleet types:** EC2, Container
 

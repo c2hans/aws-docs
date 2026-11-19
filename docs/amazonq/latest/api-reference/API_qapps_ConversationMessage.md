@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_C
 ---
 
 # ConversationMessage
-<a name="API_qapps_ConversationMessage"></a>
 
 A message in a conversation, used as input for generating an Amazon Q App definition.
 

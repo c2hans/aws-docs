@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/dynamic-permis
 ---
 
 # Dynamic permission management approaches
-<a name="dynamic-permission-management"></a>
 
 ## Understanding Transfer Family permission architecture
 <a name="permission-architecture-overview"></a>

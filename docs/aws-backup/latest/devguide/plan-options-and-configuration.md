@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/plan-options-
 ---
 
 # Backup plan options and configuration
-<a name="plan-options-and-configuration"></a>
 
 When you define a backup plan in the AWS Backup console, you configure the following options:
 

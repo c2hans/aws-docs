@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/recording-inge
 ---
 
 # Configuration
-<a name="recording-ingestion-configuration"></a>
 
 Before you can use the recording ingestion APIs, configure the following:
 + **Amazon S3 source bucket policy** – Grant Connect Customer permission to read recordings from your bucket

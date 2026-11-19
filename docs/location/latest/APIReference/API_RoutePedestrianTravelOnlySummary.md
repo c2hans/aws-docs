@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RoutePe
 ---
 
 # RoutePedestrianTravelOnlySummary
-<a name="API_RoutePedestrianTravelOnlySummary"></a>
 
 Summarized details for the leg including travel steps.
 

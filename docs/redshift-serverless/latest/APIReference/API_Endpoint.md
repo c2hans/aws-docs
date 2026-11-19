@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # Endpoint
-<a name="API_Endpoint"></a>
 
 The VPC endpoint object.
 

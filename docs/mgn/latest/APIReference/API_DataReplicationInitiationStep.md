@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DataReplicat
 ---
 
 # DataReplicationInitiationStep
-<a name="API_DataReplicationInitiationStep"></a>
 
 Data replication initiation step.
 

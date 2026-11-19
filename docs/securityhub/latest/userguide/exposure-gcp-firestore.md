@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-gc
 ---
 
 # Remediating exposures for GCP Firestore databases
-<a name="exposure-gcp-firestore"></a>
 
 AWS Security Hub can generate exposure findings for GCP Firestore databases.
 

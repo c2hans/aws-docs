@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/delete-input-securit
 ---
 
 # Deleting an input security group
-<a name="delete-input-security-group"></a>
 
  You can delete a MediaLive input security group so long as it is not attached to any inputs.
 

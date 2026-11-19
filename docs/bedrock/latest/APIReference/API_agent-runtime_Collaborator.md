@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # Collaborator
-<a name="API_agent-runtime_Collaborator"></a>
 
  List of inline collaborators.
 

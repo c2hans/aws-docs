@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-storage-v
 ---
 
 # Viewing storage volume details for your DB instance
-<a name="rds-storage-viewing"></a>
 
 You can view your storage volume configuration from the AWS Management Console or AWS CLI. This includes details about both your primary storage volume and any additional storage volumes attached to your DB instance.
 

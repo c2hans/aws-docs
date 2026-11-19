@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Serv
 ---
 
 # ServiceManagedInput
-<a name="API_ServiceManagedInput"></a>
 
 Configuration for a service-managed Private Connection.
 

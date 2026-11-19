@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # VideoTrackSettings
-<a name="structures-VideoTrackSettings"></a>
 
 Object specifying encoder-specific settings.
 

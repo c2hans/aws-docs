@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Dele
 ---
 
 # DeleteLiveSource
-<a name="API_DeleteLiveSource"></a>
 
 The live source to delete.
 

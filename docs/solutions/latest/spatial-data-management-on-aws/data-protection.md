@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Data protection
-<a name="data-protection"></a>
 
 The Spatial Data Management Application (SDMA) protects both customer content and metadata.
 

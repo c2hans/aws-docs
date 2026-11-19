@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # CreateResourceExplorerSetup
-<a name="API_CreateResourceExplorerSetup"></a>
 
 Creates a Resource Explorer setup configuration across multiple AWS Regions. This operation sets up indexes and views in the specified Regions. This operation can also be used to set an aggregator Region for cross-Region resource search.
 

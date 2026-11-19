@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ve
 ---
 
 # VehicleMiddleware
-<a name="API_VehicleMiddleware"></a>
 
 The vehicle middleware defined as a type of network interface. Examples of vehicle middleware include `ROS2` and `SOME/IP`.
 

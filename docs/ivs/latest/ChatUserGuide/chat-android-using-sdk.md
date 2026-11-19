@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-android-us
 ---
 
 # Using the IVS Chat Client Messaging Android SDK
-<a name="chat-android-using-sdk"></a>
 
 This document takes you through the steps involved in using the Amazon IVS chat client messaging Android SDK.
 

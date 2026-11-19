@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ObjectTypeField
-<a name="API_connect-customer-profiles_ObjectTypeField"></a>
 
 Represents a field in a ProfileObjectType.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/self-managed-AD.
 ---
 
 # Using a self-managed Microsoft Active Directory
-<a name="self-managed-AD"></a>
 
 If your organization manages identities and devices using a self-managed Active Directory on-premises or in the cloud, you can join an FSx for Windows File Server file system to your Active Directory domain at creation.
 
@@ -482,4 +481,4 @@ For more information about how to delegate privileges using either the **Delegat
 
 If you update your file system with a new service account, the new service account must have the required permissions and privileges to join your Active Directory and have **Full control** permissions for the existing computer objects associated with the file system. For more information, see [Changing the Amazon FSx service account](changing-ad-service-account.md).
 
-We recommend storing your Active Directory service account credentials in AWS Secrets Manager for enhanced security. This eliminates the need to store sensitive credentials in plaintext and aligns with security best practices. For more information, see [Using a self-managed Microsoft Active Directory](#self-managed-AD).
+We recommend storing your Active Directory service account credentials in AWS Secrets Manager for enhanced security. This eliminates the need to store sensitive credentials in plaintext and aligns with security best practices. For more information, see [Using a self-managed Microsoft Active Directory](self-managed-AD.md).

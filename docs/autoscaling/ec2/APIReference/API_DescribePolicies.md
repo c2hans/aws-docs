@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribePolicies
-<a name="API_DescribePolicies"></a>
 
 Gets information about the scaling policies in the account and Region.
 

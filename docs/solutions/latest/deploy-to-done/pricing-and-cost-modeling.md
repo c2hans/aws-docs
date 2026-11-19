@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deploy-to-done/pricing-
 ---
 
 # Pricing and Cost Modeling
-<a name="pricing-and-cost-modeling"></a>
 
 Elastic Beanstalk has no service fee in either deployment mode. You pay only for the underlying AWS resources your applications consume. Both modes run your application on Amazon EC2 compute, billed at standard EC2 rates, and you can use On-Demand Instances, Reserved Instances, Savings Plans, or Spot Instances.
 

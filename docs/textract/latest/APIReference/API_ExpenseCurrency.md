@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Expense
 ---
 
 # ExpenseCurrency
-<a name="API_ExpenseCurrency"></a>
 
 Returns the kind of currency detected.
 

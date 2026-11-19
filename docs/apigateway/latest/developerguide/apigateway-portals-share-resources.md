@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Share portal products in API Gateway
-<a name="apigateway-portals-share-resources"></a>
 
 You can share a portal product across AWS accounts using AWS RAM. When you share a portal product, the other account can use your portal product in their own portal. With shared portal products, you can create a single catalog of your organization's APIs and enforce governance standards across your API ecosystem. At the same time, sharing portal products provides flexibility for API providers to develop, test, and maintain APIs in their own accounts.
 

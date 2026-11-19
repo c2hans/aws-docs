@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/aam-view-assignment
 ---
 
 # View or search account assignments
-<a name="aam-view-assignments"></a><a name="aam-view-account-access"></a>
+<a name="aam-view-account-access"></a>
 
 You can view account assignments in several ways.
 

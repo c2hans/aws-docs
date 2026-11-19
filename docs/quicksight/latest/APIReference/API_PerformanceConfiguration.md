@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Perfo
 ---
 
 # PerformanceConfiguration
-<a name="API_PerformanceConfiguration"></a>
 
 The configuration for the performance optimization of the dataset that contains a `UniqueKey` configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferReleaseDateFilterDateRange
-<a name="API_OfferReleaseDateFilterDateRange"></a>
 
 Allows filtering on the `ReleaseDate` of an offer with date range as input.
 

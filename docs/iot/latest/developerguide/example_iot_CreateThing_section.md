@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/example_iot_Cr
 ---
 
 # Use `CreateThing` with an AWS SDK or CLI
-<a name="example_iot_CreateThing_section"></a>
 
 The following code examples show how to use `CreateThing`.
 

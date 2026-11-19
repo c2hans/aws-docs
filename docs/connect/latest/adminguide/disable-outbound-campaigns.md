@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/disable-outbou
 ---
 
 # Disable outbound campaigns in Connect Customer
-<a name="disable-outbound-campaigns"></a>
 
 **Prerequisite**
 You must delete all existing campaigns before you disable outbound campaigns.

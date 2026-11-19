@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ListTagsForR
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Retrieves the [TagInfoForResource](API_TagInfoForResource.md) for the specified resource. Tags are key:value pairs that you can use to categorize and manage your resources, for purposes like billing. For example, you might set the tag key to "customer" and the value to the customer name or ID. You can specify one or more tags to add to each AWS resource, up to 50 tags for a resource.
 

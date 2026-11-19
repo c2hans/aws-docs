@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/launchguide/resources.h
 ---
 
 # Resources
-<a name="resources"></a>
 
 This page aggregates links referenced throughout the Migration Launch Guide for quicker access.
 

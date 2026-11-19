@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/working-wi
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Viewing package version details
-<a name="working-with-packages-view"></a>
 
 You can use the CodeCatalyst console to view details about a specific package version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Changes in SDK metric publishing from version 1 to version 2
-<a name="migration-metrics"></a>
 
 This topic details the changes in client-side SDK metric publishing from version 1.x (v1) to version 2.x (v2) of the AWS SDK for Java.
 

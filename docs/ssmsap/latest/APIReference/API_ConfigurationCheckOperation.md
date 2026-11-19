@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_Configura
 ---
 
 # ConfigurationCheckOperation
-<a name="API_ConfigurationCheckOperation"></a>
 
 Represents a configuration check operation that has been executed against an application.
 

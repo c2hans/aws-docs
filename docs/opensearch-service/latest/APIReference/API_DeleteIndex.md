@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DeleteIndex
-<a name="API_DeleteIndex"></a>
 
 Deletes an OpenSearch index. This operation permanently removes the index and cannot be undone.
 

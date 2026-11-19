@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk.html
 ---
 
 # Use AWS Certificate Manager with the SDK for Java
-<a name="sdk"></a>
 
 You can use the AWS Certificate Manager API to interact with the service programmatically by sending HTTP requests. For more information, see the [AWS Certificate Manager API Reference](https://docs.aws.amazon.com/acm/latest/APIReference/).
 

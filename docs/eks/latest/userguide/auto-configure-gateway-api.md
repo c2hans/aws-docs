@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-configure-gate
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure the Kubernetes Gateway API in EKS Auto Mode
-<a name="auto-configure-gateway-api"></a>
 
 Amazon Elastic Kubernetes Service (Amazon EKS) Auto Mode supports the Kubernetes Gateway API for configuring load balancing. The Gateway API is the next-generation Kubernetes standard for managing traffic routing into and within your cluster. It provides a role-oriented, expressive, and portable model that addresses limitations of the older Ingress API. It natively supports L4 (TCP/UDP/TLS) and L7 (HTTP/gRPC) routing, cross-namespace routing, weighted traffic splitting, and header-based routing.
 

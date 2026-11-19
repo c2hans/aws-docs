@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # OutOfSyncReasonsView
-<a name="API_OutOfSyncReasonsView"></a>
 
 The out-of-sync reasons for a resource, or a marker indicating that the details are not visible. Exactly one member is set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ImageBlockDelta
-<a name="API_runtime_ImageBlockDelta"></a>
 
 A streaming delta event that contains incremental image data during streaming responses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudshell/latest/userguide/troubleshoot
 ---
 
 # Troubleshooting AWS CloudShell
-<a name="troubleshooting"></a>
 
 While using AWS CloudShell, you might encounter issues, such as when you launch CloudShell or perform key tasks using the shell command line interface. The information that's covered in this chapter covers how to troubleshoot some of the common issues that you might encounter.
 
@@ -39,7 +38,7 @@ When you come across any of the following indexed errors, you can use the follow
 
 **Solution:** Contact [AWS Support](https://aws.amazon.com/contact-us/).
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ### Insufficient permissions
 <a name="no-access-cloudshell"></a>
@@ -50,7 +49,7 @@ When you come across any of the following indexed errors, you can use the follow
 
 **Solution:** Request your IAM administrator to provide you with the necessary permissions. They can do this either through adding an attached AWS managed policy (AWSCloudShellFullAccess) or an embedded inline policy. For more information, see [Managing AWS CloudShell access and usage with IAM policies](sec-auth-with-identities.md).
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ### Shell session starts in recovery mode
 <a name="recovery-mode-cloudshell"></a>
@@ -74,7 +73,7 @@ mv ~/.profile ~/.profile.bak
 
 Then restart AWS CloudShell. Review your backed up files to find and fix the issue, then restore them.
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ### Unable to access AWS CloudShell command line
 <a name="locked-out-cloudshell"></a>
@@ -83,7 +82,7 @@ Then restart AWS CloudShell. Review your backed up files to find and fix the iss
 
  **Solution:** If you lose access after incorrectly modifying `.bashrc` or any other file, you can return AWS CloudShell to its default settings by [deleting your home directory](getting-started.md#delete-shell-session).
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ### Unable to connect to the environment
 <a name="too-many-sessions-cloudshell"></a>
@@ -94,7 +93,7 @@ Then restart AWS CloudShell. Review your backed up files to find and fix the iss
 
  **Solution:** Close any extra AWS CloudShell tabs and retry.
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ### Unable to ping external IP addresses
 <a name="ping-cloudshell"></a>
@@ -114,7 +113,7 @@ sudo yum install nc
 nc -zv www.amazon.com 443
 ```
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ### There were some issues preparing your terminal
 <a name="old-browser-issue-cloudshell"></a>
@@ -125,7 +124,7 @@ nc -zv www.amazon.com 443
 
 **Solution:** Install an updated version of Edge browser from the [ Microsoft site](https://www.microsoft.com/en-us/edge).
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ### Arrow keys not working correctly in PowerShell
 <a name="pwsh-arrow-keys"></a>
@@ -163,7 +162,7 @@ If you're already in PowerShell, you can also open the profile file in the edito
 **Note**
 Your changes take effect the next time you start PowerShell.
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ### Unsupported Web Sockets cause a failure to start CloudShell sessions
 <a name="web-sockets-cloudshell"></a>
@@ -182,7 +181,7 @@ Say that you want to define granular permissions by allowlisting specific URLs. 
 The **region** represents the Region identifier for an AWS Region that's supported by AWS Systems Manager. For example, `us-east-2` is the Region identifier for the US East (Ohio) Region.
 Because the **session-id** is created *after* a particular Systems Manager session is successfully started, you can only specify `wss://ssmmessages.region.amazonaws.com` when you update your URL allowlist. For more information, see the [StartSession](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_StartSession.html) operation in the *AWS Systems Manager API Reference*.
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ### Unable to import the `AWSPowerShell.NetCore` module
 <a name="import-PowerShell-module"></a>
@@ -215,7 +214,7 @@ Because the **session-id** is created *after* a particular Systems Manager sessi
 
 For more information, see the [version 4 announcement](https://aws.amazon.com/blogs/developer/aws-tools-for-powershell-is-now-generally-available-with-version-4-0/) for the AWS Tools for PowerShell.
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ### Docker is not running when using AWS CloudShell
 <a name="docker-not-running"></a>

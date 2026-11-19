@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # QuotaPeriod
-<a name="API_QuotaPeriod"></a>
 
 Information about the quota period.
 

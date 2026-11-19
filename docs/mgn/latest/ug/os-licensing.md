@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/os-licensing.html
 ---
 
 # Operating system licensing
-<a name="os-licensing"></a>
 
 Choose whether you want to Bring Your Own Licenses (BYOL) from the source server into the test or cutover instance.
 

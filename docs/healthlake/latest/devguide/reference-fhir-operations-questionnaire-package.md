@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # FHIR `$questionnaire-package` operation for HealthLake
-<a name="reference-fhir-operations-questionnaire-package"></a>
 
 The `$questionnaire-package` operation retrieves a comprehensive bundle containing a FHIR Questionnaire and all its dependencies needed to render and process the questionnaire. This operation implements the [Da Vinci Documentation Templates and Rules (DTR) Implementation Guide](https://hl7.org/fhir/us/davinci-dtr/OperationDefinition-questionnaire-package.html), enabling dynamic form rendering for documentation requirements in healthcare workflows.
 

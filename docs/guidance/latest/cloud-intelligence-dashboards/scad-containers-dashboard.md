@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # SCAD Containers Cost Allocation Dashboard
-<a name="scad-containers-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

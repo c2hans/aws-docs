@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Recipients
-<a name="notification-center-recipients"></a>
 
 Recipients determine who receives in-app and email notifications. For Slack, the webhook URL is the destination — the recipients list is not used for routing.
 

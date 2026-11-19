@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/R
 ---
 
 # Request and response behavior for custom origins
-<a name="RequestAndResponseBehaviorCustomOrigin"></a>
 
 To understand how CloudFront processes requests and responses when you're using custom origins, see the following sections:
 

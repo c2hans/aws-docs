@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/private-ip-dx.html
 ---
 
 # Private IP AWS Site-to-Site VPN with Direct Connect
-<a name="private-ip-dx"></a>
 
 With private IP VPN, you can deploy IPsec VPN over Direct Connect, encrypting traffic between your on-premises network and AWS, without the use of public IP addresses or additional third-party VPN equipment.
 

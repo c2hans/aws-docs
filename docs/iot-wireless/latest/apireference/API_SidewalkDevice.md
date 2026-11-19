@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sid
 ---
 
 # SidewalkDevice
-<a name="API_SidewalkDevice"></a>
 
 Sidewalk device object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Li
 ---
 
 # ListInsightsMetricData
-<a name="API_ListInsightsMetricData"></a>
 
 Returns Insights metrics data for trails that have enabled Insights. The request must include the `EventSource`, `EventName`, and `InsightType` parameters.
 

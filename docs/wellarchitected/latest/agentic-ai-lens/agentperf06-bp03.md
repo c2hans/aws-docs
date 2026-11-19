@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTPERF06-BP03 Optimize meta-tool utilization and tool chaining
-<a name="agentperf06-bp03"></a>
 
  Meta-tools let agents accomplish in one reasoning step what would otherwise take five. For tasks that require a predictable sequence of tool calls, a meta-tool combines the entire sequence into a single server-side operation and returns the final result in one reasoning iteration instead of many, cutting both latency and token cost by removing intermediate reasoning steps.
 

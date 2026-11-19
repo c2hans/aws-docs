@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/Welcome.ht
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 This is the * AWS Global Accelerator API Reference*. This guide is for developers who need detailed information about AWS Global Accelerator API actions, data types, and errors. For more information about Global Accelerator features, see the [AWS Global Accelerator Developer Guide](https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html).
 
@@ -25,4 +24,4 @@ For standard accelerators, Global Accelerator uses the AWS global network to rou
 
 For more information about understanding and using Global Accelerator, see the [AWS Global Accelerator Developer Guide](https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

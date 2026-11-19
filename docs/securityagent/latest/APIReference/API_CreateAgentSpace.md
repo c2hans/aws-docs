@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Cr
 ---
 
 # CreateAgentSpace
-<a name="API_CreateAgentSpace"></a>
 
 Creates a new agent space. An agent space is a dedicated workspace for securing a specific application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Account lifecycle
-<a name="account-lifecycle-in-isb"></a>
 
 This section describes how an account statuses and OU location changes throughout its lifecycle. In the following diagram, green arrows represent asynchronous system events and red arrows represent user-initiated actions.
 

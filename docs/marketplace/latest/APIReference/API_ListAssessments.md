@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_List
 ---
 
 # ListAssessments
-<a name="API_ListAssessments"></a>
 
 Returns a paginated list of assessments associated with an entity or change set in AWS Marketplace. An *assessment* is the result of evaluating a product or change set against a framework, such as AMI Security or Container Security.
 

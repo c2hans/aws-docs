@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateTemplate
-<a name="API_CreateTemplate"></a>
 
 Creates a template either from a `TemplateDefinition` or from an existing Quick Sight analysis or template. You can use the resulting template to create additional dashboards, templates, or analyses.
 

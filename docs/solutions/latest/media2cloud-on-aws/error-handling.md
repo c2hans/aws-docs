@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/erro
 ---
 
 # Error handling
-<a name="error-handling"></a>
 
  The Media2Cloud on AWS solution applies a catch and retry concept for [error handling](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-error-handling.html) to the state machines to improve the resiliency of the solution by retrying the state run multiple times. When the state run exhausts the retries, it stops the run and generates an error.
 

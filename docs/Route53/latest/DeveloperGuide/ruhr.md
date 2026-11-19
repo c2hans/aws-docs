@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/ruhr.html
 ---
 
 # .ruhr (Ruhr region, western part of Germany)
-<a name="ruhr"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

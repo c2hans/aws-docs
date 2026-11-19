@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_IamPol
 ---
 
 # IamPolicyConstraints
-<a name="API_IamPolicyConstraints"></a>
 
 Use this parameter to specify a supported global condition key that is added to the IAM policy.
 

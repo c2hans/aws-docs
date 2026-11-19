@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIMON01-BP02 Set operational performance baselines and apply methods for drift detection
-<a name="raimon01-bp02"></a>
 
  Set performance trend baselines by collecting initial production data over a representative time period to capture your system's actual operating performance, which may vary from your release criteria thresholds. Use statistical methods to characterize normal performance variation patterns, seasonal trends, and expected behavioral ranges for each monitored metric based on observed system behavior. Implement drift detection techniques such as statistical process control charts, change point detection algorithms, and trend analysis that can identify when current performance deviates significantly from established baseline trends, indicating the system is not performing as expected.
 

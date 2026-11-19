@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CreateFunctionUrlC
 ---
 
 # CreateFunctionUrlConfig
-<a name="API_CreateFunctionUrlConfig"></a>
 
 Creates a Lambda function URL with the specified configuration parameters. A function URL is a dedicated HTTP(S) endpoint that you can use to invoke your function.
 

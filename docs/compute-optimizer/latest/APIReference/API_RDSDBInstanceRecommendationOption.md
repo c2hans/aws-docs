@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RDSDBInstanceRecommendationOption
-<a name="API_RDSDBInstanceRecommendationOption"></a>
 
  Describes the recommendation options for a DB instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-rdssqlserver2s3datal
 ---
 
 # Step 2: Configure a Source Amazon RDS for SQL Server Database
-<a name="chap-rdssqlserver2s3datalake.steps.configuresource"></a>
 
 One of the primary considerations when setting up AWS DMS replication is the load that it induces on the source database. During full load, AWS DMS tasks initiate two or three connections for each table that is configured for parallel load. Because AWS DMS settings and data volumes vary across tasks, workloads, and even across different runs of the same task, providing an estimate of resource utilization that applies for all use cases is difficult.
 

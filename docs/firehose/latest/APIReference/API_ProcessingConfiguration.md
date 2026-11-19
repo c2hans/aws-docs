@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Process
 ---
 
 # ProcessingConfiguration
-<a name="API_ProcessingConfiguration"></a>
 
 Describes a data processing configuration.
 

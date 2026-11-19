@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-numincr
 ---
 
 # JSON.NUMINCRBY
-<a name="json-numincrby"></a>
 
 Increments the number values at the path by a given number.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Li
 ---
 
 # ListEffectivePolicyValidationErrors
-<a name="API_ListEffectivePolicyValidationErrors"></a>
 
 Lists all the validation errors on an [effective policy](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_effective.html) for a specified account and policy type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_SearchVuln
 ---
 
 # SearchVulnerabilitiesFilterCriteria
-<a name="API_SearchVulnerabilitiesFilterCriteria"></a>
 
 Details on the criteria used to define the filter for a vulnerability search.
 

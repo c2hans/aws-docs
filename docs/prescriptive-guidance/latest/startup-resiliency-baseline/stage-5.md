@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/startup-res
 ---
 
 # Stage 5: Respond and learn
-<a name="stage-5"></a>
 
 When you're running a startup, complex post-mortem processes can slow down your team. This chapter explores how to learn from incidents without turning them into bureaucratic exercises.
 

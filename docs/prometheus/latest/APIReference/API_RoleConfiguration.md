@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_RoleC
 ---
 
 # RoleConfiguration
-<a name="API_RoleConfiguration"></a>
 
 Use this structure to enable cross-account access, so that you can use a target account to access Prometheus metrics from source accounts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_MetadataTableCon
 ---
 
 # MetadataTableConfigurationResult
-<a name="API_MetadataTableConfigurationResult"></a>
 
  The V1 S3 Metadata configuration for a general purpose bucket. The destination table bucket must be in the same Region and AWS account as the general purpose bucket. The specified metadata table name must be unique within the `aws_s3_metadata` namespace in the destination table bucket.
 

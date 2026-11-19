@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # PagerDutyIncidentDetail
-<a name="API_PagerDutyIncidentDetail"></a>
 
 Details about the PagerDuty incident associated with an incident created by an Incident Manager response plan.
 

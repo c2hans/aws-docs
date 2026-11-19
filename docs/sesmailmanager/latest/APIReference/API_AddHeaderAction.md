@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_A
 ---
 
 # AddHeaderAction
-<a name="API_AddHeaderAction"></a>
 
 The action to add a header to a message. When executed, this action will add the given header to the message.
 

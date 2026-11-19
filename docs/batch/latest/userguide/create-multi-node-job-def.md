@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/create-multi-node
 ---
 
 # Create a multi-node parallel job definition
-<a name="create-multi-node-job-def"></a>
 
 Before you can run jobs in AWS Batch, you must create a job definition. This process varies slightly between single-node and multi-node parallel jobs. This topic covers specifically how to create a job definition for an AWS Batch multi-node parallel job (also known as *gang scheduling*). For more information, see [Multi-node parallel jobs](multi-node-parallel-jobs.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Disa
 ---
 
 # DisassociateFaces
-<a name="API_DisassociateFaces"></a>
 
 Removes the association between a `Face` supplied in an array of `FaceIds` and the User. If the User is not present already, then a `ResourceNotFound` exception is thrown. If successful, an array of faces that are disassociated from the User is returned. If a given face is already disassociated from the given UserID, it will be ignored and not be returned in the response. If a given face is already associated with a different User or not found in the collection it will be returned as part of `UnsuccessfulDisassociations`. You can remove 1 - 100 face IDs from a user at one time.
 

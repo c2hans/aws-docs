@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Ups
 ---
 
 # UpstreamRepository
-<a name="API_UpstreamRepository"></a>
 
  Information about an upstream repository. A list of `UpstreamRepository` objects is an input parameter to [CreateRepository](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_CreateRepository.html) and [UpdateRepository](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_UpdateRepository.html).
 

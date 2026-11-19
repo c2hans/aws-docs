@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Managing DNS conditional forwarders for your directory
-<a name="ms_ad_conditional_forwarders"></a>
 
 A conditional forwarder is a DNS setting you configure in Active Directory to route queries for a specific domain to a defined set of DNS servers. Conditional forwarders are required for Active Directory trusts and are also used to support private DNS domains. Each conditional forwarder consists of the fully qualified domain name (FQDN) of the remote domain and one or more DNS server IP addresses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/delete-reme
 ---
 
 # Deleting Remediation Actions for AWS Config
-<a name="delete-remediation-action"></a>
 
 You can use the AWS Config console or the AWS CLI to delete remediation actions.
 

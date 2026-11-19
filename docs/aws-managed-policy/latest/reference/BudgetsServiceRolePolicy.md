@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Budg
 ---
 
 # BudgetsServiceRolePolicy
-<a name="BudgetsServiceRolePolicy"></a>
 
 **Description**: Allows Budgets to verify access to Billing Views shared across account boundaries.
 

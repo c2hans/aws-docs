@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CrossCha
 ---
 
 # CrossChannelWorkloadBehavior
-<a name="API_CrossChannelWorkloadBehavior"></a>
 
 Defines the cross-channel and workload type routing behavior that allows an agent working on a contact to be offered a contact from a different channel or workload type.
 

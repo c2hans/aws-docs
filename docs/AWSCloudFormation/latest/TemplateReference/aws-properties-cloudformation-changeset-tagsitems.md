@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFormation::ChangeSet TagsItems
-<a name="aws-properties-cloudformation-changeset-tagsitems"></a>
 
 <a name="aws-properties-cloudformation-changeset-tagsitems-description"></a>The `TagsItems` property type specifies Property description not available. for an [AWS::CloudFormation::ChangeSet](aws-resource-cloudformation-changeset.md).
 

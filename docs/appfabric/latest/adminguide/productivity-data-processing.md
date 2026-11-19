@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/productivity
 ---
 
 # Data processing in AppFabric
-<a name="productivity-data-processing"></a>
 
 |  |
 | --- |

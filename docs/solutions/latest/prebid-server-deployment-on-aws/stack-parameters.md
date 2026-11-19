@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # CloudFormation Stack Parameters
-<a name="stack-parameters"></a>
 
 The following table lists the CloudFormation parameters for the PrebidServerStack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-analytics
 ---
 
 # Analytics
-<a name="acxd-analytics"></a>
 
 Analytics helps you understand how users move through your agentic CX designer applications, where conversations succeed, and where experiences may need improvement.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel03-b
 ---
 
 # REL03-BP03 Provide service contracts per API
-<a name="rel03-bp03"></a>
 
  A service contract is a documented, machine-readable agreement between an API producer and its consumers. It defines the operations, data types, and fields that both sides rely on, so each can change its implementation without breaking the other. With a versioning strategy, consumers keep using the current API and migrate on their own schedule. Producers deploy whenever they are ready, and teams pick the technology stack that suits them.
 

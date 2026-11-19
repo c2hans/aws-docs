@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-b
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Conclusion
-<a name="conclusion"></a>
 
  This guide is intended for IT infrastructure architects, administrators, and IT professionals who are planning to implement a VMware Cloud Software Defined Data Center (SDDC).
 

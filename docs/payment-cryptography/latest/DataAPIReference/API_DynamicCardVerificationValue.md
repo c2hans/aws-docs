@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # DynamicCardVerificationValue
-<a name="API_DynamicCardVerificationValue"></a>
 
 Parameters that are required to generate or verify Dynamic Card Verification Value (dCVV).
 

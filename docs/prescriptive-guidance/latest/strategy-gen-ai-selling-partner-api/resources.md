@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## Amazon Selling Partner API resources
 <a name="resources-spi-api"></a>

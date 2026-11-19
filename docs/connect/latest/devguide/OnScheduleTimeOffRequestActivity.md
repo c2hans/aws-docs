@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnScheduleTimeOf
 ---
 
 # OnScheduleTimeOffRequestActivity
-<a name="OnScheduleTimeOffRequestActivity"></a>
 
 The OnScheduleTimeOffRequestActivity event source runs a rule when there is activity on an agent's time off request.
 

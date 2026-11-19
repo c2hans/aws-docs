@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/private-off
 ---
 
 # Preparing a private offer for your AWS Marketplace product
-<a name="private-offers-overview"></a>
 
 Private offers are negotiated terms used to purchase a product from AWS Marketplace. This can involve a custom pricing plan, end user license agreement (EULA), or custom solutions. Sellers and buyers negotiate before committing to a private offer that's different from the public offer. You can create and extend multiple private offers to a single buyer. Buyers that you extend a private offer to have the option to choose between the private offer and the public offer. Buyers can only be subscribed to one offer at any given time. They can't be subscribed to both a private offer and the public offer at the same time. This topic provides information about how private offers work, including special considerations, buyer experience, and seller reports.
 

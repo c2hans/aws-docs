@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeEnrichmentJob
-<a name="API_DescribeEnrichmentJob"></a>
 
 Retrieves detailed information about a specific enrichment job, including its current status, configuration, and timestamps.
 

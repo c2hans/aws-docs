@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-sql-
 ---
 
 # Creating a SQL analysis template
-<a name="create-sql-analysis-template"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Targe
 ---
 
 # TargetedSentimentDetectionJobFilter
-<a name="API_TargetedSentimentDetectionJobFilter"></a>
 
 Provides information for filtering a list of dominant language detection jobs. For more information, see the `ListTargetedSentimentDetectionJobs` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetReserv
 ---
 
 # GetReservedInstancesExchangeQuote
-<a name="API_GetReservedInstancesExchangeQuote"></a>
 
 Returns a quote and exchange information for exchanging one or more specified Convertible Reserved Instances for a new Convertible Reserved Instance. If the exchange cannot be performed, the reason is returned in the response. Use [AcceptReservedInstancesExchangeQuote](API_AcceptReservedInstancesExchangeQuote.md) to perform the exchange.
 

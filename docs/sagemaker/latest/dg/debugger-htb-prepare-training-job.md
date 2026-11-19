@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-htb-prepare
 ---
 
 # Prepare a training job to collect TensorBoard output data
-<a name="debugger-htb-prepare-training-job"></a>
 
 A typical training job for machine learning in SageMaker AI consists of two main steps: preparing a training script and configuring a SageMaker AI ModelTrainer (formerly estimator in PySDK v2) object of the SageMaker AI Python SDK. In this section, you'll learn about the required changes to collect TensorBoard-compatible data from SageMaker training jobs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_Tag.html
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A tag is a key-value pair. Allowed characters are letters, white space, and numbers that can be represented in UTF-8, and the following characters:` + - = . _ : /`.
 

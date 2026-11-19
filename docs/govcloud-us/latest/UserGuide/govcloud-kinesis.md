@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ki
 ---
 
 # Amazon Kinesis Data Streams in AWS GovCloud (US)
-<a name="govcloud-kinesis"></a>
 
 Amazon Kinesis makes it easy to collect, process, and analyze video and data streams in real time.
 

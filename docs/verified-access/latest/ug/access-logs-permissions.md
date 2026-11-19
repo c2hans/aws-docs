@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/access-logs-pe
 ---
 
 # Verified Access logging permissions
-<a name="access-logs-permissions"></a>
 
 The IAM principal being used to configure the logging destination needs to have certain permissions for logging to work properly. The following sections show the permissions required for each logging destination.
 

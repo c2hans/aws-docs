@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_FailoverRout
 ---
 
 # FailoverRouterInputConfiguration
-<a name="API_FailoverRouterInputConfiguration"></a>
 
 Configuration settings for a failover router input that allows switching between two input sources.
 

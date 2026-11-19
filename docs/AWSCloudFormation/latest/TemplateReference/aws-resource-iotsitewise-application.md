@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::Application
-<a name="aws-resource-iotsitewise-application"></a>
 
 Specifies a new application for the provided workspace and IAM Identity Center instance. For more information, see [CreateApplication](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateApplication.html) in the *AWS IoT SiteWise API Reference*.
 

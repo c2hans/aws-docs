@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateBrand
-<a name="API_CreateBrand"></a>
 
 Creates an Quick Sight brand.
 

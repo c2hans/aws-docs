@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchDes
 ---
 
 # BatchDescribeDataTableValueFailureResult
-<a name="API_BatchDescribeDataTableValueFailureResult"></a>
 
 A batch describe data table value failure result.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_ind
 ---
 
 # Configuring service clients in the AWS SDK for PHP Version 3
-<a name="guide_index"></a>
 
 To programmatically access AWS services, the AWS SDK for PHP Version 3 uses a client object for each AWS service. For example, if your application needs to access Amazon EC2, you create an Amazon EC2 client object—an instance of the [Ec2Client](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.Ec2.Ec2Client.html) class—to interface with that service. You then use the service client to make requests to that AWS service.
 

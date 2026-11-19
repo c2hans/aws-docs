@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # LifecyclePolicyIdentifier
-<a name="API_LifecyclePolicyIdentifier"></a>
 
 The unique identifiers of policy types and policy names.
 

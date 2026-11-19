@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-live-sync
 ---
 
 # Using the Live Sync agent node
-<a name="acxd-live-sync"></a>
 
 Live Sync enables bidirectional web or mobile conversations where the AI can respond to the user and coordinate actions on the frontend experience.
 

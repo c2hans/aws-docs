@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sid
 ---
 
 # SidewalkResourceTypeEventConfiguration
-<a name="API_SidewalkResourceTypeEventConfiguration"></a>
 
 Sidewalk resource type event configuration object for enabling or disabling topic.
 

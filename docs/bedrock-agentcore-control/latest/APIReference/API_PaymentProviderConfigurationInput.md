@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # PaymentProviderConfigurationInput
-<a name="API_PaymentProviderConfigurationInput"></a>
 
 Provider configuration input — contains secrets for creation and update. Varies by vendor type.
 

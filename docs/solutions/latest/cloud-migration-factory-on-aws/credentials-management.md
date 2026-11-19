@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Credentials management
-<a name="credentials-management"></a>
 
 The Cloud Migration Factory on AWS solution features a Credentials Manager which integrates with AWS Secrets Manager within the account in which the instance is deployed. The feature allows administrators to save system credentials to AWS Secrets Manager for use in automation scripts without providing users access to retrieve the credentials directly, or needing to provide users access to AWS Secrets Manager. Users can select stored credentials based on their name and description when providing them to an automation job. The automation job will then only retrieve the credentials requested when running on the automation server, and at this point the IAM Role allocated to the EC2 instance will be used to access the required secrets.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Service functions
-<a name="next-gen-service-functions"></a>
 
 **Service functions** are technical subsets of the service topology that represent specific workflows within a service.
 

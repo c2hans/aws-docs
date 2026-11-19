@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/work_volumes_impair
 ---
 
 # Work with an impaired Amazon EBS volume
-<a name="work_volumes_impaired"></a>
 
 Use the following options if a volume is impaired because the volume's data is potentially inconsistent.
 

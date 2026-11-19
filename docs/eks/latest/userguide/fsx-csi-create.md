@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/fsx-csi-create.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Deploy the FSx for Lustre driver
-<a name="fsx-csi-create"></a>
 
 This topic shows you how to deploy the [FSx for Lustre CSI driver](fsx-csi.md) to your Amazon EKS cluster and verify that it works. We recommend using the latest version of the driver. For available versions, see [CSI Specification Compatibility Matrix](https://github.com/kubernetes-sigs/aws-fsx-csi-driver/blob/master/docs/README.md#csi-specification-compatibility-matrix) on GitHub.
 

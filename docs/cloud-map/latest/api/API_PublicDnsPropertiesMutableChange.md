@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_PublicDnsProper
 ---
 
 # PublicDnsPropertiesMutableChange
-<a name="API_PublicDnsPropertiesMutableChange"></a>
 
 Updated DNS properties for the public DNS namespace.
 

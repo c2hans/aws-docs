@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_AutoScalingUpdate.h
 ---
 
 # AutoScalingUpdate
-<a name="API_AutoScalingUpdate"></a>
 
 The updates to the auto scaling parameters for the connector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/attribute-based
 ---
 
 # Attribute-based access control
-<a name="attribute-based-access-control"></a>
 
 In AWS Lake Formation, you can grant access on AWS Glue Data Catalog objects such as catalogs, databases, tables, and data filters using attributes that are IAM tags and session tags associated with IAM entities such as roles and users.
 

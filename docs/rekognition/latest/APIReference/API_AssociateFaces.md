@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Asso
 ---
 
 # AssociateFaces
-<a name="API_AssociateFaces"></a>
 
 Associates one or more faces with an existing UserID. Takes an array of `FaceIds`. Each `FaceId` that are present in the `FaceIds` list is associated with the provided UserID. The number of FaceIds that can be used as input in a single request is limited to 100.
 

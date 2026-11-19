@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ChangeSetHook
-<a name="API_ChangeSetHook"></a>
 
 Specifies the resource, the Hook, and the Hook version to be invoked.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Dis
 ---
 
 # DisableClientAuthentication
-<a name="API_DisableClientAuthentication"></a>
 
 Disables alternative client authentication methods for the specified directory.
 

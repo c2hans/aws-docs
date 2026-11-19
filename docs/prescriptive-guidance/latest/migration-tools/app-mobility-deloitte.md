@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Deloitte ATAsphere Suite
-<a name="app-mobility-deloitte"></a>
 
 *Last update: June 3, 2024*
 

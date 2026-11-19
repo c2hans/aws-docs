@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/feature-overvie
 ---
 
 # Use cases for the Neptune lookup cache
-<a name="feature-overview-lookup-cache-when-to-use"></a>
 
 The lookup cache only helps when your read queries are returning the properties of a very large number of vertices and edges, or of RDF triples.
 

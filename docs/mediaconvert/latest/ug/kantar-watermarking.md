@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/kantar-watermarki
 ---
 
 # Using Kantar for audio watermarking
-<a name="kantar-watermarking"></a>
 
 Kantar is a company that provides and tracks unique identifiers for media content in the form of audio watermarks that are audible to machines but not to humans. After you establish a relationship with Kantar, you can use AWS Elemental MediaConvert to encode these watermarks into your content, for audience measurement and anti-piracy applications.
 

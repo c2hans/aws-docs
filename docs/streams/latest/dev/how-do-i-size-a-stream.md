@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/how-do-i-size-a-strea
 ---
 
 # Choose the right mode to stream in
-<a name="how-do-i-size-a-stream"></a>
 
 The following topics explain how to choose the best mode for your application and how to switch between modes, if needed.
 

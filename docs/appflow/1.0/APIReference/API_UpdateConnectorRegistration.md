@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_UpdateConne
 ---
 
 # UpdateConnectorRegistration
-<a name="API_UpdateConnectorRegistration"></a>
 
 Updates a custom connector that you've previously registered. This operation updates the connector with one of the following:
 + The latest version of the AWS Lambda function that's assigned to the connector

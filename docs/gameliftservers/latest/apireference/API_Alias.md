@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # Alias
-<a name="API_Alias"></a>
 
 Properties that describe an alias resource.
 

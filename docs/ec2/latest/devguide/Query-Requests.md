@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/Query-Requests.html
 ---
 
 # Query requests for Amazon EC2
-<a name="Query-Requests"></a>
 
 Query requests are HTTP or HTTPS requests that use the HTTP verb GET or POST and a Query parameter named `Action`. For each Amazon EC2 API action, you can choose whether to use GET or POST. Regardless of which verb you choose, the same data is sent and received. For a list of Amazon EC2 API actions, see [Actions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/query-apis.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sid
 ---
 
 # SidewalkUpdateWirelessDevice
-<a name="API_SidewalkUpdateWirelessDevice"></a>
 
 Sidewalk object for updating a wireless device.
 

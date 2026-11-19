@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # AnalysisRuleCriteria
-<a name="API_AnalysisRuleCriteria"></a>
 
 The criteria for an analysis rule for an analyzer. The criteria determine which entities will generate findings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Creat
 ---
 
 # CreateLoggingConfiguration
-<a name="API_CreateLoggingConfiguration"></a>
 
 The `CreateLoggingConfiguration` operation creates rules and alerting logging configuration for the workspace. Use this operation to set the CloudWatch log group to which the logs will be published to.
 

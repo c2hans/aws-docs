@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeInventoryDeletions
-<a name="API_DescribeInventoryDeletions"></a>
 
 Describes a specific delete inventory operation.
 

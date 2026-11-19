@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/java-plug
 ---
 
 # Get temporary security credentials with the IAM Roles Anywhere plugin for the AWS SDK for Java
-<a name="java-plugin"></a>
 
  The IAM Roles Anywhere plugin for the AWS SDK for Java integrates IAM Roles Anywhere credential resolution into any AWS SDK for Java v2 service client. Unlike the standalone credential helper tool, which runs out of process, the plugin runs in the same JVM as your application. The SDK client signs each IAM Roles Anywhere `CreateSession` request with the supplied X.509 credentials and refreshes the returned session credentials before they expire. It applies them to subsequent AWS API calls with no additional code.
 

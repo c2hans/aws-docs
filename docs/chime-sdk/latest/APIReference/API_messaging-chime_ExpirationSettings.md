@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ExpirationSettings
-<a name="API_messaging-chime_ExpirationSettings"></a>
 
 Settings that control the interval after which a channel is deleted.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Pip
 ---
 
 # PipelineIdName
-<a name="API_PipelineIdName"></a>
 
 Contains the name and identifier of a pipeline.
 

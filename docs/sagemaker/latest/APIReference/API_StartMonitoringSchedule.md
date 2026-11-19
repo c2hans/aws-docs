@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartM
 ---
 
 # StartMonitoringSchedule
-<a name="API_StartMonitoringSchedule"></a>
 
 Starts a previously stopped monitoring schedule.
 

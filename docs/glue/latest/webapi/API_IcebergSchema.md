@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergSchema.htm
 ---
 
 # IcebergSchema
-<a name="API_IcebergSchema"></a>
 
 Defines the schema structure for an Iceberg table, including field definitions, data types, and schema metadata.
 

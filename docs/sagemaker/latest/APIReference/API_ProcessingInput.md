@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Proces
 ---
 
 # ProcessingInput
-<a name="API_ProcessingInput"></a>
 
 The inputs for a processing job. The processing input must specify exactly one of either `S3Input` or `DatasetDefinition` types.
 

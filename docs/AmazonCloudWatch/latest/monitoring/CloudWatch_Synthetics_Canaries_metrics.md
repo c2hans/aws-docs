@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # CloudWatch metrics published by canaries
-<a name="CloudWatch_Synthetics_Canaries_metrics"></a>
 
 Canaries publish the following metrics to CloudWatch in the `CloudWatchSynthetics` namespace. For more information about viewing CloudWatch metrics, see [View available metrics](viewing_metrics_with_cloudwatch.md) .
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Contai
 ---
 
 # Container
-<a name="API_Container"></a>
 
 A Docker container that's part of a task.
 

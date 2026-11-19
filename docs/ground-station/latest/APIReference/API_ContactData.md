@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_C
 ---
 
 # ContactData
-<a name="API_ContactData"></a>
 
 Data describing a contact.
 

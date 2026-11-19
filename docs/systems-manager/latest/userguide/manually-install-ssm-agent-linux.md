@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/manuall
 ---
 
 # Manually installing and uninstalling SSM Agent on EC2 instances for Linux
-<a name="manually-install-ssm-agent-linux"></a>
 
 Before you manually install AWS Systems Manager Agent (SSM Agent) on an Amazon Elastic Compute Cloud (Amazon EC2) Linux operating system, review the following information.
 

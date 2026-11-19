@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelC
 ---
 
 # ModelCardVersionSummary
-<a name="API_ModelCardVersionSummary"></a>
 
 A summary of a specific version of the model card.
 

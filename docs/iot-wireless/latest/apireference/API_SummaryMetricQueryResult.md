@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sum
 ---
 
 # SummaryMetricQueryResult
-<a name="API_SummaryMetricQueryResult"></a>
 
 The result of the summary metrics aggregation operation.
 

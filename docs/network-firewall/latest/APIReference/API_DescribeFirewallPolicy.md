@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DescribeFirewallPolicy
-<a name="API_DescribeFirewallPolicy"></a>
 
 Returns the data objects for the specified firewall policy.
 
@@ -157,7 +156,7 @@ The policy for the specified firewall policy.
 Type: [FirewallPolicy](API_FirewallPolicy.md) object
 
  ** [FirewallPolicyResponse](#API_DescribeFirewallPolicy_ResponseSyntax) **   <a name="networkfirewall-DescribeFirewallPolicy-response-FirewallPolicyResponse"></a>
-The high-level properties of a firewall policy. This, along with the [FirewallPolicy](API_FirewallPolicy.md), define the policy. You can retrieve all objects for a firewall policy by calling [DescribeFirewallPolicy](#API_DescribeFirewallPolicy).
+The high-level properties of a firewall policy. This, along with the [FirewallPolicy](API_FirewallPolicy.md), define the policy. You can retrieve all objects for a firewall policy by calling [DescribeFirewallPolicy](API_DescribeFirewallPolicy.md).
 Type: [FirewallPolicyResponse](API_FirewallPolicyResponse.md) object
 
  ** [UpdateToken](#API_DescribeFirewallPolicy_ResponseSyntax) **   <a name="networkfirewall-DescribeFirewallPolicy-response-UpdateToken"></a>

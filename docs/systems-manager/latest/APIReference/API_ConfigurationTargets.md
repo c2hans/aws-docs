@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ConfigurationTargets
-<a name="API_ConfigurationTargets"></a>
 
 The target resources in the third-party cloud environment.
 

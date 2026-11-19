@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-CreateRdsSnapshot`
-<a name="automation-aws-createrdssnapshot"></a>
 
  **Description**
 

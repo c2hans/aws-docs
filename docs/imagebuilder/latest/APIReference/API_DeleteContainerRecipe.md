@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Del
 ---
 
 # DeleteContainerRecipe
-<a name="API_DeleteContainerRecipe"></a>
 
 Deletes a container recipe. The request fails with `ResourceDependencyException` if the recipe is shared with other accounts, or if an image pipeline references it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Replatforming options
-<a name="replatform-options"></a>
 
 When you replatform Oracle Database from on premises to managed database services on AWS, you have the following options:
 + Amazon RDS for Oracle

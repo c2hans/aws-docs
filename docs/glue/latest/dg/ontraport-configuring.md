@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/ontraport-configuring.htm
 ---
 
 # Configuring Ontraport
-<a name="ontraport-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Ontraport, you must meet the following requirements:
 

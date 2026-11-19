@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/APIReference/A
 ---
 
 # DeleteAccountColor (Deprecated)
-<a name="API_DeleteAccountColor"></a>
 
 **Important**
 Deprecated. This operation becomes unavailable on April 28, 2027. Use [UpdateAccountCustomizations](API_UpdateAccountCustomizations.md) with `accountColor` set to `"none"` instead.

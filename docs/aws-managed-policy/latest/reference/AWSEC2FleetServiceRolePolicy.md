@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSEC2FleetServiceRolePolicy
-<a name="AWSEC2FleetServiceRolePolicy"></a>
 
 **Description**: Allows EC2 Fleet to launch and manage instances.
 

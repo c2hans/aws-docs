@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_List
 ---
 
 # ListMemberships
-<a name="API_ListMemberships"></a>
 
 Returns the memberships that the calling principal can access.
 

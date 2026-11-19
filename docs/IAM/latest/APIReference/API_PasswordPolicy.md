@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_PasswordPoli
 ---
 
 # PasswordPolicy
-<a name="API_PasswordPolicy"></a>
 
 Contains information about the account password policy.
 

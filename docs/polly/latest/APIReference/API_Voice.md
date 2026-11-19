@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_Voice.html
 ---
 
 # Voice
-<a name="API_Voice"></a>
 
 Description of the voice.
 

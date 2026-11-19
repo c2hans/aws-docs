@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ValidationExceptionField
-<a name="API_connect-scheduling_ValidationExceptionField"></a>
 
 An input field that failed validation.
 

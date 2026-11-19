@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/opg-srt.html
 ---
 
 # Creating an SRT output group
-<a name="opg-srt"></a>
 
 When you create an AWS Elemental MediaLive channel, you might want to include an SRT output group. For information about the use cases for an SRT output group, see [Containers, protocols, and downstream systems](outputs-supported-containers-downstream-systems.md).
 

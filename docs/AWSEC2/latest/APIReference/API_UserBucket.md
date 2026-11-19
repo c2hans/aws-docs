@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UserBucke
 ---
 
 # UserBucket
-<a name="API_UserBucket"></a>
 
 Describes the Amazon S3 bucket for the disk image.
 

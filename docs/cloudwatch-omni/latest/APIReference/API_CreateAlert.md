@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # CreateAlert
-<a name="API_CreateAlert"></a>
 
 Creates a new alert within a space.
 

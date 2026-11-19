@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # CollaboratorConfiguration
-<a name="API_agent-runtime_CollaboratorConfiguration"></a>
 
  Settings of an inline collaborator agent.
 

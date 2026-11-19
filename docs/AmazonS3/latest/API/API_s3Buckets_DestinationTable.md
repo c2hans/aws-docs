@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Destin
 ---
 
 # DestinationTable
-<a name="API_s3Buckets_DestinationTable"></a>
 
 The table that a migration creates in a table bucket and migrates the source into.
 

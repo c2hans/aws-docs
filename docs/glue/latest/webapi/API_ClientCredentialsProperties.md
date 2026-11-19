@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ClientCredentials
 ---
 
 # ClientCredentialsProperties
-<a name="API_ClientCredentialsProperties"></a>
 
 OAuth2 client credentials configuration that defines the properties needed for the Client Credentials grant type flow.
 

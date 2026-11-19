@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises VM to Amazon EC2 by using AWS Application Migration Service
-<a name="migrate-an-on-premises-vm-to-amazon-ec2-by-using-aws-application-migration-service"></a>
 
 *Thanh Nguyen, Amazon Web Services*
 

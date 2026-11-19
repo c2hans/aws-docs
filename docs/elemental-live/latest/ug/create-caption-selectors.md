@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/create-caption-
 ---
 
 # Step 2: Create captions selectors
-<a name="create-caption-selectors"></a>
 
 After you have created a list of captions selectors, you can create the captions selectors in the event.
 

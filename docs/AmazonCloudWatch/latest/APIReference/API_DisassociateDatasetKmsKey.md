@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # DisassociateDatasetKmsKey
-<a name="API_DisassociateDatasetKmsKey"></a>
 
 Removes the customer managed AWS Key Management Service (AWS KMS) key association from the specified dataset. After this operation completes, data that you publish to the dataset is encrypted at rest using an AWS owned key managed by Amazon CloudWatch.
 

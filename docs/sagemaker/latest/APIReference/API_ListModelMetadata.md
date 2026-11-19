@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListMo
 ---
 
 # ListModelMetadata
-<a name="API_ListModelMetadata"></a>
 
 Lists the domain, framework, task, and model name of standard machine learning models found in common model zoos.
 

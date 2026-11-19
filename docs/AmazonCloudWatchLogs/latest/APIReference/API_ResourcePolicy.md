@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ResourcePolicy
-<a name="API_ResourcePolicy"></a>
 
 A policy enabling one or more entities to put logs to a log group in this account.
 

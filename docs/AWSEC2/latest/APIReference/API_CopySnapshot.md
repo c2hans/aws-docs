@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CopySnaps
 ---
 
 # CopySnapshot
-<a name="API_CopySnapshot"></a>
 
 Creates an exact copy of an Amazon EBS snapshot.
 

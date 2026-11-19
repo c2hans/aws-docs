@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/custom-auth-ma
 ---
 
 # Managing custom authorizers
-<a name="custom-auth-manage"></a>
 
  You can manage your authorizers by using the following APIs.
 + [ListAuthorizers](https://docs.aws.amazon.com/iot/latest/apireference/API_ListAuthorizers.html): Show all authorizers in your account.

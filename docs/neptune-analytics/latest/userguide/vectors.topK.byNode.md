@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/vecto
 ---
 
 # .vectors.topK.byNode algorithm
-<a name="vectors.topK.byNode"></a>
 
 The `.vectors.topK.byNode` algorithm finds the `topK` nearest neighbors of a node based on the distance of their vector embeddings from the node.
 

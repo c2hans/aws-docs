@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSecurityHubServiceRolePolicy
-<a name="AWSSecurityHubServiceRolePolicy"></a>
 
 **Description**: A service-linked role required for AWS Security Hub to access your resources.
 

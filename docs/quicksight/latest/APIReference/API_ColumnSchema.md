@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Colum
 ---
 
 # ColumnSchema
-<a name="API_ColumnSchema"></a>
 
 The column schema.
 

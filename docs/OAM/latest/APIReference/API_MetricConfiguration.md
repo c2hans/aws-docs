@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_MetricConfig
 ---
 
 # MetricConfiguration
-<a name="API_MetricConfiguration"></a>
 
 This structure contains the `Filter` parameter which you can use to specify which metric namespaces are to be shared from this source account to the monitoring account.
 

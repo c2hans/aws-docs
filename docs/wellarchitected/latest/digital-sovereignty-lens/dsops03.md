@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # Continuous auditability
-<a name="dsops03"></a>
 
  Audits from multiple regulatory authorities require different evidence, timelines, and scoping criteria. Preparing for each audit manually is slow, error-prone, and doesn't scale across jurisdictions. Organizations that automate evidence collection and maintain continuous audit readiness can respond to regulatory requests within required timeframes without diverting operational teams from their primary responsibilities.
 

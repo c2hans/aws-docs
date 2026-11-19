@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # SpaceSummary
-<a name="API_SpaceSummary"></a>
 
 A summary of a space, as returned by `ListSpaces`.
 

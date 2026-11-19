@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/invento
 ---
 
 # Viewing inventory history and change tracking
-<a name="inventory-history"></a>
 
 You can view AWS Systems Manager Inventory history and change tracking for all of your managed nodes by using [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/). AWS Config provides a detailed view of the configuration of AWS resources in your AWS account. This includes how the resources are related to one another and how they were configured in the past so that you can see how the configurations and relationships change over time. To view inventory history and change tracking, you must turn on the following resources in AWS Config:
 + SSM:ManagedInstanceInventory

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # IntegrationSummary
-<a name="API_IntegrationSummary"></a>
 
 This structure contains information about one CloudWatch Logs integration. This structure is returned by a [ListIntegrations](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_ListIntegrations.html) operation.
 

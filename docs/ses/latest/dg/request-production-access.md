@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/request-production-access.
 ---
 
 # Request production access (Moving out of the Amazon SES sandbox)
-<a name="request-production-access"></a>
 
 To help prevent fraud and abuse, and to help protect your reputation as a sender, we apply certain restrictions to new Amazon SES accounts.
 

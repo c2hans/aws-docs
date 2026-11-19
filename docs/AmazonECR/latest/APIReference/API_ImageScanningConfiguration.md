@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ImageS
 ---
 
 # ImageScanningConfiguration
-<a name="API_ImageScanningConfiguration"></a>
 
 The image scanning configuration for a repository.
 

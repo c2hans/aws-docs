@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/elink-using.html
 ---
 
 # Using AWS Elemental Link for a MediaLive input
-<a name="elink-using"></a>
 
 You can set up an HD device or a UHD device as the source for a MediaLive input. You can then attach the input to a MediaLive channel.
 

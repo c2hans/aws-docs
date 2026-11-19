@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # AIGuardrailTopicPolicyConfig
-<a name="API_amazon-q-connect_AIGuardrailTopicPolicyConfig"></a>
 
 Contains details about topics that the AI Guardrail should identify and deny.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/configuring
 ---
 
 # Configuring multi-Region clusters
-<a name="configuring-multi-region-clusters"></a>
 
 Configure and manage clusters across multiple AWS Regions using either the AWS CLI or your preferred programming language including Python, C\+\+, JavaScript, Java, Rust, Ruby, .NET, and Golang. The AWS CLI provides quick access through shell commands, while AWS SDKs enable programmatic control through native language support.
 

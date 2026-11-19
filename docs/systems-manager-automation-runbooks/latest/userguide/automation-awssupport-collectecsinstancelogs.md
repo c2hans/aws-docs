@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-CollectECSInstanceLogs`
-<a name="automation-awssupport-collectecsinstancelogs"></a>
 
  **Description**
 

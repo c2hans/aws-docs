@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListMo
 ---
 
 # ListModelCardVersions
-<a name="API_ListModelCardVersions"></a>
 
 List existing versions of an Amazon SageMaker Model Card.
 

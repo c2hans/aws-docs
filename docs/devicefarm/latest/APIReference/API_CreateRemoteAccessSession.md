@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Creat
 ---
 
 # CreateRemoteAccessSession
-<a name="API_CreateRemoteAccessSession"></a>
 
 Specifies and starts a remote access session.
 

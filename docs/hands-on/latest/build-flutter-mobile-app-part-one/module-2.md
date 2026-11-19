@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-flutter-mobile-app
 ---
 
 # Module 2: Add Amplify authentication
-<a name="module-2"></a>
 
 ## Overview
 <a name="overview"></a>

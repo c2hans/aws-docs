@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DeleteSegmentSubscription
-<a name="API_connect-customer-profiles_DeleteSegmentSubscription"></a>
 
 Deletes a segment subscription for membership events. All active event notifications for this segment are stopped.
 

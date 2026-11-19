@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # MedicalScribeStreamDetails
-<a name="API_streaming_MedicalScribeStreamDetails"></a>
 
 Contains details about a AWS HealthScribe streaming session.
 

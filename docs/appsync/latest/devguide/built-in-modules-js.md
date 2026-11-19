@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/built-in-modules
 ---
 
 # Built-in modules
-<a name="built-in-modules-js"></a>
 
 Modules are a part of the `APPSYNC_JS` runtime and provide utilities to help write JavaScript resolvers and functions. For samples and examples, see the [aws-appsync-resolver-samples](https://github.com/aws-samples/aws-appsync-resolver-samples) GitHub repository.
 

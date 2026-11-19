@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteConnec
 ---
 
 # DeleteConnection
-<a name="API_DeleteConnection"></a>
 
 Deletes the connection between a replication instance and an endpoint.
 

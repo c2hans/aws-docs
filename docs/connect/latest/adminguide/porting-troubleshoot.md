@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/porting-troubl
 ---
 
 # Troubleshoot issues after porting phone numbers to Connect Customer
-<a name="porting-troubleshoot"></a>
 
 After you have ported your numbers to Connect Customer, use the topics in this section to troubleshoot issues, or to release numbers you no longer need after porting.
 

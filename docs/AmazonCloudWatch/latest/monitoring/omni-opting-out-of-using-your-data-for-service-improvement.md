@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Opting out of using your data for service improvement
-<a name="omni-opting-out-of-using-your-data-for-service-improvement"></a>
 
 CloudWatch Omni does not use your content to develop or improve the service or its AI features, and your content is not used to train any foundation models. Your content is used only to provide the service to you.
 

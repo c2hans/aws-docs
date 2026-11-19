@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/smtp-credentials.html
 ---
 
 # Obtaining Amazon SES SMTP credentials
-<a name="smtp-credentials"></a>
 
 You need Amazon SES SMTP credentials to access the SES SMTP interface.
 

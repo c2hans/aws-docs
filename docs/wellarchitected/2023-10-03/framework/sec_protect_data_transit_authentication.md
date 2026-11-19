@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC09-BP04 Authenticate network communications
-<a name="sec_protect_data_transit_authentication"></a>
 
 |  |
 | --- |

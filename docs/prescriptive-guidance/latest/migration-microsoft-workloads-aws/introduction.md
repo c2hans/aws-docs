@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Options, tools, and best practices for migrating Microsoft workloads to AWS
-<a name="introduction"></a>
 
 *Dror Helper, Yogi Barot, Rich Benoit, Phil Ekins, Saleha Haider, Rob Higareda, Siavash Irani, Daniel Maldonado, Christine Megit, Siddharth Mehta, Mani Pachnanda, and Reut Almog Talmi, Amazon Web Services*
 

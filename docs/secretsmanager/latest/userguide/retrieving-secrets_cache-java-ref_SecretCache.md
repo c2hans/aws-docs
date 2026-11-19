@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 ---
 
 # SecretCache
-<a name="retrieving-secrets_cache-java-ref_SecretCache"></a>
 
 An in-memory cache for secrets requested from Secrets Manager. You use [getSecretString](#retrieving-secrets_cache-java-ref_SecretCache-methods-getSecretString) or [getSecretBinary](#retrieving-secrets_cache-java-ref_SecretCache-methods-getSecretBinary) to retrieve a secret from the cache. You can configure the cache settings by passing in a [SecretCacheConfiguration](retrieving-secrets_cache-java-ref_SecretCacheConfiguration.md) object in the constructor.
 

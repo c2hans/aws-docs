@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Cyber event recovery in financial services
-<a name="cyber-event-recovery-in-financial-services"></a>
 
  Cyber threats are a growing risk to financial services organizations worldwide, and the trend is only ever increasing. These organizations are now investing increasingly on cybersecurity measures to improve their risk posture and to implement better security practices to protect their most critical data and applications from external threats, such as ransomware and malware, and also to meet any regulatory requirements where they operate. FSI organizations are investing in building out modern cyber event recovery platforms on AWS using native AWS services as shown in the following reference architecture.
 

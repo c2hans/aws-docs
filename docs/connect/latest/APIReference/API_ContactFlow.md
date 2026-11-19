@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactF
 ---
 
 # ContactFlow
-<a name="API_ContactFlow"></a>
 
 Contains information about a flow.
 

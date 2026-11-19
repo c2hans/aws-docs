@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/product-and
 ---
 
 # AMI-based product requirements for AWS Marketplace
-<a name="product-and-ami-policies"></a>
 
 AWS Marketplace maintains the following policies for all Amazon Machine Image (AMI) products and offerings. The policies in this section are intended to provide customers with a safe, secure, and trustworthy compute platform.
 

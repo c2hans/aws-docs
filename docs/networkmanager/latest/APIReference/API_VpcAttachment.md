@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_V
 ---
 
 # VpcAttachment
-<a name="API_VpcAttachment"></a>
 
 Describes a VPC attachment.
 

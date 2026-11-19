@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSqsQ
 ---
 
 # AwsSqsQueueDetails
-<a name="API_AwsSqsQueueDetails"></a>
 
 Data about a queue.
 

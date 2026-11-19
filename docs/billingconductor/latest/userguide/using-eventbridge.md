@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/using-
 ---
 
 # Using Amazon EventBridge with AWS Billing Conductor
-<a name="using-eventbridge"></a>
 
 AWS Billing Conductor is integrated with Amazon EventBridge, an event bus service that you can use to connect your applications with data from a variety of sources. For more information, see the [*Amazon EventBridge User Guide*](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html).
 

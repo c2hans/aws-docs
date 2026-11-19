@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MetadataValue
-<a name="API_MetadataValue"></a>
 
 Value associated with the `eventMetadata` key.
 

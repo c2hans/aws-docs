@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuni
 ---
 
 # Get the SageMaker AI Execution Role
-<a name="automatic-model-tuning-ex-role"></a>
 
 Get the execution role for the notebook instance. This is the IAM role that you created for your notebook instance.
 

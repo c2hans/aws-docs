@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListAnnotationStore
 ---
 
 # ListAnnotationStoresFilter
-<a name="API_ListAnnotationStoresFilter"></a>
 
 A filter for annotation stores.
 

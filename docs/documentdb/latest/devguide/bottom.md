@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/bottom.html
 ---
 
 # $bottom
-<a name="bottom"></a>
 
 New from version 8.0.1.
 

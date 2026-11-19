@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Grou
 ---
 
 # GroundTruthManifest
-<a name="API_GroundTruthManifest"></a>
 
 The S3 bucket that contains an Amazon Sagemaker Ground Truth format manifest file.
 

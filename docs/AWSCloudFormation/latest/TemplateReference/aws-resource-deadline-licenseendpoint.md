@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::LicenseEndpoint
-<a name="aws-resource-deadline-licenseendpoint"></a>
 
 Creates a license endpoint to integrate your various licensed software used for rendering on Deadline Cloud.
 

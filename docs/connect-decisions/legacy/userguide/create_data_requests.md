@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/creat
 ---
 
 # Creating data requests
-<a name="create_data_requests"></a>
 
 You can use the simple reporting template to request any type of data from your partners. For example, you can request compliance information such as product brochure, safety report, or lab testing results of a product. You can also upload your own form for the partner to download, update information, and repload to answer the data requst.
 

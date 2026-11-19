@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/list-users.html
 ---
 
 # Listing users in a collection
-<a name="list-users"></a>
 
 You can use the [ListUsers](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListUsers.html) operation to list UserIds and the UserStatus. To see the FaceIDs that are associated with a UserID, use the [ListFaces](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListFaces.html) operation.
 

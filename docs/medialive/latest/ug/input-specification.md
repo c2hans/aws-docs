@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-specification.
 ---
 
 # Input specifications settings
-<a name="input-specification"></a>
 
 The **Input Specifications** settings include three fields that characterize the video in the input that you intend to use with this MediaLive channel. The fields are the following:
 + Input codec

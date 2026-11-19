@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/copper-connection-options
 ---
 
 # Copper connection options
-<a name="copper-connection-options"></a>
 
 The following are connection options for Copper:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Copper object to read.

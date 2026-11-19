@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Colu
 ---
 
 # Column
-<a name="API_Column"></a>
 
 A column within a schema relation, derived from the underlying table.
 

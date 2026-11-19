@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/debugging-fgac-jobs-sessi
 ---
 
 # Debugging fine-grained access control (FGAC) jobs and sessions
-<a name="debugging-fgac-jobs-sessions"></a>
 
 **Note**
 With this feature, you access the logs for the system profile workers, which may contain sensitive, unfiltered information. The following permissions should be used only for accessing non-production data. For jobs and sessions that access production data, we strongly suggest that you add these permissions only to administrators or users with elevated data access.

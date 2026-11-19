@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_P
 ---
 
 # ParameterizedStatement
-<a name="API_ParameterizedStatement"></a>
 
  Represents a PartiQL statement that uses parameters.
 

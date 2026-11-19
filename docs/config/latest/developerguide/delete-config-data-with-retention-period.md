@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/delete-conf
 ---
 
 # Deleting AWS Config Data
-<a name="delete-config-data-with-retention-period"></a>
 
 **Note**
 While AWS Config uses Amazon Simple Storage Service (Amazon S3) and Amazon Simple Notification Service (Amazon SNS) for sending configuration snapshots and configuration history files, AWS Config has its own data store and retention policies. The information on this page is specific for AWS Config. Amazon S3 and Amazon SNS have their own separate data store and retention policies.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/using-sdi-direct
 ---
 
 # Use case: Using SDI direct input in a profile and channel
-<a name="using-sdi-direct-input-in-a-profile-and-channel"></a>
 
 You might want to specify an SDI direct input in your profile and channel. When you choose this type of input, two supplementary fields appear—the **Device ID** field and the optional **Device Settings**.
 

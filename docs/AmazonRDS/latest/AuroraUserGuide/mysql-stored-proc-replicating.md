@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/mysql-s
 ---
 
 # Configuring, starting, and stopping binary log (binlog) replication
-<a name="mysql-stored-proc-replicating"></a>
 
 You can call the following stored procedures while connected to the primary instance in an Aurora MySQL cluster. These procedures control how transactions are replicated from an external database into Aurora MySQL, or from Aurora MySQL to an external database.
 

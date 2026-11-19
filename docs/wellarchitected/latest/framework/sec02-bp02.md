@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec02-b
 ---
 
 # SEC02-BP02 Use temporary credentials
-<a name="sec02-bp02"></a>
 
  Long-term credentials persist until someone removes them, which gives an unauthorized party durable access if the credentials are inadvertently disclosed. Temporary credentials expire automatically, which shrinks the window in which exposed credentials are useful. Use short-lived credentials for both human and machine access wherever a workload supports them, and reserve long-term credentials for the few cases that cannot avoid them.
 

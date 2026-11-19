@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/workflow-variab
 ---
 
 # Passing data between states with variables
-<a name="workflow-variables"></a>
 
 **Managing state with variables and JSONata**
 Step Functions recently added variables and JSONata to manage state and transform data.

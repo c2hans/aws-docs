@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/sig-v4-ex
 ---
 
 # Examples: Signature Calculations in AWS Signature Version 4
-<a name="sig-v4-examples-using-sdks"></a>
 
 **Topics**
 + [Signature Calculation Examples Using Java (AWS Signature Version 4)](#sig-v4-examples-using-sdk-java)

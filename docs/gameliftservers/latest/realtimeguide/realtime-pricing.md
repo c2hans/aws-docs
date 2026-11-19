@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/realtimeguide/rea
 ---
 
 # Amazon GameLift Servers Realtime pricing and cost planning
-<a name="realtime-pricing"></a>
 
 With Amazon GameLift Servers Realtime you pay for the managed EC2 hosting resources and services you use to host Realtime servers. There's no additional charge for use of the Realtime servers themselves.
 

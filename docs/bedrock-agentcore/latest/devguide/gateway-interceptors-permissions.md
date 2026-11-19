@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Permissions for interceptors
-<a name="gateway-interceptors-permissions"></a>
 
 When configuring interceptors, your gateway service role must have the lambda:InvokeFunction IAM permissions to invoke the Lambda functions that serve as interceptors. The service role needs specific permissions to execute interceptor functions during request and response processing.
 

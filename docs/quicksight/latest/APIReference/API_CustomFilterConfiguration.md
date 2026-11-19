@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomFilterConfiguration
-<a name="API_CustomFilterConfiguration"></a>
 
 A custom filter that filters based on a single value. This filter can be partially matched.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeCi
 ---
 
 # ChangeCidrCollection
-<a name="API_ChangeCidrCollection"></a>
 
 Creates, changes, or deletes CIDR blocks within a collection. Contains authoritative IP information mapping blocks to one or multiple locations.
 

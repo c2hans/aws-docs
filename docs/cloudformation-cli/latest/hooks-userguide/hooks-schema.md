@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Schema syntax reference for CloudFormation Hooks
-<a name="hooks-schema"></a>
 
 This section describes the syntax of the schema that you use to develop CloudFormation Hooks.
 

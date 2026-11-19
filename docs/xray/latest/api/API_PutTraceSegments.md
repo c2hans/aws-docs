@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_PutTraceSegments.htm
 ---
 
 # PutTraceSegments
-<a name="API_PutTraceSegments"></a>
 
 Uploads segment documents to AWS X-Ray. A segment document can be a completed segment, an in-progress segment, or an array of subsegments.
 

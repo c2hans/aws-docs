@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-operati
 ---
 
 # Operations
-<a name="net-win-operations"></a>
 
 **Topics**
 + [Tagging AWS Resources](net-win-tagging-aws-resources.md)

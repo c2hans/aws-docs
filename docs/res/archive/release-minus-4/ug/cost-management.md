@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/cost-mana
 ---
 
 # Cost monitoring and control
-<a name="cost-management"></a>
 
 **Note**
 Associating Research and Engineering Studio projects to AWS Budgets is not supported in AWS GovCloud (US).

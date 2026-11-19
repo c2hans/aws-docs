@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Flink application troubleshooting
-<a name="flink-troubleshooting"></a>
 
 ## Problem: Flink application not running (dead app)
 <a name="problem-flink-app-not-running"></a>

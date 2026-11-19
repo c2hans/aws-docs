@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Lis
 ---
 
 # ListSourceRepositoriesItem
-<a name="API_ListSourceRepositoriesItem"></a>
 
 Information about a source repository returned in a list of source repositories.
 

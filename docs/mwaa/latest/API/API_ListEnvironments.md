@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_ListEnvironments.htm
 ---
 
 # ListEnvironments
-<a name="API_ListEnvironments"></a>
 
 Lists the Amazon Managed Workflows for Apache Airflow (MWAA) environments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_GitCon
 ---
 
 # GitConfig
-<a name="API_GitConfig"></a>
 
 Specifies configuration details for a Git repository in your AWS account.
 

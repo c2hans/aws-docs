@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/security_
 ---
 
 # AWS CloudTrail resource-based policy examples
-<a name="security_iam_resource-based-policy-examples"></a>
 
 This section provides example resource-based polices for CloudTrail Lake dashboards, event data stores, and channels.
 

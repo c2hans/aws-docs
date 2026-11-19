@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/amzn1-amzn2-container.html
 ---
 
 # Comparing packages installed on AL1 and AL2 base container images
-<a name="amzn1-amzn2-container"></a>
 
 | Package | AL1 Container | AL2 Container |
 | --- | --- | --- |

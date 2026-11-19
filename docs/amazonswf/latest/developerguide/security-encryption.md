@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/security
 ---
 
 # Encryption in Amazon Simple Workflow Service
-<a name="security-encryption"></a>
 
 ## Encryption at rest
 <a name="security-encryption-at-rest"></a>

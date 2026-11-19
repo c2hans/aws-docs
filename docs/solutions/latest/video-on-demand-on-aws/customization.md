@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/
 ---
 
 # Customization
-<a name="customization"></a>
 
 This solution leverages AWS Step Functions, which breaks the workflow into individual steps, making it easier to customize or extend the architecture for your specific video-on-demand needs. For example, you can modify or replace the encoding steps to produce different content sets. You can also add steps to extend support for more complex workflows, including image processing for poster artwork or additional custom data to the metadata file that will then be stored in DynamoDB. The solution originates MediaConvert output content directly from Amazon S3 through CloudFront. You can, however, customize the solution to leverage a dedicated origin server such as MediaPackage.
 

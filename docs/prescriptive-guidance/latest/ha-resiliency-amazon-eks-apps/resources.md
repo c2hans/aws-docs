@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ha-resilien
 ---
 
 # Resources
-<a name="resources"></a>
 + [Kubernetes Pod Topology Spread Constraints](https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/) (Kubernetes documentation)
 + [Karpenter FAQs](https://karpenter.sh/docs/faq/) (Karpenter documentation)
 + [Descheduler for Kubernetes](https://github.com/kubernetes-sigs/descheduler) (GitHub repository)

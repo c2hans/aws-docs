@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/nova-multimodal-embedd
 ---
 
 # Amazon Nova Multimodal Embeddings
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/nova-multimodal-embeddings/images/card-background.jpg)
 

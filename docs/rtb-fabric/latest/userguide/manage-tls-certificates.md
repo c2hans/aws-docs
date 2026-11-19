@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/manage-tls-c
 ---
 
 # Manage TLS certificates
-<a name="manage-tls-certificates"></a>
 
 If you use HTTPS for your custom domain, you must configure TLS certificates that match the hostnames clients use to connect. RTB Fabric uses Server Name Indication (SNI) to select the correct certificate during the TLS handshake. This section describes certificate configuration, the resolution process, and operational considerations. If you use HTTP only, you can skip this section. For general information about encryption in transit, see Data protection in RTB Fabric.
 

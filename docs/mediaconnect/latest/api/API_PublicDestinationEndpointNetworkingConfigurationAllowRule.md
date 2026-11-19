@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_PublicDestin
 ---
 
 # PublicDestinationEndpointNetworkingConfigurationAllowRule
-<a name="API_PublicDestinationEndpointNetworkingConfigurationAllowRule"></a>
 
 A rule that allows a specific CIDR block to connect to the public destination endpoint.
 

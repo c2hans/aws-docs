@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # DescribeDataSources
-<a name="API_DescribeDataSources"></a>
 
 Returns a list of `DataSource` that match the search criteria in the request.
 

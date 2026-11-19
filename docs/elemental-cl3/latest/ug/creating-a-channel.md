@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/creating-a-chann
 ---
 
 # Creating a channel
-<a name="creating-a-channel"></a>
 
 **To create a channel**
 

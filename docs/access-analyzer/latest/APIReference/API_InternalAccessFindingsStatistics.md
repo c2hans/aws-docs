@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # InternalAccessFindingsStatistics
-<a name="API_InternalAccessFindingsStatistics"></a>
 
 Provides aggregate statistics about the findings for the specified internal access analyzer. This includes counts of active, archived, and resolved findings.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/developer-guide/s
 The AWS Partner Central API Reference was restructured. For more information about the supported API operations, see the [AWS Partner Central API Reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/Welcome.html).
 
 # Notifications for the AWS Partner Central Selling API
-<a name="selling-api-events"></a>
 
 Events for the selling API provide real-time notifications about changes in the status or the details of opportunities. These events help keep your systems in sync with AWS Partner Central, and help ensure timely responses and updates.
 

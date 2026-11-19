@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_MetricG
 ---
 
 # MetricGranularityType
-<a name="API_MetricGranularityType"></a>
 
 Describes a granularity of a metric.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_DeleteSl
 ---
 
 # DeleteSlackUserIdentity
-<a name="API_DeleteSlackUserIdentity"></a>
 
 Deletes a user level permission for a Slack channel configuration.
 

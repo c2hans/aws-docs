@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awst
 ---
 
 # Data retrieval APIs for AWS Transform custom
-<a name="awstransformcustom"></a>
 
 AWS Transform custom provides the following APIs for data retrieval.
 

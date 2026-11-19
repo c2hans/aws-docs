@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # AudioTrackConfiguration
-<a name="structures-AudioTrackConfiguration"></a>
 
 Complex type specifying an audio track configuration to be used by the encoder.
 

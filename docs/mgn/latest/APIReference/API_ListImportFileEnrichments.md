@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListImportFi
 ---
 
 # ListImportFileEnrichments
-<a name="API_ListImportFileEnrichments"></a>
 
 Lists import file enrichment jobs with optional filtering by job IDs.
 

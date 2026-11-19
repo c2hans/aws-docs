@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Upda
 ---
 
 # UpdateResourceGateway
-<a name="API_UpdateResourceGateway"></a>
 
 Updates the specified resource gateway.
 

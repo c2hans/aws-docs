@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 This guide introduced considerations for a decentralized data solution approach such as data mesh. It discussed the strategies that can help you build a data mesh–based data solution on AWS.
 + To get started, align your vision for the data solution with the vision and strategy of your organization. Next, use the Data Mesh Strategy Framework to accelerate your data mesh journey. In addition, ensure that you have the right teams and personas to scale your delivery approach. To support your new data mesh strategy, AWS provides multiple offerings to suit the needs of your organization.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/insurance
 ---
 
 # Insurance verification integration
-<a name="insurance-verification"></a>
 
 Real-time insurance eligibility (RTE) verification is an optional feature of the Appointment management agent. When enabled, the agent verifies a patient’s insurance eligibility and retrieves copay information prior to confirming an appointment. This feature is recommended for organizations that want to provide copay transparency before scheduling or rescheduling appointments.
 

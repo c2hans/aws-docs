@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MouseDragArguments
-<a name="API_MouseDragArguments"></a>
 
 Arguments for a mouse drag action.
 

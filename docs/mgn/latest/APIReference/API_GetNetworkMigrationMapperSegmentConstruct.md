@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_GetNetworkMi
 ---
 
 # GetNetworkMigrationMapperSegmentConstruct
-<a name="API_GetNetworkMigrationMapperSegmentConstruct"></a>
 
 Retrieves detailed information about a specific construct within a mapper segment, including its properties and configuration data.
 

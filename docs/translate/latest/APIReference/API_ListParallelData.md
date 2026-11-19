@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_ListPa
 ---
 
 # ListParallelData
-<a name="API_ListParallelData"></a>
 
 Provides a list of your parallel data resources in Amazon Translate.
 

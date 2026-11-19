@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Network Monitoring
-<a name="CloudWatch-Network-Monitoring-Sections"></a>
 
 The topics in this section describe CloudWatch network and internet monitoring capabilities provided by Performance Monitor, Network Flow Monitor, Internet Monitor, and Network Synthetic Monitor. These services help you to gain operational visibility into the network and internet performance and availability of your applications hosted on AWS.
 + Performance Monitor monitors the traffic of the VPCs that you select to determine whether the AWS network is causing issues for your workloads. Performance Monitor measures network degradation across paths between Availability Zones, across Regions, and to AWS services such as Amazon S3 and Amazon DynamoDB. Performance Monitor uses an impact score, a normalized metric from 0 to 100, to help you identify which network paths are experiencing unusual degradation.

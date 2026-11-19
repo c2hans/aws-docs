@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/ruby-image.html
 ---
 
 # Deploy Ruby Lambda Event Functions with container images
-<a name="ruby-image"></a>
 
 There are three ways to build a container image for a Ruby Lambda Event Function:
 + [Using an AWS base image for Ruby](#ruby-image-instructions)

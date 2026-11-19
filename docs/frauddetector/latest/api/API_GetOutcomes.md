@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/api/API_GetOutcomes
 Amazon Fraud Detector is no longer be open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker AI, AutoGluon, and AWS WAF.
 
 # GetOutcomes
-<a name="API_GetOutcomes"></a>
 
 Gets one or more outcomes. This is a paginated API. If you provide a null `maxResults`, this actions retrieves a maximum of 100 records per page. If you provide a `maxResults`, the value must be between 50 and 100. To get the next page results, provide the pagination token from the `GetOutcomesResult` as part of your request. A null pagination token fetches the records from the beginning.
 

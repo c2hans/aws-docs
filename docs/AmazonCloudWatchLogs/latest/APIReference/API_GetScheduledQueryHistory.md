@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # GetScheduledQueryHistory
-<a name="API_GetScheduledQueryHistory"></a>
 
 Retrieves the execution history of a scheduled query within a specified time range, including query results and destination processing status.
 

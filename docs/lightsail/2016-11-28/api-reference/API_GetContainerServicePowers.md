@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetContainerServicePowers
-<a name="API_GetContainerServicePowers"></a>
 
 Returns the list of powers that can be specified for your Amazon Lightsail container services.
 

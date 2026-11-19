@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/sql-requireme
 ---
 
 # SQL Server requirements
-<a name="sql-requirements"></a>
 
 ## Database requirements
 <a name="sql-database-requirements"></a>

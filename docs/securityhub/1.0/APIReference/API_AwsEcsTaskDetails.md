@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDetails
-<a name="API_AwsEcsTaskDetails"></a>
 
 Provides details about a task in a cluster.
 

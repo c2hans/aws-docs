@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateKnowledgeBase
-<a name="API_CreateKnowledgeBase"></a>
 
 Creates a knowledge base from a specified data source. Supported data source connector types include:
 +  `S3_KNOWLEDGE_BASE` – Uses an Amazon S3 bucket as the data source.

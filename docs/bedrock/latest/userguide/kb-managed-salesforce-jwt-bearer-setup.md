@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-sale
 ---
 
 # Set up OAuth 2.0 JWT Bearer authentication for Salesforce document-level access controls
-<a name="kb-managed-salesforce-jwt-bearer-setup"></a>
 
 To filter results by each user's Salesforce permissions, the Salesforce connector checks access as the querying user at query time. It does this with the OAuth 2.0 JWT Bearer Flow: the connector signs a short-lived assertion with a private key that you provide, and Salesforce returns a token for that user. The content crawl continues to use the OAuth 2.0 Client Credentials Flow.
 

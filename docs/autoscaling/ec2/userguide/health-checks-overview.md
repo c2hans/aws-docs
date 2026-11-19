@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/health-checks-
 ---
 
 # About the health checks for your Auto Scaling group
-<a name="health-checks-overview"></a>
 
 This topic provides an overview of the available health check types and describes the key considerations for integrating Amazon EC2 Auto Scaling health checks with your applications.
 

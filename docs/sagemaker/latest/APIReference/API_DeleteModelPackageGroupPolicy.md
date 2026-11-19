@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteModelPackageGroupPolicy
-<a name="API_DeleteModelPackageGroupPolicy"></a>
 
 Deletes a model group resource policy.
 

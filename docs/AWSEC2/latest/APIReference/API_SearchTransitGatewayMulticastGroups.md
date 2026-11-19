@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SearchTra
 ---
 
 # SearchTransitGatewayMulticastGroups
-<a name="API_SearchTransitGatewayMulticastGroups"></a>
 
 Searches one or more transit gateway multicast groups and returns the group membership information.
 

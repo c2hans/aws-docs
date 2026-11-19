@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-wind
 ---
 
 # Storage Services
-<a name="bobi-windows-storage-services"></a>
 
 The SAP BOBI Platform uses the following AWS storage services:
 +  [Amazon Elastic Block Store (Amazon EBS)](https://aws.amazon.com/ebs/) is used for block storage requirements of SAP BOBI Platform application servers and databases (when the database is installed on EC2).

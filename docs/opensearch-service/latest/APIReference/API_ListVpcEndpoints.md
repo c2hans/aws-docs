@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ListVpcEndpoints
-<a name="API_ListVpcEndpoints"></a>
 
 Retrieves all Amazon OpenSearch Service-managed VPC endpoints in the current AWS account and Region.
 

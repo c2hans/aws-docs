@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsReds
 ---
 
 # AwsRedshiftClusterDeferredMaintenanceWindow
-<a name="API_AwsRedshiftClusterDeferredMaintenanceWindow"></a>
 
 A time windows during which maintenance was deferred for an Amazon Redshift cluster.
 

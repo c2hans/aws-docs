@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_OutputL
 ---
 
 # OutputLocation
-<a name="API_OutputLocation"></a>
 
 The output location for a notebook export in Amazon SageMaker Unified Studio.
 

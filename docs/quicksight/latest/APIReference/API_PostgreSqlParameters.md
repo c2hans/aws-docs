@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Postg
 ---
 
 # PostgreSqlParameters
-<a name="API_PostgreSqlParameters"></a>
 
 The parameters for PostgreSQL.
 

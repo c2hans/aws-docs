@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/batch-ops-copy
 ---
 
 # Using Batch Operations to enable S3 Bucket Keys for SSE-KMS
-<a name="batch-ops-copy-example-bucket-key"></a>
 
 S3 Bucket Keys reduce the cost of server-side encryption with AWS Key Management Service (AWS KMS) (SSE-KMS) by decreasing request traffic from Amazon S3 to AWS KMS. For more information, see [Reducing the cost of SSE-KMS with Amazon S3 Bucket Keys](bucket-key.md) and [Configuring your bucket to use an S3 Bucket Key with SSE-KMS for new objects](configuring-bucket-key.md). When you perform a `CopyObject` operation by using the REST API, AWS SDKs, or AWS CLI, you can enable or disable an S3 Bucket Key at the object level by adding the `x-amz-server-side-encryption-bucket-key-enabled` request header with a `true` or `false` value.
 

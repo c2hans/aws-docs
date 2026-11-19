@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # AgentSkillsAdditionalData
-<a name="API_AgentSkillsAdditionalData"></a>
 
 Additional data associated with an agent skills definition descriptor.
 

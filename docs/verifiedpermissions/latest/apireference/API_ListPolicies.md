@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # ListPolicies
-<a name="API_ListPolicies"></a>
 
 Returns a paginated list of all policies stored in the specified policy store.
 

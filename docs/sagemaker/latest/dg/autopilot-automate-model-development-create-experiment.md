@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-m
 ---
 
 # Create Regression or Classification Jobs for Tabular Data Using the AutoML API
-<a name="autopilot-automate-model-development-create-experiment"></a>
 
 You can create an Autopilot regression or classification job for tabular data programmatically by calling the [`CreateAutoMLJobV2`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateAutoMLJobV2.html) API action in any language supported by Autopilot or the AWS CLI. The following is a collection of mandatory and optional input request parameters for the `CreateAutoMLJobV2` API action. You can find the alternative information for the previous version of this action, `CreateAutoMLJob`. However, we recommend using `CreateAutoMLJobV2`.
 

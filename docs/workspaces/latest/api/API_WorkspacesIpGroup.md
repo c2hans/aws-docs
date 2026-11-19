@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_WorkspacesIpGr
 ---
 
 # WorkspacesIpGroup
-<a name="API_WorkspacesIpGroup"></a>
 
 Describes an IP access control group.
 

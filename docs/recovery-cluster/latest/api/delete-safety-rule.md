@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/delete-safet
 ---
 
 # Delete a safety rule
-<a name="delete-safety-rule"></a>
 
 The following is an example of a request to delete a safety rule. Deleting a safety rule doesn't return a response.
 

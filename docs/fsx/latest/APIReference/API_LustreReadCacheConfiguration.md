@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_LustreReadCa
 ---
 
 # LustreReadCacheConfiguration
-<a name="API_LustreReadCacheConfiguration"></a>
 
  The configuration for the optional provisioned SSD read cache on Amazon FSx for Lustre file systems that use the Intelligent-Tiering storage class.
 

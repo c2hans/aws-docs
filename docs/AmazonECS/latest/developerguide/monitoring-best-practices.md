@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/monitori
 ---
 
 # Best practices for monitoring Amazon ECS
-<a name="monitoring-best-practices"></a>
 
 Use the following best practices for monitoring Amazon ECS.
 + Make monitoring a priority to head off small problems before they become big ones

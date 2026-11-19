@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UserN
 ---
 
 # UserNameOrEmailFilter
-<a name="API_UserNameOrEmailFilter"></a>
 
 A filter that matches users by username or email prefix.
 

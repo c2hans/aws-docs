@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Replic
 ---
 
 # ReplicationInformation
-<a name="API_s3Buckets_ReplicationInformation"></a>
 
 Contains information about the source of a replicated table.
 

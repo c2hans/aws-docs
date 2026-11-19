@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # Rule functions
-<a name="intrinsic-function-reference-rules"></a>
 
 Rule functions are special functions that work only in the `Rules` section of a CloudFormation template. These functions help you validate parameter values using custom logic. All validations occur before CloudFormation creates or updates any resources.
 

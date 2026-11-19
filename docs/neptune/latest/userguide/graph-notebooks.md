@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/graph-notebooks
 ---
 
 # Using Amazon Neptune with graph notebooks
-<a name="graph-notebooks"></a>
 
 To work with Neptune graphs you can use a Neptune graph notebook or create a new Neptune database using an CloudFormation [template](get-started-cfn-create.md).
 

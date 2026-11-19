@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Instan
 ---
 
 # InstanceHealthCheckResult
-<a name="API_InstanceHealthCheckResult"></a>
 
 An object representing the result of a container instance health status check.
 

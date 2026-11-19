@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitosync/latest/APIReference/API_Cogn
 ---
 
 # CognitoStreams
-<a name="API_CognitoStreams"></a>
 
 Configuration options for configure Cognito streams.
 

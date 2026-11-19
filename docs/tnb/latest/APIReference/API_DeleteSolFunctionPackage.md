@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_DeleteSolFun
 ---
 
 # DeleteSolFunctionPackage
-<a name="API_DeleteSolFunctionPackage"></a>
 
 Deletes a function package.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Extended Support - Cost Projection
-<a name="extended-support"></a>
 
 ## Introduction
 <a name="introduction"></a>

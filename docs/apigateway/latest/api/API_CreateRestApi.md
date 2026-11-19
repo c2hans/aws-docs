@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_CreateRestApi.
 ---
 
 # CreateRestApi
-<a name="API_CreateRestApi"></a>
 
 Creates a new RestApi resource.
 

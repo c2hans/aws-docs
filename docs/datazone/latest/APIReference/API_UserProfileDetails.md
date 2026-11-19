@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UserPro
 ---
 
 # UserProfileDetails
-<a name="API_UserProfileDetails"></a>
 
 The user profile details.
 

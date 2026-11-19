@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Security
 ---
 
 # SecurityGroupRuleDescription
-<a name="API_SecurityGroupRuleDescription"></a>
 
 Describes a set of permissions for a security group rule.
 

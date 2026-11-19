@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-linux-subscriptions/late
 ---
 
 # UpdateServiceSettings
-<a name="API_UpdateServiceSettings"></a>
 
 Updates the service settings for Linux subscriptions.
 

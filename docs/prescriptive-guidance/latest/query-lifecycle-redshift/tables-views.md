@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/query-lifec
 ---
 
 # System tables and views for Amazon Redshift queries
-<a name="tables-views"></a>
 
 System tables and views often hold information that can help you troubleshoot issues with your queries. For example, you can use system tables and views to figure out why some queries are hanging or why some queries are running longer than others. Here are some of the most commonly used views:
 + **STL\_QUERY** – Returns execution information about a database query

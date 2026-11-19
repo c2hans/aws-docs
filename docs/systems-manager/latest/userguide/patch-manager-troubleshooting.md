@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # Troubleshooting Patch Manager
-<a name="patch-manager-troubleshooting"></a>
 
 Use the following information to help you troubleshoot problems with Patch Manager, a tool in AWS Systems Manager.
 

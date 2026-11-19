@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/multi-regio
 ---
 
 # Using AWS SDKs
-<a name="multi-region-aws-sdks"></a>
 
 The AWS SDKs provide programmatic access to Aurora DSQL in your preferred programming language. The following sections show how to perform common cluster operations using different programming languages.
 

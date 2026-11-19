@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_P
 ---
 
 # PutCoreNetworkPolicy
-<a name="API_PutCoreNetworkPolicy"></a>
 
 Creates a new, immutable version of a core network policy. A subsequent change set is created showing the differences between the LIVE policy and the submitted policy.
 

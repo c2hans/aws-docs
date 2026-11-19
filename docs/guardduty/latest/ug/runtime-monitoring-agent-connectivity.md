@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/runtime-monitoring-a
 ---
 
 # How the security agent connects to GuardDuty
-<a name="runtime-monitoring-agent-connectivity"></a>
 
 The Runtime Monitoring security agent delivers runtime events to GuardDuty over one of two connectivity methods: a link-local address or an Amazon VPC endpoint. Both keep data within the AWS network. There is no additional cost for GuardDuty connectivity.
 

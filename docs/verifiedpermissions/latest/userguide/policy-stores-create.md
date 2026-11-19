@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Creating Verified Permissions policy stores
-<a name="policy-stores-create"></a>
 
 You can create a policy store using the following methods:
 + **Follow a guided setup** – You will define a resource type with valid actions and a principal type before creating your first policy.

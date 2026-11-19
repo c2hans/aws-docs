@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # TemplateConfiguration
-<a name="API_TemplateConfiguration"></a>
 
 The configuration details of a generated template.
 

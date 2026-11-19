@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-python-sdk
 ---
 
 # SageMaker Python SDK Troubleshooting Guide
-<a name="sagemaker-python-sdk-troubleshooting"></a>
 
 You can use the SageMaker Python SDK to interact with Amazon SageMaker AI within your Python scripts or Jupyter notebooks. Despite the SDK providing a simplified workflow, you might encounter various exceptions or errors. This troubleshooting guide aims to help you understand and resolve common issues that might arise when working with the SageMaker Python SDK. It covers scenarios related to creating training jobs, processing jobs, and endpoints, as well as general exception handling practices. By following the guidance provided in the following sections, you can effectively diagnose and address common issues.
 

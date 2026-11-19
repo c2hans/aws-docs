@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_StopSolutionVe
 ---
 
 # StopSolutionVersionCreation
-<a name="API_StopSolutionVersionCreation"></a>
 
 Stops creating a solution version that is in a state of CREATE\_PENDING or CREATE IN\_PROGRESS.
 

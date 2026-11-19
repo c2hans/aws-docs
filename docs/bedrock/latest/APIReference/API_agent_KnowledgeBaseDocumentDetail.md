@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Kn
 ---
 
 # KnowledgeBaseDocumentDetail
-<a name="API_agent_KnowledgeBaseDocumentDetail"></a>
 
 Contains the details for a document that was ingested or deleted.
 

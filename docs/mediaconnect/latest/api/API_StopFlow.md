@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StopFlow.htm
 ---
 
 # StopFlow
-<a name="API_StopFlow"></a>
 
  Stops a flow.
 

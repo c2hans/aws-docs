@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Gend
 ---
 
 # Gender
-<a name="API_Gender"></a>
 
 The predicted gender of a detected face.
 

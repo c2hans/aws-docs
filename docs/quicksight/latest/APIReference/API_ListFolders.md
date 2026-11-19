@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListF
 ---
 
 # ListFolders
-<a name="API_ListFolders"></a>
 
 Lists all folders in an account.
 

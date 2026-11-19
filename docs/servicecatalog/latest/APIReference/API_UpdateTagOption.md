@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_U
 ---
 
 # UpdateTagOption
-<a name="API_UpdateTagOption"></a>
 
 Updates the specified TagOption.
 

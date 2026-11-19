@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # StreamingNotificationTarget
-<a name="API_voice-chime_StreamingNotificationTarget"></a>
 
 The target recipient for a streaming configuration notification.
 

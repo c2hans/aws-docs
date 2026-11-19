@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_GetAutonomou
 ---
 
 # GetAutonomousDatabaseWalletDetails
-<a name="API_GetAutonomousDatabaseWalletDetails"></a>
 
 Gets the wallet details for the specified Autonomous Database.
 

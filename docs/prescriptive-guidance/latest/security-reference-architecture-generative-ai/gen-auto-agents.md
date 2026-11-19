@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Capability 5. Providing secure access, usage, and implementation of generative AI agents
-<a name="gen-auto-agents"></a>
 
 |  |
 | --- |

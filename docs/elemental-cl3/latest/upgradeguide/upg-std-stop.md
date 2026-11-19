@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upg-st
 ---
 
 # Step E: Stop the running channels
-<a name="upg-std-stop"></a>
 
 You must stop all running channels before you upgrade.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Converting Solr query parameters to OpenSearch DSL
-<a name="query-conversion"></a>
 
 As an example, let's use the following Solr query:
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/basic-plugin
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Prerequisites for configuring Amazon Q Business built-in plugins
-<a name="basic-plugins-prereqs"></a>
 
 **Important**
 Built-in plugins require Amazon Q Business Pro subscription. Users with Lite subscriptions cannot access built-in plugin functionality and must upgrade to Pro to use plugins.

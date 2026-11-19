@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_MetricDatum.
 ---
 
 # MetricDatum
-<a name="API_MetricDatum"></a>
 
 A metric.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Protect network traffic further from your origin using AWS Global Accelerator (BP1)
-<a name="protect-network-traffic-further-from-your-origin-using-aws-global-accelerator-bp1"></a>
 
  You can implement a DDoS resilient architecture that provides many of the same benefits as the web application delivery at the edge best practices, even if your application uses protocols not supported by CloudFront or you're operating a web application that requires global static IP addresses.
 

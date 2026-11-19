@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Vec
 ---
 
 # Using vector indexes in DynamoDB
-<a name="VectorSearch"></a>
 
 Vector indexes are a type of index in Amazon DynamoDB that enable similarity search on vector embeddings stored in your table items. Unlike global secondary indexes and local secondary indexes, which support exact-match and range queries using `Query` and `Scan` operations, vector indexes use approximate nearest neighbor (ANN) search to find items whose vectors are most similar to a query vector that you provide. You perform these similarity searches by calling the [SearchVectors](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_SearchVectors.html) API, which returns the most similar items ranked by a similarity score.
 

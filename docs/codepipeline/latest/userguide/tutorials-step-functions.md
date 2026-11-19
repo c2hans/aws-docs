@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-
 ---
 
 # Tutorial: Use an AWS Step Functions invoke action in a pipeline
-<a name="tutorials-step-functions"></a>
 
 You can use AWS Step Functions to create and configure state machines. This tutorial shows you how to add an invoke action to a pipeline that activates state machine executions from your pipeline.
 

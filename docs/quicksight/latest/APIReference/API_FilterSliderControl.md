@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # FilterSliderControl
-<a name="API_FilterSliderControl"></a>
 
 A control to display a horizontal toggle bar. This is used to change a value by sliding the toggle.
 

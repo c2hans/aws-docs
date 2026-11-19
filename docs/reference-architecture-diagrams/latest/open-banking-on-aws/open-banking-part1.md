@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/o
 ---
 
 # Open Banking on AWS: Networking and security
-<a name="open-banking-part1"></a>
 
 Publication date: **September 7, 2021 ([Diagram history](#ob-p1-history))**
 

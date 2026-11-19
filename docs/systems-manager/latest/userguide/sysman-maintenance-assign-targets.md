@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-
 ---
 
 # Assign targets to a maintenance window using the console
-<a name="sysman-maintenance-assign-targets"></a>
 
 In this procedure, you register a target with a maintenance window. In other words, you specify which resources the maintenance window performs actions on.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/thre
 ---
 
 # Working with Threat Composer
-<a name="threatcomposer"></a>
 
 You can use the AWS Toolkit for Visual Studio Code to work with the Threat Composer tool. Threat Composer is a threat-modeling tool that can simplify your threat modeling process.
 

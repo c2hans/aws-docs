@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/postman-configuring.html
 ---
 
 # Configuring Postman
-<a name="postman-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Postman, you must meet the following requirements:
 

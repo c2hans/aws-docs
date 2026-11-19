@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Star
 ---
 
 # StartGraph
-<a name="API_StartGraph"></a>
 
 Starts the specific graph.
 

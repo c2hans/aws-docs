@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transfor
 ---
 
 # Tutorial: Creating a machine learning transform with AWS Glue
-<a name="machine-learning-transform-tutorial"></a>
 
 This tutorial guides you through the actions to create and manage a machine learning (ML) transform using AWS Glue. Before using this tutorial, you should be familiar with using the AWS Glue console to add crawlers and jobs and edit scripts. You should also be familiar with finding and downloading files on the Amazon Simple Storage Service (Amazon S3) console.
 

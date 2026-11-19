@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Monitoring.Vie
 ---
 
 # Viewing AWS DMS events
-<a name="CHAP_Monitoring.View.dms.events"></a>
 
 You can retrieve the following event information for your AWS DMS resources:
 + Resource name

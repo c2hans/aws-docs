@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/access-control.
 ---
 
 # Restricting access to an Amplify app's branches
-<a name="access-control"></a>
 
 If you are working on unreleased features, you can password protect feature branches to restrict access to specific users. When access control is set on a branch, users are prompted for a user name and password when they attempt to access the URL for the branch.
 

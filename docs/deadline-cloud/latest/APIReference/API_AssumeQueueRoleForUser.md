@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AssumeQueueRoleForUser
-<a name="API_AssumeQueueRoleForUser"></a>
 
 Allows a user to assume a role for a queue.
 

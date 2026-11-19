@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  The following individuals and organizations contributed to this document:
 + Steven DeVries, Principal Solutions Architect, Amazon Web Services

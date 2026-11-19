@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RDSDBUtilizationMetric
-<a name="API_RDSDBUtilizationMetric"></a>
 
  Describes the utilization metric of an Amazon Aurora and RDS database.
 

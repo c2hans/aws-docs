@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/sdk-usage-metrics.ht
 ---
 
 # Understanding Amazon CloudWatch metrics for Amazon Chime SDK meetings
-<a name="sdk-usage-metrics"></a>
 
 When you use the Amazon Chime SDK, it sends service and usage metrics to CloudWatch. The metrics enable you to use CloudWatch graphs and dashboards to monitor how you consume Amazon Chime SDK services. The metrics capture data for each API that you call.
 

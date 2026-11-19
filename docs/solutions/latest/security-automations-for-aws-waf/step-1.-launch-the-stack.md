@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Step 1. Launch the stack
-<a name="step-1.-launch-the-stack"></a>
 
 This automated AWS CloudFormation template deploys the solution on the AWS Cloud.
 

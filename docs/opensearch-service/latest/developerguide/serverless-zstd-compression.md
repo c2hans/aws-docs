@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Zstandard Codec Support in Amazon OpenSearch Serverless
-<a name="serverless-zstd-compression"></a>
 
 Index codecs determine how an index's stored fields are compressed and stored on disk and in S3. The index codec is controlled by the static `index.codec` setting that specifies the compression algorithm. This setting impacts both index shard size and index operation performance.
 

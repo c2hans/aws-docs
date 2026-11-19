@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Update
 ---
 
 # UpdateCrossAccountAttachment
-<a name="API_UpdateCrossAccountAttachment"></a>
 
 Update a cross-account attachment to add or remove principals or resources. When you update an attachment to remove a principal (account ID or accelerator) or a resource, AWS Global Accelerator revokes the permission for specific resources.
 

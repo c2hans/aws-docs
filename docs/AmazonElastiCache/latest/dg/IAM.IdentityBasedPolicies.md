@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/IAM.Identity
 ---
 
 # Using identity-based policies (IAM policies) for Amazon ElastiCache
-<a name="IAM.IdentityBasedPolicies"></a>
 
 This topic provides examples of identity-based policies in which an account administrator can attach permissions policies to IAM identities (that is, users, groups, and roles).
 

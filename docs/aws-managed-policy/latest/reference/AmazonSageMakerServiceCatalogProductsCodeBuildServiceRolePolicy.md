@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy
-<a name="AmazonSageMakerServiceCatalogProductsCodeBuildServiceRolePolicy"></a>
 
 **Description**: Service role policy used by the AWS CodeBuild within the AWS ServiceCatalog provisioned products from Amazon SageMaker portfolio of products. Grants permissions to a subset of related services including CodePipeline, CodeBuild and others.
 

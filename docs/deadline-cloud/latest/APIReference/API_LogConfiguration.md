@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # LogConfiguration
-<a name="API_LogConfiguration"></a>
 
 Log configuration details.
 

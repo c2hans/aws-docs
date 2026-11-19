@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # InternalServerException
-<a name="API_InternalServerException"></a>
 
 The Amazon Keyspaces service encountered an unexpected error while processing the request.
 

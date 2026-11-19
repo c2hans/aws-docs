@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Usernam
 ---
 
 # UsernamePassword
-<a name="API_UsernamePassword"></a>
 
 The username and password of a connection.
 

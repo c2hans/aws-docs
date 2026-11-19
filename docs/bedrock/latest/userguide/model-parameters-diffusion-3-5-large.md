@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # Stability.ai Stable Diffusion 3.5 Large
-<a name="model-parameters-diffusion-3-5-large"></a>
 
 The Stable Diffusion 3.5 Large model uses 8 billion parameters and supports 1 megapixel resolution output for text-to-image and image-to-image generation.
 

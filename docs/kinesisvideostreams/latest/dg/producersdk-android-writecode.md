@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 ---
 
 # Examine the code
-<a name="producersdk-android-writecode"></a>
 
 In this section of the [Android producer library procedure](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producer-sdk-android.html), you examine the example code.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/streaming-setting-u
 ---
 
 # Setting up a streaming transcription
-<a name="streaming-setting-up"></a>
 
 This section expands on the main [streaming](streaming.md) section. It's intended to provide information for users who want to set up their stream with HTTP/2 or WebSockets directly, rather than with an AWS SDK. The information in this section can also be used to build your own SDK.
 

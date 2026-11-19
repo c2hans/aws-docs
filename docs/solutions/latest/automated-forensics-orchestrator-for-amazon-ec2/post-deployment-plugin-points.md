@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Post deployment: Plugin points
-<a name="post-deployment-plugin-points"></a>
 
 The Guidance is designed to be an orchestrator and therefore allows the following plugin points where you can replace existing tooling with your preferred tool of choice. The Guidance leverages [LiME](https://github.com/504ensicsLabs/LiME) for memory capture and [Volatility 3](https://github.com/volatilityfoundation/volatility3) for memory investigation.
 

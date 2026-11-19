@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # CreateAIAgentVersion
-<a name="API_amazon-q-connect_CreateAIAgentVersion"></a>
 
 Creates and Amazon Q in Connect AI Agent version.
 

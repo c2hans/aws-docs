@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # PresenterOnlyConfiguration
-<a name="API_media-pipelines-chime_PresenterOnlyConfiguration"></a>
 
 Defines the configuration for a presenter-only video tile.
 

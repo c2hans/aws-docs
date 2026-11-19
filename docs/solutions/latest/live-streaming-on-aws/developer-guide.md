@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws/d
 ---
 
 # Developer guide
-<a name="developer-guide"></a>
 
 Live Streaming on AWS solution developer guide
 

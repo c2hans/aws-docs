@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/refere
 ---
 
 # Reference
-<a name="reference"></a>
 
 This section includes information about data collection and a list of individuals who contributed to this solution.
 

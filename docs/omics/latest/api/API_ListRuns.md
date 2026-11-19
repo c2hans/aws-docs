@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListRuns.html
 ---
 
 # ListRuns
-<a name="API_ListRuns"></a>
 
 Retrieves a list of runs and returns each run's metadata and status.
 

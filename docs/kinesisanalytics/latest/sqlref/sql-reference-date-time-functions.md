@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Date and Time Functions
-<a name="sql-reference-date-time-functions"></a>
 
 The following built-in functions relate to dates and time.
 

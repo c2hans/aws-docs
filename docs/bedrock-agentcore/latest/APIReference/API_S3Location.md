@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # S3Location
-<a name="API_S3Location"></a>
 
 The Amazon S3 location configuration of a resource.
 

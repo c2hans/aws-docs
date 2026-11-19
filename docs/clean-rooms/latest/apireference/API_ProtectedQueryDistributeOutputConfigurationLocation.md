@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedQueryDistributeOutputConfigurationLocation
-<a name="API_ProtectedQueryDistributeOutputConfigurationLocation"></a>
 
  Specifies where you'll distribute the results of your protected query. You must configure either an S3 destination or a collaboration member destination.
 

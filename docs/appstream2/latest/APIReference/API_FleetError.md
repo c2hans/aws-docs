@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Fleet
 ---
 
 # FleetError
-<a name="API_FleetError"></a>
 
 Describes a fleet error.
 

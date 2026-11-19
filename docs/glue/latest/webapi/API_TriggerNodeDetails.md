@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TriggerNodeDetail
 ---
 
 # TriggerNodeDetails
-<a name="API_TriggerNodeDetails"></a>
 
 The details of a Trigger node present in the workflow.
 

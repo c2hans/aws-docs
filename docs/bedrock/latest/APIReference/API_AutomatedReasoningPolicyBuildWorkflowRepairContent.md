@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyBuildWorkflowRepairContent
-<a name="API_AutomatedReasoningPolicyBuildWorkflowRepairContent"></a>
 
 Contains content and instructions for repairing or improving an existing Automated Reasoning policy.
 

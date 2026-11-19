@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/send-co
 ---
 
 # Run commands at scale
-<a name="send-commands-multiple"></a>
 
 You can use Run Command to run commands on a fleet of managed nodes by using the `targets`. The `targets` parameter accepts a `Key,Value` combination based on tags that you specified for your managed nodes. When you run the command, the system locates and attempts to run the command on all managed nodes that match the specified tags. For more information about tagging managed instances, see [Tagging your AWS resources](https://docs.aws.amazon.com/tag-editor/latest/userguide/tag-editor.html) in the *Tagging AWS Resources User Guide*. For information about tagging your managed IoT devices, see [Tag your AWS IoT Greengrass Version 2 resources](https://docs.aws.amazon.com/greengrass/v2/developerguide/tag-resources.html) in the *AWS IoT Greengrass Version 2 Developer Guide*.
 

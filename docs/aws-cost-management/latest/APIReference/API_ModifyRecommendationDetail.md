@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ModifyRecommendationDetail
-<a name="API_ModifyRecommendationDetail"></a>
 
 Details for the modification recommendation.
 

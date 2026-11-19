@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/hyperpod-observabili
 ---
 
 # Setting up the SageMaker HyperPod observability add-on
-<a name="hyperpod-observability-addon-setup"></a>
 
 The following list describes the prerequisites for setting up the observability add-on.
 

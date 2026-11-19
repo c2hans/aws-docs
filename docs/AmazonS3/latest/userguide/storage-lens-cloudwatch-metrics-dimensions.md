@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-lens-c
 ---
 
 # S3 Storage Lens metrics and dimensions
-<a name="storage-lens-cloudwatch-metrics-dimensions"></a>
 
 To send S3 Storage Lens metrics to CloudWatch, you must enable the CloudWatch publishing option within S3 Storage Lens advanced metrics. After advanced metrics are enabled, you can use [CloudWatch dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html) to monitor S3 Storage Lens metrics alongside other application metrics and create a unified view of your operational health. You can use dimensions to filter your S3 Storage Lens metrics in CloudWatch by organization, account, bucket, storage class, Region, metrics configuration ID, and S3 Intelligent-Tiering access tier.
 

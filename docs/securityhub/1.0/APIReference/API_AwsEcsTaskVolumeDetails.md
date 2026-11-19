@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskVolumeDetails
-<a name="API_AwsEcsTaskVolumeDetails"></a>
 
 Provides information about a data volume that's used in a task definition.
 

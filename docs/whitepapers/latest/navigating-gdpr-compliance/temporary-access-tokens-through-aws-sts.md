@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Temporary Access Tokens Through AWS STS
-<a name="temporary-access-tokens-through-aws-sts"></a>
 
 Customers can use the [AWS Security Token Service (AWS STS)](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html) to create and provide trusted users with temporary security credentials that grant access to customers' AWS resources. Temporary security credentials work almost identically to the long-term access key credentials that customers provide for their IAM users, with the following differences:
 + Temporary security credentials are for short-term use. Customers can configure the amount of time that they are valid, from 15 minutes up to a maximum of 12 hours. After temporary credentials expire, AWS does not recognize them or allow any kind of access from API requests made with them.

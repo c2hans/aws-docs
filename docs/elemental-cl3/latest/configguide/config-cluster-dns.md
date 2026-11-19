@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/config-
 ---
 
 # Configure DNS servers
-<a name="config-cluster-dns"></a>
 
 You can configure a node to use one or more DNS servers.
 

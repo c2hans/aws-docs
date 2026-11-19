@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/userguide/room-create.html
 This guide provides documentation for AWS Wickr. For Wickr Enterprise, which is the on-premises version of Wickr, see [Enterprise Administration Guide](https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/what-is-wickr.html).
 
 # Create a room or group message in the Wickr client
-<a name="room-create"></a>
 
 You can create a room or group message in the Wickr client to have conversations with multiple Wickr users.
 

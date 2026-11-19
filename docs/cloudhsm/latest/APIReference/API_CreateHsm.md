@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CreateH
 ---
 
 # CreateHsm
-<a name="API_CreateHsm"></a>
 
 Creates a new hardware security module (HSM) in the specified AWS CloudHSM cluster.
 

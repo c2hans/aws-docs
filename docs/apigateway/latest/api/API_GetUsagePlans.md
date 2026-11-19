@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetUsagePlans.
 ---
 
 # GetUsagePlans
-<a name="API_GetUsagePlans"></a>
 
 Gets all the usage plans of the caller's account.
 

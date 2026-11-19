@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Foundation
-<a name="foundation"></a>
 
 | SCREL01: How do you establish redundancy for key suppliers and logistics providers? |
 | --- |

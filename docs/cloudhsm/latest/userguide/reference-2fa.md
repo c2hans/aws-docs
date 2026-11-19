@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/reference-2fa.
 ---
 
 # Configuration reference for 2FA with AWS CloudHSM Management Utility
-<a name="reference-2fa"></a>
 
 The following is an example of the two-factor authentication (2FA) properties in the `authdata` file for both the AWS CloudHSM Management Utility (CMU) generated request and your responses.
 

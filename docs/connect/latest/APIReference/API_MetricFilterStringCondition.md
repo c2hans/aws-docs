@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MetricFi
 ---
 
 # MetricFilterStringCondition
-<a name="API_MetricFilterStringCondition"></a>
 
 A string comparison condition for metric filters.
 

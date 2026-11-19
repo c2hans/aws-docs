@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Reports
-<a name="next-gen-api-reports-actions"></a>
 
 | Action | Method | Description |
 | --- | --- | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # AWS CloudFormation templates
-<a name="aws-cloudformation-templates"></a>
 
 This solution uses AWS CloudFormation to automate the deployment of Innovation Sandbox on AWS in the AWS Cloud. It includes the following CloudFormation templates, which you can download before deployment.
 

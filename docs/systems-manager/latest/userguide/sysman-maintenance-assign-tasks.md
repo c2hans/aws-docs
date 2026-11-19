@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-
 ---
 
 # Assign tasks to a maintenance window using the console
-<a name="sysman-maintenance-assign-tasks"></a>
 
 In this procedure, you add a task to a maintenance window. Tasks are the actions performed when a maintenance window runs.
 

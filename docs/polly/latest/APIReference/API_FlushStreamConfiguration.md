@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_FlushStrea
 ---
 
 # FlushStreamConfiguration
-<a name="API_FlushStreamConfiguration"></a>
 
 Configuration that controls when synthesized audio data is sent on the output stream.
 

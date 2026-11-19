@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DetachRolePo
 ---
 
 # DetachRolePolicy
-<a name="API_DetachRolePolicy"></a>
 
 Removes the specified managed policy from the specified role.
 

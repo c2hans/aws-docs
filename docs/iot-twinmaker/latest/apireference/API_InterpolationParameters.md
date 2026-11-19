@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_In
 ---
 
 # InterpolationParameters
-<a name="API_InterpolationParameters"></a>
 
 An object that specifies how to interpolate data in a list.
 

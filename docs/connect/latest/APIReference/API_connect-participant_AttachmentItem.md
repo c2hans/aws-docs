@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # AttachmentItem
-<a name="API_connect-participant_AttachmentItem"></a>
 
 The case-insensitive input to indicate standard MIME type that describes the format of the file that will be uploaded.
 

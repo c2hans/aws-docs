@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/custom
 ---
 
 # Flash the SD card
-<a name="custom-car-software-flash"></a>
 
 1. Download and install [Raspberry Pi Imager](https://www.raspberrypi.com/software/) from the Raspberry Pi website on your computer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/g
 ---
 
 # Get started with a secure static website
-<a name="getting-started-secure-static-website-cloudformation-template"></a>
 
 You can get started with Amazon CloudFront by using the solution described in this topic to create a secure static website for your domain name. A *static website* uses only static files—like HTML, CSS, JavaScript, images, and videos—and doesn’t need servers or server-side processing. With this solution, your website gets the following benefits:
 + **Uses the durable storage of [Amazon Simple Storage Service (Amazon S3)](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html)** – This solution creates an Amazon S3 bucket to host your static website’s content. To update your website, just upload your new files to the S3 bucket.

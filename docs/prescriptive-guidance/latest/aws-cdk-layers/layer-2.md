@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-cdk-lay
 ---
 
 # Layer 2 constructs
-<a name="layer-2"></a>
 
 The [AWS CDK open source repository](https://github.com/aws/aws-cdk) is written primarily by using the [TypeScript](https://www.typescriptlang.org/) programming language and consists of numerous packages and modules. The main package library, called `aws-cdk-lib`, is roughly divided into one package per AWS service, although this is not always the case. As previously discussed, the L1 constructs are automatically generated during the build process, so what is all that code you see when you look inside the repository? Those are [L2 constructs](https://docs.aws.amazon.com/cdk/v2/guide/constructs.html#constructs_using), which are abstractions of L1 constructs.
 

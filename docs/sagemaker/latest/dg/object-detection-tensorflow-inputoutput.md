@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/object-detection-ten
 ---
 
 # Input and output interface for the Object Detection - TensorFlow algorithm
-<a name="object-detection-tensorflow-inputoutput"></a>
 
 Each of the pretrained models listed in TensorFlow Models can be fine-tuned to any dataset with any number of image classes. Be mindful of how to format your training data for input to the Object Detection - TensorFlow model.
 + **Training data input format:** Your training data should be a directory with an `images` subdirectory and an `annotations.json` file.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/anomaly-pr
 ---
 
 # Prerequisites
-<a name="anomaly-prerequisites"></a>
 
 To complete these steps, you must have an asset model and at least one asset created. For more information, see [ Create an asset model (AWS CLI)](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/create-asset-models.html#create-asset-model-cli), and [ Create an asset (AWS CLI)](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/create-assets.html#create-asset-cli). We do not support external IDs at this time.
 

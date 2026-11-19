@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/using-wi
 ---
 
 # Using Deadline Cloud without IAM Identity Center
-<a name="using-without-identity-center"></a>
 
 You can submit, monitor, and manage AWS Deadline Cloud (Deadline Cloud) jobs with AWS Identity and Access Management (IAM) credentials instead of AWS IAM Identity Center (IAM Identity Center) users. The Deadline Cloud CLI, the submitters, and the Deadline Cloud monitor desktop application all accept an AWS profile, such as one that uses the instance profile of an Amazon EC2 virtual workstation. Your IAM policies then decide what each person or workstation can do.
 

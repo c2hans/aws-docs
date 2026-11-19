@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Certifi
 ---
 
 # CertificateAssociation
-<a name="API_CertificateAssociation"></a>
 
 A cluster ID and custom domain name tied to a specific certificate. These are typically returned in a list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_GetGuestUs
 ---
 
 # GetGuestUserHistoryCount
-<a name="API_GetGuestUserHistoryCount"></a>
 
 Retrieves historical guest user count data for a Wickr network, showing the number of guest users per billing period over the past 90 days.
 

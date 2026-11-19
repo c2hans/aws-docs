@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/lemon-squeezy-reading-fro
 ---
 
 # Reading from Lemon Squeezy entities
-<a name="lemon-squeezy-reading-from-entities"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchGet
 ---
 
 # BatchGetAttachedFileMetadata
-<a name="API_BatchGetAttachedFileMetadata"></a>
 
 Allows you to retrieve metadata about multiple attached files on an associated resource. Each attached file provided in the input list must be associated with the input AssociatedResourceArn.
 

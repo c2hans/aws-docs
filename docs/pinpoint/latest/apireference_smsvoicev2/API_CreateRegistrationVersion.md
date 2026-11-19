@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # CreateRegistrationVersion
-<a name="API_CreateRegistrationVersion"></a>
 
 Create a new version of the registration and increase the **VersionNumber**. The previous version of the registration becomes read-only.
 

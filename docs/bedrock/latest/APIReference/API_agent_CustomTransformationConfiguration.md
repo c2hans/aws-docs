@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Cu
 ---
 
 # CustomTransformationConfiguration
-<a name="API_agent_CustomTransformationConfiguration"></a>
 
 Settings for customizing steps in the data source content ingestion pipeline.
 

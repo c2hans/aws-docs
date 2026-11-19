@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-auto-ac
 ---
 
 # Enable auto-accept for agents
-<a name="enable-auto-accept"></a>
 
 When auto-accept is enabled for an available agent, the agent will be automatically connected to contacts from that channel, and won't need to manually choose accept or reject.
 

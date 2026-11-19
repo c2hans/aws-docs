@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-
 ---
 
 # Datatype converter processors
-<a name="CloudWatch-Logs-Transformation-Datatype"></a>
 
 This section contains information about the datatype converter processors that you can use with a log event transformer.
 

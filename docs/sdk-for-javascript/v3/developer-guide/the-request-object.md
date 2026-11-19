@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/th
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Create service client requests
-<a name="the-request-object"></a>
 
 Making requests to AWS service clients is straightforward. Version 3 (V3) of the SDK for JavaScript enables you to send requests.
 

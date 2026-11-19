@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Configuring mutual TLS on an Application Load Balancer
-<a name="configuring-mtls-with-elb"></a>
 
 To use mutual TLS passthrough mode, you need only configure the listener to accept any certificates from clients. When you use mutual TLS passthrough, the Application Load Balancer sends the whole client certificate chain to the target using HTTP headers, which enables you to implement corresponding authentication and authorization logic in your application. For more information, see [Create an HTTPS listener for your Application Load Balancer](create-https-listener.md).
 

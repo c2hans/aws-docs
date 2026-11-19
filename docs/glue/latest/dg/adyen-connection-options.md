@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/adyen-connection-options.
 ---
 
 # Adyen connection options
-<a name="adyen-connection-options"></a>
 
 The following are connection options for Adyen:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Adyen object to read.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/accounts-desi
 ---
 
 # Designating the Detective administrator for an organization
-<a name="accounts-designate-admin"></a>
 
 In the organization behavior graph, the Detective administrator account manages the behavior graph membership for all organization accounts.
 

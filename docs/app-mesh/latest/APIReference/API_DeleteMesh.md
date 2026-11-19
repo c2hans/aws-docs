@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DeleteM
 ---
 
 # DeleteMesh
-<a name="API_DeleteMesh"></a>
 
 Deletes an existing service mesh.
 

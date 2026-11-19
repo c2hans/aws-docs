@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-torchserv
 ---
 
 # TorchServe
-<a name="tutorial-torchserve"></a>
 
 TorchServe is a flexible tool for serving deep learning models that have been exported from PyTorch. TorchServe comes preinstalled with the Deep Learning AMI with Conda.
 

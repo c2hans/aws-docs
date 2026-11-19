@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-gl
 ---
 
 # Throughput capacity planning
-<a name="throughput-capacity"></a>
 
 Migrating traffic from one Region to another requires careful consideration of DynamoDB table settings regarding capacity.
 

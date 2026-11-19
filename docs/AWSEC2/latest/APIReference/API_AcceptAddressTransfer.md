@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptAdd
 ---
 
 # AcceptAddressTransfer
-<a name="API_AcceptAddressTransfer"></a>
 
 Accepts an Elastic IP address transfer. For more information, see [Accept a transferred Elastic IP address](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-eips.html#using-instance-addressing-eips-transfer-accept) in the *Amazon VPC User Guide*.
 

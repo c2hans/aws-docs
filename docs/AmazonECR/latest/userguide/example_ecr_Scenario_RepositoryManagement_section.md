@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/example_ecr_S
 ---
 
 # Learn the basics of Amazon ECR with an AWS SDK
-<a name="example_ecr_Scenario_RepositoryManagement_section"></a>
 
 The following code examples show how to:
 + Create an Amazon ECR repository.

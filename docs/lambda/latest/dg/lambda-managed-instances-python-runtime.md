@@ -3,14 +3,13 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 ---
 
 # Python runtime for Lambda Managed Instances
-<a name="lambda-managed-instances-python-runtime"></a>
 
 The Lambda runtime uses multiple Python processes to handle concurrent requests. Each concurrent request runs in a separate process with its own memory space and initialization. Each process handles one request at a time, synchronously. Processes don't share memory directly, so global variables, module-level caches, and singleton objects are isolated between concurrent requests.
 
 ## Concurrency configuration
 <a name="lambda-managed-instances-python-concurrency-config"></a>
 
-The maximum number of concurrent requests which Lambda sends to each execution environment is controlled by the `PerExecutionEnvironmentMaxConcurrency` setting in the function configuration. This is an optional setting, and the default value varies depending on the runtime. For Python runtimes, the default is 16 concurrent requests per vCPU, or you can configure your own value. This value also determines the number of processes used by the Python runtime. Lambda automatically adjusts the number of concurrent requests up to the configured maximum based on the capacity of each execution environment to absorb those requests.
+The maximum number of concurrent requests which Lambda sends to each execution environment is controlled by the `PerExecutionEnvironmentMaxConcurrency` setting in the function configuration. This is an optional setting, and the default value varies depending on the runtime. For Python runtimes, the default is 16 concurrent requests per vCPU, or you can configure your own value. For [GPU-accelerated functions](lambda-managed-instances-gpu.md) (functions with an accelerator configuration), the default is 4 concurrent requests per execution environment, regardless of the number of vCPUs. For more information, see [Concurrency in GPU-accelerated functions](lambda-managed-instances-gpu-scaling.md#lambda-managed-instances-gpu-scaling-concurrency). This value also determines the number of processes used by the Python runtime. Lambda automatically adjusts the number of concurrent requests up to the configured maximum based on the capacity of each execution environment to absorb those requests.
 
 **Important**
 Using process-based concurrency means each runtime worker process performs its own initialization. Total memory usage equals the per-process memory multiplied by the number of concurrent processes. If you are loading large libraries or data sets and have high concurrency, you have a large memory footprint. According to your workload, you might need to tune your CPU-to-memory ratio or use a lower concurrency setting to avoid exceeding the available memory. You can use the `MemoryUtilization` metric in CloudWatch to track memory consumption.

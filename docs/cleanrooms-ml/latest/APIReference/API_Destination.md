@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_De
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 The Amazon S3 location where the exported model artifacts are stored.
 

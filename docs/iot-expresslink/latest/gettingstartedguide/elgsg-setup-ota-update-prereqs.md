@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/gettingstartedgui
 ---
 
 # Prerequisites
-<a name="elgsg-setup-ota-update-prereqs"></a>
 
 You must have received a firmware image signed by the manufacturer of your ExpressLink module. Along with the firmware image, you will also have additional signing metadata such as:
 + signature hashing algorithm used (Example: SHA-256)

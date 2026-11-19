@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_Validat
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 The input failed to meet the constraints specified by the AWS service in a specified field.
 

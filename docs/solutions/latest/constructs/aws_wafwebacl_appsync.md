@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_wafwebac
 ---
 
 # aws-wafwebacl-appsync
-<a name="aws_wafwebacl_appsync"></a>
 
 ![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
 

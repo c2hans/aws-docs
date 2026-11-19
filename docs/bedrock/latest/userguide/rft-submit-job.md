@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/rft-submit-job.
 ---
 
 # Create and manage fine-tuning jobs for Amazon Nova models
-<a name="rft-submit-job"></a>
 
 You can create a reinforcement fine-tuning (RFT) job using the Amazon Bedrock console or API. The RFT job can take a few hours depending on the size of your training data, number of epochs, and complexity of your reward functions.
 

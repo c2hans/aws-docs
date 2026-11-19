@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 ---
 
 # Operational resilience, AWS and the Shared Responsibility Model
-<a name="operational-resilience-aws-and-the-shared-responsibility-model"></a>
 
  AWS and the financial services industry share a common interest in maintaining operational resilience capabilities; for example, the ability to provide continuous service despite disruptions. Continuity of services, especially for critical functions, is a key prerequisite for financial stability. AWS recognizes that financial institutions that use AWS need to comply with sector-specific regulatory obligations and internal requirements regarding operational resilience, such as CPS 230.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53GlobalResolverReadOnlyAccess
-<a name="AmazonRoute53GlobalResolverReadOnlyAccess"></a>
 
 **Description**: Provides read only access to retrieve and list all Amazon Route 53 Global Resolver resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-sessions-ge
 ---
 
 # Getting started with the training session APIs
-<a name="training-sessions-getting-started"></a>
 
 This guide walks you through setting up and running your first training session. Start here if you are new to the training session APIs and want to get a working training loop running quickly. Before you begin, make sure you have completed the [Prerequisites](training-sessions-prereqs.md).
 

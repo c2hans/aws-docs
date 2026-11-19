@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Migrating on-premises PostgreSQL databases to Amazon EC2
-<a name="introduction"></a>
 
 *Rajesh Madiwale, Suhas Basavaraj, and Sachin Kotwal, Amazon Web Services*
 

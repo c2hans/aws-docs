@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/iot-control
 ---
 
 # Security Hub CSPM controls for AWS IoT
-<a name="iot-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the AWS IoT service and resources.
 

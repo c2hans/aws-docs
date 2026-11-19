@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Das
 ---
 
 # DashTtmlConfiguration
-<a name="API_DashTtmlConfiguration"></a>
 
 The settings for TTML subtitles.
 

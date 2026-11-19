@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_BatchLooku
 ---
 
 # BatchLookupUserUname
-<a name="API_BatchLookupUserUname"></a>
 
 Looks up multiple user usernames from their unique username hashes (unames). This operation allows you to retrieve the email addresses associated with a list of username hashes.
 

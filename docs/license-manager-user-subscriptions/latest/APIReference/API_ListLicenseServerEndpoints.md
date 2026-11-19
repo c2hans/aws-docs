@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # ListLicenseServerEndpoints
-<a name="API_ListLicenseServerEndpoints"></a>
 
 List the Remote Desktop Services (RDS) License Server endpoints
 

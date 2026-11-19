@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # ConfigurationSummary
-<a name="API_ConfigurationSummary"></a>
 
 Provides a summary of pipeline configuration components including sources, processors, and destinations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-op
 ---
 
 # Focus area 3: Architect for multi-tenancy and control
-<a name="focus-areas-multitenancy"></a>
 
 *Job to be done: "Help me scale agent usage across multiple customers without losing control, accountability, or visibility."*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-w
 ---
 
 # IVS Broadcast SDK: Web Guide \| Real-Time Streaming
-<a name="broadcast-web"></a>
 
 The IVS real-time streaming Web broadcast SDK gives developers the tools to build interactive, real-time experiences on the web. This SDK is for developers who are building web applications with Amazon IVS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # SetUICustomization
-<a name="API_SetUICustomization"></a>
 
 Configures UI branding settings for domains with the hosted UI (classic) branding version. Your user pool must have a domain. Configure a domain with [CreateUserPoolDomain](API_CreateUserPoolDomain.md).
 

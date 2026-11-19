@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # UICustomizationType
-<a name="API_UICustomizationType"></a>
 
 A container for the UI customization information for the hosted UI in a user pool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/dcv-server-process
 ---
 
 # Amazon DCV server processes
-<a name="dcv-server-processes"></a>
 
 This counter set contains information about the individual Amazon DCV processes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Create
 ---
 
 # CreateTenantDatabase
-<a name="API_CreateTenantDatabase"></a>
 
 Creates a tenant database in a DB instance that uses the multi-tenant configuration. Only RDS for Oracle container database (CDB) instances are supported.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-open.html
 ---
 
 # **eb open**
-<a name="eb3-open"></a>
 
 ## Description
 <a name="eb3-opendescription"></a>

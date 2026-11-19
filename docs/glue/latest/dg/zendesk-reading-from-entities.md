@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zendesk-reading-from-enti
 ---
 
 # Reading from Zendesk entities
-<a name="zendesk-reading-from-entities"></a>
 
 **Prerequisite**
 

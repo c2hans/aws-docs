@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-s
 ---
 
 # WorkSpaces Applications Agent Release Notes
-<a name="agent-software-versions"></a>
 
 The Amazon WorkSpaces Applications agent software runs on your streaming instances, enabling end users to connect to and start their streaming applications. Starting December 7, 2017, your streaming instances can be automatically updated with the latest features, performance improvements, and security updates that are available from AWS. Before December 7, 2017, agent updates were included with new base image releases.
 

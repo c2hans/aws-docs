@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/scale-and-limi
 ---
 
 # Scaling and quotas for SFTP connectors
-<a name="scale-and-limits-sftp-connector"></a>
 
 **Topics**
 + [Quotas for SFTP connectors](#limits-sftp-connector)

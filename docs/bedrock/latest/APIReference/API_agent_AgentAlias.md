@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ag
 ---
 
 # AgentAlias
-<a name="API_agent_AgentAlias"></a>
 
 Contains details about an alias of an agent.
 

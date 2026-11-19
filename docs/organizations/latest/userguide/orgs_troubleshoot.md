@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_trou
 ---
 
 # Troubleshooting AWS Organizations
-<a name="orgs_troubleshoot"></a>
 
 If you encounter issues when working with AWS Organizations, consult the topics in this section.
 

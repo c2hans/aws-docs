@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # MetricStat
-<a name="API_MetricStat"></a>
 
 This structure defines the metric to be returned, along with the statistics, period, and units.
 

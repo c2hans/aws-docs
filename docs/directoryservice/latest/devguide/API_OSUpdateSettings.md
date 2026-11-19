@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_OSU
 ---
 
 # OSUpdateSettings
-<a name="API_OSUpdateSettings"></a>
 
 OS version that the directory needs to be updated to.
 

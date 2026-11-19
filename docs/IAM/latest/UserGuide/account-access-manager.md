@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/account-access-mana
 ---
 
 # Account access manager
-<a name="account-access-manager"></a>
 
 ## What is account access manager?
 <a name="what-is-account-access-manager"></a>

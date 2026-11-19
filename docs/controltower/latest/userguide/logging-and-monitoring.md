@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/logging-an
 ---
 
 # Logging and monitoring in AWS Control Tower
-<a name="logging-and-monitoring"></a>
 
 Monitoring allows you to plan for and respond to potential incidents. The results of monitoring activities are stored in log files. Therefore, logging and monitoring are closely related concepts, and they are an important part of the well-architected nature of AWS Control Tower.
 

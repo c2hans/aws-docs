@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/contr
 ---
 
 # Contributors
-<a name="contributors"></a>
 +  Aiden Dai
 +  Eva Liu
 +  Kervin Hu

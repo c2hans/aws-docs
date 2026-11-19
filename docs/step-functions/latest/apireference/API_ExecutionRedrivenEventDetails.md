@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_E
 ---
 
 # ExecutionRedrivenEventDetails
-<a name="API_ExecutionRedrivenEventDetails"></a>
 
 Contains details about a redriven execution.
 

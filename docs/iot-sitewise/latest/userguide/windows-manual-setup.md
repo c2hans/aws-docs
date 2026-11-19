@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/windows-ma
 ---
 
 # Set up open source integrations manually (Windows)
-<a name="windows-manual-setup"></a>
 
 Use this guide to manually create a time series bucket for wind speed data that connects with Grafana® and Node-RED®.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-experiment
 ---
 
 # Amazon SageMaker Experiments Integration
-<a name="pipelines-experiments"></a>
 
 Amazon SageMaker Pipelines is closely integrated with Amazon SageMaker Experiments. By default, when Pipelines creates and executes a pipeline, the following SageMaker Experiments entities are created if they don't exist:
 + An experiment for the pipeline

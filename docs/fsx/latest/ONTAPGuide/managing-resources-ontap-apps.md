@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-resources
 ---
 
 # Managing FSx for ONTAP resources using NetApp applications
-<a name="managing-resources-ontap-apps"></a>
 
 In addition to the AWS Management Console, AWS CLI, and AWS API and SDKs, you can also use these NetApp management tools and applications to manage your FSx for ONTAP resources:
 

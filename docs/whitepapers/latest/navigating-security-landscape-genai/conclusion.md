@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-security-l
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
  The deployment of LLMs and generative AI systems requires an agile security approach to make sure that adopting generative AI is a business accelerant. For CISOs, addressing these risks requires a multi-layered approach to security, emphasizing robust input validation, continuous monitoring, modular system architecture, and enhanced data safeguarding techniques. By implementing these strategies, organizations can capitalize on the transformative potential of AI technologies while helping customers keep sensitive data secure, mitigate adversarial risks, and address regulatory compliance requirements.
 

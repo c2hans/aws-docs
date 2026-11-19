@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonS3FilesCSIDriverPolicy
-<a name="AmazonS3FilesCSIDriverPolicy"></a>
 
 **Description**: Provides management access to Amazon S3 Files resources
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_HttpAuthoriz
 ---
 
 # HttpAuthorization
-<a name="API_HttpAuthorization"></a>
 
 The authorization method used to send messages.
 

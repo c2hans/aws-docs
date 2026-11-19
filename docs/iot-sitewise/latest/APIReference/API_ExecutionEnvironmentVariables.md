@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Exe
 ---
 
 # ExecutionEnvironmentVariables
-<a name="API_ExecutionEnvironmentVariables"></a>
 
 Environment variables provided as input for a pipeline execution.
 

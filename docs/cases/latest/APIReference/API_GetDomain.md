@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_GetDomain.
 ---
 
 # GetDomain
-<a name="API_connect-cases_GetDomain"></a>
 
 Returns information about a specific domain if it exists.
 

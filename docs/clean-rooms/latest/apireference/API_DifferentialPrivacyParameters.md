@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Diff
 ---
 
 # DifferentialPrivacyParameters
-<a name="API_DifferentialPrivacyParameters"></a>
 
 An array that contains the sensitivity parameters.
 

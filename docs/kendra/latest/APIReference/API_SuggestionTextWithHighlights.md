@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Suggestio
 ---
 
 # SuggestionTextWithHighlights
-<a name="API_SuggestionTextWithHighlights"></a>
 
 Provides text and information about where to highlight the query suggestion text.
 

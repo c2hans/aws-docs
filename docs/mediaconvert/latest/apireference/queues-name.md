@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/queues-
 ---
 
 # Queues name
-<a name="queues-name"></a>
 
 ## URI
 <a name="queues-name-url"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EmailAdd
 ---
 
 # EmailAddressSummary
-<a name="API_EmailAddressSummary"></a>
 
 Summary information about an email address associated with a queue. Contains the essential details needed to identify and manage the email address routing configuration.
 

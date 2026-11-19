@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_D
 ---
 
 # DocumentAttributeValue
-<a name="API_qapps_DocumentAttributeValue"></a>
 
 The value of a document attribute. You can only provide one value for a document attribute.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/APIReference/Welco
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 The AWS Sustainability service provides programmatic access to estimated environmental impact data for your AWS usage. Use the AWS Sustainability service to retrieve, analyze, and track the environmental impact of your cloud infrastructure over time.
 
@@ -16,4 +15,4 @@ With the AWS Sustainability service, you can:
 
  The API supports pagination for efficient data retrieval and provides dimension values to help you understand the available grouping and filtering options for your account.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

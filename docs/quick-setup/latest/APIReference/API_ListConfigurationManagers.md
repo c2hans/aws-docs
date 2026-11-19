@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_List
 ---
 
 # ListConfigurationManagers
-<a name="API_ListConfigurationManagers"></a>
 
 Returns Quick Setup configuration managers that were created using the `CreateConfigurationManager` API action.
 

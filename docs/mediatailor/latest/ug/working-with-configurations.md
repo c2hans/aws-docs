@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/working-with-confi
 ---
 
 # MediaTailor playback configuration management
-<a name="working-with-configurations"></a>
 
 This section covers the key tasks for managing AWS Elemental MediaTailor playback configurations. You can learn how to create a new configuration to set up content streams and provide access for playback devices, view details of an existing configuration, edit a configuration to update settings like origin servers and ad decision servers, and delete a configuration that is no longer needed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-nummult
 ---
 
 # JSON.NUMMULTBY
-<a name="json-nummultby"></a>
 
 Multiplies the number values at the path by a given number.
 

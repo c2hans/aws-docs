@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_PutAcco
 ---
 
 # PutAccountSettings
-<a name="API_PutAccountSettings"></a>
 
 Put the account settings for Artifact.
 

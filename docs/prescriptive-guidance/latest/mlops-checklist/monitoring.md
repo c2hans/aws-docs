@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mlops-check
 ---
 
 # 6. Continuous monitoring
-<a name="monitoring"></a>
 
 In continuous monitoring, automated processes observe and detect performance issues and model issues. Owners can then identify potential problems and threats in real time to address them quickly.
 

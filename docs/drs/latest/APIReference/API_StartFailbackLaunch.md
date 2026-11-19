@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_StartFailbac
 ---
 
 # StartFailbackLaunch
-<a name="API_StartFailbackLaunch"></a>
 
 Initiates a Job for launching the machine that is being failed back to from the specified Recovery Instance. This will run conversion on the failback client and will reboot your machine, thus completing the failback process.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Detect
 ---
 
 # DetectionRuleOrgConfiguration
-<a name="API_DetectionRuleOrgConfiguration"></a>
 
 Contains the organization-level configuration for a custom detection rule.
 

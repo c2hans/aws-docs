@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/gettingstartedgui
 ---
 
 # AWS account set up and console login
-<a name="elgsg-set-up"></a>
 
 Before you use AWS IoT Core for the first time, complete the tasks in this section.
 

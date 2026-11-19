@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicSortClause
-<a name="API_TopicSortClause"></a>
 
 The definition for a `TopicSortClause`.
 

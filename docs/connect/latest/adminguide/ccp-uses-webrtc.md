@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ccp-uses-webrt
 ---
 
 # How Contact Control Panel (CCP) uses WebRTC
-<a name="ccp-uses-webrtc"></a>
 
 This advanced topic is for IT admins who might be interested in how Contact Control Panel (CCP) delivers voice calls. It also provides some networking details.
 

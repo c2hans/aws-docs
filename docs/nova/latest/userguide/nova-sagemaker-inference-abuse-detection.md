@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-sagemaker-inf
 ---
 
 # Deployment of Amazon Nova Forge Models in Amazon SageMaker Inference abuse detection
-<a name="nova-sagemaker-inference-abuse-detection"></a>
 
 AWS is committed to the responsible use of AI. To help prevent potential misuse, when you deploy Amazon Nova Forge Models in Amazon SageMaker Inference, SageMaker Inference implements automated abuse detection mechanisms to identify potential violations of AWS's [Acceptable Use Policy](https://aws.amazon.com/aup/) (AUP) and Service Terms, including the [Responsible AI Policy](https://aws.amazon.com/ai/responsible-ai/policy/).
 

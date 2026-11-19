@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSIS.Use.html
 ---
 
 # Using SSIS
-<a name="SSIS.Use"></a>
 
 After deploying the SSIS project into the SSIS catalog, you can run packages directly from SSMS or schedule them by using SQL Server Agent. You must use a Windows-authenticated login for executing SSIS packages. For more information, see [Setting up a Windows-authenticated user for SSIS](SSIS.Permissions.md#SSIS.Use.Auth).
 

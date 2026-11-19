@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # StreamingConfigurations
-<a name="API_agent-runtime_StreamingConfigurations"></a>
 
 Configurations for streaming.
 

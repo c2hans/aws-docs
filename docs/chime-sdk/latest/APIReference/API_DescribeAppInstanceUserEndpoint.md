@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Descri
 ---
 
 # DescribeAppInstanceUserEndpoint
-<a name="API_DescribeAppInstanceUserEndpoint"></a>
 
 Returns the full details of an `AppInstanceUserEndpoint`.
 

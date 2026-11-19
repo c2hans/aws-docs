@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-
 ---
 
 # Set up a method using the API Gateway console
-<a name="how-to-set-up-method-using-console"></a>
 
 When you create a method using the REST API console, you configure both the integration request and the method request. By default, API Gateway creates the `200` method response for your method.
 

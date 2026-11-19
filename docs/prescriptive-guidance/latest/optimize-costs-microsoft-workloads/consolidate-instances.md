@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Consolidate instances
-<a name="consolidate-instances"></a>
 
 This section focuses on the cost optimization technique of combining multiple SQL Server instances onto the same server to help reduce licensing costs and improve resource utilization.
 

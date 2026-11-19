@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/se
 ---
 
 # Using credentials in your application
-<a name="session-credentials-in-your-app"></a>
 
 After the session starts, your application or launch script can call AWS services using the credentials you configured. You do not need to change your code. The AWS SDK automatically discovers and uses the credentials.
 

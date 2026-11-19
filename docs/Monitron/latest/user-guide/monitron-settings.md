@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/Monitron/latest/user-guide/monitron-sett
 Amazon Monitron is no longer open to new customers. Existing customers can continue to use the service as normal. For capabilities similar to Amazon Monitron, see our [blog post](https://aws.amazon.com/blogs/machine-learning/maintain-access-and-consider-alternatives-for-amazon-monitron).
 
 # App settings
-<a name="monitron-settings"></a>
 
 This section shows you how to change your Amazon Monitron app and console settings.
 

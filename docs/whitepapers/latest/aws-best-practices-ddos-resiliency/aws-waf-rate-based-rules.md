@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # AWS WAF – Rate-based rules
-<a name="aws-waf-rate-based-rules"></a>
 
  AWS strongly recommends protecting against HTTP request floods by using rate-based rules in AWS WAF to automatically block or challenge requests matching a specific [aggregation key](https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-rate-based-aggregation-options.html) (which is by IP address), when the number of requests received in a configurable sliding window exceed a threshold that you define. Client IP addresses that match the aggregation key will receive an HTTP 403 forbidden response (or custom configured block error response code or body) and remain blocked until request rates drop below the threshold.
 

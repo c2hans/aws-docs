@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutAccountPr
 ---
 
 # PutAccountProperties
-<a name="API_PutAccountProperties"></a>
 
 Sets account-level properties for the caller's AWS account. Account properties are configuration settings that control account-wide IAM features such as Role Manager.
 

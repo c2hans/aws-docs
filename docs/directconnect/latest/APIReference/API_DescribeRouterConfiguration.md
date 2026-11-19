@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DescribeRouterConfiguration
-<a name="API_DescribeRouterConfiguration"></a>
 
  Details about the router.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Concepts and definitions
-<a name="concepts-and-definitions"></a>
 
  **Analytics Data Lake**
 

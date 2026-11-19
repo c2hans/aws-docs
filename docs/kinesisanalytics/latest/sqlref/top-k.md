@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/top-k.htm
 ---
 
 # TOP\_K\_ITEMS\_TUMBLING Function
-<a name="top-k"></a>
 
 Returns the most frequently occurring values in the specified in-application stream column over a tumbling window. This can be used to find trending (most popular) values in a specified column.
 

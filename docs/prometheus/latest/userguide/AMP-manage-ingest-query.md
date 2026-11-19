@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-manage-i
 ---
 
 # Manage Amazon Managed Service for Prometheus workspaces
-<a name="AMP-manage-ingest-query"></a>
 
 A *workspace* is a logical space dedicated to the storage and querying of Prometheus metrics. A workspace supports fine-grained access control for authorizing its management such as update, list, describe, and delete, and the ingestion and querying of metrics. You can have one or more workspaces in each Region in your account.
 

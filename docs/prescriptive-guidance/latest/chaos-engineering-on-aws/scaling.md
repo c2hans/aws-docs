@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engin
 ---
 
 # Scaling chaos engineering across your organization
-<a name="scaling"></a>
 
 As your organization adopts chaos engineering, standardizing and implementing it will present challenges. In the early stages of maturity, different teams are likely to use different tooling and variations of the chaos engineering process described in the previous sections. At the same time, some teams might not prioritize or adopt chaos engineering at all, despite its potential benefits. The following sections provide guidance on how to overcome these challenges.
 

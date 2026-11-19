@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_De
 ---
 
 # DescribeCreateAccountStatus
-<a name="API_DescribeCreateAccountStatus"></a>
 
 Retrieves the current status of an asynchronous request to create an account.
 

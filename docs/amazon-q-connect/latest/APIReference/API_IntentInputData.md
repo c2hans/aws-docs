@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # IntentInputData
-<a name="API_amazon-q-connect_IntentInputData"></a>
 
 Information about the Amazon Q intent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-langua
 ---
 
 # Language support and multilingual capabilities
-<a name="sonic-language-support"></a>
 
 Amazon Nova 2 Sonic provides a diverse selection of voices across multiple languages, enabling you to create conversational AI applications that feel natural and culturally appropriate for your users. Each language offers both feminine-sounding and masculine-sounding voice options.
 

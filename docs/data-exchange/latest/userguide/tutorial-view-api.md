@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/tutorial-
 ---
 
 # Viewing the AWS Data Exchange API
-<a name="tutorial-view-api"></a>
 
 You can view the API with AWS Data Exchange for APIs (Test Product) using the following steps.
 

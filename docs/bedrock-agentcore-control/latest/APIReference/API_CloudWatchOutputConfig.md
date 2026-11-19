@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CloudWatchOutputConfig
-<a name="API_CloudWatchOutputConfig"></a>
 
  The configuration for writing evaluation results to CloudWatch logs with embedded metric format (EMF) for monitoring.
 

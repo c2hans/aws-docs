@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelRes
 ---
 
 # CancelReservedInstancesListing
-<a name="API_CancelReservedInstancesListing"></a>
 
 Cancels the specified Reserved Instance listing in the Reserved Instance Marketplace.
 

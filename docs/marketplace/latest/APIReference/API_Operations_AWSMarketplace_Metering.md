@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Oper
 ---
 
 # AWS Marketplace Metering Service
-<a name="API_Operations_AWSMarketplace_Metering"></a>
 
 The following actions are supported by AWS Marketplace Metering Service:
 +  [BatchMeterUsage](API_marketplace-metering_BatchMeterUsage.md)

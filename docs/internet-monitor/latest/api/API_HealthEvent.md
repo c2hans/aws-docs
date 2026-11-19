@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_HealthEv
 ---
 
 # HealthEvent
-<a name="API_HealthEvent"></a>
 
 Information about a health event created in a monitor in Internet Monitor.
 

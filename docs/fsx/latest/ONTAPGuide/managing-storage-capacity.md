@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-storage-c
 ---
 
 # Managing storage capacity
-<a name="managing-storage-capacity"></a>
 
 Amazon FSx for NetApp ONTAP provides a number of storage-related features you can use to manage storage capacity on your file system.
 

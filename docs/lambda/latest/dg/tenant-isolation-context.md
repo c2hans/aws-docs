@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/tenant-isolation-contex
 ---
 
 # Accessing tenant identifier in Lambda Event Function code
-<a name="tenant-isolation-context"></a>
 
 When your Lambda Event Function has tenant isolation enabled, the tenant identifier used to invoke your Event Function is made available within the context object passed to your Event Function handler. You can use this identifier to implement tenant-specific logic, monitoring, and debugging capabilities.
 

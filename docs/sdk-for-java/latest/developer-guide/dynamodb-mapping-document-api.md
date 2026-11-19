@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/dyna
 ---
 
 # Document API differences between version 1 and version 2 of the AWS SDK for Java
-<a name="dynamodb-mapping-document-api"></a>
 
 The Document API supports working with JSON-style documents as single items in a DynamoDB table. The V1 Document API has a corresponding API in V2, but instead of using a separate client for the document API as in V1, V2 incorporates document API features in the DynamoDB enhanced client.
 

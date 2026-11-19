@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CustomMe
 ---
 
 # CustomMetricEvaluatorModelConfig
-<a name="API_CustomMetricEvaluatorModelConfig"></a>
 
 Configuration of the evaluator model you want to use to evaluate custom metrics in an Amazon Bedrock evaluation job.
 

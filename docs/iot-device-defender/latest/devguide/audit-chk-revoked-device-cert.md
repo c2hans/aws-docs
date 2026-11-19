@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/audi
 ---
 
 # Revoked device certificate still active
-<a name="audit-chk-revoked-device-cert"></a>
 
 A revoked device certificate is still active.
 

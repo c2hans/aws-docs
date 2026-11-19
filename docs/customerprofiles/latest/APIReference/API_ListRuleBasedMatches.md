@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListRuleBasedMatches
-<a name="API_connect-customer-profiles_ListRuleBasedMatches"></a>
 
 Returns a set of `MatchIds` that belong to the given domain.
 

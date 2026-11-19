@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Iceberg
 ---
 
 # IcebergDestinationDescription
-<a name="API_IcebergDestinationDescription"></a>
 
  Describes a destination in Apache Iceberg Tables.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/vwo-connection-options.ht
 ---
 
 # VWO connection options
-<a name="vwo-connection-options"></a>
 
 The following are connection options for VWO:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the VWO object to read.

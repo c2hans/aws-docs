@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A label that you can assign to a Amazon GameLift Servers resource.
 

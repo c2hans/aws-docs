@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-DistinctV
 ---
 
 # DistinctValuesCount
-<a name="dqdl-rule-types-DistinctValuesCount"></a>
 
 Checks the number of distinct values in a column against a given expression.
 

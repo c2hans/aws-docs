@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # Running EMR on EKS on IPv6 clusters
-<a name="emr-eks-ipv6"></a>
 
 You can run Amazon EMR on EKS workloads on IPv6 Amazon EKS clusters to take advantage of a significantly larger address space and avoid IPv4 address exhaustion as your Kubernetes environments scale.
 

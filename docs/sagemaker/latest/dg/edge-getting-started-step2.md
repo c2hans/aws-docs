@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-getting-started
 ---
 
 # Prepare Your Model for Deployment
-<a name="edge-getting-started-step2"></a>
 
 In this section you will create SageMaker AI and AWS IoT client objects, download a pre-trained machine learning model, upload your model to your Amazon S3 bucket, compile your model for your target device with SageMaker Neo, and package your model so that it can be deployed with the Edge Manager agent.
 

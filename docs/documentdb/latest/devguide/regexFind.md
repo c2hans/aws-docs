@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/regexFind.htm
 ---
 
 # $regexFind
-<a name="regexFind"></a>
 
 New from version 5.0.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_RecommenderCon
 ---
 
 # RecommenderConfig
-<a name="API_RecommenderConfig"></a>
 
 The configuration details of the recommender.
 

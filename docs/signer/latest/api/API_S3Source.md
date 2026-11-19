@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_S3Source.html
 ---
 
 # S3Source
-<a name="API_S3Source"></a>
 
 Information about the Amazon S3 bucket where you saved your unsigned code.
 

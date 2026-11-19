@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Priv
 ---
 
 # PrivacyBudgetTemplate
-<a name="API_PrivacyBudgetTemplate"></a>
 
 An object that defines the privacy budget template.
 

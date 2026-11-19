@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/endpoints-smooth-
 ---
 
 # Access control settings fields
-<a name="endpoints-smooth-access-control"></a>
 
 Define the access control values.
 

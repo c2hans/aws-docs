@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenan
 ---
 
 # SaaS data-partitioning models
-<a name="data-partitioning-models"></a>
 
 One of the challenges for SaaS developers is to design architectural patterns for representing and organizing data in a multi-tenant environment. These multi-tenant storage mechanisms and patterns are typically referred to as [data partitioning](https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/data-partitioning.html).
 

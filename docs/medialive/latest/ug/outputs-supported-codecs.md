@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/outputs-supported-co
 ---
 
 # Supported codecs by output type
-<a name="outputs-supported-codecs"></a>
 
 The following table lists the video and audio codecs that each type of MediaLive output container (output group) supports.
 

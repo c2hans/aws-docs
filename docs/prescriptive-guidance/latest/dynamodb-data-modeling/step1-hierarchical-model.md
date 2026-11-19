@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Step 1: Identify the use cases and logical data model
-<a name="step1-hierarchical-model"></a>
 
 An automotive company wants to build a transactional component management system to store and search for all of the available car parts and to build relationships between different components and parts. For example, a car contains multiple batteries, each battery contains multiple high-level modules, each module contains multiple cells, and each cell contains multiple low-level components.
 

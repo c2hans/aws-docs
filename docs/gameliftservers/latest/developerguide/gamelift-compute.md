@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Choose compute resources for a managed fleet
-<a name="gamelift-compute"></a>
 
 For Amazon GameLift Servers managed hosting, including managed EC2 and managed containers, the service deploys your game servers to fleets of computing resources in the AWS Cloud. When you create a managed fleet, you want to configure the hosting resources to best suit your game. This topic discusses key decision points when choosing and configuring your game hosting fleets.
 

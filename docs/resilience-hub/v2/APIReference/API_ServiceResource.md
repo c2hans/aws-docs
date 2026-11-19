@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Servi
 ---
 
 # ServiceResource
-<a name="API_ServiceResource"></a>
 
 Represents a resource associated with a service.
 

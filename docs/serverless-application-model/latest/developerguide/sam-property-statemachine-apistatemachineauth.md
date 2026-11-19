@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # ApiStateMachineAuth
-<a name="sam-property-statemachine-apistatemachineauth"></a>
 
 Configures authorization at the event level, for a specific API, path, and method.
 

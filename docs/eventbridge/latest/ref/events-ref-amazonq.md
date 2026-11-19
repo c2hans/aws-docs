@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-amazon
 ---
 
 # Amazon Q Developer events
-<a name="events-ref-amazonq"></a>
 
 Amazon Q Developer sends service events to EventBridge via AWS CloudTrail.
 

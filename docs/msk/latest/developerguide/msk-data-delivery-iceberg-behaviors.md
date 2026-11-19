@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Iceberg table behaviors
-<a name="msk-data-delivery-iceberg-behaviors"></a>
 
 This section describes how a Channel maps schemas and manages the Apache Iceberg table it creates in Amazon S3 Tables.
 

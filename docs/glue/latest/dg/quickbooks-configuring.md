@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/quickbooks-configuring.ht
 ---
 
 # Configuring QuickBooks
-<a name="quickbooks-configuring"></a>
 
 Before you can use AWS Glue to transfer data from QuickBooks, you must meet these requirements:
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/cni-subnet-selectio
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure subnet selection for Pod IP addresses
-<a name="cni-subnet-selection"></a>
 
  **Applies to**: Linux nodes with Amazon EC2 instances
 

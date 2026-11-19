@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.ACG.3] Automate deployment of detective controls
-<a name="ag.acg.3-automate-deployment-of-detective-controls"></a>
 
  **Category:** FOUNDATIONAL
 

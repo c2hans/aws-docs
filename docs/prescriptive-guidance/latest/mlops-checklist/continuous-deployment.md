@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mlops-check
 ---
 
 # 7. Continuous deployment
-<a name="continuous-deployment"></a>
 
 For an ML system to be continuously deployed, it must be able to divert traffic from or between live models. A continuously deployed system has at least one way by which models are promoted to production: canary, shadow, blue/green, or A/B. Confirm that in the ML system, you have at least one way to roll back models.
 

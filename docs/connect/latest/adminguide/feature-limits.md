@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/feature-limits
 ---
 
 # Connect Customer feature specifications
-<a name="feature-limits"></a>
 
 **Important**
 You can't increase the feature specifications listed here. They are hard limits.

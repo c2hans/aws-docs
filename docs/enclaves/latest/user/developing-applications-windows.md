@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/enclaves/latest/user/developing-applicat
 ---
 
 # Nitro Enclaves Application development on Windows instances
-<a name="developing-applications-windows"></a>
 
 This section provides information for Nitro Enclaves application development on Windows instances.
 

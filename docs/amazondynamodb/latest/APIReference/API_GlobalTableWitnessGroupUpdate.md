@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_G
 ---
 
 # GlobalTableWitnessGroupUpdate
-<a name="API_GlobalTableWitnessGroupUpdate"></a>
 
 Represents one of the following:
 + A new witness to be added to a new global table.

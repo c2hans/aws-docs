@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Bu
 ---
 
 # AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetails
-<a name="API_AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetails"></a>
 
 A tag that is assigned to matching objects.
 

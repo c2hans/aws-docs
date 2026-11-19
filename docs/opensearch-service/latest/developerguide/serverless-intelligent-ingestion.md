@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Overview of Amazon OpenSearch intelligent ingestion
-<a name="serverless-intelligent-ingestion"></a>
 
 Amazon OpenSearch Serverless intelligent ingestion is a native, on-demand, serverless capability that makes data from supported data sources searchable in OpenSearch Serverless. You choose a data source, such as Amazon Simple Storage Service (Amazon S3), select how to process the data, and specify a target index. Intelligent ingestion discovers the source objects, processes their content, and indexes the results for you.
 

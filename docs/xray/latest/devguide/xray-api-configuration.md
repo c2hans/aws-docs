@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/xray-api-configurat
 ---
 
 # Configuring sampling, groups, and encryption settings with the AWS X-Ray API
-<a name="xray-api-configuration"></a>
 
 AWS X-Ray provides APIs for configuring [sampling rules](xray-console-sampling.md), group rules, and [encryption settings](xray-console-encryption.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_UpdateLifecy
 ---
 
 # UpdateLifecyclePolicy
-<a name="API_UpdateLifecyclePolicy"></a>
 
 Updates the specified lifecycle policy.
 

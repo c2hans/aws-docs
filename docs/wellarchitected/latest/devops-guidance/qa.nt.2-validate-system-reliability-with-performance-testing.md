@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 ---
 
 # [QA.NT.2] Validate system reliability with performance testing
-<a name="qa.nt.2-validate-system-reliability-with-performance-testing"></a>
 
  **Category:** RECOMMENDED
 

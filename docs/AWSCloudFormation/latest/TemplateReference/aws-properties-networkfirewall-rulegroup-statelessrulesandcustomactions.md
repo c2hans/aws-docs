@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkFirewall::RuleGroup StatelessRulesAndCustomActions
-<a name="aws-properties-networkfirewall-rulegroup-statelessrulesandcustomactions"></a>
 
 Stateless inspection criteria. Each stateless rule group uses exactly one of these data types to define its stateless rules.
 

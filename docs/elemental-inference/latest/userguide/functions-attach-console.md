@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Attaching a function using the console
-<a name="functions-attach-console"></a>
 
 You can add a function output when you create a feed, or to a feed that already exists.
 

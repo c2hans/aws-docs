@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/create-verifie
 ---
 
 # Create and manage a Verified Access instance
-<a name="create-verified-access-instance"></a>
 
 You use a Verified Access instance to organize your trust providers and Verified Access groups. Use the following procedures to create a Verified Access instance, and then attach a trust provider to Verified Access or detach a trust provider from Verified Access.
 

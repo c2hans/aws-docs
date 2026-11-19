@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Creat
 ---
 
 # CreateLogPattern
-<a name="API_CreateLogPattern"></a>
 
 Adds an log pattern to a `LogPatternSet`.
 

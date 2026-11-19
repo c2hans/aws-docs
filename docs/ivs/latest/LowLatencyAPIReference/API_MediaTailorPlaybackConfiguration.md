@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Me
 ---
 
 # MediaTailorPlaybackConfiguration
-<a name="API_MediaTailorPlaybackConfiguration"></a>
 
 Object specifying a configuration for integration with an AWS Elemental MediaTailor (EMT).
 

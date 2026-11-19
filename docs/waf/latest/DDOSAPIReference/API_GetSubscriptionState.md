@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_GetSubsc
 ---
 
 # GetSubscriptionState
-<a name="API_GetSubscriptionState"></a>
 
 Returns the `SubscriptionState`, either `Active` or `Inactive`.
 

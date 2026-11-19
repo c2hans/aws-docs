@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DescribeStackSet
-<a name="API_DescribeStackSet"></a>
 
 Returns the description of the specified StackSet.
 

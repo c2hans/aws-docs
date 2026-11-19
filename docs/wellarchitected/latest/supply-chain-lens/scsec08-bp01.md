@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCSEC08-BP01 Implement strong key management in your supply chain systems
-<a name="scsec08-bp01"></a>
 
  Effective encryption key management is fundamental to protecting sensitive data across supply chain operations. This includes implementing secure processes for key generation, storage, rotation, and revocation throughout the key lifecycle. Organizations should establish clear separation of duties for key management activities and make sure keys are protected with strong access controls. Regular auditing of key usage and implementing automated rotation schedules helps maintain the integrity of encryption throughout the supply chain environment.
 

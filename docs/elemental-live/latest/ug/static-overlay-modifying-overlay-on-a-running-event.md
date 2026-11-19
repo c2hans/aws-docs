@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/static-overlay-
 ---
 
 # Static overlay: Modifying overlay on a running event
-<a name="static-overlay-modifying-overlay-on-a-running-event"></a>
 
 |  |  |  |  |
 | --- |--- |--- |--- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-deploy.html
 ---
 
 # `cdk deploy`
-<a name="ref-cli-cmd-deploy"></a>
 
 Deploy one or more AWS CDK stacks into your AWS environment.
 

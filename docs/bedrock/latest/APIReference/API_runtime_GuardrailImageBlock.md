@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailImageBlock
-<a name="API_runtime_GuardrailImageBlock"></a>
 
 Contain an image which user wants guarded. This block is accepted by the guardrails independent API.
 

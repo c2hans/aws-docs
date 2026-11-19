@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVS::EncoderConfiguration
-<a name="aws-resource-ivs-encoderconfiguration"></a>
 
 The `AWS::IVS::EncoderConfiguration` resource specifies an Amazon IVS encoder configuration. An encoder configuration describes a stream’s video configuration. For more information, see [Streaming Configuration](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/streaming-config.html) in the *Amazon IVS Low-Latency Streaming User Guide*.
 

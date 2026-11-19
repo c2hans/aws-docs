@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ServiceEnv
 ---
 
 # ServiceEnvironmentDetail
-<a name="API_ServiceEnvironmentDetail"></a>
 
 Detailed information about a service environment, including its configuration, state, and capacity limits.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVer
 ---
 
 # ModifyVerifiedAccessEndpointCidrOptions
-<a name="API_ModifyVerifiedAccessEndpointCidrOptions"></a>
 
 The CIDR options for a Verified Access endpoint.
 

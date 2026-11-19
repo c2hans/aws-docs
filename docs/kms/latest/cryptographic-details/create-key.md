@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/cryptographic-details/create-
 ---
 
 # Calling CreateKey
-<a name="create-key"></a>
 
 An AWS KMS key is generated as a result of a call to the [`CreateKey`](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html) API call.
 

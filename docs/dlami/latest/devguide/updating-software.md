@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/updating-software.
 ---
 
 # Tips for Software Updates
-<a name="updating-software"></a>
 
 From time to time, you may want to manually update software on your DLAMI. It is generally recommended that you use `pip` to update Python packages. You should also use `pip` to update packages within a Conda environment on the Deep Learning AMI with Conda. Refer to the particular framework's or software's website for upgrading and installation instructions.
 

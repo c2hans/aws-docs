@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/exchange-iam
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # IAM role for Microsoft Exchange connector
-<a name="exchange-iam-role"></a>
 
 **Note**
 This section applies to both new and original Microsoft Exchange connector versions.

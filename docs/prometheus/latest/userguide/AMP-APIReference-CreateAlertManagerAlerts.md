@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIRefer
 ---
 
 # CreateAlertManagerAlerts
-<a name="AMP-APIReference-CreateAlertManagerAlerts"></a>
 
 The `CreateAlertManagerAlerts` operation creates an alert in the workspace.
 

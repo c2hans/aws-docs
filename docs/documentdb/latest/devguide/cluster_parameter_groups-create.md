@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/cluster_param
 ---
 
 # Creating Amazon DocumentDB cluster parameter groups
-<a name="cluster_parameter_groups-create"></a>
 
 Default cluster parameter groups such as `default.docdb5.0`, `default.docdb4.0`, or `default.docdb3.6`, are created when you create a cluster with a new engine version and in a new AWS Region. Subsequent clusters created in the same Region and with the same engine version inherit the `default` cluster parameter group. Once created, the `default` parameter groups cannot be deleted or renamed. You can modify the engine behavior of cluster instances by creating a custom parameter group with preferred parameter values and attaching it to your Amazon DocumentDB cluster.
 

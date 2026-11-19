@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/sales
 ---
 
 # CloudWatch pipelines configuration for Salesforce ELF
-<a name="salesforce-elf-pipeline-setup"></a>
 
 Collects EventLogFile and Setup AuditTrail events from Salesforce using OAuth2 authentication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_S3Content
 ---
 
 # S3ContentBaseLocation
-<a name="API_S3ContentBaseLocation"></a>
 
 The S3 bucket that holds the application information.
 

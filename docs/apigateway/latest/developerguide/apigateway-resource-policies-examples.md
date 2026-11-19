@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # API Gateway resource policy examples
-<a name="apigateway-resource-policies-examples"></a>
 
 This page presents a few examples of typical use cases for API Gateway resource policies.
 

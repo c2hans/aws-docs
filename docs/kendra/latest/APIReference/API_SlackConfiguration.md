@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_SlackConf
 ---
 
 # SlackConfiguration
-<a name="API_SlackConfiguration"></a>
 
 Provides the configuration information to connect to Slack as your data source.
 

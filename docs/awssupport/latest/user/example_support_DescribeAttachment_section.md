@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/example_support_D
 ---
 
 # Use `DescribeAttachment` with an AWS SDK or CLI
-<a name="example_support_DescribeAttachment_section"></a>
 
 The following code examples show how to use `DescribeAttachment`.
 

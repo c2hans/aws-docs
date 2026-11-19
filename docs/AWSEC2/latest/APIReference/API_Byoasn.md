@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Byoasn.ht
 ---
 
 # Byoasn
-<a name="API_Byoasn"></a>
 
 The Autonomous System Number (ASN) and BYOIP CIDR association.
 

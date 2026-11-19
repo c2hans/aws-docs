@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_DeleteRuleGr
 ---
 
 # DeleteRuleGroup
-<a name="API_DeleteRuleGroup"></a>
 
 Deletes the specified [RuleGroup](API_RuleGroup.md).
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/d
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Strategy Recommendations database analysis
-<a name="database-analysis"></a>
 
 Strategy Recommendations automatically identifies the database servers in your portfolio and creates application components for them. For example, if there is a SQL Server database in your portfolio, it's identified as application component **sqlservr.exe**.
 

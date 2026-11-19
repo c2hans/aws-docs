@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-iam-po
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # IAM policies for Amazon Q Developer in chat applications
-<a name="chatbot-iam-policies"></a>
 
 This section describes the IAM permissions and policies that Amazon Q Developer in chat applications uses to secure its operations with other AWS services. Amazon Q Developer in chat applications uses these permissions to safely forward Amazon SNS notifications to chat rooms, support AWS CLI commands sessions in Slack, invoke Lambda functions, and create AWS support tickets directly in the Slack console. You can also define your own custom policies for the same purposes, using these policies as templates.
 

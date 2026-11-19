@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Tieri
 ---
 
 # TieringConfigurationInputForCreate
-<a name="API_TieringConfigurationInputForCreate"></a>
 
 This contains metadata about a tiering configuration for create operations.
 

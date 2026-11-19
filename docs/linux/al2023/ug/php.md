@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/php.html
 ---
 
 # PHP in AL2023
-<a name="php"></a>
 
  AL2023 currently provides the [PHP](https://www.php.net/) programming language, versions 8.1, 8.2, 8.3, 8.4, and 8.5. Each version is supported for same period of time as upstream PHP. For more information, see [Package support statements](https://docs.aws.amazon.com/linux/al2023/release-notes/all-packages-AL2023.12.html).
 

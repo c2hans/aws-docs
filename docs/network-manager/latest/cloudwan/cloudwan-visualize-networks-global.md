@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Access AWS Cloud WAN global network dashboards
-<a name="cloudwan-visualize-networks-global"></a>
 
  Visualize and monitor your global networks in the Network Manager console through a graphical representation of your global network topology, including a map showing the locations of transit gateways, edge locations, devices, and sites.
 

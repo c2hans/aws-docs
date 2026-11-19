@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Emergenc
 ---
 
 # EmergencyContact
-<a name="API_EmergencyContact"></a>
 
 Contact information that the SRT can use to contact you if you have proactive engagement enabled, for escalations to the SRT and to initiate proactive customer support.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/configuri
 ---
 
 # Controlling iostreams used by the `HttpClient` and the `AWSClient` in the AWS SDK for C\+\+
-<a name="configuring-iostreams"></a>
 
 By default, all responses use an input stream backed by a `stringbuf`. If needed, you can override the default behavior. For example, if you are using an Amazon S3 `GetObject` and don’t want to load the entire file into memory, you can use `IOStreamFactory` in `AmazonWebServiceRequest` to pass a lambda to create a file stream.
 

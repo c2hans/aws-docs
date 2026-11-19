@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Connection.html
 ---
 
 # Connection
-<a name="API_Connection"></a>
 
 Defines a connection to a data source.
 

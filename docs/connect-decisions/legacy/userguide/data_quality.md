@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data_
 ---
 
 # Prequisites before uploading your dataset
-<a name="data_quality"></a>
 
 To successfully generate a forecast, make sure your dataset adheres to the following.
 + At least one *product\_id* has a sales history of at least four times the forecast time horizon provided in the *outbound\_order\_line* dataset. For example, if the forecast time horizon is 26 weeks, the minimum order data requirement is 26\*4 = 104 weeks.

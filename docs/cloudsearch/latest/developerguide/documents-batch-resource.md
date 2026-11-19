@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/docume
 ---
 
 # documents/batch
-<a name="documents-batch-resource"></a>
 
 This section describes the HTTP request and response messages for the `documents/batch` resource.
 

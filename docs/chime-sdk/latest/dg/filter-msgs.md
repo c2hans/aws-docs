@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/filter-msgs.html
 ---
 
 # Using filter rules to filter messages for Amazon Chime SDK messaging
-<a name="filter-msgs"></a>
 
 The Amazon Chime SDK supports setting filter rules on an app instance user’s channel membership to limit which message they will receive. Filter rules are set on the channel membership and run against the message attributes map. The message attribute map must be a map of string keys to string values. Filter rules support inclusion and exclusion with exact string matching.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_GetCluster.h
 ---
 
 # GetCluster
-<a name="API_GetCluster"></a>
 
 Returns detailed information about a running cluster in your account. This API action provides networking information, endpoint information for communication with the scheduler, and provisioning status.
 

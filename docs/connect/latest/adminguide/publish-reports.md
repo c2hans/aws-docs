@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/publish-report
 ---
 
 # Publish reports in Connect Customer
-<a name="publish-reports"></a>
 
 After you create and save a custom report with the metrics you're interested in, you can publish it so everyone in your organization with the [appropriate permissions](#view-published-reports) can access the report.
 

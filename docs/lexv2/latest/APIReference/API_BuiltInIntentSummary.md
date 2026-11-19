@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BuiltInInt
 ---
 
 # BuiltInIntentSummary
-<a name="API_BuiltInIntentSummary"></a>
 
 Provides summary information about a built-in intent for the [ ListBuiltInIntents ](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBuiltInIntents.html) operation.
 

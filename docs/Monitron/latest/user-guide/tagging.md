@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/Monitron/latest/user-guide/tagging.html
 Amazon Monitron is no longer open to new customers. Existing customers can continue to use the service as normal. For capabilities similar to Amazon Monitron, see our [blog post](https://aws.amazon.com/blogs/machine-learning/maintain-access-and-consider-alternatives-for-amazon-monitron).
 
 # Using tags with your project
-<a name="tagging"></a>
 
 A *tag* is a key-value pair that you can use to categorize your projects. For example, if you have multiple projects, you might categorize them by purpose, owner, location, or any other factor.
 

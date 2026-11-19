@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Service Quotas for AVX Deployments
-<a name="plan-quotas"></a>
 
 Review the service quotas below before deploying AVX. The defaults for new AWS accounts may require increases before reaching production-level load.
 

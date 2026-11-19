@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateS
 ---
 
 # CreateSubscriptionGrant
-<a name="API_CreateSubscriptionGrant"></a>
 
 Creates a subsscription grant in Amazon DataZone.
 

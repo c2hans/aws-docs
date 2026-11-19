@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/ad-hoc
 ---
 
 # Performing ad hoc analysis on pro forma costs in AWS Cost Explorer
-<a name="ad-hoc-cost-explorer-analysis"></a>
 
 ## Using Billing Conductor as a standalone service
 <a name="ad-hoc-cost-explorer-analysis-standalone"></a>

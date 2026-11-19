@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # DescribeEvaluations
-<a name="API_DescribeEvaluations"></a>
 
 Returns a list of `DescribeEvaluations` that match the search criteria in the request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_A
 ---
 
 # AssociateBrowserSettings
-<a name="API_AssociateBrowserSettings"></a>
 
 Associates a browser settings resource with a web portal.
 

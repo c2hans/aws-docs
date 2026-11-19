@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Ope
 ---
 
 # Operations
-<a name="Operations"></a>
 
 The following describes components of Amazon SimpleDB operations.
 + **Subscriber—**Any application, script, or software making a call to the Amazon SimpleDB service.

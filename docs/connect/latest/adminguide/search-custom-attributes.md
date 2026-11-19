@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/search-custom-
 ---
 
 # Search for contacts in Connect Customer by using custom contact attributes or contact segment attributes
-<a name="search-custom-attributes"></a>
 
 You can create search filters based on custom contact attributes (also called [user-defined contact attributes](connect-attrib-list.md#user-defined-attributes)) or contact segment attributes.
 

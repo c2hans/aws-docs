@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_Disassociate
 ---
 
 # DisassociateApplications
-<a name="API_DisassociateApplications"></a>
 
 Disassociate applications from wave.
 

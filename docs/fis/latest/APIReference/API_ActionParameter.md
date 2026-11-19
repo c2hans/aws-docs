@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ActionParame
 ---
 
 # ActionParameter
-<a name="API_ActionParameter"></a>
 
 Describes a parameter for an action.
 

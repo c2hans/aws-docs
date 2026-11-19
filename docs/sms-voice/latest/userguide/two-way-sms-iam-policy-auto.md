@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/two-way-sms-i
 ---
 
 # Topic policies for Amazon SNS topics
-<a name="two-way-sms-iam-policy-auto"></a>
 
 The Amazon SNS topic requires the appropriate topic policy to grant access to AWS End User Messaging SMS if they are not provided in the {{TwoChannelWayRole}} parameter.
 

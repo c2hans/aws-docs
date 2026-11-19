@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/configure-saml
 ---
 
 # Configure SAML with IAM for Connect Customer
-<a name="configure-saml"></a>
 
 Connect Customer supports identity federation by configuring Security Assertion Markup Language (SAML) 2.0 with AWS IAM to enable web-based single sign-on (SSO) from your organization to your Connect Customer instance. This allows your users to sign in to a portal in your organization hosted by a SAML 2.0 compatible identity provider (IdP) and log in to a Connect Customer instance with a single sign-on experience without having to provide separate credentials for Connect Customer.
 

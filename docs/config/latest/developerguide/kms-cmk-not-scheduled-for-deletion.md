@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/kms-cmk-not
 ---
 
 # kms-cmk-not-scheduled-for-deletion
-<a name="kms-cmk-not-scheduled-for-deletion"></a>
 
 Checks if AWS Key Management Service (AWS KMS) keys are not scheduled for deletion in AWS KMS. The rule is NON\_COMPLIANT if KMS keys are scheduled for deletion.
 

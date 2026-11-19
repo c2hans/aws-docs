@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeletePu
 ---
 
 # DeletePublicAccessBlock
-<a name="API_control_DeletePublicAccessBlock"></a>
 
 **Note**
 This operation is not supported by directory buckets.

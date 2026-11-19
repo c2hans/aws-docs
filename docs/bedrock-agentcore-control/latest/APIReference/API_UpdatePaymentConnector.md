@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdatePaymentConnector
-<a name="API_UpdatePaymentConnector"></a>
 
 Updates an existing payment connector. This operation uses PATCH semantics, so you only need to specify the fields you want to change.
 

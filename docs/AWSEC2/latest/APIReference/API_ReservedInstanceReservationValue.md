@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReservedI
 ---
 
 # ReservedInstanceReservationValue
-<a name="API_ReservedInstanceReservationValue"></a>
 
 The total value of the Convertible Reserved Instance.
 

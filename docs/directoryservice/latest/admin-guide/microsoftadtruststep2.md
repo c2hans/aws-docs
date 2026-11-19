@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/micr
 ---
 
 # Step 2: Create the trusts
-<a name="microsoftadtruststep2"></a>
 
 In this section, you create two separate forest trusts. One trust is created from the Active Directory domain on your EC2 instance and the other from your AWS Managed Microsoft AD in AWS.
 

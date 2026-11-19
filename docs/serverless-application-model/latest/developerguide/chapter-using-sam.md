@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # How to use AWS Serverless Application Model (AWS SAM)
-<a name="chapter-using-sam"></a>
 
 The primary tools you use to develop your application are the **AWS SAM CLI** and the **AWS SAM template and AWS SAM project ** (which is your application project directory). You use these tools to:
 

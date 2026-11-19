@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/create-ima
 ---
 
 # Create a new version of an image recipe
-<a name="create-image-recipes"></a>
 
 This section shows you how to create an image recipe or a new version of an existing recipe. An image recipe defines the base AMI, the build components, and the configuration. Use this recipe to create Amazon Machine Images (AMIs) with Image Builder. You can create image recipes from the Image Builder console, the AWS CLI, or AWS Tools for PowerShell.
 
@@ -503,7 +502,7 @@ The following table lists common errors that you might encounter when you create
 ## Import a VM as your base image in the console
 <a name="import-vm-recipes"></a>
 
-This section shows you how to import a virtual machine (VM) as the base image for your image recipe. It doesn't cover other steps involved with creating a recipe or recipe version here. For additional steps to create a new image recipe with the pipeline creation wizard in the Image Builder console, see [Pipeline wizard: Create AMI](start-build-image-pipeline.md). For additional steps to create a new image recipe or recipe version, see [Create a new version of an image recipe](#create-image-recipes).
+This section shows you how to import a virtual machine (VM) as the base image for your image recipe. It doesn't cover other steps involved with creating a recipe or recipe version here. For additional steps to create a new image recipe with the pipeline creation wizard in the Image Builder console, see [Pipeline wizard: Create AMI](start-build-image-pipeline.md). For additional steps to create a new image recipe or recipe version, see [Create a new version of an image recipe](create-image-recipes.md).
 
 To import a VM as the base image for your image recipe in the Image Builder console, follow these steps, along with any other required steps, to create your recipe or recipe version.
 

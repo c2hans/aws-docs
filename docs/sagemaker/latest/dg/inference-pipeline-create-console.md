@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-pipeline-c
 ---
 
 # Create a Pipeline Model
-<a name="inference-pipeline-create-console"></a>
 
 To create a pipeline model that can be deployed to an endpoint or used for a batch transform job, use the Amazon SageMaker AI console or the `CreateModel` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/configure-event-
 ---
 
 # Configuring authorization and authentication to secure Event APIs
-<a name="configure-event-api-auth"></a>
 
 AWS AppSync Events offers the following authorization types to secure Event APIs: API keys, Lambda, IAM, OpenID Connect, and Amazon Cognito user pools. Each option provides a different method of security.
 

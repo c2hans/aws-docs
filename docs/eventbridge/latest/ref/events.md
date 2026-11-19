@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events.html
 ---
 
 # Events
-<a name="events"></a>
 
 The following AWS services send events to EventBridge, either directly or via CloudTrail.
 

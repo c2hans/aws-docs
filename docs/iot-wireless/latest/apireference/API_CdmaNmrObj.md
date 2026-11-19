@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Cdm
 ---
 
 # CdmaNmrObj
-<a name="API_CdmaNmrObj"></a>
 
 CDMA object for network measurement reports.
 

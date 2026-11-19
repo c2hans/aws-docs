@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_A
 ---
 
 # AcceptGroupingRecommendationEntry
-<a name="API_AcceptGroupingRecommendationEntry"></a>
 
 Indicates the grouping recommendation you have accepted to include in your application.
 

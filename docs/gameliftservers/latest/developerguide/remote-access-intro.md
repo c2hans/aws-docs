@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/re
 ---
 
 # Remotely accessing fleet resources
-<a name="remote-access-intro"></a>
 
 You can connect to any instance in your active Amazon GameLift Servers managed EC2 or managed container fleets. For container fleets, you can also connect to individual containers running on an instance to troubleshoot game sessions, inspect logs, and debug runtime issues. Common reasons to remotely access an instance include:
 + Troubleshoot issues with your game server integration.

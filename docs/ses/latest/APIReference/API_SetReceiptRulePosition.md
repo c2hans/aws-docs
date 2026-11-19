@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_SetReceiptRu
 ---
 
 # SetReceiptRulePosition
-<a name="API_SetReceiptRulePosition"></a>
 
 Sets the position of the specified receipt rule in the receipt rule set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock_example
 ---
 
 # Use `GetFoundationModel` with an AWS SDK
-<a name="bedrock_example_bedrock_GetFoundationModel_section"></a>
 
 The following code examples show how to use `GetFoundationModel`.
 

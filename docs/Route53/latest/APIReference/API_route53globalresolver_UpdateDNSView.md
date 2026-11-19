@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # UpdateDNSView
-<a name="API_route53globalresolver_UpdateDNSView"></a>
 
 Updates the configuration of a DNS view.
 

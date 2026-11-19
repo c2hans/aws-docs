@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_N
 ---
 
 # NotifyWhenUploaded
-<a name="API_NotifyWhenUploaded"></a>
 
 Sends you notification through Amazon EventBridge when all files written to your file share have been uploaded to Amazon S3.
 

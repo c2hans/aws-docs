@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteH
 ---
 
 # DeleteHsmConfiguration
-<a name="API_DeleteHsmConfiguration"></a>
 
 Deletes the specified Amazon Redshift HSM configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/cc.html
 ---
 
 # .cc (Cocos (Keeling) Islands)
-<a name="cc"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

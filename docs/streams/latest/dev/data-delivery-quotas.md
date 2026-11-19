@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-quotas.
 ---
 
 # Delivery quotas and limits
-<a name="data-delivery-quotas"></a>
 
  The following tables describe the quotas and delivery constraints for streaming tables and Amazon S3 delivery in Amazon Kinesis Data Streams.
 

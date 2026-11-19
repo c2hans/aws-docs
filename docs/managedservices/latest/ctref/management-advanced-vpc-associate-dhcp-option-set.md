@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/management-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # VPC \| Associate DHCP Option Set
-<a name="management-advanced-vpc-associate-dhcp-option-set"></a>
 
 This automation document associates a DHCP Option Set with an AWS VPC after validating that domain name servers are within the VPC CIDR range. It lets you specify the VPC ID and the DHCP Option Set ID that you want to associate. This is useful to manage the DHCP configurations of your VPCs while making sure there is network security compliance.
 

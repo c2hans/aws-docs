@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Instan
 ---
 
 # InstanceLaunchTemplateUpdate
-<a name="API_InstanceLaunchTemplateUpdate"></a>
 
 The updated launch template configuration for Amazon ECS Managed Instances. You can modify the instance profile, network configuration, storage settings, and instance requirements. Changes apply to new instances launched after the update.
 

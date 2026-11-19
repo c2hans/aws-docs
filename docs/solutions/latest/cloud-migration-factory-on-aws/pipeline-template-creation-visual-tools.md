@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Pipeline Template Creation Using Visual Tools
-<a name="pipeline-template-creation-visual-tools"></a>
 
 This section describes how to create Cloud Migration Factory pipeline templates using visual diagramming tools. The solution supports template creation using either DrawIO or Lucid Chart.
 

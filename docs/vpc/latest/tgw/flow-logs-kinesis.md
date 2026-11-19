@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/flow-logs-kinesis.html
 ---
 
 # AWS Transit Gateway,Flow Logs records in Amazon Data Firehose
-<a name="flow-logs-kinesis"></a>
 
 **Topics**
 + [IAM roles for cross account delivery](#flow-logs-kinesis-iam)

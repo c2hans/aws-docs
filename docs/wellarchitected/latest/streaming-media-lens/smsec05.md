@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Infrastructure protection
-<a name="smsec05"></a>
 
 Content origins need protection from DDoS attacks at both network and application layers, unauthorized direct access bypassing the CDN, and application-level exploits.
 

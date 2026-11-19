@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/parquet-serde.html
 ---
 
 # Parquet SerDe
-<a name="parquet-serde"></a>
 
 Use the Parquet SerDe to create Athena tables from Parquet data.
 

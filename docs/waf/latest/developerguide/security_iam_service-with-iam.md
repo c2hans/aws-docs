@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_s
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # How AWS WAF works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 This section explains how to use the features of IAM with AWS WAF.
 

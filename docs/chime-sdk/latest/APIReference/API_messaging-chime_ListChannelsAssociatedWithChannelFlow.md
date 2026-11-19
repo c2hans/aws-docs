@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ListChannelsAssociatedWithChannelFlow
-<a name="API_messaging-chime_ListChannelsAssociatedWithChannelFlow"></a>
 
 Lists all channels associated with a specified channel flow. You can associate a channel flow with multiple channels, but you can only associate a channel with one channel flow. This is a developer API.
 

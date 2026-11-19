@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/codecs-containe
 ---
 
 # Video: HEVC (H.265) support
-<a name="codecs-containers-hevc"></a>
 
 HEVC is supported in the following variations.
 

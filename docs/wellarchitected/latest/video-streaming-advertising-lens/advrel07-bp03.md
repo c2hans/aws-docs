@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVREL07-BP03 Implement secure and privacy-preserving recovery mechanisms for collaboration workloads
-<a name="advrel07-bp03"></a>
 
  Implement recovery procedures that maintain data encryption throughout the process, verify privacy controls before restoring access, and establish recovery time objectives aligned with privacy requirements.
 

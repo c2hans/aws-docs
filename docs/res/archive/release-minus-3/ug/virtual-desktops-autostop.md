@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/virtual-d
 ---
 
 # Virtual desktop interface autostop
-<a name="virtual-desktops-autostop"></a>
 
 Administrators can configure settings to allow idle VDIs to be Stopped or Terminated. There are 4 configurable settings:
 

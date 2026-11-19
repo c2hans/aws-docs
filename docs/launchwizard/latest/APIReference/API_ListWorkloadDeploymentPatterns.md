@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_Lis
 ---
 
 # ListWorkloadDeploymentPatterns
-<a name="API_ListWorkloadDeploymentPatterns"></a>
 
 Lists the workload deployment patterns for a given workload name. You can use the [ListWorkloads](https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_ListWorkloads.html) operation to discover the available workload names.
 

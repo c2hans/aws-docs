@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/ion-serde-examples.html
 ---
 
 # Path extractor examples
-<a name="ion-serde-examples"></a>
 
 The following path extractor examples show how to flatten and rename fields or extract data as Amazon Ion text.
 

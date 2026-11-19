@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost01.
 ---
 
 # Practice cloud financial management
-<a name="cost01"></a>
 
  Cloud financial management is the practice of planning, tracking, and optimizing what an organization spends in the cloud. Cloud spend follows usage, so financial control depends on processes that expect variability. This capability covers the practices that make spend predictable and accountable: budgeting and forecasting for usage-based costs, setting measurable goals and targets, tracking resources through their project lifecycle, and staying current with new services and price reductions.
 

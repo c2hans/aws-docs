@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_IdentitySour
 ---
 
 # IdentitySourceParameters
-<a name="API_IdentitySourceParameters"></a>
 
 Contains details for the resource that provides identities to the identity source. For example, an IAM Identity Center instance.
 

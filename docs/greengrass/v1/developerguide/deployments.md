@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # Deploy AWS IoT Greengrass groups to an AWS IoT Greengrass core
-<a name="deployments"></a>
 
 Use AWS IoT Greengrass groups to organize entities in your edge environment. You also use groups to control how the entities in the group interact with each other and with the AWS Cloud. For example, only the Lambda functions in the group are deployed for running locally, and only the devices in the group can communicate using the local MQTT server.
 

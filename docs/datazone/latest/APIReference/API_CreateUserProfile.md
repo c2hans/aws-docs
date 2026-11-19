@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateU
 ---
 
 # CreateUserProfile
-<a name="API_CreateUserProfile"></a>
 
 Creates a user profile in Amazon DataZone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/snapchat-ads-configuring-
 ---
 
 # Configuring Snapchat Ads connections
-<a name="snapchat-ads-configuring-connections"></a>
 
  Snapchat Ads supports only the `AUTHORIZATION_CODE` grant type.
 

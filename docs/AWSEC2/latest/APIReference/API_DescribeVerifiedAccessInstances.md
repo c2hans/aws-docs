@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeV
 ---
 
 # DescribeVerifiedAccessInstances
-<a name="API_DescribeVerifiedAccessInstances"></a>
 
 Describes the specified AWS Verified Access instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Operati
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported by QBusiness:
 +  [AssociatePermission](API_AssociatePermission.md)

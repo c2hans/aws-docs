@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_WebACLSummar
 ---
 
 # WebACLSummary
-<a name="API_WebACLSummary"></a>
 
 High-level information about a [WebACL](API_WebACL.md), returned by operations like create and list. This provides information like the ID, that you can use to retrieve and manage a `WebACL`, and the ARN, that you provide to operations like [AssociateWebACL](API_AssociateWebACL.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Interrupt
 ---
 
 # InterruptionInfo
-<a name="API_InterruptionInfo"></a>
 
  Contains information about how and when instances in an interruptible reservation can be terminated when capacity is reclaimed.
 

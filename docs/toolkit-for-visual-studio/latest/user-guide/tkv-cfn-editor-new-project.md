@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Creating an CloudFormation Template Project in Visual Studio
-<a name="tkv-cfn-editor-new-project"></a>
 
  **To create a template project**
 

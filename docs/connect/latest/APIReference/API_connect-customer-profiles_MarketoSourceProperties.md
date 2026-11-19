@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # MarketoSourceProperties
-<a name="API_connect-customer-profiles_MarketoSourceProperties"></a>
 
 The properties that are applied when Marketo is being used as a source.
 

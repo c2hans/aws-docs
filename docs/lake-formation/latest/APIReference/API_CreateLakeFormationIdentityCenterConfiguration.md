@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_C
 ---
 
 # CreateLakeFormationIdentityCenterConfiguration
-<a name="API_CreateLakeFormationIdentityCenterConfiguration"></a>
 
 Creates an IAM Identity Center connection with Lake Formation to allow IAM Identity Center users and groups to access Data Catalog resources.
 

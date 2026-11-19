@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # The structure of JSON training data configuration files
-<a name="machine-learning-processing-training-config-file-structure"></a>
 
 The training configuration file refers to CSV files saved by the export process in the `nodes/` and `edges/` folders.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # EntitlementData
-<a name="API_EntitlementData"></a>
 
 Data associated with an entitlement resource.
 

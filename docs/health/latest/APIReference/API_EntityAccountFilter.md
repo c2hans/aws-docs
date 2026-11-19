@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_EntityAcc
 ---
 
 # EntityAccountFilter
-<a name="API_EntityAccountFilter"></a>
 
 A JSON set of elements including the `awsAccountId`, `eventArn` and a set of `statusCodes`.
 
@@ -31,6 +30,18 @@ A list of entity status codes.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Valid Values: `IMPAIRED | UNIMPAIRED | UNKNOWN | PENDING | RESOLVED`
+Required: No
+
+ ** tags **   <a name="AWSHealth-Type-EntityAccountFilter-tags"></a>
+A map of tag keys to lists of tag values. A tag matches when its key is in the map and its value is one of the values listed for that key. Matching is case sensitive, and the filter matches when at least one key in the map matches.
+An entity is returned when the tags of the resource, or of the account it belongs to, match. When you specify several filters in `organizationEntityAccountFilters`, the tags must be identical in every filter.
+Type: String to array of strings map
+Map Entries: Minimum number of 0 items. Maximum number of 10 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 127.
+Key Pattern: `[a-zA-Z0-9 _.:\/=+\-@]{1,127}`
+Array Members: Minimum number of 1 item. Maximum number of 50 items.
+Length Constraints: Minimum length of 0. Maximum length of 255.
+Pattern: `[a-zA-Z0-9 _.:\/=+\-@]{0,255}`
 Required: No
 
 ## See Also

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-performin
 ---
 
 # Performing common database tasks for Amazon RDS for Db2 DB instances
-<a name="db2-performing-common-database-tasks-db-instances"></a>
 
 You can perform certain common DBA tasks related to databases on your Amazon RDS for Db2 DB instances. To deliver a managed service experience, Amazon RDS doesn't provide shell access to DB instances. Also, the master user can't run commands or utilities requiring `SYSADM`, `SYSMAINT`, or `SYSCTRL` authorities.
 

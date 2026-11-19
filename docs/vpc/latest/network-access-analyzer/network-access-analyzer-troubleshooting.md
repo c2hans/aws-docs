@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/netwo
 ---
 
 # Troubleshooting Network Access Analyzer
-<a name="network-access-analyzer-troubleshooting"></a>
 
 The following error messages are returned by Network Access Analyzer:
 

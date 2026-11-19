@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CisNumberF
 ---
 
 # CisNumberFilter
-<a name="API_CisNumberFilter"></a>
 
 The CIS number filter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/aws-cost
 ---
 
 # ![AWS Cost Management category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/cost-management-icon.jpg)Cloud Financial Management
-<a name="aws-cost-management"></a>
 
 Whether you were born in the cloud, or you are just starting your migration journey to the cloud, AWS has a set of solutions to help you manage and optimize your spend.
 

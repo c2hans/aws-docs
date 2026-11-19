@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_DeleteEnvironment.ht
 ---
 
 # DeleteEnvironment
-<a name="API_DeleteEnvironment"></a>
 
 Deletes an Amazon Managed Workflows for Apache Airflow (Amazon MWAA) environment.
 

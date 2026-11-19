@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/getti
 ---
 
 # Getting started with Network Access Analyzer
-<a name="getting-started"></a>
 
 You can use Network Access Analyzer to understand network access to resources in your virtual private clouds (VPCs). You can get started with Network Access Analyzer using one of the Amazon created Network Access Scopes.
 

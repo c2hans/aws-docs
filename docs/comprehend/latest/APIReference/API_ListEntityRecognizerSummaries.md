@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_ListE
 ---
 
 # ListEntityRecognizerSummaries
-<a name="API_ListEntityRecognizerSummaries"></a>
 
 Gets a list of summaries for the entity recognizers that you have created.
 

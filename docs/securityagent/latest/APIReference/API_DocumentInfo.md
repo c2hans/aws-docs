@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Do
 ---
 
 # DocumentInfo
-<a name="API_DocumentInfo"></a>
 
 Represents a document that provides context for security testing.
 

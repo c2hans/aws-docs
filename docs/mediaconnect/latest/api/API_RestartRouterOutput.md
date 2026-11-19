@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RestartRoute
 ---
 
 # RestartRouterOutput
-<a name="API_RestartRouterOutput"></a>
 
 Restarts a router output. This operation can be used to recover from errors or refresh the output state.
 

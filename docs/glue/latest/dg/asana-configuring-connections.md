@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/asana-configuring-connect
 ---
 
 # Configuring Asana connections
-<a name="asana-configuring-connections"></a>
 
 Asana supports the `AUTHORIZATION_CODE` grant type for `OAuth2`.
 

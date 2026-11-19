@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Bu
 ---
 
 # AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetails
-<a name="API_AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetails"></a>
 
 The configuration for the filter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/managin
 ---
 
 # Managing Tags in AWS Service Catalog
-<a name="managing-tags"></a>
 
  AWS Service Catalog provides tags so you can categorize your resources. There are two types of tags: AutoTags and TagOptions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_UpdateSummar
 ---
 
 # UpdateSummary
-<a name="API_UpdateSummary"></a>
 
 Contains information about the most recent certificate update, such as a domain validation method migration. This structure is returned as part of the [CertificateDetail](API_CertificateDetail.md) response from [DescribeCertificate](API_DescribeCertificate.md).
 

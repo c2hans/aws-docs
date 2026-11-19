@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # GenAI Foundation Starter Package
-<a name="genai-foundation-starter-package"></a>
 
 The GenAI Foundation Starter Package delivers a production-ready foundation for building sophisticated AI agents using Amazon Bedrock AgentCore. Out of the box, it demonstrates a customer support assistant that can understand queries, search knowledge bases, and take actions - but this is just the beginning.
 

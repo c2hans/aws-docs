@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DeleteConnection
-<a name="API_DeleteConnection"></a>
 
 Deletes the specified connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Inv
 ---
 
 # InvokeAssistant
-<a name="API_InvokeAssistant"></a>
 
 Invokes SiteWise Assistant to start or continue a conversation.
 

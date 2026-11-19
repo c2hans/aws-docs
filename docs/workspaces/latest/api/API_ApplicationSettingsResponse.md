@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ApplicationSet
 ---
 
 # ApplicationSettingsResponse
-<a name="API_ApplicationSettingsResponse"></a>
 
 Describes the persistent application settings for WorkSpaces Pools users.
 

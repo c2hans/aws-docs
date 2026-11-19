@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_GetInter
 ---
 
 # GetInternetEvent
-<a name="API_GetInternetEvent"></a>
 
 Gets information that Internet Monitor has generated about an internet event. Internet Monitor displays information about recent global health events, called internet events, on a global outages map that is available to all AWS customers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Usage
-<a name="API_CostOptimizationHub_Usage"></a>
 
 Details about the usage.
 

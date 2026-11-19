@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/control
 ---
 
 # Identity and Access Management for Amazon WorkSpaces Applications
-<a name="controlling-access"></a>
 
 Your security credentials identify you to services in AWS and grant you unlimited use of your AWS resources, such as your WorkSpaces Applications resources. You can use features of WorkSpaces Applications and AWS Identity and Access Management (IAM) to allow other users, services, and applications to use your WorkSpaces Applications resources without sharing your security credentials.
 

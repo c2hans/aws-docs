@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListAc
 ---
 
 # ListAccountSettings
-<a name="API_ListAccountSettings"></a>
 
 Lists the account settings for a specified principal.
 

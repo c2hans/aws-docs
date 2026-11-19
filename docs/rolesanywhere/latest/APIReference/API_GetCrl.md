@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Ge
 ---
 
 # GetCrl
-<a name="API_GetCrl"></a>
 
 Gets a certificate revocation list (CRL).
 

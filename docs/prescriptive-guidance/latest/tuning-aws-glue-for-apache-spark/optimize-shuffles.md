@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-
 ---
 
 # Optimize shuffles
-<a name="optimize-shuffles"></a>
 
 Certain operations, such as `join()` and `groupByKey()`, require Spark to perform a shuffle. The shuffle is Spark's mechanism for redistributing data so that it's grouped differently across RDD partitions. Shuffling can help remediate performance bottlenecks. However, because shuffling typically involves copying data between Spark executors, the shuffle is a complex and costly operation. For example, shuffles generate the following costs:
 + Disk I/O:

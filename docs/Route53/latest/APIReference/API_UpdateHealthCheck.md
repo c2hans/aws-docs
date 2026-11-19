@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateHe
 ---
 
 # UpdateHealthCheck
-<a name="API_UpdateHealthCheck"></a>
 
 Updates an existing health check. Note that some values can't be updated.
 

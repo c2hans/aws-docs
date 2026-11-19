@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Secti
 ---
 
 # SectionAfterPageBreak
-<a name="API_SectionAfterPageBreak"></a>
 
 The configuration of a page break after a section.
 

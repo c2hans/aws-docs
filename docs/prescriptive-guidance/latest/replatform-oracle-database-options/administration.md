@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Privileged access
-<a name="administration"></a>
 
 Amazon RDS for Oracle is fully managed. To deliver a managed service experience, it does not allow access to the underlying host, and it restricts access to some procedures and objects that require high-level privileges.
 

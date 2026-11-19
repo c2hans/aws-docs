@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/applic
 ---
 
 # Step scaling policies for Application Auto Scaling
-<a name="application-auto-scaling-step-scaling-policies"></a>
 
 A step scaling policy scales your application's capacity in predefined increments based on CloudWatch alarms. You can define separate scaling policies to handle scaling out (increasing capacity) and scaling in (decreasing capacity) when an alarm threshold is breached.
 

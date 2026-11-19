@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobOverrideTags
-<a name="API_AssetBundleImportJobOverrideTags"></a>
 
 A structure that contains the override tag configuration that modify the tags that are assigned to specified resources before the resource is imported.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Trust
 ---
 
 # TrustedAdvisorResourcesSummary
-<a name="API_TrustedAdvisorResourcesSummary"></a>
 
 Details about AWS resources that were analyzed in a call to Trusted Advisor [DescribeTrustedAdvisorCheckSummaries](API_DescribeTrustedAdvisorCheckSummaries.md).
 

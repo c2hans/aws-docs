@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/use-agents.html
 ---
 
 # Use a chat agent
-<a name="use-agents"></a>
 
 You can use a AWS Quick chat agent to ask questions and to accomplish your tasks. When you ask a question, the chat agent analyzes the latest approved data shared with you to generate a comprehensive response.
 

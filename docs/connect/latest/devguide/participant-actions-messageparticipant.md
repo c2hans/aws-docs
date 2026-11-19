@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/participant-acti
 ---
 
 # MessageParticipant
-<a name="participant-actions-messageparticipant"></a>
 
 Sends a message to the participant. This is an audio prompt or text-to-speech for voice contacts, or a text message for other channels.
 

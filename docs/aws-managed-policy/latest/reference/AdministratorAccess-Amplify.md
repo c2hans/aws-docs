@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Admi
 ---
 
 # AdministratorAccess-Amplify
-<a name="AdministratorAccess-Amplify"></a>
 
 **Description**: Grants account administrative permissions while explicitly allowing direct access to resources needed by Amplify applications.
 

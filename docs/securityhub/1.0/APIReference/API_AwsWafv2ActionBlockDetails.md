@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafv
 ---
 
 # AwsWafv2ActionBlockDetails
-<a name="API_AwsWafv2ActionBlockDetails"></a>
 
  Specifies that AWS WAF should block the request and optionally defines additional custom handling for the response to the web request.
 

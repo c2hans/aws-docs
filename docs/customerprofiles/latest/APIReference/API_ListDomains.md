@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListDomains
-<a name="API_connect-customer-profiles_ListDomains"></a>
 
 Returns a list of all the domains for an AWS account that have been created.
 

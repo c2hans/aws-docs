@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-join.h
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Connect hybrid nodes
-<a name="hybrid-nodes-join"></a>
 
 **Note**
 The following steps apply to hybrid nodes running compatible operating systems except Bottlerocket. For steps to connect a hybrid node that runs Bottlerocket, see [Connect hybrid nodes with Bottlerocket](hybrid-nodes-bottlerocket.md).

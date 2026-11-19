@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Database engine updates for Amazon Aurora PostgreSQL
-<a name="AuroraPostgreSQL.Updates"></a><a name="pgsql_relnotes"></a>
+<a name="pgsql_relnotes"></a>
 
 Following, you can find information about Amazon Aurora PostgreSQL engine version releases and updates. You can also find information about how to upgrade your Aurora PostgreSQL engine. For more information about Aurora releases in general, see [Amazon Aurora versions](Aurora.VersionPolicy.md).
 

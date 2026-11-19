@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_StorageConfi
 ---
 
 # StorageConfiguration
-<a name="API_StorageConfiguration"></a>
 
 Storage configuration for replication.
 

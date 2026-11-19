@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/dev-tst-pre
 ---
 
 # Prerequisites for running the AWS IoT Greengrass qualification suite
-<a name="dev-tst-prereqs"></a>
 
 This section describes the prerequisites for using AWS IoT Device Tester (IDT) for AWS IoT Greengrass.
 

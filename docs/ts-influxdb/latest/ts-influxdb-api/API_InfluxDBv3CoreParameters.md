@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_I
 ---
 
 # InfluxDBv3CoreParameters
-<a name="API_InfluxDBv3CoreParameters"></a>
 
 All the customer-modifiable InfluxDB v3 Core parameters in Timestream for InfluxDB.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/pri
 ---
 
 # AWS PrivateLink for DynamoDB Streams
-<a name="privatelink-streams"></a>
 
 With AWS PrivateLink for Amazon DynamoDB Streams, you can provision interface Amazon VPC endpoints (interface endpoints) in your virtual private cloud (Amazon VPC). These endpoints are directly accessible from applications that are on premises over VPN and Direct Connect, or in a different AWS Region over Amazon VPC peering. Using AWS PrivateLink and interface endpoints, you can simplify private network connectivity from your applications to DynamoDB Streams.
 

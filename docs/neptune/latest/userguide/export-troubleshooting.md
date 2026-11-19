@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/export-troubles
 ---
 
 # Troubleshooting the Neptune export process
-<a name="export-troubleshooting"></a>
 
 The Amazon Neptune export process uses [AWS Batch](https://docs.aws.amazon.com/batch/latest/userguide/) to provision the compute and storage resources necessary to export your Neptune data. When an export is running, you can use the link in the `logs` field to access the CloudWatch logs for the export job.
 

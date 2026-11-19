@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-getting-started-
 ---
 
 # Prerequisites
-<a name="neo-getting-started-edge-step0"></a>
 
 SageMaker Neo is a capability that allows you to train machine learning models once and run them anywhere in the cloud and at the edge. Before you can compile and optimize your models with Neo, there are a few prerequisites you need to set up. You must install the necessary Python libraries, configure your AWS credentials, create an IAM role with the required permissions, and set up an S3 bucket for storing model artifacts. You must also have a trained machine learning model ready. The following steps guide you through the setup:
 

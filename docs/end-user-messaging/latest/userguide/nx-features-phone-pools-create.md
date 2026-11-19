@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Create a phone pool in AWS End User Messaging
-<a name="nx-features-phone-pools-create"></a>
 
 When you create a new phone pool it will inherit all of the settings from the first phone number or sender ID that is added. For example, if you create a pool and the first phone number added has two-way messaging enabled, the other phone numbers that you add to the pool must also have two-way messaging enabled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetBundles
-<a name="API_GetBundles"></a>
 
 Returns the bundles that you can apply to an Amazon Lightsail instance when you create it.
 

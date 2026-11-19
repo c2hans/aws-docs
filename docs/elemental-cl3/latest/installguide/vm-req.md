@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/installguide/vm-req
 ---
 
 # System requirements for virtual machines (VMs)
-<a name="vm-req"></a>
 
 This section describes the system requirements for AWS Elemental Conductor Live and worker nodes if you're using a virtual machine (VM).
 

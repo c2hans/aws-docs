@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonInspector2AgentlessServiceRolePolicy
-<a name="AmazonInspector2AgentlessServiceRolePolicy"></a>
 
 **Description**: Grants Amazon Inspector access to AWS services needed to perform agent-less security assessments
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-co
 ---
 
 # Copying a model (SDK)
-<a name="md-copy-model-sdk"></a>
 
 You can use the `CopyProjectVersion` API to copy a model version from a source project to a destination project. The destination project can be in a different AWS account but must be the same AWS Region. If the destination project is in a different AWS account (or if you want to grant specific permissions for a model version copied within an AWS account), you must attach a project policy to the source project. For more information, see [Creating a project policy document](md-create-project-policy-document.md). The `CopyProjectVersion` API requires access to your Amazon S3 bucket.
 

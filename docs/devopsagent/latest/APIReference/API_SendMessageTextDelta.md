@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Send
 ---
 
 # SendMessageTextDelta
-<a name="API_SendMessageTextDelta"></a>
 
 Text delta containing a text fragment
 

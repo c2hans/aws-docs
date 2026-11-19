@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # ApplicationComponentStatusSummary
-<a name="API_ApplicationComponentStatusSummary"></a>
 
 Summary of the analysis status of the application component.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet ColumnTag
-<a name="aws-properties-quicksight-dataset-columntag"></a>
 
 A tag for a column in a ` [TagColumnOperation](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TagColumnOperation.html) ` structure. This is a variant type structure. For this structure to be valid, only one of the attributes can be non-null.
 

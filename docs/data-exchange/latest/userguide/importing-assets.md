@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/importing
 ---
 
 # Importing assets to AWS Data Exchange
-<a name="importing-assets"></a>
 
 You can create an AWS Data Exchange job to import data sets that you want to publish to a product. The following sections describe how to import these assets from a variety of locations.
 

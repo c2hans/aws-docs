@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetCo
 ---
 
 # GetConnectionGroup
-<a name="API_GetConnectionGroup"></a>
 
 Gets information about a connection group.
 

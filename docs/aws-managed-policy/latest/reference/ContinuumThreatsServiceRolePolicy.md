@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Cont
 ---
 
 # ContinuumThreatsServiceRolePolicy
-<a name="ContinuumThreatsServiceRolePolicy"></a>
 
 **Description**: Allows AWS Continuum Threats to collect security telemetry from the account on your behalf, by managing an AWS CloudTrail service-linked channel and an AWS Config service-linked configuration recorder, and creating the AWS Config service-linked role if it does not exist.
 

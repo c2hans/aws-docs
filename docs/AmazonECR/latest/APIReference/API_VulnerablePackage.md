@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Vulner
 ---
 
 # VulnerablePackage
-<a name="API_VulnerablePackage"></a>
 
 Information on the vulnerable package identified by a finding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_EbsBlockDevi
 ---
 
 # EbsBlockDeviceConfig
-<a name="API_EbsBlockDeviceConfig"></a>
 
 Configuration of requested EBS block device associated with the instance group with count of volumes that are associated to every instance.
 

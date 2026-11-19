@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-
 ---
 
 # Calculate EBS Storage Requirements for SAP HANA
-<a name="hana-storage-config-ebs"></a>
 
 ## Overview
 <a name="_overview"></a>

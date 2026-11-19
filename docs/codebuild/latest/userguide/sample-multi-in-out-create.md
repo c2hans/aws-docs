@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-multi-
 ---
 
 # Create a build project with multiple inputs and outputs
-<a name="sample-multi-in-out-create"></a>
 
 Use the following procedure to create a build project with multiple inputs and outputs.
 

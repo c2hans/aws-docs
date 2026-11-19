@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/refreshing-import
 ---
 
 # Refreshing SPICE data
-<a name="refreshing-imported-data"></a>
 
 ## Refreshing a dataset
 <a name="refresh-spice-data"></a>

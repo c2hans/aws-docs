@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-cm-export
 ---
 
 # Creating a data export for your Capacity Manager data
-<a name="create-cm-export"></a>
 
 To create a data export, you can use the Data Exports page in the Capacity Manager console or the AWS CLI.
 

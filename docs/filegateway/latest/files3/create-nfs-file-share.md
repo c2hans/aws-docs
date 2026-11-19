@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/create-nfs-fil
 ---
 
 # Create an NFS file share
-<a name="create-nfs-file-share"></a>
 
 The Network File System (NFS) protocol is a stateful file sharing protocol for Unix-based systems. When an NFS-enabled client and NFS server communicate, the client requests a file or directory from the server using remote procedure calls (RPC). The server verifies that the file or directory is available and that the client has the required access permissions. The server then mounts the file or directory remotely on the client and shares access via a virtual connection. For client operations, NFS makes using the remote server file similar to accessing a local file.
 

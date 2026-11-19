@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/query-opti
 ---
 
 # Query optimization
-<a name="query-optimize"></a>
 
 ## Metadata filters
 <a name="metadata-filters"></a>

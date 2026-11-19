@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_PutIntegration
 ---
 
 # PutIntegration
-<a name="API_PutIntegration"></a>
 
 Sets up a method's integration.
 

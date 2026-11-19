@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/s
 ---
 
 # CloudFront Functions examples for CloudFront
-<a name="service_code_examples_cloudfront_functions_examples"></a>
 
 The following code examples show how to use CloudFront with AWS SDKs.
 

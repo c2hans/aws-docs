@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/view-log-entri
 ---
 
 # Viewing Transfer Family log streams
-<a name="view-log-entries"></a>
 
 **To view your Transfer Family server logs**
 

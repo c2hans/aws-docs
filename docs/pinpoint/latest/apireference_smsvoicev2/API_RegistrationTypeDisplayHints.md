@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RegistrationTypeDisplayHints
-<a name="API_RegistrationTypeDisplayHints"></a>
 
 Provides help information on the registration type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/networking-modes-
 ---
 
 # Networking modes for AWS Batch jobs
-<a name="networking-modes-jobs"></a>
 
 The following table describes the networking modes and typical usage for AWS Batch job types. See the links in the "Job type" column for more details regarding considerations and behaviors.
 

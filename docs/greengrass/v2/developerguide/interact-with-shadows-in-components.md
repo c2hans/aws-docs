@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/interact-wi
 ---
 
 # Interact with shadows in components
-<a name="interact-with-shadows-in-components"></a>
 
 You can develop custom components, including Lambda function components, that use the local shadow service to read and modify local shadow documents and client device shadow documents.
 

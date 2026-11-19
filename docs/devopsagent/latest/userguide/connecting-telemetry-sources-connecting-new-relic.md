@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/connecting-
 ---
 
 # Connecting New Relic
-<a name="connecting-telemetry-sources-connecting-new-relic"></a>
 
 ## Built-in, 1 way integration
 <a name="built-in-1-way-integration"></a>

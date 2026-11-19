@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/transform-userguide/getting-s
 ---
 
 # Cloud Migration Factory Solution (CMF)
-<a name="getting-started-step2-Automation-CEMF"></a>
 
 Cloud Migration Factory Solution coordinates and automates large scale migrations to the AWS Cloud, involving numerous servers. Enterprises can improve performance and prevent long cutover windows by automating manual processes and integrating multiple tools efficiently. This is possible through this solution’s orchestration platform options, which includes MGN(MGN). We recommend using AWS MGN to rehost servers to AWS at scale. Today, this solution is used by AWS Professional Services, AWS Partners, and other enterprises. For more information about CMF, see the [Coordinate and automate large scale migrations to the AWS Cloud using the Cloud Migration Factory on AWS solution](https://aws.amazon.com/solutions/implementations/aws-cloudendure-migration-factory-solution/) in the *Cloud Migration Factory on AWS implementation guide*.
 

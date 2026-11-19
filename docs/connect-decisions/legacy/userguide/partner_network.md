@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/partn
 ---
 
 # Partner Network
-<a name="partner_network"></a>
 
 You can view the list of partners that are imported through the AWS Supply Chain data lake into the AWS Supply Chain network.
 

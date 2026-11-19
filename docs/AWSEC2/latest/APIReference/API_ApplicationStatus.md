@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Applicati
 ---
 
 # ApplicationStatus
-<a name="API_ApplicationStatus"></a>
 
 Describes the application-level health status for an instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSnsT
 ---
 
 # AwsSnsTopicSubscription
-<a name="API_AwsSnsTopicSubscription"></a>
 
 A wrapper type for the attributes of an Amazon SNS subscription.
 

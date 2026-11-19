@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # SourceCode
-<a name="API_SourceCode"></a>
 
  Object containing source code information that is linked to an application component.
 

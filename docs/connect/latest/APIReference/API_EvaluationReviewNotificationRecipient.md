@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationReviewNotificationRecipient
-<a name="API_EvaluationReviewNotificationRecipient"></a>
 
 Information about a recipient who should be notified when an evaluation review is requested.
 

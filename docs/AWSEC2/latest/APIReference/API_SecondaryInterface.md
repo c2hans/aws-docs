@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Secondary
 ---
 
 # SecondaryInterface
-<a name="API_SecondaryInterface"></a>
 
 Describes a secondary interface.
 

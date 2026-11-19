@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Tenant isolation
-<a name="sec-tenant-isolation"></a>
 
 Authentication confirms who the caller is; tenant isolation ensures that each caller can access only the data belonging to their organization. AVX enforces isolation at three complementary layers.
 

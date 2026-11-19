@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/solutions-archi
 ---
 
 # Content Domain 3: Continuous Improvement for Existing Solutions
-<a name="solutions-architect-professional-02-domain3"></a>
 
 **Topics**
 + [Task 3.1: Determine a strategy to improve overall operational excellence.](#solutions-architect-professional-02-domain3-task1)

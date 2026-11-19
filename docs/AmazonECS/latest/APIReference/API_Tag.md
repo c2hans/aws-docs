@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Tag.ht
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 The metadata that you apply to a resource to help you categorize and organize them. Each tag consists of a key and an optional value. You define them.
 

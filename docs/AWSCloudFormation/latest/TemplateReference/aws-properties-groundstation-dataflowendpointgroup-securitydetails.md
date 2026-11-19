@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::DataflowEndpointGroup SecurityDetails
-<a name="aws-properties-groundstation-dataflowendpointgroup-securitydetails"></a>
 
  Information about IAM roles, subnets, and security groups needed for this DataflowEndpointGroup.
 

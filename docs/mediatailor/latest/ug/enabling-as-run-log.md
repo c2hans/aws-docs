@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/enabling-as-run-lo
 ---
 
 # Enabling the As Run log
-<a name="enabling-as-run-log"></a>
 
 To enable the As Run log, specify the channel name and enable the *As Run* log type for that channel.
 

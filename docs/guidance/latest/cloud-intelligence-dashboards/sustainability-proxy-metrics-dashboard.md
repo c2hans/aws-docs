@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Sustainability Proxy Metrics and Carbon Emissions Dashboard
-<a name="sustainability-proxy-metrics-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

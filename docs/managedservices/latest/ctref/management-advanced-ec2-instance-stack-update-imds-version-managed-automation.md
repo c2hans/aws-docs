@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/management-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # EC2 Instance Stack \| Update IMDS Version (Managed Automation)
-<a name="management-advanced-ec2-instance-stack-update-imds-version-managed-automation"></a>
 
 Modify the instance metadata options for existing instances. If the metadata options for an instance were configured using a declarative policy, then you can't modify them directly within the account.
 

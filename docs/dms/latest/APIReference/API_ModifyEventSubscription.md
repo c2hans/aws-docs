@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ModifyEventS
 ---
 
 # ModifyEventSubscription
-<a name="API_ModifyEventSubscription"></a>
 
 Modifies an existing AWS DMS event notification subscription.
 

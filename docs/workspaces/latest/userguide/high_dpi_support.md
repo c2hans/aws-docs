@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/userguide/high_dpi_sup
 ---
 
 # Enabling high DPI display for WorkSpaces
-<a name="high_dpi_support"></a>
 
 The Amazon WorkSpaces Android version 2.4.21 or later client application and the version 3.0\+ client applications for Windows, macOS, and Linux support high pixel density (high DPI) displays. Screen resolution is defined by the number of pixels per inch (PPI) or dots per inch (DPI) that the screen can display horizontally and vertically. Some common screen resolutions are:
 + 1280x720 – High definition (HD), also known as 720p

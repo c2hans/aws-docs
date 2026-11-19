@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-cmd-optio
 ---
 
 # Common options
-<a name="eb3-cmd-options"></a>
 
 You can use the following options with all EB CLI commands.
 

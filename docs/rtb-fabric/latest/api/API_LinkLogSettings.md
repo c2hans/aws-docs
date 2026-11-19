@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_LinkLogSetting
 ---
 
 # LinkLogSettings
-<a name="API_LinkLogSettings"></a>
 
 Describes the settings for a link log.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Working with REST APIs
-<a name="connector-rest-api"></a>
 
 The REST API connector sends resource metadata to external REST endpoints. It supports all HTTP methods and works for both publishing and synchronization.
 

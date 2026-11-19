@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/google-drive-know
 ---
 
 # Google Drive knowledge base integration
-<a name="google-drive-knowledge-base"></a>
 
 With the Google Drive knowledge base integration, you can index your Google Drive content. Your AWS Quick agents can then search this content and answer questions about it.
 

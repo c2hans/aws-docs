@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-tra
 ---
 
 # Transferring a domain from Amazon Route 53 to another registrar
-<a name="domain-transfer-from-route-53"></a>
 
 When you transfer a domain from Amazon Route 53 to another registrar, you get some information from Route 53 and provide it to the new registrar. The new registrar will do the rest.
 

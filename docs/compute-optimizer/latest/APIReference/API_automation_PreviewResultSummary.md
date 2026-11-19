@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # PreviewResultSummary
-<a name="API_automation_PreviewResultSummary"></a>
 
 Contains a summary of preview results for an automation rule.
 

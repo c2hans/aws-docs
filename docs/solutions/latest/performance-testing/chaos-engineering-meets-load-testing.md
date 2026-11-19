@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/performance-testing/cha
 ---
 
 # Chaos Engineering Meets Load Testing
-<a name="chaos-engineering-meets-load-testing"></a>
 
 Load testing tells you how the system performs under expected conditions. Chaos engineering tells you how it performs when things go wrong. Combining both reveals whether your system degrades gracefully or catastrophically when failures occur under load.
 

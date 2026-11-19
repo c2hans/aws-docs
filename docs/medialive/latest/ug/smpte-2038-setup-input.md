@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/smpte-2038-setup-inp
 ---
 
 # Configuring inputs
-<a name="smpte-2038-setup-input"></a>
 
 If you want MediaLive to use the data in a SMPTE 2038 stream, you must configure the input to read the SMPTE 2038.
 

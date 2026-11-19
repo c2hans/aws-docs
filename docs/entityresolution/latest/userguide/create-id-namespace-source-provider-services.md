@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/create
 ---
 
 # Creating an ID namespace source (provider services)
-<a name="create-id-namespace-source-provider-services"></a>
 
 This topic describes the process of creating an ID namespace source using the **Provider services** method. This method uses a provider service called LiveRamp. LiveRamp translates third-party encoded data from a source to a target during an ID mapping workflow.
 

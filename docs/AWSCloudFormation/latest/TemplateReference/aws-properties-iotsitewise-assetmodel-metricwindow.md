@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::AssetModel MetricWindow
-<a name="aws-properties-iotsitewise-assetmodel-metricwindow"></a>
 
 Contains a time interval window used for data aggregate computations (for example, average, sum, count, and so on).
 

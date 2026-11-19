@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # DeleteGroup
-<a name="API_DeleteGroup"></a>
 
 Deletes a group.
 

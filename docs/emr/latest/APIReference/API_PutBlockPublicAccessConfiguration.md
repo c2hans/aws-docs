@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_PutBlockPubl
 ---
 
 # PutBlockPublicAccessConfiguration
-<a name="API_PutBlockPublicAccessConfiguration"></a>
 
 Creates or updates an Amazon EMR block public access configuration for your AWS account in the current Region. For more information see [Configure Block Public Access for Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/configure-block-public-access.html) in the *Amazon EMR Management Guide*.
 

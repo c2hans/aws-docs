@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Upda
 ---
 
 # UpdateResourceCollectionFilter
-<a name="API_UpdateResourceCollectionFilter"></a>
 
  Contains information used to update a collection of AWS resources.
 

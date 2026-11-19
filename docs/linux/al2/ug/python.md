@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/python.html
 ---
 
 # Python in AL2
-<a name="python"></a>
 
  AL2 provides support and security patches for Python 2.7 until June 2026, as part of our long-term support commitment for AL2 core packages. This support extends beyond the upstream Python community declaration of Python 2.7 EOL of January 2020.
 

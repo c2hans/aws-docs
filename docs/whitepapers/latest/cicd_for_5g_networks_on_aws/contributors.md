@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this document include:
 +  Hisham Elshaer, Senior Consultant, AWS Telecom, Amazon Web Services

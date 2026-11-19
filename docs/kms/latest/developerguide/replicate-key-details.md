@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/replicate-key-
 ---
 
 # Replication process for multi-Region keys
-<a name="replicate-key-details"></a>
 
 AWS KMS uses a cross-Region replication mechanism to copy the key material in a KMS key from an HSM in one AWS Region to an HSM in a different AWS Region. For this mechanism to work, the KMS key that is being replicated must be a multi-Region key with `AWS_KMS` origin. For multi-Region keys with imported key material (`EXTERNAL` origin), you are responsible for replicating key material by importing the same key material into each replica individually.
 

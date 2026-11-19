@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_C
 ---
 
 # CreateRelay
-<a name="API_CreateRelay"></a>
 
 Creates a relay resource which can be used in rules to relay incoming emails to defined relay destinations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-addtag.html
 ---
 
 # Adding tags to a certificate
-<a name="sdk-addtag"></a>
 
 The following example shows how to use the [AddTagsToCertificate](https://docs.aws.amazon.com/acm/latest/APIReference/API_AddTagsToCertificate.html) function.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # QueryGenerationInput
-<a name="API_agent-runtime_QueryGenerationInput"></a>
 
 Contains information about a natural language query to transform into SQL.
 

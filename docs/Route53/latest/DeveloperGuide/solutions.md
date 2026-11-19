@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/solutions.
 ---
 
 # .solutions
-<a name="solutions"></a>
 
 Used by consultants, do-it-yourself services, and advisors of all kinds.
 

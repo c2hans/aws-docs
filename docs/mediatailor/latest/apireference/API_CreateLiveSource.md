@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Crea
 ---
 
 # CreateLiveSource
-<a name="API_CreateLiveSource"></a>
 
 The live source configuration.
 

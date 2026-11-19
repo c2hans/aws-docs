@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RouteServ
 ---
 
 # RouteServerBgpStatus
-<a name="API_RouteServerBgpStatus"></a>
 
 The current status of a BGP session.
 

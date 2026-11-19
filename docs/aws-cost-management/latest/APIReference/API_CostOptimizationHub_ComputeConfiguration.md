@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ComputeConfiguration
-<a name="API_CostOptimizationHub_ComputeConfiguration"></a>
 
 Describes the performance configuration for compute services such as Amazon EC2, Lambda, and ECS.
 

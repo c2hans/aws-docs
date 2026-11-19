@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # CustomOrchestrationTraceEvent
-<a name="API_agent-runtime_CustomOrchestrationTraceEvent"></a>
 
  The event in the custom orchestration sequence. Events are the responses which the custom orchestration Lambda function sends as response to the agent.
 

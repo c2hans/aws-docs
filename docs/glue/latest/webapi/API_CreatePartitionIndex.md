@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreatePartitionIn
 ---
 
 # CreatePartitionIndex
-<a name="API_CreatePartitionIndex"></a>
 
 Creates a specified partition index in an existing table.
 

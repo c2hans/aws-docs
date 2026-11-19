@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geoco
 ---
 
 # GeocoderHierarchy
-<a name="API_GeocoderHierarchy"></a>
 
 The preference hierarchy for the geocode preference.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_GetLink.html
 ---
 
 # GetLink
-<a name="API_GetLink"></a>
 
 Returns complete information about one link.
 

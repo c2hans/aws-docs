@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/qa.html
 ---
 
 # .qa (Qatar)
-<a name="qa"></a>
 
 **Important**
 You can no longer use Route 53 to register new .qa domains or transfer .qa domains to Route 53. We'll continue to support .qa domains that are already registered with Route 53.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-archive-
 ---
 
 # Creating event archives in Amazon EventBridge
-<a name="eb-archive-event"></a>
 
 When you create an archive in EventBridge, you can determine which events are sent to the archive by specifying an [event pattern](eb-event-patterns.md). EventBridge sends events that match the event pattern to the archive. You also set the retention period to store events in the archive before they are discarded.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_DeleteProvisionedC
 ---
 
 # DeleteProvisionedConcurrencyConfig
-<a name="API_DeleteProvisionedConcurrencyConfig"></a>
 
 Deletes the provisioned concurrency configuration for a function.
 

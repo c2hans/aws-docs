@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/context-referenc
 ---
 
 # AWS AppSync Event API context reference
-<a name="context-reference"></a>
 
 AWS AppSync defines a set of variables and functions for working with handlers. This topic describes these functions and provides examples.
 

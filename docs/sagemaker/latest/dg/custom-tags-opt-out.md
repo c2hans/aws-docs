@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/custom-tags-opt-out.
 ---
 
 # Opt-out of custom tag propagation
-<a name="custom-tags-opt-out"></a>
 
  The process to opt-out of custom tag propagation differs based on if you are opting-out from the console or from the AWS CLI.
 

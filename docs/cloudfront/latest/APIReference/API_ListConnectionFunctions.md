@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListC
 ---
 
 # ListConnectionFunctions
-<a name="API_ListConnectionFunctions"></a>
 
 Lists connection functions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_UpdateW
 ---
 
 # UpdateWebAppCustomization
-<a name="API_UpdateWebAppCustomization"></a>
 
 Assigns new customization properties to a web app. You can modify the icon file, logo file, and title.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/llm-prompt-
 ---
 
 # Key takeaways
-<a name="results"></a>
 
 There were several key takeaways from this experiment:
 + Using one salted sequence tag to wrap all instructions reduced the instances of exposing sensitive information to the user. When salted tags were located throughout the prompt, we found that the LLM would more often append the salted tag to its outputs as part of the `<thinking>` and `<answer>` tags.

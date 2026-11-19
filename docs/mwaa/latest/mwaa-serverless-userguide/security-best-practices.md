@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/se
 ---
 
 # Security best practices on Amazon MWAA Serverless
-<a name="security-best-practices"></a>
 
 Amazon MWAA Serverless provides a number of security features to consider as you develop and implement your own security policies. The following best practices are general guidelines and don’t represent a complete security solution. Because these best practices might not be appropriate or sufficient for your workflow, treat them as helpful considerations rather than prescriptions.
 + Use least-permissive permission policies. Grant permissions to only the resources or actions that users need to perform tasks.

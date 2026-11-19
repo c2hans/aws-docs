@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Provisionee
-<a name="managedintegrations-sdk-device-provisionee"></a>
 
 The provisionee is a component of Managed Integrations that enables fleet provisioning by claim. With the provisionee, you securely provision your devices. The SDK creates the necessary resources for device provisioning, which includes the device certificate and private keys that are obtained from the Managed Integrations cloud. When you want to provision your devices, or if there are any changes that can require you to re-provision your devices, you can use the provisionee.
 

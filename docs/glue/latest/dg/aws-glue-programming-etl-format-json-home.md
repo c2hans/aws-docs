@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-
 ---
 
 # Using the JSON format in AWS Glue
-<a name="aws-glue-programming-etl-format-json-home"></a>
 
 AWS Glue retrieves data from sources and writes data to targets stored and transported in various data formats. If your data is stored or transported in the JSON data format, this document introduces you to available features for using your data in AWS Glue.
 

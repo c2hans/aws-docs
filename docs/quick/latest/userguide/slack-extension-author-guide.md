@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/slack-extension-a
 ---
 
 # AWS Quick Slack extension author guide
-<a name="slack-extension-author-guide"></a>
 
 As an AWS Quick author, you can deploy Quick Slack extensions after your admin establishes the foundational connection to your organization's Slack workspace. Your capabilities depend on the permission level granted by your administrator.
 

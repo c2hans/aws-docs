@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # FilterGroup
-<a name="API_connect-customer-profiles_FilterGroup"></a>
 
 Object that holds the dimensions to filter on.
 

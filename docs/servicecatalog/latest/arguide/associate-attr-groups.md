@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/arguide/associate-
 AWS Service Catalog AppRegistry is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Service Catalog AppRegistry availability change](https://docs.aws.amazon.com/servicecatalog/latest/arguide/app-registry-availability-change.html).
 
 # Associating and disassociating attribute groups
-<a name="associate-attr-groups"></a>
 
  This topic describes how to associate and disassociate attribute groups in AppRegistry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Resources
-<a name="resources"></a>
 
 **AWS services**
 + [Migrate and modernize with AWS](https://aws.amazon.com/cloud-migration/)

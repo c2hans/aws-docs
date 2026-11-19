@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedJobSummary
-<a name="API_ProtectedJobSummary"></a>
 
 The protected job summary for the objects listed by the request.
 

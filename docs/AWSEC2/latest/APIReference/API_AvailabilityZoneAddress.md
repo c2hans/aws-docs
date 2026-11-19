@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Availabil
 ---
 
 # AvailabilityZoneAddress
-<a name="API_AvailabilityZoneAddress"></a>
 
 For regional NAT gateways only: The configuration specifying which Elastic IP address (EIP) to use for handling outbound NAT traffic from a specific Availability Zone.
 

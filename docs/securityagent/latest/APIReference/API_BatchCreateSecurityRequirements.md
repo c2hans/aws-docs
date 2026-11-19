@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchCreateSecurityRequirements
-<a name="API_BatchCreateSecurityRequirements"></a>
 
 Batch creates security requirements in a customer managed pack.
 

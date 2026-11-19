@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/deregistering-end
 ---
 
 # Deregistering an endpoint in MediaConnect
-<a name="deregistering-endpoint"></a>
 
 You can deregister source and destination endpoints that you no longer need.
 

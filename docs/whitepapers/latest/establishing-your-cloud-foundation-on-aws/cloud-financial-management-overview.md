@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Overview
-<a name="cloud-financial-management-overview"></a>
 
 Having visibility and understanding of the spend in your cloud environment is critical to your business. Setting up the right measures to monitor your resources will allow you to create reports, dashboards, and anomaly detection of the cloud spend of your budget and plan for cost optimization to avoid or reduce unnecessary spend.
 

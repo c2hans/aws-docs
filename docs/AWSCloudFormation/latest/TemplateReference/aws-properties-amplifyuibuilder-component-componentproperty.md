@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Component ComponentProperty
-<a name="aws-properties-amplifyuibuilder-component-componentproperty"></a>
 
 The `ComponentProperty` property specifies the configuration for all of a component's properties. Use `ComponentProperty` to specify the values to render or bind by default.
 
@@ -93,7 +92,7 @@ The name of the component that is affected by an event.
 `Concat`  <a name="cfn-amplifyuibuilder-component-componentproperty-concat"></a>
 A list of component properties to concatenate to create the value to assign to this component property.
 *Required*: No
-*Type*: Array of [ComponentProperty](#aws-properties-amplifyuibuilder-component-componentproperty)
+*Type*: Array of [ComponentProperty](aws-properties-amplifyuibuilder-component-componentproperty.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Condition`  <a name="cfn-amplifyuibuilder-component-componentproperty-condition"></a>

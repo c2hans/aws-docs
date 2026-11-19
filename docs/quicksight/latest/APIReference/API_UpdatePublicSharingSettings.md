@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdatePublicSharingSettings
-<a name="API_UpdatePublicSharingSettings"></a>
 
 **Important**
 This API controls public sharing settings for your entire Quick Sight account, affecting data security and access. When you enable public sharing:

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate from SAP ASE to Amazon RDS for SQL Server using AWS DMS
-<a name="migrate-from-sap-ase-to-amazon-rds-for-sql-server-using-aws-dms"></a>
 
 *Amit Kumar, Amazon Web Services*
 

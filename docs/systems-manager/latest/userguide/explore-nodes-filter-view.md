@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/explore
 ---
 
 # Choosing a filter view for managed node summaries
-<a name="explore-nodes-filter-view"></a>
 
 The **Explore nodes** page in Systems Manager lets you view aggregated data about your fleet according to several available filter views.
 

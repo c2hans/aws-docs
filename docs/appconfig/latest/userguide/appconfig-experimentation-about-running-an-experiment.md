@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-exp
 ---
 
 # About running and monitoring an experiment
-<a name="appconfig-experimentation-about-running-an-experiment"></a>
 
 Running an experiment in production requires careful monitoring and operational planning. Gradually increasing exposure, validating implementation, and monitoring performance can help reduce risk and improve the reliability of experiment results.
 

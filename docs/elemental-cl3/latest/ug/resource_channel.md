@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/resource_channel
 ---
 
 # Resources: Elemental Live Channels
-<a name="resource_channel"></a>
 
 This section describes how to use AWS Elemental Conductor Live to create, modify or delete a channel.
 

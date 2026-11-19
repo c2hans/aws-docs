@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Ge
 ---
 
 # GetAudienceGenerationJob
-<a name="API_GetAudienceGenerationJob"></a>
 
 Returns information about an audience generation job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/analysis-lo
 ---
 
 # Example analysis logs
-<a name="analysis-log-examples"></a>
 
 The following examples show representative analysis log entries. The examples use fictional identifiers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ses-verif
 ---
 
 # Verifying email identities using the Amazon SES API and the AWS SDK for PHP Version 3
-<a name="ses-verify"></a>
 
 When you first start using your Amazon Simple Email Service (Amazon SES) account, all senders and recipients must be verified in the same AWS Region that you are sending emails to. For more information about sending emails, see [Sending Email with Amazon SES](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/sending-email.html).
 

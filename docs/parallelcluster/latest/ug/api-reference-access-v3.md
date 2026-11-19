@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/api-reference-
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Accessing the API logs and metrics
-<a name="api-reference-access-v3"></a>
 
 API logs are published to Amazon CloudWatch with a retention of 30 days. To retrieve the LogGroup name associated with an API deployment, run the following command:
 

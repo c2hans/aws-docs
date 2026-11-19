@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/gett
 ---
 
 # Managing your Amazon Connect Decisions instance
-<a name="getting-started-managing-your-amazon-connect-decisions-instance"></a>
 
  Creating an instance in Amazon Connect Decisions establishes a dedicated environment for supply chain management and analytics. To set up an instance, you configure basic details, establish settings, and define initial user access permissions.
 

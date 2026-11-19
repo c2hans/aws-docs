@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamDi
 ---
 
 # GetIpamDiscoveredAccounts
-<a name="API_GetIpamDiscoveredAccounts"></a>
 
 Gets IPAM discovered accounts. A discovered account is an AWS account that is monitored under a resource discovery. If you have integrated IPAM with AWS Organizations, all accounts in the organization are discovered accounts. Only the IPAM account can get all discovered accounts in the organization.
 

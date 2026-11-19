@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UpdatedA2aAgentCardDescriptorFields
-<a name="API_UpdatedA2aAgentCardDescriptorFields"></a>
 
 The set of A2A agent card descriptor fields that can be individually updated.
 

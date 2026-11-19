@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/deliver
 ---
 
 # Delivery applications
-<a name="delivery"></a>
 
 The following is an illustration of a delivery application architecture using Amazon Location.
 

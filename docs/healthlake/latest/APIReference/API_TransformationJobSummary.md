@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Trans
 ---
 
 # TransformationJobSummary
-<a name="API_TransformationJobSummary"></a>
 
 Contains summary information about a data transformation job. To retrieve full job details, call `DescribeDataTransformationJob`.
 

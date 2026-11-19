@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Ac
 ---
 
 # AcceptDirectConnectGatewayAssociationProposal
-<a name="API_AcceptDirectConnectGatewayAssociationProposal"></a>
 
 Accepts a proposal request to attach a virtual private gateway or transit gateway to a Direct Connect gateway.
 

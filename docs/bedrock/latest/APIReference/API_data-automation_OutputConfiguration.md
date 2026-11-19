@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # OutputConfiguration
-<a name="API_data-automation_OutputConfiguration"></a>
 
 Output configuration for ingestion jobs.
 

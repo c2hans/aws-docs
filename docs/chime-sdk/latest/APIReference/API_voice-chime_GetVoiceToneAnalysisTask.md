@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # GetVoiceToneAnalysisTask
-<a name="API_voice-chime_GetVoiceToneAnalysisTask"></a>
 
 Retrieves the details of a voice tone analysis task.
 

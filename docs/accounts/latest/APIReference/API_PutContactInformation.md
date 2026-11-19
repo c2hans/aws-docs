@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_PutCont
 ---
 
 # PutContactInformation
-<a name="API_PutContactInformation"></a>
 
 Updates the primary contact information of an AWS account.
 

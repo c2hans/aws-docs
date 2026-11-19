@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_WebNotif
 ---
 
 # WebNotificationContent
-<a name="API_WebNotificationContent"></a>
 
 The content of an outbound web notification, including the notification type, the view to render, and any optional attributes used to populate the view.
 

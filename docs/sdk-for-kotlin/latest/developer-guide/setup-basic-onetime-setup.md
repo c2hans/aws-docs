@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/se
 ---
 
 # Basic set up
-<a name="setup-basic-onetime-setup"></a>
 
 ## Overview
 <a name="setup-overview"></a>

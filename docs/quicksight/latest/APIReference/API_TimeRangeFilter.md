@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TimeR
 ---
 
 # TimeRangeFilter
-<a name="API_TimeRangeFilter"></a>
 
 A `TimeRangeFilter` filters values that are between two specified values.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/bigquery-redshift-migrati
 ---
 
 # Step 9: Delete Walkthrough Resources
-<a name="bigquery-redshift-migration-step-9"></a>
 
 After you complete this step-by-step guide, make sure that you delete your Amazon Redshift cluster to avoid additional charges.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_FileS
 ---
 
 # FileSource
-<a name="API_FileSource"></a>
 
 A physical table type that contains the schema and upload settings for a file-based data source.
 

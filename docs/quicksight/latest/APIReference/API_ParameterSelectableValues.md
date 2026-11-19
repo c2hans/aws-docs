@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Param
 ---
 
 # ParameterSelectableValues
-<a name="API_ParameterSelectableValues"></a>
 
 A list of selectable values that are used in a control.
 

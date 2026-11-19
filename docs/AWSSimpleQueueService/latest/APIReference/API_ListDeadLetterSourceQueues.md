@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # ListDeadLetterSourceQueues
-<a name="API_ListDeadLetterSourceQueues"></a>
 
 Returns a list of your queues that have the `RedrivePolicy` queue attribute configured with a dead-letter queue.
 

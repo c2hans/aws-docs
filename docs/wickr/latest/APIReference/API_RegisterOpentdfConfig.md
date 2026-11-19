@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_RegisterOp
 ---
 
 # RegisterOpentdfConfig
-<a name="API_RegisterOpentdfConfig"></a>
 
 Registers and saves OpenTDF configuration for a Wickr network, enabling attribute-based access control for Wickr through an OpenTDF provider.
 

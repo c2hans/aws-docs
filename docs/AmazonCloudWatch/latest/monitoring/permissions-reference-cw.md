@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/permi
 ---
 
 # Amazon CloudWatch permissions reference
-<a name="permissions-reference-cw"></a>
 
 The following table lists each CloudWatch API operation and the corresponding actions for which you can grant permissions to perform the action. You specify the actions in the policy's `Action` field, and you specify a wildcard character (\*) as the resource value in the policy's `Resource` field.
 

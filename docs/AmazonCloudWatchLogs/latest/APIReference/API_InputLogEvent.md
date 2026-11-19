@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # InputLogEvent
-<a name="API_InputLogEvent"></a>
 
 Represents a log event, which is a record of activity that was recorded by the application or resource being monitored.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # POST: Create a Conductor Redundancy Group
-<a name="set-up-conductor-redundancy-groups-create"></a>
 
 Create a new Conductor redundancy group with the specified attributes. You can create only one Conductor redundancy group.
 

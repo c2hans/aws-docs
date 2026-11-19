@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/multi
 ---
 
 # Create an alarm based on Metrics Insights
-<a name="multi-time-series-alarm"></a>
 
 You can create an alarm that monitors multiple time series across a fleet of resources. Unlike single-instance alarms that trigger actions on individual instances, fleet monitoring alarms let you aggregate metrics across multiple resources and trigger based on fleet-wide conditions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateCon
 ---
 
 # CreateConfigurationSetEventDestination
-<a name="API_CreateConfigurationSetEventDestination"></a>
 
 Create an event destination. *Events* include message sends, deliveries, opens, clicks, bounces, and complaints. *Event destinations* are places that you can send information about these events to. For example, you can send event data to Amazon EventBridge and associate a rule to send the event to the specified target.
 

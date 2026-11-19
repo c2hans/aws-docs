@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/server-side
 ---
 
 # IVS Server-Side Composition \| Real-Time Streaming
-<a name="server-side-composition"></a>
 
 Server-side composition uses an IVS server to mix audio and video from all stage participants and then sends this mixed video to an IVS channel (e.g., to reach a larger audience) or an S3 bucket. Server-side composition is invoked through IVS control-plane operations in the stage’s home region.
 

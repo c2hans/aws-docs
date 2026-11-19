@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/query-ODBC
 ---
 
 # Troubleshooting connection with the ODBC driver
-<a name="query-ODBC-connecting-troubleshooting"></a>
 
 **Note**
 If the username and password is already specified in the DSN, do not specify them again when the ODBC driver manager asks for them.

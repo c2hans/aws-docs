@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # BlueprintOptimizationOutputConfiguration
-<a name="API_data-automation_BlueprintOptimizationOutputConfiguration"></a>
 
 Configuration for where to store blueprint optimization results.
 

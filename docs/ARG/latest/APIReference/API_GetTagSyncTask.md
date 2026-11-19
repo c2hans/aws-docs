@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_GetTagSyncTa
 ---
 
 # GetTagSyncTask
-<a name="API_GetTagSyncTask"></a>
 
 Returns information about a specified tag-sync task.
 

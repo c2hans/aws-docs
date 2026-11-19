@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam
 ---
 
 # AWS CodeDeploy identity-based policy examples
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users don't have permission to create or modify CodeDeploy resources. They also can't perform tasks using the AWS Management Console, AWS CLI, or AWS API. You must create IAM policies that grant IAM roles permission to perform API operations on the specified resources they need. You must then attach those IAM roles to users or groups who require those permissions.
 

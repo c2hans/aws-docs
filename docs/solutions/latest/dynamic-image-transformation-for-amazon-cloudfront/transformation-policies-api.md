@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Transformation Policies API
-<a name="transformation-policies-api"></a>
 
 Manage image transformation policies that define how images are processed.
 

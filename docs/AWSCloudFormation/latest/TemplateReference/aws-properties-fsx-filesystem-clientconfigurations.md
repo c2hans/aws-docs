@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FSx::FileSystem ClientConfigurations
-<a name="aws-properties-fsx-filesystem-clientconfigurations"></a>
 
 Specifies who can mount an OpenZFS file system and the options available while mounting the file system.
 

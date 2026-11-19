@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-use-a
 ---
 
 # Run a SageMaker Distributed Training Job with Model Parallelism
-<a name="model-parallel-use-api"></a>
 
 Learn how to run a model-parallel training job of your own training script using the SageMaker Python SDK with the SageMaker model parallelism library.
 

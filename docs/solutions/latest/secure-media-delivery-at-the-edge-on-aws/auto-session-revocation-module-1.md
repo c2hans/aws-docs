@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Auto session revocation module
-<a name="auto-session-revocation-module-1"></a>
 
  CDK deployment model offers additional module that can be deployed as part of the solution, which gives a reference for how to automate the process of detecting suspicious sessions based on the set of selectable criteria and threshold adequate for your workload. Solution overview describes the end-to-end workflow of this module which is built around running Athena SQL queries against CloudFront access logs to collect session level metrics used to calculate suspicion score. You must provide multiple inputs before you start using auto session revocation as shown in the table.
 

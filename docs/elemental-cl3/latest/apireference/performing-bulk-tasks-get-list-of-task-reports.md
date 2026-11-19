@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/perfor
 ---
 
 # Monitoring Bulk Tasks: GET List of Task Reports
-<a name="performing-bulk-tasks-get-list-of-task-reports"></a>
 
 Get the list of bulk tasks. Each time one of the following commands is performed, a task\_report is created:
 + POST Start Channel

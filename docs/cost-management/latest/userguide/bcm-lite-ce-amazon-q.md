@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/bcm-lit
 ---
 
 # Ask questions about your costs using AWS assistant in the AWS Billing and Cost Management console
-<a name="bcm-lite-ce-amazon-q"></a>
 
 **Warning**
 We're currently releasing our new experience to a limited number of customers. You might not be able to access this experience yet.

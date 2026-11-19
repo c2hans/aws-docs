@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/launch-settings-sou
 ---
 
 # AWS DRS launch settings
-<a name="launch-settings-source"></a>
 
 The launch settings are a set of instructions that comprise an EC2 launch template and other settings, which determine how a recovery instance is launched for each source server on AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Remedi
 ---
 
 # RemediationProposalBody
-<a name="API_RemediationProposalBody"></a>
 
 Projected content for a REMEDIATION\_PROPOSAL artifact: the patch the remediation agent produced, with the descriptors needed to apply and verify it.
 

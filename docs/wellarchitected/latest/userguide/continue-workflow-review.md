@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/continu
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Reviewing a workload with AWS Well-Architected Framework
-<a name="continue-workflow-review"></a>
 
 You can review your workload in the console on the Review workload page. This page provides best practices and helpful resources for your workload's performance.
 

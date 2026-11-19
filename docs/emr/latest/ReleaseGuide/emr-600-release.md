@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-600-release.
 ---
 
 # Amazon EMR release 6.0.0
-<a name="emr-600-release"></a>
 
 ## 6.0.0 application versions
 <a name="emr-600-app-versions"></a>

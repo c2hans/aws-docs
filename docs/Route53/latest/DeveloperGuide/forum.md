@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/forum.html
 ---
 
 # .forum
-<a name="forum"></a>
 
 Used for online forums, discussion boards, and community platforms.
 

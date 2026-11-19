@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/deployment-tasks.html
 ---
 
 # AWS TNB deployment tasks
-<a name="deployment-tasks"></a>
 
 Understand the deployment tasks to effectively monitor deployments and take action faster.
 

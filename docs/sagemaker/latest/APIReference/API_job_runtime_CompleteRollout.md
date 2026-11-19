@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_job_ru
 ---
 
 # CompleteRollout
-<a name="API_job_runtime_CompleteRollout"></a>
 
 Marks a rollout as complete, indicating that no further turns will be appended to the trajectory. After calling this operation, the trajectory is sealed and eligible for reward submission via the UpdateReward operation.
 

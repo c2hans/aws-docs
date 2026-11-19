@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel04-b
 ---
 
 # REL04-BP02 Implement loosely coupled dependencies
-<a name="rel04-bp02"></a>
 
  Loose coupling isolates the behavior of one component from the components that depend on it. When a component changes or fails, that isolation limits the impact to a single boundary. Dependent components interact through a published, versioned interface or a durable intermediary, so each side can change and scale independently.
 

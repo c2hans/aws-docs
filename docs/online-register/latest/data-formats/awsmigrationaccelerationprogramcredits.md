@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 ---
 
 # Data retrieval APIs for AWS Migration Acceleration Program Credits
-<a name="awsmigrationaccelerationprogramcredits"></a>
 
 AWS Migration Acceleration Program Credits provides the following APIs for data retrieval.
 

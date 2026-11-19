@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Audi
 ---
 
 # AudioMetadata
-<a name="API_AudioMetadata"></a>
 
 Metadata information about an audio stream. An array of `AudioMetadata` objects for the audio streams found in a stored video is returned by [GetSegmentDetection](API_GetSegmentDetection.md).
 

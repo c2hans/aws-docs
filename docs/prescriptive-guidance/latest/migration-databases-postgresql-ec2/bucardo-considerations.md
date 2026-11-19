@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Bucardo
-<a name="bucardo-considerations"></a>
 
 [Bucardo](https://bucardo.org/Bucardo/) is one of the earliest invocation-based replication tools developed to achieve replication in PostgreSQL. Bucardo is rarely used now that PostgreSQL offers built-in replication.
 

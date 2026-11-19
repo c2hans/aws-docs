@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMonitronFullAccess
-<a name="AmazonMonitronFullAccess"></a>
 
 **Description**: Provides full access to manage Amazon Monitron
 

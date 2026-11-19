@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Ge
 ---
 
 # GetDataLakeSources
-<a name="API_GetDataLakeSources"></a>
 
 Retrieves a snapshot of the current Region, including whether Amazon Security Lake is enabled for those accounts and which sources Security Lake is collecting data from.
 

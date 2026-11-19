@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/delete-vpn-concentrato
 ---
 
 # Delete an AWS Site-to-Site VPN Concentrator
-<a name="delete-vpn-concentrator"></a>
 
 When you no longer need a Site-to-Site VPN Concentrator, you can delete it to stop incurring charges. Deleting a Site-to-Site VPN Concentrator permanently removes it and all associated configurations.
 

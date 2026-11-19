@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-schema-t
 ---
 
 # Creating a schema by using a template in Amazon EventBridge
-<a name="eb-schema-template"></a>
 
 You can create a schema from a template file you download, or by editing a template directly in the EventBridge console.
 

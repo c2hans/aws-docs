@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteCap
 ---
 
 # DeleteCapacityManagerDataExport
-<a name="API_DeleteCapacityManagerDataExport"></a>
 
  Deletes an existing Capacity Manager data export configuration. This stops future scheduled exports but does not delete previously exported files from S3.
 

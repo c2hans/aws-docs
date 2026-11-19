@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Li
 ---
 
 # ListAudienceGenerationJobs
-<a name="API_ListAudienceGenerationJobs"></a>
 
 Returns a list of audience generation jobs.
 

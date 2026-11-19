@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IntegrationTableP
 ---
 
 # IntegrationTablePropertiesFilter
-<a name="API_IntegrationTablePropertiesFilter"></a>
 
 A key-value filter used to narrow the list of integration table properties returned by ListIntegrationTableProperties. Specify a filter key and one or more values to match.
 

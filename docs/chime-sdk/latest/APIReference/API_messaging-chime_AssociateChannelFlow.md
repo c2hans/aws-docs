@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # AssociateChannelFlow
-<a name="API_messaging-chime_AssociateChannelFlow"></a>
 
 Associates a channel flow with a channel. Once associated, all messages to that channel go through channel flow processors. To stop processing, use the `DisassociateChannelFlow` API.
 

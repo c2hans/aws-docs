@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-catal
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Add a region where an AMI product is deployed using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_AddRegionExistingAmiProduct_section"></a>
 
 The following code examples show how to add a region where an AMI product is deployed.
 

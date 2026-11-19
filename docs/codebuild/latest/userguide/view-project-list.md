@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/view-project-
 ---
 
 # View build project names in AWS CodeBuild
-<a name="view-project-list"></a>
 
 You can use the AWS CodeBuild console, AWS CLI, or AWS SDKs to view a list of build projects in CodeBuild.
 

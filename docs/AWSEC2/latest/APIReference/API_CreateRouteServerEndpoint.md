@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRou
 ---
 
 # CreateRouteServerEndpoint
-<a name="API_CreateRouteServerEndpoint"></a>
 
 Creates a new endpoint for a route server in a specified subnet.
 

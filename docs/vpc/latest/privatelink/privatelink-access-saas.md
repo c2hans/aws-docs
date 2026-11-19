@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-acces
 ---
 
 # Access SaaS products through AWS PrivateLink
-<a name="privatelink-access-saas"></a>
 
 Using AWS PrivateLink, you can access SaaS products privately, as if they were running in your own VPC.
 

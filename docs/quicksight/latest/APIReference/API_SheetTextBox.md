@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetTextBox
-<a name="API_SheetTextBox"></a>
 
 A text box.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # VersionControlInfo
-<a name="API_VersionControlInfo"></a>
 
 Details about the version control configuration.
 

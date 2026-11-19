@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/cgw-dynamic-routing-ex
 ---
 
 # Configure dynamic routing for an AWS Virtual Private Network customer gateway device
-<a name="cgw-dynamic-routing-example-interface"></a>
 
 The following are some example procedures for configuring a customer gateway device using its user interface (if available).
 

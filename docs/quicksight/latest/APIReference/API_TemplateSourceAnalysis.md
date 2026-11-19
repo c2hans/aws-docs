@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Templ
 ---
 
 # TemplateSourceAnalysis
-<a name="API_TemplateSourceAnalysis"></a>
 
 The source analysis of the template.
 

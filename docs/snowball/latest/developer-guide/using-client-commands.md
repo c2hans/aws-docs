@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/developer-guide/using-cl
 AWS Snowball Edge is no longer available to new customers. New customers should explore [AWS DataSync](https://aws.amazon.com/datasync/) for online transfers, [AWS Data Transfer Terminal](https://aws.amazon.com/data-transfer-terminal/) for secure physical transfers, or AWS Partner solutions. For edge computing, explore [AWS Outposts](https://aws.amazon.com/outposts/).
 
 # Configuring and using the Snowball Edge Client
-<a name="using-client-commands"></a>
 
 The Snowball Edge Client is a command-line interface (CLI) tool from AWS that you can use to work with a Snowball Edge or a cluster of Snowball Edge. You can use the client to unlock a Snowball Edge or cluster of devices, set up Snowball Edge, start and stop services on devices, and transfer data to or from devices. The Snowball Edge client is compatible with computers running on Linux, macOS, and Windows operating systems.
 

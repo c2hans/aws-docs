@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.0/programmers
 ---
 
 # 8 ExpressLink module updates
-<a name="elpg-ota-updates"></a>
 
 ExpressLink modules natively support firmware updates utilizing the AWS IoT OTA service (as currently implemented in the AWS Embedded C-SDK v.202103.00) and Over the Wire (OTW). To support the OTA feature, ExpressLink modules provide additional bulk storage space (non-volatile memory). The amount of non-volatile memory available is sufficient to store at least two full copies of the ExpressLink module's own firmware image – a current known-good copy and a new copy. This is intended to provide a backup in case of a fatal failure during the update process.
 

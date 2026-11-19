@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # InferenceConfig
-<a name="API_agent-runtime_InferenceConfig"></a>
 
  The configuration for inference settings when generating responses using RetrieveAndGenerate.
 

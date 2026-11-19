@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdatePaymentCredentialProvider
-<a name="API_UpdatePaymentCredentialProvider"></a>
 
 Updates an existing payment credential provider with new authentication credentials.
 

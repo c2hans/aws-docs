@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_FaultRootCauseServic
 ---
 
 # FaultRootCauseService
-<a name="API_FaultRootCauseService"></a>
 
 A collection of fields identifying the services in a trace summary fault.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # InvoiceBillingPeriod
-<a name="API_marketplace-agreements_InvoiceBillingPeriod"></a>
 
 The billing period for an invoice, specified by month and year.
 

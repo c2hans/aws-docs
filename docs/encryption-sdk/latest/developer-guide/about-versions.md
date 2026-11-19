@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/ab
 ---
 
 # Versions of the AWS Encryption SDK
-<a name="about-versions"></a>
 
 The AWS Encryption SDK language implementations use [semantic versioning](https://semver.org/) to make it easier for you to identify the magnitude of changes in each release. A change in the major version number, such as 1.*x*.*x* to 2.*x*.*x*, indicates a breaking change that is likely to require code changes and a planned deployment. Breaking changes in a new version might not impact every use case, review the release notes to see if you're impacted. A change in a minor version, such as *x*.1.*x* to *x*.2.*x*, is always backward compatible, but might include deprecated elements.
 

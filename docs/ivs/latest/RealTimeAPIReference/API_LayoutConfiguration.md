@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Layo
 ---
 
 # LayoutConfiguration
-<a name="API_LayoutConfiguration"></a>
 
 Configuration information of supported layouts for server-side composition.
 

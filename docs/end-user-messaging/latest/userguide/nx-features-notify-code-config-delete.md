@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Delete a notify code configuration
-<a name="nx-features-notify-code-config-delete"></a>
 
 Delete a notify code configuration you no longer need. Verifications that are already in progress are unaffected because their policy was captured at send time. If deletion protection is enabled, turn it off before you delete.
 

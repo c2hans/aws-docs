@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Cod
 ---
 
 # .NET code examples
-<a name="CodeSamples.DotNet"></a>
 
 **Topics**
 + [.NET: Setting your AWS credentials](#CodeSamples.DotNet.Credentials)

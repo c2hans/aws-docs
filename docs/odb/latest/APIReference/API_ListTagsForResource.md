@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListTagsForR
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Returns information about the tags applied to this resource.
 

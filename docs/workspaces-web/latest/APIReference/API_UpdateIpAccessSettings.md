@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_U
 ---
 
 # UpdateIpAccessSettings
-<a name="API_UpdateIpAccessSettings"></a>
 
 Updates IP access settings.
 

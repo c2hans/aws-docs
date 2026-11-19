@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDirectoryServiceFullAccess
-<a name="AWSDirectoryServiceFullAccess"></a>
 
 **Description**: Provides full access to AWS Directory Service.
 

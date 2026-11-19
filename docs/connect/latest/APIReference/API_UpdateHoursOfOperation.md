@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateHo
 ---
 
 # UpdateHoursOfOperation
-<a name="API_UpdateHoursOfOperation"></a>
 
 Updates the hours of operation.
 

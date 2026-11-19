@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/speechmarksconsole.html
 ---
 
 # Requesting speech marks
-<a name="speechmarksconsole"></a>
 
 You can use the console or the `synthesize-speech` command to request speech marks from Amazon Polly. You can then view the metadata or save it to a file.
 

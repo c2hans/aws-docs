@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AxisT
 ---
 
 # AxisTickLabelOptions
-<a name="API_AxisTickLabelOptions"></a>
 
 The tick label options of an axis.
 

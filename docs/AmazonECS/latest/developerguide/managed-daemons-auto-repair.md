@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-
 ---
 
 # Daemon auto repair
-<a name="managed-daemons-auto-repair"></a>
 
 A daemon can be critical or non-critical to instance health, which you control with the `critical` parameter when you create or update the daemon. The `critical` parameter defaults to `true`, so a daemon is critical unless you set `critical` to `false`.
 

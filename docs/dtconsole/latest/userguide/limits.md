@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/limits.html
 ---
 
 # Quotas for notifications
-<a name="limits"></a>
 
 The following table lists the quotas (also referred to as *limits*) for notifications in the Developer Tools console. For information about limits that can be changed, see [AWS service quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html).
 

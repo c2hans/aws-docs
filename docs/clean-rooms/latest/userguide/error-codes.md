@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/error-codes
 ---
 
 # Error codes for protected queries and jobs in AWS Clean Rooms
-<a name="error-codes"></a>
 
 When a protected query or protected job fails, AWS Clean Rooms returns an error code. The code identifies the kind of failure. AWS Clean Rooms also returns a signal that indicates whether running the same request again might succeed.
 

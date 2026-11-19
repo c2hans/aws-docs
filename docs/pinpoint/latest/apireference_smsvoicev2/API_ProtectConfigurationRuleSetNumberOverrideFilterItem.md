@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # ProtectConfigurationRuleSetNumberOverrideFilterItem
-<a name="API_ProtectConfigurationRuleSetNumberOverrideFilterItem"></a>
 
 The information for a protect configuration rule set number override that meets a specified criteria.
 

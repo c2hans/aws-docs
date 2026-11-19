@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Hooks
-<a name="sam-property-function-hooks"></a>
 
 Validation Lambda Event Functions that are run before and after traffic shifting.
 

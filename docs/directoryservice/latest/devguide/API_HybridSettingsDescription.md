@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Hyb
 ---
 
 # HybridSettingsDescription
-<a name="API_HybridSettingsDescription"></a>
 
 Describes the current hybrid directory configuration settings for a directory.
 

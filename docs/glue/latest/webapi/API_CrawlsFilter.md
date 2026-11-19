@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CrawlsFilter.html
 ---
 
 # CrawlsFilter
-<a name="API_CrawlsFilter"></a>
 
 A list of fields, comparators and value that you can use to filter the crawler runs for a specified crawler.
 

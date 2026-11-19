@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_CloudWat
 ---
 
 # CloudWatchAlarmConfiguration
-<a name="API_CloudWatchAlarmConfiguration"></a>
 
 A complex type that contains information about the CloudWatch alarm that Amazon Route 53 is monitoring for this health check.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/colorspace-simplifie
 ---
 
 # Results for different color space handling
-<a name="colorspace-simplified-output-results"></a>
 
 This section describes how MediaLive handles the color space and color space metadata that it encounters in the source input, depending on how you set up the color space in the output.
 

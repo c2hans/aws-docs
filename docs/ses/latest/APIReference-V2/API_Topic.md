@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Topic.htm
 ---
 
 # Topic
-<a name="API_Topic"></a>
 
 An interest group, theme, or label within a list. Lists can have multiple topics.
 

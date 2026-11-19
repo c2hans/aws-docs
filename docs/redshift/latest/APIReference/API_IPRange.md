@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_IPRange
 ---
 
 # IPRange
-<a name="API_IPRange"></a>
 
 Describes an IP range used in a security group.
 

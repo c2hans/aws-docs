@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-mana
 ---
 
 # Available managed dashboards
-<a name="lake-managed-dashboards"></a>
 
 The section provides information about the available managed dashboards and provides information about the widgets featured on each dashboard.
 

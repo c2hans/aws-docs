@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/performance-s
 ---
 
 # Query running slow
-<a name="performance-slow-queries"></a>
 
 ## Identification - Spot the problem
 <a name="identification-spot-problem"></a>

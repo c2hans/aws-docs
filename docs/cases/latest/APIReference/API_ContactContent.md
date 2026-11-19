@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_ContactCon
 ---
 
 # ContactContent
-<a name="API_connect-cases_ContactContent"></a>
 
 An object that represents a content of an Connect Customer contact object.
 

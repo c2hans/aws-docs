@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_KafkaAction.
 ---
 
 # KafkaAction
-<a name="API_KafkaAction"></a>
 
 Send messages to an Amazon Managed Streaming for Apache Kafka (Amazon MSK) or self-managed Apache Kafka cluster.
 

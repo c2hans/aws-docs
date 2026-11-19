@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Scenario A: 45-minute screening time
-<a name="case-study-scenario-a"></a>
 
 Scenario A represents recruitment operations where human recruiters spend 45 minutes screening each resume. This scenario models a mid-level recruiter with an annual fully-loaded cost of $112,250. This recruiter processes applications during standard business hours with typical human performance characteristics. In contrast, the agentic AI system requires an initial investment of $23,000 for development, customization, and ATS integration, and it has a minimal monthly operating costs of $500 for the cloud infrastructure. The agent processes applications in just 5 minutes with 24/7 availability, achieving a 2% error rate and monthly capacity exceeding 8,600 applications. This is a dramatic efficiency gap, where the agent operates 9 times faster per application and 39 times greater monthly capacity. This section examines cost structure analysis, operational metrics, volume-based comparisons, and cumulative ROI calculations over the first six months of operation.
 

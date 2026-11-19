@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListWorkloadEstimatesFilter
-<a name="API_AWSBCMPricingCalculator_ListWorkloadEstimatesFilter"></a>
 
  Represents a filter for listing workload estimates.
 

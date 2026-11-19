@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Dete
 ---
 
 # DetectLabelsSettings
-<a name="API_DetectLabelsSettings"></a>
 
 Settings for the DetectLabels request. Settings can include filters for both GENERAL\_LABELS and IMAGE\_PROPERTIES. GENERAL\_LABELS filters can be inclusive or exclusive and applied to individual labels or label categories. IMAGE\_PROPERTIES filters allow specification of a maximum number of dominant colors.
 

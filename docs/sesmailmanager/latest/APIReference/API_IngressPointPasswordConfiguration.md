@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_I
 ---
 
 # IngressPointPasswordConfiguration
-<a name="API_IngressPointPasswordConfiguration"></a>
 
 The password configuration of the ingress endpoint resource.
 

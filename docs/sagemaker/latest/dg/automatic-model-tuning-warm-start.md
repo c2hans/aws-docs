@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuni
 ---
 
 # Run a Warm Start Hyperparameter Tuning Job
-<a name="automatic-model-tuning-warm-start"></a>
 
 Use warm start to start a hyperparameter tuning job using one or more previous tuning jobs as a starting point. The results of previous tuning jobs are used to inform which combinations of hyperparameters to search over in the new tuning job. Hyperparameter tuning uses either Bayesian or random search to choose combinations of hyperparameter values from ranges that you specify. For more information, see [Understand the hyperparameter tuning strategies available in Amazon SageMaker AI](automatic-model-tuning-how-it-works.md). Using information from previous hyperparameter tuning jobs can help increase the performance of the new hyperparameter tuning job by making the search for the best combination of hyperparameters more efficient.
 

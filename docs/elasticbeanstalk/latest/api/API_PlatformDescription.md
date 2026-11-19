@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Platform
 ---
 
 # PlatformDescription
-<a name="API_PlatformDescription"></a>
 
 Detailed information about a platform version.
 

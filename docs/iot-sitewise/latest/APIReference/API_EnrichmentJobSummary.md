@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Enr
 ---
 
 # EnrichmentJobSummary
-<a name="API_EnrichmentJobSummary"></a>
 
 Summary information for an enrichment job returned by ListEnrichmentJobs. This lightweight representation includes identifiers, status, and key metadata without the full job configuration.
 

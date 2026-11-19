@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # PERF 7  How do you monitor your resources to ensure they are performing?
-<a name="perf-07"></a>
 
  System performance can degrade over time. Monitor system performance to identify degradation and remediate internal or external factors, such as the operating system or application load.
 

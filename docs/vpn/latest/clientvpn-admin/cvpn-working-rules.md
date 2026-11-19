@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # AWS Client VPN authorization rules
-<a name="cvpn-working-rules"></a>
 
 Authorization rules act as ﬁrewall rules that grant access to networks. By adding authorization rules, you grant specific clients access to the specified network. You should have an authorization rule for each network you want to grant access to. You can add authorization rules to a Client VPN endpoint using the console and the AWS CLI.
 

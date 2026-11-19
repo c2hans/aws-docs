@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-permissi
 ---
 
 # Amazon EventBridge permissions reference
-<a name="eb-permissions-reference"></a>
 
 To specify an action in an EventBridge policy, use the `events:` prefix followed by the API operation name, as shown in the following example.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.
 ---
 
 # Amazon Aurora versioning
-<a name="Aurora.VersionPolicy.Versioning"></a>
 
 Amazon Aurora versions are different from the upstream community databases that they’re compatible with. To help you maintain application compatibility and leverage the latest DB engine features, the following sections explain Aurora versioning conventions and how Aurora versions map to their respective community databases.
 

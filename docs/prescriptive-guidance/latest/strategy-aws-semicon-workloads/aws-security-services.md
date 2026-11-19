@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # AWS security services for semiconductor development environments
-<a name="aws-security-services"></a>
 
 AWS has developed security services designed to protect your workloads and applications in the AWS Cloud. These services can help protect any type of workload operating in the cloud, not just semiconductor workloads. By using these AWS services, companies can establish strong preventative and detective controls, monitor their security posture in near real-time, and quickly remediate security risks and incidents as they arise. These services are capable of automatically scaling with the environment as it grows in order to maintain coverage and the established security posture. Also, while these services might focus on specific functionality, they support a common messaging bus known as [Amazon EventBridge](https://aws.amazon.com/eventbridge/) so that you can integrate the services and automatically response to security risks.
 

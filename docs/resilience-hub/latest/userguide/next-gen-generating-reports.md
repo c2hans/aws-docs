@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Generating compliance and resilience posture reports
-<a name="next-gen-generating-reports"></a>
 
 **Prerequisites**
 

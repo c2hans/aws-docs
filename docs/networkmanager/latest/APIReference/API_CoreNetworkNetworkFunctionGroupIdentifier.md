@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CoreNetworkNetworkFunctionGroupIdentifier
-<a name="API_CoreNetworkNetworkFunctionGroupIdentifier"></a>
 
 Describes a core network
 

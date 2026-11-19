@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Configuration file best practices
-<a name="configuration-file-best-practices"></a>
 
 Landing Zone Accelerator on AWS aims to abstract away most aspects of managing its underlying infrastructure as code (IaC) templates from the user. This is facilitated through the use of its [configuration files](using-configuration-files.md) to define your landing zone environment. However, it is important to keep some common IaC best practices in mind when modifying your configuration to avoid pipeline failure scenarios.
 

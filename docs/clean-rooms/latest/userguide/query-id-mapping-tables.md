@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/query-id-ma
 ---
 
 # Querying ID mapping tables using the SQL code editor
-<a name="query-id-mapping-tables"></a>
 
 The following procedure describes how to run a multi-table join query on the ID mapping table to join the `sourceId` with the `targetId`.
 

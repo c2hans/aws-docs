@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalog
 ---
 
 # Managing Portfolios
-<a name="catalogs_portfolios"></a>
 
 You create, view, and update portfolios on the **Portfolios** page in the AWS Service Catalog administrator console.
 

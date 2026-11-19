@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/bb-ai.html
 ---
 
 # AI
-<a name="bb-ai"></a>
 
 This section covers Blocks for AI-powered features: conversational agents and semantic search.
 

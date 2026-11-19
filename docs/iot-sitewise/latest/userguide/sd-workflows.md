@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sd-workflo
 ---
 
 # Manage data workflows
-<a name="sd-workflows"></a>
 
 ## Important data pipeline concepts in Scenario Discovery
 <a name="sd-pipeline-concepts"></a>

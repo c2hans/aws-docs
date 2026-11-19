@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/sample-emr-job.
 ---
 
 # Manage an Amazon EMR job
-<a name="sample-emr-job"></a>
 
 This sample project demonstrates Amazon EMR and AWS Step Functions integration. The project creates an Amazon EMR cluster, adds multiple steps and runs them, and then terminate the cluster.
 

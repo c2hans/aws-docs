@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/summar
 ---
 
 # Summary strategy
-<a name="summary-strategy"></a>
 
 The `SummaryStrategy` is responsible for generating condensed, real-time summaries of conversations within a single session. It captures key topics, main tasks, and decisions, providing a high-level overview of the dialogue.
 

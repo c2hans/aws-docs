@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListLi
 ---
 
 # ListLineageGroups
-<a name="API_ListLineageGroups"></a>
 
 A list of lineage groups shared with your AWS account. For more information, see [ Cross-Account Lineage Tracking ](https://docs.aws.amazon.com/sagemaker/latest/dg/xaccount-lineage-tracking.html) in the *Amazon SageMaker Developer Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate Windows SSL certificates to an Application Load Balancer using ACM
-<a name="migrate-windows-ssl-certificates-to-an-application-load-balancer-using-acm"></a>
 
 *Chandra Sekhar Yaratha and Igor Kovalchuk, Amazon Web Services*
 

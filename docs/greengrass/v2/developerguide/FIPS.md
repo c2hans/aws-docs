@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/FIPS.html
 ---
 
 # FIPS endpoints
-<a name="FIPS"></a>
 
 AWS IoT Greengrass supports the use of FIPS ([Federal Information Processing Standard (FIPS) 140-2](https://aws.amazon.com/compliance/fips/)) endpoints. When FIPS mode is enabled, all data transmissions, including both HTTP and MQTT protocols, to AWS Cloud services should invoke and establish connections with the corresponding FIPS-compliant endpoints ([FIPS - Amazon Web Services (AWS)](https://aws.amazon.com/compliance/fips/)).
 

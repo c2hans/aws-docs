@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualGatewayTlsValidationContextFileTrust
-<a name="API_VirtualGatewayTlsValidationContextFileTrust"></a>
 
 An object that represents a Transport Layer Security (TLS) validation context trust for a local file.
 

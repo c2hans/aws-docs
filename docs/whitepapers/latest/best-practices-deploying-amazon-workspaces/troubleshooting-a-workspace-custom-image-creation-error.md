@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Troubleshooting A WorkSpace custom image creation error
-<a name="troubleshooting-a-workspace-custom-image-creation-error"></a>
 
  If a Windows or Amazon Linux WorkSpace has been launched and customized, a custom image can be created from that WorkSpace. A custom image contains the operating system, application software, and settings for the WorkSpace.
 

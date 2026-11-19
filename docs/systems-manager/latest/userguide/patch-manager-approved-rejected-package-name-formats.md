@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # Package name formats for approved and rejected patch lists
-<a name="patch-manager-approved-rejected-package-name-formats"></a>
 
 The formats of package names you can add to lists of approved patches and rejected patches depend on the type of operating system you're patching.
 

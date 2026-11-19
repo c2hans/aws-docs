@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessAgentCoreMemoryRetrievalConfig
-<a name="API_HarnessAgentCoreMemoryRetrievalConfig"></a>
 
 Configuration for memory retrieval within a namespace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_SSEKMS.h
 ---
 
 # SSEKMS
-<a name="API_control_SSEKMS"></a>
 
 ## Contents
 <a name="API_control_SSEKMS_Contents"></a>

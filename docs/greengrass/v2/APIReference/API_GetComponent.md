@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_GetCompon
 ---
 
 # GetComponent
-<a name="API_GetComponent"></a>
 
 Gets the recipe for a version of a component.
 

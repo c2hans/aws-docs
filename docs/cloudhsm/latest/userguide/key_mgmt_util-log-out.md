@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/key_mgmt_util-
 ---
 
 # Log out from the HSMs in an AWS CloudHSM cluster using KMU
-<a name="key_mgmt_util-log-out"></a>
 
 Use the **logoutHSM** command in key\_mgmt\_util (KMU) to log out from the hardware security modules (HSM) in an AWS CloudHSM cluster.
 

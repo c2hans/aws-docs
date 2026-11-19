@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # PoolInformation
-<a name="API_PoolInformation"></a>
 
 The information for a pool in an AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.BOOLEA
 ---
 
 # BOOLEAN\_OPERATION
-<a name="recipe-actions.BOOLEAN_OPERATION"></a>
 
 Create a new column, based on the result of logical condition IF. Return true value if the boolean expression is true, false value if the boolean expression is false, or return a custom value.
 

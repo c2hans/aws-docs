@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Deploy
 ---
 
 # DeploymentAlarms
-<a name="API_DeploymentAlarms"></a>
 
 One of the methods which provide a way for you to quickly identify when a deployment has failed, and then to optionally roll back the failure to the last working deployment.
 

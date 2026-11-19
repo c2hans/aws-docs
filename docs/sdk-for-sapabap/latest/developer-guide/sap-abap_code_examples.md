@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/s
 ---
 
 # SDK for SAP ABAP code examples
-<a name="sap-abap_code_examples"></a>
 
 The code examples in this topic show you how to use the AWS SDK for SAP ABAP with AWS.
 

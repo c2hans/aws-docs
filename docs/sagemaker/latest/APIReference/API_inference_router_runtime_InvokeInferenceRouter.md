@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_infere
 ---
 
 # InvokeInferenceRouter
-<a name="API_inference_router_runtime_InvokeInferenceRouter"></a>
 
 Sends a real-time inference request to an inference router. In the request, you name the routing target, and the router sends the request to one of the routing target's destinations. The response includes the destination that served the request and the reason that the router chose it.
 

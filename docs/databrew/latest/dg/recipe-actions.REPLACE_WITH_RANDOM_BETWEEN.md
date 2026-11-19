@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.REPLAC
 ---
 
 # REPLACE\_WITH\_RANDOM\_BETWEEN
-<a name="recipe-actions.REPLACE_WITH_RANDOM_BETWEEN"></a>
 
 Replaces values with a random number.
 

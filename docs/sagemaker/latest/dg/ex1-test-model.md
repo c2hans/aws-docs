@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ex1-test-model.html
 ---
 
 # Evaluate the model
-<a name="ex1-test-model"></a>
 
 Now that you have trained and deployed a model using Amazon SageMaker AI, evaluate the model to ensure that it generates accurate predictions on new data. For model evaluation, use the test dataset that you created in [Prepare a dataset](ex1-preprocess-data.md).
 

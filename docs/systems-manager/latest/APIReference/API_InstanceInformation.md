@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # InstanceInformation
-<a name="API_InstanceInformation"></a>
 
 Describes a filter for a specific list of managed nodes.
 

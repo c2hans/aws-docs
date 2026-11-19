@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/InputOutput-CatBoost
 ---
 
 # Input and Output interface for the CatBoost algorithm
-<a name="InputOutput-CatBoost"></a>
 
 Gradient boosting operates on tabular data, with the rows representing observations, one column representing the target variable or label, and the remaining columns representing features.
 

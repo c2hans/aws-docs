@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/deregister-ami.h
 ---
 
 # Deregister an Amazon EC2 AMI
-<a name="deregister-ami"></a>
 
 When you deregister an AMI, Amazon EC2 permanently deletes it. After you deregister an AMI, you can't use it to launch new instances. You might consider deregistering an AMI when you have finished using it.
 

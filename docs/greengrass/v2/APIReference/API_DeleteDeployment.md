@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_DeleteDep
 ---
 
 # DeleteDeployment
-<a name="API_DeleteDeployment"></a>
 
 Deletes a deployment. To delete an active deployment, you must first cancel it. For more information, see [CancelDeployment](https://docs.aws.amazon.com/iot/latest/apireference/API_CancelDeployment.html).
 

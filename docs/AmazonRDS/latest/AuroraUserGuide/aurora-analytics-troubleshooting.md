@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Troubleshooting
-<a name="aurora-analytics-troubleshooting"></a>
 
 This topic describes specific symptoms, their causes, and how to resolve them. For the metrics, wait events, and diagnostic queries used to watch a workload, see [Monitoring](aurora-analytics-monitoring.md).
 

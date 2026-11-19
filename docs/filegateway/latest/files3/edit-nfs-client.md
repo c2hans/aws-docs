@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/edit-nfs-clien
 ---
 
 # Limit client access for your NFS file share
-<a name="edit-nfs-client"></a>
 
 We recommend editing the NFS client access settings to to define a list of specific client IP addresses or CIDR block ranges for NFS clients that are allowed to connect to your NFS file share. If you choose not to limit access, any client on your network can mount to your file share.
 

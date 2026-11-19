@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/using-ssm
 ---
 
 # Using SSML to control speech synthesis
-<a name="using-ssml-to-control-speech-synthesis"></a>
 
 The guidance supports [Speech Synthesis Markup Language](https://docs.aws.amazon.com/polly/latest/dg/supportedtags.html) (SSML) reference—​providing additional control over the speech generation for your response. To use this feature, populate the **SSML answer** field in the content designer.
 

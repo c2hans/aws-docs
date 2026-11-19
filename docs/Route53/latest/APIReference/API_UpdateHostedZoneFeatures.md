@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateHo
 ---
 
 # UpdateHostedZoneFeatures
-<a name="API_UpdateHostedZoneFeatures"></a>
 
 Updates the features configuration for a hosted zone. This operation allows you to enable or disable specific features for your hosted zone, such as accelerated recovery.
 

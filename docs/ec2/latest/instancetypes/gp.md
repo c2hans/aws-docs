@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/instancetypes/gp.html
 ---
 
 # Specifications for Amazon EC2 general purpose instances
-<a name="gp"></a>
 
 General purpose instances provide a balance of compute, memory, and networking resources. These instances are ideal for applications that use these resources in equal proportions, such as web servers and code repositories.
 

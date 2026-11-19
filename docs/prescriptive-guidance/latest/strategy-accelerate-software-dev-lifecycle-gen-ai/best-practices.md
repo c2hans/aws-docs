@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Best practices for using generative AI in software development
-<a name="best-practices"></a>
 
 This section describes best practices for integrating generative AI into the software development lifecycle (SDLC). From implementing seamless toolchains and DevSecOps pipelines to fostering collaboration and automating repetitive tasks, these guidelines help you harness the power of AI to enhance your development processes and experiences. By following these best practices, software development teams can unlock new levels of efficiency, innovation, and quality in their work.
 

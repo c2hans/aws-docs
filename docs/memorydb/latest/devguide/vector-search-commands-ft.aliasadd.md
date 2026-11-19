@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/vector-search-c
 ---
 
 # FT.ALIASADD
-<a name="vector-search-commands-ft.aliasadd"></a>
 
 Add an alias for an index. The new alias name can be used anywhere that an index name is required.
 

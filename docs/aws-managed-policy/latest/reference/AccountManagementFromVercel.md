@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Acco
 ---
 
 # AccountManagementFromVercel
-<a name="AccountManagementFromVercel"></a>
 
 **Description**: For use with accounts created through the Vercel Marketplace integration with AWS. Provides access to account management, notification, cost and usage analysis, and identity provider management.
 

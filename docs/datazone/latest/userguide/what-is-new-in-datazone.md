@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/what-is-new-in
 ---
 
 # What is new in Amazon DataZone?
-<a name="what-is-new-in-datazone"></a>
 
 This section describes new features and improvements in Amazon DataZone by release date.
 

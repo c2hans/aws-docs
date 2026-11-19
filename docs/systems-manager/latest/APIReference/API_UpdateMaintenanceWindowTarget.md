@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # UpdateMaintenanceWindowTarget
-<a name="API_UpdateMaintenanceWindowTarget"></a>
 
 Modifies the target of an existing maintenance window. You can change the following:
 + Name

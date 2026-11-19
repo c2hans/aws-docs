@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # GetEvent
-<a name="API_GetEvent"></a>
 
 Retrieves information about a specific event in an AgentCore Memory resource.
 

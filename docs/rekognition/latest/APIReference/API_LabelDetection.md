@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Labe
 ---
 
 # LabelDetection
-<a name="API_LabelDetection"></a>
 
 Information about a label detected in a video analysis request and the time the label was detected in the video.
 

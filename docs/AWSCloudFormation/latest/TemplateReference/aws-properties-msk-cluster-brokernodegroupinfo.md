@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Cluster BrokerNodeGroupInfo
-<a name="aws-properties-msk-cluster-brokernodegroupinfo"></a>
 
 Describes the setup to be used for the broker nodes in the cluster.
 

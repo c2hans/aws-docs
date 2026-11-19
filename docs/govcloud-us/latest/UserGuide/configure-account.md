@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/configure-a
 ---
 
 # Configuring Your Account
-<a name="configure-account"></a>
 
 The steps in this section describe how to sign in and create an account alias and access keys.
 

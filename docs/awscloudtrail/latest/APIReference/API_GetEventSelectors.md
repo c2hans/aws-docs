@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Ge
 ---
 
 # GetEventSelectors
-<a name="API_GetEventSelectors"></a>
 
 Describes the settings for the event selectors that you configured for your trail. The information returned for your event selectors includes the following:
 + If your event selector includes read-only events, write-only events, or all events. This applies to management events, data events, and network activity events.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetin
 ---
 
 # AttendeeIdItem
-<a name="API_meeting-chime_AttendeeIdItem"></a>
 
 A structure that contains one or more attendee IDs.
 

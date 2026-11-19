@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/test-permissi
 ---
 
 # Test report permissions
-<a name="test-permissions"></a>
 
  This topic describes important information about permissions related to test reporting.
 

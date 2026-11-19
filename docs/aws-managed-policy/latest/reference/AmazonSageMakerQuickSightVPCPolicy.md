@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerQuickSightVPCPolicy
-<a name="AmazonSageMakerQuickSightVPCPolicy"></a>
 
 **Description**: This policy will be used By SageMaker Unified Studios to create VPC related resources for QuickSight
 

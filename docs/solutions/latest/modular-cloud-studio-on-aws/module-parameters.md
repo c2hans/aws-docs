@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Module parameters
-<a name="module-parameters"></a>
 
 Managed VPC - Hub
 

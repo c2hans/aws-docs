@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # PricingPlanListElement
-<a name="API_PricingPlanListElement"></a>
 
 A representation of a pricing plan.
 

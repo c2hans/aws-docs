@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElementalInference::Feed ClippingConfig
-<a name="aws-properties-elementalinference-feed-clippingconfig"></a>
 
 A type of OutputConfig, used when the output in a feed is for the clip feature.
 

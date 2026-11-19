@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Create
 ---
 
 # CreateTable
-<a name="API_CreateTable"></a>
 
 The `CreateTable` operation adds a new table to the specified keyspace. Within a keyspace, table names must be unique.
 

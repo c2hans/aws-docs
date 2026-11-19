@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-
 ---
 
 # Setting up Amazon MQ
-<a name="amazon-mq-setting-up"></a>
 
 Before you can use Amazon MQ, you must complete the following steps.
 

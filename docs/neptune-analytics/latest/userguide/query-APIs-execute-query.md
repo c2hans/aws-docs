@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/query
 ---
 
 # ExecuteQuery
-<a name="query-APIs-execute-query"></a>
 
 ExecuteQuery runs queries against a Neptune Analytics graph. Supported language: openCypher.
 

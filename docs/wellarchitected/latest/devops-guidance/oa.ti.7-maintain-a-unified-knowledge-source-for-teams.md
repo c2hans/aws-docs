@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.TI.7] Maintain a unified knowledge source for teams
-<a name="oa.ti.7-maintain-a-unified-knowledge-source-for-teams"></a>
 
  **Category:** RECOMMENDED
 

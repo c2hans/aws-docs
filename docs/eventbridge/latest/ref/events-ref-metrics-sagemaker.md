@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-metric
 ---
 
 # SageMaker metrics events
-<a name="events-ref-metrics-sagemaker"></a>
 
 Amazon SageMaker metrics sends service events to EventBridge via AWS CloudTrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # UpdateLakehouseConfiguration
-<a name="API_UpdateLakehouseConfiguration"></a>
 
 Modifies the lakehouse configuration for a namespace. This operation allows you to manage Amazon Redshift federated permissions and AWS IAM Identity Center trusted identity propagation.
 

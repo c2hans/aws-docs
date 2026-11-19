@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Amazo
 ---
 
 # AmazonOpenSearchParameters
-<a name="API_AmazonOpenSearchParameters"></a>
 
 The parameters for OpenSearch.
 

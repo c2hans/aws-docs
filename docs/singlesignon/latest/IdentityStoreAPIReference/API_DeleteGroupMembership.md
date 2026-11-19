@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # DeleteGroupMembership
-<a name="API_DeleteGroupMembership"></a>
 
 Delete a membership within a group given `MembershipId`.
 

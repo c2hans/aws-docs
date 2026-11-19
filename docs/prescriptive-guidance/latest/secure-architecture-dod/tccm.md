@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-arch
 ---
 
 # Trusted Cloud Credential Manager
-<a name="tccm"></a>
 
 The Trusted Cloud Credential Manager (TCCM) is a component of the SCCA. It is responsible for credential management. When establishing the TCCM, it's important to allow least-privilege access to the SCCA. This can be accomplished by using AWS identity and access management services. An additional component of the TCCM is a connection to the Virtual Data Center Managed Services (VDMS). You can use this connection as needed to access the AWS Management Console to manage the TCCM.
 

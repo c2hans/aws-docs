@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Scenario 4: AWS Microsoft AD and a two-way transitive trust to on-premises
-<a name="scenario-4-aws-microsoft-ad-and-a-two-way-transitive-trust-to-on-premises"></a>
 
  This scenario, shown in the following figure, has AWS Managed AD deployed in the AWS Cloud, which has a two-way transitive trust to the customer on-premises AD. Users and WorkSpaces are created in the Managed AD, with the AD trust enabling resources to be accessed in the on-premises environment.
 

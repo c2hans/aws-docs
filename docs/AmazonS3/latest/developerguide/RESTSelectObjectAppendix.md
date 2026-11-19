@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/RESTSelec
 ---
 
 # Appendix: SelectObjectContent Response
-<a name="RESTSelectObjectAppendix"></a>
 
 ## Description
 <a name="RESTSelectObjectAppendix-description"></a>

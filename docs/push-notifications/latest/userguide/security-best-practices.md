@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/push-notifications/latest/userguide/secu
 ---
 
 # Security best practices
-<a name="security-best-practices"></a>
 
 Use AWS Identity and Access Management (IAM) accounts to control access to API operations, especially operations that create, modify, or delete resources. For the API, such resources include projects, campaigns and journeys.
 + Create an individual user for each person who manages resources, including yourself. Don't use AWS root credentials to manage resources.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/tag-resources-con
 ---
 
 # Tutorial: Manage tags using the console
-<a name="tag-resources-console"></a>
 
 Using the AWS Batch console, you can manage the tags associated with new or existing compute environments, jobs, job definitions, and job queues.
 

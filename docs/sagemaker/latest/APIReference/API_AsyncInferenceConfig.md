@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AsyncI
 ---
 
 # AsyncInferenceConfig
-<a name="API_AsyncInferenceConfig"></a>
 
 Specifies configuration for how an endpoint performs asynchronous inference.
 

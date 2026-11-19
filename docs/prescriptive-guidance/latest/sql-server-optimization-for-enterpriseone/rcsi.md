@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Configure RCSI
-<a name="rcsi"></a>
 
 We recommend that you enable read-committed snapshot isolation (RCSI) for each EnterpriseOne database. Otherwise, you might encounter locking scenarios that affect system performance. In some cases, EnterpriseOne might revert to `*NOLOCK`, which can result in dirty read operations, if RCSI isn't in effect.
 

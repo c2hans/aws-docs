@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/
 ---
 
 # Activate cost allocation tags associated with the solution
-<a name="activate-cost-allocation-tags-associated-with-the-solution"></a>
 
 After you confirm the cost tags associated with this solution, you must activate the cost allocation tags to see the costs for this solution. The cost allocation tags can only be activated from the management account for the organization.
 

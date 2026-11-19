@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-update
 ---
 
 # Add features and records to a feature group
-<a name="feature-store-update-feature-group"></a>
 
 You can use the Amazon SageMaker Feature Store API or the console to update and describe your feature group as well as add features and records to your feature group. A feature group is an object that contains your data and a feature describes a column in the table. When you add a feature to the feature group you are effectively adding a column to the table. When you add a new record to the feature group you are filling in values for features associated with a specific record identifier. For more information on Feature Store concepts, see [Feature Store concepts](feature-store-concepts.md).
 

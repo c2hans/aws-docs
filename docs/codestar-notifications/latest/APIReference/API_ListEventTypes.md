@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codestar-notifications/latest/APIReferen
 ---
 
 # ListEventTypes
-<a name="API_ListEventTypes"></a>
 
 Returns information about the event types available for configuring notifications.
 

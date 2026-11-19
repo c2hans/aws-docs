@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Tenant
 ---
 
 # TenantDatabase
-<a name="API_TenantDatabase"></a>
 
 A tenant database in the DB instance. This data type is an element in the response to the `DescribeTenantDatabases` action.
 

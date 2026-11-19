@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateWor
 ---
 
 # UpdateWorkGroup
-<a name="API_UpdateWorkGroup"></a>
 
 Updates the workgroup with the specified name. The workgroup's name cannot be changed. Only `ConfigurationUpdates` can be specified.
 

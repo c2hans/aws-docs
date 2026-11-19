@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Query
 ---
 
 # QueryArgProfile
-<a name="API_QueryArgProfile"></a>
 
 Query argument-profile mapping for field-level encryption.
 

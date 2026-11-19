@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeE
 ---
 
 # DescribeExportImageTasks
-<a name="API_DescribeExportImageTasks"></a>
 
 Describes the specified export image tasks or all of your export image tasks.
 

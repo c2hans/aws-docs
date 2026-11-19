@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/flow-control-act
 ---
 
 # TransferToFlow
-<a name="flow-control-actions-transfertoflow"></a>
 
 Execution jumps to a different flow, and continues running at that flow's beginning.
 

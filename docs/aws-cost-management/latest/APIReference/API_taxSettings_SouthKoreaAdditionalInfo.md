@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SouthKoreaAdditionalInfo
-<a name="API_taxSettings_SouthKoreaAdditionalInfo"></a>
 
 Additional tax information associated with your TRN in South Korea.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-
 ---
 
 # S3 Access Grants cross-account access
-<a name="access-grants-cross-accounts"></a>
 
 With S3 Access Grants, you can grant Amazon S3 data access to the following:
 + AWS Identity and Access Management (IAM) identities within your account

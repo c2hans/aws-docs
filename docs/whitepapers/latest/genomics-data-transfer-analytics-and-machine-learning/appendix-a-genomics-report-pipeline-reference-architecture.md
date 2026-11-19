@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Appendix A: Genomics report pipeline reference architecture
-<a name="appendix-a-genomics-report-pipeline-reference-architecture"></a>
 
  The following shows an example end-to-end genomics report pipeline architecture using the reference architectures described in this paper.
 

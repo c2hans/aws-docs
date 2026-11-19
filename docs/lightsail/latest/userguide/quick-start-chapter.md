@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/quick-start-c
 ---
 
 # Quickly deploy applications with Lightsail blueprints
-<a name="quick-start-chapter"></a>
 
 Use the following quick start guides to get started with Lightsail blueprints. In Lightsail, a blueprint is a virtual image that comes prepackaged with an operating system and application. Applications include WordPress, WordPress Multisite, cPanel & WHM, PrestaShop, Drupal, Ghost, Joomla\!, Magento, Redmine, Ruby on Rails, LAMP, Nginx (LEMP), and Node.js
 

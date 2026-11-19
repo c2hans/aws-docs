@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/setting-up.htm
 ---
 
 # Set up to use Amazon EC2 Auto Scaling
-<a name="setting-up"></a>
 
 Before you start using Amazon EC2 Auto Scaling, complete the following tasks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption-loca
 ---
 
 # Amazon EBS encryption in Local Zones, Outposts, and Wavelength Zones
-<a name="ebs-encryption-local-zones-outposts-wavelength"></a>
 
 Amazon EBS encryption behavior varies depending on the type of location where you create your resources.
 

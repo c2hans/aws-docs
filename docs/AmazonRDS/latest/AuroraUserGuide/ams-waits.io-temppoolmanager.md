@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/ams-wai
 ---
 
 # synch/mutex/innodb/temp\_pool\_manager\_mutex
-<a name="ams-waits.io-temppoolmanager"></a>
 
 The `synch/mutex/innodb/temp_pool_manager_mutex` wait event occurs when a session is waiting to acquire a mutex for managing the pool of session temporary tablespaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 ---
 
 # Best practice 9.2 – Identify and evaluate the available storage options for your compute solution
-<a name="best-practice-9.2-identify-evaluate-available-storage-options"></a>
 
  Many AWS data analytics services allow you to use more than one type of storage. For example, Amazon Redshift allows access to data stored in the compute nodes in addition to data stored in Amazon S3. When performing research on each data analytics service, evaluate relevant storage options to determine the most performance efficient solution that meets business requirements.
 

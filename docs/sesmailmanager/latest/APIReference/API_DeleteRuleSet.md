@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_D
 ---
 
 # DeleteRuleSet
-<a name="API_DeleteRuleSet"></a>
 
 Delete a rule set.
 

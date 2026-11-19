@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/appendix.
 ---
 
 # Appendix
-<a name="appendix"></a>
 
 **Topics**
 + [Appendix: SelectObjectContent Response](RESTSelectObjectAppendix.md)

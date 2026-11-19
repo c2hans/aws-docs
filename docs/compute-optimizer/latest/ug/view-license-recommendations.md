@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/view-license
 ---
 
 # Viewing commercial software license recommendations
-<a name="view-license-recommendations"></a>
 
 AWS Compute Optimizer generates license recommendations for commercial software that runs on Amazon EC2. The Compute Optimizer console displays these recommendations on the following pages.
 

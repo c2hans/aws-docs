@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_GetEnvironment.html
 ---
 
 # GetEnvironment
-<a name="API_GetEnvironment"></a>
 
 Describes an Amazon Managed Workflows for Apache Airflow (MWAA) environment.
 

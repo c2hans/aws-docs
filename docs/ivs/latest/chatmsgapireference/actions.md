@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/actions.h
 ---
 
 # Actions
-<a name="actions"></a>
 
 The following actions are supported:
 + [DeleteMessage (Publish)](actions-deletemessage-publish.md) — Instructs other clients to delete a message.

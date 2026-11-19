@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Da
 ---
 
 # DataUpdateRequestDetails
-<a name="API_DataUpdateRequestDetails"></a>
 
 Extra details specific to a data update type notification.
 

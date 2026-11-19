@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # Tag
-<a name="API_data-automation-runtime_Tag"></a>
 
 A tag associated with a resource. A tag consists of a key and value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSImageBuilderFullAccess
-<a name="AWSImageBuilderFullAccess"></a>
 
 **Description**: Provides full access to all AWS Image Builder actions and resource scoped access to related AWS services.
 

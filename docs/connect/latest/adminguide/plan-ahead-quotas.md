@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/plan-ahead-quo
 ---
 
 # Plan ahead with Connect Customer quotas
-<a name="plan-ahead-quotas"></a>
 
 Learn how to plan for and manage service quotas during key phases of your contact center lifecycle.
 

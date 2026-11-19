@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/multi-container-upda
 ---
 
 # Update a multi-container endpoint
-<a name="multi-container-update"></a>
 
 To update an Amazon SageMaker AI multi-container endpoint, complete the following steps.
 

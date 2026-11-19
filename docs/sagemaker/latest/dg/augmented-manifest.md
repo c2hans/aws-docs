@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/augmented-manifest.h
 ---
 
 # Augmented Manifest Files for Training Jobs
-<a name="augmented-manifest"></a>
 
 To include metadata with your dataset in a training job, use an augmented manifest file. When using an augmented manifest file, your dataset must be stored in Amazon Simple Storage Service (Amazon S3), and you must configure your training job to use the dataset stored there. You specify the location and format of this dataset for one or more [`Channel`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Channel.html). Augmented manifests can only support Pipe input mode. See the section, **InputMode** in [`Channel`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Channel.html) to learn more about pipe input mode.
 

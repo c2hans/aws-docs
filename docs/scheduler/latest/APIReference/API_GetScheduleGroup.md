@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_GetSch
 ---
 
 # GetScheduleGroup
-<a name="API_GetScheduleGroup"></a>
 
 Retrieves the specified schedule group.
 

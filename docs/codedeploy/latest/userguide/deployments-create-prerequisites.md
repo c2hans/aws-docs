@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-
 ---
 
 # Deployment prerequisites
-<a name="deployments-create-prerequisites"></a>
 
 Make sure the following steps are complete before you start a deployment.
 

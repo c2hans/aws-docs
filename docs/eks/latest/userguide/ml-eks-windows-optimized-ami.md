@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/ml-eks-windows-opti
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Build EKS-optimized Windows AMIs for GPU instances
-<a name="ml-eks-windows-optimized-ami"></a>
 
 **Important**
 The [Kubernetes Device Plugin for DirectX](https://github.com/TensorWorks/DirectX-Device-Plugins) by TensorWorks is a third-party tool that is not endorsed, supported, or maintained by AWS. AWS assumes no responsibility for the security, reliability, or performance of this plugin.

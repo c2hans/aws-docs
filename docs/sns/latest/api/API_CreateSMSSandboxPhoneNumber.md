@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_CreateSMSSandboxPhone
 ---
 
 # CreateSMSSandboxPhoneNumber
-<a name="API_CreateSMSSandboxPhoneNumber"></a>
 
 Adds a destination phone number to an AWS account in the SMS sandbox and sends a one-time password (OTP) to that phone number.
 

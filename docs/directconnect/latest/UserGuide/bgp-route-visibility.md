@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/bgp-route
 ---
 
 # BGP route visibility
-<a name="bgp-route-visibility"></a>
 
 With Direct Connect, you can view the BGP routes on your virtual interfaces (VIFs). You can see which routes AWS accepted from your router. You can also see which routes AWS is sending to your router. Each route shows its AS path and community values.
 

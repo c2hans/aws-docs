@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_C
 ---
 
 # CheckSummary
-<a name="API_CheckSummary"></a>
 
 A summary of an AWS Trusted Advisor Check
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_List
 ---
 
 # ListPrivacyBudgets
-<a name="API_ListPrivacyBudgets"></a>
 
 Returns detailed information about the privacy budgets in a specified membership.
 

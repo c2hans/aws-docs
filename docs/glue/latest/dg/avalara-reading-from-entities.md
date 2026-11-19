@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/avalara-reading-from-enti
 ---
 
 # Reading from Avalara entities
-<a name="avalara-reading-from-entities"></a>
 
 **Prerequisites**
 

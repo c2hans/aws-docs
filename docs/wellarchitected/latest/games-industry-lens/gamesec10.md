@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Threat modeling
-<a name="gamesec10"></a>
 
 |  GAMESEC10: How do you integrate threat modeling into your organization's application development lifecycle?  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/converting-native-data-
 ---
 
 # Convert Athena data types to JSON
-<a name="converting-native-data-types-to-json"></a>
 
 To convert Athena data types to JSON, use `CAST`.
 

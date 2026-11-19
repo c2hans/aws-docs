@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/developerguide/limit
 ---
 
 # Limitations from SCIM specification
-<a name="limitations"></a>
 
 The IAM Identity Center SCIM implementation supports only a subset of the SCIM specifications. This section lists the limitations that the IAM Identity Center SCIM implementation has in comparison to the SCIM specifications. These include the following:
 + **Filter limitations** – Only `eq` with `and` is supported. We currently do not support any other filters.

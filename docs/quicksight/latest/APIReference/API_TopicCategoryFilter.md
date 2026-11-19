@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicCategoryFilter
-<a name="API_TopicCategoryFilter"></a>
 
 A structure that represents a category filter.
 

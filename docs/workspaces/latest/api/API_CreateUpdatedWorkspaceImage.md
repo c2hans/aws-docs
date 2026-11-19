@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_CreateUpdatedW
 ---
 
 # CreateUpdatedWorkspaceImage
-<a name="API_CreateUpdatedWorkspaceImage"></a>
 
 Creates a new updated WorkSpace image based on the specified source image. The new updated WorkSpace image has the latest drivers and other updates required by the Amazon WorkSpaces components.
 

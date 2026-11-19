@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/notific
 ---
 
 # Email notification
-<a name="notification-email"></a>
 
 You can configure AWS Elemental Conductor Live to email you notifications when alerts occur.
 

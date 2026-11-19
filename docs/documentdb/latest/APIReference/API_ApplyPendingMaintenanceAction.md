@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Apply
 ---
 
 # ApplyPendingMaintenanceAction
-<a name="API_ApplyPendingMaintenanceAction"></a>
 
 Applies a pending maintenance action to a resource (for example, to an Amazon DocumentDB instance).
 
@@ -38,7 +37,7 @@ Required: Yes
 The following element is returned by the service.
 
  ** ResourcePendingMaintenanceActions **
-Represents the output of [ApplyPendingMaintenanceAction](#API_ApplyPendingMaintenanceAction).
+Represents the output of [ApplyPendingMaintenanceAction](API_ApplyPendingMaintenanceAction.md).
 Type: [ResourcePendingMaintenanceActions](API_ResourcePendingMaintenanceActions.md) object
 
 ## Errors

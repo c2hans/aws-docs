@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/f
 ---
 
 # JavaScript runtime 2.0 features for CloudFront Functions
-<a name="functions-javascript-runtime-20"></a>
 
 The CloudFront Functions JavaScript runtime environment is compliant with [ECMAScript (ES) version 5.1](https://262.ecma-international.org/5.1/) and also supports some features of ES versions 6 through 12. It also provides some nonstandard methods that are not part of the ES specifications. The following topics list all supported features in this runtime.
 
@@ -896,4 +895,4 @@ There is no process access. For example, there is no `process` global object for
 There is no access to environment variables. Instead, you can use CloudFront KeyValueStore to create a centralized datastore of key-value pairs for your CloudFront Functions. CloudFront KeyValueStore enables dynamic updates to your configuration data without needing to deploy code changes. For more information, see [Amazon CloudFront KeyValueStore](kvs-with-functions.md).
 
 **Network access**
-There is no support for network calls. For example, XHR, HTTP(S), and socket are not supported.
+Network calls are supported only to an origin that is configured on the same distribution. A function can make one network call per invocation. For more information, see [Helper methods for network calls](helper-functions-network-calls.md).

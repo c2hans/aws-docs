@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-a
 ---
 
 # Appendix: Microsoft Power BI supported AWS data sources
-<a name="appendix-microsoft-power-bi-supported-aws-data-sources"></a>
 
  The full list of supported data sources is provided by Microsoft (refer to [Power BI data sources](https://docs.microsoft.com/en-us/power-bi/connect-data/power-bi-data-sources)); however, the following sections for each AWS data source provide usage and configuration guidance that may be helpful for some readers.
 

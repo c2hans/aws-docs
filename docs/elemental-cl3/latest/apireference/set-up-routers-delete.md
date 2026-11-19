@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # DELETE: Delete a Router
-<a name="set-up-routers-delete"></a>
 
 Deletes the specified router (identified by its internal router ID) and the associated inputs and outputs. To get the internal router ID of a specific router, see [GET: Get Router Attributes](set-up-routers-get-router-attributes.md).
 

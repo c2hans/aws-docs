@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/toe-user-d
 ---
 
 # Use variables in your custom component document
-<a name="toe-user-defined-variables"></a>
 
 Variables provide a way to label data with meaningful names that can be used throughout an application. You can define custom variables with simple and readable formats for complex workflows, and reference them in the YAML application component document for an AWSTOE component.
 

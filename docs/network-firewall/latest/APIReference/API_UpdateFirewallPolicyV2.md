@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # UpdateFirewallPolicyV2
-<a name="API_UpdateFirewallPolicyV2"></a>
 
 Updates the properties of the specified Next Generation policy.
 

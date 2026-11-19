@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-n
 ---
 
 # Setup Notify
-<a name="nx-notify"></a>
 
 Notify is a managed feature of AWS End User Messaging for sending one-time passcode (OTP) and verification messages over SMS and voice. AWS manages the origination identities, carrier integrations, and pre-approved templates, so you can start sending verification messages in minutes without provisioning phone numbers or navigating carrier registration. Every Notify configuration includes mandatory fraud protection that filters artificially inflated traffic (AIT). Common use cases include sign-up and login verification, transaction authentication, and account recovery.
 

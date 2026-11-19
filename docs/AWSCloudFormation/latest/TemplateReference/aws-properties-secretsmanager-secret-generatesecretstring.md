@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecretsManager::Secret GenerateSecretString
-<a name="aws-properties-secretsmanager-secret-generatesecretstring"></a>
 
 Generates a random password. We recommend that you specify the maximum length and include every character type that the system you are generating a password for can support.
 

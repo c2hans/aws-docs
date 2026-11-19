@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 1.4 Program team structure
-<a name="team-structure"></a>
 
 ## Overview
 <a name="structure-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ExpressionDimensionValues
-<a name="API_budgets_ExpressionDimensionValues"></a>
 
 Contains the specifications for the filters to use for your request.
 

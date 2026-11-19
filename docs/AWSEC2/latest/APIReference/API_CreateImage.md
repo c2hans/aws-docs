@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIma
 ---
 
 # CreateImage
-<a name="API_CreateImage"></a>
 
 Creates an Amazon EBS-backed AMI from an Amazon EBS-backed instance that is either running or stopped.
 

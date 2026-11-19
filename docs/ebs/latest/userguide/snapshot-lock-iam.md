@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-lock-iam.h
 ---
 
 # Control access to Amazon EBS snapshot lock
-<a name="snapshot-lock-iam"></a>
 
 By default, users don't have permission to work with snapshot locks. To allow users to use snapshot locks, you must create IAM policies that grant permission to use specific resources and API actions. For more information, see [Creating IAM policies in the IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html).
 

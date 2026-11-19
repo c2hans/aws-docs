@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Inde
 ---
 
 # IndexFaces
-<a name="API_IndexFaces"></a>
 
 Detects faces in the input image and adds them to the specified collection.
 

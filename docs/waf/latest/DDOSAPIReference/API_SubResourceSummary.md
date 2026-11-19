@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_SubResou
 ---
 
 # SubResourceSummary
-<a name="API_SubResourceSummary"></a>
 
 The attack information for the specified SubResource.
 

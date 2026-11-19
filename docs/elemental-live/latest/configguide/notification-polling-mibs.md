@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/notifi
 ---
 
 # Management Information Bases (MIBs) in Elemental Live
-<a name="notification-polling-mibs"></a>
 
 AWS Elemental provides the following management information bases (MIBs) for use with Elemental Live:
 

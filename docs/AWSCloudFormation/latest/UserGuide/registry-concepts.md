@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/regis
 ---
 
 # CloudFormation registry concepts
-<a name="registry-concepts"></a>
 
 This topic explains key concepts to help you understand and begin using the CloudFormation registry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # AWS Elastic Beanstalk deployment strategies
-<a name="aeb-deployment-strategies"></a>
 
 [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) supports the following type of deployment strategies:
 + **All-at-once** Performs in place deployment on all instances.

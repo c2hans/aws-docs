@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/downstream-system-sr
 ---
 
 # Coordinate with the downstream system
-<a name="downstream-system-srt-caller"></a>
 
 With an SRT output group, you can create more than one output, in order to deliver the same content to more than one downstream system.
 

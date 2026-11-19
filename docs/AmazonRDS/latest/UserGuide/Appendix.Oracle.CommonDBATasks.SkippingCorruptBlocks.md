@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Skipping corrupt blocks
-<a name="Appendix.Oracle.CommonDBATasks.SkippingCorruptBlocks"></a>
 
 To skip corrupt blocks during index and table scans, use the `rdsadmin.rdsadmin_dbms_repair` package.
 

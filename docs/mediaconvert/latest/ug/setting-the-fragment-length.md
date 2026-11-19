@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/setting-the-fragm
 ---
 
 # Setting the fragment length for streaming outputs
-<a name="setting-the-fragment-length"></a>
 
 For all ABR streaming output groups other than HLS (CMAF, DASH, and Microsoft Smooth Streaming), the value that you specify for **Fragment length** (`FragmentLength`) must work with the other output settings that you specify. If you set **Fragment length** incorrectly, when viewers watch the output video, their player might crash. This can happen because the player expects additional segments at the end of the video and requests segments that don't exist.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ec2_example_vpc_T
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Getting started with network transit gateways
-<a name="ec2_example_vpc_TransitGatewayGettingStarted_section"></a>
 
 The following code example shows how to:
 + Create a transit gateway

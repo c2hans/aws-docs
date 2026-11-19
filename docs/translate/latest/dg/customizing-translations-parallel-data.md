@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/customizing-translat
 ---
 
 # Customizing your translations with parallel data (Active Custom Translation)
-<a name="customizing-translations-parallel-data"></a>
 
 Add *parallel data* to Amazon Translate to customize the output of your batch translations jobs. Parallel data consists of examples that show how you want segments of text to be translated. It includes a collection of textual examples in a source language, and for each example, it contains the desired translation output in one or more target languages.
 

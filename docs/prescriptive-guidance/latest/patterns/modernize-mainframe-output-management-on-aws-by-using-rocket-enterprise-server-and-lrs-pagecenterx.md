@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mo
 ---
 
 # Modernize mainframe output management on AWS by using Rocket Enterprise Server and LRS PageCenterX
-<a name="modernize-mainframe-output-management-on-aws-by-using-rocket-enterprise-server-and-lrs-pagecenterx"></a>
 
 *Shubham Roy, Amazon Web Services*
 

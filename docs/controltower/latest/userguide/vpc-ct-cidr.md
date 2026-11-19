@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/vpc-ct-cid
 ---
 
 # CIDR and Peering for VPC and AWS Control Tower
-<a name="vpc-ct-cidr"></a>
 
 This section is intended primarily for network administrators. Your company’s network administrator usually is the person who selects the overall CIDR range for your AWS Control Tower organization. The network administrator then allocates subnets from within that range for specific purposes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkM
 ---
 
 # ListNetworkMigrationDeployedStacks
-<a name="API_ListNetworkMigrationDeployedStacks"></a>
 
 Lists CloudFormation stacks that have been deployed as part of the network migration.
 

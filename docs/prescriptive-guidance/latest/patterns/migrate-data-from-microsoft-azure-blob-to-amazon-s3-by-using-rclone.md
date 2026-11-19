@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate data from Microsoft Azure Blob to Amazon S3 by using Rclone
-<a name="migrate-data-from-microsoft-azure-blob-to-amazon-s3-by-using-rclone"></a>
 
 *Suhas Basavaraj, Aidan Keane, and Corey Lane, Amazon Web Services*
 

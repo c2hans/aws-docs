@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/other-examples.html
 ---
 
 # Additional Code Samples
-<a name="other-examples"></a>
 
 The following table provides links to more Amazon Textract code examples.
 

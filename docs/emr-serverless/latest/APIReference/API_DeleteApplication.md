@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_D
 ---
 
 # DeleteApplication
-<a name="API_DeleteApplication"></a>
 
 Deletes an application. An application has to be in a stopped or created state in order to be deleted.
 

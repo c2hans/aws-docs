@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-outb
 ---
 
 # Determining your VPC's security requirements
-<a name="vpc-security-requirements"></a>
 
 **Important**
 It's a best practice to design and test your VPC's outbound traffic security architecture in a test environment. Testing architecture changes in a development environment mitigates the risk of pushing unintended system behaviors live.

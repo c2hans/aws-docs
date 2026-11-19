@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/config-conc
 ---
 
 # AWS Config terminology and concepts
-<a name="config-concepts"></a>
 
 To help you understand AWS Config, this topic explains some of the key concepts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_TagC
 ---
 
 # TagCostEstimationResourceCollectionFilter
-<a name="API_TagCostEstimationResourceCollectionFilter"></a>
 
 Information about a collection of AWS resources that are identified by an AWS tag. This collection of resources is used to create a monthly cost estimate for DevOps Guru to analyze AWS resources. The maximum number of tags you can specify for a cost estimate is one. The estimate created is for the cost to analyze the AWS resources defined by the tag. For more information, see [Stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html) in the * AWS CloudFormation User Guide*.
 

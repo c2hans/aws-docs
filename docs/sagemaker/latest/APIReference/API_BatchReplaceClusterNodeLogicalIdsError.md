@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchR
 ---
 
 # BatchReplaceClusterNodeLogicalIdsError
-<a name="API_BatchReplaceClusterNodeLogicalIdsError"></a>
 
 Represents an error encountered when replacing a node (identified by its logical node ID) in a SageMaker HyperPod cluster.
 

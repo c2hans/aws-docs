@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # BusinessVerificationResponse
-<a name="API_account_BusinessVerificationResponse"></a>
 
 Contains the response information and results from a business verification process, including any verification-specific data returned by the verification service.
 

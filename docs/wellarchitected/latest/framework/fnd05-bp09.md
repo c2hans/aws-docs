@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd05-b
 ---
 
 # FND05-BP09 Establish security tooling for investigating incidents
-<a name="fnd05-bp09"></a>
 
  In a multi-account cloud environment, dedicate an account to operating security services, monitoring accounts, and automating security alerting and response. Security teams then have unified visibility and can investigate incidents consistently across the organization.
 

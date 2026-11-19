@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DeletePodIde
 ---
 
 # DeletePodIdentityAssociation
-<a name="API_DeletePodIdentityAssociation"></a>
 
 Deletes a EKS Pod Identity association.
 

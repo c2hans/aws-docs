@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DataMigratio
 ---
 
 # DataMigration
-<a name="API_DataMigration"></a>
 
 This object provides information about a AWS DMS data migration.
 

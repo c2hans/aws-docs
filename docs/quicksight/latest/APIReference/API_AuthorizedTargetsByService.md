@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Autho
 ---
 
 # AuthorizedTargetsByService
-<a name="API_AuthorizedTargetsByService"></a>
 
 The authorized targets that are associated with a service.
 

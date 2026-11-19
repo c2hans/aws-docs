@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Spark
 ---
 
 # SparkSubmitJobDriver
-<a name="API_SparkSubmitJobDriver"></a>
 
 The information about job driver for Spark submit.
 

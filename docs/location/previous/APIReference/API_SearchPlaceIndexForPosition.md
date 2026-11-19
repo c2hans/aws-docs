@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Searc
 ---
 
 # SearchPlaceIndexForPosition
-<a name="API_SearchPlaceIndexForPosition"></a>
 
 **Important**
 This operation is no longer current and may be deprecated in the future. We recommend you upgrade to [`ReverseGeocode`](/location/latest/APIReference/API_geoplaces_ReverseGeocode.html) or [`SearchNearby`](/location/latest/APIReference/API_geoplaces_SearchNearby.html) unless you require Grab data.

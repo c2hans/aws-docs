@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch_eks_rbac.ht
 ---
 
 # RBAC permissions or bindings aren't configured properly
-<a name="batch_eks_rbac"></a>
 
 If you experience any RBAC permissions or binding issues, verify that the `aws-batch` Kubernetes role can access the Kubernetes namespace:
 

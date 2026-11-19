@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/working-with-vi
 ---
 
 # Building AWS Glue Data Catalog views
-<a name="working-with-views"></a>
 
 In the AWS Glue Data Catalog, a *view* is a virtual table in which the contents are defined by a SQL query that references one or more tables. You can create a Data Catalog view that references up to 10 tables using SQL editors for Amazon Athena, Amazon Redshift, or Apache Spark using EMR Serverless or AWS Glue version 5.0. Underlying reference tables for a view can belong to the same database or different databases within the same AWS account's Data Catalog.
 

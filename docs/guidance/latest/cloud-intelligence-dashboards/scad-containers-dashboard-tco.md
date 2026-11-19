@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Total Cost of Ownership Using Kubernetes Labels and AWS Tags
-<a name="scad-containers-dashboard-tco"></a>
 
 ## Introduction
 <a name="introduction"></a>

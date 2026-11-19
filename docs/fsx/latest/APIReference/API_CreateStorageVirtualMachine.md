@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateStorag
 ---
 
 # CreateStorageVirtualMachine
-<a name="API_CreateStorageVirtualMachine"></a>
 
 Creates a storage virtual machine (SVM) for an Amazon FSx for ONTAP file system.
 

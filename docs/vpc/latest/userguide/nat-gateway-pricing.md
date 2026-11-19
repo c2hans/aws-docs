@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateway-pricing
 ---
 
 # Pricing for NAT gateways
-<a name="nat-gateway-pricing"></a>
 
 When you provision a NAT gateway, you are charged for each hour that your NAT gateway is available and each gigabyte of data that it processes. For more information, see [Amazon VPC Pricing](https://aws.amazon.com/vpc/pricing/).
 

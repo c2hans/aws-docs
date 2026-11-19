@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Use `BatchGetItem` with an AWS SDK or CLI
-<a name="example_dynamodb_BatchGetItem_section"></a>
 
 The following code examples show how to use `BatchGetItem`.
 

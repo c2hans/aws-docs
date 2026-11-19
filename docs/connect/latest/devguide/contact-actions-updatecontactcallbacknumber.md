@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/contact-actions-
 ---
 
 # UpdateContactCallbackNumber
-<a name="contact-actions-updatecontactcallbacknumber"></a>
 
 Updates the contact callback number, which is the number used by the CreateCallbackContact action. This value defaults to the customer participant caller ID if this action is never used.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # ListResolverEndpointIpAddresses
-<a name="API_route53resolver_ListResolverEndpointIpAddresses"></a>
 
 Gets the IP addresses for a specified Resolver endpoint.
 

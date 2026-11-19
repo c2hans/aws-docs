@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-caf-pla
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 This guide serves as a playbook for the successful implementation and management of a foundation for successful cloud adoption. It discusses how to:
 + Directly address technical challenges and intricacies in *platform architecture* to establish robust guidelines and principles for your cloud environment and the data residing within it.

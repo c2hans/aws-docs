@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_CreateSt
 ---
 
 # CreateStream
-<a name="API_CreateStream"></a>
 
 Creates a Kinesis data stream. A stream captures and transports data records that are continuously emitted from different data sources or *producers*. Scale-out within a stream is explicitly supported by means of shards, which are uniquely identified groups of data records in a stream.
 
@@ -25,7 +24,7 @@ For the default shard or on-demand throughput limits for an AWS account, see [Am
 
 You can use [DescribeStreamSummary](API_DescribeStreamSummary.md) to check the stream status, which is returned in `StreamStatus`.
 
- [CreateStream](#API_CreateStream) has a limit of five transactions per second per account.
+ [CreateStream](API_CreateStream.md) has a limit of five transactions per second per account.
 
 You can add tags to the stream when making a `CreateStream` request by setting the `Tags` parameter. If you pass the `Tags` parameter, in addition to having the `kinesis:CreateStream` permission, you must also have the `kinesis:AddTagsToStream` permission for the stream that will be created. The `kinesis:TagResource` permission won’t work to tag streams on creation. Tags will take effect from the `CREATING` status of the stream, but you can't make any updates to the tags until the stream is in `ACTIVE` state.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DeleteStackInstances
-<a name="API_DeleteStackInstances"></a>
 
 Deletes stack instances for the specified accounts, in the specified AWS Regions.
 

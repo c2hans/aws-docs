@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # How application modeling works
-<a name="next-gen-modeling-how-it-works"></a>
 
 To model your application in the next generation of Resilience Hub, follow these steps:
 

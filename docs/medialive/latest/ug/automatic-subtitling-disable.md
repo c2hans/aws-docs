@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/automatic-subtitling
 ---
 
 # Disabling Smart Subtitles
-<a name="automatic-subtitling-disable"></a>
 
 To disable Smart Subtitles and stop incurring charges:
 

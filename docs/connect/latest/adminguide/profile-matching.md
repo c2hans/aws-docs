@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/profile-matchi
 ---
 
 # Profile matching and inferred profiles in Customer Profiles
-<a name="profile-matching"></a>
 
 This topic explains how Connect Customer Customer Profiles decides which profile an ingested object belongs to, when it creates a new profile, and how it protects manually entered data. For the end-to-end ingestion flow, see [How object type mapping works in Customer Profiles](how-object-type-mapping-works.md).
 

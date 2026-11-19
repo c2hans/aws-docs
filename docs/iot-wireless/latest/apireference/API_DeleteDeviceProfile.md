@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Del
 ---
 
 # DeleteDeviceProfile
-<a name="API_DeleteDeviceProfile"></a>
 
 Deletes a device profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetThr
 ---
 
 # GetThreatEntitySet
-<a name="API_GetThreatEntitySet"></a>
 
 Retrieves the threat entity set associated with the specified `threatEntitySetId`.
 

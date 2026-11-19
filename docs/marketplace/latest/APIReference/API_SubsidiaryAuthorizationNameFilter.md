@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Subs
 ---
 
 # SubsidiaryAuthorizationNameFilter
-<a name="API_SubsidiaryAuthorizationNameFilter"></a>
 
 The filter for subsidiary authorization names.
 

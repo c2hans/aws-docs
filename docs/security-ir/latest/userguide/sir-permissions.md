@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/sir-permiss
 ---
 
 # Permissions
-<a name="sir-permissions"></a>
 
  The permissions tab lists all individuals that will be notified for any change to the case. You can add and remove individuals from the list until the case is closed.
 

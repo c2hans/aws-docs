@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Monitoring tools
-<a name="monitoring-tools"></a>
 
 We recommend that you use observability, monitoring, and alerting tools to:
 + Gain insights into the performance of your Amazon RDS environment

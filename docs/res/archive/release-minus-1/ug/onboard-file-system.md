@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/onboard-f
 ---
 
 # Onboard a file system
-<a name="onboard-file-system"></a>
 
 **Note**
 To successfully onboard a file system, it must share the same VPC and at least one of your RES subnets. You must also ensure you have the security group configured properly so your VDIs have access to the file system's contents.

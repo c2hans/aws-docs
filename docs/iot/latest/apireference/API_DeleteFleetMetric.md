@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteFleetM
 ---
 
 # DeleteFleetMetric
-<a name="API_DeleteFleetMetric"></a>
 
 Deletes the specified fleet metric. Returns successfully with no error if the deletion is successful or you specify a fleet metric that doesn't exist.
 

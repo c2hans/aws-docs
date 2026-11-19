@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ControlPlane
 ---
 
 # ControlPlaneConfigInfo
-<a name="API_ControlPlaneConfigInfo"></a>
 
 The control plane component configuration defaults and constraints.
 

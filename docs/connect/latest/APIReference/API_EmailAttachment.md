@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EmailAtt
 ---
 
 # EmailAttachment
-<a name="API_EmailAttachment"></a>
 
 Information about the email attachment files.
 

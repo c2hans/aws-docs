@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetLinkAssociations
-<a name="API_GetLinkAssociations"></a>
 
 Gets the link associations for a device or a link. Either the device ID or the link ID must be specified.
 

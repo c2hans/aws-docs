@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_LinuxParam
 ---
 
 # LinuxParameters
-<a name="API_LinuxParameters"></a>
 
 Linux-specific modifications that are applied to the container, such as details for device mappings.
 

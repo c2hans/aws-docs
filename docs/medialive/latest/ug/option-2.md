@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/option-2.html
 ---
 
 # Option 2: Send events for specific channels to an email address
-<a name="option-2"></a>
 
 You can set up a rule to send all events for one or several channels or multiplexes to one email address. You must perform this setup in each Region where channels or multiplexes are running.
 

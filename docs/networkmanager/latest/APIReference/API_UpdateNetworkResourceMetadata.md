@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_U
 ---
 
 # UpdateNetworkResourceMetadata
-<a name="API_UpdateNetworkResourceMetadata"></a>
 
 Updates the resource metadata for the specified global network.
 

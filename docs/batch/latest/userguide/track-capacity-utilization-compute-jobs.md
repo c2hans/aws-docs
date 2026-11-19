@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/track-capacity-ut
 ---
 
 # Track compute job capacity utilization
-<a name="track-capacity-utilization-compute-jobs"></a>
 
 AWS Batch provides multiple API operations that you can use together to track capacity utilization for ECS, EKS, and Fargate compute jobs in a queue. The monitoring workflow depends on the type of scheduling policy that is attached to your job queue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListMo
 ---
 
 # ListModelCardExportJobs
-<a name="API_ListModelCardExportJobs"></a>
 
 List the export jobs for the Amazon SageMaker Model Card.
 

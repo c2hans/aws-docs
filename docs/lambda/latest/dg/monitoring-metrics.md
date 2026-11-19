@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/monitoring-metrics.html
 ---
 
 # Using CloudWatch metrics with Lambda
-<a name="monitoring-metrics"></a>
 
 When your AWS Lambda Event Function finishes processing an event, Lambda automatically sends metrics about the invocation to Amazon CloudWatch. You don't need to grant any additional permissions to your execution role to receive Event Function metrics, and there's no additional charge for these metrics.
 

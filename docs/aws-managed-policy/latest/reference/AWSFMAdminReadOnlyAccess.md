@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSF
 ---
 
 # AWSFMAdminReadOnlyAccess
-<a name="AWSFMAdminReadOnlyAccess"></a>
 
 **Description**: Read only access for AWS FM Administrator that allows monitoring AWS FM operations
 

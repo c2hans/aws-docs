@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ActionF
 ---
 
 # ActionFilterConfiguration
-<a name="API_ActionFilterConfiguration"></a>
 
 Specifies filters to apply to an allowed action.
 

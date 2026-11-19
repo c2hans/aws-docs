@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3IcebergCatalogT
 ---
 
 # S3IcebergCatalogTarget
-<a name="API_S3IcebergCatalogTarget"></a>
 
 Specifies an Apache Iceberg catalog target that writes data to Amazon S3 and registers the table in the AWS Glue Data Catalog.
 

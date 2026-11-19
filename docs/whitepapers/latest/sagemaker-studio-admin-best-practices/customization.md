@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Customization
-<a name="customization"></a>
 
 ## Lifecycle configuration
 <a name="lifecycle-configuration"></a>

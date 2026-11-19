@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NitroTpmI
 ---
 
 # NitroTpmInfo
-<a name="API_NitroTpmInfo"></a>
 
 Describes the supported NitroTPM versions for the instance type.
 

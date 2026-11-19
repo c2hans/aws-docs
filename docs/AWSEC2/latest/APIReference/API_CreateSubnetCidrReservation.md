@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSub
 ---
 
 # CreateSubnetCidrReservation
-<a name="API_CreateSubnetCidrReservation"></a>
 
 Creates a subnet CIDR reservation. For more information, see [Subnet CIDR reservations](https://docs.aws.amazon.com/vpc/latest/userguide/subnet-cidr-reservation.html) in the *Amazon VPC User Guide* and [Manage prefixes for your network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/work-with-prefixes.html) in the *Amazon EC2 User Guide*.
 

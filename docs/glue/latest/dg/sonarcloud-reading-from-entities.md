@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sonarcloud-reading-from-e
 ---
 
 # Reading from SonarCloud entities
-<a name="sonarcloud-reading-from-entities"></a>
 
 **Prerequisites**
 

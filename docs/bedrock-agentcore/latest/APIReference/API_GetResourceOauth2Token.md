@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # GetResourceOauth2Token
-<a name="API_GetResourceOauth2Token"></a>
 
 Returns the OAuth 2.0 token of the provided resource.
 

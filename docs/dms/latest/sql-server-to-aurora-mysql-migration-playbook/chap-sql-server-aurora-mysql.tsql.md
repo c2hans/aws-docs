@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Migrating T-SQL features
-<a name="chap-sql-server-aurora-mysql.tsql"></a>
 
 This chapter provides reference information for T-SQL extensions required to migrate from Microsoft SQL Server 2019 to Amazon Aurora MySQL. You can gain a comprehensive understanding of the differences and similarities between these two database systems across multiple areas, including collation and character sets, cursors, date and time functions, string functions, database and schema concepts, transaction handling, SQL syntax, stored procedures, error handling, flow control, full-text search, graph databases, XML and JSON support, and more.
 

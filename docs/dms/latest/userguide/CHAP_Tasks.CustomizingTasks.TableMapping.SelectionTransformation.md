@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.Customiz
 ---
 
 # Specifying table selection and transformations rules using JSON
-<a name="CHAP_Tasks.CustomizingTasks.TableMapping.SelectionTransformation"></a>
 
 To specify the table mappings that you want to apply during migration, you can create a JSON file. If you create a migration task using the console, you can browse for this JSON file or enter the JSON directly into the table mapping box. If you use the CLI or API to perform migrations, you can specify this file using the `TableMappings` parameter of the `CreateReplicationTask` or `ModifyReplicationTask` API operation.
 

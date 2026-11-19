@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2-fleet-states
 ---
 
 # EC2 Fleet request states
-<a name="EC2-fleet-states"></a>
 
 An EC2 Fleet request can be one of various states, with each state indicating a different stage of the request's lifecycle and its management of instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_N
 ---
 
 # NameServersUpdateState
-<a name="API_NameServersUpdateState"></a>
 
 Describes the state of the name server records update made by Amazon Lightsail to an Amazon Route 53 registered domain.
 

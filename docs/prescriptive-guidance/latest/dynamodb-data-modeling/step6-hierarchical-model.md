@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Step 6: Create data queries
-<a name="step6-hierarchical-model"></a>
 
 After you define your access patterns and design your data model, you can query hierarchical data in the DynamoDB database. As a best practice to save on costs and help ensure performance, the following examples use only the query operation without `Scan`.
 + **Find ancestors of a component.**

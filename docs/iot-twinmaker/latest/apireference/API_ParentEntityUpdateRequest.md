@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Pa
 ---
 
 # ParentEntityUpdateRequest
-<a name="API_ParentEntityUpdateRequest"></a>
 
 The parent entity update request.
 

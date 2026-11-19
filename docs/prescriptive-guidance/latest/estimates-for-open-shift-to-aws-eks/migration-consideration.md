@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Migration consideration
-<a name="migration-consideration"></a>
 
 Accurate migration estimates require a comprehensive understanding of your current environment and target architecture before committing to timelines and resource allocations. Overlooking critical factors during the assessment phase can lead to significant estimate variances as the project progresses.
 

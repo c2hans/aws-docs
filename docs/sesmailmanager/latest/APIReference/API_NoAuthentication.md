@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_N
 ---
 
 # NoAuthentication
-<a name="API_NoAuthentication"></a>
 
 Explicitly indicate that the relay destination server does not require SMTP credential authentication.
 

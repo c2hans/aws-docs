@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/comm
 ---
 
 # Common Setup Issues
-<a name="common-setup-issues"></a>
 
 ## Referential integrity errors: "product\_id values do not match any id in Product dataset"
 <a name="common-setup-issues-referential-integrity-errors"></a>

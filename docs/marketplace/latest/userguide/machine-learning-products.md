@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/machine-lea
 ---
 
 # Machine learning products in AWS Marketplace
-<a name="machine-learning-products"></a>
 
 As an AWS Marketplace seller, you can create machine learning (ML) algorithms and models that your buyers can deploy in AWS. This topic provides information about the Amazon SageMaker AI product types listed in AWS Marketplace.
 

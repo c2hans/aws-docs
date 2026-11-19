@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BedrockGua
 ---
 
 # BedrockGuardrailConfiguration
-<a name="API_BedrockGuardrailConfiguration"></a>
 
 The details on the Bedrock guardrail configuration.
 

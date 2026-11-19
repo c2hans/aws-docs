@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-forecast-s
 ---
 
 # Set the forecast and schedule interval in Connect Customer
-<a name="set-forecast-scheduling-interval"></a>
 
 You can set the granularity for your short-term forecasts and your schedules.
 

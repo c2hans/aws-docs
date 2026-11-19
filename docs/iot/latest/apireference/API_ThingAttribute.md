@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ThingAttribu
 ---
 
 # ThingAttribute
-<a name="API_ThingAttribute"></a>
 
 The properties of the thing, including thing name, thing type name, and a list of thing attributes.
 

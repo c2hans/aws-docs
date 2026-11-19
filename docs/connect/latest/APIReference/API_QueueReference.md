@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_QueueRef
 ---
 
 # QueueReference
-<a name="API_QueueReference"></a>
 
 Contains information about a queue resource for which metrics are returned.
 

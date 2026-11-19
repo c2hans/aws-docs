@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-datasy
 ---
 
 # AWS DataSync Discovery events
-<a name="events-ref-datasync-discovery"></a>
 
 DataSync Discovery sends service events directly to EventBridge.
 

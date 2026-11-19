@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_UpdateAp
 ---
 
 # UpdateApiKey
-<a name="API_UpdateApiKey"></a>
 
 Updates an API key. You can update the key as long as it's not deleted.
 

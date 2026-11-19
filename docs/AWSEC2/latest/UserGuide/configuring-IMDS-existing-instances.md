@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS
 ---
 
 # Modify instance metadata options for existing instances
-<a name="configuring-IMDS-existing-instances"></a>
 
 You can modify the instance metadata options for existing instances.
 

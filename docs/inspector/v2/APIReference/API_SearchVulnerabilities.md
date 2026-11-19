@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_SearchVuln
 ---
 
 # SearchVulnerabilities
-<a name="API_SearchVulnerabilities"></a>
 
 Lists Amazon Inspector coverage details for a specific vulnerability.
 

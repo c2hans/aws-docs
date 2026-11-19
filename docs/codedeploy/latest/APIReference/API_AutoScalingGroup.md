@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_AutoS
 ---
 
 # AutoScalingGroup
-<a name="API_AutoScalingGroup"></a>
 
 Information about an Auto Scaling group.
 

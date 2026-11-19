@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/ter
 ---
 
 # Differences between Amazon Verified Permissions and the Cedar policy language
-<a name="terminology-differences-avp-cedar"></a>
 
 Amazon Verified Permissions uses the Cedar policy language engine to perform its authorization tasks. However, there are some differences between the native Cedar implementation and the implementation of Cedar found in Verified Permissions. This topic identifies those differences.
 

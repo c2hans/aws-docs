@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-
 ---
 
 # cloudfront-associated-with-waf
-<a name="cloudfront-associated-with-waf"></a>
 
 Checks if Amazon CloudFront distributions are associated with either web application firewall (WAF) or WAFv2 web access control lists (ACLs). The rule is NON\_COMPLIANT if a CloudFront distribution is not associated with a WAF web ACL.
 

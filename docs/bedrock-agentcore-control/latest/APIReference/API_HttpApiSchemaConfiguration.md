@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HttpApiSchemaConfiguration
-<a name="API_HttpApiSchemaConfiguration"></a>
 
 The API schema configuration for an HTTP target. This schema defines the API structure that the target exposes.
 

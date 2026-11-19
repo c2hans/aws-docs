@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Event
 ---
 
 # Event
-<a name="API_Event"></a>
 
 Detailed information about an event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableO
 ---
 
 # EnableOrganizationAdminAccount
-<a name="API_EnableOrganizationAdminAccount"></a>
 
 Designates the Security Hub CSPM administrator account for an organization. Can only be called by the organization management account.
 

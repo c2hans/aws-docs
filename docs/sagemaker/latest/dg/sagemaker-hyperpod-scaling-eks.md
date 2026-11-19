@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-s
 ---
 
 # Continuous provisioning for enhanced cluster operations on Amazon EKS
-<a name="sagemaker-hyperpod-scaling-eks"></a>
 
 Amazon SageMaker HyperPod clusters created with Amazon EKS orchestration now supports continuous provisioning, a new capability that enables greater flexibility and efficiency running large-scale AI/ML workloads. Continuous provisioning lets you start training quickly, scale seamlessly, perform maintenance without disrupting operations, and have granular visibility into cluster operations.
 

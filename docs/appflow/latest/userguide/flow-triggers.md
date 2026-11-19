@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/flow-triggers.h
 ---
 
 # Flow triggers
-<a name="flow-triggers"></a>
 
 A *trigger* determines how a flow runs. The following are the supported flow trigger types:
 + **Run on demand** — Users manually run the flow as needed.

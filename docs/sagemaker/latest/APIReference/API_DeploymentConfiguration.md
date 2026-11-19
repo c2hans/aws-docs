@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Deploy
 ---
 
 # DeploymentConfiguration
-<a name="API_DeploymentConfiguration"></a>
 
 The configuration to use when updating the AMI versions.
 

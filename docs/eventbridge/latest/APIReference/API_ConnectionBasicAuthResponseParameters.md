@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Conn
 ---
 
 # ConnectionBasicAuthResponseParameters
-<a name="API_ConnectionBasicAuthResponseParameters"></a>
 
 The authorization parameters for the connection if Basic is specified as the authorization type.
 

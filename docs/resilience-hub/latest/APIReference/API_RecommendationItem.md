@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_R
 ---
 
 # RecommendationItem
-<a name="API_RecommendationItem"></a>
 
 Defines a recommendation.
 

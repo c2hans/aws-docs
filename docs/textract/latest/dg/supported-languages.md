@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/supported-languages.h
 ---
 
 # Supported languages
-<a name="supported-languages"></a>
 
 The following tables show the supported language categories and the API operations that fall into each category.
 

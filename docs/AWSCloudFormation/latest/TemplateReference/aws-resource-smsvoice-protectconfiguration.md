@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SMSVOICE::ProtectConfiguration
-<a name="aws-resource-smsvoice-protectconfiguration"></a>
 
 Create a new protect configuration. By default all country rule sets for each capability are set to `ALLOW`. A protect configurations name is stored as a Tag with the key set to `Name` and value as the name of the protect configuration.
 

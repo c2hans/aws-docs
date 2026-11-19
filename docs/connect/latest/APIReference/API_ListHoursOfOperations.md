@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListHour
 ---
 
 # ListHoursOfOperations
-<a name="API_ListHoursOfOperations"></a>
 
 Provides information about the hours of operation for the specified Connect Customer instance.
 

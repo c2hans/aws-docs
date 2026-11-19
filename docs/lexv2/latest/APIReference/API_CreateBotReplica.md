@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateBotR
 ---
 
 # CreateBotReplica
-<a name="API_CreateBotReplica"></a>
 
 Action to create a replication of the source bot in the secondary region.
 

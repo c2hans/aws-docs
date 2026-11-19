@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Reject
 ---
 
 # RejectInvitation
-<a name="API_RejectInvitation"></a>
 
 Rejects an invitation to contribute the account data to a behavior graph. This operation must be called by an invited member account that has the `INVITED` status.
 

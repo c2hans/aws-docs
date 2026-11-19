@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Fl
 ---
 
 # FlagValue
-<a name="API_FlagValue"></a>
 
 The feature flag value configuration for a treatment, including the enabled state and attribute values.
 

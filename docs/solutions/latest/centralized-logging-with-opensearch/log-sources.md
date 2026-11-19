@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Log sources
-<a name="log-sources"></a>
 
 You must create a log source first before collecting application logs. Centralized Logging with OpenSearch supports the following log sources:
 +  [Instance group](#instance-group-1)

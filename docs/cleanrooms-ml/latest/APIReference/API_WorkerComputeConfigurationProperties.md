@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Wo
 ---
 
 # WorkerComputeConfigurationProperties
-<a name="API_WorkerComputeConfigurationProperties"></a>
 
 The configuration properties for the worker compute environment. These properties allow you to customize the compute settings for your Clean Rooms workloads.
 

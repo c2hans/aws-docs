@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # MetadataConfiguration
-<a name="API_MetadataConfiguration"></a>
 
 Configuration for HTTP header and query parameter propagation between the gateway and target servers.
 

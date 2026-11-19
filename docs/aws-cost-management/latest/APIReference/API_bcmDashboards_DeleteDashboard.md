@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteDashboard
-<a name="API_bcmDashboards_DeleteDashboard"></a>
 
 Deletes a specified dashboard. This action cannot be undone.
 

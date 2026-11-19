@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/vcf-feature-support
 ---
 
 # VCF feature support on Amazon EVS
-<a name="vcf-feature-support"></a>
 
 Check whether Amazon Elastic VMware Service supports a VMware Cloud Foundation (VCF) feature before you plan a design that depends on it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_G
 ---
 
 # GetIpAccessSettings
-<a name="API_GetIpAccessSettings"></a>
 
 Gets the IP access settings.
 

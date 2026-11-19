@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_G
 ---
 
 # GroundStationData
-<a name="API_GroundStationData"></a>
 
 Information about the ground station data.
 

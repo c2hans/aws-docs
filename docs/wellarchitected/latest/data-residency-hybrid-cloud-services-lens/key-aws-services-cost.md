@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Key AWS services
-<a name="key-aws-services-cost"></a>
 +  [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/)
 +  [AWS Local Zones](https://aws.amazon.com/about-aws/global-infrastructure/localzones/)
 +  [AWS Outposts](https://aws.amazon.com/outposts/)

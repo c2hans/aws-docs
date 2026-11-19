@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsS
 ---
 
 # AwsEcsServicePlacementStrategiesDetails
-<a name="API_AwsEcsServicePlacementStrategiesDetails"></a>
 
 A placement strategy that determines how to place the tasks for the service.
 

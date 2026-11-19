@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeRepl
 ---
 
 # DescribeReplicationConfigs
-<a name="API_DescribeReplicationConfigs"></a>
 
 Returns one or more existing AWS DMS Serverless replication configurations as a list of structures.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSH
 ---
 
 # AWSHealth\_EventProcessorServiceRolePolicy
-<a name="AWSHealth_EventProcessorServiceRolePolicy"></a>
 
 **Description**: Allows AWS Health to enable the Health event processor feature.
 

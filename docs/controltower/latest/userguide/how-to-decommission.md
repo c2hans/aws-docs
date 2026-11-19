@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/how-to-dec
 ---
 
 # How to decommission a landing zone
-<a name="how-to-decommission"></a>
 
 To decommission your AWS Control Tower landing zone from the console, follow the procedure given here.
 

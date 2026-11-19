@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ResourceI
 ---
 
 # ResourceIdentifier
-<a name="API_ResourceIdentifier"></a>
 
 The details that identify a resource that is discovered by AWS Config, including the resource type, ID, and (if available) the custom resource name.
 

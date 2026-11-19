@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # DomainSuggestion
-<a name="API_domains_DomainSuggestion"></a>
 
 Information about one suggested domain name.
 

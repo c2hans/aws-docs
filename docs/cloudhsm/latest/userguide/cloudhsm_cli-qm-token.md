@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-q
 ---
 
 # The quorum token-sign category in CloudHSM CLI
-<a name="cloudhsm_cli-qm-token"></a>
 
 In the CloudHSM CLI, **quorum token-sign** is a category for a group of commands that, when combined with **quorum token-sign**, create a command specific to quorum authentication, or M of N operations.
 

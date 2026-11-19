@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_FailedS
 ---
 
 # FailedScheduledUpdateGroupActionRequest
-<a name="API_FailedScheduledUpdateGroupActionRequest"></a>
 
 Describes a scheduled action that could not be created, updated, or deleted.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/respon
 ---
 
 # Responses
-<a name="responses"></a>
 
 ## Content of Responses
 <a name="content-responses"></a>

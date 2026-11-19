@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # ListServiceViews
-<a name="API_ListServiceViews"></a>
 
 Lists all Resource Explorer service views available in the current AWS account. This operation returns the ARNs of available service views.
 

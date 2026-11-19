@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/check-asse
 ---
 
 # Check the status of an asset
-<a name="check-asset-status"></a>
 
 You can use the AWS IoT SiteWise console or API to check the status of an asset.
 

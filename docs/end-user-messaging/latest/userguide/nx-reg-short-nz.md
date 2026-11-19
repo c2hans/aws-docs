@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # New Zealand
-<a name="nx-reg-short-nz"></a>
 
 To send messages that use a short code in New Zealand, you must complete the New Zealand short code registration.
 

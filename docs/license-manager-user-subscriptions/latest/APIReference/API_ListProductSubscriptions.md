@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # ListProductSubscriptions
-<a name="API_ListProductSubscriptions"></a>
 
 Lists the user-based subscription products available from an identity provider.
 

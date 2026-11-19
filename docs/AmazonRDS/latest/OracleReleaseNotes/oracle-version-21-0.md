@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/orac
 ---
 
 # Amazon RDS for Oracle Database 21c (21.0.0.0)
-<a name="oracle-version-21-0"></a>
 
 Amazon RDS for Oracle Database 21c (21.0.0.0) incorporates bug fixes from Oracle by using Release Updates (RUs). The naming format for an RU is as follows: `{{release}}.ru-{{date}}.rur-{{date}}.{{rnumber}}`. For example, the Oracle Database 21c update released by Oracle Corporation in April 2024 is named `21.0.0.0.ru-2024-04.rur-2024-04.r1`. The naming format has the following components:
 + The `{{release}}` is the five-digit number of the release, for example, `21.0.0.0`.

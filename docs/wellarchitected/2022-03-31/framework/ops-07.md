@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS 7  How do you know that you are ready to support a workload?
-<a name="ops-07"></a>
 
  Evaluate the operational readiness of your workload, processes and procedures, and personnel to understand the operational risks related to your workload.
 

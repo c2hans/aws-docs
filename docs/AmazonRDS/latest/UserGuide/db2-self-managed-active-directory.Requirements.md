@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-self-mana
 ---
 
 # Requirements
-<a name="db2-self-managed-active-directory.Requirements"></a>
 
 Make sure that you meet the following requirements before joining an RDS for Db2 DB instance to your self-managed AD domain.
 

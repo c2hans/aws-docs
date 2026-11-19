@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Best Practices for Managing Data Synchronization and Schema Changes
-<a name="best-practices-for-managing-data-synchronization-and-schema-changes"></a>
 
  The complexity of managing data synchronization across two distinct environments depends on the number of data stores in use, the intricacy of the data model, and the data consistency requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_EnaS
 ---
 
 # EnaSrdSpecificationRequest
-<a name="API_EnaSrdSpecificationRequest"></a>
 
 Defines Elastic Network Adapter (ENA) Scalable Reliable Datagram (SRD) configuration.
 

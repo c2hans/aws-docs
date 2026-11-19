@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # Add an authorization rule to an AWS Client VPN endpoint
-<a name="cvpn-working-rule-authorize-add"></a>
 
 You can add an authorization rule to grant or restrict access to a Client VPN endpoint by using the AWS Management Console. An authorization rule can be added to a Client VPN endpoint using either the Amazon VPC Console or by using the command line or API.
 

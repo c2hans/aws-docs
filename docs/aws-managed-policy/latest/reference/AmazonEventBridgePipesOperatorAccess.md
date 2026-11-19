@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEventBridgePipesOperatorAccess
-<a name="AmazonEventBridgePipesOperatorAccess"></a>
 
 **Description**: Provides read-only and operator (ability to Stop and Start running Pipes) access to Amazon EventBridge Pipes.
 

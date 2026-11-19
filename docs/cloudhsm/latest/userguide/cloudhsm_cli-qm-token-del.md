@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-q
 ---
 
 # Delete quorum tokens using CloudHSM CLI
-<a name="cloudhsm_cli-qm-token-del"></a>
 
 Use the **quorum token-sign delete** command in CloudHSM CLI to delete one or more tokens for a quorum authorized service.
 

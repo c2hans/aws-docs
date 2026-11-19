@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/instance-recommendat
 ---
 
 # Get your inference recommendation job results
-<a name="instance-recommendation-results"></a>
 
 Collect the results of your inference recommendation job programmatically with AWS SDK for Python (Boto3), the AWS CLI, Studio Classic, or the SageMaker AI console.
 

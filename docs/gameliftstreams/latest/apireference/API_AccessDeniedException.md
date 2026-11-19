@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # AccessDeniedException
-<a name="API_AccessDeniedException"></a>
 
 You don't have the required permissions to access this Amazon GameLift Streams resource. Correct the permissions before you try again.
 

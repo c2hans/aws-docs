@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/byo-bedrock-kb-pe
 ---
 
 # Setting up permissions
-<a name="byo-bedrock-kb-permissions"></a>
 
 AWS Quick authenticates to Amazon Bedrock using IAM SigV4 credentials via the AWS Quick service role. The service role requires the following actions on the knowledge base:
 + `bedrock:Retrieve`

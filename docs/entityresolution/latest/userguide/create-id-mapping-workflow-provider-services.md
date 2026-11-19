@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/create
 ---
 
 # Creating an ID mapping workflow (provider services)
-<a name="create-id-mapping-workflow-provider-services"></a>
 
 After completing the [prerequisites](create-idmw-two-accounts-prerequisite.md), you can create one or more ID mapping workflows using the LiveRamp provider service. LiveRamp translates a set of source RampIDs to another set using either maintained or derived RampIDs.
 

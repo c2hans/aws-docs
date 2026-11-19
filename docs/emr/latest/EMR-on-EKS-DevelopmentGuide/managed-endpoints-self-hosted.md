@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/m
 ---
 
 # Using self-hosted Jupyter notebooks
-<a name="managed-endpoints-self-hosted"></a>
 
 You can host and manage Jupyter or JupyterLab notebooks on an Amazon EC2 instance or on your own Amazon EKS cluster as a *self-hosted Jupyter notebook*. You can then run interactive workloads with your self-hosted Jupyter notebooks. The following sections walk through the process to set up and deploy a self-hosted Jupyter notebook on an Amazon EKS cluster.
 

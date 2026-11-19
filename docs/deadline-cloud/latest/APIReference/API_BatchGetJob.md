@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetJob
-<a name="API_BatchGetJob"></a>
 
 Retrieves multiple jobs in a single request. This is a batch version of the `GetJob` API.
 

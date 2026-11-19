@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportapp/latest/APIReference/Welcome.h
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 You can use the Support App in Slack API to manage your support cases in Slack for your AWS account. After you configure your Slack workspace and channel with the Support App, you can perform the following tasks directly in your Slack channel:
 + Create, search, update, and resolve your support cases
@@ -22,4 +21,4 @@ You can also use the AWS Management Console instead of the Support App API to ma
 You must have a Business or Enterprise Support plan to use the Support App API.
 For more information about the Support App endpoints, see the [Support App in Slack endpoints](https://docs.aws.amazon.com/general/latest/gr/awssupport.html#awssupport_app_region) in the * AWS General Reference*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

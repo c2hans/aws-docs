@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/SECT
 ---
 
 # Working with Glue Data Catalog views
-<a name="SECTION-jobs-glue-data-catalog-views"></a>
 
 You can create and manage views in the AWS Glue Data Catalog for use with EMR Serverless. These are known commonly as AWS Glue Data Catalog views. These views are useful because they support multiple SQL query engines, so you can access the same view across different AWS services, such as EMR Serverless, Amazon Athena, and Amazon Redshift.
 

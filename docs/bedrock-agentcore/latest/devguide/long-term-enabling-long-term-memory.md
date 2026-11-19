@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/long-t
 ---
 
 # Enable long-term memory
-<a name="long-term-enabling-long-term-memory"></a>
 
 You can enable long-term memory in two ways: by adding strategies when you first [create an AgentCore Memory](memory-create-a-memory-store.md) , or by updating an existing resource to include them.
 

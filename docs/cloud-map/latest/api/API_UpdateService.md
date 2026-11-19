@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_UpdateService.h
 ---
 
 # UpdateService
-<a name="API_UpdateService"></a>
 
 Submits a request to perform the following operations:
 + Update the TTL setting for existing `DnsRecords` configurations

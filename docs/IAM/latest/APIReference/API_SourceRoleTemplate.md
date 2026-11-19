@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_SourceRoleTe
 ---
 
 # SourceRoleTemplate
-<a name="API_SourceRoleTemplate"></a>
 
 Contains information about the role template that a role was created from.
 

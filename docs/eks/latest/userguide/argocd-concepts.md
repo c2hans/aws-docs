@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-concepts.htm
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Argo CD concepts
-<a name="argocd-concepts"></a>
 
 Argo CD implements GitOps by treating Git as the single source of truth for your application deployments. This topic walks through a practical example, then explains the core concepts you need to understand when working with the EKS Capability for Argo CD.
 

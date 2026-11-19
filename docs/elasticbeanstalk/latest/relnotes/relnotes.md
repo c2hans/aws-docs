@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/relnote
 ---
 
 # AWS Elastic Beanstalk release notes
-<a name="relnotes"></a>
 
 This chapter contains all of the Elastic Beanstalk release notes, latest first, organized by year of release.
 

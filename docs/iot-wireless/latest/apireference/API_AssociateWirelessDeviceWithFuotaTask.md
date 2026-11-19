@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Ass
 ---
 
 # AssociateWirelessDeviceWithFuotaTask
-<a name="API_AssociateWirelessDeviceWithFuotaTask"></a>
 
 Associate a wireless device with a FUOTA task.
 

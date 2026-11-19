@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # ServerChallenge
-<a name="API_rekognitionstreaming_ServerChallenge"></a>
 
 Information on the challenge sent by the server.
 

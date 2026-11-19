@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AnomalyScore
-<a name="API_AnomalyScore"></a>
 
 Quantifies the anomaly. The higher score means that it's more anomalous.
 

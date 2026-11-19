@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteIn
 ---
 
 # RouteIntermodalVehicleOptions
-<a name="API_RouteIntermodalVehicleOptions"></a>
 
 Options for the vehicle leg of the intermodal route.
 

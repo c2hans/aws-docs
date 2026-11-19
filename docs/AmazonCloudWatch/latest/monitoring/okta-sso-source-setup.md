@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/okta-
 ---
 
 # Source configuration for Okta SSO
-<a name="okta-sso-source-setup"></a>
 
 ## Integrating with Okta SSO
 <a name="okta-sso-integration"></a>

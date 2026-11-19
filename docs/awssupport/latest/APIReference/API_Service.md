@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Servi
 ---
 
 # Service
-<a name="API_Service"></a>
 
 Information about an AWS service returned by the [DescribeServices](API_DescribeServices.md) operation.
 

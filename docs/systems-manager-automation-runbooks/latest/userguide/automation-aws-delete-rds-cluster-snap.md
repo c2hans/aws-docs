@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-DeleteRDSClusterSnapshot`
-<a name="automation-aws-delete-rds-cluster-snap"></a>
 
  **Description**
 

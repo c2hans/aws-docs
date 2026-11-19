@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/managin
 ---
 
 # WorkSpaces Applications Console (Web Connection)
-<a name="managing-image-builders-connect-console"></a>
 
 To use the WorkSpaces Applications console to connect to an image builder through a web browser, complete the following steps.
 

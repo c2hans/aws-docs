@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailChecksSensitiveInformationResult
-<a name="API_runtime_GuardrailChecksSensitiveInformationResult"></a>
 
 The sensitive information check results.
 

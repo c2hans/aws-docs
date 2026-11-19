@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeMeta
 ---
 
 # DescribeMetadataModelCreations
-<a name="API_DescribeMetadataModelCreations"></a>
 
 Returns a paginated list of metadata model creation requests for a migration project, initiated by [StartMetadataModelCreation](https://docs.aws.amazon.com/dms/latest/APIReference/API_StartMetadataModelCreation.html).
 

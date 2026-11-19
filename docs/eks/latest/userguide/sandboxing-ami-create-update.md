@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/sandboxing-ami-crea
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create and update a Nitro Sandbox AMI
-<a name="sandboxing-ami-create-update"></a>
 
 EKS Auto Mode includes Nitro Sandbox support with no additional configuration. If you run managed node groups or self-managed nodes outside of Auto Mode, you build a custom AMI that contains the components in this topic, then join nodes built from that AMI to your cluster. For a scripted alternative to the manual steps that follow, use the pod-isolation provisioner in the [Amazon EKS AMI](https://github.com/awslabs/amazon-eks-ami) repository, which builds the AMI with Packer: [install-pod-isolation.sh](https://github.com/awslabs/amazon-eks-ami/blob/main/templates/al2023/provisioners/install-pod-isolation.sh).
 

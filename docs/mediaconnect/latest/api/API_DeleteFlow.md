@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DeleteFlow.h
 ---
 
 # DeleteFlow
-<a name="API_DeleteFlow"></a>
 
  Deletes a flow. Before you can delete a flow, you must stop the flow.
 

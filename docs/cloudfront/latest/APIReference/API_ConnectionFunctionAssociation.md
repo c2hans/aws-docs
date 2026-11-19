@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Conne
 ---
 
 # ConnectionFunctionAssociation
-<a name="API_ConnectionFunctionAssociation"></a>
 
 A connection function association.
 

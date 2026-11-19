@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Ba
 ---
 
 # BatchPutPropertyError
-<a name="API_BatchPutPropertyError"></a>
 
 An error returned by the `BatchPutProperty` action.
 

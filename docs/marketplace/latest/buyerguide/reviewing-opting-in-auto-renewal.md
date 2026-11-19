@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/reviewing-
 ---
 
 # Reviewing and opting in when you accept an offer
-<a name="reviewing-opting-in-auto-renewal"></a>
 
 You can see which offers include auto-renewal before you accept, and choose your preference during acceptance.
 

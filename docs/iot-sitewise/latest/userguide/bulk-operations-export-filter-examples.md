@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/bulk-opera
 ---
 
 # Export metadata examples
-<a name="bulk-operations-export-filter-examples"></a>
 
 When you perform a bulk export of your AWS IoT SiteWise content to Amazon S3, you can specify *filters* to limit which specific asset models and assets you'd like to export.
 

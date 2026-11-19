@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.DBM
 ---
 
 # Deleting messages
-<a name="SQLServer.DBMail.Delete"></a>
 
 You use the `rds_sysmail_delete_mailitems_sp` stored procedure to delete messages.
 

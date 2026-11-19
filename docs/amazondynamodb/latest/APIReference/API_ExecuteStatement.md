@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_E
 ---
 
 # ExecuteStatement
-<a name="API_ExecuteStatement"></a>
 
 This operation allows you to perform reads and singleton writes on data stored in DynamoDB, using PartiQL.
 

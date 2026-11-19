@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UntagResource
-<a name="API_budgets_UntagResource"></a>
 
 Deletes tags associated with a budget or budget action resource.
 

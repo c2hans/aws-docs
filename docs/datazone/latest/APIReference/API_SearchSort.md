@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_SearchS
 ---
 
 # SearchSort
-<a name="API_SearchSort"></a>
 
 The details of the way to sort search results.
 

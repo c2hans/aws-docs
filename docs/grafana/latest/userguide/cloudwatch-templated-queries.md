@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/cloudwatch-temp
 ---
 
 # Templated queries
-<a name="cloudwatch-templated-queries"></a>
 
  Instead of hardcoding details such as servers, applications, and sensor names in your metric queries, you can use variables in their place. Variables are shown as dropdown select boxes at the top of the dashboard. You can use these dropdown boxes to change the data being displayed in your dashboard.
 

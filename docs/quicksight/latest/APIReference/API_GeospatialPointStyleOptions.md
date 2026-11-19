@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialPointStyleOptions
-<a name="API_GeospatialPointStyleOptions"></a>
 
 The point style of the geospatial map.
 

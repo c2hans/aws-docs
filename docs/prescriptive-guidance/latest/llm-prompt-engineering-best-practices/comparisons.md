@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/llm-prompt-
 ---
 
 # Comparing prompt templates
-<a name="comparisons"></a>
 
 The following comparison is performed between two prompt templates:
 + A basic RAG prompt template with a financial analyst persona

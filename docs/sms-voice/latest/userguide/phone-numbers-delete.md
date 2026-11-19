@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers
 ---
 
 # Release a phone number in AWS End User Messaging SMS
-<a name="phone-numbers-delete"></a>
 
 If you don't need a phone number that you had previously requested through AWS End User Messaging SMS anymore, you can release it from your AWS End User Messaging SMS account. When you release a number, AWS stops charging you for it in your bill for the next calendar month.
 

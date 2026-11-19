@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Rate limit metrics
-<a name="gateway-rate-limits-metrics"></a>
 
 Rate limit entries specify one or more metrics that define what is being measured and the time window for enforcement. Each metric type has specific constraints on supported periods and target types.
 

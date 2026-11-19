@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/color-space-output-d
 ---
 
 # Result when converting color space to Dolby Vision 8.1
-<a name="color-space-output-dolby81"></a>
 
 Read this section if you set up one or more MediaLive outputs to [convert the color space](colorspace-output-setup.md#colorspace-output-setup-convert) to Dolby Vision 8.1. The following table shows how MediaLive handles each type of color space that it encounters in the source.
 

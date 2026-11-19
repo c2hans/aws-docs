@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SourceConne
 ---
 
 # SourceConnectorProperties
-<a name="API_SourceConnectorProperties"></a>
 
  Specifies the information that is required to query a particular connector.
 

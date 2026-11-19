@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # DocumentBoundingBox
-<a name="API_data-automation_DocumentBoundingBox"></a>
 
 Bounding box settings for documents.
 

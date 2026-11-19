@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Security
 ---
 
 # SecurityProfilesSearchFilter
-<a name="API_SecurityProfilesSearchFilter"></a>
 
 Filters to be applied to search results.
 

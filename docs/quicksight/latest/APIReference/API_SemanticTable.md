@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Seman
 ---
 
 # SemanticTable
-<a name="API_SemanticTable"></a>
 
 A semantic table that represents the final analytical structure of the data.
 

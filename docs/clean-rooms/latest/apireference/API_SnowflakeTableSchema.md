@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Snow
 ---
 
 # SnowflakeTableSchema
-<a name="API_SnowflakeTableSchema"></a>
 
  The schema of a Snowflake table.
 

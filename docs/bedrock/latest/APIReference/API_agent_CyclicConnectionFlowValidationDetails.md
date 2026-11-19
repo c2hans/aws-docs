@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Cy
 ---
 
 # CyclicConnectionFlowValidationDetails
-<a name="API_agent_CyclicConnectionFlowValidationDetails"></a>
 
 Details about a cyclic connection detected in the flow.
 

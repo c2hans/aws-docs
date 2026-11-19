@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Sage
 ---
 
 # SageMakerPipelineParameter
-<a name="API_SageMakerPipelineParameter"></a>
 
 Name/Value pair of a parameter to start execution of a SageMaker AI Model Building Pipeline.
 

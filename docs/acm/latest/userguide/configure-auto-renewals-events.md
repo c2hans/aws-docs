@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/configure-auto-rene
 ---
 
 # Configure automatic renewal events
-<a name="configure-auto-renewals-events"></a>
 
 With AWS Certificate Manager exportable public certificates and Amazon EventBridge, you can configure automatic certificate renewals events.
 

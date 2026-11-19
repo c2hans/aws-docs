@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.EAC.1] Organize infrastructure as code for scale
-<a name="dl.eac.1-organize-infrastructure-as-code-for-scale"></a>
 
  **Category:** FOUNDATIONAL
 

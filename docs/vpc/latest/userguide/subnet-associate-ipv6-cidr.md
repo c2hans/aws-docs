@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/subnet-associate-ip
 ---
 
 # Add or remove an IPv6 CIDR block from your subnet
-<a name="subnet-associate-ipv6-cidr"></a>
 
 You can associate an IPv6 CIDR block with an existing subnet in your VPC. The subnet must not have an existing IPv6 CIDR block associated with it.
 

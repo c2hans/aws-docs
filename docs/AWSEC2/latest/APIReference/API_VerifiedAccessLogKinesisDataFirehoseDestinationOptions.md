@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessLogKinesisDataFirehoseDestinationOptions
-<a name="API_VerifiedAccessLogKinesisDataFirehoseDestinationOptions"></a>
 
 Describes Amazon Kinesis Data Firehose logging options.
 

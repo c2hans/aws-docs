@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/share-model-pre
 ---
 
 # Fulfill prerequisites to share models
-<a name="share-model-prereq"></a>
 
 Amazon Bedrock interfaces with the [AWS Resource Access Manager](https://docs.aws.amazon.com/ram/latest/userguide/) and [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/) services to allow the sharing of models. Before you can share a model with another account, you must fulfill the following prerequisites:
 

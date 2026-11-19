@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # DeletePolicyStatement
-<a name="API_DeletePolicyStatement"></a>
 
 Deletes the policy statement.
 

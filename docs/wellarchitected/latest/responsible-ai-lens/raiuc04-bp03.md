@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIUC04-BP03 Identify accessibility requirements for different user groups
-<a name="raiuc04-bp03"></a>
 
  Identifying accessibility points assists to generate requirements for people with different capabilities and disabilities to use the proposed AI system effectively.
 

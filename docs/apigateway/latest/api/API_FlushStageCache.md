@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_FlushStageCach
 ---
 
 # FlushStageCache
-<a name="API_FlushStageCache"></a>
 
 Flushes a stage's cache.
 

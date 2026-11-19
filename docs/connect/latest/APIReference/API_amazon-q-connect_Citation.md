@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # Citation
-<a name="API_amazon-q-connect_Citation"></a>
 
 A citation that references source content.
 

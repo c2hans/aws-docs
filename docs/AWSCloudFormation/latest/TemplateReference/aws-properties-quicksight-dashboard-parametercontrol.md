@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard ParameterControl
-<a name="aws-properties-quicksight-dashboard-parametercontrol"></a>
 
 The control of a parameter that users can interact with in a dashboard or an analysis.
 

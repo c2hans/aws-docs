@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Own
 ---
 
 # OwnerDirectoryDescription
-<a name="API_OwnerDirectoryDescription"></a>
 
 Contains the directory owner account details shared with the directory consumer account.
 

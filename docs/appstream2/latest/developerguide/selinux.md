@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/selinux
 ---
 
 # SELinux on Red Hat Enterprise Linux and Rocky Linux
-<a name="selinux"></a>
 
 By default, Security Enhanced Linux (SELinux) is `enabled` and set to `enforcing` mode for WorkSpaces Applications image builders and streaming instances powered by Red Hat Enterprise Linux and Rocky Linux. In `enforcing` mode, permission denials are enforced. SELinux is a collection of kernel features and utilities to provide a strong, flexible, mandatory access control (MAC) architecture to the major subsystems of the kernel.
 

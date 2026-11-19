@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Use the solution
-<a name="use-the-solution"></a>
 
 This section provides guidance on using the Spatial Data Management on AWS solution for managing spatial assets.
 

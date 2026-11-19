@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-troub
 ---
 
 # Troubleshooting S3 Files
-<a name="s3-files-troubleshooting"></a>
 
 This page helps you diagnose and resolve common issues with S3 Files.
 + [Mount command fails](#s3-files-troubleshooting-mount-fails)

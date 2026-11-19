@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-remove
 ---
 
 # Remove an account from AFT
-<a name="aft-remove-account"></a>
 
  This topic describes how to remove an account from AFT, so the AFT pipeline stops deploying and updating the account.
 

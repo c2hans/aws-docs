@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/c
 ---
 
 # Creating Kinesis Agent for Windows Plugins
-<a name="creating-kinesis-agent-windows-plugins"></a>
 
 For most situations, creating an Amazon Kinesis Agent for Microsoft Windows plugin is not necessary. Kinesis Agent for Windows is highly configurable and contains powerful sources and sinks, such as `DirectorySource` and `KinesisStream`, which are sufficient for most scenarios. For details about the existing sources and sinks, see [Configuring Amazon Kinesis Agent for Microsoft Windows](configuring-kinesis-agent-windows.md).
 

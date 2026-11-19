@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Recomm
 ---
 
 # Recommendation
-<a name="API_Recommendation"></a>
 
 Contains a recommended action.
 

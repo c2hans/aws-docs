@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # MetricKeyDataPoints
-<a name="API_MetricKeyDataPoints"></a>
 
 A time-ordered series of data points, corresponding to a dimension of a Performance Insights metric.
 

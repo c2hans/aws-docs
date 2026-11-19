@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/m
 ---
 
 # Migrating to Partner Central in the AWS Console
-<a name="migrating-to-partner-central"></a>
 
 Existing APN Partners will be provided with a self-service migration tool from within their legacy Partner Central account. Upon completing migration pre-requisites, partners can use the tool to schedule and complete their migration.
 

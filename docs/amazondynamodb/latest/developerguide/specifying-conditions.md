@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/spe
 ---
 
 # Using IAM policy conditions for fine-grained access control
-<a name="specifying-conditions"></a>
 
 When you grant permissions in DynamoDB, you can specify conditions that determine how a permissions policy takes effect.
 

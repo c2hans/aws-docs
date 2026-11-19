@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Syslog_
 ---
 
 # Monitoring syslog ingestion
-<a name="CWL_Syslog_Monitoring"></a>
 
 The syslog ingestion service publishes metrics to CloudWatch in the `AWS/Logs` namespace. These metrics give you visibility into your syslog ingestion pipeline – what was received, what was dropped, and why.
 

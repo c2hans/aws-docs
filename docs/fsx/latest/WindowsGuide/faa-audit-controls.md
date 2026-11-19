@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/faa-audit-contro
 ---
 
 # Setting file and folder auditing controls
-<a name="faa-audit-controls"></a>
 
 You need to set audit controls on the files and folders that you want audited for user access attempts. Audit controls are also known as NTFS system access control lists (SACLs).
 

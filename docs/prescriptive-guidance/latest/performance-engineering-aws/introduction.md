@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/performance
 ---
 
 # A phased approach for performance engineering in the AWS Cloud
-<a name="introduction"></a>
 
 *Varun Sharma, Archana Bhatnagar, Akash Kumar, and Pratik Sharma, Amazon Web Services*
 

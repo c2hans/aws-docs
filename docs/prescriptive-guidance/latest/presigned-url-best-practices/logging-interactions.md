@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/presigned-u
 ---
 
 # Logging interactions and mitigations
-<a name="logging-interactions"></a>
 
 A presigned URL contains a signature that you can use, before it expires, to perform the specific API operation it was signed for. Treat a presigned URL as a temporary access credential. Keep the signature private to the parties that need it. In most environments, these parties are the client that sends the request and the server that receives it. Sending the signature as part of a direct HTTPS session maintains its private nature, because only participants in the HTTPS session can see the URI that transmits the signature.
 

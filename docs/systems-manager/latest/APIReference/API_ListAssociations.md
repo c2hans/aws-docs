@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ListAssociations
-<a name="API_ListAssociations"></a>
 
 Returns all State Manager associations in the current AWS account and AWS Region. You can limit the results to a specific State Manager association document or managed node by specifying a filter. State Manager is a tool in AWS Systems Manager.
 

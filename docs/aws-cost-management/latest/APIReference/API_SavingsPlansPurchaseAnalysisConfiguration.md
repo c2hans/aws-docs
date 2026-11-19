@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SavingsPlansPurchaseAnalysisConfiguration
-<a name="API_SavingsPlansPurchaseAnalysisConfiguration"></a>
 
 The configuration for the Savings Plans purchase analysis.
 

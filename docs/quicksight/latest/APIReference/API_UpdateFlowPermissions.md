@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateFlowPermissions
-<a name="API_UpdateFlowPermissions"></a>
 
 Updates permissions against principals on a flow.
 

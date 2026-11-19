@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Release notes for AWS Schema Conversion Tool
-<a name="CHAP_ReleaseNotes"></a>
 
 This section contains release notes for AWS SCT, starting with version 1.0.640.
 

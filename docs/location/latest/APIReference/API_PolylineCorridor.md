@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Polylin
 ---
 
 # PolylineCorridor
-<a name="API_PolylineCorridor"></a>
 
 Geometry defined as an encoded corridor - an encoded polyline with a radius that defines the width of the corridor.
 

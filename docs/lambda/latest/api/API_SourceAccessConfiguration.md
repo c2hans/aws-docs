@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_SourceAccessConfig
 ---
 
 # SourceAccessConfiguration
-<a name="API_SourceAccessConfiguration"></a>
 
 To secure and define access to your event source, you can specify the authentication protocol, VPC components, or virtual host.
 

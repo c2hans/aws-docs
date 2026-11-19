@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetControlsOption
-<a name="API_SheetControlsOption"></a>
 
 Sheet controls option.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-
 ---
 
 # Invoke REST APIs in API Gateway
-<a name="how-to-call-api"></a>
 
 To call a deployed API, clients submit requests to the URL for the API Gateway component service for API execution, known as `execute-api`.
 

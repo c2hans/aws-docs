@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/edit-id-map
 ---
 
 # Editing an ID mapping table
-<a name="edit-id-mapping-table"></a>
 
 As a collaboration member, you can edit the ID mapping table that you have created.
 

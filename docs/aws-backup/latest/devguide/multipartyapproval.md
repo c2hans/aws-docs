@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/multipartyapp
 ---
 
 # Multi-party approval for logically air-gapped vaults
-<a name="multipartyapproval"></a>
 
 ## Overview of Multi-party approval in a logically air-gapped vault
 <a name="multipartyapproval-overview"></a>

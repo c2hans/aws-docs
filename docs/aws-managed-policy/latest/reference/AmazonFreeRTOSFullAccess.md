@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonFreeRTOSFullAccess
-<a name="AmazonFreeRTOSFullAccess"></a>
 
 **Description**: Full Access Policy for Amazon FreeRTOS
 

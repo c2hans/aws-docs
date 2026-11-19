@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # AMS host management reports
-<a name="ams-host-man"></a>
 
 **Topics**
 + [SSM Agent Coverage report](#reportintg-ssm-coverage)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Smart products
-<a name="mfg-smart-products"></a>
 
 The smart products diagram shows how to connect manufactured products and machines to AWS for telemetry and event processing.
 

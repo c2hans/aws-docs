@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/getting-current
 ---
 
 # Get the current ephemeris for a satellite
-<a name="getting-current-ephemeris"></a>
 
  The current ephemeris in use by AWS Ground Station for a specific satellite can be retrieved by calling the [GetSatellite](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_GetSatellite.html) or [ListSatellites](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ListSatellites.html) actions. Both of these methods will return metadata for the ephemeris currently in use. This ephemeris metadata is different for custom ephemerides uploaded to AWS Ground Station and for default ephemerides.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference/templates-t
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Template Versions
-<a name="templates-template-name-template-type-versions"></a>
 
 A *message template* is a set of content and settings that you can define, save, and reuse in email messages, push notifications, SMS text messages, and voice messages for any of your Amazon Pinpoint applications. To help you develop and maintain templates, Amazon Pinpoint supports versioning for all types of message templates.
 

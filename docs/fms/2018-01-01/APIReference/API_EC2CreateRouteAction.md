@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_EC2Creat
 ---
 
 # EC2CreateRouteAction
-<a name="API_EC2CreateRouteAction"></a>
 
 Information about the CreateRoute action in Amazon EC2.
 

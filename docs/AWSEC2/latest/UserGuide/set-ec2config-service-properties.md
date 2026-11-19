@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-ec2config-se
 ---
 
 # Set EC2Config service properties from the system dialog on your EC2 Windows instance
-<a name="set-ec2config-service-properties"></a>
 
 The following procedure describes how to use the **EC2 Service Properties** system dialog to enable or disable settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeC
 ---
 
 # DescribeCoipPools
-<a name="API_DescribeCoipPools"></a>
 
 Describes the specified customer-owned address pools or all of your customer-owned address pools.
 

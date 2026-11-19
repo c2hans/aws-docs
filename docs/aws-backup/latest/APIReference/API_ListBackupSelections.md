@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListB
 ---
 
 # ListBackupSelections
-<a name="API_ListBackupSelections"></a>
 
 Returns an array containing metadata of the resources associated with the target backup plan.
 

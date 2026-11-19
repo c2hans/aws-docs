@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_User.htm
 ---
 
 # User
-<a name="API_User"></a>
 
 Contains information about a user account for an Connect Customer instance.
 

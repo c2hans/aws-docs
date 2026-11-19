@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/choose-loca
 ---
 
 # Choose an MQTT broker
-<a name="choose-local-mqtt-broker"></a>
 
 AWS IoT Greengrass provides options for you to choose which local MQTT broker to run on your core devices. Client devices connect to the MQTT broker that runs on a core device, so choose an MQTT broker that is compatible with the client devices that you want to connect.
 

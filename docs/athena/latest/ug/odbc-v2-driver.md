@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver.html
 ---
 
 # Amazon Athena ODBC 2.x
-<a name="odbc-v2-driver"></a>
 
 You can use an ODBC connection to connect to Amazon Athena from many third-party SQL client tools and applications. You set up the ODBC connection on your client computer.
 

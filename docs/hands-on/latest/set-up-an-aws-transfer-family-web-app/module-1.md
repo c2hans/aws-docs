@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/set-up-an-aws-transfer-f
 ---
 
 # Task 1: Create the web app
-<a name="module-1"></a>
 
 |  |  |
 | --- |--- |

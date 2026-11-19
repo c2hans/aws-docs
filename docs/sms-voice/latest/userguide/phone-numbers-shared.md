@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers
 ---
 
 # List shared phone numbers with the AWS CLI
-<a name="phone-numbers-shared"></a>
 
 You can use the [describe-phone-numbers](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/describe-phone-numbers.html) or the [AWS RAM console](https://console.aws.amazon.com/ram) to view origination phone numbers shared with your account. For more information about shared resources, see [Working with shared resources in AWS End User Messaging SMS](shared-resources.md).
 

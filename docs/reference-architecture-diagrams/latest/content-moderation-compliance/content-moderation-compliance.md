@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Content Moderation and Compliance Using AWS AI Services
-<a name="content-moderation-compliance"></a>
 
 Publication date: **October 28, 2022 ([Diagram history](#diagram-history))**
 

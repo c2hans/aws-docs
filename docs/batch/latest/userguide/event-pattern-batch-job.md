@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/event-pattern-bat
 ---
 
 # Tutorial: Create a rule with an event pattern
-<a name="event-pattern-batch-job"></a>
 
 The following procedure covers how to create a rule with an event pattern.
 

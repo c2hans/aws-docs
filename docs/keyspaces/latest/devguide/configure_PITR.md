@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/configure_PITR
 ---
 
 # Configure PITR for a table in Amazon Keyspaces
-<a name="configure_PITR"></a>
 
 You can configure a table in Amazon Keyspaces for backup and restore operations using PITR with the console, CQL, and the AWS CLI.
 

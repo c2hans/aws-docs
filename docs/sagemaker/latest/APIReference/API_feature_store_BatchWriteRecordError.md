@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_featur
 ---
 
 # BatchWriteRecordError
-<a name="API_feature_store_BatchWriteRecordError"></a>
 
 The error that has occurred when attempting to write a record in a batch.
 

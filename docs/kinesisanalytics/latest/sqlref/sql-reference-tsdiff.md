@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # TSDIFF
-<a name="sql-reference-tsdiff"></a>
 
 Returns NULL if any of the arguments is null.
 

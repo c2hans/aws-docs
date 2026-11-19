@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/upgradeguide/downg
 ---
 
 # Step B: Copy the AWS Elemental installer
-<a name="downgrades-lv-upg-locate-sw-dn"></a>
 
 Locate and copy the installer for Elemental Live.
 

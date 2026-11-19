@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TreeM
 ---
 
 # TreeMapAggregatedFieldWells
-<a name="API_TreeMapAggregatedFieldWells"></a>
 
 Aggregated field wells of a tree map.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/add-hsm.html
 ---
 
 # Adding an HSM to an AWS CloudHSM cluster
-<a name="add-hsm"></a>
 
 The following figure illustrates the events that occur when you add an HSM to a cluster.
 

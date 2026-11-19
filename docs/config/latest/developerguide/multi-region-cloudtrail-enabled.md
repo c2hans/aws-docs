@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/multi-regio
 ---
 
 # multi-region-cloudtrail-enabled
-<a name="multi-region-cloudtrail-enabled"></a>
 
 **Important**
 For this rule, the rule identifier (MULTI\_REGION\_CLOUD\_TRAIL\_ENABLED) and rule name (multi-region-cloudtrail-enabled) are different.

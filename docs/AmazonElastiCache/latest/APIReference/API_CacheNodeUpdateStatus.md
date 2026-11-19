@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # CacheNodeUpdateStatus
-<a name="API_CacheNodeUpdateStatus"></a>
 
 The status of the service update on the cache node
 

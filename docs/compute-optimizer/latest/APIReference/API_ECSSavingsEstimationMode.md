@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ECSSavingsEstimationMode
-<a name="API_ECSSavingsEstimationMode"></a>
 
  Describes the savings estimation mode used for calculating savings opportunity for Amazon ECS services.
 

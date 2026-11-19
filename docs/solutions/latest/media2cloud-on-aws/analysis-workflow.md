@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/anal
 ---
 
 # Analysis workflow
-<a name="analysis-workflow"></a>
 
  The analysis workflow includes AWS Step Functions and AWS Lambda which leverage Amazon Rekognition, Amazon Transcribe, Amazon Comprehend, and Amazon Textract to analyze and extract machine learning metadata from the proxy files generated in the ingestion workflow. The Media2Cloud on AWS solution provides the following preset options for the analysis process when you deploy the template: **Default**, **All**, and **Audio and Text**.
 +  **Default** - Activates *celebrity recognition*, *labels*, *transcription*, *key phrases*, *entities*, and *text* processes.

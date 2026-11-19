@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_CreateL
 ---
 
 # CreateLaunchConfiguration
-<a name="API_CreateLaunchConfiguration"></a>
 
 Creates a launch configuration.
 

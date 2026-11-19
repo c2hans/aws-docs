@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListUseC
 ---
 
 # ListUseCases
-<a name="API_ListUseCases"></a>
 
 Lists the use cases for the integration association.
 

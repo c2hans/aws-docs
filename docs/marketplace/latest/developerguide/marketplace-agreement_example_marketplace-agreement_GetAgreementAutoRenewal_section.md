@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/market
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Get the auto renewal terms of an agreement using an AWS SDK
-<a name="marketplace-agreement_example_marketplace-agreement_GetAgreementAutoRenewal_section"></a>
 
 The following code examples show how to get the auto renewal terms of an agreement.
 

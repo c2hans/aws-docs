@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/data-types.html
 ---
 
 # Data types in Amazon Athena
-<a name="data-types"></a>
 
 When you run `CREATE TABLE`, you specify column names and the data type that each column can contain. The tables that you create are stored in the AWS Glue Data Catalog.
 

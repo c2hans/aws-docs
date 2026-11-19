@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DateT
 ---
 
 # DateTimeParameterDeclaration
-<a name="API_DateTimeParameterDeclaration"></a>
 
 A parameter declaration for the `DateTime` data type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/data-api-dp-que
 ---
 
 # Neptune Query APIs
-<a name="data-api-dp-queries"></a>
 
 **Gremlin query actions:**
 + [ExecuteGremlinQuery (action)](#ExecuteGremlinQuery)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDevOpsGuruConsoleFullAccess
-<a name="AmazonDevOpsGuruConsoleFullAccess"></a>
 
 **Description**: The policy grants full-access to the DevOps Guru console.
 

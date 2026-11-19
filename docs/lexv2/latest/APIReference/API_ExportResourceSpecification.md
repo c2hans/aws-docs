@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ExportReso
 ---
 
 # ExportResourceSpecification
-<a name="API_ExportResourceSpecification"></a>
 
 Provides information about the bot or bot locale that you want to export. You can specify the `botExportSpecification` or the `botLocaleExportSpecification`, but not both.
 

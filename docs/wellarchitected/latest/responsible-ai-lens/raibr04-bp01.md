@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIBR04-BP01 Narrow the use case
-<a name="raibr04-bp01"></a>
 
  Identify the minimum viable use case that still delivers meaningful business value while reducing complexity and associated risks. Narrow the use case to a specific domain, industry vertical, geography, or user segment rather than attempting to solve broad, general problems. Restrict the types of inputs your system accepts and the formats of outputs it generates.
 

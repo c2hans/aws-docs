@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/case-metric
 ---
 
 # Case metrics
-<a name="case-metrics"></a>
 +  Cases created
   +  Dimension name: Type
   +  Dimension values: AWS supported, self supported

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Pac
 ---
 
 # PackageVersionError
-<a name="API_PackageVersionError"></a>
 
 l An error associated with package.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_ComputeNodeG
 ---
 
 # ComputeNodeGroupSlurmConfigurationRequest
-<a name="API_ComputeNodeGroupSlurmConfigurationRequest"></a>
 
 Additional options related to the Slurm scheduler.
 

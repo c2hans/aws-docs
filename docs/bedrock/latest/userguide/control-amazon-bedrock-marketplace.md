@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/control-amazon-
 ---
 
 # Controlling Access to Amazon Bedrock Marketplace Models
-<a name="control-amazon-bedrock-marketplace"></a>
 
 You can use the [Amazon Bedrock Full Access policy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockFullAccess.html) to provide permissions to SageMaker AI.
 

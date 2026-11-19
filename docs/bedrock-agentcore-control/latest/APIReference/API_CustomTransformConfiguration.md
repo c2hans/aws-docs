@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CustomTransformConfiguration
-<a name="API_CustomTransformConfiguration"></a>
 
 The configuration for custom transformations applied to requests and responses through the gateway. This structure defines how the gateway transforms data.
 

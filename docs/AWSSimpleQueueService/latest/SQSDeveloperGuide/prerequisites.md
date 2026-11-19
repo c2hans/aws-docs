@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Prerequisites for working with JMS and Amazon SQS
-<a name="prerequisites"></a>
 
 Before you begin, you must have the following prerequisites:
 + **SDK for Java**

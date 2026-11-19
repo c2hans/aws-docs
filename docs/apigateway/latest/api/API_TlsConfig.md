@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_TlsConfig.html
 ---
 
 # TlsConfig
-<a name="API_TlsConfig"></a>
 
 Specifies the TLS configuration for an integration.
 

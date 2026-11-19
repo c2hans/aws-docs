@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-fli
 ---
 
 # Using the AWS IoT TwinMaker Flink library
-<a name="twinmaker-flink-library"></a>
 
 AWS IoT TwinMaker provides a Flink library that you can use to read and write data to external data stores used in your digital twins.
 

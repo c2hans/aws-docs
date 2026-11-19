@@ -7,7 +7,6 @@ This whitepaper is for historical reference only and will be deprecated in the f
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SUS02-BP06 Implement buffering or throttling to flatten the demand curve
-<a name="sus_sus_user_a7"></a>
 
 Buffering and throttling flatten the demand curve and reduce the provisioned capacity required for your workload.
 

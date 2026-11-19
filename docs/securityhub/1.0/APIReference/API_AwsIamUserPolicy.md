@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsIamU
 ---
 
 # AwsIamUserPolicy
-<a name="API_AwsIamUserPolicy"></a>
 
 Information about an inline policy that is embedded in the user.
 

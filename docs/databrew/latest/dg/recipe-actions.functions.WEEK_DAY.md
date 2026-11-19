@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # WEEK\_DAY
-<a name="recipe-actions.functions.WEEK_DAY"></a>
 
 Creates a new column containing the day of the week, from a string that represents a date.
 

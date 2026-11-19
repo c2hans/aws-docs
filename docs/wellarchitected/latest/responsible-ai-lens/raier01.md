@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # System evaluation
-<a name="raier01"></a>
 
 | RAIER01: How will you evaluate the AI system against your release criteria? |
 | --- |

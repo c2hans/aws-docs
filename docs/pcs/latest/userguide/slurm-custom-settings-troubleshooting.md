@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-custom-settin
 ---
 
 # Troubleshooting custom Slurm settings in AWS PCS
-<a name="slurm-custom-settings-troubleshooting"></a>
 
 If you encounter errors when creating or updating AWS PCS resources with Slurm custom settings, you can use logging to diagnose and resolve the issues.
 

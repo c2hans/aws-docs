@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ContentBlockStart
-<a name="API_runtime_ContentBlockStart"></a>
 
 Content block start information.
 

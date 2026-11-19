@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # CitationsDelta
-<a name="API_runtime_CitationsDelta"></a>
 
 Contains incremental updates to citation information during streaming responses. This allows clients to build up citation data progressively as the response is generated.
 

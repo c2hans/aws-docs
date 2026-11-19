@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/authentication-
 ---
 
 # Use SAML with your Amazon Managed Grafana workspace
-<a name="authentication-in-AMG-SAML"></a>
 
 **Note**
 Amazon Managed Grafana does not currently support IdP initiated login for workspaces. You should set up your SAML applications with a blank Relay State.

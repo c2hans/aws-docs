@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UpdateD
 ---
 
 # UpdateDataSource
-<a name="API_UpdateDataSource"></a>
 
 Updates the specified data source in Amazon DataZone.
 

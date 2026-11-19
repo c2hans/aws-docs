@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateModelPackageGroup
-<a name="API_CreateModelPackageGroup"></a>
 
 Creates a model group. A model group contains a group of model versions.
 

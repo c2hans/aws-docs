@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Shared
 ---
 
 # SharedBehavior
-<a name="API_SharedBehavior"></a>
 
 Contains information about a behavior that related findings share.
 

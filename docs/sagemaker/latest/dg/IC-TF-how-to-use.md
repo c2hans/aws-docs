@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/IC-TF-how-to-use.htm
 ---
 
 # How to use the SageMaker Image Classification - TensorFlow algorithm
-<a name="IC-TF-how-to-use"></a>
 
 You can use Image Classification - TensorFlow as an Amazon SageMaker AI built-in algorithm. The following section describes how to use Image Classification - TensorFlow with the SageMaker AI Python SDK. For information on how to use Image Classification - TensorFlow from the Amazon SageMaker Studio Classic UI, see [SageMaker JumpStart pretrained models](studio-jumpstart.md).
 

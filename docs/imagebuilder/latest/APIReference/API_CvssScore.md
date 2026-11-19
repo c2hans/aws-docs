@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Cvs
 ---
 
 # CvssScore
-<a name="API_CvssScore"></a>
 
 A CVSS score for the vulnerability, as published by the vulnerability source. Sources include the National Vulnerability Database (NVD) and the operating system vendor's security feed. A finding can include CVSS scores from multiple sources and CVSS versions.
 

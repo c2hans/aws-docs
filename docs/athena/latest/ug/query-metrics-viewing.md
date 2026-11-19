@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/query-metrics-viewing.h
 ---
 
 # Monitor Athena query metrics with CloudWatch
-<a name="query-metrics-viewing"></a>
 
 Athena publishes query-related metrics to Amazon CloudWatch, when the [publish query metrics to CloudWatch](athena-cloudwatch-metrics-enable.md) option is selected. You can create custom dashboards, set alarms and triggers on metrics in CloudWatch, or use pre-populated dashboards directly from the Athena console.
 

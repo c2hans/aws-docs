@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_RuleGro
 ---
 
 # RuleGroupSourceStatelessRulesDetails
-<a name="API_RuleGroupSourceStatelessRulesDetails"></a>
 
 A stateless rule in the rule group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/run-build-cli
 ---
 
 # Run a build (AWS CLI)
-<a name="run-build-cli"></a>
 
 **Note**
 To use CodePipeline to run a build with AWS CodeBuild, skip these steps and follow the instructions in [Create a pipeline that uses CodeBuild (AWS CLI)](how-to-create-pipeline-cli.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Overview of pipeline features in Amazon OpenSearch Ingestion
-<a name="osis-features-overview"></a>
 
 Amazon OpenSearch Ingestion provisions *pipelines*, which consist of a source, a buffer, zero or more processors, and one or more sinks. Ingestion pipelines are powered by Data Prepper as the data engine. For an overview of the various components of a pipeline, see [Key concepts in Amazon OpenSearch Ingestion](ingestion-process.md).
 

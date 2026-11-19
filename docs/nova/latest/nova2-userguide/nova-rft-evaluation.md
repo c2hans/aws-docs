@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-rft-eva
 ---
 
 # RFT evaluation
-<a name="nova-rft-evaluation"></a>
 
 ## What is RFT evaluation?
 <a name="nova-rft-eval-what-is"></a>

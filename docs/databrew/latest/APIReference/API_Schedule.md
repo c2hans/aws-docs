@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Schedul
 ---
 
 # Schedule
-<a name="API_Schedule"></a>
 
 Represents one or more dates and times when a job is to run.
 

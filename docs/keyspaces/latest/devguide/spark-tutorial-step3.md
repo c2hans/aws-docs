@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/spark-tutorial
 ---
 
 # Step 3: Create the application configuration file
-<a name="spark-tutorial-step3"></a>
 
 To use the open-source Spark Cassandra Connector with Amazon Keyspaces, you need to provide an application configuration file that contains the settings required to connect with the DataStax Java driver. You can use either service-specific credentials or the SigV4 plugin to connect.
 

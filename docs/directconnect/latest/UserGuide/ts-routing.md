@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/ts-routin
 ---
 
 # Troubleshoot routing issues
-<a name="ts-routing"></a>
 
 Consider a situation where your virtual interface is up and you've established a BGP peering session. If you cannot route traffic over the virtual interface, use the following steps to troubleshoot the issue:
 

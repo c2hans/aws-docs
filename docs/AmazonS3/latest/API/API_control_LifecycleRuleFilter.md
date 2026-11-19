@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Lifecycl
 ---
 
 # LifecycleRuleFilter
-<a name="API_control_LifecycleRuleFilter"></a>
 
 The container for the filter of the lifecycle rule.
 

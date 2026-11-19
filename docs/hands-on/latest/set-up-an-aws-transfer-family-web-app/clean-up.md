@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/set-up-an-aws-transfer-f
 ---
 
 # Task 5: Clean up resources
-<a name="clean-up"></a>
 
 |  |  |
 | --- |--- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/semant
 ---
 
 # Semantic memory strategy
-<a name="semantic-memory-strategy"></a>
 
 The semantic memory strategy is designed to identify and extract key pieces of factual information and contextual knowledge from conversational data. This lets your agent to build a persistent knowledge base about the entities, events, and key details discussed during an interaction.
 

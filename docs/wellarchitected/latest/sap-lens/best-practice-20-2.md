@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 20.2 – Establish a multi-year planned cost model taking advantage of different pricing approaches
-<a name="best-practice-20-2"></a>
 
 Establish a multi-year plan of your capacity requirements to ensure that you are taking full advantage of pricing models to maximize any discounts available from AWS. Baseline and track your costs. Cloud pricing models provide flexibility that allows you to elastically match your infrastructure to changing business requirements. Before making commitments to long-term Savings Plans or Reserved Instances, understand and plan your expected SAP system usage over at least a 3-year horizon. Use testing, SAP Quick Sizer outputs, and growth forecasts to inform a commitment plan and take advantage of the maximum discounts for your workload.
 

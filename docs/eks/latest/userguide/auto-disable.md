@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-disable.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Disable EKS Auto Mode
-<a name="auto-disable"></a>
 
 You can disable EKS Auto Mode on an existing EKS Cluster. This is a destructive operation.
 + EKS will terminate all EC2 instances operated by EKS Auto Mode.

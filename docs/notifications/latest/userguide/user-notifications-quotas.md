@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/userguide/user-noti
 ---
 
 # Quotas for AWS User Notifications
-<a name="user-notifications-quotas"></a>
 
 Your AWS account has default quotas, formerly referred to as limits, for each AWS service. Unless otherwise noted, each quota is Region-specific. You can request increases for some quotas, while other quotas can't be increased.
 

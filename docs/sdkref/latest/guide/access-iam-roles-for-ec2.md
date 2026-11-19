@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/access-iam-roles-for
 ---
 
 # Using IAM roles to authenticate applications deployed to Amazon EC2
-<a name="access-iam-roles-for-ec2"></a>
 
 This example covers setting up an AWS Identity and Access Management role with Amazon S3 access to use in your application deployed to an Amazon Elastic Compute Cloud instance.
 

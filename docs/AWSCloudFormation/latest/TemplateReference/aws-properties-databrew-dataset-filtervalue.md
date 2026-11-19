@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Dataset FilterValue
-<a name="aws-properties-databrew-dataset-filtervalue"></a>
 
 Represents a single entry in the `ValuesMap` of a `FilterExpression`. A `FilterValue` associates the name of a substitution variable in an expression to its value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/migrate-aspnet-web-appli
 ---
 
 # Migrate an ASP.NET Web Application to Elastic Beanstalk
-<a name="migrate-aspnet-web-application-elastic-beanstalk"></a>
 
 |  |  |
 | --- |--- |

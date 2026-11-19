@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Or
 ---
 
 # OrderBy
-<a name="API_OrderBy"></a>
 
 Filter criteria that orders the return output. It can be sorted in ascending or descending order.
 

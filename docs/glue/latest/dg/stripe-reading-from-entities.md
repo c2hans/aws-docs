@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/stripe-reading-from-entit
 ---
 
 # Reading from Stripe entities
-<a name="stripe-reading-from-entities"></a>
 
  **Prerequisites**
 +  A Stripe object you would like to read from.

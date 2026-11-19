@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_ListTe
 ---
 
 # ListTerminologies
-<a name="API_ListTerminologies"></a>
 
 Provides a list of custom terminologies associated with your account.
 

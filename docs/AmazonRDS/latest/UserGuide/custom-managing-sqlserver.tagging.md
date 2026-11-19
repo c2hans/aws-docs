@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-managi
 ---
 
 # Tagging RDS Custom for SQL Server resources
-<a name="custom-managing-sqlserver.tagging"></a>
 
 You can tag RDS Custom resources as with Amazon RDS resources, but with some important differences:
 + Don't create or modify the `AWSRDSCustom` tag that's required for RDS Custom automation. If you do, you might break the automation.

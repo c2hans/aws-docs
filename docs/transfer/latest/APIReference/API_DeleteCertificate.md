@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteC
 ---
 
 # DeleteCertificate
-<a name="API_DeleteCertificate"></a>
 
 Deletes the certificate that's specified in the `CertificateId` parameter.
 

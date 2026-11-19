@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Creat
 ---
 
 # CreateUpload
-<a name="API_CreateUpload"></a>
 
 Uploads an app or test scripts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/identitydocumentfield
 ---
 
 # Identity Documentation Response Objects
-<a name="identitydocumentfields"></a>
 
  When you submit an identity document to the AnalyzeID API, it returns a series of `IdentityDocumentField` objects. Each of these objects contains `Type`, and `Value`. `Type` records the normalized field that Amazon Textract detects, and `Value` records the text associated with the normalized field.
 

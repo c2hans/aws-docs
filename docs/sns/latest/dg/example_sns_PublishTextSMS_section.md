@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/example_sns_PublishTextSMS
 ---
 
 # Publish an Amazon SNS SMS text message using an AWS SDK
-<a name="example_sns_PublishTextSMS_section"></a>
 
 The following code examples show how to publish SMS messages using Amazon SNS.
 

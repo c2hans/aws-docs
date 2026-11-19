@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Remove
 ---
 
 # RemoveSourceIdentifierFromSubscription
-<a name="API_RemoveSourceIdentifierFromSubscription"></a>
 
 Removes a source identifier from an existing RDS event notification subscription.
 

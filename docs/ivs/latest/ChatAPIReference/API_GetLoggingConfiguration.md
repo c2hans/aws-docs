@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_GetLoggi
 ---
 
 # GetLoggingConfiguration
-<a name="API_GetLoggingConfiguration"></a>
 
 Gets the specified logging configuration.
 

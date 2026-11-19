@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Delete
 ---
 
 # DeleteTrustedEntitySet
-<a name="API_DeleteTrustedEntitySet"></a>
 
 Deletes the trusted entity set that is associated with the specified `trustedEntitySetId`.
 

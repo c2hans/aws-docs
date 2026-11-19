@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateEbsBlockDeviceRequest
-<a name="API_LaunchTemplateEbsBlockDeviceRequest"></a>
 
 The parameters for a block device for an EBS volume.
 

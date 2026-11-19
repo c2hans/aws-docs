@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_CloudWat
 ---
 
 # CloudWatchLogsDestinationConfiguration
-<a name="API_CloudWatchLogsDestinationConfiguration"></a>
 
 Specifies a CloudWatch Logs location where chat logs will be stored.
 

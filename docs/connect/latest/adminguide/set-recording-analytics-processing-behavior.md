@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-recording-
 ---
 
 # Flow block in Connect Customer: Set recording, analytics and processing behavior
-<a name="set-recording-analytics-processing-behavior"></a>
 
 This topic defines the flow block for setting options to configure recording behavior for agent and customer, enable automated interaction, enable screen recording, set analytics behavior for contacts, and set custom processing behavior.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/bedrock-agent-run
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Converse with an Amazon Bedrock flow
-<a name="bedrock-agent-runtime_example_bedrock-agent-runtime_Scenario_ConverseWithFlow_section"></a>
 
 The following code example shows how to use InvokeFlow to converse with an Amazon Bedrock flow that includes an agent node.
 

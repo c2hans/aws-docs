@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Lam
 ---
 
 # LambdaExecutorConfiguration
-<a name="API_LambdaExecutorConfiguration"></a>
 
 Details about the configuration for the `Lambda` action engine, or executor.
 

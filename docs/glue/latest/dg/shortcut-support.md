@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/shortcut-support.html
 ---
 
 # AWS Glue support for Shortcut
-<a name="shortcut-support"></a>
 
 AWS Glue supports Shortcut as follows:
 

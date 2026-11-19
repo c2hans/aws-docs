@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3CatalogSource.h
 ---
 
 # S3CatalogSource
-<a name="API_S3CatalogSource"></a>
 
 Specifies an Amazon S3 data store in the AWS Glue Data Catalog.
 

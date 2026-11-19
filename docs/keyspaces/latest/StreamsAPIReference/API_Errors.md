@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # Service-specific Errors
-<a name="API_Errors"></a>
 
 The Amazon Keyspaces Streams API contains service-specific exceptions that various actions return. This section describes each exception in detail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/configu
 ---
 
 # Configure an API Gateway Lambda authorizer
-<a name="configure-api-gateway-lambda-authorization"></a>
 
 After you create a Lambda function, you configure the Lambda function as an authorizer for your API. You then configure your method to invoke your Lambda authorizer to determine if a caller can invoke your method. You can create a Lambda function in the same account, or a different account, from where you created your API.
 

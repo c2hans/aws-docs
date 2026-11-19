@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PcaGetCert.ht
 ---
 
 # Retrieve a private certificate
-<a name="PcaGetCert"></a>
 
 You can use the AWS Private CA API and AWS CLI to issue a private certificate. If you do, you can use the AWS CLI or AWS Private CA API to retrieve that certificate. If you used ACM to create your private CA and to request certificates, you must use ACM to export the certificate and the encrypted private key. For more information, see [Exporting a private certificate](https://docs.aws.amazon.com/acm/latest/userguide/export-private.html).
 

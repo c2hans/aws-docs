@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta
 ---
 
 # Llama 3.2 3B Instruct
-<a name="model-card-meta-llama-3-2-3b-instruct"></a>
 
 ## ![Meta logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/meta.png) Meta — Llama 3.2 3B Instruct
 <a name="model-card-meta-llama-3-2-3b-instruct-header"></a>

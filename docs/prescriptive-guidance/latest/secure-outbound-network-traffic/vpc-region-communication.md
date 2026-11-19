@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-outb
 ---
 
 # Communicating across VPCs and AWS Regions
-<a name="vpc-region-communication"></a>
 
 Multi-VPC infrastructures can help organizations segment their workloads and expand their footprints. This type of architecture can also create challenges when resources need to communicate with AWS services in different VPCs, AWS Regions, and AWS accounts.
 

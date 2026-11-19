@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ErrorDetails
-<a name="API_ErrorDetails"></a>
 
 Additional information if the package is in an error state. Null otherwise.
 

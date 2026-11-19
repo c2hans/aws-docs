@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_VpcConf
 ---
 
 # VpcConfiguration
-<a name="API_VpcConfiguration"></a>
 
 The details of the VPC of the Amazon OpenSearch or Amazon OpenSearch Serverless destination.
 

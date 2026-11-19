@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeEndpoint
-<a name="API_DescribeEndpoint"></a>
 
 Returns the description of an endpoint.
 

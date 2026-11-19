@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/calculated-att
 ---
 
 # Create calculated attributes in Connect Customer
-<a name="calculated-attributes-admin-website-create"></a>
 
 1. Prerequisites: Make sure you have the necessary security profile permissions. For more information, see [Update permissions for calculated attributes in Connect Customer Customer Profiles](security-profile-customer-profile-calc-attribs.md).
 

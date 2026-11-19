@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Ec2Instan
 ---
 
 # Ec2InstanceConnectEndpoint
-<a name="API_Ec2InstanceConnectEndpoint"></a>
 
 Describes an EC2 Instance Connect Endpoint.
 

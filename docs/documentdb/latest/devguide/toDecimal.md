@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/toDecimal.htm
 ---
 
 # $toDecimal
-<a name="toDecimal"></a>
 
 New from version 4.0
 

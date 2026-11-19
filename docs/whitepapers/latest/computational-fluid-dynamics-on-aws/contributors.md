@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Contributors
-<a name="contributors"></a>
 
  The following individuals and organizations contributed to this document:
 +  Aaron Bucher, HPC Specialist Solutions Architect, AWS

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-trino-gettin
 ---
 
 # Launch an Amazon EMR cluster with Trino
-<a name="emr-trino-getting-started-launch"></a>
 
 The following describes the correct configuration choices when you create a cluster with Trino.
 

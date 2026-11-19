@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Predefin
 ---
 
 # PredefinedAttributeSearchCriteria
-<a name="API_PredefinedAttributeSearchCriteria"></a>
 
 The search criteria to be used to return predefined attributes.
 
@@ -12,12 +11,12 @@ The search criteria to be used to return predefined attributes.
 
  ** AndConditions **   <a name="connect-Type-PredefinedAttributeSearchCriteria-AndConditions"></a>
 A list of conditions which would be applied together with an `AND` condition.
-Type: Array of [PredefinedAttributeSearchCriteria](#API_PredefinedAttributeSearchCriteria) objects
+Type: Array of [PredefinedAttributeSearchCriteria](API_PredefinedAttributeSearchCriteria.md) objects
 Required: No
 
  ** OrConditions **   <a name="connect-Type-PredefinedAttributeSearchCriteria-OrConditions"></a>
 A list of conditions which would be applied together with an `OR` condition.
-Type: Array of [PredefinedAttributeSearchCriteria](#API_PredefinedAttributeSearchCriteria) objects
+Type: Array of [PredefinedAttributeSearchCriteria](API_PredefinedAttributeSearchCriteria.md) objects
 Required: No
 
  ** StringCondition **   <a name="connect-Type-PredefinedAttributeSearchCriteria-StringCondition"></a>

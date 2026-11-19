@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_poli
 ---
 
 # Creating organization policies with AWS Organizations
-<a name="orgs_policies_create"></a>
 
 After you [enable policies](enable-policy-type.md) for your organization, you can create a policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_FilterE
 ---
 
 # FilterExpression
-<a name="API_FilterExpression"></a>
 
 Represents a structure for defining parameter conditions. Supported conditions are described here: [Supported conditions for dynamic datasets](https://docs.aws.amazon.com/databrew/latest/dg/datasets.multiple-files.html#conditions.for.dynamic.datasets) in the * AWS Glue DataBrew Developer Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_RebuildE
 ---
 
 # RebuildEnvironment
-<a name="API_RebuildEnvironment"></a>
 
 Deletes and recreates all of the AWS resources (for example: the Auto Scaling group, load balancer, etc.) for a specified environment and forces a restart.
 

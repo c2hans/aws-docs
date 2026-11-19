@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayConnect
-<a name="API_TransitGatewayConnect"></a>
 
 Describes a transit gateway Connect attachment.
 

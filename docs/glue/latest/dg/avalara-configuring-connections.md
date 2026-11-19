@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/avalara-configuring-conne
 ---
 
 # Configuring Avalara connections
-<a name="avalara-configuring-connections"></a>
 
 Avalara connections use HTTP Basic authentication with your AvaTax account ID and license key, or with an AvaTax username and password. You store the Base64-encoded credential in an Secrets Manager secret, and the connector adds the `Basic` scheme when it calls AvaTax.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteMul
 ---
 
 # DeleteMultiRegionEndpoint
-<a name="API_DeleteMultiRegionEndpoint"></a>
 
 Deletes a multi-region endpoint (global-endpoint).
 

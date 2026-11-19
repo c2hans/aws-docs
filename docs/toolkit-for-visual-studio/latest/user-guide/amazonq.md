@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Amazon Q
-<a name="amazonq"></a>
 
 ## What is Amazon Q
 <a name="codewhisperer-intro"></a>

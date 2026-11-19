@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceComponentSummary
-<a name="API_InferenceComponentSummary"></a>
 
 A summary of the properties of an inference component.
 

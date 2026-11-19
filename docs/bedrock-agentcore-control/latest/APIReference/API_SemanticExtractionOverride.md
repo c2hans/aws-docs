@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SemanticExtractionOverride
-<a name="API_SemanticExtractionOverride"></a>
 
 Contains semantic extraction override configuration.
 

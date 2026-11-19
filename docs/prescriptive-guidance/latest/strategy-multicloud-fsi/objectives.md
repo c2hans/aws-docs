@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mu
 ---
 
 # Objectives for adopting a multicloud strategy
-<a name="objectives"></a>
 
 The adoption of a multicloud strategy is typically based on the following business drivers:
 + **Mergers and acquisitions** – When an organization acquires, or merges with, companies that are using services or deploying workloads on different CSPs, it must optimize and harmonize the new IT landscape. This is time-consuming, because it involves diverse business priorities and requires integration effort. Adopting a multicloud strategy is key to successfully managing the complexity of varying systems and ensuring that standardized controls are in place.

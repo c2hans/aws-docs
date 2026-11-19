@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_L
 ---
 
 # ListMembersOfAddressList
-<a name="API_ListMembersOfAddressList"></a>
 
 Lists members of an address list.
 

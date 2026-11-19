@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/validate-ad-conf
 ---
 
 # Validating your Active Directory configuration
-<a name="validate-ad-config"></a>
 
  Before you create an FSx for Windows File Server file system joined to your Active Directory, we recommend that you validate your Active Directory configuration using the Amazon FSx Active Directory Validation tool. Note that outbound internet connectivity is required to successfully validate the Active Directory configuration.<a name="test-ad-network-config"></a>
 

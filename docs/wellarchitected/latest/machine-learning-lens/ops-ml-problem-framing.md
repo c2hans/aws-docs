@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # ML problem framing
-<a name="ops-ml-problem-framing"></a>
 
 **Topics**
 + [MLOPS02-BP01 Establish ML roles and responsibilities](mlops02-bp01.md)

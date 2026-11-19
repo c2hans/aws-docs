@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.JOIN.h
 ---
 
 # JOIN
-<a name="recipe-actions.JOIN"></a>
 
 Performs a join operation on two datasets.
 

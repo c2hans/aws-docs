@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Prompt management
-<a name="genrel04"></a>
 
 | GENREL04: How do you maintain versions for prompts, model parameters, and foundation models? |
 | --- |

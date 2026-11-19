@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_BatchGe
 ---
 
 # BatchGetFrameMetricData
-<a name="API_BatchGetFrameMetricData"></a>
 
  Returns the time series of values for a requested list of frame metrics from a time period.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Creat
 ---
 
 # CreateUserJourney
-<a name="API_CreateUserJourney"></a>
 
 Creates a user journey within a system.
 

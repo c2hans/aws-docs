@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFormation::GuardHook
-<a name="aws-resource-cloudformation-guardhook"></a>
 
 The `AWS::CloudFormation::GuardHook` resource creates and activates a Guard Hook. Using the Guard domain specific language (DSL), you can author Guard Hooks to evaluate your resources before allowing stack operations.
 

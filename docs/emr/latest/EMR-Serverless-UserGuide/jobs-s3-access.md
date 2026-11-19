@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/jobs
 ---
 
 # Accessing S3 data in another AWS account from EMR Serverless
-<a name="jobs-s3-access"></a>
 
 You can run Amazon EMR Serverless jobs from one AWS account and configure them to access data in Amazon S3 buckets that belong to another AWS account. This page describes how to configure cross-account access to S3 from EMR Serverless.
 

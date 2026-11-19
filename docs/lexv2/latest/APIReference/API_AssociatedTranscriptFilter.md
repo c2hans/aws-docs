@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Associated
 ---
 
 # AssociatedTranscriptFilter
-<a name="API_AssociatedTranscriptFilter"></a>
 
 Filters to search for the associated transcript.
 

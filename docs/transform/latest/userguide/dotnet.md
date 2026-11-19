@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet.html
 ---
 
 # Modernizing .NET with AWS Transform
-<a name="dotnet"></a>
 
 AWS Transform for .NET is a generative AI-powered agent that helps you modernize your .NET applications. You can modernize legacy .NET Framework applications to cross-platform .NET, and upgrade .NET applications to later versions.
 

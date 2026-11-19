@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Run a VFX studio pipeline on Deadline Cloud
-<a name="examples-jb-vfx-pipeline"></a>
 
 The [vfx\_pipeline](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/vfx_pipeline) sample on the GitHub website is a working shot-render-and-publish pipeline for a studio moving renders to a cloud farm. Every section of its README starts from a piece of pipeline you already run: a render scheduler, always-on render nodes, a mounted NAS, a set-project tool, or a publish step. Each section shows the Deadline Cloud mechanism it becomes.
 

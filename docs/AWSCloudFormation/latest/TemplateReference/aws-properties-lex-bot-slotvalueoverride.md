@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lex::Bot SlotValueOverride
-<a name="aws-properties-lex-bot-slotvalueoverride"></a>
 
 The slot values that Amazon Lex uses when it sets slot values in a dialog step.
 
@@ -55,5 +54,5 @@ The current value of the slot.
 `Values`  <a name="cfn-lex-bot-slotvalueoverride-values"></a>
 A list of one or more values that the user provided for the slot. For example, for a slot that elicits pizza toppings, the values might be "pepperoni" and "pineapple."
 *Required*: No
-*Type*: Array of [SlotValueOverride](#aws-properties-lex-bot-slotvalueoverride)
+*Type*: Array of [SlotValueOverride](aws-properties-lex-bot-slotvalueoverride.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

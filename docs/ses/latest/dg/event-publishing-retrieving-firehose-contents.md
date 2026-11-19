@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/event-publishing-retrievin
 ---
 
 # Contents of event data that Amazon SES publishes to Firehose
-<a name="event-publishing-retrieving-firehose-contents"></a>
 
 Amazon SES publishes email sending event records to Amazon Data Firehose in JSON format. When publishing events to Firehose, Amazon SES follows each JSON record with a newline character.
 

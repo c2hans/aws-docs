@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/financial.
 ---
 
 # .financial
-<a name="financial"></a>
 
 Used by the financial sector.
 

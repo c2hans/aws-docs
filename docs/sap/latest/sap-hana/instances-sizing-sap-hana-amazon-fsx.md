@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/instances-sizing-sap
 ---
 
 # Supported configurations
-<a name="instances-sizing-sap-hana-amazon-fsx"></a>
 
 The following rules and limitations are applicable for deploying SAP HANA on AWS with Amazon FSx for NetApp ONTAP.
 + FSx for ONTAP file systems for SAP HANA data and log volumes are only supported for single Availability Zone deployment.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/lambda-tas
 ---
 
 # Implementing AWS Lambda Tasks
-<a name="lambda-task"></a>
 
 **Topics**
 + [About AWS Lambda](#about-aws-lambda)

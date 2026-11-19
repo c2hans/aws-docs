@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/schema-conversion-oracle-
 ---
 
 # Migrating Oracle databases to Amazon RDS for PostgreSQL with DMS Schema Conversion
-<a name="schema-conversion-oracle-postgresql"></a>
 
 This walkthrough gets you started with heterogeneous database migration from Oracle to Amazon RDS for PostgreSQL. To automate the migration, we use the AWS DMS Schema Conversion. This service helps assess the complexity of your migration and converts source Oracle database schemas and code objects to a format compatible with PostgreSQL. Then, you apply the converted code to your target database. This introductory exercise shows how you can use DMS Schema Conversion for this migration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora_
 ---
 
 # aurora\_stat\_reset\_wal\_cache
-<a name="aurora_stat_reset_wal_cache"></a>
 
 Resets the counter for logical wal cache.
 

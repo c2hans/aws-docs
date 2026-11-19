@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Deploymen
 ---
 
 # DeploymentIoTJobConfiguration
-<a name="API_DeploymentIoTJobConfiguration"></a>
 
 Contains information about an AWS IoT job configuration.
 

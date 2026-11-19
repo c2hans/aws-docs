@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/example_comprehend_
 ---
 
 # Use `StartDocumentClassificationJob` with an AWS SDK or CLI
-<a name="example_comprehend_StartDocumentClassificationJob_section"></a>
 
 The following code examples show how to use `StartDocumentClassificationJob`.
 

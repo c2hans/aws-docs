@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/example_glue_GetJob_secti
 ---
 
 # Use `GetJob` with an AWS SDK or CLI
-<a name="example_glue_GetJob_section"></a>
 
 The following code examples show how to use `GetJob`.
 

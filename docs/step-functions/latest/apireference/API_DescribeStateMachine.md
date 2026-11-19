@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_D
 ---
 
 # DescribeStateMachine
-<a name="API_DescribeStateMachine"></a>
 
 Provides information about a state machine's definition, its IAM role Amazon Resource Name (ARN), and configuration.
 

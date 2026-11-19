@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DescribeType
-<a name="API_DescribeType"></a>
 
 Returns detailed information about an extension from the CloudFormation registry in your current account and Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/pull.html
 ---
 
 # $pull
-<a name="pull"></a>
 
 The `$pull` operator is used to remove from an array all instances of a value or values that match a specified condition. This operator is useful when you need to remove specific elements from an array field within a document.
 

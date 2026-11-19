@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Managing resource dependencies
-<a name="managing-resource-dependencies"></a>
 
 This solution uses a layered approach to deploying your landing zone infrastructure resources. Each stage after the **Build** stage produces at least one CloudFormation stack, with some stages producing multiple stacks. For more information on the stage ordering and stacks produced by each stage, refer to the details in [Core pipeline](deployment-pipelines.md#awsaccelerator-pipelinestack).
 
@@ -209,7 +208,7 @@ In our example, the stage for these changes is `network-vpc`. The stage you targ
 
 This solution has multiple stages and stacks associated with building your core network topology. Many of the building blocks associated with landing zone networks have tightly coupled dependencies. Some of these dependencies for this solution cross stack barriers. For this reason, updating network resources using Landing Zone Accelerator on AWS requires additional knowledge of which stage and stack specific resources are deployed in.
 
-The following diagram is a visual aid for understanding the network resources that the solution can deploy, and how their dependencies map together. When planning updates or removal of network resources with downstream dependencies, reference this dependency map along with the guidance in the previous sections of [Managing resource dependencies](#managing-resource-dependencies).
+The following diagram is a visual aid for understanding the network resources that the solution can deploy, and how their dependencies map together. When planning updates or removal of network resources with downstream dependencies, reference this dependency map along with the guidance in the previous sections of [Managing resource dependencies](managing-resource-dependencies.md).
 
 **Note**
 If the image is difficult to read on your screen, open it in a new tab.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/touchpoint-ios.h
 ---
 
 # Touchpoint SDK for iOS
-<a name="touchpoint-ios"></a>
 
 The Touchpoint SDK for iOS is the native Swift counterpart of the [Touchpoint](touchpoint.md) web SDK. It brings the same capabilities to iOS apps — chat, voice, and **Live Sync**, the native technology that keeps a voice or chat conversation in sync with your on-screen interface — as SwiftUI views and Swift APIs.
 

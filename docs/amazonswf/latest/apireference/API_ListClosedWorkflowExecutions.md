@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_ListCl
 ---
 
 # ListClosedWorkflowExecutions
-<a name="API_ListClosedWorkflowExecutions"></a>
 
 Returns a list of closed workflow executions in the specified domain that meet the filtering criteria. The results may be split into multiple pages. To retrieve subsequent pages, make the call again using the nextPageToken returned by the initial call.
 

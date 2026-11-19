@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Parquet
 ---
 
 # ParquetSerDe
-<a name="API_ParquetSerDe"></a>
 
 A serializer to use for converting data to the Parquet format before storing it in Amazon S3. For more information, see [Apache Parquet](https://parquet.apache.org/docs/).
 

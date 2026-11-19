@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Cluster
 ---
 
 # ClusterConfiguration
-<a name="API_ClusterConfiguration"></a>
 
 A list of cluster configuration options.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL08-BP04 Deploy using immutable infrastructure
-<a name="rel_tracking_change_management_immutable_infrastructure"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_L
 ---
 
 # Location
-<a name="API_Location"></a>
 
 Describes a location.
 

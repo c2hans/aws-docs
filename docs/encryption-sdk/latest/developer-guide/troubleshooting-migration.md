@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/tr
 ---
 
 # Troubleshooting migration to the latest versions
-<a name="troubleshooting-migration"></a>
 
 Before updating your application to version 2.0.*x* or later of the AWS Encryption SDK, update to the latest 1.*x* version of the AWS Encryption SDK and deploy it completely. That will help you avoid most errors you might encounter when updating to versions 2.0.*x* and later. For detailed guidance, including examples, see [Migrating your AWS Encryption SDK](migration.md).
 

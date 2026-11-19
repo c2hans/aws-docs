@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS05-BP07 Implement practices to improve code quality
-<a name="ops_dev_integ_code_quality"></a>
 
  Implement practices to improve code quality and minimize defects. Some examples include test-driven development, code reviews, and standards adoption.
 

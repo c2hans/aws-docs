@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ApiResult
-<a name="API_agent-runtime_ApiResult"></a>
 
 Contains information about the API operation that was called from the action group and the response body that was returned.
 

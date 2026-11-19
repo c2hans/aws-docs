@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRDSPerformanceInsightsReadOnly
-<a name="AmazonRDSPerformanceInsightsReadOnly"></a>
 
 **Description**: Read-Only policy for RDS Performance Insights
 

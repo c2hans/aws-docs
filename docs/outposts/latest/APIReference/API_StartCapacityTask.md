@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_StartCa
 ---
 
 # StartCapacityTask
-<a name="API_StartCapacityTask"></a>
 
 Starts the specified capacity task. You can have one active capacity task for each order and each Outpost.
 

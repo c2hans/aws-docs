@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_ListO
 ---
 
 # ListOnPremisesInstances
-<a name="API_ListOnPremisesInstances"></a>
 
 Gets a list of names for one or more on-premises instances.
 

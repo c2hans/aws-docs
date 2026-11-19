@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/adding-compon
 ---
 
 # Adding components to a page
-<a name="adding-components"></a>
 
 Use the following procedure to add a component to a page in App Studio. For information about duplicating an existing component, see [Duplicating components](duplicating-components.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Encryptio
 ---
 
 # EncryptionSupport
-<a name="API_EncryptionSupport"></a>
 
 Describes the encryption support status for a transit gateway.
 

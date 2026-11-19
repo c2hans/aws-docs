@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Module enablement
-<a name="module-enablement"></a>
 
 Module enablement is the core functionality of Modular Cloud Studio on AWS, allowing you to deploy and manage infrastructure components across your AWS environment. Modules are pre-configured infrastructure templates that provide specific capabilities such as networking, identity management, storage, and workstation management.
 

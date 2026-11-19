@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-oc
 ---
 
 # Point 3. Envision the Future
-<a name="envision-future"></a>
 
 Envision the Future is designed to create a change acceleration strategy and plan to communicate, train, and engage the employees of the organization in their cloud adoption journey. It contains seven subpoints:
 + [3.1 Create change acceleration strategy and plan](#envision-change)

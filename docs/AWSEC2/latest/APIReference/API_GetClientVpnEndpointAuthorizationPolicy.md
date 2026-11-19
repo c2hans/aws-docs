@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetClient
 ---
 
 # GetClientVpnEndpointAuthorizationPolicy
-<a name="API_GetClientVpnEndpointAuthorizationPolicy"></a>
 
 Describes the authorization policy for a Client VPN endpoint.
 

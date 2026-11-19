@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_CreateQuot
 ---
 
 # CreateQuotaShare
-<a name="API_CreateQuotaShare"></a>
 
 Creates an AWS Batch quota share. Each quota share operates as a virtual queue with a configured compute capacity, resource sharing strategy, and borrow limits.
 

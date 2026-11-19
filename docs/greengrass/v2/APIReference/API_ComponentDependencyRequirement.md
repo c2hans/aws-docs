@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Component
 ---
 
 # ComponentDependencyRequirement
-<a name="API_ComponentDependencyRequirement"></a>
 
 Contains information about a component dependency for a Lambda function component.
 

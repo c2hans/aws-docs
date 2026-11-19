@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchD
 ---
 
 # BatchDeleteClusterNodesError
-<a name="API_BatchDeleteClusterNodesError"></a>
 
 Represents an error encountered when deleting a node from a SageMaker HyperPod cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsOpen
 ---
 
 # AwsOpenSearchServiceDomainDomainEndpointOptionsDetails
-<a name="API_AwsOpenSearchServiceDomainDomainEndpointOptionsDetails"></a>
 
 Information about additional options for the domain endpoint.
 

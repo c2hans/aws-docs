@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_X509Attribut
 ---
 
 # X509Attributes
-<a name="API_X509Attributes"></a>
 
 Contains X.509 certificate attributes extracted from the certificate.
 

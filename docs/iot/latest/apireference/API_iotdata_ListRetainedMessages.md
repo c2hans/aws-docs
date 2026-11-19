@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_List
 ---
 
 # ListRetainedMessages
-<a name="API_iotdata_ListRetainedMessages"></a>
 
 Lists summary information about the retained messages stored for the account.
 

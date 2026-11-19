@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ts-non-agentic
 ---
 
 # (Legacy) Self-service issues
-<a name="ts-non-agentic-self-service"></a>
 
 The following issues are specific to [legacy self-service](generative-ai-powered-self-service.md).
 

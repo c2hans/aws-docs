@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ob
 ---
 
 # ObdInterface
-<a name="API_ObdInterface"></a>
 
 A network interface that specifies the on-board diagnostic (OBD) II network protocol.
 

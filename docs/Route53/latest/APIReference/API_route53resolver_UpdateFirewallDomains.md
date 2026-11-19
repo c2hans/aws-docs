@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # UpdateFirewallDomains
-<a name="API_route53resolver_UpdateFirewallDomains"></a>
 
 Updates the firewall domain list from an array of domain specifications.
 

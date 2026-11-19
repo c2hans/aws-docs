@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/use-cases-and-reci
 ---
 
 # Matching your use case to Amazon Personalize resources
-<a name="use-cases-and-recipes"></a>
 
 Amazon Personalize recommendations can address the following use cases:
 + Generating personalized recommendations for a user

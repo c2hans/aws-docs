@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_De
 ---
 
 # DeleteAttributeMapping
-<a name="API_DeleteAttributeMapping"></a>
 
 Delete an entry from the attribute mapping rules enforced by a given profile.
 

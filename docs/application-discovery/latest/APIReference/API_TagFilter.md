@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/application-discovery/latest/APIReferenc
 ---
 
 # TagFilter
-<a name="API_TagFilter"></a>
 
 The tag filter. Valid names are: `tagKey`, `tagValue`, `configurationId`.
 

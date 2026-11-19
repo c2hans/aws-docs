@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCCOST01-BP01 Optimize integration and collaboration across the supply chain management
-<a name="sccost01-bp01"></a>
 
  Supply chain optimization, enhanced by location intelligence, can minimize unnecessary miles, resulting in a cost-effective approach to logistics and transportation management.
 

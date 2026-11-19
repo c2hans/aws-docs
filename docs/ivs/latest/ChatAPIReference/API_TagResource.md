@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_TagResou
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds or updates tags for the AWS resource with the specified ARN.
 

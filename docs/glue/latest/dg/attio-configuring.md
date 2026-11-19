@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/attio-configuring.html
 ---
 
 # Configuring Attio
-<a name="attio-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Attio, you must meet the following requirements:
 

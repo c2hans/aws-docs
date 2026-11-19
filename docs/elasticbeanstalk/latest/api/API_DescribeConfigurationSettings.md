@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Describe
 ---
 
 # DescribeConfigurationSettings
-<a name="API_DescribeConfigurationSettings"></a>
 
 Returns a description of the settings for the specified configuration set, that is, either a configuration template or the configuration set associated with a running environment.
 

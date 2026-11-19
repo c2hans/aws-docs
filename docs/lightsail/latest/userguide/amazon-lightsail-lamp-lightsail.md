@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # LAMP
-<a name="amazon-lightsail-lamp-lightsail"></a>
 
 This section covers topics related to LAMP instances packaged by Lightsail:
 

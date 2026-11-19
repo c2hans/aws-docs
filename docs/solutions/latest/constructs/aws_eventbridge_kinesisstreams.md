@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_eventbri
 ---
 
 # aws-eventbridge-kinesisstreams
-<a name="aws_eventbridge_kinesisstreams"></a>
 
 ![Stability:Experimental](https://img.shields.io/badge/stability-Experimental-important.svg?style=for-the-badge)
 

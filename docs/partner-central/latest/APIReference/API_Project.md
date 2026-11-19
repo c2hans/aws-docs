@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Project
-<a name="API_Project"></a>
 
 An object that contains the `Opportunity`'s project details.
 

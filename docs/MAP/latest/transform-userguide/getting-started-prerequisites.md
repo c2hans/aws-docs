@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/transform-userguide/getting-s
 ---
 
 # Prerequisites
-<a name="getting-started-prerequisites"></a>
 
 Before you begin tagging your workloads, you must have the following:
 + You must have your PRM ID number. For more information, see [PRM ID length](mpe-length.md).

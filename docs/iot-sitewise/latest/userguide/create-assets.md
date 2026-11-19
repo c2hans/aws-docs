@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/create-ass
 ---
 
 # Create assets for asset models in AWS IoT SiteWise
-<a name="create-assets"></a>
 
 You can create an asset from an asset model. You must have an asset model before you can create an asset. If you haven't created an asset model, see [Create asset models in AWS IoT SiteWise](create-asset-models.md).
 

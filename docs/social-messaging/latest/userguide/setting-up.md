@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/settin
 ---
 
 # Setting up AWS End User Messaging Social
-<a name="setting-up"></a>
 
 Before you can use AWS End User Messaging Social for the first time, you must complete the following steps.
 

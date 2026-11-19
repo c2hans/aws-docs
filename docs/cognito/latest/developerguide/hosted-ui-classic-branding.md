@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/hosted-ui-
 ---
 
 # Customizing hosted UI (classic) branding
-<a name="hosted-ui-classic-branding"></a>
 
 You can use the AWS Management Console, or the AWS CLI or API, to specify classic customization settings for the hosted UI. You can upload a custom logo image to be displayed in the app. You can also apply some cascading style sheets (CSS) options to the look and feel of the UI.
 

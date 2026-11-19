@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/jobs-pric
 ---
 
 # Jobs pricing
-<a name="jobs-pricing"></a>
 
 You pay for Amazon Location Service Jobs based on the number of records processed. Jobs process records asynchronously and write results to your specified Amazon S3 bucket. The price varies based on the additional features you request for the job. If you cancel a job, you are billed for the number of records that were successfully processed and written to your output bucket before cancellation.
 

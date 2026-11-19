@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Operate
-<a name="operate"></a>
 
 | CMOPS\_5: How do you respond to an incident within your connected mobility platform? |
 | --- |

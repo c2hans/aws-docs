@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HeaderM
 ---
 
 # HeaderMatchMethod
-<a name="API_HeaderMatchMethod"></a>
 
 An object that represents the method and value to match with the header value sent in a request. Specify one match method.
 

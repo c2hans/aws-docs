@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/visual-mod
 ---
 
 # Changing the visual mode of the AWS Management Console
-<a name="visual-mode-unified-settings"></a>
 
 Your visual mode sets your console to light mode, dark mode, or the default display mode of your browser.
 

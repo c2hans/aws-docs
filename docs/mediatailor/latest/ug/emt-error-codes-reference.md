@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/emt-error-codes-re
 ---
 
 # MediaTailor error codes and CDN integration troubleshooting
-<a name="emt-error-codes-reference"></a>
 
 AWS Elemental MediaTailor error codes provide specific information about integration issues when passed through your content delivery network (CDN). When MediaTailor returns errors through your content delivery network, these codes indicate specific issues:
 

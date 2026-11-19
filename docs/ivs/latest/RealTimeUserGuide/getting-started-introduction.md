@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/getting-sta
 ---
 
 # Introduction to IVS Real-Time Streaming
-<a name="getting-started-introduction"></a>
 
 This section lists prerequisites for using real-time streaming and introduces key terminology.
 

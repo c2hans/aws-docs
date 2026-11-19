@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeC
 ---
 
 # DescribeCapacityManagerDataExports
-<a name="API_DescribeCapacityManagerDataExports"></a>
 
  Describes one or more Capacity Manager data export configurations. Returns information about export settings, delivery status, and recent export activity.
 

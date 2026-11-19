@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Working with CloudWatch Logs in Visual Studio
-<a name="cloudwatch-log-overview"></a>
 
 Amazon CloudWatch Logs integration allows you to monitor, store, and access CloudWatch Logs from the AWS Toolkit for Visual Studio with Amazon Q. Having access to CloudWatch Logs features—without the need to leave your IDE—improves efficiency by simplifying the CloudWatch Logs development process and reducing disruptions to your work flow. The following topics describe how to work with the basic features and functions of the CloudWatch Logs integration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Product
 ---
 
 # Product
-<a name="API_Product"></a>
 
 Contains details about a product.
 

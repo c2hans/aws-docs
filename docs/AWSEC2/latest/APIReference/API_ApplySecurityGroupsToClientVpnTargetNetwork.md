@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ApplySecu
 ---
 
 # ApplySecurityGroupsToClientVpnTargetNetwork
-<a name="API_ApplySecurityGroupsToClientVpnTargetNetwork"></a>
 
 Applies a security group to the association between the target network and the Client VPN endpoint. This action replaces the existing security groups with the specified security groups.
 

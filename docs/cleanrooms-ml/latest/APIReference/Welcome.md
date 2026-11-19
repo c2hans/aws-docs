@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/Welcom
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Welcome to the * AWS Clean Rooms ML API Reference*.
 
@@ -13,4 +12,4 @@ To learn more about AWS Clean Rooms ML concepts, procedures, and best practices,
 
 To learn more about SQL commands, functions, and conditions supported in AWS Clean Rooms, see the [AWS Clean Rooms SQL Reference](https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-reference.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_red
 ---
 
 # Generating a policy based on access activity
-<a name="getting-started_reduce-permissions-edit-policy"></a>
 
 You can use the access activity recorded in AWS CloudTrail for an IAM user or IAM role to have IAM Access Analyzer generate a customer managed policy to allow access to only the services that specific users and roles need.
 

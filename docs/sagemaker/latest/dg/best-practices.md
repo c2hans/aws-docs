@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/best-practices.html
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 The following topics provide guidance on best practices for deploying machine learning models in Amazon SageMaker AI.
 

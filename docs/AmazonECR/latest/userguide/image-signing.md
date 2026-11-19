@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-signing
 ---
 
 # Sign images in Amazon ECR
-<a name="image-signing"></a>
 
 Amazon ECR integrates with AWS Signer to provide two ways for you to sign your container images: *managed signing* (automatic, recommended) and *manual signing* (client-side). You can store both your container images and the signatures in your private repositories.
 

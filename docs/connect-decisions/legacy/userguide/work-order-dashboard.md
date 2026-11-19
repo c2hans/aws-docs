@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/work-
 ---
 
 # Orders
-<a name="work-order-dashboard"></a>
 
 You can view all the orders that are at-risk, delivered, early, late, on time, or watch. You can expand the order to view the materials under each order.
 

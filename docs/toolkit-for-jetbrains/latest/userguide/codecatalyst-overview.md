@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/c
 ---
 
 # Working with Amazon CodeCatalyst in JetBrains Gateway
-<a name="codecatalyst-overview"></a>
 
 You can launch a virtual computing environment, known as a Dev Environment, from JetBrains. Dev Environments are customizable cloud-development environments that you can copy and share among different team members in your Space. For more information about Dev Environments and how you can access them from CodeCatalyst, see the [Dev Environments](https://docs.aws.amazon.com/codecatalyst/latest/userguide/devenvironment.html) section in the *Amazon CodeCatalyst* User Guide.
 

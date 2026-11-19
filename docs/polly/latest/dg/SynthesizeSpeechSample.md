@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/SynthesizeSpeechSample.h
 ---
 
 # SynthesizeSpeech
-<a name="SynthesizeSpeechSample"></a>
 
 The following Java code sample show how to use Java-based applications to synthesize speech with shorter texts for near-real time processing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RSessi
 ---
 
 # RSessionAppSettings
-<a name="API_RSessionAppSettings"></a>
 
 A collection of settings that apply to an `RSessionGateway` app.
 

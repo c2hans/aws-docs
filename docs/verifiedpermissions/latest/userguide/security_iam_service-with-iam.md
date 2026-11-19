@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/sec
 ---
 
 # How Amazon Verified Permissions works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Verified Permissions, learn what IAM features are available to use with Verified Permissions.
 

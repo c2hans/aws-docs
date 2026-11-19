@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Pr
 ---
 
 # Importing a PostgreSQL database from an Amazon EC2 instance
-<a name="PostgreSQL.Procedural.Importing.EC2"></a>
 
 If you have data in a PostgreSQL server on an Amazon EC2 instance and want to move it to a PostgreSQL DB instance, you can follow this process to migrate the data.
 

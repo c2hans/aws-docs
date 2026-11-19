@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/setu
 ---
 
 # Installing the AWS Toolkit for Visual Studio Code
-<a name="setup-toolkit"></a>
 
 ## Prerequisites
 <a name="setup-prereq"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-ty
 ---
 
 # GuardDuty finding types
-<a name="guardduty_finding-types-active"></a>
 
 A finding is a notification that GuardDuty generates when it detects an indication of a suspicious or malicious activity in your AWS account. GuardDuty generates a finding in an account that has enabled GuardDuty.
 

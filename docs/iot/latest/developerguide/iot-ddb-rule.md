@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-ddb-rule.h
 ---
 
 # Tutorial: Storing device data in a DynamoDB table
-<a name="iot-ddb-rule"></a>
 
 This tutorial demonstrates how to create an AWS IoT rule that sends message data to a DynamoDB table.
 

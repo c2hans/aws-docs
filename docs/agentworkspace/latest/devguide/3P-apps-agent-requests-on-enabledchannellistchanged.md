@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # Subscribe to agent enabled channel list changes in Connect Customer agent workspace
-<a name="3P-apps-agent-requests-on-enabledchannellistchanged"></a>
 
 Creates a subscription for EnabledChannelListChanged event. This gets triggered when an Agent's enabled channels get updated.
 

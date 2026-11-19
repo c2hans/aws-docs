@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mu
 ---
 
 # Establish a modern multicloud data and AI strategy
-<a name="data-ai"></a>
 
 A robust multicloud data strategy is essential for ensuring seamless data integration, stringent governance for compliance and resilience, and adherence to data sovereignty laws. It should include a cost-management framework that supports flexible scalability in line with organizational growth. By addressing these critical areas—integration, governance, resilience, sovereignty, and scalability—you can effectively optimize data assets across platforms. This ensures security and compliance, and enhances decision-making and operational efficiency.
 

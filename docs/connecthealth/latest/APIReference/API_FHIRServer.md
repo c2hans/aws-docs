@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_FH
 ---
 
 # FHIRServer
-<a name="API_FHIRServer"></a>
 
 FHIR server configuration for input data source
 

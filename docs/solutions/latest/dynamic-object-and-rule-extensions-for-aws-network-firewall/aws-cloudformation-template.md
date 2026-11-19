@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule
 ---
 
 # AWS CloudFormation template
-<a name="aws-cloudformation-template"></a>
 
  To automate deployment, this solution uses the following AWS CloudFormation template which you can download before deployment:
 

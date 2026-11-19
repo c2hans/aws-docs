@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-translati
 ---
 
 # Translations
-<a name="acxd-translations"></a>
 
 Translations help you create multilingual conversational AI applications in agentic CX designer.
 

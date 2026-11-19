@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_DataS
 ---
 
 # DataSourceConfiguration
-<a name="API_DataSourceConfiguration"></a>
 
 Defines configuration details about the data source.
 

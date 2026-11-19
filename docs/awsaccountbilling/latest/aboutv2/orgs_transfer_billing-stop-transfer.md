@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/orgs_tr
 ---
 
 # Withdrawing transfers
-<a name="orgs_transfer_billing-stop-transfer"></a>
 
 When you sign in to your organization's management account, you can withdraw a transfer at any time. The transfer continues until the end date.
 

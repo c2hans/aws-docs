@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/vpc-flow-logs-parquet.h
 ---
 
 # Create tables for flow logs in Apache Parquet format
-<a name="vpc-flow-logs-parquet"></a>
 
 The following procedure creates an Amazon VPC table for Amazon VPC flow logs in Apache Parquet format.
 

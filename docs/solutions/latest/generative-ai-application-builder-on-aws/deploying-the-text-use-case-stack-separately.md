@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Deploying a standalone Text use case
-<a name="deploying-the-text-use-case-stack-separately"></a>
 
 Follow the step-by-step instructions in this section to configure and deploy the solution into your account.
 

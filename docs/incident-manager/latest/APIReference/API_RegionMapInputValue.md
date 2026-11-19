@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # RegionMapInputValue
-<a name="API_RegionMapInputValue"></a>
 
 The mapping between a AWS Region and the key that's used to encrypt the data.
 

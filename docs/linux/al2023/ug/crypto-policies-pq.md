@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/crypto-policies-pq.html
 ---
 
 # Enable Post-Quantum Cryptography (PQC) on AL2023
-<a name="crypto-policies-pq"></a>
 
 The system-wide cryptographic policies on AL2023 now supports post-quantum cryptography (PQC) via a new `PQ` subpolicy. After applying the PQ subpolicy, hybrid post-quantum key exchange using the Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) and post-quantum digital signatures using the Module-Lattice-Based Digital Signature Standard (ML-DSA) will be enabled in the LEGACY, DEFAULT, FUTURE, or FIPS cryptographic policies.
 

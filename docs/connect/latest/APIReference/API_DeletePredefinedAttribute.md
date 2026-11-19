@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeletePr
 ---
 
 # DeletePredefinedAttribute
-<a name="API_DeletePredefinedAttribute"></a>
 
 Deletes a predefined attribute from the specified Connect Customer instance.
 

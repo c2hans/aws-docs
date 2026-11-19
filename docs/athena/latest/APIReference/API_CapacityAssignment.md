@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_CapacityA
 ---
 
 # CapacityAssignment
-<a name="API_CapacityAssignment"></a>
 
 A mapping between one or more workgroups and a capacity reservation.
 

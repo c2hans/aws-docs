@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-diagnos
 ---
 
 # Diagnose DNS connectivity issues with Route 53 Global Resolver
-<a name="gr-diagnose-connectivity-issues"></a>
 
 Route 53 Global Resolver provides reliable DNS resolution, but connectivity issues can occasionally occur due to configuration, authentication, or network problems. When client devices cannot resolve domain names using Route 53 Global Resolver, use these systematic approaches to identify and resolve connectivity problems.
 

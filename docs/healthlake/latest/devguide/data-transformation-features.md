@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/data-transfor
 ---
 
 # Data Transformation features
-<a name="data-transformation-features"></a>
 
 Each feature below is documented with what it is, how it works, differences between C-CDA and CSV sources, and when to use it.
 + [Transformation profiles and versioning](#data-transformation-profiles)

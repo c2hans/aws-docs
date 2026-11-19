@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Delete notification contacts in Lightsail
-<a name="amazon-lightsail-deleting-notification-contacts"></a>
 
 Delete your email and mobile phone number notification contacts from Amazon Lightsail to stop receiving email and SMS text message notifications for your Lightsail resources. For more information about notifications, see [Notifications](amazon-lightsail-notifications.md).
 

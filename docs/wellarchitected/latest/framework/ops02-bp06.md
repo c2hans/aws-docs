@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops02-b
 ---
 
 # OPS02-BP06 Augment observability with AI assistants
-<a name="ops02-bp06"></a>
 
  AI assistants now work at every stage of observability: they can instrument an application, write the queries, build the dashboards, recommend the objectives and alarms, and investigate what those alarms catch. Use them where they work the best. For example, an assistant analyzes large volumes of telemetry and correlates information across signals faster than a human can.
 

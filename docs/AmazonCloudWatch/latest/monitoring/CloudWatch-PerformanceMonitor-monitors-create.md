@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Create a monitor in Performance Monitor
-<a name="CloudWatch-PerformanceMonitor-monitors-create"></a>
 
 **VPC selection**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CoreNetworkSegmentEdgeIdentifier
-<a name="API_CoreNetworkSegmentEdgeIdentifier"></a>
 
 Returns details about a core network edge.
 

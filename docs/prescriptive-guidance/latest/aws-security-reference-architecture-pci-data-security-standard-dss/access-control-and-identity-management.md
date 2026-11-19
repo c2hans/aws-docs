@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-securit
 ---
 
 # Access Control and Identity Management
-<a name="access-control-and-identity-management"></a>
 
 Access control and identity management form the cornerstone of protecting cardholder data environments from unauthorized access and insider threats, especially in the cloud where it can act as the primary security perimeter, replacing traditional network firewalls by defining who can access specific data, applications, and resources. PCI DSS Requirement 7 mandates restricting access to system components and cardholder data by business need to know, while Requirement 8 requires organizations to identify users and authenticate access to system components. In cloud environments, identity and access management services provide opportunities to implement least-privilege access controls, strong authentication mechanisms, and automated access reviews with greater consistency, auditability, and scalability.
 

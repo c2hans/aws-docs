@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # AutomationStatus
-<a name="API_AutomationStatus"></a>
 
 Whether the change type is automated or manual.
 

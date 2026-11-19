@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Regis
 ---
 
 # RegisteredUserEmbeddingExperienceConfiguration
-<a name="API_RegisteredUserEmbeddingExperienceConfiguration"></a>
 
 The type of experience you want to embed. For registered users, you can embed Quick dashboards or the Amazon Quick Sight console.
 

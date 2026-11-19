@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListSigningC
 ---
 
 # ListSigningCertificates
-<a name="API_ListSigningCertificates"></a>
 
 Returns information about the signing certificates associated with the specified IAM user. If none exists, the operation returns an empty list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetUsagePlanKe
 ---
 
 # GetUsagePlanKeys
-<a name="API_GetUsagePlanKeys"></a>
 
 Gets all the usage plan keys representing the API keys added to a specified usage plan.
 

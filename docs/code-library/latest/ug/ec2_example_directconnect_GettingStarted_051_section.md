@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ec2_example_direc
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Get started with dedicated network connections using the CLI
-<a name="ec2_example_directconnect_GettingStarted_051_section"></a>
 
 The following code example shows how to:
 + Use ec2 CreateVpnGateway

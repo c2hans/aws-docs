@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/reverse-g
 ---
 
 # How to use ReverseGeocode
-<a name="reverse-geocode-how-to"></a>
 
 This section contains a variety of how to guides and examples for how to use ReverseGeocode APIs.
 

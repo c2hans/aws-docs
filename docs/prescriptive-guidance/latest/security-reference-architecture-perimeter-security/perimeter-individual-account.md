@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Deploying perimeter services in individual Application accounts
-<a name="perimeter-individual-account"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Decim
 ---
 
 # DecimalValueWhenUnsetConfiguration
-<a name="API_DecimalValueWhenUnsetConfiguration"></a>
 
 The configuration that defines the default value of a `Decimal` parameter when a value has not been set.
 

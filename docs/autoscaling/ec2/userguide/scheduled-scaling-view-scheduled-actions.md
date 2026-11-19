@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/scheduled-scal
 ---
 
 # View scheduled action details
-<a name="scheduled-scaling-view-scheduled-actions"></a>
 
 To view details of upcoming scheduled actions for your Auto Scaling group, use one of the following methods:
 

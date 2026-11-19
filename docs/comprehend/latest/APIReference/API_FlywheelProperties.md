@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Flywh
 ---
 
 # FlywheelProperties
-<a name="API_FlywheelProperties"></a>
 
 The flywheel properties.
 

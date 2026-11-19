@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_SqlRunCon
 ---
 
 # SqlRunConfiguration
-<a name="API_SqlRunConfiguration"></a>
 
 Describes the starting parameters for a SQL-based Kinesis Data Analytics application.
 

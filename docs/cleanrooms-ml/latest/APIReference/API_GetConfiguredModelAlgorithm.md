@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Ge
 ---
 
 # GetConfiguredModelAlgorithm
-<a name="API_GetConfiguredModelAlgorithm"></a>
 
 Returns information about a configured model algorithm.
 

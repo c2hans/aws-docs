@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/modify-banner
 ---
 
 # Modify existing banner text on a AWS Client VPN endpoint
-<a name="modify-banner-text"></a>
 
 Use the following steps to modify existing text on a Client VPN client login banner.
 

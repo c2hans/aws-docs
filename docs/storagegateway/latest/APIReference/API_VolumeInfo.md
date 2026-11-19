@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_V
 ---
 
 # VolumeInfo
-<a name="API_VolumeInfo"></a>
 
 Describes a storage volume object.
 

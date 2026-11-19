@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-monitor
 ---
 
 # Monitoring data delivery
-<a name="data-delivery-monitoring"></a>
 
  Use this topic to learn how to monitor your delivery using Amazon CloudWatch metrics, CloudWatch Logs, and AWS CloudTrail.
 

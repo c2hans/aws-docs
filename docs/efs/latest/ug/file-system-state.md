@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/file-system-state.html
 ---
 
 # Understanding file system status
-<a name="file-system-state"></a>
 
 You can view the status of Amazon EFS file systems using the Amazon EFS console or the AWS CLI. An Amazon EFS file system can have one of the status values described in the following table.
 

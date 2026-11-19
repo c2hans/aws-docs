@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UpdateSubscriber
-<a name="API_budgets_UpdateSubscriber"></a>
 
 Updates a subscriber.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomNarrativeOptions
-<a name="API_CustomNarrativeOptions"></a>
 
 The custom narrative options.
 

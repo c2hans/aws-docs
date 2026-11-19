@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/Explore
 ---
 
 # Setting up related services for Explorer
-<a name="Explorer-setup-related-services"></a>
 
 AWS Systems Manager Explorer and AWS Systems Manager OpsCenter collect information from, or interact with, other AWS services and Systems Manager tools. We recommend that you set up and configure these other services or tools before you use Integrated Setup.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Su
 ---
 
 # SummarizationDimensionDetail
-<a name="API_SummarizationDimensionDetail"></a>
 
 Provides detailed information about the dimensions used for event summarization and aggregation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Integrating microservices by using AWS serverless services
-<a name="introduction"></a>
 
 *Tabby Ward, Abhishek Agawane, and Matt Kahn, Amazon Web Services*
 

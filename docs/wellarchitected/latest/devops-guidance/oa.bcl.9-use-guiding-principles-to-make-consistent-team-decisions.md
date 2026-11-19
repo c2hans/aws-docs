@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.BCL.9] Use guiding principles to make consistent team decisions
-<a name="oa.bcl.9-use-guiding-principles-to-make-consistent-team-decisions"></a>
 
  **Category:** RECOMMENDED
 

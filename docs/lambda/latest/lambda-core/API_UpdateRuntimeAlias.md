@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_UpdateRunt
 ---
 
 # UpdateRuntimeAlias
-<a name="API_UpdateRuntimeAlias"></a>
 
 Updates an existing runtime alias to point to a different runtime version or to change its description or lifecycle information.
 

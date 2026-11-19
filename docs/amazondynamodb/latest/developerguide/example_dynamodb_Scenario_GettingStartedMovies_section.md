@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Learn the basics of DynamoDB with an AWS SDK
-<a name="example_dynamodb_Scenario_GettingStartedMovies_section"></a>
 
 The following code examples show how to:
 + Create a table that can hold movie data.

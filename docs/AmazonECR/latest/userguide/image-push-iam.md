@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-push-ia
 ---
 
 # IAM permissions for pushing an image to an Amazon ECR private repository
-<a name="image-push-iam"></a>
 
 Users need IAM permissions to push images to Amazon ECR private repositories. Following the best practice of granting least privilege, you can grant access to a specific repository. You can also grant access to all repositories.
 

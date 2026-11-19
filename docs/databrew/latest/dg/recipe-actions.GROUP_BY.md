@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.GROUP_
 ---
 
 # GROUP\_BY
-<a name="recipe-actions.GROUP_BY"></a>
 
 Summarizes the data by grouping rows by one or more columns, and then applying an aggregation function to each group.
 

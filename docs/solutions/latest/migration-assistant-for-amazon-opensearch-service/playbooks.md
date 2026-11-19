@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Playbooks
-<a name="playbooks"></a>
 
 Playbooks are end-to-end, copy-pasteable runbooks for specific source-to-target migration paths. Each playbook walks you through a single path from connectivity checks to cutover using the Workflow CLI and supporting `console` commands that run in the Migration Console pod (`migration-console-0`) on Amazon Elastic Kubernetes Service (Amazon EKS). Where the general procedure in [Configure and run workflows](use-the-solution.md) describes each phase in isolation, a playbook strings those phases together into one ordered sequence tailored to a particular source and target.
 

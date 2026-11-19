@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-soci-indexed-i
 ---
 
 # Speed up training job startup with SOCI-indexed images
-<a name="train-soci-indexed-images"></a>
 
 A training job downloads its container image before it runs your code. For large images, such as deep learning images, this adds minutes to every training job.
 

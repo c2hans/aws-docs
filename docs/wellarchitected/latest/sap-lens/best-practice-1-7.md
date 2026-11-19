@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 1.7 – Implement single pane of glass health monitoring across your SAP workloads
-<a name="best-practice-1-7"></a>
 
 Configure your SAP applications, AWS services, and any dependent components to provide information about the flow of transactions across the workload. Combine metrics from multiple sources to create a single pane of glass visualization for the health of your SAP workload and make this dashboard accessible to your key users. Use this information to determine when a response is required and to assist you in quickly identifying the factors contributing to an issue impacting your business.
 

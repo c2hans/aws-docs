@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Bi
 ---
 
 # BitbucketRepositoryMetadata
-<a name="API_BitbucketRepositoryMetadata"></a>
 
 Metadata for an integrated Bitbucket repository.
 

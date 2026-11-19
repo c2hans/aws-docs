@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListC
 ---
 
 # ListCloudFrontOriginAccessIdentities
-<a name="API_ListCloudFrontOriginAccessIdentities"></a>
 
 Lists origin access identities.
 

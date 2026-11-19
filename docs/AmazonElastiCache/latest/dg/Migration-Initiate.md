@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Migration-In
 ---
 
 # Starting migration
-<a name="Migration-Initiate"></a>
 
 After all prerequisites are complete, you can begin migrating data to your node-based ElastiCache cluster using the AWS Management Console, ElastiCache API, or AWS CLI. For cluster-mode enabled, if slot migration differs, a resharding will be performed before live migration. The following example shows using the CLI.
 

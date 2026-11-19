@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 ---
 
 # Listing directory buckets
-<a name="directory-buckets-objects-ListExamples"></a>
 
 The following examples show how to list directory buckets by using the AWS Management Console, AWS SDKs, and AWS CLI.
 

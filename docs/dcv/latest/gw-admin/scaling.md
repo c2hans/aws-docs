@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/gw-admin/scaling.html
 ---
 
 # Scaling the Amazon DCV Connection Gateway
-<a name="scaling"></a>
 
 The following topics describe how to scale Amazon DCV Connection Gateway using a fleet of gateway hosts and a [Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html).
 

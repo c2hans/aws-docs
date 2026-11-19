@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Evaluati
 ---
 
 # EvaluationResult
-<a name="API_EvaluationResult"></a>
 
 Describes the compliance status for the account. An account is considered noncompliant if it includes resources that are not protected by the specified policy or that don't comply with the policy.
 

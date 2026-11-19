@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAppS
 ---
 
 # AwsAppSyncGraphQlApiLogConfigDetails
-<a name="API_AwsAppSyncGraphQlApiLogConfigDetails"></a>
 
  Specifies the logging configuration when writing GraphQL operations and tracing to Amazon CloudWatch for an AWS AppSync GraphQL API.
 

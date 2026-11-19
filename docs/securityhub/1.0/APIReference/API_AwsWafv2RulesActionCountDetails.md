@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafv
 ---
 
 # AwsWafv2RulesActionCountDetails
-<a name="API_AwsWafv2RulesActionCountDetails"></a>
 
  Specifies that AWS WAF should count the request.
 

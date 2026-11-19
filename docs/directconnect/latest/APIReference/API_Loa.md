@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Lo
 ---
 
 # Loa
-<a name="API_Loa"></a>
 
 Information about a Letter of Authorization - Connecting Facility Assignment (LOA-CFA) for a connection.
 

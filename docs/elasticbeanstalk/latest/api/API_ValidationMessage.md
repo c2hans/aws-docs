@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Validati
 ---
 
 # ValidationMessage
-<a name="API_ValidationMessage"></a>
 
 An error or warning for a desired configuration option value.
 

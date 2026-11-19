@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListGiMinorV
 ---
 
 # ListGiMinorVersions
-<a name="API_ListGiMinorVersions"></a>
 
 Returns a list of the Oracle Grid Infrastructure (GI) minor versions for the specified major version.
 

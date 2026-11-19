@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelCard Function
-<a name="aws-properties-sagemaker-modelcard-function"></a>
 
 Function details.
 
@@ -61,6 +60,6 @@ The optimization direction of the model's objective function. You must specify o
 +  `Maximize`
 +  `Minimize`
 *Required*: No
-*Type*: [String](#aws-properties-sagemaker-modelcard-function)
+*Type*: [String](aws-properties-sagemaker-modelcard-function.md)
 *Allowed values*: `Maximize | Minimize`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

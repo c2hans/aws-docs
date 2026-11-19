@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Operatio
 ---
 
 # Amazon Connect Scheduling
-<a name="API_Operations_Amazon_Connect_Scheduling"></a>
 
 The following actions are supported by Amazon Connect Scheduling:
 +  [ApproveTimeOff](API_connect-scheduling_ApproveTimeOff.md)

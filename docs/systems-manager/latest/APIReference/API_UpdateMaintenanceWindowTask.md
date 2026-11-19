@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # UpdateMaintenanceWindowTask
-<a name="API_UpdateMaintenanceWindowTask"></a>
 
 Modifies a task assigned to a maintenance window. You can't change the task type, but you can change the following values:
 +  `TaskARN`. For example, you can change a `RUN_COMMAND` task from `AWS-RunPowerShellScript` to `AWS-RunShellScript`.

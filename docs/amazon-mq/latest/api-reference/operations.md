@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/operation
 ---
 
 # Operations
-<a name="operations"></a>
 
 The Amazon MQ REST API includes the following operations.
 + [CreateBroker](brokers.md#CreateBroker)

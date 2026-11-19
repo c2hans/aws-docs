@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Spaci
 ---
 
 # Spacing
-<a name="API_Spacing"></a>
 
 The configuration of spacing (often a margin or padding).
 

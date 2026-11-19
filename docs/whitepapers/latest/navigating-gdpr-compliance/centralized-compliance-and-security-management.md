@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Centralized Compliance and Security Management
-<a name="centralized-compliance-and-security-management"></a>
 
 Many organizations have challenges related to visibility and centralized management of their environments. As your operational footprint grows, this challenge can be compounded unless you carefully consider your compliance and security architecture. Lack of knowledge, combined with decentralized and uneven management of governance and security processes, can make your environment vulnerable.
 

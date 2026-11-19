@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use-client
 ---
 
 # Client-side tool use
-<a name="tool-use-client-side"></a>
 
 If you use the Responses API, Chat Completions API, Converse API, or InvokeModel API to send the request, then the model uses client-side tool calling. This means that in your code, you call the tool on the model's behalf. In this scenario, assume the tool implementation is an API. The tool could just as easily be a database, Lambda function, or some other software. You decide how you want to implement the tool. You then continue the conversation with the model by supplying a message with the result from the tool. Finally, the model generates a response for the original message that includes the tool results that you sent to the model.
 

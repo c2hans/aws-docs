@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Conf
 ---
 
 # ConfigureLogsForChannel
-<a name="API_ConfigureLogsForChannel"></a>
 
 Configures Amazon CloudWatch log settings for a channel.
 

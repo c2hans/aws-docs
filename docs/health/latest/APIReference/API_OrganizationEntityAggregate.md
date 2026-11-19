@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_Organizat
 ---
 
 # OrganizationEntityAggregate
-<a name="API_OrganizationEntityAggregate"></a>
 
 The aggregate results of entities affected by the specified event in your organization. The results are aggregated by the entity status codes for the specified set of accountsIDs.
 

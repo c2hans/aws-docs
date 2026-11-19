@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/network-type
 ---
 
 # Configuring a preferred protocol for dual stack clusters (Memcached)
-<a name="network-type-configuring-dual-stack-memcached"></a>
 
 For Memcached clusters you can control the protocol clients will use to connect to the nodes in the cluster with the IP Discovery parameter. The IP Discovery parameter can be set to either IPv4 or IPv6.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Key AWS services
-<a name="key-aws-services-4"></a>
 
  The key AWS feature that supports cost optimization is cost allocation tags, which help you to understand the costs of a system. The following services and features are important in the four areas of cost optimization:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Recurri
 ---
 
 # RecurringCharge
-<a name="API_RecurringCharge"></a>
 
 Describes a recurring charge.
 

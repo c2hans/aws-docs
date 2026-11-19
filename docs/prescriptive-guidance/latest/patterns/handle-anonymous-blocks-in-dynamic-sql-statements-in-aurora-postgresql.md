@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ha
 ---
 
 # Handle anonymous blocks in Dynamic SQL statements in Aurora PostgreSQL
-<a name="handle-anonymous-blocks-in-dynamic-sql-statements-in-aurora-postgresql"></a>
 
 *anuradha chintha, Amazon Web Services*
 

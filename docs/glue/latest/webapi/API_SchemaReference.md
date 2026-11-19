@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SchemaReference.h
 ---
 
 # SchemaReference
-<a name="API_SchemaReference"></a>
 
 An object that references a schema stored in the AWS Glue Schema Registry.
 

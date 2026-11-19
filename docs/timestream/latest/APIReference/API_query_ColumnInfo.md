@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # ColumnInfo
-<a name="API_query_ColumnInfo"></a>
 
  Contains the metadata for query results such as the column names, data types, and other attributes.
 

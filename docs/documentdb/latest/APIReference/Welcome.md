@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/Welcome.h
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## Amazon DocumentDB (with MongoDB compatibility)
 <a name="Welcome_Amazon_DocumentDB_with_MongoDB_compatibility"></a>

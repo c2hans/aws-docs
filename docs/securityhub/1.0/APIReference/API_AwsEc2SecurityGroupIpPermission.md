@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2S
 ---
 
 # AwsEc2SecurityGroupIpPermission
-<a name="API_AwsEc2SecurityGroupIpPermission"></a>
 
 An IP permission for an EC2 security group.
 

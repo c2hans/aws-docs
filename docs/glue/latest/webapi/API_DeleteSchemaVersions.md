@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteSchemaVersi
 ---
 
 # DeleteSchemaVersions
-<a name="API_DeleteSchemaVersions"></a>
 
 Remove versions from the specified schema. A version number or range may be supplied. If the compatibility mode forbids deleting of a version that is necessary, such as BACKWARDS\_FULL, an error is returned. Calling the `GetSchemaVersions` API after this call will list the status of the deleted versions.
 

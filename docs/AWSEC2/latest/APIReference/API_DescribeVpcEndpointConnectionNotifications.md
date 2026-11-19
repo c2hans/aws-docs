@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeV
 ---
 
 # DescribeVpcEndpointConnectionNotifications
-<a name="API_DescribeVpcEndpointConnectionNotifications"></a>
 
 Describes the connection notifications for VPC endpoints and VPC endpoint services.
 

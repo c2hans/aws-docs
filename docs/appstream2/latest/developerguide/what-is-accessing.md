@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/what-is
 ---
 
 # Accessing Amazon WorkSpaces Applications
-<a name="what-is-accessing"></a>
 
 You can work with WorkSpaces Applications using any of the following interfaces:
 

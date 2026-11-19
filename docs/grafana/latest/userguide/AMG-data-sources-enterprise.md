@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-data-source
 ---
 
 # Connect to Enterprise data sources
-<a name="AMG-data-sources-enterprise"></a>
 
 The following data sources are supported in workspaces that have been upgraded to Amazon Managed Grafana Enterprise plugins. For more information, see [Manage access to Enterprise plugins](upgrade-to-enterprise-plugins.md).
 

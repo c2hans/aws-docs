@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_PromoteReadRep
 ---
 
 # PromoteReadReplicaDBCluster
-<a name="API_PromoteReadReplicaDBCluster"></a>
 
 Not supported.
 

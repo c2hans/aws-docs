@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ge
 ---
 
 # GetApplication
-<a name="API_GetApplication"></a>
 
 Retrieves information about an application.
 

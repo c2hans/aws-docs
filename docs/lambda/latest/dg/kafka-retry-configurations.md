@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/kafka-retry-configurati
 ---
 
 # Configuring error handling controls for Kafka event sources
-<a name="kafka-retry-configurations"></a>
 
 You can configure how Lambda handles errors and retries for your Kafka event source mappings. These configurations help you control how Lambda processes failed records and manages retry behavior.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_TextDoc
 ---
 
 # TextDocumentStatistics
-<a name="API_TextDocumentStatistics"></a>
 
 Provides information about text documents in an index.
 

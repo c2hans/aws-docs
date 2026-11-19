@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Predict
 ---
 
 # PredictiveScalingCustomizedCapacityMetric
-<a name="API_PredictiveScalingCustomizedCapacityMetric"></a>
 
 Describes a customized capacity metric for a predictive scaling policy.
 

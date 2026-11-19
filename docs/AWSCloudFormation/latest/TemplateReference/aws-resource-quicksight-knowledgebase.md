@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::KnowledgeBase
-<a name="aws-resource-quicksight-knowledgebase"></a>
 
 Creates a knowledge base from a specified data source. Supported data source connector types include:
 + `S3_KNOWLEDGE_BASE` – Uses an Amazon S3 bucket as the data source.

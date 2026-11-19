@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/UsingEMR_View
 ---
 
 # Monitoring Amazon EMR metrics with CloudWatch
-<a name="UsingEMR_ViewingMetrics"></a>
 
 Metrics are updated every five minutes and automatically collected and pushed to CloudWatch for every Amazon EMR cluster. This interval is not configurable. There is no charge for the Amazon EMR metrics reported in CloudWatch. These five minute datapoint metrics are archived for 63 days, after which the data is discarded.
 

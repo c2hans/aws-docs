@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-evaluation-c
 ---
 
 # Create a prompt for a custom metric
-<a name="kb-evaluation-custom-metrics-prompt-formats"></a>
 
 With RAG evaluation jobs, you can create your own metrics to better characterize model performance for your particular business case. You can define up to 10 custom metrics for each evaluation job.
 

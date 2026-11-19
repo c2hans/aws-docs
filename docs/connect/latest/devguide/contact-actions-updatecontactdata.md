@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/contact-actions-
 ---
 
 # UpdateContactData
-<a name="contact-actions-updatecontactdata"></a>
 
 Sets a collection of connect defined attributes on specified contact. With this type of operation, either all attributes are set or none are set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # McpTargetConfiguration
-<a name="API_McpTargetConfiguration"></a>
 
 The Model Context Protocol (MCP) configuration for a target. This structure defines how the gateway uses MCP to communicate with the target.
 

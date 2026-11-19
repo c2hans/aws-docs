@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_FlowAsso
 ---
 
 # FlowAssociationSummary
-<a name="API_FlowAssociationSummary"></a>
 
 Information about flow associations.
 

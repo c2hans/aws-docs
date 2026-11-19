@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ma
 ---
 
 # How to match GPS traces to a road network
-<a name="how-to-match-gps-traces"></a>
 
 The SnapToRoads API allows you to match GPS traces onto the road network. A GPS trace includes positions and metadata like timestamp, speed, and heading that are recorded using a GPS device. These traces often have a margin of error, making them challenging to use for analysis and visualization directly.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudshell/latest/userguide/tutorials.ht
 ---
 
 # AWS CloudShell tutorials
-<a name="tutorials"></a>
 
 The following tutorials show you how to experiment, and test different functionalities and integrations when using AWS CloudShell.
 

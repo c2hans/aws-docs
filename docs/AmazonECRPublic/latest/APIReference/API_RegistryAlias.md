@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # RegistryAlias
-<a name="API_RegistryAlias"></a>
 
 An object representing the aliases for a public registry. A public registry is given an alias when it's created. However, a custom alias can be set using the Amazon ECR console. For more information, see [Public registries](https://docs.aws.amazon.com/AmazonECR/latest/public/public-registries.html) in the *Amazon Elastic Container Registry Public User Guide*.
 

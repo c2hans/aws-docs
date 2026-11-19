@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Phase 3: Migrate and modernize
-<a name="phase-3-migrate"></a>
 
 In the migrate and modernize phase, you perform the actual database migration by using suitable tools and the appropriate approach. Your selection of tools and approach is based on business requirements such as the following:
 + Timeline

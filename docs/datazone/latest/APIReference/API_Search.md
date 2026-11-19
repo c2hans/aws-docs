@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Search.
 ---
 
 # Search
-<a name="API_Search"></a>
 
 Searches for assets in Amazon DataZone.
 

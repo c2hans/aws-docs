@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Enviro
 ---
 
 # EnvironmentParameter
-<a name="API_EnvironmentParameter"></a>
 
 A list of environment parameters suggested by the Amazon SageMaker Inference Recommender.
 

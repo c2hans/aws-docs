@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/emla-setup-cl-nodes-
 ---
 
 # Create the nodes
-<a name="emla-setup-cl-nodes-create"></a>
 
 Create all the nodes for one cluster. Create them after you've created the cluster, and after you've finalized the cluster and network configurations.
 

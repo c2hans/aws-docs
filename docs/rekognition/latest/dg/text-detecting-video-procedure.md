@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/text-detecting-vid
 ---
 
 # Detecting text in a stored video
-<a name="text-detecting-video-procedure"></a>
 
 Amazon Rekognition Video text detection in stored videos is an asynchronous operation. To start detecting text, call [StartTextDetection](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartTextDetection.html). Amazon Rekognition Video publishes the completion status of the video analysis to an Amazon SNS topic. If the video analysis is successful, call [GetTextDetection](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetTextDetection.html) to get the analysis results. For more information about starting video analysis and getting the results, see [Calling Amazon Rekognition Video operations](api-video.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetResourcePolicies
-<a name="API_GetResourcePolicies"></a>
 
 Returns an array of the `Policy` object.
 

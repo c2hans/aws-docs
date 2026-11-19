@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-exp
 ---
 
 # About controls and treatments
-<a name="appconfig-experimentation-about-controls-and-treatments"></a>
 
 In AWS AppConfig experimentation:
 + The control treatment represents a stable, well-understood configuration or experience used as the baseline for comparison. This is often the current default behavior, but it can be any known-good state.

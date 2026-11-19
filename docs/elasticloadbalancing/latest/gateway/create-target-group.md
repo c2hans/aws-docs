@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/crea
 ---
 
 # Create a target group for your Gateway Load Balancer
-<a name="create-target-group"></a>
 
 You register targets for your Gateway Load Balancer using a target group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applicati
 ---
 
 # Applications applicationId Templates templateId
-<a name="applications-applicationid-templates-templateid"></a>
 
 ## URI
 <a name="applications-applicationid-templates-templateid-url"></a>

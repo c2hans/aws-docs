@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/jobs-conc
 ---
 
 # Jobs concepts
-<a name="jobs-concepts"></a>
 
 The following topics provide foundational knowledge and best practices for using the Amazon Location Service Jobs API. These concepts are essential for effectively implementing Jobs features within your application.
 

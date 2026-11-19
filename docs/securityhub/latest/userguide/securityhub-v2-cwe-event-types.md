@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # EventBridge event types
-<a name="securityhub-v2-cwe-event-types"></a>
 
 Security Hub uses the following Amazon EventBridge event types to integrate with EventBridge.
 

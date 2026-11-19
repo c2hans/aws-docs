@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_DeleteAppAuthor
 ---
 
 # DeleteAppAuthorization
-<a name="API_DeleteAppAuthorization"></a>
 
 Deletes an app authorization. You must delete the associated ingestion before you can delete an app authorization.
 

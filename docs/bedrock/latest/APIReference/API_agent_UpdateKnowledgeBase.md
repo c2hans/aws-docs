@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Up
 ---
 
 # UpdateKnowledgeBase
-<a name="API_agent_UpdateKnowledgeBase"></a>
 
 Updates the configuration of a knowledge base with the fields that you specify. Because all fields will be overwritten, you must include the same values for fields that you want to keep the same.
 
@@ -160,6 +159,13 @@ Content-type: application/json
          }
       }
    },
+   "metadataConfigurations": [
+      {
+         "name": "{{string}}",
+         "searchability": "{{string}}",
+         "type": "{{string}}"
+      }
+   ],
    "name": "{{string}}",
    "roleArn": "{{string}}",
    "storageConfiguration": {
@@ -270,6 +276,13 @@ Required: No
 Specifies the configuration for the embeddings model used for the knowledge base. You must use the same configuration as when the knowledge base was created.
 Type: [KnowledgeBaseConfiguration](API_agent_KnowledgeBaseConfiguration.md) object
 Required: Yes
+
+ ** [metadataConfigurations](#API_agent_UpdateKnowledgeBase_RequestSyntax) **   <a name="bedrock-agent_UpdateKnowledgeBase-request-metadataConfigurations"></a>
+Specifies up to 30 custom metadata field configurations for a managed knowledge base.
+The list that you specify replaces the existing configurations. The update removes any configuration that you leave out, and its field is no longer searchable. An empty list removes all configurations. If you don't specify a list, the existing configurations don't change.
+Type: Array of [MetadataConfiguration](API_agent_MetadataConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 30 items.
+Required: No
 
  ** [name](#API_agent_UpdateKnowledgeBase_RequestSyntax) **   <a name="bedrock-agent_UpdateKnowledgeBase-request-name"></a>
 Specifies a new name for the knowledge base.
@@ -440,6 +453,13 @@ Content-type: application/json
          }
       },
       "knowledgeBaseId": "string",
+      "metadataConfigurations": [
+         {
+            "name": "string",
+            "searchability": "string",
+            "type": "string"
+         }
+      ],
       "name": "string",
       "roleArn": "string",
       "status": "string",

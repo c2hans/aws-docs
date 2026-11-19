@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API
 ---
 
 # CampaignSummary
-<a name="API_connect-outbound-campaigns_CampaignSummary"></a>
 
 Contains summary information about an outbound campaign.
 

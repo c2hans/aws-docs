@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/se
 ---
 
 # Setting up session credentials
-<a name="session-credentials-setup"></a>
 
 ## Step 1: Create an IAM role
 <a name="session-credentials-step1"></a>

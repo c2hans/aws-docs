@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # Manage and govern functions to interoperate
-<a name="manage-and-govern-functions-to-interoperate"></a>
 
  The eight management and governance functions, supported by AWS services and AWS Partner solutions, should interoperate together in an informative relationship to help you manage and govern your environments at scale. Outputs from these functions are used to inform or integrate with other functions.
 

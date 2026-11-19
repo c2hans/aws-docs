@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationAutomationRuleCategory
-<a name="API_EvaluationAutomationRuleCategory"></a>
 
 The Contact Lens category used by evaluation automation.
 

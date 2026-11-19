@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost02-
 ---
 
 # COST02-BP02 Allocate costs based on workload metrics and business outcomes
-<a name="cost02-bp02"></a>
 
  To measure workload efficiency, tie spend to a business outcome, such as an order, a report, or an active user. Cost per outcome then shows whether the workload gets cheaper or more expensive as it grows.
 

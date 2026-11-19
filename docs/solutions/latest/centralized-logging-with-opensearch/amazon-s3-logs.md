@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Amazon S3 logs
-<a name="amazon-s3-logs"></a>
 
  [Amazon S3 server access logging](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html) provides detailed records for the requests made to the bucket. S3 Access Logs can be enabled and saved in another S3 bucket.
 

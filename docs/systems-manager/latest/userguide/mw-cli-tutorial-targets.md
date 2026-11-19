@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/mw-cli-
 ---
 
 # Step 2: Register a target node with the maintenance window using the AWS CLI
-<a name="mw-cli-tutorial-targets"></a>
 
 In this step, you register a target with your new maintenance window. In this case, you specify which node to update when the maintenance window runs.
 

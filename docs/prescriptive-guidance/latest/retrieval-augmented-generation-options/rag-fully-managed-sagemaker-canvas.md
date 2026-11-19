@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-a
 ---
 
 # Amazon SageMaker AI Canvas
-<a name="rag-fully-managed-sagemaker-canvas"></a>
 
 [Amazon SageMaker AI Canvas](https://docs.aws.amazon.com/sagemaker/latest/dg/canvas.html) helps you use machine learning to generate predictions without needing to write any code. It provides a no-code visual interface that empowers you to prepare data, build, and deploy ML models, streamlining the end-to-end ML lifecycle in a unified environment. The complexities of data preparation, model development, bias detection, explainability, and monitoring are abstracted away behind an intuitive interface. Users don't need to be SageMaker AI or machine learning operations (MLOps) experts to develop, operationalize, and monitor models with SageMaker AI Canvas.
 

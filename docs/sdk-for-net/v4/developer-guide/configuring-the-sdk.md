@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Configuring the AWS SDK for .NET
-<a name="configuring-the-sdk"></a>
 
 To use the AWS SDK for .NET, you need to [set up your environment](net-dg-config.md) and also configure a number of essential things that your application needs to access AWS services. These include:
 + Specification of the AWS Region

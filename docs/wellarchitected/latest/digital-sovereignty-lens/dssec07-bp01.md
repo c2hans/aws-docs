@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # DSSEC07-BP01 Enhance your digital sovereignty governance posture
-<a name="dssec07-bp01"></a>
 
  In highly regulated industries, you might need to implement technical controls to enhance your digital sovereignty governance posture. This best practice assumes a secure landing zone with baseline security guardrails is already in place, and focuses on the sovereignty-specific governance controls layered on top of that foundation.
 

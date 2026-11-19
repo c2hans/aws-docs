@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # init
-<a name="resource-type-cli-init"></a>
 
 ## Description
 <a name="resource-type-cli-init-description"></a>

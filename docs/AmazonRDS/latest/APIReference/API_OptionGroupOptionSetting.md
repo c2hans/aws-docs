@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Option
 ---
 
 # OptionGroupOptionSetting
-<a name="API_OptionGroupOptionSetting"></a>
 
 Option group option settings are used to display settings available for each option with their default values and other information. These values are used with the DescribeOptionGroupOptions action.
 

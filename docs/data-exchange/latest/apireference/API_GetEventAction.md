@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ge
 ---
 
 # GetEventAction
-<a name="API_GetEventAction"></a>
 
 This operation retrieves information about an event action.
 

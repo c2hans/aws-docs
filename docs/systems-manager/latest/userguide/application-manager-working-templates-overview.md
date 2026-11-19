@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/applica
 ---
 
 # Using Application Manager to manage CloudFormation templates
-<a name="application-manager-working-templates-overview"></a>
 
 Application Manager includes a template library and other tools to help you manage AWS CloudFormation templates. This section includes the following information.
 

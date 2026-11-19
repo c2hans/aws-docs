@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/custom
 ---
 
 # Build a custom AWS DeepRacer car
-<a name="custom-car"></a>
 
 You can build a custom vehicle that is fully compatible with the DeepRacer on AWS solution. You can follow three build paths supported by the [AWS DeepRacer Community open-source project](https://github.com/aws-deepracer-community/deepracer-custom-car) on the GitHub website:
 +  **Option A**—Replace the Intel Atom processor in an existing AWS DeepRacer Evo with a Raspberry Pi 5, servo driver HAT, and Raspberry Pi-compatible camera, while reusing the existing chassis and wheel/motor assembly.

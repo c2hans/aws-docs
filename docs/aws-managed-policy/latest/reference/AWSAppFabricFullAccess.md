@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSAppFabricFullAccess
-<a name="AWSAppFabricFullAccess"></a>
 
 **Description**: Provides full access to the AWS AppFabric service and read only access to dependent services such as S3, Kinesis, KMS.
 

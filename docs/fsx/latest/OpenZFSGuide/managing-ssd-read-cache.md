@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/managing-ssd-rea
 ---
 
 # Modifying provisioned SSD read cache
-<a name="managing-ssd-read-cache"></a>
 
 When you create a file system with the Intelligent-Tiering storage class, you have the option to also provision an SSD read cache that provides SSD latencies for reads of frequently accessed data, up to 3 IOPS per GiB. The SSD read cache has three sizing modes: Automatic, Custom, and None. After your file system is created, you can modify your SSD read cache's sizing mode at any time.
 

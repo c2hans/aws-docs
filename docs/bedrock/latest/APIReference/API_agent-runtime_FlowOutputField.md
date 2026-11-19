@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FlowOutputField
-<a name="API_agent-runtime_FlowOutputField"></a>
 
 Represents an output field produced by a flow during a flow execution.
 

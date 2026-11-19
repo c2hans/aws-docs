@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Upda
 ---
 
 # UpdateProtectedQuery
-<a name="API_UpdateProtectedQuery"></a>
 
 Updates the processing of a currently running query.
 

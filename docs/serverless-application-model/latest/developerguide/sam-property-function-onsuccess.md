@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # OnSuccess
-<a name="sam-property-function-onsuccess"></a>
 
 A destination for events that were processed successfully.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-edit-wor
 ---
 
 # Edit a workspace alias
-<a name="AMP-edit-workspace"></a>
 
 You can edit a workspace to change its alias. To change the workspace alias using the AWS CLI, enter the following command.
 

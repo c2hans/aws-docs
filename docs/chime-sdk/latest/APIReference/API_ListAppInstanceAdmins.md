@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_ListAp
 ---
 
 # ListAppInstanceAdmins
-<a name="API_ListAppInstanceAdmins"></a>
 
 Returns a list of the administrators in the `AppInstance`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Availab
 ---
 
 # AvailabilityZone
-<a name="API_AvailabilityZone"></a>
 
 Information about an Availability Zone.
 

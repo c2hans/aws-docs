@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_EnvironmentError.h
 ---
 
 # EnvironmentError
-<a name="API_EnvironmentError"></a>
 
 Error messages for environment variables that couldn't be applied.
 

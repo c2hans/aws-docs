@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/gate
 ---
 
 # Gateway Load Balancers
-<a name="gateway-load-balancers"></a>
 
 Use a Gateway Load Balancer to deploy and manage a fleet of virtual appliances that support the GENEVE protocol.
 

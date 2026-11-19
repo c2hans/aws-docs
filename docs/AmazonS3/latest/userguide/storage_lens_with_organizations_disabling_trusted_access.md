@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage_lens_w
 ---
 
 # Disabling trusted access for S3 Storage Lens
-<a name="storage_lens_with_organizations_disabling_trusted_access"></a>
 
 Removing an account as a delegated administrator or disabling trusted access limits the account owner's S3 Storage Lens dashboard metrics to work only on an account level. Each account holder is then only be able to see the benefits of S3 Storage Lens through the limited scope of their account, and not their entire organization.
 

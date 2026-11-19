@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_SlackCha
 ---
 
 # SlackChannelConfiguration
-<a name="API_SlackChannelConfiguration"></a>
 
 An Amazon Q Developer configuration for Slack.
 

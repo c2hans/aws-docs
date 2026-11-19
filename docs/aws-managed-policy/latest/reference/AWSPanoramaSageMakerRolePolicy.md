@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPanoramaSageMakerRolePolicy
-<a name="AWSPanoramaSageMakerRolePolicy"></a>
 
 **Description**: Allows Amazon SageMaker to manage objects in buckets created for use with AWS Panorama.
 

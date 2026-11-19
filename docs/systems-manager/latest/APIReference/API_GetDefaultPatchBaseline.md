@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetDefaultPatchBaseline
-<a name="API_GetDefaultPatchBaseline"></a>
 
 Retrieves the default patch baseline. AWS Systems Manager supports creating multiple default patch baselines. For example, you can create a default patch baseline for each operating system.
 

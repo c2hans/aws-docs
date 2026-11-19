@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayMulticastDomainAssociations
-<a name="API_TransitGatewayMulticastDomainAssociations"></a>
 
 Describes the multicast domain associations.
 

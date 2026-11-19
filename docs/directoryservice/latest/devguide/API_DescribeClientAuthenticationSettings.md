@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Des
 ---
 
 # DescribeClientAuthenticationSettings
-<a name="API_DescribeClientAuthenticationSettings"></a>
 
 Retrieves information about the type of client authentication for the specified directory, if the type is specified. If no type is specified, information about all client authentication types that are supported for the specified directory is retrieved. Currently, only `SmartCard` is supported.
 
@@ -37,7 +36,7 @@ Valid Range: Minimum value of 1. Maximum value of 50.
 Required: No
 
  ** [NextToken](#API_DescribeClientAuthenticationSettings_RequestSyntax) **   <a name="DirectoryService-DescribeClientAuthenticationSettings-request-NextToken"></a>
-The *DescribeClientAuthenticationSettingsResult.NextToken* value from a previous call to [DescribeClientAuthenticationSettings](#API_DescribeClientAuthenticationSettings). Pass null if this is the first call.
+The *DescribeClientAuthenticationSettingsResult.NextToken* value from a previous call to [DescribeClientAuthenticationSettings](API_DescribeClientAuthenticationSettings.md). Pass null if this is the first call.
 Type: String
 Required: No
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # RetryConfigInput
-<a name="API_RetryConfigInput"></a>
 
 This structure contains information about the canary's retry configuration.
 

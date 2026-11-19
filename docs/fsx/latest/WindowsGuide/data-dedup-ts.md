@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/data-dedup-ts.ht
 ---
 
 # Troubleshooting data deduplication
-<a name="data-dedup-ts"></a>
 
 Use the following information to help troubleshoot some common issues when configuring and using data deduplication.
 

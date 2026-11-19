@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_CancelQua
 ---
 
 # CancelQuantumTask
-<a name="API_CancelQuantumTask"></a>
 
 Cancels the specified task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_DeleteFi
 ---
 
 # DeleteFileSystem
-<a name="API_S3Files_DeleteFileSystem"></a>
 
 Deletes an S3 File System. You can optionally force deletion of a file system that has pending export data.
 

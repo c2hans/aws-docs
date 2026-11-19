@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Removing Discounts
-<a name="remove-discount"></a>
 
 ## Last Updated
 <a name="last-updated"></a>

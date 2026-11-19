@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrict
 ---
 
 # General purpose bucket quotas, limitations, and restrictions
-<a name="BucketRestrictions"></a>
 
 An Amazon S3 general purpose bucket is owned by the AWS account that created it. Bucket ownership is not transferable to another account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/vector-search-c
 ---
 
 # FT.PROFILE
-<a name="vector-search-commands-ft.profile"></a>
 
 Run a query and return profile information about that query.
 

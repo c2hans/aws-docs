@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sts_example_sts_S
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Construct a URL with AWS STS for federated users using an AWS SDK
-<a name="sts_example_sts_Scenario_ConstructFederatedUrl_section"></a>
 
 The following code example shows how to:
 + Create an IAM role that grants read-only access to the current account's Amazon S3 resources.

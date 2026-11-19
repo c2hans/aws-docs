@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Re
 ---
 
 # Amazon EventBridge objects
-<a name="API_Type_Resource_EV"></a>
 
 ****Amazon EventBridge objects****
 + [AwsEventSchemasRegistryDetails](API_AwsEventSchemasRegistryDetails.md)

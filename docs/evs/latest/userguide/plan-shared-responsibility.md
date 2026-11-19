@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-shared-respons
 ---
 
 # Shared responsibility and support
-<a name="plan-shared-responsibility"></a>
 
 Amazon Elastic VMware Service is a self-managed service. AWS manages the infrastructure that Amazon EVS provisions, and you manage the VMware Cloud Foundation (VCF) software that runs on it.
 

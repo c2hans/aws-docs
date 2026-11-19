@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # FilterAttribute
-<a name="API_amazon-q-connect_FilterAttribute"></a>
 
 An attribute used for filtering.
 

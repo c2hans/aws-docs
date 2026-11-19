@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListExports
-<a name="API_ListExports"></a>
 
 Lists all exported output values in the account and Region in which you call this action. Use this action to see the exported output values that you can import into other stacks. To import values, use the [ Fn::ImportValue](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-importvalue.html) function.
 
@@ -26,7 +25,7 @@ Required: No
 The following elements are returned by the service.
 
  **Exports.member.N**
-The output for the [ListExports](#API_ListExports) action.
+The output for the [ListExports](API_ListExports.md) action.
 Type: Array of [Export](API_Export.md) objects
 
  ** NextToken **

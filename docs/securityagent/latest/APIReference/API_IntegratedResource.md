@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_In
 ---
 
 # IntegratedResource
-<a name="API_IntegratedResource"></a>
 
 Represents an integrated resource from a third-party provider. This is a union type that contains provider-specific resource information.
 

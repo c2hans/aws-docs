@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.LD.10] Manage unused development environments
-<a name="dl.ld.10-manage-unused-development-environments"></a>
 
  **Category:** OPTIONAL
 

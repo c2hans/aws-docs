@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-co
 ---
 
 # Learn EMR Studio workspaces
-<a name="emr-studio-configure-workspace"></a>
 
 When you use an EMR Studio, you can create and configure different *Workspaces* to organize and run notebooks. This section covers creating and working with Workspaces. For a conceptual overview, see [Workspaces](how-emr-studio-works.md#emr-studio-workspaces) on the [How Amazon EMR Studio works](how-emr-studio-works.md) page.
 

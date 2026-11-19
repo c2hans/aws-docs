@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/setting-up-via-
 ---
 
 # Setting up using the REST API
-<a name="setting-up-via-the-rest-api"></a>
 
 This topic lists the parameters found on the Elemental Live event or profile and specifies the location of those parameters in the XML for an event or profile. This topic does not cover control of SCTE-35 message via the REST API at runtime; that information is in [SCTE-35 message insertion into currently running events](scte-35-message-insertion.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Deployment Validation
-<a name="deployment-validation"></a>
 
 ## Verify Stack Status in Console
 <a name="verify-stack-status-in-console"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_R
 ---
 
 # ResourceChange
-<a name="API_ResourceChange"></a>
 
 Information about a resource change that will occur when a plan is executed.
 

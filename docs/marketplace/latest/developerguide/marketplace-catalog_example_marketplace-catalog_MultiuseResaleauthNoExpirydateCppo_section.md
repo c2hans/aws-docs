@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/market
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Publish multi-use resale authorization without an expiration date using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_MultiuseResaleauthNoExpirydateCppo_section"></a>
 
 The following code examples show how to publish multi-use resale authorization without an expiration date for an AMI product with hourly annual pricing so a CP can use that to create a CPPO.
 

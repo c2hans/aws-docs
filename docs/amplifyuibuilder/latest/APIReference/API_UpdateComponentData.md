@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # UpdateComponentData
-<a name="API_UpdateComponentData"></a>
 
 Updates and saves all of the information about a component, based on component ID.
 

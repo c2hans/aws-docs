@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Monitorin
 ---
 
 # MonitoringConfigurationUpdate
-<a name="API_MonitoringConfigurationUpdate"></a>
 
 Describes updates to configuration parameters for Amazon CloudWatch logging for an application.
 

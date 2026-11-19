@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 ---
 
 # Operational excellence
-<a name="o-operational-excellence"></a>
 
  **Scenario A**
 

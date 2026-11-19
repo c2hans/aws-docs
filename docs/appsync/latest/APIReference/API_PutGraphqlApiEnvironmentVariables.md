@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_PutGraph
 ---
 
 # PutGraphqlApiEnvironmentVariables
-<a name="API_PutGraphqlApiEnvironmentVariables"></a>
 
 Creates a list of environmental variables in an API by its ID value.
 

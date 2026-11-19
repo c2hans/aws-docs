@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # CreateBlueprint
-<a name="API_data-automation_CreateBlueprint"></a>
 
 Creates a blueprint. A blueprint has a schema that maps data fields to prompts that tell a model how to get the data out of an image or document. For schema examples, use [ListBlueprints](API_data-automation_ListBlueprints.md) to get a list of public blueprints and [GetBlueprint](API_data-automation_GetBlueprint.md) to view a blueprint.
 

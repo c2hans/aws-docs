@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-statmux/latest/upgradeguide/up
 This is version 2.20 of the AWS Elemental Statmux documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Statmux and AWS Elemental Live Documentation](https://docs.aws.amazon.com/elemental-live).
 
 # Step B: Copy the AWS Elemental Statmux Installer
-<a name="upgrades-sm-upg-single-locate-sw"></a>
 
 1. From your regular workstation, open a web browser, go to [AWS Elemental Support Center Activations](https://console.aws.amazon.com/elemental-appliances-software/home?region=us-east-1#/activations) and download the software for the version that you're going to.
 

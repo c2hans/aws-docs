@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/trouble
 ---
 
 # Troubleshooting Active Directory
-<a name="troubleshooting-active-directory"></a>
 
 The following are issues that might occur when you set up and use Active Directory with Amazon WorkSpaces Applications. For help troubleshooting notification codes, see [Troubleshooting Notification Codes](troubleshooting-notification-codes.md).
 

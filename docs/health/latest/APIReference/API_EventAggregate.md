@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_EventAggr
 ---
 
 # EventAggregate
-<a name="API_EventAggregate"></a>
 
 The number of events of each issue type. Returned by the [DescribeEventAggregates](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeEventAggregates.html) operation.
 

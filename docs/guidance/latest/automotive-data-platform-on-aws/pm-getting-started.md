@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Getting started
-<a name="pm-getting-started"></a>
 
 This section provides an overview of how to implement the Predictive Maintenance pattern, including model training, inference pipeline setup, and alert configuration.
 

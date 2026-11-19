@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Debug your serverless application with AWS SAM
-<a name="debug-application"></a>
 
 After testing your application, you will be ready to debug any issues you’ve found. With the AWS SAM command line interface (CLI), you can locally test and debug your serverless application before uploading it to the AWS Cloud. Debugging your application identifies and fixes issues or errors in your application.
 

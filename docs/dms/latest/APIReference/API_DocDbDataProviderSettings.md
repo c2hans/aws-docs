@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DocDbDataPro
 ---
 
 # DocDbDataProviderSettings
-<a name="API_DocDbDataProviderSettings"></a>
 
 Provides information that defines a DocumentDB data provider.
 

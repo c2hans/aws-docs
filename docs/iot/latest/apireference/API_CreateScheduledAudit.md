@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateSchedu
 ---
 
 # CreateScheduledAudit
-<a name="API_CreateScheduledAudit"></a>
 
 Creates a scheduled audit that is run at a specified time interval.
 

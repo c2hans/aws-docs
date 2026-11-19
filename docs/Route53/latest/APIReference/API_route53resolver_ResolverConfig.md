@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # ResolverConfig
-<a name="API_route53resolver_ResolverConfig"></a>
 
 A complex type that contains information about a Resolver configuration for a VPC.
 

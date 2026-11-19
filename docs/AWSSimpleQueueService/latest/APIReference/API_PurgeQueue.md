@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # PurgeQueue
-<a name="API_PurgeQueue"></a>
 
 Deletes available messages in a queue (including in-flight messages) specified by the `QueueURL` parameter.
 

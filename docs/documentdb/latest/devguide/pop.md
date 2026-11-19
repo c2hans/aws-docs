@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/pop.html
 ---
 
 # $pop
-<a name="pop"></a>
 
 The `$pop` operator in Amazon DocumentDB is used to remove the first or last element from an array field. It is particularly useful when you need to maintain a fixed-size array or implement a queue-like data structure within a document.
 

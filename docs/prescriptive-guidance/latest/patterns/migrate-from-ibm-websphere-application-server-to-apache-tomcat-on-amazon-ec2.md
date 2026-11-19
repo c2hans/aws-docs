@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate from IBM WebSphere Application Server to Apache Tomcat on Amazon EC2
-<a name="migrate-from-ibm-websphere-application-server-to-apache-tomcat-on-amazon-ec2"></a>
 
 *Neal Ardeljan and Afroz Khan, Amazon Web Services*
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/APIReference/API_GetServic
 AWS has decided to discontinue AWS Proton, with support ending on October 7, 2026. New customers will not be able to sign up after October 7, 2025, but existing customers can continue to use the service until October 7, 2026.For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # GetServiceSyncBlockerSummary
-<a name="API_GetServiceSyncBlockerSummary"></a>
 
 Get detailed data for the service sync blocker summary.
 

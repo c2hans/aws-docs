@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_GroupOrde
 ---
 
 # GroupOrderingIdSummary
-<a name="API_GroupOrderingIdSummary"></a>
 
 Summary information on the processing of `PUT` and `DELETE` actions for mapping users to their groups.
 

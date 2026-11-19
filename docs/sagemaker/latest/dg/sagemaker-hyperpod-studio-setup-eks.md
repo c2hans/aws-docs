@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-s
 ---
 
 # Setting up an Amazon EKS cluster in Studio
-<a name="sagemaker-hyperpod-studio-setup-eks"></a>
 
 You do most of this setup from your HyperPod cluster details page in the SageMaker AI console. Open the SageMaker AI console, choose **HyperPod clusters**, choose your cluster, and then choose the **Configuration** tab. Under **Cluster access for SageMaker domains**, choose **Manage access**. This is where you create or view a domain and attach the cluster-access policies that let Studio users reach the cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Using an OpenSearch Ingestion pipeline with AWS Lambda
-<a name="configure-client-lambda"></a>
 
 Use the [AWS Lambda processor](https://opensearch.org/docs/latest/data-prepper/pipelines/configuration/processors/aws-lambda/) to enrich data from any source or destination supported by OpenSearch Ingestion using custom code. With the Lambda processor, you can apply your own data transformations or enrichments and then return the processed events back to your pipeline for further processing. This processor enables customized data processing and gives you full control over how data is manipulated before it moves through the pipeline.
 

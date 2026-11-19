@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/todoist-support.html
 ---
 
 # AWS Glue support for Todoist
-<a name="todoist-support"></a>
 
 AWS Glue supports Todoist as follows:
 

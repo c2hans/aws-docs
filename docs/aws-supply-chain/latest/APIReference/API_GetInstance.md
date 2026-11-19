@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # GetInstance
-<a name="API_GetInstance"></a>
 
 Enables you to programmatically retrieve the information related to an AWS Supply Chain instance ID.
 

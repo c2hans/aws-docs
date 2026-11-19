@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Dele
 ---
 
 # DeleteListener
-<a name="API_DeleteListener"></a>
 
 Deletes the specified listener.
 

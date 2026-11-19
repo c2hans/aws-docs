@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_GetMLModelTr
 ---
 
 # GetMLModelTrainingJob
-<a name="API_GetMLModelTrainingJob"></a>
 
 Retrieves information about a Neptune ML model training job. See [Model training using the `modeltraining` command](https://docs.aws.amazon.com/neptune/latest/userguide/machine-learning-api-modeltraining.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/customizing-models-f
 ---
 
 # FFT
-<a name="customizing-models-fft"></a>
 
 **FFT** (Full Fine-Tuning) updates *all* model weights during training. This provides the deepest level of customization but requires more compute resources and longer training time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Cluster
 ---
 
 # ClusterNode
-<a name="API_ClusterNode"></a>
 
 The identifier of a node in a cluster.
 

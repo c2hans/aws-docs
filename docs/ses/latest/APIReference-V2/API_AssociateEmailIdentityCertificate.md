@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Associate
 ---
 
 # AssociateEmailIdentityCertificate
-<a name="API_AssociateEmailIdentityCertificate"></a>
 
 Associates an S/MIME certificate with an email identity. After the certificate is active, Amazon SES API v2 can add an S/MIME signature to messages that you send from the associated address when signing is enabled on the configuration set used to send the message.
 

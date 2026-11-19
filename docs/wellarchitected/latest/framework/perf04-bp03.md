@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf04-
 ---
 
 # PERF04-BP03 Choose appropriate dedicated connectivity or VPN for your workload
-<a name="perf04-bp03"></a>
 
  When a workload spans on-premises and cloud resources, the connection between them becomes a performance boundary. Under-provisioned or poorly chosen hybrid connectivity adds latency and caps throughput for everything that crosses it.
 

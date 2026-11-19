@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkSecurityManager::Rule
-<a name="aws-resource-networksecuritymanager-rule"></a>
 
 The `AWS::NetworkSecurityManager::Rule` resource specifies an AWS Network Security Manager rule. A rule defines a network security configuration to enforce, such as an AWS WAF rule group or a single web ACL setting.
 

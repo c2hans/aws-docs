@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-runtime
 ---
 
 # Invoke Amazon Titan Image on Amazon Bedrock to generate an image
-<a name="bedrock-runtime_example_bedrock-runtime_InvokeModel_TitanImageGenerator_section"></a>
 
 The following code examples show how to invoke Amazon Titan Image on Amazon Bedrock to generate an image.
 

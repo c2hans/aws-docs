@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-linux-
 ---
 
 # Configuring the proxy server
-<a name="dotnet-linux-platform-nginx"></a>
 
 AWS Elastic Beanstalk uses [NGINX](https://www.nginx.com/) as the reverse proxy to relay requests to your application. Elastic Beanstalk provides a default NGINX configuration that you can either extend or override completely with your own configuration.
 

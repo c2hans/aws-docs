@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_T
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Describes a tag. A tag is a key-value pair. You can add up to 50 tags to a single DynamoDB table.
 

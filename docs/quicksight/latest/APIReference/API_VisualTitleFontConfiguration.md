@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Visua
 ---
 
 # VisualTitleFontConfiguration
-<a name="API_VisualTitleFontConfiguration"></a>
 
 Configures the display properties of the visual title.
 

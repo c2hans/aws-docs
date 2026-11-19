@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_Connector.ht
 ---
 
 # Connector
-<a name="API_Connector"></a>
 
 An object that represents a connector for an Amazon EVS environment. A connector establishes a connection to the given appliance type using the credentials stored in AWS Secrets Manager.
 

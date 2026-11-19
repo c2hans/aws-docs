@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeCert
 ---
 
 # DescribeCertificateAuthority
-<a name="API_DescribeCertificateAuthority"></a>
 
 Returns detailed information about a certificate authority (CA) in your cluster, including its validity period, signing and distribution status, provenance, scheduled auto-activation events, and public certificate data.
 

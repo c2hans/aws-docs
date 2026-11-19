@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeRepl
 ---
 
 # DescribeReplicationInstanceTaskLogs
-<a name="API_DescribeReplicationInstanceTaskLogs"></a>
 
 Returns information about the task logs for the specified task.
 

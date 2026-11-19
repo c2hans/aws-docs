@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateGroup.
 ---
 
 # CreateGroup
-<a name="API_CreateGroup"></a>
 
 Creates a new group.
 

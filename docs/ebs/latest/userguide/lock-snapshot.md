@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/lock-snapshot.html
 ---
 
 # Lock an Amazon EBS snapshot
-<a name="lock-snapshot"></a>
 
 You can lock a snapshot that is in the `pending` or `completed` state. For more information, see [Considerations for Amazon EBS snapshot lock](snapshot-lock-considerations.md).
 

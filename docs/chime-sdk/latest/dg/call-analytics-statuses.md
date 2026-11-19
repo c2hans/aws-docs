@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/call-analytics-statu
 ---
 
 # Understanding the call analytics statuses for the Amazon Chime SDK
-<a name="call-analytics-statuses"></a>
 
 Media insights pipelines track a set of statuses when you do one or both of the following:
 + Use multiple machine-learning processing elements, such as Amazon Transcribe and voice analytics.

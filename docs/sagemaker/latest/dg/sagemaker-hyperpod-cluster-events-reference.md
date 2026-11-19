@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-c
 ---
 
 # SageMaker HyperPod cluster events reference
-<a name="sagemaker-hyperpod-cluster-events-reference"></a>
 
 This page provides a complete reference of all structured events emitted by Amazon SageMaker HyperPod clusters. Events provide visibility into cluster, instance group, and instance-level operations including provisioning, scaling, patching, and orchestrator-specific lifecycle changes.
 

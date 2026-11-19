@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/security-iam-s
 ---
 
 # How Amazon Nova Act works with IAM
-<a name="security-iam-service-with-iam"></a>
 
 ## How Amazon Nova Act works with IAM
 <a name="_how_amazon_nova_act_works_with_iam"></a>

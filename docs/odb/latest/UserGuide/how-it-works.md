@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/how-it-works.html
 ---
 
 # How Oracle Database@AWS works
-<a name="how-it-works"></a>
 
 Oracle Database@AWS integrates Oracle Cloud Infrastructure (OCI) with the AWS Cloud. In the following sections, you can learn about the key components of this multicloud architecture.
 

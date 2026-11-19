@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Si
 ---
 
 # SignalFetchInformation
-<a name="API_SignalFetchInformation"></a>
 
 Information about the signal to be fetched.
 

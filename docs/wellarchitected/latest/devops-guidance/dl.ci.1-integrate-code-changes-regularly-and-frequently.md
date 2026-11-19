@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CI.1] Integrate code changes regularly and frequently
-<a name="dl.ci.1-integrate-code-changes-regularly-and-frequently"></a>
 
  **Category:** FOUNDATIONAL
 

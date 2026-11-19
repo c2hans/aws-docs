@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Deleting an organization with AWS Organizations
-<a name="orgs_manage_org_delete"></a>
 
 When you no longer need your organization, you can delete it. Deleting an organization does not close the management account, instead it removes the management account from the organization and deletes the organization itself.
 

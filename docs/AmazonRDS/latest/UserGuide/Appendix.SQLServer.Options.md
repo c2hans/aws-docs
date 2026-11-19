@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Options for the Microsoft SQL Server database engine
-<a name="Appendix.SQLServer.Options"></a>
 
 In this section, you can find descriptions for options that are available for Amazon RDS instances running the Microsoft SQL Server DB engine. To enable these options, you add them to an option group, and then associate the option group with your DB instance. For more information, see [Working with option groups](USER_WorkingWithOptionGroups.md).
 

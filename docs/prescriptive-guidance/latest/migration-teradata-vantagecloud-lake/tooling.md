@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Tooling
-<a name="tooling"></a>
 
 Teradata offers the following tools:
 + [Teradata VantageCloud Lake Console](https://www.teradata.com/resources/demos/simplify-cost-governance-with-vantagecloud-lake) provides an integrated user experience for analysts, developers, and operations.

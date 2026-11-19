@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/setting-up.htm
 ---
 
 # Set up an AWS account and create an administrator user
-<a name="setting-up"></a>
 
 Before you use Managed Service for Apache Flink for the first time, complete the following tasks:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharin
 ---
 
 # Viewing the principals you share resources with in AWS RAM
-<a name="working-with-sharing-view-principals"></a>
 
 You can view the principals you share your resources with, across all resource shares. Viewing this list of principals helps you determine who has access to your shared resources.
 

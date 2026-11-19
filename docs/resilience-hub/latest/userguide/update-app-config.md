@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/update-a
 ---
 
 # Updating application configuration parameters
-<a name="update-app-config"></a>
 
 This section allows you to update the configuration parameters of your AWS Elastic Disaster Recovery and publish the application to include the updated parameters for resiliency assessments.
 

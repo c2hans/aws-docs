@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/security-profi
 ---
 
 # Best practices for Connect Customer and Contact Control Panel (CCP) security profiles
-<a name="security-profile-best-practices"></a>
 + Limit who has **Users - Edit or Create** permissions
 
   People with these permissions pose a risk to your contact center because they can do the following:

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/mongo-apis-up
 ---
 
 # Update operators
-<a name="mongo-apis-update-operators"></a>
 
 This section provides detailed information about update operators supported by Amazon DocumentDB.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/compare-deterministic-up
 ---
 
 # Deterministic upgrades for stability
-<a name="compare-deterministic-upgrades"></a>
 
 With the deterministic upgrades through versioned repositories feature, every AL2023 AMI by default is locked to a specific repository version. You can use deterministic upgrades to achieve greater consistency among package versions and updates. Each release, major or minor, includes a specific repository version.
 

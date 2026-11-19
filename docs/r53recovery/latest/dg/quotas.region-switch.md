@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/quotas.region-swit
 ---
 
 # Quotas for Region switch
-<a name="quotas.region-switch"></a>
 
 Region switch in Amazon Application Recovery Controller (ARC) is subject to the following quotas.
 

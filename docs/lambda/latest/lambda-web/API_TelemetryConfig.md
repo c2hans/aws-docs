@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_TelemetryCo
 ---
 
 # TelemetryConfig
-<a name="API_TelemetryConfig"></a>
 
 The telemetry configuration for a web function revision.
 

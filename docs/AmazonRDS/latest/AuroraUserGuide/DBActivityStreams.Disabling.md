@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActiv
 ---
 
 # Stopping a database activity stream
-<a name="DBActivityStreams.Disabling"></a>
 
 You can stop an activity stream using the console or AWS CLI.
 

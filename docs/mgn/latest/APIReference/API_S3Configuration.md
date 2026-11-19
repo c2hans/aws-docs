@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_S3Configurat
 ---
 
 # S3Configuration
-<a name="API_S3Configuration"></a>
 
 Configuration for an S3 location.
 

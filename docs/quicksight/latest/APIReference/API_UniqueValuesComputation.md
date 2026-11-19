@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Uniqu
 ---
 
 # UniqueValuesComputation
-<a name="API_UniqueValuesComputation"></a>
 
 The unique values computation configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/service_code_ex
 ---
 
 # Actions for Amazon Bedrock using AWS SDKs
-<a name="service_code_examples_bedrock_actions"></a>
 
 The following code examples demonstrate how to perform individual Amazon Bedrock actions with AWS SDKs. Each example includes a link to GitHub, where you can find instructions for setting up and running the code.
 

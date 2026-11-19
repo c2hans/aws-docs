@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-go-iam-
 ---
 
 # Connecting to Amazon Neptune databases using IAM authentication with Gremlin Go
-<a name="gremlin-go-iam-auth"></a>
 
 ## Overview
 <a name="gremlin-go-iam-auth-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/rbp-view-po
 ---
 
 # Viewing resource-based policies
-<a name="rbp-view-policy"></a>
 
 You can view resource-based policies attached to your clusters to understand the current access controls in place.
 

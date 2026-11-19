@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Elastic
 ---
 
 # ElasticsearchDestinationDescription
-<a name="API_ElasticsearchDestinationDescription"></a>
 
 The destination description in Amazon OpenSearch Service.
 

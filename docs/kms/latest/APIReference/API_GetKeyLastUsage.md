@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_GetKeyLastUs
 ---
 
 # GetKeyLastUsage
-<a name="API_GetKeyLastUsage"></a>
 
 Returns usage information about the last successful cryptographic operation performed with a specified KMS key, including the operation type, timestamp, and associated AWS CloudTrail event ID.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_InputConte
 ---
 
 # InputContext
-<a name="API_InputContext"></a>
 
 A context that must be active for an intent to be selected by Amazon Lex.
 

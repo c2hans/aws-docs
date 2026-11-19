@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/ug/aws-health-version-cata
 ---
 
 # Version catalog for AWS Health
-<a name="aws-health-version-catalog"></a>
 
 Learn about the version catalog for AWS Health, which provides a service-wide view of supported versions and their timelines.
 

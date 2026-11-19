@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdatePartnerApp
-<a name="API_UpdatePartnerApp"></a>
 
 Updates all of the SageMaker Partner AI Apps in an account.
 

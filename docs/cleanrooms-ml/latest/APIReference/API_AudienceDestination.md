@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Au
 ---
 
 # AudienceDestination
-<a name="API_AudienceDestination"></a>
 
 Defines the Amazon S3 bucket where the configured audience is stored.
 

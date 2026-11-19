@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC02-BP02 Use temporary credentials
-<a name="sec_identities_unique"></a>
 
  Require identities to dynamically acquire [temporary credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html). For workforce identities, use AWS IAM Identity Center, or federation with AWS Identity and Access Management (IAM) roles to access AWS accounts. For machine identities, such as Amazon Elastic Compute Cloud(Amazon EC2) instances or AWS Lambda functions, require the use of IAM roles instead of users with long-term access keys.
 

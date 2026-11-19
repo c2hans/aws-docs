@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-ty
 ---
 
 # Integrating XCTest UI for iOS with Device Farm
-<a name="test-types-ios-xctest-ui"></a>
 
 Device Farm provides support for the XCTest UI testing framework. Specifically, Device Farm supports XCTest UI tests written in both Objective-C and [Swift](https://developer.apple.com/swift/).
 

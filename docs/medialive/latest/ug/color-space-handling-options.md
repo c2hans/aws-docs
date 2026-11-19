@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/color-space-handling
 ---
 
 # Options for handling color space
-<a name="color-space-handling-options"></a>
 
 All video belongs to a specific color space. The color space defines the range of color for the video. Video can include color space metadata. This metadata provides information about the color space. When the color space metadata is missing, the video still has a color space, but it is impossible for a video processor such as MediaLive to manipulate the color space.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Add a Specialist Agent or Tool
-<a name="extend-specialist-tool"></a>
 
 ## The @tool and sub-agent-as-tool pattern
 <a name="extend-tool-pattern"></a>

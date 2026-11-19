@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergOrphanFile
 ---
 
 # IcebergOrphanFileDeletionMetrics
-<a name="API_IcebergOrphanFileDeletionMetrics"></a>
 
 Orphan file deletion metrics for Iceberg for the optimizer run.
 

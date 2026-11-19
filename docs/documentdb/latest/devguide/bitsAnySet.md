@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/bitsAnySet.ht
 ---
 
 # $bitsAnySet
-<a name="bitsAnySet"></a>
 
 The `$bitsAnySet` operator in Amazon DocumentDB is used to query documents where at least one bit is set to 1 in the specified bits in a field. This operator allows you to perform bitwise operations on the values stored in fields, enabling efficient querying and analysis of data with bitwise characteristics.
 

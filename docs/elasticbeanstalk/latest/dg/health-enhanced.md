@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/health-enhanc
 ---
 
 # Enhanced health reporting and monitoring in Elastic Beanstalk
-<a name="health-enhanced"></a>
 
 This section explains the functionality of the Elastic Beanstalk Enhanced Health feature.
 

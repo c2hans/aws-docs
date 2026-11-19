@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/grafana-integ
 ---
 
 # AWS IoT TwinMaker Grafana dashboard integration
-<a name="grafana-integration"></a>
 
 AWS IoT TwinMaker supports Grafana integration through an application plugin. Use Grafana version 10.4.0 and later versions to interact with your digital twin application. The AWS IoT TwinMaker plugin provides custom panels, dashboard templates, and a datasource to connect to your digital twin data.
 

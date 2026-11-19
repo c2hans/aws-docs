@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/endpoints-con
 ---
 
 # Connecting to endpoints
-<a name="endpoints-connecting"></a>
 
 When you have your endpoint, either cluster or instance, you can connect to it using the `mongo` shell or a connection string.
 

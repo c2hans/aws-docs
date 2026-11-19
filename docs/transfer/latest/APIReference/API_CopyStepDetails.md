@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_CopySte
 ---
 
 # CopyStepDetails
-<a name="API_CopyStepDetails"></a>
 
 Each step type has its own `StepDetails` structure.
 

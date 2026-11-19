@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/channel-assembly-g
 ---
 
 # Getting started with MediaTailor channel assembly
-<a name="channel-assembly-getting-started"></a>
 
 This Getting Started tutorial shows you how to perform the following tasks:
 + Create a source location, and add source content to it

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Appli
 ---
 
 # ApplicationFleetAssociation
-<a name="API_ApplicationFleetAssociation"></a>
 
 Describes the application fleet association.
 

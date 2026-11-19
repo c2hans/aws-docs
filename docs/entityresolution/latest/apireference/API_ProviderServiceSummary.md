@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ProviderServiceSummary
-<a name="API_ProviderServiceSummary"></a>
 
 A list of `ProviderService` objects, each of which contain the fields `providerName`, `providerServiceArn`, `providerServiceName`, and `providerServiceType`.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST03-BP03 Identify cost attribution categories
-<a name="cost_monitor_usage_define_attribution"></a>
 
 |  |
 | --- |

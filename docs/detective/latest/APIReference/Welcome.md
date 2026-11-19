@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/Welcome.ht
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Detective uses machine learning and purpose-built visualizations to help you to analyze and investigate security issues across your Amazon Web Services (AWS) workloads. Detective automatically extracts time-based events such as login attempts, API calls, and network traffic from AWS CloudTrail and Amazon Virtual Private Cloud (Amazon VPC) flow logs. It also extracts findings detected by Amazon GuardDuty.
 
@@ -41,4 +40,4 @@ All API actions are logged as CloudTrail events. See [Logging Detective API Call
 **Note**
 We replaced the term "master account" with the term "administrator account". An administrator account is used to centrally manage multiple accounts. In the case of Detective, the administrator account manages the accounts in their behavior graph.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

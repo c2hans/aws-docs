@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes
 ---
 
 # Aurora MySQL database engine updates 2026-10-26 (version 3.14.0, compatible with MySQL 8.0.46)
-<a name="AuroraMySQL.Updates.3140"></a><a name="3140"></a><a name="3.14.0"></a>
+<a name="3140"></a><a name="3.14.0"></a>
 
 **Version:** 3.14.0
 

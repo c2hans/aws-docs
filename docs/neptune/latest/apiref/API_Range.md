@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_Range.html
 ---
 
 # Range
-<a name="API_Range"></a>
 
 A range of integer values.
 

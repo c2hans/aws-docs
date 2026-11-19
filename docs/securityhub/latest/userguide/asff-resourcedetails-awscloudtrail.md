@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/asff-resour
 ---
 
 # AwsCloudTrail resources in ASFF
-<a name="asff-resourcedetails-awscloudtrail"></a>
 
 The following are examples of the AWS Security Finding Format (ASFF) syntax for `AwsCloudTrail` resources.
 

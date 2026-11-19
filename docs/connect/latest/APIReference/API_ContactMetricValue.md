@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactM
 ---
 
 # ContactMetricValue
-<a name="API_ContactMetricValue"></a>
 
 Contains the numeric value of a contact metric result.
 

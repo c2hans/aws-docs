@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListDomainObjectTypes
-<a name="API_connect-customer-profiles_ListDomainObjectTypes"></a>
 
 List all DomainObjectType(s) in a Customer Profiles domain.
 

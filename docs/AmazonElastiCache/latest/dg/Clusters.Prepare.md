@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Clusters.Pre
 ---
 
 # Preparing a cluster in ElastiCache
-<a name="Clusters.Prepare"></a>
 
 Following, you can find instructions on creating a cluster using the ElastiCache console, the AWS CLI, or the ElastiCache API.
 

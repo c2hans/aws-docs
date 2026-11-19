@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_K
 ---
 
 # KinesisFirehoseDestination
-<a name="API_KinesisFirehoseDestination"></a>
 
 An object that defines an Amazon Kinesis Data Firehose destination for email events. You can use Amazon Kinesis Data Firehose to stream data to other services, such as Amazon S3 and Amazon Redshift.
 

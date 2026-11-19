@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # BedrockFoundationModelModelConfiguration
-<a name="API_agent-runtime_BedrockFoundationModelModelConfiguration"></a>
 
 Model configuration for a Bedrock foundation model.
 

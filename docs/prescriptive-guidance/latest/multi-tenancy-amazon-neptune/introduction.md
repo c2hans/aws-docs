@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenan
 ---
 
 # Multi-tenancy guidance for ISVs running Amazon Neptune databases
-<a name="introduction"></a>
 
 *Brian O'Keefe, Veeresham Gande, Dana Owens, and Nima Seifi, Amazon Web Services*
 

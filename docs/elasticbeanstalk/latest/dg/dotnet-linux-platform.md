@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-linux-
 ---
 
 # Using the Elastic Beanstalk .NET core on Linux platform
-<a name="dotnet-linux-platform"></a>
 
 This topic describes how to configure, build, and run your .NET core on Linux applications on Elastic Beanstalk.
 

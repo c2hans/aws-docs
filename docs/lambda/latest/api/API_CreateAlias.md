@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CreateAlias.html
 ---
 
 # CreateAlias
-<a name="API_CreateAlias"></a>
 
 Creates an [alias](https://docs.aws.amazon.com/lambda/latest/dg/configuration-aliases.html) for a Lambda Event Function version. Use aliases to provide clients with a function identifier that you can update to invoke a different version.
 

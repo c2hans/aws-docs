@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule
 ---
 
 # Additional resources
-<a name="additional-resources"></a>
 
 ## AWS services
 <a name="aws-services"></a>

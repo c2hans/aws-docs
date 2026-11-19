@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/install-gre
 ---
 
 # Install or update the AWS IoT Greengrass Development Kit Command-Line Interface
-<a name="install-greengrass-development-kit-cli"></a>
 
 The AWS IoT Greengrass Development Kit Command-Line Interface (GDK CLI) is built on Python, so you can use `pip` to install it on your development computer.
 

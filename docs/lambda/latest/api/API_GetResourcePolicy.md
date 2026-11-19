@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_GetResourcePolicy.
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
 Retrieves the [resource-based policy](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html) attached to a Lambda resource.
 

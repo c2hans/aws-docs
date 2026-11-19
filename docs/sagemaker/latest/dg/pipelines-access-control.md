@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-access-con
 ---
 
 # Cached data access control
-<a name="pipelines-access-control"></a>
 
 When a SageMaker AI pipeline runs, it caches the parameters and metadata associated with the SageMaker AI jobs launched by the pipeline and saves them for reuse in subsequent runs. This metadata is accessible through a variety of sources in addition to cached pipeline steps, and includes the following types:
 + `Describe*Job` requests

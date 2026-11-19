@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 ---
 
 # Identity columns
-<a name="table-dictionary-cur2-identity"></a>
 
 Identity columns contain data to identify a line item.
 

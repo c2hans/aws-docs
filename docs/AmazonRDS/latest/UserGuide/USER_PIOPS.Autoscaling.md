@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.Au
 ---
 
 # Managing capacity automatically with Amazon RDS storage autoscaling
-<a name="USER_PIOPS.Autoscaling"></a>
 
 If your workload is unpredictable, you can enable storage autoscaling for an Amazon RDS DB instance. To do so, you can use the Amazon RDS console, the Amazon RDS API, or the AWS CLI.
 
@@ -215,7 +214,7 @@ For more information about storage, see [Amazon RDS DB instance storage](CHAP_St
 
 For RDS for Oracle and RDS for SQL Server DB instances that use additional storage volumes, you can enable storage autoscaling for each additional storage volume independently, in the same way that you enable it for the primary storage volume. Each volume – the primary volume and each additional storage volume – has its own maximum storage threshold, and Amazon RDS evaluates and scales each volume independently against that threshold. For more information about additional storage volumes, see [Adding storage volumes](USER_PIOPS.ModifyingExisting.AdditionalVolumes.md).
 
-The conditions that trigger autoscaling, the storage increment that Amazon RDS adds, and the constraints on the maximum storage threshold are the same for an additional storage volume as they are for the primary volume. For a description of these conditions and constraints, see [Managing capacity automatically with Amazon RDS storage autoscaling](#USER_PIOPS.Autoscaling). The limitations in [Limitations of storage autoscaling](#autoscaling-limitations) also apply to each additional storage volume.
+The conditions that trigger autoscaling, the storage increment that Amazon RDS adds, and the constraints on the maximum storage threshold are the same for an additional storage volume as they are for the primary volume. For a description of these conditions and constraints, see [Managing capacity automatically with Amazon RDS storage autoscaling](USER_PIOPS.Autoscaling.md). The limitations in [Limitations of storage autoscaling](#autoscaling-limitations) also apply to each additional storage volume.
 
 Amazon RDS validates the maximum storage threshold for each additional storage volume independently, against the storage settings of that volume. For a volume that uses Provisioned IOPS (io1 or io2 Block Express) or gp3 storage, the ratio of IOPS to the volume's maximum storage threshold (in GiB) must be within the same range that applies to the volume's allocated storage. For these ranges, see [Provisioned IOPS SSD storage](CHAP_Storage.md#USER_PIOPS).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Data
 ---
 
 # DataProductEntityIdFilter
-<a name="API_DataProductEntityIdFilter"></a>
 
 Object that allows filtering on entity id of a data product.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetSoft
 ---
 
 # GetSoftwareStatisticsV2
-<a name="API_GetSoftwareStatisticsV2"></a>
 
 Retrieves aggregated counts of software packages installed on your resources, grouped by a field that you specify. For example, you can return the most common package types or the accounts with the most installed packages.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-filter.html
 ---
 
 # Filtering keys within a dataset
-<a name="transforms-filter"></a>
 
 Use the *Filter* transform to create a new dataset by filtering records from the input dataset based on a regular expression. Rows that don't satisfy the filter condition are removed from the output.
 + For string data types, you can filter rows where the key value matches a specified string.

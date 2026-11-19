@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_OpenZFSReadC
 ---
 
 # OpenZFSReadCacheConfiguration
-<a name="API_OpenZFSReadCacheConfiguration"></a>
 
  The configuration for the optional provisioned SSD read cache on Amazon FSx for OpenZFS file systems that use the Intelligent-Tiering storage class.
 

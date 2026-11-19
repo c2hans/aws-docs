@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/streak-reading-from-entit
 ---
 
 # Reading from Streak entities
-<a name="streak-reading-from-entities"></a>
 
 **Prerequisites**
 

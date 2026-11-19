@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/qualificationguide/afr-q
 ---
 
 # AWS Device Qualification Program for FreeRTOS
-<a name="afr-qualification"></a>
 
 ## What is FreeRTOS
 <a name="afr-qualification-what-is"></a>

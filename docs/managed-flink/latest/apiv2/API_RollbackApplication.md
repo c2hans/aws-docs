@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_RollbackA
 ---
 
 # RollbackApplication
-<a name="API_RollbackApplication"></a>
 
 Reverts the application to the previous running version. You can roll back an application if you suspect it is stuck in a transient status or in the running status.
 

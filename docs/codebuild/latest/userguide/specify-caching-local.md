@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/specify-cachi
 ---
 
 # Specify a local cache
-<a name="specify-caching-local"></a>
 
 You can use the AWS CLI, console, SDK, or CloudFormation to specify a local cache. For more information about local caching, see [Local caching](caching-local.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_S
 ---
 
 # StartQueryPlanning
-<a name="API_StartQueryPlanning"></a>
 
 Submits a request to process a query statement.
 

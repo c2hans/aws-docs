@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/references.h
 ---
 
 # AWS CodeCommit reference
-<a name="references"></a>
 
 The following reference topics can help you better understand CodeCommit, Git, AWS Regions, service limits, and more.
 

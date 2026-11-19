@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-tags
 ---
 
 # Add tags to an Amazon EMR cluster
-<a name="emr-plan-tags-add-new"></a>
 
 You can add tags to a cluster when you create it.
 

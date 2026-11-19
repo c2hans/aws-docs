@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-kms-bes
 ---
 
 # Key rotation for AWS KMS and scope of impact
-<a name="data-protection-key-rotation"></a>
 
 We do not recommend AWS Key Management Service (AWS KMS) key rotation unless you are required to rotate keys for regulatory compliance. For example, you might be required to rotate your KMS keys due to business policies, contract rules, or government regulations. The design of AWS KMS significantly reduces the types of risk that key rotation is typically used to mitigate. If you must rotate KMS keys, we recommend that you let AWS KMS rotate the key material, either automatically or on demand. Use manual key rotation only when AWS KMS cannot rotate the key material for you.
 

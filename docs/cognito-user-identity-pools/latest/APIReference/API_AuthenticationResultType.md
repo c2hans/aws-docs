@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AuthenticationResultType
-<a name="API_AuthenticationResultType"></a>
 
 The object that your application receives after authentication. Contains tokens and information for device authentication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sendgrid-configuring-conn
 ---
 
 # Configuring SendGrid connections
-<a name="sendgrid-configuring-connections"></a>
 
 SendGrid supports custom authentication.
 

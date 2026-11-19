@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-workforce-manage
 ---
 
 # Private workforce management using the Amazon SageMaker API
-<a name="sms-workforce-management-private-api"></a>
 
 You can use Amazon SageMaker API operations to manage, update, and delete your private workforce. For each API operation listed on the following topics, you can find a list of supported language-specific SDKs and their documentation in the **See Also** section of the API documentation.
 

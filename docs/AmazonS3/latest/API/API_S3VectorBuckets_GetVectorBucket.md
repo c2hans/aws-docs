@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # GetVectorBucket
-<a name="API_S3VectorBuckets_GetVectorBucket"></a>
 
 Returns vector bucket attributes. To specify the bucket, you must use either the vector bucket name or the vector bucket Amazon Resource Name (ARN).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-quer
 ---
 
 # Optimize CloudTrail Lake queries
-<a name="lake-queries-optimization"></a>
 
 This page provides guidance about how to optimize CloudTrail Lake queries to improve performance and reliability. It covers specific optimization techniques as well as workarounds for common query failures.
 

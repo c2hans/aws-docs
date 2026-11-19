@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Lambda Architecture
-<a name="lambda-architecture"></a>
 
 This cost-optimized serverless architecture is suitable for most image transformation workloads with images up to 6 MB.
 

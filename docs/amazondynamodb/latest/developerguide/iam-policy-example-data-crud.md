@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/iam
 ---
 
 # IAM policy to read, write, update, and delete access on a DynamoDB table
-<a name="iam-policy-example-data-crud"></a>
 
 Use this policy if you need to allow your application to create, read, update, and delete data in Amazon DynamoDB tables, indexes, and streams. Substitute the AWS Region name, your account ID, and the table name or wildcard character (\*) where appropriate.
 

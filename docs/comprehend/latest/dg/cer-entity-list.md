@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/cer-entity-list.htm
 ---
 
 # Entity lists (plaintext only)
-<a name="cer-entity-list"></a>
 
 To train a model using an entity list, you provide two pieces of information: a list of the entity names with their corresponding custom entity types and a collection of unannotated documents in which you expect your entities to appear.
 

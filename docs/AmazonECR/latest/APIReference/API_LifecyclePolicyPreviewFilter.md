@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Lifecy
 ---
 
 # LifecyclePolicyPreviewFilter
-<a name="API_LifecyclePolicyPreviewFilter"></a>
 
 The filter for the lifecycle policy preview.
 

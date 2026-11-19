@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudshell/latest/userguide/sec-auth-wit
 ---
 
 # Managing AWS CloudShell access and usage with IAM policies
-<a name="sec-auth-with-identities"></a>
 
 With the access management resources that can be provided by AWS Identity and Access Management, administrators can grant permissions to IAM users. That way, these users can access AWS CloudShell and use the environment's features. Administrators can also create policies that specify at a granular level what actions those users can perform with the shell environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/userguide/update-team.html
 ---
 
 # Update an approval team
-<a name="update-team"></a>
 
 When you sign in to your organization's management account, you can request to update your approval teams by navigating to the Multi-party approval console.
 

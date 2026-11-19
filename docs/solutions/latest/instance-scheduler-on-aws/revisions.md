@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 Publication date: *October 2020*
 

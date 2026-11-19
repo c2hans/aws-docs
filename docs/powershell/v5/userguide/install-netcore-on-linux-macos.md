@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Install AWSPowerShell.NetCore on Linux or macOS
-<a name="install-netcore-on-linux-macos"></a>
 
 For general information about installing the AWS Tools for PowerShell on Linux or macOS, including prerequisites and other options, see the [parent topic](pstools-getting-set-up-linux-mac.md).
 

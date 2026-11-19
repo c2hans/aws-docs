@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # ConfigurationEvent
-<a name="API_streaming_ConfigurationEvent"></a>
 
 Allows you to set audio channel definitions and post-call analytics settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSEC09-BP01 Integrate AI-powered vulnerability scanning across the development lifecycle
-<a name="agentsec09-bp01"></a>
 
  Pattern-matching scanners find common bugs but miss context-dependent flaws in agent orchestration, tool interactions, and authorization chains. AI-powered scanning that reasons about code and design documents the way a human security researcher does catches these issues at the phase when remediation is cheapest.
 

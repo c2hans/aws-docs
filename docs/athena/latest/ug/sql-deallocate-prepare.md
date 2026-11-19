@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/sql-deallocate-prepare.
 ---
 
 # DEALLOCATE PREPARE
-<a name="sql-deallocate-prepare"></a>
 
 Removes the prepared statement with the specified name from the prepared statements in the current workgroup.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MediaCon
 ---
 
 # MediaConcurrency
-<a name="API_MediaConcurrency"></a>
 
 Contains information about which channels are supported, and how many contacts an agent can have on a channel simultaneously.
 

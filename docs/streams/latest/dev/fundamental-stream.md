@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/fundamental-stream.ht
 ---
 
 # Tutorial: Perform basic Kinesis Data Streams operations using the AWS CLI
-<a name="fundamental-stream"></a>
 
 This section describes basic use of a Kinesis data stream from the command line using the AWS CLI. Be sure you are familiar with the concepts discussed in [Amazon Kinesis Data Streams terminology and concepts](key-concepts.md).
 

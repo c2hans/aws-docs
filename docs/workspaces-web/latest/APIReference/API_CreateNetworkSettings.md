@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_C
 ---
 
 # CreateNetworkSettings
-<a name="API_CreateNetworkSettings"></a>
 
 Creates a network settings resource that can be associated with a web portal. Once associated with a web portal, network settings define how streaming instances will connect with your specified VPC.
 

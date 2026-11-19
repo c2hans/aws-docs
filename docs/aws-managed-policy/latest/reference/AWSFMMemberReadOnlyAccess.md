@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSF
 ---
 
 # AWSFMMemberReadOnlyAccess
-<a name="AWSFMMemberReadOnlyAccess"></a>
 
 **Description**: Provides read only access to AWS WAF actions for AWS Firewall Manager member accounts
 

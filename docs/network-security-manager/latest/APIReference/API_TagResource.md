@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds or overwrites the specified tags on the given resource.
 

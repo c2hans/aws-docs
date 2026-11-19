@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ResourceShar
 ---
 
 # ResourceSharePermissionSummary
-<a name="API_ResourceSharePermissionSummary"></a>
 
 Information about an AWS RAM permission.
 

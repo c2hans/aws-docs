@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-mongodb-source-n
 ---
 
 # Creating a MongoDB source node
-<a name="creating-mongodb-source-node"></a>
 
 ## Prerequisites needed
 <a name="creating-mongodb-source-node-prerequisites"></a>

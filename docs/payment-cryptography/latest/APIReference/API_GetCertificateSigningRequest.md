@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # GetCertificateSigningRequest
-<a name="API_GetCertificateSigningRequest"></a>
 
 Creates a certificate signing request (CSR) from a key pair.
 

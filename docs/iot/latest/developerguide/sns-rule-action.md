@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/sns-rule-actio
 ---
 
 # SNS
-<a name="sns-rule-action"></a>
 
 The SNS (`sns`) action sends the data from an MQTT message as an Amazon Simple Notification Service (Amazon SNS) push notification.
 

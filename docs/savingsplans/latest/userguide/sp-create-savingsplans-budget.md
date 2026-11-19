@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/sp-create-
 ---
 
 # Customizing a Savings Plans budget
-<a name="sp-create-savingsplans-budget"></a>
 
 Use the following procedure to create a customized budget for Savings Plans utilization or Savings Plans coverage.
 

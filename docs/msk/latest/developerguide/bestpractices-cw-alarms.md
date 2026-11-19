@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/bestpractices-
 ---
 
 # Recommended CloudWatch alarms for Amazon MSK Provisioned clusters
-<a name="bestpractices-cw-alarms"></a>
 
 Monitor your Amazon MSK Provisioned clusters to detect issues before they affect your applications. CloudWatch alarms perform an action when a CloudWatch metric exceeds a specified value for some amount of time. For example, you might want to get an email notification if your partition count exceeds the recommended value for your broker instance size for longer than 15 minutes. The critical alarms in the following table are recommended, but they are not an exhaustive list of alarms you can create to monitor your cluster.
 

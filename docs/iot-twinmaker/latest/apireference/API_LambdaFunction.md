@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_La
 ---
 
 # LambdaFunction
-<a name="API_LambdaFunction"></a>
 
 The Lambda function.
 

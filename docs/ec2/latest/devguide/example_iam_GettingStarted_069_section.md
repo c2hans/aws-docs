@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_iam_GettingS
 ---
 
 # Run CPU stress tests on virtual machine instances using fault injection
-<a name="example_iam_GettingStarted_069_section"></a>
 
 The following code example shows how to:
 + Create IAM roles

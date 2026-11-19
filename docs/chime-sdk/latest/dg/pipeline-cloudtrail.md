@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/pipeline-cloudtrail.
 ---
 
 # Sending Amazon Chime SDK media pipeline events to CloudTrail
-<a name="pipeline-cloudtrail"></a>
 
 AWS enables CloudTrail for you when you create your AWS account. When a user calls a supported API in the media pipeline SDK, CloudTrail logs that activity for that API in **Event history**, along with other AWS events. You can view, search, and download the media pipeline events in your AWS account. For more information, see [Viewing Events with CloudTrail Event History](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html) in the *CloudTrail User Guide*.
 

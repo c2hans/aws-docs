@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Metric MetricFilter
-<a name="aws-properties-connect-metric-metricfilter"></a>
 
 A filter condition applied to a metric component in a calculation. Filters restrict the data included in the metric computation.
 

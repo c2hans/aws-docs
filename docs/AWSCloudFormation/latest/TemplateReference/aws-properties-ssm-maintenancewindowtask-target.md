@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::MaintenanceWindowTask Target
-<a name="aws-properties-ssm-maintenancewindowtask-target"></a>
 
 The `Target` property type specifies targets (either instances or window target IDs). You specify instances by using `Key=InstanceIds,Values=<instanceid1>,<instanceid2>`. You specify window target IDs using `Key=WindowTargetIds,Values=<window-target-id-1>,<window-target-id-2>` for a maintenance window task in AWS Systems Manager.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # TriggerCondition
-<a name="API_TriggerCondition"></a>
 
 Condition that triggers memory processing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-create-multica
 ---
 
 # Creating a multicast input
-<a name="input-create-multicast"></a>
 
 This section describes how to create a multicast input. A multicast input connects an IP multicast stream on your network to a channel. The channel runs on a node in an AWS Elemental MediaLive Anywhere cluster. Create the input before you create the channel that ingests the input.
 

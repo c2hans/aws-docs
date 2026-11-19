@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/tca-output-streamin
 ---
 
 # Real-time Call Analytics output
-<a name="tca-output-streaming"></a>
 
 Real-time Call Analytics transcripts are displayed in a turn-by-turn format by segment. They include category events, issue detection, sentiment, and PII identification and redaction. Category events allow you to set real-time alerts; see [Creating real-time alerts for category matches](tca-start-stream.md#tca-create-alert-stream) for more information.
 

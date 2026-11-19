@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-studio-notebooks-ama
 ---
 
 # Using Amazon Q Developer with AWS Glue Studio notebooks
-<a name="glue-studio-notebooks-amazon-q-developer"></a>
 
  AWS Glue Studio allows you to interactively author jobs in a notebook interface based on Jupyter Notebooks. Using Amazon Q Developer improves the authoring experience within AWS Glue Studio notebooks.
 

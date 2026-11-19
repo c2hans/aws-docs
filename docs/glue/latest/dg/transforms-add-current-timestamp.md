@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-add-current-ti
 ---
 
 # Using the Add Current Timestamp transform
-<a name="transforms-add-current-timestamp"></a>
 
  The **Add Current Timestamp** transform allows you to mark the rows with the time on which the data was processed. This is useful for auditing purposes or to track latency in the data pipeline. You can add this new column as a timestamp data type or a formatted string.
 

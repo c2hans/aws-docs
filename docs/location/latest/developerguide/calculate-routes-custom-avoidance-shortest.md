@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/calculate
 ---
 
 # How to find the shortest routes
-<a name="calculate-routes-custom-avoidance-shortest"></a>
 
 The CalculateRoutes API helps you to find the shortest routes between origin and destination.
 

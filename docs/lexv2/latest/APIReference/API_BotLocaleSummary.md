@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotLocaleS
 ---
 
 # BotLocaleSummary
-<a name="API_BotLocaleSummary"></a>
 
 Summary information about bot locales returned by the [ListBotLocales](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBotLocales.html) operation.
 

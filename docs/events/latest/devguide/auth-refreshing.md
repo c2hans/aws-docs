@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/auth-refreshing.h
 ---
 
 # Keeping the attendee signed in
-<a name="auth-refreshing"></a>
 
  When the access token expires, exchange the refresh token for a new one, rather than a fresh sign-in:
 

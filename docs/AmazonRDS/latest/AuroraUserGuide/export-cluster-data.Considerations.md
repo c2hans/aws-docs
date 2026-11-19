@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/export-
 ---
 
 # Considerations for DB cluster exports
-<a name="export-cluster-data.Considerations"></a>
 
 Use the following sections to learn about the limitations, file naming conventions, and data conversion and storage when exporting DB cluster data to Amazon S3.
 

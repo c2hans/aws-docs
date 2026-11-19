@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/next-generation-sagemaker/latest/usergui
 ---
 
 # Setting up Amazon SageMaker
-<a name="setting-up"></a>
 
 Complete the following tasks to set up Amazon SageMaker.
 

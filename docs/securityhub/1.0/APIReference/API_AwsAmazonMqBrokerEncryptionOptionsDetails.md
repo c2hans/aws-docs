@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAmaz
 ---
 
 # AwsAmazonMqBrokerEncryptionOptionsDetails
-<a name="API_AwsAmazonMqBrokerEncryptionOptionsDetails"></a>
 
  Provides details about broker encryption options.
 

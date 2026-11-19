@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_List
 ---
 
 # ListConnections
-<a name="API_ListConnections"></a>
 
 Retrieves a list of connections from the account.
 

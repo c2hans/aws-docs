@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Crea
 ---
 
 # CreatePrivacyBudgetTemplate
-<a name="API_CreatePrivacyBudgetTemplate"></a>
 
 Creates a privacy budget template for a specified collaboration. Each collaboration can have only one privacy budget template. If you need to change the privacy budget template, use the [UpdatePrivacyBudgetTemplate](API_UpdatePrivacyBudgetTemplate.md) operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/eks-ce-shared-res
 ---
 
 # Shared responsibility of the Kubernetes nodes
-<a name="eks-ce-shared-responsibility"></a>
 
 Maintenance of the compute environments is a shared responsibility.
 + Don't change or remove AWS Batch nodes, labels, taints, namespaces, launch templates, or auto scaling groups. Don't add taints to AWS Batch managed nodes. If you make any of these changes, your compute environment cannot be supported and failures including idle instances occur.

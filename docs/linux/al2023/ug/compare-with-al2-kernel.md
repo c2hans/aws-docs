@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2-kernel.
 ---
 
 # AL2023 kernel changes from AL2
-<a name="compare-with-al2-kernel"></a>
 
 AL2023 brings the 6.1 kernel, as well as many configuration changes to further optimize Amazon Linux for the cloud. For most users, these changes should be completely transparent.
 

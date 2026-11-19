@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Instance
 ---
 
 # Instance
-<a name="API_Instance"></a>
 
 The Connect Customer instance.
 

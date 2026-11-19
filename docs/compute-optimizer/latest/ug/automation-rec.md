@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/automation-r
 ---
 
 # Recommended actions
-<a name="automation-rec"></a>
 
 Recommended actions are optimization opportunities that you can implement through Compute Optimizer. They are a subset of Compute Optimizer's recommendations. You can view and apply each recommended action directly or create automation rules to implement them on a recurring schedule when they match your specified criteria.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens.h
 ---
 
 # Connect Customer conversational analytics
-<a name="contact-lens"></a>
 
 **Note**
 **Powered by Amazon Bedrock**: AWS implements [automated abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html). Because Connect Customer conversational analytics is built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).

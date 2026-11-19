@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ListPricingPlansFilter
-<a name="API_ListPricingPlansFilter"></a>
 
 The filter that specifies the Amazon Resource Names (ARNs) of pricing plans, to retrieve pricing plan information.
 

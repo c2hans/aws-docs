@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_RegisterInstanc
 ---
 
 # RegisterInstance
-<a name="API_RegisterInstance"></a>
 
 Creates or updates one or more records and, optionally, creates a health check based on the settings in a specified service. When you submit a `RegisterInstance` request, the following occurs:
 + For each DNS record that you define in the service that's specified by `ServiceId`, a record is created or updated in the hosted zone that's associated with the corresponding namespace.

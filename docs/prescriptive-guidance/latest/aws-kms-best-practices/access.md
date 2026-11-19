@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-kms-bes
 ---
 
 # Identity and access management best practices for AWS KMS
-<a name="access"></a>
 
 To use AWS Key Management Service (AWS KMS), you must have credentials that AWS can use to authenticate and authorize your requests. No AWS principal has any permissions to a KMS key unless you explicitly grant that permission and do not deny it. There are no implicit or automatic permissions to use or manage a KMS key. The topics in this section describe security best practices to help you determine which AWS KMS access management controls to use to help protect your resources.
 

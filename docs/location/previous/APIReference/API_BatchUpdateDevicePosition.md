@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Batch
 ---
 
 # BatchUpdateDevicePosition
-<a name="API_BatchUpdateDevicePosition"></a>
 
 Uploads position update data for one or more devices to a tracker resource (up to 10 devices per batch). Amazon Location uses the data when it reports the last known device position and position history. Amazon Location retains location data for 30 days.
 

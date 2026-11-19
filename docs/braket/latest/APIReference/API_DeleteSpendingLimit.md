@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_DeleteSpe
 ---
 
 # DeleteSpendingLimit
-<a name="API_DeleteSpendingLimit"></a>
 
 Deletes an existing spending limit. This operation permanently removes the spending limit and cannot be undone. After deletion, the associated device becomes unrestricted for spending.
 

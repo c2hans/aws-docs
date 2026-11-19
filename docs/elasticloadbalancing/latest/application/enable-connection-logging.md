@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Enable connection logs for your Application Load Balancer
-<a name="enable-connection-logging"></a>
 
 When you enable connection logs for your load balancer, you must specify the name of the S3 bucket where the load balancer will store the logs. The bucket must have a bucket policy that grants Elastic Load Balancing permission to write to the bucket.
 

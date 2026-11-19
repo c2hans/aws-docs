@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Invoke, list, and delete AWS Lambda functions
-<a name="examples-lambda"></a>
 
 This section provides examples of programming with the Lambda service client by using the AWS SDK for Java 2.x.
 

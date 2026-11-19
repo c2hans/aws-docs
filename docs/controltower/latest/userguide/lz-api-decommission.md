@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/lz-api-dec
 ---
 
 # Decommission your landing zone with APIs
-<a name="lz-api-decommission"></a>
 
 The process of cleaning up all of a landing zones resources is referred to as *decommissioning* a landing zone.
 

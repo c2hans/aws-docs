@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/install-sys
 ---
 
 # Install the AWS Systems Manager Agent
-<a name="install-systems-manager-agent"></a>
 
 The AWS Systems Manager Agent (Systems Manager Agent) is Amazon software that you install to enable Systems Manager to update, manage, and configure Greengrass core devices, Amazon EC2 instances, and other resources. The agent processes and runs requests from the Systems Manager service in the AWS Cloud. Then, the agent sends status and runtime information back to the Systems Manager service. For more information, see [About Systems Manager Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/prereqs-ssm-agent.html) in the *AWS Systems Manager User Guide*.
 

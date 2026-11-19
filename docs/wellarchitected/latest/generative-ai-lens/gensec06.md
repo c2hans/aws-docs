@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Data poisoning
-<a name="gensec06"></a>
 
 | GENSEC06: How do you detect and remediate data poisoning risks? |
 | --- |

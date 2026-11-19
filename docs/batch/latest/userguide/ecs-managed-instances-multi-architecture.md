@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/ecs-managed-insta
 ---
 
 # Running mixed-architecture jobs (X86\_64 and ARM64)
-<a name="ecs-managed-instances-multi-architecture"></a>
 
 A single Amazon ECS Managed Instances compute environment and job queue can run both `X86_64` and `ARM64` (AWS Graviton processor-based) jobs. Each job runs on capacity that matches the CPU architecture declared in its job definition. Set the architecture with `runtimePlatform.cpuArchitecture` in the job definition. You do not configure architecture on the compute environment.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Dataset PathParameter
-<a name="aws-properties-databrew-dataset-pathparameter"></a>
 
 Represents a single entry in the path parameters of a dataset. Each `PathParameter` consists of a name and a parameter definition.
 

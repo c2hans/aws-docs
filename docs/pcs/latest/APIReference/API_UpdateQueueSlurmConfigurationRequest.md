@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_UpdateQueueS
 ---
 
 # UpdateQueueSlurmConfigurationRequest
-<a name="API_UpdateQueueSlurmConfigurationRequest"></a>
 
 Additional options related to the Slurm scheduler.
 

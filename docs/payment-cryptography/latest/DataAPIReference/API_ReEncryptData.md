@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # ReEncryptData
-<a name="API_ReEncryptData"></a>
 
 Re-encrypts ciphertext using DUKPT, symmetric, or asymmetric data encryption keys.
 

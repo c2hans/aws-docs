@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # AZSyncState
-<a name="API_AZSyncState"></a>
 
 The status of the firewall endpoint defined by a `VpcEndpointAssociation`.
 

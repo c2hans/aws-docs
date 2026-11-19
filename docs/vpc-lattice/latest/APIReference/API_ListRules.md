@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_List
 ---
 
 # ListRules
-<a name="API_ListRules"></a>
 
 Lists the rules for the specified listener.
 

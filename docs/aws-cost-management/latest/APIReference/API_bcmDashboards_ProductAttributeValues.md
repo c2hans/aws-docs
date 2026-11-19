@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ProductAttributeValues
-<a name="API_bcmDashboards_ProductAttributeValues"></a>
 
 Specifies the values and match options for product attribute-based filtering in cost and usage queries.
 

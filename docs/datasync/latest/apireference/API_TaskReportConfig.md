@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_TaskRep
 ---
 
 # TaskReportConfig
-<a name="API_TaskReportConfig"></a>
 
 Specifies how you want to configure a task report, which provides detailed information about for your AWS DataSync transfer.
 

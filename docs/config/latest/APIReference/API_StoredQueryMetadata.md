@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_StoredQue
 ---
 
 # StoredQueryMetadata
-<a name="API_StoredQueryMetadata"></a>
 
 Returns details of a specific query.
 

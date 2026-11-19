@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/release-notes.h
 ---
 
 # IVS Chat Release Notes
-<a name="release-notes"></a>
 
 This document contains all Amazon IVS Chat release notes, latest first, organized by date of release.
 

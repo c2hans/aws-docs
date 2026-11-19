@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_
 ---
 
 # Processing the request context
-<a name="reference_policies_evaluation-logic_policy-eval-reqcontext"></a>
 
 When AWS evaluates and authorizes a request, it assembles the request information into a *request context*. The request context contains any information that can be used in policy evaluation.
 + **Principal** – The user, role, or federated user principal that sent the request. Information about the principal includes the policies that are associated with that principal.

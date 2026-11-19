@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_ResourceNotF
 ---
 
 # ResourceNotFoundException
-<a name="API_ResourceNotFoundException"></a>
 
 The specified resource doesn't exist. Check the resource ID, and try again.
 

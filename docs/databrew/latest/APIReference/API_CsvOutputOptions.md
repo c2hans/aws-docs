@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_CsvOutp
 ---
 
 # CsvOutputOptions
-<a name="API_CsvOutputOptions"></a>
 
 Represents a set of options that define how DataBrew will write a comma-separated value (CSV) file.
 

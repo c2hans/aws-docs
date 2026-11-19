@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Deployment wiring summary
-<a name="connect-deploy-wiring"></a>
 
 To integrate AVX with an Amazon Connect instance:
 

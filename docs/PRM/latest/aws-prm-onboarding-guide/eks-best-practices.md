@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/eks-
 ---
 
 # Amazon EKS - Resource Tagging
-<a name="eks-best-practices"></a>
 
 Amazon EKS clusters run containerized applications on a set of nodes. Customers pay for EKS cluster hours and the underlying AWS resources including nodes (EC2 instances), load balancers, and EBS volumes. To measure revenue with Partner Revenue Measurement, you must tag both the Kubernetes cluster and its underlying AWS resources.
 

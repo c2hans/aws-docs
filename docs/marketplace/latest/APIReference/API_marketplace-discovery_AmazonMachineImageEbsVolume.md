@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # AmazonMachineImageEbsVolume
-<a name="API_marketplace-discovery_AmazonMachineImageEbsVolume"></a>
 
 Contains supported Amazon EBS volume information for an AMI fulfillment option.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::Flow RtmpPushNamingConfiguration
-<a name="aws-properties-mediaconnect-flow-rtmppushnamingconfiguration"></a>
 
 <a name="aws-properties-mediaconnect-flow-rtmppushnamingconfiguration-description"></a>The `RtmpPushNamingConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::Flow](aws-resource-mediaconnect-flow.md).
 

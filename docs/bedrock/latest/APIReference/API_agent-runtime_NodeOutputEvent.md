@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # NodeOutputEvent
-<a name="API_agent-runtime_NodeOutputEvent"></a>
 
 Contains information about the outputs produced by a specific node during a flow execution.
 

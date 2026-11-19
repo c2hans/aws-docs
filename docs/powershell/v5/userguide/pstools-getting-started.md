@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Configuring and using the AWS Tools for PowerShell
-<a name="pstools-getting-started"></a>
 
 Some of the topics in this section describe the fundamentals of using the Tools for Windows PowerShell after you have [installed the tools and set up authentication](pstools-getting-set-up.md). For example, they explain how to specify which [AWS Region](pstools-installing-specifying-region.md) the Tools for PowerShell should use when interacting with AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTFleetHubFederationAccess
-<a name="AWSIoTFleetHubFederationAccess"></a>
 
 **Description**: Federation access for IoT Fleet Hub applications
 

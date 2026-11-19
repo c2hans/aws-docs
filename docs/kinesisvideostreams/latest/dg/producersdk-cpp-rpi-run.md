@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 ---
 
 # Stream video to your Kinesis video stream
-<a name="producersdk-cpp-rpi-run"></a>
 
 To run the sample application, you need the following information:
 + The name of the stream you created in the [Prerequisites](producersdk-cpp-rpi-prerequisites.md) section.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_GetOdbNetwor
 ---
 
 # GetOdbNetwork
-<a name="API_GetOdbNetwork"></a>
 
 Returns information about the specified ODB network.
 

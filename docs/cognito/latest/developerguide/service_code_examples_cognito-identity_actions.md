@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/service_co
 ---
 
 # Actions for Amazon Cognito Identity using AWS SDKs
-<a name="service_code_examples_cognito-identity_actions"></a>
 
 The following code examples demonstrate how to perform individual Amazon Cognito Identity actions with AWS SDKs. Each example includes a link to GitHub, where you can find instructions for setting up and running the code.
 

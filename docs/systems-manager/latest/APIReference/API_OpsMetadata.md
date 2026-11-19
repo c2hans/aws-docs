@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # OpsMetadata
-<a name="API_OpsMetadata"></a>
 
 Operational metadata for an application in Application Manager.
 

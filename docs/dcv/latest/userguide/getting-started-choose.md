@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/getting-started-cho
 ---
 
 # Step 2: Choose a Amazon DCV client
-<a name="getting-started-choose"></a>
 
 Next, choose the Amazon DCV client that best meets your needs. Amazon DCV offers the following clients:
 + [Windows](client-windows.md)

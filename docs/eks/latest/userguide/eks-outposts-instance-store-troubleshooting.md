@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/eks-outposts-instan
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Troubleshoot local Amazon EKS clusters on AWS Outposts configured with EC2 instance store
-<a name="eks-outposts-instance-store-troubleshooting"></a>
 
 This topic covers common errors that you might see while using local Amazon EKS clusters on AWS Outposts configured with EC2 instance store and how to troubleshoot them.
 

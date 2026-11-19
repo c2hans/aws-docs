@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-db2-
 ---
 
 # Pre-migration preparation
-<a name="prerequisites"></a>
 
 The migration options that are covered in this guide require the following setup activities before you begin the migration:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateA
 ---
 
 # CreateAutomationRule
-<a name="API_CreateAutomationRule"></a>
 
  Creates an automation rule based on input parameters.
 

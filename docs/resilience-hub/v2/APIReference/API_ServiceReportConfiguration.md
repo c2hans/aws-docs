@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Servi
 ---
 
 # ServiceReportConfiguration
-<a name="API_ServiceReportConfiguration"></a>
 
 Configuration for automatic report generation on a Service.
 

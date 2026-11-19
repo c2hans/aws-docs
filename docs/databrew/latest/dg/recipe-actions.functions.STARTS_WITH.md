@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # STARTS\_WITH
-<a name="recipe-actions.functions.STARTS_WITH"></a>
 
 Returns `true` in a new column if a specified number of leftmost characters, or custom string, matches a pattern.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cisco
 ---
 
 # CloudWatch pipelines configuration for Cisco Duo
-<a name="cisco-duo-pipeline-setup"></a>
 
 Collects log data from Cisco Duo using HMAC authentication through the Duo Admin API.
 

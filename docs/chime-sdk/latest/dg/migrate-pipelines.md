@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/migrate-pipelines.ht
 ---
 
 # Migrating to the Amazon Chime SDK media pipelines namespace
-<a name="migrate-pipelines"></a>
 
 You use the `ChimeSdkMediaPipelines` namespace to address media pipeline API endpoints in any AWS Region in which they're available. Use this namespace if you're just starting to use the Amazon Chime SDK. For more information about Regions, refer to [Available AWS Regions for the Amazon Chime SDK](sdk-available-regions.md) in this guide.
 

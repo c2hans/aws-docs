@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/mcp-server.html
 ---
 
 # Using the AWS for SAP Management MCP Server
-<a name="mcp-server"></a>
 
 Configure the AWS for SAP Management MCP Server with your AI assistant to manage and monitor SAP applications running on AWS. The `uvx` tool automatically downloads and runs the MCP server when your AI assistant starts. For source code and project details, see the [AWS for SAP Management MCP Server GitHub repository](https://github.com/awslabs/mcp/tree/main/src/aws-for-sap-management-mcp-server).
 

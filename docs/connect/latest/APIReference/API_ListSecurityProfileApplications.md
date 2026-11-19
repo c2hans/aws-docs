@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListSecu
 ---
 
 # ListSecurityProfileApplications
-<a name="API_ListSecurityProfileApplications"></a>
 
 Returns a list of third-party applications or MCP Servers in a specific security profile.
 

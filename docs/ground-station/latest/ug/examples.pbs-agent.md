@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/examples.pbs-ag
 ---
 
 # Public broadcast satellite utilizing AWS Ground Station Agent (wideband)
-<a name="examples.pbs-agent"></a>
 
  This example builds off the analysis done in the [JPSS-1 - Public broadcast satellite (PBS) - Evaluation](examples.md#examples.pbs-definition) section of the user guide.
 

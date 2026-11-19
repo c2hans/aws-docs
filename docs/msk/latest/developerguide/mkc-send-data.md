@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/mkc-send-data.
 ---
 
 # Send data to the MSK cluster
-<a name="mkc-send-data"></a>
 
 In this step you send data to the Apache Kafka topic that you created earlier, and then look for that same data in the destination S3 bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Appendi
 ---
 
 # Working with Babelfish for Aurora PostgreSQL procedures
-<a name="Appendix.Babelfish.Functions"></a>
 
 ## Overview
 <a name="Appendix.Babelfish.Functions.Overview"></a>

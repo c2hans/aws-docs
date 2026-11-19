@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # DSOPS02-BP02 Establish an automated path to compliance
-<a name="dsops02-bp02"></a>
 
  Automation reduces the risk of human error, speeds up the compliance process, and enables continuous monitoring across jurisdictions. When compliance requirements are codified and integrated into your development pipelines, every change is validated before deployment rather than discovered during audits.
 

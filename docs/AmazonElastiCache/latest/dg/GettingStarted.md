@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStart
 ---
 
 # Getting started with Amazon ElastiCache
-<a name="GettingStarted"></a>
 
 Use the hands-on tutorial in this section to help you get started and learn more about using ElastiCache.
 

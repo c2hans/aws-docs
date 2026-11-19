@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetEmailI
 ---
 
 # GetEmailIdentity
-<a name="API_GetEmailIdentity"></a>
 
 Provides information about a specific identity, including the identity's verification status, sending authorization policies, its DKIM authentication status, and its custom Mail-From settings.
 

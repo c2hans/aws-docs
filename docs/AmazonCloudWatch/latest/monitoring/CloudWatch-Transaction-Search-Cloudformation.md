@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Using Transaction Search with CloudFormation
-<a name="CloudWatch-Transaction-Search-Cloudformation"></a>
 
 You can use CloudFormation to enable and configure X-Ray Transaction Search.
 

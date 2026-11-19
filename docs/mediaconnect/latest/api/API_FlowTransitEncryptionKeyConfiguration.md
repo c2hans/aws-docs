@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_FlowTransitE
 ---
 
 # FlowTransitEncryptionKeyConfiguration
-<a name="API_FlowTransitEncryptionKeyConfiguration"></a>
 
 Configuration settings for flow transit encryption keys.
 

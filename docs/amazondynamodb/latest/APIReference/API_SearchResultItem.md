@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_S
 ---
 
 # SearchResultItem
-<a name="API_SearchResultItem"></a>
 
 A single result from a `SearchVectors` operation.
 

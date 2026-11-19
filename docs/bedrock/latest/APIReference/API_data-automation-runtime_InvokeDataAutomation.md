@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # InvokeDataAutomation
-<a name="API_data-automation-runtime_InvokeDataAutomation"></a>
 
 Process data with a data automation project or blueprints. The service processes data synchronously. Output can either be returned inline or store in the output in the S3 bucket that you specify.
 

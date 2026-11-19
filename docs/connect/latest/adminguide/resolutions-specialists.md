@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/resolutions-sp
 ---
 
 # Work on Resolutions Cases in the agent workspace
-<a name="resolutions-specialists"></a>
 
  Specialists work on Resolutions Cases in the agent workspace. When a Step needs a person, Resolutions creates a Task for that Step and routes it to the queue configured on the Step. The specialist accepts the Task, sees the full Resolutions Case and its Work plan progress, records the outcome, and ends the Task. The Work plan then moves to the next Step.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialNullDataSettings
-<a name="API_GeospatialNullDataSettings"></a>
 
 The properties for the visualization of null data.
 

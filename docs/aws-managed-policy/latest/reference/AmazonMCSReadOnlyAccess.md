@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMCSReadOnlyAccess
-<a name="AmazonMCSReadOnlyAccess"></a>
 
 **Description**: Provide read only access to Amazon Managed Apache Cassandra Service
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateMigrat
 ---
 
 # CreateMigrationProject
-<a name="API_CreateMigrationProject"></a>
 
 Creates the migration project using the specified parameters.
 

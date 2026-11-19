@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/streaming-tutorial-studio
 ---
 
 # Tutorial: Build your first streaming workload using AWS Glue Studio
-<a name="streaming-tutorial-studio"></a>
 
 In this tutorial, you are going to learn how to create a streaming job using AWS Glue Studio. AWS Glue Studio is a visual interface to create AWS Glue jobs.
 

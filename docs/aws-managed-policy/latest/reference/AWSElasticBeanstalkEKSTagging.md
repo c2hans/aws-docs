@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElasticBeanstalkEKSTagging
-<a name="AWSElasticBeanstalkEKSTagging"></a>
 
 **Description**: Permissions needed to pass through tags to resources created by EKS Controllers
 

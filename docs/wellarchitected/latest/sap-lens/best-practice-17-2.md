@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 17.2 – Evaluate the cost characteristics of your SAP application architecture pattern
-<a name="best-practice-17-2"></a>
 
 As you develop the architecture of your SAP landscape, consider the cost of the number of infrastructure components in addition to their size and location. By establishing the business requirements of the solution, acknowledging risk, and finding opportunities to optimize, you can realize significant cost savings
 

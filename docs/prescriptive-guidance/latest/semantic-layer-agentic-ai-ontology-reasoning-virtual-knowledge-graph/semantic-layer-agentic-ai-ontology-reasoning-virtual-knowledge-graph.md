@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-la
 ---
 
 # Semantic Layer for Agentic AI using Ontology, Symbolic Reasoning, and Virtual Knowledge Graph
-<a name="semantic-layer-agentic-ai-ontology-reasoning-virtual-knowledge-graph"></a>
 
 *Don Simpson, Taylor Riggan, and Chun Schiros, Amazon Web Services*
 

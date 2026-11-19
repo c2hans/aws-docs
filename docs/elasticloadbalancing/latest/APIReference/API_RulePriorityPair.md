@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # RulePriorityPair
-<a name="API_RulePriorityPair"></a>
 
 Information about the priorities for the rules for a listener.
 

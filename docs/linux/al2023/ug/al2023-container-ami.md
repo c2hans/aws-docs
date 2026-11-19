@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/al2023-container-ami.htm
 ---
 
 # Comparing packages installed on Amazon Linux 2023 Minimal AMI and Container Images
-<a name="al2023-container-ami"></a>
 
 A comparison of the RPMs present on the AL2023 Minimial AMI to the RPMs present on the AL2023 base and minimal container images.
 

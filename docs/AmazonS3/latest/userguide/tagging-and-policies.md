@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/tagging-and-po
 ---
 
 # Tagging and access control policies
-<a name="tagging-and-policies"></a>
 
 You can also use permissions policies (bucket and user policies) to manage permissions related to object tagging. For policy actions see the following topics:
 +  [Object operations](security_iam_service-with-iam.md#using-with-s3-actions-related-to-objects)

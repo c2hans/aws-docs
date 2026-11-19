@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteInvoiceUnit
-<a name="API_invoicing_DeleteInvoiceUnit"></a>
 
 This deletes an invoice unit with the provided invoice unit ARN.
 

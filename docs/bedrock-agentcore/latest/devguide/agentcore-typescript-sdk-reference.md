@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentc
 ---
 
 # AgentCore TypeScript SDK reference
-<a name="agentcore-typescript-sdk-reference"></a>
 
 This reference documents the public Amazon Bedrock AgentCore TypeScript SDK releases.
 

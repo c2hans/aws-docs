@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Manage deployments
-<a name="launch-wizard-sap-managing-manage"></a>
 
 1. From the left navigation pane, choose **SAP**.
 

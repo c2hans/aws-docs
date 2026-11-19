@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Red
 ---
 
 # Creating a DynamoDB zero-ETL integration with Amazon Redshift
-<a name="RedshiftforDynamoDB-zero-etl-getting-started"></a>
 
  Before creating a zero-ETL integration, you must first set up your source DynamoDB table and then the target Amazon Redshift data warehouse.
 

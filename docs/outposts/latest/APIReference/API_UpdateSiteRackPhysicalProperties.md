@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_UpdateS
 ---
 
 # UpdateSiteRackPhysicalProperties
-<a name="API_UpdateSiteRackPhysicalProperties"></a>
 
 Update the physical and logistical details for a rack at a site. For more information about hardware requirements for racks, see [Network readiness checklist](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-requirements.html#checklist) in the AWS Outposts User Guide.
 

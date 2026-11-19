@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/kernel-update.html
 ---
 
 # Updating the Linux Kernel on AL2023
-<a name="kernel-update"></a>
 
 **Topics**
 + [Linux Kernel Versions on AL2023](#al2023-kernels)

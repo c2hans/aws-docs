@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_ICD10C
 ---
 
 # ICD10CMConcept
-<a name="API_ICD10CMConcept"></a>
 
  The ICD-10-CM concepts that the entity could refer to, along with a score indicating the likelihood of the match.
 

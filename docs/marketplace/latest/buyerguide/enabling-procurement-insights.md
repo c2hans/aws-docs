@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/enabling-p
 ---
 
 # Enabling the Procurement insights dashboard
-<a name="enabling-procurement-insights"></a>
 
 The following sections explain how to meet the general prerequisites for enabling the **Procurement insights** dashboard, and how to activate it.
 

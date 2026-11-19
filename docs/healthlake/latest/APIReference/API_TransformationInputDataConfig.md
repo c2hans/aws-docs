@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Trans
 ---
 
 # TransformationInputDataConfig
-<a name="API_TransformationInputDataConfig"></a>
 
 The Amazon S3 location and source format configuration for input data in a transformation job.
 

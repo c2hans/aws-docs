@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMR
 ---
 
 # Step 3: Connect to the Leader node
-<a name="EMRforDynamoDB.Tutorial.ConnectToLeaderNode"></a>
 
 When the status of your Amazon EMR cluster changes to `Waiting`, you will be able to connect to the leader node using SSH and perform command line operations.
 

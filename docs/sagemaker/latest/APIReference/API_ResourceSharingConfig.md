@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Resour
 ---
 
 # ResourceSharingConfig
-<a name="API_ResourceSharingConfig"></a>
 
 Resource sharing configuration.
 

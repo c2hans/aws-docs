@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/cre
 ---
 
 # Create fleet infrastructure with an Amazon EC2 Auto Scaling group
-<a name="create-auto-scaling"></a>
 
 This section explains how to create an Amazon EC2 Auto Scaling fleet.
 

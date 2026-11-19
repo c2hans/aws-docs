@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-v
 ---
 
 # Check if the current user is on hold in Connect Customer agent workspace
-<a name="3P-apps-voice-requests-isselfonhold"></a>
 
 Checks whether the current user's participant is currently on hold for a specific contact.
 

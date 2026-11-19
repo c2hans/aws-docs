@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-lambda
 ---
 
 # Create a single page React app with CodeBuild Lambda Node.js
-<a name="sample-lambda-react-nodejs"></a>
 
 [Create React App](https://create-react-app.dev/) is a way to create single-page React applications. The following Node.js sample uses Node.js to build the source artifacts from Create React App and returns the build artifacts.
 

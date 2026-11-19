@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Schedule.html
 ---
 
 # Schedule
-<a name="API_Schedule"></a>
 
 A scheduling object using a `cron` statement to schedule an event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_LaunchCo
 ---
 
 # LaunchConfiguration
-<a name="API_LaunchConfiguration"></a>
 
 Describes an Auto Scaling launch configuration.
 

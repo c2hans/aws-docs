@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/neptune-gdb-mod
 ---
 
 # Modifying a Neptune global database
-<a name="neptune-gdb-modifying"></a>
 
 The DB cluster parameter groups can be configured independently for each Neptune DB cluster in a global database, but it's best to keep settings consistent across the clusters to avoid unexpected behavior changes if a secondary cluster has to be promoted to primary.
 

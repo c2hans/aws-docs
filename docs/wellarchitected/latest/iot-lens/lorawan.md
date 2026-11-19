@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/lorawan.
 ---
 
 # LoRaWAN
-<a name="lorawan"></a>
 
  LoRaWAN is suitable for long-range, low power applications such as smart agriculture, asset tracking and smart cities.
 

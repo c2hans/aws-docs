@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeprecateThi
 ---
 
 # DeprecateThingType
-<a name="API_DeprecateThingType"></a>
 
 Deprecates a thing type. You can not associate new things with deprecated thing type.
 

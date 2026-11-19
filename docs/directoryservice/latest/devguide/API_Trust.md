@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Tru
 ---
 
 # Trust
-<a name="API_Trust"></a>
 
 Describes a trust relationship between an AWS Managed Microsoft AD directory and an external domain.
 

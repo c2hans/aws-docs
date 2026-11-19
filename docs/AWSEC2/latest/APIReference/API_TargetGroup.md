@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TargetGro
 ---
 
 # TargetGroup
-<a name="API_TargetGroup"></a>
 
 Describes a load balancer target group.
 

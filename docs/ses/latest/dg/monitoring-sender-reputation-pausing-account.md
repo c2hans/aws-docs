@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/monitoring-sender-reputati
 ---
 
 # Automatically pausing email sending for your entire Amazon SES account
-<a name="monitoring-sender-reputation-pausing-account"></a>
 
 The procedures in this section explain the steps to set up Amazon SES, Amazon SNS, Amazon CloudWatch, and AWS Lambda to automatically pause email sending for your Amazon SES account in a single AWS Region. If you send email from multiple regions, repeat the procedures in this section for each region in which you want to implement this solution.
 

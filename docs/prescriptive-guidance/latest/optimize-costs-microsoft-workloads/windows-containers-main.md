@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Move Windows applications to containers
-<a name="windows-containers-main"></a>
 
 ## Overview
 <a name="windows-containers-overview"></a>

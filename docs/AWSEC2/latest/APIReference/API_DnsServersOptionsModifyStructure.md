@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DnsServer
 ---
 
 # DnsServersOptionsModifyStructure
-<a name="API_DnsServersOptionsModifyStructure"></a>
 
 Information about the DNS server to be used.
 

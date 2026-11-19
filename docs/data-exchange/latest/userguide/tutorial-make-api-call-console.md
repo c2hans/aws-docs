@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/tutorial-
 ---
 
 # Making an AWS Data Exchange API call
-<a name="tutorial-make-api-call-console"></a>
 
 You can call a single endpoint in the AWS Data Exchange console.
 

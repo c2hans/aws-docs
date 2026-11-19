@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Syste
 ---
 
 # SystemUserJourneyCreatedMetadata
-<a name="API_SystemUserJourneyCreatedMetadata"></a>
 
 Metadata for a system user journey created event.
 

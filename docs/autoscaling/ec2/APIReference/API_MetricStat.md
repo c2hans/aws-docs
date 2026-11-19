@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_MetricS
 ---
 
 # MetricStat
-<a name="API_MetricStat"></a>
 
 This structure defines the CloudWatch metric to return, along with the statistic and unit.
 

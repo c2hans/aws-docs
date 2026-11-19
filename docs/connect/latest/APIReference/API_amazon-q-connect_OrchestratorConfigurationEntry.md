@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # OrchestratorConfigurationEntry
-<a name="API_amazon-q-connect_OrchestratorConfigurationEntry"></a>
 
 An entry in the orchestrator configuration list.
 

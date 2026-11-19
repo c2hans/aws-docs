@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/deploying-pack
 ---
 
 # Deploying a package version through AWS IoT jobs
-<a name="deploying-package-version"></a>
 
 You can use the following steps to deploy a package version through the AWS Management Console.
 

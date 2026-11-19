@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/userguide/creat
 ---
 
 # Creating a New Supply Plan
-<a name="creating-a-new-supply-plan"></a>
 
  **To create a supply plan:**
 

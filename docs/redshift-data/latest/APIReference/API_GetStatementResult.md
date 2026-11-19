@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_Ge
 ---
 
 # GetStatementResult
-<a name="API_GetStatementResult"></a>
 
 Fetches the temporarily cached result of an SQL statement in JSON format. The `ExecuteStatement` or `BatchExecuteStatement` operation that ran the SQL statement must have specified `ResultFormat` as `JSON` , or let the format default to JSON. A token is returned to page through the statement results.
 

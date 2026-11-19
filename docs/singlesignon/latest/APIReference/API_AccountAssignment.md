@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Acc
 ---
 
 # AccountAssignment
-<a name="API_AccountAssignment"></a>
 
 The assignment that indicates a principal's limited access to a specified AWS account with a specified permission set.
 

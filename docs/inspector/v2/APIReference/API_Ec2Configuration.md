@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Ec2Configu
 ---
 
 # Ec2Configuration
-<a name="API_Ec2Configuration"></a>
 
 Enables agent-based scanning, which scans instances that are not managed by SSM.
 

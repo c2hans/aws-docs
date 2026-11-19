@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/built-in-modules
 ---
 
 # Built-in modules
-<a name="built-in-modules"></a>
 
 Modules are a part of the `APPSYNC_JS` runtime and provide utilities to help write functions and Event API handlers. This section describes the DynamoDB and Amazon RDS module functions that you can use to interact with these data sources.
 

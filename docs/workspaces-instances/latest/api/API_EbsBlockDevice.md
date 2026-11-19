@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_EbsB
 ---
 
 # EbsBlockDevice
-<a name="API_EbsBlockDevice"></a>
 
 Defines configuration for an Elastic Block Store volume.
 

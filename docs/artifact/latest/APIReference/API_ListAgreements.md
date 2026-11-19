@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_ListAgr
 ---
 
 # ListAgreements
-<a name="API_ListAgreements"></a>
 
 List available agreements.
 

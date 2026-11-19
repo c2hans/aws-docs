@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_TransferCert
 ---
 
 # TransferCertificate
-<a name="API_TransferCertificate"></a>
 
 Transfers the specified certificate to the specified AWS account.
 

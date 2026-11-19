@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Accelerate DynamoDB reads with DAX using an AWS SDK
-<a name="example_dynamodb_Usage_DaxDemo_section"></a>
 
 The following code example shows how to:
 + Create and write data to a table with both the DAX and SDK clients.

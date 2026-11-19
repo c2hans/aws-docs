@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/sm-cli-reference.html
 ---
 
 # Amazon DCV Session Manager CLI reference
-<a name="sm-cli-reference"></a>
 
 The CLI allows you to perform a variety of session management tasks, including launching new sessions, listing active sessions, getting connection information for sessions, and terminating sessions. This section documents the available CLI commands and their usage.
 

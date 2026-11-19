@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53p
 ---
 
 # AssociateResourceToProfile
-<a name="API_route53profiles_AssociateResourceToProfile"></a>
 
  Associates a DNS resource configuration to a Route 53 Profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Code examples
-<a name="runtime-bidirectional-streaming-examples"></a>
 
 The following sample applications demonstrate bidirectional streaming on Amazon Bedrock AgentCore Runtime.
 

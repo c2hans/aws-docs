@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessHookEventBridgeTarget
-<a name="API_HarnessHookEventBridgeTarget"></a>
 
 The configuration for an Amazon EventBridge hook target.
 

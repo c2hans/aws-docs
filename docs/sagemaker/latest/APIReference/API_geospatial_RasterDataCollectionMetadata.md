@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # RasterDataCollectionMetadata
-<a name="API_geospatial_RasterDataCollectionMetadata"></a>
 
 Response object containing details for a specific RasterDataCollection.
 

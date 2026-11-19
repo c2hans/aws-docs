@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/detective-set
 ---
 
 # Getting started with Amazon Detective
-<a name="detective-setup"></a>
 
 This tutorial provides an introduction to Amazon Detective. You'll learn how to enable Detective for your AWS account. You'll also learn how to verify that Detective has begun to ingest and extract data from your AWS account into your behavior graph.
 

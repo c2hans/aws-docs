@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Change management
-<a name="change-management"></a>
 
 |  EUCREL07: How do you track changes and implement reversible deployments in your change management process?  |
 | --- |

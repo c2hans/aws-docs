@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Com
 ---
 
 # CompositeModelProperty
-<a name="API_CompositeModelProperty"></a>
 
 Contains information about a composite model property on an asset.
 

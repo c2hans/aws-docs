@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys-use.ht
 ---
 
 # Use an Amazon Bedrock API key
-<a name="api-keys-use"></a>
 
 You can use your Amazon Bedrock API key in the following ways:
 + **Set it as environment variable** – The Amazon Bedrock service recognizes the environment variable `AWS_BEARER_TOKEN_BEDROCK` You have the following options to set the key:

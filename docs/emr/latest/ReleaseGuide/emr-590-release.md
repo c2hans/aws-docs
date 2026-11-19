@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-590-release.
 ---
 
 # Amazon EMR release 5.9.0
-<a name="emr-590-release"></a>
 
 ## 5.9.0 application versions
 <a name="emr-590-app-versions"></a>

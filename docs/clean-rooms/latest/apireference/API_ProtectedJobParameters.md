@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedJobParameters
-<a name="API_ProtectedJobParameters"></a>
 
 The parameters for the protected job.
 

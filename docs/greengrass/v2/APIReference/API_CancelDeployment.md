@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_CancelDep
 ---
 
 # CancelDeployment
-<a name="API_CancelDeployment"></a>
 
 Cancels a deployment. This operation cancels the deployment for devices that haven't yet received it. If a device already received the deployment, this operation doesn't change anything for that device.
 

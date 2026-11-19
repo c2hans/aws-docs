@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/ml-behavior
 ---
 
 # IAM behaviors for AWS Clean Rooms ML
-<a name="ml-behaviors"></a>
 
 ## Cross-account jobs
 <a name="ml-behaviors-cross-account-jobs"></a>

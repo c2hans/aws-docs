@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # DescribeInsightRules
-<a name="API_DescribeInsightRules"></a>
 
 Returns a list of all the Contributor Insights rules in your account.
 

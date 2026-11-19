@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-c
 ---
 
 # Amazon EC2 container instances for Amazon ECS
-<a name="create-capacity"></a>
 
 An Amazon ECS container instance is an Amazon EC2 instance that run the Amazon ECS container agent and is registered to a cluster. When you run tasks with Amazon ECS using the capacity provider, External capacity provider or an Auto Scaling group capacity provider, your tasks are placed on your active container instances. You are responsible for the container instance management and maintenance.
 

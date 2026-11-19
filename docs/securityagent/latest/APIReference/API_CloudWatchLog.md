@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Cl
 ---
 
 # CloudWatchLog
-<a name="API_CloudWatchLog"></a>
 
 The Amazon CloudWatch Logs configuration for pentest job logging.
 

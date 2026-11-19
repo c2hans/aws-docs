@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # ContextEntry
-<a name="API_ContextEntry"></a>
 
 Describes a context entry in a context store. A context entry describes a resource, such as a security group, subnet, or attachment.
 

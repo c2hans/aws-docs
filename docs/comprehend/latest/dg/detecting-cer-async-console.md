@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/detecting-cer-async
 ---
 
 # Starting a custom entity detection job (console)
-<a name="detecting-cer-async-console"></a>
 
 You can use the console to start and monitor an async analysis job for custom entity recognition.
 

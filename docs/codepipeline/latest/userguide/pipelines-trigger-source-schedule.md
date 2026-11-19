@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-
 ---
 
 # Start a pipeline on a schedule
-<a name="pipelines-trigger-source-schedule"></a>
 
 You can set up a rule in EventBridge to start a pipeline on a schedule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # IdMappingRuleBasedProperties
-<a name="API_IdMappingRuleBasedProperties"></a>
 
  An object that defines the list of matching rules to run in an ID mapping workflow.
 

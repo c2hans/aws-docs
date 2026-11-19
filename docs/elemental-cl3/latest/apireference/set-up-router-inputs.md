@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # Setting Up Router Inputs
-<a name="set-up-router-inputs"></a>
 
 The Router Inputs entity holds information about the router inputs you are using with an AWS Elemental Live node. You only need to add information about the router inputs that are being or will be used (that are hooked up to an AWS Elemental Live node).
 

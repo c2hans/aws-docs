@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_S
 ---
 
 # SendingOptions
-<a name="API_SendingOptions"></a>
 
 Used to enable or disable email sending for messages that use this configuration set in the current AWS Region.
 

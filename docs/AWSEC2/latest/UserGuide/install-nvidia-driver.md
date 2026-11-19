@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-nvidia-d
 ---
 
 # NVIDIA drivers for your Amazon EC2 instance
-<a name="install-nvidia-driver"></a>
 
 An instance with an attached NVIDIA GPU, such as a P- or G- series instance types, must have the appropriate NVIDIA driver installed. Depending on the instance type, you can either download a public NVIDIA driver, download a driver from Amazon S3 that is available only to AWS customers, or use an AWS AMI with the driver pre-installed.
 

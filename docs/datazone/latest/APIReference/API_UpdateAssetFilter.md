@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UpdateA
 ---
 
 # UpdateAssetFilter
-<a name="API_UpdateAssetFilter"></a>
 
 Updates an asset filter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql
 ---
 
 # Further reading
-<a name="further-reading"></a>
 
  For additional information, refer to:
 +  [AWS Architecture Center](https://aws.amazon.com/architecture/)

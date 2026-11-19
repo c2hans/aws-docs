@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_L
 ---
 
 # ListApps
-<a name="API_ListApps"></a>
 
 Lists your AWS Resilience Hub applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Proces
 ---
 
 # ProcessingJobSummary
-<a name="API_ProcessingJobSummary"></a>
 
 Summary of information about a processing job.
 

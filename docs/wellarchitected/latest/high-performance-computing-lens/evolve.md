@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Evolve
-<a name="evolve"></a>
 
 | HPCOPS07: What mechanisms are you using to keep your environment updated with relevant service, product, and software improvements? |
 | --- |

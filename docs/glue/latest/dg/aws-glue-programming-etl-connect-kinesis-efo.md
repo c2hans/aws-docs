@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-
 ---
 
 # Using enhanced fan-out in Kinesis streaming jobs
-<a name="aws-glue-programming-etl-connect-kinesis-efo"></a>
 
 An enhanced fan-out consumer is able to recieve records from a Kinesis stream with dedicated throughput that can be greater than typical consumers. This is done by optimizing the transfer protocol used to provide data to a Kinesis consumer, such as your job. For more information about Kinesis Enhanced Fan-Out, see [the Kinesis documentation](https://docs.aws.amazon.com/streams/latest/dev/enhanced-consumers.html).
 

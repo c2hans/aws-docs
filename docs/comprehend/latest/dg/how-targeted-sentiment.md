@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/how-targeted-sentim
 ---
 
 # Targeted sentiment
-<a name="how-targeted-sentiment"></a>
 
 *Targeted sentiment* provides a granular understanding of the sentiments associated with specific entities (such as brands or products) in your input documents.
 

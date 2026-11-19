@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ses_example_ses_G
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `GetTemplate` with an AWS SDK
-<a name="ses_example_ses_GetTemplate_section"></a>
 
 The following code examples show how to use `GetTemplate`.
 

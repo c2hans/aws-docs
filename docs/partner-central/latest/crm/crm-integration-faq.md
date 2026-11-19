@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/crm-integrati
 ---
 
 # Integration FAQ
-<a name="crm-integration-faq"></a>
 
 The following topics answer frequently asked questions about CRM integrations.
 

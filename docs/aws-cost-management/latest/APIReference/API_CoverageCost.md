@@ -3,15 +3,14 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CoverageCost
-<a name="API_CoverageCost"></a>
 
-How much it costs to run an instance.
+The cost of the On-Demand Instance usage that reservations didn't cover.
 
 ## Contents
 <a name="API_CoverageCost_Contents"></a>
 
  ** OnDemandCost **   <a name="awscostmanagement-Type-CoverageCost-OnDemandCost"></a>
-How much an On-Demand Instance costs.
+The cost of the On-Demand Instance usage that reservations didn't cover (the usage in `OnDemandHours`), at public On-Demand rates. It doesn't include Spot usage or usage that Savings Plans covered. This isn't your billed cost. It's 0 for usage that has no public On-Demand rate.
 Type: String
 Required: No
 

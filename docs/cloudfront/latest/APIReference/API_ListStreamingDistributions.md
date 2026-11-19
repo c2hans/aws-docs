@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListS
 ---
 
 # ListStreamingDistributions
-<a name="API_ListStreamingDistributions"></a>
 
 List streaming distributions.
 

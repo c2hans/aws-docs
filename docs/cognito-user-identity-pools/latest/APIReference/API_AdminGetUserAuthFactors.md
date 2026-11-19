@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AdminGetUserAuthFactors
-<a name="API_AdminGetUserAuthFactors"></a>
 
 Lists the authentication options for a user in a user pool. Returns the following:
 

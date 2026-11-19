@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_A
 ---
 
 # AssociateBudgetWithResource
-<a name="API_AssociateBudgetWithResource"></a>
 
 Associates the specified budget with the specified resource.
 

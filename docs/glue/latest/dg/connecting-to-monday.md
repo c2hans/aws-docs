@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-monday.html
 ---
 
 # Connecting to Monday
-<a name="connecting-to-monday"></a>
 
  Monday.com is a versatile work operating system that streamlines project management and team collaboration. It features customizable workflows, visual dashboards, and automation tools to enhance productivity. Users can track tasks, manage resources, and communicate effectively in one integrated platform.
 

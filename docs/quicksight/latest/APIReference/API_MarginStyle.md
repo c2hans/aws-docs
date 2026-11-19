@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Margi
 ---
 
 # MarginStyle
-<a name="API_MarginStyle"></a>
 
 The display options for margins around the outside edge of sheets.
 

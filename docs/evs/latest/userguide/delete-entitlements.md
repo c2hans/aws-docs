@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/delete-entitlements
 ---
 
 # Delete Windows Server entitlements
-<a name="delete-entitlements"></a>
 
 When you no longer need Windows Server licensing from AWS for a VM in your Amazon Elastic VMware Service environment, delete its Windows Server entitlement. You can use the Amazon EVS console or the AWS CLI. You can delete up to 100 entitlements at a time.
 

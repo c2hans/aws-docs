@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Pr
 ---
 
 # PrivateConnectionMode
-<a name="API_PrivateConnectionMode"></a>
 
 The configuration for a private connection. Specify either a service-managed or a self-managed mode.
 

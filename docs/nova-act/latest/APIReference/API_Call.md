@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_Call.ht
 ---
 
 # Call
-<a name="API_Call"></a>
 
 A request for the client to execute a specific tool with given parameters.
 

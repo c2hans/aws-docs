@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # Component configuration template fragment
-<a name="component-config-json"></a>
 
 The following example shows a template fragment in JSON format.
 

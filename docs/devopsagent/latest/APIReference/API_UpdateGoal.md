@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Upda
 ---
 
 # UpdateGoal
-<a name="API_UpdateGoal"></a>
 
 Update an existing goal
 

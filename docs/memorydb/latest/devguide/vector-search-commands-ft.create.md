@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/vector-search-c
 ---
 
 # FT.CREATE
-<a name="vector-search-commands-ft.create"></a>
 
  Creates an index and initiates a backfill of that index. For more information, see [Vector search overview](https://docs.aws.amazon.com/memorydb/latest/devguide/vector-search-overview.html) for details on index construction.
 

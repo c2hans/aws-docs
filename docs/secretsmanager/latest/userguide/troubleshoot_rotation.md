@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/troubles
 ---
 
 # Troubleshoot AWS Secrets Manager rotation
-<a name="troubleshoot_rotation"></a>
 
 For many services, Secrets Manager uses a Lambda function to rotate secrets. For more information, see [Rotation by Lambda function](rotate-secrets_lambda.md). The Lambda rotation function interacts with the database or service the secret is for as well as Secrets Manager. When rotation doesn't work the way you expect, you should first check the CloudWatch logs.
 

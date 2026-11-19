@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/configure-routing-
 ---
 
 # Configure routing to access Multi-AZ file systems from on-premises
-<a name="configure-routing-maz-on-prem"></a>
 
 **To configure AWS Transit Gateway for access to Multi-AZ file systems from on-premises**
 

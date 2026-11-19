@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # LiveTailSessionUpdate
-<a name="API_LiveTailSessionUpdate"></a>
 
 This object contains the log events and metadata for a Live Tail session.
 

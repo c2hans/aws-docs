@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-creating
 ---
 
 # Creating your Amazon SageMaker AI resource
-<a name="ml-creating-your-amazon-sagemaker-resource"></a>
 
  To publish a model package or an algorithm product, you must create the respective [ model package resource](https://docs.aws.amazon.com/marketplace/latest/userguide/ml-creating-your-amazon-sagemaker-resource.html#ml-creating-your-model-package-product) or [ algorithm resource](https://docs.aws.amazon.com/marketplace/latest/userguide/ml-creating-your-amazon-sagemaker-resource.html#ml-creating-your-algorithm-product) in Amazon SageMaker AI. When you create your resource for an AWS Marketplace product, it must be certified through a validation step. The validation step requires that you provide data to test your model package or algorithm resource before it can be published. The following sections show you how to create your SageMaker AI resource, either a model package resource or an algorithm resources. This includes setting the validation specifications that tell SageMaker AI how to perform the validation.
 

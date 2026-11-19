@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTra
 ---
 
 # DeleteTransitGatewayNetworkFunctionAttachment
-<a name="API_DeleteTransitGatewayNetworkFunctionAttachment"></a>
 
 Deletes the specified network function attachment. The attachment must be in the `available` or `pendingAcceptance` state.
 

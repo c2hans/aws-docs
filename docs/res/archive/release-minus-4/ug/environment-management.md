@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/environme
 ---
 
 # Environment management
-<a name="environment-management"></a>
 
 From the Environment management section of Research and Engineering Studio, administrative users can create and manage isolated environments for their research and engineering projects. These environments can include compute resources, storage, and other necessary components, all within a secure environment. Users can configure and customize these environments to meet the specific requirements of their projects, making it easier to experiment, test, and iterate on their solutions without impacting other projects or environments.
 

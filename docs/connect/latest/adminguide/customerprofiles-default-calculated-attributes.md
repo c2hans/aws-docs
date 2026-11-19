@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customerprofil
 ---
 
 # Default calculated attributes in Connect Customer Customer Profiles
-<a name="customerprofiles-default-calculated-attributes"></a>
 
 ## Default CTR calculated attributes
 <a name="customerprofiles-default-calculated-attributes-ctr"></a>

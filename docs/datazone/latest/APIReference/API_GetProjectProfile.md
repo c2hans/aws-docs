@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetProj
 ---
 
 # GetProjectProfile
-<a name="API_GetProjectProfile"></a>
 
 The details of the project profile.
 

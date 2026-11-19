@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Achie
 ---
 
 # Achievability
-<a name="API_Achievability"></a>
 
 Describes the achievability status of a service's resilience targets based on the most recent assessment.
 

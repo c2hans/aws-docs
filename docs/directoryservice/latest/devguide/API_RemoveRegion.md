@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Rem
 ---
 
 # RemoveRegion
-<a name="API_RemoveRegion"></a>
 
 Stops all replication and removes the domain controllers from the specified Region. You cannot remove the primary Region with this operation. Instead, use the `DeleteDirectory` API.
 

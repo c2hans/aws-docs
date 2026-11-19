@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/dg/using-amazon-
 We are no longer updating the Amazon Machine Learning service or accepting new users for it. This documentation is available for existing users, but we are no longer updating it. For more information, see [ What is Amazon Machine Learning](https://docs.aws.amazon.com/machine-learning/latest/dg/what-is-amazon-machine-learning.html).
 
 # Using Amazon S3 with Amazon ML
-<a name="using-amazon-s3-with-amazon-ml"></a>
 
 Amazon Simple Storage Service (Amazon S3) is storage for the Internet. You can use Amazon S3 to store and retrieve any amount of data at any time, from anywhere on the web. Amazon ML uses Amazon S3 as a primary data repository for the following tasks:
 + To access your input files to create datasource objects for training and evaluating your ML models.

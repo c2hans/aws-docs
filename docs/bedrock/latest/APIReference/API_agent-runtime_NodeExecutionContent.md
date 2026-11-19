@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # NodeExecutionContent
-<a name="API_agent-runtime_NodeExecutionContent"></a>
 
 Contains the content of a flow node's input or output field for a flow execution.
 

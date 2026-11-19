@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/launch-templates.
 ---
 
 # Use Amazon EC2 launch templates with AWS Batch
-<a name="launch-templates"></a>
 
 AWS Batch supports using Amazon EC2 launch templates with your EC2 compute environments. With launch templates, you can modify the default configuration of your AWS Batch compute resources without needing to create customized AMIs.
 

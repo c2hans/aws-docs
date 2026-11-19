@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/best-pr
 ---
 
 # Best practices for message durability and reliability in Amazon MQ for RabbitMQ
-<a name="best-practices-message-reliability"></a>
 
  Before moving your application to production, complete the following best practices for preventing message loss and resource overutilization.
 

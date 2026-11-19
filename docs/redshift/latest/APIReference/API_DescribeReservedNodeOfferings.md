@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeReservedNodeOfferings
-<a name="API_DescribeReservedNodeOfferings"></a>
 
 Returns a list of the available reserved node offerings by Amazon Redshift with their descriptions including the node type, the fixed and recurring costs of reserving the node and duration the node will be reserved for you. These descriptions help you determine which reserve node offering you want to purchase. You then use the unique offering ID in you call to [PurchaseReservedNodeOffering](API_PurchaseReservedNodeOffering.md) to reserve one or more nodes for your Amazon Redshift cluster.
 
@@ -15,7 +14,7 @@ Returns a list of the available reserved node offerings by Amazon Redshift with 
  For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
  ** Marker **
-An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeReservedNodeOfferings](#API_DescribeReservedNodeOfferings) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
+An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeReservedNodeOfferings](API_DescribeReservedNodeOfferings.md) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
 Type: String
 Length Constraints: Maximum length of 2147483647.
 Required: No

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Update
 ---
 
 # UpdateWebhook
-<a name="API_UpdateWebhook"></a>
 
  Updates the webhook associated with an AWS CodeBuild build project.
 

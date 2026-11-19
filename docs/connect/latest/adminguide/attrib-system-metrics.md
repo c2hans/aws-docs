@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/attrib-system-
 ---
 
 # Use attributes in Connect Customer to route based on number of contacts in a queue
-<a name="attrib-system-metrics"></a>
 
 Connect Customer includes queue attributes that can help you define routing conditions in your flows based on real-time metrics about the queues and agents in your contact center. For example, here are some common usage scenarios:
 + Check the number of contacts or available agents in a queue, and how long the oldest contact has been in a queue, then route accordingly.

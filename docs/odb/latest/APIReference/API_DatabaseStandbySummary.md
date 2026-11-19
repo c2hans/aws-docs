@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DatabaseStan
 ---
 
 # DatabaseStandbySummary
-<a name="API_DatabaseStandbySummary"></a>
 
 A summary of a standby Autonomous Database in an Oracle Data Guard configuration.
 

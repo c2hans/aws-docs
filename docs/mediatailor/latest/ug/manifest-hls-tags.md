@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/manifest-hls-tags.
 ---
 
 # HLS manifest tag handling
-<a name="manifest-hls-tags"></a>
 
 This section describes how AWS Elemental MediaTailor manages tags in the personalized output manifest.
 

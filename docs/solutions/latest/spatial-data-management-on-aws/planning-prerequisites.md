@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Prerequisites
-<a name="planning-prerequisites"></a>
 
 ## AWS Account Requirements
 <a name="aws-account-requirements"></a>

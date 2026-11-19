@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Cre
 ---
 
 # CreatePipeline
-<a name="API_CreatePipeline"></a>
 
 Creates a pipeline.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/shared-
 ---
 
 # Shared responsibility
-<a name="shared-responsibility"></a>
 
  Building and operating workloads in the cloud is a shared responsibility between AWS and you. This shared model can help relieve your operational burden, as AWS operates, manages, and controls the components from the host operating system and virtualization layer down to the physical security of the facilities in which the services run. You assume responsibility and management of the guest operating system (including updates and security patches), other associated application software, and the configuration of the AWS-provided resources you use. You should carefully consider the services you choose, because your responsibilities vary depending on the services used, the integration of those services into your IT environment, and applicable laws and regulations. This differentiation of responsibility is commonly referred to as responsibility *of* the cloud versus *in* the cloud.
 

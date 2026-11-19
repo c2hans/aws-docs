@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Ing
 ---
 
 # IngestEndpoint
-<a name="API_IngestEndpoint"></a>
 
 The ingest domain URL where the source stream should be sent.
 

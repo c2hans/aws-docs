@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec06-b
 ---
 
 # SEC06-BP01 Perform vulnerability management
-<a name="sec06-bp01"></a>
 
  Software accumulates known vulnerabilities as researchers find flaws in operating systems, libraries, and dependencies. Vulnerability management is the ongoing practice of finding these weaknesses, judging their risk to your workload, and remediating them before they can be used for unauthorized access. Prioritize fixes by data sensitivity and the business impact of the affected component.
 

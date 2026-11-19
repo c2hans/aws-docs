@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Hello Systems Manager
-<a name="example_ssm_Hello_section"></a>
 
 The following code examples show how to get started using Systems Manager.
 

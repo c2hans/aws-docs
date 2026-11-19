@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccessKey
 ---
 
 # GetAccessKeyLastUsed
-<a name="API_GetAccessKeyLastUsed"></a>
 
 Retrieves information about when the specified access key was last used. The information includes the date and time of last use, along with the AWS service and Region that were specified in the last request made with that key.
 

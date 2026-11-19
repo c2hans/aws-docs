@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetCalcul
 ---
 
 # GetCalculationExecutionCode
-<a name="API_GetCalculationExecutionCode"></a>
 
 Retrieves the unencrypted code that was executed for the calculation.
 

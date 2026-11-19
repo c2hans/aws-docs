@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # ServiceEntity
-<a name="API_ServiceEntity"></a>
 
 A structure that contains identifying information for a service entity.
 

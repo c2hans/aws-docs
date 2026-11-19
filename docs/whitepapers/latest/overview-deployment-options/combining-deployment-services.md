@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 ---
 
 # Combining Deployment Services
-<a name="combining-deployment-services"></a>
 
  There is not a “one size fits all” deployment solution on AWS. In the context of designing a deployment solution, it is important to consider the type of application as this can dictate which AWS services are most appropriate. To deliver complete functionality to provision, configure, deploy, scale, and monitor your application, it is often necessary to combine multiple deployment services
 

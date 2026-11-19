@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringJobDefinition
-<a name="API_MonitoringJobDefinition"></a>
 
 Defines the monitoring job.
 

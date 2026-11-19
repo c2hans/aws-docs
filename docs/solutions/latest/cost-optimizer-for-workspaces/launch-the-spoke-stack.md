@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-work
 ---
 
 # Step 2: Launch the spoke stack
-<a name="launch-the-spoke-stack"></a>
 
 This automated CloudFormation template deploys the spoke for Cost Optimizer for Amazon WorkSpaces on the AWS Cloud.
 

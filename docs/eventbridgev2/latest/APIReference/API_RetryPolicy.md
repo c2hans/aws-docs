@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Re
 ---
 
 # RetryPolicy
-<a name="API_RetryPolicy"></a>
 
 Retry policy for a subscriber.
 

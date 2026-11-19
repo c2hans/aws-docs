@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # DeleteWhatsAppMessageMedia
-<a name="API_DeleteWhatsAppMessageMedia"></a>
 
 Delete a media object from the WhatsApp service. If the object is still in an Amazon S3 bucket you should delete it from there too.
 

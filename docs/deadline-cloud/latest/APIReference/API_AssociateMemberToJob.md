@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AssociateMemberToJob
-<a name="API_AssociateMemberToJob"></a>
 
 Assigns a job membership level to a member
 

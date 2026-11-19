@@ -3,8 +3,7 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/Welco
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Defines the public endpoint for the AWS Lake Formation service.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

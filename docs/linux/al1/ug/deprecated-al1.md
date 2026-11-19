@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al1/ug/deprecated-al1.html
 ---
 
 # Deprecated functionality discontinued in AL1, removed in AL2
-<a name="deprecated-al1"></a>
 
  This section describes functionality that is available in AL1, and is no longer available in AL2.
 

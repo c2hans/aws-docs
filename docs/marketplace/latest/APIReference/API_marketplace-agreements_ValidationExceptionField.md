@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ValidationExceptionField
-<a name="API_marketplace-agreements_ValidationExceptionField"></a>
 
 The input fails to satisfy the constraints specified by the service.
 

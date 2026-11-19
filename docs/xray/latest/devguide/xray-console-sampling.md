@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/xray-console-sampli
 ---
 
 # Configuring sampling rules
-<a name="xray-console-sampling"></a>
 
 You can use the AWS X-Ray console to configure sampling rules for your services. The AWS Distro for OpenTelemetry, X-Ray SDK, and AWS services that support [active tracing](xray-services.md) with sampling configurations use sampling rules to determine which requests to record.
 

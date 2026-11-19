@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-p
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## Do I need a load balancer to route internet traffic through a firewall in a multi-AZ deployment?
 <a name="do-i-need-a-load-balancer-to-route-internet-traffic-through-a-firewall-in-a-multi-az-deployment-.13f524c7-b4e3-56b2-926f-d4c103af899b"></a>

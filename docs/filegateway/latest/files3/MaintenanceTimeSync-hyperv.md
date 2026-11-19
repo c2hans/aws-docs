@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/MaintenanceTim
 ---
 
 # Synchronize VM time with Hyper-V or Linux KVM host time
-<a name="MaintenanceTimeSync-hyperv"></a>
 
 For a gateway deployed on VMware ESXi, setting the hypervisor host time and synchronizing the virtual machine time to the host is sufficient to avoid time drift. For more information, see [Synchronize VM time with VMware host time](GettingStartedSyncVMTime-common.md). For a gateway deployed on Microsoft Hyper-V or Linux KVM, we recommend that you periodically check the virtual machine time using the procedure described following.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Enviro
 ---
 
 # EnvironmentPlatform
-<a name="API_EnvironmentPlatform"></a>
 
 A set of Docker images that are related by platform and are managed by AWS CodeBuild.
 

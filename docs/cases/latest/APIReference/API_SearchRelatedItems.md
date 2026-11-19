@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_SearchRela
 ---
 
 # SearchRelatedItems
-<a name="API_connect-cases_SearchRelatedItems"></a>
 
 Searches for related items that are associated with a case.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_KeyLastUsage
 ---
 
 # KeyLastUsageData
-<a name="API_KeyLastUsageData"></a>
 
 Contains usage information about the last time the KMS key was used for a successful cryptographic operation.
 

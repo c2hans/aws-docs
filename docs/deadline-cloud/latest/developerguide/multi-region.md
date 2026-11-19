@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/mul
 ---
 
 # Global rendering across AWS Regions
-<a name="multi-region"></a>
 
 AWS Deadline Cloud (Deadline Cloud) is available in a subset of AWS Regions. For the current list, see [Deadline Cloud endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/deadlinecloud.html) in the *AWS General Reference*. A team that spans countries can render with Deadline Cloud even when some locations are far from a supported Region.
 

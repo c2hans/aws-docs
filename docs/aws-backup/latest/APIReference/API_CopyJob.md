@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_CopyJ
 ---
 
 # CopyJob
-<a name="API_CopyJob"></a>
 
 Contains detailed information about a copy job.
 

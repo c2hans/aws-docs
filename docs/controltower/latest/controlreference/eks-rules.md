@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/eks
 ---
 
 # Amazon Elastic Kubernetes Service (EKS) controls
-<a name="eks-rules"></a>
 
 **Topics**
 + [[CT.EKS.PR.1] Require an Amazon EKS cluster to be configured with public access disabled to the cluster Kubernetes API server endpoint](#ct-eks-pr-1-description)

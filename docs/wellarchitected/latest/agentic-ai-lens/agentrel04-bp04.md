@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTREL04-BP04 Implement resilient control planes for agent coordination
-<a name="agentrel04-bp04"></a>
 
  A control plane that fails takes every agent with it. Applying the same reliability principles used on agents, redundancy, durable state, and loose coupling, to the coordination infrastructure keeps workflows running during brief outages and preserves state across restarts.
 

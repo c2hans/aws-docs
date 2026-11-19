@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_De
 ---
 
 # DeleteAudienceModel
-<a name="API_DeleteAudienceModel"></a>
 
 Specifies an audience model that you want to delete. You can't delete an audience model if there are any configured audience models that depend on the audience model.
 

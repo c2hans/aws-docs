@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Operat
 ---
 
 # Amazon SageMaker geospatial capabilities
-<a name="API_Operations_Amazon_SageMaker_geospatial_capabilities"></a>
 
 The following actions are supported by Amazon SageMaker geospatial capabilities:
 +  [DeleteEarthObservationJob](API_geospatial_DeleteEarthObservationJob.md)

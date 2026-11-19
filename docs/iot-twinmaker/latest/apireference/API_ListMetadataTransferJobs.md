@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Li
 ---
 
 # ListMetadataTransferJobs
-<a name="API_ListMetadataTransferJobs"></a>
 
 Lists the metadata transfer jobs.
 

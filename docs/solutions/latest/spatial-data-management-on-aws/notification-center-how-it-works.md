@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # How it works
-<a name="notification-center-how-it-works"></a>
 
 A notification rule is a connector of type `notification` associated to an asset template. When an asset event matches the rule’s trigger, SDMA delivers an alert to the configured recipients through the configured channel.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/using_cloudwatch_
 ---
 
 # Using CloudWatch Metrics with AWS Batch
-<a name="using_cloudwatch_metrics"></a>
 
 AWS Batch publishes job metrics to Amazon CloudWatch for monitoring state transitions and durations of jobs as they move through their lifecycle. AWS Batch publishes these metrics under the `AWS/Batch` namespace at no additional charge.
 

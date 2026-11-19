@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_TableCell
 ---
 
 # TableCell
-<a name="API_TableCell"></a>
 
 Provides information about a table cell in a table excerpt.
 

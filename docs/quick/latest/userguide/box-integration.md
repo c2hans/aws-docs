@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/box-integration.h
 ---
 
 # Box integration
-<a name="box-integration"></a>
 
 Use the Box integration to perform actions on Box content, or to create knowledge bases from Box files and folders for AI-powered search and Q&A.
 

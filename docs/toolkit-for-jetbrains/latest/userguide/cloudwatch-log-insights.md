@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/c
 ---
 
 # Working with CloudWatch Logs Insights by using the AWS Toolkit for JetBrains
-<a name="cloudwatch-log-insights"></a>
 
 You can use the AWS Toolkit for JetBrains to work with CloudWatch Logs Insights. CloudWatch Logs Insights enables you to interactively search and analyze your log data in Amazon CloudWatch Logs. For more information, see [Analyzing Log Data with CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html) in the *Amazon CloudWatch Logs User Guide*.
 

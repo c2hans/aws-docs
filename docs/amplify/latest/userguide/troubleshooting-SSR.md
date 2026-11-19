@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/troubleshooting
 ---
 
 # Troubleshooting server-side rendered applications
-<a name="troubleshooting-SSR"></a>
 
 If you experience unexpected issues when deploying an SSR app with Amplify Hosting compute, review the following troubleshooting topics. If you don't see a solution to your issue here, see the [SSR web compute troubleshooting guide](https://github.com/aws-amplify/amplify-hosting/blob/main/FAQ.md#ssr-web-compute) in the Amplify Hosting GitHub Issues repository.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_QueryInfo
 ---
 
 # QueryInfo
-<a name="API_QueryInfo"></a>
 
 Details about the query.
 

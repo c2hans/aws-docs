@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # DeleteVpcPeeringConnection
-<a name="API_DeleteVpcPeeringConnection"></a>
 
  **This API works with the following fleet types:** EC2
 

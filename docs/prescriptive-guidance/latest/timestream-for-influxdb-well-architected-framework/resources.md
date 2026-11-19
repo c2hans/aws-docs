@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/timestream-
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## References
 <a name="references.456df360-e72e-5382-97b2-972afd29b219"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Memb
 ---
 
 # MembershipAccountsConfigurations
-<a name="API_MembershipAccountsConfigurations"></a>
 
 The `MembershipAccountsConfigurations` structure defines the configuration settings for managing membership accounts withinAWS.
 

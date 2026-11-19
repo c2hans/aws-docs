@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Prerequisites
-<a name="next-gen-prerequisites"></a>
 
 Before you begin, ensure that you have the following:
 + An active AWS account.

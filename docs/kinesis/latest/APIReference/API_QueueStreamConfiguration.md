@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_QueueStr
 ---
 
 # QueueStreamConfiguration
-<a name="API_QueueStreamConfiguration"></a>
 
 The data stream a queue delivers records from, and the position in that stream where delivery begins.
 

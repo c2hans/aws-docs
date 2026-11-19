@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBugBustServiceRolePolicy
-<a name="AWSBugBustServiceRolePolicy"></a>
 
 **Description**: Grants permissions to AWS BugBust to access resources on your behalf
 

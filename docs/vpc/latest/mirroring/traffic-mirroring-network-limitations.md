@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-n
 ---
 
 # Traffic Mirroring limitations
-<a name="traffic-mirroring-network-limitations"></a>
 
 This section contains the limitations for Traffic Mirroring.
 

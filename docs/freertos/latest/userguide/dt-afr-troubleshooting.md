@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/dt-afr-trouble
 ---
 
 # Troubleshoot errors
-<a name="dt-afr-troubleshooting"></a>
 
 Each test suite execution has a unique execution ID that is used to create a folder named `results/{{execution-id}}` in the `results` directory. Individual test group logs are under the `results/{{execution-id}}/logs` directory. Use the IDT for FreeRTOS console output to find the execution id, test case id, and test group id of the test case that failed and then open the log file for that test case named `results/{{execution-id}}/logs/{{test_group_id}}__{{test_case_id}}.log`. The information in this file includes:
 + Full build and flash command output.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.DEP.2] Continuously baseline environments to manage drift
-<a name="ag.dep.2-continuously-baseline-environments-to-manage-drift"></a>
 
  **Category:** FOUNDATIONAL
 

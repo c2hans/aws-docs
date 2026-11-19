@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Crea
 ---
 
 # CreateCollaborationChangeRequest
-<a name="API_CreateCollaborationChangeRequest"></a>
 
 Creates a new change request to modify an existing collaboration. This enables post-creation modifications to collaborations through a structured API-driven approach.
 

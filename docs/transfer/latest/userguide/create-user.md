@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/create-user.ht
 ---
 
 # Managing users for server endpoints
-<a name="create-user"></a>
 
 In the following sections, you can find information about how to add users using AWS Transfer Family, AWS Directory Service for Microsoft Active Directory or a custom identity provider.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/what-is-flow.html
 ---
 
 # How MediaTailor ad insertion works
-<a name="what-is-flow"></a>
 
 AWS Elemental MediaTailor interacts between your content delivery network (CDN), origin server, and ad decision server (ADS) to stitch personalized ads into ad breaks within live and video on demand content.
 

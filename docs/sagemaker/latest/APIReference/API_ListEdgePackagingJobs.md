@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListEd
 ---
 
 # ListEdgePackagingJobs
-<a name="API_ListEdgePackagingJobs"></a>
 
 Returns a list of edge packaging jobs.
 

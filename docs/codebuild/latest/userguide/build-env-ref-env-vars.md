@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref
 ---
 
 # Environment variables in build environments
-<a name="build-env-ref-env-vars"></a>
 
 AWS CodeBuild provides several environment variables that you can use in your build commands:
 

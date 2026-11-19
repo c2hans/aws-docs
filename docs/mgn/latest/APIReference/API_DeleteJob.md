@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DeleteJob.ht
 ---
 
 # DeleteJob
-<a name="API_DeleteJob"></a>
 
 Deletes a single Job by ID.
 

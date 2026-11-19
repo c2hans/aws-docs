@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/opl-epoch-how-i
 ---
 
 # How epoch locking works
-<a name="opl-epoch-how-it-works"></a>
 
 You can set up to use the epoch locking variation of output locking. Or you can set up to use [standard output locking](opl-standard-how-it-works.md).
 

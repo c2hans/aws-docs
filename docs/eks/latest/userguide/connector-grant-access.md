@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/connector-grant-acc
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Grant access to view Kubernetes cluster resources on an Amazon EKS console
-<a name="connector-grant-access"></a>
 
 Grant [IAM principals](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html#iam-term-principal) access to the Amazon EKS console to view information about Kubernetes resources running on your connected cluster.
 

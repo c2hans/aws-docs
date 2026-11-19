@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/TRIM.ht
 ---
 
 # TRIM function
-<a name="TRIM"></a>
 
 Trims a string by removing leading and trailing blanks or by removing leading and trailing characters that match an optional specified string.
 

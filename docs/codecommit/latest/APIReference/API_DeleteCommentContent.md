@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Delet
 ---
 
 # DeleteCommentContent
-<a name="API_DeleteCommentContent"></a>
 
 Deletes the content of a comment made on a change, file, or commit in a repository.
 

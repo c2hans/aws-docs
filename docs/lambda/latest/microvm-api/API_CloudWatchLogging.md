@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_CloudWatch
 ---
 
 # CloudWatchLogging
-<a name="API_CloudWatchLogging"></a>
 
 Configuration for Amazon CloudWatch Logs logging.
 

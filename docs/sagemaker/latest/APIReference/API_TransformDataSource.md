@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Transf
 ---
 
 # TransformDataSource
-<a name="API_TransformDataSource"></a>
 
 Describes the location of the channel data.
 

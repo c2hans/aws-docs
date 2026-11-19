@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_HttpUrlDesti
 ---
 
 # HttpUrlDestinationProperties
-<a name="API_HttpUrlDestinationProperties"></a>
 
 HTTP URL destination properties.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/onedrive-kb-admin
 ---
 
 # Create the knowledge base in AWS Quick
-<a name="onedrive-kb-admin-connection"></a>
 
 After you complete the service credentials setup, create the knowledge base in AWS Quick and provide the credentials. Any enterprise user can complete this step. AWS Quick administrator access is not required.
 

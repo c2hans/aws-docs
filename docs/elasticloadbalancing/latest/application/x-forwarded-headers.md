@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # HTTP headers and Application Load Balancers
-<a name="x-forwarded-headers"></a>
 
 HTTP requests and HTTP responses use header fields to send information about the HTTP messages. HTTP headers are added automatically. Header fields are colon-separated name-value pairs that are separated by a carriage return (CR) and a line feed (LF). A standard set of HTTP header fields is defined in RFC 2616, [Message Headers](https://datatracker.ietf.org/doc/html/rfc2616). There are also non-standard HTTP headers available that are automatically added and widely used by the applications. Some of the non-standard HTTP headers have an `X-Forwarded` prefix. Application Load Balancers support the following `X-Forwarded` headers.
 

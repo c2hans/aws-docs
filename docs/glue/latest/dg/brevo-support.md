@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/brevo-support.html
 ---
 
 # AWS Glue support for Brevo
-<a name="brevo-support"></a>
 
 AWS Glue supports Brevo as follows:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.
 ---
 
 # Prompt caching for faster model inference
-<a name="prompt-caching"></a>
 
 Prompt caching is an optional feature that you can use with supported models on Amazon Bedrock to reduce inference response latency and input token costs. Amazon Bedrock supports two types of prompt caching: [Implicit Prompt Caching](#prompt-caching-implicit) and [Explicit Prompt Caching](#prompt-caching-explicit). Support for each type varies by model and API.
 

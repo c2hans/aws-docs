@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Life Sciences Lens - AWS Well-Architected Framework
-<a name="life-sciences-lens"></a>
 
  Publication date: **December 30, 2025** ([Document revisions](document-revisions.xml))
 

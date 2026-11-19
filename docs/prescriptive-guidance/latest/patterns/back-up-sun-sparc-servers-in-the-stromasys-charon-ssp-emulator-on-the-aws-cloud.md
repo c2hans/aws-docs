@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ba
 ---
 
 # Back up Sun SPARC servers in the Stromasys Charon-SSP emulator on the AWS Cloud
-<a name="back-up-sun-sparc-servers-in-the-stromasys-charon-ssp-emulator-on-the-aws-cloud"></a>
 
 *Kevin Yung and Rohit Darji, Amazon Web Services*
 

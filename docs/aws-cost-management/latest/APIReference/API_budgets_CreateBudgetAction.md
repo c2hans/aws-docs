@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CreateBudgetAction
-<a name="API_budgets_CreateBudgetAction"></a>
 
  Creates a budget action.
 

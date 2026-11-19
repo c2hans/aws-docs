@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Bill
 ---
 
 # Billing
-<a name="Billing"></a>
 
 **Description**: Grants permissions for billing and cost management. This includes viewing account usage and viewing and modifying budgets and payment methods.
 

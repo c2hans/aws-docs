@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_MetadataMode
 ---
 
 # MetadataModelReference
-<a name="API_MetadataModelReference"></a>
 
 A reference to a metadata model, including its name and selection rules for location identification.
 

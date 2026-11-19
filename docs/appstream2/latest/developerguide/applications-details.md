@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/applica
 ---
 
 # Applications Details
-<a name="applications-details"></a>
 
 Applications details contains information about pre-warm manifests and app catalog configurations.
 

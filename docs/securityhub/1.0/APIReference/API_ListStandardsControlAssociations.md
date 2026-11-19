@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSta
 ---
 
 # ListStandardsControlAssociations
-<a name="API_ListStandardsControlAssociations"></a>
 
  Specifies whether a control is currently enabled or disabled in each enabled standard in the calling account.
 

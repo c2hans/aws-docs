@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Cost
 ---
 
 # CostOptimizationHubAdminAccess
-<a name="CostOptimizationHubAdminAccess"></a>
 
 **Description**: This managed policy provides admin access to Cost Optimization Hub.
 

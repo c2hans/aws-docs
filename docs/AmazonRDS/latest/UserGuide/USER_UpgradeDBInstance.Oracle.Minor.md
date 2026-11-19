@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeD
 ---
 
 # Oracle minor version upgrades
-<a name="USER_UpgradeDBInstance.Oracle.Minor"></a>
 
 In RDS for Oracle, a minor version upgrade updates your DB engine to a later minor version of the same major version. In RDS, a minor engine version is a Release Update (RU), a Supplemental Patch Bundle (SPB), or an RU with a Monthly Recommended Patch (MRP) applied. For example, if your DB instance runs major version Oracle Database 19c and minor version 19.0.0.0.ru-2025-10.rur-2025-10.r1, you can upgrade your DB engine to minor version 19.0.0.0.ru-2026-01.rur-2026-01.r1. RDS for Oracle doesn't support minor version downgrades.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Comme
 ---
 
 # CommentsForPullRequest
-<a name="API_CommentsForPullRequest"></a>
 
 Returns information about comments on a pull request.
 

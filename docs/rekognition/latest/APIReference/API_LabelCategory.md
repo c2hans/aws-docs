@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Labe
 ---
 
 # LabelCategory
-<a name="API_LabelCategory"></a>
 
 The category that applies to a given label.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_S
 ---
 
 # Session
-<a name="API_Session"></a>
 
 Information about a secure browser session.
 

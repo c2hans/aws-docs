@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Steps to build MCP server Docker Image
-<a name="steps-to-build-mcp-server-docker-image"></a>
 
 To use MCP (Model Context Protocol) servers with Generative AI Application Builder on AWS, you need a Docker image built and stored in a private Amazon ECR repository as the first step.
 

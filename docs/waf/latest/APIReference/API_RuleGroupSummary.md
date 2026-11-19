@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RuleGroupSum
 ---
 
 # RuleGroupSummary
-<a name="API_RuleGroupSummary"></a>
 
 High-level information about a [RuleGroup](API_RuleGroup.md), returned by operations like create and list. This provides information like the ID, that you can use to retrieve and manage a `RuleGroup`, and the ARN, that you provide to the [RuleGroupReferenceStatement](API_RuleGroupReferenceStatement.md) to use the rule group in a [Rule](API_Rule.md).
 

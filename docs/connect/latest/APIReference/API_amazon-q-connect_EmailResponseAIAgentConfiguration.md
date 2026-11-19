@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # EmailResponseAIAgentConfiguration
-<a name="API_amazon-q-connect_EmailResponseAIAgentConfiguration"></a>
 
 Configuration settings for the EMAIL\_RESPONSE AI agent including prompts, locale, and knowledge base associations.
 

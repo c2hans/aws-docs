@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/al2023-isolated-
 ---
 
 # Sample Amazon Linux 2023 image description
-<a name="al2023-isolated-compute-recipe"></a>
 
 The sample Amazon Linux 2023 image description has the following characteristics:
 

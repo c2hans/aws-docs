@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fl
 ---
 
 # FlowNode
-<a name="API_agent_FlowNode"></a>
 
 Contains configurations about a node in the flow.
 

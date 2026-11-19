@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # AWS services used in this solution
-<a name="aws-services-used-in-this-solution"></a>
 
 | AWS service | Description |
 | --- | --- |

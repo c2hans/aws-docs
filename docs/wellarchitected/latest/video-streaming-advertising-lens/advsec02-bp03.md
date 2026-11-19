@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVSEC02-BP03 Implement secure data collaboration with least privileged access and privacy controls
-<a name="advsec02-bp03"></a>
 
  Advertising measurement, attribution, and audience insights require multiple parties to combine their data. Privacy-preserving collaborating mechanisms help you avoid sharing raw data (privacy riks) forgoing cross-party insights (business cost). Secure data collaboration produces those insights without data exposure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-lists-prer
 ---
 
 # Setting up prerequisites for entity lists and IP address lists
-<a name="guardduty-lists-prerequisites"></a>
 
 GuardDuty uses entity lists and IP address lists to customize threat detection in your AWS environment. Entity lists (recommended) support both IP addresses and domain names, while IP address lists support only IP addresses. Before you begin creating these lists, you must add the required permissions for the type of list that you want to use.
 

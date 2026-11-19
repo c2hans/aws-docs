@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_SetIdentityM
 ---
 
 # SetIdentityMailFromDomain
-<a name="API_SetIdentityMailFromDomain"></a>
 
 Enables or disables the custom MAIL FROM domain setup for a verified identity (an email address or a domain).
 

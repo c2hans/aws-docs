@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolVnfcRe
 ---
 
 # GetSolVnfcResourceInfo
-<a name="API_GetSolVnfcResourceInfo"></a>
 
 Details of resource associated with a network function.
 

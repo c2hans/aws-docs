@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-glo
 ---
 
 # Elastic Beanstalk platforms glossary
-<a name="platforms-glossary"></a>
 
 Following are key terms related to AWS Elastic Beanstalk platforms and their lifecycle.
 

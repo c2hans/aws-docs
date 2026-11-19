@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_L
 ---
 
 # ListDomains
-<a name="API_ListDomains"></a>
 
 Returns a paginated list of domains from the Control Catalog.
 

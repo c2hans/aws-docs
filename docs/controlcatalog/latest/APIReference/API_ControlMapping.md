@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_C
 ---
 
 # ControlMapping
-<a name="API_ControlMapping"></a>
 
 A structure that contains information about a control mapping, including the control ARN, mapping type, and mapping details.
 

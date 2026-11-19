@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Des
 ---
 
 # DescribeAccountAssignmentCreationStatus
-<a name="API_DescribeAccountAssignmentCreationStatus"></a>
 
 Describes the status of the assignment creation request.
 

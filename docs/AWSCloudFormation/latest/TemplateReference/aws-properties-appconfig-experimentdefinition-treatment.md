@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppConfig::ExperimentDefinition Treatment
-<a name="aws-properties-appconfig-experimentdefinition-treatment"></a>
 
 Describes a treatment in an experiment, including its traffic allocation weight and feature flag value.
 

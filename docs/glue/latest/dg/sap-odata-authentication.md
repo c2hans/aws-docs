@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sap-odata-authentication.
 ---
 
 # SAP Authentication
-<a name="sap-odata-authentication"></a>
 
 The SAP connector supports both CUSTOM (this is SAP BASIC authentication) and OAUTH authentication methods.
 

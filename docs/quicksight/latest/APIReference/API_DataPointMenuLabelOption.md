@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataP
 ---
 
 # DataPointMenuLabelOption
-<a name="API_DataPointMenuLabelOption"></a>
 
 The data point menu options of a dashboard.
 

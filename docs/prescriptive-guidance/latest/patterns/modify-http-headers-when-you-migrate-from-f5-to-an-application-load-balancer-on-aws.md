@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mo
 ---
 
 # Modify HTTP headers when you migrate from F5 to an Application Load Balancer on AWS
-<a name="modify-http-headers-when-you-migrate-from-f5-to-an-application-load-balancer-on-aws"></a>
 
 *Sachin Trivedi, Amazon Web Services*
 

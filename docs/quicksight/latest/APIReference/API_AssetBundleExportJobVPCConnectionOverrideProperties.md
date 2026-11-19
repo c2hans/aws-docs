@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleExportJobVPCConnectionOverrideProperties
-<a name="API_AssetBundleExportJobVPCConnectionOverrideProperties"></a>
 
 Controls how a specific `VPCConnection` resource is parameterized in the outputted CloudFormation template.
 

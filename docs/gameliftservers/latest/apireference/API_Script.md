@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # Script
-<a name="API_Script"></a>
 
 Properties describing a Realtime script.
 

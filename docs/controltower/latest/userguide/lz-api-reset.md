@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/lz-api-res
 ---
 
 # Reset the landing zone to resolve drift
-<a name="lz-api-reset"></a>
 
 When you create your landing zone, the landing zone and all the organizational units (OUs), accounts, and resources are compliant with the governance rules enforced by your chosen controls. As you and your organization members use the landing zone, changes in this compliance status may occur. These changes are called *drift*.
 

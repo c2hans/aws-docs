@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/use-case-recipe-fe
 ---
 
 # Use case and recipe features
-<a name="use-case-recipe-features"></a>
 
  With some use case and recipes, Amazon Personalize uses the following features to generate more relevant recommendations and improve item discovery and engagement.
 

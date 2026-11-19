@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/display-ami-root
 ---
 
 # Identify the root volume type determined by your AMI
-<a name="display-ami-root-device-type"></a>
 
 The AMI that you use to launch an EC2 instance determines the type of the root volume. The root volume of an EC2 instance is either an EBS volume or an instance store volume.
 

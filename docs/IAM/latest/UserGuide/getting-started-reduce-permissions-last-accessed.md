@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started-red
 ---
 
 # Reviewing last accessed information for your AWS account
-<a name="getting-started-reduce-permissions-last-accessed"></a>
 
 You can view service last accessed information for IAM using the IAM console, AWS CLI, or AWS API. For important information about the data, permissions required, troubleshooting, and supported Regions, see [Refine permissions in AWS using last accessed information](access_policies_last-accessed.md).
 

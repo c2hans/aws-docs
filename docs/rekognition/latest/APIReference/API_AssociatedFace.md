@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Asso
 ---
 
 # AssociatedFace
-<a name="API_AssociatedFace"></a>
 
 Provides face metadata for the faces that are associated to a specific UserID.
 

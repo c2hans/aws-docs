@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Ne
 ---
 
 # NewPublicVirtualInterface
-<a name="API_NewPublicVirtualInterface"></a>
 
 Information about a public virtual interface.
 

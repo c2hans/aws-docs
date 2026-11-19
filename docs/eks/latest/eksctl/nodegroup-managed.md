@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/nodegroup-managed.html
 ---
 
 # EKS managed nodegroups
-<a name="nodegroup-managed"></a>
 
  [Amazon EKS managed nodegroups](https://docs.aws.amazon.com/eks/latest/userguide/managed-node-groups.html) is a feature that automates the provisioning and lifecycle management of nodes (EC2 instances) for Amazon EKS Kubernetes clusters. Customers can provision optimized groups of nodes for their clusters and EKS will keep their nodes up to date with the latest Kubernetes and host OS versions.
 

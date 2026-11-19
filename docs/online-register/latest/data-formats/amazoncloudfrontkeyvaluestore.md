@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon CloudFront KeyValueStore
-<a name="amazoncloudfrontkeyvaluestore"></a>
 
 Amazon CloudFront KeyValueStore provides the following APIs for data retrieval.
 

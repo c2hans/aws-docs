@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Valida
 ---
 
 # ValidationExecutedProof
-<a name="API_ValidationExecutedProof"></a>
 
 Proof of exploitability the validation agent produced by executing code against the repository under test, with the output that execution produced.
 

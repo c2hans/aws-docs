@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Updat
 ---
 
 # UpdateWorkspaceAlias
-<a name="API_UpdateWorkspaceAlias"></a>
 
 Updates the alias of an existing workspace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAcce
 ---
 
 # DescribeAccessEntry
-<a name="API_DescribeAccessEntry"></a>
 
 Describes an access entry.
 

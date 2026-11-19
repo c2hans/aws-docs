@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ManagedLo
 ---
 
 # ManagedLoggingConfiguration
-<a name="API_ManagedLoggingConfiguration"></a>
 
 Configuration settings for delivering logs to Amazon S3 buckets.
 

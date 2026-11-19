@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-ste
 ---
 
 # Pipelines steps
-<a name="build-and-manage-steps"></a>
 
 Pipelines are composed of steps. These steps define the actions that the pipeline takes and the relationships between steps using properties. The following page describes the types of steps, their properties, and the relationships between them.
 

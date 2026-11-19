@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # GetParametersForExport
-<a name="API_GetParametersForExport"></a>
 
 Gets the export token and the signing key certificate to initiate a TR-34 key export from AWS Payment Cryptography.
 

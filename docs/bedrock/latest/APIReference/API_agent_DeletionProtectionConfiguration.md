@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_De
 ---
 
 # DeletionProtectionConfiguration
-<a name="API_agent_DeletionProtectionConfiguration"></a>
 
 Configuration for deletion protection.
 

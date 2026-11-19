@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Scenario B: 15-minute screening time
-<a name="case-study-scenario-b"></a>
 
 Scenario B models optimized recruitment operations where human recruiters have streamlined their screening process to 15 minutes per application. This represents a 66% efficiency improvement over Scenario A. This scenario maintains the same fully loaded annual cost of $112,250 for a mid-level recruiter. However, it demonstrates significantly enhanced human productivity, with daily capacity increasing to 32 applications during an 8-hour shift and monthly throughput reaching 660 applications. The improved human efficiency reduces the cost per application from $45 to $15, narrowing the economic gap with the agentic AI system. However, the agent maintains its structural advantages: 5-minute processing time, 24/7 availability enabling 288 daily applications, a lower 2% error rate compared to the human 5%, and monthly capacity exceeding 8,600 applications. While this efficiency improvement extends the break-even period from 1.16 months to 4.76 months and reduces monthly savings from $19,833 to $4,833, the analysis reveals that agent systems remain economically viable even when competing against highly optimized human operations—a critical insight for organizations evaluating whether their current process efficiency levels justify agentic AI investment.
 

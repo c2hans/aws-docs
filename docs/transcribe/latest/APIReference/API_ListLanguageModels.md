@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_ListL
 ---
 
 # ListLanguageModels
-<a name="API_ListLanguageModels"></a>
 
 Provides a list of custom language models that match the specified criteria. If no criteria are specified, all custom language models are returned.
 

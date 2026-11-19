@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Associat
 ---
 
 # AssociateLexBot
-<a name="API_AssociateLexBot"></a>
 
 This API is in preview release for Connect Customer and is subject to change.
 

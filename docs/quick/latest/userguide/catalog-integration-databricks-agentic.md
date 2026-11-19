@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/catalog-integrati
 ---
 
 # Using the agentic experience with Databricks Unity Catalog
-<a name="catalog-integration-databricks-agentic"></a>
 
 After you connect to Databricks, choose **Explore data** on the data source to launch the agentic experience. The flow is the same as the broader agentic catalog experience:
 + **Natural language discovery** – Describe your use case and the AI agent finds relevant tables from Unity Catalog.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # InvestmentSummary
-<a name="API_billing_InvestmentSummary"></a>
 
 Detailed information about an investment summary within a contract or a private pricing addendum.
 

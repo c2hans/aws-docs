@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Contai
 ---
 
 # Container
-<a name="API_Container"></a>
 
 Details of a container.
 

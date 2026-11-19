@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/google-works
 ---
 
 # Configure Google Workspace for AppFabric
-<a name="google-workspace"></a>
 
 Google Workspace is a collection of cloud computing, productivity and collaboration tools, software and products developed and marketed by Google.
 

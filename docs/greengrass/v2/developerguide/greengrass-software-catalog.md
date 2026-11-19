@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # Community components
-<a name="greengrass-software-catalog"></a>
 
 The Greengrass Software Catalog is an index of Greengrass components that are developed by the Greengrass community. From this catalog, you can download, modify, and deploy components to create your Greengrass applications. You can view the catalog at the following link: [https://github.com/aws-greengrass/aws-greengrass-software-catalog](https://github.com/aws-greengrass/aws-greengrass-software-catalog).
 

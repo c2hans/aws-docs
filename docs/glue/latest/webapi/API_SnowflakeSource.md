@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SnowflakeSource.h
 ---
 
 # SnowflakeSource
-<a name="API_SnowflakeSource"></a>
 
 Specifies a Snowflake data source.
 

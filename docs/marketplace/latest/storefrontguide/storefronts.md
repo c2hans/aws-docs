@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/storefrontguide/store
 ---
 
 # Storefronts
-<a name="storefronts"></a>
 
 Create, design, configure, and deploy storefronts.
 

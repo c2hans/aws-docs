@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CreatePaymentCredentialProvider
-<a name="API_CreatePaymentCredentialProvider"></a>
 
 Creates a new payment credential provider for storing authentication credentials used by payment connectors to communicate with external payment providers.
 

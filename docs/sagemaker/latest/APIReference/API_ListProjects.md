@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListPr
 ---
 
 # ListProjects
-<a name="API_ListProjects"></a>
 
 Gets a list of the projects in an AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Creat
 ---
 
 # CreateAppBlockBuilderStreamingURL
-<a name="API_CreateAppBlockBuilderStreamingURL"></a>
 
 Creates a URL to start a create app block builder streaming session.
 
@@ -59,7 +58,6 @@ Type: Timestamp
  ** [StreamingURL](#API_CreateAppBlockBuilderStreamingURL_ResponseSyntax) **   <a name="WorkSpacesApplications-CreateAppBlockBuilderStreamingURL-response-StreamingURL"></a>
 The URL to start the streaming session.
 Type: String
-Length Constraints: Minimum length of 1.
 
 ## Errors
 <a name="API_CreateAppBlockBuilderStreamingURL_Errors"></a>

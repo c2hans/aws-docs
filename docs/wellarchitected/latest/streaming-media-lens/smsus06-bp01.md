@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMSUS06-BP01 Optimize data flow and caching strategies
-<a name="smsus06-bp01"></a>
 
 Move streaming media as few times and as short a distance as possible. Every transfer of media data carries transfer energy and often triggers duplicate downstream processing, so a workload that copies content across Regions, re-fetches from origin on every request, or shuttles intermediate files between processing stages consumes resources out of proportion to the value delivered.
 

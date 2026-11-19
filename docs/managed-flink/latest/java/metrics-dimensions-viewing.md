@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/metrics-dimens
 ---
 
 # View CloudWatch metrics
-<a name="metrics-dimensions-viewing"></a>
 
 You can view CloudWatch metrics for your application using the Amazon CloudWatch console or the AWS CLI.
 

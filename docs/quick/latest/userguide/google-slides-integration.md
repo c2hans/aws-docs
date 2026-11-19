@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/google-slides-int
 ---
 
 # Google Slides integration
-<a name="google-slides-integration"></a>
 
 With the Google Slides connector, you can access Google Slides directly in AWS Quick through natural language. You can create presentations, edit slides, copy templates, and retrieve presentation content without leaving AWS Quick.
 

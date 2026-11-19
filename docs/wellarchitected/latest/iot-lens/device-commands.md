@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/device-c
 ---
 
 # Device commands
-<a name="device-commands"></a>
 
  When you are building an IoT application, you need the ability to interact with your device through commands remotely. For example:
 +  In the industrial vertical, remote commands are used to request specific data from a piece of equipment.

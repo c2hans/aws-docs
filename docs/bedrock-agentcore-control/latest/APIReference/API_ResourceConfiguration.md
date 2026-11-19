@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ResourceConfiguration
-<a name="API_ResourceConfiguration"></a>
 
 The resource configuration for an AgentCore Runtime.
 

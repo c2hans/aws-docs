@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ExtractI
 ---
 
 # ExtractInformationActionDefinition
-<a name="API_ExtractInformationActionDefinition"></a>
 
 Information about the extract information action, which references extraction definitions to use when extracting structured data from customer interactions.
 

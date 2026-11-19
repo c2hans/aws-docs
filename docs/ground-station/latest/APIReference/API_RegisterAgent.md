@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_R
 ---
 
 # RegisterAgent
-<a name="API_RegisterAgent"></a>
 
 **Note**
  For use by AWS Ground Station Agent and shouldn't be called directly.

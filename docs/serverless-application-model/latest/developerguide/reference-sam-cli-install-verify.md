@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Optional: Verify the integrity of the AWS SAM CLI installer
-<a name="reference-sam-cli-install-verify"></a>
 
 When installing the AWS Serverless Application Model Command Line Interface (AWS SAM CLI) using a package installer, you can verify its integrity before installation. This is an optional, but highly recommended step.
 

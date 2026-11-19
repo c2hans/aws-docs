@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-oc
 ---
 
 # Wrap up
-<a name="wrap-up"></a>
 
 You can apply the six points to change acceleration in both waterfall and agile frameworks. Change is ongoing: A new stakeholder, change of scope, or accelerated or stretched timeline can require the team to go back and reevaluate points that have already been completed as part of the cloud transformation. Change acceleration, at its core, is iterative. As a best practice, we recommend that you assess, design, test, and refine your change acceleration plans in an ongoing and iterative fashion.
 

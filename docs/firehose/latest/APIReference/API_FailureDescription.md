@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Failure
 ---
 
 # FailureDescription
-<a name="API_FailureDescription"></a>
 
 Provides details in case one of the following operations fails due to an error related to KMS: [CreateDeliveryStream](API_CreateDeliveryStream.md), [DeleteDeliveryStream](API_DeleteDeliveryStream.md), [StartDeliveryStreamEncryption](API_StartDeliveryStreamEncryption.md), [StopDeliveryStreamEncryption](API_StopDeliveryStreamEncryption.md).
 

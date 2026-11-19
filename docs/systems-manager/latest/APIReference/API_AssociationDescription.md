@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AssociationDescription
-<a name="API_AssociationDescription"></a>
 
 Describes the parameters for a document.
 

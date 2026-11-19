@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-md
 ---
 
 # Amazon MemoryDB in AWS GovCloud (US)
-<a name="govcloud-mdb"></a>
 
 Amazon MemoryDB makes it easy to set up, manage, and scale distributed in-memory cache environments in the AWS Cloud. It provides a high performance, resizable, and cost-effective in-memory cache, while removing complexity associated with deploying and managing a distributed cache environment. MemoryDB works with the Valkey and Redis OSS engines.
 

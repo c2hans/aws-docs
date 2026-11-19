@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_PutApp
 ---
 
 # PutAppInstanceRetentionSettings
-<a name="API_PutAppInstanceRetentionSettings"></a>
 
 Sets the amount of time in days that a given `AppInstance` retains data.
 

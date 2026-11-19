@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-nat.html
 ---
 
 # 1:1 NAT in AWS Transit Gateway
-<a name="tgw-nat"></a>
 
 1:1 NAT on AWS Transit Gateway provides static, stateless network address translation at the transit layer, delivered as a Regional private NAT gateway embedded directly in your transit gateway. There's no separate NAT appliance or NAT gateway resource to deploy or manage. You define CIDR-to-CIDR mappings on each attachment, and the transit gateway translates the IPv4 addresses of traffic that matches those mappings in both inbound and outbound directions. Each address in the original CIDR always maps to the same position in the NAT CIDR. The host bits are kept, and ports aren't changed. For example, if 10.10.100.0/24 is mapped to 100.64.100.0/24, then 10.10.100.5 is translated to 100.64.100.5; the host portion (here, the last octet) stays the same.
 

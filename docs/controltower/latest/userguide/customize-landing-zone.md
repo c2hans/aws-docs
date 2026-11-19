@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/customize-
 ---
 
 # Customize your AWS Control Tower landing zone
-<a name="customize-landing-zone"></a>
 
 Certain aspects of your AWS Control Tower landing zone are configurable in the console, such as selection of Regions and optional controls. Other changes may be made outside the console, with automation.
 

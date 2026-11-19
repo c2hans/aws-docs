@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_UpdateW
 ---
 
 # UpdateWebAppIdentityCenterConfig
-<a name="API_UpdateWebAppIdentityCenterConfig"></a>
 
 A structure that describes the values to use for the IAM Identity Center settings when you update a web app.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/application-auto-
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Code examples for Application Auto Scaling using AWS SDKs
-<a name="application-auto-scaling_code_examples"></a>
 
 The following code examples show you how to use Application Auto Scaling with an AWS software development kit (SDK).
 

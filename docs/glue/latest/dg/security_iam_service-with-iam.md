@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/security_iam_service-with
 ---
 
 # How AWS Glue works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to AWS Glue, learn what IAM features are available to use with AWS Glue.
 

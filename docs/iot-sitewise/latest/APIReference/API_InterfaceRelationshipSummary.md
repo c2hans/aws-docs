@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Int
 ---
 
 # InterfaceRelationshipSummary
-<a name="API_InterfaceRelationshipSummary"></a>
 
 Contains summary information about an interface relationship, which defines how an interface is applied to an asset model. This summary provides the essential identifiers needed to retrieve detailed information about the relationship.
 

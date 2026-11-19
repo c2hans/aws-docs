@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSOPS04-BP03 Incorporate formal risk management into your IT processes
-<a name="lsops04-bp03"></a>
 
  Risk assessments should be conducted to identify potential vulnerabilities in electronic systems and data management processes. It is a crucial component of effective quality management. It involves proactively identifying, analyzing, and mitigating potential risks that could impact the quality of products or services. By integrating risk management into the quality management process, organizations can improve their overall quality, reduce costs, and enhance customer satisfaction.
 

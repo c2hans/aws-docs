@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Scalin
 ---
 
 # ScalingPolicy
-<a name="API_ScalingPolicy"></a>
 
 An object containing a recommended scaling policy.
 

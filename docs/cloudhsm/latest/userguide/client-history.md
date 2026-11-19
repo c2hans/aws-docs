@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/client-history
 ---
 
 # Downloads for AWS CloudHSM Client SDK
-<a name="client-history"></a>
 
 The following topics provide downloads for AWS CloudHSM client SDKs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/archiving-guideline
 ---
 
 # Guidelines and best practices for archiving Amazon EBS snapshots
-<a name="archiving-guidelines"></a>
 
 This section provides some guidelines and best practices for archiving snapshots.
 

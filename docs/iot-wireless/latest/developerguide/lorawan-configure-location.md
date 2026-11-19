@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Configuring the position of wireless resources with AWS IoT Core for LoRaWAN
-<a name="lorawan-configure-location"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflow-definition-exa
 ---
 
 # Example workflow definitions
-<a name="workflow-definition-examples"></a>
 
 The following example shows the same workflow definition in WDL, Nextflow, and CWL.
 

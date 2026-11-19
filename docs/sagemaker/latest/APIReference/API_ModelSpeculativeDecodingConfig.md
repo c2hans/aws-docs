@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelS
 ---
 
 # ModelSpeculativeDecodingConfig
-<a name="API_ModelSpeculativeDecodingConfig"></a>
 
 Settings for the model speculative decoding technique that's applied by a model optimization job.
 

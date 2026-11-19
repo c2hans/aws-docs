@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mist
 ---
 
 # Mistral Small
-<a name="model-card-mistral-ai-mistral-small"></a>
 
 ## ![Mistral AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/mistralai.png) Mistral AI — Mistral Small
 <a name="model-card-mistral-ai-mistral-small-header"></a>

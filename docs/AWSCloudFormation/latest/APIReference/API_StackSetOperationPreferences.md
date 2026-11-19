@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackSetOperationPreferences
-<a name="API_StackSetOperationPreferences"></a>
 
 The user-specified preferences for how CloudFormation performs a StackSet operation.
 

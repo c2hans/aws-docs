@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/engine-releases
 ---
 
 # Earlier Neptune Engine Releases
-<a name="engine-releases-earlier"></a>
 
 **Topics**
 + [Amazon Neptune Engine Updates 2019-06-12](engine-releases-1.0.1.0.200310.0.md)

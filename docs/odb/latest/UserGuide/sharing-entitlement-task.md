@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/sharing-entitlement
 ---
 
 # Sharing Oracle Database@AWS entitlements across accounts
-<a name="sharing-entitlement-task"></a>
 
 To enable collaboration while optimizing costs, share Oracle Database@AWS entitlements with other AWS accounts within the same AWS organization. This topic explains how to share entitlements using AWS License Manager.
 

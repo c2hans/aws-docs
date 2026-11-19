@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Collection group capacity limits
-<a name="collection-groups-capacity-limits"></a>
 
 Collection groups provide granular control over resource allocation through minimum and maximum OCU limits. These limits apply to all collections within the group and operate independently from account-level capacity settings.
 

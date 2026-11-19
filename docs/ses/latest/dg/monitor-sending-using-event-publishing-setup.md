@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/monitor-sending-using-even
 ---
 
 # Setting up Amazon SES event publishing
-<a name="monitor-sending-using-event-publishing-setup"></a>
 
 This section describes what you need to do to configure Amazon SES to publish your email sending events to the following AWS services:
 + Amazon CloudWatch

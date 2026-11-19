@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Cost
-<a name="cost"></a>
 
 The cost for running this solution varies between the two deployment architectures. Choose the architecture that best balances your performance requirements with cost considerations.
 

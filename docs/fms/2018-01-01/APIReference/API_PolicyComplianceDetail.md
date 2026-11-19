@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_PolicyCo
 ---
 
 # PolicyComplianceDetail
-<a name="API_PolicyComplianceDetail"></a>
 
 Describes the noncompliant resources in a member account for a specific AWS Firewall Manager policy. A maximum of 100 entries are displayed. If more than 100 resources are noncompliant, `EvaluationLimitExceeded` is set to `True`.
 

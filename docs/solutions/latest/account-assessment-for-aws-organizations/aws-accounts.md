@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 ---
 
 # AWS Account Structure
-<a name="aws-accounts"></a>
 
 Follow these guidelines when setting up accounts for each stack:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedding-dashboa
 ---
 
 # Embedding AWS Quick Sight dashboards with the AWS Quick Sight API
-<a name="embedding-dashboards"></a>
 
 Use the following topics to learn about embedding dashboards with the AWS Quick Sight API.
 

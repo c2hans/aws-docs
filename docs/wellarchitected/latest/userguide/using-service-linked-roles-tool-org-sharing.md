@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/using-s
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Service-linked role permissions for AWS Well-Architected Tool organization sharing and resource discovery
-<a name="using-service-linked-roles-tool-org-sharing"></a>
 
 AWS Well-Architected Tool uses the service-linked role named `AWSServiceRoleForWellArchitected`. This service-linked role carries two AWS managed policies that support two AWS WA Tool capabilities: organization resource sharing and resource discovery. AWS WA Tool uses the role to retrieve information about the organization it is a member of when you activate resource sharing with AWS Organizations, and to access AWS services and resources that relate to AWS WA Tool resources when you turn on Discovery support.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_GetDe
 ---
 
 # GetDeployment
-<a name="API_GetDeployment"></a>
 
 Gets information about a deployment.
 

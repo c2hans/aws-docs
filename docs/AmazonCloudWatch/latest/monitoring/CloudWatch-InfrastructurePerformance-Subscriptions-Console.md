@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Manage subscriptions using the console
-<a name="CloudWatch-InfrastructurePerformance-Subscriptions-Console"></a>
 
 Use subscriptions to send Infrastructure Performance metrics to Amazon CloudWatch and view them there. Using the console, you can subscribe to or unsubscribe from CloudWatch performance metrics.
 

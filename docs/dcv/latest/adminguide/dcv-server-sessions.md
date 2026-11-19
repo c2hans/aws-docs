@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/dcv-server-session
 ---
 
 # Amazon DCV server sessions
-<a name="dcv-server-sessions"></a>
 
 Counters in this set provide information about a single session. There's one instance of this counter set for each created session, whether a user is connected or not.
 

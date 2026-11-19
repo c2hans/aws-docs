@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/gw-admin/enabling-web-access.
 ---
 
 # Enabling Web Access
-<a name="enabling-web-access"></a>
 
 ## Configuring Web Resources
 <a name="configuring-resources"></a>

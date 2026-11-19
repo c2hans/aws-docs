@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ex
 ---
 
 # Export a report of AWS IAM Identity Center identities and their assignments by using PowerShell
-<a name="export-a-report-of-aws-iam-identity-center-identities-and-their-assignments-by-using-powershell"></a>
 
 *Jorge Pava, Frank Allotta, Manideep Reddy Gillela, and Chad Miles, Amazon Web Services*
 

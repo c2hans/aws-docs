@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/configure-requ
 ---
 
 # Creating a CloudWatch metrics configuration for all the objects in your bucket
-<a name="configure-request-metrics-bucket"></a>
 
 When you configure request metrics, you can create a CloudWatch metrics configuration for all the objects in your bucket, or you can filter by prefix, object tag, or access point. The procedures in this topic show you how to create a configuration for all the objects in your bucket. To create a configuration that filters by object tag, prefix, or access point, see [Creating a metrics configuration that filters by prefix, object tag, or access point](metrics-configurations-filter.md).
 

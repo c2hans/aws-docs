@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/view-tags.html
 ---
 
 # View tags associated with a KMS key
-<a name="view-tags"></a>
 
 Tags help identify and organize your AWS resources. You can view the tags associated with your customer managed KMS keys in the AWS KMS console or by using the [ListResourceTags](https://docs.aws.amazon.com/kms/latest/APIReference/API_ListResourceTags.html) operation.
 

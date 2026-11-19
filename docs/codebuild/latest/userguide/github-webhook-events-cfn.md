@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/github-webhoo
 ---
 
 # Filter GitHub webhook events (CloudFormation)
-<a name="github-webhook-events-cfn"></a>
 
  To use a CloudFormation template to filter webhook events, use the AWS CodeBuild project's `FilterGroups` property.
 

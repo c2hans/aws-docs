@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 ---
 
 # Disable cached connections
-<a name="sagemaker-sql-extension-features-disable-cached-connection"></a>
 
 To disable connection caching, run the following command:
 

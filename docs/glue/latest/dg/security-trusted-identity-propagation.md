@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/security-trusted-identity
 ---
 
 # Trusted Identity Propagation with AWS Glue ETL
-<a name="security-trusted-identity-propagation"></a>
 
 With IAM Identity Center, you can connect to identity providers (IdPs) and centrally manage access for users and groups across AWS analytics services. You can integrate identity providers such as Okta, Ping, and Microsoft Entra ID (formerly Azure Active Directory) with IAM Identity Center for users in your organization to access data using a single-sign on experience. IAM Identity Center also supports connecting additional third-party identity providers.
 

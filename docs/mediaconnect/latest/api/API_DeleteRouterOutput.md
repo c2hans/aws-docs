@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DeleteRouter
 ---
 
 # DeleteRouterOutput
-<a name="API_DeleteRouterOutput"></a>
 
 Deletes a router output from AWS Elemental MediaConnect.
 

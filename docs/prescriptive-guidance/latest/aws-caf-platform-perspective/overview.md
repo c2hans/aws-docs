@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-caf-pla
 ---
 
 # Overview
-<a name="overview"></a>
 
 Millions of customers, including the fastest-growing startups, largest enterprises, and leading government organizations, use AWS.  (See [Customer Success Stories](https://aws.amazon.com/solutions/case-studies/) on the AWS website.) They can [migrate and modernize](https://aws.amazon.com/migration-acceleration-program/) legacy workloads, become more [data-driven](https://aws.amazon.com/executive-insights/insights/), [automate and optimize](https://aws.amazon.com/machine-learning/ml-use-cases/) business processes, and reinvent operating models. They are able to improve their [business outcomes](https://aws.amazon.com/economics/) by reducing business risk, improving environmental, social, and governance (ESG) performance, increasing revenue, and improving operational efficiency.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Pa
 ---
 
 # PatientInsightsPatientContext
-<a name="API_PatientInsightsPatientContext"></a>
 
 Details for a patient
 

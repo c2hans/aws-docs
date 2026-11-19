@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/cloud-shuffle-storage-plu
 ---
 
 # Cloud Shuffle Storage Plugin for Apache Spark
-<a name="cloud-shuffle-storage-plugin"></a>
 
 The Cloud Shuffle Storage Plugin is an Apache Spark plugin compatible with the [`ShuffleDataIO` API](https://github.com/apache/spark/blob/master/core/src/main/java/org/apache/spark/shuffle/api/ShuffleDataIO.java) which allows storing shuffle data on cloud storage systems (such as Amazon S3). It helps you to supplement or replace local disk storage capacity for large shuffle operations, commonly triggered by transformations such as `join`, `reduceByKey`, `groupByKey` and `repartition` in your Spark applications, thereby reducing common failures or price/performance dislocation of your serverless data analytics jobs and pipelines.
 

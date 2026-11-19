@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-cf2/latest/configguide/ready-c
 This is version 2.18 of the AWS Elemental Conductor File documentation. This is the latest version. For prior versions, see the *Archive* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server).
 
 # Where to Work: Configuration Screens
-<a name="ready-cf-cg-where"></a>
 
 The procedures in this guide use one of three screens on the Conductor web interface. All work is done from the Conductor web interface; there is never a need to switch to the web interface for a worker.
 

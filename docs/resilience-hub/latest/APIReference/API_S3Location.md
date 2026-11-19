@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_S
 ---
 
 # S3Location
-<a name="API_S3Location"></a>
 
 The location of the Amazon S3 bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Release notes
-<a name="release-notes"></a>
 
 ## Large-scale revamp (09-11-2026)
 <a name="update-2026-09-11"></a>

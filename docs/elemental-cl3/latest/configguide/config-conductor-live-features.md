@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/config-
 ---
 
 # Configure worker features
-<a name="config-conductor-live-features"></a>
 
 There are some features of the workers that you must configure individually.
 

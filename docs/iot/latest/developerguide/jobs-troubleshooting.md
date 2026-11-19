@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/jobs-troublesh
 ---
 
 # AWS IoT Jobs Troubleshooting
-<a name="jobs-troubleshooting"></a>
 
 This is the troubleshooting section for AWS IoT Jobs.
 

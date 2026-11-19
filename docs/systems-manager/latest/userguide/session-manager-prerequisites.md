@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/session
 ---
 
 # Step 1: Complete Session Manager prerequisites
-<a name="session-manager-prerequisites"></a>
 
 Before using Session Manager, make sure your environment meets the following requirements.
 

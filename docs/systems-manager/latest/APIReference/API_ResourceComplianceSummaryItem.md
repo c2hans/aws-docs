@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ResourceComplianceSummaryItem
-<a name="API_ResourceComplianceSummaryItem"></a>
 
 Compliance summary information for a specific resource.
 

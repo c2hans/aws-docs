@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/toLong.html
 ---
 
 # $toLong
-<a name="toLong"></a>
 
 New from version 4.0
 

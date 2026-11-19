@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFRegional::GeoMatchSet
-<a name="aws-resource-wafregional-geomatchset"></a>
 
 **Note**
 AWS WAF Classic support will end on September 30, 2025.
@@ -53,7 +52,7 @@ An array of `GeoMatchConstraint` objects, which contain the country that you wan
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-wafregional-geomatchset-name"></a>
-A friendly name or description of the [AWS::WAFRegional::GeoMatchSet](#aws-resource-wafregional-geomatchset). You can't change the name of an `GeoMatchSet` after you create it.
+A friendly name or description of the [AWS::WAFRegional::GeoMatchSet](aws-resource-wafregional-geomatchset.md). You can't change the name of an `GeoMatchSet` after you create it.
 *Required*: Yes
 *Type*: String
 *Pattern*: `.*\S.*`

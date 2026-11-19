@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_CreateP
 ---
 
 # CreatePrivateConnectivityConfig
-<a name="API_CreatePrivateConnectivityConfig"></a>
 
 Creates the private connectivity configuration for the specified Outpost. Private connectivity establishes a service link VPN connection between the Outpost and its home AWS Region using a VPC and subnet that you specify, which allows the service link traffic to flow through your VPC and minimizes public internet exposure.
 

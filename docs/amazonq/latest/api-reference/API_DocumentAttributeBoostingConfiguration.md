@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Documen
 ---
 
 # DocumentAttributeBoostingConfiguration
-<a name="API_DocumentAttributeBoostingConfiguration"></a>
 
 Provides information on boosting supported Amazon Q Business document attribute types. When an end user chat query matches document attributes that have been boosted, Amazon Q Business prioritizes generating responses from content that matches the boosted document attributes.
 

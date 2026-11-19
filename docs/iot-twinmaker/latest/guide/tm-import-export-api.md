@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/tm-import-exp
 ---
 
 # Performing bulk import and export operations
-<a name="tm-import-export-api"></a>
 
 This topic covers how to perform bulk import and export operations and how to handle errors in your transfer jobs. It provides examples of transfer jobs using CLI commands.
 

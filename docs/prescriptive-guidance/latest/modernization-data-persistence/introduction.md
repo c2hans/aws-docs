@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Enabling data persistence in microservices
-<a name="introduction"></a>
 
 *Tabby Ward and Balaji Mohan, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_D
 ---
 
 # DbInstanceSummary
-<a name="API_DbInstanceSummary"></a>
 
 Contains a summary of a DB instance.
 

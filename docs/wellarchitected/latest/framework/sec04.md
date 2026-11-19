@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec04.h
 ---
 
 # Detection
-<a name="sec04"></a>
 
  Detection is the ability to see what is happening across a workload and to make sense of it when something goes wrong. It rests on two connected habits: capturing the events that record activity, and turning those events into signals a team can act on before a problem escalates.
 

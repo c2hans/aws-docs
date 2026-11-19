@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/dynamodb-functio
 ---
 
 # AWS AppSync JavaScript function reference for DynamoDB
-<a name="dynamodb-function-reference"></a>
 
 The Amazon DynamoDB functions allow you to use JavaScript to store and retrieve data in existing Amazon DynamoDB tables in your account. This section describes the request and response handlers for supported DynamoDB operations.
 +  [GetItem](dynamodb-getitem.md) — The GetItem request lets you tell the DynamoDB function to make a GetItem request to DynamoDB, and enables you to specify the key of the item in DynamoDB and whether to use a consistent read.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Delet
 ---
 
 # DeleteAssertion
-<a name="API_DeleteAssertion"></a>
 
 Deletes a resilience assertion from a service.
 

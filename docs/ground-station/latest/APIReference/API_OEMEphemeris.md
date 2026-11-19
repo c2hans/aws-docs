@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_O
 ---
 
 # OEMEphemeris
-<a name="API_OEMEphemeris"></a>
 
 Ephemeris data in Orbit Ephemeris Message (OEM) format.
 

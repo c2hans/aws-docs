@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ExecuteStackRefactor
-<a name="API_ExecuteStackRefactor"></a>
 
 Executes the stack refactor operation.
 

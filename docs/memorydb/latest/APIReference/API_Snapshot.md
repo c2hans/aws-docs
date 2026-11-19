@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Snapsho
 ---
 
 # Snapshot
-<a name="API_Snapshot"></a>
 
 Represents a copy of an entire cluster as of the time when the snapshot was taken.
 

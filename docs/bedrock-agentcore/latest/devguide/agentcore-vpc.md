@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentc
 ---
 
 # Configure Amazon Bedrock AgentCore Runtime and tools for VPC
-<a name="agentcore-vpc"></a>
 
 You can configure Amazon Bedrock AgentCore Runtime and built-in tools (Code Interpreter and Browser Tool) to connect to resources in your Amazon Virtual Private Cloud (VPC). By configuring VPC connectivity, you enable secure access to private resources such as databases, internal APIs, and services within your VPC.
 

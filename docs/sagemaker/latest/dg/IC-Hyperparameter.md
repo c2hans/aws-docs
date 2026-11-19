@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/IC-Hyperparameter.ht
 ---
 
 # Image Classification Hyperparameters
-<a name="IC-Hyperparameter"></a>
 
 Hyperparameters are parameters that are set before a machine learning model begins learning. The following hyperparameters are supported by the Amazon SageMaker AI built-in Image Classification algorithm. See [Tune an Image Classification Model](IC-tuning.md) for information on image classification hyperparameter tuning.
 

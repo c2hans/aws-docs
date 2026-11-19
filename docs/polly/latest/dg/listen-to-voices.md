@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/listen-to-voices.html
 ---
 
 # Listening to voices
-<a name="listen-to-voices"></a>
 
 Once you have [set up](getting-started.md) Amazon Polly, you can test voices using custom text on the console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/ingest-ala
 ---
 
 # Ingest alarm state data in AWS IoT SiteWise
-<a name="ingest-alarm-state-data"></a>
 
 Alarm state properties expect alarm state as a serialized JSON string. To ingest alarm state to an external alarm in AWS IoT SiteWise, you ingest this serialized string as a timestamped string value. The following example demonstrates a state data value for an active alarm.
 

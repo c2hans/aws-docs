@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Global
 ---
 
 # GlobalCluster
-<a name="API_GlobalCluster"></a>
 
 A data type representing an Aurora global database.
 

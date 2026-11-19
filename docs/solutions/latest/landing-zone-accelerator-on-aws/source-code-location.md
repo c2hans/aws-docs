@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Source code location
-<a name="source-code-location"></a>
 
 In a default Landing Zone Accelerator on AWS deployment, CodePipeline retrieves the source code from the [solution’s GitHub repository](https://github.com/awslabs/landing-zone-accelerator-on-aws/tree/main). You may want to instead store the source code in Amazon S3 to use only Amazon-provided products. This solution supports this operating model by uploading the LZA source code to an existing S3 bucket before deploying the solution.
 

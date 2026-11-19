@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Changes in Waiters from version 1 to version 2
-<a name="migration-waiters"></a>
 
 This topic details the changes in the functionality of Waiters from version 1 (v1) to version 2 (v2).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # S3ObjectFile
-<a name="API_agent-runtime_S3ObjectFile"></a>
 
 Contains details of the s3 object where the source file is located.
 

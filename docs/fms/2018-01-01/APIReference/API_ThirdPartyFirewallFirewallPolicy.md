@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_ThirdPar
 ---
 
 # ThirdPartyFirewallFirewallPolicy
-<a name="API_ThirdPartyFirewallFirewallPolicy"></a>
 
 Configures the third-party firewall's firewall policy.
 

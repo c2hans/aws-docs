@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # DeletePaymentInstrument
-<a name="API_DeletePaymentInstrument"></a>
 
 Deletes a payment instrument. This is a soft delete operation that preserves the record for audit and compliance purposes.
 

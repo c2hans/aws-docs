@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_AssociatedPe
 ---
 
 # AssociatedPermission
-<a name="API_AssociatedPermission"></a>
 
 An object that describes a managed permission associated with a resource share.
 

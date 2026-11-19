@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Basic examples of Amazon SQS policies
-<a name="sqs-basic-examples-of-sqs-policies"></a>
 
 This section shows example policies for common Amazon SQS use cases.
 

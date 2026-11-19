@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/update-inf
 ---
 
 # Update an infrastructure configuration
-<a name="update-infra-config"></a>
 
 This section covers how to update an infrastructure configuration resource. You can use the Image Builder console, **imagebuilder** commands in the AWS CLI, or AWS Tools for PowerShell. To track your resources, you can apply tags as follows. Enter tags as key-value pairs.
 + *Resource tags* assign metadata tags to the Amazon EC2 instance that Image Builder launches during the build process.

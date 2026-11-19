@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListC
 ---
 
 # ListCustomPermissions
-<a name="API_ListCustomPermissions"></a>
 
 Returns a list of all the custom permissions profiles.
 

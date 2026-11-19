@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # GetEvent
-<a name="API_GetEvent"></a>
 
 Gets an event by ID, including its payload.
 

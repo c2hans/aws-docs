@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteIn
 ---
 
 # RouteIntermodalRentalOptions
-<a name="API_RouteIntermodalRentalOptions"></a>
 
 Options for the rental leg of the intermodal route.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListReferenceImport
 ---
 
 # ListReferenceImportJobs
-<a name="API_ListReferenceImportJobs"></a>
 
 Retrieves the metadata of one or more reference import jobs for a reference store.
 

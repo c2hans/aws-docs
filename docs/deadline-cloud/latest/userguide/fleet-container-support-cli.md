@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/fleet-co
 ---
 
 # Creating a Docker-enabled fleet with the AWS CLI
-<a name="fleet-container-support-cli"></a>
 
 The queue role requires permission to authenticate to Amazon ECR and pull the image selected by the Docker queue environment. The fleet role permission is optional for the default queue environment. Add it when host configuration actions or worker-side tools pull images outside a queue session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/create-co
 ---
 
 # Create a Direct Connect dedicated connection using the Connection wizard
-<a name="create-connection"></a>
 
 This section describes creating a connection using the Connection wizard. If you prefer to create a Classic connection, see the steps at [Step 2: Request a Direct Connect dedicated connection](toolkit-classic.md#ConnectionRequest).
 

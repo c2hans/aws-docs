@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_RowIn
 ---
 
 # RowInfo
-<a name="API_RowInfo"></a>
 
 Information about rows for a data set SPICE ingestion.
 

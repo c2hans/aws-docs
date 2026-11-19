@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Run autonomous driving simulations with CARLA on Deadline Cloud
-<a name="examples-jb-carla"></a>
 
 The [autonomous\_driving\_carla](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/autonomous_driving_carla) job bundle on the GitHub website runs an autonomous driving simulation parameter sweep on AWS Deadline Cloud with configurable multi-sensor capture, using the [CARLA simulator](https://carla.org/) on the CARLA website. The job runs a lane-change cut-in scenario and sweeps across configurable ego speeds, NPC speeds, and NPC starting distances. Each parameter combination creates a task (default 2×2×2 = 8 tasks).
 

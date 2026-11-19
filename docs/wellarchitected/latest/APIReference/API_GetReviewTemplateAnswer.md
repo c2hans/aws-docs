@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # GetReviewTemplateAnswer
-<a name="API_GetReviewTemplateAnswer"></a>
 
 Get review template answer.
 

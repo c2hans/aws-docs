@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ApiKeyCrede
 ---
 
 # ApiKeyCredentials
-<a name="API_ApiKeyCredentials"></a>
 
 The API key credentials required for API key authentication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # InterceptorPayloadFilter
-<a name="API_InterceptorPayloadFilter"></a>
 
 The filter that controls which fields of the request or response payload are included in the input to the interceptor.
 

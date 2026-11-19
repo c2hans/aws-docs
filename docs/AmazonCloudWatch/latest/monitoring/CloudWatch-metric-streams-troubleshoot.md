@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Troubleshooting metric streams in CloudWatch
-<a name="CloudWatch-metric-streams-troubleshoot"></a>
 
 If you're not seeing metric data at your final destination, check the following:
 + Check that the metric stream is in the running state. For steps on how to use the CloudWatch console to do this, see [Metric stream operation and maintenance](CloudWatch-metric-streams-operation.md).

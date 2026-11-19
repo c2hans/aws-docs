@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/SubnetGroups
 ---
 
 # Tutorial: How to create a node-based ElastiCache cluster
-<a name="SubnetGroups.designing-cluster-pre"></a>
 
 Here is how to create a node-based ElastiCache cluster for Valkey, Memcached and Redis OSS.
 

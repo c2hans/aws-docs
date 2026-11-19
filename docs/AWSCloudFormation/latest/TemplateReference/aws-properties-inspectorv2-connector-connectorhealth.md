@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::InspectorV2::Connector ConnectorHealth
-<a name="aws-properties-inspectorv2-connector-connectorhealth"></a>
 
 <a name="aws-properties-inspectorv2-connector-connectorhealth-description"></a>The `ConnectorHealth` property type specifies Property description not available. for an [AWS::InspectorV2::Connector](aws-resource-inspectorv2-connector.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListConnections
-<a name="API_account_ListConnections"></a>
 
 Lists active connections for the partner account, with optional filtering by connection type and participant.
 

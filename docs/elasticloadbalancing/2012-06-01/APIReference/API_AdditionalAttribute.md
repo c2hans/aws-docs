@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # AdditionalAttribute
-<a name="API_AdditionalAttribute"></a>
 
 Information about additional load balancer attributes.
 

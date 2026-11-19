@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/cu
 ---
 
 # Custom stream resolution in Amazon GameLift Streams
-<a name="custom-stream-resolution"></a>
 
 By default, Amazon GameLift Streams delivers interactive streams at the industry-standard full HD resolution of 1920 × 1080 pixels, in a standard 16-by-9 aspect ratio. You can set a custom resolution for each session to match the screen shape or aspect ratio of the player's device. Custom resolutions support landscape, portrait, and square aspect ratios.
 

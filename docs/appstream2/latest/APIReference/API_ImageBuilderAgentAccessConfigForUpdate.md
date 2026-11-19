@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Image
 ---
 
 # ImageBuilderAgentAccessConfigForUpdate
-<a name="API_ImageBuilderAgentAccessConfigForUpdate"></a>
 
 The configuration for updating agent access on an image builder. This type supports partial updates, so you only need to specify the fields you want to change. Fields that you omit keep their stored values.
 

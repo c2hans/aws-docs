@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-alerts.html
 ---
 
 # Setting up alerts, deployments, and scheduling
-<a name="data-quality-alerts"></a>
 
 This topic describes how to set up alerts, deployments, and scheduling for AWS Glue Data Quality.
 

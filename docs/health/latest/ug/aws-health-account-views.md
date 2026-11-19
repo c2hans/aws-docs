@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/ug/aws-health-account-view
 ---
 
 # Viewing your account events in the AWS Health Dashboard
-<a name="aws-health-account-views"></a>
 
 You can sign in to your account to get personalized events and recommendations.
 

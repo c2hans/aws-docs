@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # MetricAlarm
-<a name="API_MetricAlarm"></a>
 
 The details about a metric alarm.
 

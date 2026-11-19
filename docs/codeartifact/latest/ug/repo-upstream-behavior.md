@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/repo-upstream-beh
 ---
 
 # Requesting a package version with upstream repositories
-<a name="repo-upstream-behavior"></a>
 
  When a client (for example, npm) requests a package version from a CodeArtifact repository named `my_repo` that has multiple upstream repositories, the following can occur:
 +  If `my_repo` contains the requested package version, it is returned to the client.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # AWS Security Hub integration
-<a name="aws-security-hub-integration"></a>
 
 Deploying the `automated-security-response-admin` stack creates integration with [AWS Security Hub CSPM’s](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html) custom action feature. When AWS Security Hub CSPM console users choose **Actions >** **Remediate with ASR**, the selected findings are sent to EventBridge and trigger the remediation workflow.
 

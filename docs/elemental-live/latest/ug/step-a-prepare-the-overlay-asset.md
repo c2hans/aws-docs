@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/step-a-prepare-
 ---
 
 # Step A: Prepare the overlay asset
-<a name="step-a-prepare-the-overlay-asset"></a>
 
 1. Create a file with the following characteristics:
    + File type: A BMP, PNG, or TGA file.

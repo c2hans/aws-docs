@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/describ
 ---
 
 # DescribeIpRestriction
-<a name="describe-ip-restriction"></a>
 
 Use the `DescribeIpRestriction` operation to get a summary and status of IP rules.
 

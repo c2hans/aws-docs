@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DeleteEventDestination
-<a name="API_DeleteEventDestination"></a>
 
 Deletes an existing event destination.
 

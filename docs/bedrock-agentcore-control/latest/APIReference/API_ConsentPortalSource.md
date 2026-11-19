@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ConsentPortalSource
-<a name="API_ConsentPortalSource"></a>
 
 A resource served by the consent portal.
 

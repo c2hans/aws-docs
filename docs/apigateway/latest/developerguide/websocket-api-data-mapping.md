@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/websock
 ---
 
 # Set up data mapping for WebSocket APIs in API Gateway
-<a name="websocket-api-data-mapping"></a>
 
 *Data mapping* enables you to map data from a [route request](api-gateway-basic-concept.md#apigateway-definition-route-request) to a backend integration.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FSx::FileCache
-<a name="aws-resource-fsx-filecache"></a>
 
 A description of a specific Amazon File Cache resource, which is a response object from the `DescribeFileCaches` operation.
 

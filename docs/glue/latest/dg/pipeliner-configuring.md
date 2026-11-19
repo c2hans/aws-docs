@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pipeliner-configuring.htm
 ---
 
 # Configuring Pipeliner
-<a name="pipeliner-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Pipeliner, you must meet the following requirements:
 

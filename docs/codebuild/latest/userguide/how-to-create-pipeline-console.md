@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-create
 ---
 
 # Create a pipeline that uses CodeBuild (CodePipeline console)
-<a name="how-to-create-pipeline-console"></a>
 
 Use the following procedure to create a pipeline that uses CodeBuild to build and deploy your source code.
 

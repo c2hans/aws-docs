@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Produc
 ---
 
 # ProductionVariantStatus
-<a name="API_ProductionVariantStatus"></a>
 
 Describes the status of the production variant.
 

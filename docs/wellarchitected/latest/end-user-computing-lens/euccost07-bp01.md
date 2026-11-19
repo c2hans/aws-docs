@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCCOST07-BP01 Use the available cost optimizers for Amazon WorkSpaces and Amazon WorkSpaces Applications
-<a name="euccost07-bp01"></a>
 
  Leverage available tools from AWS and partners to support you with cost monitoring and optimization.
 

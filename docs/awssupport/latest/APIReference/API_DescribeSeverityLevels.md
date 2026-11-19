@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Descr
 ---
 
 # DescribeSeverityLevels
-<a name="API_DescribeSeverityLevels"></a>
 
 Returns the list of severity levels that you can assign to a support case. The severity level for a case is also a field in the [CaseDetails](API_CaseDetails.md) data type that you include for a [CreateCase](API_CreateCase.md) request.
 

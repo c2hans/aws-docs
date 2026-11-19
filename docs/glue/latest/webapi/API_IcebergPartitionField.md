@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergPartitionF
 ---
 
 # IcebergPartitionField
-<a name="API_IcebergPartitionField"></a>
 
 Defines a single partition field within an Iceberg partition specification, including the source field, transformation function, partition name, and unique identifier.
 

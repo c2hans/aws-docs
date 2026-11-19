@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/mi
 ---
 
 # Migrate your Classic Load Balancer
-<a name="migrate-classic-load-balancer"></a>
 
 Elastic Load Balancing supports the following types of load balancers: Application Load Balancers, Network Load Balancers, Gateway Load Balancers, and Classic Load Balancers. For information about the different features of each load balancer type, see [Elastic Load Balancing features](https://aws.amazon.com/elasticloadbalancing/features/).
 

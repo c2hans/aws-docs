@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListedDestin
 ---
 
 # ListedDestinationEndpoint
-<a name="API_ListedDestinationEndpoint"></a>
 
 A summary of a destination endpoint that the `ListDestinationEndpoints` operation returns.
 

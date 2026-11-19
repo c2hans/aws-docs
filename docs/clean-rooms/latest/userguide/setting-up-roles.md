@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/setting-up-
 ---
 
 # Set up service roles for AWS Clean Rooms
-<a name="setting-up-roles"></a>
 
 The following sections describe the roles needed to perform each task.
 

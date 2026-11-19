@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_ListBots.h
 ---
 
 # ListBots
-<a name="API_ListBots"></a>
 
 Retrieves a paginated list of bots in a specified Wickr network. You can filter and sort the results based on various criteria.
 

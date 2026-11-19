@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsDmsE
 ---
 
 # AwsDmsEndpointDetails
-<a name="API_AwsDmsEndpointDetails"></a>
 
  Provides details about an AWS Database Migration Service (AWS DMS) endpoint. An endpoint provides connection, data store type, and location information about your data store.
 

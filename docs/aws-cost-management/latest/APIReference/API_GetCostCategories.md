@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetCostCategories
-<a name="API_GetCostCategories"></a>
 
 Retrieves an array of cost category names and values incurred cost.
 
@@ -113,8 +112,8 @@ Type: [Expression](API_Expression.md) object
 Required: No
 
  ** [MaxResults](#API_GetCostCategories_RequestSyntax) **   <a name="awscostmanagement-GetCostCategories-request-MaxResults"></a>
-This field is only used when the `SortBy` value is provided in the request.
 The maximum number of objects that are returned for this request. If `MaxResults` isn't specified with the `SortBy` value, the request returns 1000 results as the default value for this parameter.
+You can use this field only when you specify the `SortBy` value in the request. If you specify a nonzero `MaxResults` without `SortBy`, the request fails with a `ValidationException`.
 For `GetCostCategories`, MaxResults has an upper quota of 1000.
 Type: Integer
 Valid Range: Minimum value of 1.
@@ -199,7 +198,7 @@ The number of objects that are returned.
 Type: Integer
 
  ** [TotalSize](#API_GetCostCategories_ResponseSyntax) **   <a name="awscostmanagement-GetCostCategories-response-TotalSize"></a>
-The total number of objects.
+The total number of objects. When you specify `SortBy`, `TotalSize` equals `ReturnSize`: the number of values that Cost Explorer returns after it applies the `MaxResults` limit, not the number of values that match the request. Without `SortBy`, `TotalSize` can be greater than `ReturnSize`.
 Type: Integer
 
 ## Errors

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Connect to Amazon EMR on EKS Using an interface VPC endpoint
-<a name="security-vpc"></a>
 
 You can connect directly to Amazon EMR on EKS using [Interface VPC endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html) in your Virtual Private Cloud (VPC) instead of connecting over the internet. When you use an interface VPC endpoint, communication between your VPC and Amazon EMR on EKS is conducted entirely within the AWS network. Each VPC endpoint is represented by one or more [Elastic network interfaces (ENIs)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html) with private IP addresses in your VPC subnets.
 

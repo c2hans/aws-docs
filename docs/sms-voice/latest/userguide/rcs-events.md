@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-events.ht
 ---
 
 # RCS message events
-<a name="rcs-events"></a>
 
 When you send RCS messages with AWS End User Messaging, the RCS platform generates events that report message lifecycle changes, recipient interactions, and system-level outcomes. These events provide richer signals than traditional SMS delivery receipts, giving you real-time visibility into whether a message was delivered, read, expired, or fell back to SMS or MMS.
 

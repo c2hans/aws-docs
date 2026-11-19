@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/deplo
 ---
 
 # Amazon EKS
-<a name="deploy-container-insights-EKS"></a>
 
 Container Insights on Amazon EKS provides comprehensive observability for your Kubernetes workloads. Two approaches are available: OTel Container Insights (recommended) and Enhanced Container Insights (Classic). Both use the `amazon-cloudwatch-observability` EKS add-on with different configurations.
 

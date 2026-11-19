@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # GET List: Get a List of Redundancy Group Members
-<a name="set-up-redundancy-groups-get-list-of-members"></a>
 
 Get the list of the nodes that are members of the specified redundancy group.
 

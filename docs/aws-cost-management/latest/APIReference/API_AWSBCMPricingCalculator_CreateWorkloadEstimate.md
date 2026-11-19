@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CreateWorkloadEstimate
-<a name="API_AWSBCMPricingCalculator_CreateWorkloadEstimate"></a>
 
  Creates a new workload estimate to model costs for a specific workload.
 

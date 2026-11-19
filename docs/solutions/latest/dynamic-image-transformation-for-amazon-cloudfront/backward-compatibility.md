@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Backward compatibility
-<a name="backward-compatibility"></a>
 
 **Note**
  **Lambda Architecture Only**: The backward compatibility features described in this section only apply to the Lambda architecture template. The ECS architecture uses a different request format and does not support legacy Thumbor or custom request formats.

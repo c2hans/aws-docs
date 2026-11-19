@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_DescribeRece
 ---
 
 # DescribeReceiptRuleSet
-<a name="API_DescribeReceiptRuleSet"></a>
 
 Returns the details of the specified receipt rule set.
 

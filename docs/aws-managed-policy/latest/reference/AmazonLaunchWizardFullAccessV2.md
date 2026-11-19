@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonLaunchWizardFullAccessV2
-<a name="AmazonLaunchWizardFullAccessV2"></a>
 
 **Description**: Full access to AWS Launch wizard and other required services.
 

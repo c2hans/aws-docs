@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-cr
 ---
 
 # Copying content from an existing dataset
-<a name="md-create-dataset-existing-dataset"></a>
 
 If you've previously created a dataset, you can copy its contents to a new dataset. To create a dataset from an existing dataset with the AWS SDK, see [Creating a dataset using an existing dataset (SDK)](md-create-dataset-existing-dataset-sdk.md).
 

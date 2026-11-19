@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Unta
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes a tag from a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/classification
 ---
 
 # Classification Scopes
-<a name="classification-scopes"></a>
 
 The Classification Scopes resource provides a subset of information about the classification scope for your Amazon Macie account. The classification scope specifies Amazon Simple Storage Service (Amazon S3) buckets that you don't want Macie to analyze when it performs automated sensitive data discovery. It defines an S3 bucket exclusion list for automated sensitive data discovery.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # ACCT.01 Set account-level contacts to valid email distribution lists
-<a name="acct-01"></a>
 
 When setting up primary and alternate contacts for your AWS account, use an email distribution list instead of an individual's email address. Using an email distribution list makes sure that ownership and reachability are preserved as individuals in your organization come and go. Set alternate contacts for billing, operations, and security notifications, and use a separate email distribution list for each contact type. AWS uses these email addresses to contact you. Make sure that you retain access to them.
 

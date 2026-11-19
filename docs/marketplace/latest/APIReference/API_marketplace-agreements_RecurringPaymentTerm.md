@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # RecurringPaymentTerm
-<a name="API_marketplace-agreements_RecurringPaymentTerm"></a>
 
 Defines a pricing model where customers are charged a fixed recurring price at the end of each billing period.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeleteSna
 ---
 
 # DeleteSnapshot
-<a name="API_DeleteSnapshot"></a>
 
 Deletes an enhanced snapshot. Snapshots are not scoped to an application, so you can delete a snapshot independently of the application that it was created from.
 

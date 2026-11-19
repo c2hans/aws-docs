@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Batch
 ---
 
 # BatchDetectEntitiesItemResult
-<a name="API_BatchDetectEntitiesItemResult"></a>
 
 The result of calling the [BatchDetectEntities](API_BatchDetectEntities.md) operation. The operation returns one object for each document that is successfully processed by the operation.
 

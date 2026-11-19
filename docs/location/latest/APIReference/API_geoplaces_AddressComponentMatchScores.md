@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # AddressComponentMatchScores
-<a name="API_geoplaces_AddressComponentMatchScores"></a>
 
 Indicates how well the entire input matches the returned. It is equal to 1 if all input tokens are recognized and matched.
 

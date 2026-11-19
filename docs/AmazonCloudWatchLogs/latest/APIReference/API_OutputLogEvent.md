@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # OutputLogEvent
-<a name="API_OutputLogEvent"></a>
 
 Represents a log event.
 

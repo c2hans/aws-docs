@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/eb-rules-actions.html
 ---
 
 # Rule actions
-<a name="eb-rules-actions"></a>
 
 Rule actions process the recipients selected by a rule's `Conditions` and `Unless` lists. A rule contains from 1 through 10 actions. The actions run sequentially in the order that you configure.
 

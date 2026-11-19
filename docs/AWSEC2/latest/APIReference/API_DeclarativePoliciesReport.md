@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Declarati
 ---
 
 # DeclarativePoliciesReport
-<a name="API_DeclarativePoliciesReport"></a>
 
 Describes the metadata of the account status report.
 

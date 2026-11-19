@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa-working-moni
 ---
 
 # Monitor an Elastic Fabric Adapter on Amazon EC2
-<a name="efa-working-monitor"></a>
 
 You can use the following features to monitor the performance of your Elastic Fabric Adapters.
 

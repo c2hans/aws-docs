@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-EnableSQSEncryption`
-<a name="aws-enablesqsencryption"></a>
 
  **Description**
 

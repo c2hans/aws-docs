@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/working-wit
 ---
 
 # Creating AWS Clean Rooms ML models as a seed data provider
-<a name="working-with-machine-learning-sdp"></a>
 
 After the training data provider is done creating the ML model, the seed data provider can create and export the lookalike segment. The lookalike segment is a subset of the training data that most closely resembles the seed data.
 

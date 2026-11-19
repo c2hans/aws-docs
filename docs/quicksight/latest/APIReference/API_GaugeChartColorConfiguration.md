@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Gauge
 ---
 
 # GaugeChartColorConfiguration
-<a name="API_GaugeChartColorConfiguration"></a>
 
 The color configuration of a `GaugeChartVisual`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Unifie
 ---
 
 # UnifiedStudioSettings
-<a name="API_UnifiedStudioSettings"></a>
 
 The settings that apply to an Amazon SageMaker AI domain when you use it in Amazon SageMaker Unified Studio.
 

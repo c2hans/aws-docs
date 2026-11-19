@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListFindin
 ---
 
 # ListFindings
-<a name="API_ListFindings"></a>
 
 Lists findings for your environment.
 

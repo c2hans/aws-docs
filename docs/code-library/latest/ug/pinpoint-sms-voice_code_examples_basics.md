@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/pinpoint-sms-voic
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Basic examples for Amazon Pinpoint SMS and Voice API using AWS SDKs
-<a name="pinpoint-sms-voice_code_examples_basics"></a>
 
 The following code examples show how to use the basics of Amazon Pinpoint SMS and Voice API with AWS SDKs.
 

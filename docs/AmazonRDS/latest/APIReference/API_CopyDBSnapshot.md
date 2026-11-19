@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CopyDB
 ---
 
 # CopyDBSnapshot
-<a name="API_CopyDBSnapshot"></a>
 
 Copies the specified DB snapshot. The source DB snapshot must be in the `available` state.
 

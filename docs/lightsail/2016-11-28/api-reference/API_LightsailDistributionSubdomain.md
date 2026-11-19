@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_L
 ---
 
 # LightsailDistributionSubdomain
-<a name="API_LightsailDistributionSubdomain"></a>
 
 Describes the Lightsail subdomain of a distribution. The distribution is reachable at the subdomain's web address, which is the subdomain followed by `amazonlightsail.com`.
 

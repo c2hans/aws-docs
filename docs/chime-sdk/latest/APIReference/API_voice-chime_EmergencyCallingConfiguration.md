@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # EmergencyCallingConfiguration
-<a name="API_voice-chime_EmergencyCallingConfiguration"></a>
 
 The emergency calling configuration details associated with an Amazon Chime SDK Voice Connector.
 

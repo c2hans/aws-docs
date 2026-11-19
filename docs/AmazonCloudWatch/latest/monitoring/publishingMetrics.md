@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publi
 ---
 
 # Publish custom metrics (PutMetricData / EMF)
-<a name="publishingMetrics"></a>
 
 You can publish your own custom metrics to CloudWatch using the `PutMetricData` API or the AWS CLI. This approach uses CloudWatch namespaces, metric names, and dimensions.
 

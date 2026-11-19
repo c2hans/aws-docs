@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/information-ex
 ---
 
 # Flow block in Connect Customer: Information Extraction
-<a name="information-extraction-block"></a>
 
 Use the **Information Extraction** block to extract structured data from an email contact and its attachments, and then branch or route on the result within the flow.
 

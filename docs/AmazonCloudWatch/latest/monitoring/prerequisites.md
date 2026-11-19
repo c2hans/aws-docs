@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/prere
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 Make sure the following prerequisites are completed before installing the CloudWatch agent for the first time.
 

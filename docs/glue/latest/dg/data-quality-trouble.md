@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-trouble.html
 ---
 
 # Troubleshooting AWS Glue Data Quality errors
-<a name="data-quality-trouble"></a>
 
 If you encounter errors in AWS Glue Data Quality, use the following solutions to help you find the source of the problems and fix them.
 

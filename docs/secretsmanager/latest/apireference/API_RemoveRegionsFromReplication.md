@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_R
 ---
 
 # RemoveRegionsFromReplication
-<a name="API_RemoveRegionsFromReplication"></a>
 
 For a secret that is replicated to other Regions, deletes the secret replicas from the Regions you specify.
 

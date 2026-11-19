@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_VoiceEnh
 ---
 
 # VoiceEnhancementConfig
-<a name="API_VoiceEnhancementConfig"></a>
 
 Configuration settings for voice enhancement.
 

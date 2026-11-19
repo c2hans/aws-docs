@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/da-e
 ---
 
 # Directory Assessment Error Messages
-<a name="da-error-msgs"></a>
 
 To create a hybrid directory, you need to a passed directory assessment. Directory assessments can fail for various reasons.
 

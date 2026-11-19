@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/accessing-el
 ---
 
 # Accessing your ElastiCache cluster or replication group
-<a name="accessing-elasticache"></a>
 
 Your Amazon ElastiCache instances are designed to be accessed through an Amazon EC2 instance.
 

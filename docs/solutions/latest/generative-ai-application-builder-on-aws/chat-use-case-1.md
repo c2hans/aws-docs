@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Text use case
-<a name="chat-use-case-1"></a>
 
 ## Streaming support
 <a name="streaming-support"></a>

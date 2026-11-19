@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Auto session revocation
-<a name="auto-session-revocation-2"></a>
 
  Auto session revocation module, when activated, regularly inspects CloudFront access logs with an objective to detect session IDs that exhibit suspicious traffic patterns in terms of request rate and composition of viewer attributes. The [Session revocation guide](session-revocation-guide.md) section provides extensive overview of what factors are accounted for when determining the suspicion score and all the inputs and settings you have control of to impact the suspicion score formula and detection threshold. If playback session gets blocked unexpectedly, complete the following steps to work backwards and identify what factored in that decision.
 

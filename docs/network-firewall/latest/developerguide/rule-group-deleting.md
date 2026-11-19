@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/r
 ---
 
 # Deleting a stateless rule group
-<a name="rule-group-deleting"></a>
 
 Follow the guidance in this section to delete a rule group through the Network Firewall console.
 

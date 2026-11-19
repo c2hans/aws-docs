@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # ResourceReference
-<a name="sam-property-connector-resourcereference"></a>
 
 A reference to a resource that the [AWS::Serverless::Connector](sam-resource-connector.md) resource type uses.
 

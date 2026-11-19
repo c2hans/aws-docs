@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_I
 ---
 
 # IspPlacement
-<a name="API_IspPlacement"></a>
 
 An object that describes how email sent during the predictive inbox placement test was handled by a certain email provider.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GroundStation::MissionProfile
-<a name="aws-resource-groundstation-missionprofile"></a>
 
  Mission profiles specify parameters and provide references to config objects to define how Ground Station lists and executes contacts.
 

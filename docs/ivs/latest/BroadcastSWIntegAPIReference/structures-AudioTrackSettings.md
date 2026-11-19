@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # AudioTrackSettings
-<a name="structures-AudioTrackSettings"></a>
 
 Object specifying encoder-specific settings.
 

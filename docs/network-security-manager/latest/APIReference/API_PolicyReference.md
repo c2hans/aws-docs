@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # PolicyReference
-<a name="API_PolicyReference"></a>
 
 A reference to a policy in a create or update request.
 

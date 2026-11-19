@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Tuning
 ---
 
 # TuningJobCompletionCriteria
-<a name="API_TuningJobCompletionCriteria"></a>
 
 The job completion criteria.
 

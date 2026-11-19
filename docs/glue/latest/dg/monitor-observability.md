@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/monitor-observability.htm
 ---
 
 # Monitoring with AWS Glue Observability metrics
-<a name="monitor-observability"></a>
 
 **Note**
 AWS Glue Observability metrics is available on AWS Glue 4.0 and later versions.

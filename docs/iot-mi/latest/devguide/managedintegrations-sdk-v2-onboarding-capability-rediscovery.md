@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Capability rediscovery
-<a name="managedintegrations-sdk-v2-onboarding-capability-rediscovery"></a>
 
 This section describes the steps to relearn device capability information for hub-connected devices using capability rediscovery.
 

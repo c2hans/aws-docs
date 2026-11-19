@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Descr
 ---
 
 # DescribeDBInstances
-<a name="API_DescribeDBInstances"></a>
 
 Returns information about provisioned Amazon DocumentDB instances. This API supports pagination.
 

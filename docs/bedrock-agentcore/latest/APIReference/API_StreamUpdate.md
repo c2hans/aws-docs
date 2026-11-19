@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # StreamUpdate
-<a name="API_StreamUpdate"></a>
 
 Contains information about an update to a stream.
 

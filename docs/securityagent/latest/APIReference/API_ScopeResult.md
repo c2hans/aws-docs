@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Sc
 ---
 
 # ScopeResult
-<a name="API_ScopeResult"></a>
 
 The outcome of scoping a CI/CD pentest job's code changes, including the decision and the reason for it.
 

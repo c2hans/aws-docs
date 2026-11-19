@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/r
 ---
 
 # Recommendations for configuring resolved IP validation
-<a name="route53-resolved-ip-validation-recommendations"></a>
 
 The following recommendations help you roll out resolved IP validation safely and apply it across your network.
 

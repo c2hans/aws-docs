@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Ne
 ---
 
 # NewBGPPeer
-<a name="API_NewBGPPeer"></a>
 
 Information about a new BGP peer.
 

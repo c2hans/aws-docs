@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # Amazon EC2 Auto Scaling
-<a name="AWS_AutoScaling"></a>
 
 Amazon EC2 Auto Scaling supports creating Auto Scaling groups and related resources in AWS CloudFormation. This section details the supported resources and also includes examples of templates for each resource type.
 

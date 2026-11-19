@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_VpcRouterNet
 ---
 
 # VpcRouterNetworkInterfaceConfiguration
-<a name="API_VpcRouterNetworkInterfaceConfiguration"></a>
 
 The configuration settings for a router network interface within a VPC, including the security group IDs and subnet ID.
 

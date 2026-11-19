@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/app-per
 ---
 
 # Amazon S3 Bucket Storage
-<a name="app-persistence-s3-buckets"></a>
 
 When you enable application settings persistence, your users’ application customizations and Windows settings are automatically saved to a Virtual Hard Disk (VHD) file that is stored in an Amazon S3 bucket created in your AWS account. For every AWS Region, WorkSpaces Applications creates a bucket in your account that is unique to your account and the Region. All application settings configured by your users are stored in the bucket for that Region.
 

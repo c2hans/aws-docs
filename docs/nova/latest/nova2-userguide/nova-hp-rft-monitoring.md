@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-hp-rft-
 ---
 
 # Monitoring RFT training
-<a name="nova-hp-rft-monitoring"></a>
 
 Monitor key metrics during training to ensure effective learning and identify potential issues early.
 

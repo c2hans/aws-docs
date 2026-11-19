@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/t
 ---
 
 # Using Delta Lake with Amazon EMR on EKS
-<a name="tutorial-delta-lake"></a>
 
 Delta Lake is an open-source storage framework for building a Lakehouse architecture. The following shows how to set it up for use.
 

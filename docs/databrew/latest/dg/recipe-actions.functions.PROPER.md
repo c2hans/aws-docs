@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # PROPER
-<a name="recipe-actions.functions.PROPER"></a>
 
 Converts all alphabetical characters from the strings in the source column or custom values to proper case, and returns the result in a new column.
 

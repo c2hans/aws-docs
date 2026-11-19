@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Ampl
 ---
 
 # AmplifyBackendDeployFullAccess
-<a name="AmplifyBackendDeployFullAccess"></a>
 
 **Description**: Provides Amplify full access permissions to deploy Amplify backend resources (AWS AppSync, Amazon Cognito, Amazon S3 and other related services) via the AWS Cloud Development Kit (AWS CDK)
 

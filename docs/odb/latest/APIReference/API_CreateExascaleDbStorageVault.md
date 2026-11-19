@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateExasca
 ---
 
 # CreateExascaleDbStorageVault
-<a name="API_CreateExascaleDbStorageVault"></a>
 
 Creates an Exascale storage vault.
 

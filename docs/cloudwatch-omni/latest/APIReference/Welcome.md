@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/Welc
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 CloudWatch Omni is an AI-powered observability experience in Amazon CloudWatch for your applications and AI agents — either alone, or together. You reach Omni through a dedicated URL for your organization and sign in with the identities you already manage; Omni is accessible outside of the AWS Management Console.
 
@@ -29,4 +28,4 @@ Omni is an interface and set of workflows built on Amazon CloudWatch. It is not 
 
 You continue to configure how telemetry is collected and stored — log groups, retention, and ingestion endpoints — in the CloudWatch console.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/create-serve
 ---
 
 # Create a Memcached serverless cache
-<a name="create-serverless-cache-mem"></a>
 
 **AWS Management Console**
 

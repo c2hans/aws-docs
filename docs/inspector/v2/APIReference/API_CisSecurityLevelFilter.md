@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CisSecurit
 ---
 
 # CisSecurityLevelFilter
-<a name="API_CisSecurityLevelFilter"></a>
 
  The CIS security level filter. Security level refers to the Benchmark levels that CIS assigns to a profile.
 

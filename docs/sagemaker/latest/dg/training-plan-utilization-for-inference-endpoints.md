@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-plan-utiliz
 ---
 
 # Using training plans for SageMaker inference endpoints
-<a name="training-plan-utilization-for-inference-endpoints"></a>
 
 You can use a SageMaker training plans to deploy inference endpoints with predictable access to GPU capacity. When you create a training plan, set the target resource to "endpoint". This secures compute instances specifically for inference workloads.
 

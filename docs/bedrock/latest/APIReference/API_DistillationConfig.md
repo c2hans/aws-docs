@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Distilla
 ---
 
 # DistillationConfig
-<a name="API_DistillationConfig"></a>
 
 Settings for distilling a foundation model into a smaller and more efficient model.
 

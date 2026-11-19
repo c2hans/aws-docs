@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ExascaleConf
 ---
 
 # ExascaleConfiguration
-<a name="API_ExascaleConfiguration"></a>
 
 The Exascale storage configuration of an Exadata infrastructure.
 

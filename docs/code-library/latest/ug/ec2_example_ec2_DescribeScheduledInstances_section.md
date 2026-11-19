@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ec2_example_ec2_D
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `DescribeScheduledInstances` with a CLI
-<a name="ec2_example_ec2_DescribeScheduledInstances_section"></a>
 
 The following code examples show how to use `DescribeScheduledInstances`.
 

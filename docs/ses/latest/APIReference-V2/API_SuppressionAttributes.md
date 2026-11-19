@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Suppressi
 ---
 
 # SuppressionAttributes
-<a name="API_SuppressionAttributes"></a>
 
 An object that contains information about the email address suppression preferences for your account in the current AWS Region.
 

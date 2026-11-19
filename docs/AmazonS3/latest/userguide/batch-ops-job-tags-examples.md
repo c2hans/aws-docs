@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/batch-ops-job-
 ---
 
 # Controlling permissions for Batch Operations using job tags
-<a name="batch-ops-job-tags-examples"></a>
 
 To help you manage your Amazon S3 Batch Operations jobs, you can add *job tags*. With job tags, you can control access to your Batch Operations jobs and enforce that tags be applied when any job is created.
 

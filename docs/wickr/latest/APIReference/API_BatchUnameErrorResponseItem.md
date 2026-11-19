@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_BatchUname
 ---
 
 # BatchUnameErrorResponseItem
-<a name="API_BatchUnameErrorResponseItem"></a>
 
 Contains error information for a username hash lookup that failed in a batch uname lookup request.
 

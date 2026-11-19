@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Collect Java Management Extensions (JMX) metrics
-<a name="CloudWatch-Agent-JMX-metrics"></a>
 
 You can use the CloudWatch agent to collect Java Management Extensions (JMX) metrics from your Java applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/reading
 ---
 
 # Reading the service price list file for a Savings Plan
-<a name="reading-service-price-list-file-for-savings-plans"></a>
 
 |  |
 | --- |

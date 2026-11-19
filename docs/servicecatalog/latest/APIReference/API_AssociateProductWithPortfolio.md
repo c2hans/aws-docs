@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_A
 ---
 
 # AssociateProductWithPortfolio
-<a name="API_AssociateProductWithPortfolio"></a>
 
 Associates the specified product with the specified portfolio.
 

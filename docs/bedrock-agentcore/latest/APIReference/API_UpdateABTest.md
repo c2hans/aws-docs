@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # UpdateABTest
-<a name="API_UpdateABTest"></a>
 
 Updates an A/B test's configuration, including variants, traffic allocation, evaluation settings, or execution status.
 

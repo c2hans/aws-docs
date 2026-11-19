@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VerifiedAccessInstance
-<a name="aws-resource-ec2-verifiedaccessinstance"></a>
 
 An AWS Verified Access instance is a regional entity that evaluates application requests and grants access only when your security requirements are met.
 

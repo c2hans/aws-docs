@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/perfor
 ---
 
 # Example
-<a name="performing-bulk-tasks-get-one-task-report-example"></a>
 
 The response to this request provides information about the task\_report with the ID 5; three of its seven actions have completed. The bulk task with ID 3 belongs to Channel 13 and has succeeded, the bulk task with ID 4 belongs to Channel 15 and is pending, and so on.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/getting-started.h
 ---
 
 # Get started with AWS PrivateLink
-<a name="getting-started"></a>
 
 This tutorial demonstrates how to send a request from an EC2 instance in a private subnet to Amazon CloudWatch using AWS PrivateLink.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-re
 ---
 
 # Step 1. Collect CMDB data
-<a name="cmdb"></a>
 
 The first step is to collect data to identify databases that are potential candidates for refactoring on AWS. There are eight data elements that are essential to this phase:
 + Server name

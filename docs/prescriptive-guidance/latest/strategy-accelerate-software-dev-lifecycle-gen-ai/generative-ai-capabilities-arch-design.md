@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Generative AI use cases for architecture and design
-<a name="generative-ai-capabilities-arch-design"></a>
 
 With a solid foundation of project management and well-defined requirements, the next critical capability is architecture and design. Here, generative AI is opening up new possibilities for creating robust, scalable, and efficient software architectures. AI-powered design tools can analyze requirements and constraints to suggest optimal architectural patterns and design approaches. They generate multiple design alternatives, and each is optimized for different priorities, such as performance, scalability, or maintainability. For example, a solutions architect might use an AI assistant to quickly generate several high-level architectural designs based on the project requirements. This AI-augmented approach accelerates the design process and helps architects make more informed decisions. This leads to more robust and future-proof software designs.
 

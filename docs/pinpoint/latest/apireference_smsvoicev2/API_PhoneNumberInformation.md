@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # PhoneNumberInformation
-<a name="API_PhoneNumberInformation"></a>
 
 The information for a phone number, in E.164 format, in an AWS account.
 

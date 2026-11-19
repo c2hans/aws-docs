@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_AppAuthorizatio
 ---
 
 # AppAuthorization
-<a name="API_AppAuthorization"></a>
 
 Contains information about an app authorization.
 

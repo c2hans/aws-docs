@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SUS06-BP04 Increase utilization of build environments
-<a name="sus_sus_dev_a4"></a>
 
  Increase the utilization of resources to develop, test, and build your workloads.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateVolume
 ---
 
 # UpdateVolume
-<a name="API_UpdateVolume"></a>
 
 Updates the configuration of an Amazon FSx for NetApp ONTAP or Amazon FSx for OpenZFS volume.
 

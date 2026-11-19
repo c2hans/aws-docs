@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/migrating-vmware-virtual
 ---
 
 # Products
-<a name="products"></a>
 
 Nutanix offers multiple integrated products to help customers move workloads into Nutanix Cloud Clusters (NC2) on AWS. Below is a mapping of notable VMware products along with Nutanix products that possess corresponding functionality:
 

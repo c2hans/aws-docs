@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSR
 ---
 
 # AWSResilienceHubServiceRolePolicy
-<a name="AWSResilienceHubServiceRolePolicy"></a>
 
 **Description**: Allows AWS Resilience Hub to access resources in your account for resilience discovery, assessment, and management.
 

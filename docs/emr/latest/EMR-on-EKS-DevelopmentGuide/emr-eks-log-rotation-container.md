@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # Using Spark container log rotation
-<a name="emr-eks-log-rotation-container"></a>
 
 With Amazon EMR 6.11.0 and later, you can turn on the Spark container log rotation feature for Amazon EMR on EKS. Instead of generating a single `stdout` or `stderr` log file, this feature rotates the file based on your configured rotation size and removes the oldest log files from the container.
 

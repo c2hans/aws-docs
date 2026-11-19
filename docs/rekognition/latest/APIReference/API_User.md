@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_User
 ---
 
 # User
-<a name="API_User"></a>
 
 Metadata of the user stored in a collection.
 

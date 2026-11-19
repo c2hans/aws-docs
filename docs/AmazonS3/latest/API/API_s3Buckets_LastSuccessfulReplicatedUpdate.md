@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_LastSu
 ---
 
 # LastSuccessfulReplicatedUpdate
-<a name="API_s3Buckets_LastSuccessfulReplicatedUpdate"></a>
 
 Contains information about the most recent successful replication update to a destination.
 

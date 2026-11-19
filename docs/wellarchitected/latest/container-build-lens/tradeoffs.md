@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Tradeoffs
-<a name="tradeoffs"></a>
 
 | CONTAINER\_BUILD\_PERF\_06: How do you optimize the size of your target image? |
 | --- |

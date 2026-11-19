@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/ai-business-str
 ---
 
 # In-scope AWS services and features
-<a name="aib-01-in-scope-services"></a>
 
 The following list contains AWS services and features that are in scope for the exam. This list is non-exhaustive and is subject to change. AWS offerings appear in categories that align with the offerings' primary functions:
 

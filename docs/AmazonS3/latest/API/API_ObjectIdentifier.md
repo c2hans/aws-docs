@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ObjectIdentifier
 ---
 
 # ObjectIdentifier
-<a name="API_ObjectIdentifier"></a>
 
 Object Identifier is unique value to identify objects.
 

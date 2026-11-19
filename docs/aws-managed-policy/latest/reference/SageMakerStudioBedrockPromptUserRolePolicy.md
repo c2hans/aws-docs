@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Sage
 ---
 
 # SageMakerStudioBedrockPromptUserRolePolicy
-<a name="SageMakerStudioBedrockPromptUserRolePolicy"></a>
 
 **Description**: Provides access to an Amazon Bedrock prompt and its configuration in SageMaker Studio.
 

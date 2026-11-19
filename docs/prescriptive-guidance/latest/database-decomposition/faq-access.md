@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # FAQs about controlling database access
-<a name="faq-access"></a>
 
 Controlling database access by using the database wrapper service pattern is discussed in the [Controlling database access during decomposition](access.md) section of this guide. This FAQ section addresses common concerns and questions about introducing a database wrapper service, including its potential impact on performance, handling of existing stored procedures, managing complex transactions, and overseeing schema changes.
 

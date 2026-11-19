@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListFlows.ht
 ---
 
 # ListFlows
-<a name="API_ListFlows"></a>
 
  Displays a list of flows that are associated with this account. This request returns a paginated result.
 

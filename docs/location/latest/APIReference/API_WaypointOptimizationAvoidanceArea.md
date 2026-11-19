@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # WaypointOptimizationAvoidanceArea
-<a name="API_WaypointOptimizationAvoidanceArea"></a>
 
 The area to be avoided.
 

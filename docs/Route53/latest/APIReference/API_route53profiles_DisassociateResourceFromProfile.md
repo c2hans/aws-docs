@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53p
 ---
 
 # DisassociateResourceFromProfile
-<a name="API_route53profiles_DisassociateResourceFromProfile"></a>
 
  Dissoaciated a specified resource, from the Route 53 Profile.
 

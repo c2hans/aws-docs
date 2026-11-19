@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Web
 ---
 
 # WebhookFilterRule
-<a name="API_WebhookFilterRule"></a>
 
 The event criteria that specify when a webhook notification is sent to your URL.
 

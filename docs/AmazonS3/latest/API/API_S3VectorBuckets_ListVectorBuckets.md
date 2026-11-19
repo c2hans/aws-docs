@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # ListVectorBuckets
-<a name="API_S3VectorBuckets_ListVectorBuckets"></a>
 
 Returns a list of all the vector buckets that are owned by the authenticated sender of the request.
 

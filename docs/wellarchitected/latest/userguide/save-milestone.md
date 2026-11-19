@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/save-mi
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Saving a milestone for a workload in AWS WA Tool
-<a name="save-milestone"></a>
 
 You can save a milestone for a workload at any time. A milestone records the current state of the workload.
 

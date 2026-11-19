@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamRouti
 ---
 
 # IpamRoutingPolicyRegistration
-<a name="API_IpamRoutingPolicyRegistration"></a>
 
 Contains information about a routing policy registration that represents a Route Origin Authorization (ROA) managed through IPAM.
 

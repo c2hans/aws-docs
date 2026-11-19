@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mi
 ---
 
 # Detailed portfolio discovery
-<a name="detailed-portfolio-discovery"></a>
 
 This is where you start to pull the pieces together and develop a strategy for migration. At this stage, you want to consider where your cloud journey fits into your organization's larger business strategy and find opportunities for alignment of vision. A well-aligned migration strategy with a supporting business case and a thorough application migration plan sets the proper groundwork for cloud adoption success.
 

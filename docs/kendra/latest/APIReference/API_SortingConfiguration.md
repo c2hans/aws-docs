@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_SortingCo
 ---
 
 # SortingConfiguration
-<a name="API_SortingConfiguration"></a>
 
 Specifies the document attribute to use to sort the response to a Amazon Kendra query. You can specify a single attribute for sorting. The attribute must have the `Sortable` flag set to `true`, otherwise Amazon Kendra returns an exception.
 

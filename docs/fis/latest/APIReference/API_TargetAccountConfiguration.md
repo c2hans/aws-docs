@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_TargetAccoun
 ---
 
 # TargetAccountConfiguration
-<a name="API_TargetAccountConfiguration"></a>
 
 Describes a target account configuration.
 

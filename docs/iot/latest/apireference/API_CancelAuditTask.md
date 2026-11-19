@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CancelAuditT
 ---
 
 # CancelAuditTask
-<a name="API_CancelAuditTask"></a>
 
 Cancels an audit that is in progress. The audit can be either scheduled or on demand. If the audit isn't in progress, an "InvalidRequestException" occurs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # CanaryRunStatus
-<a name="API_CanaryRunStatus"></a>
 
 This structure contains the status information about a canary run.
 

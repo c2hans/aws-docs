@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Attached
 ---
 
 # AttachedFileError
-<a name="API_AttachedFileError"></a>
 
 Error describing a failure to retrieve attached file metadata through BatchGetAttachedFileMetadata action.
 

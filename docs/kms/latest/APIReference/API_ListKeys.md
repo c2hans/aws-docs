@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_ListKeys.htm
 ---
 
 # ListKeys
-<a name="API_ListKeys"></a>
 
 Gets a list of all KMS keys in the caller's AWS account and Region.
 

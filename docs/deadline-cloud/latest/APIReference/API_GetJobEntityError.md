@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetJobEntityError
-<a name="API_GetJobEntityError"></a>
 
 The error for the job entity.
 

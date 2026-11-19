@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # OutboundConnection
-<a name="API_OutboundConnection"></a>
 
 Specifies details about an outbound cross-cluster connection.
 

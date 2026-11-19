@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Net
 ---
 
 # NetworkUpdateSettings
-<a name="API_NetworkUpdateSettings"></a>
 
 Contains the network configuration for directory update operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/talent/latest/userguide/getting-started.
 ---
 
 # Getting started with Amazon Connect Talent
-<a name="getting-started"></a>
 
 Amazon Connect Talent is an AI-powered hiring and candidate evaluation service integrated with Amazon Connect. Recruiters use it to create candidate evaluations, run AI-led interviews and assessments, and review candidate results. This chapter shows you how to sign in and find your way around the homepage.
 

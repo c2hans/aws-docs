@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationFilterCondition
-<a name="API_InvestigationFilterCondition"></a>
 
 Contains the values that an investigation attribute must match. Specify `Equals`, `NotEquals`, or both, each with at least one value. If you specify both, an investigation must match both conditions.
 

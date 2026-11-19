@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Hyb
 ---
 
 # HybridUpdateInfoEntry
-<a name="API_HybridUpdateInfoEntry"></a>
 
 Contains detailed information about a specific update activity for a hybrid directory component.
 

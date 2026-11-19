@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Storage optimization services
-<a name="storage-optimization-services"></a>
 
 With storage, you must balance performance against cost. This section contains several recommendations for potential storage configurations, based on HANA and the size of the instance selected.
 

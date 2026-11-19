@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Tuning Aurora MySQL with thread states
-<a name="AuroraMySQL.Managing.Tuning.thread-states"></a>
 
 The following table summarizes the most common general thread states for Aurora MySQL.
 

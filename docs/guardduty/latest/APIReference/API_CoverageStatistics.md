@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Covera
 ---
 
 # CoverageStatistics
-<a name="API_CoverageStatistics"></a>
 
 Information about the coverage statistics for a resource.
 

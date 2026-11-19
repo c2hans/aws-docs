@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteIn
 ---
 
 # DeleteIntegrationAssociation
-<a name="API_DeleteIntegrationAssociation"></a>
 
 Deletes an AWS resource association from an Connect Customer instance. The association must not have any use cases associated with it.
 

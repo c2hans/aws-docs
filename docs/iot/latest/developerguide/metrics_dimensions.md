@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/metrics_dimens
 ---
 
 # AWS IoT metrics and dimensions
-<a name="metrics_dimensions"></a>
 
 When you interact with AWS IoT, the service sends metrics and dimensions to CloudWatch every minute. You can use AWS IoT, use the CloudWatch console or AWS CLI to view these metrics.
 

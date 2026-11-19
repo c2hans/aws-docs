@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AmiAggrega
 ---
 
 # AmiAggregationResponse
-<a name="API_AmiAggregationResponse"></a>
 
 A response that contains the results of a finding aggregation by AMI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudSearchReadOnlyAccess
-<a name="CloudSearchReadOnlyAccess"></a>
 
 **Description**: Provides read only access to the Amazon CloudSearch configuration service.
 

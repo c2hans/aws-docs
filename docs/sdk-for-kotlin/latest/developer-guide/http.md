@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/ht
 ---
 
 # HTTP
-<a name="http"></a>
 
 This section covers the configuration of HTTP-related settings in the AWS SDK for Kotlin.
 

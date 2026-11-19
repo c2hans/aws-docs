@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/migrating-fsx-onta
 ---
 
 # Migrating to FSx for ONTAP using NetApp SnapMirror
-<a name="migrating-fsx-ontap-snapmirror"></a>
 
 You can migrate your NetApp ONTAP file systems to Amazon FSx for NetApp ONTAP using NetApp SnapMirror.
 

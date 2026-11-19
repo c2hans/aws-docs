@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Co
 ---
 
 # ComponentPropertyGroupRequest
-<a name="API_ComponentPropertyGroupRequest"></a>
 
 The component property group request.
 

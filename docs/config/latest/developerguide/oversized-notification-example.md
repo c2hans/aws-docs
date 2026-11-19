@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/oversized-n
 ---
 
 # Example Oversized Configuration Item Change Notification
-<a name="oversized-notification-example"></a>
 
 When AWS Config detects a configuration change for a resource, it sends a configuration item (CI) notification. If the notification exceeds the maximum size allowed by Amazon Simple Notification Service (Amazon SNS), the notification includes a brief summary of the configuration item.
 

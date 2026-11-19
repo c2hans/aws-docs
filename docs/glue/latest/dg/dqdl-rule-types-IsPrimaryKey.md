@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-IsPrimary
 ---
 
 # IsPrimaryKey
-<a name="dqdl-rule-types-IsPrimaryKey"></a>
 
 Checks whether a column contains a primary key. A column contains a primary key if all of the values in the column are unique and complete (non-null). You can also check for primary keys with multiple columns.
 

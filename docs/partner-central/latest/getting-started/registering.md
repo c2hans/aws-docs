@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/r
 ---
 
 # Registering in AWS Partner Central
-<a name="registering"></a>
 
 Registering as an AWS Partner is the first step for your AWS Partner business. This section guides you through the registration process, including providing required information and completing verification steps.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-geo-ma
 ---
 
 # Amazon Location Service Maps events
-<a name="events-ref-geo-maps"></a>
 
 Amazon Location Maps sends service events directly to EventBridge.
 

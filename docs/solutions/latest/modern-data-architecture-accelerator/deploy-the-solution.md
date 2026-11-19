@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Deploy the solution
-<a name="deploy-the-solution"></a>
 
 The solution is mainly deployed as an AWS CDK application. Customers can also use a CloudFormation template to deploy the solution based on some sample configurations.
 

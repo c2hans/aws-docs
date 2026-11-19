@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-lake-cust
 ---
 
 # Customer profiles contact data in the Connect Customer data lake
-<a name="data-lake-customer-profiles-contact-data"></a>
 
 The following table contains customer profiles contact data.
 

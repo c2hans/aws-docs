@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Updat
 ---
 
 # UpdateApplication
-<a name="API_UpdateApplication"></a>
 
 Updates the application.
 

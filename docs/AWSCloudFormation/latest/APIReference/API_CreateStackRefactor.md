@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # CreateStackRefactor
-<a name="API_CreateStackRefactor"></a>
 
 Creates a refactor across multiple stacks, with the list of stacks and resources that are affected.
 
@@ -39,7 +38,7 @@ Required: Yes
 The following element is returned by the service.
 
  ** StackRefactorId **
-The ID associated with the stack refactor created from the [CreateStackRefactor](#API_CreateStackRefactor) action.
+The ID associated with the stack refactor created from the [CreateStackRefactor](API_CreateStackRefactor.md) action.
 Type: String
 
 ## Errors

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_AuthCha
 ---
 
 # AuthChallengeRequestEvent
-<a name="API_AuthChallengeRequestEvent"></a>
 
 An authentication verification event activated by an end user request to use a custom plugin.
 

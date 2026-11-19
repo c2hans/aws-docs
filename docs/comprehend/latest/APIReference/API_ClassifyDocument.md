@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Class
 ---
 
 # ClassifyDocument
-<a name="API_ClassifyDocument"></a>
 
 Creates a classification request to analyze a single document in real-time. `ClassifyDocument` supports the following model types:
 + Custom classifier - a custom model that you have created and trained. For input, you can provide plain text, a single-page document (PDF, Word, or image), or Amazon Textract API output. For more information, see [Custom classification](https://docs.aws.amazon.com/comprehend/latest/dg/how-document-classification.html) in the *Amazon Comprehend Developer Guide*.

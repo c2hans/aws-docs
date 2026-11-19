@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Invocati
 ---
 
 # InvocationLogSource
-<a name="API_InvocationLogSource"></a>
 
 A storage location for invocation logs.
 

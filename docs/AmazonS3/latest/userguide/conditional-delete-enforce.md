@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/conditional-de
 ---
 
 # Enforce conditional deletes on Amazon S3 buckets
-<a name="conditional-delete-enforce"></a>
 
  By using Amazon S3 bucket policies, you can enforce `If-Match`header with conditional deletes for objects in general purpose buckets. If the `If-Match` header doesn’t exist, the request will be denied with an `403 Access Denied`. A bucket policy is a resource-based policy that you can use to grant access permissions to your bucket and the objects in it. Only the bucket owner can associate a policy with a bucket. For more information about bucket policies, see [Bucket policies for Amazon S3](bucket-policies.md).
 

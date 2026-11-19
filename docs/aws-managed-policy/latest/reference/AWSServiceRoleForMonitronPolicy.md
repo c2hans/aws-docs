@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForMonitronPolicy
-<a name="AWSServiceRoleForMonitronPolicy"></a>
 
 **Description**: Grants Amazon Monitron permissions to manage AWS resources, including AWS SSO user assignment on your behalf.
 

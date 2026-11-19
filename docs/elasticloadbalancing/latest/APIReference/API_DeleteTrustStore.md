@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DeleteTrustStore
-<a name="API_DeleteTrustStore"></a>
 
 Deletes a trust store.
 

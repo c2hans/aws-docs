@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-azurecosmos-targ
 ---
 
 # Creating a Azure Cosmos DB target node
-<a name="creating-azurecosmos-target-node"></a>
 
 ## Prerequisites needed
 <a name="creating-azurecosmos-target-node-prerequisites"></a>

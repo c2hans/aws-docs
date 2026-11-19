@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTime
 ---
 
 # RealTimeContactAnalysisSegmentIssues
-<a name="API_RealTimeContactAnalysisSegmentIssues"></a>
 
 Segment type containing a list of detected issues.
 

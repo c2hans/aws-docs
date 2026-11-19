@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/customizing-soluti
 ---
 
 # Configuring a custom solution in Amazon Personalize
-<a name="customizing-solution-config"></a>
 
 After you finish importing data, you are ready to create a solution. A *solution* refers to the combination of an Amazon Personalize recipe, customized training parameters, and one or more solution versions. A *solution version* refers to a trained machine learning model.
 

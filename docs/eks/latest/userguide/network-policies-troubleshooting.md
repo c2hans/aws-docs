@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/network-policies-tr
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Troubleshooting Kubernetes network policies for Amazon EKS
-<a name="network-policies-troubleshooting"></a>
 
 This is the troubleshooting guide for the network policy feature of the Amazon VPC CNI.
 

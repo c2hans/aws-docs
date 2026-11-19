@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # SolutionBase
-<a name="API_SolutionBase"></a>
 
 Specifies minimal information for the solution offered to solve the customer's business problem.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Canc
 ---
 
 # CancelExportTask
-<a name="API_CancelExportTask"></a>
 
 Cancel the specified export task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-sns-
 ---
 
 # Subscription Workflow Tutorial Part 1: Using Amazon SWF with the AWS SDK for Ruby
-<a name="swf-sns-tutorial-setup-swf"></a>
 
 **Topics**
 + [Include the AWS SDK for Ruby](#include-the-sdk-for-ruby)

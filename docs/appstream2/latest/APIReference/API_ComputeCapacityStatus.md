@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Compu
 ---
 
 # ComputeCapacityStatus
-<a name="API_ComputeCapacityStatus"></a>
 
 Describes the capacity status for a fleet.
 

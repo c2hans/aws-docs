@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-etl-scala-apis-glue-
 ---
 
 # AWS Glue Scala DataSource trait
-<a name="glue-etl-scala-apis-glue-datasource-trait"></a>
 
 **Package: com.amazonaws.services.glue**
 

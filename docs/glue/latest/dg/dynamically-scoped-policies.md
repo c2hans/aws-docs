@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dynamically-scoped-polici
 ---
 
 # Granting dynamically scoped policies for job execution
-<a name="dynamically-scoped-policies"></a>
 
 AWS Glue offers a powerful new capability: dynamic session policies for job executions. This feature allows you to specify custom, fine-grained permissions for each job run without creating multiple IAM roles.
 

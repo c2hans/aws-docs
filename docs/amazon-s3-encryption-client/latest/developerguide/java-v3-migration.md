@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-s3-encryption-client/latest/devel
 ---
 
 # S3 Encryption Client Migration (V2 to V3)
-<a name="java-v3-migration"></a>
 
 **Note**
 If you're using S3 Encryption Client V3 and want to migrate to V4, see [S3 Encryption Client Migration (V3 to V4)](java-v4-migration.md).

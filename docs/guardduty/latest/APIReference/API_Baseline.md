@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Baseli
 ---
 
 # Baseline
-<a name="API_Baseline"></a>
 
 Contains a comparison of findings against the normal behavior of an account.
 

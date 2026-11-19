@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ru
 ---
 
 # Run stateful workloads with persistent data storage by using Amazon EFS on Amazon EKS with AWS Fargate
-<a name="run-stateful-workloads-with-persistent-data-storage-by-using-amazon-efs-on-amazon-eks-with-aws-fargate"></a>
 
 *Ricardo Morais, Rodrigo Bersa, and Lucio Pereira, Amazon Web Services*
 

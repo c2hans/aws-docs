@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_pol
 ---
 
 # IAM policy validation
-<a name="access_policies_policy-validator"></a>
 
 A [policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/policies_overview.html) is a JSON document that uses the [IAM policy grammar](https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-grammar.html). When you attach a policy to an IAM entity, such as a user, group, or role, it grants permissions to that entity.
 

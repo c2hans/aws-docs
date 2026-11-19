@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Varian
 ---
 
 # VariantProperty
-<a name="API_VariantProperty"></a>
 
 Specifies a production variant property type for an Endpoint.
 

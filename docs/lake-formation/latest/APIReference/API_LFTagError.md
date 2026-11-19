@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_L
 ---
 
 # LFTagError
-<a name="API_LFTagError"></a>
 
 A structure containing an error related to a `TagResource` or `UnTagResource` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/definiti
 ---
 
 # Definitions
-<a name="definitions-perf"></a>
 
  There are five focus areas for performance efficiency:
 + [ Architecture selection ](architecture-selection.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Configuring the AWS Database Encryption SDK
-<a name="configure"></a>
 
 |  |
 | --- |

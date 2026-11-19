@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/interacting-with-
 ---
 
 # Interacting with flows in runtime mode
-<a name="interacting-with-flows-in-runtime-mode"></a>
 
 When you open a flow, you select **Run mode** to execute it. There are three ways to start a flow.
 

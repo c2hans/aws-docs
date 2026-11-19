@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/disallow-inputs.h
 ---
 
 # How to allow or disallow input location types
-<a name="disallow-inputs"></a>
 
 AWS Elemental MediaConvert supports Amazon S3, HTTPS, and HTTP input location types for your input media and files. You can allow or disallow access to one or more of these input location types by using a MediaConvert policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/using-multi-facto
 ---
 
 # Using multi-factor authentication (MFA) with AWS Quick
-<a name="using-multi-factor-authentication-mfa"></a>
 
 |  |
 | --- |

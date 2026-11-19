@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/userguide/sns-require
 End of support notice: Amazon DevOps Guru will stop accepting new customers on October 29, 2026. Current customers will not be impacted and can continue using Amazon DevOps Guru until September 30, 2027. After September 30, 2027 you will no longer be able to access Amazon DevOps Guru. For more information, see [Amazon DevOps Guru end of support](devops-guru-end-of-support.md).
 
 # Permissions for Amazon SNS topics
-<a name="sns-required-permissions"></a>
 
 Use the information in this topic only if you want to configure Amazon DevOps Guru to deliver notifications to Amazon SNS topics owned by another AWS account.
 

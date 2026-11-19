@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteRe
 ---
 
 # RouteRentalTravelStep
-<a name="API_RouteRentalTravelStep"></a>
 
 A step that must be performed during the travel portion of the leg.
 

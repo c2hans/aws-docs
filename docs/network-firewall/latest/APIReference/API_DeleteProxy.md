@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DeleteProxy
-<a name="API_DeleteProxy"></a>
 
 Deletes the specified proxy.
 

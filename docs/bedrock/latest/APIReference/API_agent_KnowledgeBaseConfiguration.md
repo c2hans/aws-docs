@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Kn
 ---
 
 # KnowledgeBaseConfiguration
-<a name="API_agent_KnowledgeBaseConfiguration"></a>
 
 Contains details about the vector embeddings configuration of the knowledge base.
 

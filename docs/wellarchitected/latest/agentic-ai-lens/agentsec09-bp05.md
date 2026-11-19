@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSEC09-BP05 Implement runtime threat detection, security event correlation, and automated remediation for agents
-<a name="agentsec09-bp05"></a>
 
  Scanning finds latent weaknesses. Runtime detection catches the attacks happening now. Correlating events across agent interaction surfaces and triggering automated remediation compresses the gap between an active exploit and the response that contains it.
 

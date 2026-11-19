@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Further reading
-<a name="further-reading"></a>
 
  For additional information, see the following:
 +  [AWS Well-Architected Framework](https://aws.amazon.com/well-architected)

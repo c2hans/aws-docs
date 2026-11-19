@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_SchemaShortI
 ---
 
 # SchemaShortInfoResponse
-<a name="API_SchemaShortInfoResponse"></a>
 
 Describes a schema in a Fleet Advisor collector inventory.
 

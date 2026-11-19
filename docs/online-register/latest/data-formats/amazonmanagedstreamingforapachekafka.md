@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Managed Streaming for Apache Kafka
-<a name="amazonmanagedstreamingforapachekafka"></a>
 
 Amazon Managed Streaming for Apache Kafka provides the following APIs for data retrieval.
 

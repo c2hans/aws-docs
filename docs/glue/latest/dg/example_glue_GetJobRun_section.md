@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/example_glue_GetJobRun_se
 ---
 
 # Use `GetJobRun` with an AWS SDK or CLI
-<a name="example_glue_GetJobRun_section"></a>
 
 The following code examples show how to use `GetJobRun`.
 

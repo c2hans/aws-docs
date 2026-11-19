@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_directconnec
 ---
 
 # Get started with dedicated network connections using the CLI
-<a name="example_directconnect_GettingStarted_051_section"></a>
 
 The following code example shows how to:
 + Use ec2 CreateVpnGateway

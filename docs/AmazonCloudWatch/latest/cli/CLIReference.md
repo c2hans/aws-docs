@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/CLIReference
 ---
 
 # Amazon CloudWatch command line interface reference
-<a name="CLIReference"></a>
 
 AWS provides two sets of command line tools that each support CloudWatch. This section describes the CloudWatch command line interface (CLI).
 

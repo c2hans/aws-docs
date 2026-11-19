@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/add-auth-r
 ---
 
 # Configure authorization using the built-in database with Linux
-<a name="add-auth-rules-database-emqx-broker-linux"></a>
 
 When you configure authorization rules, there are two configuration choices that depend on your deployment setup.
 + **Docker** – If you're running a standard Docker installation without Litmus Edge, use the **Docker bridge gateway** configuration. This is typically the case when you've only deployed AWS IoT SiteWise components.

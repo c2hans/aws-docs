@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appintegrations/latest/APIReference/API_
 ---
 
 # OnDemandConfiguration
-<a name="API_connect-app-integrations_OnDemandConfiguration"></a>
 
 The start and end time for data pull from the source.
 

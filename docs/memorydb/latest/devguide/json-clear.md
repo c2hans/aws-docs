@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-clear.html
 ---
 
 # JSON.CLEAR
-<a name="json-clear"></a>
 
 Clear the arrays or an objects at the path.
 

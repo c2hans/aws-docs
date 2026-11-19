@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/setting-u
 ---
 
 # Setting up Amazon Connect Health
-<a name="setting-up"></a>
 
 This section is intended for IT administrators who are responsible for setting up and configuring Amazon Connect Health.
 

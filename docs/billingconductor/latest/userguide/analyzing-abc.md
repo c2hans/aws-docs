@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/analyz
 ---
 
 # Analyzing your margins
-<a name="analyzing-abc"></a>
 
 You can use the margin summary and margin details in AWS Billing Conductor to analyze your margins both in aggregate and with specific billing groups.
 

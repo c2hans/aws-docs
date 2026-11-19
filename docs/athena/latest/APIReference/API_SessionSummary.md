@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_SessionSu
 ---
 
 # SessionSummary
-<a name="API_SessionSummary"></a>
 
 Contains summary information about a session.
 

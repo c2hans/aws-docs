@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableBorderOptions
-<a name="API_TableBorderOptions"></a>
 
 The border options for a table border.
 

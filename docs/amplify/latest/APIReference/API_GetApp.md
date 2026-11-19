@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_GetApp.h
 ---
 
 # GetApp
-<a name="API_GetApp"></a>
 
 Returns an existing Amplify app specified by an app ID.
 

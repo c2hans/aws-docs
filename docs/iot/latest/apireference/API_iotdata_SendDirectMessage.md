@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_Send
 ---
 
 # SendDirectMessage
-<a name="API_iotdata_SendDirectMessage"></a>
 
 Sends an MQTT message directly to a specific client identified by its client ID.
 

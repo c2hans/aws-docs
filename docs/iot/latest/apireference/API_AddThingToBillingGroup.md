@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AddThingToBi
 ---
 
 # AddThingToBillingGroup
-<a name="API_AddThingToBillingGroup"></a>
 
 Adds a thing to a billing group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-data
 ---
 
 # Tagging HealthLake data stores
-<a name="managing-data-stores-tagging"></a>
 
 You can assign metadata to HealthLake data stores in the form of tags. Each tag is a label consisting of a user-defined key and value. Tags help you manage, identify, organize, search for, and filter data stores.
 

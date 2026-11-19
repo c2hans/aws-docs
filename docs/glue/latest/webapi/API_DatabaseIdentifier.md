@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DatabaseIdentifie
 ---
 
 # DatabaseIdentifier
-<a name="API_DatabaseIdentifier"></a>
 
 A structure that describes a target database for resource linking.
 

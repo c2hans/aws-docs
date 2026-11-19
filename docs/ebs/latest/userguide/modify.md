@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/modify.html
 ---
 
 # Modify Amazon Data Lifecycle Manager policies
-<a name="modify"></a>
 
 Keep the following in mind when modifying Amazon Data Lifecycle Manager policies:
 + If you modify an AMI or snapshot policy by removing its target tags, the volumes or instances with those tags are no longer managed by the policy.

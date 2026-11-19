@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Lis
 ---
 
 # ListMssManifestConfiguration
-<a name="API_ListMssManifestConfiguration"></a>
 
 Summary information about a Microsoft Smooth Streaming (MSS) manifest configuration. This provides key details about the MSS manifest without including all configuration parameters.
 

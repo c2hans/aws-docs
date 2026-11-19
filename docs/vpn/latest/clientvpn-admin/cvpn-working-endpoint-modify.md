@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # Modify an AWS Client VPN endpoint
-<a name="cvpn-working-endpoint-modify"></a>
 
 You can modify a Client VPN endpoint by using the Amazon VPC Console or the AWS CLI. For more information about the fields you can Client VPN fields you can modify, see [Endpoint modification](cvpn-working-endpoints.md#cvpn-endpoints-modify-req).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_S
 ---
 
 # StateExitedEventDetails
-<a name="API_StateExitedEventDetails"></a>
 
 Contains details about an exit from a state during an execution.
 

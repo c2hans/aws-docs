@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Ec2Configuration
-<a name="API_Ec2Configuration"></a>
 
 The configuration for Amazon EC2-based compute, including the launch template source, networking, storage volumes, and instance lifecycle settings.
 

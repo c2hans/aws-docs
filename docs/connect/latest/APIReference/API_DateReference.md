@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DateRefe
 ---
 
 # DateReference
-<a name="API_DateReference"></a>
 
 Information about a reference when the `referenceType` is `DATE`. Otherwise, null.
 

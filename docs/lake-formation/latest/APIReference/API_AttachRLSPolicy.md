@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_A
 ---
 
 # AttachRLSPolicy
-<a name="API_AttachRLSPolicy"></a>
 
 Attaches a row-level security policy to a resource for a principal. When the principal queries the resource, AWS Lake Formation applies the policy's filter expression so that only the permitted rows are returned.
 

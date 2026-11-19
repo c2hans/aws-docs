@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ap
 ---
 
 # AppliedExtension
-<a name="API_AppliedExtension"></a>
 
 An extension that was invoked during a deployment.
 

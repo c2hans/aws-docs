@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_A
 ---
 
 # Application
-<a name="API_Application"></a>
 
 Information about an application. Amazon EMR Serverless uses applications to run jobs.
 

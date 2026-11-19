@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/sampl
 ---
 
 # Sample questions you can ask Amazon Q in AWS Supply Chain
-<a name="sample_questions"></a>
 
 - ** Demand Planning Make sure the demand plan is published before using Amazon Q in Demand Planning. **
   - **Sample question:** Create demand plan summary / **Sample answer:**  ![Sample answer to create demand plan summary](https://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/SP_demand_plan_summary.png)

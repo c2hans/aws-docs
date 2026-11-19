@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/themed-batch-recom
 ---
 
 # Batch recommendations with themes from Content Generator
-<a name="themed-batch-recommendations"></a>
 
 **Important**
 When you get batch recommendations with themes, you incur additional costs. For more information, see [Amazon Personalize pricing](https://aws.amazon.com/personalize/pricing/).

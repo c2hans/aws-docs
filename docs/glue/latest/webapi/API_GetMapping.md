@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetMapping.html
 ---
 
 # GetMapping
-<a name="API_GetMapping"></a>
 
 Creates mappings.
 

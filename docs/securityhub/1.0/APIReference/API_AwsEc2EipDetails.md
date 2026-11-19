@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2E
 ---
 
 # AwsEc2EipDetails
-<a name="API_AwsEc2EipDetails"></a>
 
 Information about an Elastic IP address.
 

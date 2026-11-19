@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_J
 ---
 
 # JoinDomain
-<a name="API_JoinDomain"></a>
 
 Adds a file gateway to an Active Directory domain. This operation is only supported for file gateways that support the SMB file protocol.
 

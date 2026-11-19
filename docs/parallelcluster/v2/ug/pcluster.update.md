@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/pcluster.update.ht
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # `pcluster update`
-<a name="pcluster.update"></a>
 
 Analyzes the configuration file to determine if the cluster can be safely updated. If the analysis determines the cluster can be updated, you are prompted to confirm the change. If the analysis shows the cluster can't be updated, the configuration settings that are the source of the conflicts are enumerated with details. For more information, see [Using `pcluster update`](using-pcluster-update.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Acce
 ---
 
 # AccessBudgetsPrivacyTemplateUpdateParameters
-<a name="API_AccessBudgetsPrivacyTemplateUpdateParameters"></a>
 
 Update parameters for privacy budget templates with access budgets functionality, allowing modification of existing budget configurations.
 

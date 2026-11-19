@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/replaceRoot.h
 ---
 
 # $replaceRoot
-<a name="replaceRoot"></a>
 
 The `$replaceRoot` operator is used to replace the root document with the specified embedded document. This is useful when you want to promote a nested document to the top level or restructure your data output.
 

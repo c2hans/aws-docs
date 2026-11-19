@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/sysops-administ
 ---
 
 # AWS Certified CloudOps Engineer - Associate (SOA-C03)
-<a name="sysops-administrator-associate-03"></a>
 
 The AWS Certified CloudOps Engineer - Associate (SOA-C03) exam is intended for CloudOps engineers. The exam validates a candidate's ability to deploy, manage, and operate workloads on AWS.
 

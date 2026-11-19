@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # ResamplingConfigInput
-<a name="API_geospatial_ResamplingConfigInput"></a>
 
 The structure representing input for resampling operation.
 

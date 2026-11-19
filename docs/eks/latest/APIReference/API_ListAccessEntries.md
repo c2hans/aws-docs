@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAccessEn
 ---
 
 # ListAccessEntries
-<a name="API_ListAccessEntries"></a>
 
 Lists the access entries for your cluster.
 

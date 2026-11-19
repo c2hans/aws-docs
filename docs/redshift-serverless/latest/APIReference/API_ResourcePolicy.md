@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ResourcePolicy
-<a name="API_ResourcePolicy"></a>
 
 The resource policy object. Currently, you can use policies to share snapshots across AWS accounts.
 

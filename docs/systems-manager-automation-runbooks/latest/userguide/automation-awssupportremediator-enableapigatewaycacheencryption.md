@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-EnableApiGatewayCacheEncryption`
-<a name="automation-awssupportremediator-enableapigatewaycacheencryption"></a>
 
 **Description**
 

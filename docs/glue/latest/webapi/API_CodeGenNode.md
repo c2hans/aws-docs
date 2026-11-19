@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CodeGenNode.html
 ---
 
 # CodeGenNode
-<a name="API_CodeGenNode"></a>
 
 Represents a node in a directed acyclic graph (DAG)
 

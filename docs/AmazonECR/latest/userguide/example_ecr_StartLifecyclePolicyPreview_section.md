@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/example_ecr_S
 ---
 
 # Use `StartLifecyclePolicyPreview` with an AWS SDK or CLI
-<a name="example_ecr_StartLifecyclePolicyPreview_section"></a>
 
 The following code examples show how to use `StartLifecyclePolicyPreview`.
 

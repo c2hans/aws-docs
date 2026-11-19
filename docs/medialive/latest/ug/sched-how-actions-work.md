@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/sched-how-actions-wo
 ---
 
 # How schedule actions work
-<a name="sched-how-actions-work"></a>
 
 This section describes how MediaLive handles each combination of [action type](x-actions-in-schedule.md) and [start type](sched-timing-types.md).
 

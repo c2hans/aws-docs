@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SilentAudio.
 ---
 
 # SilentAudio
-<a name="API_SilentAudio"></a>
 
 Configures settings for the `SilentAudio` metric.
 

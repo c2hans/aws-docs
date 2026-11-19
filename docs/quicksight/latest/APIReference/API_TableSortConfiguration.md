@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableSortConfiguration
-<a name="API_TableSortConfiguration"></a>
 
 The sort configuration for a `TableVisual`.
 

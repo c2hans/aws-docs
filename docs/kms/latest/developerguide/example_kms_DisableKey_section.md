@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/example_kms_Di
 ---
 
 # Use `DisableKey` with an AWS SDK or CLI
-<a name="example_kms_DisableKey_section"></a>
 
 The following code examples show how to use `DisableKey`.
 

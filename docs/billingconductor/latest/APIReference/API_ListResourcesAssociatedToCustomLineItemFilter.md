@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ListResourcesAssociatedToCustomLineItemFilter
-<a name="API_ListResourcesAssociatedToCustomLineItemFilter"></a>
 
  A filter that specifies the type of resource associations that should be retrieved for a custom line item.
 

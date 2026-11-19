@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetSavingsPlansUtilizationDetails
-<a name="API_GetSavingsPlansUtilizationDetails"></a>
 
 Retrieves attribute data along with aggregate utilization and savings data for a given time period. This doesn't support granular or grouped data (daily/monthly) in response. You can't retrieve data by dates in a single response similar to `GetSavingsPlanUtilization`, but you have the option to make multiple calls to `GetSavingsPlanUtilizationDetails` by providing individual dates. You can use `GetDimensionValues` in `SAVINGS_PLANS` to determine the possible dimension values.
 
@@ -75,10 +74,16 @@ Required: No
 Filters Savings Plans utilization coverage data for active Savings Plans dimensions. You can filter data with the following dimensions:
 +  `LINKED_ACCOUNT`
 +  `SAVINGS_PLAN_ARN`
++  `SAVINGS_PLANS_TYPE`
 +  `REGION`
 +  `PAYMENT_OPTION`
 +  `INSTANCE_TYPE_FAMILY`
- `GetSavingsPlansUtilizationDetails` uses the same [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) object as the other operations, but only `AND` is supported among each dimension.
+ `GetSavingsPlansUtilizationDetails` uses the same [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) object as the other operations. The filter must have one of the following shapes:
++ A `Dimensions` expression.
++ A `Not` expression that contains one `Dimensions` expression.
++ An `And` expression with two or more operands, where each operand has one of the two shapes above.
+ `Or`, `Tags`, and `CostCategories` expressions aren't supported. An `And` expression can't contain another `And`, and a `Not` expression can't contain an `And` or another `Not`.
+Each dimension can appear only once in the filter, including inside `Not`. To filter on several values of a dimension, put all of the values in one expression. Cost Explorer combines the values in one expression with OR.
 Type: [Expression](API_Expression.md) object
 Required: No
 
@@ -110,7 +115,8 @@ Type: [SortDefinition](API_SortDefinition.md) object
 Required: No
 
  ** [TimePeriod](#API_GetSavingsPlansUtilizationDetails_RequestSyntax) **   <a name="awscostmanagement-GetSavingsPlansUtilizationDetails-request-TimePeriod"></a>
-The time period that you want the usage and costs for. The `Start` date must be within 13 months. The `End` date must be after the `Start` date, and before the current date. Future dates can't be used as an `End` date.
+The time period that you want the usage and costs for. The `Start` date must be within 13 months. The `End` date must be after the `Start` date.
+The `End` date is exclusive. If utilization data isn't complete for the whole period, Cost Explorer moves `End` earlier to the first day without complete data, unless `DataType` is only `ATTRIBUTES`. The response `TimePeriod` shows the period used.
 Type: [DateInterval](API_DateInterval.md) object
 Required: Yes
 
@@ -185,11 +191,11 @@ Retrieves a single daily or monthly Savings Plans utilization rate and details f
 Type: Array of [SavingsPlansUtilizationDetail](API_SavingsPlansUtilizationDetail.md) objects
 
  ** [TimePeriod](#API_GetSavingsPlansUtilizationDetails_ResponseSyntax) **   <a name="awscostmanagement-GetSavingsPlansUtilizationDetails-response-TimePeriod"></a>
-The time period of the request.
+The time period that the response covers. `End` can be earlier than the `End` date in the request if utilization data isn't complete for the whole period.
 Type: [DateInterval](API_DateInterval.md) object
 
  ** [Total](#API_GetSavingsPlansUtilizationDetails_ResponseSyntax) **   <a name="awscostmanagement-GetSavingsPlansUtilizationDetails-response-Total"></a>
-The total Savings Plans utilization, regardless of time period.
+The total Savings Plans utilization for the Savings Plans in this page of results. `Total` covers only the current page, not the whole query. If the response includes a `NextToken`, add `TotalCommitment` and `UsedCommitment` across all pages, and then compute the utilization percentage from those sums.
 Type: [SavingsPlansUtilizationAggregates](API_SavingsPlansUtilizationAggregates.md) object
 
 ## Errors

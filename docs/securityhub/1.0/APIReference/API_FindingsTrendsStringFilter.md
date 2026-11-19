@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Finding
 ---
 
 # FindingsTrendsStringFilter
-<a name="API_FindingsTrendsStringFilter"></a>
 
 A filter for string-based fields in findings trend data.
 

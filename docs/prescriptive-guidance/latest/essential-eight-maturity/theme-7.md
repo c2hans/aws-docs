@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Theme 7: Centralise logging and monitoring
-<a name="theme-7"></a>
 
 **Essential Eight strategies covered**: Application control, patching applications, restricting administrative privileges, and multi-factor authentication
 

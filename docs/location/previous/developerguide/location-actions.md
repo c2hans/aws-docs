@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/locatio
 ---
 
 # Amazon Location APIs
-<a name="location-actions"></a>
 
 Amazon Location Service provides API operations to programmatically access the location functionality. This includes APIs for Maps, Places, Routes, Trackers, Geofences, and tagging your resources. For information about the available API actions, see the [Amazon Location Service API reference](https://docs.aws.amazon.com/location-maps/latest/APIReference/Welcome.html).
 

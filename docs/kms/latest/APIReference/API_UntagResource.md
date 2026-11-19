@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_UntagResourc
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Deletes tags from a [customer managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-mgn-key). To delete a tag, specify the tag key and the KMS key.
 

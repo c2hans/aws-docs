@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Updat
 ---
 
 # UpdateApprovalRuleTemplateName
-<a name="API_UpdateApprovalRuleTemplateName"></a>
 
 Updates the name of a specified approval rule template.
 

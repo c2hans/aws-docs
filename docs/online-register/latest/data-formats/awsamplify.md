@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 ---
 
 # Data retrieval APIs for AWS Amplify
-<a name="awsamplify"></a>
 
 AWS Amplify provides the following APIs for data retrieval.
 

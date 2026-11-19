@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DescribeA
 ---
 
 # DescribeApplicationSnapshot
-<a name="API_DescribeApplicationSnapshot"></a>
 
 Returns information about a snapshot of application state data.
 

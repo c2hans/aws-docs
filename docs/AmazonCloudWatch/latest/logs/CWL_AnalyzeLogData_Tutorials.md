@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Analyze
 ---
 
 # Get started with Logs Insights QL: Query tutorials
-<a name="CWL_AnalyzeLogData_Tutorials"></a>
 
 The following sections include sample query tutorials to help you get started with Logs Insights QL.
 

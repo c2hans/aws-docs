@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/res
 ---
 
 # Resources
-<a name="resources"></a>
 
 The AWS Elemental MediaPackage VOD REST API includes the following resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Troubleshooting Babelfish
-<a name="babelfish-troubleshooting"></a>
 
 Following, you can find troubleshooting ideas and workarounds for some Babelfish DB cluster issues.
 

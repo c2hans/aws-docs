@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSecurityAgentServiceRolePolicy
-<a name="AWSSecurityAgentServiceRolePolicy"></a>
 
 **Description**: Allows AWS Security Agent to manage resources on your behalf.
 

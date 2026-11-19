@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/developer-guide/ec2-ami-
 AWS Snowball Edge is no longer available to new customers. New customers should explore [AWS DataSync](https://aws.amazon.com/datasync/) for online transfers, [AWS Data Transfer Terminal](https://aws.amazon.com/data-transfer-terminal/) for secure physical transfers, or AWS Partner solutions. For edge computing, explore [AWS Outposts](https://aws.amazon.com/outposts/).
 
 # Importing a virtual machine image to a Snowball Edge device
-<a name="ec2-ami-import-cli"></a>
 
 You can use the AWS CLI and the VM Import/Export service to import a virtual machine (VM) image to the Snowball Edge device as an Amazon Machine Image (AMI). After importing a VM image, register the image as an AMI and launch it as an Amazon EC2-compatible instance.
 

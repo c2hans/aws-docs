@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_DirectP
 ---
 
 # DirectPutSourceConfiguration
-<a name="API_DirectPutSourceConfiguration"></a>
 
 The structure that configures parameters such as `ThroughputHintInMBs` for a stream configured with Direct PUT as a source.
 

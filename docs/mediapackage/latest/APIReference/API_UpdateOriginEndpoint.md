@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Upd
 ---
 
 # UpdateOriginEndpoint
-<a name="API_UpdateOriginEndpoint"></a>
 
 Update the specified origin endpoint. Edit the packaging preferences on an endpoint to optimize the viewing experience. You can't edit the name of the endpoint.
 

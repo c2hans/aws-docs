@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-tm-tra
 ---
 
 # Transfer listeners
-<a name="s3-tm-transfer-listener"></a>
 
 You can implement your own listener that reacts to different transfer events. The events are:
 + **`transferInitiated`**: When a transfer initiates

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # AWS SDK for Java migration tool
-<a name="migration-tool"></a>
 
 The AWS SDK for Java provides a migration tool that helps automate the migration of SDK for Java 1.x (V1) code to 2.x (V2). The tool uses [OpenRewrite](https://docs.openrewrite.org/)—an open source, source code refactoring tool—to perform the migration. OpenRewrite uses code modification rules (called "recipes") to automatically update your source code from V1 to V2 syntax and patterns.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ThingGroupMe
 ---
 
 # ThingGroupMetadata
-<a name="API_ThingGroupMetadata"></a>
 
 Thing group metadata.
 

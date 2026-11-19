@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zoom-meetings-configuring
 ---
 
 # Configuring Zoom Meetings connections
-<a name="zoom-meetings-configuring-connections"></a>
 
 Zoom Meetings supports the AUTHORIZATION\_CODE grant type for OAuth2. The grant type determines how AWS Glue communicates with Zoom Meetings to request access to your data.
 + This grant type is considered "three-legged" OAuth as it relies on redirecting users to a third-party authorization server to authenticate the user. It is used when creating connections via the AWS Glue console. The user creating a connection need to provide OAuth related information like Client ID and Client Secret for their Zoom Meetings client application. The AWS Glue console will redirect the user to Zoom where the user must login and allow AWS Glue the requested permissions to access their Zoom Meetings instance.

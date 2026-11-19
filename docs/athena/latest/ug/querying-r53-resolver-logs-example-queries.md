@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-r53-resolver-l
 ---
 
 # Example queries
-<a name="querying-r53-resolver-logs-example-queries"></a>
 
 The following examples show some queries that you can perform from Athena on your Resolver query logs.
 

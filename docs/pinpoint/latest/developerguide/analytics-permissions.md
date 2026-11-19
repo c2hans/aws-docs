@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/developerguide/analytics
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # IAM policies for querying Amazon Pinpoint analytics data
-<a name="analytics-permissions"></a>
 
 By using the Amazon Pinpoint API, you can query analytics data for a subset of standard metrics, also referred to as *key performance indicators (KPIs)* that apply to Amazon Pinpoint projects, campaigns, and journeys. These metrics can help you monitor and assess the performance of projects, campaigns, and journeys.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/custom-model-fi
 ---
 
 # Customize a model with fine-tuning in Amazon Bedrock
-<a name="custom-model-fine-tuning"></a>
 
 With Amazon Bedrock, you can train a foundation model to improve performance on specific tasks (known as fine-tuning). For information about fine-tuning Amazon Nova models, see [Fine-tuning Amazon Nova models](https://docs.aws.amazon.com/nova/latest/userguide/customize-fine-tune.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hbase-wal-ta
 ---
 
 # Tagging WAL workspaces
-<a name="emr-hbase-wal-tagging"></a>
 
 You can add tags to a workspace when you create a new workspace and you can add, remove, or list tags from an active workspace for a running cluster. You can't tag the individual resources in the workspace, and you can't update existing tags; instead, remove unwanted tags from the workspace and replace them.
 

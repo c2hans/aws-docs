@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StartMetadat
 ---
 
 # StartMetadataModelExportToTarget
-<a name="API_StartMetadataModelExportToTarget"></a>
 
 Queues an export of the selected converted metadata models (database objects such as tables, views, and procedures) to your target database. If other requests created by `Start*` operations are already in the migration project's queue, the export begins after they complete.
 

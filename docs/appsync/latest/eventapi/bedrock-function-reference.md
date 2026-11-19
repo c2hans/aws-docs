@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/bedrock-function
 ---
 
 # AWS AppSync JavaScript function reference for Amazon Bedrock
-<a name="bedrock-function-reference"></a>
 
 You can use AWS AppSync functions to invoke models on Amazon Bedrock in your AWS account. You can shape your request payloads and the response from your model invocations functions before returning them to your clients. You can use the Amazon Bedrock runtime’s `InvokeModel` API or the `Converse` API. This section describes the requests for the supported Amazon Bedrock operations.
 

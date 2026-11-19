@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/ai-image-b
 ---
 
 # Use AI to create resources and troubleshoot builds in Image Builder
-<a name="ai-image-builder"></a>
 
 EC2 Image Builder provides AI assistance for the two sides of image building: configuring resources and diagnosing failed builds. You can use the AI features built into the Image Builder console, or bring the same capabilities to your own AI coding agent:
 + **Create with AI** – Describe the resource that you want in the Image Builder console, and the assistant suggests values that you review, apply, and submit yourself. For more information, see [Create and update resources with AI](ai-assisted-resource-creation.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_GetAccountSe
 ---
 
 # GetAccountSendingEnabled
-<a name="API_GetAccountSendingEnabled"></a>
 
 Returns the email sending status of the Amazon SES account for the current Region.
 

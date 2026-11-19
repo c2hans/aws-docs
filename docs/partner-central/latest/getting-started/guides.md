@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/g
 ---
 
 # Finding guides in AWS Partner Central
-<a name="guides"></a>
 
 Use **Guides** in AWS Partner Central to find AWS Partner content in one place. The content covers topics such as AWS Partner Network programs, benefits, co-selling with AWS, AWS Marketplace, and AWS services. You can browse the content by category, search for it, read guides in the console, and download resources to use in your own work.
 

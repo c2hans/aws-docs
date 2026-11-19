@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Observability
-<a name="observability"></a>
 
 **Topics**
 + [FSIREL06: To mitigate operational risks, can your workload owners detect, locate, and recover from gray failures?](fsirel06.md)

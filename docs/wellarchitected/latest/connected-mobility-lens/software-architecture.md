@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Software and architecture
-<a name="software-architecture"></a>
 
 | CMSUS\_4: Are you using efficient software designs and architectures to minimize the average resources required per unit of work?  |
 | --- |

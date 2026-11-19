@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_S3AccessConfig.html
 ---
 
 # S3AccessConfig
-<a name="API_S3AccessConfig"></a>
 
 S3 access configuration parameters.
 

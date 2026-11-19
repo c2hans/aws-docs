@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Field
 ---
 
 # FieldTooltipItem
-<a name="API_FieldTooltipItem"></a>
 
 The tooltip item for the fields.
 

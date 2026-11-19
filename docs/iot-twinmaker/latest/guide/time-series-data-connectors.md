@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/time-series-d
 ---
 
 # Developing AWS IoT TwinMaker time-series data connectors
-<a name="time-series-data-connectors"></a>
 
 This section explains how to develop a time-series data connector in a step-by-step process. Additionally, we present an example time-series data connector based of the entire cookie factory sample, which includes 3D models, entities, components, alarms, and connectors. The cookie factory sample source is available on the [AWS IoT TwinMaker samples GitHub repository ]( https://github.com/aws-samples/aws-iot-twinmaker-samples).
 

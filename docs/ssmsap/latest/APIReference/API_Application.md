@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_Applicati
 ---
 
 # Application
-<a name="API_Application"></a>
 
 An SAP application registered with AWS Systems Manager for SAP.
 

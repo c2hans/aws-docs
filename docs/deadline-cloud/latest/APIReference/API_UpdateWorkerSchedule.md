@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 ---
 
 # UpdateWorkerSchedule
-<a name="API_UpdateWorkerSchedule"></a>
 
 Updates the schedule for a worker.
 

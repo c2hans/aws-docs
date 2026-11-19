@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/what-is-aws-ele
 ---
 
 # What is AWS Elemental Live?
-<a name="what-is-aws-elemental-live"></a>
 
 AWS Elemental Live is video encoding solution that runs on hardware or on virtual machines in your premises. It encodes and transcodes real-time (live) video for broadcast and streaming delivery.
 

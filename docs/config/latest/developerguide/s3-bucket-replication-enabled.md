@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-r
 ---
 
 # s3-bucket-replication-enabled
-<a name="s3-bucket-replication-enabled"></a>
 
 Checks if S3 buckets have replication rules enabled. The rule is NON\_COMPLIANT if an S3 bucket does not have a replication rule or has a replication rule that is not enabled.
 

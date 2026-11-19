@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/getting-started.h
 ---
 
 # Get started with managed integrations for AWS IoT Device Management
-<a name="getting-started"></a>
 
 The following sections outline the steps that you need to take to start using Managed Integrations.
 

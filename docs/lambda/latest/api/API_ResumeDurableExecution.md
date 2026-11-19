@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ResumeDurableExecu
 ---
 
 # ResumeDurableExecution
-<a name="API_ResumeDurableExecution"></a>
 
 Resumes a paused [durable execution](https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html). If the pause interrupted an invocation, or an operation completed while the execution was paused, Lambda invokes your function. Otherwise, the execution continues to wait for its pending operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_
 ---
 
 # Environment
-<a name="API_Environment"></a>
 
 Contains the environment variables that tasks in a workflow use during execution.
 

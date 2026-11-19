@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsDmsR
 ---
 
 # AwsDmsReplicationInstanceReplicationSubnetGroupDetails
-<a name="API_AwsDmsReplicationInstanceReplicationSubnetGroupDetails"></a>
 
  Provides details about the replication subnet group.
 

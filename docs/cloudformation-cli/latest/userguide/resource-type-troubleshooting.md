@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # Resource type development troubleshooting
-<a name="resource-type-troubleshooting"></a>
 
 This topic contains common issues regarding resource type development, and suggested solutions for those issues..
 

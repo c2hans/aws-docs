@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_CrossRegionC
 ---
 
 # CrossRegionCopyDeprecateRule
-<a name="API_CrossRegionCopyDeprecateRule"></a>
 
  **[Custom AMI policies only]** Specifies an AMI deprecation rule for cross-Region AMI copies created by an AMI policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_VpcDestinati
 ---
 
 # VpcDestinationEndpointNetworkingConfiguration
-<a name="API_VpcDestinationEndpointNetworkingConfiguration"></a>
 
 The networking configuration for a destination endpoint in a virtual private cloud (VPC).
 

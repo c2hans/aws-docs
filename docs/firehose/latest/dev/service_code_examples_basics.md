@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/service_code_example
 ---
 
 # Basic examples for Firehose using AWS SDKs
-<a name="service_code_examples_basics"></a>
 
 The following code examples show how to use the basics of Amazon Data Firehose with AWS SDKs.
 

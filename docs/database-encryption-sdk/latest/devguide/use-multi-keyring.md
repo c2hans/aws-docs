@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Multi-keyrings
-<a name="use-multi-keyring"></a>
 
 |  |
 | --- |

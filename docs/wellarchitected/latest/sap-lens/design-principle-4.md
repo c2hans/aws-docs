@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/design-p
 ---
 
 # 4 – Validate and improve your SAP workload regularly
-<a name="design-principle-4"></a>
 
  **How will you validate your SAP workloads continue to operate efficiently?** Aim to improve your SAP workload regularly and take advantage of new service releases from AWS. Dedicate time and resources to maintain your SAP workload. Aim for continual incremental improvement to evolve the efficiency of your SAP workload. Plan to patch, make small changes and re-evaluate previous design decisions with corrective actions which improve performance, resilience or cost effectiveness.
 

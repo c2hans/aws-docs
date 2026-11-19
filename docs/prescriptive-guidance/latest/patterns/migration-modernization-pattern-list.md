@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migration & modernization
-<a name="migration-modernization-pattern-list"></a>
 
 **Topics**
 + [Migration](migration-pattern-list.md)

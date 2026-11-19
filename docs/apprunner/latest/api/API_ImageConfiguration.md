@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_ImageConfigurat
 ---
 
 # ImageConfiguration
-<a name="API_ImageConfiguration"></a>
 
 Describes the configuration that AWS App Runner uses to run an App Runner service using an image pulled from a source image repository.
 

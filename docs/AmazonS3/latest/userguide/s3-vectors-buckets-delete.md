@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-buc
 ---
 
 # Deleting an empty vector bucket
-<a name="s3-vectors-buckets-delete"></a>
 
 You can delete a vector bucket when you no longer need it. To delete a vector bucket, you must first delete all the vector indexes within the bucket. When you delete a vector index, all vector data within it is deleted. Use the Amazon S3 REST API, AWS SDKs, S3 Console, or the AWS Command Line Interface (AWS CLI) to delete a vector bucket.
 

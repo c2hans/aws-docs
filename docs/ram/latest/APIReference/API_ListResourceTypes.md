@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ListResource
 ---
 
 # ListResourceTypes
-<a name="API_ListResourceTypes"></a>
 
 Lists the resource types that can be shared by AWS RAM.
 

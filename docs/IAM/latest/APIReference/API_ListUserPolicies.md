@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListUserPoli
 ---
 
 # ListUserPolicies
-<a name="API_ListUserPolicies"></a>
 
 Lists the names of the inline policies embedded in the specified IAM user.
 

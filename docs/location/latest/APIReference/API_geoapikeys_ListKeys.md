@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoapik
 ---
 
 # ListKeys
-<a name="API_geoapikeys_ListKeys"></a>
 
 Lists API key resources in your AWS account.
 

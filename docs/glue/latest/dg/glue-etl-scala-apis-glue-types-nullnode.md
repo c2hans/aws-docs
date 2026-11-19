@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-etl-scala-apis-glue-
 ---
 
 # AWS Glue Scala NullNode APIs
-<a name="glue-etl-scala-apis-glue-types-nullnode"></a>
 
 **Topics**
 + [NullNode class](#glue-etl-scala-apis-glue-types-nullnode-class)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Assigns one or more tags to a resource.
 

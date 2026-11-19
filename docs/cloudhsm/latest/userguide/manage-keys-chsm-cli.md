@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/manage-keys-ch
 ---
 
 # Key management with CloudHSM CLI
-<a name="manage-keys-chsm-cli"></a>
 
 If using the [latest SDK version series](use-hsm.md), use [CloudHSM CLI](cloudhsm_cli.md) to manage the keys in your AWS CloudHSM cluster. For more details, see the topics below.
 + [Using trusted keys](manage-keys-cloudhsm-cli-trusted.md) describes how to use CloudHSM CLI to create trusted keys to secure data.

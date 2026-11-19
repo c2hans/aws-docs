@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTr
 ---
 
 # RouteTransponder
-<a name="API_RouteTransponder"></a>
 
 Transponders for which this toll can be applied.
 

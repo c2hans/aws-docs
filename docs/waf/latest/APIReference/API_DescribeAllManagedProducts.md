@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_DescribeAllM
 ---
 
 # DescribeAllManagedProducts
-<a name="API_DescribeAllManagedProducts"></a>
 
 Provides high-level information for the AWS Managed Rules rule groups and AWS Marketplace managed rule groups.
 

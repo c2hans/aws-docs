@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Design principles
-<a name="design-principles-sus"></a>
 
  As part of the design of an End User Computing solution, there are some key principles to consider towards sustainability that you can embrace and adapt with other principles alignment such as cost, performance, and operational excellence:
 +  **Define your end user experience:** By offering EUC access to your users, you have a choice to offer different types of compute to align with each of your scenarios. In addition, based on your user personas, you can optimize the session delivery to fit each of your use case.

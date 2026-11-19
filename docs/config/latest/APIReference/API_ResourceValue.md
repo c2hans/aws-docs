@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ResourceV
 ---
 
 # ResourceValue
-<a name="API_ResourceValue"></a>
 
 The dynamic value of the resource.
 

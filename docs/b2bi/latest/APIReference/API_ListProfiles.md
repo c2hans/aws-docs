@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_ListProfile
 ---
 
 # ListProfiles
-<a name="API_ListProfiles"></a>
 
 Lists the profiles associated with your AWS account for your current or specified region. A profile is the mechanism used to create the concept of a private network.
 

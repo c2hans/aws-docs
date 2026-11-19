@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # OpsItemNotification
-<a name="API_OpsItemNotification"></a>
 
 A notification about the OpsItem.
 

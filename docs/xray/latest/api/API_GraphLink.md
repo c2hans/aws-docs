@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_GraphLink.html
 ---
 
 # GraphLink
-<a name="API_GraphLink"></a>
 
  The relation between two services.
 

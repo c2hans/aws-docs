@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/workflows-creat
 ---
 
 # Creating a workflow
-<a name="workflows-creating"></a>
 
 Before you start, ensure that you have granted the required data permissions and data location permissions to the role `LakeFormationWorkflowRole`. This is so the workflow can create metadata tables in the Data Catalog and write data to target locations in Amazon S3. For more information, see [(Optional) Create an IAM role for workflows](initial-lf-config.md#iam-create-blueprint-role) and [Overview of Lake Formation permissions](lf-permissions-overview.md).
 

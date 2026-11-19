@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Ipv6Prefi
 ---
 
 # Ipv6PrefixSpecificationResponse
-<a name="API_Ipv6PrefixSpecificationResponse"></a>
 
 Information about the IPv6 delegated prefixes assigned to a network interface.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/fis-tutorial-spot-i
 ---
 
 # Tutorial: Test Spot Instance interruptions using AWS FIS
-<a name="fis-tutorial-spot-interruptions"></a>
 
 Spot Instances use spare EC2 capacity that is available, for up to a 90% discount compared to On-Demand pricing. However, Amazon EC2 can interrupt your Spot Instances when it needs the capacity back. When using Spot Instances, you must be prepared for potential interruptions. For more information, see [Spot Instance interruptions](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-interruptions.html) in the *Amazon EC2 User Guide*.
 

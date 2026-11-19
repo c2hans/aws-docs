@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Working with AWS DevOps Agent in the next generation of Resilience Hub
-<a name="next-gen-devops-agent-integration"></a>
 
 The next generation of Resilience Hub integrates with AWS DevOps Agent to add agentic investigation to your failure mode assessment findings and resilience test runs. When you connect a service to an *Agent Space* in AWS DevOps Agent, Resilience Hub can launch investigations on your behalf:
 + From any failure mode assessment finding, you can chat with AWS DevOps Agent to investigate and ask for remediation steps interactively.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Aut
 ---
 
 # AuthorizationCodeGrant
-<a name="API_AuthorizationCodeGrant"></a>
 
 A structure that defines configuration settings for an application that supports the OAuth 2.0 Authorization Code Grant.
 

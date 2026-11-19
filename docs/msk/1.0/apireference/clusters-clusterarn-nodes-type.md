@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn
 ---
 
 # Broker Type
-<a name="clusters-clusterarn-nodes-type"></a>
 
 The type of brokers in the cluster. All of the brokers in a cluster are the same type.
 

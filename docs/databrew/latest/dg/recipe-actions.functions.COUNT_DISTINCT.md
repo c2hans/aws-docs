@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # COUNT\_DISTINCT
-<a name="recipe-actions.functions.COUNT_DISTINCT"></a>
 
  Returns the total number of distinct values from the selected source columns in a new column. Empty and null values are ignored.
 

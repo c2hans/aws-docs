@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Polic
 ---
 
 # PolicyDetachedFromServiceMetadata
-<a name="API_PolicyDetachedFromServiceMetadata"></a>
 
 Contains details about the service that stopped using the policy, such as the account that owns the service.
 

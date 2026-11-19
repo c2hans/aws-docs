@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ge
 ---
 
 # GetRetrievalInstruction
-<a name="API_agent_GetRetrievalInstruction"></a>
 
 Gets a retrieval instruction. Also used to poll the terminal reporting of an asynchronous create or update.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/example_keyspa
 ---
 
 # Hello Amazon Keyspaces
-<a name="example_keyspaces_Hello_section"></a>
 
 The following code examples show how to get started using Amazon Keyspaces.
 

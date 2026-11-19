@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_GetC
 ---
 
 # GetClusterPolicy
-<a name="API_GetClusterPolicy"></a>
 
 Retrieves the resource-based policy document attached to a cluster. This policy defines the access permissions and conditions for the cluster.
 

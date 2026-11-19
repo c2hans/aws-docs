@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/metering-and-
 ---
 
 # Metering, costs, and billing for AWS Backup
-<a name="metering-and-billing"></a>
 
 ## AWS Backup pricing
 <a name="pricing"></a>

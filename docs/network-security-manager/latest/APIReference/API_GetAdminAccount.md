@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # GetAdminAccount
-<a name="API_GetAdminAccount"></a>
 
 Retrieves the details of the specified AWS Network Security Manager administrator account.
 

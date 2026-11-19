@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/gs-python-crea
 ---
 
 # Create and run a Managed Service for Apache Flink for Python application
-<a name="gs-python-createapp"></a>
 
 In this section, you create a Managed Service for Apache Flink application for Python application with a Kinesis stream as a source and a sink.
 

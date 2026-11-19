@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/database
 ---
 
 # ![AWS Database category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/database-icon.jpg)Databases
-<a name="database"></a>
 
 AWS databases offer a high-performance, secure, and reliable foundation to power generative AI solutions and data-driven applications that drive value for your business and customers.
 

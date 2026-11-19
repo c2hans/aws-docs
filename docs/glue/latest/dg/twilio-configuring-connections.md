@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/twilio-configuring-connec
 ---
 
 # Configuring Twilio connections
-<a name="twilio-configuring-connections"></a>
 
 Twilio supports username and password for Basic Authentication. Basic Authentication is a simple authentication method where clients provide credentials directly to access protected resources. AWS Glue is able to use the username (Account SID) and password (Auth Token) to authenticate Twilio APIs.
 

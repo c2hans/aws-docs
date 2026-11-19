@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/aif-setup-cdi.html
 ---
 
 # Setting up automatic input failover with CDI inputs
-<a name="aif-setup-cdi"></a>
 
 To use CDI inputs with automatic input failover in MediaLive, you must make sure that the upstream system provides sources in the correct way, and you must set up the inputs and the channels in a specific way.
 

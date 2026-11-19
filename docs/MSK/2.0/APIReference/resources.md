@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSK/2.0/APIReference/resources.html
 ---
 
 # Resources
-<a name="resources"></a>
 
 The Amazon Managed Streaming for Apache Kafka REST API includes the following resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/using-adapters-man
 ---
 
 # Manifest file formats
-<a name="using-adapters-manifest-files"></a>
 
 The following sections show samples of the manifest file formats for input, output, and evaluation files.
 

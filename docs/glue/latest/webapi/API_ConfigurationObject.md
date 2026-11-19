@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ConfigurationObje
 ---
 
 # ConfigurationObject
-<a name="API_ConfigurationObject"></a>
 
 Specifies the values that an admin sets for each job or session parameter configured in a AWS Glue usage profile.
 

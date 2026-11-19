@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/in
 ---
 
 # Infrastructure security in AWS Payment Cryptography
-<a name="infrastructure-security"></a>
 
 As a managed service, AWS Payment Cryptography is protected by the AWS global network security procedures that are described in the [Amazon Web Services: Overview of Security Processes](https://d0.awsstatic.com/whitepapers/Security/AWS_Security_Whitepaper.pdf) whitepaper.
 

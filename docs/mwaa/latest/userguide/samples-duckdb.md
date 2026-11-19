@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/samples-duckdb.htm
 ---
 
 # Using DuckDB with Amazon MWAA
-<a name="samples-duckdb"></a>
 
 Amazon Managed Workflows for Apache Airflow (Amazon MWAA) environments that use Apache Airflow v3.3.1 and later include native DuckDB support. With DuckDB, the tasks in your directed acyclic graphs (DAGs) can run SQL without installing packages, creating connections, or managing credentials. DuckDB is an in-process SQL engine that runs inside an Apache Airflow task on your environment's workers, so you don't need a separate database server or cluster. Use DuckDB for checks, summaries, and transformations on data that your pipelines produce, such as CSV, JSON, and Parquet files in Amazon S3.
 

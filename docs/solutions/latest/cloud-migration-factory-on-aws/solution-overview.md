@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Coordinate and automate large scale migrations to the AWS Cloud using the Cloud Migration Factory on AWS solution
-<a name="solution-overview"></a>
 
 The Cloud Migration Factory on AWS solution is designed to coordinate and automate manual processes for large-scale migrations involving a substantial number of applications. This solution helps enterprises improve performance and prevents long cutover windows by providing an orchestration platform for migrating workloads to AWS at scale. [AWS Professional Services](https://aws.amazon.com/professional-services/), [AWS Partners](https://aws.amazon.com/partners/), and other enterprises have already used this solution to help customers migrate thousands of servers to the AWS Cloud.
 

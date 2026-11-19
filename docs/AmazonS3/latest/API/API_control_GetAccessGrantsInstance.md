@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAcces
 ---
 
 # GetAccessGrantsInstance
-<a name="API_control_GetAccessGrantsInstance"></a>
 
 Retrieves the S3 Access Grants instance for a Region in your account.
 

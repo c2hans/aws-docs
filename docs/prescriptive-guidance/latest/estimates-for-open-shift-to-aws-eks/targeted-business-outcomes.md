@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Targeted business outcomes
-<a name="targeted-business-outcomes"></a>
 
 Migration estimates directly influence budget approvals, resource allocation, and business planning decisions. Inaccurate estimates can create cascading impacts across the organization, affecting teams beyond the platform engineering group. Any incorrect estimation leads to financial loss for organization .
 

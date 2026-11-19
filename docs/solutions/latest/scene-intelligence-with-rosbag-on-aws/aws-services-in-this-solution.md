@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # AWS services in this solution
-<a name="aws-services-in-this-solution"></a>
 
 | AWS service | Description |
 | --- | --- |

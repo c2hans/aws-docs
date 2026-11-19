@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_I
 ---
 
 # IdentitySource
-<a name="API_IdentitySource"></a>
 
 Specifies the identity source for an account access manager application.
 

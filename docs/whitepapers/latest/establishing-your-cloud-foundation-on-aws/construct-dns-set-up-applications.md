@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Construct DNS set up for applications
-<a name="construct-dns-set-up-applications"></a>
 
 A Domain Name Service (DNS) is used by every application and organization to connect names to IP addresses. In cloud environments, DNS management becomes a critical element, since it allows for the discovery of each workload and service among themselves. Organizations usually manage their own DNS servers or leverage public DNS systems to make DNS queries. Within a cloud environment you can create DNS zones to publish your records, without having to configure and maintain your own DNS servers and software.
 

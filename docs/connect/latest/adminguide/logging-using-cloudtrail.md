@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/logging-using-
 ---
 
 # Log Connect Customer API calls with AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Connect Customer is integrated with AWS CloudTrail, a service that provides a record of the Connect Customer API calls that a user, role, or AWS service makes. CloudTrail captures Connect Customer API calls as events. All public Connect Customer APIs support CloudTrail.
 

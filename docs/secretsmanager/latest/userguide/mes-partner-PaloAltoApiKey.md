@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Palo Alto Networks API Key
-<a name="mes-partner-PaloAltoApiKey"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c49b3"></a>

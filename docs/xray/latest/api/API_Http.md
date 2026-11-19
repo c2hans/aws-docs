@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_Http.html
 ---
 
 # Http
-<a name="API_Http"></a>
 
 Information about an HTTP request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListedU
 ---
 
 # ListedUser
-<a name="API_ListedUser"></a>
 
 Returns properties of the user that you specify.
 

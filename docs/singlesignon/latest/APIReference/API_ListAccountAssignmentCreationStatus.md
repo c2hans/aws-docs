@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListAccountAssignmentCreationStatus
-<a name="API_ListAccountAssignmentCreationStatus"></a>
 
 Lists the status of the AWS account assignment creation requests for a specified IAM Identity Center instance.
 

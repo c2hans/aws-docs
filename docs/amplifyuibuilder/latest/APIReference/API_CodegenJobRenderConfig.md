@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # CodegenJobRenderConfig
-<a name="API_CodegenJobRenderConfig"></a>
 
 Describes the configuration information for rendering the UI component associated with the code generation job.
 

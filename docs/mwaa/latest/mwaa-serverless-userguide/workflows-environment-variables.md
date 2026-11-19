@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/wo
 ---
 
 # Using environment variables in Amazon MWAA Serverless workflows
-<a name="workflows-environment-variables"></a>
 
 Environment variables pass key-value settings to every task in a workflow. You set them with the optional [Environment parameter](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_CreateWorkflow.html#mwaaserverless-CreateWorkflow-request-Environment) of `CreateWorkflow` or the [Environment parameter](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_UpdateWorkflow.html#mwaaserverless-UpdateWorkflow-request-Environment) of `UpdateWorkflow`. Your tasks receive them in their process environment.
 

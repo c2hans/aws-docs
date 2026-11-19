@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/use-cases.html
 ---
 
 # Example DLAMI use cases
-<a name="use-cases"></a>
 
 The following are examples of some common use cases for AWS Deep Learning AMIs (DLAMI).
 

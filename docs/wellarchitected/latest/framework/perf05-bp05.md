@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf05-
 ---
 
 # PERF05-BP05 Review metrics at regular intervals
-<a name="perf05-bp05"></a>
 
  The metrics that matter change as the workload evolves. Traffic patterns shift, components change, and thresholds that once signaled trouble fire on normal behavior. Review metrics and alarms on a regular cadence and after significant incidents or workload changes.
 

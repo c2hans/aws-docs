@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/assessment-reports-
 ---
 
 # Using the conversion assessment report for migration planning
-<a name="assessment-reports-planning"></a>
 
 The conversion assessment report is the first step in your database migration journey. Organizations use the report to evaluate migration complexity and make informed go/no-go decisions before committing to a full-scale migration project.
 

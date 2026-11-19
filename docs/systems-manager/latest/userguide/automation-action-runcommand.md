@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # `aws:runCommand` – Run a command on a managed instance
-<a name="automation-action-runcommand"></a>
 
 Runs the specified commands.
 

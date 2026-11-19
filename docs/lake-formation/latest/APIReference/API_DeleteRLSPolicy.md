@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_D
 ---
 
 # DeleteRLSPolicy
-<a name="API_DeleteRLSPolicy"></a>
 
 Deletes a row-level security policy. Any active attachments of the policy are automatically removed as part of the deletion, so you do not need to detach the policy first.
 

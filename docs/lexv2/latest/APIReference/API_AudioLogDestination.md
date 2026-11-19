@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AudioLogDe
 ---
 
 # AudioLogDestination
-<a name="API_AudioLogDestination"></a>
 
 The location of audio log files collected when conversation logging is enabled for a bot.
 

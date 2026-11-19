@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UsageD
 ---
 
 # UsageDataSourceResult
-<a name="API_UsageDataSourceResult"></a>
 
 Contains information on the result of usage based on data source type.
 

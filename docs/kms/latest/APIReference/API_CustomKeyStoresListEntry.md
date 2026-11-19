@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_CustomKeySto
 ---
 
 # CustomKeyStoresListEntry
-<a name="API_CustomKeyStoresListEntry"></a>
 
 Contains information about each custom key store in the custom key store list.
 

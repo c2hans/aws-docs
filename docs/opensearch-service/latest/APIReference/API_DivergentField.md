@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DivergentField
-<a name="API_DivergentField"></a>
 
 A single field that differs between the source and target copies of an item.
 

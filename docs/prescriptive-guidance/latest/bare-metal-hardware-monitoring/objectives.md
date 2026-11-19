@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/bare-metal-
 ---
 
 # Objectives
-<a name="objectives"></a>
 
 Telegraf and the Redfish API can help you address the challenges of hardware health monitoring in multi-vendor environments. By using the plugin-based architecture and robust authentication mechanisms in Telegraf, organizations can achieve the following targeted business outcomes.
 

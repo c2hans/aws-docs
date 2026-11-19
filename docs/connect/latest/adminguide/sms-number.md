@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/sms-number.htm
 ---
 
 # Request an SMS-enabled phone number through AWS End User Messaging SMS
-<a name="sms-number"></a>
 
 **Important**
 Some countries require phone numbers and sender IDs to be registered for use in the country. It can take up to 15 business days to process a registration request after it is submitted. We strongly recommend you begin this process early. For more information about registering, see [Registrations](https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations.html).

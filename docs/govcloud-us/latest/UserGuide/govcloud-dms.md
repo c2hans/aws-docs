@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-dm
 ---
 
 # AWS Database Migration Service in AWS GovCloud (US)
-<a name="govcloud-dms"></a>
 
 ## Region availability
 <a name="_region_availability"></a>

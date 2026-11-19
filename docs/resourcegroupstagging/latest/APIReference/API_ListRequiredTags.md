@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReferenc
 ---
 
 # ListRequiredTags
-<a name="API_ListRequiredTags"></a>
 
 Lists the required tags for supported resource types in an AWS account.
 

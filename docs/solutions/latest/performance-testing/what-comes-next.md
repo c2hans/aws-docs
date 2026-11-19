@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/performance-testing/wha
 ---
 
 # What Comes Next
-<a name="what-comes-next"></a>
 
 Performance testing is not a destination. It is a continuous discipline that evolves with your application. After establishing the practices in this journey:
 

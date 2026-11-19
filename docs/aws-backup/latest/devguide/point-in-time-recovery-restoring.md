@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/point-in-time
 ---
 
 # Restoring a continuous backup
-<a name="point-in-time-recovery-restoring"></a>
 
 **To restore a continuous backup using the AWS Backup console**
 + During the PITR restore process, the AWS Backup console displays a **Restore time** section. In this section, do one of the following:

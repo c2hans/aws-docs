@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SslPr
 ---
 
 # SslProperties
-<a name="API_SslProperties"></a>
 
 Secure Socket Layer (SSL) properties that apply when Quick Sight connects to your underlying data source.
 

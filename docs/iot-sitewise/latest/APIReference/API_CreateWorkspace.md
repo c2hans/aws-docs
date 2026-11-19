@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Cre
 ---
 
 # CreateWorkspace
-<a name="API_CreateWorkspace"></a>
 
 Creates a workspace in AWS IoT SiteWise. A workspace isolates its resources, such as datasets, time series, pipelines, and tasks, and their data from other workspaces, and has its own quotas and throttling limits. You must specify an encryption configuration when you create a workspace. The operation returns immediately with the workspace in the `CREATING` state. Provisioning completes asynchronously, after which the workspace state is `ACTIVE`, or `FAILED` if provisioning doesn't complete.
 

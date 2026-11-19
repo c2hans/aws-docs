@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/iam_example_confi
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Getting started with configuration management
-<a name="iam_example_config_service_GettingStarted_053_section"></a>
 
 The following code example shows how to:
 + Create an Amazon S3 bucket

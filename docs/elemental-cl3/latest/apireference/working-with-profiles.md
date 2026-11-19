@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # Working with Profiles
-<a name="working-with-profiles"></a>
 
 **Topics**
 + [Recommended Method for Working with Profiles](recommended-method-working-with-profiles.md)

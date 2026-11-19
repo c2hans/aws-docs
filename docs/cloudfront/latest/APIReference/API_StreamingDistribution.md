@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Strea
 ---
 
 # StreamingDistribution
-<a name="API_StreamingDistribution"></a>
 
 A streaming distribution tells CloudFront where you want RTMP content to be delivered from, and the details about how to track and manage content delivery.
 

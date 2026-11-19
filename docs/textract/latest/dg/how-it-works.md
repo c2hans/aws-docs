@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/how-it-works.html
 ---
 
 # Identifying Your Amazon Textract Use Case
-<a name="how-it-works"></a>
 
 Amazon Textract offers a variety of operations that apply to different documents. Below is a list of the operations you can perform with Amazon Textract and links to further information on each use case.
 + Detecting text only. For more information, see [Detecting Text](how-it-works-detecting.md).

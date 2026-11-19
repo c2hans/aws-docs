@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/tls-vers
 ---
 
 # Enforcing a minimum TLS version in the AWS SDK for Ruby
-<a name="tls-version"></a>
 
 Communication between the AWS SDK for Ruby and AWS is secured using Secure Sockets Layer (SSL) or Transport Layer Security (TLS). All versions of SSL, and versions of TLS earlier than 1.2, have vulnerabilities that can compromise the security of your communication with AWS. For this reason, you should make sure that you’re using the AWS SDK for Ruby with a version of Ruby that supports TLS version 1.2 or later.
 

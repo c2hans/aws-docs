@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/compliance
 ---
 
 # Compliance validation for AWS IoT SiteWise
-<a name="compliance-validation"></a>
 
 AWS IoT SiteWise is not in scope of any AWS compliance programs.
 

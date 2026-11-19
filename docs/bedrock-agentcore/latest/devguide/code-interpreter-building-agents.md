@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Run code in Code Interpreter from Agents
-<a name="code-interpreter-building-agents"></a>
 
 You can build agents that use the Code Interpreter tool to execute code and analyze data. This section demonstrates how to build agents using different frameworks.
 

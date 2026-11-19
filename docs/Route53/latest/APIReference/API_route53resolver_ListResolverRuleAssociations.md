@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # ListResolverRuleAssociations
-<a name="API_route53resolver_ListResolverRuleAssociations"></a>
 
 Lists the associations that were created between Resolver rules and VPCs using the current AWS account.
 

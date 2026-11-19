@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.SCM.4] Grant access only to trusted repositories
-<a name="dl.scm.4-grant-access-only-to-trusted-repositories"></a>
 
  **Category:** FOUNDATIONAL
 

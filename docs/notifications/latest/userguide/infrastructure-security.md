@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/userguide/infrastru
 ---
 
 # Infrastructure security in AWS User Notifications
-<a name="infrastructure-security"></a>
 
 As a managed service, AWS global network security procedures protect User Notifications as described in the [Amazon Web Services: Overview of Security Processes](https://d0.awsstatic.com/whitepapers/Security/AWS_Security_Whitepaper.pdf) whitepaper.
 

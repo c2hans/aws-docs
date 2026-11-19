@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-u
 ---
 
 # Usage reporting for cost attribution in SageMaker HyperPod
-<a name="sagemaker-hyperpod-usage-reporting"></a>
 
 Usage reporting in SageMaker HyperPod EKS-orchestrated clusters provides granular visibility into compute resource consumption. The capability allows organizations to implement transparent cost attribution, allocating cluster costs to teams, projects, or departments based on their actual usage. By tracking metrics such as GPU/CPU hours, and Neuron Core utilization - captured in *both team-level aggregates and task-specific breakdowns* - usage reporting complements HyperPod's [Task Governance](sagemaker-hyperpod-eks-operate-console-ui-governance.md) functionality, ensuring fair cost distribution in shared multi-tenant clusters by:
 + Eliminating guesswork in cost allocation

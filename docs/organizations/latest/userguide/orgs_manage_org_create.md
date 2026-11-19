@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Creating an organization with AWS Organizations
-<a name="orgs_manage_org_create"></a>
 
 You can create an organization with your AWS account as the management account. When you create an organization, you can choose whether the organization supports [all features (recommended)](orgs_getting-started_concepts.md#feature-set-all) or only [consolidated billing](orgs_getting-started_concepts.md#feature-set-cb-only). By default, an organization you create supports all features.
 

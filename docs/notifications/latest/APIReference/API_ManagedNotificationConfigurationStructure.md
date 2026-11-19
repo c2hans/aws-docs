@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ma
 ---
 
 # ManagedNotificationConfigurationStructure
-<a name="API_ManagedNotificationConfigurationStructure"></a>
 
 Describes the basic structure and properties of a `ManagedNotificationConfiguration`.
 

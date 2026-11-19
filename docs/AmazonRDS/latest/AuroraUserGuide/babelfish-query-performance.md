@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Improving Babelfish query performance
-<a name="babelfish-query-performance"></a>
 
  You can achieve faster query processing in Babelfish using query hints and the PostgreSQL optimizer.
 

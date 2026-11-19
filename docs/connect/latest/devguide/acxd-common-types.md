@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-common-type
 ---
 
 # Common types
-<a name="acxd-common-types"></a>
 
 Shared types used across multiple Platform SDK resources.
 

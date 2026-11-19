@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Retrieve
 ---
 
 # RetrieveAndGenerateConfiguration
-<a name="API_RetrieveAndGenerateConfiguration"></a>
 
 Contains configuration details for a knowledge base retrieval and response generation.
 

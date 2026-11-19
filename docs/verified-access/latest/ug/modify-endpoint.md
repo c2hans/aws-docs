@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/modify-endpoin
 ---
 
 # Modify a Verified Access endpoint
-<a name="modify-endpoint"></a>
 
 Use the following procedure to modify a Verified Access endpoint.
 

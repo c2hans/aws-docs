@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # InternalAccessAnalysisRuleCriteria
-<a name="API_InternalAccessAnalysisRuleCriteria"></a>
 
 The criteria for an analysis rule for an internal access analyzer.
 

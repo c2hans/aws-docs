@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-cre
 ---
 
 # Create an IAM Access Analyzer unused access analyzer
-<a name="access-analyzer-create-unused"></a>
 
 ## Create an unused access analyzer for the current account
 <a name="access-analyzer-create-unused-account"></a>

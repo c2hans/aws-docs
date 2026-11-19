@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/applic
 ---
 
 # Scaling activities for Application Auto Scaling
-<a name="application-auto-scaling-scaling-activities"></a>
 
 Application Auto Scaling monitors your scaling policy's CloudWatch metrics and initiates a scaling activity when thresholds are exceeded. It also initiates scaling activities when you modify the maximum or minimum size of the scalable target, either manually or following a schedule.
 

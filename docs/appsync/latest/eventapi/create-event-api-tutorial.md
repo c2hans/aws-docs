@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/create-event-api
 ---
 
 # Creating an AWS AppSync Event API
-<a name="create-event-api-tutorial"></a>
 
 AWS AppSync Events allows you to create Event APIs to enable real-time capabilities in your applications. In this section, you create an API with a default channel namespace. You’ll then use the AWS AppSync console to publish messages and subscribe to messages sent to channels in the namespace.
 

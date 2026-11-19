@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/developerguide/channels-
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Create a custom channel in Amazon Pinpoint using a webhook or Lambda function
-<a name="channels-custom"></a>
 
 Amazon Pinpoint includes built-in support for sending messages through the push notification, email, SMS, and voice channels. You can also configure Amazon Pinpoint to send messages through other channels by creating custom channels. Custom channels in Amazon Pinpoint allow you to send messages through any service that has an API, including third-party services. You can interact with APIs by using a webhook, or by calling an AWS Lambda function.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # Troubleshooting issues with an organization trail
-<a name="cloudtrail-troubleshooting"></a>
 
 This section provides information on how to troubleshoot issues with an organization trail.
 

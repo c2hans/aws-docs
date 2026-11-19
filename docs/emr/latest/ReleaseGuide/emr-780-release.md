@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-780-release.
 ---
 
 # Amazon EMR release 7.8.0
-<a name="emr-780-release"></a>
 
 ## 7.8.0 supported lifecycle
 <a name="emr-780-supported-lifecycle"></a>

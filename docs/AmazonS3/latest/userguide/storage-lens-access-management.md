@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-lens-a
 ---
 
 # Using S3 Storage Lens to audit Object Ownership settings
-<a name="storage-lens-access-management"></a>
 
 Amazon S3 Object Ownership is an S3 bucket-level setting that you can use to disable access control lists (ACLs) and control ownership of the objects in your bucket. If you set Object Ownership to bucket owner enforced, you can disable [access control lists (ACLs)](acl-overview.md) and take ownership of every object in your bucket. This approach simplifies access management for data stored in Amazon S3.
 

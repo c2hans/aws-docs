@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-runtime
 ---
 
 # Invoke Amazon Titan Text Embeddings on Amazon Bedrock
-<a name="bedrock-runtime_example_bedrock-runtime_InvokeModelWithResponseStream_TitanTextEmbeddings_section"></a>
 
 The following code examples show how to:
 + Get started creating your first embedding.

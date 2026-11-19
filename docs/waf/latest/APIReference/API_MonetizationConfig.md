@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Monetization
 ---
 
 # MonetizationConfig
-<a name="API_MonetizationConfig"></a>
 
 The monetization configuration for a web ACL or rule group. Specifies the payment settlement options (self-managed crypto wallets in `CryptoConfig`, a connected account in `ConnectedAccountConfigs`, or both) and the currency mode for artificial intelligence (AI) bot monetization. You must provide this configuration when any rule in the web ACL or rule group uses the `Monetize` action.
 

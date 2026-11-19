@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ip-insights-data-for
 ---
 
 # IP Insights Data Formats
-<a name="ip-insights-data-formats"></a>
 
 This section provides examples of the available input and output data formats used by the IP Insights algorithm during training and inference.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Stage 4 - Data migration
-<a name="stage-4-data-migration"></a>
 
 Now that your target environment is ready, you can implement the data migration strategy that you chose during the planning stage.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_TimerC
 ---
 
 # TimerCanceledEventAttributes
-<a name="API_TimerCanceledEventAttributes"></a>
 
  Provides the details of the `TimerCanceled` event.
 

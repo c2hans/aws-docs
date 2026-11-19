@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateEv
 ---
 
 # CreateEvaluationJob
-<a name="API_CreateEvaluationJob"></a>
 
 Creates an evaluation job.
 

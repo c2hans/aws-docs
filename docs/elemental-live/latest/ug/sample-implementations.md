@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/sample-implemen
 ---
 
 # Sample implementations
-<a name="sample-implementations"></a>
 
 ## Implementing use case 1
 <a name="implementing-use-case-1"></a>

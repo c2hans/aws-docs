@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Data
 ---
 
 # DataScientist
-<a name="DataScientist"></a>
 
 **Description**: Grants permissions to AWS data analytics services.
 

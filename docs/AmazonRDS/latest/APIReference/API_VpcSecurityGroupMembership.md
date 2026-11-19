@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_VpcSec
 ---
 
 # VpcSecurityGroupMembership
-<a name="API_VpcSecurityGroupMembership"></a>
 
 This data type is used as a response element for queries on VPC security group membership.
 

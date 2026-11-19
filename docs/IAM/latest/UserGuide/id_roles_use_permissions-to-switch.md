@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_permis
 ---
 
 # Grant a user permissions to switch roles
-<a name="id_roles_use_permissions-to-switch"></a>
 
 When an administrator [creates a role for cross-account access](id_roles_create_for-user.md), they establish trust between the account that owns the role, the resources (trusting account), and the account that contains the users (trusted account). To do this, the administrator of the trusting account specifies the trusted account number as the `Principal` in the role's trust policy. That *potentially* allows any user in the trusted account to assume the role. To complete the configuration, the administrator of the trusted account must give specific groups or users in that account permission to switch to the role.
 

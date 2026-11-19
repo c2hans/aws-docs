@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # TranscriptionMessagesConcatenationConfiguration
-<a name="API_media-pipelines-chime_TranscriptionMessagesConcatenationConfiguration"></a>
 
 The configuration object for concatenating transcription messages.
 

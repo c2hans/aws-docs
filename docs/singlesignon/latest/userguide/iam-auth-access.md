@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-a
 ---
 
 # Identity and access management for IAM Identity Center
-<a name="iam-auth-access"></a>
 
 Access to IAM Identity Center requires credentials that AWS can use to authenticate your requests. Those credentials must have permissions to access AWS resources, such as an AWS managed application.
 

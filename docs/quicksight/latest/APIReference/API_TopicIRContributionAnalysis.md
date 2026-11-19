@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicIRContributionAnalysis
-<a name="API_TopicIRContributionAnalysis"></a>
 
 The definition for a `TopicIRContributionAnalysis`.
 

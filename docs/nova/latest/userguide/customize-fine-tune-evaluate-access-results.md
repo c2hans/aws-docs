@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/customize-fine-tun
 ---
 
 # Accessing and analyzing evaluation results
-<a name="customize-fine-tune-evaluate-access-results"></a>
 
 After your evaluation job completes successfully, you can access and analyze the results using the information in this section. Based on the `output_s3_path` (such as `s3://output_path/`) defined in the recipe, the output structure is the following:
 

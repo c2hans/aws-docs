@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SessionDat
 ---
 
 # SessionDataSortBy
-<a name="API_SessionDataSortBy"></a>
 
 An object specifying the measure and method by which to sort the session analytics data.
 

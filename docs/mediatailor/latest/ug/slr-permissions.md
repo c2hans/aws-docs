@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/slr-permissions.ht
 ---
 
 # Service-linked role permissions for MediaTailor
-<a name="slr-permissions"></a>
 
 MediaTailor uses the service-linked role named **AWSServiceRoleForMediaTailor** – MediaTailor uses this service-linked role to invoke CloudWatch to create and manage log groups, log streams, and log events. This service-linked role is attached to the following managed policy: `AWSMediaTailorServiceRolePolicy`.
 

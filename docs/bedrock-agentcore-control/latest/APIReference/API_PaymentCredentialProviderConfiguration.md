@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # PaymentCredentialProviderConfiguration
-<a name="API_PaymentCredentialProviderConfiguration"></a>
 
 Configuration for a payment credential provider that stores authentication credentials for a payment provider.
 

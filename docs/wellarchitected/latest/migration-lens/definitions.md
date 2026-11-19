@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/de
 ---
 
 # Definitions
-<a name="definitions"></a>
 
 ## Well-Architected terminology
 <a name="well-architected-terminology"></a>

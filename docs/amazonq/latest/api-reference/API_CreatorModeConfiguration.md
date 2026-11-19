@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Creator
 ---
 
 # CreatorModeConfiguration
-<a name="API_CreatorModeConfiguration"></a>
 
 Configuration information required to invoke chat in `CREATOR_MODE`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/manage-updates.html
 ---
 
 # Manage package and operating system updates in AL2027
-<a name="manage-updates"></a>
 
 **AL2027 Preview**
 AL2027 is currently available for preview. It is intended for evaluation and testing only and is not recommended for production workloads.

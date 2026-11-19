@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This section provides known issue resolution when deploying or running the Migration Assistant for Amazon OpenSearch Service solution. If these instructions don’t address your issue, see the [Contact AWS Support](contact-aws-support.md) section for instructions on opening an AWS Support case for this solution. When opening a support case, please add a note to route the ticket to **AWS OpenSearch / Migrations / AWS Solutions**.
 

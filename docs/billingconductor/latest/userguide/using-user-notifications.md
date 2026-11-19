@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/using-
 ---
 
 # Using AWS User Notifications with AWS Billing Conductor
-<a name="using-user-notifications"></a>
 
 You can use [AWS User Notifications](https://docs.aws.amazon.com/notifications/latest/userguide/what-is-service.html) to set up delivery channels that notify you about AWS Billing Conductor events. You will receive a notification when an event matches a specified rule. You can receive notifications for events through multiple channels, including email, [Amazon Q Developer in chat applications](https://docs.aws.amazon.com/chatbot/latest/adminguide/what-is.html) such as Amazon Chime, Microsoft Teams, and Slack, or [AWS Console Mobile Application](https://docs.aws.amazon.com/consolemobileapp/latest/userguide/what-is-consolemobileapp.html) push notifications. You can also see notifications using the [Console Notifications Center](https://console.aws.amazon.com/notifications/) in the AWS User Notifications console.
 

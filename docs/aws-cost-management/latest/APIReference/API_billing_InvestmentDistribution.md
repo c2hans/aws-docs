@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # InvestmentDistribution
-<a name="API_billing_InvestmentDistribution"></a>
 
 An allocation of an investment disbursement to a specific recipient account. The account is the target account that receives the investment, not your account.
 

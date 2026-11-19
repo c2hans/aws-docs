@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/multiskill-vto
 ---
 
 # Voluntary time off for multi-skill forecast groups
-<a name="multiskill-vto"></a>
 
 Supervisors and Managers can restrict voluntary time off slots to specific demand groups
 

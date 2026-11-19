@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/what-is-s
 ---
 
 # What Is the AWS Serverless Application Repository?
-<a name="what-is-serverlessrepo"></a>
 
 The AWS Serverless Application Repository makes it easy for developers and enterprises to quickly find, deploy, and publish serverless applications in the AWS Cloud. For more information about serverless applications, see [Serverless Computing and Applications](https://aws.amazon.com/serverless) on the AWS website.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Upda
 ---
 
 # UpdateArchive
-<a name="API_UpdateArchive"></a>
 
 Updates the specified archive.
 

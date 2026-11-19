@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSystemsManagerNotificationsServicePolicy
-<a name="AWSSystemsManagerNotificationsServicePolicy"></a>
 
 **Description**: Permissions required to collect information about a user for Just-In-Time-Node-Access notifications.
 

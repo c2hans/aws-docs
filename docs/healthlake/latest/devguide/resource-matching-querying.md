@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/resource-matc
 ---
 
 # Querying linked data
-<a name="resource-matching-querying"></a>
 
 A matched entity is stored as multiple resources connected by a `Linkage`. Use the standard FHIR R4 search interactions to retrieve linked data (see [Searching FHIR resources](searching-fhir-resources.md)).
 

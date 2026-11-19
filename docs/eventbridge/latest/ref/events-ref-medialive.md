@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-medial
 ---
 
 # AWS Elemental MediaLive events
-<a name="events-ref-medialive"></a>
 
 MediaLive sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

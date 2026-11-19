@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The Payment Cryptography Control Plane API contains several data types that various actions use. This section describes each data type in detail.
 

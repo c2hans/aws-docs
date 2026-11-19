@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/cmaf-group.html
 ---
 
 # CMAF group
-<a name="cmaf-group"></a>
 
 The following is an EventBridge sample event for a job with a `COMPLETE` status. It includes output file path information for a CMAF group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UntagResource
-<a name="API_DataExports_UntagResource"></a>
 
 Deletes tags associated with an existing data export definition.
 

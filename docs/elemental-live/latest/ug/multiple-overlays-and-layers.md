@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/multiple-overla
 ---
 
 # Multiple overlays and layers
-<a name="multiple-overlays-and-layers"></a>
 
 You can set up the event to insert more than one static overlay. Overlays are stored in the event in a queue that has a maximum of 8 layers.
 

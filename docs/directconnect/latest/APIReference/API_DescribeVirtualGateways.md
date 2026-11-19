@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DescribeVirtualGateways
-<a name="API_DescribeVirtualGateways"></a>
 
 **Note**
 Deprecated. Use `DescribeVpnGateways` instead. See [DescribeVPNGateways](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpnGateways.html) in the *Amazon Elastic Compute Cloud API Reference*.

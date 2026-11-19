@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/column-statistics.html
 ---
 
 # Optimizing query performance using column statistics
-<a name="column-statistics"></a>
 
 You can compute column-level statistics for AWS Glue Data Catalog tables in data formats such as Parquet, ORC, JSON, ION, CSV, and XML without setting up additional data pipelines. Column statistics help you to understand data profiles by getting insights about values within a column.
 

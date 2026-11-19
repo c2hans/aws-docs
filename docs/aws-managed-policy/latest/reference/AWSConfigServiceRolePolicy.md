@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSConfigServiceRolePolicy
-<a name="AWSConfigServiceRolePolicy"></a>
 
 **Description**: Allows Config to call AWS services and collect resource configurations on your behalf.
 

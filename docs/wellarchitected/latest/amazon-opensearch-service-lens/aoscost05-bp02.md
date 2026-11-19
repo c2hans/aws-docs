@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSCOST05-BP02 Examine the costs associated with Amazon S3 storage for manually creating snapshots of your OpenSearch Service domain
-<a name="aoscost05-bp02"></a>
 
  Improve cost awareness and inform backup strategy by examining Amazon S3 storage costs associated with manually creating snapshots of your OpenSearch Service domain.
 

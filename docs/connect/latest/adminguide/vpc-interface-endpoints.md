@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/vpc-interface-
 ---
 
 # Amazon Connect Customer and interface VPC endpoints (AWS PrivateLink)
-<a name="vpc-interface-endpoints"></a>
 
 You can establish a private connection between your VPC and a subset of endpoints in Connect Customer by creating an interface VPC endpoint. Following are the supported endpoints:
 + Amazon AppIntegrations

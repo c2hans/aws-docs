@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/update-
 ---
 
 # UpdateTemplate
-<a name="update-template"></a>
 
 Use the `UpdateTemplate` operation to update a template from an existing Quick Sight analysis or another template.
 

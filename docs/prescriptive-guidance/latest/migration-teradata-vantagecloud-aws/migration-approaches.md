@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Data migration approaches
-<a name="migration-approaches"></a>
 
 This section provides an overview of the most common migration approaches, and highlights some of the key benefits and challenges of each approach. The following tools are used in the data migration approaches covered in this section:
 + Teradata Data Transfer Utility (DTU) – Offline migration

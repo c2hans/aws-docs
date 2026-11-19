@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Given tag IDs that you previously assigned to a user pool, removes them.
 

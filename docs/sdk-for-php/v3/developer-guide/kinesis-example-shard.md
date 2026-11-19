@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/kinesis-e
 ---
 
 # Manage data shards using the Kinesis Data Streams API and the AWS SDK for PHP Version 3
-<a name="kinesis-example-shard"></a>
 
 Amazon Kinesis Data Streams enables you to send real-time data to an endpoint. The rate of data flow depends on the number of shards in your stream.
 

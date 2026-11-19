@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_T
 ---
 
 # TlsAuthConfiguration
-<a name="API_TlsAuthConfiguration"></a>
 
 The mutual TLS authentication configuration for an ingress endpoint.
 

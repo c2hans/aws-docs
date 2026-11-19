@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # ForwardBackwardConfig
-<a name="API_training_session_runtime_ForwardBackwardConfig"></a>
 
 The configuration for a forward and backward pass through the model. This computes both loss values and gradients for use in subsequent optimizer steps.
 

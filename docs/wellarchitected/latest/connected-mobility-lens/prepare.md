@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Prepare
-<a name="prepare"></a>
 
 | CMOPS\_1: How do you define the meaningful monitoring KPIs and metrics of your connected mobility platform?  |
 | --- |

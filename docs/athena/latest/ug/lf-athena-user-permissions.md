@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/lf-athena-user-permissi
 ---
 
 # Manage Lake Formation and Athena user permissions
-<a name="lf-athena-user-permissions"></a>
 
 Lake Formation vends credentials to query Amazon S3 data stores or federated catalogs that are registered with Lake Formation. If you previously used IAM policies to allow or deny permissions to read catalogs or data locations in Amazon S3, you can use Lake Formation permissions instead. However, other IAM permissions are still required.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # ViewSunElevationInput
-<a name="API_geospatial_ViewSunElevationInput"></a>
 
 The input structure for specifying ViewSunElevation angle property filter.
 

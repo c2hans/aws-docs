@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Des
 ---
 
 # DescribeAccountAssignmentDeletionStatus
-<a name="API_DescribeAccountAssignmentDeletionStatus"></a>
 
 Describes the status of the assignment deletion request.
 

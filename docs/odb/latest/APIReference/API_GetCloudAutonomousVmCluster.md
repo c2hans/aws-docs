@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_GetCloudAuto
 ---
 
 # GetCloudAutonomousVmCluster
-<a name="API_GetCloudAutonomousVmCluster"></a>
 
 Gets information about a specific Autonomous VM cluster.
 

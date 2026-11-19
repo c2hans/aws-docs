@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
 ---
 
 # Optimizing over time
-<a name="optimizing-over-time"></a>
 
  See the [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper for cost optimization best practices in the [Optimizing over time](https://docs.aws.amazon.com/wellarchitected/latest/framework/cost-opti.html) section that apply to serverless applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # SourceLogsConfiguration
-<a name="API_SourceLogsConfiguration"></a>
 
 Configuration for selecting and handling source log groups for centralization.
 

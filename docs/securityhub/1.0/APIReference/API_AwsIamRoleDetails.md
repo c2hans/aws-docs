@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsIamR
 ---
 
 # AwsIamRoleDetails
-<a name="API_AwsIamRoleDetails"></a>
 
 Contains information about an IAM role, including all of the role's policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DescribeSMBSettings
-<a name="API_DescribeSMBSettings"></a>
 
 Gets a description of a Server Message Block (SMB) file share settings from a file gateway. This operation is only supported for file gateways.
 

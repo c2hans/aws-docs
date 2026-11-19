@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/livechatai-configuring-co
 ---
 
 # Configuring LiveChatAI connections
-<a name="livechatai-configuring-connections"></a>
 
 LiveChatAI connections authenticate with an API key, which the connector sends as a bearer token. You store the API key in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

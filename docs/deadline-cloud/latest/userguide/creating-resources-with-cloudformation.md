@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/creating
 ---
 
 # Creating AWS Deadline Cloud resources with AWS CloudFormation
-<a name="creating-resources-with-cloudformation"></a>
 
 AWS Deadline Cloud is integrated with AWS CloudFormation, a service that helps you to model and set up your AWS resources so that you can spend less time creating and managing your resources and infrastructure. You create a template that describes all the AWS resources that you want (such as farms, queues, and fleets), and CloudFormation provisions and configures those resources for you.
 

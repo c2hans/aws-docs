@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # AcceleratorConfig
-<a name="sam-property-function-acceleratorconfig"></a>
 
 `AcceleratorConfig` is a property of `AWS::Serverless::Function` that configures accelerator resources, such as GPUs, for an AWS Lambda (Lambda) function that runs on Lambda Managed Instances. You specify the amount of accelerator memory that Lambda allocates to each execution environment of the function.
 

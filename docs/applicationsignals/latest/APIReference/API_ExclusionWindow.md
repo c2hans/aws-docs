@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # ExclusionWindow
-<a name="API_ExclusionWindow"></a>
 
 The core SLO time window exclusion object that includes Window, StartTime, RecurrenceRule, and Reason.
 

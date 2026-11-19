@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Disassocia
 ---
 
 # DisassociateConfigurationRequest
-<a name="API_DisassociateConfigurationRequest"></a>
 
 Contains details about a request to disassociate a code repository from a scan configuration.
 

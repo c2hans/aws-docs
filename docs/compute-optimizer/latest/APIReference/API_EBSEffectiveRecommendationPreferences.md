@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # EBSEffectiveRecommendationPreferences
-<a name="API_EBSEffectiveRecommendationPreferences"></a>
 
  Describes the effective recommendation preferences for Amazon EBS volumes.
 

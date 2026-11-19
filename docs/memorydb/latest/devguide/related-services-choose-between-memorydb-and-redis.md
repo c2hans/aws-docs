@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/related-service
 ---
 
 # Related services
-<a name="related-services-choose-between-memorydb-and-redis"></a>
 
 [ElastiCache](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/whatis.html)
 

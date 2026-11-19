@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/working-with-ti
 ---
 
 # Working with time signals
-<a name="working-with-time-signals"></a>
 
 Time signals inserted by the REST API can be one of the “ad avail” types, or some other type, depending on what you specify in the segmentation descriptor in the request.
 

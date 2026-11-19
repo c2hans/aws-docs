@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ex
 ---
 
 # Extract and query AWS IoT SiteWise metadata attributes in a data lake
-<a name="extract-and-query-aws-iot-sitewise-metadata-attributes-in-a-data-lake"></a>
 
 *Ambarish Dongaonkar, Amazon Web Services*
 

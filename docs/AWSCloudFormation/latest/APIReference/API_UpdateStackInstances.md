@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # UpdateStackInstances
-<a name="API_UpdateStackInstances"></a>
 
 Updates the parameter values for stack instances for the specified accounts, within the specified AWS Regions. A stack instance refers to a stack in a specific account and Region.
 

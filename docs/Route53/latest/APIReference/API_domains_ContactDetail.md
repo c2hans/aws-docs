@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # ContactDetail
-<a name="API_domains_ContactDetail"></a>
 
 ContactDetail includes the following elements.
 

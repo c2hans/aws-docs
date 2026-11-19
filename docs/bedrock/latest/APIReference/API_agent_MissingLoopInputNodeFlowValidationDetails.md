@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Mi
 ---
 
 # MissingLoopInputNodeFlowValidationDetails
-<a name="API_agent_MissingLoopInputNodeFlowValidationDetails"></a>
 
 Details about a flow that's missing a required `LoopInput` node in a DoWhile loop.
 

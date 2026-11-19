@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Amazon SageMaker Studio (web-based development)
-<a name="sagemaker-hyperpod-ray-studio"></a>
 
 Amazon SageMaker Studio is the purpose-built interface for data scientists and ML engineers. From the **Tasks** tab you can manage `RayCluster`, `RayJob`, `RayCronJob`, and `RayService` resources without writing Kubernetes manifests. Studio reads and writes the same KubeRay custom resources that the operator reconciles, so a resource you create in Studio is identical to one you apply with `kubectl`.
 

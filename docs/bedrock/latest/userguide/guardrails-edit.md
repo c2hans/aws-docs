@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-edit
 ---
 
 # Modify your guardrail
-<a name="guardrails-edit"></a>
 
 You can edit your guardrails by following these steps for the Amazon Bedrock console or API:
 

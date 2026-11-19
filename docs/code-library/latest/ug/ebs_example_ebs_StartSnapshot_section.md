@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ebs_example_ebs_S
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `StartSnapshot` with an AWS SDK
-<a name="ebs_example_ebs_StartSnapshot_section"></a>
 
 The following code example shows how to use `StartSnapshot`.
 

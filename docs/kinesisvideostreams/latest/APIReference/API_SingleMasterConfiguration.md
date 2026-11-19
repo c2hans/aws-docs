@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # SingleMasterConfiguration
-<a name="API_SingleMasterConfiguration"></a>
 
 A structure that contains the configuration for the `SINGLE_MASTER` channel type.
 

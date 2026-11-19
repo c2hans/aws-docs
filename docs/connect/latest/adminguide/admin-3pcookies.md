@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/admin-3pcookie
 ---
 
 # Using Connect Customer with third-party cookies
-<a name="admin-3pcookies"></a>
 
 ## Google Chrome
 <a name="admin-3pcookies-google"></a>

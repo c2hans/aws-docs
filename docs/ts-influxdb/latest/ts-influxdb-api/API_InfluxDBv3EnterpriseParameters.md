@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_I
 ---
 
 # InfluxDBv3EnterpriseParameters
-<a name="API_InfluxDBv3EnterpriseParameters"></a>
 
 All the customer-modifiable InfluxDB v3 Enterprise parameters in Timestream for InfluxDB.
 

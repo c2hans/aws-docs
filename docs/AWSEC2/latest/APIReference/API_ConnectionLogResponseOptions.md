@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Connectio
 ---
 
 # ConnectionLogResponseOptions
-<a name="API_ConnectionLogResponseOptions"></a>
 
 Information about the client connection logging options for a Client VPN endpoint.
 

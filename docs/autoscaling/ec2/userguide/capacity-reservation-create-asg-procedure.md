@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/capacity-reser
 ---
 
 # Configure your Auto Scaling group to launch instances with Capacity Reservations
-<a name="capacity-reservation-create-asg-procedure"></a>
 
 To configure your Auto Scaling group to launch instances with Amazon EC2 Capacity Reservations and Capacity Blocks for ML, choose the procedure that matches your approach:
 + For On-Demand Capacity Reservations, see [Use a Capacity Reservation specification](#use-a-capacity-reservation-specification).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.CRYPTO
 ---
 
 # CRYPTOGRAPHIC\_HASH
-<a name="recipe-actions.CRYPTOGRAPHIC_HASH"></a>
 
 Applies an algorithm to hash values in the column.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergTarget.htm
 ---
 
 # IcebergTarget
-<a name="API_IcebergTarget"></a>
 
 Specifies an Apache Iceberg data source where Iceberg tables are stored in Amazon S3.
 

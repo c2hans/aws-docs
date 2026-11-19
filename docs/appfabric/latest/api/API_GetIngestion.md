@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_GetIngestion.ht
 ---
 
 # GetIngestion
-<a name="API_GetIngestion"></a>
 
 Returns information about an ingestion.
 

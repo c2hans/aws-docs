@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_GetResourceP
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
 Returns details about a policy for a resource.
 

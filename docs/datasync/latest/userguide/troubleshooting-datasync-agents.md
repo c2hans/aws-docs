@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/troubleshootin
 ---
 
 # Troubleshooting issues with DataSync agents
-<a name="troubleshooting-datasync-agents"></a>
 
 Use the following information to help you troubleshoot issues with AWS DataSync agents. Some of these issues can include:
 + Trouble connecting to an Amazon EC2 agent's local console

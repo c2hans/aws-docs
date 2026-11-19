@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Workfl
 ---
 
 # WorkflowExecutionOpenCounts
-<a name="API_WorkflowExecutionOpenCounts"></a>
 
 Contains the counts of open tasks, child workflow executions and timers for a workflow execution.
 

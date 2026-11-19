@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate from Oracle on Amazon EC2 to Amazon RDS for MySQL using AWS DMS and AWS SCT
-<a name="migrate-from-oracle-on-amazon-ec2-to-amazon-rds-for-mysql-using-aws-dms-and-aws-sct"></a>
 
 *Anil Kunapareddy, Amazon Web Services*
 

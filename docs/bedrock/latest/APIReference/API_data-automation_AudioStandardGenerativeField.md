@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # AudioStandardGenerativeField
-<a name="API_data-automation_AudioStandardGenerativeField"></a>
 
 Settings for generating descriptions of audio.
 

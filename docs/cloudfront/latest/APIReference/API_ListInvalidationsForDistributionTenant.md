@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListI
 ---
 
 # ListInvalidationsForDistributionTenant
-<a name="API_ListInvalidationsForDistributionTenant"></a>
 
 Lists the invalidations for a distribution tenant.
 

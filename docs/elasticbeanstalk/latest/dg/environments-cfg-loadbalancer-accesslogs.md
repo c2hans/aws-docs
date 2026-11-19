@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-
 ---
 
 # Configuring access logs
-<a name="environments-cfg-loadbalancer-accesslogs"></a>
 
 You can use [configuration files](ebextensions.md) to configure your environment's load balancer to upload access logs to an Amazon S3 bucket. See the following example configuration files on GitHub for instructions:
 + `[loadbalancer-accesslogs-existingbucket.config](https://github.com/awslabs/elastic-beanstalk-samples/blob/master/configuration-files/aws-provided/resource-configuration/loadbalancer-accesslogs-existingbucket.config)` – Configure the load balancer to upload access logs to an existing Amazon S3 bucket.

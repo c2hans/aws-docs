@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Batch
 ---
 
 # BatchDeleteGeofenceError
-<a name="API_BatchDeleteGeofenceError"></a>
 
 Contains error details for each geofence that failed to delete from the geofence collection.
 

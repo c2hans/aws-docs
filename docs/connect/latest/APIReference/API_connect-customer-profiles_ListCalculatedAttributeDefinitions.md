@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListCalculatedAttributeDefinitions
-<a name="API_connect-customer-profiles_ListCalculatedAttributeDefinitions"></a>
 
 Lists calculated attribute definitions for Customer Profiles
 

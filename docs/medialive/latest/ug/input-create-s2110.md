@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-create-s2110.h
 ---
 
 # Creating a SMPTE 2110 input
-<a name="input-create-s2110"></a>
 
 This section describes how to set up the source content on the upstream system, and how to create an SMPTE 2110 input that connects the upstream system to MediaLive. Create the input before you create the channel that ingests the input.
 

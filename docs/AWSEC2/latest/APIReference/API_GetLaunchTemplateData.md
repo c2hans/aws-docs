@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetLaunch
 ---
 
 # GetLaunchTemplateData
-<a name="API_GetLaunchTemplateData"></a>
 
 Retrieves the configuration data of the specified instance. You can use this data to create a launch template.
 

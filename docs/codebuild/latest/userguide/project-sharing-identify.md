@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/project-shari
 ---
 
 # Identify a shared project
-<a name="project-sharing-identify"></a>
 
 Owners and consumers can use the AWS CLI to identify shared projects.
 

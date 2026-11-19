@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/message-stream
 ---
 
 # Enable message streaming for AI-powered chat
-<a name="message-streaming-ai-chat"></a>
 
 Connect Customer supports message streaming for AI-powered chat interactions. Responses from AI agents appear progressively as they're generated, improving the customer experience during conversations.
 

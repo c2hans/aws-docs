@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StringF
 ---
 
 # StringFilter
-<a name="API_StringFilter"></a>
 
 A string filter for filtering AWS Security Hub CSPM findings.
 

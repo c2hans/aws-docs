@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mi
 ---
 
 # Migrate phase
-<a name="migrate-phase"></a>
 
 Migrations at scale consist of the building blocks, processes, tools, resources, and methodology defined and tested during the readiness and planning phase. After using the best practices and lessons learned from the earlier phases, you can implement a *migration factory*, which is a blueprint of scaling implementation and operations, through automation and agile delivery.
 

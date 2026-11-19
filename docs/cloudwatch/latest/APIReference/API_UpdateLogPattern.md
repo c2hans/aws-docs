@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Updat
 ---
 
 # UpdateLogPattern
-<a name="API_UpdateLogPattern"></a>
 
 Adds a log pattern to a `LogPatternSet`.
 

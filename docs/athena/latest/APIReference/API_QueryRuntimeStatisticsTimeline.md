@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryRunt
 ---
 
 # QueryRuntimeStatisticsTimeline
-<a name="API_QueryRuntimeStatisticsTimeline"></a>
 
 Timeline statistics such as query queue time, planning time, execution time, service processing time, and total execution time.
 

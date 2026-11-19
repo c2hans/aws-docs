@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/windows-no
 ---
 
 # Configure the data retention flow
-<a name="windows-nodered-data-retention-flow"></a>
 
 The data retention flow is can be used to maintain operational visibility at the edge. This is useful during network disruptions or when you need immediate access to your data. This flow subscribes to the MQTT broker to receive device data, converts it to InfluxDB® format, and stores it locally. By implementing this flow, you create a resilient local data store that operators can access without cloud dependencies, enabling real-time monitoring and decision-making at the edge.
 

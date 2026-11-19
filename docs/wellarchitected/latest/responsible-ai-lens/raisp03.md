@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Filtering
-<a name="raisp03"></a>
 
 | RAISP03: How will you meet release criteria not fully addressed by the core AI system design (filtering)? |
 | --- |

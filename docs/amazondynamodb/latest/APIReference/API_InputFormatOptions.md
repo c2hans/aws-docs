@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_I
 ---
 
 # InputFormatOptions
-<a name="API_InputFormatOptions"></a>
 
  The format options for the data that was imported into the target table. There is one value, CsvOption.
 

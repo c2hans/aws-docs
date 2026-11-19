@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsP
 ---
 
 # AnalyticsPathFilter
-<a name="API_AnalyticsPathFilter"></a>
 
 Contains fields describing a condition by which to filter the paths. The expression may be understood as `name` `operator` `values`. For example:
 +  `LocaleId EQ en` – The locale is "en".

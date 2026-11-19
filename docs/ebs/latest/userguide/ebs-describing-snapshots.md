@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-describing-snap
 ---
 
 # View Amazon EBS snapshot information
-<a name="ebs-describing-snapshots"></a>
 
 You can view detailed information about your snapshots.
 

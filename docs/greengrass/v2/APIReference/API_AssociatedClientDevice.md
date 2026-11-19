@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Associate
 ---
 
 # AssociatedClientDevice
-<a name="API_AssociatedClientDevice"></a>
 
 Contains information about a client device that is associated to a core device for cloud discovery.
 

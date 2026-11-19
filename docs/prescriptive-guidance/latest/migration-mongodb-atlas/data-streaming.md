@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Data streaming with Amazon Data Firehose
-<a name="data-streaming"></a>
 
 You can integrate MongoDB Atlas with [Amazon Data Firehose](https://aws.amazon.com/kinesis/data-firehose/) to stream, transform, and load data efficiently. This integration provides automated, real-time data delivery and scalability for optimized analytics and insights. The following diagram shows an example reference architecture.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Cont
 ---
 
 # ContainerProductSummary
-<a name="API_ContainerProductSummary"></a>
 
 Object that contains summarized information about a container product.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeMetricCollectionTypes
-<a name="API_DescribeMetricCollectionTypes"></a>
 
 Describes the available CloudWatch metrics for Amazon EC2 Auto Scaling.
 

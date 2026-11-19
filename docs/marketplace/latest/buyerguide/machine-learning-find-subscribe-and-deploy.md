@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/machine-le
 ---
 
 # Process overview for finding and deploying machine learning products
-<a name="machine-learning-find-subscribe-and-deploy"></a>
 
 The following diagram shows an overview of the process to find, subscribe, and deploy a machine learning product on Amazon SageMaker AI.
 

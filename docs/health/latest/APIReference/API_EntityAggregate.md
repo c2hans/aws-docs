@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_EntityAgg
 ---
 
 # EntityAggregate
-<a name="API_EntityAggregate"></a>
 
 The number of entities that are affected by one or more events. Returned by the [DescribeEntityAggregates](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeEntityAggregates.html) operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/cost-mgmt-proje
 ---
 
 # Projects
-<a name="cost-mgmt-projects"></a>
 
 Amazon Bedrock [Projects](projects.md) provide cost attribution at the application and workload level for the [Responses API](inference-responses-api.md) and [Chat Completions API](inference-chat-completions.md) on the `bedrock-mantle` endpoint. When you tag a project, those tags flow to AWS Cost Explorer and AWS Cost and Usage Reports (CUR 2.0), so you can filter and group Amazon Bedrock spend by application, team, environment, cost center, or any other dimension.
 

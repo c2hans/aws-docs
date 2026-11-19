@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/transfer-co
 ---
 
 # transfer-connector-tagged
-<a name="transfer-connector-tagged"></a>
 
 Checks if AWS Transfer Family connectors have tags. Optionally, you can specify tag keys. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.
 

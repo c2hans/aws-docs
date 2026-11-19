@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ProtocolConfiguration
-<a name="API_ProtocolConfiguration"></a>
 
 The protocol configuration for an agent runtime. This structure defines how the agent runtime communicates with clients.
 

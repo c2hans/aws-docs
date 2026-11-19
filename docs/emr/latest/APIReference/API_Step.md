@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_Step.html
 ---
 
 # Step
-<a name="API_Step"></a>
 
 This represents a step in a cluster.
 

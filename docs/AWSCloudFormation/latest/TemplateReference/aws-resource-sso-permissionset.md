@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSO::PermissionSet
-<a name="aws-resource-sso-permissionset"></a>
 
 Specifies a permission set within a specified IAM Identity Center instance.
 
@@ -68,7 +67,7 @@ Specifies the names and paths of the customer managed policies that you have att
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Description`  <a name="cfn-sso-permissionset-description"></a>
-The description of the [AWS::SSO::PermissionSet](#aws-resource-sso-permissionset).
+The description of the [AWS::SSO::PermissionSet](aws-resource-sso-permissionset.md).
 *Required*: No
 *Type*: String
 *Pattern*: `[\u0009\u000A\u000D\u0020-\u007E\u00A1-\u00FF]*`
@@ -137,7 +136,7 @@ The length of time that the application user sessions are valid for in the ISO-8
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-sso-permissionset-tags"></a>
-The tags to attach to the new [AWS::SSO::PermissionSet](#aws-resource-sso-permissionset).
+The tags to attach to the new [AWS::SSO::PermissionSet](aws-resource-sso-permissionset.md).
 *Required*: No
 *Type*: Array of [Tag](aws-properties-sso-permissionset-tag.md)
 *Maximum*: `50`

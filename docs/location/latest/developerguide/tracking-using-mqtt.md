@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/tracking-
 ---
 
 # Track using AWS IoT and MQTT with Amazon Location Service
-<a name="tracking-using-mqtt"></a>
 
 [MQTT](http://mqtt.org/) is a lightweight and widely adopted messaging protocol designed for constrained devices. AWS IoT Core supports device connections that use the MQTT protocol and MQTT over WebSocket Secure (WSS) protocol.
 

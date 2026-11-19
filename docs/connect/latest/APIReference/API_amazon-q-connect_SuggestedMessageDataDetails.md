@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # SuggestedMessageDataDetails
-<a name="API_amazon-q-connect_SuggestedMessageDataDetails"></a>
 
 Details about suggested message data.
 

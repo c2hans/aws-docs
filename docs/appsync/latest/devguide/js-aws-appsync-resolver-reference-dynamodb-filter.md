@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/js-aws-appsync-r
 ---
 
 # Filters
-<a name="js-aws-appsync-resolver-reference-dynamodb-filter"></a>
 
 When querying objects in DynamoDB using the `Query` and `Scan` operations, you can optionally specify a `filter` that evaluates the results and returns only the desired values.
 

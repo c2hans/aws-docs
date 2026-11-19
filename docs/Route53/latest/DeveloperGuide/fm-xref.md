@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/fm-xref.ht
 ---
 
 # .fm
-<a name="fm-xref"></a>
 
 See [.fm (Federated States of Micronesia)](fm.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-v
 ---
 
 # Step 1: Get a voice-capable phone number
-<a name="nx-voice-get-set-up-identities"></a>
 
 To send voice messages, you need a voice-capable phone number. Request a phone number that supports the voice channel in your destination country. The number types and country availability for voice are described under [Country support](nx-voice-scale-country-support.md). For the full phone number request and management operations, see [Phone numbers](nx-features-phone-numbers.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # WKLD.13 Require HTTPS for public web endpoints
-<a name="wkld-13"></a>
 
 Require HTTPS so that your endpoints can use certificates to prove their identity and so that traffic between your endpoint and clients is encrypted. For public websites, HTTPS can also help improve search engine ranking.
 

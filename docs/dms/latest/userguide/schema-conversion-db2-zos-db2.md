@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/schema-conversion-d
 ---
 
 # IBM Db2 for z/OS to Amazon RDS for Db2 conversion settings
-<a name="schema-conversion-db2-zos-db2"></a>
 
 **Important**
 DMS Schema Conversion does not provide a AWS Management Console experience for the IBM Db2 for z/OS to Amazon RDS for Db2 conversion path. You cannot create or configure these migration projects in the AWS Management Console, so you configure every setting on this page with the AWS CLI or the AWS Database Migration Service API. Because there is no AWS Management Console for this conversion path, each setting is identified only by its API and AWS CLI parameter name, not by a AWS Management Console label.

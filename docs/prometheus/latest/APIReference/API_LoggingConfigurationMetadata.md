@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Loggi
 ---
 
 # LoggingConfigurationMetadata
-<a name="API_LoggingConfigurationMetadata"></a>
 
 Contains information about the current rules and alerting logging configuration for the workspace.
 

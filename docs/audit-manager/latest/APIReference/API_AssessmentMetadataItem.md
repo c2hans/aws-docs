@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_As
 ---
 
 # AssessmentMetadataItem
-<a name="API_AssessmentMetadataItem"></a>
 
  A metadata object that's associated with an assessment in AWS Audit Manager.
 

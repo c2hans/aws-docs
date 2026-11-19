@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Restoring your AWS Managed Microsoft AD with snapshots
-<a name="ms_ad_snapshots"></a>
 
 AWS Directory Service provides automated daily snapshots and the ability to take manual snapshots of data for your AWS Managed Microsoft AD Active Directory. These snapshots can be used to perform a point-in-time restore for your Active Directory. You are limited to five manual snapshots for each AWS Managed Microsoft AD Active Directory. If you have already reached this limit, you must delete one of your existing manual snapshots before you can create another. You cannot take snapshots of AD Connector directories.
 

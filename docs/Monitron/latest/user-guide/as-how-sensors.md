@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/Monitron/latest/user-guide/as-how-sensor
 Amazon Monitron is no longer open to new customers. Existing customers can continue to use the service as normal. For capabilities similar to Amazon Monitron, see our [blog post](https://aws.amazon.com/blogs/machine-learning/maintain-access-and-consider-alternatives-for-amazon-monitron).
 
 # Mounting a sensor
-<a name="as-how-sensors"></a>
 
 **Warning**
 Before you install and use sensors, see the [ Amazon Monitron Sensor Device Safety and Compliance Guide](https://aws.amazon.com/monitron/terms/safety-and-compliance-information/). Before you install and use Ex-rated sensors, see the Ex Safety and Compliance Guide for all warnings and instructions.

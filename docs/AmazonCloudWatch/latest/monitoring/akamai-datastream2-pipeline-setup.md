@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/akama
 ---
 
 # CloudWatch pipelines configuration for Akamai DataStream 2
-<a name="akamai-datastream2-pipeline-setup"></a>
 
 The Akamai DataStream 2 setup on AWS reads log data from Amazon S3 buckets using Amazon SQS notifications for new object events.
 

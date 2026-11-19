@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-s3.html
 ---
 
 # Amazon S3 general purpose delivery
-<a name="data-delivery-s3"></a>
 
  Amazon S3 general purpose delivery writes streaming data from a Amazon Kinesis Data Streams stream directly to a general purpose Amazon S3 bucket. Records are delivered in their original source format with no transformation applied, batched into optimally sized objects with configurable compression and an S3 key structure you define. This is ideal for use cases such as raw log archival, event replay, and downstream batch processing.
 

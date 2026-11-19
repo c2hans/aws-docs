@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/document-and-visu
 ---
 
 # Document and visual creation with AWS Quick
-<a name="document-and-visual-creation"></a>
 
 Quick can create professional-quality documents and business visuals from natural language requests. You can create and edit Word documents, Excel spreadsheets, PowerPoint presentations, PDFs, infographics, and other business visuals directly within Quick. Describe what you need, and Quick produces a downloadable file that you can use immediately or refine further.
 

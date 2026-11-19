@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/kinesis_code_exam
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Actions for Kinesis using AWS SDKs
-<a name="kinesis_code_examples_actions"></a>
 
 The following code examples demonstrate how to perform individual Kinesis actions with AWS SDKs. Each example includes a link to GitHub, where you can find instructions for setting up and running the code.
 

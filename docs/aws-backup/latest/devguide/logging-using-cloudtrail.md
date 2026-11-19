@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/logging-using
 ---
 
 # Logging AWS Backup API calls with CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 AWS Backup is integrated with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) a service that provides a record of actions taken by a user, role, or an AWS service service. CloudTrail captures all API calls for AWS Backup as events. The calls captured include calls from the AWS Backup console and code calls to the AWS Backup API operations. Using the information collected by CloudTrail, you can determine the request that was made to AWS Backup, the IP address from which the request was made, when it was made, and additional details.
 

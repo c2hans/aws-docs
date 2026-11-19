@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MemoryRecordOutput
-<a name="API_MemoryRecordOutput"></a>
 
 Output information returned after processing a memory record operation.
 

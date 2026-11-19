@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeC
 ---
 
 # DescribeConfigRules
-<a name="API_DescribeConfigRules"></a>
 
 Returns details about your AWS Config rules.
 

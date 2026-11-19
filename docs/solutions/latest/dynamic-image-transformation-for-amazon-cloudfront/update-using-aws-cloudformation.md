@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Update using AWS CloudFormation
-<a name="update-using-aws-cloudformation"></a>
 
 **Important**
 Dynamic Image Transformation for Amazon CloudFront version 6.0 and newer include significant changes, and you can’t update the solution from versions prior to 6.0 to version 6.0 or later. To use version 6.0 or later, launch a new stack using version 6.x of the CloudFormation template and [uninstall](uninstall-the-solution.md) your previous version of this solution.

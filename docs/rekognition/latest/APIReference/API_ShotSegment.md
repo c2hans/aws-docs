@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Shot
 ---
 
 # ShotSegment
-<a name="API_ShotSegment"></a>
 
 Information about a shot detection segment detected in a video. For more information, see [SegmentDetection](API_SegmentDetection.md).
 

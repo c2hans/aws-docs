@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteR
 ---
 
 # DeleteResourcePolicy
-<a name="API_DeleteResourcePolicy"></a>
 
  Deletes an AWS CloudHSM resource policy. Deleting a resource policy will result in the resource being unshared and removed from any AWS RAM resource shares. Deleting the resource policy attached to a backup will not impact any clusters created from that backup.
 

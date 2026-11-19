@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/bugsnag-support.html
 ---
 
 # AWS Glue support for BugSnag
-<a name="bugsnag-support"></a>
 
 AWS Glue supports BugSnag as follows:
 

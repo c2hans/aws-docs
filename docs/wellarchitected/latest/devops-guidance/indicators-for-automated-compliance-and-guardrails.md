@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/i
 ---
 
 # Indicators for automated compliance and guardrails
-<a name="indicators-for-automated-compliance-and-guardrails"></a>
 
 Integrate risk management and governance mechanisms into the maintenance of compliance in dynamic environments. It enables automatic enforcement of directive, detective, preventive, and responsive measures, reducing the manual overhead associated with compliance management.
 

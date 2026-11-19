@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_m
 ---
 
 # Authorization for AWS applications and services using Directory Service
-<a name="ad_manage_apps_services_authorization"></a>
 
  This topic describes authorization for AWS applications and services using AWS Directory Service and AWS Directory Service Data
 

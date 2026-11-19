@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora_
 ---
 
 # aurora\_stat\_wait\_type
-<a name="aurora_stat_wait_type"></a>
 
 Lists all supported wait types for Aurora PostgreSQL.
 

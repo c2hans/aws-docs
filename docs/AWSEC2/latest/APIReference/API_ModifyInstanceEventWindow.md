@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIns
 ---
 
 # ModifyInstanceEventWindow
-<a name="API_ModifyInstanceEventWindow"></a>
 
 Modifies the specified event window.
 

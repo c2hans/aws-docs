@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 ---
 
 # Input devices: update
-<a name="inputdevices-inputdeviceid-startinputdevicemaintenancewindow"></a>
 
 ## URI
 <a name="inputdevices-inputdeviceid-startinputdevicemaintenancewindow-url"></a>

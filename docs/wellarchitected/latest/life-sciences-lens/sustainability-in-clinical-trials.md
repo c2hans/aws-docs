@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Sustainability in clinical trials
-<a name="sustainability-in-clinical-trials"></a>
 
 |  LSSUS05: How do you implement sustainable practices in clinical trials?  |
 | --- |

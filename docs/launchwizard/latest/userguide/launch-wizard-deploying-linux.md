@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Deploy an application with AWS Launch Wizard for SQL Server on Ubuntu (Console)
-<a name="launch-wizard-deploying-linux"></a>
 
 **Topics**
 + [Access AWS Launch Wizard](#accessing-launch-wizard-linux)

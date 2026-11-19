@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # GameSession
-<a name="API_GameSession"></a>
 
 Properties describing a game session.
 

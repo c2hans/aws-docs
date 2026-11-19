@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-postgre
 ---
 
 # rds-postgresql-logs-to-cloudwatch
-<a name="rds-postgresql-logs-to-cloudwatch"></a>
 
 Checks if an Amazon PostgreSQL DB instance is configured to publish logs to Amazon CloudWatch Logs. The rule is NON\_COMPLIANT if the DB instance is not configured to publish logs to Amazon CloudWatch Logs.
 

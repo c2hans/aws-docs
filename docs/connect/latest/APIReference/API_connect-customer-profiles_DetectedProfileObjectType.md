@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DetectedProfileObjectType
-<a name="API_connect-customer-profiles_DetectedProfileObjectType"></a>
 
 Contains `ProfileObjectType` mapping information from the model.
 

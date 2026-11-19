@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Understanding migration methods
-<a name="understanding-migration-methods"></a>
 
 You can choose from the following migration methods:
 + **Offline migration** – Your target database and corresponding application is offline for an extended period of time during an offline migration. During the database migration, users can't perform any transactions on the target database. Offline migration is ideal for development and testing in small, non-critical database environments.

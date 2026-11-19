@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/create
 ---
 
 # Creating pricing rules
-<a name="create-pricingrule-abc"></a>
 
 Use the following steps to create a pricing rule.
 

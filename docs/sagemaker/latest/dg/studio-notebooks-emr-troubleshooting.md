@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-emr
 ---
 
 # Troubleshooting
-<a name="studio-notebooks-emr-troubleshooting"></a>
 
 When working with Amazon EMR clusters from Studio or Studio Classic notebooks, you may encounter various potential issues or challenges during the connection or usage process. To help you troubleshoot and resolve these errors, this section provides guidance on common problems that can arise.
 

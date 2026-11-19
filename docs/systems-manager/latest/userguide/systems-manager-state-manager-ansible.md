@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 ---
 
 # Creating associations that run Ansible playbooks
-<a name="systems-manager-state-manager-ansible"></a>
 
 You can create State Manager associations that run Ansible playbooks by using the `AWS-ApplyAnsiblePlaybooks` SSM document. State Manager is a tool in AWS Systems Manager. This document offers the following benefits for running playbooks:
 + Support for running complex playbooks

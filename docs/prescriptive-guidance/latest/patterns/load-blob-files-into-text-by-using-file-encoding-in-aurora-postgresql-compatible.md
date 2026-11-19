@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/lo
 ---
 
 # Load BLOB files into TEXT by using file encoding in Aurora PostgreSQL-Compatible
-<a name="load-blob-files-into-text-by-using-file-encoding-in-aurora-postgresql-compatible"></a>
 
 *Bhanu Ganesh Gudivada and Jeevan Shetty, Amazon Web Services*
 

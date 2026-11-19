@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Batch
 ---
 
 # BatchAssociateApprovalRuleTemplateWithRepositories
-<a name="API_BatchAssociateApprovalRuleTemplateWithRepositories"></a>
 
 Creates an association between an approval rule template and one or more specified repositories.
 

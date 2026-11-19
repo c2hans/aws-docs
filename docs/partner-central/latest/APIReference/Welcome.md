@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/Welc
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## Partner Central Selling API
 <a name="Welcome_Partner_Central_Selling_API"></a>

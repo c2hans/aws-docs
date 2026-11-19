@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/data-api-dp-err
 ---
 
 # Neptune dataplane API Exceptions
-<a name="data-api-dp-errors"></a>
 
 **Exceptions:**
 + [AccessDeniedException (structure)](#AccessDeniedException)

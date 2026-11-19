@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Deploy the solution
-<a name="deploy-the-solution"></a>
 
 AWS Launch Wizard is the recommended deployment method for this solution in commercial AWS Regions. It provides:
 + A guided configuration experience with detailed help panels at each step

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppMesh::GatewayRoute HttpGatewayRouteHeaderMatch
-<a name="aws-properties-appmesh-gatewayroute-httpgatewayrouteheadermatch"></a>
 
 An object that represents the method and value to match with the header value sent in a request. Specify one match method.
 

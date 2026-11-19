@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # ListIntegrations
-<a name="API_ListIntegrations"></a>
 
 Lists the integrations in the account, optionally filtered by type, status, or name. Results are paginated.
 

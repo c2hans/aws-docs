@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListEngagementFromOpportunityTasks
-<a name="API_ListEngagementFromOpportunityTasks"></a>
 
  Lists all in-progress, completed, or failed `EngagementFromOpportunity` tasks that were initiated by the caller's account.
 

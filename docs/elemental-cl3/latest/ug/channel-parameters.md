@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/channel-paramete
 ---
 
 # Reference: Supported channel parameters
-<a name="channel-parameters"></a>
 
 In an AWS Elemental Liveprofile, you can create set up some fields as channel parameters. When a field has a channel parameter, its value is a variables instead of a real value.
 

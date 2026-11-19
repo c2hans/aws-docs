@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/todoist-configuring.html
 ---
 
 # Configuring Todoist
-<a name="todoist-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Todoist, you must meet the following requirements:
 

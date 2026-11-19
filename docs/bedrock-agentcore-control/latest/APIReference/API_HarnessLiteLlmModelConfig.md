@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessLiteLlmModelConfig
-<a name="API_HarnessLiteLlmModelConfig"></a>
 
 Configuration for a LiteLLM model provider, enabling connection to third-party model providers.
 

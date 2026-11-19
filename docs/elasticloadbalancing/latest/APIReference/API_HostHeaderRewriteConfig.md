@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # HostHeaderRewriteConfig
-<a name="API_HostHeaderRewriteConfig"></a>
 
 Information about a host header rewrite transform. This transform matches a pattern in the host header in an HTTP request and replaces it with the specified string.
 

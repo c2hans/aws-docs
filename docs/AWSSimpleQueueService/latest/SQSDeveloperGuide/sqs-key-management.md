@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Amazon SQS Key management
-<a name="sqs-key-management"></a>
 
 Amazon SQS integrates with the AWS Key Management Service (KMS) to manage [KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys) for server-side encryption (SSE). See [Encryption at rest in Amazon SQS](sqs-server-side-encryption.md) for SSE information and key management definitions. Amazon SQS uses KMS keys to validate and secure the data keys that encrypt and decrypt the messages. The following sections provide information about working with KMS keys and data keys in the Amazon SQS service.
 

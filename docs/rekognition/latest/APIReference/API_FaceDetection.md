@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Face
 ---
 
 # FaceDetection
-<a name="API_FaceDetection"></a>
 
 Information about a face detected in a video analysis request and the time the face was detected in the video.
 

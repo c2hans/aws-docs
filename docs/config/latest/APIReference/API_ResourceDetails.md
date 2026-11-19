@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ResourceD
 ---
 
 # ResourceDetails
-<a name="API_ResourceDetails"></a>
 
 Returns information about the resource being evaluated.
 

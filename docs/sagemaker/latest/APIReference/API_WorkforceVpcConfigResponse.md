@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Workfo
 ---
 
 # WorkforceVpcConfigResponse
-<a name="API_WorkforceVpcConfigResponse"></a>
 
 A VpcConfig object that specifies the VPC that you want your workforce to connect to.
 

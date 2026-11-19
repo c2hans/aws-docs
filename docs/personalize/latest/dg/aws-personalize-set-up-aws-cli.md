@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/aws-personalize-se
 ---
 
 # Setting up the AWS CLI
-<a name="aws-personalize-set-up-aws-cli"></a>
 
 The AWS Command Line Interface (AWS CLI) is a unified developer tool for managing AWS services, including Amazon Personalize. We recommend that you install it.
 

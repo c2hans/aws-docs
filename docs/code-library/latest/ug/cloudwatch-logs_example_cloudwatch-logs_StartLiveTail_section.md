@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cloudwatch-logs_e
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `StartLiveTail` with an AWS SDK or CLI
-<a name="cloudwatch-logs_example_cloudwatch-logs_StartLiveTail_section"></a>
 
 The following code examples show how to use `StartLiveTail`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # BatchGetCollectionGroup
-<a name="API_BatchGetCollectionGroup"></a>
 
 Returns attributes for one or more collection groups, including capacity limits and the number of collections in each group. For more information, see [Creating and managing Amazon OpenSearch Serverless collections](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-manage.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # Resources
-<a name="resources"></a>
 + [Understanding autovacuum in Amazon RDS for PostgreSQL environments](https://aws.amazon.com/blogs/database/understanding-autovacuum-in-amazon-rds-for-postgresql-environments/) (AWS blog post)
 + [Automatic vacuuming](https://www.postgresql.org/docs/17/runtime-config-autovacuum.html) (PostgreSQL documentation)
 + [Allocating memory for autovacuum](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.PostgreSQL.CommonDBATasks.Autovacuum.html#Appendix.PostgreSQL.CommonDBATasks.Autovacuum.WorkMemory) (Amazon RDS documentation)

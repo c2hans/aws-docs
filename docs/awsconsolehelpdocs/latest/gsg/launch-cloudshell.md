@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/launch-clo
 ---
 
 # Launching AWS CloudShell from the navigation bar in the AWS Management Console
-<a name="launch-cloudshell"></a>
 
 AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console navigation bar. You can run AWS CLI commands against services using your preferred shell (Bash, PowerShell, or Z shell).
 

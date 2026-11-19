@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/captions-suppor
 ---
 
 # Supported caption formats
-<a name="captions-supported-formats"></a>
 
 <a name="table-captions-supported-formats"></a>
 

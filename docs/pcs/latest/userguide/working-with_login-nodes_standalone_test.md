@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_login-
 ---
 
 # Step 6 – (Optional) Test the connection
-<a name="working-with_login-nodes_standalone_test"></a>
 
 Confirm that the `sackd` service is running. Sample output follows. If there are errors, they will commonly show up here.
 

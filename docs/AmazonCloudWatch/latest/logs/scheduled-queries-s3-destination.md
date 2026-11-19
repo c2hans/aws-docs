@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/scheduled-q
 ---
 
 # Configuring S3 destinations for scheduled queries
-<a name="scheduled-queries-s3-destination"></a>
 
 Configure Amazon S3 as a destination to store your scheduled query results as JSON files for long-term retention and analysis.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_UpdateProfi
 ---
 
 # UpdateProfile
-<a name="API_UpdateProfile"></a>
 
 Updates the specified parameters for a profile. A profile is the mechanism used to create the concept of a private network.
 

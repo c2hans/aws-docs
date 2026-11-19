@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ListFargateP
 ---
 
 # ListFargateProfiles
-<a name="API_ListFargateProfiles"></a>
 
 Lists the AWS Fargate profiles associated with the specified cluster in your AWS account in the specified AWS Region.
 

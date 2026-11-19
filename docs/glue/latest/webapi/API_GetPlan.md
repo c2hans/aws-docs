@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetPlan.html
 ---
 
 # GetPlan
-<a name="API_GetPlan"></a>
 
 Gets code to perform a specified mapping.
 

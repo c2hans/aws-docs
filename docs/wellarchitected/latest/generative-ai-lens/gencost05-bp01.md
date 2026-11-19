@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENCOST05-BP01 Create stopping conditions to control long-running workflows
-<a name="gencost05-bp01"></a>
 
  Agentic workflows can be long-running, which can incur additional cost to your application. Develop controls to limit agents from running for extended periods of time without stopping.
 

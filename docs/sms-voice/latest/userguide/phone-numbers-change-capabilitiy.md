@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers
 ---
 
 # Change a phone number's capabilities with the AWS CLI
-<a name="phone-numbers-change-capabilitiy"></a>
 
 After you request a phone number, you can use the [update-phone-number](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/update-phone-number.html) CLI to change the settings of that phone number, or to enable additional features. You can change several phone number settings, including the pool and opt-out list that are associated with the phone number, as well as the deletion protection setting.
 

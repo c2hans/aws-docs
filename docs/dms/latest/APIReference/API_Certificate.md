@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_Certificate.
 ---
 
 # Certificate
-<a name="API_Certificate"></a>
 
 The SSL certificate that can be used to encrypt connections between the endpoints and the replication instance.
 

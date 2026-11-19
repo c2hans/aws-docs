@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListRecomm
 ---
 
 # ListRecommendedIntents
-<a name="API_ListRecommendedIntents"></a>
 
 Gets a list of recommended intents provided by the bot recommendation that you can use in your bot. Intents in the response are ordered by relevance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # SpanTextValue
-<a name="API_amazon-q-connect_SpanTextValue"></a>
 
 Text message content
 

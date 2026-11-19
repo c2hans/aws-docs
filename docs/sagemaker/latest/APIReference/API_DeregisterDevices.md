@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Deregi
 ---
 
 # DeregisterDevices
-<a name="API_DeregisterDevices"></a>
 
 Deregisters the specified devices. After you deregister a device, you will need to re-register the devices.
 

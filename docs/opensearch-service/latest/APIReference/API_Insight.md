@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # Insight
-<a name="API_Insight"></a>
 
 Represents an insight returned by the `ListInsights` operation. An insight is a notification about a domain event or recommendation that helps you optimize your Amazon OpenSearch Service domain.
 

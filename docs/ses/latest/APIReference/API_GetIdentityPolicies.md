@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_GetIdentityP
 ---
 
 # GetIdentityPolicies
-<a name="API_GetIdentityPolicies"></a>
 
 Returns the requested sending authorization policies for the given identity (an email address or a domain). The policies are returned as a map of policy names to policy contents. You can retrieve a maximum of 20 policies at a time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Process and culture
-<a name="process-and-culture"></a>
 
 | SCSUS09: Do you align your supply chain sustainability metrics with company-wise mid/long-term sustainability goals? |
 | --- |

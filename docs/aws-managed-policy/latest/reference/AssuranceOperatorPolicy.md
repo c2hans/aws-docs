@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Assu
 ---
 
 # AssuranceOperatorPolicy
-<a name="AssuranceOperatorPolicy"></a>
 
 **Description**: Provides full access to AWS Assurance environments and read-only access to IAM Identity Center user details
 

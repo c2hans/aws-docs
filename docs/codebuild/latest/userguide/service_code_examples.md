@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/service_code_
 ---
 
 # Code examples for CodeBuild using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use CodeBuild with an AWS software development kit (SDK).
 

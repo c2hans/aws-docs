@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadv
 ---
 
 # GroupResult
-<a name="API_iotdeviceadvisor_GroupResult"></a>
 
 Show Group Result.
 

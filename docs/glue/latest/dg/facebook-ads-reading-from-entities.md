@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/facebook-ads-reading-from
 ---
 
 # Reading from Facebook Ads entities
-<a name="facebook-ads-reading-from-entities"></a>
 
 **Prerequisite**
 

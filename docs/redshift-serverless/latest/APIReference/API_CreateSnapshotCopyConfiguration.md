@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # CreateSnapshotCopyConfiguration
-<a name="API_CreateSnapshotCopyConfiguration"></a>
 
 Creates a snapshot copy configuration that lets you copy snapshots to another AWS Region.
 

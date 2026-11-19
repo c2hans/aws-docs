@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ActionR
 ---
 
 # ActionRemotePortDetails
-<a name="API_ActionRemotePortDetails"></a>
 
 Provides information about the remote port that was involved in an attempted network connection.
 

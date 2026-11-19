@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Operations_A
 ---
 
 # AWS IoT jobs data
-<a name="API_Operations_AWS_IoT_Jobs_Data_Plane"></a>
 
 The following actions are supported by AWS IoT jobs data:
 +  [DescribeJobExecution](API_iot-jobs-data_DescribeJobExecution.md)

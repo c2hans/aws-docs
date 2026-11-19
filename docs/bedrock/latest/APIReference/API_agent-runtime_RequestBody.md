@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RequestBody
-<a name="API_agent-runtime_RequestBody"></a>
 
 The parameters in the API request body.
 

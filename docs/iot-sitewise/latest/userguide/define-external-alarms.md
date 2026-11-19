@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/define-ext
 ---
 
 # Define external alarms in AWS IoT SiteWise
-<a name="define-external-alarms"></a>
 
 External alarms contain the state of an alarm that you detect outside of AWS IoT SiteWise.
 

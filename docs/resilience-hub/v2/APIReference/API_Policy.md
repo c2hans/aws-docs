@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Polic
 ---
 
 # Policy
-<a name="API_Policy"></a>
 
 Represents a resilience policy that defines availability and disaster recovery requirements.
 

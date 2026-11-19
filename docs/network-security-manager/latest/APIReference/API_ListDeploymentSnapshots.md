@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ListDeploymentSnapshots
-<a name="API_ListDeploymentSnapshots"></a>
 
 Lists the snapshots of the specified deployment.
 

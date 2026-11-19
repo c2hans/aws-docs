@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRdsD
 ---
 
 # AwsRdsDbInstanceVpcSecurityGroup
-<a name="API_AwsRdsDbInstanceVpcSecurityGroup"></a>
 
 A VPC security groups that the DB instance belongs to.
 

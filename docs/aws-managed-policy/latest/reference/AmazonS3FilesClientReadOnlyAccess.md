@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonS3FilesClientReadOnlyAccess
-<a name="AmazonS3FilesClientReadOnlyAccess"></a>
 
 **Description**: Provides read only client access to an S3 Files file system.
 

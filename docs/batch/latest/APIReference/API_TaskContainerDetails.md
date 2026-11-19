@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_TaskContai
 ---
 
 # TaskContainerDetails
-<a name="API_TaskContainerDetails"></a>
 
 The details for the container in this task attempt.
 

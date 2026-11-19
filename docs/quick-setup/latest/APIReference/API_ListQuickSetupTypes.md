@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_List
 ---
 
 # ListQuickSetupTypes
-<a name="API_ListQuickSetupTypes"></a>
 
 Returns the available Quick Setup types.
 

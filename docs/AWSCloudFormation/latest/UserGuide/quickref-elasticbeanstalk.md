@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # Elastic Beanstalk template snippets
-<a name="quickref-elasticbeanstalk"></a>
 
 With Elastic Beanstalk, you can quickly deploy and manage applications in AWS without worrying about the infrastructure that runs those applications. The following sample template can help you describe Elastic Beanstalk resources in your CloudFormation template.
 

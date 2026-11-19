@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/microvms-getting-starte
 ---
 
 # Create your first Lambda MicroVM
-<a name="microvms-getting-started"></a>
 
 This tutorial walks you through creating a AWS Lambda MicroVM image and running a MicroVM from it. By the end, you'll have a running application accessible over HTTPS.
 

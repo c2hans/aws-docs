@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/micr
 ---
 
 # Step 2: Create your AWS Managed Microsoft AD Active Directory
-<a name="microsoftadbasestep2"></a>
 
 You can use three different methods to create your directory. You can use the AWS Management Console procedure (recommended for this tutorial) or you can use either the AWS CLI or AWS Tools for Windows PowerShell procedures to create your directory.
 

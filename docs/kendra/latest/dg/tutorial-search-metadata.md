@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/dg/tutorial-search-metadat
 Amazon Kendra is no longer open to new customers. For capabilities similar to Amazon Kendra, explore Amazon Bedrock Knowledge Bases. [Learn more](https://docs.aws.amazon.com/kendra/latest/dg/kendra-availability-change.html).
 
 # Tutorial: Building a metadata-enriched, intelligent search solution with Amazon Kendra
-<a name="tutorial-search-metadata"></a>
 
 This tutorial shows you how to build a metadata-enriched, natural language based, intelligent search solution for your enterprise data using [Amazon Kendra](https://aws.amazon.com/kendra/), [Amazon Comprehend](https://aws.amazon.com/comprehend/), [Amazon Simple Storage Service](https://aws.amazon.com/s3/) (S3), and [AWS CloudShell](https://aws.amazon.com/cloudshell/).
 

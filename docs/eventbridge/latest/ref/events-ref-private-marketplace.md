@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-privat
 ---
 
 # AWS Marketplace Private Marketplace events
-<a name="events-ref-private-marketplace"></a>
 
 AWS Marketplace Private Marketplace sends service events directly to EventBridge.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_T
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A key-value pair (the value is optional), that you can define and assign to AWS resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/s2110-nmos-conf
 ---
 
 # Enable NMOS
-<a name="s2110-nmos-configure"></a>
 
 You must enable NMOS on your appliance. If you are using an NMOS registry, you must configure AWS Elemental Live to connect to it. Perform this configuration once, before you create the first SMPTE 2110 NMOS input.
 

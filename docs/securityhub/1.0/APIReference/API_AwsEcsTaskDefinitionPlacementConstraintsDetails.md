@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionPlacementConstraintsDetails
-<a name="API_AwsEcsTaskDefinitionPlacementConstraintsDetails"></a>
 
 A placement constraint object to use for tasks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Servi
 ---
 
 # ServiceNowParameters
-<a name="API_ServiceNowParameters"></a>
 
 The parameters for ServiceNow.
 

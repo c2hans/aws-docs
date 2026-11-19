@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetPromp
 ---
 
 # GetPromptRouter
-<a name="API_GetPromptRouter"></a>
 
 Retrieves details about a prompt router.
 

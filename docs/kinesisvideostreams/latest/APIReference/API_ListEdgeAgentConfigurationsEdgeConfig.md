@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # ListEdgeAgentConfigurationsEdgeConfig
-<a name="API_ListEdgeAgentConfigurationsEdgeConfig"></a>
 
 A description of a single stream's edge configuration.
 

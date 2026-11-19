@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TargetInstance
-<a name="API_TargetInstance"></a>
 
 Details on recommended instance.
 

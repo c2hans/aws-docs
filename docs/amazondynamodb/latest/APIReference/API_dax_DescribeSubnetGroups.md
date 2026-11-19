@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # DescribeSubnetGroups
-<a name="API_dax_DescribeSubnetGroups"></a>
 
 Returns a list of subnet group descriptions. If a subnet group name is specified, the list will contain only the description of that group.
 

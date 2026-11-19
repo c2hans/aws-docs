@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Resource Access Manager (RAM)
-<a name="list_ram"></a>
 
 AWS Resource Access Manager (RAM) (service prefix: `ram`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

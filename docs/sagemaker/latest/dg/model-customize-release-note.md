@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-rele
 ---
 
 # Release note
-<a name="model-customize-release-note"></a>
 
 **The SageMaker AI model customization images**
 

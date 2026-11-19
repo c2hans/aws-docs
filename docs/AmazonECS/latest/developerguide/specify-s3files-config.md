@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specify-
 ---
 
 # Specify an Amazon S3 Files volume in your Amazon ECS task definition
-<a name="specify-s3files-config"></a>
 
 You can configure S3 Files volumes in your Amazon ECS task definitions using the Amazon ECS console, the AWS CLI, or the AWS API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_D
 ---
 
 # DescribeResource
-<a name="API_DescribeResource"></a>
 
 Retrieves the current data access role for the given resource registered in AWS Lake Formation.
 

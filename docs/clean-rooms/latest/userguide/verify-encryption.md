@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/verify-encr
 ---
 
 # Step 8: Verify data encryption
-<a name="verify-encryption"></a>
 
 **To verify that the data was encrypted**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteGu
 ---
 
 # DeleteGuardrail
-<a name="API_DeleteGuardrail"></a>
 
 Deletes a guardrail.
 + To delete a guardrail, only specify the ARN of the guardrail in the `guardrailIdentifier` field. If you delete a guardrail, all of its versions will be deleted.

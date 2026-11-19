@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Diff
 ---
 
 # DifferentialPrivacyConfiguration
-<a name="API_DifferentialPrivacyConfiguration"></a>
 
 Specifies the unique identifier for your users.
 

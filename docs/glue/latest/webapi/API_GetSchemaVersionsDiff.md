@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetSchemaVersions
 ---
 
 # GetSchemaVersionsDiff
-<a name="API_GetSchemaVersionsDiff"></a>
 
 Fetches the schema version difference in the specified difference type between two stored schema versions in the Schema Registry.
 

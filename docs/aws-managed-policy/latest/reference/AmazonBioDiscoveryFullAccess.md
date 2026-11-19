@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonBioDiscoveryFullAccess
-<a name="AmazonBioDiscoveryFullAccess"></a>
 
 **Description**: Allows full administrative access to Amazon Bio Discovery
 

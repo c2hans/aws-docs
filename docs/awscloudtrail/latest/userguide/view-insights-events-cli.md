@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-insi
 ---
 
 # Viewing Insights events for trails with the AWS CLI
-<a name="view-insights-events-cli"></a>
 
 This section describes how to use the AWS CLI `lookup-events` and `list-insights-data` command to lookup the last 90 days of Insights events for a trail with Insights events enabled. For information about how to enable CloudTrail Insights on a trail, see [Logging Insights events for a trail using the AWS CLI](insights-events-CLI-enable.md#insights-events-CLI-enable-trails).
 

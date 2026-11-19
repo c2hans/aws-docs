@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkSecurityManager::Deployment
-<a name="aws-resource-networksecuritymanager-deployment"></a>
 
 The `AWS::NetworkSecurityManager::Deployment` resource specifies an AWS Network Security Manager deployment. A deployment is the object that puts protections into effect: it ties one or more *policies*, which describe the protections to apply, to a single *scope*, which selects the accounts and resources to apply them to.
 

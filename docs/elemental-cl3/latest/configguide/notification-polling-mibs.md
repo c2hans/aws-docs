@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/notific
 ---
 
 # MIBs in Conductor Live
-<a name="notification-polling-mibs"></a>
 
 AWS Elemental provides the following MIBs for use with Conductor Live:
 

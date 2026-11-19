@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_L
 ---
 
 # ListArchiveExports
-<a name="API_ListArchiveExports"></a>
 
 Returns a list of email archive export jobs.
 

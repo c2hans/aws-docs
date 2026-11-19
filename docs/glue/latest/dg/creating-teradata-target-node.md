@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-teradata-target-
 ---
 
 # Creating a Teradata target node
-<a name="creating-teradata-target-node"></a>
 
 ## Prerequisites needed
 <a name="creating-teradata-target-node-prerequisites"></a>

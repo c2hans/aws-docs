@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amaz
 ---
 
 # Amazon Nova Multimodal Embeddings
-<a name="model-card-amazon-amazon-nova-multimodal-embeddings"></a>
 
 ## ![Amazon logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/nova2pro.png) Amazon — Amazon Nova Multimodal Embeddings
 <a name="model-card-amazon-amazon-nova-multimodal-embeddings-header"></a>

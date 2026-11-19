@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/paging-r
 ---
 
 # Using paginated results in the AWS SDK for Ruby
-<a name="paging-responses"></a>
 
 Many AWS operations return truncated results when the payload is too large to return in a single response. Instead, the service returns a portion of the data and a token to retrieve the next set of items. This pattern is known as pagination.
 

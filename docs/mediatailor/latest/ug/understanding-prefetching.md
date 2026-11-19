@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/understanding-pref
 ---
 
 # How prefetching works
-<a name="understanding-prefetching"></a>
 
 When your client makes a manifest request to MediaTailor, the service evaluates all of the prefetch schedules that are associated with the playback configuration. If MediaTailor doesn't find a matching prefetch schedule, the service reverts to normal ad insertion and doesn't prefetch ads.
 

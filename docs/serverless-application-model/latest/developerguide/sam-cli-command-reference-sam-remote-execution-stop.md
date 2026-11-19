@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # sam remote execution stop
-<a name="sam-cli-command-reference-sam-remote-execution-stop"></a>
 
 Stop a running durable function execution in AWS Lambda.
 

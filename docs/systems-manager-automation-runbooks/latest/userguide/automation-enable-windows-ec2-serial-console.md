@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-EnableWindowsEC2SerialConsole`
-<a name="automation-enable-windows-ec2-serial-console"></a>
 
  **Description**
 

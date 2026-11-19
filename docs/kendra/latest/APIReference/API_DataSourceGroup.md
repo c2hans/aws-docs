@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_DataSourc
 ---
 
 # DataSourceGroup
-<a name="API_DataSourceGroup"></a>
 
 Data source information for user context filtering.
 

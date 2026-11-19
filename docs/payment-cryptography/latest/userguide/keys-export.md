@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/ke
 ---
 
 # Export keys
-<a name="keys-export"></a>
 
 **Contents**
 + [Export symmetric keys](#keys-export-symmetric)

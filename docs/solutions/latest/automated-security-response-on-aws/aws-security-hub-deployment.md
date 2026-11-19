@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # AWS Security Hub deployment
-<a name="aws-security-hub-deployment"></a>
 
 AWS Security Hub deployment and configuration is a prerequisite for this solution. For more information about setting up AWS Security Hub CSPM, refer to [Setting up AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-settingup.html) in the *AWS Security Hub User Guide.* This solution also supports [AWS Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub-v2.html) (non-CSPM version). For more information about setting up AWS Security Hub, refer to [Enabling Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-enable.html).
 

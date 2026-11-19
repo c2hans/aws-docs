@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TableOptimizerRun
 ---
 
 # TableOptimizerRun
-<a name="API_TableOptimizerRun"></a>
 
 Contains details for a table optimizer run.
 

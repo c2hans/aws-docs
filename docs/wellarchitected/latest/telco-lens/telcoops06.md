@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoo
 ---
 
 # Resource availability
-<a name="telcoops06"></a>
 
 |  TELCOOPS06: How do you plan for resource availability for scale-out scenarios in telecommunication workloads?  |
 | --- |

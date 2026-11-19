@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RoutePe
 ---
 
 # RoutePedestrianPlace
-<a name="API_RoutePedestrianPlace"></a>
 
 Place details corresponding to the arrival or departure.
 

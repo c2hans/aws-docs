@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_FederatedDatabase
 ---
 
 # FederatedDatabase
-<a name="API_FederatedDatabase"></a>
 
 A database that points to an entity outside the AWS Glue Data Catalog.
 

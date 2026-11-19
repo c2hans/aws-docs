@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Configuring Security Hub to integrate with Google Cloud Platform
-<a name="securityhub-v2-gcp-setup-securityhub-v2"></a>
 
 After you complete the [prerequisite tasks](securityhub-v2-gcp-prereqs.md) and [configure your Google Cloud Platform (GCP) environment](securityhub-v2-gcp-setup-gcp.md), you can configure AWS Security Hub to integrate with GCP. To configure Security Hub to integrate with GCP, you create a connector. You can create the connector from a delegated administrator account or the management account. After you create the connector, the following events occur:
 

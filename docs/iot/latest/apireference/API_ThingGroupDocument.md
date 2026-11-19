@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ThingGroupDo
 ---
 
 # ThingGroupDocument
-<a name="API_ThingGroupDocument"></a>
 
 The thing group search index document.
 

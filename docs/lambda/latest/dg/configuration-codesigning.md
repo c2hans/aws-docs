@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/configuration-codesigni
 ---
 
 # Using code signing to verify code integrity with Lambda
-<a name="configuration-codesigning"></a>
 
 Code signing helps ensure that only trusted code is deployed to your Lambda functions. Using AWS Signer, you can create digitally signed code packages for your functions. When you [add a code signing configuration to a function](configuration-codesigning-create.md), Lambda verifies that all new code deployments are signed by a trusted source. Because code signing validation checks run at deployment time, there is no impact on function execution. For information about managing code signing policies, see [Configuring IAM policies for Lambda code signing configurations](config-codesigning-policies.md).
 

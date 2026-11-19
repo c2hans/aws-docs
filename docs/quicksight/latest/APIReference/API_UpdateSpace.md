@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateSpace
-<a name="API_UpdateSpace"></a>
 
 Updates the metadata of an Amazon QuickSight space.
 

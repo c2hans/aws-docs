@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StoreImag
 ---
 
 # StoreImageTaskResult
-<a name="API_StoreImageTaskResult"></a>
 
 The information about the AMI store task, including the progress of the task.
 

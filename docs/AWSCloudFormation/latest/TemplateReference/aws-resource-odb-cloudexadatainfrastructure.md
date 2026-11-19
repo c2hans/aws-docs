@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ODB::CloudExadataInfrastructure
-<a name="aws-resource-odb-cloudexadatainfrastructure"></a>
 
 The `AWS::ODB::CloudExadataInfrastructure` resource creates an Exadata infrastructure. An Exadata infrastructure provides the underlying compute and storage resources for Oracle Database workloads.
 

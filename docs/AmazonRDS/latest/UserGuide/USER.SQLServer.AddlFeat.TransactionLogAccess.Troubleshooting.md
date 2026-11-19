@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER.SQLServe
 ---
 
 # Troubleshooting access to transaction log backups
-<a name="USER.SQLServer.AddlFeat.TransactionLogAccess.Troubleshooting"></a>
 
 The following are issues you might encounter when you use the stored procedures for access to transaction log backups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/origin-query-param
 ---
 
 # MediaTailor query parameter handling for origins
-<a name="origin-query-parameters"></a>
 
 AWS Elemental MediaTailor handles query parameters differently depending on their purpose. Manifest query parameters (prefixed with `manifest.`) are used for CDN routing and authorization, while other query parameters can be used for origin-specific functionality.
 

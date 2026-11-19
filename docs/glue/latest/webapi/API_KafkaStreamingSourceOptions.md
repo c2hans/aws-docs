@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_KafkaStreamingSou
 ---
 
 # KafkaStreamingSourceOptions
-<a name="API_KafkaStreamingSourceOptions"></a>
 
 Additional options for streaming.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteH
 ---
 
 # DeleteHostKey
-<a name="API_DeleteHostKey"></a>
 
 Deletes the host key that's specified in the `HostKeyId` parameter.
 

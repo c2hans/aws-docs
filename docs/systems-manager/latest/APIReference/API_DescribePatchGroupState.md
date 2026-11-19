@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribePatchGroupState
-<a name="API_DescribePatchGroupState"></a>
 
 Returns high-level aggregated patch compliance state information for a patch group.
 

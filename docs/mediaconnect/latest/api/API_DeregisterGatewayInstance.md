@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DeregisterGa
 ---
 
 # DeregisterGatewayInstance
-<a name="API_DeregisterGatewayInstance"></a>
 
  Deregisters an instance. Before you deregister an instance, all bridges running on the instance must be stopped. If you want to deregister an instance without stopping the bridges, you must use the --force option.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_A
 ---
 
 # AccountStatus
-<a name="API_AccountStatus"></a>
 
 Describes the current status of an account within an Amazon Web Services Organization, including service-linked roles (SLRs).
 

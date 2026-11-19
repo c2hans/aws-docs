@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Memb
 ---
 
 # MembershipProtectedJobOutputConfiguration
-<a name="API_MembershipProtectedJobOutputConfiguration"></a>
 
 Contains configurations for protected job results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Feature engineering
-<a name="feature-engineering"></a>
 
  Every unique attribute of the data is considered a *feature* (also known as an *attribute*). For example, when designing a solution for predicting customer churn, the data used typically includes features such as customer location, age, income level, and recent purchases.
 

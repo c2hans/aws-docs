@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2S
 ---
 
 # AwsEc2SubnetDetails
-<a name="API_AwsEc2SubnetDetails"></a>
 
 Contains information about a subnet in Amazon EC2.
 

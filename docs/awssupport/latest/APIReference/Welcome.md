@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/Welcome.h
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 The * AWS Support API Reference* is intended for programmers who need detailed information about the Support operations and data types. You can use the API to manage your support cases programmatically. The AWS Support API uses HTTP methods that return results in JSON format.
 
@@ -24,4 +23,4 @@ For authentication of requests, Support uses [Signature Version 4 Signing Proces
 
 For more information about this service and the endpoints to use, see [About the AWS Support API](https://docs.aws.amazon.com/awssupport/latest/user/about-support-api.html) in the * AWS Support User Guide*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

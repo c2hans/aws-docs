@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-signup
 ---
 
 # AWS Sign Up Portal events
-<a name="events-ref-signup"></a>
 
 Sign Up Portal sends service events to EventBridge via AWS CloudTrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-
 ---
 
 # Tags in Amazon SWF
-<a name="swf-dev-adv-tags"></a>
 
 Amazon SWF supports tagging a workflow execution. This is especially useful when you have many resources.
 

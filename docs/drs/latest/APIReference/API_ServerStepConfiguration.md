@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_ServerStepCo
 ---
 
 # ServerStepConfiguration
-<a name="API_ServerStepConfiguration"></a>
 
 Configuration for a `SERVER` type step.
 

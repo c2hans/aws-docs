@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-troubles
 ---
 
 # Troubleshooting for distributed training in Amazon SageMaker AI
-<a name="distributed-troubleshooting-data-parallel"></a>
 
 If you have problems in running a training job when you use the library, use the following list to try to troubleshoot. If you need further support, reach out to the SageMaker AI team through [AWS Support Center](https://console.aws.amazon.com/support/) or [AWS Developer Forums for Amazon Amazon SageMaker AI](https://forums.aws.amazon.com/forum.jspa?forumID=285).
 

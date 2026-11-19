@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-deploy-feature
 ---
 
 # Supported features
-<a name="model-deploy-feature-matrix"></a>
 
  Amazon SageMaker AI offers the following four options to deploy models for inference.
 +  Real-time inference for inference workloads with real-time, interactive, low latency requirements.

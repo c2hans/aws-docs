@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVer
 ---
 
 # DeleteVerifiedAccessEndpoint
-<a name="API_DeleteVerifiedAccessEndpoint"></a>
 
 Delete an AWS Verified Access endpoint.
 

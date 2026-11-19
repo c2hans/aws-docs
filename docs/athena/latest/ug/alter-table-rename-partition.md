@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/alter-table-rename-part
 ---
 
 # ALTER TABLE RENAME PARTITION
-<a name="alter-table-rename-partition"></a>
 
 Renames a partition value.
 

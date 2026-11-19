@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveActionDetails
-<a name="API_agent-runtime_AgenticRetrieveActionDetails"></a>
 
 Details of a retrieve action including the query and target retrievers.
 

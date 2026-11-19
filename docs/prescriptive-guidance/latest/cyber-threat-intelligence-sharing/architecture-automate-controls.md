@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threa
 ---
 
 # Automating security controls
-<a name="architecture-automate-controls"></a>
 
 After cyber threat intelligence (CTI) has been ingested in to the threat intelligence platform, you can automate the process of making configuration changes in response to the data. Threat intelligence platforms help you manage cyber threat intelligence and observe your environment. They provide capability to structure, store, organize and visualize technical and non-technical information about cyber threats. They can help you build a threat picture and combine a range of intelligence sources to profile and track threats, such as [advanced persistent threats (APTs)](https://en.wikipedia.org/wiki/Advanced_persistent_threat).
 

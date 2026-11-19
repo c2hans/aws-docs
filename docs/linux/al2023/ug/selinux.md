@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/selinux.html
 ---
 
 # SELinux
-<a name="selinux"></a>
 
 By default, Security Enhanced Linux (SELinux) for AL2023 is `enabled` and set to `permissive` mode. In `permissive` mode, permission denials are logged but not enforced.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Networ
 ---
 
 # NetworkAnomaly
-<a name="API_NetworkAnomaly"></a>
 
 Contains information about how network activity deviates from normal behavior.
 

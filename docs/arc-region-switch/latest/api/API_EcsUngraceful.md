@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_EcsUngr
 ---
 
 # EcsUngraceful
-<a name="API_EcsUngraceful"></a>
 
 The settings for ungraceful execution.
 

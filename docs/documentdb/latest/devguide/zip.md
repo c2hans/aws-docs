@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/zip.html
 ---
 
 # $zip
-<a name="zip"></a>
 
 The `$zip` operator in Amazon DocumentDB allows you to combine multiple arrays into a single array of tuples (key-value pairs). This is useful when you need to create new documents or objects by combining data from different sources or arrays within a document.
 

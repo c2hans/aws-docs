@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AckConfigReq
 ---
 
 # AckConfigRequest
-<a name="API_AckConfigRequest"></a>
 
 Configuration settings for an ACK (AWS Controllers for Kubernetes) capability. This includes whether controllers can resolve cross-namespace resource references and which ACK service controllers are disabled.
 

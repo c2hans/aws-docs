@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_S3DataSou
 ---
 
 # S3DataSource
-<a name="API_S3DataSource"></a>
 
 Information about the Amazon S3 storage used by the Amazon Braket hybrid job.
 

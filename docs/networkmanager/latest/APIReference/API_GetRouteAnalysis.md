@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetRouteAnalysis
-<a name="API_GetRouteAnalysis"></a>
 
 Gets information about the specified route analysis.
 

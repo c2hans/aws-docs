@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/migration.html
 ---
 
 # Amazon Lex V1 to V2 migration guide
-<a name="migration"></a>
 
 The Amazon Lex V2 console and APIs make it easier to build and manage bots. Use this guide to learn about the improvements in the Amazon Lex V2 API as you migrate bots.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_A
 ---
 
 # AppDefinitionInput
-<a name="API_qapps_AppDefinitionInput"></a>
 
 The input for defining an Q App.
 

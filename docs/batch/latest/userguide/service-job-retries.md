@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/service-job-retri
 ---
 
 # Service job retry strategies in AWS Batch
-<a name="service-job-retries"></a>
 
 Service job retry strategies allow AWS Batch to automatically retry failed service jobs under specific conditions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListConnectionInvitations
-<a name="API_account_ListConnectionInvitations"></a>
 
 Lists connection invitations for the partner account, with optional filtering by status, type, and other criteria.
 

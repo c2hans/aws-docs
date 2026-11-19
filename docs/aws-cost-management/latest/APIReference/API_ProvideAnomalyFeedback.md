@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ProvideAnomalyFeedback
-<a name="API_ProvideAnomalyFeedback"></a>
 
 Modifies the feedback property of a given cost anomaly.
 

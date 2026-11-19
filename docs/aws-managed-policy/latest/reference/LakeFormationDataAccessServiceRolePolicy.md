@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Lake
 ---
 
 # LakeFormationDataAccessServiceRolePolicy
-<a name="LakeFormationDataAccessServiceRolePolicy"></a>
 
 **Description**: Policy to grant temporary data access to Lake Formation resources
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Image
 ---
 
 # ImageBuilderAgentAccessConfig
-<a name="API_ImageBuilderAgentAccessConfig"></a>
 
 The configuration for agent access on an image builder. Agent access enables AI agents to interact with desktop applications during streaming sessions to the image builder.
 

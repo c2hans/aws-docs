@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/logging-runtime-c
 ---
 
 # Configuring runtime logs
-<a name="logging-runtime-config"></a>
 
 Runtime log configurations control device-side logging behavior for individual managed things. Use [PutRuntimeLogConfiguration](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_PutRuntimeLogConfiguration.html) to set the runtime log configuration for a specific managed thing:
 

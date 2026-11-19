@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # DBStorageConfiguration
-<a name="API_DBStorageConfiguration"></a>
 
  The configuration of the recommended RDS storage.
 

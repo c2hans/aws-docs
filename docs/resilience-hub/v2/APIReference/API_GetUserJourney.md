@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_GetUs
 ---
 
 # GetUserJourney
-<a name="API_GetUserJourney"></a>
 
 Retrieves a user journey.
 

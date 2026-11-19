@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Modify
 ---
 
 # ModifyDBProxy
-<a name="API_ModifyDBProxy"></a>
 
 Changes the settings for an existing DB proxy.
 

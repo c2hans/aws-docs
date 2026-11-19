@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::AccessPoint VpcConfiguration
-<a name="aws-properties-s3-accesspoint-vpcconfiguration"></a>
 
 The Virtual Private Cloud (VPC) configuration for this access point.
 

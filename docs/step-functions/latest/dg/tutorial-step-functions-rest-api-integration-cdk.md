@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-step-f
 ---
 
 # Using AWS CDK to create an Express workflow in Step Functions
-<a name="tutorial-step-functions-rest-api-integration-cdk"></a>
 
 In this tutorial, you learn how to create an API Gateway REST API with a synchronous express state machine as the backend integration, using the AWS Cloud Development Kit (AWS CDK) Infrastructure as Code (IAC) framework.
 

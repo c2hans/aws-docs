@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Dis
 ---
 
 # DisableCAEnrollmentPolicy
-<a name="API_DisableCAEnrollmentPolicy"></a>
 
 Disables the certificate authority (CA) enrollment policy for the specified directory. This stops automatic certificate enrollment and management for domain-joined clients, but does not affect existing certificates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_S
 ---
 
 # SetupHistory
-<a name="API_SetupHistory"></a>
 
 Returns a list of the commands that were ran on the target resource.
 

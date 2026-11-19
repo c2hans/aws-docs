@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # DevicePosition
-<a name="API_WaypointTracking_DevicePosition"></a>
 
 Contains the device position details.
 

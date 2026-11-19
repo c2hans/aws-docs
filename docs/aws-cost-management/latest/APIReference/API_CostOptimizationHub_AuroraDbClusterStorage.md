@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AuroraDbClusterStorage
-<a name="API_CostOptimizationHub_AuroraDbClusterStorage"></a>
 
 Contains the details of an Aurora DB cluster storage.
 

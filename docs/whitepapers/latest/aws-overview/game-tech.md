@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/game-tec
 ---
 
 # ![AWS Game Tech category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/game-tech-icon.jpg)Game tech
-<a name="game-tech"></a>
 
 ------
 #### [ Amazon GameLift Servers ]

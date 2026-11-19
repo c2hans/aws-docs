@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEC2ContainerRegistryFullAccess
-<a name="AmazonEC2ContainerRegistryFullAccess"></a>
 
 **Description**: Provides administrative access to Amazon ECR resources
 
@@ -18,13 +17,13 @@ You can attach `AmazonEC2ContainerRegistryFullAccess` to your users, groups, and
 <a name="AmazonEC2ContainerRegistryFullAccess-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: December 21, 2015, 17:06 UTC
-+ **Edited time:** December 05, 2020, 00:04 UTC
++ **Edited time:** November 17, 2026, 21:07 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess`
 
 ## Policy version
 <a name="AmazonEC2ContainerRegistryFullAccess-version"></a>
 
-**Policy version:** v3 (default)
+**Policy version:** v4 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -42,6 +41,15 @@ The policy's default version is the version that defines the permissions for the
         "cloudtrail:LookupEvents"
       ],
       "Resource" : "*"
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "signin:CreateBearerToken"
+      ],
+      "Resource" : [
+        "arn:aws:signin:*:*:service-principal/ecr.amazonaws.com"
+      ]
     },
     {
       "Effect" : "Allow",

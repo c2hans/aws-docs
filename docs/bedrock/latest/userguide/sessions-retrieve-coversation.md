@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/sessions-retrie
 ---
 
 # Retrieve conversation history and context from a session
-<a name="sessions-retrieve-coversation"></a>
 
 Use the [GetSession](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetSession.html), [ListInvocations](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ListInvocations.html), and [GetInvocationStep](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetInvocationStep.html) API operations to retrieve session details, details for the interaction state at different checkpoints, and summary information for all invocations.
 

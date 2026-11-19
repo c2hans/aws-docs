@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Appr
 ---
 
 # ApprovalStatusDetails
-<a name="API_ApprovalStatusDetails"></a>
 
 Contains detailed information about the approval state of a given member in the collaboration for a given collaboration change request.
 

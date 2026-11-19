@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/diagnostic-tools/latest/userguide/tools-
 ---
 
 # Logging and monitoring in AWS Diagnostic Tools
-<a name="tools-security-data-logging"></a>
 
 AWS Diagnostic Tools provides logging and monitoring capabilities to help users track and analyze the actions taken within the service. This includes integrating with AWS CloudTrail to log API calls, and using Amazon CloudWatch to collect and analyze service metrics. The service also retains tool output data for up to 30 days.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyStatementReference
-<a name="API_AutomatedReasoningPolicyStatementReference"></a>
 
 References a specific atomic statement within a source document, used to link policy elements back to their source material.
 

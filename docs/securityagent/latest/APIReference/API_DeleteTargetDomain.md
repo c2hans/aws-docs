@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_De
 ---
 
 # DeleteTargetDomain
-<a name="API_DeleteTargetDomain"></a>
 
 Deletes a target domain registration. After deletion, the domain can no longer be used for penetration testing.
 

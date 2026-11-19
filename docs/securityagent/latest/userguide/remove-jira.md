@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/remove-ji
 ---
 
 # Remove a Jira integration
-<a name="remove-jira"></a>
 
 Remove a Jira integration when you no longer need AWS Security Agent to create or comment on issues in a specific Jira site.
 

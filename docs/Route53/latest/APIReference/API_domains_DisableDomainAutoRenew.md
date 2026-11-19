@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # DisableDomainAutoRenew
-<a name="API_domains_DisableDomainAutoRenew"></a>
 
 This operation disables automatic renewal of domain registration for the specified domain.
 

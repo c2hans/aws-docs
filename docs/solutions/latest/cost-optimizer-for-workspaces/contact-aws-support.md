@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-work
 ---
 
 # Contact AWS Support
-<a name="contact-aws-support"></a>
 
 If you have [AWS Business Support\+](https://aws.amazon.com/premiumsupport/plans/business-plus/), [AWS Enterprise Support](https://aws.amazon.com/premiumsupport/plans/enterprise/), or [Unified Operations](https://aws.amazon.com/premiumsupport/plans/unified-operations/), you can use the AWS Support Center to get expert assistance with this solution. The following sections provide instructions.
 

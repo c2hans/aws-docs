@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/access-logs.ht
 ---
 
 # Verified Access logs
-<a name="access-logs"></a>
 
 After AWS Verified Access evaluates each access request, it logs all access attempts. This provides you with centralized visibility into application access, and helps you quickly respond to security incidents and audit requests. Verified Access supports the Open Cybersecurity Schema Framework (OCSF) logging format.
 

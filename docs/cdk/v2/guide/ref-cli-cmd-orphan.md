@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-orphan.html
 ---
 
 # `cdk orphan`
-<a name="ref-cli-cmd-orphan"></a>
 
 **Important**
 The `cdk orphan` command is in preview release and is subject to change.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/ho
 ---
 
 # How the AWS Encryption SDK works
-<a name="how-it-works"></a>
 
 The workflows in this section explain how the AWS Encryption SDK encrypts data and decrypts [encrypted messages](concepts.md#message). These workflows describes the basic process using the default features. For details about defining and using custom components, see the GitHub repository for each supported [language implementation](programming-languages.md).
 

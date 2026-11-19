@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Goal
 ---
 
 # Goal
-<a name="API_Goal"></a>
 
 Represents a goal with all its properties and metadata
 

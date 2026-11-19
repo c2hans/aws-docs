@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # ContainerGroupPortMapping
-<a name="API_ContainerGroupPortMapping"></a>
 
 Describes the port mappings for a single container in a container group. Each mapping shows how a container port maps to a connection port on the fleet instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/usin
 ---
 
 # Using different Python versions with EMR Serverless
-<a name="using-python"></a>
 
 In addition to the use case in [Using Python libraries with EMR Serverless](using-python-libraries.md), you can also use Python virtual environments to work with different Python versions than the version packaged in the Amazon EMR release for your Amazon EMR Serverless application. To do this, build a Python virtual environment with the Python version you want to use.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Networ
 ---
 
 # NetworkInterface
-<a name="API_NetworkInterface"></a>
 
 Contains information about the elastic network interface of the EC2 instance.
 

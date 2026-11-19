@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Isoline
 ---
 
 # IsolineAvoidanceOptions
-<a name="API_IsolineAvoidanceOptions"></a>
 
 Specifies features of the road network to avoid when calculating reachable areas. These preferences guide route calculations but may be overridden when no reasonable alternative exists. For example, if avoiding toll roads would make an area unreachable, toll roads may still be used.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListWork
 ---
 
 # ListWorkspacePages
-<a name="API_ListWorkspacePages"></a>
 
 Lists the page configurations in a workspace, including the views assigned to each page.
 

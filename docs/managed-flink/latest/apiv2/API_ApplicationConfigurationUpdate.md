@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Applicati
 ---
 
 # ApplicationConfigurationUpdate
-<a name="API_ApplicationConfigurationUpdate"></a>
 
 Describes updates to an application's configuration.
 

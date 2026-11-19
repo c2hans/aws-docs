@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListManag
 ---
 
 # ListManagedThingAccountAssociations
-<a name="API_ListManagedThingAccountAssociations"></a>
 
 Lists all account associations for a specific managed thing.
 

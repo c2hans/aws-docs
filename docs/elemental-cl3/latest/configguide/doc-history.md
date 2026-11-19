@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/doc-his
 ---
 
 # Document History for Configuration Guide
-<a name="doc-history"></a>
 
 The following table describes the documentation for this release of AWS Elemental Conductor Live.
 + **API version:** 3.22.0 and later

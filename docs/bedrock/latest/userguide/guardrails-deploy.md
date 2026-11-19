@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-depl
 ---
 
 # Deploy your guardrail
-<a name="guardrails-deploy"></a>
 
 When you're ready to deploy your guardrail to production, you create a version of it and invoke the version of the guardrail in your application. A version is a snapshot of your guardrail that you create at a point in time when you are iterating on the working draft of the guardrail. Create versions of your guardrail when you are satisfied with a set of configurations.
 

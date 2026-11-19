@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Polic
 ---
 
 # PolicyEventDetails
-<a name="API_PolicyEventDetails"></a>
 
 Contains the title, description, and event-specific metadata for a single event on the timeline of a resilience policy.
 

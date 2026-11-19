@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engin
 ---
 
 # Experiment result document
-<a name="sample-result"></a>
 
 ## Configuration
 <a name="config"></a>

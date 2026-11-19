@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Extended metrics authorization (ECS architecture)
-<a name="ecs-extended-metrics-security"></a>
 
 **Note**
  **Supported in:** ECS architecture only (v8.1\+).

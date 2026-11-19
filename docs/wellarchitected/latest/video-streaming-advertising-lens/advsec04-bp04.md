@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVSEC04-BP04 Secure ad creative delivery and content integrity across converged channels
-<a name="advsec04-bp04"></a>
 
  Server-side ad insertion (SSAI) dynamically inserts ads into broadcast-grade streams. A threat actor who substitutes a creative can create a large-scale brand safety threat. One compromised creative in a free ad-supported streaming television (FAST) channel or live stream can reach the entire audience at once. Verify integrity from ad decisioning through manifest stitching and viewer delivery.
 

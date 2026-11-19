@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListAccountIntegrations
-<a name="API_connect-customer-profiles_ListAccountIntegrations"></a>
 
 Lists all of the integrations associated to a specific URI in the AWS account.
 

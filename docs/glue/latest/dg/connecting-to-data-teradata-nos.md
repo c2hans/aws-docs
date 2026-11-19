@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-terada
 ---
 
 # Teradata Vantage NOS connections
-<a name="connecting-to-data-teradata-nos"></a>
 
  Teradata NOS (Native Object Store) connection is a new connection for Teradata Vantage which leverages Teradata WRITE\_NOS query to read from existing tables and READ\_NOS query to write to tables. These queries uses Amazon S3 as a staging directory, and therefore the Teradata NOS connector is faster than the existing Teradata connector (JDBC-based) especially in handling large amount of data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/aam-get-started-wit
 ---
 
 # Getting started with the account access portal
-<a name="aam-get-started-with-aam-portal"></a>
 
 ## Finding the account access portal URL
 <a name="aam-find-aam-portal-url"></a>

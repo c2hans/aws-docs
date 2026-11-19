@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostAndUsageQuery
-<a name="API_bcmDashboards_CostAndUsageQuery"></a>
 
 Defines the parameters for retrieving AWS cost and usage data. Includes specifications for metrics, time periods, granularity, grouping dimensions, and filtering conditions.
 

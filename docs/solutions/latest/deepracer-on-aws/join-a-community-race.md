@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/join-a
 ---
 
 # Join a community race
-<a name="join-a-community-race"></a>
 
 ![Community races](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_races.png)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # MaintenanceWindowRunCommandParameters
-<a name="API_MaintenanceWindowRunCommandParameters"></a>
 
 The parameters for a `RUN_COMMAND` task type.
 

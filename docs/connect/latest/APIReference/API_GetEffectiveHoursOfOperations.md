@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_GetEffec
 ---
 
 # GetEffectiveHoursOfOperations
-<a name="API_GetEffectiveHoursOfOperations"></a>
 
 Get the hours of operations with the effective override applied.
 

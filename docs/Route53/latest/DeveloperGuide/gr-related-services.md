@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-related
 ---
 
 # AWS services that integrate with Route 53 Global Resolver for enhanced DNS security
-<a name="gr-related-services"></a>
 
 Route 53 Global Resolver integrates seamlessly with other AWS services to provide comprehensive DNS security and management capabilities. These integrations enhance Route 53 Global Resolver's core functionality and enable advanced use cases:
 

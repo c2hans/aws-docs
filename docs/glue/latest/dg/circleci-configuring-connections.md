@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/circleci-configuring-conn
 ---
 
 # Configuring CircleCI connections
-<a name="circleci-configuring-connections"></a>
 
 CircleCI supports custom authentication.
 

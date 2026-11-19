@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Add a target using the CLI
-<a name="gateway-add-target-cli"></a>
 
 You can use the AgentCore CLI to add targets to a gateway in the current project.
 

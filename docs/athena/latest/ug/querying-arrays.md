@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-arrays.html
 ---
 
 # Query arrays
-<a name="querying-arrays"></a>
 
 Amazon Athena lets you create arrays, concatenate them, convert them to different data types, and then filter, flatten, and sort them.
 

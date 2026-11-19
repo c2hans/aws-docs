@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 ---
 
 # DeleteQueue
-<a name="API_DeleteQueue"></a>
 
 Deletes a queue.
 

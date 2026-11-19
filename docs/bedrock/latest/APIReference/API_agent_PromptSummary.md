@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Pr
 ---
 
 # PromptSummary
-<a name="API_agent_PromptSummary"></a>
 
 Contains information about a prompt in your Prompt management tool.
 

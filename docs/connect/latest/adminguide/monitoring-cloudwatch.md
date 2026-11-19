@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/monitoring-clo
 ---
 
 # Monitoring your Connect Customer instance using CloudWatch
-<a name="monitoring-cloudwatch"></a>
 
 Connect Customer sends data about your instance to CloudWatch metrics so that you can collect, view, and analyze CloudWatch metrics for your Connect Customer virtual contact center. You can use this data to monitor key operational metrics and set up alarms. Data about your contact center is sent to CloudWatch every 1 minute.
 

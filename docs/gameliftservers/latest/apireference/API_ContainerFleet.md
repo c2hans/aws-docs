@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # ContainerFleet
-<a name="API_ContainerFleet"></a>
 
 Describes an Amazon GameLift Servers managed container fleet.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub/latest/ug/setting-up-signup
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Sign up for AWS
-<a name="setting-up-signup"></a>
 
 When you sign up for Amazon Web Services (AWS), you are charged only for the services that you use. If you already have an AWS account, you can skip this step.
 

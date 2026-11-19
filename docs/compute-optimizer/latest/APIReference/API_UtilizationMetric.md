@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # UtilizationMetric
-<a name="API_UtilizationMetric"></a>
 
 Describes a utilization metric of a resource, such as an Amazon EC2 instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_T
 ---
 
 # TableWithColumnsResource
-<a name="API_TableWithColumnsResource"></a>
 
 A structure for a table with columns object. This object is only used when granting a SELECT permission.
 

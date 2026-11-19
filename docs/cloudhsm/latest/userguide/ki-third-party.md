@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ki-third-party
 ---
 
 # Known issues for integrating third-party applications with AWS CloudHSM
-<a name="ki-third-party"></a>
 
 The following issues impact AWS CloudHSM when integrating with third-party applications.
 

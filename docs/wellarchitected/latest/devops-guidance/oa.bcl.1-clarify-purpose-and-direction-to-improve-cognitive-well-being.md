@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.BCL.1] Clarify purpose and direction to improve cognitive well-being
-<a name="oa.bcl.1-clarify-purpose-and-direction-to-improve-cognitive-well-being"></a>
 
  **Category:** FOUNDATIONAL
 

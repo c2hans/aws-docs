@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/supported-ssml
 ---
 
 # SSML tags supported by Connect Customer
-<a name="supported-ssml-tags"></a>
 
 Connect Customer supports the following SSML tags.
 

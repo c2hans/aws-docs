@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Supplemental documentation
-<a name="migrate-supp-docs"></a>
 
 The following table includes links to supplemental documentation that will help you use and understand the AWS SDK for JavaScript (v3).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-trino.html
 ---
 
 # Trino
-<a name="emr-trino"></a>
 
 Trino is an open-source query engine that's designed for interactive queries on a wide range of data sources. These can include relational databases, file-based data, HDFS data, and others. The most common purpose for Trino with Amazon EMR is to run complex SQL queries on large datasets stored in Amazon S3. It's also compliant with ANSI SQL, which makes it familiar to database engineers, data analysts, and data scientists who are familiar with SQL.
 

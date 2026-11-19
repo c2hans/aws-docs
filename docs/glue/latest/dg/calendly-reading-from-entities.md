@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/calendly-reading-from-ent
 ---
 
 # Reading from Calendly entities
-<a name="calendly-reading-from-entities"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # GetWorkgroup
-<a name="API_GetWorkgroup"></a>
 
 Returns information about a specific workgroup.
 

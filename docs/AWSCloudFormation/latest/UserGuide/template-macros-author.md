@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/templ
 ---
 
 # Create a CloudFormation macro definition
-<a name="template-macros-author"></a>
 
 When you create a macro definition, the macro definition makes the underlying Lambda function available in the specified account so that CloudFormation invokes it to process the templates.
 

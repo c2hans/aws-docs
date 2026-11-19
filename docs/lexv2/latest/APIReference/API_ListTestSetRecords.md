@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListTestSe
 ---
 
 # ListTestSetRecords
-<a name="API_ListTestSetRecords"></a>
 
 The list of test set records.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CodeInterpreterSummary
-<a name="API_CodeInterpreterSummary"></a>
 
 Contains summary information about a code interpreter. A code interpreter enables Amazon Bedrock AgentCore Agent to execute code.
 

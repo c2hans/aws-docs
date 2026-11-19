@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-runtime
 ---
 
 # Invoke Anthropic Claude on Amazon Bedrock using Bedrock's Converse API with a response stream
-<a name="bedrock-runtime_example_bedrock-runtime_ConverseStream_AnthropicClaude_section"></a>
 
 The following code examples show how to send a text message to Anthropic Claude, using Bedrock's Converse API and process the response stream in real-time.
 

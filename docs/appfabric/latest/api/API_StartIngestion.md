@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_StartIngestion.
 ---
 
 # StartIngestion
-<a name="API_StartIngestion"></a>
 
 Starts (enables) an ingestion, which collects data from an application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/certificate
 ---
 
 # Option 2: Applications can assume only the role that the trust policy allows
-<a name="option-2"></a>
 
 In this scenario, two certificates have been provisioned in AWS Certificate Manager (ACM) from AWS Private Certificate Authority and shared with the applications that require access to AWS resources. **Application 1** can assume only **Role 1**, and **Application 2** can assume only **Role 2**. In the role trust policy, you configure certificate subject fields as conditions. These conditions allow the application to assume only a specific role. Because of the role permissions, only **Application 1** can access **Bucket 1**, and only **Application 2** can access **Bucket 2**. The following image shows the access that each application has.
 

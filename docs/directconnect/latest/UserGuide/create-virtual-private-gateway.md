@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/create-vi
 ---
 
 # Create a Direct Connect virtual private gateway
-<a name="create-virtual-private-gateway"></a>
 
 The virtual private gateway must be attached to the VPC to which you want to connect. You can create a virtual private gateway and attach it to a VPC using either the Direct Connect console or using the command line or API.
 

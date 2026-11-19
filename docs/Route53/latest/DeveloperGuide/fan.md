@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/fan.html
 ---
 
 # .fan
-<a name="fan"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

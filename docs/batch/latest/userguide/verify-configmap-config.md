@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/verify-configmap-
 ---
 
 # Verify that the `aws-auth ConfigMap` is configured correctly
-<a name="verify-configmap-config"></a>
 
 **Note**
 For Amazon EKS access entry authentication instead of the `aws-auth` ConfigMap, see [Amazon EKS access entry authentication](eks-access-entries.md).

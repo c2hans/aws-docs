@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::AssetModel AssetModelCompositeModel
-<a name="aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel"></a>
 
 Contains information about a composite model in an asset model. This object contains the asset property definitions that you define in the composite model.
 

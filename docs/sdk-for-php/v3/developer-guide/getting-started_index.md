@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/getting-s
 ---
 
 # Getting started with the AWS SDK for PHP Version 3
-<a name="getting-started_index"></a>
 
 This chapter is dedicated to getting you up and running with the AWS SDK for PHP Version 3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Sensiti
 ---
 
 # SensitiveDataResult
-<a name="API_SensitiveDataResult"></a>
 
 Contains a detected instance of sensitive data that are based on built-in identifiers.
 

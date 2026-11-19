@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/ta
 ---
 
 # Using tags to control access to keys
-<a name="tag-authorization"></a>
 
 You can control access to AWS Payment Cryptography based on the tags on the key. For example, you can write an IAM policy that allows principals to enable and disable only the keys that have a particular tag. Or you can use an IAM policy to prevent principals from using keys in cryptographic operations unless the key has a particular tag.
 

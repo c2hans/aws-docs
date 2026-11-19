@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_InputLamb
 ---
 
 # InputLambdaProcessorUpdate
-<a name="API_InputLambdaProcessorUpdate"></a>
 
 For a SQL-based Kinesis Data Analytics application, represents an update to the [InputLambdaProcessor](API_InputLambdaProcessor.md) that is used to preprocess the records in the stream.
 

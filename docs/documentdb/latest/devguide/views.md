@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/views.html
 ---
 
 # Using views in Amazon DocumentDB 8.0
-<a name="views"></a>
 + Amazon DocumentDB 8.0 now supports views. Views function as virtual collections that present data based on specified aggregation operations. When you create a view, you define a query that transforms data from one or more source collections. Amazon DocumentDB 8.0 executes this query each time the view is accessed, without consuming additional storage resources. Unlike standard collections, views in Amazon DocumentDB 8.0 do not store documents on disk, making them an efficient solution for presenting transformed or filtered data to applications. To create a view in Amazon DocumentDB, you can use the createView command or the db.createView() helper method:
 
   ```

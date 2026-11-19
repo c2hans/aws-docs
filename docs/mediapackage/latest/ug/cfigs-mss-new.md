@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/cfigs-mss-new.htm
 ---
 
 # General settings fields
-<a name="cfigs-mss-new"></a>
 
 Provide general settings that apply to the entire packaging configuration.
 

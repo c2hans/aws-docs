@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/sp-rec-cus
 ---
 
 # Customizing Savings Plans recommendations
-<a name="sp-rec-customizing"></a>
 
 You can customize your Savings Plans recommendations using parameters shown on the **Recommendations** page.<a name="sp-rec-customize-howto"></a>
 

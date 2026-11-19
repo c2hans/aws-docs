@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/programmi
 ---
 
 # Using the AWS SDK for C\+\+
-<a name="programming-general"></a>
 
 This section provides information about general use of the AWS SDK for C\+\+, beyond what is covered in [Getting Started Using the AWS SDK for C\+\+](getting-started.md).
 

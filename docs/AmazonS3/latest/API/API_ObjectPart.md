@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ObjectPart.html
 ---
 
 # ObjectPart
-<a name="API_ObjectPart"></a>
 
 A container for elements related to an individual part.
 

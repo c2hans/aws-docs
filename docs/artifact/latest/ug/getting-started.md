@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/ug/getting-started.html
 ---
 
 # Getting started with AWS Artifact
-<a name="getting-started"></a>
 
 To get started using AWS Artifact, try out its key features in the AWS Artifact console. In the console, you can download AWS security and compliance reports, download and accept legal agreements, and subscribe to notifications about AWS Artifact documents.
 

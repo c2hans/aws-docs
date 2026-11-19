@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCodeArtifactAdminAccess
-<a name="AWSCodeArtifactAdminAccess"></a>
 
 **Description**: Provides full access to AWS CodeArtifact via the AWS Management Console.
 

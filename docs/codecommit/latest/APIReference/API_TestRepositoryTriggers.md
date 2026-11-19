@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_TestR
 ---
 
 # TestRepositoryTriggers
-<a name="API_TestRepositoryTriggers"></a>
 
 Tests the functionality of repository triggers by sending information to the trigger target. If real data is available in the repository, the test sends data from the last commit. If no data is available, sample data is generated.
 

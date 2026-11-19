@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # SendDestinationNumberVerificationCode
-<a name="API_SendDestinationNumberVerificationCode"></a>
 
 Before you can send test messages to a verified destination phone number you need to opt-in the verified destination phone number. Creates a new text message with a verification code and send it to a verified destination phone number. Once you have the verification code use [VerifyDestinationNumber](API_VerifyDestinationNumber.md) to opt-in the verified destination phone number to receive messages.
 

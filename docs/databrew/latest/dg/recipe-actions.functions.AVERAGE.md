@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # AVERAGE
-<a name="recipe-actions.functions.AVERAGE"></a>
 
  Calculates the average of the values in the source columns and returns the result in a new column. Any non-number is ignored.
 

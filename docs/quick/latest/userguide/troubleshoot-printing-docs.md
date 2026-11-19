@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshoot-prin
 ---
 
 # I get a feedback bar across my printed documents
-<a name="troubleshoot-printing-docs"></a>
 
 The browser sometimes prints the document feedback bar across the page, blocking some printed content.
 

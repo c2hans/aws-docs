@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/add-config-fi
 ---
 
 # Add the AWS Client VPN client certificate and key information for mutual authentication
-<a name="add-config-file-cert-key"></a>
 
 If your Client VPN endpoint uses mutual authentication, you must add the client certificate and the client private key to the .ovpn configuration file that you download.
 

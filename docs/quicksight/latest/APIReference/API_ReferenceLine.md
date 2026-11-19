@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Refer
 ---
 
 # ReferenceLine
-<a name="API_ReferenceLine"></a>
 
 The reference line visual display options.
 

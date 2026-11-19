@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NatGatewa
 ---
 
 # NatGatewayAddress
-<a name="API_NatGatewayAddress"></a>
 
 Describes the IP addresses and network interface associated with a NAT gateway.
 

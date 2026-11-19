@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactF
 ---
 
 # ContactFlowAttributeFilter
-<a name="API_ContactFlowAttributeFilter"></a>
 
  Filter for contact flow attributes with multiple condition types.
 

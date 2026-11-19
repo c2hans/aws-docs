@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # Proxy
-<a name="API_Proxy"></a>
 
 Union type representing different proxy configurations. Currently supports external customer-managed proxies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/HLuploadDirDot
 ---
 
 # Uploading a directory using the high-level .NET TransferUtility class
-<a name="HLuploadDirDotNet"></a>
 
 You can use the `TransferUtility` class to upload an entire directory. By default, the API uploads only the files at the root of the specified directory. You can, however, specify recursively uploading files in all of the sub directories.
 

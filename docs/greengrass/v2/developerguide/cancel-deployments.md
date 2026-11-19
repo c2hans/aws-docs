@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/cancel-depl
 ---
 
 # Cancel deployments
-<a name="cancel-deployments"></a>
 
 You can cancel an active deployment to prevent its software components from installing on AWS IoT Greengrass core devices. If you cancel a deployment that targets a thing group, core devices that you add to the group won't receive that continuous deployment. If a core device already runs the deployment, you won't change the components on that device when you cancel the deployment. You must [create a new deployment](create-deployments.md) or [revise the deployment](revise-deployments.md) to modify the components that run on the core devices that received the canceled deployment.
 

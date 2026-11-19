@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateDataPr
 ---
 
 # CreateDataProvider
-<a name="API_CreateDataProvider"></a>
 
 Creates a data provider using the provided settings. A data provider stores a data store type and location information about your database.
 

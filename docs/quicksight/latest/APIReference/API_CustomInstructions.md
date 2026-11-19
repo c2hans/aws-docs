@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomInstructions
-<a name="API_CustomInstructions"></a>
 
 Instructions that provide additional guidance and context for response generation.
 
@@ -16,7 +15,7 @@ In the following list, the required parameters are described first.
  ** CustomInstructionsString **   <a name="QS-Type-CustomInstructions-CustomInstructionsString"></a>
 A text field for providing additional guidance or context for response generation.
 Type: String
-Length Constraints: Maximum length of 5000.
+Length Constraints: Maximum length of 50000.
 Required: Yes
 
 ## See Also

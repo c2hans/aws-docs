@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-v2.ht
 ---
 
 # SageMaker model parallelism library v2
-<a name="model-parallel-v2"></a>
 
 **Note**
 Since the release of the SageMaker model parallelism (SMP) library v2.0.0 on December 19, 2023, this documentation is renewed for the SMP library v2. For previous versions of the SMP library, see [(Archived) SageMaker model parallelism library v1.x](model-parallel.md).

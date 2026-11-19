@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/configuring-custom
 ---
 
 # Setting up a custom domain for the Apache Airflow webserver
-<a name="configuring-custom-domain"></a>
 
 Amazon Managed Workflows for Apache Airflow (Amazon MWAA) lets you set up a custom domain for the managed Apache Airflow webserver. Using a custom domain, you can access your environment's Amazon MWAA-managed Apache Airflow webserver using the Apache Airflow UI, the Apache Airflow CLI, or the Apache Airflow webserver.
 

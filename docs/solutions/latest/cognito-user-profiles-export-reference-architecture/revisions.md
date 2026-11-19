@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cognito-user-profiles-e
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 Publication date: *August 2020*
 

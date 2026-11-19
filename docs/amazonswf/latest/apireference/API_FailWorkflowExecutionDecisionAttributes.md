@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_FailWo
 ---
 
 # FailWorkflowExecutionDecisionAttributes
-<a name="API_FailWorkflowExecutionDecisionAttributes"></a>
 
 Provides the details of the `FailWorkflowExecution` decision.
 

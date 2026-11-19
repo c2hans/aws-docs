@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/BestPractice
 ---
 
 # Lua scripts
-<a name="BestPractices.Clients.Redis.LuaScripts"></a>
 
 Valkey and Redis OSS supports more than 200 commands, including those to run Lua scripts. However, when it comes to Lua scripts, there are several pitfalls that can affect memory and availability of Valkey or Redis OSS.
 

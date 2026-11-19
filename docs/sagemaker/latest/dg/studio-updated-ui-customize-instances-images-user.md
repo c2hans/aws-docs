@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-ui-cu
 ---
 
 # Hide instance types and images on a user level
-<a name="studio-updated-ui-customize-instances-images-user"></a>
 
 **Warning**
 Customizing a user profile is a permanent action. If custom settings are saved, this user profile will overwrite the domain settings, and no longer dynamically update with the domain in the future.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateVi
 ---
 
 # UpdateViewContent
-<a name="API_UpdateViewContent"></a>
 
 Updates the view content of the given view identifier in the specified Connect Customer instance.
 

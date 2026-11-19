@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_AcceptN
 ---
 
 # AcceptNdaForAgreement
-<a name="API_AcceptNdaForAgreement"></a>
 
 Accept the NDA document for an agreement.
 

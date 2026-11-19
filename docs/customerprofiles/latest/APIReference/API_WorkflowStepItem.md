@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # WorkflowStepItem
-<a name="API_connect-customer-profiles_WorkflowStepItem"></a>
 
 List containing steps in workflow.
 

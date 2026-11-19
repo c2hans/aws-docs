@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-monitoring.h
 ---
 
 # Monitoring Amazon Textract
-<a name="textract-monitoring"></a>
 
 With CloudWatch, you can get metrics for individual Amazon Textract operations or global Amazon Textract metrics for your account. You can use metrics to track the health of your Amazon Textract–based solution, and set up alarms to notify you when one or more metrics fall outside a defined threshold. For example, you can see metrics for the number of server errors that have occurred. You can also see metrics for the number of times a specific Amazon Textract operation has succeeded. To see metrics, you can use [Amazon CloudWatch](https://console.aws.amazon.com/cloudwatch/), the [AWS CLI](https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/), or the [CloudWatch API](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/).
 

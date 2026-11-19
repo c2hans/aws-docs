@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-release-spar
 ---
 
 # AWS runtime for Apache Spark
-<a name="emr-release-spark_8x"></a>
 
 This section contains application versions, release notes, component versions, and configuration classifications available in each Amazon EMR Spark 8.x release version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListRunsInBatch.htm
 ---
 
 # ListRunsInBatch
-<a name="API_ListRunsInBatch"></a>
 
 Returns a paginated list of individual workflow runs within a specific batch. Use this operation to map each `runSettingId` to its HealthOmics-generated `runId`, and to check the submission status of each run. Only one filter per call is supported.
 

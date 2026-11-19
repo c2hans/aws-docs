@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Node Lifecycle and Labels
-<a name="sagemaker-hyperpod-eks-gpu-partitioning-labels"></a>
 
 Amazon SageMaker HyperPod performs deep health checks on cluster instances during the creation and update of HyperPod clusters before GPU partitioning begins. HyperPod health-monitoring agent continuously monitors the health status of GPU partitioned instances.
 

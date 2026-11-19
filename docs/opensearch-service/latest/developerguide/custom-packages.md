@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Importing and managing packages in Amazon OpenSearch Service
-<a name="custom-packages"></a>
 
 Amazon OpenSearch Service lets you upload custom dictionary files, such as stop words and synonyms, and associate plugins with your domain. These plugins can be pre-packaged, custom, or third-party, which gives you flexibility to extend your domain’s functionality. The generic term for all these types of files is *packages*.
 + **Dictionary files** help refine search results by instructing OpenSearch to ignore common high-frequency words or to treat similar terms, like "frozen custard," "gelato," and "ice cream," as equivalent. They can also improve [stemming](https://en.wikipedia.org/wiki/Stemming), as seen with the Japanese (kuromoji) analysis plugin.

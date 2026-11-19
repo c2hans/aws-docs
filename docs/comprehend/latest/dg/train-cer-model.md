@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/train-cer-model.htm
 ---
 
 # Train custom entity recognizers (API)
-<a name="train-cer-model"></a>
 
 To create and train a custom entity recognition model, use the Amazon Comprehend [CreateEntityRecognizer](https://docs.aws.amazon.com/comprehend/latest/APIReference/API_CreateEntityRecognizer.html) API operation
 

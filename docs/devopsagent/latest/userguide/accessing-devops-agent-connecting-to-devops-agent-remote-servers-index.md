@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/accessing-d
 ---
 
 # Connecting to DevOps Agent Remote Servers
-<a name="accessing-devops-agent-connecting-to-devops-agent-remote-servers-index"></a>
 
 AWS DevOps Agent provides dedicated remote servers for the Model Context Protocol (MCP) and Agent-to-Agent (A2A) protocol. Use these servers to connect your IDE, CLI, or custom agent integrations to an Agent Space.
 

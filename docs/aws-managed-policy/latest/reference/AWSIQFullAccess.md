@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIQFullAccess
-<a name="AWSIQFullAccess"></a>
 
 **Description**: Provides full access to AWS IQ
 

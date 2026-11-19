@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingReg
 ---
 
 # ListThingRegistrationTasks
-<a name="API_ListThingRegistrationTasks"></a>
 
 List bulk thing provisioning tasks.
 

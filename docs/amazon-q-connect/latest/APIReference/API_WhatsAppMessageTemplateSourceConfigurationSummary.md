@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # WhatsAppMessageTemplateSourceConfigurationSummary
-<a name="API_amazon-q-connect_WhatsAppMessageTemplateSourceConfigurationSummary"></a>
 
 Configuration information about the external data source.
 

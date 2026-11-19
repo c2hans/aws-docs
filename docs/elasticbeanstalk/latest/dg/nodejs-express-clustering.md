@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-expres
 ---
 
 # Deploying a Node.js Express application with clustering to Elastic Beanstalk
-<a name="nodejs-express-clustering"></a>
 
 This tutorial walks you through deploying a sample application to Elastic Beanstalk using the Elastic Beanstalk Command Line Interface (EB CLI), and then updating the application to use the [Express](http://expressjs.com/) framework, [Amazon ElastiCache](https://aws.amazon.com/elasticache/), and clustering. Clustering enhances your web application's high availability, performance, and security. To learn more about Amazon ElastiCache, go to [What Is Amazon ElastiCache (Memcached)?](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Introduction.html) in the *Amazon ElastiCache (Memcached) User Guide*.
 

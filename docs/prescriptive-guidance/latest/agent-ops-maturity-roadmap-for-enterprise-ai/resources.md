@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agent-ops-m
 ---
 
 # Resources
-<a name="resources"></a>
 
 •       [AWS Landing Zone Accelerator ](https://aws.amazon.com/solutions/implementations/landing-zone-accelerator-on-aws/)
 

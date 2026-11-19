@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSightListIAM
-<a name="AWSQuickSightListIAM"></a>
 
 **Description**: Allow QuickSight to list IAM entities
 

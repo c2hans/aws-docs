@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # SpanAttributes
-<a name="API_amazon-q-connect_SpanAttributes"></a>
 
 Contextual attributes capturing operation details, LLM configuration, usage metrics, and conversation data
 

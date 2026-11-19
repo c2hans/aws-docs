@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # RebalanceSlotsInGlobalReplicationGroup
-<a name="API_RebalanceSlotsInGlobalReplicationGroup"></a>
 
 Redistribute slots to ensure uniform distribution across existing shards in the cluster.
 

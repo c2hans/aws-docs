@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/code-security-asse
 ---
 
 # Deleting an integration
-<a name="code-security-assessments-connect-delete-integrations"></a>
 
  The following procedure describes how to delete an integration in the Amazon Inspector console. When you delete an integration, you lose all projects and scan configurations associated with the integration.
 

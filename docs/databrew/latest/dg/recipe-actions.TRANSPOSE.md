@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.TRANSP
 ---
 
 # TRANSPOSE
-<a name="recipe-actions.TRANSPOSE"></a>
 
 Converts all selected rows to columns and columns to rows.
 

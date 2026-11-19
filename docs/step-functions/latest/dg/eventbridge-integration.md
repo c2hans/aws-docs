@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/eventbridge-int
 ---
 
 # Automating Step Functions event delivery with EventBridge
-<a name="eventbridge-integration"></a>
 
 With EventBridge, you can select events from Step Functions standard workflows, to send to other services for additional processing. This technique provides a flexible way to loosely connect components and monitor your resources.
 

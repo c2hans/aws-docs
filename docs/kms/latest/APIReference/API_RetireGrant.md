@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_RetireGrant.
 ---
 
 # RetireGrant
-<a name="API_RetireGrant"></a>
 
 Deletes a grant. Typically, you retire a grant when you no longer need its permissions. To identify the grant to retire, use a [grant token](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html#grant_token), or both the grant ID and a key identifier (key ID or key ARN) of the KMS key. The [CreateGrant](API_CreateGrant.md) operation returns both values.
 

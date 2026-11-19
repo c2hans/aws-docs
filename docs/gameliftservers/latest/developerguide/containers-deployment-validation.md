@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/co
 ---
 
 # Validating and troubleshooting container fleet deployments
-<a name="containers-deployment-validation"></a>
 
 A *fleet deployment*, called a *deployment* in this topic, is the process that Amazon GameLift Servers uses to replace the containers on a container fleet's instances with containers that use the fleet's new settings, such as a new container group definition version. Instead of replacing every running container at once, a deployment first verifies that the new containers can host game sessions and then replaces the rest gradually to catch bad changes before they deploy to the entire fleet. A container fleet starts a deployment in three situations:
 + **When you create a fleet with a container group definition** – If your [CreateContainerFleet](https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateContainerFleet.html) request includes a game server container group definition, fleet creation starts a deployment that installs your containers on the fleet's new instances. If you create a fleet without a container group definition, no instances are deployed, and the fleet has no deployment until you add a game server container group definition.

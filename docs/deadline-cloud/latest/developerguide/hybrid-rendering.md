@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/hyb
 ---
 
 # Extend your on-premises render farm to the cloud
-<a name="hybrid-rendering"></a>
 
 You already run a render farm on-premises, and you want extra capacity during peak demand without buying and maintaining more hardware. With AWS Deadline Cloud (Deadline Cloud), you can add cloud workers to the same farm as your on-premises workers and send jobs to either location. Sending overflow work to the cloud in periods of high demand is often called *cloud bursting*.
 

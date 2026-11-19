@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_S
 ---
 
 # StartExecution
-<a name="API_StartExecution"></a>
 
 Starts a state machine execution.
 

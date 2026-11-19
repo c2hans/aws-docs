@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListT
 ---
 
 # ListTemplateVersions
-<a name="API_ListTemplateVersions"></a>
 
 Lists all the versions of the templates in the current Amazon Quick Sight account.
 

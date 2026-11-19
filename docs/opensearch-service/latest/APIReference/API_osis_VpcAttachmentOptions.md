@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # VpcAttachmentOptions
-<a name="API_osis_VpcAttachmentOptions"></a>
 
 Options for attaching a VPC to pipeline.
 

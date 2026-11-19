@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Searchab
 ---
 
 # SearchableContactAttributes
-<a name="API_SearchableContactAttributes"></a>
 
 A structure that defines search criteria based on user-defined contact attributes that are configured for contact search.
 

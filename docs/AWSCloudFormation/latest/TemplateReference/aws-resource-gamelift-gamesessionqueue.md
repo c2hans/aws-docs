@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GameLift::GameSessionQueue
-<a name="aws-resource-gamelift-gamesessionqueue"></a>
 
 The `AWS::GameLift::GameSessionQueue` resource creates a placement queue that processes requests for new game sessions. A queue finds the best available game server, then prompts it to start a new game session. Queues can have destinations (fleets or aliases), which determine where the queue can place new game sessions. A queue can have destinations with varied fleet type (Spot and On-Demand), instance type, and AWS Region.
 

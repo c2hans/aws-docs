@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/troubleshoot-s
 ---
 
 # Troubleshoot agent screen recording issues
-<a name="troubleshoot-screen-recording"></a>
 
 ## Troubleshoot screen recording failures caused by browser Local Network Access restrictions
 <a name="troubleshoot-sr-lna"></a>

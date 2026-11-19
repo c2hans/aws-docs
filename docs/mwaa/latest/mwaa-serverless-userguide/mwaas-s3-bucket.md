@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/mw
 ---
 
 # Create an Amazon S3 bucket for Amazon MWAA Serverless
-<a name="mwaas-s3-bucket"></a>
 
 Learn how to create an Amazon S3 bucket to store your workflow files.
 

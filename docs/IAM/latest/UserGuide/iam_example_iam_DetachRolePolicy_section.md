@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Det
 ---
 
 # Use `DetachRolePolicy` with an AWS SDK or CLI
-<a name="iam_example_iam_DetachRolePolicy_section"></a>
 
 The following code examples show how to use `DetachRolePolicy`.
 

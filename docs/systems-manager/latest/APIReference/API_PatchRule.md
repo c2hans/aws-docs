@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # PatchRule
-<a name="API_PatchRule"></a>
 
 Defines an approval rule for a patch baseline.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Identity and access management
-<a name="identity-and-access-management"></a>
 
 |  LSSEC01: How do you accommodate separation of duties as part of your identity and access management design?  |
 | --- |

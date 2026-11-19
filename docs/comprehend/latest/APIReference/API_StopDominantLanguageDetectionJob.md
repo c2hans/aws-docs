@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_StopD
 ---
 
 # StopDominantLanguageDetectionJob
-<a name="API_StopDominantLanguageDetectionJob"></a>
 
 Stops a dominant language detection job in progress.
 

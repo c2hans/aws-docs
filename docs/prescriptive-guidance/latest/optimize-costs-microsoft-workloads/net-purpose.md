@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Consider purpose-built databases
-<a name="net-purpose"></a>
 
 ## Overview
 <a name="net-purpose-overview"></a>

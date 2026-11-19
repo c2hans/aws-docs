@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-security-suppo
 ---
 
 # Plan security, support, and recovery
-<a name="plan-security-support"></a>
 
 Amazon Elastic VMware Service is a self-managed service, so you operate the VMware software and many of the safeguards around it. Make these decisions before you deploy, in the following order.
 

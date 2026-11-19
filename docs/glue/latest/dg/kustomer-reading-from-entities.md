@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/kustomer-reading-from-ent
 ---
 
 # Reading from Kustomer entities
-<a name="kustomer-reading-from-entities"></a>
 
 **Prerequisite**
 

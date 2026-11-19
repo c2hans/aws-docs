@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Mana
 ---
 
 # ManagedInstanceRequest
-<a name="API_ManagedInstanceRequest"></a>
 
 Defines comprehensive configuration for a managed WorkSpace Instance.
 

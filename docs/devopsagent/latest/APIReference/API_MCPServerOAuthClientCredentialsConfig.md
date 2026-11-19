@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MCPS
 ---
 
 # MCPServerOAuthClientCredentialsConfig
-<a name="API_MCPServerOAuthClientCredentialsConfig"></a>
 
 OAuth client credentials configuration for MCP server.
 

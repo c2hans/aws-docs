@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Upd
 ---
 
 # UpdateRepository
-<a name="API_UpdateRepository"></a>
 
  Update the properties of a repository.
 

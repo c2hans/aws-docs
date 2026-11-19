@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_cloudwa
 ---
 
 # Creating a monitoring dashboard with function name as a variable
-<a name="iam_example_cloudwatch_GettingStarted_031_section"></a>
 
 The following code example shows how to:
 + Create a CloudWatch dashboard

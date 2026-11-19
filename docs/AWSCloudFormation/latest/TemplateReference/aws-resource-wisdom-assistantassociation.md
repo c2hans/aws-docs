@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AssistantAssociation
-<a name="aws-resource-wisdom-assistantassociation"></a>
 
 Specifies an association between an Connect Customer Wisdom assistant and another resource. Currently, the only supported association is with a knowledge base. An assistant can have only a single association.
 

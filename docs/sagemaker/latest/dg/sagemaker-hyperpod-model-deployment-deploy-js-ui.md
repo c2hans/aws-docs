@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Deploy models from JumpStart using Amazon SageMaker Studio
-<a name="sagemaker-hyperpod-model-deployment-deploy-js-ui"></a>
 
 The following steps show you through how to deploy models from JumpStart using Amazon SageMaker Studio.
 

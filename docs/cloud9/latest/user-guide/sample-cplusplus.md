@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/sample-cplusplu
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # C\+\+ tutorial for AWS Cloud9
-<a name="sample-cplusplus"></a>
 
 This tutorial enables you to run C\+\+ code in an AWS Cloud9 development environment. The code also uses resources provided by the [AWS SDK for C\+\+](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/welcome.html), a modularized, cross-platform, open-source library you can use to connect to Amazon Web Services.
 

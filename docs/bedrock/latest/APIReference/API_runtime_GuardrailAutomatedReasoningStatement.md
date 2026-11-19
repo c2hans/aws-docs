@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailAutomatedReasoningStatement
-<a name="API_runtime_GuardrailAutomatedReasoningStatement"></a>
 
 A logical statement that includes both formal logic representation and natural language explanation.
 

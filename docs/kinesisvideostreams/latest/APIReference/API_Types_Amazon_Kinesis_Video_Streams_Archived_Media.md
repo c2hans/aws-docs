@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # Amazon Kinesis Video Streams Archived Media
-<a name="API_Types_Amazon_Kinesis_Video_Streams_Archived_Media"></a>
 
 The following data types are supported by Amazon Kinesis Video Streams Archived Media:
 +  [ClipFragmentSelector](API_reader_ClipFragmentSelector.md)

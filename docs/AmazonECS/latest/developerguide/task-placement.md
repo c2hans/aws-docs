@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-pla
 ---
 
 # How Amazon ECS places tasks on container instances
-<a name="task-placement"></a>
 
 You can use task placement to configure Amazon ECS to place your tasks on container instances that meet certain criteria, for example an Availability Zone or instance type.
 

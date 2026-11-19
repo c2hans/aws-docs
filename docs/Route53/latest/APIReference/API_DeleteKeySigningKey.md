@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteKe
 ---
 
 # DeleteKeySigningKey
-<a name="API_DeleteKeySigningKey"></a>
 
 Deletes a key-signing key (KSK). Before you can delete a KSK, you must deactivate it. The KSK must be deactivated before you can delete it regardless of whether the hosted zone is enabled for DNSSEC signing.
 

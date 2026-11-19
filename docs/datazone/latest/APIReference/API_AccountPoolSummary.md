@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Account
 ---
 
 # AccountPoolSummary
-<a name="API_AccountPoolSummary"></a>
 
 The summary of the account pool.
 

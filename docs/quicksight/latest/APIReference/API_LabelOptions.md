@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Label
 ---
 
 # LabelOptions
-<a name="API_LabelOptions"></a>
 
 The share label options for the labels.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CallA
 ---
 
 # CallAnalyticsJobSettings
-<a name="API_CallAnalyticsJobSettings"></a>
 
 Provides additional optional settings for your [StartCallAnalyticsJob](API_StartCallAnalyticsJob.md) request, including content redaction, automatic language identification; allows you to apply custom language models, custom vocabulary filters, and custom vocabularies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/monitor-workload-b
 ---
 
 # Balancing workloads across HA pairs
-<a name="monitor-workload-balance"></a>
 
 If you have a file system with multiple high-availability (HA) pairs, then its throughput and storage are spread across each of your HA pairs. FSx for ONTAP automatically balances your files as they are written to your file system, but your workload data and I/O are no longer balanced once you add HA pairs. Additionally, in rare cases, your workload data or I/O could become unbalanced across your file system's existing HA pairs, which can impact your workload's overall performance. If your workload is ever imbalanced, you can rebalance it across each of your file system’s HA pairs (and their commensurate file servers and *aggregates*—the storage pools which make up your primary storage tier).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenan
 ---
 
 # Resources
-<a name="resources"></a>
 + [Amazon Neptune documentation](https://docs.aws.amazon.com/neptune/latest/userguide/intro.html)
 + [Data Modeling for Amazon Neptune](https://explore.skillbuilder.aws/learn/course/external/view/elearning/16133/data-modeling-for-amazon-neptune) (course)
 + [Applying the AWS Well-Architected Framework for Amazon Neptune](https://docs.aws.amazon.com/prescriptive-guidance/latest/neptune-well-architected-framework/introduction.html)

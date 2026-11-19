@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-prere
 ---
 
 # Prerequisites for S3 Files
-<a name="s3-files-prereq-policies"></a>
 
 Before you begin using S3 Files, make sure that you have completed the following prerequisites.
 

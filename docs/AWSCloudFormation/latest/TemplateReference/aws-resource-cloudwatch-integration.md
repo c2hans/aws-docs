@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::Integration
-<a name="aws-resource-cloudwatch-integration"></a>
 
 Resource Type definition for `AWS::CloudWatch::Integration`. Manages a CloudWatch (Amazon CloudWatch Observability / Omni) account-scoped integration. V1 supports AWS\_CONFIG\_SLREC, AWS\_INTEGRATION, and EXTERNAL\_AGENT.
 

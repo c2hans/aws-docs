@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/detecting-document-te
 ---
 
 # Detecting Document Text with Amazon Textract
-<a name="detecting-document-text"></a>
 
 To detect text in a document, you use the [DetectDocumentText](https://docs.aws.amazon.com/textract/latest/APIReference/API_DetectDocumentText.html) operation, and pass a document file as input. `DetectDocumentText` returns a JSON structure that contains lines and words of detected text, the location of the text in the document, and the relationships between detected text. For more information, see [Detecting Text](how-it-works-detecting.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_route53_
 ---
 
 # aws-route53-alb
-<a name="aws_route53_alb"></a>
 
 ![Stability:Experimental](https://img.shields.io/badge/stability-Experimental-important.svg?style=for-the-badge)
 

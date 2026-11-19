@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd01-b
 ---
 
 # FND01-BP03 Establish boundaries and scopes for your environments
-<a name="fnd01-bp03"></a>
 
  Before teams start building in the cloud, define how they can consume cloud resources. Set policies, controls, and governance that balance enablement with compliance. Without clear boundaries, teams make independent decisions that lead to security exposures, compliance violations, cost overruns, and operational inconsistencies.
 

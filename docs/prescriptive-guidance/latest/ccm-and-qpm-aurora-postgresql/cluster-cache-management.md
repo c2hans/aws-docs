@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ccm-and-qpm
 ---
 
 # Cluster cache management
-<a name="cluster-cache-management"></a>
 
 Caching is one of the most important features of any database (DB) because it helps reduce the disk I/O. The most frequently accessed data is stored in a memory area called the *buffer cache*. When a query runs frequently, it retrieves the data directly from the cache instead of the disk. This is faster and provides better scalability and application performance. You configure PostgreSQL cache size by using the `shared_buffers` parameter. For more information, see [Memory](https://www.postgresql.org/docs/current/runtime-config-resource.html#RUNTIME-CONFIG-RESOURCE-MEMORY) (PostgreSQL documentation).
 

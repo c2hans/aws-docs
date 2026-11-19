@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/run-greengr
 ---
 
 # Run the AWS IoT Greengrass Core software
-<a name="run-greengrass-core-v2"></a>
 
 After you [install the AWS IoT Greengrass Core software](install-greengrass-core-v2.md), run it to connect your device to AWS IoT Greengrass.
 

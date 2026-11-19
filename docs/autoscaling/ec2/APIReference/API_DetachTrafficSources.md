@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DetachT
 ---
 
 # DetachTrafficSources
-<a name="API_DetachTrafficSources"></a>
 
 Detaches one or more traffic sources from the specified Auto Scaling group.
 

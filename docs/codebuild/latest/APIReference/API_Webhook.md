@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Webhoo
 ---
 
 # Webhook
-<a name="API_Webhook"></a>
 
 Information about a webhook that connects repository events to a build project in AWS CodeBuild.
 

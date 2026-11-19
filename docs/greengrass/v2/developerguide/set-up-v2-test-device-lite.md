@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/set-up-v2-t
 ---
 
 # Set up a new device to test V1 applications on V2 (Greengrass nucleus lite)
-<a name="set-up-v2-test-device-lite"></a>
 
 Set up a new device with Greengrass nucleus lite to test generic components that you create to migrate your AWS IoT Greengrass V1 applications to V2. Greengrass nucleus lite is a lightweight runtime optimized for resource-constrained devices. You can use this device to develop and test custom Greengrass components that run native processes. After you test your applications on a Greengrass nucleus lite device, you can deploy the V2 components to other devices running Greengrass nucleus lite or upgrade your existing V1 core devices to V2.
 

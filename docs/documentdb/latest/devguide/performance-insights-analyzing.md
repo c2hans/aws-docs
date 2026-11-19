@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/performance-i
 ---
 
 # Analyzing metrics with the Performance Insights dashboard
-<a name="performance-insights-analyzing"></a>
 
 The Performance Insights dashboard contains database performance information to help you analyze and troubleshoot performance issues. On the main dashboard page, you can view information about the database load (DB load). You can "slice" DB load by dimensions such as wait states or query.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/restore
 ---
 
 # RestoreAnalysis
-<a name="restore-analysis"></a>
 
 Use the `RestoreAnalysis` API operation to restore an analysis for a specified user. To use this operation, you need the ID of the analysis that you want to restore. The analysis ID is part of the analysis URL in Quick Sight. You can also use the `ListAnalyses` API operation to get the ID.
 

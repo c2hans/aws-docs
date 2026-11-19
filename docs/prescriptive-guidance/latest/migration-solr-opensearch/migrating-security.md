@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Migrating security features
-<a name="migrating-security"></a>
 
 The migration of security assets from Solr to OpenSearch involves extracting existing user credentials and permissions from the `security.json` file in Solr and recreating them in OpenSearch by using the OpenSearch Security API. This process maps Solr authentication and rule-based authorization to the OpenSearch role-based access control (RBAC) system. It ensures that all security policies and user access levels are maintained while taking advantage of the enhanced security features that OpenSearch provides.
 

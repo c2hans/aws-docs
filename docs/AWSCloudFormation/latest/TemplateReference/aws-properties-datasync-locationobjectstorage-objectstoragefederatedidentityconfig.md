@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataSync::LocationObjectStorage ObjectStorageFederatedIdentityConfig
-<a name="aws-properties-datasync-locationobjectstorage-objectstoragefederatedidentityconfig"></a>
 
 Specifies federated identity parameters that allow AWS DataSync to obtain OpenID Connect token for access to customer object storage. The token allows for temporary, short-term access to the storage. DataSync automatically refreshes the token to assure uninterrupted access to the storage.
 

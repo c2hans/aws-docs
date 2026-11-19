@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/batch-manag
 ---
 
 # batch-managed-spot-compute-environment-max-bid
-<a name="batch-managed-spot-compute-environment-max-bid"></a>
 
 Checks if an AWS Batch managed Spot compute environment is configured to have a bid percentage less than or equal to the specified value. The rule is NON\_COMPLIANT if the bid percentage is greater than the value specified in the required rule parameter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Di
 ---
 
 # DirectConnectGatewayAssociationProposal
-<a name="API_DirectConnectGatewayAssociationProposal"></a>
 
 Information about the proposal request to attach a virtual private gateway to a Direct Connect gateway.
 

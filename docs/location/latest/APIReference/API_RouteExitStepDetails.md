@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteEx
 ---
 
 # RouteExitStepDetails
-<a name="API_RouteExitStepDetails"></a>
 
 Details related to the exit step.
 

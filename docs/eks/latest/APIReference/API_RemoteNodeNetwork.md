@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_RemoteNodeNe
 ---
 
 # RemoteNodeNetwork
-<a name="API_RemoteNodeNetwork"></a>
 
 A network CIDR that can contain hybrid nodes.
 

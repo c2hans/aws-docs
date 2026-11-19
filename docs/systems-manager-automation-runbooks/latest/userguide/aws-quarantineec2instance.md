@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-QuarantineEC2Instance`
-<a name="aws-quarantineec2instance"></a>
 
  **Description**
 

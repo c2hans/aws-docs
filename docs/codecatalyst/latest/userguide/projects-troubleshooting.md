@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/projects-t
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Troubleshooting projects and blueprints
-<a name="projects-troubleshooting"></a>
 
 This section can help you troubleshoot some common issues you might encounter while working with projects and blueprints in Amazon CodeCatalyst.
 

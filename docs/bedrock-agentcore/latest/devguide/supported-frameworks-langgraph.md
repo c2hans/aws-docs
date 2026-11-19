@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/suppor
 ---
 
 # Set up LangGraph telemetry for AgentCore Evaluations
-<a name="supported-frameworks-langgraph"></a>
 
 This page explains how to instrument a [LangGraph](https://langchain-ai.github.io/langgraph/) agent, how spans are identified, and how evaluation fields are extracted. AgentCore Evaluations supports LangGraph agents built in Python and TypeScript; this page covers each language separately, in [Python agent support](#langgraph-python) and [TypeScript agent support](#langgraph-typescript). It closes with [best practices](#langgraph-best-practices) for structuring a LangGraph agent so that it can be evaluated reliably.
 

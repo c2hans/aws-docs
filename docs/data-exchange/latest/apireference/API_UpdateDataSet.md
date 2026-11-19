@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Up
 ---
 
 # UpdateDataSet
-<a name="API_UpdateDataSet"></a>
 
 This operation updates a data set.
 

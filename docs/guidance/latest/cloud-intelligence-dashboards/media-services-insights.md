@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Media Services Insights Hub
-<a name="media-services-insights"></a>
 
 ## Introduction
 <a name="introduction"></a>

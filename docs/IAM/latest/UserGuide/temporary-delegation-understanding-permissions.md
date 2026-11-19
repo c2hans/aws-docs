@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/temporary-delegatio
 ---
 
 # Understanding permissions
-<a name="temporary-delegation-understanding-permissions"></a>
 
 As part of the feature onboarding process, you will need to register policies with IAM that define the permissions you want to request in customers' AWS accounts. The registration process provides a more consistent experience for customers and helps avoid common pitfalls in policy authoring.
 

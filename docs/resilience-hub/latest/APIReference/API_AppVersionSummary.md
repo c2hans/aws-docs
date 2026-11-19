@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_A
 ---
 
 # AppVersionSummary
-<a name="API_AppVersionSummary"></a>
 
 Version of an application.
 

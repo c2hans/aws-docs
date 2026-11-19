@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_En
 ---
 
 # EncryptionContext
-<a name="API_EncryptionContext"></a>
 
 Encryption context for a Domain.
 

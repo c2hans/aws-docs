@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_Cluster.html
 ---
 
 # Cluster
-<a name="API_Cluster"></a>
 
 The cluster resource and configuration.
 

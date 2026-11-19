@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rest-api-vpc.html
 ---
 
 # Connect to private REST APIs through a VPC
-<a name="rest-api-vpc"></a>
 
  To connect to private REST APIs that are only accessible within an Amazon Virtual Private Cloud (Amazon VPC), use a REST API connection with VPC configuration. This includes APIs behind a VPN, AWS PrivateLink, or firewall.
 

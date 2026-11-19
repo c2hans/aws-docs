@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMarketplaceSellerProductsReadOnly
-<a name="AWSMarketplaceSellerProductsReadOnly"></a>
 
 **Description**: Provide sellers read-only access to AWS Marketplace Management Products page.
 

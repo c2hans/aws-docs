@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Spe
 ---
 
 # SpekeKeyProvider
-<a name="API_SpekeKeyProvider"></a>
 
 The parameters for the SPEKE key provider.
 

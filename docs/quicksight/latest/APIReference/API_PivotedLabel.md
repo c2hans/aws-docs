@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotedLabel
-<a name="API_PivotedLabel"></a>
 
 Specifies a label value to be pivoted into a separate column, including the new column name and identifier.
 

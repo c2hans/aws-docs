@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Folde
 ---
 
 # FolderSearchFilter
-<a name="API_FolderSearchFilter"></a>
 
 A filter to use to search an Quick Sight folder.
 

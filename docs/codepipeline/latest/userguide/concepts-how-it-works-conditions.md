@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/concepts-h
 ---
 
 # How do stage conditions work?
-<a name="concepts-how-it-works-conditions"></a>
 
 For each condition that specifies a rule, the rule is run. If the condition fails, the stage performs the specified result. Optionally, as part of the rule, you also specify which resources CodePipeline should use for certain cases. For example, the `CloudWatchAlarm` rule will use a CloudWatch alarm resource to run checks for the condition.
 

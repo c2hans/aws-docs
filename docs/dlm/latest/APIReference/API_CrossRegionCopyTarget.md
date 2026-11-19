@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_CrossRegionC
 ---
 
 # CrossRegionCopyTarget
-<a name="API_CrossRegionCopyTarget"></a>
 
  **[Default policies only]** Specifies a destination Region for cross-Region copy actions.
 

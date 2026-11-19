@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_JobRe
 ---
 
 # JobReportMetrics
-<a name="API_JobReportMetrics"></a>
 
 Contains aggregated metrics across all jobs in a run.
 

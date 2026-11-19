@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Offer
 ---
 
 # Offering
-<a name="API_Offering"></a>
 
 Represents the metadata of a device offering.
 

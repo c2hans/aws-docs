@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Names
 ---
 
 # NamespaceError
-<a name="API_NamespaceError"></a>
 
 Errors that occur during namespace creation.
 

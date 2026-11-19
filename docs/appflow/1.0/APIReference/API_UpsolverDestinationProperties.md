@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_UpsolverDes
 ---
 
 # UpsolverDestinationProperties
-<a name="API_UpsolverDestinationProperties"></a>
 
  The properties that are applied when Upsolver is used as a destination.
 

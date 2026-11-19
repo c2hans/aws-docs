@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enable-capacity-
 ---
 
 # Registering a delegated administrator
-<a name="enable-capacity-manager-da"></a>
 
 You can register a delegated administrator for Capacity Manager. This allows a member account to manage Capacity Manager for your AWS Organization. Only the management account can register or remove a delegated administrator within your organization.
 
@@ -67,6 +66,8 @@ Register-ORGDelegatedAdministrator `
 ```
 
 ------
+
+After you register the delegated administrator, it must also enable Capacity Manager in its own account. If the delegated administrator enables Capacity Manager with AWS Organizations access, it must use the same Region as the management account. For more information, see [Enabling EC2 Capacity Manager with AWS Organizations](enable-capacity-manager-organizations.md).
 
 ## Remove a delegated administrator
 <a name="remove-capacity-manager-da"></a>

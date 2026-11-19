@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Master
 ---
 
 # Master
-<a name="API_Master"></a>
 
 Contains information about the administrator account and invitation.
 

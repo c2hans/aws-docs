@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/origin-server-rtmp.h
 ---
 
 # Coordinate with the downstream system
-<a name="origin-server-rtmp"></a>
 
 You and the operator of the downstream system must agree about the destination for each output of the RTMP output group.
 

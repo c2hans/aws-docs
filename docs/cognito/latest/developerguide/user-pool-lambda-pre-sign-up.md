@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-
 ---
 
 # Pre sign-up Lambda trigger
-<a name="user-pool-lambda-pre-sign-up"></a>
 
 You might want to customize the sign-up process in user pools that have self-service sign-up options. Some common uses of the pre sign-up trigger are to perform custom analysis and recording of new users, apply security and governance standards, or link users from a third-party IdP to a [consolidated user profile](cognito-user-pools-identity-federation-consolidate-users.md). You might also have trusted users who aren't required to undergo [verification and confirmation](signing-up-users-in-your-app.md).
 

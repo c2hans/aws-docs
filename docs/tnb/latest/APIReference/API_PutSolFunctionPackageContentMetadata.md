@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_PutSolFuncti
 ---
 
 # PutSolFunctionPackageContentMetadata
-<a name="API_PutSolFunctionPackageContentMetadata"></a>
 
 Update metadata in a function package.
 

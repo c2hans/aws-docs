@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Dat
 ---
 
 # DatasetConfig
-<a name="API_DatasetConfig"></a>
 
 Contains the configuration for a dataset.
 

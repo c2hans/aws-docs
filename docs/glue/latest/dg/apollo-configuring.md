@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/apollo-configuring.html
 ---
 
 # Configuring Apollo
-<a name="apollo-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Apollo, you must meet the following requirements:
 

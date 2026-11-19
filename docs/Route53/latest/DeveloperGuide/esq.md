@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/esq.html
 ---
 
 # .esq
-<a name="esq"></a>
 
 Used by lawyers and distinguished people to showcase credentials and experience.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Member
 ---
 
 # MemberAdditionalConfigurationResult
-<a name="API_MemberAdditionalConfigurationResult"></a>
 
 Information about the additional configuration for the member account.
 

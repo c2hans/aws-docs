@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # Substring
-<a name="API_Substring"></a>
 
 A reference to a substring of a literal string in a JSON document.
 

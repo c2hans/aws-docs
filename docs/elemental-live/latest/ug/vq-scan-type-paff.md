@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/vq-scan-type-pa
 ---
 
 # Adaptive field frame controls
-<a name="vq-scan-type-paff"></a>
 
 ## Description
 <a name="description-vq-scan-type"></a>

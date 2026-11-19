@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/monorepo-custom
 ---
 
 # Monorepo custom header requirements
-<a name="monorepo-custom-headers"></a>
 
 When you specify custom headers for an app in a monorepo, be aware of the following setup requirements:
 + There is a specific YAML format for a monorepo. For the correct syntax, see [Custom header YAML reference](custom-header-YAML-format.md).

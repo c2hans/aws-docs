@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3CsvSource.html
 ---
 
 # S3CsvSource
-<a name="API_S3CsvSource"></a>
 
 Specifies a command-separated value (CSV) data store stored in Amazon S3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Satellite Operator Development and Test Resiliency
-<a name="satellite-operator-dev-test"></a>
 
 Publication date: **April 25, 2023 ([Diagram history](diagram-history.md))**
 

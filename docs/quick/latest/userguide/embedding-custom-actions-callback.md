@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedding-custom-
 ---
 
 # Adding embedded callback actions at runtime in AWS Quick Sight
-<a name="embedding-custom-actions-callback"></a>
 
 Use embedded datapoint callback actions to build tighter integrations between your software as a service (SaaS) application and your AWS Quick Sight embedded dashboards and visuals. Developers can register datapoints to be called back with the AWS Quick Sight embedding SDK. When you register a callback action for a visual, readers can select a datapoint on the visual to receive a callback that provides data specific to the selected data point. This information can be used to flag key records, compile raw data specific to the datapoint, capture records, and compile data for backend processes.
 

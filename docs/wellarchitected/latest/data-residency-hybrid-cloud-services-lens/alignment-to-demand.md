@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Alignment to demand
-<a name="alignment-to-demand"></a>
 
 | DRHCSUS02: How are you scaling and sizing your infrastructure to match demand and minimize resource consumption? |
 | --- |

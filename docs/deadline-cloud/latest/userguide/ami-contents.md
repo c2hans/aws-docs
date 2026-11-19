@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/ami-cont
 ---
 
 # Worker AMI software contents
-<a name="ami-contents"></a>
 
 This section provides information on software installed on AWS Deadline Cloud service-managed worker Amazon Machine Images (AMIs).
 

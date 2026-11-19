@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Disassoc
 ---
 
 # DisassociateRoutingProfileQueues
-<a name="API_DisassociateRoutingProfileQueues"></a>
 
 Disassociates a set of queues from a routing profile.
 

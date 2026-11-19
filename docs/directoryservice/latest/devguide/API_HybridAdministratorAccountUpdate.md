@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Hyb
 ---
 
 # HybridAdministratorAccountUpdate
-<a name="API_HybridAdministratorAccountUpdate"></a>
 
  Use to recover to the hybrid directory administrator account credentials.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Sampl
 ---
 
 # Sample
-<a name="API_Sample"></a>
 
 Represents a sample of performance data.
 

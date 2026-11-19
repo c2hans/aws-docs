@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Network Architecture
-<a name="network-architecture"></a>
 
 ## VPC Configuration
 <a name="vpc-configuration"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.FLAG_C
 ---
 
 # FLAG\_COLUMN\_FROM\_NULL
-<a name="recipe-actions.FLAG_COLUMN_FROM_NULL"></a>
 
 Creates a new column, based on the presence of null values in an existing column.
 

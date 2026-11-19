@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # FreeTrialPricingTerm
-<a name="API_marketplace-discovery_FreeTrialPricingTerm"></a>
 
 Defines a free trial pricing term that enables customers to try the product before purchasing.
 

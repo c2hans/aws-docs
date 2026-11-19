@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceF
 ---
 
 # InstanceFamilyCreditSpecification
-<a name="API_InstanceFamilyCreditSpecification"></a>
 
 Describes the default credit option for CPU usage of a burstable performance instance family.
 

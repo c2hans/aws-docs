@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_B
 ---
 
 # BulkOperationSummary
-<a name="API_BulkOperationSummary"></a>
 
 Contains summary information about a bulk operation.
 

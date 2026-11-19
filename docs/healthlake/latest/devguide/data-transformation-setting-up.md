@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/data-transfor
 ---
 
 # Setting up
-<a name="data-transformation-setting-up"></a>
 
 In this chapter, you use the AWS Management Console to set up the required permissions to start using AWS HealthLake Data transformation and running data transformation jobs.
 

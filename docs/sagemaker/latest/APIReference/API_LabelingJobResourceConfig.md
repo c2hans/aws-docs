@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Labeli
 ---
 
 # LabelingJobResourceConfig
-<a name="API_LabelingJobResourceConfig"></a>
 
 Configure encryption on the storage volume attached to the ML compute instance used to run automated data labeling model training and inference.
 

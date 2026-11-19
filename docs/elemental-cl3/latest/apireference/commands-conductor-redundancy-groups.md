@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/comman
 ---
 
 # Conductor Redundancy Groups
-<a name="commands-conductor-redundancy-groups"></a>
 
 | Nickname | Action | Signature | Description |
 | --- | --- | --- | --- |

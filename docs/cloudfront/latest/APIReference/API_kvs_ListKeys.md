@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_L
 ---
 
 # ListKeys
-<a name="API_kvs_ListKeys"></a>
 
 Returns a list of key-value pairs.
 

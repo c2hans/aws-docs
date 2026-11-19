@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/userguide/amazon-works
 ---
 
 # WorkSpaces Linux client application
-<a name="amazon-workspaces-linux-client"></a>
 
 The following information will help you get started with the WorkSpaces Linux client application.
 

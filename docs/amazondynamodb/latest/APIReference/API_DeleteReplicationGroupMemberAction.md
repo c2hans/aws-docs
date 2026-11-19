@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DeleteReplicationGroupMemberAction
-<a name="API_DeleteReplicationGroupMemberAction"></a>
 
 Represents a replica to be deleted.
 

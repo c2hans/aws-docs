@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CI.3] Ensure automated quality assurance for every build
-<a name="dl.ci.3-ensure-automated-quality-assurance-for-every-build"></a>
 
  **Category:** FOUNDATIONAL
 

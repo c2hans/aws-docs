@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/creating-task-
 ---
 
 # Creating your DataSync task reports
-<a name="creating-task-report"></a>
 
 AWS DataSync task reports can be only a summary of your task execution or a set of detailed reports about what DataSync attempts to transfer, skip, verify, and delete.
 

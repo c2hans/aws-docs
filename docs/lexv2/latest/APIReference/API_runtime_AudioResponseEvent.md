@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Au
 ---
 
 # AudioResponseEvent
-<a name="API_runtime_AudioResponseEvent"></a>
 
 An event sent from Amazon Lex to your client application containing audio to play to the user.
 

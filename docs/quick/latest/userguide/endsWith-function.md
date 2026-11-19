@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/endsWith-function
 ---
 
 # endsWith
-<a name="endsWith-function"></a>
 
 `endsWith` evaluates if the expression ends with a substring that you specify. If the expression ends with the substring, `endsWith` returns true, and otherwise it returns false.
 

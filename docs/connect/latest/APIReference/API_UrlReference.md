@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UrlRefer
 ---
 
 # UrlReference
-<a name="API_UrlReference"></a>
 
 The URL reference.
 

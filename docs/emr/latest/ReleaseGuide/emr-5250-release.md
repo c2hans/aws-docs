@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-5250-release
 ---
 
 # Amazon EMR release 5.25.0
-<a name="emr-5250-release"></a>
 
 ## 5.25.0 application versions
 <a name="emr-5250-app-versions"></a>

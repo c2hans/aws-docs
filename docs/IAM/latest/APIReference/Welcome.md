@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS Identity and Access Management (IAM) is a web service for securely controlling access to AWS services. With IAM, you can centrally manage users, security credentials such as access keys, and permissions that control which AWS resources users and applications can access. For more information about IAM, see [AWS Identity and Access Management (IAM)](http://aws.amazon.com/iam/) and the [AWS Identity and Access Management User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/).
 
@@ -24,4 +23,4 @@ To sign requests, we recommend that you use [Signature Version 4](https://docs.a
 +  [IAM best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/IAMBestPractices.html). This topic presents a list of suggestions for using the IAM service to help secure your AWS resources.
 +  [Signing AWS API requests](https://docs.aws.amazon.com/general/latest/gr/signing_aws_api_requests.html). This set of topics walk you through the process of signing a request using an access key ID and secret access key.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

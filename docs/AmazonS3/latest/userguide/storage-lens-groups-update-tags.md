@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-lens-g
 ---
 
 # Updating Storage Lens group tag values
-<a name="storage-lens-groups-update-tags"></a>
 
 The following examples demonstrate how to update Storage Lens group tag values by using the Amazon S3 console, AWS Command Line Interface (AWS CLI), and AWS SDK for Java.
 

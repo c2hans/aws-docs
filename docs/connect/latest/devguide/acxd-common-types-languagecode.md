@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-common-type
 ---
 
 # languageCode
-<a name="acxd-common-types-languagecode"></a>
 
 Type: `String`
 

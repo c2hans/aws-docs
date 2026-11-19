@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/getting-st
 ---
 
 # HelloWorldWorkflowDistributed Application
-<a name="getting-started-example-helloworldworkflowdistributed"></a>
 
 With HelloWorldWorkflow and HelloWorldWorkflowAsync, Amazon SWF mediates the interaction between the workflow and activities implementations, but they run locally as a single process. `GreeterMain` is in a separate process, but it still runs on the same system.
 

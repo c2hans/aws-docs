@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-dc
 ---
 
 # Amazon DocumentDB (with MongoDB compatibility) in AWS GovCloud (US)
-<a name="govcloud-dcdb"></a>
 
 Amazon DocumentDB (with MongoDB compatibility) is a fast, scalable, highly available, and fully managed document database service that supports MongoDB workloads. As a document database, Amazon DocumentDB makes it easy to store, query, and index JSON data.
 

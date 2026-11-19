@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/multi-tena
 ---
 
 # Building B2B multi-tenant applications
-<a name="multi-tenant-application-best-practices"></a>
 
 This section describes methods that you can implement to separate tenants between Amazon Cognito resources within the same Region and AWS account. You can also split your tenants across more than one AWS account or Region, and give each of them their own quota. Other advantages of multi-Region multi-tenancy include the highest possible level of isolation, shortest network-transit time for globally distributed users, and adherence to existing distribution models in your organization.
 

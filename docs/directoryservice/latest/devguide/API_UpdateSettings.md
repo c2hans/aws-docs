@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Upd
 ---
 
 # UpdateSettings
-<a name="API_UpdateSettings"></a>
 
 Updates the configurable settings for the specified directory.
 

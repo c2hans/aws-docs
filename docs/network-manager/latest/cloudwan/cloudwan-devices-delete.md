@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Delete a device from an AWS Cloud WAN global network
-<a name="cloudwan-devices-delete"></a>
 
 Delete a device that is no longer a part of your Cloud WAN global network.
 

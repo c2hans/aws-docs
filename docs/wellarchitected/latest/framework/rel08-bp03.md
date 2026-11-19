@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel08-b
 ---
 
 # REL08-BP03 Integrate resilience testing as part of your deployment
-<a name="rel08-bp03"></a>
 
  Resilience testing introduces failures to measure how a system behaves under disruption and to expose unanticipated weaknesses. Running these tests as part of deployment builds evidence that the system can withstand and recover from real-world failures.
 

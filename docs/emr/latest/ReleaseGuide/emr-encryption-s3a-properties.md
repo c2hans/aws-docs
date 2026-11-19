@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-encryption-s
 ---
 
 # Properties for Amazon S3 client-side encryption with S3A
-<a name="emr-encryption-s3a-properties"></a>
 
 To configure client-side encryption with S3A, there are several configuration properties that must be set in your core-site.xml settings. For more information about custom configuration settings, see [Configure applications](emr-configure-apps.html).
 

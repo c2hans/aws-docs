@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/acm-bestpractices.h
 ---
 
 # Best practices
-<a name="acm-bestpractices"></a>
 
  Best practices are recommendations that can help you use AWS Certificate Manager (AWS Certificate Manager) more effectively. The following best practices are based on real-world experience from current ACM customers.
 

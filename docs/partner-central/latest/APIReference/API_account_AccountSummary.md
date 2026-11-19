@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AccountSummary
-<a name="API_account_AccountSummary"></a>
 
 Summary information about an AWS account.
 

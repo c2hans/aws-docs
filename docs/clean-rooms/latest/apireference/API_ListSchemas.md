@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_List
 ---
 
 # ListSchemas
-<a name="API_ListSchemas"></a>
 
 Lists the schemas for relations within a collaboration.
 

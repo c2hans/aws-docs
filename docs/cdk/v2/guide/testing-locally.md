@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/testing-locally.html
 ---
 
 # Locally test and build AWS CDK applications with the AWS SAM CLI
-<a name="testing-locally"></a>
 
 You can use the AWS SAM CLI to locally test and build serverless applications defined using the AWS Cloud Development Kit (AWS CDK). Because the AWS SAM CLI works within the AWS CDK project structure, you can still use the [AWS CDK CLI reference](cli.md) for creating, modifying, and deploying your AWS CDK applications.
 

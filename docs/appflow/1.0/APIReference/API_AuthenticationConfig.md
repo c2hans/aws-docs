@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_Authenticat
 ---
 
 # AuthenticationConfig
-<a name="API_AuthenticationConfig"></a>
 
 Contains information about the authentication config that the connector supports.
 

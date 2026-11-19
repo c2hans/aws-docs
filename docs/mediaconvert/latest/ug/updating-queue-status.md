@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/updating-queue-st
 ---
 
 # Updating queues
-<a name="updating-queue-status"></a>
 
 You can update an existing queue to change its **Name**, **Concurrent jobs**, or **Status**.
 

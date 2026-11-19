@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/using-aws-m
 ---
 
 # Selling on AWS Marketplace
-<a name="using-aws-marketplace-as-a-provider"></a>
 
 Selling on AWS Marketplace involves both one-time setup processes, like seller registration, and ongoing activities as you develop and publish products.
 

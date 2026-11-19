@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # MLCOST06-BP02 Monitor return on investment for ML models
-<a name="mlcost06-bp02"></a>
 
  Once a model is deployed into production, establish a reporting capability to track the value which is being delivered. For example:
 +  **If a model is used to support customer acquisition:** How many new customers are acquired and what is their spend when the model's advice is used compared with a baseline?

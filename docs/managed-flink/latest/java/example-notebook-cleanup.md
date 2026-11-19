@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/example-notebo
 ---
 
 # Clean up your application and dependent resources
-<a name="example-notebook-cleanup"></a>
 
 ## Delete your Studio notebook
 <a name="example-notebook-cleanup-app"></a>

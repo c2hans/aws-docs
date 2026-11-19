@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_GetBa
 ---
 
 # GetBackupPlanFromTemplate
-<a name="API_GetBackupPlanFromTemplate"></a>
 
 Returns the template specified by its `templateId` as a backup plan.
 

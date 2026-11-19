@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # IntegrationIdentifier
-<a name="API_connect-outbound-campaigns-v2_IntegrationIdentifier"></a>
 
 The identifier for the integration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetChang
 ---
 
 # GetChange
-<a name="API_GetChange"></a>
 
 Returns the current status of a change batch request. The status is one of the following values:
 +  `PENDING` indicates that the changes in this request have not propagated to all Amazon Route 53 DNS servers managing the hosted zone. This is the initial status of all change batch requests.

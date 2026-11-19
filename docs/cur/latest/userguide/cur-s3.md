@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/cur-s3.html
 ---
 
 # Setting up an Amazon S3 bucket for Cost and Usage Reports
-<a name="cur-s3"></a>
 
 To receive billing reports, you must have an Amazon S3 bucket in your AWS account to receive and store your reports. When creating a Cost and Usage Report in the billing console, you can select an existing Amazon S3 bucket that you own or create a new bucket. In either case, you’ll be asked to review and confirm the application of the following default bucket policy. Editing this policy in the Amazon S3 console or changing the bucket owner after you’ve created a Cost and Usage Report will prevent AWS from being able to deliver your reports. Storing the billing reports data in your Amazon S3 bucket is billed at standard Amazon S3 rates. For more information, see [Quotas and restrictions](billing-cur-limits.md).
 

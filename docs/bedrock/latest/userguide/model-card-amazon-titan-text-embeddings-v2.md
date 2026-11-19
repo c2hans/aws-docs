@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amaz
 ---
 
 # Titan Text Embeddings V2
-<a name="model-card-amazon-titan-text-embeddings-v2"></a>
 
 ## ![Amazon logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/nova2pro.png) Amazon — Titan Text Embeddings V2
 <a name="model-card-amazon-titan-text-embeddings-v2-header"></a>

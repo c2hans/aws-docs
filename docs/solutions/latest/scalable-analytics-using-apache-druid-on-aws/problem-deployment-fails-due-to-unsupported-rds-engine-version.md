@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Problem: Deployment fails due to unsupported RDS engine version
-<a name="problem-deployment-fails-due-to-unsupported-rds-engine-version"></a>
 
 You might encounter the error `Cannot find version for aurora-postgresql` during deployment of the guidance in certain regions. This occurs because the guidance deploys RDS engine version 13.9 by default, and this version may not be available in the specified region.
 

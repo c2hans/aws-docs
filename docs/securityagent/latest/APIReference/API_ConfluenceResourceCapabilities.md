@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Co
 ---
 
 # ConfluenceResourceCapabilities
-<a name="API_ConfluenceResourceCapabilities"></a>
 
 Capabilities for an integrated Confluence space.
 

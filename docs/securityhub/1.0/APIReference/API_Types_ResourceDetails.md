@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Types_R
 ---
 
 # ASFF resource objects
-<a name="API_Types_ResourceDetails"></a>
 
 **AWS Security Hub CSPM supports the following objects as part of the `ResourceDetails` data type. These objects apply to Security Hub CSPM findings in the AWS Security Finding Format (ASFF).**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetGlos
 ---
 
 # GetGlossary
-<a name="API_GetGlossary"></a>
 
 Gets a business glossary in Amazon DataZone.
 

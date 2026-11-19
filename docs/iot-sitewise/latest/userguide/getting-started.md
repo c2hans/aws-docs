@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/getting-st
 ---
 
 # Get started with AWS IoT SiteWise
-<a name="getting-started"></a>
 
 With AWS IoT SiteWise, you can collect, organize, analyze, and visualize your data.
 

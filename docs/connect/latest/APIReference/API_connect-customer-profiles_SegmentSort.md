@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # SegmentSort
-<a name="API_connect-customer-profiles_SegmentSort"></a>
 
 Defines how segments should be sorted and ordered in the results.
 

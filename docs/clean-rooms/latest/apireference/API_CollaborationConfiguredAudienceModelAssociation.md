@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Coll
 ---
 
 # CollaborationConfiguredAudienceModelAssociation
-<a name="API_CollaborationConfiguredAudienceModelAssociation"></a>
 
 The configured audience model association within a collaboration.
 

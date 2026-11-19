@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_StartUserAccess
 ---
 
 # StartUserAccessTasks
-<a name="API_StartUserAccessTasks"></a>
 
 Starts the tasks to search user access status for a specific email address.
 

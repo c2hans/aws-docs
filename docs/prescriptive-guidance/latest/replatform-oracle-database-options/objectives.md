@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Objectives
-<a name="objectives"></a>
 
 Replatforming Oracle Database to AWS provides the following benefits.
 

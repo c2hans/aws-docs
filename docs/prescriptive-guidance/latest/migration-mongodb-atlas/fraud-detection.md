@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Fraud detection with Amazon SageMaker AI Canvas
-<a name="fraud-detection"></a>
 
 You can integrate MongoDB Atlas with [Amazon SageMaker AI Canvas](https://docs.aws.amazon.com/sagemaker/latest/dg/canvas.html) to construct a powerful fraud detection system that combines real-time data analysis with advanced machine learning to help detect and prevent fraudulent activity.
 

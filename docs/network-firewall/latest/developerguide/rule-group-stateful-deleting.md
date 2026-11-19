@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/r
 ---
 
 # Deleting a stateful rule group
-<a name="rule-group-stateful-deleting"></a>
 
 To delete a rule group, use the guidance in this section.
 

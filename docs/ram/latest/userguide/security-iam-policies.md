@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/security-iam-polici
 ---
 
 # How AWS RAM works with IAM
-<a name="security-iam-policies"></a>
 
 By default, IAM principals don't have permission to create or modify AWS RAM resources. To allow IAM principals to create or modify resources and perform tasks, you perform one of the following steps. These actions grant permission to use specific resources and API actions.
 

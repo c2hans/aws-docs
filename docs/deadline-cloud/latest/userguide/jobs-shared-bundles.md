@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/jobs-sha
 ---
 
 # Load and submit shared job bundles
-<a name="jobs-shared-bundles"></a>
 
 With AWS Deadline Cloud, you can share ready-to-use job bundles on a queue. If you can submit jobs to the queue, you can browse and preview the bundles shared on it. You can also submit them as jobs. You use the job bundle browser for each of these tasks. The job bundle browser is a graphical tool that you open from the Deadline Cloud command line. You don't need to know where the bundle files are stored or copy them manually.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/Performance.ht
 ---
 
 # Performance and optimization
-<a name="Performance"></a>
 
 This section describes guidance and best practices for optimizing File Gateway performance.
 

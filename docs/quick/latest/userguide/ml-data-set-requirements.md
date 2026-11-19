@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/ml-data-set-requi
 ---
 
 # Dataset requirements for using ML insights with AWS Quick Sight
-<a name="ml-data-set-requirements"></a>
 
 To begin using the machine learning capabilities of AWS Quick Sight, you need to connect to or import your data. You can use an existing AWS Quick Sight dataset or create a new one. You can directly query your SQL-compatible source, or ingest the data into SPICE.
 

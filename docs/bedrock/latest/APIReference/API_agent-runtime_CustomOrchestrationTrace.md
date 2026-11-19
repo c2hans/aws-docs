@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # CustomOrchestrationTrace
-<a name="API_agent-runtime_CustomOrchestrationTrace"></a>
 
  The trace behavior for the custom orchestration.
 

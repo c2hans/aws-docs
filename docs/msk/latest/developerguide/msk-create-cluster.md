@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-create-clu
 ---
 
 # Create an MSK Provisioned cluster
-<a name="msk-create-cluster"></a>
 
 **Important**
 You can't change the VPC for an MSK Provisioned cluster after you create the cluster.

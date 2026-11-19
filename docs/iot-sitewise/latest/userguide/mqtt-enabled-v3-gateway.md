@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/mqtt-enabl
 ---
 
 # MQTT-enabled, V3 gateways for AWS IoT SiteWise Edge
-<a name="mqtt-enabled-v3-gateway"></a>
 
 AWS IoT SiteWise can use MQTT-enabled, V3 gateways, representing a significant advancement in the SiteWise Edge gateway architecture. This gateway type leverages the MQTT (Message Queuing Telemetry Transport) protocol for data communication, providing enhanced flexibility and efficiency in industrial IoT deployments.
 

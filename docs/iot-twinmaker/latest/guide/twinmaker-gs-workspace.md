@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-gs-
 ---
 
 # Create a workspace
-<a name="twinmaker-gs-workspace"></a>
 
 To create and configure your first workspace, use the following steps.
 

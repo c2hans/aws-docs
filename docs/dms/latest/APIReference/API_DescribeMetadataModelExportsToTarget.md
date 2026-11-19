@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeMeta
 ---
 
 # DescribeMetadataModelExportsToTarget
-<a name="API_DescribeMetadataModelExportsToTarget"></a>
 
 Returns a paginated list of metadata model export requests for a migration project, initiated by [StartMetadataModelExportToTarget](https://docs.aws.amazon.com/dms/latest/APIReference/API_StartMetadataModelExportToTarget.html).
 

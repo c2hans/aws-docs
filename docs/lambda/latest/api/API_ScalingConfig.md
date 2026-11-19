@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ScalingConfig.html
 ---
 
 # ScalingConfig
-<a name="API_ScalingConfig"></a>
 
 (Amazon SQS only) The scaling configuration for the event source. To remove the configuration, pass an empty value.
 

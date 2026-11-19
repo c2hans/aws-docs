@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Updat
 ---
 
 # UpdateFleet
-<a name="API_UpdateFleet"></a>
 
 Updates the specified fleet.
 

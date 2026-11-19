@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/trouble
 ---
 
 # Amazon MQ for RabbitMQ: Broker not upgradeable to version 4
-<a name="troubleshooting-action-required-codes-rabbitmq-not-upgradeable-to-v4"></a>
 
 Amazon MQ for RabbitMQ will raise a `RABBITMQ_BROKER_NOT_UPGRADEABLE_TO_V4` action required code when you attempt to upgrade a RabbitMQ 3 broker to RabbitMQ 4 and the broker has classic queues or the Khepri metadata store feature flag is enabled. Amazon MQ will not apply the major version upgrade and will make the broker available for publishing and consuming.
 

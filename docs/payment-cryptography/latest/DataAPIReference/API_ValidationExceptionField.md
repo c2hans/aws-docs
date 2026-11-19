@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 The request was denied due to an invalid request error.
 

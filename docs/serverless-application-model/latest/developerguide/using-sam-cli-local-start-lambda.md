@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Introduction to testing with sam local start-lambda
-<a name="using-sam-cli-local-start-lambda"></a>
 
 Use the AWS SAM CLI subcommand `sam local start-lambda` to invoke your Lambda Event Function through the AWS CLI and SDKs. This command starts a local endpoint that emulates Lambda.
 + For an introduction to the AWS SAM CLI, see [What is the AWS SAM CLI?](what-is-sam-overview.md#what-is-sam-cli)

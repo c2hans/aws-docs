@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-aggregate-fiel
 ---
 
 # Using Aggregate to perform summary calculations on selected fields
-<a name="transforms-aggregate-fields"></a>
 
 **To use the Aggregate transform**
 

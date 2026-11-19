@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Raw AES keyrings
-<a name="use-raw-aes-keyring"></a>
 
 |  |
 | --- |

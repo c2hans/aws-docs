@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormMultiSelectQuestionOption
-<a name="API_EvaluationFormMultiSelectQuestionOption"></a>
 
 An option for a multi-select question in an evaluation form.
 

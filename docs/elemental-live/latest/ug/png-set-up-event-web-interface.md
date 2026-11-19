@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/png-set-up-even
 ---
 
 # Using the web interface
-<a name="png-set-up-event-web-interface"></a>
 
 **To configure the event using the web interface**
 

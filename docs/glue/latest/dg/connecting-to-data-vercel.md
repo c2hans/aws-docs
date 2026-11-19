@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-vercel
 ---
 
 # Connecting to Vercel in AWS Glue Studio
-<a name="connecting-to-data-vercel"></a>
 
 Vercel hosts and deploys frontend applications. Because you are a Vercel user, you can connect AWS Glue to your Vercel account. You can then use Vercel as a data source in your AWS Glue ETL jobs to transfer data between Vercel and AWS services or other supported applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.Assessme
 ---
 
 # Db2 LUW Assessments
-<a name="CHAP_Tasks.AssessmentReport.Db2"></a>
 
 This section describes individual premigration assessments for migration tasks that use a Db2 LUW source endpoint.
 

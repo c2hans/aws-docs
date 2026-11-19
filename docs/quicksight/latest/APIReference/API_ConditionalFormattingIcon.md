@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Condi
 ---
 
 # ConditionalFormattingIcon
-<a name="API_ConditionalFormattingIcon"></a>
 
 The formatting configuration for the icon.
 

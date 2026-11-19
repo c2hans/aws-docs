@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate from Oracle 8i or 9i to Amazon RDS for PostgreSQL using materialized views and AWS DMS
-<a name="migrate-from-oracle-8i-or-9i-to-amazon-rds-for-postgresql-using-materialized-views-and-aws-dms"></a>
 
 *Kumar Babu P G and Pragnesh Patel, Amazon Web Services*
 

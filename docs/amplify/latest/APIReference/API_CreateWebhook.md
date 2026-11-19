@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_CreateWe
 ---
 
 # CreateWebhook
-<a name="API_CreateWebhook"></a>
 
 Creates a new webhook on an Amplify app.
 

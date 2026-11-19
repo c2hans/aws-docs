@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53FullAccess
-<a name="AmazonRoute53FullAccess"></a>
 
 **Description**: Provides full access to all Amazon Route 53 via the AWS Management Console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials-wo
 ---
 
 # Step 2: Configure your source content to be deployed to the Amazon Linux or Red Hat Enterprise Linux Amazon EC2 instance
-<a name="tutorials-wordpress-configure-content"></a>
 
 Now it's time to configure your application's source content so you have something to deploy to the instance.
 

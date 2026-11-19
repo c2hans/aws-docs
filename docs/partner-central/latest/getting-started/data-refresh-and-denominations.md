@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/d
 ---
 
 # Data Refresh and Denominations
-<a name="data-refresh-and-denominations"></a>
 
 The dashboard data refreshes on the following specified cadences:
 + **Daily**

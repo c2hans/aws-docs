@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEKSDashboardServiceRolePolicy
-<a name="AmazonEKSDashboardServiceRolePolicy"></a>
 
 **Description**: This policy enables the Amazon EKS Dashboard to access and display organization-wide information. The policy allows the EKS Dashboard service to gather information about your AWS Organizations structure and accounts.
 

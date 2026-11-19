@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/custom
 ---
 
 # Parts list
-<a name="custom-car-parts-list"></a>
 
 The following table lists all components required for Option A (upgrading an existing AWS DeepRacer Evo). For information about building a vehicle from scratch, see [Option B](custom-car-option-b.md).
 

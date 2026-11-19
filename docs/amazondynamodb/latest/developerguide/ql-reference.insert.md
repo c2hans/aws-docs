@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-
 ---
 
 # PartiQL insert statements for DynamoDB
-<a name="ql-reference.insert"></a>
 
 Use the `INSERT` statement to add an item to a table in Amazon DynamoDB.
 

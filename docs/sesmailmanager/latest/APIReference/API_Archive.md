@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_A
 ---
 
 # Archive
-<a name="API_Archive"></a>
 
 An archive resource for storing and retaining emails.
 

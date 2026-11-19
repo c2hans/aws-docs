@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_E
 ---
 
 # ErrorDetail
-<a name="API_ErrorDetail"></a>
 
 Contains details about an error.
 

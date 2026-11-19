@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Parame
 ---
 
 # Parameter
-<a name="API_Parameter"></a>
 
 This data type is used as a request parameter in the `ModifyDBParameterGroup` and `ResetDBParameterGroup` actions.
 

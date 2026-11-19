@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Refer
 ---
 
 # ReferenceLineValueLabelConfiguration
-<a name="API_ReferenceLineValueLabelConfiguration"></a>
 
 The value label configuration of the label in a reference line.
 

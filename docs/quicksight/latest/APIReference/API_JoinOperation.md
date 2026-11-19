@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_JoinO
 ---
 
 # JoinOperation
-<a name="API_JoinOperation"></a>
 
 A transform operation that combines data from two sources based on specified join conditions.
 

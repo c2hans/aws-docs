@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDynamoDBFullAccess
-<a name="AmazonDynamoDBFullAccess"></a>
 
 **Description**: Provides full access to Amazon DynamoDB via the AWS Management Console.
 

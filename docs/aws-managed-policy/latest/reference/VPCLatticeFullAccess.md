@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/VPCL
 ---
 
 # VPCLatticeFullAccess
-<a name="VPCLatticeFullAccess"></a>
 
 **Description**: Provides full access to Amazon VPC Lattice and access to dependency services.
 

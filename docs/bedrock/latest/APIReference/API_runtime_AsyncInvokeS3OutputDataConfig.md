@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # AsyncInvokeS3OutputDataConfig
-<a name="API_runtime_AsyncInvokeS3OutputDataConfig"></a>
 
 Asynchronous invocation output data settings.
 

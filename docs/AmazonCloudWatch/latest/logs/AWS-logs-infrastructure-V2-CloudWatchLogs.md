@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-in
 ---
 
 # Logs sent to CloudWatch Logs
-<a name="AWS-logs-infrastructure-V2-CloudWatchLogs"></a>
 
 For an AWS CLI example, see [Create a delivery to CloudWatch Logs](AWS-vended-logs-permissions-V2.md#vended-logs-same-account-example-cwl).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # Resend a 10DLC brand email authentication in AWS End User Messaging SMS
-<a name="registrations-10dlc-auth"></a>
 
 The email authentication is sent from **noreply@auth.campaignregistry.com** and we recommend you add the email address to your spam list allow rules.
 

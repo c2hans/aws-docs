@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_LaunchTemp
 ---
 
 # LaunchTemplateSpecificationOverride
-<a name="API_LaunchTemplateSpecificationOverride"></a>
 
 An object that represents a launch template to use in place of the default launch template. You must specify either the launch template ID or launch template name in the request, but not both.
 

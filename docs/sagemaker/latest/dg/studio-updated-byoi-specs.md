@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-byoi-
 ---
 
 # Custom image specifications
-<a name="studio-updated-byoi-specs"></a>
 
 The image that you specify in your Dockerfile must match the specifications in the following sections to create the image successfully.
 

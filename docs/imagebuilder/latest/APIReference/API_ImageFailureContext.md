@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 ---
 
 # ImageFailureContext
-<a name="API_ImageFailureContext"></a>
 
 Contains details about the failure when the image creation process fails. Properties appear in the failure context when the related information is available for the failure.
 

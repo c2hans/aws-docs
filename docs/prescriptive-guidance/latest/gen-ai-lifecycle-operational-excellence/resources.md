@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Resources for generative AI development on AWS
-<a name="resources"></a>
 
 ## Agentic AI
 <a name="resources-agentic-ai"></a>

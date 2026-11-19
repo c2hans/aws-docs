@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # Example of `explain` output for a value expression function
-<a name="access-graph-opencypher-explain-example-3"></a>
 
 The function is:
 

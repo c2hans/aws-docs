@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost02-
 ---
 
 # COST02-BP03 Monitor cost proactively
-<a name="cost02-bp03"></a>
 
  Waiting for the monthly invoice means an inefficiency has already run for weeks before anyone sees it. Proactive monitoring reviews cost and usage on a regular cadence and surfaces changes as they happen. The goal is to make spend visible to the teams that create it, as well as the teams that pay for it.
 

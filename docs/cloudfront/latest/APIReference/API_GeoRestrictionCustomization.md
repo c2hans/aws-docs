@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GeoRe
 ---
 
 # GeoRestrictionCustomization
-<a name="API_GeoRestrictionCustomization"></a>
 
 The customizations that you specified for the distribution tenant for geographic restrictions.
 

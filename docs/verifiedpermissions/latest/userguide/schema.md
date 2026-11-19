@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/sch
 ---
 
 # Amazon Verified Permissions policy store schema
-<a name="schema"></a>
 
 A *[schema](https://docs.cedarpolicy.com/overview/terminology.html#schema)* is a declaration of the structure of the entity types supported by your application, and the actions your application may provide in authorization requests. To see the difference between how Verified Permissions and Cedar handles schemas, see [Schema support](terminology-differences-avp-cedar.md#differences-templates).
 

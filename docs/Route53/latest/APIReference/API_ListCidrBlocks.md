@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListCidr
 ---
 
 # ListCidrBlocks
-<a name="API_ListCidrBlocks"></a>
 
 Returns a paginated list of location objects and their CIDR blocks.
 

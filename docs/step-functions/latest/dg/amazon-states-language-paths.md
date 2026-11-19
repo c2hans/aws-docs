@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-l
 ---
 
 # Using JSONPath paths
-<a name="amazon-states-language-paths"></a>
 
 **Managing state and transforming data**
 Learn about [Passing data between states with variables](workflow-variables.md) and [Transforming data with JSONata](transforming-data.md).

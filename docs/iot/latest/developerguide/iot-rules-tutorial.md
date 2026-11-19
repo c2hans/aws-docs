@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules-tuto
 ---
 
 # Creating AWS IoT rules to route device data to other services
-<a name="iot-rules-tutorial"></a>
 
 These tutorials show you how to create and test AWS IoT rules using some of the more common rule actions.
 

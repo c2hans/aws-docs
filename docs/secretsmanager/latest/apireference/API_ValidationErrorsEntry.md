@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_V
 ---
 
 # ValidationErrorsEntry
-<a name="API_ValidationErrorsEntry"></a>
 
 Displays errors that occurred during validation of the resource policy.
 

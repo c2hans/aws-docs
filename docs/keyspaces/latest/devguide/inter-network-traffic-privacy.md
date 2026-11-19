@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/inter-network-
 ---
 
 # Internetwork traffic privacy in Amazon Keyspaces
-<a name="inter-network-traffic-privacy"></a>
 
 This topic describes how Amazon Keyspaces (for Apache Cassandra) secures connections from on-premises applications to Amazon Keyspaces and between Amazon Keyspaces and other AWS resources within the same AWS Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ModifyStreamin
 ---
 
 # ModifyStreamingProperties
-<a name="API_ModifyStreamingProperties"></a>
 
 Modifies the specified streaming properties.
 

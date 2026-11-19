@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # UntagResource
-<a name="API_query_UntagResource"></a>
 
 Removes the association of tags from a Timestream query resource.
 

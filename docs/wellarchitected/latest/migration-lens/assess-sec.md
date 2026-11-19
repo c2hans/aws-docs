@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/as
 ---
 
 # Assess
-<a name="assess-sec"></a>
 
  It's important to conduct a security review of the discovery tool used to assess on-premises inventory and understand how they work to ensure they don't introduce any vulnerabilities. During this phase, it's also key to review your current security tools and map them to their equivalents on AWS and to identify your compliance framework.
 

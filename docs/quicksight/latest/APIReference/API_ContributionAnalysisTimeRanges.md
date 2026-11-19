@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Contr
 ---
 
 # ContributionAnalysisTimeRanges
-<a name="API_ContributionAnalysisTimeRanges"></a>
 
 The definition for the `ContributionAnalysisTimeRanges`.
 

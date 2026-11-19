@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/creat
 ---
 
 # Creating new analysis
-<a name="creating_new_analysis"></a>
 
 To create a new analysis, follow the below procedure.
 

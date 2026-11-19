@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSTransformServerMigrationAgentPolicy
-<a name="AWSTransformServerMigrationAgentPolicy"></a>
 
 **Description**: Grants permissions for AWS Transform to perform server migration operations including replication, testing, and cutover using AWS Application Migration Service
 

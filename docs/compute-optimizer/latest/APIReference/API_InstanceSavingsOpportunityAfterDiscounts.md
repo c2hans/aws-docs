@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # InstanceSavingsOpportunityAfterDiscounts
-<a name="API_InstanceSavingsOpportunityAfterDiscounts"></a>
 
  Describes the savings opportunity for instance recommendations after applying the Savings Plans and Reserved Instances discounts.
 

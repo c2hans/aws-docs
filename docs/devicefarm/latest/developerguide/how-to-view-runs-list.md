@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/how-to-
 ---
 
 # Viewing a list of runs in AWS Device Farm
-<a name="how-to-view-runs-list"></a>
 
 You can use the Device Farm console, AWS CLI, or API to view a list of runs for a project.
 

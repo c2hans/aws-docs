@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/installguide/about
 ---
 
 # About this guide
-<a name="about-lv-ig"></a>
 
 This guide describes how to install AWS Elemental Live software for the first time. (To perform a kickstart and fresh install on a node that you have already deployed, see the [AWS Elemental Live Upgrade Guide](https://docs.aws.amazon.com/elemental-live/latest/upgradeguide/).)
 

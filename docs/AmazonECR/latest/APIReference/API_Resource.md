@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Resour
 ---
 
 # Resource
-<a name="API_Resource"></a>
 
 Details about the resource involved in a finding.
 

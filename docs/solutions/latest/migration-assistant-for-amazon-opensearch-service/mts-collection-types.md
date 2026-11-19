@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Collection types
-<a name="mts-collection-types"></a>
 
 When you create an Amazon OpenSearch Serverless NextGen collection, you choose a collection type. The collection type determines how documents are indexed and, importantly for migration, whether the source document ID is preserved or replaced with a server-generated ID. Migration Assistant adapts metadata migration to the collection type so that the migrated indexes are compatible with the target.
 

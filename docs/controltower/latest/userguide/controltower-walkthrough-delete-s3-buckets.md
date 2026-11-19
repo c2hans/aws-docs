@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/controltow
 ---
 
 # Delete Amazon S3 Buckets in the Log Archive Account
-<a name="controltower-walkthrough-delete-s3-buckets"></a>
 
 The following procedures guide you through how to sign in to the log archive account as an IAM Identity Center user in the **AWSControlTowerExecution** group and then delete the Amazon S3 buckets in your log archive account.
 

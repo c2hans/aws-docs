@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/microvms-monitoring.htm
 ---
 
 # Monitoring
-<a name="microvms-monitoring"></a>
 
 This page covers CloudWatch logging (build and runtime) and CloudTrail auditing for AWS Lambda MicroVMs.
 

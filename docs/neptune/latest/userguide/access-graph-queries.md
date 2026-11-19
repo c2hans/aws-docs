@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-qu
 ---
 
 # Querying a Neptune Graph
-<a name="access-graph-queries"></a>
 
 Neptune supports the following graph query languages to access a graph:
 + [Gremlin](https://tinkerpop.apache.org/gremlin.html), defined by [Apache TinkerPop](https://tinkerpop.apache.org/) for creating and querying property graphs.

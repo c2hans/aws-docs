@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cli_2_app-mesh_co
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # App Mesh examples using AWS CLI
-<a name="cli_2_app-mesh_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS Command Line Interface with App Mesh.
 

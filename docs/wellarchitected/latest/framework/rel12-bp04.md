@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel12-b
 ---
 
 # REL12-BP04 Test resilience using chaos engineering
-<a name="rel12-bp04"></a>
 
  Chaos engineering injects controlled faults into a system to verify that it withstands and recovers from real-world disruptions. Running these experiments regularly, in or close to production, builds confidence that recovery mechanisms work.
 

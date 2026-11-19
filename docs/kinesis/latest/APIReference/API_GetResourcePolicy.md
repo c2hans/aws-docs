@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetResou
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
 Returns a policy attached to the specified data stream, consumer, or queue. Request patterns can be one of the following:
 + Data stream pattern: `arn:aws.*:kinesis:.*:\d{12}:.*stream/\S+`

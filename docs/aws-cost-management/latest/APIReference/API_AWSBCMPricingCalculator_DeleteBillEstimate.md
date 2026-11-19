@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteBillEstimate
-<a name="API_AWSBCMPricingCalculator_DeleteBillEstimate"></a>
 
  Deletes an existing bill estimate.
 

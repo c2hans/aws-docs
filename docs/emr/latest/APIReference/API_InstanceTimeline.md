@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceTime
 ---
 
 # InstanceTimeline
-<a name="API_InstanceTimeline"></a>
 
 The timeline of the instance lifecycle.
 

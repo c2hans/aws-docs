@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_queues
 ---
 
 # Creating a queue in AWS PCS
-<a name="working-with_queues_create"></a>
 
 This topic provides an overview of available options and describes what to consider when you create a queue in AWS PCS.
 

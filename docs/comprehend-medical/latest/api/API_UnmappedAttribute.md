@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_Unmapp
 ---
 
 # UnmappedAttribute
-<a name="API_UnmappedAttribute"></a>
 
  An attribute that was extracted, but Comprehend Medical; was unable to relate to an entity.
 

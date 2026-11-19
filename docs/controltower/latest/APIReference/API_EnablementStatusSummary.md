@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Ena
 ---
 
 # EnablementStatusSummary
-<a name="API_EnablementStatusSummary"></a>
 
 The deployment summary of an `EnabledControl` or `EnabledBaseline` resource.
 

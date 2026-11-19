@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_s
 ---
 
 # AttributeValue
-<a name="API_streams_AttributeValue"></a>
 
 Represents the data for an attribute.
 
@@ -38,13 +37,13 @@ Required: No
  ** L **   <a name="DDB-Type-streams_AttributeValue-L"></a>
 An attribute of type List. For example:
  `"L": [ {"S": "Cookies"} , {"S": "Coffee"}, {"N": "3.14159"}]`
-Type: Array of [AttributeValue](#API_streams_AttributeValue) objects
+Type: Array of [AttributeValue](API_streams_AttributeValue.md) objects
 Required: No
 
  ** M **   <a name="DDB-Type-streams_AttributeValue-M"></a>
 An attribute of type Map. For example:
  `"M": {"Name": {"S": "Joe"}, "Age": {"N": "35"}}`
-Type: String to [AttributeValue](#API_streams_AttributeValue) object map
+Type: String to [AttributeValue](API_streams_AttributeValue.md) object map
 Key Length Constraints: Maximum length of 65535.
 Required: No
 

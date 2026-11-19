@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Res
 ---
 
 # ResourceStateUpdateIncludeResources
-<a name="API_ResourceStateUpdateIncludeResources"></a>
 
 Specifies which underlying resources the resource state update applies to, in addition to the Image Builder image resource itself: distributed AMIs and their snapshots for AMI images, or distributed container images for container images.
 

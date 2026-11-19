@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Memb
 ---
 
 # MembershipSyntheticDataGenerationPaymentConfig
-<a name="API_MembershipSyntheticDataGenerationPaymentConfig"></a>
 
 Configuration for payment for synthetic data generation in a membership.
 

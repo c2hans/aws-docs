@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # LogDeliveryConfigurationType
-<a name="API_LogDeliveryConfigurationType"></a>
 
 The logging parameters of a user pool, as returned in the response to a `GetLogDeliveryConfiguration` request.
 

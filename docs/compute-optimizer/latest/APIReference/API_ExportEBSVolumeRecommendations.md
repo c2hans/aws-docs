@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ExportEBSVolumeRecommendations
-<a name="API_ExportEBSVolumeRecommendations"></a>
 
 Exports optimization recommendations for Amazon EBS volumes.
 

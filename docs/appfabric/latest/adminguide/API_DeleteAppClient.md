@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/API_DeleteAp
 ---
 
 # DeleteAppClient
-<a name="API_DeleteAppClient"></a>
 
 |  |
 | --- |

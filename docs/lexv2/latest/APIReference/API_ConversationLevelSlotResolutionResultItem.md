@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Conversati
 ---
 
 # ConversationLevelSlotResolutionResultItem
-<a name="API_ConversationLevelSlotResolutionResultItem"></a>
 
 The slots used for the slot resolution in the conversation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Syslog_
 ---
 
 # VPC endpoint policies for syslog
-<a name="CWL_Syslog_VPCEndpointPolicies"></a>
 
 You can attach a VPC endpoint policy to your syslog VPC endpoint to control what traffic is allowed through it. This provides an additional layer of access control beyond security groups and resource policies.
 

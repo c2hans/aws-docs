@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/re
 ---
 
 # Amazon GameLift Streams release notes
-<a name="release-notes"></a>
 
 The following release notes are in reverse chronological order, with the latest updates listed first. Amazon GameLift Streams was first released in 2025.
 

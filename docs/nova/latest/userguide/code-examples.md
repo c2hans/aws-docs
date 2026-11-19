@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/code-examples.html
 ---
 
 # Amazon Nova code examples
-<a name="code-examples"></a>
 
 **Note**
 This documentation is for Amazon Nova Version 1. For code examples relevant to Amazon Nova 2, visit [Code library](https://docs.aws.amazon.com/nova/latest/nova2-userguide/code-library.html).

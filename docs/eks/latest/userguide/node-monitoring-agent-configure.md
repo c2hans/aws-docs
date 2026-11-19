@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/node-monitoring-age
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure the Amazon EKS node monitoring agent
-<a name="node-monitoring-agent-configure"></a>
 
 The EKS node monitoring agent is deployed as a DaemonSet. For the node health issues that the agent detects, see [Detect node health issues with the EKS node monitoring agent](node-health-nma.md).
 

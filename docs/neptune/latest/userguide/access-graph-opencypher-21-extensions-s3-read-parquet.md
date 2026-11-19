@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # Query examples using parquet
-<a name="access-graph-opencypher-21-extensions-s3-read-parquet"></a>
 
 The following example query returns the number of rows in a given Parquet file:
 

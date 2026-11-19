@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_PutTe
 ---
 
 # PutTestSources
-<a name="API_PutTestSources"></a>
 
 Adds or updates the monitoring sources on a test. The operation is transactional — either every source is written or the call fails and nothing is written.
 

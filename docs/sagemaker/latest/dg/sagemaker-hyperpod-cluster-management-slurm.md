@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-c
 ---
 
 # SageMaker HyperPod cluster management
-<a name="sagemaker-hyperpod-cluster-management-slurm"></a>
 
 The following topics discuss logging and managing SageMaker HyperPod clusters.
 

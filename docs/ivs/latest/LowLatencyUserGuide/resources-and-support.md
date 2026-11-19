@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/resources
 ---
 
 # IVS Resources and Support \| Low-Latency Streaming
-<a name="resources-and-support"></a>
 
 This document lists resources to help support your use of Amazon IVS low-latency streaming.
 

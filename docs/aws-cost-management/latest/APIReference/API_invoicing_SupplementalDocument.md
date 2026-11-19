@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SupplementalDocument
-<a name="API_invoicing_SupplementalDocument"></a>
 
 Supplemental document associated with the invoice.
 

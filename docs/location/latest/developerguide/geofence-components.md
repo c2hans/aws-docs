@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/geofence-
 ---
 
 # Geofence concepts
-<a name="geofence-components"></a>
 
 This section describes some common geofence concepts, including common terminology and how to manage geofences.
 

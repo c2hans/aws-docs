@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Dynam
 ---
 
 # DynamicDefaultValue
-<a name="API_DynamicDefaultValue"></a>
 
 Defines different defaults to the users or groups based on mapping.
 

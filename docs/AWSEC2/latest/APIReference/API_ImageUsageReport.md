@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImageUsag
 ---
 
 # ImageUsageReport
-<a name="API_ImageUsageReport"></a>
 
 The configuration and status of an image usage report.
 

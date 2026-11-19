@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-zend
 ---
 
 # Set up OAuth 2.0 Client Credentials authentication for Zendesk
-<a name="kb-managed-zendesk-oauth2-setup"></a>
 
 The Zendesk connector authenticates with OAuth 2.0 Client Credentials (2LO). You register an OAuth client in Zendesk, store the client ID and client secret in an AWS Secrets Manager secret, and the connector exchanges them for an access token. There is no per-user consent or redirect step. Complete all the following steps before you configure the data source in Amazon Bedrock.
 

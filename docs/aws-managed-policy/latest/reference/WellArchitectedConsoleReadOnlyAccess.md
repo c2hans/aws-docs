@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Well
 ---
 
 # WellArchitectedConsoleReadOnlyAccess
-<a name="WellArchitectedConsoleReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to AWS Well-Architected Tool via the AWS Management Console
 

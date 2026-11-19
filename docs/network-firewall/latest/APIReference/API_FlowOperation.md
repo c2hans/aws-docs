@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # FlowOperation
-<a name="API_FlowOperation"></a>
 
 Contains information about a flow operation, such as related statuses, unique identifiers, and all filters defined in the operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_U
 ---
 
 # UpdateRelationalDatabaseParameters
-<a name="API_UpdateRelationalDatabaseParameters"></a>
 
 Allows the update of one or more parameters of a database in Amazon Lightsail.
 

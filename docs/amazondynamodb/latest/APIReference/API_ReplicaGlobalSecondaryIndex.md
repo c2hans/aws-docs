@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_R
 ---
 
 # ReplicaGlobalSecondaryIndex
-<a name="API_ReplicaGlobalSecondaryIndex"></a>
 
 Represents the properties of a replica global secondary index.
 

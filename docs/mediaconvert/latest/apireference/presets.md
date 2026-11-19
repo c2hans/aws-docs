@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/presets
 ---
 
 # Presets
-<a name="presets"></a>
 
 ## URI
 <a name="presets-url"></a>

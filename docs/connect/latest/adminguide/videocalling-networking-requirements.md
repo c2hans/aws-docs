@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/videocalling-n
 ---
 
 # Agent workstation requirements for app, web, and video calling in Connect Customer
-<a name="videocalling-networking-requirements"></a>
 
 The Connect Customer in-app, web, and video calling capabilities enable your customers to contact you without ever leaving your web or mobile application. The video calling capabilities use the Amazon Chime SDK communication primitives for the video stream. The voice experience is handled through Connect Customer.
 

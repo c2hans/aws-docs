@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessContentBlockStartEvent
-<a name="API_HarnessContentBlockStartEvent"></a>
 
 Event indicating the start of a content block.
 

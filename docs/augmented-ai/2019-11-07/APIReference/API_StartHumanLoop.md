@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API
 ---
 
 # StartHumanLoop
-<a name="API_StartHumanLoop"></a>
 
 Starts a human loop, provided that at least one activation condition is met.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Wir
 ---
 
 # WirelessMetadata
-<a name="API_WirelessMetadata"></a>
 
 WirelessMetadata object.
 

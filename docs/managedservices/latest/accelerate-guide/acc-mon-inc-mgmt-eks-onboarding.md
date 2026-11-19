@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Onboard to monitoring and incident management for Amazon EKS in AMS Accelerate
-<a name="acc-mon-inc-mgmt-eks-onboarding"></a>
 
 Perform the following steps to onboard to monitoring and incident management for Amazon EKS.
 

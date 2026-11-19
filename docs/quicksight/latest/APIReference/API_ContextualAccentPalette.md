@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Conte
 ---
 
 # ContextualAccentPalette
-<a name="API_ContextualAccentPalette"></a>
 
 The contextual accent palette.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_E
 ---
 
 # ExecuteCoreNetworkChangeSet
-<a name="API_ExecuteCoreNetworkChangeSet"></a>
 
 Executes a change set on your core network. Deploys changes globally based on the policy submitted..
 

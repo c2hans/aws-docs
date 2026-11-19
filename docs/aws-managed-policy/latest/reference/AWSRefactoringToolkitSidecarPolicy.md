@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSR
 ---
 
 # AWSRefactoringToolkitSidecarPolicy
-<a name="AWSRefactoringToolkitSidecarPolicy"></a>
 
 **Description**: This policy is intended to be used by Amazon ECS Tasks created for testing applications in AWS using the AWS Toolkit for .NET Refactoring extension for Microsoft Visual Studio. The policy grants access to download application artifacts from Amazon S3, communicate the status of the Task using AWS Systems Manager, and other required services.
 

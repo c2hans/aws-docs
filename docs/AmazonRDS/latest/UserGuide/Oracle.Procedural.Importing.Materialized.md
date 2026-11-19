@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Proced
 ---
 
 # Migrating with Oracle materialized views
-<a name="Oracle.Procedural.Importing.Materialized"></a>
 
 To migrate large datasets efficiently, you can use Oracle materialized view replication. With replication, you can keep the target tables synchronized with the source tables. Thus, you can switch over to Amazon RDS later, if needed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetP
 ---
 
 # BatchGetPreparedStatement
-<a name="API_BatchGetPreparedStatement"></a>
 
 Returns the details of a single prepared statement or a list of up to 256 prepared statements for the array of prepared statement names that you provide. Requires you to have access to the workgroup to which the prepared statements belong. If a prepared statement cannot be retrieved for the name specified, the statement is listed in `UnprocessedPreparedStatementNames`.
 

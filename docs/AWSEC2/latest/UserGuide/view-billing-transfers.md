@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/view-billing-tra
 ---
 
 # View billing assignment requests for shared EC2 Capacity Reservations
-<a name="view-billing-transfers"></a>
 
 A Capacity Reservation owner can view only the most recent billing assignment request that they initiated. And consumer accounts can view only the most recent billing assignment requests sent to them.
 

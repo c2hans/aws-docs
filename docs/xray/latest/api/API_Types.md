@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_Types.html
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The AWS X-Ray API contains several data types that various actions use. This section describes each data type in detail.
 

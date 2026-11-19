@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/pass-role.html
 ---
 
 # Passing role permissions
-<a name="pass-role"></a>
 
 Part of a rule definition is an IAM role that grants permission to access resources specified in the rule's action. The rules engine assumes that role when the rule's action is invoked. The role must be defined in the same AWS account as the rule.
 

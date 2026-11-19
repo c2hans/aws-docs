@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DescribeProvisioningArtifact
-<a name="API_DescribeProvisioningArtifact"></a>
 
 Gets information about the specified provisioning artifact (also known as a version) for the specified product.
 

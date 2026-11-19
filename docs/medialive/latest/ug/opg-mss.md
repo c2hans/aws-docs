@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/opg-mss.html
 ---
 
 # Creating a Microsoft Smooth output group
-<a name="opg-mss"></a>
 
 When you create an AWS Elemental MediaLive channel, you might want to include a Microsoft Smooth output group. For information about the use cases for a Microsoft Smooth output group, see [Containers, protocols, and downstream systems](outputs-supported-containers-downstream-systems.md).
 

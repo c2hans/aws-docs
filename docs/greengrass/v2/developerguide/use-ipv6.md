@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/use-ipv6.ht
 ---
 
 # Use IPv6 for local messaging
-<a name="use-ipv6"></a>
 
 You can configure the IP detector component to use IPv6 to send local messages.
 

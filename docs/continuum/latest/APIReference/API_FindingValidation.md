@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Findin
 ---
 
 # FindingValidation
-<a name="API_FindingValidation"></a>
 
 A validator's assessment of a finding. Present only when validation actually ran — absent for finding types that are ingested untested, rather than reporting a verdict Continuum did not reach.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/troubleshoo
 ---
 
 # Troubleshooting issues in Aurora DSQL
-<a name="troubleshooting"></a>
 
 **Note**
 The following topics provide troubleshooting advice for errors and issues that you might encounter when using Aurora DSQL. If you find an issue that is not listed here, reach out to AWS support

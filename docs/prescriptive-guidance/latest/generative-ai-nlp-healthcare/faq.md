@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-
 ---
 
 # FAQ about healthcare and life science use cases
-<a name="faq"></a>
 
 The following are frequently asked questions related to using Amazon Comprehend Medical or LLMs for medical NLP tasks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Appendi
 ---
 
 # Other parameters that affect autovacuum
-<a name="Appendix.PostgreSQL.CommonDBATasks.Autovacuum.OtherParms"></a>
 
 The following query shows the values of some of the parameters that directly affect autovacuum and its behavior. The [autovacuum parameters](https://www.postgresql.org/docs/current/static/runtime-config-autovacuum.html) are described fully in the PostgreSQL documentation.
 

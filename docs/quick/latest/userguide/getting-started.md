@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/getting-started.h
 ---
 
 # Getting started with AWS Quick
-<a name="getting-started"></a>
 
 AWS Quick is an AI-powered workspace that combines business intelligence, AI-assisted chat, workflow automation, and research capabilities in a single service. Use the topics in this section to get started with the core capabilities of Quick, including AI agents for natural language conversations, AWS Quick Sight for data visualization, Spaces for team collaboration, Quick Flows for workflow automation, and Research for comprehensive analysis.
 

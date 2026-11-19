@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_AccountLink.ht
 ---
 
 # AccountLink
-<a name="API_AccountLink"></a>
 
 Information about about the account link.
 

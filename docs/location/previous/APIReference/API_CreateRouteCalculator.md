@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Creat
 ---
 
 # CreateRouteCalculator
-<a name="API_CreateRouteCalculator"></a>
 
 **Important**
 This operation is no longer current and may be deprecated in the future. We recommend you upgrade to the Routes API V2 unless you require Grab data.

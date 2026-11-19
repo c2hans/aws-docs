@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # PartnerSummary
-<a name="API_account_PartnerSummary"></a>
 
 A summary view of a partner account containing basic information for listing purposes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/data-storag
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 We recommend that you take the following next steps to decouple your data storage from your SAS servers:
 

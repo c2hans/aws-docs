@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle anonymous block and PostgreSQL DO
-<a name="chap-oracle-aurora-pg.sql.block"></a>
 
 With AWS DMS, you can run PL/SQL anonymous blocks and PostgreSQL `DO` commands to perform custom database code operations during a database migration. An Oracle anonymous block is an unattached, unnamed PL/SQL code block that can contain SQL queries and PL/SQL statements. A PostgreSQL `DO` command runs an anonymous code block containing procedural language statements.
 

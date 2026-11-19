@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetRouteS
 ---
 
 # GetRouteServerAssociations
-<a name="API_GetRouteServerAssociations"></a>
 
 Gets information about the associations for the specified route server.
 

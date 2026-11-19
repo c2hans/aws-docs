@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/metrics
 ---
 
 # Metrics reference for Amazon Aurora
-<a name="metrics-reference"></a>
 
 In this reference, you can find descriptions of Amazon Aurora metrics for Amazon CloudWatch, the Performance Insights API, and Enhanced Monitoring.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/getting-star
 ---
 
 # Step 4: Create an IAM instance profile for your Amazon EC2 instances
-<a name="getting-started-create-iam-instance-profile"></a>
 
 **Note**
  If you are using the Amazon ECS or AWS Lambda compute platform , skip this step.

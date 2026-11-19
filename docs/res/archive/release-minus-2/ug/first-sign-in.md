@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/first-sig
 ---
 
 # Step 2: Sign in for the first time
-<a name="first-sign-in"></a>
 
 After the product stack deploys in your account, you receive an email with your credentials. Use the URL to sign in to your account and configure the workspace for other users.
 

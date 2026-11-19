@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # OrganizationConfiguration
-<a name="API_automation_OrganizationConfiguration"></a>
 
 Configuration settings for organization-wide automation rules.
 

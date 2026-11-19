@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BillingConductor::BillingGroup AccountGrouping
-<a name="aws-properties-billingconductor-billinggroup-accountgrouping"></a>
 
 The set of accounts that will be under the billing group. The set of accounts resemble the linked accounts in a consolidated billing family.
 

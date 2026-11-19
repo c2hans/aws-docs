@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Improving containerized CI/CD pipelines from performance efficiency and cost perspective
-<a name="improving-containerized-cicd-pipelines-from-performance-efficiency-and-cost-perspective"></a>
 
  Continuous integration continuous delivery pipelines (CI/CD pipelines) help you automate steps in your software delivery process, such as initiating automatic builds and then deploying to a compute platform of your choice. Usually, a CI/CD-pipeline builds, tests, and deploys your code every time there is a code change, based on the release process models you define. As companies are adopting containers and container technologies more and more, this also increases the usage of their containerized build process. For further optimization, companies might seek ways to improve the efficiency of the overall build process, which includes containerization. There are several ways to optimize the complete build process and the infrastructure involved. In the following section, we highlight a few popular optimization steps:
 +  Use managed services.

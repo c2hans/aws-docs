@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/setti
 ---
 
 # Setting AWS Supply Chain Analytics
-<a name="setting_analytics"></a>
 
 You must enable AWS Supply Chain Analytics before you can start using Quick dashboards.
 

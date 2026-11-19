@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VgwTeleme
 ---
 
 # VgwTelemetry
-<a name="API_VgwTelemetry"></a>
 
 Describes telemetry for a VPN tunnel.
 

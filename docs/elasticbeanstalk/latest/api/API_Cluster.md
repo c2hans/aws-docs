@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Cluster.
 ---
 
 # Cluster
-<a name="API_Cluster"></a>
 
 Describes the Amazon EKS cluster that an environment runs on.
 

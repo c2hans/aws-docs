@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys-permis
 ---
 
 # Control permissions for generating and using Amazon Bedrock API keys
-<a name="api-keys-permissions"></a>
 
 The generation and usage of Amazon Bedrock API keys is controlled by actions and condition keys in both the Amazon Bedrock and IAM services.
 

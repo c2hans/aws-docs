@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSICOST01: Is your cloud team educated on relevant technical and commercial optimization mechanisms?
-<a name="fsicost01"></a>
 
  Due to the size of many financial services enterprise customers, the benefits of aligning your IT organization with a Cloud Financial Management approach helps you save on the costs of both infrastructure and operations. To enable this capability, invest in knowledge building programs, resources, and processes to help become a more cost-efficient organization.
 

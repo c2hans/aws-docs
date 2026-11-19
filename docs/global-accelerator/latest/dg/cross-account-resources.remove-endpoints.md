@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/cross-accou
 ---
 
 # Remove a cross-account endpoint in Global Accelerator
-<a name="cross-account-resources.remove-endpoints"></a>
 
 Follow the steps in this section to remove a cross-account endpoint using the Global Accelerator console.
 

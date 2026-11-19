@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # DomainTransferability
-<a name="API_domains_DomainTransferability"></a>
 
 A complex type that contains information about whether the specified domain can be transferred to Route 53.
 

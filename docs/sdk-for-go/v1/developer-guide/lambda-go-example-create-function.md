@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/lambda-go-
 AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [AWS SDK for Go V2](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-go-v1-on-july-31-2025/).
 
 # Creating a Lambda Function
-<a name="lambda-go-example-create-function"></a>
 
 The following example creates the Lambda function `functionName` in the `us-west-2` region using the following values:
 + Role ARN: `resourceArn`. In most cases, you need to attach only the `AWSLambdaExecute` managed policy to the policy for this role.

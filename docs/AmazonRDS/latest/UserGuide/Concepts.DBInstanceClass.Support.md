@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBIn
 ---
 
 # Supported DB engines for DB instance classes
-<a name="Concepts.DBInstanceClass.Support"></a>
 
 The following are DB engine–specific considerations for DB instance classes:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/setup-cli.html
 ---
 
 # Setting up the AWS CLI
-<a name="setup-cli"></a>
 
 Follow these steps to download and configure the AWS CLI to work with Amazon Polly.
 

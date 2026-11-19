@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cl
 ---
 
 # Key challenges in a cloud adoption journey
-<a name="cloud-transformation-challenges"></a>
 
 According to [Digital Transformation Is Not About Technology](https://hbr.org/2019/03/digital-transformation-is-not-about-technology) (Harvard Business Review), almost 70% of investments spent on digital transformation are estimated to go to waste. Decision makers and executives can become paralyzed by choice when formulating their digital and cloud strategy. They might find that they are unsure of where to start or how comprehensive to make their cloud adoption strategy. Sometimes, they can't clearly articulate the value that the cloud can bring to their organization and customers, or they don't know how to shape their organization's operations around the cloud. The following are some of the key challenges that decision makers face when migrating to cloud. These challenges are organized by their corresponding AWS Cloud Adoption Framework (AWS CAF) perspectives.
 

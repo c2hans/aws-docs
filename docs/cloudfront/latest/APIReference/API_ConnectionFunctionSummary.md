@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Conne
 ---
 
 # ConnectionFunctionSummary
-<a name="API_ConnectionFunctionSummary"></a>
 
 A connection function summary.
 

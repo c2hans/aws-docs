@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/what-is-fe
 ---
 
 # Supported features of AWS Elemental MediaPackage
-<a name="what-is-features"></a>
 
 MediaPackage supports the following features.
 

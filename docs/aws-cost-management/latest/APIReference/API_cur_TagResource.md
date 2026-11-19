@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TagResource
-<a name="API_cur_TagResource"></a>
 
 Associates a set of tags with a report definition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/docker-quicks
 ---
 
 # QuickStart: Deploy a Docker application to Elastic Beanstalk
-<a name="docker-quickstart"></a>
 
 This QuickStart tutorial walks you through the process of creating a Docker application and deploying it to an AWS Elastic Beanstalk environment.
 

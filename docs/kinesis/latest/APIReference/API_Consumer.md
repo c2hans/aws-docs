@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Consumer
 ---
 
 # Consumer
-<a name="API_Consumer"></a>
 
 An object that represents the details of the consumer you registered. This type of object is returned by [RegisterStreamConsumer](API_RegisterStreamConsumer.md).
 

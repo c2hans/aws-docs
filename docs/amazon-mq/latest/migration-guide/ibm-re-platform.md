@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/ibm-re-
 ---
 
 # Re-platforming IBM MQ to Amazon MQ
-<a name="ibm-re-platform"></a>
 
  The following procedure shows how you can migrate an [IBM MQ](ibm-mq-typical-architecture.md) to an equivalent Amazon MQ without impacting *App 1* or *App 2*:
 

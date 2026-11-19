@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Logging
-<a name="msk-data-delivery-iceberg-logging"></a>
 
 **Topics**
 + [CloudTrail logging](msk-data-delivery-iceberg-cloudtrail.md)

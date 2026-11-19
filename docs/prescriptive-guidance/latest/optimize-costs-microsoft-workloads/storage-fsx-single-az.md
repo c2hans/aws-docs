@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Use a single Availability Zone
-<a name="storage-fsx-single-az"></a>
 
 ## Overview
 <a name="storage-fsx-single-az-overview"></a>

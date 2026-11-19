@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Register
 ---
 
 # RegisterStreamConsumer
-<a name="API_RegisterStreamConsumer"></a>
 
 Registers a consumer with a Kinesis data stream. When you use this operation, the consumer you register can then call [SubscribeToShard](API_SubscribeToShard.md) to receive data from the stream using enhanced fan-out, at a rate of up to 2 MiB per second for every shard you subscribe to. This rate is unaffected by the total number of consumers that read from the same stream.
 

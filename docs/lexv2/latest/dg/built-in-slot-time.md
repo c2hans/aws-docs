@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/built-in-slot-time.html
 ---
 
 # AMAZON.Time
-<a name="built-in-slot-time"></a>
 
 Converts words that represent times into time values. `AMAZON.Time` can resolve exact times, ambiguous values, and time ranges. The slot value can resolve to the following time ranges:
 + AM

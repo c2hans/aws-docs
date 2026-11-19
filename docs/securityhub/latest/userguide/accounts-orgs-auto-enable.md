@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/accounts-or
 ---
 
 # Automatically enabling Security Hub CSPM in new organization accounts
-<a name="accounts-orgs-auto-enable"></a>
 
 When new accounts join your organization, they are added to the list on the **Accounts** page of the AWS Security Hub CSPM console. For organization accounts, **Type** is **By organization**. By default, new accounts don't become Security Hub CSPM members when they join the organization. Their status is **Not a member**. The delegated administrator account can automatically add new accounts as members and enable Security Hub CSPM in these accounts when they join the organization.
 

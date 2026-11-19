@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/tensorflow-
 ---
 
 # TensorFlow Lite object detection
-<a name="tensorflow-lite-object-detection-component"></a>
 
 The TensorFlow Lite object detection component (`aws.greengrass.TensorFlowLiteObjectDetection`) contains sample inference code to perform object detection inference using [TensorFlow Lite](https://www.tensorflow.org/lite/guide/python) and a sample pre-trained Single Shot Detection (SSD) MobileNet 1.0 model. This component uses the variant [TensorFlow Lite object detection model store](tensorflow-lite-object-detection-model-store-component.md) and the [TensorFlow Lite runtime](tensorflow-lite-component.md) components as dependencies to download TensorFlow Lite and the sample model.
 

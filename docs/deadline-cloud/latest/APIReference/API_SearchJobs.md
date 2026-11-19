@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # SearchJobs
-<a name="API_SearchJobs"></a>
 
 Searches for jobs.
 

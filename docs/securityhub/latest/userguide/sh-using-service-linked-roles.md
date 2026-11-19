@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/sh-using-se
 ---
 
 # Service-linked roles for AWS Security Hub
-<a name="sh-using-service-linked-roles"></a>
 
 AWS Security Hub uses an AWS Identity and Access Management (IAM) [service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role) named `AWSServiceRoleForSecurityHubV2`. This service-linked role is an IAM role that is linked directly to Security Hub. It's predefined by Security Hub, and it includes all the permissions that Security Hub requires to call other AWS services and monitor AWS resources on your behalf. Security Hub uses this service-linked role in all the AWS Regions where Security Hub is available.
 

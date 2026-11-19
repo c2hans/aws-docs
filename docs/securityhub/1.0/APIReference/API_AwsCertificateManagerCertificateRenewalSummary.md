@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsCert
 ---
 
 # AwsCertificateManagerCertificateRenewalSummary
-<a name="API_AwsCertificateManagerCertificateRenewalSummary"></a>
 
 Contains information about the AWS Certificate Manager managed renewal for an `AMAZON_ISSUED` certificate.
 

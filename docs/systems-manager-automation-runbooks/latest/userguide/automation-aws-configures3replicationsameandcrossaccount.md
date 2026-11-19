@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-ConfigureS3ReplicationSameAndCrossAccount`
-<a name="automation-aws-configures3replicationsameandcrossaccount"></a>
 
  **Description**
 

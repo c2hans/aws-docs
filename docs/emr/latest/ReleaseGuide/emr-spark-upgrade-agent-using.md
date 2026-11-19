@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-upgrad
 ---
 
 # Using the Upgrade Agent
-<a name="emr-spark-upgrade-agent-using"></a>
 
 ## Supported Deployment Modes
 <a name="emr-spark-upgrade-agent-deployment-modes"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-trusted-entity
 ---
 
 # Create the trust entity – simple option
-<a name="setup-trusted-entity-simple"></a>
 
 Read this section if you decided that you should use the [simple option](scenarios-for-medialive-role.md) for setting up the trusted entity.
 

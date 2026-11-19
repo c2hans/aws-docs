@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zoom-meetings-reading-fro
 ---
 
 # Reading from Zoom Meetings entities
-<a name="zoom-meetings-reading-from-entities"></a>
 
 **Prerequisite**
 

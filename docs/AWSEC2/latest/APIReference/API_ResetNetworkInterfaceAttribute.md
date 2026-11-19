@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResetNetw
 ---
 
 # ResetNetworkInterfaceAttribute
-<a name="API_ResetNetworkInterfaceAttribute"></a>
 
 Resets a network interface attribute. You can specify only one attribute at a time.
 

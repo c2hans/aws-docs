@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/manual-restart-ma
 ---
 
 # Manually restarting resources for maintenance
-<a name="manual-restart-maintenance"></a>
 
 You can manually restart a router I/O or a flow at any time to apply pending maintenance updates immediately, rather than waiting for the next scheduled maintenance window. This is useful when you want to control exactly when the maintenance occurs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CancelS
 ---
 
 # CancelSubscription
-<a name="API_CancelSubscription"></a>
 
 Cancels the subscription to the specified asset.
 

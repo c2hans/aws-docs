@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/omics-permissions.html
 ---
 
 # IAM permissions for HealthOmics
-<a name="omics-permissions"></a>
 
 You can use AWS Identity and Access Management (IAM) to manage access to the HealthOmics API and resources such as stores and workflows. For users and applications in your account that use HealthOmics, you manage permissions in a permissions policy that you can apply to IAM users, groups, or roles.
 

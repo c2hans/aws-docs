@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-ap
 ---
 
 # NCryptFreeObject with Key storage provider (KSP)
-<a name="ksp-library-apis-free-object"></a>
 
 The `NCryptFreeObject` function releases provider or key handle from the Key Storage Provider (KSP).
 

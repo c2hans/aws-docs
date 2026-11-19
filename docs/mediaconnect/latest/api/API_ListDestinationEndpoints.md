@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListDestinat
 ---
 
 # ListDestinationEndpoints
-<a name="API_ListDestinationEndpoints"></a>
 
 Retrieves a list of the destination endpoints in your account. The results are paginated. Use the NextToken value that's returned to retrieve additional results.
 

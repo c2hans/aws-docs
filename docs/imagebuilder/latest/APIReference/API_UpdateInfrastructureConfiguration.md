@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Upd
 ---
 
 # UpdateInfrastructureConfiguration
-<a name="API_UpdateInfrastructureConfiguration"></a>
 
 Updates an infrastructure configuration. An infrastructure configuration defines the environment in which Image Builder builds and tests your image.
 

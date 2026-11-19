@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/python-compatibil
 ---
 
 # Python compatibility
-<a name="python-compatibility"></a>
 
 CodeArtifact supports the PyPI Simple Repository API at `/simple/<project>/`, used by `pip`, `twine`, `uv`, and other Python clients. Clients choose between HTML and JSON responses using the `Accept` request header.
 

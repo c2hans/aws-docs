@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/create-db-ins
 ---
 
 # Creating a new DB instance in the Database Preview environment
-<a name="create-db-instance-in-preview-environment"></a>
 
 Use the following procedure to create a DB instance in the preview environment.
 

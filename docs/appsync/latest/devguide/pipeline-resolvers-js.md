@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/pipeline-resolve
 ---
 
 # Configuring and using pipeline resolvers in AWS AppSync (JavaScript)
-<a name="pipeline-resolvers-js"></a>
 
 AWS AppSync executes resolvers on a GraphQL field. In some cases, applications require executing multiple operations to resolve a single GraphQL field. With pipeline resolvers, developers can now compose operations called Functions and execute them in sequence. Pipeline resolvers are useful for applications that, for instance, require performing an authorization check before fetching data for a field.
 

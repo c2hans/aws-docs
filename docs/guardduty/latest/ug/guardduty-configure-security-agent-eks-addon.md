@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-configure-
 ---
 
 # Configure GuardDuty security agent (add-on) parameters for Amazon EKS
-<a name="guardduty-configure-security-agent-eks-addon"></a>
 
 You can configure specific parameters of your GuardDuty security agent for Amazon EKS. This support is available for GuardDuty security agent version 1.5.0 and above. For information about latest add-on versions, see [GuardDuty security agent versions for Amazon EKS resources](runtime-monitoring-agent-release-history.md#eks-runtime-monitoring-agent-release-history).
 

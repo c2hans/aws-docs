@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ListCustomLineItemVersions
-<a name="API_ListCustomLineItemVersions"></a>
 
 A paginated call to get a list of all custom line item versions.
 

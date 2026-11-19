@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/creating-run-groups.htm
 ---
 
 # Using HealthOmics run groups
-<a name="creating-run-groups"></a>
 
 You can optionally create a run group to cap the compute resources for the runs that you add to the group. Run groups can help you:
 + Queue your runs so that you don’t exceed service limits.

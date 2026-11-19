@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTime
 ---
 
 # RealTimeContactAnalysisSegmentsFilter
-<a name="API_RealTimeContactAnalysisSegmentsFilter"></a>
 
 A filter that restricts the segments returned by `ListRealtimeContactAnalysisSegmentsV2`. It currently supports filtering category segments by the tags on the rules that create them, which enforces tag-based access control on the categories a caller can view.
 

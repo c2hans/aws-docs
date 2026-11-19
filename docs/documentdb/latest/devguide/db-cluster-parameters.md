@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/db-cluster-pa
 ---
 
 # Amazon DocumentDB cluster settings
-<a name="db-cluster-parameters"></a>
 
 When you create or modify a cluster, it is important to understand which parameters are immutable and which are modifiable after the cluster has been created. The following table lists all the settings, or parameters, that are specific to a cluster. As specified in the table, some are modifiable, others are not.
 

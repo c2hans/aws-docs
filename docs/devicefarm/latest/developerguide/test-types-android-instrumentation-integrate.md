@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-ty
 ---
 
 # Integrating Android Instrumentation with Device Farm
-<a name="test-types-android-instrumentation-integrate"></a>
 
 **Note**
 Use the following instructions to integrate Android instrumentation tests with AWS Device Farm. For more information about using instrumentation tests in Device Farm, see [Instrumentation for Android and AWS Device Farm](test-types-android-instrumentation.md).

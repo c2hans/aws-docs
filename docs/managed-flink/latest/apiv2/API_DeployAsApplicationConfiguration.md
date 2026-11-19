@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeployAsA
 ---
 
 # DeployAsApplicationConfiguration
-<a name="API_DeployAsApplicationConfiguration"></a>
 
 The information required to deploy a Managed Service for Apache Flink Studio notebook as an application with durable state.
 

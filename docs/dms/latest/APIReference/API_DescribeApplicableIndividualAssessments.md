@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeAppl
 ---
 
 # DescribeApplicableIndividualAssessments
-<a name="API_DescribeApplicableIndividualAssessments"></a>
 
 Provides a list of individual assessments that you can specify for a new premigration assessment run, given one or more parameters.
 

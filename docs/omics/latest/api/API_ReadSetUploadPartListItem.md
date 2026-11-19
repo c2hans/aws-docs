@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ReadSetUploadPartLi
 ---
 
 # ReadSetUploadPartListItem
-<a name="API_ReadSetUploadPartListItem"></a>
 
  The metadata of a single part of a file that was added to a multipart upload. A list of these parts is returned in the response to the ListReadSetUploadParts API.
 

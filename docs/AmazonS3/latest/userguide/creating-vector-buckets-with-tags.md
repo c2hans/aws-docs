@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-vecto
 ---
 
 # Creating vector buckets with tags
-<a name="creating-vector-buckets-with-tags"></a>
 
 You can tag Amazon S3 vector buckets when you create them. There is no additional charge for using tags on vector buckets beyond the standard S3 API request rates. For more information, see [Amazon S3 pricing](https://aws.amazon.com/s3/pricing/). For more information about tagging vector buckets, see [Using tags with S3 vector buckets](s3-vectors-tags.md).
 

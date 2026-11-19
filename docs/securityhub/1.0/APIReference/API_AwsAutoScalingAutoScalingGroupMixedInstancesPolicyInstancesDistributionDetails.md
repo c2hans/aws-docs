@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAuto
 ---
 
 # AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetails
-<a name="API_AwsAutoScalingAutoScalingGroupMixedInstancesPolicyInstancesDistributionDetails"></a>
 
 Information about the instances distribution.
 

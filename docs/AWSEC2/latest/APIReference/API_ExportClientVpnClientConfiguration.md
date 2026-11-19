@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ExportCli
 ---
 
 # ExportClientVpnClientConfiguration
-<a name="API_ExportClientVpnClientConfiguration"></a>
 
 Downloads the contents of the Client VPN endpoint configuration file for the specified Client VPN endpoint. The Client VPN endpoint configuration file includes the Client VPN endpoint and certificate information clients need to establish a connection with the Client VPN endpoint.
 

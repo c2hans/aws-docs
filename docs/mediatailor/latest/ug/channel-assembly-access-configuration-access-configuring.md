@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/channel-assembly-a
 ---
 
 # Configuring AWS Secrets Manager access token authentication
-<a name="channel-assembly-access-configuration-access-configuring"></a>
 
 When you want to use AWS Secrets Manager access token authentication, you perform the following steps:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Se
 ---
 
 # SecurityRequirementPackSummary
-<a name="API_SecurityRequirementPackSummary"></a>
 
 Contains summary information about a security requirement pack.
 

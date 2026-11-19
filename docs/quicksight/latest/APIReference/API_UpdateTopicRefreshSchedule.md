@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateTopicRefreshSchedule
-<a name="API_UpdateTopicRefreshSchedule"></a>
 
 Updates a topic refresh schedule.
 

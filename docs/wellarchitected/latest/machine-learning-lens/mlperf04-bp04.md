@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # MLPERF04-BP04 Establish feature statistics
-<a name="mlperf04-bp04"></a>
 
  Establishing key statistics to measure changes in data that affect model outcomes is crucial for maintaining ML model performance. By analyzing feature importance and sensitivity, you can select the most critical features to monitor and detect when data drifts outside acceptable ranges so you can determine when model retraining is necessary.
 

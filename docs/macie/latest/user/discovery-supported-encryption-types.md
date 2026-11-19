@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/discovery-supported-en
 ---
 
 # Analyzing encrypted Amazon S3 objects
-<a name="discovery-supported-encryption-types"></a>
 
 When you enable Amazon Macie for your AWS account, Macie creates a [service-linked role](service-linked-roles.md) that grants Macie the permissions that it requires to call Amazon Simple Storage Service (Amazon S3) and other AWS services on your behalf. A service-linked role simplifies the process of setting up an AWS service because you don't have to manually add permissions for the service to complete actions on your behalf. To learn about this type of role, see [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) in the *AWS Identity and Access Management User Guide*.
 

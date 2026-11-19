@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-segme
 ---
 
 # Build customer segments in Connect Customer
-<a name="customer-segments-building-segments"></a>
 
 **Note**
 **Segmentation powered by SQL (Beta) requires Data store to be turned on. Please visit Customer Profiles home page screen and enable Data store from the top blue banner**

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DeleteAcmeEn
 ---
 
 # DeleteAcmeEndpoint
-<a name="API_DeleteAcmeEndpoint"></a>
 
 Deletes an ACME endpoint. After deletion, the endpoint URL is no longer accessible and ACME clients cannot issue certificates through it. Any existing external account bindings and domain validations associated with the endpoint are also deleted.
 

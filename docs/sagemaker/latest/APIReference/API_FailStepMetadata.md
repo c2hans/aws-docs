@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_FailSt
 ---
 
 # FailStepMetadata
-<a name="API_FailStepMetadata"></a>
 
 The container for the metadata for Fail step.
 

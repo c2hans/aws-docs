@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPrivateMarketplaceRequests
-<a name="AWSPrivateMarketplaceRequests"></a>
 
 **Description**: Provides access to creating requests in an AWS Private Marketplace.
 

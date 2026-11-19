@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/pod-multiple-networ
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Attach multiple network interfaces to Pods
-<a name="pod-multiple-network-interfaces"></a>
 
 By default, the Amazon VPC CNI plugin assigns one IP address to each pod. This IP address is attached to an *elastic network interface* that handles all incoming and outgoing traffic for the pod. To increase the bandwidth and packet per second rate performance, you can use the *Multi-NIC feature* of the VPC CNI to configure a multi-homed pod. A multi-homed pod is a single Kubernetes pod that uses multiple network interfaces (and multiple IP addresses). By running a multi-homed pod, you can spread its application traffic across multiple network interfaces by using concurrent connections. This is especially useful for Artificial Intelligence (AI), Machine Learning (ML), and High Performance Computing (HPC) use cases.
 

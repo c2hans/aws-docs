@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/php-quickstar
 ---
 
 # QuickStart: Deploy a PHP application to Elastic Beanstalk
-<a name="php-quickstart"></a>
 
 In the following tutorial, you'll learn how to create and deploy a sample PHP application to an AWS Elastic Beanstalk environment using the EB CLI.
 

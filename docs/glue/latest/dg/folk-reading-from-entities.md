@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/folk-reading-from-entitie
 ---
 
 # Reading from Folk entities
-<a name="folk-reading-from-entities"></a>
 
 **Prerequisites**
 

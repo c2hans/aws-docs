@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa-start.html
 ---
 
 # Get started with EFA and MPI for HPC workloads on Amazon EC2
-<a name="efa-start"></a>
 
 This tutorial helps you to launch an EFA and MPI-enabled instance cluster for HPC workloads.
 

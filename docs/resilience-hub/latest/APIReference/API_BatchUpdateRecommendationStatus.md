@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_B
 ---
 
 # BatchUpdateRecommendationStatus
-<a name="API_BatchUpdateRecommendationStatus"></a>
 
 Enables you to include or exclude one or more operational recommendations.
 

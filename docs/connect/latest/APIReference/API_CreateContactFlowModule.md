@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateCo
 ---
 
 # CreateContactFlowModule
-<a name="API_CreateContactFlowModule"></a>
 
 Creates a flow module for the specified Connect Customer instance.
 

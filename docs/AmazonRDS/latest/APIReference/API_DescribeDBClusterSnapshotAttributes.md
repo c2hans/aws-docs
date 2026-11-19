@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBClusterSnapshotAttributes
-<a name="API_DescribeDBClusterSnapshotAttributes"></a>
 
 Returns a list of DB cluster snapshot attribute names and values for a manual DB cluster snapshot.
 

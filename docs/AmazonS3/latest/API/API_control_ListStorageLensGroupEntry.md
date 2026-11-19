@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListStor
 ---
 
 # ListStorageLensGroupEntry
-<a name="API_control_ListStorageLensGroupEntry"></a>
 
  Each entry contains a Storage Lens group that exists in the specified home Region.
 

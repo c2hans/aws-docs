@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-logging
 ---
 
 # Log Spark application events in Athena
-<a name="notebooks-spark-logging"></a>
 
 The Athena notebook editor allows for standard Jupyter, Spark, and Python logging. You can use `df.show()` to display PySpark DataFrame contents or use `print("Output")` to display values in the cell output. The `stdout`, `stderr`, and `results` outputs for your calculations are written to your query results bucket location in Amazon S3.
 

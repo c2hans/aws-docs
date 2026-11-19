@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # FAQ for database decomposition
-<a name="faq"></a>
 
 This comprehensive FAQ section addresses the most common questions and challenges organizations face when undertaking database decomposition projects. From defining the initial scope and requirements to migrating stored procedures, these questions provide practical insights and strategic approaches to help teams successfully navigate their database modernization journey. Whether you're in the planning phase or already executing your decomposition strategy, these answers can help you avoid common pitfalls and implement best practices for optimal results.
 

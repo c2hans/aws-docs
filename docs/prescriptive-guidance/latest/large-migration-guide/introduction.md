@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Guide for AWS large migrations
-<a name="introduction"></a>
 
 *Wally Lu, Tuhin Mukherjee, Damien Renner, and Senay Swinney, Amazon Web Services*
 

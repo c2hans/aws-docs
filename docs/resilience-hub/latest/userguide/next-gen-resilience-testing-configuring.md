@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Configuring a test
-<a name="next-gen-resilience-testing-configuring"></a>
 
 When you create a test from a template, you configure the following settings. Settings are saved and reused for future runs – you can edit them at any time.
 

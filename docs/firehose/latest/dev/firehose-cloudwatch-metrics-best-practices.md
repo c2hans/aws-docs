@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/firehose-cloudwatch-
 ---
 
 # Implement best practices with CloudWatch Alarms
-<a name="firehose-cloudwatch-metrics-best-practices"></a>
 
 Add CloudWatch alarms for when the following metrics exceed the buffering limit (a maximum of 15 minutes).
 + `DeliveryToS3.DataFreshness`

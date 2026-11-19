@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EventsV2::Subscriber PointInTimeConfiguration
-<a name="aws-properties-eventsv2-subscriber-pointintimeconfiguration"></a>
 
 The point in time to start delivering events from, used when StartingPosition is POINT\_IN\_TIME.
 

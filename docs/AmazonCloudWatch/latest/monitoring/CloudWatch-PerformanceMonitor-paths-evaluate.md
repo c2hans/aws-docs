@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Evaluate network paths
-<a name="CloudWatch-PerformanceMonitor-paths-evaluate"></a>
 
 Performance Monitor provides visibility into network paths through the **Top network paths** view. This view shows all monitored paths ranked by impact score, to help you quickly identify which paths need attention.
 

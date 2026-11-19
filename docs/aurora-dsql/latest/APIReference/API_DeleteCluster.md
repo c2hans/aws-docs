@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Dele
 ---
 
 # DeleteCluster
-<a name="API_DeleteCluster"></a>
 
 Deletes a cluster in Amazon Aurora DSQL.
 

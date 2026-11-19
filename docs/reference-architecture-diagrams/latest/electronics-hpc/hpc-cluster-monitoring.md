@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/e
 ---
 
 # Cross-Account Amazon EC2 Status Monitoring for HPC Clusters
-<a name="hpc-cluster-monitoring"></a>
 
 Publication date: **February 22, 2024 ([Diagram history](diagram-history.md))**
 

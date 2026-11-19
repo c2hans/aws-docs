@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-subm
 ---
 
 # Submitting quantum tasks to simulators
-<a name="braket-submit-tasks-simulators"></a>
 
 Amazon Braket provides access to several simulators that can test your quantum tasks. You can submit quantum tasks individually or you can [run multiple programs](https://docs.aws.amazon.com/braket/latest/developerguide/braket-batching-tasks.html).
 

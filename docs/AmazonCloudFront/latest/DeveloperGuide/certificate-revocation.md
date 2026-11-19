@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/c
 ---
 
 # Certificate revocation
-<a name="certificate-revocation"></a>
 
 When certificates need to be revoked — due to compromise, policy changes, or terminated relationships — you need a mechanism to reject those certificates during the mTLS handshake. CloudFront provides two native approaches to certificate revocation, and you can combine them for layered control.
 + **OCSP (Online Certificate Status Protocol)** — CloudFront queries your Certificate Authority's OCSP responder in real time to check whether a client certificate has been revoked. Enable OCSP on your trust store and CloudFront handles the validation automatically during the TLS handshake. OCSP results are also visible in Connection Functions, giving you programmatic access to revocation status for custom decision-making.

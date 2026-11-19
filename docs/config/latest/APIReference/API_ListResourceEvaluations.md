@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ListResou
 ---
 
 # ListResourceEvaluations
-<a name="API_ListResourceEvaluations"></a>
 
 Returns a list of proactive resource evaluations.
 

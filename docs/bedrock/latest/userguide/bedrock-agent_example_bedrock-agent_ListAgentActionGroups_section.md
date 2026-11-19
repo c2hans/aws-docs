@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-agent_e
 ---
 
 # Use `ListAgentActionGroups` with an AWS SDK
-<a name="bedrock-agent_example_bedrock-agent_ListAgentActionGroups_section"></a>
 
 The following code examples show how to use `ListAgentActionGroups`.
 

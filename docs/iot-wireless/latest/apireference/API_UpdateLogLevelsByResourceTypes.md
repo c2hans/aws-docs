@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Upd
 ---
 
 # UpdateLogLevelsByResourceTypes
-<a name="API_UpdateLogLevelsByResourceTypes"></a>
 
 Set default log level, or log levels by resource types. This can be for wireless device, wireless gateway, or FUOTA task log options, and is used to control the log messages that'll be displayed in CloudWatch.
 

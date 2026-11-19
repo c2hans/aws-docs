@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/stop-batch-bu
 ---
 
 # Stop batch builds in AWS CodeBuild
-<a name="stop-batch-build"></a>
 
 You can use the AWS CodeBuild console, AWS CLI, or AWS SDKs to stop a batch build in AWS CodeBuild.
 

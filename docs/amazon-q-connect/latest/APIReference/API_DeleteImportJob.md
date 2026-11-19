@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # DeleteImportJob
-<a name="API_amazon-q-connect_DeleteImportJob"></a>
 
 Deletes the quick response import job.
 

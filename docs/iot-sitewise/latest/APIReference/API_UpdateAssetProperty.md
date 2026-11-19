@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Upd
 ---
 
 # UpdateAssetProperty
-<a name="API_UpdateAssetProperty"></a>
 
 Updates an asset property's alias and notification state.
 

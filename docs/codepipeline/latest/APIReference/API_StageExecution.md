@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Sta
 ---
 
 # StageExecution
-<a name="API_StageExecution"></a>
 
 Represents information about the run of a stage.
 

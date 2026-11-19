@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationFlowTransformation
-<a name="API_DataIntegrationFlowTransformation"></a>
 
 The DataIntegrationFlow transformation parameters.
 

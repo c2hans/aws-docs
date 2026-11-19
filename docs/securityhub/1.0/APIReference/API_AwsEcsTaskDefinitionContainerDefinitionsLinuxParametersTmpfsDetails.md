@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetails
-<a name="API_AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetails"></a>
 
 The container path, mount options, and size (in MiB) of a tmpfs mount.
 

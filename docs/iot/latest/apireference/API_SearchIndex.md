@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_SearchIndex.
 ---
 
 # SearchIndex
-<a name="API_SearchIndex"></a>
 
 Searches the specified index.
 

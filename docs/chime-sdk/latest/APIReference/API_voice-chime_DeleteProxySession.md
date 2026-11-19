@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # DeleteProxySession
-<a name="API_voice-chime_DeleteProxySession"></a>
 
 Deletes the specified proxy session from the specified Amazon Chime SDK Voice Connector.
 

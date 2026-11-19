@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datatransferterminal/latest/userguide/te
 ---
 
 # Key concepts
-<a name="terminology"></a>
 
 Using AWS Data Transfer Terminal requires a Process owner to schedule a reservation for a Data transfer specialist to access a Data Transfer Terminal facility. Refer to the following sections to learn more about Data Transfer Terminal terminology.
 

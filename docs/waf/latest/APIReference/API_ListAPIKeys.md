@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ListAPIKeys.
 ---
 
 # ListAPIKeys
-<a name="API_ListAPIKeys"></a>
 
 Retrieves a list of the API keys that you've defined for the specified scope.
 

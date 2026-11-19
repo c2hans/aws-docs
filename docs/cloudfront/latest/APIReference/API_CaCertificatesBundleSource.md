@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CaCer
 ---
 
 # CaCertificatesBundleSource
-<a name="API_CaCertificatesBundleSource"></a>
 
 A CA certificates bundle source.
 

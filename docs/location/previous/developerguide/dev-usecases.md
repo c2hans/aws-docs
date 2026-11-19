@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/dev-use
 ---
 
 # Scenarios and use cases
-<a name="dev-usecases"></a>
 
 Amazon Location Service is a service that runs in the AWS Cloud. You may call it from your own Amazon EC2 instances in the cloud, but many mapping applications will run on devices, or a combination of devices and the cloud. The following lists just a few typical scenarios and how you might approach developing them.
 + A backend application that helps you to optimize routes for drivers in your fleet.

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/ST_AsText-function.ht
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # ST\_AsText
-<a name="ST_AsText-function"></a>
 
 ST\_AsText returns the well-known text (WKT) representation of an input geometry or geography. For 3DZ, 3DM, and 4D geometries or geographies, ST\_AsEWKT appends Z, M, or ZM to the WKT value for the geometry or geography type.
 

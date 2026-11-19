@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Crea
 ---
 
 # CreateConnectionOAuthRequestParameters
-<a name="API_CreateConnectionOAuthRequestParameters"></a>
 
 Contains the OAuth authorization parameters to use for the connection.
 

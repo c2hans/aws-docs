@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/ubuntu-network
 ---
 
 # Establish an AWS Client VPN connection on Linux
-<a name="ubuntu-network-manager-openvpn"></a>
 
 Establish a VPN connection using the using either the Network Manager GUI on an Ubuntu computer or the OpenVPN application.
 

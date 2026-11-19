@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/put-acl-permis
 ---
 
 # Configure access control lists (ACLs) through an access point for a general purpose bucket
-<a name="put-acl-permissions-ap"></a>
 
 This section explains how to configure ACLs through an access point for a general purpose bucket using the AWS Management Console, AWS Command Line Interface, or REST API. For more information about ACLs, see [Access control list (ACL) overview](acl-overview.md).
 

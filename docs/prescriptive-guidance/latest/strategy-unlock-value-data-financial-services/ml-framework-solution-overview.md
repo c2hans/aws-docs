@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-un
 ---
 
 # Solution overview
-<a name="ml-framework-solution-overview"></a>
 
 ## A scalable ML framework
 <a name="scalable-ml-framework"></a>

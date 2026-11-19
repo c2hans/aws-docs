@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # Create an investigation
-<a name="Investigations-CreateInvestigation"></a>
 
 You can start an investigation from several AWS consoles, including (but not limited to) CloudWatch alarm pages, CloudWatch metric pages, and Lambda monitoring pages.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/recreate-task.htm
 ---
 
 # Duplicating a task
-<a name="recreate-task"></a>
 
 You can duplicate an existing data repository task in the Amazon FSx console. When you duplicate a task, an exact copy of the existing task is displayed in the **Create import data repository task** or **Create export data repository task** page. You can make changes to the paths to export or import, as needed, before creating and running the new task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_HealthCheckConf
 ---
 
 # HealthCheckConfiguration
-<a name="API_HealthCheckConfiguration"></a>
 
 Describes the settings for the health check that AWS App Runner performs to monitor the health of a service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-exten
 ---
 
 # How Tensor Parallelism Works
-<a name="model-parallel-extended-features-pytorch-tensor-parallelism-how-it-works"></a>
 
 Tensor parallelism takes place at the level of `nn.Modules`; it partitions specific modules in the model across tensor parallel ranks. This is in addition to the existing partition of the *set of modules* used in pipeline parallelism.
 

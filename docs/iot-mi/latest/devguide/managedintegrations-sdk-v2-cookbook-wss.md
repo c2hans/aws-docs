@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # WiFi Simple Setup to onboard and operate devices
-<a name="managedintegrations-sdk-v2-cookbook-wss"></a>
 
 WiFi Simple Setup (WSS) is an automated device onboarding method that simplifies WiFi credential provisioning for IoT devices managed through AWS IoT Managed Integrations.
 

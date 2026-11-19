@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListCl
 ---
 
 # ListClusters
-<a name="API_ListClusters"></a>
 
 Retrieves the list of SageMaker HyperPod clusters.
 

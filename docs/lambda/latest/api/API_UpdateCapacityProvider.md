@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_UpdateCapacityProv
 ---
 
 # UpdateCapacityProvider
-<a name="API_UpdateCapacityProvider"></a>
 
 Updates the configuration of an existing capacity provider.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharin
 ---
 
 # Share AWS resources owned by you
-<a name="working-with-sharing"></a>
 
 You can use AWS Resource Access Manager (AWS RAM) to share the resources that you specify with the principals that you specify. This section describes how you can create new resource shares, modify existing resource shares, and delete resource shares that you no longer need.
 

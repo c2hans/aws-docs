@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/cloudwatch-contai
 ---
 
 # Turn on Container Insights
-<a name="cloudwatch-container-insights-working"></a>
 
 Complete the following steps to turn on Container Insights for AWS Batch compute environments.
 

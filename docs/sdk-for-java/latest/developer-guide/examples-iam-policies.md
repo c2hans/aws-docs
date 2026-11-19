@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Work with IAM policies
-<a name="examples-iam-policies"></a>
 
 ## Create a policy
 <a name="create-a-policy"></a>

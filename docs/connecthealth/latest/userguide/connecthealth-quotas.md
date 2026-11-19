@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/connecthe
 ---
 
 # Quotas for Amazon Connect Health
-<a name="connecthealth-quotas"></a>
 
 Amazon Connect Health enforces service quotas that govern how AI agents operate within your deployment. These include limits on patient engagement configuration and runtime, such as decision tree and knowledge base file sizes, visit-type restrictions, and escalation thresholds. For these limits, see [Patient engagement](patient-engagement-overview.md). These quotas help keep the service stable and performance consistent across customers.
 

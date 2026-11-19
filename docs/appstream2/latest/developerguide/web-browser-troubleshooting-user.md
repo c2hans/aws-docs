@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/web-bro
 ---
 
 # Troubleshooting
-<a name="web-browser-troubleshooting-user"></a>
 
 If issues occur when you use WorkSpaces Applications, your WorkSpaces Applications session ID can help your administrator with troubleshooting. This section describes how to find the session ID.
 

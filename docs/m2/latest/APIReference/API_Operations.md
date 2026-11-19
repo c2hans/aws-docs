@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/m2/latest/APIReference/API_Operations.ht
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [CancelBatchJobExecution](API_CancelBatchJobExecution.md)

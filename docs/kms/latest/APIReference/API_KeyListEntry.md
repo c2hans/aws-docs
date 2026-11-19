@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_KeyListEntry
 ---
 
 # KeyListEntry
-<a name="API_KeyListEntry"></a>
 
 Contains information about each entry in the key list.
 

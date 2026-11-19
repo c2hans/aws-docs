@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_ListC
 ---
 
 # ListCallAnalyticsCategories
-<a name="API_ListCallAnalyticsCategories"></a>
 
 Provides a list of Call Analytics categories, including all rules that make up each category.
 

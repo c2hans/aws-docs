@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.
 ---
 
 # Preventing cross-environment Amazon S3 bucket access
-<a name="AWSHowTo.iam.cross-env-s3-access"></a>
 
 This topic explains how managed policies may allow cross-environment S3 bucket access and how you can create custom policies to manage this type of access.
 

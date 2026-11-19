@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AllocateI
 ---
 
 # AllocateIpamPoolCidr
-<a name="API_AllocateIpamPoolCidr"></a>
 
 Allocate a CIDR from an IPAM pool. The Region you use should be the IPAM pool locale. The locale is the AWS Region where this IPAM pool is available for allocations.
 

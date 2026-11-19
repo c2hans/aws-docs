@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_CancelMLData
 ---
 
 # CancelMLDataProcessingJob
-<a name="API_CancelMLDataProcessingJob"></a>
 
 Cancels a Neptune ML data processing job. See [The `dataprocessing` command](https://docs.aws.amazon.com/neptune/latest/userguide/machine-learning-api-dataprocessing.html).
 

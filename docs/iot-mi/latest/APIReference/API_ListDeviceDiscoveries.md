@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListDevic
 ---
 
 # ListDeviceDiscoveries
-<a name="API_ListDeviceDiscoveries"></a>
 
 Lists all device discovery tasks, with optional filtering by type and status.
 

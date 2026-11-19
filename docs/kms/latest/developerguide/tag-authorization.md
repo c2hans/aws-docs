@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/tag-authorizat
 ---
 
 # Use tags to control access to KMS keys
-<a name="tag-authorization"></a>
 
 You can control access to AWS KMS keys based on the tags on the KMS key. For example, you can write an IAM policy that allows principals to enable and disable only the KMS keys that have a particular tag. Or you can use an IAM policy to prevent principals from using KMS keys in cryptographic operations unless the KMS key has a particular tag.
 

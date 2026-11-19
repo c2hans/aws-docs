@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListRecommenderRecipes
-<a name="API_connect-customer-profiles_ListRecommenderRecipes"></a>
 
 Returns a list of available recommender recipes that can be used to create recommenders.
 

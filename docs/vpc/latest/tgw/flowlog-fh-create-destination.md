@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/flowlog-fh-create-destina
 ---
 
 # Create the AWS Transit Gateway Flow Logs destination account role for Amazon Data Firehose
-<a name="flowlog-fh-create-destination"></a>
 
 From the destination account, create the destination role in the AWS Identity and Access Management console.
 

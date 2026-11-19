@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/setu
 ---
 
 # Setting up the AWS SDK for Java 2.x
-<a name="setup"></a>
 
 This section provides information about how to set up your development environment and projects to use the AWS SDK for Java 2.x.
 

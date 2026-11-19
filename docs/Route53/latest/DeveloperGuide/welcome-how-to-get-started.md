@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-ho
 ---
 
 # How to get started with Amazon Route 53
-<a name="welcome-how-to-get-started"></a>
 
 For information about getting started with Amazon Route 53, see the following topics in this guide:
 + [Set up Amazon Route 53](setting-up-route-53.md), which explains how to sign up for AWS, how to secure access to your AWS account, and how to set up programmatic access to Route 53

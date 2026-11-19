@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Avail
 ---
 
 # AvailabilitySlo
-<a name="API_AvailabilitySlo"></a>
 
 Defines the availability service level objective (SLO) for a resilience policy.
 

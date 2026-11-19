@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Architecture selection
-<a name="advperf01"></a>
 
  The optimal solution for a particular advertising workload varies, and solutions often combine multiple approaches. Well-Architected advertising workloads use multiple solutions and allow different features to improve performance. Architecture selection decisions directly affect the latency, burst capacity, and unit economics of programmatic advertising systems. Choosing the wrong architecture for geographic affinity, scaling strategy, compute, or AI/ML inference can result in missed bid deadlines, inefficient scaling, and avoidable cost penalties at scale.
 

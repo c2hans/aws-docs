@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # Message
-<a name="API_agent-runtime_Message"></a>
 
 Details about a message.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListRecommendedActions
-<a name="API_BillingAndCostManagementRecommendedActions_ListRecommendedActions"></a>
 
 Returns a list of recommended actions that match the filter criteria.
 

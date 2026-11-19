@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Li
 ---
 
 # ListAgentActionGroups
-<a name="API_agent_ListAgentActionGroups"></a>
 
 Lists the action groups for an agent and information about each one.
 

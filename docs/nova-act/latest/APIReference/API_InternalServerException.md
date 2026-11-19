@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_Interna
 ---
 
 # InternalServerException
-<a name="API_InternalServerException"></a>
 
 An internal server error occurred. Please try again later.
 

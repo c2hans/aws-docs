@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/management
 ---
 
 # Using delegated administrators
-<a name="management-delegates"></a>
 
 The steps in the following sections explain how to register and deregister delegated administrators. Delegated administrators can view all the data in your organization.
 

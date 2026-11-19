@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadv
 ---
 
 # ListSuiteDefinitions
-<a name="API_iotdeviceadvisor_ListSuiteDefinitions"></a>
 
 Lists the Device Advisor test suites you have created.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_C
 ---
 
 # ConfigurationOverrides
-<a name="API_ConfigurationOverrides"></a>
 
 A configuration specification to be used to override existing configurations.
 

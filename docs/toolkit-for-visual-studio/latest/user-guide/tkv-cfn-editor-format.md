@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Formatting a CloudFormation Template in Visual Studio
-<a name="tkv-cfn-editor-format"></a>
 + In Solution Explorer, open the context (right-click) menu for the template and choose **Format Template**.
 
   Alternatively, to format the template you're currently editing, from the **Template** menu, choose **Format Template**.

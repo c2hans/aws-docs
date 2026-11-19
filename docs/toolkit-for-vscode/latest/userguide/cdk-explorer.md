@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/cdk-
 ---
 
 # AWS CDK for VS Code
-<a name="cdk-explorer"></a>
 
 |  |
 | --- |

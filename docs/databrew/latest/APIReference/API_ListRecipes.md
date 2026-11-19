@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_ListRec
 ---
 
 # ListRecipes
-<a name="API_ListRecipes"></a>
 
 Lists all of the DataBrew recipes that are defined.
 

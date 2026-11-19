@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Service
 ---
 
 # ServiceNowDetail
-<a name="API_ServiceNowDetail"></a>
 
 Information about a ServiceNow ITSM integration.
 

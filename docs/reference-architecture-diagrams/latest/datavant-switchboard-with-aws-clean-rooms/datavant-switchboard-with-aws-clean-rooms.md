@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Datavant Switchboard with AWS Clean Rooms
-<a name="datavant-switchboard-with-aws-clean-rooms"></a>
 
 Publication date: **January 24, 2024 ([Diagram history](#diagram-history))**
 

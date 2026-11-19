@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdateGatewayRule
-<a name="API_UpdateGatewayRule"></a>
 
 Updates a gateway rule's priority, conditions, actions, or description.
 

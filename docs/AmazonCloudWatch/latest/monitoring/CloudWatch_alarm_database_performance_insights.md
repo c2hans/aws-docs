@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Create an alarm on Performance Insights counter metrics from an AWS database
-<a name="CloudWatch_alarm_database_performance_insights"></a>
 
 CloudWatch includes a **DB\_PERF\_INSIGHTS** metric math function which you can use to bring Performance Insights counter metrics into CloudWatch from Amazon Relational Database Service and Amazon DocumentDB (with MongoDB compatibility). **DB\_PERF\_INSIGHTS** also brings in the `DBLoad` metric at sub-minute intervals. You can set CloudWatch alarms on these metrics.
 

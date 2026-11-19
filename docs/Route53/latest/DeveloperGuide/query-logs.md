@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/query-logs
 ---
 
 # Public DNS query logging
-<a name="query-logs"></a>
 
 You can configure Amazon Route 53 to log information about the public DNS queries that Route 53 receives, such as the following:
 + Domain or subdomain that was requested

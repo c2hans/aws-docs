@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gusto-reading-from-entiti
 ---
 
 # Reading from Gusto entities
-<a name="gusto-reading-from-entities"></a>
 
 **Prerequisites**
 

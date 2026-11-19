@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # AppDynamics
-<a name="discovery-appdynamics"></a>
 
 *Last update: May 15, 2023*
 

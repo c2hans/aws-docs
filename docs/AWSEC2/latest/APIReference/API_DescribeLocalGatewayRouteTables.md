@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeL
 ---
 
 # DescribeLocalGatewayRouteTables
-<a name="API_DescribeLocalGatewayRouteTables"></a>
 
 Describes one or more local gateway route tables. By default, all local gateway route tables are described. Alternatively, you can filter the results.
 

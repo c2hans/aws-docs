@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GridL
 ---
 
 # GridLayoutElementBorderStyle
-<a name="API_GridLayoutElementBorderStyle"></a>
 
 The border style configuration of a grid layout element.
 

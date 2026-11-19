@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choose-iac-
 ---
 
 # CloudFormation
-<a name="cloudformation"></a>
 
 [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) is an AWS service that uses template files to automate the provisioning of AWS resources. You create a template that describes all of the AWS resources that you want to deploy, and CloudFormation provisions and configures those resources for you.
 

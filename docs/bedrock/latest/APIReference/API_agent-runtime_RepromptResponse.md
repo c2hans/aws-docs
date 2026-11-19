@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RepromptResponse
-<a name="API_agent-runtime_RepromptResponse"></a>
 
 Contains details about the agent's response to reprompt the input.
 

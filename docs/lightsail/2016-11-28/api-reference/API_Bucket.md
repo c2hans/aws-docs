@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_B
 ---
 
 # Bucket
-<a name="API_Bucket"></a>
 
 Describes an Amazon Lightsail bucket.
 

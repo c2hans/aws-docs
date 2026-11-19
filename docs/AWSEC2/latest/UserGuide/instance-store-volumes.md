@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-store-v
 ---
 
 # Instance store volume limits for EC2 instances
-<a name="instance-store-volumes"></a>
 
 The number, size, and type of instance store volumes are determined by the instance type. Some instance types, such as C8i, M8i, and R8i, do not support instance store volumes, while other instance types, such as C8id, M8id, and R8id, do support instance store volumes. You can’t attach more instance store volumes to an instance than is supported by its instance type. For the instance types that do support instance store volumes, the number and size of the instance store volumes vary by instance size. For example, `r8id.large` supports 1 x 118 GB instance store volume, while `r8id.32xlarge` supports 2 x 3800 GB instance store volumes.
 

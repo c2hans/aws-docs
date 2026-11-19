@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetOpportunity
-<a name="API_GetOpportunity"></a>
 
 Fetches the `Opportunity` record from Partner Central by a given `Identifier`.
 

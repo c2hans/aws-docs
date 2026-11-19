@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # ECS architecture features
-<a name="ecs-architecture-features"></a>
 
 **Note**
  **Supported in:** ECS architecture only (v8.1\+). These capabilities are exclusive to the ECS architecture and are not available in the Lambda architecture. Customers who need these features should deploy the ECS architecture.

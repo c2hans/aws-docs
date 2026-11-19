@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/custom-building-b
 ---
 
 # Creating custom Blocks
-<a name="custom-building-blocks"></a>
 
 When the built-in Blocks don’t cover your use case, you can create your own. A custom Block packages infrastructure, runtime logic, and a local implementation into a single reusable module, usable across projects or shared with your team.
 

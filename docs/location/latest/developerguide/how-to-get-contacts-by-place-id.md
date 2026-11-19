@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ---
 
 # How to get contacts for a PlaceId
-<a name="how-to-get-contacts-by-place-id"></a>
 
 **Note**
  For customers in `ap-southeast-1` and `ap-southeast-5`, this use case is not supported, as the `Contacts` field is not available. Refer to the [GetPlace API Reference](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_GetPlace.html) for details.

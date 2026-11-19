@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/manager-assist
 ---
 
 # Capabilities overview for manager assist
-<a name="manager-assist-capabilities"></a>
 
 More than 150 Connect Customer metrics are supported across all capability categories. You can ask about current performance, investigate historical trends, compare metrics across dimensions, and optimize self-service operations.
 

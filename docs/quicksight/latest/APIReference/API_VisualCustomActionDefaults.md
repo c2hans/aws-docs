@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Visua
 ---
 
 # VisualCustomActionDefaults
-<a name="API_VisualCustomActionDefaults"></a>
 
 A list of custom actions applied to visuals in an analysis or sheet.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-permissions.
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure Argo CD permissions
-<a name="argocd-permissions"></a>
 
 The Argo CD managed capability integrates with AWS Identity Center for authentication and uses role-based access control (RBAC) for authorization. This topic explains how to configure permissions for users and teams.
 

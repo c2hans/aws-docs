@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/eigen
 ---
 
 # Eigenvector centrality mutate algorithm
-<a name="eigenvector-centrality-mutate"></a>
 
 The `.eigenvectorCentrality.mutate` algorithm computes and stores each node's [eigenvector centrality](eigenvector-centrality.md) value as a property of the node. Eigenvector centrality measures a node's importance by accounting for both the number and the importance of the nodes connected to it. Nodes that are connected to many highly connected nodes receive higher scores.
 

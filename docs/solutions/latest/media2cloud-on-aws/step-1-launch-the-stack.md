@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/step
 ---
 
 # Step 1: Launch the stack
-<a name="step-1-launch-the-stack"></a>
 
  Follow the step-by-step instructions in this section to configure and deploy the solution into your account.
 

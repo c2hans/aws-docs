@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListStatements.ht
 ---
 
 # ListStatements
-<a name="API_ListStatements"></a>
 
 Lists statements for the session.
 

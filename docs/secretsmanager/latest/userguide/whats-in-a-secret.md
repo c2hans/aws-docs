@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/whats-in
 ---
 
 # What's in a Secrets Manager secret?
-<a name="whats-in-a-secret"></a>
 
 In Secrets Manager, a *secret* consists of secret information, the *secret value*, plus metadata about the secret. A secret value can be a string or binary.
 

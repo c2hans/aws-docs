@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SilentAudioC
 ---
 
 # SilentAudioConfiguration
-<a name="API_SilentAudioConfiguration"></a>
 
 Detects silent audio in the router input's source content and reports it through a CloudWatch metric, an EventBridge event, and a router input message.
 

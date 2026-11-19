@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # How AWS Can Help
-<a name="how-aws-can-help"></a>
 
 **Table 1 – How AWS can help you navigate GDPR compliance **
 

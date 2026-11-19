@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agent-tutorial-
 ---
 
 # Step 4: Deploy the agent with an alias
-<a name="agent-tutorial-step4"></a>
 
 After configuring your agent, you need to deploy it with an alias to make it available for use. In this procedure, you'll prepare your agent for deployment by creating an alias and version of your agent. The alias points to the version, allowing you to invoke your agent through a stable endpoint while maintaining the ability to update the underlying implementation.
 

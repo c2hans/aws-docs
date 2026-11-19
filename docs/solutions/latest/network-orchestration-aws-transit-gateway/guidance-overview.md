@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Automate setting up and managing your transit networks with AWS Transit Gateway
-<a name="guidance-overview"></a>
 
 Guidance for Network Orchestration for AWS Transit Gateway automates the process of setting up and managing transit networks in multi-account AWS environments. It creates a web user interface (UI) to help you control, audit, and approve or reject transit network changes. The Guidance supports both [AWS Organizations](https://aws.amazon.com/organizations/) and standalone AWS accounts, and you can visualize your transit network across multiple AWS Regions. You can use the default deployment template or customize it to meet your specific use case.
 

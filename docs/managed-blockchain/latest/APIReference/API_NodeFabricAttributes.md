@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # NodeFabricAttributes
-<a name="API_NodeFabricAttributes"></a>
 
 Attributes of Hyperledger Fabric for a peer node on a Hyperledger Fabric network on Managed Blockchain.
 

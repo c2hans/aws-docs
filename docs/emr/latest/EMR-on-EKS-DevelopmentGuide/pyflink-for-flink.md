@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/p
 ---
 
 # Using PyFlink
-<a name="pyflink-for-flink"></a>
 
 Amazon EMR on EKS releases 6.15.0 and higher supports PyFlink. If you already have a PyFlink script, you can do one of the following:
 + Create a custom image with your PyFlink script included.

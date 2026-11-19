@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessLogS3DestinationOptions
-<a name="API_VerifiedAccessLogS3DestinationOptions"></a>
 
 Options for Amazon S3 as a logging destination.
 

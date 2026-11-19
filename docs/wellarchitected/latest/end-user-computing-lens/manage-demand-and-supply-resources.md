@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Manage demand and supply resources
-<a name="manage-demand-and-supply-resources"></a>
 
 |  EUCCOST06: How do you optimize cost using existing licenses when appropriate?  |
 | --- |

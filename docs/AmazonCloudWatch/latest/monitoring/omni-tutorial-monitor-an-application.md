@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Tutorial: Monitor an application
-<a name="omni-tutorial-monitor-an-application"></a>
 
 Use this tutorial to instrument an application with OpenTelemetry, send its telemetry to CloudWatch Omni, and verify that you can monitor its services and requests. To work through the AI agent workflow instead, see [Tutorial: Fix a production quality regression](omni-agents-close-the-loop.md).
 

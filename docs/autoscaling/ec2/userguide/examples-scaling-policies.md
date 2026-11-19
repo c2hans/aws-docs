@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/examples-scali
 ---
 
 # Example scaling policies for the AWS CLI
-<a name="examples-scaling-policies"></a>
 
 You can create scaling policies for Amazon EC2 Auto Scaling through the AWS Management Console, AWS Command Line Interface (AWS CLI), or SDKs.
 

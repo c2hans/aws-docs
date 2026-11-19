@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionTypeArtifactDetails
-<a name="API_ActionTypeArtifactDetails"></a>
 
 Information about parameters for artifacts associated with the action type, such as the minimum and maximum artifacts allowed.
 

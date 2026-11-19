@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_SendDurableExecuti
 ---
 
 # SendDurableExecutionCallbackSuccess
-<a name="API_SendDurableExecutionCallbackSuccess"></a>
 
 Sends a successful completion response for a callback operation in a durable execution. Use this API when an external system has successfully completed a callback operation.
 

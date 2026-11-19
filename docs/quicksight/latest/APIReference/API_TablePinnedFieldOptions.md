@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TablePinnedFieldOptions
-<a name="API_TablePinnedFieldOptions"></a>
 
 The settings for the pinned columns of a table visual.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/c-
 ---
 
 # AWS Encryption SDK for C
-<a name="c-language"></a>
 
 The AWS Encryption SDK for C provides a client-side encryption library for developers who are writing applications in C. It also serves as a foundation for implementations of the AWS Encryption SDK in higher-level programming languages.
 

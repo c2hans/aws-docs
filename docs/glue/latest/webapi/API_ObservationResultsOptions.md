@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ObservationResult
 ---
 
 # ObservationResultsOptions
-<a name="API_ObservationResultsOptions"></a>
 
 The configuration for writing observation results.
 

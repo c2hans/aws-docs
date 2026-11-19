@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataEnclaveOptionsDetails
-<a name="API_AwsEc2LaunchTemplateDataEnclaveOptionsDetails"></a>
 
  Indicates whether the instance is enabled for AWS Nitro Enclaves.
 

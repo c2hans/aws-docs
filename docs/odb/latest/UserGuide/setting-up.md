@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/setting-up.html
 ---
 
 # Onboarding to Oracle Database@AWS
-<a name="setting-up"></a>
 
 Before you can begin using Oracle Database@AWS, make sure you're signed up for AWS and create necessary users. Then you can purchase Oracle Database@AWS from AWS Marketplace by accepting a private offer from Oracle or by subscribing to a public offer.
 

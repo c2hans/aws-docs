@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-g
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Goals and personalization in AWS Well-Architected Agent
-<a name="agent-goals"></a>
 
 AWS Well-Architected Agent uses business goals to prioritize and rank your recommendations. The goals you define during onboarding directly shape which recommendations appear first and how they align with your organization's objectives.
 

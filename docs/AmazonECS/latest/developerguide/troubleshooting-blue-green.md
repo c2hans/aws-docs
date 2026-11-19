@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubles
 ---
 
 # Troubleshooting Amazon ECS blue/green deployments
-<a name="troubleshooting-blue-green"></a>
 
 This following provides solutions for common issues you might encounter when using blue/green deployments with Amazon ECS. Blue/green deployment errors can occur during the following phases:
 + *Synchronous path*: Errors that appear immediately in response to `CreateService` or `UpdateService` API calls.

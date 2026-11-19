@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/process-response.htm
 ---
 
 # Processing responses from an AppInstanceBot for Amazon Chime SDK messaging
-<a name="process-response"></a>
 
 When a user sends a message, the AppInstanceBot responds with a channel message. You can list channel messages to get the bot's response.
 

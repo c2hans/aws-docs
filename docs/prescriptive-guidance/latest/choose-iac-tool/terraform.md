@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choose-iac-
 ---
 
 # Terraform
-<a name="terraform"></a>
 
 [HashiCorp Terraform](https://developer.hashicorp.com/terraform) is an infrastructure as code (IaC) tool that help you manage your cloud infrastructure. Using Terraform, you can define both cloud and on-premises resources in configuration files that you can version, reuse, and share. You can then use a consistent workflow to provision and manage all of your infrastructure throughout its lifecycle.
 

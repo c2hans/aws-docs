@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GenerateOrga
 ---
 
 # GenerateOrganizationsAccessReport
-<a name="API_GenerateOrganizationsAccessReport"></a>
 
 Generates a report for service last accessed data for AWS Organizations. You can generate a report for any entities (organization root, organizational unit, or account) or policies in your organization.
 

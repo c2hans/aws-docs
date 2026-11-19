@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/edit-connector.html
 ---
 
 # Edit connector
-<a name="edit-connector"></a>
 
 To edit an MGN connector, click **Edit**. When the **Edit MGN connector** page opens, you can modify the MGN connector name and tags.
 

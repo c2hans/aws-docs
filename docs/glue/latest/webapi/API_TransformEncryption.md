@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TransformEncrypti
 ---
 
 # TransformEncryption
-<a name="API_TransformEncryption"></a>
 
 The encryption-at-rest settings of the transform that apply to accessing user data. Machine learning transforms can access user data encrypted in Amazon S3 using KMS.
 

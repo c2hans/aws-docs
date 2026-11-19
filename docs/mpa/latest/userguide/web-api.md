@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/userguide/web-api.html
 ---
 
 # Multi-party approval portal APIs
-<a name="web-api"></a>
 
 The APIs listed in this section are called by the Multi-party approval portal on behalf of approvers. These APIs cannot be called directly and are not captured in the [Service Authorization Reference](https://docs.aws.amazon.com/service-authorization/latest/reference/reference.html). However, these APIs are logged in AWS CloudTrail events and log entries.
 + `GetApprovalTeamForApprover`: Returns details for an approval team.

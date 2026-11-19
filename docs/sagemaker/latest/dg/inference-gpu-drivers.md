@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-gpu-driver
 ---
 
 # Best practices to minimize interruptions during GPU driver upgrades
-<a name="inference-gpu-drivers"></a>
 
 SageMaker AI Model Deployment upgrades GPU drivers on the ML instances for Real-time, Batch, and Asynchronous Inference options over time to provide customers access to improvements from the driver providers. Below you can see the GPU version supported for each Inference option. Different driver versions can change how your model interacts with the GPUs. Below are some strategies to help you understand how your application works with different driver versions.
 

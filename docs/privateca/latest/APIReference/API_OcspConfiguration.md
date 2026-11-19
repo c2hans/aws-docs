@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/APIReference/API_OcspCo
 ---
 
 # OcspConfiguration
-<a name="API_OcspConfiguration"></a>
 
 Contains information to enable and configure Online Certificate Status Protocol (OCSP) for validating certificate revocation status.
 

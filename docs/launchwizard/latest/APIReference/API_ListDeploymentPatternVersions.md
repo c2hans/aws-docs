@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_Lis
 ---
 
 # ListDeploymentPatternVersions
-<a name="API_ListDeploymentPatternVersions"></a>
 
 Lists the deployment pattern versions.
 

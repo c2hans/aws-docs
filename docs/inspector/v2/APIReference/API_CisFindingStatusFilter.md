@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CisFinding
 ---
 
 # CisFindingStatusFilter
-<a name="API_CisFindingStatusFilter"></a>
 
 The CIS finding status filter.
 

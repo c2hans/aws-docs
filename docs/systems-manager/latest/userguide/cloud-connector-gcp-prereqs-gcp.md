@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/cloud-c
 ---
 
 # GCP prerequisites
-<a name="cloud-connector-gcp-prereqs-gcp"></a>
 
 Complete the following steps in your GCP environment. You need the following values from the AWS prerequisites:
 + **Issuer URL** – The AWS OIDC issuer URL from the previous section.

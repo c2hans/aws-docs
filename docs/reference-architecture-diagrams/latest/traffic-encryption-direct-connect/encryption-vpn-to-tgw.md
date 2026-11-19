@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/t
 ---
 
 # AWS Site-to-Site VPN to AWS Transit Gateway (Public VIF)
-<a name="encryption-vpn-to-tgw"></a>
 
 Publication date: **March 5, 2025 ([Diagram history](#tetgw-diagram-history))**
 

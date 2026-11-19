@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/wickrenterpriseinstall/mult
 This guide provides documentation for Wickr Enterprise. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html) or [AWS Wickr User Guide](https://docs.aws.amazon.com/wickr/latest/userguide/what-is-wickr.html).
 
 # Multi-Node installation
-<a name="multi-node-installation"></a>
 
 Wickr Enterprise Embedded Cluster Multi-Node installations provide an option for Embedded Cluster users to separate the Wickr Calling and Wickr Messaging workloads on to different physical machines. To do this, Wickr Enterprise leverages the Replicated Embedded Cluster Multi-Node tooling.
 

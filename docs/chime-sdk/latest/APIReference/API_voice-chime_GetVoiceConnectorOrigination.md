@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # GetVoiceConnectorOrigination
-<a name="API_voice-chime_GetVoiceConnectorOrigination"></a>
 
 Retrieves the origination settings for the specified Voice Connector.
 

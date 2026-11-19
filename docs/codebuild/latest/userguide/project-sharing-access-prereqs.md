@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/project-shari
 ---
 
 # Access CodeBuild projects shared with you
-<a name="project-sharing-access-prereqs"></a>
 
 To access a shared project, a consumer's IAM role requires the `BatchGetProjects` permission. You can attach the following policy to their IAM role:
 

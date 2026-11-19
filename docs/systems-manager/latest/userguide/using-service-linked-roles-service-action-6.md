@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/using-s
 ---
 
 # Using roles to export Explorer OpsData
-<a name="using-service-linked-roles-service-action-6"></a>
 
 AWS Systems Manager Explorer uses the **AmazonSSMExplorerExportRole** service role to export operations data (OpsData) using the `AWS-ExportOpsDataToS3` automation runbook.
 

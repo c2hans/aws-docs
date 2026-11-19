@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_EncryptionCo
 ---
 
 # EncryptionConfiguration
-<a name="API_EncryptionConfiguration"></a>
 
  **[Event-based policies only]** Specifies the encryption settings for cross-Region snapshot copies created by event-based policies.
 

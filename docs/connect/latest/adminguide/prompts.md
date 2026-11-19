@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/prompts.html
 ---
 
 # Create prompts in Connect Customer
-<a name="prompts"></a>
 
 Prompts are audio files played in call flows. For example, hold music is a prompt. Connect Customer comes with a set of prompts that you can add to your flows. Or, you can add your own recordings.
 

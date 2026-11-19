@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Contai
 ---
 
 # ContainerFindingResource
-<a name="API_ContainerFindingResource"></a>
 
 Contains information about container resources involved in a GuardDuty finding. This structure provides details about containers that were identified as part of suspicious or malicious activity.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/data-protectio
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Configuring data protection for a protection pack (web ACL)
-<a name="data-protection-configure"></a>
 
 This section provides instructions for configuring data protection for a protection pack (web ACL).
 

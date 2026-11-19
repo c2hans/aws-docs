@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/change-ev
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Changing how often a control collects evidence
-<a name="change-evidence-collection-frequency"></a>
 
  AWS Audit Manager can collect evidence from various data sources. The frequency of evidence collection depends on the type of data source that the control uses.
 

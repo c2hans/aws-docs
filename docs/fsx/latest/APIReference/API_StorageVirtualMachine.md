@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_StorageVirtu
 ---
 
 # StorageVirtualMachine
-<a name="API_StorageVirtualMachine"></a>
 
 Describes the Amazon FSx for NetApp ONTAP storage virtual machine (SVM) configuration.
 

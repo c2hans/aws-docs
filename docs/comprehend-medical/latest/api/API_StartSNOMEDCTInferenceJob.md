@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_StartS
 ---
 
 # StartSNOMEDCTInferenceJob
-<a name="API_StartSNOMEDCTInferenceJob"></a>
 
  Starts an asynchronous job to detect medical concepts and link them to the SNOMED-CT ontology. Use the DescribeSNOMEDCTInferenceJob operation to track the status of a job.
 

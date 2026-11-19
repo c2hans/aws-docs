@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sms_manage.html
 ---
 
 # Managing Amazon SNS phone numbers and subscriptions
-<a name="sms_manage"></a>
 
 Amazon SNS provides several options for managing who receives SMS messages from your account. You can opt in phone numbers that have opted out of receiving SMS messages. However, you can only do this at a limited frequency.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AudioQua
 ---
 
 # AudioQualityMetricsInfo
-<a name="API_AudioQualityMetricsInfo"></a>
 
 Contains information for score and potential quality issues for Audio
 

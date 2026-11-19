@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/qu
 ---
 
 # Cloud strategy and planning for life science organizations
-<a name="qualification-strategy-for-life-science-organizations"></a>
 
 Life sciences organizations face a critical decision point when adopting cloud technology: how to innovate rapidly while maintaining compliance with stringent GxP regulations. The fundamental challenge lies in transforming from traditional, manual, and document-centric IT processes into what can be termed Regulated Cloud Natives—organizations that operate at the speed of consumer-focused companies while maintaining the quality and compliance standards required by regulatory bodies.
 

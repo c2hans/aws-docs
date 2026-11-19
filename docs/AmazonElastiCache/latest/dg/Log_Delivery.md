@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Log_Delivery
 ---
 
 # Log delivery
-<a name="Log_Delivery"></a>
 
 **Note**
 Log delivery is not supported for serverless caches.

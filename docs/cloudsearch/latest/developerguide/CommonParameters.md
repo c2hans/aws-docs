@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/Common
 ---
 
 # Common Parameters
-<a name="CommonParameters"></a>
 
 This section lists the request parameters that all actions use. Any action-specific parameters are listed in the topic for the action.
 

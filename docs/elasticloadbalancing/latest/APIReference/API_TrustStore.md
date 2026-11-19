@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # TrustStore
-<a name="API_TrustStore"></a>
 
 Information about a trust store.
 

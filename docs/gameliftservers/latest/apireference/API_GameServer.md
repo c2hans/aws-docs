@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # GameServer
-<a name="API_GameServer"></a>
 
 Properties describing a game server that is running on an instance in a game server group.
 

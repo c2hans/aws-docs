@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/zeek-
 ---
 
 # Source configuration for Zeek
-<a name="zeek-source-setup"></a>
 
 ## Integrating with Zeek
 <a name="zeek-integration"></a>

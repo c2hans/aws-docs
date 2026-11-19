@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Post
 ---
 
 # Understanding PostgreSQL roles and permissions
-<a name="Appendix.PostgreSQL.CommonDBATasks.Roles"></a>
 
 When you create an RDS for PostgreSQL DB instance using the AWS Management Console, an administrator account is created at the same time. By default, its name is `postgres`, as shown in the following screenshot:
 

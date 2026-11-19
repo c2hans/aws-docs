@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/smp-support.ht
 ---
 
 # Symmetric multiprocessing (SMP) support
-<a name="smp-support"></a>
 
 [SMP support in the FreeRTOS Kernel](https://freertos.org/symmetric-multiprocessing-introduction.html) enables one instance of the FreeRTOS kernel to schedule tasks across multiple identical processor cores. The core architectures must be identical and share the same memory.
 

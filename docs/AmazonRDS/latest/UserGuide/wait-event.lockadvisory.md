@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/wait-event.lo
 ---
 
 # Lock:advisory
-<a name="wait-event.lockadvisory"></a>
 
 The `Lock:advisory` event occurs when a PostgreSQL application uses a lock to coordinate activity across multiple sessions.
 

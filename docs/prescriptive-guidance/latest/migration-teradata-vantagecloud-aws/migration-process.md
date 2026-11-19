@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Migration process
-<a name="migration-process"></a>
 
 Not every enterprise that implements a migration strategy does so by transferring all of its data to the cloud at the same time. In fact, many organizations take an iterative approach to cloud migration that's driven by both business and technical demands. You can find more about the deployment options in [On-premises to Cloud Migration](https://www.teradata.com/insights/data-platform/on-premises-to-cloud-migration) on the Teradata website.
 

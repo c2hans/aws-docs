@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy
 ---
 
 # PutKeyPolicy
-<a name="API_PutKeyPolicy"></a>
 
 Attaches a key policy to the specified KMS key. You can use this operation to set only the `default` key policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Coverage and known limitations
-<a name="next-gen-discovery-limitations"></a>
 
 Dependency discovery covers all DNS queries made through Route 53 resolvers in your VPC, including both IPv4 and IPv6 queries, and queries from Amazon EC2, Amazon ECS, Amazon EKS, and VPC-connected Lambda. The following known limitations apply:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/deactiva
 ---
 
 # Deactivate a budget for a Deadline Cloud queue
-<a name="deactivate-a-budget"></a>
 
 You can deactivate any active budget. Deactivating a budget changes its status from **Active** to **Inactive**. When a budget is deactivated, it no longer tracks a resource to that budget's amount.
 

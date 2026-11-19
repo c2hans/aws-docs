@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon MQ
-<a name="amazonmq"></a>
 
 Amazon MQ provides the following APIs for data retrieval.
 

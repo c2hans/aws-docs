@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST02-BP04 Implement groups and roles
-<a name="cost_govern_usage_groups_roles"></a>
 
 |  |
 | --- |

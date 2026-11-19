@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/doc
 ---
 
 # Document History for API Reference
-<a name="doc-history"></a>
 
 The following table describes the documentation for this release of AWS Elemental MediaPackage (MediaPackage).
 + **API version:** latest

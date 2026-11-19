@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/t
 ---
 
 # Telecom Charging (OCS/CHF) on AWS Outposts
-<a name="telecom-charging-ocs-chf-on-aws-outposts"></a>
 
 Publication date: **December 15, 2022 ([Diagram history](#diagram-history))**
 

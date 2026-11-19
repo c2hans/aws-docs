@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/setup-awscli.html
 ---
 
 # Set up the AWS Command Line Interface (AWS CLI)
-<a name="setup-awscli"></a>
 
 In this step, you download and configure the AWS CLI to use with Amazon Managed Service for Apache Flink.
 

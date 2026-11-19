@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/import-local-disk.html
 ---
 
 # Importing your data inventory from a local disk
-<a name="import-local-disk"></a>
 
 To import your inventory from a local disk, take the following steps:
 

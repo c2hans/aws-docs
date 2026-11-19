@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_AutonomousDa
 ---
 
 # AutonomousDatabaseConnectionStrings
-<a name="API_AutonomousDatabaseConnectionStrings"></a>
 
 The connection strings used to connect to an Autonomous Database.
 

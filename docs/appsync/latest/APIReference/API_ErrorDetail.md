@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ErrorDet
 ---
 
 # ErrorDetail
-<a name="API_ErrorDetail"></a>
 
 Contains the list of errors generated. When using JavaScript, this will apply to the request or response function evaluation.
 

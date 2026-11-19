@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/bestqueries.html
 ---
 
 # Best Practices for Queries
-<a name="bestqueries"></a>
 
 ## Example Queries
 <a name="example-queries"></a>

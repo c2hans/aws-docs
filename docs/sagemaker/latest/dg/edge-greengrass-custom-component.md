@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-greengrass-cust
 ---
 
 # Create the AWS IoT Greengrass V2 Components
-<a name="edge-greengrass-custom-component"></a>
 
 AWS IoT Greengrass uses *components*, a software module that is deployed to and runs on a AWS IoT Greengrass core device. You need (at a minimum) three components:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/e
 ---
 
 # Choosing a purchasing option for Amazon EC2
-<a name="ec2-purchasing-options-aws-how-to-choose"></a>
 
 |  |  |
 | --- |--- |

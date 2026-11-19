@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_G
 ---
 
 # GlobalSecondaryIndexWarmThroughputDescription
-<a name="API_GlobalSecondaryIndexWarmThroughputDescription"></a>
 
 The description of the warm throughput value on a global secondary index.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2V
 ---
 
 # AwsEc2VpcPeeringConnectionVpcInfoDetails
-<a name="API_AwsEc2VpcPeeringConnectionVpcInfoDetails"></a>
 
 Describes a VPC in a VPC peering connection.
 

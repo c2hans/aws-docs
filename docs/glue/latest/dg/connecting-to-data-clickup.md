@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-clicku
 ---
 
 # Connecting to ClickUp in AWS Glue Studio
-<a name="connecting-to-data-clickup"></a>
 
 ClickUp is work management organized as a workspace. Because you are a ClickUp user, you can connect AWS Glue to your ClickUp account. You can then use ClickUp as a data source in your AWS Glue ETL jobs to transfer data between ClickUp and AWS services or other supported applications.
 

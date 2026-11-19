@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_GetBotsCou
 ---
 
 # GetBotsCount
-<a name="API_GetBotsCount"></a>
 
 Retrieves the count of bots in a Wickr network, categorized by their status (pending, active, and total).
 

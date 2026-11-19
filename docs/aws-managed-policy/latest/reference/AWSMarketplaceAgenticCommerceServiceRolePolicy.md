@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMarketplaceAgenticCommerceServiceRolePolicy
-<a name="AWSMarketplaceAgenticCommerceServiceRolePolicy"></a>
 
 **Description**: Allows AWS Marketplace to process AgentCore payments for AWS Marketplace products in Amazon Bedrock AgentCore. AWS Marketplace reads product and offer details, creates and accepts purchase agreements on your behalf, and records your usage for billing.
 

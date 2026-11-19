@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ml-model-in
 ---
 
 # Local interpretability
-<a name="local"></a>
 
 The most popular methods for local interpretability of complex models are based on either Shapley Additive Explanations (SHAP) [[8](resources.md)] or integrated gradients [[11](resources.md)]. Each method has a number of variants that are specific to a model type. To interpret individual model predictions, we recommend the tree SHAP and Kernel SHAP methods.
 

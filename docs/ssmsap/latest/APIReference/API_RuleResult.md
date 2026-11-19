@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_RuleResul
 ---
 
 # RuleResult
-<a name="API_RuleResult"></a>
 
 Represents the result of a single rule within a configuration check.
 

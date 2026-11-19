@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Configure Microsoft Entra ID
-<a name="configure-entra-id"></a>
 
 This page provides detailed walkthroughs for federating the Amazon Cognito user pool with Microsoft Entra ID (formerly Azure Active Directory) using either OIDC or SAML 2.0. Microsoft Entra ID is the most common external identity provider for SDMA.
 

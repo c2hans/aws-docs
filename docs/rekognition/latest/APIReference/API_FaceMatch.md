@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Face
 ---
 
 # FaceMatch
-<a name="API_FaceMatch"></a>
 
 Provides face metadata. In addition, it also provides the confidence in the match of this face with the input face.
 

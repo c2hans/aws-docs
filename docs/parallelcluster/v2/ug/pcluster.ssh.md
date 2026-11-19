@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/pcluster.ssh.html
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # `pcluster ssh`
-<a name="pcluster.ssh"></a>
 
 Runs an `ssh` command with the user name and IP address of the cluster pre-populated. Arbitrary arguments are appended to the end of the `ssh` command. This command can be customized in the aliases section of the configuration file.
 

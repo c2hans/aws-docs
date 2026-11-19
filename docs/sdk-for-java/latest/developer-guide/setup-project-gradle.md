@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/setu
 ---
 
 # Set up a Gradle project that uses the AWS SDK for Java 2.x
-<a name="setup-project-gradle"></a>
 
 You can use [Gradle](https://gradle.org/) to set up and build AWS SDK for Java 2.x projects.
 

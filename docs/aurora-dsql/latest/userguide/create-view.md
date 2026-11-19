@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/create-view
 ---
 
 # `CREATE VIEW`
-<a name="create-view"></a>
 
 `CREATE VIEW` defines a new persistent view. Aurora DSQL does not support temporary views; only permanent views are supported.
 

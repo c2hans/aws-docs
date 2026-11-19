@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonS3TablesLakeFormationServiceRole
-<a name="AmazonS3TablesLakeFormationServiceRole"></a>
 
 **Description**: This managed policy grants AWS Lake Formation permissions to act on all table buckets, namespaces, and tables within the account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/listing-saa
 ---
 
 # Listing SaaS API-based AI agent products
-<a name="listing-saas-ai-agents"></a>
 
 As an AWS Marketplace seller, you can add your software as a service (SaaS) API-based AI agent or tools product to AWS Marketplace. This includes creating your product and integrating it with the appropriate AWS Marketplace API operations, based on your billing model.
 

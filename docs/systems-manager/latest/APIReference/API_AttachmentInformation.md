@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AttachmentInformation
-<a name="API_AttachmentInformation"></a>
 
 An attribute of an attachment, such as the attachment name.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only and will be deprecated in the f
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Reliability Pillar - AWS Well-Architected Framework
-<a name="welcome"></a>
 
 Publication date: **November 6, 2024** ([Document revisions](document-revisions.md))
 

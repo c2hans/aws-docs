@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # AssociateServiceQuotaTemplate
-<a name="API_AssociateServiceQuotaTemplate"></a>
 
 Associates your quota request template with your organization. When a new AWS account is created in your organization, the quota increase requests in the template are automatically applied to the account. You can add a quota increase request for any adjustable quota to your template.
 

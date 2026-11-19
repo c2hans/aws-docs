@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Alarm
 ---
 
 # Alarm
-<a name="API_Alarm"></a>
 
 Information about an alarm.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-co
 ---
 
 # Cost optimization recommendations columns
-<a name="table-dictionary-cor-columns"></a>
 
 | Column name | Description | Data type | Null value allowed |
 | --- | --- | --- | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedding-console
 ---
 
 # Enabling Generative BI features in embedded consoles for registered users
-<a name="embedding-consoles-genbi"></a>
 
 |  |
 | --- |

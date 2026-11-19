@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CloudWatc
 ---
 
 # CloudWatchDestination
-<a name="API_CloudWatchDestination"></a>
 
 An object that defines an Amazon CloudWatch destination for email events. You can use Amazon CloudWatch to monitor and gain insights on your email sending metrics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetin
 ---
 
 # AudioFeatures
-<a name="API_meeting-chime_AudioFeatures"></a>
 
 An optional category of meeting features that contains audio-specific configurations, such as operating parameters for Amazon Voice Focus.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Disabling automation rules in Security Hub
-<a name="securityhub-v2-automation-rules-disable"></a>
 
  This topic describes how to disable automation rules. When you disable automation rules, Security Hub stops applying them. You can disable automation rules any time and in the AWS Region where you created them.
 

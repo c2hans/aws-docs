@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/userguide/ag-svc-update.ht
 End of support notice: On October 7, 2026, AWS will end support for AWS Proton. After October 7, 2026, you will no longer be able to access the AWS Proton console or AWS Proton resources. Your deployed infrastructure will remain intact. For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # Edit a service
-<a name="ag-svc-update"></a>
 
 You can make the following edits to an AWS Proton service.
 + Edit the service description.

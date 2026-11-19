@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_servi
 ---
 
 # How Region switch in ARC works with IAM
-<a name="security_iam_service-with-iam-region-switch"></a>
 
 Before you use IAM to manage access to ARC, learn what IAM features are available to use with ARC.
 

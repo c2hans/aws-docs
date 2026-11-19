@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS06-BP03 Use deployment management systems
-<a name="ops_mit_deploy_risks_deploy_mgmt_sys"></a>
 
  Use deployment management systems to track and implement change. This reduces errors caused by manual processes and reduces the effort to deploy changes.
 

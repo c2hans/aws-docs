@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Cloudw
 ---
 
 # CloudwatchLogsExportConfiguration
-<a name="API_CloudwatchLogsExportConfiguration"></a>
 
 The configuration setting for the log types to be enabled for export to CloudWatch Logs for a specific DB instance or DB cluster.
 

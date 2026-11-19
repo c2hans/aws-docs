@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Bu
 ---
 
 # AwsS3BucketObjectLockConfigurationRuleDetails
-<a name="API_AwsS3BucketObjectLockConfigurationRuleDetails"></a>
 
  Specifies the S3 Object Lock rule for the specified object. In Amazon S3, Object Lock can help prevent objects from being deleted or overwritten for a fixed amount of time or indefinitely.
 

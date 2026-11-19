@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ImportBatch
-<a name="API_ImportBatch"></a>
 
 A collection of events being imported to CloudWatch
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/apg-wai
 ---
 
 # Lock:Relation
-<a name="apg-waits.lockrelation"></a>
 
 The `Lock:Relation` event occurs when a query is waiting to acquire a lock on a table or view (relation) that's currently locked by another transaction.
 

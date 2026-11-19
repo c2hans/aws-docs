@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Li
 ---
 
 # ListTargetsForPolicy
-<a name="API_ListTargetsForPolicy"></a>
 
 Lists all the roots, organizational units (OUs), and accounts that the specified policy is attached to.
 

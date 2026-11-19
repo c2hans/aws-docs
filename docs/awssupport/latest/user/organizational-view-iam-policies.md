@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/organizational-vi
 ---
 
 # Using IAM policies to allow access to organizational view
-<a name="organizational-view-iam-policies"></a>
 
 You can use the following AWS Identity and Access Management (IAM) policies to allow users or roles in your account access to organizational view in AWS Trusted Advisor.
 

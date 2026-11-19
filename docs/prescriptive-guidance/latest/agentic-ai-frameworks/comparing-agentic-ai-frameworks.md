@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Comparing agentic AI frameworks
-<a name="comparing-agentic-ai-frameworks"></a>
 
 When selecting an agentic AI framework for autonomous agent development, consider how each option aligns with your specific requirements. Evaluate not only technical capabilities but also organizational fit, including team expertise, existing infrastructure, and long-term maintenance requirements. Many organizations might benefit from a hybrid approach that uses multiple frameworks for different components of their autonomous AI solutions.
 

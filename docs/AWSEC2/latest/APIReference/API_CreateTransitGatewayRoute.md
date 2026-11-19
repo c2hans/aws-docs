@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTra
 ---
 
 # CreateTransitGatewayRoute
-<a name="API_CreateTransitGatewayRoute"></a>
 
 Creates a static route for the specified transit gateway route table.
 

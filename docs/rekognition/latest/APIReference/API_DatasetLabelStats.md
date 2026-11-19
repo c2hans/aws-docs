@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Data
 ---
 
 # DatasetLabelStats
-<a name="API_DatasetLabelStats"></a>
 
  Statistics about a label used in a dataset. For more information, see [DatasetLabelDescription](API_DatasetLabelDescription.md).
 

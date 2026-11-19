@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DataTabl
 ---
 
 # DataTableLockVersion
-<a name="API_DataTableLockVersion"></a>
 
 Contains lock version information for different levels of a data table hierarchy. Used for optimistic locking to prevent concurrent modification conflicts. Each component has its own lock version that changes when that component is modified.
 

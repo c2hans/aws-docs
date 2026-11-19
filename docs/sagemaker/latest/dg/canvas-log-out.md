@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-log-out.html
 ---
 
 # Logging out of Amazon SageMaker Canvas
-<a name="canvas-log-out"></a>
 
 After completing your work in Amazon SageMaker Canvas, you can log out or configure your application to automatically terminate the *workspace instance*. A workspace instance is dedicated for your use every time you launch a Canvas application, and you are billed for as long as the instance runs. Logging out or terminating the workspace instance stops the workspace instance billing. For more information, see [SageMaker Pricing](https://aws.amazon.com/sagemaker/pricing/).
 

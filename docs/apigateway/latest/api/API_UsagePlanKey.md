@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UsagePlanKey.h
 ---
 
 # UsagePlanKey
-<a name="API_UsagePlanKey"></a>
 
 Represents a usage plan key to identify a plan customer.
 

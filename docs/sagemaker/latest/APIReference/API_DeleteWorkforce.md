@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteWorkforce
-<a name="API_DeleteWorkforce"></a>
 
 Use this operation to delete a workforce.
 

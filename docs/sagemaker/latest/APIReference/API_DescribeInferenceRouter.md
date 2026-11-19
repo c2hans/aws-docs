@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeInferenceRouter
-<a name="API_DescribeInferenceRouter"></a>
 
 Returns information about an inference router, including the routing status of each destination.
 

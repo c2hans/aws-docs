@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/con
 ---
 
 # About control relationships
-<a name="control-relationships"></a>
 
 Certain controls stand in specified relationships to each other. These relationships are defined as follows:
 + **Alternative**: One control can replace or substitute the other. Example: An AWS Config rule and a Security Hub CSPM control using the same underlying Config rule.

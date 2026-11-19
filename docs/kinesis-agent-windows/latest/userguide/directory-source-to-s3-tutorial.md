@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/d
 ---
 
 # Tutorial: Stream JSON Log Files to Amazon S3 Using Kinesis Agent for Windows
-<a name="directory-source-to-s3-tutorial"></a>
 
 This tutorial presents detailed steps for setting up a data pipeline using Amazon Kinesis Agent for Microsoft Windows (Kinesis Agent for Windows).
 

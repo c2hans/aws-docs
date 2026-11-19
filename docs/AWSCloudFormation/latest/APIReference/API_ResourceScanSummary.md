@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ResourceScanSummary
-<a name="API_ResourceScanSummary"></a>
 
 A summary of the resource scan. This is returned by the `ListResourceScan` API action.
 

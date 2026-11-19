@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetAccou
 ---
 
 # GetAccountLimit
-<a name="API_GetAccountLimit"></a>
 
 Gets the specified limit for the current account, for example, the maximum number of health checks that you can create using the account.
 

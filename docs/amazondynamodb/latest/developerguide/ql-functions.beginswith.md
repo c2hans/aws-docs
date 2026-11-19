@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-
 ---
 
 # Using the BEGINS\_WITH function with PartiQL for DynamoDB
-<a name="ql-functions.beginswith"></a>
 
 Returns `TRUE` if the attribute specified begins with a particular substring.
 

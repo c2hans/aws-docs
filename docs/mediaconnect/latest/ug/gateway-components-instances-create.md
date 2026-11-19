@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/gateway-component
 ---
 
 # Registering a MediaConnect Gateway instance
-<a name="gateway-components-instances-create"></a>
 
 You can register an instance by running a custom Linux command on the device that will be hosting the instance. You generate the command by following the instance registration process in the AWS Management Console. Registering an instance using the AWS CLI is not currently supported.
 

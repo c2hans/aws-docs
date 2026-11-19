@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/forward-calls-
 ---
 
 # Forward calls in the Connect Customer CCP to a mobile device (iPhone, Android)
-<a name="forward-calls-to-mobile-device"></a>
 
 You can take the audio portion of a call on your mobile device, and at the same time use your computer to access the Contact Control Panel. This topic explains how to forward calls to your mobile device.
 

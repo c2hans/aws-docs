@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_S
 ---
 
 # SoftwareUpdatePreferences
-<a name="API_SoftwareUpdatePreferences"></a>
 
 A set of variables indicating the software update preferences for the gateway.
 

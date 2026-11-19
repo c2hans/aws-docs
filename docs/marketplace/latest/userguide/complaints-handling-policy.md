@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/complaints-
 ---
 
 # Submitting AWS Marketplace seller complaints for Amazon Payments Europe (APE)
-<a name="complaints-handling-policy"></a>
 
 As an AWS Marketplace seller, if you have any issues with the services provided by Amazon Payments Europe S.C.A (APE), you can submit a complaint. If you have any issues with the services provided by Amazon Payments Europe (APE), let us know. Your feedback helps us create a better experience for you and all of our buyers and sellers. The following sections provide you with details about the specific steps needed to submit complaints related to Amazon Payments Europe (APE) according to our complaints policy. This topic also provides you with information about the complaints policy for Amazon Payments Europe (APE), including resolution time frames and complaint escalation.
 

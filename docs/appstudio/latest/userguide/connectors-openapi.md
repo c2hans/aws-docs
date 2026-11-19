@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/connectors-op
 ---
 
 # Connect to services with OpenAPI
-<a name="connectors-openapi"></a>
 
 To connect App Studio with services using OpenAPI to enable builders to build applications that send requests and receive responses from the services, perform the following steps:
 

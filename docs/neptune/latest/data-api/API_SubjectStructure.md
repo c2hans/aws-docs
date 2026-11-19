@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_SubjectStruc
 ---
 
 # SubjectStructure
-<a name="API_SubjectStructure"></a>
 
 A subject structure.
 

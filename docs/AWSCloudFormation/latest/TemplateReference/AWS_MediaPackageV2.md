@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS Elemental MediaPackage V2
-<a name="AWS_MediaPackageV2"></a>
 
 **Resource types**
 + [AWS::MediaPackageV2::Channel](aws-resource-mediapackagev2-channel.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Planning your Solr migration
-<a name="planning"></a>
 
 Migrating from Solr to OpenSearch requires careful planning because there is no direct one-to-one mapping between the two systems. Each migration requires a custom approach that's tailored to your specific use case. This guide focuses on migrating search functionality.
 

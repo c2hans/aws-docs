@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/view-alloc-ipam.html
 ---
 
 # View IPAM pool allocations
-<a name="view-alloc-ipam"></a>
 
 There are two ways to view IPAM pool allocations:
 + **By pool** – Use [get-ipam-pool-allocations](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-ipam-pool-allocations.html) to view all allocations in a specific pool that you own or that has been shared with you. This includes allocations that are not directly owned by you.

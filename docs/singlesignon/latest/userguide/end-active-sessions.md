@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/end-active
 ---
 
 # View and end active sessions for your workforce users
-<a name="end-active-sessions"></a>
 
 As an IAM Identity Center administrator, you can view the list of your workforce users' active sessions, and if required, end one or more sessions for a user. For example, you might need to end a user's sessions when:
 + The user no longer requires the sessions.

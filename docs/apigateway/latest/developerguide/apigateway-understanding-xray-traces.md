@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # AWS X-Ray traces for Amazon API Gateway APIs
-<a name="apigateway-understanding-xray-traces"></a>
 
 This section discusses AWS X-Ray trace segments, subsegments, and other trace fields for Amazon API Gateway APIs.
 

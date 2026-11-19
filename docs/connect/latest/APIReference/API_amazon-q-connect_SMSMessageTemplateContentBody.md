@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # SMSMessageTemplateContentBody
-<a name="API_amazon-q-connect_SMSMessageTemplateContentBody"></a>
 
 The body to use in SMS messages.
 

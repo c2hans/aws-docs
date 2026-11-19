@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Infrastructure protection
-<a name="a-infrastructure-protection"></a>
 
 **Topics**
 + [SEC 5. How do you protect your network resources?](sec-05.md)

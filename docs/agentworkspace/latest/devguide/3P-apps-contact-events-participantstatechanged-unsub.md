@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Unsubscribe from participant state change events in Connect Customer agent workspace
-<a name="3P-apps-contact-events-participantstatechanged-unsub"></a>
 
 Unsubscribes from participant state change events. Pass the same handler and `participantId` that you passed to [onParticipantStateChanged()](3P-apps-contact-events-participantstatechanged-sub.md).
 

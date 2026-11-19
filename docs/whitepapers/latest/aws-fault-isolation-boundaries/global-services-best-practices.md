@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 ---
 
 # Global services best practices
-<a name="global-services-best-practices"></a>
 
  The following section documents the best practices for using each *global* service and several services that depend on a global service like Route 53. This guidance can help you safely take dependencies on global services while minimizing single points of failure in your applications.
 

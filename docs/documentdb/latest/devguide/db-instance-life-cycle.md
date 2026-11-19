@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/db-instance-l
 ---
 
 # Amazon DocumentDB instance lifecycle
-<a name="db-instance-life-cycle"></a>
 
 The lifecycle of an Amazon DocumentDB instance includes creating, modifying, maintaining and upgrading, performing backups and restores, rebooting, and deleting the instance. This section provides information about how to complete these processes.
 

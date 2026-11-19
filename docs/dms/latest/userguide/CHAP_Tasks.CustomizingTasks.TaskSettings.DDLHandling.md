@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.Customiz
 ---
 
 # Task settings for change processing DDL handling
-<a name="CHAP_Tasks.CustomizingTasks.TaskSettings.DDLHandling"></a>
 
 The following settings determine how AWS DMS handles data definition language (DDL) changes for target tables during change data capture (CDC). For information about how to use a task configuration file to set task settings, see [Task settings example](CHAP_Tasks.CustomizingTasks.TaskSettings.md#CHAP_Tasks.CustomizingTasks.TaskSettings.Example).
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkSecurityManager::Deployment AssociatedPolicy
-<a name="aws-properties-networksecuritymanager-deployment-associatedpolicy"></a>
 
 References a policy that a deployment applies. Use the `AssociatedPolicyList` property of the `AWS::NetworkSecurityManager::Deployment` resource to associate policies with a deployment.
 

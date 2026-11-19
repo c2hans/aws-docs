@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/opensearc
 ---
 
 # Integration with Amazon OpenSearch Service Ingestion pipeline
-<a name="opensearch-ingestion-pipeline-integration"></a>
 
 **Integration type:**Subscriber, Source
 

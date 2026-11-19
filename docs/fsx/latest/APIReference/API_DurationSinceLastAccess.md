@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DurationSinc
 ---
 
 # DurationSinceLastAccess
-<a name="API_DurationSinceLastAccess"></a>
 
 Defines the minimum amount of time since last access for a file to be eligible for release. Only files that have been exported to S3 and that were last accessed or modified before this point-in-time are eligible to be released from the Amazon FSx for Lustre file system.
 

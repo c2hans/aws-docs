@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/gs-st
 ---
 
 # Step 6: Next steps
-<a name="gs-step-next"></a>
 
 After you finished trying the examples projects, you can use your own images and datasets to create your own model. For more information, see [Understanding Amazon Rekognition Custom Labels](understanding-custom-labels.md).
 

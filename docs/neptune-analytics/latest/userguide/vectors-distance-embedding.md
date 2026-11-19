@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/vecto
 ---
 
 # The  `.vectors.distanceByEmbedding`  algorithm (deprecated)
-<a name="vectors-distance-embedding"></a>
 
  The `.vectors.distanceByEmbedding` algorithm computes the distance between an embedding vector and the embedding of an input node. The default distance is the squared L2 norm of the input (source) embedding vector and the embedding vector of the (target) input node.
 

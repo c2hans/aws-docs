@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AppSpe
 ---
 
 # AppSpecification
-<a name="API_AppSpecification"></a>
 
 Configuration to run a processing job in a specified container image.
 

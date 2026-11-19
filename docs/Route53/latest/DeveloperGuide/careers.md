@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/careers.ht
 ---
 
 # .careers
-<a name="careers"></a>
 
 Used for information about job recruitment.
 

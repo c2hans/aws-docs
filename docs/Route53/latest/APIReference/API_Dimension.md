@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Dimensio
 ---
 
 # Dimension
-<a name="API_Dimension"></a>
 
 For the metric that the CloudWatch alarm is associated with, a complex type that contains information about one dimension.
 

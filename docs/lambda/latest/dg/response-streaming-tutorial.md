@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/response-streaming-tuto
 ---
 
 # Tutorial: Creating a response streaming Lambda function with a function URL
-<a name="response-streaming-tutorial"></a>
 
 In this tutorial, you create a Lambda function defined as a .zip file archive with a function URL endpoint that returns a response stream. For more information about configuring function URLs, see [Function URLs](urls-configuration.md).
 

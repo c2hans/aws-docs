@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_TagResourc
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds tags to a resource.
 

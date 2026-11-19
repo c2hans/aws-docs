@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-a
 ---
 
 # Prerequisites
-<a name="agent-access-mcp-prerequisites"></a>
 
 This topic covers what you need in place before an agent can connect: the AWS account and Amazon WorkSpaces Applications fleet that host the desktop session, and the permissions and software your agent uses to reach it. Setting these up first lets your agent authenticate and operate the desktop without interruption.
 

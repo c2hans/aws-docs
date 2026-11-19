@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel05-b
 ---
 
 # REL05-BP04 Fail fast and limit queues
-<a name="rel05-bp04"></a>
 
  When a service cannot respond successfully, failing fast releases the resources tied to the request and lets a strained service recover. When a service can normally succeed but falls behind during spikes, a queue buffers requests so clients can move on. Both patterns improve reliability, but only when queue backlogs are managed so the service does not process stale requests.
 

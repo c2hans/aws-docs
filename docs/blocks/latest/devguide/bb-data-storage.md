@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/bb-data-storage.h
 ---
 
 # Data storage
-<a name="bb-data-storage"></a>
 
 This section covers Blocks for persisting and retrieving data.
 

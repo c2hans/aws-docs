@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Amazon Verified Permissions policy templates and template-linked policies
-<a name="policy-templates"></a>
 
 In Verified Permissions, policy templates are policies with placeholders for the `principal`, `resource`, or both. Policy templates alone can't be used to handle authorization requests. To handle authorization requests, a *template-linked policy* must be created based on a policy template. Policy templates allow a policy to be defined once and then used with multiple principals and resources. Updates to the policy template are reflected across all policies that use the template. For more information, see [Cedar policy templates](https://docs.cedarpolicy.com/policies/templates.html) in the Cedar policy language Reference Guide.
 

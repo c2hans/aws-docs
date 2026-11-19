@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Label
 ---
 
 # LabelActionMapping
-<a name="API_LabelActionMapping"></a>
 
 Maps a sensitivity label from Microsoft Purview to an enforcement action.
 

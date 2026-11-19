@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_SignPayload.html
 ---
 
 # SignPayload
-<a name="API_SignPayload"></a>
 
 Signs a binary payload and returns a signature envelope.
 

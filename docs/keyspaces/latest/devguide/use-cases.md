@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/use-cases.html
 ---
 
 # Amazon Keyspaces use cases
-<a name="use-cases"></a>
 
 The following are just some of the ways in which you can use Amazon Keyspaces:
 +  **Build applications that require low latency** – Process data at high speeds for applications that require single-digit-millisecond latency, such as industrial equipment maintenance, trade monitoring, fleet management, and route optimization.

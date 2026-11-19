@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Re-architecting as a Linux container
-<a name="refactor-linux"></a>
 
 By porting your .NET Framework applications to .NET Core or .NET 6, you can run your applications on multiple platforms, reduce your license costs, increase performance, and improve scalability.
 

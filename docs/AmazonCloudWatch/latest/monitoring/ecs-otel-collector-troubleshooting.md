@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ecs-o
 ---
 
 # Troubleshooting
-<a name="ecs-otel-collector-troubleshooting"></a>
 
 | Issue | Cause and resolution |
 | --- | --- |

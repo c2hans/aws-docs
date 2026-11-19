@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-synth.html
 ---
 
 # `cdk synthesize`
-<a name="ref-cli-cmd-synth"></a>
 
 Synthesize a CDK app to produce a cloud assembly, including an AWS CloudFormation template for each stack.
 

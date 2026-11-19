@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CapacityProviderVp
 ---
 
 # CapacityProviderVpcConfig
-<a name="API_CapacityProviderVpcConfig"></a>
 
 VPC configuration that specifies the network settings for compute instances managed by the capacity provider.
 

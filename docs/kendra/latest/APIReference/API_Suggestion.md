@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Suggestio
 ---
 
 # Suggestion
-<a name="API_Suggestion"></a>
 
 A single query suggestion.
 

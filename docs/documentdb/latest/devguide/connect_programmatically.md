@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/connect_progr
 ---
 
 # Connecting programmatically to Amazon DocumentDB
-<a name="connect_programmatically"></a>
 
 This section contains code examples that demonstrate how to connect to Amazon DocumentDB (with MongoDB compatibility) using several different languages. The examples are separated into two sections based on whether you are connecting to a cluster that has Transport Layer Security (TLS) enabled or disabled. By default, TLS is enabled on Amazon DocumentDB clusters. However, you can turn off TLS if you want. For more information, see [Encrypting data in transit](security.encryption.ssl.md).
 

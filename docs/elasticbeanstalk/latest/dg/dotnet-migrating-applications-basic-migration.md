@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-migrat
 ---
 
 # Performing basic IIS migrations
-<a name="dotnet-migrating-applications-basic-migration"></a>
 
 This section guides you through the process of migrating your IIS applications to Elastic Beanstalk using the **eb migrate** command.
 

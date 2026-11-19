@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIR
 ---
 
 # ErrorResponse
-<a name="API_ErrorResponse"></a>
 
 Error associated with a resource returned for a Get or List resource response.
 

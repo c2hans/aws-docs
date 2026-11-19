@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # ListOmniDashboards
-<a name="API_ListOmniDashboards"></a>
 
 Returns the dashboards in a space, optionally filtered by name prefix.
 

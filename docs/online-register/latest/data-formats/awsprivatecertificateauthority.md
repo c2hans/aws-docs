@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsp
 ---
 
 # Data retrieval APIs for AWS Private Certificate Authority
-<a name="awsprivatecertificateauthority"></a>
 
 AWS Private Certificate Authority provides the following APIs for data retrieval.
 

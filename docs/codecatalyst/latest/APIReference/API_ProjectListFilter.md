@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Pro
 ---
 
 # ProjectListFilter
-<a name="API_ProjectListFilter"></a>
 
 nformation about the filter used to narrow the results returned in a list of projects.
 

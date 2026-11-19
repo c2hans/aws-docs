@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_P
 ---
 
 # ProvisionedProductAttribute
-<a name="API_ProvisionedProductAttribute"></a>
 
 Information about a provisioned product.
 

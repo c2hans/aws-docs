@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/list-ta
 ---
 
 # ListTagsForResource
-<a name="list-tags-for-resource"></a>
 
 Use the `ListTagsForResource` API operation to list tags assigned to a resource.
 

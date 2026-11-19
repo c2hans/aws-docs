@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTOPS06-BP02 Evaluate and track ongoing agent performance
-<a name="agentops06-bp02"></a>
 
  Pre-deployment evaluation validates that an agent is ready to ship. Post-deployment evaluation validates that it still works. Without continuous assessment, gradual quality degradation from data drift, model updates, and shifting user patterns goes unnoticed until it is expensive to fix.
 

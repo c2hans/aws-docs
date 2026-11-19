@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Setting up
-<a name="optimized-log-analytics-prerequisites"></a>
 
 Before you create a domain with the Optimized engine, review the following requirements, limitations, and configuration options.
 

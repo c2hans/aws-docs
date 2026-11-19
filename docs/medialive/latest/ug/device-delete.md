@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/device-delete.html
 ---
 
 # Deleting a Link input device
-<a name="device-delete"></a>
 
 You don't delete Link input devices. Instead, if someone deregisters the Link device, the Link input device (which is the interface for the device in the console) no longer appears in the **Devices** section. Note that this is the only way that the Link input device is ever removed.
 + If someone powers down the device, the Link input device still appears in the list.

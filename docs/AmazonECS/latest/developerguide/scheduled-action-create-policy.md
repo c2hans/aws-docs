@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/schedule
 ---
 
 # Create a scheduled action for Amazon ECS service auto scaling
-<a name="scheduled-action-create-policy"></a>
 
 Create a scheduled action to have Amazon ECS increase or decrease the number of tasks that your service runs based on the date and time.
 

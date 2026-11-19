@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/backup_restor
 ---
 
 # Dumping, restoring, importing, and exporting data
-<a name="backup_restore-dump_restore_import_export_data"></a>
 
 You can use the `mongodump`, `mongorestore`, `mongoexport`, and `mongoimport` utilities to move data in and out of your Amazon DocumentDB cluster. This section discusses the purpose of each of these tools and configurations to help you achieve better performance.
 

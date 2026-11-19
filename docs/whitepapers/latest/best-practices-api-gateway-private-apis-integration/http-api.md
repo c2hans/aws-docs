@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-ga
 ---
 
 # HTTP API
-<a name="http-api"></a>
 
  HTTP API is a type of API Gateway that delivers enhanced features, improved performance, and an easier developer experience compared to REST APIs for certain use cases. In addition, HTTP APIs come with reduced request pricing.
 

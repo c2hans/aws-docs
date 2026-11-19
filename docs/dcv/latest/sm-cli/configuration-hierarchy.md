@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/configuration-hierarch
 ---
 
 # Configuring the CLI settings
-<a name="configuration-hierarchy"></a>
 
 The Amazon DCV Session Manager uses credentials and configuration settings that are located in multiple places. These include user environment variables, local Amazon DCV Session Manager configuration file, or explicitly declared on the command line as a parameter. Certain locations take precedence over others.
 

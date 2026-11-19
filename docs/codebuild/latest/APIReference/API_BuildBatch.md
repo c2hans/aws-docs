@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BuildB
 ---
 
 # BuildBatch
-<a name="API_BuildBatch"></a>
 
 Contains information about a batch build.
 

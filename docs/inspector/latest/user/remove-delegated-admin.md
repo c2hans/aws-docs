@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/remove-delegated-a
 ---
 
 # Removing the delegated administrator in Amazon Inspector
-<a name="remove-delegated-admin"></a>
 
  You might need to remove the Amazon Inspector delegated administrator account. You can do this from the AWS Organizations management account. When you remove the Amazon Inspector delegated administrator account, Amazon Inspector is still activated in the account and in all of its member accounts. The delegated administrator account and all of its member accounts become standalone accounts and retain their original scan settings.
 

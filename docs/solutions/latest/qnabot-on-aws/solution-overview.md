@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/solution-
 ---
 
 # Create a custom question and answer chatbot
-<a name="solution-overview"></a>
 
 The QnABot on AWS guidance is a multi-channel, multi-language conversational chatbot powered by generative artificial intelligence (generative AI) that responds to your customers' questions, answers, and feedback. It is built on [Amazon Lex](https://aws.amazon.com/lex/), [Amazon Polly](https://aws.amazon.com/polly/), [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/), [Amazon Translate](https://aws.amazon.com/translate/), [Amazon Comprehend](https://aws.amazon.com/comprehend/), [Amazon Kendra](https://aws.amazon.com/kendra/), and [Amazon Bedrock](https://aws.amazon.com/bedrock/). This guidance helps you to quickly deploy self-service conversational artificial intelligence (AI) on multiple channels, including your contact centers, websites, social media channels, SMS text messaging, or Amazon Alexa without programming.
 

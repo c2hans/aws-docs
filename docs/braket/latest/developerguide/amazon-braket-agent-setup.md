@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/amazon-brak
 ---
 
 # Setting up your coding agent for Amazon Braket
-<a name="amazon-braket-agent-setup"></a>
 
 Amazon Braket is a fully managed quantum computing service. With AI coding agents, you can accelerate quantum development. Your agent can help you build circuits, find devices, run quantum tasks and hybrid jobs, and track and control costs.
 

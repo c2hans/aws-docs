@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/bu
 ---
 
 # Build an MLOps workflow by using Amazon SageMaker AI and Azure DevOps
-<a name="build-an-mlops-workflow-by-using-amazon-sagemaker-and-azure-devops"></a>
 
 *Deepika Kumar, Sara van de Moosdijk, and Philips Kokoh Prasetyo, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/configure-operating-
 ---
 
 # Configure RHEL 7/8/9 for SAP
-<a name="configure-operating-system-rhel-for-sap-7.x"></a>
 
 **Important**
 In the following steps, you need to update several configuration files. We recommend taking a backup of the files before you modify them. This will help you to revert to the previous configuration if needed.

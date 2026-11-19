@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # PutDialRequestBatch
-<a name="API_connect-outbound-campaigns_PutDialRequestBatch"></a>
 
 Takes in a list of [DialRequests](https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API_DialRequest.html) to be dialed as part of an outbound campaign. For more information about using PutDialRequestBatch, see [Best practices for using PutDialRequestBatch for outbound campaign calling](https://docs.aws.amazon.com/connect/latest/devguide/api-outbound-campaign-calls.html).
 

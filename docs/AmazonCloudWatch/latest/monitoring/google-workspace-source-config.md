@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/googl
 ---
 
 # Source configuration for Google Workspace
-<a name="google-workspace-source-config"></a>
 
 ## Supported API and platform versions
 <a name="google-workspace-supported-versions"></a>

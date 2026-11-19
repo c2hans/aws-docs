@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MCPS
 ---
 
 # MCPServerSigV4AuthorizationConfig
-<a name="API_MCPServerSigV4AuthorizationConfig"></a>
 
 Authorization configuration for SigV4-authenticated MCP server.
 

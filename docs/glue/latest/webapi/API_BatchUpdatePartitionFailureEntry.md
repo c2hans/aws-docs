@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchUpdatePartit
 ---
 
 # BatchUpdatePartitionFailureEntry
-<a name="API_BatchUpdatePartitionFailureEntry"></a>
 
 Contains information about a batch update partition error.
 

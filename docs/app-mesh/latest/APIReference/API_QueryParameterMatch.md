@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_QueryPa
 ---
 
 # QueryParameterMatch
-<a name="API_QueryParameterMatch"></a>
 
 An object representing the query parameter to match.
 

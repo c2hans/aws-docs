@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/co
 ---
 
 # Code examples for Amazon Managed Workflows for Apache Airflow Serverless
-<a name="code-examples"></a>
 
 Use these code examples to write YAML workflow definitions for common tasks in Amazon Managed Workflows for Apache Airflow Serverless (Amazon MWAA Serverless). Each example includes a full workflow definition, the permissions that it needs, and the steps to run it and clean up its resources.
 

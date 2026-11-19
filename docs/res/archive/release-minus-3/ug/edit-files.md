@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/edit-file
 ---
 
 # Edit files
-<a name="edit-files"></a>
 
 You can edit the content of text-based files within the web portal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/H
 ---
 
 # How CloudFront processes HTTP 4xx and 5xx status codes from your origin
-<a name="HTTPStatusCodes"></a>
 
 When CloudFront requests an object from your Amazon S3 bucket or custom origin server, your origin sometimes returns an HTTP 4xx or 5xx status code, which indicates that an error has occurred. CloudFront behavior depends on:
 + Whether you have configured custom error pages

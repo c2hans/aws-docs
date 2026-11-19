@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_WafActi
 ---
 
 # WafAction
-<a name="API_WafAction"></a>
 
 Details about the action that CloudFront or AWS WAF takes when a web request matches the conditions in the rule.
 

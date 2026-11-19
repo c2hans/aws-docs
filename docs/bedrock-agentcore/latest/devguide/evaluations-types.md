@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evalua
 ---
 
 # Evaluation types
-<a name="evaluations-types"></a>
 
 AgentCore Evaluations provides three evaluation types, which differ in when and how the evaluation is performed:
 

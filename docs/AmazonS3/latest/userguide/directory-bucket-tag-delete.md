@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 ---
 
 # Deleting a tag from a directory bucket
-<a name="directory-bucket-tag-delete"></a>
 
 You can remove tags from S3 directory buckets. An AWS tag is a key-value pair that holds metadata about resources, in this case Amazon S3 directory buckets. For more information about tags, see [Using tags with S3 directory buckets](directory-buckets-tagging.md).
 

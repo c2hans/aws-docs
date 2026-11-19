@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_SiteMapsC
 ---
 
 # SiteMapsConfiguration
-<a name="API_SiteMapsConfiguration"></a>
 
 Provides the configuration information for the sitemap URLs to crawl.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/getting-started.h
 ---
 
 # Getting started with MediaConvert
-<a name="getting-started"></a>
 
 MediaConvert takes in an input file and turns it into one or more output files, based on the instructions and transcoding settings that you provide.
 

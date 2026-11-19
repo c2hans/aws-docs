@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/year.html
 ---
 
 # $year
-<a name="year"></a>
 
 The `$year` operator in Amazon DocumentDB extracts the year component from a date or timestamp.
 

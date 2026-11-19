@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingReg
 ---
 
 # ListThingRegistrationTaskReports
-<a name="API_ListThingRegistrationTaskReports"></a>
 
 Information about the thing registration tasks.
 

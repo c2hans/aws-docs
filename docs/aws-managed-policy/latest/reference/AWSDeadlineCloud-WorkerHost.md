@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDeadlineCloud-WorkerHost
-<a name="AWSDeadlineCloud-WorkerHost"></a>
 
 **Description**: Provides access for AWS Deadline Cloud worker hosts to join a fleet in a farm.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-que
 ---
 
 # Querying vectors
-<a name="s3-vectors-query"></a>
 
 You can run a similarity query with the [QueryVectors](https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_QueryVectors.html) API operation, where you specify the query vector, the number of relevant results to return (the top K nearest neighbors), and the index ARN. Additionally, you can use metadata filters in a query, to search only the vectors that match the filter. If you make a request to filter on a non-filterable metadata field, the request will return a `400 Bad Request` error. On `CLASSIC` indexes, you can set the optional `queryMode` parameter to run a single query with `ENHANCED` behavior without changing the index. If you don't specify `queryMode`, the query uses the index's own index mode. For more information about metadata filtering, see [Metadata filtering](s3-vectors-metadata-filtering.md).
 

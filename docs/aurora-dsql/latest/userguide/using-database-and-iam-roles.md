@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/using-datab
 ---
 
 # Using database roles and IAM authentication
-<a name="using-database-and-iam-roles"></a>
 
 Aurora DSQL supports authentication using both IAM roles and IAM users. You can use either method to authenticate and access Aurora DSQL databases.
 

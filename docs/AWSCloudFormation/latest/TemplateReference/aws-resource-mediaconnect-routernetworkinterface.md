@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::RouterNetworkInterface
-<a name="aws-resource-mediaconnect-routernetworkinterface"></a>
 
  The `AWS::MediaConnect::RouterNetworkInterface` resource defines how the router communicates with the outside world. Each router I/O needs a network interface, which determines how the router I/O connects to other resources and what security measures protect the connection.
 

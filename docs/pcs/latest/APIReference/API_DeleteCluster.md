@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_DeleteCluste
 ---
 
 # DeleteCluster
-<a name="API_DeleteCluster"></a>
 
 Deletes a cluster and all its linked resources. You must delete all queues and compute node groups associated with the cluster before you can delete the cluster.
 

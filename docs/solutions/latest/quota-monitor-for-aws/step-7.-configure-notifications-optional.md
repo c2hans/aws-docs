@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/s
 ---
 
 # Step 7. Configure notifications (optional)
-<a name="step-7.-configure-notifications-optional"></a>
 
 Follow these steps to configure and mute specific notifications for the Quota Monitor solution.
 

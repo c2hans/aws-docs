@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # Generating Clinical Documents with `$document`
-<a name="reference-fhir-operations-document"></a>
 
 AWS HealthLake now supports the `$document` operation for Composition resources, enabling you to generate a complete clinical document by bundling the Composition with all its referenced resources into a single cohesive package. This operation is essential for healthcare applications that need to:
 + Create standardized clinical documents

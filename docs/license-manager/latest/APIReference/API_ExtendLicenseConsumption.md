@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ExtendLicenseConsumption
-<a name="API_ExtendLicenseConsumption"></a>
 
 Extends the expiration date for license consumption.
 

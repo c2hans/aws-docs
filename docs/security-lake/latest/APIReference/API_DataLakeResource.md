@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Da
 ---
 
 # DataLakeResource
-<a name="API_DataLakeResource"></a>
 
 Provides details of Amazon Security Lake object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-free
 ---
 
 # Free trials of products listed on AWS Marketplace
-<a name="buyer-free-trials"></a>
 
 Some products listed on AWS Marketplace offer free trials. The free trial enables you to try the software before you buy it. Free trials are limited to a certain amount of free usage, or for a specific amount of time. You can't pause a free trial period once it starts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/b
 ---
 
 # Getting started with the BVR motion
-<a name="bvr-getting-started"></a>
 
 To participate in the Business Value Realization (BVR) motion, submit an application through AWS Partner Central. Your eligibility is evaluated automatically when you apply.
 

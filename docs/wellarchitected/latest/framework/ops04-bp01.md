@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops04-b
 ---
 
 # OPS04-BP01 Employ and test safe deployment strategies
-<a name="ops04-bp01"></a>
 
  Safe deployment practices control how a change reaches customers, so that a defect affects the fewest of them before you catch it. When you release changes in increments and check health at each step, you limit the scope of impact and shorten recovery time.
 

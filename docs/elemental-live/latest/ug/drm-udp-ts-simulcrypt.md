@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/drm-udp-ts-simu
 ---
 
 # UDP/TS outputs with DVB Simulcrypt Standard
-<a name="drm-udp-ts-simulcrypt"></a>
 
 Encryption mode: Always AES CBC as described in ATIS-0800006
 

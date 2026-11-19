@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetP
 ---
 
 # GetPrivateGraphEndpoint
-<a name="API_GetPrivateGraphEndpoint"></a>
 
 Retrieves information about a specified private endpoint.
 

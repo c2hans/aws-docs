@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/do
 ---
 
 # Document history
-<a name="document-history"></a>
 
 This topic describes important changes to the AWS SDK for Kotlin Developer Guide over the course of its history.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeAcme
 ---
 
 # DescribeAcmeAccount
-<a name="API_DescribeAcmeAccount"></a>
 
 Returns detailed metadata about the specified ACME account, including its status, public key thumbprint, and associated external account binding.
 

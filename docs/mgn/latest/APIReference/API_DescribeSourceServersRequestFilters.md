@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DescribeSour
 ---
 
 # DescribeSourceServersRequestFilters
-<a name="API_DescribeSourceServersRequestFilters"></a>
 
 Request to filter Source Servers list.
 

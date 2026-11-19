@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # ConnectAttachmentOptions
-<a name="API_ConnectAttachmentOptions"></a>
 
 Describes a core network Connect attachment options.
 

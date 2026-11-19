@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/operation-list-ipam.
 ---
 
 # Amazon VPC IPAM actions
-<a name="operation-list-ipam"></a>
 
 The following API actions are available for Amazon VPC IP Address Manager (IPAM). For more information, see the [IPAM User Guide](https://docs.aws.amazon.com/vpc/latest/ipam/).
 

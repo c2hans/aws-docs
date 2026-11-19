@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # UpdateDirectQueryDataSource
-<a name="API_UpdateDirectQueryDataSource"></a>
 
  Updates the configuration or properties of an existing direct query data source in Amazon OpenSearch Service.
 

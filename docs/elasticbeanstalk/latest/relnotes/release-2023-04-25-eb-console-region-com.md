@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk new console design released on April 25, 2023
-<a name="release-2023-04-25-eb-console-region-com"></a>
 
 AWS Elastic Beanstalk new console design
 

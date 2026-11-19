@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/security-vpc-bpa-ba
 ---
 
 # VPC BPA basics
-<a name="security-vpc-bpa-basics"></a>
 
 This section covers important details about VPC BPA, including which services support it and how you can work with it.
 

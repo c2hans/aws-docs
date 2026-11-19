@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSAuditManagerAdministratorAccess
-<a name="AWSAuditManagerAdministratorAccess"></a>
 
 **Description**: Provides administrative access to enable or disable AWS Audit Manager, update settings, and manage assessments, controls, and frameworks
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-lens-s
 ---
 
 # Understanding S3 Storage Lens table schemas
-<a name="storage-lens-s3-tables-schemas"></a>
 
 When exporting S3 Storage Lens metrics to S3 tables, the data is organized into three separate table schemas: storage metrics, bucket property metrics, and activity metrics.
 

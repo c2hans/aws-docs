@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # CPU and memory right-sizing
-<a name="cpu-and-memory-right-sizing"></a>
 
 Over-provisioned requests are the \#1 hidden cost in Kubernetes. Pods requesting more than they use prevent bin-packing and force unnecessary nodes.
 

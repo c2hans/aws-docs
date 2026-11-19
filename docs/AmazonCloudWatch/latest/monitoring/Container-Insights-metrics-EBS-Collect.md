@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Collect Amazon EBS NVMe driver metrics
-<a name="Container-Insights-metrics-EBS-Collect"></a>
 
 For CloudWatch agent to collect AWS NVMe driver metrics for Amazon EBS volumes attached to an Amazon EC2 instance, add the `diskio` section inside the `metrics_collected` section of the CloudWatch agent configuration file.
 

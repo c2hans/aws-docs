@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-toggle.htm
 ---
 
 # JSON.TOGGLE
-<a name="json-toggle"></a>
 
 Toggle boolean values between true and false at the path.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ECSServiceRecommendation
-<a name="API_ECSServiceRecommendation"></a>
 
  Describes an Amazon ECS service recommendation.
 

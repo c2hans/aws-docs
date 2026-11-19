@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_W
 ---
 
 # WorkerSummary
-<a name="API_WorkerSummary"></a>
 
 The summary of details for a worker.
 

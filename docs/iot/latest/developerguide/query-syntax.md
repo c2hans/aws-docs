@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/query-syntax.h
 ---
 
 # Query syntax
-<a name="query-syntax"></a>
 
 In fleet indexing, you use a query syntax to specify queries.
 

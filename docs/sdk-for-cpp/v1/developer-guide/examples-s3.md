@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/examples-
 ---
 
 # Amazon S3 code examples using the AWS SDK for C\+\+
-<a name="examples-s3"></a>
 
 [Amazon S3](https://aws.amazon.com/s3) is object storage built to store and retrieve any amount of data from anywhere. There are multiple classes provided by the AWS SDK for C\+\+ to interface with Amazon S3.
 

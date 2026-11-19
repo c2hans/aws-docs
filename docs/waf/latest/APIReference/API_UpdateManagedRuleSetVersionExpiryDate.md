@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_UpdateManage
 ---
 
 # UpdateManagedRuleSetVersionExpiryDate
-<a name="API_UpdateManagedRuleSetVersionExpiryDate"></a>
 
 Updates the expiration information for your managed rule set. Use this to initiate the expiration of a managed rule group version. After you initiate expiration for a version, AWS WAF excludes it from the response to [ListAvailableManagedRuleGroupVersions](API_ListAvailableManagedRuleGroupVersions.md) for the managed rule group.
 

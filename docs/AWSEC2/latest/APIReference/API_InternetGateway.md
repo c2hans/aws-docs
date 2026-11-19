@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InternetG
 ---
 
 # InternetGateway
-<a name="API_InternetGateway"></a>
 
 Describes an internet gateway.
 

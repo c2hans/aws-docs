@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Subs
 ---
 
 # SubsidiaryAuthorizationCreatedDateFilter
-<a name="API_SubsidiaryAuthorizationCreatedDateFilter"></a>
 
 The filter for the date a subsidiary authorization was created.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Workspac
 ---
 
 # WorkspaceSearchFilter
-<a name="API_WorkspaceSearchFilter"></a>
 
 Defines filters to apply when searching for workspaces, such as tag-based filters.
 

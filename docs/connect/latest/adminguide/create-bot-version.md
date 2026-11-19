@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-bot-ver
 ---
 
 # Create bot versions and aliases in Connect Customer
-<a name="create-bot-version"></a>
 
 To control which bot implementation your client uses, you create versions and aliases.
 + A version acts as a numbered snapshot of your work.

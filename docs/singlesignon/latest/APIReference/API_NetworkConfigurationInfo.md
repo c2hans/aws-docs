@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Net
 ---
 
 # NetworkConfigurationInfo
-<a name="API_NetworkConfigurationInfo"></a>
 
 The network access controls for your Identity Center instance. These controls restrict which networks can reach your instance and applications.
 

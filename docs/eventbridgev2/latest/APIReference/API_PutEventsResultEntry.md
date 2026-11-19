@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Pu
 ---
 
 # PutEventsResultEntry
-<a name="API_PutEventsResultEntry"></a>
 
 Result entry for a published event. The position of each entry in the response list aligns 1:1 with the corresponding request entry.
 

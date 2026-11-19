@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_FlowDe
 ---
 
 # FlowDefinitionSummary
-<a name="API_FlowDefinitionSummary"></a>
 
 Contains summary information about the flow definition.
 

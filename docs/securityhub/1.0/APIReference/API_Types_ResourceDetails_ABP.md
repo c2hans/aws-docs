@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Types_R
 ---
 
 # Amazon API Gateway
-<a name="API_Types_ResourceDetails_ABP"></a>
 
 ****Amazon API Gateway objects****
 + [AwsApiGatewayAccessLogSettings](API_AwsApiGatewayAccessLogSettings.md)

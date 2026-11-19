@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Delete
 ---
 
 # DeleteReport
-<a name="API_DeleteReport"></a>
 
  Deletes a report.
 

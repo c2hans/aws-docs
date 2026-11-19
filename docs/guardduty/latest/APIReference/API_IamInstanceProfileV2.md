@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_IamIns
 ---
 
 # IamInstanceProfileV2
-<a name="API_IamInstanceProfileV2"></a>
 
 Contains information about the IAM instance profile involved in a GuardDuty finding, including unique identifiers of the Amazon EC2 instances.
 

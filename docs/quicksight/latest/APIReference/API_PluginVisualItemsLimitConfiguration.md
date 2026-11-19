@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Plugi
 ---
 
 # PluginVisualItemsLimitConfiguration
-<a name="API_PluginVisualItemsLimitConfiguration"></a>
 
 A query limits configuration.
 

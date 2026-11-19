@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon EMR on EKS (EMR Containers)
-<a name="amazonemroneksemrcontainers"></a>
 
 Amazon EMR on EKS (EMR Containers) provides the following APIs for data retrieval.
 

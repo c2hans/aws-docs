@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_HttpEnd
 ---
 
 # HttpEndpointRequestConfiguration
-<a name="API_HttpEndpointRequestConfiguration"></a>
 
 The configuration of the HTTP endpoint request.
 

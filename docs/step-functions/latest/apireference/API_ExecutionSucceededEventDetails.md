@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_E
 ---
 
 # ExecutionSucceededEventDetails
-<a name="API_ExecutionSucceededEventDetails"></a>
 
 Contains details about the successful termination of the execution.
 

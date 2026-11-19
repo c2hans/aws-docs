@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsr
 ---
 
 # Data retrieval APIs for AWS Recycle Bin
-<a name="awsrecyclebin"></a>
 
 AWS Recycle Bin provides the following APIs for data retrieval.
 

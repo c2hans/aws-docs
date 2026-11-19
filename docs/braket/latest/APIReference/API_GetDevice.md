@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_GetDevice
 ---
 
 # GetDevice
-<a name="API_GetDevice"></a>
 
 Retrieves the devices available in Amazon Braket.
 

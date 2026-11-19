@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/pricing-con
 ---
 
 # Container products pricing for AWS Marketplace
-<a name="pricing-container-products"></a>
 
 On AWS Marketplace, you can list free products, Bring Your Own License model (BYOL) products, and paid products for Amazon Elastic Container Service (Amazon ECS), Amazon Elastic Kubernetes Service (Amazon EKS), and AWS Fargate. You can set only one price per product. This topic outlines the available pricing models for container products.
 

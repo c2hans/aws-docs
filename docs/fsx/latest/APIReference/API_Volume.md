@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_Volume.html
 ---
 
 # Volume
-<a name="API_Volume"></a>
 
 Describes an Amazon FSx volume.
 

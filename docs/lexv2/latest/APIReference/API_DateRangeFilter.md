@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DateRangeF
 ---
 
 # DateRangeFilter
-<a name="API_DateRangeFilter"></a>
 
 The object used for specifying the data range that the customer wants Amazon Lex to read through in the input transcripts.
 

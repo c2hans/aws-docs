@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/delete-listener.ht
 ---
 
 # Delete a listener for your VPC Lattice service
-<a name="delete-listener"></a>
 
 You can delete a listener at any time. When you delete a listener, all its rules are automatically deleted.
 

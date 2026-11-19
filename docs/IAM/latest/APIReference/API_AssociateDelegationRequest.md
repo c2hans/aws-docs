@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_AssociateDel
 ---
 
 # AssociateDelegationRequest
-<a name="API_AssociateDelegationRequest"></a>
 
 Associates a delegation request with the current identity.
 

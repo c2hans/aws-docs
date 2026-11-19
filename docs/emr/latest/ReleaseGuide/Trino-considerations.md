@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Trino-considerat
 ---
 
 # Trino Considerations
-<a name="Trino-considerations"></a>
 
 Consider the following when you run Trino on Amazon EMR.
 

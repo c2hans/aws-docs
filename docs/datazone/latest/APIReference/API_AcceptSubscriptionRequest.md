@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AcceptS
 ---
 
 # AcceptSubscriptionRequest
-<a name="API_AcceptSubscriptionRequest"></a>
 
 Accepts a subscription request to a specific asset.
 

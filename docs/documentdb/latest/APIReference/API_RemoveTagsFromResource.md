@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Remov
 ---
 
 # RemoveTagsFromResource
-<a name="API_RemoveTagsFromResource"></a>
 
 Removes metadata tags from an Amazon DocumentDB resource.
 

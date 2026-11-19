@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-la
 ---
 
 # Prerequisites and limitations
-<a name="prereqs"></a>
 
 ## Prerequisites
 <a name="prerequisites.d1dbd0ad-da1e-5c84-b917-6efbfd56a796"></a>

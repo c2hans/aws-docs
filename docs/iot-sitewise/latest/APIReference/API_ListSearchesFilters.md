@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListSearchesFilters
-<a name="API_ListSearchesFilters"></a>
 
 Optional filters for ListSearches. When multiple filters are set, a search must match all of them.
 

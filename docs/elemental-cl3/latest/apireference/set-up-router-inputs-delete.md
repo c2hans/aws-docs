@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # DELETE: Delete a Router Input
-<a name="set-up-router-inputs-delete"></a>
 
 Delete the specified input on the specified router. To get the ID of the input, use GET Router List and look for the <id> element (not the <input\_number> element\!).
 

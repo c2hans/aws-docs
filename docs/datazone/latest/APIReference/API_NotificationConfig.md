@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Notific
 ---
 
 # NotificationConfig
-<a name="API_NotificationConfig"></a>
 
 The notification configuration for a notebook run in Amazon SageMaker Unified Studio.
 

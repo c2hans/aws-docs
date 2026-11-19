@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Troubleshoot common environment-variable format errors
-<a name="job-runs-apache-livy-troubleshooting"></a>
 
 When you input Livy and Spark configurations, there are environment-variable formats that aren't supported and can cause errors. The procedure takes you through a series of steps to help ensure that you use correct formats.
 

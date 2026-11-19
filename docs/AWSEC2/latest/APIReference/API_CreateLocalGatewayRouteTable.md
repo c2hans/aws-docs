@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLoc
 ---
 
 # CreateLocalGatewayRouteTable
-<a name="API_CreateLocalGatewayRouteTable"></a>
 
  Creates a local gateway route table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Operation
 ---
 
 # Amazon Kendra Intelligent Ranking
-<a name="API_Operations_Amazon_Kendra_Intelligent_Ranking"></a>
 
 The following actions are supported by Amazon Kendra Intelligent Ranking:
 +  [CreateRescoreExecutionPlan](API_Ranking_CreateRescoreExecutionPlan.md)

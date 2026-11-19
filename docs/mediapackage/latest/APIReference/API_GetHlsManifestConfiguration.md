@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Get
 ---
 
 # GetHlsManifestConfiguration
-<a name="API_GetHlsManifestConfiguration"></a>
 
 Retrieve the HTTP live streaming (HLS) manifest configuration.
 

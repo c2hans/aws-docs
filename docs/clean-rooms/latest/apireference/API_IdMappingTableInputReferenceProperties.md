@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_IdMa
 ---
 
 # IdMappingTableInputReferenceProperties
-<a name="API_IdMappingTableInputReferenceProperties"></a>
 
 The input reference properties for the ID mapping table.
 

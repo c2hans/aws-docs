@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetAp
 ---
 
 # GetApprovalRuleTemplate
-<a name="API_GetApprovalRuleTemplate"></a>
 
 Returns information about a specified approval rule template.
 

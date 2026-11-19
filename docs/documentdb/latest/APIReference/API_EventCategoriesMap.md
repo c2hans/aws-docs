@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Event
 ---
 
 # EventCategoriesMap
-<a name="API_EventCategoriesMap"></a>
 
 An event source type, accompanied by one or more event category names.
 

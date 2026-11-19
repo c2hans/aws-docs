@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Get
 ---
 
 # GetLandingZone
-<a name="API_GetLandingZone"></a>
 
 Returns details about the landing zone. Displays a message in case of error.
 

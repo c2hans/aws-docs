@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_GetTab
 ---
 
 # GetTableReplication
-<a name="API_s3Buckets_GetTableReplication"></a>
 
 Retrieves the replication configuration for a specific table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_TraceLo
 ---
 
 # TraceLocation
-<a name="API_TraceLocation"></a>
 
 Information about where trace data is stored for debugging and monitoring.
 

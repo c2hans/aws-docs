@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/rules.html
 ---
 
 # ListRules
-<a name="rules"></a>
 
 ## URI
 <a name="rules-url"></a>

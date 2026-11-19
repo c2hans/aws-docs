@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # RfcActionState
-<a name="API_RfcActionState"></a>
 
 The action state of the RFC.
 

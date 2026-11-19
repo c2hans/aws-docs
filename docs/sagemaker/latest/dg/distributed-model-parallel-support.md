@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-model-pa
 ---
 
 # Supported Frameworks and AWS Regions
-<a name="distributed-model-parallel-support"></a>
 
 Before using the SageMaker model parallelism library, check the supported frameworks and instance types, and determine if there are enough quotas in your AWS account and AWS Region.
 

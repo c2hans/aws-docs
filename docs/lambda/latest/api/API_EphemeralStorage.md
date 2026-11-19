@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_EphemeralStorage.h
 ---
 
 # EphemeralStorage
-<a name="API_EphemeralStorage"></a>
 
-The size of the function's `/tmp` directory in MB. The default value is 512, but can be any whole number between 512 and 10,240 MB. For more information, see [Configuring ephemeral storage (console)](https://docs.aws.amazon.com/lambda/latest/dg/configuration-function-common.html#configuration-ephemeral-storage).
+The size of the function's `/tmp` directory in MB. The default value is 512, but can be any whole number between 512 and 10,240 MB. For functions that use `AcceleratorConfig`, the maximum is 32,768 MB. For more information, see [Configuring ephemeral storage (console)](https://docs.aws.amazon.com/lambda/latest/dg/configuration-function-common.html#configuration-ephemeral-storage).
 
 ## Contents
 <a name="API_EphemeralStorage_Contents"></a>
@@ -13,7 +12,7 @@ The size of the function's `/tmp` directory in MB. The default value is 512, but
  ** Size **   <a name="lambda-Type-EphemeralStorage-Size"></a>
 The size of the function's `/tmp` directory.
 Type: Integer
-Valid Range: Minimum value of 512. Maximum value of 10240.
+Valid Range: Minimum value of 512. Maximum value of 32768.
 Required: Yes
 
 ## See Also

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportIns
 ---
 
 # ImportInstanceVolumeDetailItem
-<a name="API_ImportInstanceVolumeDetailItem"></a>
 
 Describes an import volume task.
 

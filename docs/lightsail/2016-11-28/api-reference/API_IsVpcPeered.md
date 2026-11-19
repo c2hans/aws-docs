@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_I
 ---
 
 # IsVpcPeered
-<a name="API_IsVpcPeered"></a>
 
 Returns a Boolean value indicating whether your Lightsail VPC is peered.
 

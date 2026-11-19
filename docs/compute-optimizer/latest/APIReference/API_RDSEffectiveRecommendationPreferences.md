@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RDSEffectiveRecommendationPreferences
-<a name="API_RDSEffectiveRecommendationPreferences"></a>
 
  Describes the effective recommendation preferences for Amazon Aurora and RDS databases.
 

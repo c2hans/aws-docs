@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/google-analytic
 ---
 
 # Google Analytics
-<a name="google-analytics"></a>
 
 The following are the requirements and connection instructions for using Google Analytics with Amazon AppFlow.
 

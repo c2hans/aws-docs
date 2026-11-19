@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/configuration-alia
 ---
 
 # Configuration alias with MediaTailor use example
-<a name="configuration-aliases-examples"></a>
 
 The following examples show how a complete MediaTailor configuration with configuration aliases, a session initialization request with aliases, and the processing flow for aliases.
 

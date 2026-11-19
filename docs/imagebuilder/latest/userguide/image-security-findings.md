@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/image-secu
 ---
 
 # Manage security findings for Image Builder images
-<a name="image-security-findings"></a>
 
 Image Builder integrates with Amazon Inspector to scan the images that you build for software vulnerabilities. Amazon Inspector is a paid service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Accou
 ---
 
 # AccountSettings
-<a name="API_AccountSettings"></a>
 
 A container for account-level settings in AWS Device Farm.
 

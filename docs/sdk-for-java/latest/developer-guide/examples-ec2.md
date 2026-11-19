@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Work with Amazon EC2
-<a name="examples-ec2"></a>
 
 This section provides examples of programming [Amazon EC2](https://docs.aws.amazon.com/ec2/) that use the AWS SDK for Java 2.x.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/cryptographic-details/kms-abb
 ---
 
 # Abbreviations
-<a name="kms-abbreviations"></a>
 
 The following list illuminates abbreviations referenced in this document.
 

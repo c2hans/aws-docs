@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # Layer 4: Repeatable application patterns for common generative AI use cases
-<a name="patterns"></a>
 
 As enterprises adopt generative AI, clear patterns have emerged for how organizations are using this technology to drive business value. These common use cases demonstrate proven approaches to applying generative AI across different business functions. These use cases can help organizations identify and prioritize their own implementation opportunities.
 

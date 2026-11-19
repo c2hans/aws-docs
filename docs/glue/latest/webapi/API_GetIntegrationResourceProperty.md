@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetIntegrationRes
 ---
 
 # GetIntegrationResourceProperty
-<a name="API_GetIntegrationResourceProperty"></a>
 
 This API is used for fetching the `ResourceProperty` of the AWS Glue connection (for the source) or AWS Glue database ARN (for the target)
 

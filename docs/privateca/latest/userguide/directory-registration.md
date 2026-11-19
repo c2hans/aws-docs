@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/directory-reg
 ---
 
 # Manage directory registrations
-<a name="directory-registration"></a>
 
 ------
 #### [ Console ]

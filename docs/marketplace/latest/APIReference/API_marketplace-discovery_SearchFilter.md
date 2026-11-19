@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # SearchFilter
-<a name="API_marketplace-discovery_SearchFilter"></a>
 
 A filter used to narrow search results by attribute, such as category, pricing model, or fulfillment type.
 

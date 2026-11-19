@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloud
 ---
 
 # CloudWatch Omni
-<a name="cloudwatch-omni"></a>
 
 CloudWatch Omni is an AI-powered observability experience in Amazon CloudWatch for your applications and AI agents, either alone or together. You reach Omni through a dedicated URL for your organization and sign in with the identities you already manage; Omni is accessible outside the AWS Management Console.
 

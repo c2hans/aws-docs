@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeD
 ---
 
 # Using a read replica to reduce downtime when upgrading an RDS for MariaDB database
-<a name="USER_UpgradeDBInstance.MariaDB.ReducedDowntime"></a>
 
 In most cases, a blue/green deployment is the best option to reduce downtime when upgrading a MariaDB DB instance. For more information, see [Using Amazon RDS Blue/Green Deployments for database updates](blue-green-deployments.md).
 

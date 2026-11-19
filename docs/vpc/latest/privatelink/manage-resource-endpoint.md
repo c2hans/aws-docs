@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/manage-resource-e
 ---
 
 # Manage resource endpoints
-<a name="manage-resource-endpoint"></a>
 
 After you create a resource endpoint, you can manage its security groups, private DNS settings, or tags.
 

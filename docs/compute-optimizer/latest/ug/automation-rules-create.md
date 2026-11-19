@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/automation-r
 ---
 
 # Creating automation rules
-<a name="automation-rules-create"></a>
 
 You can use an automation rule to manage automated implementation of recommended actions in Compute Optimizer. For background information about how automation rules work, see [Automation rules](automation-rules.md).
 

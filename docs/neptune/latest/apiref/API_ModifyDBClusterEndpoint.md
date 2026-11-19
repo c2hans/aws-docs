@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_ModifyDBCluste
 ---
 
 # ModifyDBClusterEndpoint
-<a name="API_ModifyDBClusterEndpoint"></a>
 
 Modifies the properties of an endpoint in an Amazon Neptune DB cluster.
 

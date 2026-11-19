@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Create an enhanced client and `DynamoDbTable`
-<a name="ddb-en-client-getting-started-dynamodbTable"></a>
 
 ## Create an enhanced client
 <a name="ddb-en-client-getting-started-dynamodbTable-eclient"></a>

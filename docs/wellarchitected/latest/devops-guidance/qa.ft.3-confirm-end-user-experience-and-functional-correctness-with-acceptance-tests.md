@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 ---
 
 # [QA.FT.3] Confirm end-user experience and functional correctness with acceptance tests
-<a name="qa.ft.3-confirm-end-user-experience-and-functional-correctness-with-acceptance-tests"></a>
 
  **Category:** FOUNDATIONAL
 

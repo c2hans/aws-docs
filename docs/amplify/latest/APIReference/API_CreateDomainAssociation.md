@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_CreateDo
 ---
 
 # CreateDomainAssociation
-<a name="API_CreateDomainAssociation"></a>
 
 Creates a new domain association for an Amplify app. This action associates a custom domain with the Amplify app
 

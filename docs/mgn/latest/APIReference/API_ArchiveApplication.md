@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ArchiveAppli
 ---
 
 # ArchiveApplication
-<a name="API_ArchiveApplication"></a>
 
 Archive application.
 

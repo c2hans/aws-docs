@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy
 ---
 
 # Using the ECS managed Docker platform branch in Elastic Beanstalk
-<a name="create_deploy_docker_ecs"></a>
 
 This topic provides an overview of the Elastic Beanstalk ECS managed Docker platform branches for Amazon Linux 2 and Amazon Linux 2023. It also provides configuration information that's specific to the Docker ECS managed platform.
 

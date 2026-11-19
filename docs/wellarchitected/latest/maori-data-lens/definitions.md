@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/maori-data-lens/d
 ---
 
 # Definitions
-<a name="definitions"></a>
 
  Builders, architects, chief information/privacy officers (CIOs/CPOs), and technologists can use the following definitions as a starting point to understand commonly used Māori terms and phrases relating to protocol (tikanga), principles, and values from a Māori viewpoint (te ao Māori).
 +  **Hapū:** A collection of whānau with a shared genealogy at a smaller unit than an Iwi. A collective of hapū form an iwi.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/outbound-campa
 ---
 
 # Outbound campaign metrics in Connect Customer
-<a name="outbound-campaign-metrics"></a>
 
 The following outbound campaign driven metrics are available on the [outbound campaigns performance dashboard](outbound-campaigns-performance-dashboard.md) and by using the GetMetricDataV2 API.
 

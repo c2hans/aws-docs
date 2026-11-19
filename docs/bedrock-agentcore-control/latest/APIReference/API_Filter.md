@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
  The filter that applies conditions to agent traces during online evaluation to determine which traces should be evaluated.
 

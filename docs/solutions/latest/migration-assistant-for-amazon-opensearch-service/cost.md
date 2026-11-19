@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services used while running this solution. As of this revision, the cost for running this solution with the default settings in the US East (N. Virginia) Region is approximately **$2,990 for a zero-downtime migration over 15 days with 100 TB of existing data and 15 MBps of live traffic**. A **backfill-only migration** of the same 100 TB costs approximately **$1,430 over 7 days** because it eliminates the Capture Proxy, Kafka, and Traffic Replayer components entirely. In this model, the initial snapshot and bulk RFS backfill run while the source cluster remains live (no downtime). The maintenance window is limited to the time required to pause ingestion, take a final incremental snapshot of the delta (changes accumulated during backfill), migrate that delta with RFS at higher parallelism, and cut over — typically **1–2 hours** depending on the write volume to the source during the backfill period. These costs are for the resources shown in the sample cost table.
 

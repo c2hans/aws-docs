@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-get-adapter.
 ---
 
 # Get adapter
-<a name="textract-get-adapter"></a>
 
 You can retrieve configuration information for an adapter at any time by calling the [GetAdapter](https://docs.aws.amazon.com/textract/latest/APIReference/API_GetAdapter.html) operation and specifying an AdapterId. GetAdapter returns information on AdapterName, Description, CreationTime, AutoUpdate status, and FeatureTypes.
 

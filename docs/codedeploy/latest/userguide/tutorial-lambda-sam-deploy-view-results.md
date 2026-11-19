@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-lam
 ---
 
 # Step 4: View your deployment results
-<a name="tutorial-lambda-sam-deploy-view-results"></a>
 
 In this step, you view the results of your deployment. If your deployment succeeds, you can confirm that your updated Lambda function receives production traffic. If your deployment fails, you can use CloudWatch Logs to view the output of the validation tests in the Lambda function that run during your deployment's lifecycle hoooks.
 

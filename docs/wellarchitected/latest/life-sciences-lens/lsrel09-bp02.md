@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSREL09-BP02 Implement safe deployment strategies (like blue/green or canary)
-<a name="lsrel09-bp02"></a>
 
  Adopt deployment patterns that minimize blast radius and allow rapid diversion to the last known good state. Phased rollouts provide early detection of issues and enable quick rollback without impacting users or downstream regulatory workflows.
 

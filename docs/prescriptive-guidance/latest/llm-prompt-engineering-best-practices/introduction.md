@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/llm-prompt-
 ---
 
 # Prompt engineering best practices to avoid prompt injection attacks on modern LLMs
-<a name="introduction"></a>
 
 *Ivan Cui, Andrei Ivanovic, and Samantha Stuart, Amazon Web Services*
 

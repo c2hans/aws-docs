@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_Entity
 ---
 
 # Entity
-<a name="API_Entity"></a>
 
  Provides information about an extracted medical entity.
 

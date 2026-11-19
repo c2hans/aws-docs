@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-install
 ---
 
 # Installing the Amazon DCV Server on Linux
-<a name="setting-up-installing-linux"></a>
 
 You can install the Amazon DCV server on a Linux server to run your Amazon DCV sessions on it. The installation steps depend on the display protocol your operating system uses. Find your operating system in the following table to see its display protocol, then follow the linked installation instructions.
 

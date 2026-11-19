@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/targets.html
 ---
 
 # Targets for AWS FIS
-<a name="targets"></a>
 
 A target is one or more AWS resources on which an action is performed by AWS Fault Injection Service (AWS FIS) during an experiment. Targets can be in the same AWS account as the experiment, or in a different account using a multi-account experiment. To learn more about targeting resources in a different account, see [Working with multi-account experiments for AWS FIS](multi-account.md).
 

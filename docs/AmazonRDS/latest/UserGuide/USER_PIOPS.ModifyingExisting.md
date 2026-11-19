@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.Mo
 ---
 
 # Increasing DB instance storage capacity
-<a name="USER_PIOPS.ModifyingExisting"></a>
 
 To increase storage capacity for your DB instance, use either of the following techniques:
 

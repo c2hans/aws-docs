@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetAutom
 ---
 
 # GetAutomatedReasoningPolicyTestResult
-<a name="API_GetAutomatedReasoningPolicyTestResult"></a>
 
 Retrieves the test result for a specific Automated Reasoning policy test. Returns detailed validation findings and execution status.
 

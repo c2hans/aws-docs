@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Column Definitions
-<a name="column-definitions"></a>
 
 ## summary\_view
 <a name="summary_view"></a>

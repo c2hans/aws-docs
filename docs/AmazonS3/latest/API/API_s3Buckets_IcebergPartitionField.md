@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Iceber
 ---
 
 # IcebergPartitionField
-<a name="API_s3Buckets_IcebergPartitionField"></a>
 
 Defines a single partition field in an Iceberg partition specification.
 

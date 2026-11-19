@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_T
 ---
 
 # TimeRange
-<a name="API_TimeRange"></a>
 
 A time range with a start and end time.
 

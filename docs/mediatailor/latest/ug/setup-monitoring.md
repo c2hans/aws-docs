@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/setup-monitoring.h
 ---
 
 # Set up monitoring and scaling for CDN and MediaTailor integrations
-<a name="setup-monitoring"></a>
 
 Effective monitoring and scaling strategies are crucial for maintaining optimal performance and viewer experience with your AWS Elemental MediaTailor content delivery network (CDN) integration. Implement these approaches to ensure your CDN integration performs reliably at scale.
 

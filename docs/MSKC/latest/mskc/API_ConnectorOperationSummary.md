@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_ConnectorOperationS
 ---
 
 # ConnectorOperationSummary
-<a name="API_ConnectorOperationSummary"></a>
 
 Summary of a connector operation.
 

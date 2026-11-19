@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-directo
 ---
 
 # Creating a directory bucket in a Local Zone
-<a name="create-directory-bucket-LZ"></a>
 
 In Local Zones, you can create directory buckets to store and retrieve objects in a specific data perimeter to help meet your data residency use cases. S3 directory buckets are the only supported bucket type in Local Zones, and contain a bucket location type called `LocalZone`. A directory bucket name consists of a base name that you provide and a suffix that contains the Zone ID of your bucket location and `--x-s3`. You can obtain a list of Local Zone IDs by using the [DescribeAvailabilityZones](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAvailabilityZones.html) API operation. For more information, see [Directory bucket naming rules](directory-bucket-naming-rules.md).
 

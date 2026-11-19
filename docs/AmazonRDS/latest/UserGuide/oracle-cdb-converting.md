@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-cdb-co
 ---
 
 # Converting an RDS for Oracle non-CDB to a CDB
-<a name="oracle-cdb-converting"></a>
 
 You can change the architecture of an Oracle database from the non-CDB architecture to the Oracle multitenant architecture, also called the *CDB architecture*, with the `modify-db-instance` command. In most cases, this technique is preferable to creating a new CDB and importing data. The conversion operation incurs downtime.
 

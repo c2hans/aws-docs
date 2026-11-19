@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-ex-condit
 ---
 
 # Create a flow with a condition node
-<a name="flows-ex-condition"></a>
 
 The following image shows a flow with one condition node returns one of three possible values based on the condition that is fulfilled:
 

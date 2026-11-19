@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.ACG.8] Conduct regular scans to identify and remove unused resources
-<a name="ag.acg.8-conduct-regular-scans-to-identify-and-remove-unused-resources"></a>
 
  **Category:** RECOMMENDED
 

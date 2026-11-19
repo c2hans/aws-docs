@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTo
 ---
 
 # RouteTollPass
-<a name="API_RouteTollPass"></a>
 
 Details if the toll rate can be a pass that supports multiple trips.
 

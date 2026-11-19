@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/UseCase_CustomJa
 ---
 
 # Process data with a custom JAR
-<a name="UseCase_CustomJar"></a>
 
 A custom JAR runs a compiled Java program that you can upload to Amazon S3. You should compile the program against the version of Hadoop you want to launch, and submit a `CUSTOM_JAR` step to your Amazon EMR cluster. For more information about how to compile a JAR file, see [Build binaries using Amazon EMR](emr-build-binaries.md).
 

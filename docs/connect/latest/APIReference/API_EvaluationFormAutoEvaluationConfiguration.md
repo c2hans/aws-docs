@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormAutoEvaluationConfiguration
-<a name="API_EvaluationFormAutoEvaluationConfiguration"></a>
 
 The automatic evaluation configuration of an evaluation form.
 

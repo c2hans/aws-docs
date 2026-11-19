@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/cross-account-p
 ---
 
 # Prerequisites
-<a name="cross-account-prereqs"></a>
 
 Before your AWS account can share Data Catalog resources (catalogs, databases and tables) with another account or principals in another account, and before you can access the resources shared with your account, the following prerequisites must be met.
 

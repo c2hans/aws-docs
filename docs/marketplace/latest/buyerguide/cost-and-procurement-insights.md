@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/cost-and-p
 ---
 
 # Managing costs
-<a name="cost-and-procurement-insights"></a>
 
 AWS Marketplace provides the following tools to help manage your costs:
 + The **Procurement insights** dashboard shows you the cost-analysis and agreement data for all of the AWS accounts in your organization.

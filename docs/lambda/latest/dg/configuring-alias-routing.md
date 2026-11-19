@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/configuring-alias-routi
 ---
 
 # Implement Lambda canary deployments using a weighted alias
-<a name="configuring-alias-routing"></a>
 
 You can use a weighted alias to split traffic between two different [versions](configuration-versions.md) of the same function. With this approach, you can test new versions of your functions with a small percentage of traffic and quickly roll back if necessary. This is known as a [canary deployment](https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/canary-deployments.html). Canary deployments differ from blue/green deployments by exposing the new version to only a portion of requests rather than switching all traffic at once.
 

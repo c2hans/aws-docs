@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_C
 ---
 
 # CreateVectorIndexAction
-<a name="API_CreateVectorIndexAction"></a>
 
 A new vector index to be added to a table.
 

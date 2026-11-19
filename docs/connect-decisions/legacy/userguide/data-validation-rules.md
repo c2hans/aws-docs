@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data-
 ---
 
 # Data Validation Rules
-<a name="data-validation-rules"></a>
 
 The validations performed prior to forecast creation are below. For more information, see [Demand Planning](required_entities.md).
 

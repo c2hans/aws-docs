@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/clickup-support.html
 ---
 
 # AWS Glue support for ClickUp
-<a name="clickup-support"></a>
 
 AWS Glue supports ClickUp as follows:
 

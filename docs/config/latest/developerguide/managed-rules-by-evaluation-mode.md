@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/managed-rul
 ---
 
 # List of AWS Config Managed Rules by Evaluation Mode
-<a name="managed-rules-by-evaluation-mode"></a>
 
 AWS Config currently supports the following managed rules. Before using these rules, see [Considerations](evaluate-config.md#evaluate-config-considerations).
 

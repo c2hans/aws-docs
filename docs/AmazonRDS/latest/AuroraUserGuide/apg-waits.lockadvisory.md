@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/apg-wai
 ---
 
 # Lock:advisory
-<a name="apg-waits.lockadvisory"></a>
 
 The `Lock:advisory` event occurs when a PostgreSQL application uses a lock to coordinate activity across multiple sessions.
 

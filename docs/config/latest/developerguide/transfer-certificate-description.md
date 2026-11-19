@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/transfer-ce
 ---
 
 # transfer-certificate-description
-<a name="transfer-certificate-description"></a>
 
 Checks if AWS Transfer Family certificates have a description. The rule is NON\_COMPLIANT if configuration.Description does not exist.
 

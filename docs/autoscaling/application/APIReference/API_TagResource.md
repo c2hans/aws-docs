@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds or edits tags on an Application Auto Scaling scalable target.
 

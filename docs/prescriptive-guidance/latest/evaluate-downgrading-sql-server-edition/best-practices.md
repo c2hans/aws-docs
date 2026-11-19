@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-do
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 ## Best practices for downgrading SQL Server Enterprise edition to Standard edition
 <a name="best-practices-for-downgrading-sql-server-enterprise-edition-to-standard-edition.2a97e35e-8c21-52c4-b963-93458f1d782b"></a>

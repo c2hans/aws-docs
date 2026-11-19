@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/anthropic-support.html
 ---
 
 # AWS Glue support for Anthropic
-<a name="anthropic-support"></a>
 
 AWS Glue supports Anthropic as follows:
 

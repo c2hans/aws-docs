@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/webex-connection-options.
 ---
 
 # Webex connection options
-<a name="webex-connection-options"></a>
 
 The following are connection options for Webex:
 + `ENTITY_NAME` – (Required) Used for Read. The entity path of the Webex object to read. Use the nested forms described in [Reading from Webex entities](webex-reading-from-entities.md) for `messages` and `team-memberships`.

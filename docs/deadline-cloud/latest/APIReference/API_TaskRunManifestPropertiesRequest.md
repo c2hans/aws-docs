@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_T
 ---
 
 # TaskRunManifestPropertiesRequest
-<a name="API_TaskRunManifestPropertiesRequest"></a>
 
 The output manifest properties reported by the worker agent for a completed task run.
 

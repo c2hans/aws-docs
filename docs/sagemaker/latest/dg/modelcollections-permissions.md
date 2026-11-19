@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/modelcollections-per
 ---
 
 # Set up prerequisite permissions
-<a name="modelcollections-permissions"></a>
 
 Create a custom policy which includes the following required Resource Groups actions:
 + `resource-groups:CreateGroup`

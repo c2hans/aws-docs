@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/asff-resour
 ---
 
 # Container object in ASFF
-<a name="asff-resourcedetails-container"></a>
 
 The following example shows the AWS Security Finding Format (ASFF) syntax for the `Container` object. To view descriptions of `Container` attributes, see [ContainerDetails](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ContainerDetails.html) in the *AWS Security Hub API Reference*. For background information about ASFF, see [AWS Security Finding Format (ASFF)](securityhub-findings-format.md).
 

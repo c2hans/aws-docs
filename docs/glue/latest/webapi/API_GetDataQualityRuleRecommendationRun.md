@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetDataQualityRul
 ---
 
 # GetDataQualityRuleRecommendationRun
-<a name="API_GetDataQualityRuleRecommendationRun"></a>
 
 Gets the specified recommendation run that was used to generate rules.
 

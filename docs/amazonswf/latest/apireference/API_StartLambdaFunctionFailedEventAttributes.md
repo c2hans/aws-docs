@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_StartL
 ---
 
 # StartLambdaFunctionFailedEventAttributes
-<a name="API_StartLambdaFunctionFailedEventAttributes"></a>
 
 Provides the details of the `StartLambdaFunctionFailed` event. It isn't set for other event types.
 

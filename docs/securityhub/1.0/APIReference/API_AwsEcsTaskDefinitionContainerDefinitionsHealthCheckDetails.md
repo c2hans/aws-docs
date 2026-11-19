@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetails
-<a name="API_AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetails"></a>
 
 The container health check command and associated configuration parameters for the container.
 

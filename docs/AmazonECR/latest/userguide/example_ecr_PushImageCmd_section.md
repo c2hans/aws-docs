@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/example_ecr_P
 ---
 
 # Use `PushImageCmd` with an AWS SDK
-<a name="example_ecr_PushImageCmd_section"></a>
 
 The following code examples show how to use `PushImageCmd`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet-web-tr
 ---
 
 # Transform your .NET code
-<a name="dotnet-web-transform-code"></a>
 
 In the *Transform* phase, the agent transforms your repositories.
 

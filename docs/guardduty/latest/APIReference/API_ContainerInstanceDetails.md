@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Contai
 ---
 
 # ContainerInstanceDetails
-<a name="API_ContainerInstanceDetails"></a>
 
 Contains information about the Amazon EC2 instance that is running the Amazon ECS container.
 

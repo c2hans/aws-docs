@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/monitoring-cloudw
 ---
 
 # MediaConnect output health event
-<a name="monitoring-cloudwatch-events-output-health"></a>
 
 AWS Elemental MediaConnect publishes output health events after an output health indicator state changes.
 

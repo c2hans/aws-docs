@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/script-other-use-ca
 ---
 
 # Other use cases for Data Lifecycle Manager pre and post scripts
-<a name="script-other-use-cases"></a>
 
 In addition to using pre and post scripts for automating application-consistent snapshots, you can use pre and post scripts together, or individually, to automate other administrative tasks before or after snapshot creation. For example:
 + Using a pre script to apply patches before creating snapshots. This can help you create snapshots after applying your regular weekly or monthly software updates.

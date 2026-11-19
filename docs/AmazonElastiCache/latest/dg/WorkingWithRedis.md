@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WorkingWithR
 ---
 
 # Overall best practices
-<a name="WorkingWithRedis"></a>
 
 Below you can find information about best practices for using the Valkey, Memcached, and Redis OSS interfaces within ElastiCache.
 + **Use cluster-mode enabled configurations** – Cluster-mode enabled allows the cache to scale horizontally to achieve higher storage and throughput than a cluster-mode disabled configuration. ElastiCache serverless is only available in a cluster-mode enabled configuration.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Share your Elastic Load Balancing trust store for Application Load Balancers
-<a name="trust-store-sharing"></a>
 
 Elastic Load Balancing integrates with AWS Resource Access Manager (AWS RAM) to enable trust store sharing. AWS RAM is a service that enables you to securely share your Elastic Load Balancing trust store resources across AWS accounts and within your organization or organizational units (OUs). If you have multiple accounts, you can create a trust store once and use AWS RAM to make it usable by other accounts. If your account is managed by AWS Organizations, you can share trust stores with all the accounts in the organization or only accounts within specified organizational units (OUs).
 

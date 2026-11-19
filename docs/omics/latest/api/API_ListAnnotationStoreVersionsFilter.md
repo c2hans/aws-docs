@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListAnnotationStore
 ---
 
 # ListAnnotationStoreVersionsFilter
-<a name="API_ListAnnotationStoreVersionsFilter"></a>
 
 Use filters to focus the returned annotation store versions on a specific parameter, such as the status of the annotation store.
 

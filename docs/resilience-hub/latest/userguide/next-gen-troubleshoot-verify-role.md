@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Verifying role configuration
-<a name="next-gen-troubleshoot-verify-role"></a>
 
 Check that your invoker role is correctly configured using the following AWS CLI commands.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fee
 ---
 
 # How schedule actions work
-<a name="feed-scheduling-how-it-works"></a>
 
 A schedule action has the following parts:
 

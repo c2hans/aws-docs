@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Magne
 ---
 
 # MagneticStoreRejectedDataLocation
-<a name="API_MagneticStoreRejectedDataLocation"></a>
 
 The location to write error reports for records rejected, asynchronously, during magnetic store writes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # MessageTemplateOrderField
-<a name="API_amazon-q-connect_MessageTemplateOrderField"></a>
 
 The message template fields to order the message template query results by. The following is the list of supported field names:
 + name

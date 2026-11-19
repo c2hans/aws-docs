@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Di
 ---
 
 # DisassociateChannel
-<a name="API_DisassociateChannel"></a>
 
 Disassociates a Channel from a specified `NotificationConfiguration`. Supported Channels include Amazon Q Developer in chat applications, the AWS Console Mobile Application, and emails (notifications-contacts).
 

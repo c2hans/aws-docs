@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # ListMetrics
-<a name="API_ListMetrics"></a>
 
 List the specified metrics. You can use the returned metrics with [GetMetricData](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricData.html) or [GetMetricStatistics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricStatistics.html) to get statistical data.
 
@@ -81,6 +80,7 @@ Required: No
  ** [RecentlyActive](#API_ListMetrics_RequestSyntax) **   <a name="ACW-ListMetrics-request-RecentlyActive"></a>
 To filter the results to show only metrics that have had data points published in the past three hours, specify this parameter with a value of `PT3H`. This is the only valid value for this parameter.
 The results that are returned are an approximation of the value you specify. There is a low probability that the returned results include metrics with last published data as much as 50 minutes more than the specified time interval.
+A namespace can contain many metrics that published data in the past two weeks but not in the past three hours. In this case, a page of results can contain few or no metrics and still include a `NextToken`. You need to continue making calls with the returned `NextToken` until no token is returned. If you need a continuous feed of active metrics across namespaces, use metric streams. For more information, see [Use metric streams](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Metric-Streams.html).
 Type: String
 Valid Values: `PT3H`
 Required: No

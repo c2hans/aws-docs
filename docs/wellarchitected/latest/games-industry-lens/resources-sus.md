@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Resources
-<a name="resources-sus"></a>
 
  Refer to the following resources to learn more about our best practices related to sustainability.
 +  [UN: Gaming industry spotlights threats to the planet](https://www.unep.org/news-and-stories/story/gaming-industry-spotlights-threats-planet)

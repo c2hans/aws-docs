@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/sales
 ---
 
 # Source configuration for Salesforce ELF
-<a name="salesforce-elf-source-config"></a>
 
 ## Prerequisites
 <a name="salesforce-elf-prerequisites"></a>

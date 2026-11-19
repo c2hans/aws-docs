@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/streams-consume
 ---
 
 # Using AWS CloudFormation to Set Up Neptune-to-Neptune Replication with the Streams Consumer Application
-<a name="streams-consumer-setup"></a>
 
 You can use an CloudFormation template to set up the Neptune streams consumer application to support Neptune-to-Neptune replication.
 

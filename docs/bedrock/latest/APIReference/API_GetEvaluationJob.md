@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetEvalu
 ---
 
 # GetEvaluationJob
-<a name="API_GetEvaluationJob"></a>
 
 Gets information about an evaluation job, such as the status of the job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/reference.html
 ---
 
 # MediaLive Reference
-<a name="reference"></a>
 
 This chapter contains reference tables for different features and functions of AWS Elemental MediaLive.
 

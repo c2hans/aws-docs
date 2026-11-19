@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AdminDeleteSoftwareToken
-<a name="API_AdminDeleteSoftwareToken"></a>
 
 Deletes a user's registered time-based one-time password (TOTP) multi-factor authentication (MFA) factor, also known as a software token. After this operation, the user can no longer sign in with TOTP MFA, and can register a new TOTP factor with `AssociateSoftwareToken`. Use this operation when a user loses access to their TOTP-generating device, for example, a lost or reset phone, and needs to register a new one.
 

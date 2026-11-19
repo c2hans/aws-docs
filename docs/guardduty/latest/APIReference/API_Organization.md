@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # Organization
-<a name="API_Organization"></a>
 
 Contains information about the ISP organization of the remote IP address.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/privatelink.htm
 ---
 
 # AWS Lake Formation and interface VPC endpoints (AWS PrivateLink)
-<a name="privatelink"></a>
 
 Amazon VPC is an AWS service that you can use to launch AWS resources in a virtual network that you define. With a VPC, you have control over your network settings, such the IP address range, subnets, route tables, and network gateways.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/configure-advan
 ---
 
 # Configure advanced prompts
-<a name="configure-advanced-prompts"></a>
 
 You can configure advanced prompts in either the AWS Management Console or through the API.
 

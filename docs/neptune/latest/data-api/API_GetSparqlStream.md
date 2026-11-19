@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_GetSparqlStr
 ---
 
 # GetSparqlStream
-<a name="API_GetSparqlStream"></a>
 
 Gets a stream for an RDF graph.
 

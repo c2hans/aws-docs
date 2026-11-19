@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # EphemeralBlockDeviceMapping
-<a name="API_EphemeralBlockDeviceMapping"></a>
 
 A block device mapping for an instance store (ephemeral) volume.
 

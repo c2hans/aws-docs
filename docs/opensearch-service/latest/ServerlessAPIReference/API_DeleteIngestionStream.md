@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # DeleteIngestionStream
-<a name="API_DeleteIngestionStream"></a>
 
 Deletes an ingestion stream. Documents that were already indexed by the stream remain in the index.
 

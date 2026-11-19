@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Tags
 ---
 
 # TagsHealthServiceRolePolicy
-<a name="TagsHealthServiceRolePolicy"></a>
 
 **Description**: Provides read-only access to the AWS Resource Groups Tagging API for the Tags Health service-linked role.
 

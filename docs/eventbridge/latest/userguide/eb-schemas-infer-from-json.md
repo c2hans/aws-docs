@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-schemas-
 ---
 
 # Creating a schema from event JSON in Amazon EventBridge
-<a name="eb-schemas-infer-from-json"></a>
 
 If you have the JSON of an event, you can automatically create a schema for that type of event.
 

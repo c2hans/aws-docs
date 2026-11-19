@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/review-job
 ---
 
 # Jobs progress tracking
-<a name="review-job-progress"></a>
 
 ## Review job progress and details (console)
 <a name="review-job-progress-console"></a>

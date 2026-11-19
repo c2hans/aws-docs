@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/api/API_UpdateRuleM
 Amazon Fraud Detector is no longer be open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker AI, AutoGluon, and AWS WAF.
 
 # UpdateRuleMetadata
-<a name="API_UpdateRuleMetadata"></a>
 
 Updates a rule's metadata. The description attribute can be updated.
 

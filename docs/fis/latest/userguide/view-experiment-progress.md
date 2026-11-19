@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/view-experiment-pro
 ---
 
 # View your experiments
-<a name="view-experiment-progress"></a>
 
 You can view the progress of a running experiment, and you can view experiments that have completed, stopped, or failed.
 

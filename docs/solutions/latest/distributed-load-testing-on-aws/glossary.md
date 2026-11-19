@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Glossary
-<a name="glossary"></a>
 
 This glossary defines acronyms and abbreviations used throughout the Distributed Load Testing on AWS Implementation Guide.
 

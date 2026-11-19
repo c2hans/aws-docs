@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/flows-create-ndi.
 ---
 
 # Creating a flow that uses an NDI® source
-<a name="flows-create-ndi"></a>
 
 You can use MediaConnect to create flows that ingest content from NDI® senders within your VPC. This guide explains how to create and configure a flow with an NDI source in MediaConnect.
 

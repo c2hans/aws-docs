@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/lead-
 ---
 
 # Lead time deviations and recommendations
-<a name="lead-time-deviations"></a>
 
 For every generated lead time insight, you can select a row to view the historical trend on the vendor's performance on delivering products from a given ship location to the destination location.
 

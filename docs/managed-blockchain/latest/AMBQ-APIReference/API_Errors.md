@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # Service-specific Errors
-<a name="API_Errors"></a>
 
 The Amazon Managed Blockchain Query API contains service-specific exceptions that various actions return. This section describes each exception in detail.
 

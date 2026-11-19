@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_CdnC
 ---
 
 # CdnConfiguration
-<a name="API_CdnConfiguration"></a>
 
 The configuration for using a content delivery network (CDN), like Amazon CloudFront, for content and ad segment management.
 

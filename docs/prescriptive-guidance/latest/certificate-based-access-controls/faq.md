@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/certificate
 ---
 
 # FAQ about certificate-based access controls on AWS
-<a name="faq"></a>
 
 ## What are certificate attributes, and why are they important for IAM Roles Anywhere?
 <a name="faq-1"></a>

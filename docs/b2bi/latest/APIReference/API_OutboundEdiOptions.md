@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_OutboundEdi
 ---
 
 # OutboundEdiOptions
-<a name="API_OutboundEdiOptions"></a>
 
 A container for outbound EDI options.
 

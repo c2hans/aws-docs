@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AuthenticationCon
 ---
 
 # AuthenticationConfigurationInput
-<a name="API_AuthenticationConfigurationInput"></a>
 
 A structure containing the authentication configuration in the CreateConnection request.
 

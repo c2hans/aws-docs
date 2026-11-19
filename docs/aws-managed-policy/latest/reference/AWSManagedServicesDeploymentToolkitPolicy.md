@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSManagedServicesDeploymentToolkitPolicy
-<a name="AWSManagedServicesDeploymentToolkitPolicy"></a>
 
 **Description**: Allows AWS Managed Services to manage deployment toolkit on your behalf.
 

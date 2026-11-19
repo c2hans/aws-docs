@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/client-
 ---
 
 # Connect to WorkSpaces Applications on Windows Client
-<a name="client-application-windows-start-streaming-session-user"></a>
 
 After the WorkSpaces Applications client for Windows is installed on your PC, you can use it to connect to WorkSpaces Applications.
 

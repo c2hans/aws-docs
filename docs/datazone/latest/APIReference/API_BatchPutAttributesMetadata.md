@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_BatchPu
 ---
 
 # BatchPutAttributesMetadata
-<a name="API_BatchPutAttributesMetadata"></a>
 
 Writes the attribute metadata.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/migrating-spark-
 ---
 
 # Migrating Spark Kinesis connector to SDK 2.x for Amazon EMR 7.0
-<a name="migrating-spark-kinesis"></a>
 
 The AWS SDK provides a rich set of APIs and libraries to interact with AWS cloud computing services, such as managing credentials, connecting to S3 and Kinesis services. The Spark Kinesis connector is used to consume data from Kinesis Data Streams, and the received data is transformed and processed in Spark’s execution engine. Currently this connector is built on top of 1.x of AWS SDK and Kinesis-client-library (KCL).
 

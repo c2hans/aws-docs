@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Using the appropriate polling mode in Amazon SQS
-<a name="best-practices-using-appropriate-polling-mode"></a>
 + Long polling lets you consume messages from your Amazon SQS queue as soon as they become available.
   + To reduce the cost of using Amazon SQS and to decrease the number of empty receives to an empty queue (responses to the `ReceiveMessage` action which return no messages), enable long polling. For more information, see [Amazon SQS Long Polling](sqs-short-and-long-polling.md).
   + To increase efficiency when polling for multiple threads with multiple receives, decrease the number of threads.

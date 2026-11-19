@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Wo
 ---
 
 # Listing DB cluster parameter groupsin Amazon Aurora
-<a name="USER_WorkingWithParamGroups.ListingCluster"></a>
 
 You can list the DB cluster parameter groups you've created for your AWS account.
 

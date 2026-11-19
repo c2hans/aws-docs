@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # QueryStatus
-<a name="API_query_QueryStatus"></a>
 
 Information about the status of the query, including progress and bytes scanned.
 

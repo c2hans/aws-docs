@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-export.html
 ---
 
 # Exporting a certificate
-<a name="sdk-export"></a>
 
 The following example shows how to use the [ExportCertificate](https://docs.aws.amazon.com/acm/latest/APIReference/API_ExportCertificate.html) function. The function exports a certificate in the PKCS \#8 format. It also exports the certificate chain and private key. In the example, the passphrase for the key is stored in a local file.
 

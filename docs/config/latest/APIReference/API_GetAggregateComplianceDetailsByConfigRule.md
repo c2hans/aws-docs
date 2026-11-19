@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GetAggreg
 ---
 
 # GetAggregateComplianceDetailsByConfigRule
-<a name="API_GetAggregateComplianceDetailsByConfigRule"></a>
 
 Returns the evaluation results for the specified AWS Config rule for a specific resource in a rule. The results indicate which AWS resources were evaluated by the rule, when each resource was last evaluated, and whether each resource complies with the rule.
 

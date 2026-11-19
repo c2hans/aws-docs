@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/cr
 ---
 
 # Creating keys
-<a name="create-keys"></a>
 
  You can create AWS Payment Cryptography keys using the **CreateKey** API operation. When you create a key, you specify attributes such as the key algorithm, key usage, permitted operations, and whether it's exportable. You can't change these properties after you create the AWS Payment Cryptography key.
 

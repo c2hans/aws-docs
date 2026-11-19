@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ConfirmTopic
 ---
 
 # ConfirmTopicRuleDestination
-<a name="API_ConfirmTopicRuleDestination"></a>
 
 Confirms a topic rule destination. When you create a rule requiring a destination, AWS IoT sends a confirmation message to the endpoint or base address you specify. The message includes a token which you pass back when calling `ConfirmTopicRuleDestination` to confirm that you own or have access to the endpoint.
 

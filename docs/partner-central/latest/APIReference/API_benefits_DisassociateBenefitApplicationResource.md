@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # DisassociateBenefitApplicationResource
-<a name="API_benefits_DisassociateBenefitApplicationResource"></a>
 
 Removes the association between an AWS resource and a benefit application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost07.
 ---
 
 # Select the best pricing model
-<a name="cost07"></a>
 
  The right pricing model lets a workload meet its technical requirements at the lowest rate its usage pattern allows. Cloud providers charge different rates for the same capacity depending on how the workload commits to it, where it runs, and what terms govern any third-party products it depends on. Because these requirements change over time, revisit the pricing choice as workloads evolve. This capability covers matching pricing models to how each workload component behaves, weighing geographic price differences against latency and compliance needs, and choosing third-party agreements whose cost tracks the value they return.
 

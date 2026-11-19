@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/manage-aud
 ---
 
 # Managing AWS account groups
-<a name="manage-audiences"></a>
 
 Each hierarchical unit in Organizations — organization, organizational units (OUs), or accounts — can be an AWS account group for an experience. When you associate an AWS account group with a **Live** experience, all users in the AWS account group will be governed by the experience and only allowed to procure products approved in the experience.
 

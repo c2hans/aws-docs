@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Configuring session options
-<a name="chap-sql-server-aurora-pg.configuration.sessionoptions"></a>
 
 This topic provides reference information comparing session options and system variables between Microsoft SQL Server 2019 and Amazon Aurora PostgreSQL. You can understand how SQL Server’s session options translate to system variables, which is crucial for database administrators and developers migrating from SQL Server to Aurora PostgreSQL.
 

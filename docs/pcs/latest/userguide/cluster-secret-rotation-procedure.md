@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/cluster-secret-rota
 ---
 
 # Rotate a cluster secret in AWS PCS
-<a name="cluster-secret-rotation-procedure"></a>
 
 Rotate your cluster secret to comply with security requirements and address potential compromises. This process requires putting your cluster into maintenance mode.
 

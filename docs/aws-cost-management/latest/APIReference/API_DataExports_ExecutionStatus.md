@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ExecutionStatus
-<a name="API_DataExports_ExecutionStatus"></a>
 
 The status of the execution.
 

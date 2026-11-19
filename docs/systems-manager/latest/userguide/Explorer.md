@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/Explore
 ---
 
 # AWS Systems Manager Explorer
-<a name="Explorer"></a>
 
 **The Explorer page will be deprecated on December 31, 2026.**
 As we simplify the Systems Manager console experience, Resource Data Sync will move to OpsCenter. All your operational data stays available via API and viewable in the relevant AWS service consoles. [Learn more](changes-to-explorer.md)

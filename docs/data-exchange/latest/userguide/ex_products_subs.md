@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/ex_produc
 ---
 
 # Products for learning about interacting with AWS Data Exchange
-<a name="ex_products_subs"></a>
 
 AWS Data Exchange offers the following products that help subscribers understand how to subscribe to and interact with an AWS Data Exchange data product.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # CustomSMSLambdaVersionConfigType
-<a name="API_CustomSMSLambdaVersionConfigType"></a>
 
 The properties of a custom SMS sender Lambda trigger.
 

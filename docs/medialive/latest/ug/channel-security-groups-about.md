@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/channel-security-gro
 ---
 
 # About channel security groups
-<a name="channel-security-groups-about"></a>
 
 A channel security group allows you to control which IP addresses can connect to your MediaLive channel outputs. This is similar to how input security groups control which IP addresses can push content to MediaLive inputs.
 

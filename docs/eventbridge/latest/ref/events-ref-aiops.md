@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-aiops.
 ---
 
 # Amazon AI Operations events
-<a name="events-ref-aiops"></a>
 
 Amazon AI Operations sends service events to EventBridge via AWS CloudTrail.
 

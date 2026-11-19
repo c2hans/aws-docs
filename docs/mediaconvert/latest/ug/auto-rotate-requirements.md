@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/auto-rotate-requi
 ---
 
 # Input file requirements for video rotation
-<a name="auto-rotate-requirements"></a>
 
 You can use rotation for inputs that have the following video characteristics:
 + Progressive video

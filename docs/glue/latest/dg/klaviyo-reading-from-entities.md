@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/klaviyo-reading-from-enti
 ---
 
 # Reading from Klaviyo entities
-<a name="klaviyo-reading-from-entities"></a>
 
 **Prerequisites**
 

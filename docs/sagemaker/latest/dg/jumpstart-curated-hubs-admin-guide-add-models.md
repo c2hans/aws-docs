@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hu
 ---
 
 # Add models to a private hub
-<a name="jumpstart-curated-hubs-admin-guide-add-models"></a>
 
 After creating a private hub, you can add allow-listed models. To list the available JumpStart models programmatically, use the `hub.list_sagemaker_public_hub_models()` method in the SageMaker Python SDK. This method is shown in the following step.
 

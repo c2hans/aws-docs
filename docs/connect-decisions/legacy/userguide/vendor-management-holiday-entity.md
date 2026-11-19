@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/vendo
 ---
 
 # vendor\_holiday
-<a name="vendor-management-holiday-entity"></a>
 
 **Primary key (PK)**
 

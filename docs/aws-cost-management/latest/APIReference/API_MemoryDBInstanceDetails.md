@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # MemoryDBInstanceDetails
-<a name="API_MemoryDBInstanceDetails"></a>
 
 Details about the MemoryDB reservations that AWS recommends that you purchase.
 

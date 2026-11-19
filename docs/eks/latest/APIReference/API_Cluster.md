@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Cluster.html
 ---
 
 # Cluster
-<a name="API_Cluster"></a>
 
 An object representing an Amazon EKS cluster.
 

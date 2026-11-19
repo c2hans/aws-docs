@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurre
 ---
 
 # GetCurrentMetricData
-<a name="API_GetCurrentMetricData"></a>
 
 Gets the real-time metric data from the specified Connect Customer instance.
 

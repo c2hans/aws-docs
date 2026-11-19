@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # DisbursementDetails
-<a name="API_benefits_DisbursementDetails"></a>
 
 Contains information about disbursement-based benefit fulfillment, such as direct payments or reimbursements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-sale
 ---
 
 # Salesforce Marketing Cloud connector for Amazon AppFlow
-<a name="connectors-salesforce-marketing-cloud"></a>
 
 Marketing Cloud is a Salesforce platform for digital marketing that helps its customers manage campaigns across multiple channels, including email, mobile, and social. If you use Marketing Cloud, you can also use Amazon AppFlow to transfer your data to certain AWS services or other supported applications.
 

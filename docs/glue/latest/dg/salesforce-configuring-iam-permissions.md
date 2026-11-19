@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-configuring-ia
 ---
 
 # Policies containing the API operations for creating and using connections
-<a name="salesforce-configuring-iam-permissions"></a>
 
 The following sample IAM policy describes the required permissions for creating, managing and using Salesforce connections within AWS Glue ETL jobs. If you are creating a new role, create a policy that contains the following:
 

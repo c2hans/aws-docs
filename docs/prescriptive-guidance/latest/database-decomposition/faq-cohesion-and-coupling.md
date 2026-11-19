@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # FAQs about analyzing cohesion and coupling
-<a name="faq-cohesion-and-coupling"></a>
 
 Understanding and effectively analyzing database coupling and cohesion is fundamental to successful database decomposition. Coupling and cohesion are discussed in the [Analyzing cohesion and coupling for database decomposition](cohesion-coupling.md) section of this guide. This FAQ section addresses key questions about identifying appropriate levels of granularity, selecting the right analysis tools, documenting findings, and prioritizing coupling issues.
 

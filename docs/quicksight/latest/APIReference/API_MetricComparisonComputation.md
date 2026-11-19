@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Metri
 ---
 
 # MetricComparisonComputation
-<a name="API_MetricComparisonComputation"></a>
 
 The metric comparison computation configuration.
 

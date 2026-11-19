@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/windows-full-
 ---
 
 # Full-stack Windows modernization
-<a name="windows-full-stack"></a>
 
 AWS Transform provides full-stack Windows modernization, including .NET modernization and SQL Server modernization.
 

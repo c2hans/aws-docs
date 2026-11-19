@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/logging-using-clo
 ---
 
 # Logging Managed Integrations API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Managed Integrations is integrated with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html), a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all API calls for Managed Integrations as events. The calls captured include calls from the Managed Integrations console and code calls to the Managed Integrations API operations. Using the information collected by CloudTrail, you can determine the request that was made to Managed Integrations, the IP address from which the request was made, when it was made, and additional details.
 

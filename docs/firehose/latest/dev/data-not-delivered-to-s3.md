@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/data-not-delivered-t
 ---
 
 # Troubleshooting Amazon S3
-<a name="data-not-delivered-to-s3"></a>
 
 Check the following if data is not delivered to your Amazon Simple Storage Service (Amazon S3) bucket.
 + Check the Firehose `IncomingBytes` and `IncomingRecords` metrics to make sure that data is sent to your Firehose stream successfully. For more information, see [Monitor Amazon Data Firehose with CloudWatch metrics](monitoring-with-cloudwatch-metrics.md).

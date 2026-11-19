@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/neptune-graph-s
 ---
 
 # Getting a quick summary report about your graph
-<a name="neptune-graph-summary"></a>
 
 The Neptune graph summary API retrieves the following information about your graph:
 + For property (PG) graphs, the graph summary API returns a read-only list of node and edge labels and property keys, along with counts of nodes, edges, and properties.

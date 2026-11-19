@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostCategory
-<a name="API_CostCategory"></a>
 
 The structure of Cost Categories. This includes detailed metadata and the set of rules for the `CostCategory` object.
 

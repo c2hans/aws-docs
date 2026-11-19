@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.SPLIT_
 ---
 
 # SPLIT\_COLUMN\_BETWEEN\_DELIMITER
-<a name="recipe-actions.SPLIT_COLUMN_BETWEEN_DELIMITER"></a>
 
 Splits a column into three new columns, according to a beginning and ending delimiter.
 

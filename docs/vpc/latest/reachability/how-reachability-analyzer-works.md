@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability
 ---
 
 # How Reachability Analyzer works
-<a name="how-reachability-analyzer-works"></a>
 
 Reachability Analyzer analyzes the path between a source and destination by building a model of the network configuration, and then checking for reachability based on the configuration. It does not send packets or analyze the data plane.
 

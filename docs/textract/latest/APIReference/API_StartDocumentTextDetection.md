@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_StartDo
 ---
 
 # StartDocumentTextDetection
-<a name="API_StartDocumentTextDetection"></a>
 
 Starts the asynchronous detection of text in a document. Amazon Textract can detect lines of text and the words that make up a line of text.
 

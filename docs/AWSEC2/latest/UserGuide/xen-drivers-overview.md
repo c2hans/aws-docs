@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/xen-drivers-over
 ---
 
 # Paravirtual drivers for Windows instances
-<a name="xen-drivers-overview"></a>
 
 Windows AMIs contain a set of drivers to permit access to virtualized hardware. These drivers are used by Amazon EC2 to map instance store and Amazon EBS volumes to their devices. The following table shows key differences between the different drivers.
 

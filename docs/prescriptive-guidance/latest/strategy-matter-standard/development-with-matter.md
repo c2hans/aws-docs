@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # Development with Matter
-<a name="development-with-matter"></a>
 
 ## Using Alexa
 <a name="using-alexa"></a>

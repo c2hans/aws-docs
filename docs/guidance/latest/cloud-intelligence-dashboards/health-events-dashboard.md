@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Health Events Dashboard
-<a name="health-events-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

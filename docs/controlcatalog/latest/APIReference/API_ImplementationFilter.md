@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_I
 ---
 
 # ImplementationFilter
-<a name="API_ImplementationFilter"></a>
 
 A structure that defines filtering criteria for control implementations. You can use this filter to find controls that are implemented by specific AWS services or with specific service identifiers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Dependency validation
-<a name="next-gen-resilience-testing-iam-ma-dependency-validation"></a>
 
 Attach the following permissions policy to the target role for the **Dependency validation** template.
 

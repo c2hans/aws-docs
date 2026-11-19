@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # PartnerDomain
-<a name="API_account_PartnerDomain"></a>
 
 Represents a verified domain associated with a partner account.
 

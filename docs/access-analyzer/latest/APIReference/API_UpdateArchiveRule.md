@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # UpdateArchiveRule
-<a name="API_UpdateArchiveRule"></a>
 
 Updates the criteria and values for the specified archive rule.
 

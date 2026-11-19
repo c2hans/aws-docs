@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-sm-features.
 ---
 
 # Amazon SageMaker AI feature integration with RStudio on Amazon SageMaker AI
-<a name="rstudio-sm-features"></a>
 
  One of the benefits of using RStudio on Amazon SageMaker AI is the integration of Amazon SageMaker AI features. This includes integration with Amazon SageMaker Studio Classic and Reticulate. The following gives information about these integrations and examples for using them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Co
 ---
 
 # ConfirmPublicVirtualInterface
-<a name="API_ConfirmPublicVirtualInterface"></a>
 
 Accepts ownership of a public virtual interface created by another AWS account.
 

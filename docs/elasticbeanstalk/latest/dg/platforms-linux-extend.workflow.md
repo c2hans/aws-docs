@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-lin
 ---
 
 # Instance deployment workflow
-<a name="platforms-linux-extend.workflow"></a>
 
 **Note**
 The information in this section doesn't apply to the *ECS running on Amazon Linux 2 and Amazon Linux 2023* platform branches. For more information, see the next section [Instance deployment workflow for ECS running on Amazon Linux 2 and later](platforms-linux-extend.workflow.ecs-al2.md).

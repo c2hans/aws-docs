@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Phase 2: Mobilize
-<a name="phase-2-plan-mobilize"></a>
 
 In the mobilize phase, you determine the most appropriate replatform option for your specific Oracle database. You evaluate all replatforming options against the data that you collected during the assess phase. The evaluation process compares all options from many different aspects.
 

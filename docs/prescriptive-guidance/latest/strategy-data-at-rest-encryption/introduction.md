@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Creating an enterprise encryption strategy for data at rest
-<a name="introduction"></a>
 
 *Venki Srivatsav, Vikramaditya Bhatnagar, and Andrea Di Fabio, Amazon Web Services*
 

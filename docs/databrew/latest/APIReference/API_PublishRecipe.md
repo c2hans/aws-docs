@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Publish
 ---
 
 # PublishRecipe
-<a name="API_PublishRecipe"></a>
 
 Publishes a new version of a DataBrew recipe.
 

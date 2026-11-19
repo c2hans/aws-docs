@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Technical reference
-<a name="managedintegrations-sdk-device-appendix"></a>
 
 **Topics**
 + [Reference: Supported platforms](#managedintegrations-sdk-device-appendixA)

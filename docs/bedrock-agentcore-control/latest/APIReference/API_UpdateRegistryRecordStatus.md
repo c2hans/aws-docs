@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdateRegistryRecordStatus
-<a name="API_UpdateRegistryRecordStatus"></a>
 
 Updates the status of a registry record. Use this operation to approve, reject, or deprecate a registry record.
 

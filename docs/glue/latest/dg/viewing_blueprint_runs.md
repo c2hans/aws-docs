@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/viewing_blueprint_runs.ht
 ---
 
 # Viewing blueprint runs in AWS Glue
-<a name="viewing_blueprint_runs"></a>
 
 View a blueprint run to see the following information:
 + Name of the workflow that was created.

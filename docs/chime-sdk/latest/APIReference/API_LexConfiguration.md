@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_LexCon
 ---
 
 # LexConfiguration
-<a name="API_LexConfiguration"></a>
 
 The configuration for an Amazon Lex V2 bot.
 

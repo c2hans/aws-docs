@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RestConfiguration
 ---
 
 # RestConfiguration
-<a name="API_RestConfiguration"></a>
 
 Configuration that defines HTTP request and response handling, validation endpoints, and entity configurations for REST API interactions.
 

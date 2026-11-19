@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/enable-capacit
 ---
 
 # Enable Capacity Rebalancing to proactively replace at-risk Spot Instances
-<a name="enable-capacity-rebalancing-console-cli"></a>
 
 You can use the AWS Management Console or AWS CLI to enable Capacity Rebalancing for your Auto Scaling group. When Capacity Rebalancing is enabled, Amazon EC2 Auto Scaling attempts to proactively replace the Spot Instances in your group that have received an EC2 instance rebalance recommendation.
 

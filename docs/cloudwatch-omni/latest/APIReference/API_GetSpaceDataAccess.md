@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # GetSpaceDataAccess
-<a name="API_GetSpaceDataAccess"></a>
 
 Returns temporary credentials for working with data in a space, limited to the actions you request.
 

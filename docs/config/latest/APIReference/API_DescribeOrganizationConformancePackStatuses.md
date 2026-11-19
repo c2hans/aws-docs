@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeO
 ---
 
 # DescribeOrganizationConformancePackStatuses
-<a name="API_DescribeOrganizationConformancePackStatuses"></a>
 
 Provides organization conformance pack deployment status for an organization.
 

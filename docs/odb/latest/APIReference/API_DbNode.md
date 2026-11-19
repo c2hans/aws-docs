@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DbNode.html
 ---
 
 # DbNode
-<a name="API_DbNode"></a>
 
 Information about a DB node.
 

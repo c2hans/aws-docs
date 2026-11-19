@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshoot
 ---
 
 # Troubleshoot instance issues
-<a name="troubleshooting-ec2-instances"></a>
 
 **Topics**
 + [Tags must be set correctly](#troubleshooting-EC2-tags)

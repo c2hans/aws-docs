@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Design principles
-<a name="design-principles-sec"></a>
 
 There are a number of principles that can help strengthen the security of your connected mobility solution in addition to the overall Well-Architected Framework security design principles:
 

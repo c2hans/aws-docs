@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/pipes-conce
 ---
 
 # Amazon EventBridge Pipes concepts
-<a name="pipes-concepts"></a>
 
 Here's a closer look at the basic components of EventBridge Pipes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/limitations.html
 ---
 
 # AL2 Limitations
-<a name="limitations"></a>
 
 The following topics cover various limitations of AL2, and if they have been resolved in a newer version of Amazon Linux.
 

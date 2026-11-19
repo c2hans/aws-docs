@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes-pe
 ---
 
 # Event source permissions for Amazon EventBridge Pipes
-<a name="eb-pipes-permissions"></a>
 
 When setting up a pipe, you can use an existing execution role, or have EventBridge create one for you with the needed permissions. The permissions EventBridge Pipes requires vary based on the source type, and are listed below. If you’re setting up your own execution role, you must add these permissions yourself.
 

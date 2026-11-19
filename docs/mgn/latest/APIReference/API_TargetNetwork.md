@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_TargetNetwor
 ---
 
 # TargetNetwork
-<a name="API_TargetNetwork"></a>
 
 Configuration for the target network topology and addressing.
 

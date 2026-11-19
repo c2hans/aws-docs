@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/plann
 ---
 
 # reservation
-<a name="planning-reservation-entity"></a>
 
 **Primary key (PK)**
 

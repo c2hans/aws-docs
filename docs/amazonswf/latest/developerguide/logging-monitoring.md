@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/logging-
 ---
 
 # Logging and Monitoring
-<a name="logging-monitoring"></a>
 
 This section provides information about logging and monitoring Amazon SWF.
 

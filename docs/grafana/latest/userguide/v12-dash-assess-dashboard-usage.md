@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v12-dash-assess
 ---
 
 # Assessing dashboard usage
-<a name="v12-dash-assess-dashboard-usage"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 12.x**.

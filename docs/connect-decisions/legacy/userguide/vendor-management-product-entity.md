@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/vendo
 ---
 
 # vendor\_product
-<a name="vendor-management-product-entity"></a>
 
 **Primary key (PK)**
 

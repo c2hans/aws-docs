@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/export-re
 ---
 
 # Exporting AWS Data Exchange asset revisions to an S3 bucket (AWS SDKs)
-<a name="export-rev-s3-prog"></a>
 
 You can use the AWS SDKs to export AWS Data Exchange asset revisions to an S3 bucket using the following instructions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/run.html
 ---
 
 # .run
-<a name="run"></a>
 
 Used as a general extension, but ideal for the fitness and sports industry.
 

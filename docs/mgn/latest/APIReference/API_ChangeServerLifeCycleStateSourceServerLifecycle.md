@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ChangeServer
 ---
 
 # ChangeServerLifeCycleStateSourceServerLifecycle
-<a name="API_ChangeServerLifeCycleStateSourceServerLifecycle"></a>
 
 The request to change the source server migration lifecycle state.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Delete
 ---
 
 # DeleteCustomRoutingAccelerator
-<a name="API_DeleteCustomRoutingAccelerator"></a>
 
 Delete a custom routing accelerator. Before you can delete an accelerator, you must disable it and remove all dependent resources (listeners and endpoint groups). To disable the accelerator, update the accelerator to set `Enabled` to false.
 

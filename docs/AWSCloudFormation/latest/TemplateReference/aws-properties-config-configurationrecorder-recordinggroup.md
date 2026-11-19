@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Config::ConfigurationRecorder RecordingGroup
-<a name="aws-properties-config-configurationrecorder-recordinggroup"></a>
 
 Specifies which resource types AWS Config records for configuration changes. By default, AWS Config records configuration changes for all current and future supported resource types in the AWS Region where you have enabled AWS Config, excluding the global IAM resource types: IAM users, groups, roles, and customer managed policies.
 

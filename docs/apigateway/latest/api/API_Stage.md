@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_Stage.html
 ---
 
 # Stage
-<a name="API_Stage"></a>
 
 Represents a unique identifier for a version of a deployed RestApi that is callable by users.
 

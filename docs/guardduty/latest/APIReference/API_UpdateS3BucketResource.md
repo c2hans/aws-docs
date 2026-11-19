@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Update
 ---
 
 # UpdateS3BucketResource
-<a name="API_UpdateS3BucketResource"></a>
 
 Information about the protected S3 bucket resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetFin
 ---
 
 # GetFindingsStatistics
-<a name="API_GetFindingsStatistics"></a>
 
 Lists GuardDuty findings statistics for the specified detector ID.
 

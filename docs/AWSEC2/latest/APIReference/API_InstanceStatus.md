@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceS
 ---
 
 # InstanceStatus
-<a name="API_InstanceStatus"></a>
 
 Describes the status of an instance, including system status, instance status, attached EBS status, application status, and performance status.
 

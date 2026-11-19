@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/messaging-concepts.h
 ---
 
 # Understanding Amazon Chime SDK messaging concepts
-<a name="messaging-concepts"></a>
 
 To use Amazon Chime SDK messaging effectively, you must understand the following terms and concepts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # MCP protocol contract
-<a name="runtime-mcp-protocol-contract"></a>
 
 Understand the requirements for implementing the Model Context Protocol (MCP) in Amazon Bedrock AgentCore Runtime so that agents can call tools and agent servers. These requirements apply to MCP servers on both compute types, microVMs and [Instances](runtime-instances-how-it-works.md).
 

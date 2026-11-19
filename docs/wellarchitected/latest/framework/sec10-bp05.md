@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec10-b
 ---
 
 # SEC10-BP05 Establish a framework for learning from incidents
-<a name="sec10-bp05"></a>
 
  Use a structured review to close the gaps in tools and processes that let an incident happen. Focus on fixing systems and keep reviews blameless.
 

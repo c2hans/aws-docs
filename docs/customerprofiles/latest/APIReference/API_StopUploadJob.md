@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # StopUploadJob
-<a name="API_connect-customer-profiles_StopUploadJob"></a>
 
 This API stops the processing of an upload job.
 

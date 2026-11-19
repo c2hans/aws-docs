@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Related resources
-<a name="resources"></a>
 
  **AWS training**
 +  [Using AWS Solutions: Cloud Migration Factory Skill Builder course](https://explore.skillbuilder.aws/learn/course/external/view/elearning/15542/using-aws-solutions-aws-cloud-migration-factory) - you will learn about the features, benefits, and technical implementation of the solution.

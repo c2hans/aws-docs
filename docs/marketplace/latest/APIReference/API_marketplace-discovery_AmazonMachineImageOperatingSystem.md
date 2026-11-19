@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # AmazonMachineImageOperatingSystem
-<a name="API_marketplace-discovery_AmazonMachineImageOperatingSystem"></a>
 
 Describes an operating system supported by an AMI fulfillment option.
 

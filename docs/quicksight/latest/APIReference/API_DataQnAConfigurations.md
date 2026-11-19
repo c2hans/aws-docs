@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataQ
 ---
 
 # DataQnAConfigurations
-<a name="API_DataQnAConfigurations"></a>
 
 The generative Q&A settings of an embedded Quick Sight console.
 

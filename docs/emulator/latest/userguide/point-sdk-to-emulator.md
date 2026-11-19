@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emulator/latest/userguide/point-sdk-to-e
 ---
 
 # Pointing your AWS SDK at AWS Emulator
-<a name="point-sdk-to-emulator"></a>
 
 To use AWS Emulator, you configure the AWS CLI or your AWS SDK to send requests to the emulator instead of to AWS. When you run the emulator as a local process (Linux or Docker), you set environment variables. When you run it embedded in Rust tests, you replace the SDK HTTP client. For embedded mode, see [Getting started with embedded mode](getting-started-embedded.md).
 

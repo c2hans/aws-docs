@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/wait-event.cp
 ---
 
 # CPU
-<a name="wait-event.cpu"></a>
 
 This event occurs when a thread is active in CPU or is waiting for CPU.
 

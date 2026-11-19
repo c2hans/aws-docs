@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Infrastructure
-<a name="infrastructure"></a>
 
 The capabilities within this area enable you to design, build, and manage a secure and highly available cloud infrastructure. Use practices such as Network Security to design and implement security policies and controls across different levels of the networking stack, and Workload Isolation to isolate environments that contain your newly migrated workloads. If you are migrating apps from on premises or building them natively in the cloud, the infrastructure that you build on should be both secure and reliable.
 

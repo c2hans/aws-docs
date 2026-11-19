@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Connecting to Aurora MySQL with Kerberos authentication
-<a name="aurora-mysql-kerberos-connecting"></a>
 
 To avoid errors, use a MySQL client with version 8.0.26 or higher on Unix platforms, 8.0.27 or higher on Windows.
 

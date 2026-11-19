@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSAgentRegistryServiceRolePolicy
-<a name="AWSAgentRegistryServiceRolePolicy"></a>
 
 **Description**: Allows AWS Agent Registry to access AWS service resources on your behalf
 

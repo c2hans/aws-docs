@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Projec
 ---
 
 # Project
-<a name="API_Project"></a>
 
 The properties of a project as returned by the Search API.
 

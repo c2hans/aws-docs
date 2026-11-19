@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/containment
 ---
 
 # Containment with EC2 Triage
-<a name="containment-with-ec2-triage-template"></a>
 
 Use this template if you want both containment capabilities and the ability for AWS Security Incident Response engineers to investigate running instances during an incident.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # TrainingMetrics
-<a name="API_connect-customer-profiles_TrainingMetrics"></a>
 
 Contains metrics and performance indicators from the training of a recommender model.
 

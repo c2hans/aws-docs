@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CommandPrepr
 ---
 
 # CommandPreprocessor
-<a name="API_CommandPreprocessor"></a>
 
 Configuration that determines how the `payloadTemplate` is processed by the service to generate the final payload sent to devices at `StartCommandExecution` API invocation.
 

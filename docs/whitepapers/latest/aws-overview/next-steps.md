@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/next-ste
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
  Reinvent how you work with IT by signing up for the [AWS Free Tier](https://aws.amazon.com/free/), which allows you to gain hands-on experience with a broad selection of AWS products and services. Within the AWS Free Tier, you can test workloads and run applications to learn more and build the right solution for your organization. You can also [contact AWS Sales and Business Development](https://aws.amazon.com/contact-us/).
 

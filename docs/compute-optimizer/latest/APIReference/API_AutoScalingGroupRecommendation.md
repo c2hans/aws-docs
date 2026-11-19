@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # AutoScalingGroupRecommendation
-<a name="API_AutoScalingGroupRecommendation"></a>
 
 Describes an Auto Scaling group recommendation.
 

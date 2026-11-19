@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/usin
 ---
 
 # Using Python libraries with EMR Serverless
-<a name="using-python-libraries"></a>
 
 When you run PySpark jobs on Amazon EMR Serverless applications, package various Python libraries as dependencies. To do this, use native Python features, build a virtual environment, or directly configure your PySpark jobs to use Python libraries. This page covers each approach.
 

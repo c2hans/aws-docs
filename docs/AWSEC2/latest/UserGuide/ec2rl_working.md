@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2rl_working.ht
 ---
 
 # Run EC2Rescue commands on an Amazon EC2 Linux instance
-<a name="ec2rl_working"></a>
 
 EC2Rescue is a command line tool. After you have installed EC2Rescue on your Linux instance, you can get general help on how to use the tool by running `./ec2rl help`. You can view the available modules by running `./ec2rl list`, and you can get help on a specific module by running `./ec2rl help {{module_name}}`.
 

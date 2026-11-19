@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Advanced
 ---
 
 # AdvancedPromptOptimizationInputConfig
-<a name="API_AdvancedPromptOptimizationInputConfig"></a>
 
 The input data configuration for an advanced prompt optimization job.
 

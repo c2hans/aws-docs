@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/domains-and-do
 ---
 
 # Domains and domain state
-<a name="domains-and-domain-state"></a>
 
 A cooperative collection of trusted internal AWS KMS entities within an AWS Region is referred to as a domain. A domain includes a set of trusted entities, a set of rules, and a set of secret keys, called domain keys. The domain keys are shared among HSMs that are members of the domain. A domain state consists of the following fields.
 

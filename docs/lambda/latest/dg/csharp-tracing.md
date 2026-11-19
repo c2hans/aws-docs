@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/csharp-tracing.html
 ---
 
 # Instrumenting C\# code in AWS Lambda
-<a name="csharp-tracing"></a>
 
 Lambda integrates with AWS X-Ray to help you trace, debug, and optimize Lambda applications. You can use X-Ray to trace a request as it traverses resources in your application, which may include Lambda functions and other AWS services.
 

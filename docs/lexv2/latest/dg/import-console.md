@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/import-console.html
 ---
 
 # Importing a Lex V2 bot (console)
-<a name="import-console"></a>
 
 **To import a bot using the console**
 

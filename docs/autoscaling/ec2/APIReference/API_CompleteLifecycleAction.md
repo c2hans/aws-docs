@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Complet
 ---
 
 # CompleteLifecycleAction
-<a name="API_CompleteLifecycleAction"></a>
 
 Completes the lifecycle action for the specified token or instance with the specified result.
 

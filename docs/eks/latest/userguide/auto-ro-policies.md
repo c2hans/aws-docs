@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-ro-policies.ht
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # How resource optimization policies select and combine
-<a name="auto-ro-policies"></a>
 
 EKS Auto Mode resource optimization manages a Deployment or StatefulSet only when a `ClusterResourceOptimizationPolicy` selects it. A policy selects workloads with two optional label selectors and sets the `mode` and `profile` that those workloads get. More than one policy can select the same workload. This topic explains which workloads a policy selects, which policy’s settings a workload gets, and where you can see the result.
 

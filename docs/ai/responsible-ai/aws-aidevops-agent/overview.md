@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/aws-aidevops-agent/ove
 ---
 
 # AWS DevOps Agent
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/aws-aidevops-agent/images/card-background.jpg)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/disable-a-queu
 ---
 
 # Disable a queue temporarily using Connect Customer
-<a name="disable-a-queue"></a>
 
 You can quickly control the flow of contacts to queues by temporarily disabling a queue. When a queue is disabled, it's put in an offline mode. No new contacts are routed to the queue, but any existing contacts already in the queue are routed to agents.
 

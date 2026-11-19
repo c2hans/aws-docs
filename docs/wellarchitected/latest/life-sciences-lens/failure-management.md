@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Failure management
-<a name="failure-management"></a>
 
 |  LSREL11: How do you detect and manage laboratory equipment failures for continuity of research operations?  |
 | --- |

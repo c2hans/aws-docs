@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # WaypointOptimizationAvoidanceAreaGeometry
-<a name="API_WaypointOptimizationAvoidanceAreaGeometry"></a>
 
 Geometry of the area to be avoided.
 

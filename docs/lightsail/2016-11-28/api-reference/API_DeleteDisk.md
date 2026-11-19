@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DeleteDisk
-<a name="API_DeleteDisk"></a>
 
 Deletes the specified block storage disk. The disk must be in the `available` state (not attached to a Lightsail instance).
 

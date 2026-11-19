@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Configura
 ---
 
 # ConfigurationAggregator
-<a name="API_ConfigurationAggregator"></a>
 
 The details about the configuration aggregator, including information about source accounts, regions, and metadata of the aggregator.
 

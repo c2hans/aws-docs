@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/create-service-net
 ---
 
 # Create a VPC Lattice service network
-<a name="create-service-network"></a>
 
 Use the console to create a service network and optionally configure it with services, associations, access settings, and access logs.
 

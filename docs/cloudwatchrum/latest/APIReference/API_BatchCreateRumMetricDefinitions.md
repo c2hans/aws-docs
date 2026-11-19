@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Ba
 ---
 
 # BatchCreateRumMetricDefinitions
-<a name="API_BatchCreateRumMetricDefinitions"></a>
 
 Specifies the extended metrics and custom metrics that you want a CloudWatch RUM app monitor to send to a destination. Valid destinations include CloudWatch and Evidently.
 

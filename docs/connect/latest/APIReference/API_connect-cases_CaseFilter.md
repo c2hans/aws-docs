@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CaseFilter
-<a name="API_connect-cases_CaseFilter"></a>
 
 A filter for cases. Only one value can be provided.
 
@@ -15,7 +14,7 @@ This data type is a UNION, so only one of the following members can be specified
 
  ** andAll **   <a name="connect-Type-connect-cases_CaseFilter-andAll"></a>
 Provides "and all" filtering.
-Type: Array of [CaseFilter](#API_connect-cases_CaseFilter) objects
+Type: Array of [CaseFilter](API_connect-cases_CaseFilter.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No
 
@@ -27,13 +26,13 @@ Required: No
 
  ** not **   <a name="connect-Type-connect-cases_CaseFilter-not"></a>
 A filter for cases. Only one value can be provided.
-Type: [CaseFilter](#API_connect-cases_CaseFilter) object
+Type: [CaseFilter](API_connect-cases_CaseFilter.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
  ** orAll **   <a name="connect-Type-connect-cases_CaseFilter-orAll"></a>
 Provides "or all" filtering.
-Type: Array of [CaseFilter](#API_connect-cases_CaseFilter) objects
+Type: Array of [CaseFilter](API_connect-cases_CaseFilter.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No
 

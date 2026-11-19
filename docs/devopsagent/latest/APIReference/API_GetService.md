@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_GetS
 ---
 
 # GetService
-<a name="API_GetService"></a>
 
 Retrieves given service by it's unique identifier
 

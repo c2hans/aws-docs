@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Cr
 ---
 
 # CreateExperimentDefinition
-<a name="API_CreateExperimentDefinition"></a>
 
 Creates an experiment definition in AWS AppConfig. An experiment definition describes the purpose, scope, and operational configuration of an experiment, including the target audience, feature flag, and treatment configurations.
 

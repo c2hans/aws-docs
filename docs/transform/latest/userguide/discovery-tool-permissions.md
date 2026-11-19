@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/discovery-too
 ---
 
 # Required permissions for the discovery tool
-<a name="discovery-tool-permissions"></a>
 
 The discovery tool connects to your infrastructure using several protocols. Each protocol and collection module requires specific account permissions. This section describes the minimum permissions needed for complete data collection, and what data you lose if certain permissions are unavailable.
 

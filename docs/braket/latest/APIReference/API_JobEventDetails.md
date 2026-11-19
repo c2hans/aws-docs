@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_JobEventD
 ---
 
 # JobEventDetails
-<a name="API_JobEventDetails"></a>
 
 Details about the type and time events that occurred related to the Amazon Braket hybrid job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/quicksight_dev-te
 ---
 
 # Terminology and concepts
-<a name="quicksight_dev-terminology"></a>
 
 This section provides a list of terms for development in AWS Quick Sight.
 

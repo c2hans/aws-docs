@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-resource
 ---
 
 # AWS Resource Selection and Configuration
-<a name="sap-nw-resource-and-config"></a>
 
 **Topics**
 + [EC2 Instance Selection](#sap-nw-resource-and-config-ec2)

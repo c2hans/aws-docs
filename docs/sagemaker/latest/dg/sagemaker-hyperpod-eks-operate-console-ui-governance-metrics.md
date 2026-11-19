@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Dashboard
-<a name="sagemaker-hyperpod-eks-operate-console-ui-governance-metrics"></a>
 
 Amazon SageMaker HyperPod task governance provides a comprehensive dashboard view of your Amazon EKS cluster utilization metrics, including hardware, team, and task metrics. The following provides information on your HyperPod EKS cluster dashboard.
 

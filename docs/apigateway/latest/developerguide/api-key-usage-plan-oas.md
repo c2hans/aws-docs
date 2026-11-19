@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-key
 ---
 
 # Configure a method to use API keys with an OpenAPI definition
-<a name="api-key-usage-plan-oas"></a>
 
 You can use an OpenAPI definition to require API keys on a method.
 

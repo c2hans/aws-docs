@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/ai-llms.h
 ---
 
 # Build with AI agents
-<a name="ai-llms"></a>
 
  AI and LLMs can significantly accelerate development with Amazon Location Service by providing intelligent assistance for API usage, code generation, and troubleshooting. By configuring your LLM client with the right MCP servers and context, you can create a powerful development assistant that understands AWS services and Amazon Location Service specifics. Using a minimal context and MCP configuration as recommended on this page can ensure your LLM model of choice has enough context to lead to correct results without overwhelming the context window. This can reduce hallucinations and increase result accuracy. This configuration also ensures that model knowledge cutoff does not impact the quality of the results. The Amazon Location Service agent context package provides ready-to-use integrations for popular AI coding assistants, guiding AI agents through adding maps, places search, geocoding, routing, and other geospatial features, including authentication setup, SDK integration, and best practices.
 

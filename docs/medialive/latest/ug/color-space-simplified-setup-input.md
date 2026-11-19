@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/color-space-simplifi
 ---
 
 # Configuring the inputs
-<a name="color-space-simplified-setup-input"></a>
 
 **Note**
 This section assumes that you are familiar with creating or editing a channel, as described in [Creating a channel from scratch](creating-channel-scratch.md).

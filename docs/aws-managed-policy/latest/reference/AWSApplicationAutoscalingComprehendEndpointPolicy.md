@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSApplicationAutoscalingComprehendEndpointPolicy
-<a name="AWSApplicationAutoscalingComprehendEndpointPolicy"></a>
 
 **Description**: Policy granting permissions to Application Auto Scaling to access Comprehend and CloudWatch.
 

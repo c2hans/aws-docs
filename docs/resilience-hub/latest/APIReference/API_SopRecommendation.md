@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_S
 ---
 
 # SopRecommendation
-<a name="API_SopRecommendation"></a>
 
 Defines a standard operating procedure (SOP) recommendation.
 

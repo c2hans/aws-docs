@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_L
 ---
 
 # ListDataProtectionSettings
-<a name="API_ListDataProtectionSettings"></a>
 
 Retrieves a list of data protection settings.
 

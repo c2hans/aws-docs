@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-UpdateWindowsAmi`
-<a name="automation-aws-updatewindowsami"></a>
 
 **Description**
 

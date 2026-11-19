@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/partial-en
 ---
 
 # Partial enrollment of accounts
-<a name="partial-enrollment"></a>
 
 When you're working with baselines, an account can be placed into a state called **Partially enrolled**.
 

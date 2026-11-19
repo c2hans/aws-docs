@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Performance testing and metrics for large VDI migrations
-<a name="performance-testing-and-metrics"></a>
 
 Performance testing an application is an important task for any deployment, and the same concept applies to VDI deployments. To understand the performance requirements, you must plan and define metrics and acceptance criteria. These metrics can either be captured from the current VDI environment, or you can define new service-level agreements (SLAs) for your cloud environment.
 

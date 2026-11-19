@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohe
 ---
 
 # Embed Multilingual
-<a name="model-card-cohere-embed-multilingual"></a>
 
 ## ![Cohere logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/cohere.png) Cohere — Embed Multilingual
 <a name="model-card-cohere-embed-multilingual-header"></a>

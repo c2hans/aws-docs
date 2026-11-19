@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/gate
 ---
 
 # Listeners for your Gateway Load Balancers
-<a name="gateway-listeners"></a>
 
 When you create your Gateway Load Balancer, you add a *listener*. A listener is a process that checks for connection requests.
 

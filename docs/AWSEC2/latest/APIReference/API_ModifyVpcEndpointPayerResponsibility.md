@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpc
 ---
 
 # ModifyVpcEndpointPayerResponsibility
-<a name="API_ModifyVpcEndpointPayerResponsibility"></a>
 
 Modifies the billing account for VPC endpoint usage/charges.
 

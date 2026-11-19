@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/windows-agent.html
 ---
 
 # Installing the AWS Replication Agent on Windows servers
-<a name="windows-agent"></a>
 
 Complete these steps to install the AWS Replication Agent on Windows source servers.
 

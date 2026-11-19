@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule
 ---
 
 # Architecture overview
-<a name="architecture-overview"></a>
 
  The Dynamic Object and Rule Extensions for AWS Network Firewall solution has a two-tier architecture, which consists of the business tier and data tier. The business tier is powered by a combination of [Amazon API Gateway](https://aws.amazon.com/api-gateway/) and [AWS Lambda](https://aws.amazon.com/lambda/). The business logic predominantly resides in AWS Lambda for managing the domain data and periodically running a Lambda function to keep data synchronized between the solution and ANFW instance. The data tier is underpinned by [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) to store rule bundle, object, and rule data.
 

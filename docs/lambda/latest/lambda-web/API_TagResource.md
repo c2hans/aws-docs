@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_TagResource
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds tags to a web function. If a tag key already exists, the existing value is overwritten with the new value.
 

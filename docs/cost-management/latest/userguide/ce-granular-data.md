@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-gran
 ---
 
 # Granular data
-<a name="ce-granular-data"></a>
 
 Cost Explorer provides hourly and resource-level granularity through three features:
 + Resource-level data at daily granularity

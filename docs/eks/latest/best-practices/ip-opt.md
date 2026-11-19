@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/ip-opt.html
 ---
 
 # Optimizing IP Address Utilization
-<a name="ip-opt"></a>
 
 **Tip**
  [Explore](https://awsworkshop.io/eks?trk=4a9b4147-2490-4c63-bc9f-f8a84b122c8c&sc_channel=el) best practices through Amazon EKS workshops.

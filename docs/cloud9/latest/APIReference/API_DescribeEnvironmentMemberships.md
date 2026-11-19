@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/APIReference/API_DescribeE
 ---
 
 # DescribeEnvironmentMemberships
-<a name="API_DescribeEnvironmentMemberships"></a>
 
 Gets information about environment members for an AWS Cloud9 development environment.
 

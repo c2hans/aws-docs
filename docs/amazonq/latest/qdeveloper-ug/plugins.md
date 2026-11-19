@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/plugins.htm
 ---
 
 # Using Amazon Q Developer plugins
-<a name="plugins"></a>
 
 Plugins are now part of the AWS assistant.
 

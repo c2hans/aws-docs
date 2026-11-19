@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Add a keyword to a phone number in AWS End User Messaging
-<a name="nx-features-keywords-number-add"></a>
 
 Use the AWS End User Messaging console or AWS CLI to customize the keyword responses for your phone number.
 

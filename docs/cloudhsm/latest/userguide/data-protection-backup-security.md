@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/data-protectio
 ---
 
 # Security of cluster backups
-<a name="data-protection-backup-security"></a>
 
 When AWS CloudHSM makes a backup from the HSM, the HSM encrypts all of its data before sending it to AWS CloudHSM. The data never leaves the HSM in plaintext form. Additionally, backups cannot be decrypted by AWS because AWS doesn’t have access to key used to decrypt the backups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/view-data-filte
 ---
 
 # Viewing data filters
-<a name="view-data-filters"></a>
 
 You can use the Lake Formation console, AWS CLI, or the Lake Formation API to view data filters.
 

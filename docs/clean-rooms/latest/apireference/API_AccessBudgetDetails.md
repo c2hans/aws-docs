@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Acce
 ---
 
 # AccessBudgetDetails
-<a name="API_AccessBudgetDetails"></a>
 
 Detailed information about an access budget including time bounds, budget allocation, and configuration settings.
 

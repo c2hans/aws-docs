@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENPERF01-BP01 Define a ground truth data set of prompts and responses
-<a name="genperf01-bp01"></a>
 
  *Ground truth data* facilitates model testing for use case specific scenarios and should be developed and curated for generative AI workloads. Ground truth data is a curated set of prompts and responses that describe the ideal workflow with a model.
 

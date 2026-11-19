@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/iam_example_iam_S
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Work with the IAM Policy Builder API using an AWS SDK
-<a name="iam_example_iam_Scenario_IamPolicyBuilder_section"></a>
 
 The following code example shows how to:
 + Create IAM policies by using the object-oriented API.

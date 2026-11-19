@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_H
 ---
 
 # HistoryEventExecutionDataDetails
-<a name="API_HistoryEventExecutionDataDetails"></a>
 
 Provides details about input or output in an execution history event.
 

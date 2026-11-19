@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-ga
 ---
 
 # Cost optimization
-<a name="cost-optimization"></a>
 
  For serverless API cost optimization, [Serverless Application Lens](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/welcome.html) covers cost optimization best practices such as cost-effective resources, matching supply and demand, expenditure awareness, and optimizing over time in [Cost Optimization Pillar](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/cost-optimization-pillar.html) section.
 

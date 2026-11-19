@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/manifest-decora
 ---
 
 # Manifest decoration
-<a name="manifest-decoration"></a>
 
 You can choose to interpret SCTE-35 messages from the original input and insert corresponding instructions into the output manifest for the following outputs:
 + HLS

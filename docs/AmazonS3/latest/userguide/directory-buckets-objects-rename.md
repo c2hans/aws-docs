@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 ---
 
 # Renaming objects in directory buckets
-<a name="directory-buckets-objects-rename"></a>
 
 Using the `RenameObject` operation, you can atomically rename an existing object in a directory bucket that uses the S3 Express One Zone storage class, without any data movement. You can rename an object by specifying the existing object’s name as the source and the new name of the object as the destination within the same directory bucket. The `RenameObject` API operation will not succeed on objects that end with the slash (`/`) delimiter character. For more information, see [Naming Amazon S3 objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-keys.html).
 

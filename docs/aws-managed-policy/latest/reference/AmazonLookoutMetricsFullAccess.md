@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonLookoutMetricsFullAccess
-<a name="AmazonLookoutMetricsFullAccess"></a>
 
 **Description**: Gives access to all actions for Amazon Lookout for Metrics
 

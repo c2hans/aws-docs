@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Sch
 ---
 
 # SchemaExtensionInfo
-<a name="API_SchemaExtensionInfo"></a>
 
 Information about a schema extension.
 

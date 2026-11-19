@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/trim.html
 ---
 
 # $trim
-<a name="trim"></a>
 
 New from version 4.0
 

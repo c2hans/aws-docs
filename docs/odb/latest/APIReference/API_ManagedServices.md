@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ManagedServi
 ---
 
 # ManagedServices
-<a name="API_ManagedServices"></a>
 
 The managed services configuration for the ODB network.
 

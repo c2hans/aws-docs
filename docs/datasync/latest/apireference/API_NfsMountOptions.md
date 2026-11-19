@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_NfsMoun
 ---
 
 # NfsMountOptions
-<a name="API_NfsMountOptions"></a>
 
 Specifies how DataSync can access a location using the NFS protocol.
 

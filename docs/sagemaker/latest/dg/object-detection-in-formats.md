@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/object-detection-in-
 ---
 
 # Object Detection Request and Response Formats
-<a name="object-detection-in-formats"></a>
 
 The following page describes the inference request and response formats for the Amazon SageMaker AI Object Detection - MXNet model.
 

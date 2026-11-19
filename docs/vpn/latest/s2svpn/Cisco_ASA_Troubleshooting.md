@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/Cisco_ASA_Troubleshoot
 ---
 
 # Troubleshoot AWS Site-to-Site VPN connectivity with a Cisco ASA customer gateway device
-<a name="Cisco_ASA_Troubleshooting"></a>
 
 When you troubleshoot the connectivity of a Cisco customer gateway device, consider IKE, IPsec, and routing. You can troubleshoot these areas in any order, but we recommend that you start with IKE (at the bottom of the network stack) and move up.
 

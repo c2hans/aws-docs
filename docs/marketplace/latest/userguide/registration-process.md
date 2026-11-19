@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/registratio
 ---
 
 # Registration process
-<a name="registration-process"></a>
 
 Registering as a seller in AWS Marketplace involves completing several steps in sequence. This section provides an overview of the registration process, followed by detailed instructions for each step.
 

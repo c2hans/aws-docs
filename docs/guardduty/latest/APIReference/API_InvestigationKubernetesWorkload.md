@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationKubernetesWorkload
-<a name="API_InvestigationKubernetesWorkload"></a>
 
 Contains details about a Kubernetes workload.
 

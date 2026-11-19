@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/latest/userguide/eventbrid
 ---
 
 # Integrating event-driven applications with Service Quotas using Amazon EventBridge
-<a name="eventbridge-integration"></a>
 
 With Amazon EventBridge rules, you can monitor Service Quotas events and AWS Health notifications to automate responses when quotas change or approach their limits. To monitor these Service Quotas events, you'll need to [start Service Quotas Automatic Management](getting-started-auto-mgmt.md). These events trigger remediation actions when quota utilization changes occur.
 

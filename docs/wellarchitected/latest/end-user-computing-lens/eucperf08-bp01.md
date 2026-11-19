@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCPERF08-BP01 Establish and monitor service metrics and KPIs
-<a name="eucperf08-bp01"></a>
 
  When using an AWS EUC service to deliver a service to your users, it's important to consider the service metrics that are key to the delivery of the service for your organization to verify that the service is operating at the required service levels.
 

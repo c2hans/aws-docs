@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/strLenCP.html
 ---
 
 # $strLenCP
-<a name="strLenCP"></a>
 
 The `$strLenCP` operator in Amazon DocumentDB is used to determine the length of a string expression in code points (Unicode characters). This is useful when you need to know the number of characters in a string, rather than the number of bytes.
 

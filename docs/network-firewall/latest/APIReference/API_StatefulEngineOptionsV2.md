@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # StatefulEngineOptionsV2
-<a name="API_StatefulEngineOptionsV2"></a>
 
 Configuration settings for the handling of stateful traffic in a Next Generation policy.
 

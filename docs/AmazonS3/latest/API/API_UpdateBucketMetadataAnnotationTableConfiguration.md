@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_UpdateBucketMeta
 ---
 
 # UpdateBucketMetadataAnnotationTableConfiguration
-<a name="API_UpdateBucketMetadataAnnotationTableConfiguration"></a>
 
 Updates the annotation table configuration for an Amazon S3 bucket's metadata configuration. Use this operation to enable or disable the annotation table, or to update its associated IAM role.
 

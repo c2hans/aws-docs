@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ListProfiles
-<a name="API_ListProfiles"></a>
 
 List profiles.
 

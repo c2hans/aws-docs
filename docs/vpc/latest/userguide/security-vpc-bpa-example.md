@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/security-vpc-bpa-ex
 ---
 
 # Advanced example
-<a name="security-vpc-bpa-example"></a>
 
 This section contains an advanced example that will help you understand how VPC Block Public Access feature works in different scenarios. Each scenario builds off the scenario before it, so it's important to complete the steps in order.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using
 ---
 
 # Create a change set for a CloudFormation stack
-<a name="using-cfn-updating-stacks-changesets-create"></a>
 
 To create a change set for a running stack, submit the changes that you want to make by providing a modified template, new input parameter values, or both. CloudFormation generates a change set by comparing your stack with the changes you submitted.
 

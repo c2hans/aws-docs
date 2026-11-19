@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSOPS12-BP01 Create a controlled semantic layer
-<a name="lsops12-bp01"></a>
 
  A semantic layer translates complex life sciences data into understandable business terms, acting as a bridge between raw data and the scientists who need to use it.
 

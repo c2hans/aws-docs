@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Bedr
 ---
 
 # BedrockAgentCoreRuntimeInstancesOperatorRolePolicy
-<a name="BedrockAgentCoreRuntimeInstancesOperatorRolePolicy"></a>
 
 **Description**: Provides access to create and manage compute and associated resources for Bedrock AgentCore Runtime Instances
 

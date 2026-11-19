@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/rtm-tag-based-
 ---
 
 # Real-time metrics tag-based access control in Connect Customer
-<a name="rtm-tag-based-access-control"></a>
 
 You can use resource tags and access control tags to apply granular access to users, queues, and routing profiles for real-time metrics. For example, you can control who has access to view specific users, queues, and routing profiles on the **Real-time metrics** page.
 

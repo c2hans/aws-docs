@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/n
 ---
 
 # Multi-Region Inspection with AWS Network Firewall and AWS Transit Gateway
-<a name="nwfw-multi-region"></a>
 
 Publication date: **March 16, 2022 ([Diagram history](#nwfw6-diagram-history))**
 

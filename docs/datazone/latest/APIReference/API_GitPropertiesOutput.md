@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GitProp
 ---
 
 # GitPropertiesOutput
-<a name="API_GitPropertiesOutput"></a>
 
 The properties of a Git connection returned by get and list operations, including connection status and any error details.
 

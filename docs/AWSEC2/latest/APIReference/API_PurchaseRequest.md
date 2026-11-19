@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PurchaseR
 ---
 
 # PurchaseRequest
-<a name="API_PurchaseRequest"></a>
 
 Describes a request to purchase Scheduled Instances.
 

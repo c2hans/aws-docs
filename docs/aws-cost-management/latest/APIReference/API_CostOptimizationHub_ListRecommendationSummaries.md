@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListRecommendationSummaries
-<a name="API_CostOptimizationHub_ListRecommendationSummaries"></a>
 
 Returns a concise representation of savings estimates for resources. Also returns de-duped savings across different types of recommendations.
 

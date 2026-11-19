@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListCodeSe
 ---
 
 # ListCodeSecurityScanConfigurationAssociations
-<a name="API_ListCodeSecurityScanConfigurationAssociations"></a>
 
 Lists the associations between code repositories and Amazon Inspector code security scan configurations.
 

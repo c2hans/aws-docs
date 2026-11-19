@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DeleteFileSy
 ---
 
 # DeleteFileSystemLustreResponse
-<a name="API_DeleteFileSystemLustreResponse"></a>
 
 The response object for the Amazon FSx for Lustre file system being deleted in the `DeleteFileSystem` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/upload-fi
 ---
 
 # Upload files
-<a name="upload-file"></a>
 
 1. Choose **Upload files**.
 ![File browser](https://docs.aws.amazon.com/res/archive/release-minus-1/ug/images/res-filebrowser.jpg)

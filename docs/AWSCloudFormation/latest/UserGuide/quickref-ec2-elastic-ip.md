@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # Allocate and associate Elastic IP addresses with CloudFormation
-<a name="quickref-ec2-elastic-ip"></a>
 
 The following template snippets are examples related to Elastic IP addresses (EIPs) in Amazon EC2. These examples cover allocation, association, and management of EIPs for your instances.
 

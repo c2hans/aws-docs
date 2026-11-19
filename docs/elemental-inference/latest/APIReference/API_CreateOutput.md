@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # CreateOutput
-<a name="API_CreateOutput"></a>
 
 Contains configuration information about one output in a feed. It is used in the AssociateFeed and the CreateFeed actions.
 

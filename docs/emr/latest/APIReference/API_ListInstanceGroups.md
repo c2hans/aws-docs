@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ListInstance
 ---
 
 # ListInstanceGroups
-<a name="API_ListInstanceGroups"></a>
 
 Provides all available details about the instance groups in a cluster.
 

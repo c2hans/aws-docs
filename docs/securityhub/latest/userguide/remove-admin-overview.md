@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/remove-admi
 ---
 
 # Removing or changing the delegated administrator
-<a name="remove-admin-overview"></a>
 
 Only the organization management account can remove the delegated Security Hub CSPM administrator account.
 

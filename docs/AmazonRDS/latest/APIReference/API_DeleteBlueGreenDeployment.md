@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Delete
 ---
 
 # DeleteBlueGreenDeployment
-<a name="API_DeleteBlueGreenDeployment"></a>
 
 Deletes a blue/green deployment.
 

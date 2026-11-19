@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/neptune-native-
 ---
 
 # Native export for RDF data
-<a name="neptune-native-export"></a>
 
 The Neptune export API enables you to export data from your Neptune database to Amazon S3. You can export RDF data in N-Triples or N-Quads format.
 

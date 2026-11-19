@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListConnec
 ---
 
 # ListConnectorScanConfigurations
-<a name="API_ListConnectorScanConfigurations"></a>
 
 Lists scan configurations for AWS Config connectors. Results are paginated. Use the `nextToken` parameter to retrieve the next page of results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Metric
 ---
 
 # MetricQuery
-<a name="API_MetricQuery"></a>
 
 The query to retrieve metric data points.
 

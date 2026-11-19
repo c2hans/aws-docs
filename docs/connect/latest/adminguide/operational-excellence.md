@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/operational-ex
 ---
 
 # Operational excellence in Connect Customer workloads
-<a name="operational-excellence"></a>
 
 Operational excellence includes the ability to run and monitor systems to deliver business value and continually improve supporting processes and procedures. This section consists of design principles, best practices, and questions surrounding the operational excellence of Connect Customer workloads.
 

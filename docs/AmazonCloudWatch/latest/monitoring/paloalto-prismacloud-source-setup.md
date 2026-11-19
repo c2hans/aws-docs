@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/paloa
 ---
 
 # Source configuration for Palo Alto Prisma Cloud
-<a name="paloalto-prismacloud-source-setup"></a>
 
 ## Integrating with Palo Alto Prisma Cloud
 <a name="paloalto-prismacloud-integration"></a>

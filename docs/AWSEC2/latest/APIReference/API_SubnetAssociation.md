@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SubnetAss
 ---
 
 # SubnetAssociation
-<a name="API_SubnetAssociation"></a>
 
 Describes the subnet association with the transit gateway multicast domain.
 

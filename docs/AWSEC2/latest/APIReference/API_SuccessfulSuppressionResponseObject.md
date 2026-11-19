@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Successfu
 ---
 
 # SuccessfulSuppressionResponseObject
-<a name="API_SuccessfulSuppressionResponseObject"></a>
 
 Describes a successful application status check suppression.
 

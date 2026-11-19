@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dad.html
 ---
 
 # .dad
-<a name="dad"></a>
 
 Used for fatherhood-related content, blogs, and marketing to dads.
 

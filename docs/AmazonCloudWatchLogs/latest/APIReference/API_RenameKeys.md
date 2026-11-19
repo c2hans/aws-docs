@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # RenameKeys
-<a name="API_RenameKeys"></a>
 
 Use this processor to rename keys in a log event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/view-your-
 ---
 
 # View your accounts
-<a name="view-your-accounts"></a>
 
 The **Organization** page lists all OUs and accounts in your organization, regardless of OU or enrollment status in AWS Control Tower. You can view and enroll member accounts into AWS Control Tower—individually or by OU groups—if each account meets the prerequisites for enrollment.
 

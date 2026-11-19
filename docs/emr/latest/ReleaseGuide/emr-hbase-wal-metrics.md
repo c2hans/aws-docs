@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hbase-wal-me
 ---
 
 # Understanding Amazon EMR WAL pricing and metrics
-<a name="emr-hbase-wal-metrics"></a>
 
 | Core feature billing unit | Details |
 | --- | --- |

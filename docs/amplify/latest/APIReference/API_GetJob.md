@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_GetJob.h
 ---
 
 # GetJob
-<a name="API_GetJob"></a>
 
 Returns a job for a branch of an Amplify app.
 

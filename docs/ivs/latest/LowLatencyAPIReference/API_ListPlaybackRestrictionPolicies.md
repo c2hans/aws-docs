@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Li
 ---
 
 # ListPlaybackRestrictionPolicies
-<a name="API_ListPlaybackRestrictionPolicies"></a>
 
 Gets summary information about playback restriction policies.
 

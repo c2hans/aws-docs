@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_QueryFie
 ---
 
 # QueryField
-<a name="API_QueryField"></a>
 
 Defines a field to query for your application's Internet Monitor data. You create a data repository by running a query of a specific type. Each `QueryType` includes a specific set of fields and datatypes to retrieve data for.
 

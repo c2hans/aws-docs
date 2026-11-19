@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CisTargetS
 ---
 
 # CisTargetStatusFilter
-<a name="API_CisTargetStatusFilter"></a>
 
 The CIS target status filter.
 

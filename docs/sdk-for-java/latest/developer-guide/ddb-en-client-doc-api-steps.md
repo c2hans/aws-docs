@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Get started using the Enhanced Document API
-<a name="ddb-en-client-doc-api-steps"></a>
 
 The Enhanced Document API requires the same [dependencies](ddb-en-client-getting-started.md#ddb-en-client-gs-dep) that are needed for the DynamoDB Enhanced Client API. It also requires a [`DynamoDbEnhancedClient` instance](ddb-en-client-getting-started-dynamodbTable.md#ddb-en-client-getting-started-dynamodbTable-eclient) as shown at the start of this topic.
 

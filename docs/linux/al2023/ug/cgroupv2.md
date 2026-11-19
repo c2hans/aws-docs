@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/cgroupv2.html
 ---
 
 # Unified Control Group hierarchy (cgroup v2)
-<a name="cgroupv2"></a>
 
  A Control Group (cgroup) is a Linux kernel feature to hierarchically organize processes and distribute system resources between them. Control Groups are used extensively to implement a container runtime, and by `systemd`.
 

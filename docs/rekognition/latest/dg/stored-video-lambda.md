@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/stored-video-lambd
 ---
 
 # Creating an Amazon Rekognition Lambda function
-<a name="stored-video-lambda"></a>
 
 This tutorial shows how to get the results of a video analysis operation for label detection by using a Java Lambda function.
 

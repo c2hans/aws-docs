@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Logging
 ---
 
 # Logging
-<a name="API_Logging"></a>
 
 An object that represents the logging information for a virtual node.
 

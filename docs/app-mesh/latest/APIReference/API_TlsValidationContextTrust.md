@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TlsVali
 ---
 
 # TlsValidationContextTrust
-<a name="API_TlsValidationContextTrust"></a>
 
 An object that represents a Transport Layer Security (TLS) validation context trust.
 

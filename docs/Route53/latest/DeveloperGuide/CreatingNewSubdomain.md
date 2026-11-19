@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/CreatingNe
 ---
 
 # Creating a subdomain that uses Amazon Route 53 as the DNS service without migrating the parent domain
-<a name="CreatingNewSubdomain"></a>
 
 You can create a subdomain that uses Amazon Route 53 as the DNS service without migrating the parent domain from another DNS service.
 

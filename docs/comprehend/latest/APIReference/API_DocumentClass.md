@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Docum
 ---
 
 # DocumentClass
-<a name="API_DocumentClass"></a>
 
 Specifies the class that categorizes the document being analyzed
 

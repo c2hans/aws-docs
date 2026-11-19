@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/plu
 ---
 
 # Deliver custom plugins with plugin sync
-<a name="plugin-sync"></a>
 
 Plugin sync delivers custom plugins and add-ons without requiring you to build a conda package. Upload the plugin files to a prescribed prefix in the queue's job attachments bucket. When a job uses a supported application package, the package copies the files to the worker and configures the application to load them.
 

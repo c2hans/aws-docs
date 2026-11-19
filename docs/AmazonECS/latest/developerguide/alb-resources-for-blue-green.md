@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/alb-reso
 ---
 
 # Application Load Balancer resources for blue/green, linear, and canary deployments
-<a name="alb-resources-for-blue-green"></a>
 
 To use Application Load Balancers with Amazon ECS blue/green deployments, you need to configure specific resources that allow traffic routing between the blue and green service revisions.
 

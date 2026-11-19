@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/chat-costs.
 ---
 
 # Chatting about your costs
-<a name="chat-costs"></a>
 
 This conversational experience is now part of the AWS assistant.
 

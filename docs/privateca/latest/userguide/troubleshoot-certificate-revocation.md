@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/troubleshoot-
 ---
 
 # Troubleshoot AWS Private CA certificate revocation issues
-<a name="troubleshoot-certificate-revocation"></a>
 
 ## OCSP response latency
 <a name="OCSP-latency-troubleshooting"></a>

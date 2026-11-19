@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_S
 ---
 
 # StateMachineVersionListItem
-<a name="API_StateMachineVersionListItem"></a>
 
 Contains details about a specific state machine version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Resp
 ---
 
 # ResponseOutputItem
-<a name="API_ResponseOutputItem"></a>
 
 The output item response.
 

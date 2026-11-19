@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Kinesis
 ---
 
 # KinesisStreamSourceConfiguration
-<a name="API_KinesisStreamSourceConfiguration"></a>
 
 The stream and role Amazon Resource Names (ARNs) for a Kinesis data stream used as the source for a Firehose stream.
 

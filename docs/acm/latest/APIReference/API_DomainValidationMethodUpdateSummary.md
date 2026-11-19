@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DomainValida
 ---
 
 # DomainValidationMethodUpdateSummary
-<a name="API_DomainValidationMethodUpdateSummary"></a>
 
 Contains information about a domain validation method migration, including the previous validation method and the target validation method.
 

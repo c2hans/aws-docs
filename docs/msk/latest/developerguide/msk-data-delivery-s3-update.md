@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Update a Channel
-<a name="msk-data-delivery-s3-update"></a>
 
 You can modify only the data freshness interval (`DataFreshnessInSeconds`, 300–900).
 

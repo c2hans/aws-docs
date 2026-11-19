@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetInstan
 ---
 
 # GetInstanceTpmEkPub
-<a name="API_GetInstanceTpmEkPub"></a>
 
 Gets the public endorsement key associated with the Nitro Trusted Platform Module (NitroTPM) for the specified instance.
 

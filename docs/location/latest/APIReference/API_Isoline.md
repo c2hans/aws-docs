@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Isoline
 ---
 
 # Isoline
-<a name="API_Isoline"></a>
 
 Represents a single reachable area calculated for a specific threshold.
 

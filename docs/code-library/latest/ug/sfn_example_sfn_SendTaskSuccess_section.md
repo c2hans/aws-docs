@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sfn_example_sfn_S
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `SendTaskSuccess` with an AWS SDK
-<a name="sfn_example_sfn_SendTaskSuccess_section"></a>
 
 The following code examples show how to use `SendTaskSuccess`.
 

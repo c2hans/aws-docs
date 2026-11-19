@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_RuleGro
 ---
 
 # RuleGroupVariablesPortSetsDetails
-<a name="API_RuleGroupVariablesPortSetsDetails"></a>
 
 A list of port ranges.
 

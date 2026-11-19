@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-okta.htm
 ---
 
 # Okta
-<a name="odbc-v2-driver-okta"></a>
 
 Okta is a SAML-based authentication plugin that works with the Okta identity provider. For information about configuring federation for Okta and Amazon Athena, see [Configure SSO for ODBC using the Okta plugin and Okta Identity Provider](odbc-okta-plugin.md).
 

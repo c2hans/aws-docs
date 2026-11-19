@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials.ht
 ---
 
 # CodeDeploy tutorials
-<a name="tutorials"></a>
 
 This section includes some tutorials to help you learn how to use CodeDeploy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/aws-partner-c
 ---
 
 # What is the AWS Partner CRM connector for Salesforce?
-<a name="aws-partner-crm-connector"></a>
 
 The topics in this section explain how to install and use the AWS Partner CRM connector, a no-code solution for integrating Salesforce with AWS Partner Central and AWS Marketplace.
 

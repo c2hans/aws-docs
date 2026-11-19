@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/update-sip-call.html
 ---
 
 # Updating in-progress calls for Amazon Chime SDK PTSN audio
-<a name="update-sip-call"></a>
 
 As part of the PSTN audio service, SIP media applications allow you to set actions that are run on a call by invoking user-defined Lambda functions based on the call events, such as an incoming call or DTMF digits. The [UpdateSipMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateSipMediaApplicationCall.html) API allows you to trigger a Lambda function at any time while a call is active, replacing the current actions with new actions returned by the invocation.
 

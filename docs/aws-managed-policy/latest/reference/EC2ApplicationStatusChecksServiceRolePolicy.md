@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2A
 ---
 
 # EC2ApplicationStatusChecksServiceRolePolicy
-<a name="EC2ApplicationStatusChecksServiceRolePolicy"></a>
 
 **Description**: Enables EC2 to discover and manage resources related to EC2 Application Status Checks
 

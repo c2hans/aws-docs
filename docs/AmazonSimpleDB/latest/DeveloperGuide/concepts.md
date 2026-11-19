@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/con
 ---
 
 # Amazon SimpleDB Concepts
-<a name="concepts"></a>
 
 **Topics**
 + [Data Model](DataModel.md)

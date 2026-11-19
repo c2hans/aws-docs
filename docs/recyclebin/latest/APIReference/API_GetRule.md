@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_GetRu
 ---
 
 # GetRule
-<a name="API_GetRule"></a>
 
 Gets information about a Recycle Bin retention rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Network Firewall
-<a name="list_network-firewall"></a>
 
 AWS Network Firewall (service prefix: `network-firewall`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

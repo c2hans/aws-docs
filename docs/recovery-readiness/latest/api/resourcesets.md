@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/resourcese
 ---
 
 # ListResourceSets, CreateResourceSet
-<a name="resourcesets"></a>
 
 ## URI
 <a name="resourcesets-url"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_UpdateU
 ---
 
 # UpdateUser
-<a name="API_UpdateUser"></a>
 
 Changes user password(s) and/or access string.
 

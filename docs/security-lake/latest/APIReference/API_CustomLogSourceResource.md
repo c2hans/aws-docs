@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Cu
 ---
 
 # CustomLogSourceResource
-<a name="API_CustomLogSourceResource"></a>
 
 Amazon Security Lake can collect logs and events from third-party custom sources.
 

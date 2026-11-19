@@ -3,6 +3,5 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/building-a-
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 *Discuss considerations, tips, and recommended best practices associated with this workstream or domain.*

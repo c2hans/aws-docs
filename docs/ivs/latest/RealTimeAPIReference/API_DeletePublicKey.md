@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Dele
 ---
 
 # DeletePublicKey
-<a name="API_DeletePublicKey"></a>
 
 Deletes the specified public key used to sign stage participant tokens. This invalidates future participant tokens generated using the key pair’s private key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Integer
 ---
 
 # IntegerListConfigurationOptions
-<a name="API_IntegerListConfigurationOptions"></a>
 
  The options for customizing a security control parameter that is a list of integers.
 

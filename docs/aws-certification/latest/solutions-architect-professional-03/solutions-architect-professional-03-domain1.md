@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/solutions-archi
 ---
 
 # Content Domain 1: Architecture Design and Implementation Built for the Cloud
-<a name="solutions-architect-professional-03-domain1"></a>
 
 **Topics**
 + [Task 1.1: Design architectures built for the cloud.](#solutions-architect-professional-03-domain1-task1)

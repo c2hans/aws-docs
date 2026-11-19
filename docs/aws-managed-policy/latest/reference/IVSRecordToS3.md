@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/IVSR
 ---
 
 # IVSRecordToS3
-<a name="IVSRecordToS3"></a>
 
 **Description**: Service Linked Role to perform S3 PutObject to recording IVS live streams
 

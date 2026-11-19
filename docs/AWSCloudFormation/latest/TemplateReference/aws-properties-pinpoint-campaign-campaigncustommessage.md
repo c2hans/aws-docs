@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pinpoint::Campaign CampaignCustomMessage
-<a name="aws-properties-pinpoint-campaign-campaigncustommessage"></a>
 
 Specifies the contents of a message that's sent through a custom channel to recipients of a campaign.
 

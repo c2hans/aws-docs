@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/integrate_
 ---
 
 # Integrate data into SiteWise Edge using an MQTT-enabled, V3 gateway
-<a name="integrate_sitewise_edge_mqtt"></a>
 
 This tutorial guides you through integrating third-party devices and sensors that use MQTT messaging protocol with the AWS IoT SiteWise MQTT-enabled, V3 gateway. You will learn how to set up an AWS IoT SiteWise edge gateway to collect and monitor data from your MQTT-enabled devices. AWS IoT SiteWise enables you to collect, process, and monitor industrial equipment data. Use SiteWise Edge capabilities to optimize industrial IoT operations, and transform raw data into actionable insights.
 

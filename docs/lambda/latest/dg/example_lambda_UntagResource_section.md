@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_lambda_UntagRes
 ---
 
 # Use `UntagResource` with a CLI
-<a name="example_lambda_UntagResource_section"></a>
 
 The following code examples show how to use `UntagResource`.
 

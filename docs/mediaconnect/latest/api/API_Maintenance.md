@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_Maintenance.
 ---
 
 # Maintenance
-<a name="API_Maintenance"></a>
 
  The maintenance setting of a flow.
 

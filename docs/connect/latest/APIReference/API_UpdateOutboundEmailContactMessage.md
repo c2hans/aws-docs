@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateOu
 ---
 
 # UpdateOutboundEmailContactMessage
-<a name="API_UpdateOutboundEmailContactMessage"></a>
 
 Updates the draft outbound email message for a contact. Use this operation to save changes to an in-progress outbound email reply before you send it. This operation applies only to contacts with an `OUTBOUND` or `AGENT_REPLY` initiation method; it isn't supported for flow-initiated emails.
 

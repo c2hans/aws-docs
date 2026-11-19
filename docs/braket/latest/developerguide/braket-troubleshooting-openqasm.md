@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-trou
 ---
 
 # Troubleshooting OpenQASM
-<a name="braket-troubleshooting-openqasm"></a>
 
 This section provides troubleshooting pointers that might be useful when encountering errors using OpenQASM 3.0.
 

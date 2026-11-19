@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geojobs
 ---
 
 # ListJobs
-<a name="API_geojobs_ListJobs"></a>
 
  `ListJobs` retrieves a list of jobs with optional filtering and pagination support.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_HttpEnd
 ---
 
 # HttpEndpointRetryOptions
-<a name="API_HttpEndpointRetryOptions"></a>
 
 Describes the retry behavior in case Firehose is unable to deliver data to the specified HTTP endpoint destination, or if it doesn't receive a valid acknowledgment of receipt from the specified HTTP endpoint destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_GetRuntime
 ---
 
 # GetRuntimeAlias
-<a name="API_GetRuntimeAlias"></a>
 
 Retrieves the configuration, state, and metadata of a runtime alias.
 

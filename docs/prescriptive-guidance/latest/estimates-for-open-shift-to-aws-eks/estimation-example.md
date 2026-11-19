@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Estimation example
-<a name="estimation-example"></a>
 
 The following worked example applies the estimation framework from the Migration lifecycle phases section to a specific scenario:
 

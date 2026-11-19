@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Prompt, agent, and model lifecycle management
-<a name="prompt-agent-and-model"></a>
 
 As large language models (LLMs) and agents are introduced into enterprise workflows, managing their lifecycle becomes mission critical. Unlike traditional software components, generative AI systems introduce new variables that must be governed:
 + Prompts act like the logic layer in traditional applications, but lack formal structure, expected input/output schemas, or validation rules (untyped). Prompts are sensitive to formatting and difficult to test conventionally.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/example_cross_RekognitionV
 ---
 
 # Detect people and objects in a video with Amazon Rekognition using an AWS SDK
-<a name="example_cross_RekognitionVideoDetection_section"></a>
 
 The following code examples show how to detect people and objects in a video with Amazon Rekognition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Observability
-<a name="code-interpreter-observability"></a>
 
 The AgentCore Code Interpreter provides the following observability features:
 

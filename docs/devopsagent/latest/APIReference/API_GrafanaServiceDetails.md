@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Graf
 ---
 
 # GrafanaServiceDetails
-<a name="API_GrafanaServiceDetails"></a>
 
 Complete service details for Grafana MCP server integration.
 

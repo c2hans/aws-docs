@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_ParentChil
 ---
 
 # ParentChildFieldOptionsMapping
-<a name="API_connect-cases_ParentChildFieldOptionsMapping"></a>
 
 A mapping between a parent field option value and child field option values.
 

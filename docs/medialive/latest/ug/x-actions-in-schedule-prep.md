@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/x-actions-in-schedul
 ---
 
 # How input prepare actions work
-<a name="x-actions-in-schedule-prep"></a>
 
 You can set up an action to prepare an input that is associated with an immediate input switch, in order to reduce the delay that occurs when MediaLive performs the switch.
 

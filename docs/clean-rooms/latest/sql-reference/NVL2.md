@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/NVL2.ht
 ---
 
 # NVL2 function
-<a name="NVL2"></a>
 
 Returns one of two values based on whether a specified expression evaluates to NULL or NOT NULL.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ScanRe
 ---
 
 # ScanResultThreat
-<a name="API_ScanResultThreat"></a>
 
 Contains information about a specific threat that was detected during the malware scan.
 

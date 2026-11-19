@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Numer
 ---
 
 # NumericAxisOptions
-<a name="API_NumericAxisOptions"></a>
 
 The options for an axis with a numeric field.
 

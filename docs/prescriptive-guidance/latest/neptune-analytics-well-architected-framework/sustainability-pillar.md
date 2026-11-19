@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/neptune-ana
 ---
 
 # Sustainability pillar
-<a name="sustainability-pillar"></a>
 
 The [sustainability pillar](https://docs.aws.amazon.com/wellarchitected/latest/framework/sustainability.html) of the AWS Well-Architected Framework focuses on minimizing the environmental impacts of running cloud workloads. Key topics include a shared responsibility model for sustainability, understanding impact, and maximizing use to minimize required resources and reduce downstream impacts.
 

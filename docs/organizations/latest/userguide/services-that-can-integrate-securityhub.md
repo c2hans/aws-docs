@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS Security Hub CSPM and AWS Organizations
-<a name="services-that-can-integrate-securityhub"></a>
 
 AWS Security Hub CSPM provides you with a comprehensive view of your security state in AWS and helps you check your environment against security industry standards and best practices.
 

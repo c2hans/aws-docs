@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/mediapackage-integ
 ---
 
 # MediaTailor and MediaPackage time-shifted viewing integration
-<a name="mediapackage-integration-param"></a>
 
 AWS Elemental MediaTailor can pass time-shifted viewing parameters to MediaPackage origins to enable startover and catch-up viewing functionality. This integration allows viewers to start watching live content from earlier points in time.
 

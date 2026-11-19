@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Renam
 ---
 
 # RenameColumnOperation
-<a name="API_RenameColumnOperation"></a>
 
 A transform operation that renames a column.
 

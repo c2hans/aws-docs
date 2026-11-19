@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Policy not being applied
-<a name="policy-not-being-applied"></a>
 
  **Symptoms:** - Images not transformed according to policy - Default transformations applied instead of policy - Policy appears in Admin UI but doesn’t affect images
 

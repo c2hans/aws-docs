@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ListResourceInventory
-<a name="API_ListResourceInventory"></a>
 
 Lists resources managed using Systems Manager inventory.
 

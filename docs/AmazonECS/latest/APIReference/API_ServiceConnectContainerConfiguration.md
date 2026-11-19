@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Servic
 ---
 
 # ServiceConnectContainerConfiguration
-<a name="API_ServiceConnectContainerConfiguration"></a>
 
 Contains a configuration setting for the Service Connect proxy container, such as the log level. Specify exactly one member in each object.
 

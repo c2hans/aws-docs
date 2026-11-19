@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ReservationPurchaseRecommendationMetadata
-<a name="API_ReservationPurchaseRecommendationMetadata"></a>
 
 Information about a recommendation, such as the timestamp for when AWS made a specific recommendation.
 

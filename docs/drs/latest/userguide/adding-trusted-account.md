@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/adding-trusted-acco
 ---
 
 # Adding a trusted account in AWS DRS
-<a name="adding-trusted-account"></a>
 
 To add a trusted account, take the following steps:
 

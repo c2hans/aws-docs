@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_Registratio
 ---
 
 # RegistrationOutput
-<a name="API_RegistrationOutput"></a>
 
 Describes the status of an attempt from Amazon AppFlow to register a resource.
 

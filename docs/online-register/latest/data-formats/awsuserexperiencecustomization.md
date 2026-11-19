@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsu
 ---
 
 # Data retrieval APIs for AWS User Experience Customization
-<a name="awsuserexperiencecustomization"></a>
 
 AWS User Experience Customization provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-m
 ---
 
 # Inbound messaging
-<a name="nx-mms-send-inbound"></a>
 
 AWS End User Messaging does not support inbound (two-way) MMS. You cannot receive MMS messages from your customers.
 

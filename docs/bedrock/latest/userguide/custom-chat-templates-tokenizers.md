@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/custom-chat-tem
 ---
 
 # Handling Custom Chat Templates and Tokenizers
-<a name="custom-chat-templates-tokenizers"></a>
 
 Custom chat templates and tokenizers are essential components for properly formatting conversational inputs and managing token generation in your imported models. Custom Model Import supports importing models with custom chat templates that define how multi-turn conversations are structured and tokenized.
 

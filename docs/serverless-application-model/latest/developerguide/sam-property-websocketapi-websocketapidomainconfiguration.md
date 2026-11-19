@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # WebSocketApiDomainConfiguration
-<a name="sam-property-websocketapi-websocketapidomainconfiguration"></a>
 
 Configures a custom domain for a WebSocket API.
 

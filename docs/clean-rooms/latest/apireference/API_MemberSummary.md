@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Memb
 ---
 
 # MemberSummary
-<a name="API_MemberSummary"></a>
 
 The member object listed by the request.
 

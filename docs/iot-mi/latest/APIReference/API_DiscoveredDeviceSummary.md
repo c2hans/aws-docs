@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Discovere
 ---
 
 # DiscoveredDeviceSummary
-<a name="API_DiscoveredDeviceSummary"></a>
 
 Structure containing summary information about a device discovered during a device discovery job.
 

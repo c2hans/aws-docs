@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/logging-fields
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Log fields for protection pack (web ACL) traffic
-<a name="logging-fields"></a>
 
 The following list describes the possible log fields.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Program
 ---
 
 # Programmatic access to Amazon Aurora
-<a name="ProgrammaticAccess"></a>
 
 Amazon RDS provides you with the following tools to manage your Amazon Aurora resources programmatically.
 

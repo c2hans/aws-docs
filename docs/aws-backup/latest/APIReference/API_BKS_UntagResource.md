@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_U
 ---
 
 # UntagResource
-<a name="API_BKS_UntagResource"></a>
 
 This operation removes tags from the specified resource.
 

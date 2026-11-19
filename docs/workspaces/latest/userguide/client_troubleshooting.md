@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/userguide/client_troub
 ---
 
 # Troubleshoot WorkSpaces client issues
-<a name="client_troubleshooting"></a>
 
 The following are common issues that you might have with your WorkSpaces client.
 

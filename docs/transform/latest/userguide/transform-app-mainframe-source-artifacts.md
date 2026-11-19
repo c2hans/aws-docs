@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-app
 ---
 
 # Mainframe source artifacts collection
-<a name="transform-app-mainframe-source-artifacts"></a>
 
 This topic outlines the process for collecting mainframe source code and related artifacts to support mainframe modernization initiatives using AWS Transform. Proper collection and preparation of source artifacts are critical for successful analysis, migration planning, and implementation.
 

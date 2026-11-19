@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # PutParameter
-<a name="API_PutParameter"></a>
 
 Create or update a parameter in Parameter Store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/best-pract
 ---
 
 # Best practices for Amazon Route 53 DNS
-<a name="best-practices-dns"></a>
 
 Follow these best practices to get the best results when using the Amazon Route 53 DNS service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-app
 ---
 
 # Additional cost components
-<a name="transform-app-assessments-cost-components"></a>
 
 Beyond the per-workload service recommendations, AWS Transform models several cross-cutting cost components so your total cost of ownership comparison reflects the full picture on both sides of the migration.
 

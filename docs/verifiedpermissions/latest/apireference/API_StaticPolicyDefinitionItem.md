@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # StaticPolicyDefinitionItem
-<a name="API_StaticPolicyDefinitionItem"></a>
 
 A structure that contains details about a static policy. It includes the description and policy statement.
 

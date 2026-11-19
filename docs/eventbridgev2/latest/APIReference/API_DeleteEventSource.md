@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_De
 ---
 
 # DeleteEventSource
-<a name="API_DeleteEventSource"></a>
 
 Deletes an EventSource. Forwarding from its origin stops.
 

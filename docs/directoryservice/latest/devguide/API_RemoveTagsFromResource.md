@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Rem
 ---
 
 # RemoveTagsFromResource
-<a name="API_RemoveTagsFromResource"></a>
 
 Removes tags from a directory.
 

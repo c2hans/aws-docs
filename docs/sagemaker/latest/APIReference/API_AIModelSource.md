@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIMode
 ---
 
 # AIModelSource
-<a name="API_AIModelSource"></a>
 
 The source of the model for an AI recommendation job. This is a union type.
 

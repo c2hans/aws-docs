@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Update
 ---
 
 # UpdateGatewayNetworkConfiguration
-<a name="API_UpdateGatewayNetworkConfiguration"></a>
 
 The mutable network configuration for the load balancers that a gateway manages.
 

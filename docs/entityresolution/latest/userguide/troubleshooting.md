@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/troubl
 ---
 
 # Troubleshooting matching workflows
-<a name="troubleshooting"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when running matching workflows.
 

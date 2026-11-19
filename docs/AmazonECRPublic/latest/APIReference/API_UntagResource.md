@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Deletes specified tags from a resource.
 

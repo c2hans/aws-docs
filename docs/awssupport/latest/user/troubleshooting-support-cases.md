@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/troubleshooting-s
 ---
 
 # Troubleshooting
-<a name="troubleshooting-support-cases"></a>
 
 If you have difficulty when you create or manage your support case, see the following troubleshooting information.
 

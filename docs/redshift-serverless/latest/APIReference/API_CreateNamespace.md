@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # CreateNamespace
-<a name="API_CreateNamespace"></a>
 
 Creates a namespace in Amazon Redshift Serverless.
 

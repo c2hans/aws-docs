@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TablePaginatedReportOptions
-<a name="API_TablePaginatedReportOptions"></a>
 
 The paginated report options for a table visual.
 

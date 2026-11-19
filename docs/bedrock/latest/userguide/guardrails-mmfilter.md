@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-mmfi
 ---
 
 # Block harmful images with content filters
-<a name="guardrails-mmfilter"></a>
 
 Amazon Bedrock Guardrails can help block inappropriate or harmful images while configuring content filters within a guardrail.
 

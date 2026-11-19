@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/scope-of-ad-ava
 ---
 
 # Scope of ad avail blanking of SCTE-35 messages
-<a name="scope-of-ad-avail-blanking"></a>
 
 For Ad avail blanking (but not for Blackout), the ad avail mode you set controls which SCTE-35 events result in blanking of the content.
 

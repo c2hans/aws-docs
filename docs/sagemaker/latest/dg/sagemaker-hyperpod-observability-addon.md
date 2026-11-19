@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-o
 ---
 
 # Amazon SageMaker HyperPod observability with Amazon Managed Grafana and Amazon Managed Service for Prometheus
-<a name="sagemaker-hyperpod-observability-addon"></a>
 
 Amazon SageMaker HyperPod (SageMaker HyperPod) provides a comprehensive, out-of-the-box dashboard that gives you insights into foundation model (FM) development tasks and cluster resources. This unified observability solution automatically publishes key metrics to Amazon Managed Service for Prometheus and displays them in Amazon Managed Grafana dashboards. The dashboards are optimized specifically for FM development with deep coverage of hardware health, resource utilization, and task-level performance. With this add-on, you can consolidate health and performance data from NVIDIA DCGM, instance-level Kubernetes node exporters, Elastic Fabric Adapter, integrated file systems, Kubernetes APIs, Kueue, and SageMaker HyperPod task operators.
 

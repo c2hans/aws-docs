@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-gs-
 ---
 
 # Create your first entity
-<a name="twinmaker-gs-entity"></a>
 
 To create your first entity, use the following steps.
 

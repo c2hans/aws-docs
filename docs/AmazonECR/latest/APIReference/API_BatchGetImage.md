@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_BatchG
 ---
 
 # BatchGetImage
-<a name="API_BatchGetImage"></a>
 
 Gets detailed information for an image. Images are specified with either an `imageTag` or `imageDigest`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/pipel
 ---
 
 # Monitoring pipelines
-<a name="pipelines-metrics"></a>
 
 CloudWatch pipelines publishes metrics to Amazon CloudWatch in the `AWS/Observability Admin` namespace. You can use these metrics to monitor your pipelines' health, performance, and data flow.
 

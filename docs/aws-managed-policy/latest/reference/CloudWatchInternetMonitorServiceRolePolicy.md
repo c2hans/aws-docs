@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchInternetMonitorServiceRolePolicy
-<a name="CloudWatchInternetMonitorServiceRolePolicy"></a>
 
 **Description**: Allows Internet Monitor to access EC2, Workspaces, and CloudFront resources, and other required services on your behalf.
 

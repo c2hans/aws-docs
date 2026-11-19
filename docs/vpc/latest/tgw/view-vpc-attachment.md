@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/view-vpc-attachment.html
 ---
 
 # View a VPC attachment in AWS Transit Gateway
-<a name="view-vpc-attachment"></a>
 
 **To view your VPC attachments using the console**
 

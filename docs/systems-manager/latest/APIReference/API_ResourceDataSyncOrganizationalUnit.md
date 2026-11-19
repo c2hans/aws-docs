@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ResourceDataSyncOrganizationalUnit
-<a name="API_ResourceDataSyncOrganizationalUnit"></a>
 
 The AWS Organizations organizational unit data source for the sync.
 

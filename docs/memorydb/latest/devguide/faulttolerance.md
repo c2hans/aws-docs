@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/faulttolerance.
 ---
 
 # Mitigating Failures
-<a name="faulttolerance"></a>
 
 When planning your MemoryDB implementation, you should plan so that failures have a minimal impact upon your application and data. The topics in this section cover approaches you can take to protect your application and data from failures.
 

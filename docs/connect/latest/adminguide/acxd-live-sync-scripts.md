@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-live-sync
 ---
 
 # Live Sync Scripts
-<a name="acxd-live-sync-scripts"></a>
 
 Live Sync Scripts let you pair controlled, predefined voice lines with interactions in a web or mobile experience.
 

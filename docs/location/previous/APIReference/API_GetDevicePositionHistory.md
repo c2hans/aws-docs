@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_GetDe
 ---
 
 # GetDevicePositionHistory
-<a name="API_GetDevicePositionHistory"></a>
 
 Retrieves the device position history from a tracker resource within a specified range of time.
 

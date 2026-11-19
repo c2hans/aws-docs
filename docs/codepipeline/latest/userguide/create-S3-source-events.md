@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/create-S3-
 ---
 
 # Connecting to Amazon S3 source actions with a source enabled for events
-<a name="create-S3-source-events"></a>
 
 The instructions in this section provide the steps for creating the S3 source action that does not require that you create or manage AWS CloudTrail resources.
 

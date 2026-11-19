@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-set
 ---
 
 # Configure Amazon EMR CloudFormation templates in the Service Catalog
-<a name="studio-notebooks-set-up-emr-templates"></a>
 
 This topic assumes administrators are familiar with [CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html), [portfolios and products in AWS Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstarted-portfolio.html), as well as [Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Workload
 ---
 
 # WorkloadTypeConcurrency
-<a name="API_WorkloadTypeConcurrency"></a>
 
 Defines the maximum number of contacts an agent can handle simultaneously for a specific channel and workload type combination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/do
 ---
 
 # Document your AWS landing zone design
-<a name="document-your-aws-landing-zone-design"></a>
 
 *Michael Daehnert, Florian Langer, and Michael Lodemann, Amazon Web Services*
 

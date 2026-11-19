@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-work
 ---
 
 # Deploy the solution
-<a name="deploy-the-solution"></a>
 
 **Important**
 Don’t set the parameters **Simulate End of Month Cleanup** and **Terminate workspaces not used for a month** to `Yes` at the same time. Doing this will unexpectedly terminate WorkSpaces.

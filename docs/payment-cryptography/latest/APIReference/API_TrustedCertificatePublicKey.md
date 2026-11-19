@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # TrustedCertificatePublicKey
-<a name="API_TrustedCertificatePublicKey"></a>
 
 Parameter information for trusted public key certificate import.
 

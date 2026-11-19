@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # Monitoring and observability
-<a name="monitoring-and-observability"></a>
 
  Implementing comprehensive monitoring and observability for Microsoft workloads is essential for maintaining operational excellence. This includes using Microsoft Performance Counters for infrastructure monitoring, collecting Windows Event Logs and application logs, and implementing Application Performance Monitoring (APM) for .NET applications. By establishing proper observability across all layers of the Microsoft stack, organizations can proactively identify issues, optimize performance, and ensure reliable operation of their workloads on AWS.
 

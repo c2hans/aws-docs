@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # AuditEventPerformedBy
-<a name="API_connect-cases_AuditEventPerformedBy"></a>
 
 Information of the user which performed the audit.
 

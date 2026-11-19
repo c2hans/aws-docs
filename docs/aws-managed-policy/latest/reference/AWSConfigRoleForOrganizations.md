@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSConfigRoleForOrganizations
-<a name="AWSConfigRoleForOrganizations"></a>
 
 **Description**: Allows AWS Config to call read-only AWS Organizations APIs
 

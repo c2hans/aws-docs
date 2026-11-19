@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/custom-copy-sharing
 ---
 
 # Sharing a custom model with another AWS account
-<a name="custom-copy-sharing"></a>
 
 With Amazon Comprehend, you can share your custom models with others, so they can import your models into their AWS accounts. When a user imports one of your custom models, they create a new custom model in their account. Their new model duplicates the one that you shared.
 

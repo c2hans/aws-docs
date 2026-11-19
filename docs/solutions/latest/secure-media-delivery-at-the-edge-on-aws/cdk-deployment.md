@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # CDK deployment
-<a name="cdk-deployment"></a>
 
  In addition to the CloudFormation template, you can also use the CDK project this solution was built on to integrate it into your environment. Review the following considerations to make an informed decision whether to use the CDK deployment model over the default CloudFormation template.
 +  With CDK, you can selectively choose which modules and elements needs to be deployed for each new stack you create. While the base module is always deployed, API module, demo website, and auto session revocation are optional and each of the listed components can be turned on or off. However, the CloudFormation template has all the components (except auto session revocation module) integrated within the template, and cannot be turned off.

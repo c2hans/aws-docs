@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/importing
 ---
 
 # Importing AWS Data Exchangeassets from a signed URL
-<a name="importing-from-url"></a>
 
 You can use signed URLs to import assets that are not stored in Amazon S3.
 

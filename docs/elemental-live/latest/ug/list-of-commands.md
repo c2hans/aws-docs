@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/list-of-command
 ---
 
 # List of commands
-<a name="list-of-commands"></a>
 
 |  Nickname  |  Action  |  Signature  |  Description  |
 | --- | --- | --- | --- |

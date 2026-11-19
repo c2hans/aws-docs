@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsClou
 ---
 
 # AwsCloudWatchAlarmDimensionsDetails
-<a name="API_AwsCloudWatchAlarmDimensionsDetails"></a>
 
 Details about the dimensions for the metric associated with the alarm.
 

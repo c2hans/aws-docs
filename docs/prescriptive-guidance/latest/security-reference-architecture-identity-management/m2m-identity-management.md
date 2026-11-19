@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Machine-to-machine identity management
-<a name="m2m-identity-management"></a>
 
 |  |
 | --- |

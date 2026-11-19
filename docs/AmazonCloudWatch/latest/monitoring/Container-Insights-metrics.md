@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Metrics collected by Container Insights
-<a name="Container-Insights-metrics"></a>
 
 Container Insights collects one set of metrics for Amazon ECS and AWS Fargate on Amazon ECS, and a different set for Amazon EKS, AWS Fargate on Amazon EKS, RedHat OpenShift on AWS (ROSA), and Kubernetes.
 

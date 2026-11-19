@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ProfileNextStepsHistory
-<a name="API_ProfileNextStepsHistory"></a>
 
 Tracks the history of next steps associated with the opportunity. This field captures the actions planned for the future and their timeline.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sm-assets-user-guide
 ---
 
 # Work with assets (user guide)
-<a name="sm-assets-user-guide"></a>
 
 Use SageMaker Assets to seamlessly collaborate on machine learning projects with other individuals in your organization. With SageMaker Assets, you and your collaborators create and share models and data tables with each other. Within SageMaker Assets, these models and data tables are known as *assets*.
 

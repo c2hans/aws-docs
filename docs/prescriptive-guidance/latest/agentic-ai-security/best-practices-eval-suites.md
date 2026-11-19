@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # 3. Security evaluation suites for agentic AI systems on AWS
-<a name="best-practices-eval-suites"></a>
 
 Foundation models form the intelligence core of agentic AI systems. This makes their security characteristics critical to overall system safety. Systematic evaluation and testing of model behavior can help you identify vulnerabilities before deployment.
 

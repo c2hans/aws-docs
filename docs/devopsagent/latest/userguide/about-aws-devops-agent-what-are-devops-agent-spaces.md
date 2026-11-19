@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-d
 ---
 
 # What are DevOps Agent Spaces?
-<a name="about-aws-devops-agent-what-are-devops-agent-spaces"></a>
 
 A DevOps Agent Space is a logical container that defines the tools and infrastructure that AWS DevOps Agent has access to. Each Agent Space operates independently with its own AWS account access, third-party integrations, and user permissions.
 

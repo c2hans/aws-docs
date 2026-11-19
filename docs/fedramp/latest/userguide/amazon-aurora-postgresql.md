@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fedramp/latest/userguide/amazon-aurora-p
 ---
 
 # Amazon Aurora PostgreSQL
-<a name="amazon-aurora-postgresql"></a>
 
 This guide provides security configuration requirements and implementation examples for Amazon Aurora PostgreSQL in accordance with FedRAMP requirements.
 

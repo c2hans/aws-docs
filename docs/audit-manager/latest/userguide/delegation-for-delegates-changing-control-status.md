@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/delegatio
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Marking a control as reviewed in AWS Audit Manager
-<a name="delegation-for-delegates-changing-control-status"></a>
 
 You can indicate your review progress by updating the status of individual controls within a control set.
 

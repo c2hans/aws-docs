@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/images-s3.html
 ---
 
 # Analyzing images stored in an Amazon S3 bucket
-<a name="images-s3"></a>
 
 Amazon Rekognition Image can analyze images that are stored in an Amazon S3 bucket or images that are supplied as image bytes.
 

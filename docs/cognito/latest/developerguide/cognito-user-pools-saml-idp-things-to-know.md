@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-us
 ---
 
 # Things to know about SAML IdPs in Amazon Cognito user pools
-<a name="cognito-user-pools-saml-idp-things-to-know"></a>
 
 Implementation of a SAML 2.0 IdP comes with some requirements and restrictions. Refer to this section when you're implementing your IdP. You'll also find information that's useful for troubleshooting errors during SAML federation with a user pool.
 

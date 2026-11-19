@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/create-CA.htm
 ---
 
 # Create a private CA in AWS Private CA
-<a name="create-CA"></a>
 
 You can use the procedures in this section to create either root CAs or subordinate CAs, resulting in an auditable hierarchy of trust relationships that matches your organizational needs. You can create a CA using the AWS Management Console, the PCA portion of the AWS CLI, or AWS CloudFormation.
 

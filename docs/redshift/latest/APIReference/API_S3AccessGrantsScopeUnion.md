@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_S3Acces
 ---
 
 # S3AccessGrantsScopeUnion
-<a name="API_S3AccessGrantsScopeUnion"></a>
 
 A list of scopes set up for S3 Access Grants integration.
 

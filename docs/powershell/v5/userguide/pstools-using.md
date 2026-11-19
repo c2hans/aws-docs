@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Calling AWS services in the AWS Tools for PowerShell
-<a name="pstools-using"></a>
 
 This section provides examples of using the AWS Tools for PowerShell to access AWS services. These examples help demonstrate how to use the cmdlets to perform actual AWS tasks. These examples rely on cmdlets that the Tools for PowerShell provides. To see what cmdlets are available, see the [AWS Tools for PowerShell Cmdlet Reference](https://docs.aws.amazon.com/powershell/v5/reference/).
 

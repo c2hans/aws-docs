@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
  A list the tags for a resource.
 

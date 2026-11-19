@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ebs-last-ba
 ---
 
 # ebs-last-backup-recovery-point-created
-<a name="ebs-last-backup-recovery-point-created"></a>
 
 Checks if a recovery point was created for Amazon Elastic Block Store (Amazon EBS). The rule is NON\_COMPLIANT if the Amazon EBS volume does not have a corresponding recovery point created within the specified time period.
 

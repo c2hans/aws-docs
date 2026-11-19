@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_FileSystemFa
 ---
 
 # FileSystemFailureDetails
-<a name="API_FileSystemFailureDetails"></a>
 
 A structure providing details of any failures that occurred.
 

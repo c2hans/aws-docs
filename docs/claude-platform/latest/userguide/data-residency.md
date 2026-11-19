@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/claude-platform/latest/userguide/data-re
 ---
 
 # Data residency
-<a name="data-residency"></a>
 
 Claude Platform on AWS supports the following inference geographies:
 +  **US:** Inference stays within US data centers. A 1.1x pricing multiplier applies.

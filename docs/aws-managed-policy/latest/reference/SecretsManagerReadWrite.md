@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Secr
 ---
 
 # SecretsManagerReadWrite
-<a name="SecretsManagerReadWrite"></a>
 
 **Description**: Provides read/write access to AWS Secrets Manager via the AWS Management Console. Note: this exludes IAM actions, so combine with IAMFullAccess if rotation configuration is required.
 

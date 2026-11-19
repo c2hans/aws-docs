@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeEven
 ---
 
 # DescribeEventSubscriptions
-<a name="API_DescribeEventSubscriptions"></a>
 
 Lists all the event subscriptions for a customer account. The description of a subscription includes `SubscriptionName`, `SNSTopicARN`, `CustomerID`, `SourceType`, `SourceID`, `CreationTime`, and `Status`.
 

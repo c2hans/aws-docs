@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/FSxONTAP-Billing.h
 ---
 
 # AWS billing and usage reports for FSx for ONTAP
-<a name="FSxONTAP-Billing"></a>
 
 AWS provides two usage reports for FSx for ONTAP:
 + The AWS billing report is a high-level view of all activity for AWS services that you're using, including FSx for ONTAP.

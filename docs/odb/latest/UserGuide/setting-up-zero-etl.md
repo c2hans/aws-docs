@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/setting-up-zero-etl
 ---
 
 # Setting up Oracle Database@AWS integrations with Amazon Redshift
-<a name="setting-up-zero-etl"></a>
 
 To set up zero-ETL integration between your Oracle database and Amazon Redshift, complete the following steps:
 

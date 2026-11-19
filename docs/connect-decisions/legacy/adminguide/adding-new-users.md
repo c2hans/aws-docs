@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/addi
 ---
 
 # Adding users
-<a name="adding-new-users"></a>
 
 As an AWS Supply Chain administrator, you can add users to access the AWS Supply Chain web application. Users first must be added to IAM Identity Center (IdC), and then they can be added to AWS Supply Chain. For more information about adding users to IdC, see [Assign user access](https://docs.aws.amazon.com/singlesignon/latest/userguide/get-started-assign-account-access-user.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/endpoints-
 ---
 
 # Editing an endpoint in AWS Elemental MediaPackage
-<a name="endpoints-edit"></a>
 
 Edit the packaging preferences on an endpoint in MediaPackage to optimize the viewing experience. You can't change the container type after you save an endpoint or greyed-out fields. To serve content with a different packager, create a different endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 1.3 Program governance
-<a name="program-governance"></a>
 
 ## Overview
 <a name="governance-overview"></a>

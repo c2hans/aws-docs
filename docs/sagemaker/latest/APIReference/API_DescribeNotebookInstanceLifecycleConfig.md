@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeNotebookInstanceLifecycleConfig
-<a name="API_DescribeNotebookInstanceLifecycleConfig"></a>
 
 Returns a description of a notebook instance lifecycle configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ExternalMetricStatus
-<a name="API_ExternalMetricStatus"></a>
 
  Describes Compute Optimizer's integration status with your chosen external metric provider. For example, Datadog.
 

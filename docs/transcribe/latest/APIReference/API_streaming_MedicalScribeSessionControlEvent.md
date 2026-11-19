@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # MedicalScribeSessionControlEvent
-<a name="API_streaming_MedicalScribeSessionControlEvent"></a>
 
 Specify the lifecycle of your streaming session.
 

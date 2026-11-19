@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetPr
 ---
 
 # GetProject
-<a name="API_GetProject"></a>
 
 Gets information about a project.
 

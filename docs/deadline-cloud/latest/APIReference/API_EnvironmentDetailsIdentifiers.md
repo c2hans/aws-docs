@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_E
 ---
 
 # EnvironmentDetailsIdentifiers
-<a name="API_EnvironmentDetailsIdentifiers"></a>
 
 The IDs of the job and environment.
 

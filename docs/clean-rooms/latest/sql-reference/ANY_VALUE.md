@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/ANY_VAL
 ---
 
 # ANY\_VALUE function
-<a name="ANY_VALUE"></a>
 
 The ANY\_VALUE function returns any value from the input expression values nondeterministically. This function can return NULL if the input expression doesn't result in any rows being returned.
 

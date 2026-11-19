@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec11.h
 ---
 
 # Application security
-<a name="sec11"></a>
 
  Application security is the practice of building security properties into software as it is designed, written, and released, and then confirming those properties hold before the software reaches production. When security is a design input rather than a final inspection, teams find and fix risks early, when remediation costs the least.
 

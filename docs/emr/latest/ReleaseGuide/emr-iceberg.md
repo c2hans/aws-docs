@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-iceberg.html
 ---
 
 # Iceberg
-<a name="emr-iceberg"></a>
 
 [Apache Iceberg](https://iceberg.apache.org/) is an open table format for large data sets in Amazon Simple Storage Service (Amazon S3). It provides fast query performance over large tables, atomic commits, concurrent writes, and SQL-compatible table evolution. Starting with Amazon EMR 6.5.0, you can use Apache Spark 3 on Amazon EMR clusters with the Iceberg table format.
 

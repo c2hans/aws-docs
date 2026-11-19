@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-aur
 ---
 
 # Restoring an Amazon Aurora cluster
-<a name="restoring-aur"></a>
 
 ## Use the AWS Backup console to restore Aurora recovery points
 <a name="aur-restore-console"></a>

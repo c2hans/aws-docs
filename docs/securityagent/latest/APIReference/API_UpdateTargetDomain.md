@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Up
 ---
 
 # UpdateTargetDomain
-<a name="API_UpdateTargetDomain"></a>
 
 Updates the verification method for a target domain.
 

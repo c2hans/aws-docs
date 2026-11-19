@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_Experiment.h
 ---
 
 # Experiment
-<a name="API_Experiment"></a>
 
 Describes an experiment.
 

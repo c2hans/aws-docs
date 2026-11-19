@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Batch
 ---
 
 # BatchGetRepositories
-<a name="API_BatchGetRepositories"></a>
 
 Returns information about one or more repositories.
 

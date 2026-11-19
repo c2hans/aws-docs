@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/test-framewor
 ---
 
 # Test frameworks
-<a name="test-framework-reporting"></a>
 
 The topics in this section demonstrate how to set up test reporting in AWS CodeBuild for various test frameworks.
 

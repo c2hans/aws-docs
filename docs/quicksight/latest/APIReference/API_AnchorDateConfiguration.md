@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Ancho
 ---
 
 # AnchorDateConfiguration
-<a name="API_AnchorDateConfiguration"></a>
 
 The date configuration of the filter.
 

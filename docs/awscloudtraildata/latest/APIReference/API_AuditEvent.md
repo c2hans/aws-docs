@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtraildata/latest/APIReference/AP
 ---
 
 # AuditEvent
-<a name="API_AuditEvent"></a>
 
 An event from a source outside of AWS that you want CloudTrail to log.
 

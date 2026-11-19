@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Backu
 ---
 
 # BackupVaultListMember
-<a name="API_BackupVaultListMember"></a>
 
 Contains metadata about a backup vault.
 

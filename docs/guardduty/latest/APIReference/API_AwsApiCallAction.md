@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_AwsApi
 ---
 
 # AwsApiCallAction
-<a name="API_AwsApiCallAction"></a>
 
 Contains information about the API action.
 

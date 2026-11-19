@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-crea
 ---
 
 # Create Amazon Location resources for your app
-<a name="qs-create-resources-ios"></a>
 
 If you do not already have them, you must create the Amazon Location resources that your application will use. You will create a map resource to display maps in your application, a place index to search for locations on the map, and a tracker to track an object across the map.
 

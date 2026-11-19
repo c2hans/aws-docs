@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Policy limits
-<a name="transformation-policy-limits"></a>
 
 The following table lists the limits for each field in a transformation policy.
 

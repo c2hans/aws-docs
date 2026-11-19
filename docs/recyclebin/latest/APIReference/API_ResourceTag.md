@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_Resou
 ---
 
 # ResourceTag
-<a name="API_ResourceTag"></a>
 
 [Tag-level retention rules only] Information about the resource tags used to identify resources that are retained by the retention rule.
 

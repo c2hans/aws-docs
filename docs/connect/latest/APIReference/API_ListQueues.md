@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListQueu
 ---
 
 # ListQueues
-<a name="API_ListQueues"></a>
 
 Provides information about the queues for the specified Connect Customer instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationNote
-<a name="API_EvaluationNote"></a>
 
 Information about notes for a contact evaluation.
 

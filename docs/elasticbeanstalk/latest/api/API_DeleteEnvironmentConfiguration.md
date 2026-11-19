@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_DeleteEn
 ---
 
 # DeleteEnvironmentConfiguration
-<a name="API_DeleteEnvironmentConfiguration"></a>
 
 Deletes the draft configuration associated with the running environment.
 

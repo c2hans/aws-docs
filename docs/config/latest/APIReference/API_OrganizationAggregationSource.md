@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Organizat
 ---
 
 # OrganizationAggregationSource
-<a name="API_OrganizationAggregationSource"></a>
 
 This object contains regions to set up the aggregator and an IAM role to retrieve organization details.
 

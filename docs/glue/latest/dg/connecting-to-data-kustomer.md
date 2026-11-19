@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-kustom
 ---
 
 # Connecting to Kustomer
-<a name="connecting-to-data-kustomer"></a>
 
 Kustomer is a powerful customer experience platform that brings together everything you need to serve your customers better in one easy-to-use tool.
 

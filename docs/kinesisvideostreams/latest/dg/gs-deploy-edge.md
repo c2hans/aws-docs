@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-deploy-
 ---
 
 # Deploy the Amazon Kinesis Video Streams Edge Agent AWS IoT Greengrass component on the device
-<a name="gs-deploy-edge"></a>
 
 Do the following to deploy the Amazon Kinesis Video Streams Edge Agent AWS IoT Greengrass component on the device:
 

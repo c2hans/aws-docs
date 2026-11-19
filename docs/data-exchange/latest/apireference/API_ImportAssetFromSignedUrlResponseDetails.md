@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Im
 ---
 
 # ImportAssetFromSignedUrlResponseDetails
-<a name="API_ImportAssetFromSignedUrlResponseDetails"></a>
 
 The details in the response for an import request, including the signed URL and other information.
 

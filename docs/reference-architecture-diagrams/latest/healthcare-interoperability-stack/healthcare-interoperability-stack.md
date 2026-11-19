@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/h
 ---
 
 # Healthcare Interoperability Stack on AWS
-<a name="healthcare-interoperability-stack"></a>
 
 Publication date: **January 31, 2023 ([Diagram history](#interop-history))**
 

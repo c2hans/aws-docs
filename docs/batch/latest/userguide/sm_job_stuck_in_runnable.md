@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/sm_job_stuck_in_r
 ---
 
 # Jobs stuck in a `RUNNABLE` status
-<a name="sm_job_stuck_in_runnable"></a>
 
 If AWS Batch detects that you have a `RUNNABLE` job blocking the front of the queue, you'll receive [Service job queue blocked events](batch-service-job-queue-blocked-events.md) from with the reason. The same reason is also updated into the `statusReason` field as a part of `[ListServiceJobs](https://docs.aws.amazon.com/batch/latest/APIReference/API_ListServiceJobs.html)` and `[DescribeServiceJob](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeServiceJob.html)` API calls.
 

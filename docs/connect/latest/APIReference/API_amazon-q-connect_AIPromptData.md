@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # AIPromptData
-<a name="API_amazon-q-connect_AIPromptData"></a>
 
 The data for the AI Prompt
 

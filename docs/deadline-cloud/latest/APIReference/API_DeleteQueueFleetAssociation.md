@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 ---
 
 # DeleteQueueFleetAssociation
-<a name="API_DeleteQueueFleetAssociation"></a>
 
 Deletes a queue-fleet association.
 

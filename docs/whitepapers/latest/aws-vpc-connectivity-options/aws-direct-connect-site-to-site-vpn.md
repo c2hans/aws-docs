@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 ---
 
 # AWS Direct Connect \+ AWS Site-to-Site VPN
-<a name="aws-direct-connect-site-to-site-vpn"></a>
 
  With [AWS Direct Connect](https://aws.amazon.com/directconnect/) \+ [AWS Site-to-Site VPN](https://aws.amazon.com/vpn/site-to-site-vpn/), you can combine AWS Direct Connect connections with an AWS-managed VPN solution. AWS Direct Connect public VIFs establish a dedicated network connection between your network and public AWS resources such as an AWS Site-to-Site VPN endpoint. Once you establish the connection to the service, you can create IPsec connections to the corresponding Amazon VPC virtual private gateways. The following figure illustrates this option.
 

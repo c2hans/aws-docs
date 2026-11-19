@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # BaseScreenshot
-<a name="API_BaseScreenshot"></a>
 
 A structure representing a screenshot that is used as a baseline during visual monitoring comparisons made by the canary.
 

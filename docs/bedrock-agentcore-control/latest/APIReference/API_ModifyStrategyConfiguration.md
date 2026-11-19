@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ModifyStrategyConfiguration
-<a name="API_ModifyStrategyConfiguration"></a>
 
 Contains information for modifying a strategy configuration.
 

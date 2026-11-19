@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonOpenSearchDashboardsServiceRolePolicy
-<a name="AmazonOpenSearchDashboardsServiceRolePolicy"></a>
 
 **Description**: Provides access to Amazon OpenSearch Dashboards Service to access other AWS services such as CloudWatch on your behalf
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 ---
 
 # Implementing security and responsible AI
-<a name="implementing-security-rai"></a>
 
 Building generative AI (gen AI) models involves complex technical and business decisions. To speed up experimentation, some [responsible AI (RAI)](https://aws.amazon.com/ai/responsible-ai/) evaluations might be overlooked initially. However, conducting an RAI review *before *moving to inference helps organizations strengthen risk assessment and resource management through a structured evaluation process. This pre-release review serves as the final controlled stage where organizations can thoroughly assess models for potential harm. For example, organizations can assess models for bias amplification, privacy violations, safety risks, or misalignment with organizational values.
 

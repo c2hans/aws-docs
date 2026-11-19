@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeContactFlow
-<a name="API_DescribeContactFlow"></a>
 
 Describes the specified flow.
 

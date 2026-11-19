@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/tshoot-access-denie
 ---
 
 # Error: "AccessDeniedException"
-<a name="tshoot-access-denied"></a>
 
 ## Scenario
 <a name="tshoot-access-denied-scenario"></a>

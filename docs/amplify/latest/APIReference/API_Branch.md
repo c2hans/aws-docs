@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_Branch.h
 ---
 
 # Branch
-<a name="API_Branch"></a>
 
 The branch for an Amplify app, which maps to a third-party repository branch.
 

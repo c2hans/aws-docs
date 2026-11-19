@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/conclusi
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 AWS provides building blocks that you can assemble quickly to support virtually any workload. With AWS, you’ll find a complete set of highly available services that are designed to work together to build sophisticated scalable applications.
 

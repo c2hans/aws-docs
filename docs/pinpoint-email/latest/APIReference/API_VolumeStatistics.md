@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_V
 ---
 
 # VolumeStatistics
-<a name="API_VolumeStatistics"></a>
 
 An object that contains information about the amount of email that was delivered to recipients.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Dis
 ---
 
 # DisableSso
-<a name="API_DisableSso"></a>
 
 Disables single-sign on for a directory.
 

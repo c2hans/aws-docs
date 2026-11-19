@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpGat
 ---
 
 # HttpGatewayRouteMatch
-<a name="API_HttpGatewayRouteMatch"></a>
 
 An object that represents the criteria for determining a request match.
 

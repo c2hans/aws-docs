@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/resource
 ---
 
 # Resources
-<a name="resources"></a>
 +  [AWS Decision Guides](https://aws.amazon.com/getting-started/decision-guides/)
 +  [AWS Architecture Center](https://aws.amazon.com/architecture/)
 +  [This Is My Architecture videos](https://aws.amazon.com/architecture/this-is-my-architecture/)

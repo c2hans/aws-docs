@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/mixpanel-configuring-conn
 ---
 
 # Configuring Mixpanel connections
-<a name="mixpanel-configuring-connections"></a>
 
 Mixpanel supports username and password for `BasicAuth`. Basic Authentication is a simple authentication method where clients provide credentials directly to access protected resources. AWS Glue is able to use the username and password to authenticate Mixpanel APIs.
 

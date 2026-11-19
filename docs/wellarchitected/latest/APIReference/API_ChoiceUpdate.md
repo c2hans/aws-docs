@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ChoiceUpdate
-<a name="API_ChoiceUpdate"></a>
 
 A list of choices to be updated.
 

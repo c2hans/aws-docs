@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 ---
 
 # Application owner questionnaire
-<a name="transform-vmware-application-questionnaire"></a>
 
 Your inventory describes your servers. Your application owners know more: which applications must move together, when they can move, and how critical they are. AWS Transform creates an application questionnaire that your application owners fill in, so that your migration plan reflects that knowledge. Answering the questionnaire is optional, and partial answers are welcome.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_DeleteA
 ---
 
 # DeleteAgent
-<a name="API_DeleteAgent"></a>
 
 Removes an AWS DataSync agent resource from your AWS account.
 

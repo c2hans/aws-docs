@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-a-client-to-acce
 ---
 
 # Create a client to access Athena
-<a name="create-a-client-to-access-athena"></a>
 
 The `AthenaClientFactory.java` class shows how to create and configure an Amazon Athena client.
 

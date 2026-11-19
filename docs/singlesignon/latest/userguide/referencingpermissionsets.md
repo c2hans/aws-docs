@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/referencin
 ---
 
 # Referencing permission sets in resource policies, Amazon EKS Cluster config maps, and AWS KMS key policies
-<a name="referencingpermissionsets"></a>
 
 When you assign a permission set to an AWS account, IAM Identity Center creates a role with a name that begins with `AWSReservedSSO_`.
 

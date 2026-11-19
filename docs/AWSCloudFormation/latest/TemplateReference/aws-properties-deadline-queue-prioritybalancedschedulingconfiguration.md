@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Deadline::Queue PriorityBalancedSchedulingConfiguration
-<a name="aws-properties-deadline-queue-prioritybalancedschedulingconfiguration"></a>
 
 Configuration for priority balanced scheduling. Workers are distributed evenly across all jobs at the highest priority level.
 

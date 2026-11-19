@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateColumnsOperation
-<a name="API_CreateColumnsOperation"></a>
 
 A transform operation that creates calculated columns. Columns created in one such operation form a lexical closure.
 

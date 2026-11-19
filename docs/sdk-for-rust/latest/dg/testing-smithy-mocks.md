@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/testing-smithy-mo
 ---
 
 # Unit testing with `aws-smithy-mocks` in the AWS SDK for Rust
-<a name="testing-smithy-mocks"></a>
 
 The AWS SDK for Rust provides multiple approaches for testing your code that interacts with AWS services. This topic describes how to use the [`aws-smithy-mocks`](https://docs.rs/aws-smithy-mocks/latest/aws_smithy_mocks/) crate, which offers a simple yet powerful way to mock AWS SDK client responses for testing purposes.
 

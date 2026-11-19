@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/pca-sha
 ---
 
 # Enable Cross-account PCA Sharing
-<a name="pca-sharing"></a>
 
 Private CA (PCA) cross-account sharing offers the ability to grant permissions for other accounts to use a centralized CA. The CA can generate and issue certificates by using [AWS Resource Access Manager](https://aws.amazon.com/ram/) (RAM) to manage the permissions. This removes the need for a Private CA in every account. Private CA cross-account sharing can be used with WorkSpaces Applications certificate-based Authentication (CBA) within the same AWS Region.
 

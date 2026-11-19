@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstar
 ---
 
 # Getting Started
-<a name="getstarted"></a>
 
  You can get started with AWS Service Catalog by using one of the well-architected product templates in the Getting Started Library or by following the steps in one of the getting started tutorials.
 

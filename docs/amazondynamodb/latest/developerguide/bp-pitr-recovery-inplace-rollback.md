@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-
 ---
 
 # Recovery by rolling back unwanted writes in-place
-<a name="bp-pitr-recovery-inplace-rollback"></a>
 
 To keep the original table in service, you can roll back unwanted writes directly rather than restoring a full table. You can roll back all the writes or only those writes that you identify as mistakes.
 

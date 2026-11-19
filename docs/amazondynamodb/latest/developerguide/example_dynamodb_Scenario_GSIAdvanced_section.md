@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Work with advanced DynamoDB Global Secondary Index scenarios using AWS Command Line Interface v2
-<a name="example_dynamodb_Scenario_GSIAdvanced_section"></a>
 
 The following code example shows how to work with advanced Global Secondary Index configurations.
 + Create a table with multiple GSIs.

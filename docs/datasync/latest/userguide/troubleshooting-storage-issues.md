@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/troubleshootin
 ---
 
 # Troubleshooting issues with DataSync locations
-<a name="troubleshooting-storage-issues"></a>
 
 Use the following information to help you troubleshoot issues with AWS DataSync locations. Some of these issues can include:
 + Permissions and mount errors with NFS locations

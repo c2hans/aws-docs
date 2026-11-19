@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 ---
 
 # Get started
-<a name="harness-get-started"></a>
 
 You can use the harness through the [AgentCore CLI](https://github.com/aws/agentcore-cli) or directly with AWS SDKs such as `boto3`. The CLI is the fastest path for most developers; SDKs are for programmatic use from your own application.
 

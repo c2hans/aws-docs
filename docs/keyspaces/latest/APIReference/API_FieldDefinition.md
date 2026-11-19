@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_FieldD
 ---
 
 # FieldDefinition
-<a name="API_FieldDefinition"></a>
 
  A field definition consists out of a name and a type.
 

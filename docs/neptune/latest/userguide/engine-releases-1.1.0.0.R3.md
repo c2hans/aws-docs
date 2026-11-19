@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/engine-releases
 ---
 
 # Amazon Neptune maintenance release, version 1.1.0.0.R3 (2022-12-23)
-<a name="engine-releases-1.1.0.0.R3"></a>
 
 As of 2022-12-23, AWS deploys engine version 1.1.0.0.R3 to all Regions. It takes several days for a new release to become available in every Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Untag
 ---
 
 # UntagColumnOperation
-<a name="API_UntagColumnOperation"></a>
 
 A transform operation that removes tags associated with a column.
 

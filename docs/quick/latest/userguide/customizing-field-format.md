@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/customizing-field
 ---
 
 # Customizing a field format
-<a name="customizing-field-format"></a>
 
 Use the following procedure to customize the appearance of fields in an analysis.
 

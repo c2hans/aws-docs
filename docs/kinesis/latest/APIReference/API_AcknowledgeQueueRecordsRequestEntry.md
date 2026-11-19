@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Acknowle
 ---
 
 # AcknowledgeQueueRecordsRequestEntry
-<a name="API_AcknowledgeQueueRecordsRequestEntry"></a>
 
 A record to acknowledge, identified by its receipt handle.
 

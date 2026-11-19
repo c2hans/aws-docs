@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/applic
 ---
 
 # Target tracking scaling policies for Application Auto Scaling
-<a name="application-auto-scaling-target-tracking"></a>
 
 A target tracking scaling policy automatically scales your application based on a target metric value. This allows your application to maintain optimal performance and cost efficiency without manual intervention.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-abort.htm
 ---
 
 # **eb abort**
-<a name="eb3-abort"></a>
 
 ## Description
 <a name="eb3-abortdescription"></a>

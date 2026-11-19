@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/troubleshooting
 ---
 
 # Troubleshoot contacts that received no data
-<a name="troubleshooting-no-data-received"></a>
 
  It is possible for a contact to appear successful, but still did not receive any data. This may mean that you receive PCAP files that are empty, or no PCAP files at all if you are using S3 data delivery. This can happen for a number of reasons. The following discusses some of the causes, and how to address them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Del
 ---
 
 # DeleteServiceProfile
-<a name="API_DeleteServiceProfile"></a>
 
 Deletes a service profile.
 

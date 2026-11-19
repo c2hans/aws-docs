@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/football.h
 ---
 
 # .football
-<a name="football"></a>
 
 Used by anyone involved in the sport of football.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/delete-user-cl
 ---
 
 # Delete HSM users using CloudHSM CLI
-<a name="delete-user-cloudhsm-cli"></a>
 
 Use **user delete** in the CloudHSM CLI to delete a hardware security module (HSM) user. You must log in as an admin to delete another user.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # TargetFace
-<a name="API_rekognitionstreaming_TargetFace"></a>
 
 Contains bounding box of face position of the user on the device screen at target location constructed for the challenge. This is generated using the random offsets provided by the server to the client at session start. Also contains start and end epoch timestamp of when the user was detected in this position.
 

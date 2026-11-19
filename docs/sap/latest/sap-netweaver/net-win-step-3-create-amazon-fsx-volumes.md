@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-step-3-
 ---
 
 # Step 3: Create Amazon FSx Volumes
-<a name="net-win-step-3-create-amazon-fsx-volumes"></a>
 
 1. The global fileshare and transport directories need to be available across all your SAP system’s EC2 instances. In this guide, we assume that you are using Amazon FSx for this purpose.
 

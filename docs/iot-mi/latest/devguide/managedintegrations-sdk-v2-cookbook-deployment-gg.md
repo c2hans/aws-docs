@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Install the Hub SDK with AWS IoT Greengrass
-<a name="managedintegrations-sdk-v2-cookbook-deployment-gg"></a>
 
 Deploy the managed integrations Hub SDK components for your devices using AWS IoT Greengrass (Java Version).
 

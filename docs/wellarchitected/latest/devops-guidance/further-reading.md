@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/f
 ---
 
 # Further reading
-<a name="further-reading"></a>
 +  [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/)
 +  [AWS Architecture Center](https://aws.amazon.com/architecture)
 +  [The Amazon Builders' Library](https://aws.amazon.com/builders-library/)

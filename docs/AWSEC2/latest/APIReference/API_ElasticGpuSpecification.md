@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ElasticGp
 ---
 
 # ElasticGpuSpecification
-<a name="API_ElasticGpuSpecification"></a>
 
 **Note**
 Amazon Elastic Graphics reached end of life on January 8, 2024.

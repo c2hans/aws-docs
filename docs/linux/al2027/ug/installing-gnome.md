@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/installing-gnome.html
 ---
 
 # Tutorial: Install the GNOME desktop environment
-<a name="installing-gnome"></a>
 
 The [GNOME desktop environment](https://www.gnome.org/) is an optional graphical user interface for Amazon Linux 2027 (AL2027). The `Desktop` package group installs GNOME along with its supporting components.
 

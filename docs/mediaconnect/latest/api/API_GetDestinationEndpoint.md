@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_GetDestinati
 ---
 
 # GetDestinationEndpoint
-<a name="API_GetDestinationEndpoint"></a>
 
 Retrieves information about a destination endpoint.
 

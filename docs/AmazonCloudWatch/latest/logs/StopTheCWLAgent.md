@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/StopTheCWLA
 ---
 
 # Stop the CloudWatch Logs agent
-<a name="StopTheCWLAgent"></a>
 
 Use the following procedure to stop the CloudWatch Logs agent on your EC2 instance.
 

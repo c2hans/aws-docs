@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_GetHealt
 ---
 
 # GetHealthEvent
-<a name="API_GetHealthEvent"></a>
 
 Gets information that Internet Monitor has created and stored about a health event for a specified monitor. This information includes the impacted locations, and all the information related to the event, by location.
 

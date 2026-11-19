@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/enclaves/latest/user/cli-errors.html
 ---
 
 # Nitro Enclaves CLI error codes
-<a name="cli-errors"></a>
 
 This section lists the possible errors that the Nitro CLI can return.
 

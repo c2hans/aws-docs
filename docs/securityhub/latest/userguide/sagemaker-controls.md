@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/sagemaker-c
 ---
 
 # Security Hub CSPM controls for SageMaker AI
-<a name="sagemaker-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the Amazon SageMaker AI service and resources. The controls might not be available in all AWS Regions. For more information, see [Availability of controls by Region](securityhub-regions.md#securityhub-regions-control-support).
 
